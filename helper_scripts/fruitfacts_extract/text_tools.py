@@ -9,6 +9,9 @@ DEFAULT_USER_AGENT = "Mozilla/5.0 FruitFacts data helper"
 def clean_text(text, collapse_whitespace=True, ascii_only=True):
     replacements = {
         "\u00a0": " ",
+        "\u00bc": "1/4",
+        "\u00bd": "1/2",
+        "\u00be": "3/4",
         "\u00b0": " degrees ",
         "\u00a9": "(c)",
         "\u00ae": "(r)",
@@ -48,4 +51,3 @@ def split_suggested_names(text):
     text = text.replace(", and ", ", ")
     text = text.replace(" and ", ", ")
     return [part.strip() for part in text.split(",") if part.strip()]
-

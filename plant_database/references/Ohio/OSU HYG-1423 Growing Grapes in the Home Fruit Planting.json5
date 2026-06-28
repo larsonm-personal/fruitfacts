@@ -1,0 +1,222 @@
+{
+    title: "HYG-1423 Growing Grapes in the Home Fruit Planting",
+    author: "Gary Gao, Ph.D., Associate Professor and Small-Fruit Extension Specialist, OSU South Centers and Adjunct Associate Professor, Department of Horticulture and Crop Science, The Ohio State University",
+    description:
+        "Ohio State Ohioline grape guide for home fruit plantings. The source gives suggested American, seedless table, and French-American hybrid grape cultivars for Ohio, with color, winter hardiness, ripening season, remarks, and relative disease susceptibility ratings. Disease key from the source: * slightly susceptible or sensitive; ** moderately susceptible or sensitive; *** highly susceptible or sensitive; ? relative susceptibility or sensitivity not established",
+    url: "https://ohioline.osu.edu/factsheet/hyg-1423",
+    thumbnail: "website",
+    published: "Jan 12, 2017",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true, // todo - review disease-star fields before moving them out of descriptions
+    locations: [
+        {
+            name: "OSU South Centers, Piketon, OH",
+            latitude: 39.049112794609925,
+            longitude: -82.99424252152453
+        }
+    ],
+    categories: [
+        {
+            name: "American cultivars suggested for Ohio",
+            description:
+                "American grape cultivars suggested by OSU for Ohio home fruit plantings"
+        },
+        {
+            name: "Seedless table grape cultivars suggested for Ohio",
+            description:
+                "Seedless table grape cultivars suggested by OSU for Ohio home fruit plantings"
+        },
+        {
+            name: "French-American hybrid cultivars suggested for Ohio",
+            description:
+                "French-American hybrid grape cultivars suggested by OSU for Ohio home fruit plantings"
+        }
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Concord",
+            category: "American cultivars suggested for Ohio",
+            harvest_time_unparsed: "Late",
+            description:
+                "Color: Blue. Winter hardiness: Hardy. Most commonly grown backyard grape. Relative disease susceptibility: black rot ***; downy mildew *; powdery mildew **; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Fredonia",
+            category: "American cultivars suggested for Ohio",
+            harvest_time_unparsed: "Mid-season",
+            description:
+                "Color: Blue. Winter hardiness: Hardy. Earlier Concord, vigorous. Relative disease susceptibility: black rot **; downy mildew ***; powdery mildew **; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Steuben",
+            category: "American cultivars suggested for Ohio",
+            harvest_time_unparsed: "Midseason",
+            description:
+                "Color: Red. Winter hardiness: Hardy. Spicy flavor; non-uniform color. Relative disease susceptibility: black rot **; downy mildew *; powdery mildew *; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Catawba",
+            category: "American cultivars suggested for Ohio",
+            harvest_time_unparsed: "Late",
+            description:
+                "Color: Red. Winter hardiness: Hardy. Used for wine and sherry. Relative disease susceptibility: black rot ***; downy mildew ***; powdery mildew **; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Delaware",
+            category: "American cultivars suggested for Ohio",
+            harvest_time_unparsed: "Midseason",
+            description:
+                "Color: Red. Winter hardiness: Hardy. Used for wine; stores well. Relative disease susceptibility: black rot **; downy mildew ***; powdery mildew **; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Niagara",
+            category: "American cultivars suggested for Ohio",
+            harvest_time_unparsed: "Late Midseason",
+            description:
+                "Color: White. Winter hardiness: Hardy. Used for wine and white juice. Relative disease susceptibility: black rot ***; downy mildew ***; powdery mildew **; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Canadice",
+            category: "Seedless table grape cultivars suggested for Ohio",
+            harvest_time_unparsed: "Very Early",
+            description:
+                "Color: Red. Winter hardiness: Moderately Hardy. Productive; good clusters. Relative disease susceptibility: black rot ***; downy mildew **; powdery mildew *; botrytis **"
+        },
+        {
+            type: "Grape",
+            name: "Einset",
+            category: "Seedless table grape cultivars suggested for Ohio",
+            harvest_time_unparsed: "Very Early",
+            description:
+                "Color: Red. Winter hardiness: Hardy. Slip skin; mild strawberry flavor. Relative disease susceptibility: black rot ***; downy mildew **; powdery mildew ***; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Himrod",
+            category: "Seedless table grape cultivars suggested for Ohio",
+            harvest_time_unparsed: "Very Early",
+            description:
+                "Color: White. Winter hardiness: Moderately Hardy. High quality; straggly clusters. Relative disease susceptibility: black rot **; downy mildew *; powdery mildew **; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Marquis",
+            category: "Seedless table grape cultivars suggested for Ohio",
+            harvest_time_unparsed: "Midseason",
+            description:
+                "Color: White. Winter hardiness: Hardy. Highly productive; high quality; loose clusters, resists cracking. Relative disease susceptibility: black rot *; downy mildew ***; powdery mildew *; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Mars",
+            category: "Seedless table grape cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early",
+            description:
+                "Color: Blue. Winter hardiness: Hardy. High productivity; medium cluster. Relative disease susceptibility: black rot *; downy mildew *; powdery mildew *; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Reliance",
+            category: "Seedless table grape cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early Season",
+            description:
+                "Color: Red. Winter hardiness: Hardy. High quality; productive; uneven color; susceptible to berry cracking. Relative disease susceptibility: black rot ***; downy mildew ***; powdery mildew **; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Vanessa",
+            category: "Seedless table grape cultivars suggested for Ohio",
+            harvest_time_unparsed: "Midseason",
+            description:
+                "Color: Red. Winter hardiness: Hardy. Adherent skin; tight clusters; firm, crisp fresh; small berries. Relative disease susceptibility: black rot ***; downy mildew **; powdery mildew **; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Jupiter",
+            category: "Seedless table grape cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early",
+            description:
+                "Color: Blue. Winter hardiness: Moderately Hardy. Muscat flavor; oval berries; very large. Relative disease susceptibility: black rot **; downy mildew *; powdery mildew ***; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Neptune",
+            category: "Seedless table grape cultivars suggested for Ohio",
+            harvest_time_unparsed: "Midseason",
+            description:
+                "Color: White. Winter hardiness: Moderately Hardy. Compact clusters; low vigor; adherent and thick skin; oval berry. Relative disease susceptibility: black rot ?; downy mildew ?; powdery mildew ?; botrytis ?"
+        },
+        {
+            type: "Grape",
+            name: "Suffolk Red",
+            category: "Seedless table grape cultivars suggested for Ohio",
+            harvest_time_unparsed: "Midseason",
+            description:
+                "Color: Red. Winter hardiness: Moderately Hardy. Loose clusters; good flavor. Relative disease susceptibility: black rot ?; downy mildew ?; powdery mildew ?; botrytis ?"
+        },
+        {
+            type: "Grape",
+            name: "Cayuga White",
+            category: "French-American hybrid cultivars suggested for Ohio",
+            harvest_time_unparsed: "Midseason",
+            description:
+                "Color: White. Winter hardiness: Moderately Hardy. Fully ripened, produces labrusca character. Relative disease susceptibility: black rot *; downy mildew **; powdery mildew *; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Chambourcin",
+            category: "French-American hybrid cultivars suggested for Ohio",
+            harvest_time_unparsed: "Late",
+            description:
+                "Color: Blue. Winter hardiness: Moderately Hardy. Moderate vigor; large clusters; needs thinning; high quality wine. Relative disease susceptibility: black rot ***; downy mildew **; powdery mildew *; botrytis **"
+        },
+        {
+            type: "Grape",
+            name: "Chancellor",
+            category: "French-American hybrid cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early Midseason",
+            description:
+                "Color: Blue. Winter hardiness: Hardy. Fruit thinning necessary; good vigor. Relative disease susceptibility: black rot *; downy mildew ***; powdery mildew ***; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "DeChaunac",
+            category: "French-American hybrid cultivars suggested for Ohio",
+            harvest_time_unparsed: "Midseason",
+            description:
+                "Color: Blue. Winter hardiness: Hardy. Moderate red wine quality; good vigor and productivity; requires fruit thinning. Relative disease susceptibility: black rot *; downy mildew **; powdery mildew **; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Seyval Blanc",
+            category: "French-American hybrid cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early Midseason",
+            description:
+                "Color: White. Winter hardiness: Hardy. Moderate vigor; requires thinning; excellent wine quality. Relative disease susceptibility: black rot **; downy mildew **; powdery mildew ***; botrytis ***"
+        },
+        {
+            type: "Grape",
+            name: "Vidal Blanc",
+            category: "French-American hybrid cultivars suggested for Ohio",
+            harvest_time_unparsed: "Late Midseason",
+            description:
+                "Color: White. Winter hardiness: Moderately Hardy. Good vigor; late budbreak, requires thinning; loose clusters; excellent wine quality. Relative disease susceptibility: black rot *; downy mildew **; powdery mildew ***; botrytis *"
+        },
+        {
+            type: "Grape",
+            name: "Vignoles",
+            category: "French-American hybrid cultivars suggested for Ohio",
+            harvest_time_unparsed: "Midseason",
+            description:
+                "Color: White. Winter hardiness: Hardy. Small tight cluster; moderate yields and vigor. Relative disease susceptibility: black rot *; downy mildew **; powdery mildew ***; botrytis ***"
+        }
+    ]
+}

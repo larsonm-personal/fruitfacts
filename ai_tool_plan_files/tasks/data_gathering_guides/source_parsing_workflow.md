@@ -29,6 +29,8 @@ the text blocks were regular enough to parse.
 - Python `html.parser` from the standard library for dependency-free block
   extraction
 - Python `html.parser` table hooks for simple HTML comparison tables
+- `fruitfacts_extract.table_tools` for mapping simple table rows to dictionaries
+  by normalized header names
 - A browser-like `User-Agent` header for sources that reject default Python
   urllib requests
 - `pdftotext -layout` for PDF title-page and table sanity checks
@@ -121,3 +123,29 @@ The helper script uses shared PDF text extraction and then source-specific
 section parsing. A first naive regex stopped at the period inside `A.C. Wendy`,
 so the parser now bounds each category by the next section heading before
 splitting cultivar names.
+
+## Penn State Non-Scab Apple Table Notes
+
+The Penn State page is a compact HTML table with headers `Variety`,
+`Characteristics`, and `Ripening Period`. The helper script uses
+`table_tools.find_table()` and `table_tools.table_to_dicts()` so the
+source-specific parser can refer to `row["variety"]`,
+`row["characteristics"]`, and `row["ripening_period"]`.
+
+This source also showed why local name harmonization belongs in
+source-specific code. The table uses common or trademark-facing names such as
+Zestar!, Ginger Gold, Blondee, Cameo, and SunCrisp; the curated file maps those
+to existing FruitFacts canonical names and keeps the source names in
+descriptions.
+
+## OSU HYG-1423 Grape Notes
+
+The Ohioline grape page has several HTML tables where the first row is a table
+title and the second row is the real header. The helper script uses
+`table_tools.find_table_with_header_row()` so it can find the actual header row
+inside each table.
+
+The source also has a separate disease-susceptibility table keyed by cultivar.
+The parser builds a disease lookup and appends the source's star ratings to
+each plant description. The curated file keeps those ratings in text for now
+rather than inventing a grape-specific disease schema.

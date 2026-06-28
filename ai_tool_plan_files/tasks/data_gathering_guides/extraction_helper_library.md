@@ -17,6 +17,9 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
   - ASCII cleanup, whitespace normalization, and simple source-list splitting
 - `html_tools.py`
   - HTML block and table extraction with script/style noise skipped
+- `table_tools.py`
+  - Simple table header normalization, title-row skipping, and table rows as
+    dictionaries
 - `pdf_tools.py`
   - Download to temp storage and run `pdftotext`
 - `json5_draft.py`
@@ -53,6 +56,10 @@ Source-specific scripts should do:
   table rows
 - CSU GardenNotes 763: PDF text plus bounded sections containing suggested
   cultivar lists
+- Penn State non-scab apple table: HTML table rows mapped by normalized headers
+  such as variety, characteristics, and ripening period
+- OSU HYG-1423 grape tables: Ohioline HTML tables with a title row before the
+  real column header row, plus a second table keyed by cultivar
 
 ## PDF Lessons
 
@@ -69,12 +76,11 @@ Source-specific scripts should do:
 ## Next Library Steps
 
 1. Add a `section_between()` helper after two or three more scripts need it.
-2. Add a table-shape matcher for headers such as variety, season, use, disease,
-   and comments.
+2. Expand table helpers for repeated header groups such as variety, season, use,
+   disease, and comments.
 3. Add a PDF diagnostic command that reports page count, text length, and
    whether `pdftotext -layout` or `pdftotext -raw` looks cleaner.
 4. Add draft-record helpers only after the same emit pattern repeats in at least
    three source scripts.
 5. Keep parsers source-specific until a pattern appears in multiple unrelated
    sources.
-

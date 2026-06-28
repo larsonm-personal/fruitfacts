@@ -191,7 +191,7 @@
         },
         {
             id: "psu-non-scab-resistant-apple-varieties-home-orchards",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Home Orchards: Table 4.2. Non-Scab-Resistant Apple Varieties",
             institution: "Penn State Extension",
@@ -211,7 +211,10 @@
                 "No Penn State home-orchard apple cultivar reference found in existing references",
             notes: [
                 "Web page returned 200",
-                "Likely companion to the scab-resistant apple table"
+                "Likely companion to the scab-resistant apple table",
+                "Encoded in plant_database/references/Pennsylvania/Penn State Non-Scab-Resistant Apple Varieties.json5",
+                "Draft extraction helper added at helper_scripts/extract_psu_non_scab_apples.py",
+                "Worked example for mapping HTML table rows to dictionaries by normalized header"
             ]
         },
         {
@@ -1056,7 +1059,7 @@
         },
         {
             id: "osu-growing-grapes-home-fruit-planting-hyg-1423",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Grapes in the Home Fruit Planting",
             institution: "Ohio State University Extension",
@@ -1075,7 +1078,10 @@
             duplicate_check:
                 "No Ohio grape extension reference found in existing references",
             notes: [
-                "Official Ohioline page returned 200"
+                "Official Ohioline page returned 200",
+                "Encoded in plant_database/references/Ohio/OSU HYG-1423 Growing Grapes in the Home Fruit Planting.json5",
+                "Draft extraction helper added at helper_scripts/extract_osu_hyg_1423_grapes.py",
+                "Worked example for Ohioline HTML tables with title rows before column headers"
             ]
         },
         {

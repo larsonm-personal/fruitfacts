@@ -1,0 +1,126 @@
+{
+    title: "Penn State Non-Scab-Resistant Apple Varieties",
+    author: "Donald Seifrit, Extension Educator, Tree Fruit",
+    description:
+        "Penn State Extension Home Orchards table of non-scab-resistant apple varieties. The source lists variety characteristics, home use notes, and ripening periods for Pennsylvania home orchard context",
+    url: "https://extension.psu.edu/home-orchards-table-4-2-non-scab-resistant-apple-varieties/",
+    reviewed: "2026",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    thumbnail: "website",
+    needs_help: true, // todo - pair with the Penn State scab-resistant table and review canonical apple names
+    locations: [
+        {
+            name: "Penn State Extension, University Park, Pennsylvania",
+            latitude: 40.7934,
+            longitude: -77.86
+        }
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Minnewashta",
+            harvest_time_unparsed: "Early to mid-August",
+            description:
+                "Medium to large red-over-yellow fruit with balanced flavor, slightly more sweet than tart. Flesh is crisp and medium to coarse. Good for fresh eating and sauce. Source table names this as Zestar!"
+        },
+        {
+            type: "Apple",
+            name: "Mountain Cove",
+            harvest_time_unparsed: "Mid-August",
+            description:
+                "Golden-type apple ripening in mid- to late August. High-quality russet-free fruit. Good for eating fresh and pies. Source table names this as Ginger Gold"
+        },
+        {
+            type: "Apple",
+            name: "Gala",
+            harvest_time_unparsed: "Late August to September",
+            description:
+                "Orange-red fruit, sweet and hard with high quality. Developed in New Zealand. Good for eating fresh and sauce"
+        },
+        {
+            type: "Apple",
+            name: "McLaughlin Gala",
+            harvest_time_unparsed: "Late August to September",
+            description:
+                "Whole-tree mutation of Gala found in Portsmouth, Ohio. Smooth yellow skin and Gala-like flavor. Use as Gala for fresh eating. Source table names this as Blondee"
+        },
+        {
+            type: "Apple",
+            name: "McIntosh",
+            harvest_time_unparsed: "Early September",
+            description:
+                "Old-time favorite. Source recommends new high-coloring strains and notes spur types are available. Good for fresh eating, pies, and sauce"
+        },
+        {
+            type: "Apple",
+            name: "Honeycrisp",
+            harvest_time_unparsed: "Mid-September",
+            description:
+                "Large, explosively crisp, juicy fruit with red-over-green ground color. Weak-growing tree. Fruit may show bitter pit when trees are young"
+        },
+        {
+            type: "Apple",
+            name: "Empire",
+            harvest_time_unparsed: "Mid- to late September",
+            description:
+                "Dark-red apple of excellent dessert quality. All-purpose apple that keeps well. Good for fresh eating, pies, and sauce"
+        },
+        {
+            type: "Apple",
+            name: "Ambrosia",
+            harvest_time_unparsed: "Late September to early October",
+            description:
+                "Chance seedling found in British Columbia, likely a Golden Delicious x Delicious cross. Medium conical fruit have sweet low-acid flavor and aromatic juicy flesh"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            harvest_time_unparsed: "Late September to early October",
+            description:
+                "Excellent all-purpose apple and heavy producer. Source says to avoid spur strains because they tend to russet more than nonspur strains"
+        },
+        {
+            type: "Apple",
+            name: "Idared",
+            harvest_time_unparsed: "Early to mid-October",
+            description:
+                "Popular older variety producing large mildly tart red fruit that keeps well. Good for all uses"
+        },
+        {
+            type: "Apple",
+            name: "Jonagold",
+            harvest_time_unparsed: "Early to mid-October",
+            description:
+                "New York Jonathan x Golden Delicious cross. High-quality fruit with red blush over yellow skin. Triploid with sterile pollen. Good for fresh eating, sauce, and baking"
+        },
+        {
+            type: "Apple",
+            name: "Caudle",
+            harvest_time_unparsed: "Early to mid-October",
+            description:
+                "Chance seedling from Washington. Late blooming. Fruit has red stripes over cream-colored background, sweet/tart flavor, and non-browning flesh. Source table names this as Cameo"
+        },
+        {
+            type: "Apple",
+            name: "Shizuka",
+            harvest_time_unparsed: "Mid-October",
+            description:
+                "Golden Delicious x Indo cross. Very large light-green to yellow fruit. Triploid with sterile pollen. Good for fresh eating, pies, and sauce"
+        },
+        {
+            type: "Apple",
+            name: "NJ 55",
+            harvest_time_unparsed: "Mid- to late October",
+            description:
+                "Golden-type apple that can develop a red or orange cheek in cooler years. Unusual cinnamon-spice flavor, better after storage. Good for fresh eating, sauce, and pies. Source table names this as SunCrisp"
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            harvest_time_unparsed: "Late October",
+            description:
+                "Late-ripening apple from Japan. Source says sites above Interstate 80 may have difficulty maturing fruit every year, though some early strains are available. Very firm red-over-green sweet fruit stores extremely well in regular refrigeration. Good for fresh eating and pies"
+        }
+    ]
+}
