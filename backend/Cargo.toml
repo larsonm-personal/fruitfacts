@@ -7,6 +7,21 @@ edition = "2021"
 [lib]
 doctest = false
 
+[[bin]]
+name = "delete_extra_thumbnails"
+path = "src/bin/delete_extra_thumbnails.rs"
+required-features = ["binaries"]
+
+[[bin]]
+name = "pdf_to_thumbnail"
+path = "src/bin/pdf_to_thumbnail.rs"
+required-features = ["binaries"]
+
+[[bin]]
+name = "web_thumbnails"
+path = "src/bin/web_thumbnails.rs"
+required-features = ["binaries"]
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
