@@ -927,7 +927,7 @@
         },
         {
             id: "umaine-raspberry-blackberry-varieties-maine-2172",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Raspberry and Blackberry Varieties for Maine",
             institution: "University of Maine Cooperative Extension",
@@ -949,12 +949,14 @@
             duplicate_check:
                 "No Maine caneberry reference found in existing references",
             notes: [
-                "Official web page returned 200 and has cultivar-level content"
+                "Official web page returned 200 and has cultivar-level content",
+                "Encoded in plant_database/references/Maine/UMaine 2172 Raspberry and Blackberry Varieties for Maine.json5",
+                "Draft extraction helper added at helper_scripts/extract_umaine_2172.py"
             ]
         },
         {
             id: "umaine-strawberry-varieties-maine-2184",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Strawberry Varieties for Maine",
             institution: "University of Maine Cooperative Extension",
@@ -973,7 +975,10 @@
             duplicate_check:
                 "No Maine strawberry reference found in existing references",
             notes: [
-                "Official web page returned 200 and has cultivar-level content"
+                "Official web page returned 200 and has cultivar-level content",
+                "Encoded in plant_database/references/Maine/UMaine 2184 Strawberry Varieties for Maine.json5",
+                "Draft extraction helper added at helper_scripts/extract_umaine_2184.py",
+                "Helper combines season-heading narrative paragraphs with the summary variety table"
             ]
         },
         {

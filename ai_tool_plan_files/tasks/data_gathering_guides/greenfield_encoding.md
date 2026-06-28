@@ -25,6 +25,12 @@ entries.
 5. Encode plant entries in source order unless there is a clear local pattern.
 6. Leave `needs_help` when any important section is not yet encoded.
 
+## Tooling Pattern
+
+For parseable HTML or PDF sources, see
+[Source Parsing Workflow](source_parsing_workflow.md). Prefer helper scripts
+that print drafts to stdout, then curate the committed JSON5 by hand.
+
 ## Checks
 
 - The JSON5 parses.

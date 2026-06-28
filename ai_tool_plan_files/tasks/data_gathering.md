@@ -58,6 +58,9 @@ real work exposes repeated patterns, edge cases, and useful helper commands.
 - [Source Asset And Stub Checklist](data_gathering_guides/source_asset_stub_checklist.md)
   - Decision helper for whether a source deserves a downloaded asset, a JSON5
     stub, both, or neither
+- [Source Parsing Workflow](data_gathering_guides/source_parsing_workflow.md)
+  - Tooling and judgment notes for turning a candidate source into a curated
+    JSON5 reference
 
 ## Working Notes
 

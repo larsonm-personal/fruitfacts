@@ -1,0 +1,238 @@
+{
+    title: "Strawberry Varieties for Maine",
+    author: "David T. Handley, vegetable and small fruit specialist, University of Maine Cooperative Extension",
+    description:
+        "UMaine strawberry variety guide. The source emphasizes ripening season, disease resistance, clean planting stock, site testing, fruit quality, vigor, hardiness, market use, and home-garden suitability for Maine",
+    url: "https://extension.umaine.edu/publications/2184e/",
+    published: "2011",
+    reviewed: "2024",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    thumbnail: "website",
+    needs_help: true, // todo - review source photos and patent/name harmonization before clearing
+    locations: [
+        {
+            name: "University of Maine Cooperative Extension, Orono, Maine",
+            latitude: 44.8998,
+            longitude: -68.6693
+        }
+    ],
+    categories: [
+        {
+            name: "Early Season",
+            description:
+                "June-bearing strawberries listed by UMaine as early-season choices for Maine"
+        },
+        {
+            name: "Early-Midseason",
+            description:
+                "June-bearing strawberries listed by UMaine as early-midseason choices for Maine"
+        },
+        {
+            name: "Midseason",
+            description:
+                "June-bearing strawberries listed by UMaine as midseason choices for Maine"
+        },
+        {
+            name: "Mid-Late Season",
+            description:
+                "June-bearing strawberries listed by UMaine as mid-late-season choices for Maine"
+        },
+        {
+            name: "Late Season",
+            description:
+                "June-bearing strawberries listed by UMaine as late-season choices for Maine"
+        },
+        {
+            name: "Day-Neutral",
+            description:
+                "Day-neutral strawberries that can bear a spring crop and continue through late summer and fall, often in annual plasticulture or container systems"
+        }
+    ],
+    plants: [
+        {
+            type: "Strawberry",
+            name: "Earliglow",
+            category: "Early Season",
+            harvest_time_unparsed: "early",
+            description:
+                "High-quality early berry with firm fruit, excellent flavor and color, and a tendency for fruit size to decline later in the season. Yields may be low in the Northeast. Vigorous runner producer. Resistant to red stele and verticillium wilt. Summary table lists root rot and leaf spot resistance and marks it as best for home gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Wendy",
+            category: "Early Season",
+            harvest_time_unparsed: "very early",
+            description:
+                "From Nova Scotia. Very early. Medium-size fruit with good flavor and high quality. Yields may be low in the Northeast. Vigorous plants produce many runners but can be sensitive to environmental stress. Some red stele and foliar disease resistance"
+        },
+        {
+            type: "Strawberry",
+            name: "Archer",
+            category: "Early Season",
+            harvest_time_unparsed: "early",
+            description:
+                "New York release. Early. Medium to large fruit with very good flavor. Maine yields have been low. Plants have some disease resistance but may suffer winter injury at colder sites"
+        },
+        {
+            type: "Strawberry",
+            name: "Galletta",
+            category: "Early Season",
+            harvest_time_unparsed: "early",
+            description:
+                "North Carolina release. Large firm uniform fruit with good flavor, good yields, and concentrated ripening. Vigorous but shy runner producer. Summary table lists root rot and leaf spot resistance and notes use for plasticulture"
+        },
+        {
+            type: "Strawberry",
+            name: "Annapolis",
+            category: "Early Season",
+            harvest_time_unparsed: "early-midseason",
+            description:
+                "From Nova Scotia. Early ripening. Medium-large, high-quality fruit with good flavor, though fruit may be tender. Vigorous plants. Summary table lists root rot and leaf spot resistance"
+        },
+        {
+            type: "Strawberry",
+            name: "Honeoye",
+            category: "Early-Midseason",
+            harvest_time_unparsed: "early-midseason",
+            description:
+                "New York release. Generally early ripening and high yielding. Large attractive firm fruit, with flavor that may be tart or flat. Vigorous plants with many runners. Beds can persist well on well-drained soils. Susceptible to red stele and not known to resist verticillium. Summary table notes a long picking season"
+        },
+        {
+            type: "Strawberry",
+            name: "Cavendish",
+            category: "Early-Midseason",
+            harvest_time_unparsed: "early-midseason",
+            description:
+                "From Nova Scotia. Productive, with large firm good-flavored fruit but uneven ripening. Long harvest period. Moderately vigorous plants. Resistant to red stele and verticillium. Summary table lists root rot and leaf spot resistance and a long picking season"
+        },
+        {
+            type: "Strawberry",
+            name: "Mira",
+            category: "Early-Midseason",
+            harvest_time_unparsed: "early-midseason",
+            description:
+                "From Nova Scotia. Large light-red fruit with good quality. Vigorous plants with high yield potential and some resistance to red stele root rot and leaf diseases. Summary table lists root rot and leaf spot resistance"
+        },
+        {
+            type: "Strawberry",
+            name: "Brunswick",
+            category: "Early-Midseason",
+            harvest_time_unparsed: "early-midseason",
+            description:
+                "From Nova Scotia. Medium to large blocky dark-red attractive fruit. Fruit can be somewhat tender and may be tart if not fully ripe. Very high yielding. Vigorous plants with some resistance to red stele. Summary table lists root rot and leaf spot resistance and notes dark color"
+        },
+        {
+            type: "Strawberry",
+            name: "Jewel",
+            category: "Midseason",
+            harvest_time_unparsed: "midseason",
+            description:
+                "From New York. Productive midseason variety with large glossy attractive firm fruit that holds well. Plants have moderate vigor and runner production and may be vulnerable to very cold winters and herbicides. Long harvest season. No known red stele or verticillium resistance. Summary table highlights high fruit quality"
+        },
+        {
+            type: "Strawberry",
+            name: "Flavorfest",
+            category: "Midseason",
+            harvest_time_unparsed: "midseason",
+            description:
+                "USDA Maryland release. Large attractive fruit with very good flavor and fair to good yield. Vigorous plants with good runner production. Good plasticulture variety. Some resistance to red stele and foliar diseases. Summary table lists root rot and leaf spot resistance"
+        },
+        {
+            type: "Strawberry",
+            name: "Darselect",
+            category: "Midseason",
+            harvest_time_unparsed: "midseason",
+            description:
+                "Originally from France. Large uniform attractive glossy light-red fruit with large calyxes. Good yields from vigorous plants that need high fertility. Susceptible to foliar diseases"
+        },
+        {
+            type: "Strawberry",
+            name: "Chandler",
+            category: "Midseason",
+            harvest_time_unparsed: "midseason",
+            description:
+                "From California. Medium-large firm attractive fruit, long harvest window, and good yields. Susceptible to winter injury and root rot diseases. Summary table notes annual plasticulture use"
+        },
+        {
+            type: "Strawberry",
+            name: "Allstar",
+            category: "Mid-Late Season",
+            harvest_time_unparsed: "mid-late season",
+            description:
+                "USDA Maryland release. Large conical light red to orange berries with good flavor. Vigorous plants are not strong runner producers. Resistant to red stele and verticillium and tolerant of heavy soils. Summary table lists root rot and leaf spot resistance"
+        },
+        {
+            type: "Strawberry",
+            name: "Cabot",
+            category: "Mid-Late Season",
+            harvest_time_unparsed: "mid-late season",
+            description:
+                "From Nova Scotia. Very large bright-red firm fruit, though not uniform and with tender skin. Good yield. Plants need high fertility to maintain vigor, and beds tend to be short-lived. Some red stele resistance, but fruit is susceptible to gray mold"
+        },
+        {
+            type: "Strawberry",
+            name: "Sparkle",
+            category: "Mid-Late Season",
+            harvest_time_unparsed: "mid-late season",
+            description:
+                "Excellent flavor with medium-size dark-red somewhat soft fruit. Fruit size tends to decline later in the season. Long harvest season. Vigorous plants produce many runners and have some red stele resistance. Summary table lists root rot and leaf spot resistance and marks it as best for home gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Clancy",
+            category: "Late Season",
+            harvest_time_unparsed: "late",
+            description:
+                "From New York. Large dark-red round to conic fruit with good firmness, but yields have been low in Maine. Vigorous plants with some resistance to red stele"
+        },
+        {
+            type: "Strawberry",
+            name: "Valley Sunset",
+            category: "Late Season",
+            harvest_time_unparsed: "late",
+            description:
+                "Nova Scotia release. Large uniform fruit with good flavor. Plants have good vigor and runner production. Good plasticulture variety with some foliar disease resistance"
+        },
+        {
+            type: "Strawberry",
+            name: "Seascape",
+            category: "Day-Neutral",
+            harvest_time_unparsed: "early and late summer-fall",
+            description:
+                "From California. Day-neutral with early and late summer-fall ripening. Medium-large attractive fruit, but flavor can be poor unless fruit fully ripens on the plant. Productive plants with few runners. Best suited to high-density plasticulture. Hardiness may be poor"
+        },
+        {
+            type: "Strawberry",
+            name: "Albion",
+            category: "Day-Neutral",
+            harvest_time_unparsed: "day-neutral; late ripening",
+            description:
+                "From California. Late-ripening day-neutral with large very firm sweet bright-red fruit. Vigorous plants. Best suited to high-density plasticulture systems"
+        },
+        {
+            type: "Strawberry",
+            name: "San Andreas",
+            category: "Day-Neutral",
+            harvest_time_unparsed: "day-neutral; late ripening",
+            description:
+                "From California. Late-ripening day-neutral with large firm dark-red fruit and good flavor. Best suited to high-density plasticulture systems"
+        },
+        {
+            type: "Strawberry",
+            name: "Tristar",
+            category: "Day-Neutral",
+            harvest_time_unparsed: "day-neutral",
+            description:
+                "USDA Maryland release. Medium-size bright-red fruit with very good quality. Low-vigor plants with fair productivity. Resistant to red stele and verticillium wilt. Summary table lists root rot and leaf spot resistance and marks it as best for home gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Tribute",
+            category: "Day-Neutral",
+            harvest_time_unparsed: "day-neutral",
+            description:
+                "USDA Maryland release. Medium-size bright-red fruit with good quality. Small but vigorous plants produce many runners and have fair to good productivity. Resistant to red stele and verticillium wilt. Summary table lists root rot and leaf spot resistance and marks it as best for home gardens"
+        }
+    ]
+}

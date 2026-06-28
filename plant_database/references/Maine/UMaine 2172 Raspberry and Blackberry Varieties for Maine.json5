@@ -1,0 +1,367 @@
+{
+    title: "Raspberry and Blackberry Varieties for Maine",
+    author: "David T. Handley, vegetable and small fruit specialist, University of Maine Cooperative Extension",
+    description:
+        "UMaine bramble variety guide. The source emphasizes site testing, intended use, hardiness, productivity, disease susceptibility, fruit quality, and ripening time for Maine. It names Boyne, Killarney, Reveille, Nova, Polana, Joan J, Royalty, Jewel, and Illini as best home-garden choices.",
+    url: "https://extension.umaine.edu/publications/2172e/",
+    published: "1995, 2009, 2020",
+    reviewed: "2024",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    thumbnail: "website",
+    needs_help: true, // todo - review source photos and any plant-name harmonization before clearing
+    locations: [
+        {
+            name: "University of Maine Cooperative Extension, Orono, Maine",
+            latitude: 44.8998,
+            longitude: -68.6693
+        }
+    ],
+    categories: [
+        {
+            name: "Red raspberries, summer-bearing",
+            description: "Source lists these by ripening date from earliest to latest"
+        },
+        {
+            name: "Red raspberries, everbearing",
+            description:
+                "Primocane-fruiting red raspberries. Source lists these by fall ripening date from earliest to latest"
+        },
+        {
+            name: "Yellow raspberries, everbearing",
+            description: "Primocane-fruiting yellow raspberries"
+        },
+        {
+            name: "Purple raspberries, summer-bearing",
+            description:
+                "Source says purple raspberries are generally not hardy enough for commercial viability in most of Maine"
+        },
+        {
+            name: "Black raspberries",
+            description:
+                "Source says black raspberries can winter-kill to the snowline at -10 degrees F and are disease susceptible; not considered commercially viable in Maine"
+        },
+        {
+            name: "Blackberries, thorny",
+            description:
+                "Erect thorny blackberries are sensitive to -10 degrees F or colder and are not recommended for commercial production in Maine"
+        },
+        {
+            name: "Blackberries, thornless",
+            description:
+                "Thornless blackberries need staking or trellising, are sensitive to winter injury, and are not considered commercially viable for Maine"
+        },
+        {
+            name: "Blackberries, everbearing",
+            description:
+                "Source says newer everbearing blackberries ripen their fall crop too late to be practical in Maine and are not recommended"
+        }
+    ],
+    plants: [
+        {
+            type: "Raspberry",
+            name: "Prelude",
+            category: "Red raspberries, summer-bearing",
+            harvest_time_unparsed: "early",
+            description:
+                "From New York. Early. Hardy, tall, vigorous, productive canes. Good-quality fruit. May bear a small fall primocane crop in southern Maine"
+        },
+        {
+            type: "Raspberry",
+            name: "Reveille",
+            category: "Red raspberries, summer-bearing",
+            harvest_time_unparsed: "early",
+            description:
+                "From Maryland. Early. Very hardy, vigorous, suckering, high-yielding plants. Medium to large fruit with good flavor, very soft, poor for shipping and freezing"
+        },
+        {
+            type: "Raspberry",
+            name: "Boyne",
+            category: "Red raspberries, summer-bearing",
+            harvest_time_unparsed: "early",
+            description:
+                "From Manitoba. Early with excellent winter hardiness. Spiny, suckering plants. Small to medium dark soft fruit, fair flavor, good freezing quality. Susceptible to anthracnose. Recommended for colder sites"
+        },
+        {
+            type: "Raspberry",
+            name: "Killarney",
+            category: "Red raspberries, summer-bearing",
+            harvest_time_unparsed: "early",
+            description:
+                "From Manitoba. Early, slightly after Boyne. Hardy, spiny, suckering plants. Medium bright red fruit with good flavor and freezing quality. Susceptible to mildew and anthracnose. Recommended for colder sites"
+        },
+        {
+            type: "Raspberry",
+            name: "Canby",
+            category: "Red raspberries, summer-bearing",
+            harvest_time_unparsed: "mid-season",
+            description:
+                "From Oregon. Mid-season with moderate hardiness. Tall nearly thornless plants. Medium to large firm bright red fruit with excellent flavor. Buds may winter-kill in cold climates"
+        },
+        {
+            type: "Raspberry",
+            name: "Eden",
+            category: "Red raspberries, summer-bearing",
+            harvest_time_unparsed: "mid-season",
+            description:
+                "From Nova Scotia. Mid-season. Hardy spineless plants with tall vigorous canes. Large firm light red very sweet fruit. May lack hardiness in northern locations"
+        },
+        {
+            type: "Raspberry",
+            name: "Latham",
+            category: "Red raspberries, summer-bearing",
+            harvest_time_unparsed: "mid-season",
+            description:
+                "From Minnesota. Mid-season and very hardy. Vigorous plants with few spines. Small fruit with good color, fair flavor, crumbly texture, and a long ripening period. Recommended for colder sites"
+        },
+        {
+            type: "Raspberry",
+            name: "Newburgh",
+            category: "Red raspberries, summer-bearing",
+            harvest_time_unparsed: "mid-season",
+            description:
+                "From New York. Mid-season and hardy. Tall, moderately vigorous plants with few spines. Partly resistant to common cane diseases and root rot. Medium light red fruit with good flavor, sometimes crumbly and uneven ripening"
+        },
+        {
+            type: "Raspberry",
+            name: "Nova",
+            category: "Red raspberries, summer-bearing",
+            harvest_time_unparsed: "mid-season",
+            description:
+                "From Nova Scotia. Very hardy with good vigor and few thorns. Appears resistant to most common cane diseases. Mid-season, attractive, medium, firm, bright red, somewhat acidic fruit"
+        },
+        {
+            type: "Raspberry",
+            name: "Taylor",
+            category: "Red raspberries, summer-bearing",
+            harvest_time_unparsed: "late",
+            description:
+                "From New York. Late and moderately hardy. Vigorous tall canes with some spines. Very susceptible to mosaic virus, leaf spot, and fungal diseases. Medium to large fruit with excellent flavor, color, and firmness"
+        },
+        {
+            type: "Raspberry",
+            name: "Encore",
+            category: "Red raspberries, summer-bearing",
+            harvest_time_unparsed: "late",
+            description:
+                "From New York. Late. Hardy, productive, vigorous plants with tall canes and large good-quality fruit"
+        },
+        {
+            type: "Raspberry",
+            name: "Polana",
+            category: "Red raspberries, everbearing",
+            harvest_time_unparsed: "very early fall crop",
+            description:
+                "Very early fall crop. Vigorous, short, productive canes. Small to medium attractive fruit, many misshapen and difficult to pick, fair flavor. Recommended for northern short-season areas"
+        },
+        {
+            type: "Raspberry",
+            name: "Polka",
+            category: "Red raspberries, everbearing",
+            harvest_time_unparsed: "early fall crop",
+            description:
+                "Early fall crop. Vigorous, productive, upright, nearly thornless canes. Large dark red firm fruit with good flavor"
+        },
+        {
+            type: "Raspberry",
+            name: "Joan J",
+            category: "Red raspberries, everbearing",
+            harvest_time_unparsed: "early fall crop",
+            description:
+                "From England. Early fall crop, about with Autumn Bliss. Vigorous thornless canes. Large somewhat dark red fruit with good firmness and quality"
+        },
+        {
+            type: "Raspberry",
+            name: "Autumn Bliss",
+            category: "Red raspberries, everbearing",
+            harvest_time_unparsed: "late August",
+            description:
+                "From East Malling, England. Early fall crop in late August, about two weeks before Heritage. Moderately vigorous, slow-spreading canes with few spines. Productive. Large highly flavorful fruit"
+        },
+        {
+            type: "Raspberry",
+            name: "Autumn Britten",
+            category: "Red raspberries, everbearing",
+            harvest_time_unparsed: "early fall crop",
+            description:
+                "From East Malling, England. Early fall crop, slightly after Autumn Bliss. More vigorous canes. Productive with firm flavorful fruit"
+        },
+        {
+            type: "Raspberry",
+            name: "Jaclyn",
+            category: "Red raspberries, everbearing",
+            harvest_time_unparsed: "early fall crop",
+            description:
+                "From Maryland. Early fall crop. Tall vigorous canes. Long, large, dark red fruit that can be hard to detach. Good flavor. Very susceptible to leaf rust"
+        },
+        {
+            type: "Raspberry",
+            name: "Fall Red",
+            category: "Red raspberries, everbearing",
+            harvest_time_unparsed: "early fall crop",
+            description:
+                "From New Hampshire. Early fall crop. Medium to short vigorous suckering canes with moderate spines. Medium soft fruit with good flavor. Recommended for most Maine sites"
+        },
+        {
+            type: "Raspberry",
+            name: "Caroline",
+            category: "Red raspberries, everbearing",
+            harvest_time_unparsed: "mid to late fall crop",
+            description:
+                "From Maryland. Mid to late fall crop that may be too late for northern Maine. Tall vigorous productive plants with medium to large good-flavored fruit"
+        },
+        {
+            type: "Raspberry",
+            name: "Heritage",
+            category: "Red raspberries, everbearing",
+            harvest_time_unparsed: "relatively late fall crop",
+            description:
+                "From New York. Relatively late fall crop, too late except in southern Maine. Tall rugged thorny canes. Very high yielding. Medium fruit with good color, flavor, and firmness. Not recommended where season is short"
+        },
+        {
+            type: "Raspberry",
+            name: "Anne",
+            category: "Yellow raspberries, everbearing",
+            harvest_time_unparsed: "slightly before Heritage",
+            description:
+                "From Maryland. Fall crop slightly before Heritage and may be too late for northern regions. Tall moderately vigorous canes. Large pale yellow fruit with very good flavor"
+        },
+        {
+            type: "Raspberry",
+            name: "Fallgold",
+            category: "Yellow raspberries, everbearing",
+            AKA: ["Fall Gold"],
+            harvest_time_unparsed: "relatively early fall crop",
+            description:
+                "From New Hampshire. Relatively early fall crop. Hardy, very vigorous, suckering canes. Medium yellow fruit with pink blush, soft and crumbly, excellent flavor"
+        },
+        {
+            type: "Raspberry",
+            name: "Kiwigold",
+            category: "Yellow raspberries, everbearing",
+            harvest_time_unparsed: "slightly earlier than Heritage",
+            description:
+                "From New Zealand. Heritage-derived. Slightly earlier than Heritage and may be too late for northern regions. Vigorous thorny fairly tall productive canes. Yellow fruit with dark orange to pink blush and good flavor"
+        },
+        {
+            type: "Raspberry",
+            name: "Brandywine",
+            category: "Purple raspberries, summer-bearing",
+            harvest_time_unparsed: "later than most red raspberries",
+            description:
+                "From New York. Later than most red raspberries. Very tall productive thorny canes; suckers from crown only. Susceptible to crown gall and partly resistant to many other diseases. Large reddish-purple tart fruit"
+        },
+        {
+            type: "Raspberry",
+            name: "Royalty",
+            category: "Purple raspberries, summer-bearing",
+            harvest_time_unparsed: "late",
+            description:
+                "From New York. Late. Very productive tall vigorous thorny canes. Immune to the large raspberry aphid, but susceptible to Phytophthora root rot and crown gall. Large irregular reddish-purple fruit, soft but flavorful fresh"
+        },
+        {
+            type: "Raspberry",
+            name: "Bristol",
+            category: "Black raspberries",
+            description:
+                "From New York. Vigorous canes susceptible to disease. Medium to large good-quality fruit with good yield"
+        },
+        {
+            type: "Raspberry",
+            name: "Blackhawk",
+            category: "Black raspberries",
+            description:
+                "From Iowa. Relatively hardy, productive, vigorous plants. Medium-large glossy fruit with good flavor"
+        },
+        {
+            type: "Raspberry",
+            name: "Jewel",
+            category: "Black raspberries",
+            harvest_time_unparsed: "mid-season",
+            description:
+                "From New York. Mid-season. Possibly the hardiest black raspberry listed. Vigorous, erect, productive plants with somewhat better disease resistance than other varieties. Firm glossy good-quality fruit"
+        },
+        {
+            type: "Raspberry",
+            name: "Mac Black",
+            category: "Black raspberries",
+            harvest_time_unparsed: "late",
+            description:
+                "From Michigan. Late. Vigorous erect canes. Medium to large soft fruit with good flavor"
+        },
+        {
+            type: "Raspberry",
+            name: "Niwot",
+            category: "Black raspberries",
+            harvest_time_unparsed: "late August-early September",
+            description:
+                "From Colorado. Everbearing black raspberry. Tall trailing canes produce summer and fall crops; fall crop starts late August to early September and may be too late or insufficiently hardy for northern Maine. Needs support"
+        },
+        {
+            type: "Blackberry",
+            name: "Darrow",
+            category: "Blackberries, thorny",
+            harvest_time_unparsed: "long harvest season",
+            description:
+                "From New York. Hardy vigorous canes with large thorns. Good yields over a long harvest season. Large glossy excellent-quality fruit. Susceptible to viruses and may be short-lived"
+        },
+        {
+            type: "Blackberry",
+            name: "Illini",
+            category: "Blackberries, thorny",
+            description:
+                "From Illinois. Hardy with large attractive fruit. Thick erect canes with many large thorns. More productive than Darrow, but less flavorful"
+        },
+        {
+            type: "Blackberry",
+            name: "Nelson",
+            category: "Blackberries, thorny",
+            description:
+                "From an established population in northern Maine. Considered very hardy. Erect thorny canes best supported by stakes or trellis. Small to medium fruit with fair flavor. Not widely available"
+        },
+        {
+            type: "Blackberry",
+            name: "Chester",
+            category: "Blackberries, thornless",
+            harvest_time_unparsed: "late",
+            description:
+                "Late-season and possibly hardier than other thornless varieties. Resistant to cane blight. High-quality fruit that tends to be tart"
+        },
+        {
+            type: "Blackberry",
+            name: "Triple Crown",
+            category: "Blackberries, thornless",
+            harvest_time_unparsed: "early-midseason",
+            description:
+                "Early-midseason. Vigorous semi-erect canes. Large fruit with good flavor"
+        },
+        {
+            type: "Blackberry",
+            name: "Prime Jan",
+            category: "Blackberries, everbearing",
+            description:
+                "Newer everbearing blackberry. Source says fall crop ripens too late to be practical anywhere in Maine and is not recommended"
+        },
+        {
+            type: "Blackberry",
+            name: "Prime-Ark 45",
+            category: "Blackberries, everbearing",
+            description:
+                "Newer everbearing blackberry. Source says fall crop ripens too late to be practical anywhere in Maine and is not recommended"
+        },
+        {
+            type: "Blackberry",
+            name: "Freedom",
+            category: "Blackberries, everbearing",
+            description:
+                "Newer everbearing blackberry. Source says fall crop ripens too late to be practical anywhere in Maine and is not recommended"
+        },
+        {
+            type: "Blackberry",
+            name: "Traveler",
+            category: "Blackberries, everbearing",
+            description:
+                "Newer everbearing blackberry. Source says fall crop ripens too late to be practical anywhere in Maine and is not recommended"
+        }
+    ]
+}

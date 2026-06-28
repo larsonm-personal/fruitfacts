@@ -1,0 +1,105 @@
+# Source Parsing Workflow
+
+## Goal
+
+Turn one candidate source into a FruitFacts JSON5 reference while leaving behind
+enough tooling and notes to make the next source easier.
+
+## Choosing A First Source
+
+Prefer sources with one of these shapes:
+
+- HTML headings followed by repeated `Cultivar: description` paragraphs
+- HTML tables with real `tr`, `th`, and `td` tags
+- Born-digital PDFs where `pdftotext -layout` keeps rows aligned
+- PDF tables with plain text, not scanned page images
+
+Avoid image-only scans and complex multi-column PDFs for the first pass unless
+the goal is OCR work.
+
+The first worked example used UMaine Bulletin 2172 because the page has stable
+HTML headings and repeated cultivar paragraphs. It did not use table tags, but
+the text blocks were regular enough to parse.
+
+## Tools Used
+
+- `rg` for finding similar existing reference files and checking for duplicate
+  source titles
+- `Invoke-WebRequest` for quick URL status checks and HTML inspection
+- Python `html.parser` from the standard library for dependency-free block
+  extraction
+- Python `html.parser` table hooks for simple HTML comparison tables
+- A browser-like `User-Agent` header for sources that reject default Python
+  urllib requests
+- `pdftotext -layout` for PDF title-page and table sanity checks
+- PowerShell plus `ConvertFrom-Json` for lightweight JSON5-shape checks after
+  converting unquoted keys in memory
+- Backend import tests when the change risk justifies the slower validation
+
+## Helper Script Pattern
+
+Source-specific helpers should normally:
+
+1. Fetch or read the source.
+2. Extract repeatable blocks such as headings, table rows, or cultivar
+   paragraphs.
+3. Print a draft to stdout rather than writing repo files directly.
+4. Keep the extraction mechanical.
+5. Leave judgment, paraphrase, field selection, and source interpretation for
+   the curated JSON5 edit.
+
+Example:
+
+```powershell
+python helper_scripts/extract_umaine_2172.py > $env:TEMP\umaine_2172_draft.json5
+```
+
+The helper output is a draft. Do not treat it as reviewed data.
+
+## The Art
+
+- Capture source metadata first: title, author, URL, publication dates,
+  accessed date, source type, and location.
+- Preserve source order unless another local file gives a stronger pattern.
+- Use top-level `categories` when source headings carry real meaning.
+- Use `category` on each plant to retain table section context.
+- Put vague timing in `harvest_time_unparsed`, or in `description`, rather than
+  inventing exact dates.
+- Prefer concise paraphrases over copied source paragraphs.
+- Keep disease, hardiness, flavor, fruit quality, and commercial suitability in
+  `description` unless the source gives a clean structure that matches existing
+  fields.
+- Add `needs_help: true` when photos, ambiguous names, source omissions, or
+  possible aliases still need review.
+- Do not clear the candidate queue entry silently. Mark it `encoded` and note
+  the reference path and helper script.
+
+## UMaine 2172 Notes
+
+The UMaine page was parsed from HTML, not PDF. The helper script:
+
+- Ignores script, style, and footer noise
+- Extracts headings and paragraphs
+- Detects source categories such as red summer-bearing raspberries
+- Pulls `Name: description` cultivar paragraphs into draft plant records
+- Converts common web punctuation to ASCII
+- Emits JSON5-like output to stdout for review
+
+The committed reference file was then curated by hand. Long source paragraphs
+were compressed into concise descriptions, and vague ripening phrases were kept
+as `harvest_time_unparsed`.
+
+## UMaine 2184 Notes
+
+The UMaine strawberry page uses a related but slightly different structure:
+
+- Season headings such as Early Season, Midseason, and Day-Neutral
+- Cultivar narrative paragraphs, sometimes split as a name-only paragraph
+  followed by a description paragraph
+- A summary table with variety, ripening time, pest resistance, and comments
+
+The helper script parses both the narrative blocks and the summary table, then
+merges table notes into the draft plant records. The curated reference keeps the
+season heading as each plant `category`, uses table ripening values as
+`harvest_time_unparsed` where appropriate, and keeps disease resistance and
+home-garden or plasticulture notes in concise descriptions.
