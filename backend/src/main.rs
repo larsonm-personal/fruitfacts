@@ -91,6 +91,7 @@ async fn main() -> std::io::Result<()> {
             .service(queries::get_plant)
             .service(queries::search::variety_search)
             .service(queries::list::create_list)
+            .service(queries::list::add_plant_to_list)
             // combine later?
             .service(queries::map::locations_search)
     })
