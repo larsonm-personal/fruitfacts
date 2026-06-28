@@ -8,11 +8,15 @@ reference files yet.
 JSON5 is preferred over a spreadsheet because it is versionable, commentable,
 and already matches the project data style.
 
-## Queue Location
+## Queue Locations
 
-The starter queue lives here:
+The active queue lives here:
 
 `ai_tool_plan_files/tasks/candidate_sources.json5`
+
+The example queue shape lives here:
+
+`ai_tool_plan_files/tasks/candidate_sources.example.json5`
 
 Keep rejected or low-priority candidates in the same file until the list becomes
 large enough to split.

@@ -1,0 +1,32 @@
+{
+    notes: [
+        "Example candidate source queue entries"
+    ],
+    candidates: [
+        /*
+        {
+            id: "institution-short-title-year",
+            status: "new",
+            priority: "medium",
+            title: "Example fruit variety guide",
+            institution: "Example University Extension",
+            authors: ["First Last"],
+            region: "Example region",
+            crops: ["Example crop"],
+            source_type: "state extension guide",
+            landing_url: "https://example.edu/example-guide",
+            download_url: "https://example.edu/example-guide.pdf",
+            discovered: "YYYY-MM-DD",
+            discovered_by: "manual search",
+            value_summary: "Cultivar-level data this source appears to contain",
+            asset_decision: "revisit later",
+            proposed_reference_path:
+                "plant_database/references/Example/Example Guide.json5",
+            duplicate_check: "Unknown",
+            notes: [
+                "Short source-specific notes"
+            ]
+        }
+        */
+    ]
+}

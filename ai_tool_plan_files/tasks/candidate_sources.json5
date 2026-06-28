@@ -1,32 +1,374 @@
 {
     notes: [
-        "Candidate sources that need triage before download, stubbing, or encoding"
+        "Initial candidate queue created 2026-06-28",
+        "Candidates are one source per entry and still need download or stub work"
     ],
     candidates: [
-        /*
         {
-            id: "institution-short-title-year",
-            status: "new",
-            priority: "medium",
-            title: "Example fruit variety guide",
-            institution: "Example University Extension",
-            authors: ["First Last"],
-            region: "Example region",
-            crops: ["Example crop"],
+            id: "ksre-small-and-tree-fruit-cultivars-mf1028",
+            status: "accepted",
+            priority: "high",
+            title: "Small- and Tree-Fruit Cultivars",
+            institution: "Kansas State University Extension",
+            region: "Kansas",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Blackberry",
+                "Blueberry",
+                "Cherry",
+                "Grape",
+                "Peach",
+                "Pear",
+                "Plum",
+                "Raspberry",
+                "Strawberry"
+            ],
             source_type: "state extension guide",
-            landing_url: "https://example.edu/example-guide",
-            download_url: "https://example.edu/example-guide.pdf",
-            discovered: "YYYY-MM-DD",
-            discovered_by: "manual search",
-            value_summary: "Cultivar-level data this source appears to contain",
-            asset_decision: "revisit later",
+            landing_url:
+                "https://bookstore.ksre.ksu.edu/item/small-and-tree-fruit-cultivars_MF1028",
+            download_url:
+                "https://bookstore.ksre.ksu.edu/download/small-and-tree-fruit-cultivars_MF1028",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Cultivar tables for small fruits and tree fruits adapted to Kansas",
+            asset_decision: "download and stub",
             proposed_reference_path:
-                "plant_database/references/Example/Example Guide.json5",
-            duplicate_check: "Unknown",
+                "plant_database/references/Kansas/KSRE Small- and Tree-Fruit Cultivars.json5",
+            duplicate_check:
+                "No Kansas-specific extension cultivar guide found in existing references",
             notes: [
-                "Short source-specific notes"
+                "Landing page and download endpoint both returned 200"
+            ]
+        },
+        {
+            id: "unl-fruit-tree-cultivars-nebraska-g2354",
+            status: "accepted",
+            priority: "high",
+            title: "Fruit Tree Cultivars for Nebraska",
+            institution: "University of Nebraska-Lincoln Extension",
+            region: "Nebraska",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Cherry",
+                "Peach",
+                "Pear",
+                "Plum"
+            ],
+            publication_number: "G2354",
+            source_type: "state extension guide",
+            landing_url:
+                "https://extensionpubs.unl.edu/publication/g2354/fruit-tree-cultivars-for-nebraska",
+            download_url:
+                "https://extensionpubs.unl.edu/publication/g2354/na/pdf/view",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Nebraska tree-fruit cultivar recommendations with web and PDF versions",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Nebraska/UNL G2354 Fruit Tree Cultivars for Nebraska.json5",
+            duplicate_check:
+                "No Nebraska-specific extension reference found in existing references",
+            notes: [
+                "Landing page and PDF endpoint both returned 200"
+            ]
+        },
+        {
+            id: "iowa-state-fruit-cultivars-for-iowa-pm453",
+            status: "accepted",
+            priority: "high",
+            title: "Fruit Cultivars for Iowa",
+            institution: "Iowa State University Extension and Outreach",
+            region: "Iowa",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Blackberry",
+                "Blueberry",
+                "Cherry",
+                "Grape",
+                "Peach",
+                "Pear",
+                "Plum",
+                "Raspberry",
+                "Strawberry"
+            ],
+            publication_number: "PM453",
+            source_type: "state extension guide",
+            landing_url:
+                "https://shop.iastate.edu/extension/farm-environment/crops-and-soils/fruit-crops/pm453.html",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Broad cultivar guide for Iowa fruit crops with a download control for PM453.pdf",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Iowa/Iowa State PM453 Fruit Cultivars for Iowa.json5",
+            duplicate_check:
+                "No Iowa-specific extension cultivar guide found in existing references",
+            notes: [
+                "Landing page returned 200",
+                "Page exposes a hidden download controller for PM453.pdf",
+                "A stable direct download URL still needs to be captured before DVC work"
+            ]
+        },
+        {
+            id: "umaine-growing-peaches-in-maine-2068",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Peaches in Maine",
+            institution: "University of Maine Cooperative Extension",
+            region: "Maine",
+            crops: ["Peach"],
+            publication_number: "Bulletin 2068",
+            source_type: "state extension guide",
+            landing_url: "https://extension.umaine.edu/publications/2068e/",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Maine peach growing guide with cultivar discussion and Northeast source links",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/Maine/UMaine 2068 Growing Peaches in Maine.json5",
+            duplicate_check:
+                "No Maine-specific reference directory found in existing references",
+            notes: [
+                "Canonical source appears to be the web page",
+                "Page returned 200 and includes cultivar-level content"
+            ]
+        },
+        {
+            id: "unh-growing-peaches-and-nectarines-home-garden",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Peaches and Nectarines in the Home Garden",
+            institution: "University of New Hampshire Extension",
+            region: "New Hampshire",
+            crops: ["Nectarine", "Peach"],
+            source_type: "state extension guide",
+            download_url:
+                "https://extension.unh.edu/resources/files/Resource000586_Rep608.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "citation from UMaine peach guide",
+            value_summary:
+                "Cold-region home garden peach and nectarine guide linked from UMaine",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/New Hampshire/UNH Growing Peaches and Nectarines in the Home Garden.json5",
+            duplicate_check:
+                "Existing New Hampshire references are breeding releases, not this home garden guide",
+            notes: [
+                "PDF returned 200 from the UNH Extension domain"
+            ]
+        },
+        {
+            id: "psu-scab-resistant-apple-varieties-home-orchards",
+            status: "accepted",
+            priority: "medium",
+            title: "Scab-Resistant Apple Varieties for Home Orchards",
+            institution: "Penn State Extension",
+            region: "Pennsylvania",
+            crops: ["Apple"],
+            source_type: "state extension guide",
+            landing_url:
+                "https://extension.psu.edu/scab-resistant-apple-varieties-for-home-orchards/",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Home-orchard apple cultivar table focused on disease-resistant varieties",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/Pennsylvania/Penn State Scab-Resistant Apple Varieties for Home Orchards.json5",
+            duplicate_check:
+                "No Penn State home-orchard apple cultivar reference found in existing references",
+            notes: [
+                "Web page returned 200",
+                "Consider pairing with the non-scab-resistant apple table"
+            ]
+        },
+        {
+            id: "psu-non-scab-resistant-apple-varieties-home-orchards",
+            status: "accepted",
+            priority: "medium",
+            title: "Home Orchards: Table 4.2. Non-Scab-Resistant Apple Varieties",
+            institution: "Penn State Extension",
+            region: "Pennsylvania",
+            crops: ["Apple"],
+            source_type: "state extension guide",
+            landing_url:
+                "https://extension.psu.edu/home-orchards-table-4-2-non-scab-resistant-apple-varieties/",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Home-orchard table of apple varieties with harvest and disease context",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/Pennsylvania/Penn State Non-Scab-Resistant Apple Varieties.json5",
+            duplicate_check:
+                "No Penn State home-orchard apple cultivar reference found in existing references",
+            notes: [
+                "Web page returned 200",
+                "Likely companion to the scab-resistant apple table"
+            ]
+        },
+        {
+            id: "psu-home-orchards-stone-fruit-variety-selection",
+            status: "accepted",
+            priority: "medium",
+            title: "Home Orchards: Stone Fruit Variety Selection",
+            institution: "Penn State Extension",
+            region: "Pennsylvania",
+            crops: [
+                "Apricot",
+                "Cherry",
+                "Nectarine",
+                "Peach",
+                "Plum"
+            ],
+            source_type: "state extension guide",
+            landing_url:
+                "https://extension.psu.edu/home-orchards-stone-fruit-variety-selection/",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Home-orchard stone fruit variety recommendations for Pennsylvania conditions",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/Pennsylvania/Penn State Stone Fruit Variety Selection.json5",
+            duplicate_check:
+                "No Penn State home-orchard stone fruit reference found in existing references",
+            notes: [
+                "Web page returned 200"
+            ]
+        },
+        {
+            id: "umd-important-apple-cultivars-mid-atlantic-eb-2023-0684",
+            status: "accepted",
+            priority: "high",
+            title: "Important Apple Cultivars in the Mid-Atlantic Region",
+            institution: "University of Maryland Extension",
+            region: "Mid-Atlantic",
+            crops: ["Apple"],
+            publication_number: "EB-2023-0684",
+            source_type: "regional extension guide",
+            landing_url:
+                "https://extension.umd.edu/resource/important-apple-cultivars-mid-atlantic-region-eb-2023-0684",
+            download_url:
+                "https://extension.umd.edu/sites/extension.umd.edu/files/publications/EB-2023-0684_ImportantAppleCultivarsintheMid-AtlanticRegion_ada.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Modern Mid-Atlantic apple cultivar guide with direct PDF",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Maryland/UMD EB-2023-0684 Important Apple Cultivars in the Mid-Atlantic Region.json5",
+            duplicate_check:
+                "Existing Maryland apple reference is a UMD breeding release list, not this regional cultivar guide",
+            notes: [
+                "Landing page and PDF returned 200"
+            ]
+        },
+        {
+            id: "lsu-louisiana-home-orchard-deciduous-tree-fruits",
+            status: "accepted",
+            priority: "high",
+            title: "The Louisiana Home Orchard: Deciduous Tree Fruits",
+            institution: "LSU AgCenter",
+            region: "Louisiana",
+            crops: [
+                "Apple",
+                "Fig",
+                "Mayhaw",
+                "Peach",
+                "Pear",
+                "Persimmon",
+                "Plum"
+            ],
+            source_type: "state extension guide",
+            landing_url: "https://www.lsuagcenter.com/articles/page1753363828432",
+            download_url:
+                "https://www.lsuagcenter.com/~/media/system/4/8/f/9/48f9c697389440401d293f1ca9028600/the%20louisiana%20home%20orchard%20deciduous%20tree%20fruitspdf.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Home orchard deciduous fruit guide with Louisiana cultivar recommendations",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Louisiana/LSU The Louisiana Home Orchard Deciduous Tree Fruits.json5",
+            duplicate_check:
+                "Existing Louisiana reference is an LSU release list, not this home orchard guide",
+            notes: [
+                "Landing page and PDF returned 200"
+            ]
+        },
+        {
+            id: "missouri-fruit-cultivars-home-plantings-g6005",
+            status: "accepted",
+            priority: "medium",
+            title: "Fruit Cultivars for Home Plantings",
+            institution: "University of Missouri Extension",
+            region: "Missouri",
+            crops: [
+                "Apple",
+                "Blackberry",
+                "Blueberry",
+                "Grape",
+                "Peach",
+                "Pear",
+                "Plum",
+                "Raspberry",
+                "Strawberry"
+            ],
+            publication_number: "G6005",
+            source_type: "state extension guide",
+            download_url:
+                "https://extension.missouri.edu/media/wysiwyg/Extensiondata/Pub/pdf/agguides/hort/g06005.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Broad Missouri home fruit cultivar guide across tree fruit and small fruit",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Missouri/MU G6005 Fruit Cultivars for Home Plantings.json5",
+            duplicate_check:
+                "Existing Missouri references include peach culture and Murphy Orchards, but not this broad G6005 cultivar guide",
+            notes: [
+                "Direct official PDF returned 200",
+                "A current landing page was not found during this pass"
+            ]
+        },
+        {
+            id: "wisconsin-growing-apricots-cherries-peaches-plums-a3639",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Apricots, Cherries, Peaches and Plums in Wisconsin",
+            institution: "University of Wisconsin Extension",
+            region: "Wisconsin",
+            crops: [
+                "Apricot",
+                "Cherry",
+                "Peach",
+                "Plum"
+            ],
+            publication_number: "A3639",
+            source_type: "state extension guide",
+            download_url: "https://learningstore.extension.wisc.edu/assets/pdfs/A3639.PDF",
+            discovered: "2026-06-28",
+            discovered_by: "citation from UMaine peach guide",
+            value_summary:
+                "Upper Midwest stone fruit guide with cultivar recommendations",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Wisconsin/A3639 Growing Apricots Cherries Peaches and Plums in Wisconsin.json5",
+            duplicate_check:
+                "Existing Wisconsin reference covers apples, not this stone fruit guide",
+            notes: [
+                "Direct PDF returned 200",
+                "Old UWEX PDF URL also still returned 200, but the extension.wisc.edu URL is preferred"
             ]
         }
-        */
     ]
 }

@@ -84,7 +84,9 @@ Completed setup passes:
 4. Added a candidate-source JSON5 queue format
 5. Added a checklist for deciding whether a source deserves a downloaded asset,
    a JSON5 stub, both, or neither
-6. Added the starter `ai_tool_plan_files/tasks/candidate_sources.json5` queue
+6. Added `ai_tool_plan_files/tasks/candidate_sources.example.json5` as the
+   queue template
+7. Added the initial `ai_tool_plan_files/tasks/candidate_sources.json5` queue
 
 Useful next passes:
 
