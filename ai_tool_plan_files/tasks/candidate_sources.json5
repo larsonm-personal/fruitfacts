@@ -369,6 +369,455 @@
                 "Direct PDF returned 200",
                 "Old UWEX PDF URL also still returned 200, but the extension.wisc.edu URL is preferred"
             ]
+        },
+        {
+            id: "okstate-home-fruit-planting-guide-hla-6222",
+            status: "accepted",
+            priority: "high",
+            title: "Home Fruit Planting Guide",
+            institution: "Oklahoma State University Extension",
+            region: "Oklahoma",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Blackberry",
+                "Blueberry",
+                "Cherry",
+                "Grape",
+                "Nectarine",
+                "Peach",
+                "Pear",
+                "Persimmon",
+                "Plum",
+                "Raspberry",
+                "Strawberry"
+            ],
+            publication_number: "HLA-6222",
+            source_type: "state extension guide",
+            landing_url:
+                "https://extension.okstate.edu/fact-sheets/home-fruit-planting-guide.html",
+            download_url:
+                "https://extension.okstate.edu/fact-sheets/print-publications/hla/home-fruit-planting-guide-hla-6222.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Broad Oklahoma home fruit guide with cultivar recommendations and harvest-season context",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Oklahoma/OSU HLA-6222 Home Fruit Planting Guide.json5",
+            duplicate_check:
+                "Existing Oklahoma reference is HLA-6210 apple and peach varieties; this broader home fruit guide is separate",
+            notes: [
+                "Official page and PDF path found by search",
+                "PowerShell fetch hit an Oklahoma State Cloudflare challenge during link scraping"
+            ]
+        },
+        {
+            id: "usu-apple-production-variety-recommendations-utah-home-garden",
+            status: "accepted",
+            priority: "high",
+            title: "Apple Production and Variety Recommendations for the Utah Home Garden",
+            institution: "Utah State University Extension",
+            region: "Utah",
+            crops: ["Apple"],
+            source_type: "state extension guide",
+            landing_url:
+                "https://extension.usu.edu/yardandgarden/research/apple-production-and-variety-recommendations-for-the-utah-home-garden",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Utah apple guide with cultivar recommendations, hardiness, fire blight notes, and harvest timing",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/Utah/USU Apple Production and Variety Recommendations for the Utah Home Garden.json5",
+            duplicate_check:
+                "Existing Utah references cover Uintah Basin tree fruit and peaches, not this statewide apple guide",
+            notes: [
+                "Page has several file links, but the web page itself appears to be the useful source"
+            ]
+        },
+        {
+            id: "usu-grape-varieties-in-utah",
+            status: "accepted",
+            priority: "medium",
+            title: "Grape Varieties in Utah",
+            institution: "Utah State University Extension",
+            region: "Utah",
+            crops: ["Grape"],
+            source_type: "state extension guide",
+            landing_url:
+                "https://extension.usu.edu/yardandgarden/research/grape-varieties-in-utah",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Utah grape variety guide with tabled cultivar traits for American, French-American, and wine grapes",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/Utah/USU Grape Varieties in Utah.json5",
+            duplicate_check:
+                "No Utah grape-specific extension reference found in existing references",
+            notes: [
+                "Web page returned useful cultivar-level content",
+                "No stable direct PDF was captured during this pass"
+            ]
+        },
+        {
+            id: "usu-backyard-fruit-production-utah-high-mountain-valleys",
+            status: "accepted",
+            priority: "medium",
+            title: "Backyard Fruit Production in Utah's High Mountain Valleys",
+            institution: "Utah State University Extension",
+            region: "Utah",
+            crops: [
+                "Apple",
+                "Blackberry",
+                "Bush Cherry",
+                "Currant",
+                "Elderberry",
+                "Gooseberry",
+                "Grape",
+                "Haskap",
+                "Peach",
+                "Pear",
+                "Plum",
+                "Raspberry",
+                "Serviceberry",
+                "Strawberry",
+                "Tart Cherry"
+            ],
+            source_type: "regional extension guide",
+            landing_url:
+                "https://extension.usu.edu/yardandgarden/research/backyard-fruit-production-in-utahs-high-mountain-valleys",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Cold and short-season Utah fruit guide with suitability notes across tree fruit, berries, grapes, and minor fruits",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/Utah/USU Backyard Fruit Production in Utah High Mountain Valleys.json5",
+            duplicate_check:
+                "Existing Utah Uintah Basin guide is tree-fruit focused; this one is broader and high-mountain oriented",
+            notes: [
+                "Web page returned useful regional crop and cultivar suitability content"
+            ]
+        },
+        {
+            id: "uga-home-garden-apples-c740",
+            status: "accepted",
+            priority: "high",
+            title: "Home Garden Apples",
+            institution: "University of Georgia Cooperative Extension",
+            region: "Georgia",
+            crops: ["Apple"],
+            publication_number: "C 740",
+            source_type: "state extension guide",
+            landing_url:
+                "https://fieldreport.caes.uga.edu/publications/C740/home-garden-apples/",
+            download_url:
+                "https://fieldreport.caes.uga.edu/wp-content/uploads/2025/08/C-740_8.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Georgia apple guide with cultivar suitability, disease resistance, pollination, and ripening-season notes",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Georgia/UGA C740 Home Garden Apples.json5",
+            duplicate_check:
+                "Existing Georgia references include peaches, blueberries, muscadines, pecans, and releases, but no Georgia apple guide",
+            notes: [
+                "Landing page and PDF link were found on the official UGA page"
+            ]
+        },
+        {
+            id: "uga-home-garden-pears-c742",
+            status: "accepted",
+            priority: "high",
+            title: "Home Garden Pears",
+            institution: "University of Georgia Cooperative Extension",
+            region: "Georgia",
+            crops: ["Pear"],
+            publication_number: "C 742",
+            source_type: "state extension guide",
+            landing_url:
+                "https://fieldreport.caes.uga.edu/publications/C742/home-garden-pears/",
+            download_url:
+                "https://fieldreport.caes.uga.edu/wp-content/uploads/2022/07/C742.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Georgia pear guide with Oriental and European pear cultivar recommendations and pollination notes",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Georgia/UGA C742 Home Garden Pears.json5",
+            duplicate_check:
+                "No Georgia pear-specific extension reference found in existing references",
+            notes: [
+                "Landing page and PDF link were found on the official UGA page",
+                "Landing page shows a newer review date than the current PDF path suggests"
+            ]
+        },
+        {
+            id: "uga-home-garden-bunch-grapes-b807",
+            status: "accepted",
+            priority: "medium",
+            title: "Home Garden Bunch Grapes",
+            institution: "University of Georgia Cooperative Extension",
+            region: "Georgia",
+            crops: ["Grape"],
+            publication_number: "B 807",
+            source_type: "state extension guide",
+            landing_url:
+                "https://fieldreport.caes.uga.edu/publications/B807/home-garden-bunch-grapes/",
+            download_url:
+                "https://fieldreport.caes.uga.edu/wp-content/uploads/2025/08/B-807_10.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Georgia bunch grape guide with cultivar tables, use notes, disease resistance, and ripening dates",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Georgia/UGA B807 Home Garden Bunch Grapes.json5",
+            duplicate_check:
+                "Existing Georgia grape references focus on muscadines, not bunch grapes",
+            notes: [
+                "Landing page and PDF link were found on the official UGA page"
+            ]
+        },
+        {
+            id: "uga-home-garden-raspberries-blackberries-c766",
+            status: "accepted",
+            priority: "medium",
+            title: "Home Garden Raspberries and Blackberries",
+            institution: "University of Georgia Cooperative Extension",
+            region: "Georgia",
+            crops: [
+                "Blackberry",
+                "Raspberry"
+            ],
+            publication_number: "C 766",
+            source_type: "state extension guide",
+            landing_url:
+                "https://fieldreport.caes.uga.edu/publications/C766/home-garden-raspberries-and-blackberries/",
+            download_url:
+                "https://fieldreport.caes.uga.edu/wp-content/uploads/2025/08/C-766_4.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Georgia caneberry guide with recommended cultivars and management notes for home gardens",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Georgia/UGA C766 Home Garden Raspberries and Blackberries.json5",
+            duplicate_check:
+                "No Georgia caneberry-specific extension reference found in existing references",
+            notes: [
+                "Landing page and PDF link were found on the official UGA page"
+            ]
+        },
+        {
+            id: "virginia-growing-apples-422-023",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Apples in Virginia",
+            institution: "Virginia Cooperative Extension",
+            region: "Virginia",
+            crops: ["Apple"],
+            publication_number: "422-023",
+            source_type: "state extension guide",
+            landing_url: "https://pubs.ext.vt.edu/422/422-023/422-023.html",
+            download_url:
+                "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/422/422-023/SPES-233.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Virginia apple guide with cultivar selection, disease resistance, maturity, and rootstock context",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Virginia/VCE 422-023 Growing Apples in Virginia.json5",
+            duplicate_check:
+                "Existing Virginia references cover apricot evaluations and commercial grapes, not home apple growing",
+            notes: [
+                "Landing page and PDF link were found on the official Virginia Cooperative Extension page"
+            ]
+        },
+        {
+            id: "virginia-growing-cherries-422-018",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Cherries in Virginia",
+            institution: "Virginia Cooperative Extension",
+            region: "Virginia",
+            crops: ["Cherry"],
+            publication_number: "422-018",
+            source_type: "state extension guide",
+            landing_url: "https://pubs.ext.vt.edu/422/422-018/422-018.html",
+            download_url:
+                "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/422/422-018/SPES-258.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Virginia cherry guide with sweet and sour cherry cultivar recommendations and site limitations",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Virginia/VCE 422-018 Growing Cherries in Virginia.json5",
+            duplicate_check:
+                "Existing Virginia references do not include a cherry-specific extension guide",
+            notes: [
+                "Landing page and PDF link were found on the official Virginia Cooperative Extension page"
+            ]
+        },
+        {
+            id: "virginia-growing-peaches-nectarines-422-019",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Peaches and Nectarines in Virginia",
+            institution: "Virginia Cooperative Extension",
+            region: "Virginia",
+            crops: [
+                "Nectarine",
+                "Peach"
+            ],
+            publication_number: "422-019",
+            source_type: "state extension guide",
+            landing_url: "https://pubs.ext.vt.edu/422/422-019/422-019.html",
+            download_url:
+                "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/422/422-019/SPES-232.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Virginia peach and nectarine guide with cultivar, ripening-season, and disease-resistance context",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Virginia/VCE 422-019 Growing Peaches and Nectarines in Virginia.json5",
+            duplicate_check:
+                "Existing Virginia references do not include a peach or nectarine extension guide",
+            notes: [
+                "Landing page and PDF link were found on the official Virginia Cooperative Extension page"
+            ]
+        },
+        {
+            id: "nc-state-smaller-orchard-production-guide",
+            status: "accepted",
+            priority: "medium",
+            title: "North Carolina Production Guide for Smaller Orchard Plantings",
+            institution: "NC State Extension",
+            region: "North Carolina",
+            crops: [
+                "Apple",
+                "Cherry",
+                "Peach",
+                "Pear",
+                "Plum"
+            ],
+            source_type: "state extension guide",
+            landing_url:
+                "https://content.ces.ncsu.edu/north-carolina-production-guide-for-smaller-orchard-plantings",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "North Carolina smaller-orchard guide with cultivar selection, site, training, pruning, and pest context",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/North Carolina/NC State Smaller Orchard Production Guide.json5",
+            duplicate_check:
+                "Existing North Carolina references include releases, muscadine guide, and western NC peach evaluations, not this broad orchard guide",
+            notes: [
+                "Web page returned from official NC State Extension Publications",
+                "Linked PDFs on the page are mostly supporting pest or regional references, not the primary source"
+            ]
+        },
+        {
+            id: "nc-state-extension-gardener-small-fruits",
+            status: "accepted",
+            priority: "medium",
+            title: "14. Small Fruits",
+            institution: "NC State Extension",
+            region: "North Carolina",
+            crops: [
+                "Blackberry",
+                "Blueberry",
+                "Grape",
+                "Kiwifruit",
+                "Muscadine",
+                "Raspberry",
+                "Strawberry"
+            ],
+            publication_number: "AG-831",
+            source_type: "extension gardener handbook chapter",
+            landing_url:
+                "https://content.ces.ncsu.edu/extension-gardener-handbook/14-small-fruits",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "North Carolina small fruit handbook chapter with crop selection and cultivar-level guidance",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/North Carolina/NC State Extension Gardener Handbook 14 Small Fruits.json5",
+            duplicate_check:
+                "Existing North Carolina references include muscadine production and release lists, not this broad small-fruit chapter",
+            notes: [
+                "Correct chapter URL is 14-small-fruits",
+                "A first scrape of 16-small-fruits returned 404 because chapter numbers changed"
+            ]
+        },
+        {
+            id: "nc-state-extension-gardener-tree-fruit-and-nuts",
+            status: "accepted",
+            priority: "medium",
+            title: "15. Tree Fruit and Nuts",
+            institution: "NC State Extension",
+            region: "North Carolina",
+            crops: [
+                "Apple",
+                "Chestnut",
+                "Fig",
+                "Pawpaw",
+                "Peach",
+                "Pear",
+                "Pecan",
+                "Persimmon",
+                "Plum"
+            ],
+            publication_number: "AG-831",
+            source_type: "extension gardener handbook chapter",
+            landing_url:
+                "https://content.ces.ncsu.edu/extension-gardener-handbook/15-tree-fruit-and-nuts",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "North Carolina tree fruit and nut chapter with crop suitability and cultivar-level table data",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/North Carolina/NC State Extension Gardener Handbook 15 Tree Fruit and Nuts.json5",
+            duplicate_check:
+                "Existing North Carolina references do not include a broad home tree fruit and nut chapter",
+            notes: [
+                "Web page returned from official NC State Extension Publications"
+            ]
+        },
+        {
+            id: "clemson-peach-variety-evaluations",
+            status: "accepted",
+            priority: "medium",
+            title: "Peach Variety Evaluations",
+            institution: "Clemson Cooperative Extension",
+            region: "South Carolina",
+            crops: ["Peach"],
+            source_type: "trial database",
+            landing_url:
+                "https://www.clemson.edu/extension/peach/commercial/variety-evaluations.html",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Clemson peach evaluation gateway linking to a searchable database of variety observations",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/South Carolina/Clemson Peach Variety Evaluations.json5",
+            duplicate_check:
+                "Existing South Carolina reference is Clemson peach releases, not the evaluation database",
+            notes: [
+                "Official Clemson page links to https://www.clemsonpeach.org/",
+                "Database should be reviewed before deciding whether to encode as one source or multiple trial records"
+            ]
         }
     ]
 }
