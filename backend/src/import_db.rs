@@ -33,6 +33,7 @@ use std::collections::HashMap;
 use std::collections::HashSet;
 use std::convert::TryFrom;
 use std::fs;
+use std::time::{Duration, Instant};
 use walkdir::WalkDir;
 
 extern crate pathdiff;
@@ -648,10 +649,61 @@ pub struct LoadAllReturn {
     pub reference_items: LoadReferencesReturn,
 }
 
+#[derive(Clone, Copy, Debug)]
+struct ReferenceLoadSlice {
+    start: usize,
+    len: usize,
+}
+
+impl ReferenceLoadSlice {
+    fn contains(&self, index: usize) -> bool {
+        index >= self.start && index < self.start.saturating_add(self.len)
+    }
+}
+
+#[derive(Clone, Copy, Debug)]
+struct LoadAllOptions {
+    reference_slice: Option<ReferenceLoadSlice>,
+    reference_load_time_budget: Option<Duration>,
+    skip_loaded_references: bool,
+    static_data_load_mode: StaticDataLoadMode,
+    post_load_processing_mode: PostLoadProcessingMode,
+    write_generated_files: bool,
+}
+
+impl Default for LoadAllOptions {
+    fn default() -> Self {
+        Self {
+            reference_slice: None,
+            reference_load_time_budget: None,
+            skip_loaded_references: false,
+            static_data_load_mode: StaticDataLoadMode::Always,
+            post_load_processing_mode: PostLoadProcessingMode::Always,
+            write_generated_files: true,
+        }
+    }
+}
+
+#[derive(Clone, Copy, Debug)]
+enum StaticDataLoadMode {
+    Always,
+    IfEmpty,
+}
+
+#[derive(Clone, Copy, Debug)]
+enum PostLoadProcessingMode {
+    Always,
+    WhenNoReferencesLoaded,
+}
+
 pub fn establish_connection() -> SqliteConnection {
     let database_url = "database.sqlite3";
     SqliteConnection::establish(database_url)
         .unwrap_or_else(|_| panic!("Error connecting to {}", database_url))
+}
+
+fn ensure_database_schema(db_conn: &mut SqliteConnection) {
+    db_conn.run_pending_migrations(crate::MIGRATIONS).unwrap();
 }
 
 pub fn reset_database(db_conn: &mut SqliteConnection) {
@@ -667,17 +719,61 @@ pub fn reset_database(db_conn: &mut SqliteConnection) {
     .execute(db_conn);
     let _ = diesel::delete(facts::dsl::facts).execute(db_conn);
 
-    db_conn.run_pending_migrations(crate::MIGRATIONS).unwrap();
+    ensure_database_schema(db_conn);
 }
 
 pub fn load_all(db_conn: &mut SqliteConnection) -> LoadAllReturn {
+    load_all_with_options(db_conn, LoadAllOptions::default())
+}
+
+fn load_all_with_options(db_conn: &mut SqliteConnection, options: LoadAllOptions) -> LoadAllReturn {
     let database_dir = get_database_dir().unwrap();
 
-    let facts_found = load_facts(db_conn, database_dir.clone());
-    let base_plants_found = load_base_plants(db_conn, database_dir.clone());
-    let base_types_found = load_types(db_conn, database_dir.clone());
-    let load_references_return = load_references(db_conn, database_dir);
+    let facts_found = if matches!(options.static_data_load_mode, StaticDataLoadMode::Always)
+        || count_facts(db_conn) == 0
+    {
+        load_facts(db_conn, database_dir.clone())
+    } else {
+        0
+    };
+    let base_plants_found = if matches!(options.static_data_load_mode, StaticDataLoadMode::Always)
+        || count_base_plants(db_conn) == 0
+    {
+        load_base_plants(db_conn, database_dir.clone())
+    } else {
+        0
+    };
+    let base_types_found = if matches!(options.static_data_load_mode, StaticDataLoadMode::Always)
+        || count_plant_types(db_conn) == 0
+    {
+        load_types(db_conn, database_dir.clone())
+    } else {
+        0
+    };
+    let load_references_return = load_references(db_conn, database_dir, options);
 
+    let should_run_post_load_processing = match options.post_load_processing_mode {
+        PostLoadProcessingMode::Always => true,
+        PostLoadProcessingMode::WhenNoReferencesLoaded => {
+            load_references_return.reference_collections_loaded == 0
+                && load_references_return.reference_collections_skipped
+                    == load_references_return.reference_collections_available
+        }
+    };
+
+    if should_run_post_load_processing {
+        run_post_load_processing(db_conn, options.write_generated_files);
+    }
+
+    LoadAllReturn {
+        facts_found,
+        base_plants_found,
+        base_types_found,
+        reference_items: load_references_return,
+    }
+}
+
+fn run_post_load_processing(db_conn: &mut SqliteConnection, write_generated_files: bool) {
     println!("removing ignored base plants");
     remove_ignored_base_plants(db_conn);
     println!("calculating relative harvest times");
@@ -688,21 +784,18 @@ pub fn load_all(db_conn: &mut SqliteConnection) -> LoadAllReturn {
     add_marketing_names(db_conn);
     println!("calculating notoriety");
     calculate_notoriety(db_conn);
-    calculate_and_write_relative_day_offsets(db_conn);
+    if write_generated_files {
+        calculate_and_write_relative_day_offsets(db_conn);
+    }
     println!("adding base plant ID to collection items");
     add_base_id_to_collection_items(db_conn);
-    write_needs_help_file(db_conn);
+    if write_generated_files {
+        write_needs_help_file(db_conn);
+    }
     println!("rebuilding fts tables");
     rebuild_fts(db_conn);
     println!("checking database");
     check_database(db_conn);
-
-    LoadAllReturn {
-        facts_found,
-        base_plants_found,
-        base_types_found,
-        reference_items: load_references_return,
-    }
 }
 
 pub fn get_database_dir() -> Option<std::path::PathBuf> {
@@ -932,6 +1025,41 @@ fn new_or_old<T: std::cmp::PartialEq + std::fmt::Debug>(
     }
 }
 
+fn new_or_old_patent_expiration(
+    old: Option<i64>,
+    old_estimated: Option<i32>,
+    new: Option<i64>,
+    plant: &BasePlantJson,
+) -> (Option<i64>, Option<i32>) {
+    if let Some(new) = new {
+        if let Some(old) = old {
+            if old == new {
+                let old_estimated = if old_estimated == Some(1) {
+                    Some(0)
+                } else {
+                    old_estimated
+                };
+                return (Some(old), old_estimated);
+            }
+
+            if old_estimated == Some(1) {
+                return (Some(new), Some(0));
+            }
+
+            assert_eq!(
+                old, new,
+                "tried to update field uspp_expiration for plant but it was already set {:?}",
+                plant
+            );
+            (Some(old), old_estimated)
+        } else {
+            (Some(new), Some(0))
+        }
+    } else {
+        (old, old_estimated)
+    }
+}
+
 // we allow references to set some top-level fields, as long as they're either previously unset or an exact match
 fn apply_top_level_fields(
     db_conn: &mut SqliteConnection,
@@ -1002,11 +1130,11 @@ fn apply_top_level_fields(
         "uspp_number",
     );
 
-    let uspp_expiration = new_or_old(
+    let (uspp_expiration, uspp_expiration_estimated) = new_or_old_patent_expiration(
         existing_base_plant.uspp_expiration,
+        existing_base_plant.uspp_expiration_estimated,
         uspp_expiration_i64,
         plant,
-        "uspp_expiration",
     );
 
     let mut release_parsed = None;
@@ -1059,6 +1187,7 @@ fn apply_top_level_fields(
                 base_plants::marketing_name.eq(&marketing_name),
                 base_plants::uspp_number.eq(uspp_number.clone()),
                 base_plants::uspp_expiration.eq(uspp_expiration),
+                base_plants::uspp_expiration_estimated.eq(uspp_expiration_estimated),
                 base_plants::release_year.eq(release_year),
                 base_plants::released_by.eq(released_by),
                 base_plants::release_collection_id.eq(release_collection_id),
@@ -1654,6 +1783,9 @@ fn add_collection_plant_by_location(
 
 #[derive(Debug, Default)]
 pub struct LoadReferencesReturn {
+    pub reference_collections_available: isize,
+    pub reference_collections_loaded: isize,
+    pub reference_collections_skipped: isize,
     pub reference_locations_found: isize,
     pub reference_base_plants_added: isize,
     pub reference_plants_added: isize,
@@ -1662,9 +1794,13 @@ pub struct LoadReferencesReturn {
 fn load_references(
     db_conn: &mut SqliteConnection,
     database_dir: std::path::PathBuf,
+    options: LoadAllOptions,
 ) -> LoadReferencesReturn {
-    let mut collection_id = 0;
+    let mut collection_id = max_collection_id(db_conn);
 
+    let mut reference_collections_available = 0;
+    let mut reference_collections_loaded = 0;
+    let mut reference_collections_skipped = 0;
     let mut reference_locations_found = 0;
     let mut reference_base_plants_added = 0;
     let mut reference_plants_added = 0;
@@ -1674,144 +1810,147 @@ fn load_references(
 
     // traverse /plant_database/references/
     // create a collections table entry for each location in this reference, or only one if there's only one location
-    for entry in WalkDir::new(database_dir.join("references"))
+    let mut reference_paths = WalkDir::new(database_dir.join("references"))
         .max_depth(5)
         .into_iter()
         .filter_map(|e| e.ok())
-    {
-        let path_ = entry.path();
+        .map(|entry| entry.into_path())
+        .filter(|path_| {
+            fs::metadata(path_).unwrap().is_file()
+                && path_.extension().and_then(|extension| extension.to_str()) == Some("json5")
+        })
+        .collect::<Vec<_>>();
 
-        if fs::metadata(path_).unwrap().is_file() // filenames can't be >260 chars here without help - probably fixed in rust 1.58 - https://github.com/rust-lang/rust/issues/67403
-            && path_.extension().unwrap().to_str().unwrap() == "json5"
+    if options.reference_slice.is_some() || options.skip_loaded_references {
+        reference_paths.sort();
+    }
+
+    let loaded_references = if options.skip_loaded_references {
+        loaded_reference_keys(db_conn)
+    } else {
+        Default::default()
+    };
+
+    let started = Instant::now();
+
+    for (reference_index, path_) in reference_paths.iter().enumerate() {
+        if options
+            .reference_slice
+            .map(|slice| !slice.contains(reference_index))
+            .unwrap_or_default()
         {
-            println!("loading reference: {}", path_.display());
+            continue;
+        }
 
-            // get a path for this relative to our git base directory so we can match it against the git mtime list
-            let absolute_path_git = fs::canonicalize(database_dir.join("..")).unwrap();
-            let absolute_path_file = fs::canonicalize(path_).unwrap();
-            let file_git_path =
-                pathdiff::diff_paths(absolute_path_file, absolute_path_git).unwrap();
+        reference_collections_available += 1;
+        let filename = rem_last_n(path_.file_name().unwrap().to_str().unwrap(), ".json5".len());
+        let path = format_path(path_.parent().unwrap().to_str().unwrap());
+        let reference_key = (path.clone(), filename.to_string());
 
-            let path_git_info = git_info.for_path(&file_git_path);
-            if path_git_info.is_none() {
-                println!("no git mod time for: {}", file_git_path.display());
-            }
+        if loaded_references.contains(&reference_key) {
+            reference_collections_skipped += 1;
+            continue;
+        }
 
-            let git_edit_time = path_git_info.map(|path_git_info| path_git_info.seconds());
+        println!("loading reference: {}", path_.display());
+        reference_collections_loaded += 1;
 
-            let contents = fs::read_to_string(path_).unwrap();
+        let absolute_path_git = fs::canonicalize(database_dir.join("..")).unwrap();
+        let absolute_path_file = fs::canonicalize(path_).unwrap();
+        let file_git_path = pathdiff::diff_paths(absolute_path_file, absolute_path_git).unwrap();
 
-            let collection: CollectionJson = json5::from_str(&contents).unwrap_or_else(|error| {
-                panic!("couldn't parse json in file {} {}", path_.display(), error);
-            });
+        let path_git_info = git_info.for_path(&file_git_path);
+        if path_git_info.is_none() {
+            println!("no git mod time for: {}", file_git_path.display());
+        }
 
-            let filename = rem_last_n(path_.file_name().unwrap().to_str().unwrap(), ".json5".len());
-            let path = format_path(path_.parent().unwrap().to_str().unwrap());
+        let git_edit_time = path_git_info.map(|path_git_info| path_git_info.seconds());
 
-            let notoriety_info = notoriety::collection_notoriety_text_decoder(&collection.type_);
+        let contents = fs::read_to_string(path_).unwrap();
 
-            collection_id += 1;
+        let collection: CollectionJson = json5::from_str(&contents).unwrap_or_else(|error| {
+            panic!("couldn't parse json in file {} {}", path_.display(), error);
+        });
 
-            let needs_help = if collection.needs_help.is_some() {
-                collection.needs_help.unwrap()
-            } else {
-                false
-            };
+        let notoriety_info = notoriety::collection_notoriety_text_decoder(&collection.type_);
 
-            let ignore_for_nearby_searches =
-                collection.ignore_for_nearby_searches.unwrap_or_default();
+        collection_id += 1;
 
+        let needs_help = if collection.needs_help.is_some() {
+            collection.needs_help.unwrap()
+        } else {
+            false
+        };
+
+        let ignore_for_nearby_searches = collection.ignore_for_nearby_searches.unwrap_or_default();
+
+        //    println!("inserting");
+        let rows_inserted = diesel::insert_into(collections::dsl::collections)
+            .values((
+                collections::id.eq(collection_id),
+                collections::git_edit_time.eq(git_edit_time),
+                collections::path.eq(&path),
+                collections::filename.eq(&filename),
+                collections::title.eq(&collection.title),
+                collections::author.eq(&collection.author),
+                collections::description.eq(&collection.description),
+                collections::url.eq(&collection.url),
+                collections::published.eq(&collection.published),
+                collections::reviewed.eq(&collection.reviewed),
+                collections::accessed.eq(&collection.accessed),
+                collections::needs_help.eq(needs_help as i32),
+                collections::notoriety_type.eq(&collection.type_.to_lowercase()),
+                collections::notoriety_score.eq(notoriety_info.score),
+                collections::notoriety_score_explanation.eq(notoriety_info.explanation),
+                collections::harvest_time_devalue_factor.eq(collection.harvest_time_devalue_factor),
+                collections::ignore_for_nearby_searches.eq(ignore_for_nearby_searches as i32),
+            ))
+            .execute(db_conn);
+        assert_eq!(Ok(1), rows_inserted);
+
+        for (i, location) in collection.locations.iter().enumerate() {
             //    println!("inserting");
-            let rows_inserted = diesel::insert_into(collections::dsl::collections)
+            let rows_inserted = diesel::insert_into(locations::dsl::locations)
                 .values((
-                    collections::id.eq(collection_id),
-                    collections::git_edit_time.eq(git_edit_time),
-                    collections::path.eq(&path),
-                    collections::filename.eq(&filename),
-                    collections::title.eq(&collection.title),
-                    collections::author.eq(&collection.author),
-                    collections::description.eq(&collection.description),
-                    collections::url.eq(&collection.url),
-                    collections::published.eq(&collection.published),
-                    collections::reviewed.eq(&collection.reviewed),
-                    collections::accessed.eq(&collection.accessed),
-                    collections::needs_help.eq(needs_help as i32),
-                    collections::notoriety_type.eq(&collection.type_.to_lowercase()),
-                    collections::notoriety_score.eq(notoriety_info.score),
-                    collections::notoriety_score_explanation.eq(notoriety_info.explanation),
-                    collections::harvest_time_devalue_factor
-                        .eq(collection.harvest_time_devalue_factor),
-                    collections::ignore_for_nearby_searches.eq(ignore_for_nearby_searches as i32),
+                    locations::collection_id.eq(collection_id),
+                    locations::location_number.eq((i + 1) as i32),
+                    locations::location_name.eq(&location.name),
+                    locations::latitude.eq(&location.latitude),
+                    locations::longitude.eq(&location.longitude),
+                    // stuff from the collection
+                    locations::notoriety_score.eq(notoriety_info.score),
+                    locations::collection_path.eq(&path),
+                    locations::collection_filename.eq(&filename),
+                    locations::collection_title.eq(&collection.title),
+                    locations::ignore_for_nearby_searches.eq(ignore_for_nearby_searches as i32),
                 ))
                 .execute(db_conn);
             assert_eq!(Ok(1), rows_inserted);
+            reference_locations_found += 1;
+        }
 
-            for (i, location) in collection.locations.iter().enumerate() {
-                //    println!("inserting");
-                let rows_inserted = diesel::insert_into(locations::dsl::locations)
-                    .values((
-                        locations::collection_id.eq(collection_id),
-                        locations::location_number.eq((i + 1) as i32),
-                        locations::location_name.eq(&location.name),
-                        locations::latitude.eq(&location.latitude),
-                        locations::longitude.eq(&location.longitude),
-                        // stuff from the collection
-                        locations::notoriety_score.eq(notoriety_info.score),
-                        locations::collection_path.eq(&path),
-                        locations::collection_filename.eq(&filename),
-                        locations::collection_title.eq(&collection.title),
-                        locations::ignore_for_nearby_searches.eq(ignore_for_nearby_searches as i32),
-                    ))
-                    .execute(db_conn);
-                assert_eq!(Ok(1), rows_inserted);
-                reference_locations_found += 1;
+        for plant in collection.plants {
+            if plant.names.is_none() && plant.name.is_none() {
+                panic!(r#"plant missing both "name" and "names" {:?}"#, plant)
+            }
+            if plant.names.is_some() && plant.name.is_some() {
+                panic!(r#"plant has both "name" and "names" {:?}"#, plant)
             }
 
-            for plant in collection.plants {
-                if plant.names.is_none() && plant.name.is_none() {
-                    panic!(r#"plant missing both "name" and "names" {:?}"#, plant)
-                }
-                if plant.names.is_some() && plant.name.is_some() {
-                    panic!(r#"plant has both "name" and "names" {:?}"#, plant)
-                }
+            let category_description = get_category_description(
+                &plant.category,
+                &plant.category_description,
+                &collection.categories,
+            );
 
-                let category_description = get_category_description(
-                    &plant.category,
-                    &plant.category_description,
-                    &collection.categories,
-                );
-
-                if plant.names.is_some() {
-                    for plant_name in plant.names.clone().unwrap() {
-                        // multi-plant lists are used for extension guides that give, for example,
-                        // a list of "all of the scab resistant apples" but don't tie that to one location
-                        // or give descriptions for each apple
-                        // we want to preserve the list so it can be displayed off in a corner or whatever
-                        reference_base_plants_added += update_or_add_base_plant(
-                            &plant_name,
-                            &plant,
-                            db_conn,
-                            collection_id,
-                            notoriety_info.score,
-                            collection.ignore_unless_in_others,
-                        );
-
-                        reference_plants_added += add_collection_plant_by_location(
-                            collection_id,
-                            format!("{}{}", path, filename),
-                            &plant_name,
-                            &plant,
-                            &category_description,
-                            &collection.locations,
-                            db_conn,
-                        );
-                    }
-                } else if plant.name.is_some() {
-                    // todo - if this plant has its own unique location (as seen in "list of elberta ripening dates")
-                    // then add this location first and then use it just for this plant
-
+            if plant.names.is_some() {
+                for plant_name in plant.names.clone().unwrap() {
+                    // multi-plant lists are used for extension guides that give, for example,
+                    // a list of "all of the scab resistant apples" but don't tie that to one location
+                    // or give descriptions for each apple
+                    // we want to preserve the list so it can be displayed off in a corner or whatever
                     reference_base_plants_added += update_or_add_base_plant(
-                        plant.name.as_ref().unwrap(),
+                        &plant_name,
                         &plant,
                         db_conn,
                         collection_id,
@@ -1822,13 +1961,41 @@ fn load_references(
                     reference_plants_added += add_collection_plant_by_location(
                         collection_id,
                         format!("{}{}", path, filename),
-                        plant.name.as_ref().unwrap(),
+                        &plant_name,
                         &plant,
                         &category_description,
                         &collection.locations,
                         db_conn,
                     );
                 }
+            } else if plant.name.is_some() {
+                // todo - if this plant has its own unique location (as seen in "list of elberta ripening dates")
+                // then add this location first and then use it just for this plant
+
+                reference_base_plants_added += update_or_add_base_plant(
+                    plant.name.as_ref().unwrap(),
+                    &plant,
+                    db_conn,
+                    collection_id,
+                    notoriety_info.score,
+                    collection.ignore_unless_in_others,
+                );
+
+                reference_plants_added += add_collection_plant_by_location(
+                    collection_id,
+                    format!("{}{}", path, filename),
+                    plant.name.as_ref().unwrap(),
+                    &plant,
+                    &category_description,
+                    &collection.locations,
+                    db_conn,
+                );
+            }
+        }
+
+        if let Some(time_budget) = options.reference_load_time_budget {
+            if reference_collections_loaded > 0 && started.elapsed() >= time_budget {
+                break;
             }
         }
     }
@@ -1837,6 +2004,9 @@ fn load_references(
 
     // for each plant, create an entry in the collection_items database for each location, with a foreign key to that location's collections table entry
     LoadReferencesReturn {
+        reference_collections_available,
+        reference_collections_loaded,
+        reference_collections_skipped,
         reference_locations_found,
         reference_base_plants_added,
         reference_plants_added,
@@ -2754,6 +2924,44 @@ pub fn count_base_plants(db_conn: &mut SqliteConnection) -> i64 {
         .select(diesel::dsl::count(base_plants::id))
         .first(db_conn)
         .unwrap()
+}
+
+fn count_facts(db_conn: &mut SqliteConnection) -> i64 {
+    facts::dsl::facts
+        .select(diesel::dsl::count(facts::id))
+        .first(db_conn)
+        .unwrap()
+}
+
+fn count_plant_types(db_conn: &mut SqliteConnection) -> i64 {
+    plant_types::dsl::plant_types
+        .select(diesel::dsl::count(plant_types::id))
+        .first(db_conn)
+        .unwrap()
+}
+
+fn count_reference_collections(db_conn: &mut SqliteConnection) -> i64 {
+    collections::dsl::collections
+        .select(diesel::dsl::count(collections::id))
+        .first(db_conn)
+        .unwrap()
+}
+
+fn max_collection_id(db_conn: &mut SqliteConnection) -> i32 {
+    collections::dsl::collections
+        .select(diesel::dsl::max(collections::id))
+        .first::<Option<i32>>(db_conn)
+        .unwrap()
+        .unwrap_or(0)
+}
+
+fn loaded_reference_keys(db_conn: &mut SqliteConnection) -> HashSet<(String, String)> {
+    collections::dsl::collections
+        .select((collections::path, collections::filename))
+        .load::<(String, String)>(db_conn)
+        .unwrap()
+        .into_iter()
+        .collect()
 }
 
 pub fn calculate_and_write_relative_day_offsets(db_conn: &mut SqliteConnection) {

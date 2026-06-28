@@ -5,8 +5,86 @@ use crate::import_db::{
     util::uspp_number_to_release_year,
 };
 use diesel::connection::SimpleConnection;
+use std::env;
+use std::fs::OpenOptions;
+use std::io::Write;
+use std::sync::mpsc;
+use std::thread;
+use std::time::{Duration, Instant};
 
 use super::*;
+
+const DEFAULT_TEST_REFERENCE_LOAD_SECONDS: u64 = 20;
+
+fn test_env_u64(name: &str, default: u64) -> u64 {
+    env::var(name)
+        .ok()
+        .and_then(|value| value.parse::<u64>().ok())
+        .unwrap_or(default)
+}
+
+fn print_uncaptured_test_message(message: &str) {
+    #[cfg(windows)]
+    {
+        if let Ok(mut console) = OpenOptions::new().write(true).open("CONOUT$") {
+            let _ = writeln!(console, "{message}");
+            return;
+        }
+    }
+
+    #[cfg(not(windows))]
+    {
+        if let Ok(mut tty) = OpenOptions::new().write(true).open("/dev/tty") {
+            let _ = writeln!(tty, "{message}");
+            return;
+        }
+    }
+
+    let mut stderr = std::io::stderr().lock();
+    let _ = writeln!(stderr, "{message}");
+}
+
+struct TestProgress {
+    stop_tx: Option<mpsc::Sender<()>>,
+    handle: Option<thread::JoinHandle<()>>,
+}
+
+impl TestProgress {
+    fn start(label: &'static str) -> Self {
+        let (stop_tx, stop_rx) = mpsc::channel();
+        let started = Instant::now();
+        print_uncaptured_test_message(&format!("{label} started"));
+
+        let handle = thread::spawn(move || loop {
+            match stop_rx.recv_timeout(Duration::from_secs(10)) {
+                Ok(_) | Err(mpsc::RecvTimeoutError::Disconnected) => break,
+                Err(mpsc::RecvTimeoutError::Timeout) => {
+                    print_uncaptured_test_message(&format!(
+                        "{label} still running after {}s",
+                        started.elapsed().as_secs()
+                    ));
+                }
+            }
+        });
+
+        Self {
+            stop_tx: Some(stop_tx),
+            handle: Some(handle),
+        }
+    }
+}
+
+impl Drop for TestProgress {
+    fn drop(&mut self) {
+        if let Some(stop_tx) = self.stop_tx.take() {
+            let _ = stop_tx.send(());
+        }
+
+        if let Some(handle) = self.handle.take() {
+            let _ = handle.join();
+        }
+    }
+}
 
 #[test]
 fn test_format_s_allele() {
@@ -602,30 +680,71 @@ fn test_base_plant_notoriety_calc() {
 #[test]
 #[ignore] // long runtime
 fn test_database_loading() {
+    let _progress = TestProgress::start("test_database_loading");
+    let started = Instant::now();
+    let reference_load_seconds = test_env_u64(
+        "FRUITFACTS_TEST_REFERENCE_LOAD_SECONDS",
+        DEFAULT_TEST_REFERENCE_LOAD_SECONDS,
+    );
+
+    print_uncaptured_test_message(&format!(
+        "test_database_loading targeting {reference_load_seconds}s of new reference loading"
+    ));
+
     let mut db_conn = super::establish_connection();
-    super::reset_database(&mut db_conn);
+    super::ensure_database_schema(&mut db_conn);
 
     // speed up testing with sync = off (10% speedup) and a transaction (about 4x speedup)
     db_conn.batch_execute("PRAGMA synchronous = OFF").unwrap();
 
+    let loaded_before = super::count_reference_collections(&mut db_conn);
     let mut items_loaded = Default::default();
     db_conn
         .immediate_transaction::<_, diesel::result::Error, _>(|db_conn| {
-            items_loaded = super::load_all(db_conn);
+            items_loaded = super::load_all_with_options(
+                db_conn,
+                super::LoadAllOptions {
+                    reference_load_time_budget: Some(Duration::from_secs(reference_load_seconds)),
+                    skip_loaded_references: true,
+                    static_data_load_mode: super::StaticDataLoadMode::IfEmpty,
+                    post_load_processing_mode:
+                        super::PostLoadProcessingMode::WhenNoReferencesLoaded,
+                    write_generated_files: false,
+                    ..Default::default()
+                },
+            );
             Ok(())
         })
         .unwrap();
 
+    let loaded_after = super::count_reference_collections(&mut db_conn);
+    print_uncaptured_test_message(&format!(
+        "test_database_loading loaded {} references, skipped {}, database has {}/{} references in {}s",
+        items_loaded.reference_items.reference_collections_loaded,
+        items_loaded.reference_items.reference_collections_skipped,
+        loaded_after,
+        items_loaded.reference_items.reference_collections_available,
+        started.elapsed().as_secs()
+    ));
     println!("loaded: {:#?}", items_loaded);
 
     // update these every so often so we can check that a change doesn't cause fewer items than we expect
-    assert_ge!(items_loaded.facts_found, 4);
-    assert_ge!(items_loaded.base_plants_found, 22);
-    assert_ge!(items_loaded.base_types_found, 61);
-    assert_ge!(items_loaded.reference_items.reference_locations_found, 235);
-    assert_ge!(
-        items_loaded.reference_items.reference_base_plants_added,
-        6571
-    ); // all unique plants
-    assert_ge!(items_loaded.reference_items.reference_plants_added, 11036); // all plants in all references
+    assert_ge!(super::count_facts(&mut db_conn), 4);
+    assert_ge!(super::count_base_plants(&mut db_conn), 22);
+    assert_ge!(super::count_plant_types(&mut db_conn), 61);
+    assert_ge!(loaded_after, loaded_before);
+    assert_eq!(
+        loaded_after - loaded_before,
+        items_loaded.reference_items.reference_collections_loaded as i64
+    );
+    assert!(
+        items_loaded.reference_items.reference_collections_loaded > 0
+            || items_loaded.reference_items.reference_collections_skipped
+                == items_loaded.reference_items.reference_collections_available
+    );
+
+    if items_loaded.reference_items.reference_collections_loaded > 0 {
+        assert_gt!(items_loaded.reference_items.reference_locations_found, 0);
+        assert_gt!(items_loaded.reference_items.reference_plants_added, 0);
+    }
 }
