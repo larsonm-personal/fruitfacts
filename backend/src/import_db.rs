@@ -149,18 +149,13 @@ pub fn rem_first_n(value: &str, n: usize) -> &str {
     chars.as_str()
 }
 
-#[derive(Debug, PartialEq, Eq)]
+#[derive(Debug, PartialEq, Eq, Default)]
 enum DateParseType {
+    #[default]
     Undefined,
     Unparsed,
     StartOnly,
     TwoDates,
-}
-
-impl Default for DateParseType {
-    fn default() -> Self {
-        DateParseType::Undefined
-    }
 }
 
 #[derive(Default, Debug, PartialEq, Eq)]
@@ -1724,11 +1719,7 @@ fn load_references(
             };
 
             let ignore_for_nearby_searches =
-                if let Some(value) = collection.ignore_for_nearby_searches {
-                    value
-                } else {
-                    false
-                };
+                collection.ignore_for_nearby_searches.unwrap_or_default();
 
             //    println!("inserting");
             let rows_inserted = diesel::insert_into(collections::dsl::collections)
@@ -1870,7 +1861,7 @@ fn get_relative_days(
                 if weeks {
                     return Some((number * -7.0).round() as i32);
                 } else {
-                    return Some((number * -1.0).round() as i32);
+                    return Some((-number).round() as i32);
                 }
             }
             _ => return None,
@@ -1908,11 +1899,7 @@ fn parse_relative_harvest(input: &str) -> Option<HarvestRelativeParsed> {
         let weeks;
         if matches.len() >= 7 {
             if let Some(week_match) = matches.get(6) {
-                if week_match.as_str().to_lowercase().trim() == "week" {
-                    weeks = true;
-                } else {
-                    weeks = false;
-                }
+                weeks = week_match.as_str().to_lowercase().trim() == "week";
             } else {
                 weeks = false;
             }
@@ -1944,11 +1931,7 @@ fn parse_relative_harvest(input: &str) -> Option<HarvestRelativeParsed> {
         let weeks;
         if matches.len() >= 5 {
             if let Some(week_match) = matches.get(4) {
-                if week_match.as_str().to_lowercase().trim() == "week" {
-                    weeks = true;
-                } else {
-                    weeks = false;
-                }
+                weeks = week_match.as_str().to_lowercase().trim() == "week";
             } else {
                 weeks = false;
             }
@@ -2557,10 +2540,9 @@ fn calculate_relative_harvest_from_references(
 
                 let notoriety_and_devalue_score =
                     get_notoriety_and_devalue_scores(reference.collection_id.unwrap(), db_conn);
-                let devalue_score = match notoriety_and_devalue_score.harvest_time_devalue_factor {
-                    Some(score) => score,
-                    _ => 0.0,
-                };
+                let devalue_score = notoriety_and_devalue_score
+                    .harvest_time_devalue_factor
+                    .unwrap_or(0.0);
 
                 // add the value to an average based on a weight of the round score * the reference notoriety score
                 // the devalue_score get treated as being additional rounds behind
@@ -3079,7 +3061,7 @@ pub fn calculate_and_write_relative_day_offsets(db_conn: &mut SqliteConnection) 
         });
     }
 
-    output.sort_by(|a, b| a.day.cmp(&b.day));
+    output.sort_by_key(|a| a.day);
 
     println!("calculated relative-relative times: {:#?}", output);
 

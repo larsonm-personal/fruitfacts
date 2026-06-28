@@ -3,7 +3,6 @@ use actix_web::HttpRequest;
 use actix_web::{delete, get, post, web, HttpResponse};
 use anyhow::{anyhow, Result};
 use base64::Engine as _; // base64: check out this classy github issue! https://github.com/marshallpierce/rust-base64/issues/213
-use oauth2::basic::{BasicErrorResponseType, BasicTokenType};
 use serde::{Deserialize, Serialize};
 use serde_with::skip_serializing_none;
 use std::io::Read;
@@ -18,14 +17,10 @@ use diesel::prelude::*;
 use diesel::r2d2::{self, ConnectionManager};
 type DbPool = r2d2::Pool<ConnectionManager<SqliteConnection>>;
 
-use rand::Rng;
-
-use oauth2::reqwest::http_client;
-use oauth2::{basic::BasicClient, revocation::StandardRevocableToken, TokenResponse};
+use oauth2::{basic::BasicClient, TokenResponse};
 use oauth2::{
-    AuthUrl, AuthorizationCode, ClientId, ClientSecret, CsrfToken, EmptyExtraTokenFields,
-    PkceCodeChallenge, RedirectUrl, RevocationUrl, Scope, StandardTokenIntrospectionResponse,
-    TokenUrl,
+    AuthUrl, AuthorizationCode, ClientId, ClientSecret, CsrfToken, EndpointNotSet, EndpointSet,
+    PkceCodeChallenge, RedirectUrl, RevocationUrl, Scope, TokenUrl,
 };
 use std::env;
 
@@ -34,14 +29,8 @@ use crate::session;
 // todo - session cookie first, then csrf storage and retreival in some kind of cache with expiration
 // https://security.stackexchange.com/questions/20187/oauth2-cross-site-request-forgery-and-state-parameter
 
-type GoogleClientType = oauth2::Client<
-    oauth2::StandardErrorResponse<BasicErrorResponseType>,
-    oauth2::StandardTokenResponse<EmptyExtraTokenFields, BasicTokenType>,
-    BasicTokenType,
-    StandardTokenIntrospectionResponse<EmptyExtraTokenFields, BasicTokenType>,
-    StandardRevocableToken,
-    oauth2::StandardErrorResponse<oauth2::RevocationErrorResponseType>,
->;
+type GoogleClientType =
+    BasicClient<EndpointSet, EndpointNotSet, EndpointNotSet, EndpointSet, EndpointSet>;
 
 fn get_google_client() -> GoogleClientType {
     let google_client_id = ClientId::new(env!("GOOGLE_CLIENT_ID").to_string());
@@ -53,21 +42,19 @@ fn get_google_client() -> GoogleClientType {
         .expect("Invalid token endpoint URL");
 
     // Set up the config for the Google OAuth2 process
-    BasicClient::new(
-        google_client_id,
-        Some(google_client_secret),
-        auth_url,
-        Some(token_url),
-    )
-    .set_redirect_uri(
-        RedirectUrl::new(format!("{}/api/authRedirect", env!("BACKEND_BASE")))
-            .expect("Invalid redirect URL"),
-    )
-    // Google supports OAuth 2.0 Token Revocation (RFC-7009)
-    .set_revocation_uri(
-        RevocationUrl::new("https://oauth2.googleapis.com/revoke".to_string())
-            .expect("Invalid revocation endpoint URL"),
-    )
+    BasicClient::new(google_client_id)
+        .set_client_secret(google_client_secret)
+        .set_auth_uri(auth_url)
+        .set_token_uri(token_url)
+        .set_redirect_uri(
+            RedirectUrl::new(format!("{}/api/authRedirect", env!("BACKEND_BASE")))
+                .expect("Invalid redirect URL"),
+        )
+        // Google supports OAuth 2.0 Token Revocation (RFC-7009)
+        .set_revocation_url(
+            RevocationUrl::new("https://oauth2.googleapis.com/revoke".to_string())
+                .expect("Invalid revocation endpoint URL"),
+        )
 }
 
 #[skip_serializing_none]
@@ -263,22 +250,22 @@ fn receive_oauth_redirect_db(
     );
 
     let client = get_google_client();
+    let http_client = oauth2::reqwest::blocking::ClientBuilder::new()
+        .redirect(oauth2::reqwest::redirect::Policy::none())
+        .timeout(std::time::Duration::from_secs(10))
+        .build()?;
 
     let token_response = client
         .exchange_code(code)
         .set_pkce_verifier(pkce_code_verifier)
-        .request(http_client);
+        .request(&http_client);
 
     println!("token response: {:#?}", token_response);
     let token_secret = token_response.unwrap().access_token().secret().clone();
 
     println!("token: {:?}", token_secret);
 
-    let client = reqwest::blocking::Client::builder()
-        .timeout(std::time::Duration::from_secs(10))
-        .build()?;
-
-    let mut resp = client
+    let mut resp = http_client
         .get(format!(
             "https://www.googleapis.com/oauth2/v1/userinfo?access_token={}",
             token_secret
@@ -349,8 +336,7 @@ pub fn get_session_value(
         println!("no session value found, setting");
         // set a random session
         session_value = Some(
-            base64::engine::general_purpose::STANDARD_NO_PAD
-                .encode(rand::thread_rng().gen::<[u8; 32]>()),
+            base64::engine::general_purpose::STANDARD_NO_PAD.encode(rand::random::<[u8; 32]>()),
         );
 
         outgoing_cookie = Some(
@@ -590,7 +576,7 @@ async fn check_login(
 }
 
 fn get_logout_cookie() -> Cookie<'static> {
-    return Cookie::build("session", "")
+    Cookie::build("session", "")
         .domain(env!("COOKIE_DOMAIN"))
         .path("/")
         //  .same_site(actix_web::cookie::SameSite::Strict)
@@ -599,7 +585,7 @@ fn get_logout_cookie() -> Cookie<'static> {
             actix_web::cookie::time::OffsetDateTime::now_utc(),
         )) // time in the past clears a cookie
         .http_only(true)
-        .finish();
+        .finish()
 }
 
 #[post("/api/logout")]
@@ -661,7 +647,7 @@ async fn delete_user(
 
         session::remove_session(db_conn, session_value.unwrap()); // todo - delete cached sessions, if implemented
 
-        return Ok(HttpResponse::Ok().finish());
+        Ok(HttpResponse::Ok().finish())
     });
 
     if let Err(e) = db_result {
@@ -669,5 +655,5 @@ async fn delete_user(
     }
 
     let outgoing_cookie = get_logout_cookie();
-    return Ok(HttpResponse::Ok().cookie(outgoing_cookie).finish());
+    Ok(HttpResponse::Ok().cookie(outgoing_cookie).finish())
 }

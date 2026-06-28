@@ -1,2 +1,2 @@
-node: v22.13.0
-npm-check-updates: 17.1.14
+node: v24.18.0
+npm-check-updates: 22.2.8

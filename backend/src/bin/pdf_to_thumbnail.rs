@@ -37,7 +37,7 @@ fn pdf_first_page_to_jpeg(input_path: &Path, output_path: &Path) -> Result<(), P
         }
 
         let rendered_page = page.render_with_config(&render_config)?;
-        let image_data = rendered_page.as_image();
+        let image_data = rendered_page.as_image()?;
         let image = image_data
             .as_rgba8() // ... then converts it to an image::Image...
             .ok_or(PdfiumError::ImageError)?;

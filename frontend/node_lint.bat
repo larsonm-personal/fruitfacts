@@ -1,7 +1,7 @@
 RMDIR /S /Q node_modules
 del package-lock.json
 
-set "command=ncu -u"
+set "command=ncu -u --reject eslint,@eslint/js"
 call %command% || goto :error
 
 echo "using --force because of react-debounce-input and react 19"

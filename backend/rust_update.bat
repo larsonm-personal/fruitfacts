@@ -20,10 +20,10 @@ call %command% || goto :error
 
 rem print versions of rust to a file ./rust_versions.txt
 
-set "command=rustc --version >> rust_versions.txt"
+set "command=rustc --version > rust_versions.txt"
 call %command% || goto :error
 
-set "command=cargo --version > rust_versions.txt"
+set "command=cargo --version >> rust_versions.txt"
 call %command% || goto :error
 
 set "command=cargo clippy --version >> rust_versions.txt"

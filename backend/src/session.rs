@@ -40,7 +40,7 @@ pub fn get_oauth_info(session_value: &str) -> Result<(PkceCodeVerifier, String)>
     // get these things out of OAUTH_INFO so we can drop the lock right away
     if let Some(oauth_info) = OAUTH_INFO_CACHE.lock().unwrap().get_mut(session_value) {
         // get ownership out of the Option<>
-        let pkce_code_verifier_option = std::mem::replace(&mut oauth_info.pkce_code_verifier, None);
+        let pkce_code_verifier_option = oauth_info.pkce_code_verifier.take();
         csrf_state = oauth_info.csrf_state.secret().clone();
 
         if pkce_code_verifier_option.is_none() {
