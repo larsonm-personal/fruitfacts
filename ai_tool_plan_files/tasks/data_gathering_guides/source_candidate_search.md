@@ -13,7 +13,8 @@ downloadable URLs for later triage.
 
 ## Output
 
-A candidate list with:
+A JSON5 queue entry following
+[Candidate Source Queue Format](candidate_source_queue.md) with:
 
 - Source title
 - Institution or author
@@ -38,5 +39,4 @@ A candidate list with:
 
 ## Open Questions
 
-- What queue format should candidate sources use before they become JSON5 stubs?
 - Should low-priority sources be kept, discarded, or archived separately?

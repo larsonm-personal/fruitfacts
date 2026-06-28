@@ -13,9 +13,10 @@ action.
 
 ## Output
 
-Each candidate gets a status:
+Each candidate gets a status and asset decision:
 
 - Download and stub
+- Download only
 - Stub only
 - Revisit later
 - Reject
@@ -27,7 +28,10 @@ Each candidate gets a status:
 3. Prefer sources from extension, trial, university, government, or published
    references.
 4. Note the main reason for accepting or rejecting the candidate.
-5. Send accepted candidates to download and sorting.
+5. Use the
+   [Source Asset And Stub Checklist](source_asset_stub_checklist.md) to choose
+   whether the source deserves an asset, stub, both, or neither.
+6. Send accepted candidates to download and sorting or reference stub creation.
 
 ## Checks
 

@@ -43,12 +43,21 @@ real work exposes repeated patterns, edge cases, and useful helper commands.
     - Check references and encoded data for structural and content problems
 11. [Provenance And URL Verification](data_gathering_guides/provenance_url_verification.md)
     - Verify source identity, durable links, downloaded filenames, and metadata
+12. [Reference URL Download Audit](data_gathering_guides/reference_url_download_audit.md)
+    - Survey existing reference URLs for direct download success, landing-page
+      download links, official replacements, and changed PDF hashes
 
 ## Shared Helper Docs
 
 - [Association Patterns](data_gathering_guides/association_patterns.md)
   - A single living helper for how source rows, locations, categories, cultivar
     names, harvest times, and citations are mapped into FruitFacts JSON5
+- [Candidate Source Queue Format](data_gathering_guides/candidate_source_queue.md)
+  - JSON5 queue shape for source candidates before download, stubbing, or
+    encoding
+- [Source Asset And Stub Checklist](data_gathering_guides/source_asset_stub_checklist.md)
+  - Decision helper for whether a source deserves a downloaded asset, a JSON5
+    stub, both, or neither
 
 ## Working Notes
 
@@ -65,19 +74,20 @@ real work exposes repeated patterns, edge cases, and useful helper commands.
 
 ## Immediate Tasks
 
-Initial pass completed:
+Completed setup passes:
 
 1. Added concise placeholder guide docs for the current and expanded concrete
    tasks
 2. Expanded the concrete task list to include triage, stub creation, backlog
    work, URL verification, and sanity checks
 3. Added this file as the hub for all task guide links
+4. Added a candidate-source JSON5 queue format
+5. Added a checklist for deciding whether a source deserves a downloaded asset,
+   a JSON5 stub, both, or neither
+6. Added the starter `ai_tool_plan_files/tasks/candidate_sources.json5` queue
 
 Useful next passes:
 
 1. Fill `association_patterns.md` by reviewing 3 to 5 already-encoded
    references against their PDFs or source pages
-2. Add a candidate-source spreadsheet or JSON5 queue format
-3. Add a small checklist for deciding when a source deserves a downloaded asset,
-   a JSON5 stub, both, or neither
-4. Add helper commands once the DVC asset workflow is restored locally
+2. Add helper commands once the DVC asset workflow is restored locally
