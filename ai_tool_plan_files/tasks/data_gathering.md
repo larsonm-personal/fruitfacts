@@ -61,6 +61,9 @@ real work exposes repeated patterns, edge cases, and useful helper commands.
 - [Source Parsing Workflow](data_gathering_guides/source_parsing_workflow.md)
   - Tooling and judgment notes for turning a candidate source into a curated
     JSON5 reference
+- [Extraction Helper Library](data_gathering_guides/extraction_helper_library.md)
+  - Direction for growing source-specific parsers into shared HTML, PDF, text,
+    and draft-output helpers
 
 ## Working Notes
 

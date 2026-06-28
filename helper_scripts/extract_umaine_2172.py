@@ -1,83 +1,17 @@
 #!/usr/bin/env python3
 """Extract a draft JSON5 reference from UMaine Bulletin 2172"""
 
-from html.parser import HTMLParser
-import json
 import re
 import sys
-from urllib.request import Request, urlopen
+
+from fruitfacts_extract.html_tools import fetch_html_page
+from fruitfacts_extract.json5_draft import q
 
 
 SOURCE_URL = "https://extension.umaine.edu/publications/2172e/"
-USER_AGENT = "Mozilla/5.0 FruitFacts data helper"
 NAME_OVERRIDES = {
     "Fall Gold": ("Fallgold", ["Fall Gold"]),
 }
-
-
-class BlockParser(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.blocks = []
-        self.current = None
-        self.skip_depth = 0
-
-    def handle_starttag(self, tag, attrs):
-        if tag in ("script", "style", "noscript"):
-            self.skip_depth += 1
-            return
-        if self.skip_depth:
-            return
-        if tag in ("h1", "h2", "h3", "h4", "p", "li"):
-            self.current = [tag, []]
-        elif self.current and tag == "br":
-            self.current[1].append(" ")
-
-    def handle_endtag(self, tag):
-        if tag in ("script", "style", "noscript"):
-            self.skip_depth = max(0, self.skip_depth - 1)
-            return
-        if self.skip_depth:
-            return
-        if self.current and tag == self.current[0]:
-            text = clean_text("".join(self.current[1]))
-            if text:
-                self.blocks.append((tag, text))
-            self.current = None
-
-    def handle_data(self, data):
-        if self.current and not self.skip_depth:
-            self.current[1].append(data)
-
-
-def clean_text(text):
-    replacements = {
-        "\u00a0": " ",
-        "\u00b0": " degrees ",
-        "\u00a9": "(c)",
-        "\u00ae": "(r)",
-        "\u2018": "'",
-        "\u2019": "'",
-        "\u201c": '"',
-        "\u201d": '"',
-        "\u2013": "-",
-        "\u2014": "-",
-        "\u2026": "...",
-        "\u2122": "(tm)",
-    }
-    for old, new in replacements.items():
-        text = text.replace(old, new)
-    text = re.sub(r"\s+", " ", text).strip()
-    text.encode("ascii")
-    return text
-
-
-def fetch_blocks():
-    request = Request(SOURCE_URL, headers={"User-Agent": USER_AGENT})
-    html = urlopen(request).read().decode("utf-8", "replace")
-    parser = BlockParser()
-    parser.feed(html)
-    return parser.blocks
 
 
 def category_from_heading(text):
@@ -124,7 +58,7 @@ def harvest_hint(description):
 
 
 def extract():
-    blocks = fetch_blocks()
+    blocks = fetch_html_page(SOURCE_URL).blocks
     plants = []
     categories = {}
     current_category = None
@@ -192,10 +126,6 @@ def extract():
         plants.append(plant)
 
     return categories, plants
-
-
-def q(value):
-    return json.dumps(value, ensure_ascii=True)
 
 
 def emit_json5(categories, plants):

@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 """Extract a draft JSON5 reference from UMaine Bulletin 2184"""
 
-from html.parser import HTMLParser
-import json
 import re
 import sys
-from urllib.request import Request, urlopen
+
+from fruitfacts_extract.html_tools import fetch_html_page
+from fruitfacts_extract.json5_draft import q
 
 
 SOURCE_URL = "https://extension.umaine.edu/publications/2184e/"
-USER_AGENT = "Mozilla/5.0 FruitFacts data helper"
 SEASON_HEADINGS = {
     "Early Season",
     "Early-Midseason",
@@ -18,106 +17,6 @@ SEASON_HEADINGS = {
     "Late Season",
     "Day-Neutral",
 }
-
-
-class PageParser(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.blocks = []
-        self.tables = []
-        self.current = None
-        self.skip_depth = 0
-        self.in_table = False
-        self.current_row = None
-        self.current_cell = None
-
-    def handle_starttag(self, tag, attrs):
-        if tag in ("script", "style", "noscript"):
-            self.skip_depth += 1
-            return
-        if self.skip_depth:
-            return
-
-        if tag == "table":
-            self.in_table = True
-            self.tables.append([])
-            return
-        if self.in_table:
-            if tag == "tr":
-                self.current_row = []
-            elif tag in ("th", "td") and self.current_row is not None:
-                self.current_cell = []
-            elif tag == "br" and self.current_cell is not None:
-                self.current_cell.append(" ")
-            return
-
-        if tag in ("h1", "h2", "h3", "h4", "p", "li"):
-            self.current = [tag, []]
-        elif self.current and tag == "br":
-            self.current[1].append(" ")
-
-    def handle_endtag(self, tag):
-        if tag in ("script", "style", "noscript"):
-            self.skip_depth = max(0, self.skip_depth - 1)
-            return
-        if self.skip_depth:
-            return
-
-        if self.in_table:
-            if tag in ("th", "td") and self.current_cell is not None:
-                text = clean_text("".join(self.current_cell))
-                self.current_row.append(text)
-                self.current_cell = None
-            elif tag == "tr" and self.current_row is not None:
-                if any(self.current_row):
-                    self.tables[-1].append(self.current_row)
-                self.current_row = None
-            elif tag == "table":
-                self.in_table = False
-            return
-
-        if self.current and tag == self.current[0]:
-            text = clean_text("".join(self.current[1]))
-            if text:
-                self.blocks.append((tag, text))
-            self.current = None
-
-    def handle_data(self, data):
-        if self.skip_depth:
-            return
-        if self.current_cell is not None:
-            self.current_cell.append(data)
-        elif self.current:
-            self.current[1].append(data)
-
-
-def clean_text(text):
-    replacements = {
-        "\u00a0": " ",
-        "\u00a9": "(c)",
-        "\u00ae": "(r)",
-        "\u2018": "'",
-        "\u2019": "'",
-        "\u201c": '"',
-        "\u201d": '"',
-        "\u2013": "-",
-        "\u2014": "-",
-        "\u2026": "...",
-        "\u2122": "(tm)",
-    }
-    for old, new in replacements.items():
-        text = text.replace(old, new)
-    text = re.sub(r"\s+", " ", text).strip()
-    text.encode("ascii")
-    return text
-
-
-def fetch_page():
-    request = Request(SOURCE_URL, headers={"User-Agent": USER_AGENT})
-    html = urlopen(request).read().decode("utf-8", "replace")
-    parser = PageParser()
-    parser.feed(html)
-    return parser.blocks, parser.tables
 
 
 def table_summary(tables):
@@ -179,13 +78,13 @@ def extra_description_bits(table_row):
 
 
 def extract():
-    blocks, tables = fetch_page()
-    summaries = table_summary(tables)
+    page = fetch_html_page(SOURCE_URL)
+    summaries = table_summary(page.tables)
     plants = []
     current_category = None
     pending_skip_index = None
 
-    for index, (tag, text) in enumerate(blocks):
+    for index, (tag, text) in enumerate(page.blocks):
         if index == pending_skip_index:
             continue
 
@@ -206,7 +105,7 @@ def extract():
         name = match.group(1).strip()
         description = (match.group(2) or "").strip()
         if not description:
-            description = description_from_following(blocks, index)
+            description = description_from_following(page.blocks, index)
             if description:
                 pending_skip_index = index + 1
         if not description:
@@ -227,10 +126,6 @@ def extract():
         plants.append(plant)
 
     return summaries, plants
-
-
-def q(value):
-    return json.dumps(value, ensure_ascii=True)
 
 
 def emit_json5(summaries, plants):

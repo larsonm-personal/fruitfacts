@@ -1,0 +1,191 @@
+{
+    title: "Growing Strawberries in Colorado Gardens",
+    author: "David Whiting, CSU Extension, retired and Merrill Kingsbury, CSU Extension",
+    description:
+        "Colorado Master Gardener GardenNotes strawberry guide. The source gives Colorado-oriented guidance for June-bearing, ever-bearing, and day-neutral strawberry types, including suggested cultivars, Front Range timing, planting systems, winter protection, and common pest context",
+    url: "https://cmg.extension.colostate.edu/Gardennotes/763.pdf",
+    published: "2018",
+    reviewed: "2023",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    thumbnail: "pdf",
+    needs_help: true, // todo - review source spellings Bloominden Gem and Carskill against the original PDF
+    locations: [
+        {
+            name: "Colorado State University Extension, Fort Collins, Colorado",
+            latitude: 40.5748,
+            longitude: -105.0808
+        }
+    ],
+    categories: [
+        {
+            name: "June-bearing cultivars",
+            description:
+                "CSU describes June-bearing strawberries as producing one large early summer crop, late June to early July along the Colorado Front Range, with larger fruit and higher yields but less dependability in Colorado spring temperature swings"
+        },
+        {
+            name: "Ever-bearing cultivars",
+            description:
+                "CSU describes ever-bearing strawberries as producing one early summer crop and a second fall crop, with smaller berries but more dependability than June-bearing types in cold Colorado climates"
+        },
+        {
+            name: "Day-neutral cultivars",
+            description:
+                "CSU describes day-neutral strawberries as flowering through most of summer and fall in cycles, slowing or stopping in hot weather, and providing a light daily harvest with small fruit"
+        }
+    ],
+    plants: [
+        {
+            type: "Strawberry",
+            name: "Honeoye",
+            category: "June-bearing cultivars",
+            harvest_time_unparsed: "late June to early July along the Colorado Front Range",
+            description:
+                "Suggested by CSU GardenNotes 763 as a June-bearing cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Guardian",
+            category: "June-bearing cultivars",
+            harvest_time_unparsed: "late June to early July along the Colorado Front Range",
+            description:
+                "Suggested by CSU GardenNotes 763 as a June-bearing cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Kent",
+            category: "June-bearing cultivars",
+            harvest_time_unparsed: "late June to early July along the Colorado Front Range",
+            description:
+                "Suggested by CSU GardenNotes 763 as a June-bearing cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Redchief",
+            category: "June-bearing cultivars",
+            harvest_time_unparsed: "late June to early July along the Colorado Front Range",
+            description:
+                "Suggested by CSU GardenNotes 763 as a June-bearing cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Delite",
+            category: "June-bearing cultivars",
+            harvest_time_unparsed: "late June to early July along the Colorado Front Range",
+            description:
+                "Suggested by CSU GardenNotes 763 as a June-bearing cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Jewel",
+            category: "June-bearing cultivars",
+            harvest_time_unparsed: "late June to early July along the Colorado Front Range",
+            description:
+                "Suggested by CSU GardenNotes 763 as a June-bearing cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Mesabi",
+            category: "June-bearing cultivars",
+            harvest_time_unparsed: "late June to early July along the Colorado Front Range",
+            description:
+                "Suggested by CSU GardenNotes 763 as a June-bearing cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Wendy",
+            category: "June-bearing cultivars",
+            harvest_time_unparsed: "late June to early July along the Colorado Front Range",
+            description:
+                "Suggested by CSU GardenNotes 763 as a June-bearing cultivar for Colorado gardens. Source text names this as A.C. Wendy"
+        },
+        {
+            type: "Strawberry",
+            name: "Cabot",
+            category: "June-bearing cultivars",
+            harvest_time_unparsed: "late June to early July along the Colorado Front Range",
+            description:
+                "Suggested by CSU GardenNotes 763 as a June-bearing cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Blomidon Gem",
+            category: "June-bearing cultivars",
+            harvest_time_unparsed: "late June to early July along the Colorado Front Range",
+            description:
+                "Suggested by CSU GardenNotes 763 as a June-bearing cultivar for Colorado gardens. The extracted PDF text says Bloominden Gem, which appears likely to refer to Blomidon Gem"
+        },
+        {
+            type: "Strawberry",
+            name: "Catskill",
+            category: "June-bearing cultivars",
+            harvest_time_unparsed: "late June to early July along the Colorado Front Range",
+            description:
+                "Suggested by CSU GardenNotes 763 as a June-bearing cultivar for Colorado gardens. The extracted PDF text says Carskill, which appears likely to refer to Catskill"
+        },
+        {
+            type: "Strawberry",
+            name: "Geneva",
+            category: "June-bearing cultivars",
+            harvest_time_unparsed: "late June to early July along the Colorado Front Range",
+            description:
+                "Suggested by CSU GardenNotes 763 as a June-bearing cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Quinault",
+            category: "Ever-bearing cultivars",
+            harvest_time_unparsed: "early summer and fall",
+            description:
+                "Suggested by CSU GardenNotes 763 as an ever-bearing cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Ogallala",
+            category: "Ever-bearing cultivars",
+            harvest_time_unparsed: "early summer and fall",
+            description:
+                "Suggested by CSU GardenNotes 763 as an ever-bearing cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Fort Laramie",
+            category: "Ever-bearing cultivars",
+            harvest_time_unparsed: "early summer and fall",
+            description:
+                "Suggested by CSU GardenNotes 763 as an ever-bearing cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Tribute",
+            category: "Day-neutral cultivars",
+            harvest_time_unparsed: "most of summer and fall",
+            description:
+                "Suggested by CSU GardenNotes 763 as a day-neutral cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Tristar",
+            category: "Day-neutral cultivars",
+            harvest_time_unparsed: "most of summer and fall",
+            description:
+                "Suggested by CSU GardenNotes 763 as a day-neutral cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Fern",
+            category: "Day-neutral cultivars",
+            harvest_time_unparsed: "most of summer and fall",
+            description:
+                "Suggested by CSU GardenNotes 763 as a day-neutral cultivar for Colorado gardens"
+        },
+        {
+            type: "Strawberry",
+            name: "Mara Des Bois",
+            category: "Day-neutral cultivars",
+            harvest_time_unparsed: "most of summer and fall",
+            description:
+                "Suggested by CSU GardenNotes 763 as a day-neutral cultivar for Colorado gardens"
+        }
+    ]
+}

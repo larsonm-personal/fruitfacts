@@ -1,0 +1,80 @@
+# Extraction Helper Library
+
+## Goal
+
+Grow source-specific extraction scripts into a small, composable helper library
+without hiding source judgment inside generic code.
+
+The library should make it easy to turn HTML pages and PDFs into reviewable
+draft records. The curated JSON5 file still needs human review, source
+interpretation, and project-specific field choices.
+
+## Current Shape
+
+The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
+
+- `text_tools.py`
+  - ASCII cleanup, whitespace normalization, and simple source-list splitting
+- `html_tools.py`
+  - HTML block and table extraction with script/style noise skipped
+- `pdf_tools.py`
+  - Download to temp storage and run `pdftotext`
+- `json5_draft.py`
+  - JSON-safe quoting for draft emitters
+
+Source-specific scripts such as `extract_umaine_2172.py`,
+`extract_umaine_2184.py`, and `extract_csu_763.py` should import these helpers
+and keep only the source-specific rules locally.
+
+## Boundary
+
+Shared helpers should do:
+
+- Fetch source bytes or source HTML with a browser-like user agent
+- Convert HTML into `(tag, text)` blocks and table rows
+- Convert born-digital PDFs into cleaned text or lines
+- Normalize common web and PDF punctuation to printable ASCII
+- Provide small parsing helpers for recurring text shapes
+- Emit draft JSON5 safely enough for review
+
+Source-specific scripts should do:
+
+- Decide where useful source content starts and stops
+- Interpret headings as categories
+- Decide plant type, region, and metadata
+- Resolve likely aliases or source typos with `needs_help`
+- Choose which source wording becomes `description`
+- Decide whether timing belongs in `harvest_time_unparsed`
+
+## Worked Patterns
+
+- UMaine 2172: HTML headings plus `Name: description` paragraphs
+- UMaine 2184: HTML season headings plus narrative paragraphs plus summary
+  table rows
+- CSU GardenNotes 763: PDF text plus bounded sections containing suggested
+  cultivar lists
+
+## PDF Lessons
+
+- Prefer `pdftotext -layout` first for born-digital PDFs
+- For two-column PDFs, test `pdftotext -raw` before writing column repair code
+- Parse bounded sections rather than stopping at the first period because names
+  such as `A.C. Wendy` contain punctuation
+- Treat source spellings and extraction artifacts separately. If a likely source
+  typo is normalized, keep the source spelling as `AKA` or in a note and leave
+  `needs_help`
+- Do not commit downloaded PDFs directly unless the DVC asset workflow is being
+  used
+
+## Next Library Steps
+
+1. Add a `section_between()` helper after two or three more scripts need it.
+2. Add a table-shape matcher for headers such as variety, season, use, disease,
+   and comments.
+3. Add a PDF diagnostic command that reports page count, text length, and
+   whether `pdftotext -layout` or `pdftotext -raw` looks cleaner.
+4. Add draft-record helpers only after the same emit pattern repeats in at least
+   three source scripts.
+5. Keep parsers source-specific until a pattern appears in multiple unrelated
+   sources.
+

@@ -56,6 +56,12 @@ python helper_scripts/extract_umaine_2172.py > $env:TEMP\umaine_2172_draft.json5
 
 The helper output is a draft. Do not treat it as reviewed data.
 
+Shared code belongs in `helper_scripts/fruitfacts_extract/` when at least two
+source scripts need the same behavior. Keep source interpretation in the
+source-specific script. See
+[Extraction Helper Library](extraction_helper_library.md) for the current
+library boundary.
+
 ## The Art
 
 - Capture source metadata first: title, author, URL, publication dates,
@@ -103,3 +109,15 @@ merges table notes into the draft plant records. The curated reference keeps the
 season heading as each plant `category`, uses table ripening values as
 `harvest_time_unparsed` where appropriate, and keeps disease resistance and
 home-garden or plasticulture notes in concise descriptions.
+
+## CSU GardenNotes 763 Notes
+
+This was the first PDF worked example. The source is short and born-digital, so
+`pdftotext -layout` produced useful text without OCR. The source shape is not a
+table; it has bounded sections where sentences say `Suggested cultivars
+include ...`.
+
+The helper script uses shared PDF text extraction and then source-specific
+section parsing. A first naive regex stopped at the period inside `A.C. Wendy`,
+so the parser now bounds each category by the next section heading before
+splitting cultivar names.

@@ -1135,7 +1135,7 @@
         },
         {
             id: "csu-gardennotes-763-growing-strawberries-colorado-gardens",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Strawberries in Colorado Gardens",
             institution: "Colorado State University Extension",
@@ -1154,7 +1154,10 @@
             duplicate_check:
                 "No Colorado strawberry extension reference found in existing references",
             notes: [
-                "Direct PDF returned 200"
+                "Direct PDF returned 200",
+                "Encoded in plant_database/references/Colorado/CSU GardenNotes 763 Growing Strawberries in Colorado Gardens.json5",
+                "Draft extraction helper added at helper_scripts/extract_csu_763.py",
+                "Worked example for PDF text extraction and suggested-cultivar list parsing"
             ]
         },
         {
