@@ -818,6 +818,464 @@
                 "Official Clemson page links to https://www.clemsonpeach.org/",
                 "Database should be reviewed before deciding whether to encode as one source or multiple trial records"
             ]
+        },
+        {
+            id: "purdue-apple-cultivars-indiana-ho-165-w",
+            status: "accepted",
+            priority: "high",
+            title: "Apple Cultivars for Indiana",
+            institution: "Purdue University Cooperative Extension Service",
+            region: "Indiana",
+            crops: ["Apple"],
+            publication_number: "HO-165-W",
+            source_type: "state extension cultivar guide",
+            download_url:
+                "https://www.purdue.edu/hla/sites/yardandgarden/wp-content/uploads/sites/2/2016/10/HO-165.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "exact publication-number search",
+            value_summary:
+                "Indiana apple cultivar guide with ripening season, disease resistance, hardiness, and use notes",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Indiana/Purdue HO-165-W Apple Cultivars for Indiana.json5",
+            duplicate_check:
+                "Existing Indiana references include PRI releases and apple disease susceptibility, not this Indiana cultivar guide",
+            notes: [
+                "HLA-hosted PDF returned 200",
+                "No current HTML landing page was found during this pass"
+            ]
+        },
+        {
+            id: "purdue-grape-varieties-indiana-ho-221-w",
+            status: "accepted",
+            priority: "high",
+            title: "Grape Varieties for Indiana",
+            institution: "Purdue Extension",
+            region: "Indiana",
+            crops: ["Grape"],
+            publication_number: "HO-221-W",
+            source_type: "state extension cultivar guide",
+            download_url: "https://www.extension.purdue.edu/extmedia/HO/HO-221-W.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "exact publication-number search",
+            value_summary:
+                "Indiana grape cultivar guide matching varieties to site climate and production goals",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Indiana/Purdue HO-221-W Grape Varieties for Indiana.json5",
+            duplicate_check:
+                "No Indiana grape cultivar guide found in existing references",
+            notes: [
+                "Direct Purdue Extension PDF returned 200"
+            ]
+        },
+        {
+            id: "purdue-raspberries-ho-44-w",
+            status: "accepted",
+            priority: "medium",
+            title: "Raspberries",
+            institution: "Purdue University Cooperative Extension Service",
+            region: "Indiana",
+            crops: ["Raspberry"],
+            publication_number: "HO-44-W",
+            source_type: "state extension guide",
+            landing_url:
+                "https://ag.purdue.edu/department/hla/extension/extension-publications-library/ext-pubs/ho-44-w.html",
+            download_url:
+                "https://www.purdue.edu/hla/sites/yardandgarden/wp-content/uploads/sites/2/2016/10/HO-44.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "exact publication-number search",
+            value_summary:
+                "Indiana raspberry guide with cultivar recommendations and home-garden production notes",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Indiana/Purdue HO-44-W Raspberries.json5",
+            duplicate_check:
+                "Existing raspberry references are not Indiana-specific Purdue cultivar guidance",
+            notes: [
+                "Current Purdue landing page returned 200",
+                "HLA-hosted PDF returned 200"
+            ]
+        },
+        {
+            id: "purdue-growing-strawberries-ho-46-w",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Strawberries",
+            institution: "Purdue University Cooperative Extension Service",
+            region: "Indiana",
+            crops: ["Strawberry"],
+            publication_number: "HO-46-W",
+            source_type: "state extension guide",
+            landing_url:
+                "https://ag.purdue.edu/department/hla/extension/extension-publications-library/ext-pubs/ho-46-w.html",
+            download_url:
+                "https://www.purdue.edu/hla/sites/yardandgarden/wp-content/uploads/sites/2/2016/10/HO-46.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "exact publication-number search",
+            value_summary:
+                "Indiana strawberry guide with cultivar recommendations and production system notes",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Indiana/Purdue HO-46-W Growing Strawberries.json5",
+            duplicate_check:
+                "No Indiana strawberry extension guide found in existing references",
+            notes: [
+                "Current Purdue landing page returned 200",
+                "HLA-hosted PDF returned 200"
+            ]
+        },
+        {
+            id: "umaine-raspberry-blackberry-varieties-maine-2172",
+            status: "accepted",
+            priority: "high",
+            title: "Raspberry and Blackberry Varieties for Maine",
+            institution: "University of Maine Cooperative Extension",
+            region: "Maine",
+            crops: [
+                "Blackberry",
+                "Raspberry"
+            ],
+            publication_number: "Bulletin 2172",
+            source_type: "state extension cultivar guide",
+            landing_url: "https://extension.umaine.edu/publications/2172e/",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Maine caneberry variety guide with hardiness, fruit color, harvest timing, and disease notes",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/Maine/UMaine 2172 Raspberry and Blackberry Varieties for Maine.json5",
+            duplicate_check:
+                "No Maine caneberry reference found in existing references",
+            notes: [
+                "Official web page returned 200 and has cultivar-level content"
+            ]
+        },
+        {
+            id: "umaine-strawberry-varieties-maine-2184",
+            status: "accepted",
+            priority: "high",
+            title: "Strawberry Varieties for Maine",
+            institution: "University of Maine Cooperative Extension",
+            region: "Maine",
+            crops: ["Strawberry"],
+            publication_number: "Bulletin 2184",
+            source_type: "state extension cultivar guide",
+            landing_url: "https://extension.umaine.edu/publications/2184e/",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Maine strawberry variety guide with harvest season, hardiness, flavor, disease resistance, and use notes",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/Maine/UMaine 2184 Strawberry Varieties for Maine.json5",
+            duplicate_check:
+                "No Maine strawberry reference found in existing references",
+            notes: [
+                "Official web page returned 200 and has cultivar-level content"
+            ]
+        },
+        {
+            id: "umaine-growing-highbush-blueberries-2253",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Highbush Blueberries",
+            institution: "University of Maine Cooperative Extension",
+            region: "Maine",
+            crops: ["Blueberry"],
+            publication_number: "Bulletin 2253",
+            source_type: "state extension guide",
+            landing_url: "https://extension.umaine.edu/publications/2253e/",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Maine highbush blueberry guide with cultivar selection and site suitability notes",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/Maine/UMaine 2253 Growing Highbush Blueberries.json5",
+            duplicate_check:
+                "No Maine blueberry reference found in existing references",
+            notes: [
+                "Official web page returned 200",
+                "Less cultivar-dense than the Maine caneberry and strawberry pages but still useful"
+            ]
+        },
+        {
+            id: "osu-growing-apples-home-orchard-hyg-1401",
+            status: "accepted",
+            priority: "high",
+            title: "Growing Apples in the Home Orchard",
+            institution: "Ohio State University Extension",
+            region: "Ohio",
+            crops: ["Apple"],
+            publication_number: "HYG-1401",
+            source_type: "state extension guide",
+            landing_url: "https://ohioline.osu.edu/factsheet/hyg-1401",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Ohio home apple guide with cultivar selection, pollination, disease resistance, and rootstock context",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/Ohio/OSU HYG-1401 Growing Apples in the Home Orchard.json5",
+            duplicate_check:
+                "Existing Ohio references include peaches and MAIA varieties, not this home apple guide",
+            notes: [
+                "Official Ohioline page returned 200"
+            ]
+        },
+        {
+            id: "osu-growing-blueberries-home-garden-hyg-1422",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Blueberries in the Home Garden",
+            institution: "Ohio State University Extension",
+            region: "Ohio",
+            crops: ["Blueberry"],
+            publication_number: "HYG-1422",
+            source_type: "state extension guide",
+            landing_url: "https://ohioline.osu.edu/factsheet/hyg-1422",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Ohio blueberry guide with variety selection, soil requirements, and home production notes",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/Ohio/OSU HYG-1422 Growing Blueberries in the Home Garden.json5",
+            duplicate_check:
+                "No Ohio blueberry extension reference found in existing references",
+            notes: [
+                "Official Ohioline page returned 200"
+            ]
+        },
+        {
+            id: "osu-growing-grapes-home-fruit-planting-hyg-1423",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Grapes in the Home Fruit Planting",
+            institution: "Ohio State University Extension",
+            region: "Ohio",
+            crops: ["Grape"],
+            publication_number: "HYG-1423",
+            source_type: "state extension guide",
+            landing_url: "https://ohioline.osu.edu/factsheet/hyg-1423",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Ohio grape guide with variety selection, site, pruning, and home vineyard management notes",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/Ohio/OSU HYG-1423 Growing Grapes in the Home Fruit Planting.json5",
+            duplicate_check:
+                "No Ohio grape extension reference found in existing references",
+            notes: [
+                "Official Ohioline page returned 200"
+            ]
+        },
+        {
+            id: "csu-gardennotes-771-growing-tree-fruit-colorado-gardens",
+            status: "accepted",
+            priority: "high",
+            title: "Growing Tree Fruit in Colorado Gardens",
+            institution: "Colorado State University Extension",
+            region: "Colorado",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Cherry",
+                "Peach",
+                "Pear",
+                "Plum"
+            ],
+            publication_number: "CMG GardenNotes 771",
+            source_type: "state extension guide",
+            download_url: "https://cmg.extension.colostate.edu/Gardennotes/771.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Colorado tree fruit guide with cultivar selection, pollination, spacing, and region limitations",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Colorado/CSU GardenNotes 771 Growing Tree Fruit in Colorado Gardens.json5",
+            duplicate_check:
+                "Existing Colorado references appear limited to commercial or indirect mentions, not this extension guide",
+            notes: [
+                "Direct PDF returned 200"
+            ]
+        },
+        {
+            id: "csu-gardennotes-764-growing-grapes-colorado-gardens",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Grapes in Colorado Gardens",
+            institution: "Colorado State University Extension",
+            region: "Colorado",
+            crops: ["Grape"],
+            publication_number: "CMG GardenNotes 764",
+            source_type: "state extension guide",
+            download_url: "https://cmg.extension.colostate.edu/Gardennotes/764.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Colorado grape guide with type and cultivar notes for home plantings",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Colorado/CSU GardenNotes 764 Growing Grapes in Colorado Gardens.json5",
+            duplicate_check:
+                "No Colorado grape extension reference found in existing references",
+            notes: [
+                "Direct PDF returned 200"
+            ]
+        },
+        {
+            id: "csu-gardennotes-763-growing-strawberries-colorado-gardens",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Strawberries in Colorado Gardens",
+            institution: "Colorado State University Extension",
+            region: "Colorado",
+            crops: ["Strawberry"],
+            publication_number: "CMG GardenNotes 763",
+            source_type: "state extension guide",
+            download_url: "https://cmg.extension.colostate.edu/Gardennotes/763.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Colorado strawberry guide with cultivar type notes and planting-system guidance",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Colorado/CSU GardenNotes 763 Growing Strawberries in Colorado Gardens.json5",
+            duplicate_check:
+                "No Colorado strawberry extension reference found in existing references",
+            notes: [
+                "Direct PDF returned 200"
+            ]
+        },
+        {
+            id: "csu-gardennotes-762-growing-blackberries-colorado-gardens",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Blackberries in Colorado Gardens",
+            institution: "Colorado State University Extension",
+            region: "Colorado",
+            crops: ["Blackberry"],
+            publication_number: "CMG GardenNotes 762",
+            source_type: "state extension guide",
+            download_url: "https://cmg.extension.colostate.edu/Gardennotes/762.pdf",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Colorado blackberry guide with cultivar type notes and winter-hardiness considerations",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Colorado/CSU GardenNotes 762 Growing Blackberries in Colorado Gardens.json5",
+            duplicate_check:
+                "No Colorado blackberry extension reference found in existing references",
+            notes: [
+                "Direct PDF returned 200"
+            ]
+        },
+        {
+            id: "unl-grape-cultivars-nebraska-g2279",
+            status: "accepted",
+            priority: "high",
+            title: "Grape Cultivars for Nebraska",
+            institution: "University of Nebraska-Lincoln Extension",
+            region: "Nebraska",
+            crops: ["Grape"],
+            publication_number: "G2279",
+            source_type: "state extension cultivar guide",
+            landing_url:
+                "https://extensionpubs.unl.edu/publication/g2279/grape-cultivars-for-nebraska",
+            download_url: "https://extensionpubs.unl.edu/publication/g2279/na/pdf/view",
+            discovered: "2026-06-28",
+            discovered_by: "official site search",
+            value_summary:
+                "Nebraska grape cultivar guide with tabled uses, hardiness, disease resistance, and fruit traits",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Nebraska/UNL G2279 Grape Cultivars for Nebraska.json5",
+            duplicate_check:
+                "Existing Nebraska candidate G2354 covers tree fruit; this source covers grapes",
+            notes: [
+                "Landing page and PDF endpoint both returned 200"
+            ]
+        },
+        {
+            id: "uwisc-home-fruit-cultivars-southern-wisconsin-a2582",
+            status: "accepted",
+            priority: "medium",
+            title: "Home Fruit Cultivars for Southern Wisconsin",
+            institution: "University of Wisconsin Extension",
+            region: "Southern Wisconsin",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Blackberry",
+                "Blueberry",
+                "Cherry",
+                "Grape",
+                "Nectarine",
+                "Peach",
+                "Pear",
+                "Plum",
+                "Raspberry",
+                "Strawberry"
+            ],
+            publication_number: "A2582",
+            source_type: "regional extension cultivar guide",
+            download_url: "https://learningstore.extension.wisc.edu/assets/pdfs/A2582.PDF",
+            discovered: "2026-06-28",
+            discovered_by: "exact publication-number search",
+            value_summary:
+                "Southern Wisconsin cultivar guide across tree fruits, grapes, berries, and small fruits",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Wisconsin/A2582 Home Fruit Cultivars for Southern Wisconsin.json5",
+            duplicate_check:
+                "Existing Wisconsin references include apple cultivars and stone fruit, but not this broader southern Wisconsin guide",
+            notes: [
+                "Direct PDF returned 200",
+                "No current product landing page was found during this pass"
+            ]
+        },
+        {
+            id: "uwisc-home-fruit-cultivars-northern-wisconsin-a2488",
+            status: "accepted",
+            priority: "medium",
+            title: "Home Fruit Cultivars for Northern Wisconsin",
+            institution: "University of Wisconsin Extension",
+            region: "Northern Wisconsin",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Blueberry",
+                "Cherry",
+                "Currant",
+                "Gooseberry",
+                "Grape",
+                "Pear",
+                "Plum",
+                "Raspberry",
+                "Strawberry"
+            ],
+            publication_number: "A2488",
+            source_type: "regional extension cultivar guide",
+            download_url: "https://learningstore.extension.wisc.edu/assets/pdfs/A2488.PDF",
+            discovered: "2026-06-28",
+            discovered_by: "exact publication-number search",
+            value_summary:
+                "Northern Wisconsin cultivar guide with cold-climate recommendations across tree fruit and small fruit",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Wisconsin/A2488 Home Fruit Cultivars for Northern Wisconsin.json5",
+            duplicate_check:
+                "Existing Wisconsin references include apple cultivars and stone fruit, but not this broader northern Wisconsin guide",
+            notes: [
+                "Direct PDF returned 200",
+                "No current product landing page was found during this pass"
+            ]
         }
     ]
 }
