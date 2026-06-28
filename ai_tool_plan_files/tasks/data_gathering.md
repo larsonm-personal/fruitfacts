@@ -1,20 +1,83 @@
-a primary goal of the project is to be an index for high-quality variety data sources such as land grant university growing guides, books, published variety comparison studies, etc.  I was initially gathering these by hand and then importing them by hand.  I'd like to develop a set of tools:
+# Data Gathering And Reference Encoding
 
-1. to search for new sources using AI search assistance
-2. to download and index them initially with blank .json5 files with "needs_help: true"
-3. to parse them, with text recognition or image recognition, into our plant_database/... .json5 files
-4. to go through the "help needed" backlog and discern which updates are needed (typically, just delayed parsing) and perform those updates
-5. to sanity-check our data sources in various ways
+A primary goal of FruitFacts is to be an index for high-quality variety data
+sources such as land grant university growing guides, books, published variety
+comparison studies, trial reports, and other durable publications.
 
-I envision small guide/doc files that describe these concrete tasks:
-1. compare a given reference (usually pdf) with its .json5 encoding/index file. learn from its associations and document the typical ways associations are set up in a helper file (a single helper doc for all work, not one per reference, that gets updated as a guide to other steps)
-2. update a given .json5 encoding/index file with new/missing data from a given reference
-3. perform a web search for new high-quality data sources. the categories of data sources should mirror those already in existence. the output should be a list of candidate files. the inputs are, let's say, google search, bing, AI search, etc.  For each data source found, find a concrete downloadable URL
-4. survey existing references for *their* references/citations, and look those up, and add them to the list (with concrete downloadable URLs)
-5. step through the list of downloadable URLs and download them, and sort them by location or type as has been done for existing references
-6. do greenfield encoding/index file creation from these references
+The long-term data gathering workflow should help with:
 
-immediate tasks:
-1. I'd like you to start work on concise docs for each of the above tasks
-2. please think about expanding the list of concrete tasks
-3. for each concrete task, create a placeholder guide doc and add that to an overall helper file (this file)
+1. Finding new high-quality sources
+2. Downloading and organizing source files
+3. Creating initial JSON5 reference stubs with `needs_help: true`
+4. Encoding useful plant data from sources into `plant_database/`
+5. Clearing the `needs_help` backlog when missing work is understood
+6. Sanity-checking source data, URLs, and encoded records
+
+## Concrete Task Guides
+
+These guides are intentionally concise placeholders. They should be expanded as
+real work exposes repeated patterns, edge cases, and useful helper commands.
+
+1. [Source Candidate Search](data_gathering_guides/source_candidate_search.md)
+   - Search the web and AI search tools for new high-quality fruit variety data
+     sources with concrete downloadable URLs
+2. [Citation Survey](data_gathering_guides/citation_survey.md)
+   - Mine existing references for citations, then locate the cited source files
+3. [Candidate Triage And Prioritization](data_gathering_guides/candidate_triage.md)
+   - Rank candidate sources before download or encoding work starts
+4. [Source Download And Sorting](data_gathering_guides/source_download_and_sort.md)
+   - Download source assets and place them in the same location/type pattern as
+     existing references
+5. [Reference Stub Creation](data_gathering_guides/reference_stub_creation.md)
+   - Create initial `.json5` reference files with metadata and `needs_help`
+6. [Association Review](data_gathering_guides/association_review.md)
+   - Compare a source with its JSON5 file and update the shared association
+     pattern helper
+7. [Existing Encoding Update](data_gathering_guides/existing_encoding_update.md)
+   - Fill missing plant data in an existing JSON5 reference from its source
+8. [Greenfield Encoding](data_gathering_guides/greenfield_encoding.md)
+   - Create a full JSON5 reference encoding from a source with no current file
+9. [Help Needed Backlog](data_gathering_guides/help_needed_backlog.md)
+   - Work through `needs_help` files and clear the marker only when justified
+10. [Data Sanity Checks](data_gathering_guides/data_sanity_checks.md)
+    - Check references and encoded data for structural and content problems
+11. [Provenance And URL Verification](data_gathering_guides/provenance_url_verification.md)
+    - Verify source identity, durable links, downloaded filenames, and metadata
+
+## Shared Helper Docs
+
+- [Association Patterns](data_gathering_guides/association_patterns.md)
+  - A single living helper for how source rows, locations, categories, cultivar
+    names, harvest times, and citations are mapped into FruitFacts JSON5
+
+## Working Notes
+
+- Prefer source-preserving encodings over interpretation. For example, keep
+  vague date wording vague unless the source itself gives exact dates.
+- Prefer university extension, land grant, trial, peer-reviewed, book, and
+  durable institutional sources over uncited editorial summaries.
+- Preserve useful source metadata even if the plant data still needs later
+  parsing.
+- Use existing JSON5 field names and nearby examples before inventing new
+  shapes.
+- Do not clear `needs_help` unless the underlying missing or uncertain work has
+  actually been resolved.
+
+## Immediate Tasks
+
+Initial pass completed:
+
+1. Added concise placeholder guide docs for the current and expanded concrete
+   tasks
+2. Expanded the concrete task list to include triage, stub creation, backlog
+   work, URL verification, and sanity checks
+3. Added this file as the hub for all task guide links
+
+Useful next passes:
+
+1. Fill `association_patterns.md` by reviewing 3 to 5 already-encoded
+   references against their PDFs or source pages
+2. Add a candidate-source spreadsheet or JSON5 queue format
+3. Add a small checklist for deciding when a source deserves a downloaded asset,
+   a JSON5 stub, both, or neither
+4. Add helper commands once the DVC asset workflow is restored locally
