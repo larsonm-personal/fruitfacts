@@ -1,0 +1,73 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.uga.edu/publications/detail.html?number=C740"
+  },
+  "reference_fields": [
+    ["title", "Home Garden Apples"],
+    ["author", "Bob Westerfield"],
+    ["description", "UGA Cooperative Extension home garden apple guide with recommended apple varieties for Georgia zones, disease-resistant varieties, pollination codes, and ripening notes"],
+    ["url", "https://extension.uga.edu/publications/detail.html?number=C740"],
+    ["thumbnail", "website"],
+    ["published", "Aug 19, 2002"],
+    ["reviewed", "Jul 6, 2022"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Georgia Cooperative Extension, Athens, Georgia",
+      "latitude": 33.9477,
+      "longitude": -83.3773
+    }
+  ],
+  "categories": [
+    {
+      "name": "Recommended apple varieties for Georgia",
+      "description": "Apple varieties UGA lists as recommended for home use in Georgia"
+    },
+    {
+      "name": "Disease-resistant apple varieties for Georgia",
+      "description": "Apple varieties UGA lists as disease-resistant choices for Georgia"
+    }
+  ],
+  "name_overrides": {
+    "Goldrush": {
+      "name": "GoldRush",
+      "note": "Source table names this as Goldrush"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "required_headers": ["Variety1", "Zone2", "Characteristics3", "Pollination Code4"],
+      "plant_type": "Apple",
+      "name_key": "variety1",
+      "category": "Recommended apple varieties for Georgia",
+      "strip_name_footnotes": true,
+      "skip_prefixes": ["1 Listed", "Note:"],
+      "harvest_from_key": "characteristics3",
+      "harvest_terms": ["ripen", "matur"],
+      "description_labels": [
+        ["zone2", "Georgia apple zone"],
+        ["characteristics3", "Characteristics"],
+        ["pollination_code4", "Pollination code"]
+      ]
+    },
+    {
+      "kind": "html_table",
+      "required_headers": ["Variety", "Zone", "Characteristics"],
+      "plant_type": "Apple",
+      "name_key": "variety",
+      "category": "Disease-resistant apple varieties for Georgia",
+      "strip_name_footnotes": true,
+      "harvest_from_key": "characteristics",
+      "harvest_terms": ["ripen", "matur"],
+      "description_labels": [
+        ["zone", "Georgia apple zone"],
+        ["characteristics", "Characteristics"]
+      ]
+    }
+  ]
+}

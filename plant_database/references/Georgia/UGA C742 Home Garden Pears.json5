@@ -1,0 +1,133 @@
+{
+    title: "Home Garden Pears",
+    author: "Gerard Krewer, Paul Bertrand, and Bob Westerfield",
+    description: "UGA Cooperative Extension home garden pear guide with European and Asian pear variety tables, Georgia zone notes, pollination notes, and fire blight context",
+    url: "https://extension.uga.edu/publications/detail.html?number=C742",
+    thumbnail: "website",
+    published: "Jan 1, 2002",
+    reviewed: "Mar 4, 2026",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Georgia Cooperative Extension, Athens, Georgia",
+            latitude: 33.9477,
+            longitude: -83.3773
+        },
+    ],
+    categories: [
+        {
+            name: "European pear varieties recommended for Georgia",
+            description: "European pear varieties UGA lists for home use in Georgia"
+        },
+        {
+            name: "Asian pear varieties for trial in Georgia",
+            description: "Asian pear varieties UGA lists with a source note that Asian pears are trial plantings only"
+        },
+    ],
+    plants: [
+        {
+            type: "Euro Pear",
+            name: "Orient",
+            category: "European pear varieties recommended for Georgia",
+            description: "Georgia pear zone: 1-2-3-4-5. Characteristics: An excellent pear for most of the state. Resistant to blight. Flesh white; a good keeper. Very large fruit. Pollination code: B,C"
+        },
+        {
+            type: "Euro Pear",
+            name: "Carrick",
+            category: "European pear varieties recommended for Georgia",
+            description: "Georgia pear zone: 1-2-3. Characteristics: Excellent for preserving. Trees resistant to blight. Pollination code: B"
+        },
+        {
+            type: "Euro Pear",
+            name: "Waite",
+            category: "European pear varieties recommended for Georgia",
+            description: "Georgia pear zone: 1-2-3. Characteristics: An excellent pear for the northern half of the state. Resistant to blight. Pollen sterile. Plant with Orient. Pollination code: C"
+        },
+        {
+            type: "Euro Pear",
+            name: "Kieffer",
+            category: "European pear varieties recommended for Georgia",
+            description: "Georgia pear zone: 1-2-3. Characteristics: Large; skin yellow. Poor quality. Subject to blight in wet years. Good for preserves. Pollination code: A,B"
+        },
+        {
+            type: "Euro Pear",
+            name: "Hood",
+            category: "European pear varieties recommended for Georgia",
+            description: "Georgia pear zone: 4-5. Characteristics: Good quality but subject to internal breakdown if allowed to become fully ripe. Blooms early. Pollination code: A"
+        },
+        {
+            type: "Euro Pear",
+            name: "Flordahome",
+            category: "European pear varieties recommended for Georgia",
+            description: "Georgia pear zone: 4-5. Characteristics: New release from Florida. Good quality. Blooms early. Pollination code: A"
+        },
+        {
+            type: "Euro Pear",
+            name: "Baldwin",
+            category: "European pear varieties recommended for Georgia",
+            description: "Georgia pear zone: 4-5. Characteristics: An excellent pear for the southern half of the state. Resistant to blight. Pollination code: A"
+        },
+        {
+            type: "Euro Pear",
+            name: "Magness",
+            category: "European pear varieties recommended for Georgia",
+            description: "Georgia pear zone: 1-2-3-4. Characteristics: Pollen sterile. Plant with Orient. Fruit excellent quality but not very productive. Pollination code: C"
+        },
+        {
+            type: "Euro Pear",
+            name: "Moonglow",
+            category: "European pear varieties recommended for Georgia",
+            description: "Georgia pear zone: 1-2-3-4. Characteristics: Vigorous tree that produces fair to good quality fruit. Nearly free of grit cells. Pollination code: C"
+        },
+        {
+            type: "Euro Pear",
+            name: "Starking Delicious",
+            category: "European pear varieties recommended for Georgia",
+            description: "Georgia pear zone: 1-2-3-4. Characteristics: An excellent pear for the northern half of the state. Fruit excellent quality. Moderately vigorous. Pollination code: C"
+        },
+        {
+            type: "Euro Pear",
+            name: "Dawn",
+            category: "European pear varieties recommended for Georgia",
+            description: "Georgia pear zone: 1-2-3-4. Characteristics: Good quality fruit. Almost entirely free of grit cells. Moderately vigorous tree. Pollination code: C"
+        },
+        {
+            type: "Euro Pear",
+            name: "Spalding",
+            category: "European pear varieties recommended for Georgia",
+            description: "Georgia pear zone: 3-4. Characteristics: High quality fruit that ripens early. Subject to blight. Pollination code: A,B"
+        },
+        {
+            type: "Euro Pear",
+            name: "Warren",
+            category: "European pear varieties recommended for Georgia",
+            description: "Georgia pear zone: 3-4-5. Characteristics: Very high quality fruit. Resistant to blight. Pollination code: B,C"
+        },
+        {
+            type: "Asian Pear",
+            name: "Shinko",
+            category: "Asian pear varieties for trial in Georgia",
+            description: "Georgia pear zone: 1-2-3-4-5. Characteristics: Golden russetted fruit. Pollination: Hosui. Source notes that Asian pears are trial plantings only"
+        },
+        {
+            type: "Asian Pear",
+            name: "Chojuro",
+            category: "Asian pear varieties for trial in Georgia",
+            description: "Georgia pear zone: 1-2-3-4-5. Characteristics: Brown orange fruit. Pollination: Hosui, Shinko. Source notes that Asian pears are trial plantings only"
+        },
+        {
+            type: "Asian Pear",
+            name: "Hosui",
+            category: "Asian pear varieties for trial in Georgia",
+            description: "Georgia pear zone: 1-2-3-4-5. Characteristics: Golden brown fruit. Pollination: Shinko, Chojuro. Source notes that Asian pears are trial plantings only"
+        },
+        {
+            type: "Asian Pear",
+            name: "Kosui",
+            category: "Asian pear varieties for trial in Georgia",
+            description: "Georgia pear zone: 1-2-3-4-5. Characteristics: Green yellow fruit. Pollination: Hosui, Chojuro. Source notes that Asian pears are trial plantings only"
+        },
+    ]
+}

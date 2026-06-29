@@ -1,5 +1,7 @@
 """Small helpers for source rows that become draft plant records"""
 
+import re
+
 from fruitfacts_extract.text_tools import join_labelled_values
 
 
@@ -7,6 +9,10 @@ def normalized_name(source_name, overrides=None):
     if overrides and source_name in overrides:
         return overrides[source_name]
     return source_name, None
+
+
+def strip_trailing_note_markers(source_name):
+    return re.sub(r"(?<=\D)\d+$", "", source_name).strip()
 
 
 def append_source_note(description, source_note):

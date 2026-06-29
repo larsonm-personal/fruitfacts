@@ -85,6 +85,14 @@ Second pass:
 - Cultivar lists can include abbreviations with periods, such as `St. Theresa`
   or `St. Croix`. Use explicit end markers or bounded sections before splitting
   names so those periods are not mistaken for the end of the list.
+- Regular HTML table sources can often be encoded with a config rather than a
+  per-source Python script. Keep the config declarative: source metadata,
+  required headers, name key, category, harvest source field, description
+  labels, and small mechanical cleanup flags.
+- Source footnote rows often look like cultivar rows to a simple table parser.
+  Skip them by key-column prefix when the source marker is clear, and strip
+  trailing numeric note markers from names only when the source table uses that
+  convention.
 
 ## Locations
 

@@ -509,7 +509,7 @@
         },
         {
             id: "uga-home-garden-apples-c740",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Home Garden Apples",
             institution: "University of Georgia Cooperative Extension",
@@ -531,12 +531,16 @@
             duplicate_check:
                 "Existing Georgia references include peaches, blueberries, muscadines, pecans, and releases, but no Georgia apple guide",
             notes: [
-                "Landing page and PDF link were found on the official UGA page"
+                "Landing page and PDF link were found on the official UGA page",
+                "Encoded in plant_database/references/Georgia/UGA C740 Home Garden Apples.json5",
+                "Config extraction added at helper_scripts/extraction_configs/uga_c740_apples.json",
+                "Generic config runner used at helper_scripts/extract_from_config.py",
+                "Config reads the extension.uga.edu detail page because it exposes clean HTML tables"
             ]
         },
         {
             id: "uga-home-garden-pears-c742",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Home Garden Pears",
             institution: "University of Georgia Cooperative Extension",
@@ -559,7 +563,11 @@
                 "No Georgia pear-specific extension reference found in existing references",
             notes: [
                 "Landing page and PDF link were found on the official UGA page",
-                "Landing page shows a newer review date than the current PDF path suggests"
+                "Landing page shows a newer review date than the current PDF path suggests",
+                "Encoded in plant_database/references/Georgia/UGA C742 Home Garden Pears.json5",
+                "Config extraction added at helper_scripts/extraction_configs/uga_c742_pears.json",
+                "Generic config runner used at helper_scripts/extract_from_config.py",
+                "Config reads the extension.uga.edu detail page because it exposes clean HTML tables"
             ]
         },
         {

@@ -64,6 +64,20 @@ source-specific script. See
 [Extraction Helper Library](extraction_helper_library.md) for the current
 library boundary.
 
+When the source is a regular HTML table, first try a config-driven extraction
+instead of adding a new per-source Python file:
+
+```powershell
+python helper_scripts/extract_from_config.py helper_scripts/extraction_configs/uga_c740_apples.json > $env:TEMP\uga_c740_apples.json5
+```
+
+This is the preferred shape for an eventual omniparser. The config should name
+the source, reference fields, locations, categories, name overrides, table
+headers, key columns, harvest source fields, and labelled description fields.
+The shared runner should own recurring mechanical repairs such as skipping note
+rows or stripping trailing footnote markers from plant names. Curated JSON5
+review still owns source judgment.
+
 After the first several worked examples, the repeated pieces were moved into
 shared helpers:
 
@@ -80,6 +94,8 @@ shared helpers:
   section rows between groups of ordinary data rows
 - `record_tools.plant_records_from_rows()` for the common case where parsed
   rows map directly to draft plant records
+- `extract_from_config.py` for sources that can be represented as source
+  metadata plus one or more table mappings
 
 ## The Art
 
@@ -283,3 +299,22 @@ uses `text_tools.first_sentence_containing()` to preserve the source's ripening
 sentence as `harvest_time_unparsed` when one exists. The source's plain
 paragraph label `Dark Sweet Cherries` is treated as a category change even
 though it is not marked up as a heading.
+
+## UGA C740 And C742 Config Notes
+
+The UGA apple and pear pages were encoded without source-specific Python
+scripts. Each source uses a strict JSON config in
+`helper_scripts/extraction_configs/` and the shared
+`helper_scripts/extract_from_config.py` runner.
+
+The apple source has one ordinary table and one disease-resistant table. The
+first table ends with a footnote row whose key cell starts with `1 Listed`, so
+the config skips that prefix. The disease-resistant table uses `Goldrush`; the
+config maps it to the existing `GoldRush` capitalization and leaves a source
+note in the draft description.
+
+The pear source has source title rows before the real header rows. The config
+uses `header_row` plus `title_contains` to find the European and Asian pear
+tables. One European pear row has a trailing footnote marker on the cultivar
+name, so the shared runner strips trailing note numbers when the config asks
+for it.

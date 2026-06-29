@@ -1,0 +1,171 @@
+{
+    title: "Home Garden Apples",
+    author: "Bob Westerfield",
+    description: "UGA Cooperative Extension home garden apple guide with recommended apple varieties for Georgia zones, disease-resistant varieties, pollination codes, and ripening notes",
+    url: "https://extension.uga.edu/publications/detail.html?number=C740",
+    thumbnail: "website",
+    published: "Aug 19, 2002",
+    reviewed: "Jul 6, 2022",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Georgia Cooperative Extension, Athens, Georgia",
+            latitude: 33.9477,
+            longitude: -83.3773
+        },
+    ],
+    categories: [
+        {
+            name: "Recommended apple varieties for Georgia",
+            description: "Apple varieties UGA lists as recommended for home use in Georgia"
+        },
+        {
+            name: "Disease-resistant apple varieties for Georgia",
+            description: "Apple varieties UGA lists as disease-resistant choices for Georgia"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Anna",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Ripens mid-June to early July.",
+            description: "Georgia apple zone: 5. Characteristics: Excellent shaped fruit with a blush of red. Ripens mid-June to early July. Spur-type. Pollination code: A"
+        },
+        {
+            type: "Apple",
+            name: "Dorsett Golden",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Ripens mid-June to early July.",
+            description: "Georgia apple zone: 5. Characteristics: Yellow apple of good quality. Ripens mid-June to early July. Spur-type. Pollination code: A"
+        },
+        {
+            type: "Apple",
+            name: "Ginger Gold",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Ripens late July to early August.",
+            description: "Georgia apple zone: 1-2-3. Characteristics: Very early crisp yellow apple of excellent quality. Good for fresh eating, sauce and pies. Ripens late July to early August. Non-spur. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Ripens early August.",
+            description: "Georgia apple zone: 1-2-3. Characteristics: Excellent quality apple. Good for fresh eating or salads. Ripens early August. Non-spur. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Mollie's Delicious",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Ripens late July to early August.",
+            description: "Georgia apple zone: 1-2-3-4. Characteristics: A versatile apple. Good for fresh eating, pies and sauce. Ripens late July to early August. Nonspur. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Ozark Gold",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Matures in early August.",
+            description: "Georgia apple zone: 1-2-3. Characteristics: Matures in early August. Yellow, russet-free apple of excellent quality. Nonspur. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Red Delicious",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Early fall variety ripening in late August to early September.",
+            description: "Georgia apple zone: 1-2-3-4. Characteristics: Early fall variety ripening in late August to early September. Large, firm, crisp, sweet. Good for fresh eating or salads. Non-spur and spur strains available. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Jonagold",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Ripens early September.",
+            description: "Georgia apple zone: 1-2-3. Characteristics: Ripens early September. Very large, yellow apple with a red blush. Very high quality, sweet, juicy apple. Pollination code: C"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Ripens one to two weeks after Red Delicious.",
+            description: "Georgia apple zone: 1-2-3-4. Characteristics: Ripens one to two weeks after Red Delicious. Good producer. Fruit good for sauce, fresh eating and pies. Nonspur and spur strains available. Pollination code: C"
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Fall variety ripens early October.",
+            description: "Georgia apple zone: 1-2-3. Characteristics: Fall variety ripens early October. Does not color well, but quality is superb. Good for cooking, eating and baking. Nonspur strains available. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Mutsu",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Ripens early October.",
+            description: "Georgia apple zone: 1-2-3. Characteristics: Ripens early October. Yellow apple of exceptional quality. Crisp and juicy. Slightly tart. All-purpose. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Rome Beauty",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Ripens early October.",
+            description: "Georgia apple zone: 1-2. Characteristics: Ripens early October. Red apple primarily grown for baking. Spur and non-spur strains available. Pollination code: C"
+        },
+        {
+            type: "Apple",
+            name: "Stayman",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Ripens early October.",
+            description: "Georgia apple zone: 1-2. Characteristics: Ripens early October. Rusty red finish. Superb quality, tart, all-purpose apple. Fruit cracking a problem when dry period followed by rainy period. Pollination code: C"
+        },
+        {
+            type: "Apple",
+            name: "Yates",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Late fall variety ripens late October.",
+            description: "Georgia apple zone: 1-2-3-4. Characteristics: Late fall variety ripens late October. Small, dark red, juicy, mellow, sub-acid. Best keeper. Non-spur. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Granny Smith",
+            category: "Recommended apple varieties for Georgia",
+            harvest_time_unparsed: "Matures late October to early November.",
+            description: "Georgia apple zone: 1-2-3-4. Characteristics: Matures late October to early November. Yellowgreen apple of excellent quality. Good all-purpose variety. Non-spur and spur strains available. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Redfree",
+            category: "Disease-resistant apple varieties for Georgia",
+            harvest_time_unparsed: "Ripens about six weeks before Delicious.",
+            description: "Georgia apple zone: 1, 2, 3. Characteristics: Fruit is crisp, juicy, russet-free. Ripens about six weeks before Delicious"
+        },
+        {
+            type: "Apple",
+            name: "Liberty",
+            category: "Disease-resistant apple varieties for Georgia",
+            harvest_time_unparsed: "Stores well, ripens about two weeks before Delicious.",
+            description: "Georgia apple zone: 1, 2, 3. Characteristics: Fruit is crisp, juicy, sub-acid. Stores well, ripens about two weeks before Delicious"
+        },
+        {
+            type: "Apple",
+            name: "Freedom",
+            category: "Disease-resistant apple varieties for Georgia",
+            harvest_time_unparsed: "Ripens with Delicious.",
+            description: "Georgia apple zone: 1, 2, 3. Characteristics: Fruit is crisp, juicy, good for fresh and processing. Ripens with Delicious"
+        },
+        {
+            type: "Apple",
+            name: "Enterprise",
+            category: "Disease-resistant apple varieties for Georgia",
+            harvest_time_unparsed: "Stores well, matures late.",
+            description: "Georgia apple zone: 1, 2, 3. Characteristics: Fruit is spicy and sub-acid. Stores well, matures late"
+        },
+        {
+            type: "Apple",
+            name: "GoldRush",
+            category: "Disease-resistant apple varieties for Georgia",
+            harvest_time_unparsed: "Ripens late, stores very well.",
+            description: "Georgia apple zone: 1, 2, 3. Characteristics: Fruit is sweet, crisp, good for fresh and processing. Ripens late, stores very well. Source table names this as Goldrush"
+        },
+    ]
+}

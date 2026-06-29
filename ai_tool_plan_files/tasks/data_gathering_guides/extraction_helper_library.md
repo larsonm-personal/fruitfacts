@@ -40,10 +40,30 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
 - `json5_draft.py`
   - JSON-safe quoting and reusable draft reference emission, including optional
     top-level locations and categories
+- `extract_from_config.py`
+  - A config runner for simple sources that can be expressed as source
+    metadata plus table mappings
+  - Uses strict JSON config files under `helper_scripts/extraction_configs/`
+    so the Python standard library can parse them
 
 Source-specific scripts such as `extract_umaine_2172.py`,
 `extract_umaine_2184.py`, and `extract_csu_763.py` should import these helpers
 and keep only the source-specific rules locally.
+
+For regular HTML table sources, prefer a config file before adding another
+source-specific script. The config runner currently supports:
+
+- HTML sources fetched with the shared browser-like user agent
+- Simple tables where the first row is the header
+- Tables with source title rows before the real header row
+- Required-header table selection
+- Key-column filtering for footnotes and note rows
+- Optional category, location, harvest, and labelled description mapping
+- Name overrides and trailing footnote-marker stripping
+
+The worked UGA C740 and C742 configs show the intended direction: no
+source-specific Python file, only a source config that drives the shared
+extractor.
 
 ## Boundary
 
@@ -95,6 +115,9 @@ Source-specific scripts should do:
 - CSU GardenNotes 764 grape lists: PDF marker lists where cultivar names such
   as `St. Theresa` and `St. Croix` contain periods, so scripts need explicit
   end markers rather than stopping at the first period
+- UGA C740 apples and C742 pears: config-driven HTML table extraction with
+  title-row tables, footnote-row skipping, source name overrides, and trailing
+  footnote-marker stripping
 
 ## PDF Lessons
 
@@ -118,5 +141,7 @@ Source-specific scripts should do:
    plant counts for representative HTML and PDF sources.
 4. Consider moving repeated source metadata into a small data object only if the
    current `REFERENCE_FIELDS` pattern starts to drift.
-5. Keep parsers source-specific until a pattern appears in multiple unrelated
-   sources.
+5. Extend `extract_from_config.py` before writing a new source script when the
+   source can be described as metadata plus table or paragraph mappings.
+6. Keep parsers source-specific when a pattern has not appeared in multiple
+   unrelated sources or when the extraction requires source judgment.

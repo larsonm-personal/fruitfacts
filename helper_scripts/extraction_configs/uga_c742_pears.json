@@ -1,0 +1,70 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.uga.edu/publications/detail.html?number=C742"
+  },
+  "reference_fields": [
+    ["title", "Home Garden Pears"],
+    ["author", "Gerard Krewer, Paul Bertrand, and Bob Westerfield"],
+    ["description", "UGA Cooperative Extension home garden pear guide with European and Asian pear variety tables, Georgia zone notes, pollination notes, and fire blight context"],
+    ["url", "https://extension.uga.edu/publications/detail.html?number=C742"],
+    ["thumbnail", "website"],
+    ["published", "Jan 1, 2002"],
+    ["reviewed", "Mar 4, 2026"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Georgia Cooperative Extension, Athens, Georgia",
+      "latitude": 33.9477,
+      "longitude": -83.3773
+    }
+  ],
+  "categories": [
+    {
+      "name": "European pear varieties recommended for Georgia",
+      "description": "European pear varieties UGA lists for home use in Georgia"
+    },
+    {
+      "name": "Asian pear varieties for trial in Georgia",
+      "description": "Asian pear varieties UGA lists with a source note that Asian pears are trial plantings only"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_table",
+      "header_row": true,
+      "title_contains": "European Varieties",
+      "required_headers": ["Variety", "Zone1", "Characteristics", "Pollination Code2"],
+      "plant_type": "Euro Pear",
+      "name_key": "variety",
+      "category": "European pear varieties recommended for Georgia",
+      "strip_name_footnotes": true,
+      "skip_prefixes": ["1See", "Note:"],
+      "description_labels": [
+        ["zone1", "Georgia pear zone"],
+        ["characteristics", "Characteristics"],
+        ["pollination_code2", "Pollination code"]
+      ]
+    },
+    {
+      "kind": "html_table",
+      "header_row": true,
+      "title_contains": "Asian Varieties",
+      "required_headers": ["Variety", "Zone1", "Characteristics", "Pollination2"],
+      "plant_type": "Asian Pear",
+      "name_key": "variety",
+      "category": "Asian pear varieties for trial in Georgia",
+      "strip_name_footnotes": true,
+      "skip_prefixes": ["1See", "Note:"],
+      "description_suffix": "Source notes that Asian pears are trial plantings only",
+      "description_labels": [
+        ["zone1", "Georgia pear zone"],
+        ["characteristics", "Characteristics"],
+        ["pollination2", "Pollination"]
+      ]
+    }
+  ]
+}
