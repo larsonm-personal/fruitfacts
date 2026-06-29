@@ -52,6 +52,15 @@ def source_data(config):
 
 
 def raw_table(page, extractor):
+    if "table_index" in extractor:
+        tables = [page.tables[extractor["table_index"]]]
+        if extractor.get("header_row"):
+            return find_table_with_header_row(
+                tables,
+                extractor["required_headers"],
+                title_contains=extractor.get("title_contains"),
+            )
+        return find_table(tables, extractor["required_headers"])
     if extractor.get("header_row"):
         return find_table_with_header_row(
             page.tables,
@@ -122,11 +131,19 @@ def table_rows(page, extractor):
             rows = table_to_dicts(table)
     rows = expanded_rows(rows, extractor)
     rows = [row_text_fixes(row, extractor.get("text_fixes")) for row in rows]
-    return keyed_data_rows(
+    rows = keyed_data_rows(
         rows,
         extractor["name_key"],
         skip_prefixes=tuple(extractor.get("skip_prefixes", ["Note:"])),
     )
+    skip_names = set(extractor.get("skip_names", []))
+    if skip_names:
+        rows = [
+            row
+            for row in rows
+            if row.get(extractor["name_key"], "").strip() not in skip_names
+        ]
+    return rows
 
 
 def resolved_value(spec, row):
@@ -193,6 +210,16 @@ def lookup_key_part(row, part, lookups):
     return part.get("prefix", "") + value
 
 
+def flag_labels_part(row, part):
+    values = []
+    for key, label in pairs(part["labels"]):
+        if row.get(key):
+            values.append(label)
+    if not values:
+        return None
+    return part.get("prefix", "") + part.get("separator", "; ").join(values)
+
+
 def description_part(row, extractor, part, lookups):
     kind = part["kind"]
     if kind == "labels":
@@ -205,6 +232,8 @@ def description_part(row, extractor, part, lookups):
         return lookup_labels_part(row, part, lookups)
     if kind == "lookup_key":
         return lookup_key_part(row, part, lookups)
+    if kind == "flag_labels":
+        return flag_labels_part(row, part)
     raise ValueError("Unsupported description part: " + kind)
 
 
@@ -287,6 +316,8 @@ def normalized_source_name(source_name, overrides):
 
 def source_name_and_note(row, extractor, overrides):
     source_name = row[extractor["name_key"]]
+    if extractor.get("trim_name"):
+        source_name = source_name.strip()
     notes = []
     for suffix_note in extractor.get("name_suffix_notes", []):
         suffix = suffix_note["suffix"]

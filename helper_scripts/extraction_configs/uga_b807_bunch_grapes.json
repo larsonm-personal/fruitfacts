@@ -1,0 +1,123 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.uga.edu/publications/detail.html?number=B807"
+  },
+  "reference_fields": [
+    ["title", "Home Garden Bunch Grapes"],
+    ["author", "Sarah Lowder, Cain Hickey, and Gerard Krewer"],
+    ["description", "UGA Cooperative Extension bunch grape guide with cultivar tables for Georgia regions, tabled uses, grape type, and variety comments"],
+    ["url", "https://extension.uga.edu/publications/detail.html?number=B807"],
+    ["thumbnail", "website"],
+    ["published", "Oct 15, 2006"],
+    ["reviewed", "Aug 23, 2024"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Georgia Cooperative Extension, Athens, Georgia",
+      "latitude": 33.9477,
+      "longitude": -83.3773
+    }
+  ],
+  "categories": [
+    {
+      "name": "Bunch grape varieties for the upper Piedmont and mountains",
+      "description": "UGA Table 1 lists bunch grape varieties for the Upper Piedmont and Mountains, with Georgia area, type, use, and cultivar comments"
+    },
+    {
+      "name": "American bunch grape varieties for middle and south Georgia",
+      "description": "UGA Table 2 lists American bunch grape varieties for Middle and South Georgia, with use and cultivar comments"
+    }
+  ],
+  "name_overrides": {
+    "Blanc du Bois": {
+      "name": "Blanc du Bois",
+      "note": "Source also lists Blanc du Bois in Table 2 for Middle and South Georgia with white wine and fresh eating uses"
+    },
+    "Black Spanish (Lenoir)": {
+      "name": "Black Spanish (Lenoir)",
+      "note": "Source also lists Black Spanish (Lenoir) in Table 2 for Middle and South Georgia with red wine use"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "table_index": 0,
+      "required_headers": [
+        "Variety",
+        "Type",
+        "Areas of Georgia",
+        "Red Wine",
+        "White Wine",
+        "Juice Jelly",
+        "Fresh Eating",
+        "Comments"
+      ],
+      "plant_type": "Grape",
+      "name_key": "variety",
+      "category": "Bunch grape varieties for the upper Piedmont and mountains",
+      "trim_name": true,
+      "skip_prefixes": ["F/I =", "Note:"],
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["type", "Grape type"],
+            ["areas_of_georgia", "Georgia areas"]
+          ]
+        },
+        {
+          "kind": "flag_labels",
+          "prefix": "Uses: ",
+          "labels": [
+            ["red_wine", "red wine"],
+            ["white_wine", "white wine"],
+            ["juice_jelly", "juice or jelly"],
+            ["fresh_eating", "fresh eating"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "comments"
+        }
+      ]
+    },
+    {
+      "kind": "html_table",
+      "table_index": 1,
+      "required_headers": [
+        "Variety",
+        "Red Wine",
+        "White Wine",
+        "Juice Jelly",
+        "Fresh Eating",
+        "Comments"
+      ],
+      "plant_type": "Grape",
+      "name_key": "variety",
+      "category": "American bunch grape varieties for middle and south Georgia",
+      "trim_name": true,
+      "skip_prefixes": [" Graft", "Graft", "Note:"],
+      "skip_names": ["Blanc du Bois", "Black Spanish (Lenoir)"],
+      "description_parts": [
+        {
+          "kind": "flag_labels",
+          "prefix": "Uses: ",
+          "labels": [
+            ["red_wine", "red wine"],
+            ["white_wine", "white wine"],
+            ["juice_jelly", "juice or jelly"],
+            ["fresh_eating", "fresh eating"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "comments"
+        }
+      ]
+    }
+  ]
+}

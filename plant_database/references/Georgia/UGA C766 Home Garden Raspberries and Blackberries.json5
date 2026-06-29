@@ -1,0 +1,145 @@
+{
+    title: "Home Garden Raspberries and Blackberries",
+    author: "Bob Westerfield, Phillip M. Brannen, Marco T. Fonseca, Gerard W. Krewer, and Dan L. Horton",
+    description: "UGA Cooperative Extension caneberry guide with recommended blackberry and raspberry varieties, cane type, and cultivar comments for Georgia home gardens",
+    url: "https://extension.uga.edu/publications/detail.html?number=C766",
+    thumbnail: "website",
+    published: "Dec 15, 2004",
+    reviewed: "Jul 7, 2022",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Georgia Cooperative Extension, Athens, Georgia",
+            latitude: 33.9477,
+            longitude: -83.3773
+        },
+    ],
+    categories: [
+        {
+            name: "Blackberry varieties recommended for Georgia home gardens",
+            description: "UGA recommended blackberry varieties with cane type and cultivar comments"
+        },
+        {
+            name: "Raspberry varieties recommended for Georgia home gardens",
+            description: "UGA recommended raspberry varieties with cane type and cultivar comments"
+        },
+    ],
+    plants: [
+        {
+            type: "Blackberry",
+            name: "Apache",
+            category: "Blackberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Erect. Comments: Large quality berries; thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Arapaho",
+            category: "Blackberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Erect. Comments: Early- to mid-season thornless; medium size fruit; resistant to Rosette disease, but may have problems with leaf diseases and cane die-back"
+        },
+        {
+            type: "Blackberry",
+            name: "Chester",
+            category: "Blackberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Trailing. Comments: Late-season; thornless; premium fruit"
+        },
+        {
+            type: "Blackberry",
+            name: "Chicksaw",
+            category: "Blackberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Erect. Comments: Mid-season; large fruit"
+        },
+        {
+            type: "Blackberry",
+            name: "Darrow",
+            category: "Blackberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Erect. Comments: Early-season; sugar sweet fruit with great flavor"
+        },
+        {
+            type: "Blackberry",
+            name: "Kiowa",
+            category: "Blackberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Erect. Comments: Early- to mid-season; very productive; large fruit size. Moderately susceptible to Rosette disease. Probably the best home garden variety"
+        },
+        {
+            type: "Blackberry",
+            name: "Natchez",
+            category: "Blackberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Erect. Comments: Early-season; thornless; large fruit"
+        },
+        {
+            type: "Blackberry",
+            name: "Navaho",
+            category: "Blackberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Erect. Comments: Mid- to late-season thornless; medium fruit size; resistant to Rosette disease but may have problems with leaf diseases"
+        },
+        {
+            type: "Blackberry",
+            name: "Ouachita",
+            category: "Blackberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Erect. Comments: Mid-season; thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Shawnee",
+            category: "Blackberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Erect. Comments: Mid-season; medium to large fruit with good flavor"
+        },
+        {
+            type: "Blackberry",
+            name: "Triple Crown",
+            category: "Blackberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Semi-Erect. Comments: Early-season known for flavor, productivity and vigor. Disease-resistant. Large berries"
+        },
+        {
+            type: "Raspberry",
+            name: "Anne",
+            category: "Raspberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Erect. Comments: Golden yellow fruit, tropical in flavor. Self-pollinating. Sets fruit on cane first year"
+        },
+        {
+            type: "Raspberry",
+            name: "Autumn Bliss",
+            category: "Raspberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Erect. Comments: Early-season; everbearing; large attractive fruit"
+        },
+        {
+            type: "Raspberry",
+            name: "Cumberland",
+            category: "Raspberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Trailing. Comments: Black raspberry; one of the oldest cultivars"
+        },
+        {
+            type: "Raspberry",
+            name: "Dormanred",
+            category: "Raspberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Trailing. Comments: Fruit must be very ripe to be sweet; good producer statewide; better cooked than fresh. Makes good jam and pies"
+        },
+        {
+            type: "Raspberry",
+            name: "Heritage",
+            category: "Raspberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Erect. Comments: Possibly the easiest and heaviest producer"
+        },
+        {
+            type: "Raspberry",
+            name: "Jewell Black",
+            category: "Raspberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Trailing. Comments: Most disease-resistant variety; highly flavorful fruit"
+        },
+        {
+            type: "Raspberry",
+            name: "Nova",
+            category: "Raspberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Erect. Comments: Early-season; thornless"
+        },
+        {
+            type: "Raspberry",
+            name: "Polka",
+            category: "Raspberry varieties recommended for Georgia home gardens",
+            description: "Cane type: Erect. Comments: Great companion for Heritage. Winter hardy, but heat-tolerant"
+        },
+    ]
+}

@@ -334,3 +334,23 @@ uses `header_row` plus `title_contains` to find the European and Asian pear
 tables. One European pear row has a trailing footnote marker on the cultivar
 name, so the shared runner strips trailing note numbers when the config asks
 for it.
+
+## UGA B807 And C766 Config Notes
+
+The UGA bunch grape and caneberry pages continue the same pattern: the useful
+data lives in ordinary HTML tables on the `extension.uga.edu` detail pages,
+even when the candidate queue found newer Field Report landing pages and PDFs.
+The configs therefore use the detail pages as the parse source and keep the
+current source URLs in the committed reference metadata.
+
+B807 has two cultivar tables. The second table's headers are a subset of the
+first table's headers, so required-header matching alone would select the
+first table twice. The config runner now supports `table_index` with
+required-header validation for this source shape. The grape use columns are
+source flags, so the config uses a `flag_labels` description part to turn
+checked columns into text such as `Uses: white wine; fresh eating`.
+
+C766 has one grouped table where the `Fruit Type` cell spans several rows in
+the browser. The simple parser sees those following rows as short rows, so the
+config uses `fill_leading_group_cells` before mapping `Blackberries` to
+`Blackberry` records and `Raspberries` to `Raspberry` records.

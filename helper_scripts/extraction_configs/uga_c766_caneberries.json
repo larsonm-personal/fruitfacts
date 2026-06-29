@@ -1,0 +1,62 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.uga.edu/publications/detail.html?number=C766"
+  },
+  "reference_fields": [
+    ["title", "Home Garden Raspberries and Blackberries"],
+    ["author", "Bob Westerfield, Phillip M. Brannen, Marco T. Fonseca, Gerard W. Krewer, and Dan L. Horton"],
+    ["description", "UGA Cooperative Extension caneberry guide with recommended blackberry and raspberry varieties, cane type, and cultivar comments for Georgia home gardens"],
+    ["url", "https://extension.uga.edu/publications/detail.html?number=C766"],
+    ["thumbnail", "website"],
+    ["published", "Dec 15, 2004"],
+    ["reviewed", "Jul 7, 2022"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Georgia Cooperative Extension, Athens, Georgia",
+      "latitude": 33.9477,
+      "longitude": -83.3773
+    }
+  ],
+  "categories": [
+    {
+      "name": "Blackberry varieties recommended for Georgia home gardens",
+      "description": "UGA recommended blackberry varieties with cane type and cultivar comments"
+    },
+    {
+      "name": "Raspberry varieties recommended for Georgia home gardens",
+      "description": "UGA recommended raspberry varieties with cane type and cultivar comments"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_table",
+      "required_headers": ["Fruit Type", "Variety", "Cane Type", "Comments"],
+      "table_transforms": ["fill_leading_group_cells"],
+      "plant_type": {
+        "row_key": "fruit_type",
+        "map": {
+          "Blackberries": "Blackberry",
+          "Raspberries": "Raspberry"
+        }
+      },
+      "name_key": "variety",
+      "category": {
+        "row_key": "fruit_type",
+        "map": {
+          "Blackberries": "Blackberry varieties recommended for Georgia home gardens",
+          "Raspberries": "Raspberry varieties recommended for Georgia home gardens"
+        }
+      },
+      "trim_name": true,
+      "description_labels": [
+        ["cane_type", "Cane type"],
+        ["comments", "Comments"]
+      ]
+    }
+  ]
+}

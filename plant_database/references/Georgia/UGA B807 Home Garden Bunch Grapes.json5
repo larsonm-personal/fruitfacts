@@ -1,0 +1,325 @@
+{
+    title: "Home Garden Bunch Grapes",
+    author: "Sarah Lowder, Cain Hickey, and Gerard Krewer",
+    description: "UGA Cooperative Extension bunch grape guide with cultivar tables for Georgia regions, tabled uses, grape type, and variety comments",
+    url: "https://extension.uga.edu/publications/detail.html?number=B807",
+    thumbnail: "website",
+    published: "Oct 15, 2006",
+    reviewed: "Aug 23, 2024",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Georgia Cooperative Extension, Athens, Georgia",
+            latitude: 33.9477,
+            longitude: -83.3773
+        },
+    ],
+    categories: [
+        {
+            name: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "UGA Table 1 lists bunch grape varieties for the Upper Piedmont and Mountains, with Georgia area, type, use, and cultivar comments"
+        },
+        {
+            name: "American bunch grape varieties for middle and south Georgia",
+            description: "UGA Table 2 lists American bunch grape varieties for Middle and South Georgia, with use and cultivar comments"
+        },
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Venus",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: I. Georgia areas: 1 & 2. Uses: juice or jelly; fresh eating. seedless, blue-black fruit; seed traces present"
+        },
+        {
+            type: "Grape",
+            name: "Interlaken",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: F. Georgia areas: 1 & 2. Uses: fresh eating. seedless; suffers cold damage often"
+        },
+        {
+            type: "Grape",
+            name: "Foch (Kuhlman)",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: F. Georgia areas: 1. Uses: red wine. blue-black fruit"
+        },
+        {
+            type: "Grape",
+            name: "Aurora",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: F. Georgia areas: 1. Uses: white wine; fresh eating. good wine; fresh eating"
+        },
+        {
+            type: "Grape",
+            name: "Jupiter",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: I. Georgia areas: 1 & 2. Uses: fresh eating. seedless, blue fruit"
+        },
+        {
+            type: "Grape",
+            name: "Reliance",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: I. Georgia areas: 1 & 2. Uses: fresh eating. seedless, red fruit; fruit cracking problems"
+        },
+        {
+            type: "Grape",
+            name: "Cascade",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: F. Georgia areas: 1 & 2. Uses: red wine; fresh eating. performed well in Georgia test"
+        },
+        {
+            type: "Grape",
+            name: "Van Buren",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1. Uses: juice or jelly; fresh eating. black fruit"
+        },
+        {
+            type: "Grape",
+            name: "Alwood",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1 & 2. Uses: juice or jelly; fresh eating. blue fruit"
+        },
+        {
+            type: "Grape",
+            name: "Ontario",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1. Uses: fresh eating. green to amber fruit"
+        },
+        {
+            type: "Grape",
+            name: "Fredonia",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1 & 2. Uses: juice or jelly; fresh eating. blue fruit"
+        },
+        {
+            type: "Grape",
+            name: "Baco Noir (Baco #1)",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: F. Georgia areas: 1 & 2. Uses: red wine. blue-black fruit"
+        },
+        {
+            type: "Grape",
+            name: "Delaware",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1 & 2. Uses: red wine; juice or jelly; fresh eating. reddish fruit, small but sweet; good red wine"
+        },
+        {
+            type: "Grape",
+            name: "Chelois",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: F. Georgia areas: 1 & 2. Uses: red wine. blue-black fruit"
+        },
+        {
+            type: "Grape",
+            name: "Norton (Cynthiana)",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1 & 2. Uses: red wine. V. aestivalis variety; good quality wine"
+        },
+        {
+            type: "Grape",
+            name: "Chambourcin",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: F. Georgia areas: 1 & 2. Uses: red wine. good quality red wine"
+        },
+        {
+            type: "Grape",
+            name: "Mars",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: I. Georgia areas: 1 & 2. Uses: juice or jelly; fresh eating. seedless, blue fruit"
+        },
+        {
+            type: "Grape",
+            name: "Saturn",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: I. Georgia areas: 1 & 2. Uses: juice or jelly; fresh eating. seedless, red fruit"
+        },
+        {
+            type: "Grape",
+            name: "Chancellor",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: F. Georgia areas: 1 & 2. Uses: red wine. dark red fruit"
+        },
+        {
+            type: "Grape",
+            name: "Buffalo",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1 & 2. Uses: juice or jelly; fresh eating. good yields"
+        },
+        {
+            type: "Grape",
+            name: "Niagara",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1 & 2. Uses: juice or jelly; fresh eating. golden fruit"
+        },
+        {
+            type: "Grape",
+            name: "Cayuga White",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1 & 2. Uses: red wine. vigorous vine"
+        },
+        {
+            type: "Grape",
+            name: "Concord",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1. Uses: red wine; juice or jelly; fresh eating. blue fruit, ripens unevenly; not recommended"
+        },
+        {
+            type: "Grape",
+            name: "Sunbelt",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: I. Georgia areas: 1 & 2. Uses: juice or jelly; fresh eating. Corcord type but ripens more evenly than Concord"
+        },
+        {
+            type: "Grape",
+            name: "Neptune",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: I. Georgia areas: 1 & 2. Uses: juice or jelly; fresh eating. white seedless"
+        },
+        {
+            type: "Grape",
+            name: "Portland",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: I. Georgia areas: 1 & 2. Uses: juice or jelly; fresh eating. amber fruit"
+        },
+        {
+            type: "Grape",
+            name: "Stuben",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1. Uses: juice or jelly; fresh eating. blue fruit"
+        },
+        {
+            type: "Grape",
+            name: "Agawam",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1. Uses: juice or jelly; fresh eating. reddish fruit"
+        },
+        {
+            type: "Grape",
+            name: "Caco",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1. Uses: juice or jelly; fresh eating. reddish fruit"
+        },
+        {
+            type: "Grape",
+            name: "Champagne",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1 & 2. Uses: juice or jelly; fresh eating. reddish fruit"
+        },
+        {
+            type: "Grape",
+            name: "Catawba",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: A. Georgia areas: 1 & 2. Uses: red wine; juice or jelly; fresh eating. purplish red fruit, uneven ripening"
+        },
+        {
+            type: "Grape",
+            name: "Vidal Blanc",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: F. Georgia areas: 1. Uses: red wine. yellow-green fruit; well-suited for white wine production"
+        },
+        {
+            type: "Grape",
+            name: "Golden Muscat",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: F. Georgia areas: 1. Uses: juice or jelly; fresh eating. greenish-amber fruit"
+        },
+        {
+            type: "Grape",
+            name: "Villard Blanc",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: F. Georgia areas: 1 & 2. Uses: white wine. greenish-yellow fruit"
+        },
+        {
+            type: "Grape",
+            name: "Seyval Blanc",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: F. Georgia areas: 1. Uses: white wine. yellow-white fruit that can be used to make white wine; may be susceptible to Pierce's disease"
+        },
+        {
+            type: "Grape",
+            name: "Chardonel",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: I. Georgia areas: 1. Uses: white wine. good variety for making white wine"
+        },
+        {
+            type: "Grape",
+            name: "Traminette",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: I. Georgia areas: 1. Uses: white wine. good variety for making white wine"
+        },
+        {
+            type: "Grape",
+            name: "Blanc du Bois",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: I. Georgia areas: 1 & 2. Uses: white wine. good variety for white wine; downy mildew control is very important for this variety. Source also lists Blanc du Bois in Table 2 for Middle and South Georgia with white wine and fresh eating uses"
+        },
+        {
+            type: "Grape",
+            name: "Black Spanish (Lenoir)",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: I. Georgia areas: 1 & 2. Uses: red wine. dark purple fruit; good potential for red wine production. Source also lists Black Spanish (Lenoir) in Table 2 for Middle and South Georgia with red wine use"
+        },
+        {
+            type: "Grape",
+            name: "Lomanto",
+            category: "Bunch grape varieties for the upper Piedmont and mountains",
+            description: "Grape type: I. Georgia areas: 1 & 2. Uses: red wine. early bud break variety with good potential for red wine"
+        },
+        {
+            type: "Grape",
+            name: "Orlando Seedless",
+            category: "American bunch grape varieties for middle and south Georgia",
+            description: "Uses: fresh eating. small, greenish-yellow fruit"
+        },
+        {
+            type: "Grape",
+            name: "Suwanee",
+            category: "American bunch grape varieties for middle and south Georgia",
+            description: "Uses: white wine; fresh eating. good eaten fresh and as wine"
+        },
+        {
+            type: "Grape",
+            name: "Stover",
+            category: "American bunch grape varieties for middle and south Georgia",
+            description: "Uses: white wine; fresh eating. good, golden fruit"
+        },
+        {
+            type: "Grape",
+            name: "Blue Lake",
+            category: "American bunch grape varieties for middle and south Georgia",
+            description: "Uses: juice or jelly; fresh eating. purple fruit"
+        },
+        {
+            type: "Grape",
+            name: "Midsouth",
+            category: "American bunch grape varieties for middle and south Georgia",
+            description: "Uses: juice or jelly. sour, purple fruit"
+        },
+        {
+            type: "Grape",
+            name: "Miss Blue",
+            category: "American bunch grape varieties for middle and south Georgia",
+            description: "Uses: juice or jelly. sour, purple fruit"
+        },
+        {
+            type: "Grape",
+            name: "Conquistador",
+            category: "American bunch grape varieties for middle and south Georgia",
+            description: "Uses: red wine; juice or jelly; fresh eating. very good, similar to Concord"
+        },
+        {
+            type: "Grape",
+            name: "Lake Emerald",
+            category: "American bunch grape varieties for middle and south Georgia",
+            description: "Uses: white wine; fresh eating. greenish fruit"
+        },
+        {
+            type: "Grape",
+            name: "Daytona",
+            category: "American bunch grape varieties for middle and south Georgia",
+            description: "Uses: fresh eating. low yield but good eating; pink fruit"
+        },
+    ]
+}

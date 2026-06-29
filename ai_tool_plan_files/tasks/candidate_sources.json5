@@ -572,7 +572,7 @@
         },
         {
             id: "uga-home-garden-bunch-grapes-b807",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Home Garden Bunch Grapes",
             institution: "University of Georgia Cooperative Extension",
@@ -594,12 +594,16 @@
             duplicate_check:
                 "Existing Georgia grape references focus on muscadines, not bunch grapes",
             notes: [
-                "Landing page and PDF link were found on the official UGA page"
+                "Landing page and PDF link were found on the official UGA page",
+                "Encoded in plant_database/references/Georgia/UGA B807 Home Garden Bunch Grapes.json5",
+                "Config extraction added at helper_scripts/extraction_configs/uga_b807_bunch_grapes.json",
+                "Compatibility wrapper added at helper_scripts/extract_uga_b807_bunch_grapes.py",
+                "Config reads the extension.uga.edu detail page because it exposes clean HTML tables"
             ]
         },
         {
             id: "uga-home-garden-raspberries-blackberries-c766",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Home Garden Raspberries and Blackberries",
             institution: "University of Georgia Cooperative Extension",
@@ -624,7 +628,11 @@
             duplicate_check:
                 "No Georgia caneberry-specific extension reference found in existing references",
             notes: [
-                "Landing page and PDF link were found on the official UGA page"
+                "Landing page and PDF link were found on the official UGA page",
+                "Encoded in plant_database/references/Georgia/UGA C766 Home Garden Raspberries and Blackberries.json5",
+                "Config extraction added at helper_scripts/extraction_configs/uga_c766_caneberries.json",
+                "Compatibility wrapper added at helper_scripts/extract_uga_c766_caneberries.py",
+                "Config reads the extension.uga.edu detail page because it exposes a clean grouped HTML table"
             ]
         },
         {

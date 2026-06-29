@@ -58,6 +58,8 @@ script. The config runner currently supports:
 - Simple tables where the first row is the header
 - Tables with source title rows before the real header row
 - Required-header table selection
+- Explicit table-index selection with required-header validation for sources
+  where one table's headers are a subset of another table's headers
 - Key-column filtering for footnotes and note rows
 - Table transforms for leading rowspans, leading name fragments, and section
   rows
@@ -70,6 +72,8 @@ script. The config runner currently supports:
 - Generated rows for source notes that explicitly name a small fixed set of
   varieties
 - Optional category, location, harvest, and labelled description mapping
+- Description parts that turn source flag columns such as `X` under use columns
+  into readable labelled text
 - Name overrides, `AKA` values, and trailing footnote-marker stripping
 
 The worked UGA C740 and C742 configs show the ideal direction: no
@@ -131,6 +135,11 @@ Source-specific scripts should do:
 - UGA C740 apples and C742 pears: config-driven HTML table extraction with
   title-row tables, footnote-row skipping, source name overrides, and trailing
   footnote-marker stripping
+- UGA B807 bunch grapes: two clean HTML tables where the second table's
+  headers are a subset of the first, handled with explicit table indexes and
+  flag-column description parts
+- UGA C766 caneberries: grouped HTML table where fruit type is carried down
+  through short rows before mapping rows to blackberry or raspberry records
 
 ## Converted Configs
 
@@ -148,6 +157,8 @@ reproduce the old script stdout exactly:
 - `extract_umaine_2172.py` -> `extraction_configs/umaine_2172_caneberries.json`
 - `extract_umaine_2184.py` -> `extraction_configs/umaine_2184_strawberries.json`
 - `extract_umaine_2253.py` -> `extraction_configs/umaine_2253_blueberries.json`
+- `extract_uga_b807_bunch_grapes.py` -> `extraction_configs/uga_b807_bunch_grapes.json`
+- `extract_uga_c766_caneberries.py` -> `extraction_configs/uga_c766_caneberries.json`
 - `extract_vce_422_018_cherries.py` -> `extraction_configs/vce_422_018_cherries.json`
 - `extract_vce_422_019_peaches.py` -> `extraction_configs/vce_422_019_peaches.json`
 - `extract_vce_422_023_apples.py` -> `extraction_configs/vce_422_023_apples.json`
