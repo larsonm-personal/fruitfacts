@@ -1,0 +1,84 @@
+{
+    title: "Growing Grapes in Colorado Gardens",
+    author: "David Whiting and Merrill Kingsbury",
+    description: "Colorado Master Gardener GardenNotes grape guide with popular table, juice, and jelly grape cultivars and home vineyard management context",
+    url: "https://cmg.extension.colostate.edu/Gardennotes/764.pdf",
+    thumbnail: "pdf",
+    reviewed: "Mar 2023",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Colorado State University Extension, Fort Collins, Colorado",
+            latitude: 40.5748,
+            longitude: -105.0808
+        },
+    ],
+    categories: [
+        {
+            name: "Table grape cultivars popular in Colorado gardens",
+            description: "CSU describes table grapes as used for fresh eating and says most popular cultivars are seedless"
+        },
+        {
+            name: "Juice and jelly grape cultivars popular in Colorado gardens",
+            description: "CSU lists these as popular juice and jelly grape cultivars"
+        },
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Himrod",
+            category: "Table grape cultivars popular in Colorado gardens",
+            description: "Listed by CSU GardenNotes 764 as a popular grape cultivar for Colorado gardens"
+        },
+        {
+            type: "Grape",
+            name: "Interlaken",
+            category: "Table grape cultivars popular in Colorado gardens",
+            description: "Listed by CSU GardenNotes 764 as a popular grape cultivar for Colorado gardens"
+        },
+        {
+            type: "Grape",
+            name: "Canadice",
+            category: "Table grape cultivars popular in Colorado gardens",
+            description: "Listed by CSU GardenNotes 764 as a popular grape cultivar for Colorado gardens"
+        },
+        {
+            type: "Grape",
+            name: "St. Theresa",
+            category: "Table grape cultivars popular in Colorado gardens",
+            description: "Listed by CSU GardenNotes 764 as a popular grape cultivar for Colorado gardens"
+        },
+        {
+            type: "Grape",
+            name: "Reliance",
+            category: "Table grape cultivars popular in Colorado gardens",
+            description: "Listed by CSU GardenNotes 764 as a popular grape cultivar for Colorado gardens"
+        },
+        {
+            type: "Grape",
+            name: "Concord",
+            category: "Juice and jelly grape cultivars popular in Colorado gardens",
+            description: "Listed by CSU GardenNotes 764 as a popular grape cultivar for Colorado gardens"
+        },
+        {
+            type: "Grape",
+            name: "Valiant",
+            category: "Juice and jelly grape cultivars popular in Colorado gardens",
+            description: "Listed by CSU GardenNotes 764 as a popular grape cultivar for Colorado gardens"
+        },
+        {
+            type: "Grape",
+            name: "Niagara",
+            category: "Juice and jelly grape cultivars popular in Colorado gardens",
+            description: "Listed by CSU GardenNotes 764 as a popular grape cultivar for Colorado gardens. Source text says Niagra, likely Niagara"
+        },
+        {
+            type: "Grape",
+            name: "St. Croix",
+            category: "Juice and jelly grape cultivars popular in Colorado gardens",
+            description: "Listed by CSU GardenNotes 764 as a popular grape cultivar for Colorado gardens"
+        },
+    ]
+}

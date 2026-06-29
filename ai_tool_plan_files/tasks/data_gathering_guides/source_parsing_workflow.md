@@ -182,6 +182,17 @@ and `marker` are parser instructions, not source data. The script passes the
 category config through `record_tools.category_records()` before emitting the
 draft so only `name` and `description` are printed.
 
+## CSU GardenNotes 764 Notes
+
+The grape PDF is another born-digital GardenNotes source, but its cultivar
+lists appear in ordinary prose near the start of the document. The helper
+script uses `text_tools.section_between()` to isolate `Types of Grapes`, then
+uses `text_tools.names_after_marker()` with explicit end markers.
+
+Explicit end markers matter here because source names such as `St. Theresa`
+and `St. Croix` contain periods. A parser that simply stops at the next period
+would truncate those names.
+
 ## Penn State Non-Scab Apple Table Notes
 
 The Penn State page is a compact HTML table with headers `Variety`,
@@ -259,3 +270,16 @@ The official HTML combines Morton and Raritan Rose into one row even though the
 PDF text confirms two dates and two descriptions. That repair stays local to
 the VCE script because it is source-specific judgment. The resulting plant
 descriptions keep a visible note that the HTML row was combined.
+
+## VCE 422-018 Cherry Notes
+
+The Virginia cherry page is a narrative source rather than a table. Useful
+cultivar paragraphs are bounded by the `Tart Cherries` and `Cherry Pollination`
+headings, so the helper script uses `html_tools.blocks_between_headings()`.
+
+Each cultivar paragraph starts with a quoted cultivar name. The extractor uses
+`text_tools.quoted_name_paragraph()` to split the name from the paragraph, then
+uses `text_tools.first_sentence_containing()` to preserve the source's ripening
+sentence as `harvest_time_unparsed` when one exists. The source's plain
+paragraph label `Dark Sweet Cherries` is treated as a category change even
+though it is not marked up as a heading.

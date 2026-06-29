@@ -91,3 +91,23 @@ def fetch_html_page(url, user_agent=DEFAULT_USER_AGENT, timeout=45):
     parser.feed(html)
     return HtmlPage(blocks=parser.blocks, tables=parser.tables)
 
+
+def blocks_between_headings(blocks, start_heading, end_heading=None):
+    start_index = None
+    for index, (tag, text) in enumerate(blocks):
+        if tag.startswith("h") and text == start_heading:
+            start_index = index + 1
+            break
+    if start_index is None:
+        raise ValueError("Could not find heading: " + start_heading)
+
+    end_index = len(blocks)
+    if end_heading:
+        for index in range(start_index, len(blocks)):
+            tag, text = blocks[index]
+            if tag.startswith("h") and text == end_heading:
+                end_index = index
+                break
+        if end_index == len(blocks):
+            raise ValueError("Could not find heading: " + end_heading)
+    return blocks[start_index:end_index]

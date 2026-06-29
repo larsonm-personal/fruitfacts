@@ -18,8 +18,12 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
     labelled table-cell description joining
   - Bounded section extraction and marker-based name-list extraction for PDF
     text
+  - Sentence splitting, first matching sentence lookup, and quoted-name
+    paragraph parsing for narrative cultivar pages
 - `html_tools.py`
   - HTML block and table extraction with script/style noise skipped
+  - Heading-bounded block slices for pages where useful source content sits
+    between named sections
 - `table_tools.py`
   - Simple table header normalization, title-row skipping, and table rows as
     dictionaries
@@ -86,6 +90,11 @@ Source-specific scripts should do:
   names split into leading fragment rows before the full data row
 - VCE 422-019 peach and nectarine table: HTML cultivar table with single-cell
   section rows and one combined source row that stays as a local repair
+- VCE 422-018 cherry narrative: HTML heading-bounded cultivar paragraphs where
+  each useful paragraph starts with a quoted cultivar name
+- CSU GardenNotes 764 grape lists: PDF marker lists where cultivar names such
+  as `St. Theresa` and `St. Croix` contain periods, so scripts need explicit
+  end markers rather than stopping at the first period
 
 ## PDF Lessons
 

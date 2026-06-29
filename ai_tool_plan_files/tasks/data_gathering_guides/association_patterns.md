@@ -78,6 +78,13 @@ Second pass:
   when the intended source row is clear, and keep source-specific repairs
   visible in descriptions or comments when the source table itself is
   ambiguous.
+- Narrative cultivar pages often use repeated paragraphs beginning with a
+  quoted cultivar name. Treat the source heading or section label as category
+  context, and keep the paragraph body as source description unless a shorter
+  field such as ripening time can be extracted without changing the meaning.
+- Cultivar lists can include abbreviations with periods, such as `St. Theresa`
+  or `St. Croix`. Use explicit end markers or bounded sections before splitting
+  names so those periods are not mistaken for the end of the list.
 
 ## Locations
 

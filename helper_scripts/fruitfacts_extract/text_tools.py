@@ -72,6 +72,26 @@ def join_labelled_values(parts):
     return ". ".join(sentences)
 
 
+def split_sentences(text):
+    return [part.strip() for part in re.split(r"(?<=[.!?])\s+", text) if part.strip()]
+
+
+def first_sentence_containing(text, terms):
+    normalized_terms = [term.lower() for term in terms]
+    for sentence in split_sentences(text):
+        lowered = sentence.lower()
+        if any(term in lowered for term in normalized_terms):
+            return sentence
+    return None
+
+
+def quoted_name_paragraph(text):
+    match = re.match(r"^'([^']+)'\s*(?:-\s*)?(.*)$", text)
+    if not match:
+        raise ValueError("Could not parse quoted-name paragraph: " + text)
+    return match.group(1), match.group(2).strip()
+
+
 def section_between(text, start, end):
     start_index = text.find(start)
     if start_index < 0:

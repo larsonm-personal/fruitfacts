@@ -650,7 +650,7 @@
         },
         {
             id: "virginia-growing-cherries-422-018",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Cherries in Virginia",
             institution: "Virginia Cooperative Extension",
@@ -671,7 +671,10 @@
             duplicate_check:
                 "Existing Virginia references do not include a cherry-specific extension guide",
             notes: [
-                "Landing page and PDF link were found on the official Virginia Cooperative Extension page"
+                "Landing page and PDF link were found on the official Virginia Cooperative Extension page",
+                "Encoded in plant_database/references/Virginia/VCE 422-018 Growing Cherries in Virginia.json5",
+                "Draft extraction helper added at helper_scripts/extract_vce_422_018_cherries.py",
+                "Worked example for VCE HTML narrative cultivar paragraphs bounded by headings"
             ]
         },
         {
@@ -1135,7 +1138,7 @@
         },
         {
             id: "csu-gardennotes-764-growing-grapes-colorado-gardens",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Grapes in Colorado Gardens",
             institution: "Colorado State University Extension",
@@ -1154,7 +1157,10 @@
             duplicate_check:
                 "No Colorado grape extension reference found in existing references",
             notes: [
-                "Direct PDF returned 200"
+                "Direct PDF returned 200",
+                "Encoded in plant_database/references/Colorado/CSU GardenNotes 764 Growing Grapes in Colorado Gardens.json5",
+                "Draft extraction helper added at helper_scripts/extract_csu_764.py",
+                "Worked example for PDF marker lists where cultivar names contain periods"
             ]
         },
         {
