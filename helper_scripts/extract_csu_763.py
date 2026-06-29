@@ -3,9 +3,13 @@
 
 import sys
 
-from fruitfacts_extract.json5_draft import q
+from fruitfacts_extract.json5_draft import emit_reference
 from fruitfacts_extract.pdf_tools import clean_pdf_text, pdf_url_to_text
-from fruitfacts_extract.text_tools import clean_text, split_suggested_names
+from fruitfacts_extract.record_tools import append_source_note
+from fruitfacts_extract.record_tools import category_records
+from fruitfacts_extract.record_tools import normalized_name
+from fruitfacts_extract.record_tools import plant_record
+from fruitfacts_extract.text_tools import clean_text, names_after_marker, section_between
 
 
 PDF_URL = "https://cmg.extension.colostate.edu/Gardennotes/763.pdf"
@@ -52,6 +56,16 @@ CATEGORIES = [
         ),
     },
 ]
+REFERENCE_FIELDS = [
+    ("title", "Growing Strawberries in Colorado Gardens"),
+    ("author", "David Whiting and Merrill Kingsbury"),
+    ("url", PDF_URL),
+    ("published", "2018"),
+    ("reviewed", "2023"),
+    ("accessed", "Jun 2026"),
+    ("type", "state extension guide"),
+    ("needs_help", True),
+]
 
 
 def source_text():
@@ -59,51 +73,25 @@ def source_text():
     return clean_text(text)
 
 
-def normalized_name(name):
-    if name in NAME_OVERRIDES:
-        return NAME_OVERRIDES[name]
-    return name, None
-
-
-def section_between(text, start, end):
-    start_index = text.find(start)
-    if start_index < 0:
-        raise ValueError("Could not find section start: " + start)
-    end_index = text.find(end, start_index + len(start))
-    if end_index < 0:
-        raise ValueError("Could not find section end: " + end)
-    return text[start_index:end_index]
-
-
-def suggested_names(section):
-    marker = "Suggested cultivars include "
-    marker_index = section.find(marker)
-    if marker_index < 0:
-        raise ValueError("Could not find suggested cultivar list")
-    names = section[marker_index + len(marker) :].strip()
-    return split_suggested_names(names)
-
-
 def plants_from_category(text, category):
     section = section_between(text, category["start"], category["end"])
     plants = []
-    for source_name in suggested_names(section):
-        name, source_note = normalized_name(source_name)
+    for source_name in names_after_marker(section, "Suggested cultivars include ", None):
+        name, source_note = normalized_name(source_name, NAME_OVERRIDES)
         description = (
             "Listed by CSU GardenNotes 763 as a suggested "
             + category["name"].lower()
             + " for Colorado gardens"
         )
-        if source_note:
-            description += ". " + source_note
-        plant = {
-            "type": "Strawberry",
-            "name": name,
-            "category": category["name"],
-            "harvest_time_unparsed": category["harvest_time_unparsed"],
-            "description": description,
-        }
-        plants.append(plant)
+        plants.append(
+            plant_record(
+                "Strawberry",
+                name,
+                category=category["name"],
+                harvest_time_unparsed=category["harvest_time_unparsed"],
+                description=append_source_note(description, source_note),
+            )
+        )
     return plants
 
 
@@ -116,34 +104,7 @@ def extract():
 
 
 def emit_json5(plants):
-    print("{")
-    print('    title: "Growing Strawberries in Colorado Gardens",')
-    print('    author: "David Whiting and Merrill Kingsbury",')
-    print(f"    url: {q(PDF_URL)},")
-    print('    published: "2018",')
-    print('    reviewed: "2023",')
-    print('    accessed: "Jun 2026",')
-    print('    type: "state extension guide",')
-    print("    needs_help: true,")
-    print("    categories: [")
-    for category in CATEGORIES:
-        print("        {")
-        print(f"            name: {q(category['name'])},")
-        print(f"            description: {q(category['description'])}")
-        print("        },")
-    print("    ],")
-    print("    plants: [")
-    for plant in plants:
-        print("        {")
-        print(f"            type: {q(plant['type'])},")
-        print(f"            name: {q(plant['name'])},")
-        print(f"            category: {q(plant['category'])},")
-        print(f"            harvest_time_unparsed: {q(plant['harvest_time_unparsed'])},")
-        print(f"            description: {q(plant['description'])}")
-        print("        },")
-    print("    ]")
-    print("}")
-    print(f"// extracted_plants: {len(plants)}", file=sys.stderr)
+    emit_reference(REFERENCE_FIELDS, plants, categories=category_records(CATEGORIES))
 
 
 def main():

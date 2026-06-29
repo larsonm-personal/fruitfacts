@@ -4,7 +4,8 @@
 import sys
 
 from fruitfacts_extract.html_tools import fetch_html_page
-from fruitfacts_extract.json5_draft import q
+from fruitfacts_extract.json5_draft import emit_reference
+from fruitfacts_extract.record_tools import plant_record
 from fruitfacts_extract.table_tools import find_table_with_header_row
 
 
@@ -34,6 +35,15 @@ TABLES = [
             "home fruit plantings"
         ),
     },
+]
+REFERENCE_FIELDS = [
+    ("title", "Growing Grapes in the Home Fruit Planting"),
+    ("author", "Gary Y. Gao"),
+    ("url", SOURCE_URL),
+    ("published", "2017"),
+    ("accessed", "Jun 2026"),
+    ("type", "state extension guide"),
+    ("needs_help", True),
 ]
 DISEASE_KEYS = [
     ("black_rot", "black rot"),
@@ -102,45 +112,19 @@ def extract():
         for row in cultivar_rows(table["rows"]):
             name = row["cultivar"]
             plants.append(
-                {
-                    "type": "Grape",
-                    "name": name,
-                    "category": table_info["category"],
-                    "harvest_time_unparsed": row["ripening_season"],
-                    "description": description(row, diseases.get(name)),
-                }
+                plant_record(
+                    "Grape",
+                    name,
+                    category=table_info["category"],
+                    harvest_time_unparsed=row["ripening_season"],
+                    description=description(row, diseases.get(name)),
+                )
             )
     return categories, plants
 
 
 def emit_json5(categories, plants):
-    print("{")
-    print('    title: "Growing Grapes in the Home Fruit Planting",')
-    print('    author: "Gary Y. Gao",')
-    print(f"    url: {q(SOURCE_URL)},")
-    print('    published: "2017",')
-    print('    accessed: "Jun 2026",')
-    print('    type: "state extension guide",')
-    print("    needs_help: true,")
-    print("    categories: [")
-    for category in categories:
-        print("        {")
-        print(f"            name: {q(category['name'])},")
-        print(f"            description: {q(category['description'])}")
-        print("        },")
-    print("    ],")
-    print("    plants: [")
-    for plant in plants:
-        print("        {")
-        print(f"            type: {q(plant['type'])},")
-        print(f"            name: {q(plant['name'])},")
-        print(f"            category: {q(plant['category'])},")
-        print(f"            harvest_time_unparsed: {q(plant['harvest_time_unparsed'])},")
-        print(f"            description: {q(plant['description'])}")
-        print("        },")
-    print("    ]")
-    print("}")
-    print(f"// extracted_plants: {len(plants)}", file=sys.stderr)
+    emit_reference(REFERENCE_FIELDS, plants, categories=categories)
 
 
 def main():

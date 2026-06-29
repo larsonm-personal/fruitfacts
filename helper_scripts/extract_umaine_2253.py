@@ -4,8 +4,11 @@
 import sys
 
 from fruitfacts_extract.html_tools import fetch_html_page
-from fruitfacts_extract.json5_draft import q
-from fruitfacts_extract.table_tools import find_table, table_to_dicts
+from fruitfacts_extract.json5_draft import emit_reference
+from fruitfacts_extract.record_tools import append_source_note
+from fruitfacts_extract.record_tools import normalized_name
+from fruitfacts_extract.record_tools import plant_record
+from fruitfacts_extract.table_tools import find_table, keyed_data_rows, table_to_dicts
 from fruitfacts_extract.text_tools import join_labelled_values
 
 
@@ -14,12 +17,21 @@ CATEGORY = "Highbush Blueberry Varieties for Northern New England"
 NAME_OVERRIDES = {
     "Blue Gold": ("Bluegold", "Source table names this as Blue Gold"),
 }
-
-
-def normalized_name(source_name):
-    if source_name in NAME_OVERRIDES:
-        return NAME_OVERRIDES[source_name]
-    return source_name, None
+CATEGORIES = [
+    {
+        "name": CATEGORY,
+        "description": "Highbush blueberry varieties listed by UMaine for Northern New England",
+    }
+]
+REFERENCE_FIELDS = [
+    ("title", "Growing Highbush Blueberries"),
+    ("author", "David T. Handley"),
+    ("url", SOURCE_URL),
+    ("published", "1992, 2008"),
+    ("accessed", "Jun 2026"),
+    ("type", "state extension guide"),
+    ("needs_help", True),
+]
 
 
 def extract():
@@ -29,59 +41,29 @@ def extract():
         ["Variety", "Plant Characteristics", "Fruit Qualities", "Ripening Season"],
     )
     plants = []
-    for row in table_to_dicts(table):
+    for row in keyed_data_rows(table_to_dicts(table), "variety"):
         source_name = row["variety"]
-        name, source_note = normalized_name(source_name)
+        name, source_note = normalized_name(source_name, NAME_OVERRIDES)
         description = join_labelled_values(
             [
                 ("Plant characteristics", row["plant_characteristics"]),
                 ("Fruit qualities", row["fruit_qualities"]),
             ]
         )
-        if source_note:
-            description += ". " + source_note
         plants.append(
-            {
-                "type": "Blueberry",
-                "name": name,
-                "category": CATEGORY,
-                "harvest_time_unparsed": row["ripening_season"],
-                "description": description,
-            }
+            plant_record(
+                "Blueberry",
+                name,
+                category=CATEGORY,
+                harvest_time_unparsed=row["ripening_season"],
+                description=append_source_note(description, source_note),
+            )
         )
     return plants
 
 
 def emit_json5(plants):
-    print("{")
-    print('    title: "Growing Highbush Blueberries",')
-    print('    author: "David T. Handley",')
-    print(f"    url: {q(SOURCE_URL)},")
-    print('    published: "1992, 2008",')
-    print('    accessed: "Jun 2026",')
-    print('    type: "state extension guide",')
-    print("    needs_help: true,")
-    print("    categories: [")
-    print("        {")
-    print(f"            name: {q(CATEGORY)},")
-    print(
-        "            description: "
-        + q("Highbush blueberry varieties listed by UMaine for Northern New England")
-    )
-    print("        },")
-    print("    ],")
-    print("    plants: [")
-    for plant in plants:
-        print("        {")
-        print(f"            type: {q(plant['type'])},")
-        print(f"            name: {q(plant['name'])},")
-        print(f"            category: {q(plant['category'])},")
-        print(f"            harvest_time_unparsed: {q(plant['harvest_time_unparsed'])},")
-        print(f"            description: {q(plant['description'])}")
-        print("        },")
-    print("    ]")
-    print("}")
-    print(f"// extracted_plants: {len(plants)}", file=sys.stderr)
+    emit_reference(REFERENCE_FIELDS, plants, categories=CATEGORIES)
 
 
 def main():

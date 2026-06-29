@@ -34,6 +34,24 @@ def keyed_data_rows(rows, key, skip_prefixes=("Note:",)):
     return data
 
 
+def fill_leading_group_cells(table):
+    if not table:
+        return []
+    headers = table[0]
+    expected_length = len(headers)
+    group_value = None
+    aligned = [headers]
+    for row in table[1:]:
+        if len(row) == expected_length:
+            group_value = row[0]
+            aligned.append(row)
+        elif len(row) == expected_length - 1 and group_value:
+            aligned.append([group_value] + row)
+        else:
+            raise ValueError("Could not align grouped table row: " + repr(row))
+    return aligned
+
+
 def table_from_header_row(table, required_headers):
     wanted = {header_key(value) for value in required_headers}
     for index, row in enumerate(table):

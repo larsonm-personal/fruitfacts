@@ -1,0 +1,88 @@
+{
+    title: "Growing Blackberries in Colorado Gardens",
+    author: "David Whiting, CSU Extension, retired and Merrill Kingsbury, CSU Extension",
+    description:
+        "Colorado Master Gardener GardenNotes blackberry guide. The source gives Colorado-oriented guidance for blackberry types, winter-hardiness limitations, primocane-fruiting and semi-erect cultivar suggestions, blackberry-red raspberry hybrids, planting, trellising, and pruning",
+    url: "https://cmg.extension.colostate.edu/Gardennotes/762.pdf",
+    published: "August 2018",
+    reviewed: "March 2023",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    thumbnail: "pdf",
+    needs_help: true, // todo - review blackberry hybrid names before clearing
+    locations: [
+        {
+            name: "Colorado State University Extension, Fort Collins, Colorado",
+            latitude: 40.5748,
+            longitude: -105.0808
+        }
+    ],
+    categories: [
+        {
+            name: "Primocane-fruiting erect blackberries",
+            description:
+                "CSU describes primocane-fruiting erect blackberries as fruiting on new canes, making winter management easier because canes can be cut to the ground"
+        },
+        {
+            name: "Semi-erect blackberries",
+            description:
+                "CSU describes semi-erect blackberries as thornless, vigorous, trellis-requiring plants that generally yield more than trailing or erect types"
+        },
+        {
+            name: "Blackberry/red raspberry hybrids",
+            description:
+                "CSU says blackberry-red raspberry hybrids are usually natural crosses and are generally considered a type of blackberry because the receptacle comes off with the fruit"
+        }
+    ],
+    plants: [
+        {
+            type: "Blackberry",
+            name: "Prime Jan",
+            category: "Primocane-fruiting erect blackberries",
+            description:
+                "Suggested by CSU GardenNotes 762 as a primocane-fruiting erect blackberry for Colorado gardens"
+        },
+        {
+            type: "Blackberry",
+            name: "Prime Jim",
+            category: "Primocane-fruiting erect blackberries",
+            description:
+                "Suggested by CSU GardenNotes 762 as a primocane-fruiting erect blackberry for Colorado gardens"
+        },
+        {
+            type: "Blackberry",
+            name: "Triple Crown",
+            category: "Semi-erect blackberries",
+            description:
+                "Suggested by CSU GardenNotes 762 as a semi-erect blackberry for Colorado gardens"
+        },
+        {
+            type: "Blackberry",
+            name: "Chester",
+            category: "Semi-erect blackberries",
+            description:
+                "Suggested by CSU GardenNotes 762 as a semi-erect blackberry for Colorado gardens. Source text names this as Chester Thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Boysen",
+            category: "Blackberry/red raspberry hybrids",
+            description:
+                "Listed by CSU GardenNotes 762 as a popular blackberry-red raspberry hybrid. Source text names this as Boysenberry"
+        },
+        {
+            type: "Blackberry",
+            name: "Logan",
+            category: "Blackberry/red raspberry hybrids",
+            description:
+                "Listed by CSU GardenNotes 762 as a popular blackberry-red raspberry hybrid. Source text names this as Loganberry"
+        },
+        {
+            type: "Blackberry",
+            name: "Tay",
+            category: "Blackberry/red raspberry hybrids",
+            description:
+                "Listed by CSU GardenNotes 762 as a popular blackberry-red raspberry hybrid. Source text names this as Tayberry"
+        }
+    ]
+}

@@ -16,15 +16,22 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
 - `text_tools.py`
   - ASCII cleanup, whitespace normalization, simple source-list splitting, and
     labelled table-cell description joining
+  - Bounded section extraction and marker-based name-list extraction for PDF
+    text
 - `html_tools.py`
   - HTML block and table extraction with script/style noise skipped
 - `table_tools.py`
   - Simple table header normalization, title-row skipping, and table rows as
-    dictionaries, plus key-column filtering for blank or note rows
+    dictionaries
+  - Key-column filtering for blank or note rows and leading group-cell repair
+    for simple rowspan tables
 - `pdf_tools.py`
   - Download to temp storage and run `pdftotext`
+- `record_tools.py`
+  - Source-name normalization, source-note appending, plant-record creation,
+    and parser-config category cleanup
 - `json5_draft.py`
-  - JSON-safe quoting for draft emitters
+  - JSON-safe quoting and reusable draft reference emission
 
 Source-specific scripts such as `extract_umaine_2172.py`,
 `extract_umaine_2184.py`, and `extract_csu_763.py` should import these helpers
@@ -40,6 +47,7 @@ Shared helpers should do:
 - Normalize common web and PDF punctuation to printable ASCII
 - Provide small parsing helpers for recurring text shapes
 - Emit draft JSON5 safely enough for review
+- Build ordinary draft plant records from source-specific row decisions
 
 Source-specific scripts should do:
 
@@ -57,8 +65,12 @@ Source-specific scripts should do:
   table rows
 - CSU GardenNotes 763: PDF text plus bounded sections containing suggested
   cultivar lists
+- CSU GardenNotes 762: same PDF section/list helpers as GardenNotes 763, with
+  category config stripped before draft emission
 - Penn State non-scab apple table: HTML table rows mapped by normalized headers
   such as variety, characteristics, and ripening period
+- UMaine 2068 peach table: HTML table with leading group rowspans repaired
+  before header mapping
 - UMaine 2253 blueberry table: compact HTML cultivar table mapped by normalized
   headers, with labelled table cells joined into a draft description
 - OSU HYG-1401 and HYG-1422 cultivar tables: simple Ohioline HTML tables with
@@ -81,12 +93,11 @@ Source-specific scripts should do:
 
 ## Next Library Steps
 
-1. Add a `section_between()` helper after two or three more scripts need it.
-2. Expand table helpers for repeated header groups such as variety, season, use,
-   disease, and comments after one more unrelated source needs it.
-3. Add a PDF diagnostic command that reports page count, text length, and
+1. Add a PDF diagnostic command that reports page count, text length, and
    whether `pdftotext -layout` or `pdftotext -raw` looks cleaner.
-4. Add draft-record helpers only after the same emit pattern repeats in at least
-   three source scripts.
-5. Keep parsers source-specific until a pattern appears in multiple unrelated
+2. Add parser-backed checks for draft extractors after the library shape
+   stabilizes.
+3. Consider moving repeated source metadata into a small data object only if the
+   current `REFERENCE_FIELDS` pattern starts to drift.
+4. Keep parsers source-specific until a pattern appears in multiple unrelated
    sources.

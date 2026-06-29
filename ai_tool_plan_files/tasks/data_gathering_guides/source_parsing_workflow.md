@@ -64,6 +64,17 @@ source-specific script. See
 [Extraction Helper Library](extraction_helper_library.md) for the current
 library boundary.
 
+After the first several worked examples, the repeated pieces were moved into
+shared helpers:
+
+- `json5_draft.emit_reference()` for draft output
+- `record_tools.plant_record()` and `record_tools.normalized_name()` for
+  common plant-row mechanics
+- `text_tools.section_between()` and `text_tools.names_after_marker()` for
+  born-digital PDF section parsing
+- `table_tools.fill_leading_group_cells()` for simple HTML tables where a
+  leading source group was represented by rowspans
+
 ## The Art
 
 - Capture source metadata first: title, author, URL, publication dates,
@@ -129,6 +140,18 @@ This source also showed a small name-harmonization case. UMaine prints
 keeps the existing canonical name and notes the source spelling in the
 description.
 
+## UMaine 2068 Notes
+
+The UMaine peach page is an HTML table source, but the first `Type` column uses
+rowspans. The simple HTML table parser sees the first row in a group as full
+width and later rows as one cell short. The helper script repairs this with
+`table_tools.fill_leading_group_cells()` before calling
+`table_tools.table_to_dicts()`.
+
+The source uses asterisks to mark varieties evaluated at the University of
+Maine Highmoor Farm. The extractor removes the asterisk from the plant name and
+keeps the evaluation marker in the draft description.
+
 ## CSU GardenNotes 763 Notes
 
 This was the first PDF worked example. The source is short and born-digital, so
@@ -140,6 +163,18 @@ The helper script uses shared PDF text extraction and then source-specific
 section parsing. A first naive regex stopped at the period inside `A.C. Wendy`,
 so the parser now bounds each category by the next section heading before
 splitting cultivar names.
+
+## CSU GardenNotes 762 Notes
+
+The blackberry PDF uses the same broad shape as GardenNotes 763: bounded text
+sections with sentences such as `Suggested cultivars include ...`. The helper
+script uses `text_tools.section_between()` and `text_tools.names_after_marker()`
+for those repeated pieces.
+
+Unlike the strawberry PDF, some category config fields such as `start`, `end`,
+and `marker` are parser instructions, not source data. The script passes the
+category config through `record_tools.category_records()` before emitting the
+draft so only `name` and `description` are printed.
 
 ## Penn State Non-Scab Apple Table Notes
 

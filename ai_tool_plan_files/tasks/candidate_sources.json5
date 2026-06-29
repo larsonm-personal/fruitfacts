@@ -117,7 +117,7 @@
         },
         {
             id: "umaine-growing-peaches-in-maine-2068",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Peaches in Maine",
             institution: "University of Maine Cooperative Extension",
@@ -137,7 +137,10 @@
                 "No Maine-specific reference directory found in existing references",
             notes: [
                 "Canonical source appears to be the web page",
-                "Page returned 200 and includes cultivar-level content"
+                "Page returned 200 and includes cultivar-level content",
+                "Encoded in plant_database/references/Maine/UMaine 2068 Growing Peaches in Maine.json5",
+                "Draft extraction helper added at helper_scripts/extract_umaine_2068.py",
+                "Worked example for HTML tables where rowspans appear as short rows in the simple parser"
             ]
         },
         {
@@ -1177,7 +1180,7 @@
         },
         {
             id: "csu-gardennotes-762-growing-blackberries-colorado-gardens",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Blackberries in Colorado Gardens",
             institution: "Colorado State University Extension",
@@ -1196,7 +1199,10 @@
             duplicate_check:
                 "No Colorado blackberry extension reference found in existing references",
             notes: [
-                "Direct PDF returned 200"
+                "Direct PDF returned 200",
+                "Encoded in plant_database/references/Colorado/CSU GardenNotes 762 Growing Blackberries in Colorado Gardens.json5",
+                "Draft extraction helper added at helper_scripts/extract_csu_762.py",
+                "Worked example for shared PDF section parsing and suggested-cultivar list extraction"
             ]
         },
         {

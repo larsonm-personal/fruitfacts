@@ -62,3 +62,23 @@ def join_labelled_values(parts):
         cleaned_value = clean_text(value).rstrip(".")
         sentences.append(cleaned_label + ": " + cleaned_value)
     return ". ".join(sentences)
+
+
+def section_between(text, start, end):
+    start_index = text.find(start)
+    if start_index < 0:
+        raise ValueError("Could not find section start: " + start)
+    end_index = text.find(end, start_index + len(start))
+    if end_index < 0:
+        raise ValueError("Could not find section end: " + end)
+    return text[start_index:end_index]
+
+
+def names_after_marker(text, marker, end_marker="."):
+    marker_index = text.find(marker)
+    if marker_index < 0:
+        raise ValueError("Could not find list marker: " + marker)
+    names_text = text[marker_index + len(marker) :].strip()
+    if end_marker:
+        names_text = names_text.split(end_marker, 1)[0]
+    return split_suggested_names(names_text)

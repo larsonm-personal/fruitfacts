@@ -4,13 +4,29 @@
 import sys
 
 from fruitfacts_extract.html_tools import fetch_html_page
-from fruitfacts_extract.json5_draft import q
+from fruitfacts_extract.json5_draft import emit_reference
+from fruitfacts_extract.record_tools import plant_record
 from fruitfacts_extract.table_tools import find_table, keyed_data_rows, table_to_dicts
 from fruitfacts_extract.text_tools import join_labelled_values
 
 
 SOURCE_URL = "https://ohioline.osu.edu/factsheet/hyg-1422"
 CATEGORY = "Blueberry cultivars suggested for Ohio"
+CATEGORIES = [
+    {
+        "name": CATEGORY,
+        "description": "Blueberry cultivars suggested by OSU for Ohio home gardens",
+    }
+]
+REFERENCE_FIELDS = [
+    ("title", "Growing Blueberries in the Home Garden"),
+    ("author", "Gary Y. Gao, Erik Draper, and Clifton Martin"),
+    ("url", SOURCE_URL),
+    ("published", "May 15, 2026"),
+    ("accessed", "Jun 2026"),
+    ("type", "state extension guide"),
+    ("needs_help", True),
+]
 
 
 def row_description(row):
@@ -37,47 +53,19 @@ def extract():
     plants = []
     for row in keyed_data_rows(table_to_dicts(table), "cultivar"):
         plants.append(
-            {
-                "type": "Blueberry",
-                "name": row["cultivar"],
-                "category": CATEGORY,
-                "harvest_time_unparsed": row["ripening_season"],
-                "description": row_description(row),
-            }
+            plant_record(
+                "Blueberry",
+                row["cultivar"],
+                category=CATEGORY,
+                harvest_time_unparsed=row["ripening_season"],
+                description=row_description(row),
+            )
         )
     return plants
 
 
 def emit_json5(plants):
-    print("{")
-    print('    title: "Growing Blueberries in the Home Garden",')
-    print('    author: "Gary Y. Gao, Erik Draper, and Clifton Martin",')
-    print(f"    url: {q(SOURCE_URL)},")
-    print('    published: "May 15, 2026",')
-    print('    accessed: "Jun 2026",')
-    print('    type: "state extension guide",')
-    print("    needs_help: true,")
-    print("    categories: [")
-    print("        {")
-    print(f"            name: {q(CATEGORY)},")
-    print(
-        "            description: "
-        + q("Blueberry cultivars suggested by OSU for Ohio home gardens")
-    )
-    print("        },")
-    print("    ],")
-    print("    plants: [")
-    for plant in plants:
-        print("        {")
-        print(f"            type: {q(plant['type'])},")
-        print(f"            name: {q(plant['name'])},")
-        print(f"            category: {q(plant['category'])},")
-        print(f"            harvest_time_unparsed: {q(plant['harvest_time_unparsed'])},")
-        print(f"            description: {q(plant['description'])}")
-        print("        },")
-    print("    ]")
-    print("}")
-    print(f"// extracted_plants: {len(plants)}", file=sys.stderr)
+    emit_reference(REFERENCE_FIELDS, plants, categories=CATEGORIES)
 
 
 def main():

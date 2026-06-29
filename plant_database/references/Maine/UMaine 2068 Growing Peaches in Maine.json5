@@ -1,0 +1,291 @@
+{
+    title: "Growing Peaches in Maine",
+    author: "Renae Moran, Extension Tree Fruit Specialist, University of Maine Cooperative Extension",
+    description:
+        "UMaine peach growing guide. The source emphasizes short tree life in Maine, winter hardiness, leaf curl resistance, fruit size, fruit quality, flesh type, ripening date, and Highmoor Farm evaluation notes for common peach varieties",
+    url: "https://extension.umaine.edu/publications/2068e/",
+    published: "2024",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    thumbnail: "website",
+    needs_help: true, // todo - review Highmoor Farm evaluation marker and BuenOsII spelling before clearing
+    locations: [
+        {
+            name: "University of Maine Cooperative Extension, Orono, Maine",
+            latitude: 44.8998,
+            longitude: -68.6693
+        }
+    ],
+    categories: [
+        {
+            name: "Yellow flesh",
+            description: "Yellow-fleshed peach varieties listed by UMaine"
+        },
+        {
+            name: "White Flesh",
+            description: "White-fleshed peach varieties listed by UMaine"
+        },
+        {
+            name: "Flat (Donut)",
+            description: "Flat or donut peach varieties listed by UMaine"
+        }
+    ],
+    plants: [
+        {
+            type: "Peach",
+            name: "Autumnstar",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "mid-September",
+            description:
+                "Flower bud cold hardiness: poor. Leaf curl resistance: unknown. Fruit size: large. Fruit quality: good. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Belle of Georgia",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "September",
+            description:
+                "Flower bud cold hardiness: fair. Leaf curl resistance: poor. Fruit size: medium"
+        },
+        {
+            type: "Peach",
+            name: "Blazingstar",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "mid-August",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: unknown. Fruit size: medium. Fruit quality: good. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Canadian Harmony",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "mid-September",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: fair. Fruit size: medium"
+        },
+        {
+            type: "Peach",
+            name: "Contender",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "mid-September",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: fair. Fruit size: medium. Fruit quality: good. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Coralstar",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "late-August",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: fair. Fruit size: large. Fruit quality: good. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Cresthaven",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "mid-September",
+            description:
+                "Flower bud cold hardiness: best. Leaf curl resistance: unknown. Fruit size: medium"
+        },
+        {
+            type: "Peach",
+            name: "Desiree",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "early-August",
+            description:
+                "Flower bud cold hardiness: poor. Leaf curl resistance: unknown. Fruit size: small to medium. Fruit quality: excellent. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Elberta",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "late-September",
+            description:
+                "Flower bud cold hardiness: fair. Leaf curl resistance: good. Fruit size: large"
+        },
+        {
+            type: "Peach",
+            name: "Frost",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "early-September",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: good. Fruit size: small"
+        },
+        {
+            type: "Peach",
+            name: "Harken",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "mid-September",
+            description:
+                "Flower bud cold hardiness: fair. Leaf curl resistance: good. Fruit size: medium. Fruit quality: fair. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Harrow Beauty",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "mid-September",
+            description:
+                "Flower bud cold hardiness: fair. Leaf curl resistance: fair. Fruit size: large. Fruit quality: good. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Garnet Beauty",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "early-August",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: good. Fruit size: small. Fruit quality: fair. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Glowingstar",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "early-September",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: unknown. Fruit size: medium. Fruit quality: excellent. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Madison",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "late-September",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: unknown. Fruit size: large. Fruit quality: fair"
+        },
+        {
+            type: "Peach",
+            name: "Messina",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "mid-September",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: unknown. Fruit size: small. Fruit quality: excellent. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "PF 8 Ball",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "mid-August",
+            description:
+                "Flower bud cold hardiness: fair. Leaf curl resistance: unknown. Fruit size: medium. Fruit quality: good. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "PF Lucky 13",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "mid-August",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: unknown. Fruit size: medium. Fruit quality: good. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "PF 15A",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "mid-August",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: unknown. Fruit size: medium. Fruit quality: good. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "PF 17",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "late-August",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: unknown. Fruit size: medium. Fruit quality: fair. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "PF 23",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "early-September",
+            description:
+                "Flower bud cold hardiness: poor. Leaf curl resistance: unknown. Fruit size: small. Fruit quality: fair. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Reliance",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "mid-August",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: poor. Fruit size: small. Fruit quality: fair. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "late-August",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: fair. Fruit size: medium. Fruit quality: good. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Starfire",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "early-September",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: fair. Fruit size: medium. Fruit quality: fair. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Summer Serenade",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "mid-August",
+            description:
+                "Flower bud cold hardiness: poor. Leaf curl resistance: unknown. Fruit size: small. Fruit quality: excellent. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Tiana",
+            category: "Yellow flesh",
+            harvest_time_unparsed: "mid-September",
+            description:
+                "Flower bud cold hardiness: unknown. Leaf curl resistance: unknown. Fruit size: medium. Fruit quality: good. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Blushingstar",
+            category: "White Flesh",
+            harvest_time_unparsed: "early-September",
+            description:
+                "Flower bud cold hardiness: poor. Leaf curl resistance: unknown. Fruit size: medium. Fruit quality: good. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "July Rose",
+            category: "White Flesh",
+            harvest_time_unparsed: "mid-August",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: unknown. Fruit size: small. Fruit quality: good. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Salish",
+            category: "White Flesh",
+            harvest_time_unparsed: "mid-September",
+            description:
+                "Flower bud cold hardiness: fair. Leaf curl resistance: good. Fruit size: small. Fruit quality: fair. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "BuenOsII",
+            category: "Flat (Donut)",
+            harvest_time_unparsed: "mid-August",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: unknown. Fruit size: small. Fruit quality: good. Evaluated at the University of Maine Highmoor Farm"
+        },
+        {
+            type: "Peach",
+            name: "Saturn",
+            category: "Flat (Donut)",
+            harvest_time_unparsed: "late-August",
+            description:
+                "Flower bud cold hardiness: unknown. Leaf curl resistance: fair. Fruit size: small. Fruit quality: good"
+        },
+        {
+            type: "Peach",
+            name: "TangOs",
+            category: "Flat (Donut)",
+            harvest_time_unparsed: "mid-August",
+            description:
+                "Flower bud cold hardiness: good. Leaf curl resistance: unknown. Fruit size: small. Fruit quality: excellent. Evaluated at the University of Maine Highmoor Farm"
+        }
+    ]
+}
