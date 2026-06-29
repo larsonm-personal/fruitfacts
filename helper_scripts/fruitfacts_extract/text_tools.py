@@ -51,3 +51,14 @@ def split_suggested_names(text):
     text = text.replace(", and ", ", ")
     text = text.replace(" and ", ", ")
     return [part.strip() for part in text.split(",") if part.strip()]
+
+
+def join_labelled_values(parts):
+    sentences = []
+    for label, value in parts:
+        if not value:
+            continue
+        cleaned_label = clean_text(label).rstrip(":")
+        cleaned_value = clean_text(value).rstrip(".")
+        sentences.append(cleaned_label + ": " + cleaned_value)
+    return ". ".join(sentences)

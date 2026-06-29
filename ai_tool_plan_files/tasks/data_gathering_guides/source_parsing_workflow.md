@@ -112,6 +112,23 @@ season heading as each plant `category`, uses table ripening values as
 `harvest_time_unparsed` where appropriate, and keeps disease resistance and
 home-garden or plasticulture notes in concise descriptions.
 
+## UMaine 2253 Notes
+
+The UMaine highbush blueberry page is a compact HTML table source. The cultivar
+table has headers `Variety`, `Plant Characteristics`, `Fruit Qualities`, and
+`Ripening Season`.
+
+The helper script uses `table_tools.find_table()` and `table_tools.table_to_dicts()`
+for row extraction, then uses `text_tools.join_labelled_values()` to build a
+mechanical draft description from descriptive columns. The curated reference
+compresses those labelled draft sentences into more natural source notes while
+keeping the table ripening values in `harvest_time_unparsed`.
+
+This source also showed a small name-harmonization case. UMaine prints
+`Blue Gold`, while existing FruitFacts data uses `Bluegold`. The curated file
+keeps the existing canonical name and notes the source spelling in the
+description.
+
 ## CSU GardenNotes 763 Notes
 
 This was the first PDF worked example. The source is short and born-digital, so

@@ -986,7 +986,7 @@
         },
         {
             id: "umaine-growing-highbush-blueberries-2253",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Highbush Blueberries",
             institution: "University of Maine Cooperative Extension",
@@ -1006,7 +1006,10 @@
                 "No Maine blueberry reference found in existing references",
             notes: [
                 "Official web page returned 200",
-                "Less cultivar-dense than the Maine caneberry and strawberry pages but still useful"
+                "Less cultivar-dense than the Maine caneberry and strawberry pages but still useful",
+                "Encoded in plant_database/references/Maine/UMaine 2253 Growing Highbush Blueberries.json5",
+                "Draft extraction helper added at helper_scripts/extract_umaine_2253.py",
+                "Worked example for compact HTML cultivar tables with labelled descriptive columns"
             ]
         },
         {

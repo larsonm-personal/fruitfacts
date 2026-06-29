@@ -1,0 +1,98 @@
+{
+    title: "Growing Highbush Blueberries",
+    author: "David T. Handley, Extension Vegetable and Small Fruit Specialist, University of Maine Cooperative Extension",
+    description:
+        "UMaine highbush blueberry guide. The source emphasizes cold hardiness, early to midseason ripening, cross-pollination, fruit quality, plant habit, site preparation, pruning, and pest management for Maine and Northern New England",
+    url: "https://extension.umaine.edu/publications/2253e/",
+    published: "1992, 2008",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    thumbnail: "website",
+    needs_help: true, // todo - review source photos and name harmonization before clearing
+    locations: [
+        {
+            name: "University of Maine Cooperative Extension, Orono, Maine",
+            latitude: 44.8998,
+            longitude: -68.6693
+        }
+    ],
+    categories: [
+        {
+            name: "Highbush Blueberry Varieties for Northern New England",
+            description:
+                "Highbush blueberry varieties listed by UMaine for Northern New England"
+        }
+    ],
+    plants: [
+        {
+            type: "Blueberry",
+            name: "Patriot",
+            category: "Highbush Blueberry Varieties for Northern New England",
+            harvest_time_unparsed: "Early-midseason",
+            description:
+                "Short, upright, moderately vigorous plant. Medium-large firm fruit with excellent quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Northland",
+            category: "Highbush Blueberry Varieties for Northern New England",
+            harvest_time_unparsed: "Early",
+            description:
+                "Short vigorous plant with spreading growth habit. Medium-small soft fruit with fair quality and high yields"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluecrop",
+            category: "Highbush Blueberry Varieties for Northern New England",
+            harvest_time_unparsed: "Midseason",
+            description: "Full-sized upright plant. Large firm fruit with good quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Blueray",
+            category: "Highbush Blueberry Varieties for Northern New England",
+            harvest_time_unparsed: "Early-midseason",
+            description:
+                "Full-sized plant with spreading growth habit. Large firm fruit with good quality and high yields"
+        },
+        {
+            type: "Blueberry",
+            name: "Meader",
+            category: "Highbush Blueberry Varieties for Northern New England",
+            harvest_time_unparsed: "Early-midseason",
+            description:
+                "Full-sized upright vigorous plant. Large firm fruit with fair quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Jersey",
+            category: "Highbush Blueberry Varieties for Northern New England",
+            harvest_time_unparsed: "Late",
+            description:
+                "Full-sized upright plant. Medium-size firm fruit with fair quality and high yields"
+        },
+        {
+            type: "Blueberry",
+            name: "Nelson",
+            category: "Highbush Blueberry Varieties for Northern New England",
+            harvest_time_unparsed: "Mid-late",
+            description: "Full-sized upright plant. Large firm fruit with good quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluegold",
+            category: "Highbush Blueberry Varieties for Northern New England",
+            harvest_time_unparsed: "Mid-late",
+            description:
+                "Short, upright, moderately vigorous plant. Medium-sized fruit with good quality. Source table names this as Blue Gold"
+        },
+        {
+            type: "Blueberry",
+            name: "St. Cloud",
+            category: "Highbush Blueberry Varieties for Northern New England",
+            harvest_time_unparsed: "Midseason",
+            description:
+                "Short spreading plant. Medium-sized dark fruit with good yields"
+        }
+    ]
+}

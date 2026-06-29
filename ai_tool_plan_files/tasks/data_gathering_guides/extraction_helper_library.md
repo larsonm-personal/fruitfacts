@@ -14,7 +14,8 @@ interpretation, and project-specific field choices.
 The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
 
 - `text_tools.py`
-  - ASCII cleanup, whitespace normalization, and simple source-list splitting
+  - ASCII cleanup, whitespace normalization, simple source-list splitting, and
+    labelled table-cell description joining
 - `html_tools.py`
   - HTML block and table extraction with script/style noise skipped
 - `table_tools.py`
@@ -58,6 +59,8 @@ Source-specific scripts should do:
   cultivar lists
 - Penn State non-scab apple table: HTML table rows mapped by normalized headers
   such as variety, characteristics, and ripening period
+- UMaine 2253 blueberry table: compact HTML cultivar table mapped by normalized
+  headers, with labelled table cells joined into a draft description
 - OSU HYG-1423 grape tables: Ohioline HTML tables with a title row before the
   real column header row, plus a second table keyed by cultivar
 
