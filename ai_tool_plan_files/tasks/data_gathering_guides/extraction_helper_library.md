@@ -43,6 +43,10 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
     `1.`, name, zones, regions, and tail lines rather than a horizontal table
   - Flow-mode PDF catalog entry parsing where a heading sets the crop/category
     and each following all-caps cultivar name starts a description line
+  - Wrapped PDF bullet-list parsing where headings set crop/category and
+    indented continuation lines finish parenthesized cultivar notes
+  - PDF quoted-entry parsing where cultivar paragraphs start with quoted names,
+    including same-line entry splitting and repeated-name merging
   - Tail parsers for first-token splits such as `Fresh Dessert`, first-line
     prefix plus description, and self-fruitful token splits
 - `record_tools.py`
@@ -86,6 +90,11 @@ script. The config runner currently supports:
   region, tail, and skip patterns
 - PDF catalog entries from flow-mode `pdftotext` output, with configurable
   category heading rules, smart titlecase name repair, and continuation lines
+- PDF bullet lists with configurable heading rules, continuation indentation,
+  skip rules, row overrides, and partial parenthetical entry repair
+- PDF quoted cultivar entries with configurable quote characters, skipped
+  figure/page lines, source-local initial-letter spacing repair, and repeated
+  quoted-name merging
 - HTML paragraph blocks where each useful paragraph starts with a quoted
   cultivar name
 - HTML paragraph blocks where each useful paragraph starts with `Name:`
@@ -182,6 +191,12 @@ Source-specific scripts should do:
 - UWisc A2582 southern tree and stone fruit: flow-mode PDF catalog entries
   where section headings set categories and cultivar names appear as all-caps
   lead tokens before prose descriptions
+- UWyo zone 3 and 4 fruit list: layout-mode PDF bullet entries where category
+  headings set crop types, cultivar notes wrap across indented lines, and some
+  non-cultivar species bullets need to be skipped
+- Texas A&M E-612 stone fruit: raw PDF quoted cultivar entries where
+  `pdftotext` splits initial letters from names and some cultivar mentions
+  inside descriptions should not become separate records
 
 ## Manifest Configs
 
@@ -230,6 +245,13 @@ narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
   `Fruit ripens`, `Harvest beginning`, or `Harvest starting` over broad
   substring searches. Broad searches can grab comparison sentences instead of
   the actual timing sentence
+- For wrapped bullet-list PDFs, preserve indentation until after continuation
+  decisions. Collapsing whitespace too early can glue unrelated source notes
+  onto the previous cultivar.
+- For quoted-entry PDFs, split only likely entry-start quotes, such as quotes at
+  the beginning of a line or after a sentence boundary. Cultivar names quoted
+  inside descriptions are usually pollinizers, parents, or examples, not new
+  rows.
 - Do not commit downloaded PDFs directly unless the DVC asset workflow is being
   used
 

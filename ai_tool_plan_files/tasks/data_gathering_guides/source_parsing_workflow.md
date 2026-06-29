@@ -400,3 +400,37 @@ The committed reference currently encodes the tree-fruit and stone-fruit
 catalog sections only. The small-fruit sections remain in the candidate queue
 because the PDF flow text interleaves columns more aggressively there and
 needs a separate parser strategy.
+
+## UWyo Zone 3 And 4 Fruit List Notes
+
+The Wyoming Extension zone 3 and 4 fruit list is a layout-mode PDF with
+source headings such as Apples, Pears, American Plums, and Serviceberries or
+Juneberries followed by hyphen bullets. Most cultivar notes are parenthesized,
+but several entries wrap before the closing parenthesis. One pear line also
+contains two bullet starts on the same extracted line.
+
+The config uses `pdf_bullet_list` with heading rules that set category and
+plant type. The helper keeps raw indentation long enough to distinguish
+wrapped cultivar-note lines from ordinary source notes such as the Wyoming
+Apple Project paragraph. The parser also handles partial parenthetical bullets,
+same-line bullets, and source-local row overrides such as treating Kristen as
+a sweet cherry.
+
+The committed reference keeps `needs_help` because a few source rows are
+species-level rather than cultivar-level, and Red Lake has a visibly truncated
+susceptibility note in the official PDF text.
+
+## Texas A&M E-612 Stone Fruit Notes
+
+Texas A&M E-612 is a raw PDF prose source. Cultivar paragraphs start with
+quoted names such as `` `M ethley' `` or `` `R oyal Lee' `` after `pdftotext`
+splits the first letter from the rest of some names. Some lines contain two
+true cultivar entries, while other quoted names inside the sentence are
+pollinizers or parents and should remain in the description.
+
+The config uses `pdf_quoted_entries` with source-local repair for spaced
+initial letters, figure and page-number skipping, and repeated-name merging.
+The parser treats quoted names at the start of a line or after a sentence
+boundary as entry starts, while quoted names inside descriptions stay in the
+description. The committed reference covers plums, nectarines, apricots, sweet
+cherries, and the single almond variety named by the source.

@@ -77,8 +77,16 @@
             "config": "extraction_configs/unl_g2354_fruit_tree_cultivars.json"
         },
         {
+            "id": "uwyo_zone_3_4_fruit_list",
+            "config": "extraction_configs/uwyo_zone_3_4_fruit_list.json"
+        },
+        {
             "id": "uwisc_a2582_southern_tree_stone_fruit",
             "config": "extraction_configs/uwisc_a2582_southern_tree_stone_fruit.json"
+        },
+        {
+            "id": "texas_am_e612_stone_fruit",
+            "config": "extraction_configs/texas_am_e612_stone_fruit.json"
         },
         {
             "id": "usu_apple_recommendations",

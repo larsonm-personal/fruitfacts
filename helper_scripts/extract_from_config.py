@@ -15,6 +15,8 @@ from fruitfacts_extract.pdf_tools import pdf_url_to_text
 from fruitfacts_extract.pdf_table_tools import fixed_width_table_rows
 from fruitfacts_extract.pdf_table_tools import catalog_entry_rows
 from fruitfacts_extract.pdf_table_tools import numbered_block_rows
+from fruitfacts_extract.pdf_table_tools import pdf_bullet_list_rows
+from fruitfacts_extract.pdf_table_tools import pdf_quoted_entry_rows
 from fruitfacts_extract.record_tools import append_source_note
 from fruitfacts_extract.record_tools import category_records
 from fruitfacts_extract.record_tools import labelled_description_from_row
@@ -489,6 +491,46 @@ def plants_from_pdf_catalog_entries(text, extractor, overrides, lookups):
     )
 
 
+def plants_from_pdf_bullet_list(text, extractor, overrides, lookups):
+    extractor = {
+        "name_key": "name",
+        "description_key": "description",
+        "category": {"row_key": "category"},
+        "plant_type": {"row_key": "plant_type"},
+        **extractor,
+    }
+    rows = pdf_bullet_list_rows(text, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    return plant_records_from_config_rows(
+        rows,
+        extractor,
+        overrides,
+        lookups,
+    )
+
+
+def plants_from_pdf_quoted_entries(text, extractor, overrides, lookups):
+    extractor = {
+        "name_key": "name",
+        "description_key": "description",
+        "category": {"row_key": "category"},
+        "plant_type": {"row_key": "plant_type"},
+        **extractor,
+    }
+    rows = pdf_quoted_entry_rows(text, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    return plant_records_from_config_rows(
+        rows,
+        extractor,
+        overrides,
+        lookups,
+    )
+
+
 def quoted_paragraph_rows(page, extractor):
     blocks = blocks_between_headings(
         page.blocks,
@@ -674,6 +716,14 @@ def extract(config):
         elif extractor["kind"] == "pdf_catalog_entries":
             plants.extend(
                 plants_from_pdf_catalog_entries(data, extractor, overrides, lookups)
+            )
+        elif extractor["kind"] == "pdf_bullet_list":
+            plants.extend(
+                plants_from_pdf_bullet_list(data, extractor, overrides, lookups)
+            )
+        elif extractor["kind"] == "pdf_quoted_entries":
+            plants.extend(
+                plants_from_pdf_quoted_entries(data, extractor, overrides, lookups)
             )
         elif extractor["kind"] == "quoted_paragraph_blocks":
             plants.extend(

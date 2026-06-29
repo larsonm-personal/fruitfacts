@@ -241,6 +241,207 @@ def catalog_entry_rows(text, extractor):
     return [row for row in rows if row.get(name_key) not in skip_names]
 
 
+def bullet_segments(line, extractor):
+    bullet_pattern = extractor.get("bullet_pattern", r"-\s+")
+    matches = list(re.finditer(bullet_pattern, line))
+    if not matches:
+        return line, []
+    prefix = line[: matches[0].start()].strip()
+    segments = []
+    for index, match in enumerate(matches):
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(line)
+        segments.append(line[match.end() : end].strip())
+    return prefix, [segment for segment in segments if segment]
+
+
+def split_bullet_entry(text, extractor):
+    text = clean_text(text)
+    pattern = extractor.get(
+        "bullet_entry_pattern",
+        r"^(?P<name>.+?)(?:\s+\((?P<description>.*)\))?$",
+    )
+    match = re.match(pattern, text)
+    if not match:
+        match = re.match(
+            extractor.get(
+                "partial_bullet_entry_pattern",
+                r"^(?P<name>.+)\s+\((?P<description>.*)$",
+            ),
+            text,
+        )
+    if not match:
+        return None
+    row = {
+        extractor.get("name_key", "name"): match.group("name").strip(),
+    }
+    description = match.groupdict().get("description")
+    if description:
+        row[extractor.get("description_key", "description")] = description.strip()
+    return row
+
+
+def pdf_bullet_list_rows(text, extractor):
+    rows = []
+    current_category = None
+    current = None
+    name_key = extractor.get("name_key", "name")
+    description_key = extractor.get("description_key", "description")
+
+    for raw_line in table_section(text, extractor).splitlines():
+        if extractor.get("continuation_raw_pattern"):
+            may_continue = (
+                re.match(extractor["continuation_raw_pattern"], raw_line) is not None
+            )
+        else:
+            may_continue = True
+        line = clean_text(raw_line)
+        if not line or line_matches_any(line, extractor.get("skip_line_patterns", [])):
+            continue
+        line = apply_text_fixes_to_line(line, extractor.get("text_fixes", {}))
+        rule, remainder = catalog_category_for_line(line, extractor)
+        if rule:
+            current_category = {
+                key: value
+                for key, value in rule.items()
+                if key not in ("text", "prefix", "parse_remainder")
+            }
+            current = None
+            if not rule.get("parse_remainder") or not remainder:
+                continue
+            line = remainder
+
+        if not current_category:
+            continue
+
+        prefix, segments = bullet_segments(line, extractor)
+        if segments:
+            if current and prefix:
+                append_value(current, description_key, prefix)
+            for segment in segments:
+                row = split_bullet_entry(segment, extractor)
+                if not row:
+                    current = None
+                    continue
+                row.update(current_category)
+                rows.append(row)
+                current = row
+            continue
+
+        if current and may_continue and extractor.get("append_continuation", True):
+            if extractor.get("strip_continuation_closing_paren") and line.endswith(")"):
+                line = line[:-1].strip()
+            append_value(current, description_key, line)
+        elif not may_continue:
+            current = None
+
+    skip_names = set(extractor.get("skip_names", []))
+    skip_patterns = extractor.get("skip_name_patterns", [])
+    return [
+        row
+        for row in rows
+        if row.get(name_key) not in skip_names
+        and not line_matches_any(row.get(name_key, ""), skip_patterns)
+    ]
+
+
+def split_quoted_entry(line, extractor):
+    quote_start = re.escape(extractor.get("quote_start", "`"))
+    quote_end = re.escape(extractor.get("quote_end", "'"))
+    pattern = (
+        r"^"
+        + quote_start
+        + r"(?P<name>[^`']+)"
+        + quote_end
+        + r"\s*(?P<description>.*)$"
+    )
+    match = re.match(pattern, line)
+    if not match:
+        return None
+    name = match.group("name").strip()
+    if extractor.get("repair_spaced_initial_names"):
+        name = re.sub(r"^([A-Z]) ([a-z].*)$", r"\1\2", name)
+    description = match.group("description").strip()
+    if extractor.get("prepend_name_if_lowercase") and description:
+        if description[0].islower():
+            description = name + " " + description
+    return {
+        extractor.get("name_key", "name"): name,
+        extractor.get("description_key", "description"): description,
+    }
+
+
+def quoted_segments(line, extractor):
+    quote_start = re.escape(extractor.get("quote_start", "`"))
+    quote_end = re.escape(extractor.get("quote_end", "'"))
+    pattern = quote_start + r"[^`']+" + quote_end
+    matches = [
+        match
+        for match in re.finditer(pattern, line)
+        if match.start() == 0 or line[: match.start()].rstrip().endswith(".")
+    ]
+    if not matches:
+        return line, []
+    prefix = line[: matches[0].start()].strip()
+    segments = []
+    for index, match in enumerate(matches):
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(line)
+        segments.append(line[match.start() : end].strip())
+    return prefix, [segment for segment in segments if segment]
+
+
+def pdf_quoted_entry_rows(text, extractor):
+    rows = []
+    current_category = None
+    current = None
+    description_key = extractor.get("description_key", "description")
+    name_key = extractor.get("name_key", "name")
+    for line in section_lines(text, extractor):
+        line = apply_text_fixes_to_line(line, extractor.get("text_fixes", {}))
+        if line_matches_any(line, extractor.get("skip_line_patterns", [])):
+            continue
+
+        rule, remainder = catalog_category_for_line(line, extractor)
+        if rule:
+            current_category = {
+                key: value
+                for key, value in rule.items()
+                if key not in ("text", "prefix", "parse_remainder")
+            }
+            current = None
+            if not rule.get("parse_remainder") or not remainder:
+                continue
+            line = remainder
+
+        if not current_category:
+            continue
+
+        prefix, segments = quoted_segments(line, extractor)
+        if segments:
+            if current and prefix:
+                append_value(current, description_key, prefix)
+            for segment in segments:
+                row = split_quoted_entry(segment, extractor)
+                if not row:
+                    continue
+                row.update(current_category)
+                if (
+                    extractor.get("merge_repeated_names")
+                    and current
+                    and row.get(name_key) == current.get(name_key)
+                ):
+                    append_value(current, description_key, row.get(description_key))
+                    continue
+                rows.append(row)
+                current = row
+            continue
+
+        if current and extractor.get("append_continuation", True):
+            append_value(current, description_key, line)
+
+    skip_names = set(extractor.get("skip_names", []))
+    return [row for row in rows if row.get(name_key) not in skip_names]
+
+
 def apply_text_fixes_to_line(line, fixes):
     for old, new in fixes.items():
         line = line.replace(old, new)

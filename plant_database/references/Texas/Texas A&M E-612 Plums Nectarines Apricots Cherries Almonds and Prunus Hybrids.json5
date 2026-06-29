@@ -1,0 +1,149 @@
+{
+    title: "Texas Fruit and Nut Production: Plums, Nectarines, Apricots, Cherries, Almonds and Prunus Hybrids",
+    author: "Larry Stein, Jim Kamas, and Monte Nesbitt",
+    description: "Texas A&M AgriLife Extension guide to plums, nectarines, apricots, sweet cherries, almonds, and Prunus hybrids for Texas",
+    url: "https://agrilifeextension.tamu.edu/asset-external/texas-fruit-nut-production-plums-nectarines-apricots-cherries-almonds-prunes-hybrids/",
+    thumbnail: "pdf",
+    published: "2013",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "College Station, TX",
+            latitude: 30.523604287211427,
+            longitude: -96.42788616864308
+        },
+    ],
+    categories: [
+        {
+            name: "Plum varieties adapted to Texas",
+            description: "Texas A&M E-612 lists Japanese or Japanese hybrid plum varieties adapted to Texas"
+        },
+        {
+            name: "Nectarine varieties suggested for trial in Texas",
+            description: "Texas A&M E-612 says these nectarine varieties are suggested for trial only because nectarines have adaptation, disease, and fruit-quality problems in Texas"
+        },
+        {
+            name: "Apricot varieties adapted to Texas",
+            description: "Texas A&M E-612 says these apricot varieties are adapted to Texas but fruiting is inconsistent on all varieties"
+        },
+        {
+            name: "Sweet cherry varieties fruited in some Texas areas",
+            description: "Texas A&M E-612 says these low-chill sweet cherry varieties have fruited in some Texas areas but may not perform as well as in California"
+        },
+        {
+            name: "Almond varieties tried in Texas",
+            description: "Texas A&M E-612 says no almond variety is highly recommended for Texas because almonds generally fail to set crops"
+        },
+    ],
+    plants: [
+        {
+            type: "Japanese Plum",
+            name: "Methley",
+            category: "Plum varieties adapted to Texas",
+            harvest_time_unparsed: "Methley ripens from late May to early June.",
+            description: "Methley ripens from late May to early June. The fruit is small to medium size with a mottled purple peel and juicy red flesh that is sweet and flavorful (Figs 3 and 4). It is adapted across Texas but is soft and does not store well. It is self-fruitful and readily pollinates other plums"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Santa Rosa",
+            category: "Plum varieties adapted to Texas",
+            harvest_time_unparsed: "It ripens in late June and is a popular home and market variety across the state.",
+            description: "Santa Rosa is a large purplish plum with amber colored flesh. It ripens in late June and is a popular home and market variety across the state"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Bruce",
+            category: "Plum varieties adapted to Texas",
+            harvest_time_unparsed: "It ripens about the first of June (Fig 5).",
+            description: "Bruce is a large red plum that must be pollinated to bear fruit; `Methley' is typically used as the pollinator. It ripens about the first of June (Fig 5)"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Morris",
+            category: "Plum varieties adapted to Texas",
+            harvest_time_unparsed: "It ripens in early June and is a large plum with firm red to purple flesh (Fig 6).",
+            description: "Morris is adapted only to regions with 800 or more hours below 45 F and performs best when it is planted with another variety that will pollinate it. It ripens in early June and is a large plum with firm red to purple flesh (Fig 6)"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ozark Premier",
+            category: "Plum varieties adapted to Texas",
+            harvest_time_unparsed: "It is self-fruitful and ripens in late June (Fig 7).",
+            description: "Ozark Premiere is a cross between `Methley' and `Burbank'. It is a large plum with yellow flesh and reddish skin. It is self-fruitful and ripens in late June (Fig 7). Source names this as Ozark Premiere"
+        },
+        {
+            type: "Nectarine",
+            name: "Karla Rose",
+            category: "Nectarine varieties suggested for trial in Texas",
+            description: "Karla Rose requires 600 hours below 45 F and is a freestone (easily removable pit) variety with deep red skin and white flesh"
+        },
+        {
+            type: "Nectarine",
+            name: "Redgold",
+            category: "Nectarine varieties suggested for trial in Texas",
+            harvest_time_unparsed: "The fruit is a freestone and ripens in late July.",
+            description: "Redgold is a large, glossy red fruit; the tree requires 850 hours of chill to break dormancy. The fruit is a freestone and ripens in late July"
+        },
+        {
+            type: "Nectarine",
+            name: "Rose Princess",
+            category: "Nectarine varieties suggested for trial in Texas",
+            harvest_time_unparsed: "Rose Princess ripens in mid-July and is a freestone that has firm white flesh.",
+            description: "Rose Princess ripens in mid-July and is a freestone that has firm white flesh"
+        },
+        {
+            type: "Nectarine",
+            name: "Armking",
+            category: "Nectarine varieties suggested for trial in Texas",
+            harvest_time_unparsed: "ArmKing has medium to large fruit with cling pits and flesh that ripens in late May.",
+            description: "ArmKing has medium to large fruit with cling pits and flesh that ripens in late May. Source names this as ArmKing"
+        },
+        {
+            type: "Apricot",
+            name: "Blenheim",
+            category: "Apricot varieties adapted to Texas",
+            harvest_time_unparsed: "This variety has been the most consistent performer across the state and ripens in late June (Fig 10).",
+            description: "Blenheim is a medium-sized fruit with an orange peel and yellow flesh. This variety has been the most consistent performer across the state and ripens in late June (Fig 10)"
+        },
+        {
+            type: "Apricot",
+            name: "Moorpark",
+            category: "Apricot varieties adapted to Texas",
+            harvest_time_unparsed: "Moorpark has medium-sized to large fruit with orange flesh that ripens in mid-June.",
+            description: "Moorpark has medium-sized to large fruit with orange flesh that ripens in mid-June"
+        },
+        {
+            type: "Apricot",
+            name: "Bryan",
+            category: "Apricot varieties adapted to Texas",
+            harvest_time_unparsed: "Bryan produces medium-sized fruit that has orange flesh and ripens from late May to early June.",
+            description: "Bryan produces medium-sized fruit that has orange flesh and ripens from late May to early June"
+        },
+        {
+            type: "Apricot",
+            name: "Chinese",
+            category: "Apricot varieties adapted to Texas",
+            description: "Also called Mormon, seems to be more cold hardy in some locations as it has an extended bloom. Fruit is small to medium"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Royal Lee",
+            category: "Sweet cherry varieties fruited in some Texas areas",
+            description: "Royal Lee is a very firm, heart-shaped, red cherry with excellent flavor. It is very productive when planted with another variety for pollination. It needs about 200 hours of winter chill to break dormancy and flower"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Minnie Royal",
+            category: "Sweet cherry varieties fruited in some Texas areas",
+            description: "Minnie Royal is used as a pollinator for `Royal Lee'. Minnie Royal is a medium-sized, red cherry with good flavor. It only needs about 200 hours of winter temperatures below 45 degrees F, compared with the 700 that standard cherries need"
+        },
+        {
+            type: "Almond",
+            name: "All-In-One",
+            category: "Almond varieties tried in Texas",
+            description: "All-In-One is the most common variety being tried today"
+        },
+    ]
+}

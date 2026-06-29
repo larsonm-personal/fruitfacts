@@ -93,6 +93,13 @@ Second pass:
   Skip them by key-column prefix when the source marker is clear, and strip
   trailing numeric note markers from names only when the source table uses that
   convention.
+- PDF bullet lists need continuation rules that preserve source structure. Use
+  heading rules for crop/category context, split multiple same-line bullets,
+  and avoid appending unindented narrative notes to the previous cultivar.
+- PDF prose sources that mark cultivar names with quotes need entry-start
+  rules. A quoted cultivar at the start of a sentence may be a new record, but
+  a quoted cultivar inside another cultivar's description is usually a
+  pollinizer, parent, comparison, or figure caption.
 
 ## Locations
 

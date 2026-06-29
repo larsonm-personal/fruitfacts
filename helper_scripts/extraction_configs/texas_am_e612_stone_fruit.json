@@ -1,0 +1,161 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://aggie-horticulture.tamu.edu/fruit-nut/wp-content/uploads/sites/6/2015/04/plums_and_stone_fruit_2015.pdf",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Texas Fruit and Nut Production: Plums, Nectarines, Apricots, Cherries, Almonds and Prunus Hybrids"],
+    ["author", "Larry Stein, Jim Kamas, and Monte Nesbitt"],
+    ["description", "Texas A&M AgriLife Extension guide to plums, nectarines, apricots, sweet cherries, almonds, and Prunus hybrids for Texas"],
+    ["url", "https://agrilifeextension.tamu.edu/asset-external/texas-fruit-nut-production-plums-nectarines-apricots-cherries-almonds-prunes-hybrids/"],
+    ["thumbnail", "pdf"],
+    ["published", "2013"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "College Station, TX",
+      "latitude": 30.523604287211427,
+      "longitude": -96.42788616864308
+    }
+  ],
+  "categories": [
+    {
+      "name": "Plum varieties adapted to Texas",
+      "description": "Texas A&M E-612 lists Japanese or Japanese hybrid plum varieties adapted to Texas"
+    },
+    {
+      "name": "Nectarine varieties suggested for trial in Texas",
+      "description": "Texas A&M E-612 says these nectarine varieties are suggested for trial only because nectarines have adaptation, disease, and fruit-quality problems in Texas"
+    },
+    {
+      "name": "Apricot varieties adapted to Texas",
+      "description": "Texas A&M E-612 says these apricot varieties are adapted to Texas but fruiting is inconsistent on all varieties"
+    },
+    {
+      "name": "Sweet cherry varieties fruited in some Texas areas",
+      "description": "Texas A&M E-612 says these low-chill sweet cherry varieties have fruited in some Texas areas but may not perform as well as in California"
+    },
+    {
+      "name": "Almond varieties tried in Texas",
+      "description": "Texas A&M E-612 says no almond variety is highly recommended for Texas because almonds generally fail to set crops"
+    }
+  ],
+  "text_fixes": {
+    "Fig.": "Fig",
+    "Figs.": "Figs",
+    "(or `Mormon')": "Also called Mormon,"
+  },
+  "name_overrides": {
+    "Santa Rosa": {
+      "name": "Santa Rosa"
+    },
+    "Ozark Premiere": {
+      "name": "Ozark Premier",
+      "note": "Source names this as Ozark Premiere"
+    },
+    "ArmKing": {
+      "name": "Armking",
+      "note": "Source names this as ArmKing"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_quoted_entries",
+      "section_start": "Plum Varieties",
+      "section_end": "Nectarines",
+      "category_rules": [
+        {
+          "text": "Plum Varieties",
+          "category": "Plum varieties adapted to Texas",
+          "plant_type": "Japanese Plum"
+        }
+      ],
+      "skip_line_patterns": ["^Figure", "^\\d+$"],
+      "repair_spaced_initial_names": true,
+      "prepend_name_if_lowercase": true,
+      "merge_repeated_names": true,
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripens"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_quoted_entries",
+      "section_start": "Nectarine varieties",
+      "section_end": "Apricots",
+      "category_rules": [
+        {
+          "text": "Nectarine varieties",
+          "category": "Nectarine varieties suggested for trial in Texas",
+          "plant_type": "Nectarine"
+        }
+      ],
+      "skip_line_patterns": ["^The following varieties", "^Figure", "^\\d+$"],
+      "repair_spaced_initial_names": true,
+      "prepend_name_if_lowercase": true,
+      "merge_repeated_names": true,
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripens"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_quoted_entries",
+      "section_start": "Apricot varieties",
+      "section_end": "Sweet cherries",
+      "category_rules": [
+        {
+          "text": "Apricot varieties",
+          "category": "Apricot varieties adapted to Texas",
+          "plant_type": "Apricot"
+        }
+      ],
+      "skip_line_patterns": ["^Figure", "^\\d+$"],
+      "repair_spaced_initial_names": true,
+      "prepend_name_if_lowercase": true,
+      "merge_repeated_names": true,
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripens"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_quoted_entries",
+      "section_start": "Sweet cherry varieties",
+      "section_end": "Sweet cherry rootstocks",
+      "category_rules": [
+        {
+          "text": "Sweet cherry varieties",
+          "category": "Sweet cherry varieties fruited in some Texas areas",
+          "plant_type": "Sweet Cherry"
+        }
+      ],
+      "skip_line_patterns": ["^Figure", "^\\d+$"],
+      "repair_spaced_initial_names": true,
+      "prepend_name_if_lowercase": true,
+      "merge_repeated_names": true,
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripens"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_quoted_entries",
+      "section_start": "Almonds",
+      "section_end": "Prunus Hybrids",
+      "category_rules": [
+        {
+          "text": "Almonds",
+          "category": "Almond varieties tried in Texas",
+          "plant_type": "Almond"
+        }
+      ],
+      "skip_line_patterns": ["^Figure", "^\\d+$"],
+      "repair_spaced_initial_names": true,
+      "prepend_name_if_lowercase": true,
+      "merge_repeated_names": true,
+      "description_key": "description"
+    }
+  ]
+}

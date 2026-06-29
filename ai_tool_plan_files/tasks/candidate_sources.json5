@@ -1546,7 +1546,7 @@
         },
         {
             id: "uwyo-potential-fruit-trees-shrubs-zone-3-4-2023",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Potential Fruit Trees and Shrubs for Zone 3 and 4 Areas of Wyoming",
             institution: "University of Wyoming Extension",
@@ -1581,7 +1581,12 @@
                 "No Wyoming reference directory or candidate found during duplicate scan",
             notes: [
                 "Official Barnyards and Backyards fruit page links to the Wyoming Extension publication",
-                "HTML/PDF handout format likely needs manual normalization of tree, shrub, cultivar, and rootstock notes"
+                "HTML/PDF handout format likely needs manual normalization of tree, shrub, cultivar, and rootstock notes",
+                "Encoded in plant_database/references/Wyoming/UWyo Potential Fruit Trees and Shrubs for Zone 3 and 4 Areas of Wyoming.json5",
+                "Config extraction added at helper_scripts/extraction_configs/uwyo_zone_3_4_fruit_list.json",
+                "Manifest entry added as uwyo_zone_3_4_fruit_list",
+                "Worked example for wrapped PDF bullet lists with heading-driven crop categories and indented continuation lines",
+                "Skipped species/general rows that do not fit current plant types cleanly; Red Lake keeps a visible note for the source PDF truncation"
             ]
         },
         {
@@ -1794,7 +1799,7 @@
         },
         {
             id: "texas-am-plums-nectarines-apricots-e612",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Texas Fruit and Nut Production: Plums, Nectarines, Apricots, Cherries, Almonds, and Prunus Hybrids",
             institution: "Texas A&M AgriLife Extension",
@@ -1818,12 +1823,16 @@
                 "Texas fruit and nut production factsheet for adapted plum, nectarine, apricot, cherry, almond, and Prunus hybrid varieties",
             asset_decision: "download and stub",
             proposed_reference_path:
-                "plant_database/references/Texas/Texas A&M E-612 Plums Nectarines Apricots.json5",
+                "plant_database/references/Texas/Texas A&M E-612 Plums Nectarines Apricots Cherries Almonds and Prunus Hybrids.json5",
             duplicate_check:
                 "Existing Texas references cover peaches and persimmons; no Texas plum, nectarine, apricot, cherry, or almond production factsheet found",
             notes: [
                 "Official Aggie Horticulture PDF search result returned a direct file URL",
-                "PDF uses multi-column text and image captions with cultivar data embedded in prose"
+                "PDF uses multi-column text and image captions with cultivar data embedded in prose",
+                "Encoded in plant_database/references/Texas/Texas A&M E-612 Plums Nectarines Apricots Cherries Almonds and Prunus Hybrids.json5",
+                "Config extraction added at helper_scripts/extraction_configs/texas_am_e612_stone_fruit.json",
+                "Manifest entry added as texas_am_e612_stone_fruit",
+                "Worked example for PDF quoted cultivar paragraphs, repeated quoted-name merging, and source-local repair of pdftotext initial-letter spacing"
             ]
         }
     ]

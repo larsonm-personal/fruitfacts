@@ -1,0 +1,225 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://www.uwyo.edu/barnbackyard/_files/documents/resources/fruit/possiblefruitlistzone3and42023.pdf",
+    "layout": true,
+    "layout_text": true
+  },
+  "reference_fields": [
+    ["title", "Potential Fruit Trees and Shrubs for Zone 3 and 4 Areas of Wyoming"],
+    ["author", "Brian Sebade"],
+    ["description", "University of Wyoming Extension list of fruit trees and shrubs that may grow in zone 3 and 4 areas of Wyoming"],
+    ["url", "https://www.uwyo.edu/barnbackyard/_files/documents/resources/fruit/possiblefruitlistzone3and42023.pdf"],
+    ["thumbnail", "pdf"],
+    ["published", "2023"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension variety list"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Wyoming Extension, Laramie, Wyoming",
+      "latitude": 41.3129,
+      "longitude": -105.5873
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple varieties for zone 3 and 4 areas of Wyoming",
+      "description": "University of Wyoming Extension lists these apple varieties as potential choices for zone 3 and 4 areas of Wyoming"
+    },
+    {
+      "name": "Pear varieties for zone 3 and 4 areas of Wyoming",
+      "description": "University of Wyoming Extension lists these pear varieties and says to find something that will mature early"
+    },
+    {
+      "name": "American plum varieties for zone 3 and 4 areas of Wyoming",
+      "description": "University of Wyoming Extension lists these American plums as potential choices for zone 3 and 4 areas of Wyoming"
+    },
+    {
+      "name": "European plum varieties for zone 3 and 4 areas of Wyoming",
+      "description": "University of Wyoming Extension lists these European plums as potential choices for zone 3 and 4 areas of Wyoming"
+    },
+    {
+      "name": "Cherry varieties for zone 3 and 4 areas of Wyoming",
+      "description": "University of Wyoming Extension lists these cherry varieties as potential choices for zone 3 and 4 areas of Wyoming"
+    },
+    {
+      "name": "Apricot varieties for zone 3 and 4 areas of Wyoming",
+      "description": "University of Wyoming Extension notes that most apricots are not reliable every year in Wyoming because of early fruiting patterns"
+    },
+    {
+      "name": "Peach varieties for trial in Wyoming",
+      "description": "University of Wyoming Extension notes that peaches are often not cold tolerant for most of Wyoming, though some locations can support peaches"
+    },
+    {
+      "name": "Black currant varieties for zone 3 and 4 areas of Wyoming",
+      "description": "University of Wyoming Extension lists these black currants as potential choices for zone 3 and 4 areas of Wyoming"
+    },
+    {
+      "name": "White currant varieties for zone 3 and 4 areas of Wyoming",
+      "description": "University of Wyoming Extension lists these white currants as potential choices for zone 3 and 4 areas of Wyoming"
+    },
+    {
+      "name": "Red currant varieties for zone 3 and 4 areas of Wyoming",
+      "description": "University of Wyoming Extension lists these red currants as potential choices for zone 3 and 4 areas of Wyoming"
+    },
+    {
+      "name": "Gooseberry varieties for zone 3 and 4 areas of Wyoming",
+      "description": "University of Wyoming Extension lists these gooseberries as potential choices for zone 3 and 4 areas of Wyoming"
+    },
+    {
+      "name": "Serviceberry or juneberry varieties for zone 3 and 4 areas of Wyoming",
+      "description": "University of Wyoming Extension lists these serviceberries or juneberries as potential choices for zone 3 and 4 areas of Wyoming"
+    }
+  ],
+  "name_overrides": {
+    "Zestar": {
+      "name": "Minnewashta",
+      "note": "Source names this as Zestar"
+    },
+    "Yellow transparent": {
+      "name": "Yellow Transparent"
+    },
+    "Blackice": {
+      "name": "Lydecker",
+      "note": "Source names this as Blackice"
+    },
+    "LaCrescent": {
+      "name": "La Crescent"
+    },
+    "Green gage": {
+      "name": "Green Gage"
+    },
+    "Northern blue": {
+      "name": "Northern Blue"
+    },
+    "Northstar": {
+      "name": "North Star",
+      "note": "Source names this as Northstar"
+    },
+    "Theissen": {
+      "name": "Thiessen",
+      "note": "Source names this as Theissen"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_bullet_list",
+      "section_start": "Apples",
+      "section_end": "For more information",
+      "continuation_raw_pattern": "^\\s{8,}",
+      "strip_continuation_closing_paren": true,
+      "bullet_entry_pattern": "^(?P<name>.+)(?:\\s+\\((?P<description>[^()]*)\\))$",
+      "text_fixes": {
+        "tr varieties": "the varieties"
+      },
+      "skip_line_patterns": [
+        "^Rootstock",
+        "^Varieties$",
+        "^Varieties -",
+        "^Wyoming Apple Project",
+        "^recommended cultivars",
+        "^vidoes",
+        "^https?://",
+        "^Rootstock-",
+        "^Rootstock -",
+        "^Most apricots",
+        "^Most often not cold",
+        "^Wyoming is host",
+        "^Many varieties",
+        "^They often",
+        "^Tend to",
+        "^Suggested to",
+        "^Can be pruned",
+        "^European plums",
+        "^Cultivars are",
+        "^These varieties",
+        "^Most often pruned",
+        "^Both are native"
+      ],
+      "skip_names": [
+        "American Plum",
+        "Nanking"
+      ],
+      "skip_name_patterns": [
+        "^The University",
+        "^Chokecherry"
+      ],
+      "category_rules": [
+        {
+          "text": "Apples",
+          "category": "Apple varieties for zone 3 and 4 areas of Wyoming",
+          "plant_type": "Apple"
+        },
+        {
+          "text": "Pears",
+          "category": "Pear varieties for zone 3 and 4 areas of Wyoming",
+          "plant_type": "Euro Pear"
+        },
+        {
+          "text": "American Plums",
+          "category": "American plum varieties for zone 3 and 4 areas of Wyoming",
+          "plant_type": "Plum"
+        },
+        {
+          "text": "European Plums",
+          "category": "European plum varieties for zone 3 and 4 areas of Wyoming",
+          "plant_type": "Euro Plum"
+        },
+        {
+          "text": "Cherries",
+          "category": "Cherry varieties for zone 3 and 4 areas of Wyoming",
+          "plant_type": "Sour Cherry"
+        },
+        {
+          "text": "Apricots",
+          "category": "Apricot varieties for zone 3 and 4 areas of Wyoming",
+          "plant_type": "Apricot"
+        },
+        {
+          "text": "Peaches",
+          "category": "Peach varieties for trial in Wyoming",
+          "plant_type": "Peach"
+        },
+        {
+          "text": "Black",
+          "category": "Black currant varieties for zone 3 and 4 areas of Wyoming",
+          "plant_type": "Currant"
+        },
+        {
+          "text": "White",
+          "category": "White currant varieties for zone 3 and 4 areas of Wyoming",
+          "plant_type": "Currant"
+        },
+        {
+          "text": "Red",
+          "category": "Red currant varieties for zone 3 and 4 areas of Wyoming",
+          "plant_type": "Currant"
+        },
+        {
+          "text": "Gooseberries (have thorns)",
+          "category": "Gooseberry varieties for zone 3 and 4 areas of Wyoming",
+          "plant_type": "Gooseberry"
+        },
+        {
+          "text": "Serviceberries or Juneberries",
+          "category": "Serviceberry or juneberry varieties for zone 3 and 4 areas of Wyoming",
+          "plant_type": "Saskatoon"
+        }
+      ],
+      "row_overrides": {
+        "Kristen": {
+          "plant_type": "Sweet Cherry"
+        },
+        "Red lake": {
+          "name": "Red Lake",
+          "description": "mostly resistant to blister rust, but source PDF text truncates the rest of the susceptibility note after susceptible to m"
+        }
+      },
+      "harvest_from_key": "description",
+      "harvest_terms": ["maturity", "maturing", "ripening", "ripens"],
+      "description_key": "description"
+    }
+  ]
+}

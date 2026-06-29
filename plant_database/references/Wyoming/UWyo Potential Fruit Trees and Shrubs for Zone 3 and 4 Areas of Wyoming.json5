@@ -1,0 +1,455 @@
+{
+    title: "Potential Fruit Trees and Shrubs for Zone 3 and 4 Areas of Wyoming",
+    author: "Brian Sebade",
+    description: "University of Wyoming Extension list of fruit trees and shrubs that may grow in zone 3 and 4 areas of Wyoming",
+    url: "https://www.uwyo.edu/barnbackyard/_files/documents/resources/fruit/possiblefruitlistzone3and42023.pdf",
+    thumbnail: "pdf",
+    published: "2023",
+    accessed: "Jun 2026",
+    type: "state extension variety list",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Wyoming Extension, Laramie, Wyoming",
+            latitude: 41.3129,
+            longitude: -105.5873
+        },
+    ],
+    categories: [
+        {
+            name: "Apple varieties for zone 3 and 4 areas of Wyoming",
+            description: "University of Wyoming Extension lists these apple varieties as potential choices for zone 3 and 4 areas of Wyoming"
+        },
+        {
+            name: "Pear varieties for zone 3 and 4 areas of Wyoming",
+            description: "University of Wyoming Extension lists these pear varieties and says to find something that will mature early"
+        },
+        {
+            name: "American plum varieties for zone 3 and 4 areas of Wyoming",
+            description: "University of Wyoming Extension lists these American plums as potential choices for zone 3 and 4 areas of Wyoming"
+        },
+        {
+            name: "European plum varieties for zone 3 and 4 areas of Wyoming",
+            description: "University of Wyoming Extension lists these European plums as potential choices for zone 3 and 4 areas of Wyoming"
+        },
+        {
+            name: "Cherry varieties for zone 3 and 4 areas of Wyoming",
+            description: "University of Wyoming Extension lists these cherry varieties as potential choices for zone 3 and 4 areas of Wyoming"
+        },
+        {
+            name: "Apricot varieties for zone 3 and 4 areas of Wyoming",
+            description: "University of Wyoming Extension notes that most apricots are not reliable every year in Wyoming because of early fruiting patterns"
+        },
+        {
+            name: "Peach varieties for trial in Wyoming",
+            description: "University of Wyoming Extension notes that peaches are often not cold tolerant for most of Wyoming, though some locations can support peaches"
+        },
+        {
+            name: "Black currant varieties for zone 3 and 4 areas of Wyoming",
+            description: "University of Wyoming Extension lists these black currants as potential choices for zone 3 and 4 areas of Wyoming"
+        },
+        {
+            name: "White currant varieties for zone 3 and 4 areas of Wyoming",
+            description: "University of Wyoming Extension lists these white currants as potential choices for zone 3 and 4 areas of Wyoming"
+        },
+        {
+            name: "Red currant varieties for zone 3 and 4 areas of Wyoming",
+            description: "University of Wyoming Extension lists these red currants as potential choices for zone 3 and 4 areas of Wyoming"
+        },
+        {
+            name: "Gooseberry varieties for zone 3 and 4 areas of Wyoming",
+            description: "University of Wyoming Extension lists these gooseberries as potential choices for zone 3 and 4 areas of Wyoming"
+        },
+        {
+            name: "Serviceberry or juneberry varieties for zone 3 and 4 areas of Wyoming",
+            description: "University of Wyoming Extension lists these serviceberries or juneberries as potential choices for zone 3 and 4 areas of Wyoming"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Honeycrisp",
+            category: "Apple varieties for zone 3 and 4 areas of Wyoming",
+            description: "small grained, crisp, and sweet"
+        },
+        {
+            type: "Apple",
+            name: "Minnewashta",
+            category: "Apple varieties for zone 3 and 4 areas of Wyoming",
+            description: "very similar to Honeycrisp. Source names this as Zestar"
+        },
+        {
+            type: "Apple",
+            name: "Fireside",
+            category: "Apple varieties for zone 3 and 4 areas of Wyoming",
+            description: "smaller and very sweet"
+        },
+        {
+            type: "Apple",
+            name: "Sweet Sixteen",
+            category: "Apple varieties for zone 3 and 4 areas of Wyoming",
+            description: "very cold hardy, good for storage, and great for fresh eating"
+        },
+        {
+            type: "Apple",
+            name: "State Fair",
+            category: "Apple varieties for zone 3 and 4 areas of Wyoming",
+            description: "parent to Zestar, good for fresh eating and white flesh"
+        },
+        {
+            type: "Apple",
+            name: "Haralson",
+            category: "Apple varieties for zone 3 and 4 areas of Wyoming",
+            description: "great for baking and cider and cold hardy"
+        },
+        {
+            type: "Apple",
+            name: "Yellow Transparent",
+            category: "Apple varieties for zone 3 and 4 areas of Wyoming",
+            description: "best for eating when picked fresh"
+        },
+        {
+            type: "Apple",
+            name: "Wealthy",
+            category: "Apple varieties for zone 3 and 4 areas of Wyoming",
+            description: "Very old variety that is extremely common throughout Wyoming. Apples tend to be smaller and tart"
+        },
+        {
+            type: "Apple",
+            name: "Honeygold",
+            category: "Apple varieties for zone 3 and 4 areas of Wyoming",
+            description: "yellow skin and similar to yellow transparent"
+        },
+        {
+            type: "Apple",
+            name: "Cortland",
+            category: "Apple varieties for zone 3 and 4 areas of Wyoming",
+            description: "red color and great for eating fresh or cooking"
+        },
+        {
+            type: "Apple",
+            name: "Northern Spy",
+            category: "Apple varieties for zone 3 and 4 areas of Wyoming",
+            description: "great for eating and cold hardy, but requires a long growing season"
+        },
+        {
+            type: "Euro Pear",
+            name: "Cabot",
+            category: "Pear varieties for zone 3 and 4 areas of Wyoming",
+            harvest_time_unparsed: "Good for fresh eating, September maturity date, and medium sized fruit",
+            description: "Good for fresh eating, September maturity date, and medium sized fruit"
+        },
+        {
+            type: "Euro Pear",
+            name: "Celine",
+            category: "Pear varieties for zone 3 and 4 areas of Wyoming",
+            harvest_time_unparsed: "Good for fresh eating, late ripening, and should be picked to allow for ripening in cold storage",
+            description: "Good for fresh eating, late ripening, and should be picked to allow for ripening in cold storage"
+        },
+        {
+            type: "Euro Pear",
+            name: "Flemish Beauty",
+            category: "Pear varieties for zone 3 and 4 areas of Wyoming",
+            harvest_time_unparsed: "Late ripening and great for fresh eating",
+            description: "Late ripening and great for fresh eating"
+        },
+        {
+            type: "Euro Pear",
+            name: "Luscious",
+            category: "Pear varieties for zone 3 and 4 areas of Wyoming",
+            harvest_time_unparsed: "Large fruit that is great for fresh eating and mid to late maturing dates",
+            description: "Large fruit that is great for fresh eating and mid to late maturing dates"
+        },
+        {
+            type: "Euro Pear",
+            name: "Patten",
+            category: "Pear varieties for zone 3 and 4 areas of Wyoming",
+            harvest_time_unparsed: "Large fruit that is great for fresh eating and is late maturing",
+            description: "Large fruit that is great for fresh eating and is late maturing"
+        },
+        {
+            type: "Euro Pear",
+            name: "Savignac",
+            category: "Pear varieties for zone 3 and 4 areas of Wyoming",
+            description: "medium sized fruit, very hardy, and good for fresh eating"
+        },
+        {
+            type: "Euro Pear",
+            name: "Summercrisp",
+            category: "Pear varieties for zone 3 and 4 areas of Wyoming",
+            harvest_time_unparsed: "early maturing, good for storing, and can be eaten when still green",
+            description: "early maturing, good for storing, and can be eaten when still green"
+        },
+        {
+            type: "Euro Pear",
+            name: "Ure",
+            category: "Pear varieties for zone 3 and 4 areas of Wyoming",
+            harvest_time_unparsed: "small fruit for fresh eating, September maturity, and very cold hardy",
+            description: "small fruit for fresh eating, September maturity, and very cold hardy"
+        },
+        {
+            type: "Plum",
+            name: "Lydecker",
+            category: "American plum varieties for zone 3 and 4 areas of Wyoming",
+            description: "large fruit, dark purple-black skin. Source names this as Blackice"
+        },
+        {
+            type: "Plum",
+            name: "Underwood",
+            category: "American plum varieties for zone 3 and 4 areas of Wyoming",
+            description: "large fruit, dark red skin"
+        },
+        {
+            type: "Plum",
+            name: "Toka",
+            category: "American plum varieties for zone 3 and 4 areas of Wyoming",
+            description: "Medium sized fruit that is dark red"
+        },
+        {
+            type: "Plum",
+            name: "La Crescent",
+            category: "American plum varieties for zone 3 and 4 areas of Wyoming",
+            description: "medium sized fruit, yellow skin"
+        },
+        {
+            type: "Plum",
+            name: "Pipestone",
+            category: "American plum varieties for zone 3 and 4 areas of Wyoming",
+            description: "Large fruit, red skin"
+        },
+        {
+            type: "Plum",
+            name: "Waneta",
+            category: "American plum varieties for zone 3 and 4 areas of Wyoming",
+            description: "Large fruit, yellow and red skin"
+        },
+        {
+            type: "Euro Plum",
+            name: "Green Gage",
+            category: "European plum varieties for zone 3 and 4 areas of Wyoming",
+            description: "small with green skin and very sweet"
+        },
+        {
+            type: "Euro Plum",
+            name: "Northern Blue",
+            category: "European plum varieties for zone 3 and 4 areas of Wyoming",
+            description: "medium sized fruit, and self-fertile"
+        },
+        {
+            type: "Euro Plum",
+            name: "Hildreth",
+            category: "European plum varieties for zone 3 and 4 areas of Wyoming",
+            description: "small fruit, but very sweet"
+        },
+        {
+            type: "Euro Plum",
+            name: "Mount Royal",
+            category: "European plum varieties for zone 3 and 4 areas of Wyoming",
+            description: "sweet flesh, yellow-green flesh, and self-fertile"
+        },
+        {
+            type: "Euro Plum",
+            name: "Opal",
+            category: "European plum varieties for zone 3 and 4 areas of Wyoming",
+            description: "Very productive with red colored fruit"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Bali",
+            category: "Cherry varieties for zone 3 and 4 areas of Wyoming",
+            description: "Also called Evans. Originated from Alberta, 1\" size fruit"
+        },
+        {
+            type: "Sour Cherry",
+            name: "North Star",
+            category: "Cherry varieties for zone 3 and 4 areas of Wyoming",
+            description: "Natural dwarf introduced from the University of Minnesota, good fresh eating or baking. Source names this as Northstar"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Meteor",
+            category: "Cherry varieties for zone 3 and 4 areas of Wyoming",
+            description: "Another introduction from the University of Minnesota, potentially more productive than Northstar, and is a natural dwarf"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Montmorency",
+            category: "Cherry varieties for zone 3 and 4 areas of Wyoming",
+            description: "Potentially the most common pie cherry, grows the largest of the varieties listed, and excellent fruit"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Balaton",
+            category: "Cherry varieties for zone 3 and 4 areas of Wyoming",
+            description: "Introduced from Hungary, lager size tree, and is said to have very sweet tasting cherries"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Kristen",
+            category: "Cherry varieties for zone 3 and 4 areas of Wyoming",
+            description: "A potential sweet cherry for zone 4 areas of Wyoming. Not self-fertile and needs a second pollinator. This cherry needs more testing in WY"
+        },
+        {
+            type: "Apricot",
+            name: "Sungold",
+            category: "Apricot varieties for zone 3 and 4 areas of Wyoming",
+            description: "Later blooming than most varieties, with large fruit"
+        },
+        {
+            type: "Apricot",
+            name: "Mandan",
+            category: "Apricot varieties for zone 3 and 4 areas of Wyoming",
+            description: "Large fruit and cold tolerant"
+        },
+        {
+            type: "Apricot",
+            name: "Moongold",
+            category: "Apricot varieties for zone 3 and 4 areas of Wyoming",
+            description: "Large fruit and blooms fairly resistant to frost events"
+        },
+        {
+            type: "Apricot",
+            name: "Chinese (Mormon)",
+            category: "Apricot varieties for zone 3 and 4 areas of Wyoming",
+            description: "Small to medium sized fruit, blossoms will withstand some light frost events"
+        },
+        {
+            type: "Apricot",
+            name: "Westcot",
+            category: "Apricot varieties for zone 3 and 4 areas of Wyoming",
+            description: "Large size fruit with tolerance to cold climates"
+        },
+        {
+            type: "Peach",
+            name: "Contender",
+            category: "Peach varieties for trial in Wyoming",
+            description: "known for cold tolerance and the ability to produce fruit in cold climates"
+        },
+        {
+            type: "Peach",
+            name: "Reliance",
+            category: "Peach varieties for trial in Wyoming",
+            description: "potential option for certain areas of Wyoming"
+        },
+        {
+            type: "Peach",
+            name: "Cresthaven",
+            category: "Peach varieties for trial in Wyoming",
+            description: "Cold tolerant, but less so than Contender and Reliance"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Peach varieties for trial in Wyoming",
+            description: "Cold tolerant, but less so than Contender and Reliance"
+        },
+        {
+            type: "Peach",
+            name: "Intrepid",
+            category: "Peach varieties for trial in Wyoming",
+            description: "Cold tolerant, but less so than Contender and Reliance"
+        },
+        {
+            type: "Currant",
+            name: "Ben Sarek",
+            category: "Black currant varieties for zone 3 and 4 areas of Wyoming",
+            description: "highly resistant to blister rust, but susceptible to mildew"
+        },
+        {
+            type: "Currant",
+            name: "Titania",
+            category: "Black currant varieties for zone 3 and 4 areas of Wyoming",
+            description: "highly resistant to mildew and blister rust"
+        },
+        {
+            type: "Currant",
+            name: "Consort",
+            category: "Black currant varieties for zone 3 and 4 areas of Wyoming",
+            description: "highly resistant to blister rust"
+        },
+        {
+            type: "Currant",
+            name: "White Imperial",
+            category: "White currant varieties for zone 3 and 4 areas of Wyoming",
+            description: "very mildew resistant"
+        },
+        {
+            type: "Currant",
+            name: "Blanca White",
+            category: "White currant varieties for zone 3 and 4 areas of Wyoming",
+            description: "very mildew resistant"
+        },
+        {
+            type: "Currant",
+            name: "Primus White",
+            category: "White currant varieties for zone 3 and 4 areas of Wyoming",
+            description: "susceptible to mildew"
+        },
+        {
+            type: "Currant",
+            name: "Red Lake",
+            category: "Red currant varieties for zone 3 and 4 areas of Wyoming",
+            description: "mostly resistant to blister rust, but source PDF text truncates the rest of the susceptibility note after susceptible to m"
+        },
+        {
+            type: "Currant",
+            name: "Rovada",
+            category: "Red currant varieties for zone 3 and 4 areas of Wyoming",
+            description: "resistant to mildew and leaf spot diseases"
+        },
+        {
+            type: "Currant",
+            name: "Tatran",
+            category: "Red currant varieties for zone 3 and 4 areas of Wyoming",
+            description: "very resistant to mildew"
+        },
+        {
+            type: "Gooseberry",
+            name: "Pixwell (pink)",
+            category: "Gooseberry varieties for zone 3 and 4 areas of Wyoming",
+            description: "mildew resistant"
+        },
+        {
+            type: "Gooseberry",
+            name: "Invicta",
+            category: "Gooseberry varieties for zone 3 and 4 areas of Wyoming",
+            description: "resistant to mildew, but not leaf spot"
+        },
+        {
+            type: "Gooseberry",
+            name: "Poorman",
+            category: "Gooseberry varieties for zone 3 and 4 areas of Wyoming",
+            description: "very resistant to mildew"
+        },
+        {
+            type: "Saskatoon",
+            name: "Autumn Brilliance",
+            category: "Serviceberry or juneberry varieties for zone 3 and 4 areas of Wyoming",
+            description: "great fall color, 20-25 feet tall, and medium sized fruit"
+        },
+        {
+            type: "Saskatoon",
+            name: "Princess Diana",
+            category: "Serviceberry or juneberry varieties for zone 3 and 4 areas of Wyoming",
+            description: "20 feet tall when mature, large purple fruit"
+        },
+        {
+            type: "Saskatoon",
+            name: "Fergie",
+            category: "Serviceberry or juneberry varieties for zone 3 and 4 areas of Wyoming",
+            description: "Very small and only reaches 5-6ft tall"
+        },
+        {
+            type: "Saskatoon",
+            name: "Prince William",
+            category: "Serviceberry or juneberry varieties for zone 3 and 4 areas of Wyoming",
+            description: "about 10 feet high when mature"
+        },
+        {
+            type: "Saskatoon",
+            name: "Thiessen",
+            category: "Serviceberry or juneberry varieties for zone 3 and 4 areas of Wyoming",
+            description: "12-14 feet tall with wide growth pattern, and large fruit. Source names this as Theissen"
+        },
+    ]
+}
