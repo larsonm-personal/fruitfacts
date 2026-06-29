@@ -39,6 +39,10 @@
     "Carskill": {
       "name": "Catskill",
       "note": "Source text says Carskill, likely Catskill"
+    },
+    "Mesabi": {
+      "name": "MNUS 248",
+      "note": "Source text names this as Mesabi"
     }
   },
   "extractors": [

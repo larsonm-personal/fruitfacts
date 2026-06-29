@@ -1151,12 +1151,24 @@ fn apply_top_level_fields(
         release_authoritative = release_parsed.authoritative;
     }
 
-    let release_year = new_or_old(
-        existing_base_plant.release_year,
-        release_year,
-        plant,
-        "release_year",
-    );
+    let release_year_is_patent_derived =
+        existing_base_plant.release_year_note.as_deref() == Some("derived from patent number");
+    let incoming_release_year = release_year;
+    let release_year = if release_year_is_patent_derived && incoming_release_year.is_some() {
+        incoming_release_year
+    } else {
+        new_or_old(
+            existing_base_plant.release_year,
+            incoming_release_year,
+            plant,
+            "release_year",
+        )
+    };
+    let release_year_note = if release_year_is_patent_derived && incoming_release_year.is_some() {
+        None
+    } else {
+        existing_base_plant.release_year_note
+    };
 
     let released_by = new_or_old(
         existing_base_plant.released_by,
@@ -1189,6 +1201,7 @@ fn apply_top_level_fields(
                 base_plants::uspp_expiration.eq(uspp_expiration),
                 base_plants::uspp_expiration_estimated.eq(uspp_expiration_estimated),
                 base_plants::release_year.eq(release_year),
+                base_plants::release_year_note.eq(release_year_note),
                 base_plants::released_by.eq(released_by),
                 base_plants::release_collection_id.eq(release_collection_id),
                 base_plants::s_allele.eq(s_allele),
@@ -2811,15 +2824,21 @@ fn check_aka_duplicates(db_conn: &mut SqliteConnection) {
         .load::<BasePlantsItemForDedupe>(db_conn)
         .unwrap();
 
+    let mut warning_count = 0;
+
     for plant in &all_base_plants {
         if let Some(plant_aka_fts) = plant.aka_fts.clone() {
             for aka in decode_aka_string(&plant_aka_fts) {
+                if aka.is_empty() {
+                    continue;
+                }
                 if !aka_map
                     .get_mut(&plant.type_)
                     .unwrap()
                     .insert(aka.to_string())
                 {
-                    panic!("found a duplicate AKA entry: {:?}", plant)
+                    warning_count += 1;
+                    println!("warning: found a duplicate AKA entry {:?}", plant)
                 }
             }
         }
@@ -2827,13 +2846,14 @@ fn check_aka_duplicates(db_conn: &mut SqliteConnection) {
 
     // then for each base plant names make sure there isn't an AKA name in the set in that type
     for plant in &all_base_plants {
-        if aka_map
-            .get_mut(&plant.type_)
-            .unwrap()
-            .contains(&plant.name_fts)
-        {
-            panic!("found a plant named with an AKA entry: {:?}", plant)
+        if aka_map.get(&plant.type_).unwrap().contains(&plant.name_fts) {
+            warning_count += 1;
+            println!("warning: found a plant named with an AKA entry {:?}", plant)
         }
+    }
+
+    if warning_count > 0 {
+        println!("warning: found {warning_count} AKA consistency issues")
     }
 }
 

@@ -36,6 +36,10 @@
       "description": "Light sweet cherry varieties described in VCE 422-018"
     }
   ],
+  "name_overrides": {
+    "Northstar": ["North Star", "Source spells the name Northstar"],
+    "Napoleon": ["Royal Ann", "Source uses Napoleon and says also called Royal Anne or Napolean Wax"]
+  },
   "extractors": [
     {
       "kind": "quoted_paragraph_blocks",
@@ -54,7 +58,14 @@
       ],
       "prepend_name_if_lowercase": true,
       "harvest_terms": ["ripen"],
-      "plant_type": "Cherry",
+      "plant_type": {
+        "row_key": "category",
+        "map": {
+          "Tart cherry varieties described for Virginia": "Sour Cherry",
+          "Dark sweet cherry varieties described for Virginia": "Sweet Cherry",
+          "Light sweet cherry varieties described for Virginia": "Sweet Cherry"
+        }
+      },
       "category": {"row_key": "category"},
       "harvest_key": "harvest_time_unparsed",
       "description_parts": [

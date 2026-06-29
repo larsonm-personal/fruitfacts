@@ -32,140 +32,140 @@
     ],
     plants: [
         {
-            type: "Cherry",
+            type: "Sour Cherry",
             name: "Montmorency",
             category: "Tart cherry varieties described for Virginia",
             harvest_time_unparsed: "Ripens in late June in Blacksburg.",
             description: "Montmorency originated in the Montmorency Valley of France before the 17th century. The trees are productive and the fruit are relatively large, bright red, white fleshed, has clear juice, firm flesh, and are of good quality. This is the standard tart cherry variety and about 90% of the tart cherries grown in North America are 'Montmorency'. There are several strains of 'Montmorency', such as 'Galaxy'. Ripens in late June in Blacksburg."
         },
         {
-            type: "Cherry",
-            name: "Northstar",
+            type: "Sour Cherry",
+            name: "North Star",
             category: "Tart cherry varieties described for Virginia",
             harvest_time_unparsed: "Ripens in late June or early July.",
-            description: "Northstar resulted from a cross between 'English Morello' and 'Serbian Pie' and was introduced in 1950 by the University of Minnesota Fruit Breeding Program at Excelsior. The mahogany red fruit has red juice, and is medium-sized. Trees are small, which makes them easy to cover with bird netting. Ripens in late June or early July. The trees possess some resistance to leaf spot and brown rot."
+            description: "Northstar resulted from a cross between 'English Morello' and 'Serbian Pie' and was introduced in 1950 by the University of Minnesota Fruit Breeding Program at Excelsior. The mahogany red fruit has red juice, and is medium-sized. Trees are small, which makes them easy to cover with bird netting. Ripens in late June or early July. The trees possess some resistance to leaf spot and brown rot. Source spells the name Northstar"
         },
         {
-            type: "Cherry",
+            type: "Sour Cherry",
             name: "Meteor",
             category: "Tart cherry varieties described for Virginia",
             harvest_time_unparsed: "The medium-sized bright red fruit ripens about a week after 'Montmorency'; it is tart with clear juice, semi-firm flesh, and good-quality fruit.",
             description: "Meteor resulted from a cross between 'Montmorency' and a selection of a Russian type, and was introduced in 1952 by the Minnesota Fruit Breeding program at Excelsior. The medium-sized bright red fruit ripens about a week after 'Montmorency'; it is tart with clear juice, semi-firm flesh, and good-quality fruit. The variety is not acceptable for commercial processing because the pit is oddly shaped, and sometimes shatters during pitting. This is not a problem for home production and it can extend the harvest season because it ripens about 5 days after 'Northstar'. Trees bloom after 'Montmorency' and 'Northstar' and have some resistance to leaf spot."
         },
         {
-            type: "Cherry",
+            type: "Sour Cherry",
             name: "Surefire",
             category: "Tart cherry varieties described for Virginia",
             description: "Surefire resulted from a cross between 'Borchert Black Sour' and NY 6935 ('Richmorency' x 'Schatternmorelle') and was introduced in 1993 by the New York Agricultural Experiment Station at Geneva. It is late blooming, so is less susceptible to spring frost. The fruit is bright red, medium in size, firm, and very tart."
         },
         {
-            type: "Cherry",
+            type: "Sour Cherry",
             name: "Danube",
             category: "Tart cherry varieties described for Virginia",
             harvest_time_unparsed: "Danube is a new tart cherry for fresh consumption and ripens a few days earlier than 'Montmorency'.",
             description: "Danube is a new tart cherry for fresh consumption and ripens a few days earlier than 'Montmorency'. The fruit is dark red, medium to large, and sweeter than most tart cherries. This variety is being planted widely in Europe."
         },
         {
-            type: "Cherry",
+            type: "Sour Cherry",
             name: "Balaton",
             category: "Tart cherry varieties described for Virginia",
             description: "Balaton originated in Ujfeherto, Hungary, as a local variety. It was released and trademarked by Michigan State University in 1996. Compared to 'Montmorency' the fruit is larger, firmer, sweeter and redder and it has a juicy flesh. The pits are slightly larger than other varieties and may cause problems for processors. This is a very high-quality variety and is being recommended for fresh consumption, processing, and the home garden."
         },
         {
-            type: "Cherry",
+            type: "Sweet Cherry",
             name: "Cavalier",
             category: "Dark sweet cherry varieties described for Virginia",
             harvest_time_unparsed: "Cavalier is a new black variety that ripens very early, probably around June 3.",
             description: "Cavalier is a new black variety that ripens very early, probably around June 3. Fruit is medium to large, dark red, and has dry, firm flesh with good flavor, and is resistant to cracking."
         },
         {
-            type: "Cherry",
+            type: "Sweet Cherry",
             name: "Viva",
             category: "Dark sweet cherry varieties described for Virginia",
             harvest_time_unparsed: "Trees are moderately productive and fruit ripens around June 8 and is moderately crack resistant.",
             description: "Viva was released in 1972 by the Vineland Research Station in Canada and the parentage is unknown. It produces a medium-sized dark red fruit with flesh that is semi-firm, sweet and of good quality. Trees are moderately productive and fruit ripens around June 8 and is moderately crack resistant."
         },
         {
-            type: "Cherry",
+            type: "Sweet Cherry",
             name: "Black Tartarian",
             category: "Dark sweet cherry varieties described for Virginia",
             description: "Black Tartarian is an old variety. Fruit are purplish black, small to medium in size, heart-shaped, and good quality. The flesh is dark red, soft and juicy. At one time it was used to extend the season, but newer varieties are superior and more crack resistant."
         },
         {
-            type: "Cherry",
+            type: "Sweet Cherry",
             name: "Hartland",
             category: "Dark sweet cherry varieties described for Virginia",
             harvest_time_unparsed: "The fruit ripens around June 12.",
             description: "Hartland is an open pollinated selection of 'Windsor' and was introduced in 1992 by the New York Agricultural Experiment Station at Geneva. The fruit ripens around June 12. The tree is productive, and the purple fruit is fairly susceptible to cracking, medium size, round, medium firmness, and good flavor."
         },
         {
-            type: "Cherry",
+            type: "Sweet Cherry",
             name: "Kristin",
             category: "Dark sweet cherry varieties described for Virginia",
             description: "Kristin resulted from a cross between 'Emperor Francis' and 'Gil Peck' and was introduced in 1982 by the New York Agricultural Experiment Station at Geneva. The fruit is large, aromatic, firm, sweet, dark red, attractive, and moderately resistant to cracking, and trees are vigorous and productive. Fruit can be used for fresh consumption and processing."
         },
         {
-            type: "Cherry",
+            type: "Sweet Cherry",
             name: "Ulster",
             category: "Dark sweet cherry varieties described for Virginia",
             harvest_time_unparsed: "This high quality fruit is moderately crack resistant, and ripens around June 15.",
             description: "Ulster resulted from a cross between 'Schmidt' and 'Lambert' and was introduced in 1964 by the New York Agricultural Experiment Station at Geneva. The fruit is large and sweet, and the flesh is dark red and crisp. This high quality fruit is moderately crack resistant, and ripens around June 15. Good for fresh consumption and processing."
         },
         {
-            type: "Cherry",
+            type: "Sweet Cherry",
             name: "Stella",
             category: "Dark sweet cherry varieties described for Virginia",
             harvest_time_unparsed: "It ripens around June 12 and is self-fertile.",
             description: "Stella resulted from a cross between 'Lambert' and 'John Innes Seeding' and was introduced in 1968 by the Canadian Department of Agriculture Research Station at Summerland, British Columbia. This is a large, black, heart-shaped cherry that is sweet, and has medium firm flesh, but is susceptible to cracking. It ripens around June 12 and is self-fertile."
         },
         {
-            type: "Cherry",
+            type: "Sweet Cherry",
             name: "Lapins",
             category: "Dark sweet cherry varieties described for Virginia",
             harvest_time_unparsed: "The fruit is very large, somewhat resistant to cracking, has good flavor, and ripens around June 15.",
             description: "Lapins resulted from a cross between 'Van' and 'Stella' and was introduced in 1983 by the Agriculture Canada Research Station at Summerland, British Columbia. The fruit is very large, somewhat resistant to cracking, has good flavor, and ripens around June 15. The tree is very productive."
         },
         {
-            type: "Cherry",
+            type: "Sweet Cherry",
             name: "Hedelfingen",
             category: "Dark sweet cherry varieties described for Virginia",
             harvest_time_unparsed: "This variety ripens around June 20 and has performed well in Virginia.",
             description: "Hedelfingen is an old European variety. The black fruit is medium to large, firm, and high quality, and is more crack resistant than most varieties. The fruit is good for fresh consumption, freezing and processing. This variety ripens around June 20 and has performed well in Virginia."
         },
         {
-            type: "Cherry",
+            type: "Sweet Cherry",
             name: "Sweetheart",
             category: "Dark sweet cherry varieties described for Virginia",
             description: "Sweetheart is a self-fertile cherry resulting from a 'Van' cross and introduced by the Agriculture Canada Research Station at Summerland, British Columbia. Trees are productive and fruit is medium to large in size, very firm, and has good flavor. The fruit is dark red and moderately susceptible to cracking."
         },
         {
-            type: "Cherry",
+            type: "Sweet Cherry",
             name: "Hudson",
             category: "Dark sweet cherry varieties described for Virginia",
             harvest_time_unparsed: "This late-season variety ripens around June 25.",
             description: "Hudson resulted from a cross between 'Oswego' and 'Giant' and was introduced in 1964 from the New York Agricultural Experiment Station at Geneva. This late-season variety ripens around June 25. The fruit is dark red, medium to large in size, sweet and very firm. The trees bloom late, are vigorous, and are moderately productive, and may come into production late. Fruit is very crack resistant."
         },
         {
-            type: "Cherry",
+            type: "Sweet Cherry",
             name: "Emperor Francis",
             category: "Light sweet cherry varieties described for Virginia",
             harvest_time_unparsed: "Ripens around June 16 in Blacksburg, Virginia.",
             description: "A good quality early cherry that is yellowish white with a red blush. Trees survive well and the fruit is large, but not very crack resistant. Ripens around June 16 in Blacksburg, Virginia."
         },
         {
-            type: "Cherry",
+            type: "Sweet Cherry",
             name: "Gold",
             category: "Light sweet cherry varieties described for Virginia",
             description: "This variety is early, the trees are productive and fairly resistant to bacterial canker, but the fruit are small and fairly crack resistant. This variety is used primarily for brining and the eating quality is poor."
         },
         {
-            type: "Cherry",
-            name: "Napoleon",
+            type: "Sweet Cherry",
+            name: "Royal Ann",
             category: "Light sweet cherry varieties described for Virginia",
-            description: "Napoleon also called 'Royal Anne' or 'Napolean Wax'. The fruit is pale yellow with bright red cheeks. The fruit is medium in size, firm, sweet, and juicy, with fair fresh eating quality. Productivity in Virginia is fair, but it has fairly good resistance to cracking."
+            description: "Napoleon also called 'Royal Anne' or 'Napolean Wax'. The fruit is pale yellow with bright red cheeks. The fruit is medium in size, firm, sweet, and juicy, with fair fresh eating quality. Productivity in Virginia is fair, but it has fairly good resistance to cracking. Source uses Napoleon and says also called Royal Anne or Napolean Wax"
         },
         {
-            type: "Cherry",
+            type: "Sweet Cherry",
             name: "Rainier",
             category: "Light sweet cherry varieties described for Virginia",
             description: "Rainier resulted from a cross of 'Bing' and ' Van' and was introduced in 1960 by the Washington Agricultural Experiment Station and the USDA in Prosser, WA. The fruit is very large and sweet; the skin is yellow with quite a bit of red blush. The fruit is firm and the juice is clear. The fruit is good for brining or fresh consumption. Reports from Michigan indicate it is exceptionally crack resistant for a firm cherry, but reports from New York indicate that it is moderately susceptible to cracking."

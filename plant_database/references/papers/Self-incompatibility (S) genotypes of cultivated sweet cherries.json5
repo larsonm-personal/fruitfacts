@@ -2958,9 +2958,9 @@
         {
             type: "Sweet Cherry",
             name: "Furticchiara",
-            AKA: ["Limone", "Napoleon", "Sardinia I"],
+            AKA: ["Limone", "Sardinia I"],
             s_allele: "S3S4",
-            description: "country of origin: IT"
+            description: "country of origin: IT. Source also lists Napoleon as an AKA"
         },
         {
             type: "Sweet Cherry",
@@ -3261,9 +3261,9 @@
         {
             type: "Sweet Cherry",
             name: "Große Prinzessin",
-            AKA: ["Groote Prinzess", "Napoleon", "Lauermanns Kirsche"],
+            AKA: ["Groote Prinzess", "Lauermanns Kirsche"],
             s_allele: "S3S4",
-            description: "country of origin: NL old local culivar from Netherland"
+            description: "country of origin: NL old local culivar from Netherland. Source also lists Napoleon as an AKA"
         },
         {
             type: "Sweet Cherry",
@@ -5278,10 +5278,9 @@
         },
         {
             type: "Sweet Cherry",
-            name: "Napoleon",
-            AKA: ["Royal Ann", "Oxheart"],
+            name: "Royal Ann",
             s_allele: "S3S4",
-            description: "country of origin: DE"
+            description: "country of origin: DE. Source lists Napoleon with AKA Royal Ann and Oxheart"
         },
         {
             type: "Sweet Cherry",
