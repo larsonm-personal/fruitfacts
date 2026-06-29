@@ -81,10 +81,10 @@
         },
         {
             type: "Nectarine",
-            name: "Redgold",
+            name: "Red Gold",
             category: "Nectarine varieties suggested for trial in Texas",
             harvest_time_unparsed: "The fruit is a freestone and ripens in late July.",
-            description: "Redgold is a large, glossy red fruit; the tree requires 850 hours of chill to break dormancy. The fruit is a freestone and ripens in late July"
+            description: "Redgold is a large, glossy red fruit; the tree requires 850 hours of chill to break dormancy. The fruit is a freestone and ripens in late July. Source names this as Redgold"
         },
         {
             type: "Nectarine",
@@ -141,9 +141,9 @@
         },
         {
             type: "Almond",
-            name: "All-In-One",
+            name: "All-in-One",
             category: "Almond varieties tried in Texas",
-            description: "All-In-One is the most common variety being tried today"
+            description: "All-In-One is the most common variety being tried today. Source names this as All-In-One"
         },
     ]
 }

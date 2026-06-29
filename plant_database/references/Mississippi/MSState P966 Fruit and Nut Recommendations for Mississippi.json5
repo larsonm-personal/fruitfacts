@@ -1,0 +1,1204 @@
+{
+    title: "Fruit and Nut Recommendations for Mississippi",
+    author: "Eric Stafne",
+    description: "Mississippi State University Extension P966 guide with statewide fruit and nut cultivar recommendations",
+    url: "https://extension.msstate.edu/publications/fruit-and-nut-recommendations-for-mississippi",
+    thumbnail: "website",
+    publication_number: "P966",
+    reviewed: "Aug 2024",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Mississippi State University Extension, Starkville, Mississippi",
+            latitude: 33.4552,
+            longitude: -88.7944
+        },
+    ],
+    categories: [
+        {
+            name: "Apple varieties recommended for Mississippi",
+            description: "MSU Extension P966 lists these apple varieties for Mississippi plantings"
+        },
+        {
+            name: "Apple varieties recommended for trial in Mississippi",
+            description: "MSU Extension P966 lists these apples as recommended for trial in Mississippi"
+        },
+        {
+            name: "Low-chill apple varieties for coastal Mississippi",
+            description: "MSU Extension P966 lists these low-chill apples for areas within about 50 miles of the Mississippi Gulf Coast"
+        },
+        {
+            name: "Thorny blackberry varieties for Mississippi",
+            description: "MSU Extension P966 lists these thorny blackberry varieties for Mississippi"
+        },
+        {
+            name: "Thornless blackberry varieties for Mississippi",
+            description: "MSU Extension P966 lists these thornless blackberry varieties for Mississippi"
+        },
+        {
+            name: "Raspberry variety listed in Mississippi caneberry recommendations",
+            description: "MSU Extension P966 includes this raspberry in the caneberry recommendation list"
+        },
+        {
+            name: "Early-season rabbiteye blueberry varieties for Mississippi",
+            description: "MSU Extension P966 lists these early-season rabbiteye blueberry varieties for Mississippi"
+        },
+        {
+            name: "Mid- to late-season rabbiteye blueberry varieties for Mississippi",
+            description: "MSU Extension P966 lists these mid- to late-season rabbiteye blueberry varieties for Mississippi"
+        },
+        {
+            name: "Southern highbush blueberry varieties for Mississippi",
+            description: "MSU Extension P966 lists these southern highbush blueberry varieties for Mississippi"
+        },
+        {
+            name: "Tart cherries for North Mississippi",
+            description: "MSU Extension P966 says only tart cherries are adapted to Mississippi, and only in the northern area"
+        },
+        {
+            name: "Fig varieties for Mississippi",
+            description: "MSU Extension P966 lists these fig varieties as adapted to Mississippi"
+        },
+        {
+            name: "Bunch grapes for North Mississippi",
+            description: "MSU Extension P966 lists these bunch grapes for North Mississippi"
+        },
+        {
+            name: "Bunch grapes for South Mississippi",
+            description: "MSU Extension P966 lists these Pierce's-disease-resistant bunch grapes for South Mississippi"
+        },
+        {
+            name: "Muscadine varieties for Mississippi",
+            description: "MSU Extension P966 lists these muscadine varieties for Mississippi"
+        },
+        {
+            name: "Peach varieties for North Mississippi",
+            description: "MSU Extension P966 Table 1 lists these peach varieties for Mississippi areas north of Hattiesburg"
+        },
+        {
+            name: "Peach varieties for South Mississippi",
+            description: "MSU Extension P966 Table 2 lists these peach varieties for Mississippi areas south of Hattiesburg"
+        },
+        {
+            name: "Peach varieties for both North and South Mississippi",
+            description: "MSU Extension P966 lists these peach varieties in both the north and south Mississippi peach tables"
+        },
+        {
+            name: "Pear varieties for Mississippi",
+            description: "MSU Extension P966 lists these European pear varieties for Mississippi"
+        },
+        {
+            name: "Local pear selections recommended for trial in Mississippi",
+            description: "MSU Extension P966 lists these local pear selections as recommended for trial planting"
+        },
+        {
+            name: "Asian pear varieties for Mississippi",
+            description: "MSU Extension P966 lists these Asian pear varieties for Mississippi"
+        },
+        {
+            name: "Pecan varieties recommended for Mississippi home plantings",
+            description: "MSU Extension P966 lists these pecan varieties for Mississippi home plantings"
+        },
+        {
+            name: "Early-season non-astringent oriental persimmon cultivars for Mississippi",
+            description: "MSU Extension P966 lists these non-astringent oriental persimmons as early-season cultivars"
+        },
+        {
+            name: "Mid-season non-astringent oriental persimmon cultivars for Mississippi",
+            description: "MSU Extension P966 lists these non-astringent oriental persimmons as mid-season cultivars"
+        },
+        {
+            name: "Late-season non-astringent oriental persimmon cultivars for Mississippi",
+            description: "MSU Extension P966 lists these non-astringent oriental persimmons as late-season cultivars"
+        },
+        {
+            name: "Early-season astringent oriental persimmon cultivars for Mississippi",
+            description: "MSU Extension P966 lists these astringent oriental persimmons as early-season cultivars"
+        },
+        {
+            name: "Mid-season astringent oriental persimmon cultivars for Mississippi",
+            description: "MSU Extension P966 lists these astringent oriental persimmons as mid-season cultivars"
+        },
+        {
+            name: "Japanese-type plum varieties for Mississippi",
+            description: "MSU Extension P966 lists these Japanese-type plum varieties for Mississippi"
+        },
+        {
+            name: "Strawberry varieties for North Mississippi matted-row systems",
+            description: "MSU Extension P966 lists these strawberries for North Mississippi matted-row production systems"
+        },
+        {
+            name: "Strawberry varieties for South Mississippi annual hill systems",
+            description: "MSU Extension P966 lists these strawberries for South Mississippi annual hill black-plastic-mulch production systems"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Smooth",
+            category: "Apple varieties recommended for Mississippi",
+            harvest_time_unparsed: "Ripens in early September.",
+            description: "Possibly the best Golden Delicious type available. The tree is vigorous, productive, and easy to manage. The fruit excels in flavor, aroma, and long-term storability. Its russet-resistant skin is glossy and noticeably smooth to the touch. Ripens in early September. The bloom period is mid- to late season (nonspur type). Good pollinator for most other varieties"
+        },
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Apple varieties recommended for Mississippi",
+            harvest_time_unparsed: "Ripens in late August.",
+            description: "A medium-sized apple, oval to round, and reddish-orange. Recommended for fresh eating and cooking. Strong trees are compact growers and productive bearers. Newer red sports (Royal or Imperial) are recommended. Ripens in late August. The bloom period is mid-season (nonspur)"
+        },
+        {
+            type: "Apple",
+            name: "Ozark Gold",
+            category: "Apple varieties recommended for Mississippi",
+            description: "Outstanding yellow apple if allowed to ripen properly on the tree. An early Golden Delicious type that ripens in mid-August. Bloom period is mid-season (nonspur)"
+        },
+        {
+            type: "Apple",
+            name: "Red Chief, Mercier Variety",
+            category: "Apple varieties recommended for Mississippi",
+            harvest_time_unparsed: "Ripens in late August to early September.",
+            description: "The tree is a heavy producer and has shown all the spur-type advantages plus additional vigor, making it easy to establish and manage in the orchard. The fruit is high quality. Ripens in late August to early September. Mid-season bloom (spur type)"
+        },
+        {
+            type: "Apple",
+            name: "Mollie's Delicious",
+            category: "Apple varieties recommended for Mississippi",
+            harvest_time_unparsed: "Ripens in mid-August and can be used as a pollinator but is sensitive to fire blight.",
+            description: "An attractive, unique, slightly cone-shaped, large fruit with a white base color and bright-red blush. The tree is vigorous and productive. Fruit tends to set in clusters and requires two to three pickings. Ripens in mid-August and can be used as a pollinator but is sensitive to fire blight. Bloom period is early (nonspur)"
+        },
+        {
+            type: "Apple",
+            name: "Paulared",
+            category: "Apple varieties recommended for Mississippi",
+            harvest_time_unparsed: "Ripens in early August.",
+            description: "An early red apple of good quality but susceptible to blight. It has tart flavor, light to creamy flesh, and is equally good for eating, sauces, or pies. Paulared requires thinning. Only pick near maturity for best quality and flavor. Ripens in early August. Bloom period is early (nonspur)"
+        },
+        {
+            type: "Apple",
+            name: "Granny Smith",
+            category: "Apple varieties recommended for Mississippi",
+            harvest_time_unparsed: "Ripens in early October.",
+            description: "A very late-maturing, late-keeping, dual-purpose apple. Flesh is hard, crisp, and juicy with excellent tart flavor. Fruit is grass-green and shiny. Ripens in early October. Susceptible to fire blight. Bloom period is mid-season (nonspur)"
+        },
+        {
+            type: "Apple",
+            name: "Arkansas Black",
+            category: "Apple varieties recommended for Mississippi",
+            harvest_time_unparsed: "Ripens in mid-September to early October (spur type).",
+            description: "A compact spur mutation of an old variety. Popular as a fresh-market variety. An excellent pollinating variety for Red Delicious and other mid- to late-bloom-season varieties. Great companion variety for Granny Smith. Ripens in mid-September to early October (spur type)"
+        },
+        {
+            type: "Apple",
+            name: "Braeburn",
+            category: "Apple varieties recommended for Mississippi",
+            description: "Originated as a chance seedling in New Zealand; its high quality and excellent flavor make this apple exciting. Skin color is green and shaded with dark red. Smooth texture and sweet flavor"
+        },
+        {
+            type: "Apple",
+            name: "Empire",
+            category: "Apple varieties recommended for Mississippi",
+            description: "Juicy and cream-colored flesh; moderately acidic, high-quality dessert type. Tree is upright spreading, bears early, and produces annually; needs pollinizer"
+        },
+        {
+            type: "Apple",
+            name: "Blushing Golden",
+            category: "Apple varieties recommended for Mississippi",
+            harvest_time_unparsed: "Ripens in mid-October; needs a pollinizer.",
+            description: "Has a smooth golden delicious flavor but a bit tangy; keeps well in cold storage. Hardy and strong tree. Ripens in mid-October; needs a pollinizer"
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Apple varieties recommended for trial in Mississippi",
+            description: "Highly recommended; has good promise"
+        },
+        {
+            type: "Apple",
+            name: "Mutsu",
+            category: "Apple varieties recommended for trial in Mississippi",
+            harvest_time_unparsed: "Ripens in late September.",
+            description: "Fruit is light green to yellow and very large. Flesh is firm, very dense, and juicy. Excellent dessert and processing apple. The tree is vigorous but pollen is sterile and requires a pollinator. Susceptible to a bacterial disorder commonly called blister spot. Ripens in late September. Bloom period is middle to late (nonspur)"
+        },
+        {
+            type: "Apple",
+            name: "Earligold",
+            category: "Apple varieties recommended for trial in Mississippi",
+            description: "Early golden delicious apple that ripens in late September. Good quality, firm"
+        },
+        {
+            type: "Apple",
+            name: "Jonafree",
+            category: "Apple varieties recommended for trial in Mississippi",
+            description: "The fruit is shaped like and ripens with Jonared but with a higher percentage of red surface. Flavor is like Jonathan but a little less acidic. Fruits are 21/2 inches, 75 percent medium firm, crisp, and juicy with good dessert quality. Tree is field-immune to scab and is resistant to fire blight and cedar apple rust. Somewhat susceptible to mildew. Fruit hangs well to maturity"
+        },
+        {
+            type: "Apple",
+            name: "Redfree",
+            category: "Apple varieties recommended for trial in Mississippi",
+            description: "An outstanding summer apple that can be stored up to 2 months. Attractive glossy red fruit hangs well and retains quality and firmness to maturity. Fruit is medium sized and 90 percent bright red with smooth, waxy, russet-free skin. Flesh is light colored, crisp, and juicy with excellent flavor. Fruit ripens 5 days before Paulared and 6 weeks before Delicious. Tree is immune to scab and cedar rust, has moderate resistance to fire blight and mildew, and is annual bearing. Uneven ripening may require two pickings"
+        },
+        {
+            type: "Apple",
+            name: "Ultra Mac",
+            category: "Apple varieties recommended for trial in Mississippi",
+            harvest_time_unparsed: "Ripens in early September; needs a pollinizer.",
+            description: "An improved McIntosh with extra spurs- firm, tart, super-crisp fruit. Ripens in early September; needs a pollinizer"
+        },
+        {
+            type: "Apple",
+            name: "Golden Dorsett",
+            category: "Low-chill apple varieties for coastal Mississippi",
+            description: "A Yellow Delicious type. Golden Dorsett is needed to pollinate Anna. Best southern variety. Nonspur, low-chilling variety, and early bloom period"
+        },
+        {
+            type: "Apple",
+            name: "Anna",
+            category: "Low-chill apple varieties for coastal Mississippi",
+            description: "A red apple recommended specifically for areas within 50 miles of the Mississippi Gulf Coast. Anna needs Golden Dorsett as a pollinator. Nonspur, low chilling, and early bloomer"
+        },
+        {
+            type: "Apple",
+            name: "Ein Shemer",
+            category: "Low-chill apple varieties for coastal Mississippi",
+            description: "Old standby; self-pollinating golden apple. Nonspur and low chilling requirement. Source names this Ein Shiemer"
+        },
+        {
+            type: "Blackberry",
+            name: "Brazos",
+            category: "Thorny blackberry varieties for Mississippi",
+            description: "An excellent variety for South Mississippi; vigorous, erect, thorny canes, high yield, large fruit, insect and disease resistance, and drought tolerance; somewhat cold-sensitive and not suited for North Mississippi"
+        },
+        {
+            type: "Blackberry",
+            name: "Cheyenne",
+            category: "Thorny blackberry varieties for Mississippi",
+            description: "Vigorous, erect, thorny canes, ripens mid-season, very productive, fruit very large; excellent for fresh consumption or processing; excellent flavor"
+        },
+        {
+            type: "Blackberry",
+            name: "Chickasaw",
+            category: "Thorny blackberry varieties for Mississippi",
+            description: "Released in 1999. Vigorous, erect, thorny canes. Fruit size and yield are larger than Shawnee. Fruit are long, cylindrical, slightly flattened, and very attractive with a glossy black finish. Postharvest evaluations indicated superior shelf life"
+        },
+        {
+            type: "Blackberry",
+            name: "Kiowa",
+            category: "Thorny blackberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens about the same time as Chickasaw.",
+            description: "Canes are thornless, erect, and self-supporting. Fruit is black, glossy, firm, very large with a high sugar content, and excellent flavor. Ripens about the same time as Chickasaw. Harvest season extends about 45 days. Good results in postharvest evaluations"
+        },
+        {
+            type: "Blackberry",
+            name: "Shawnee",
+            category: "Thorny blackberry varieties for Mississippi",
+            description: "Vigorous, erect, thorny canes; berry larger than Cheyenne; very productive; ripens about one week later than Cheyenne. Excellent flavor. Excellent for fresh use or processing"
+        },
+        {
+            type: "Blackberry",
+            name: "Apache",
+            category: "Thornless blackberry varieties for Mississippi",
+            description: "Released in 1999; plant has erect-growing, thornless canes. Fruit is blocky, conic, and very attractive with a glossy black finish. Sugar content is comparable to other varieties, and flavor is rated very good. Seeds are larger than Arapaho and Navaho. Fruit are twice as large as Navaho, and yields are high. Bloom date is between Navaho and Arapaho, and ripening date is later than both varieties but more concentrated. Vigor, health, erectness of cane, and cold-hardiness are better than Arapaho and Navaho"
+        },
+        {
+            type: "Blackberry",
+            name: "Arapaho",
+            category: "Thornless blackberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens about 11 days before Navaho.",
+            description: "Canes are thornless, erect, and self-supporting. Fruit is medium-sized, short, conic, and bright glossy black with small seeds and medium yields. Sugar content and shelf life are less than Navaho but greater than Shawnee. Ripens about 11 days before Navaho. Harvest period is 4 weeks. Hardy in all areas of Mississippi. Plants easily reproduce from roots"
+        },
+        {
+            type: "Blackberry",
+            name: "Navaho",
+            category: "Thornless blackberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens about 7 days after Shawnee, produces for about a month, and has shown good shelf life.",
+            description: "Canes are thornless, erect, and self-supporting. Fruit is black and glossy, firm, sweet, and medium in size. Ripens about 7 days after Shawnee, produces for about a month, and has shown good shelf life. Plants have good hardiness to low temperatures in Mississippi. Navaho plants do not reproduce freely from roots, so a closer spacing is best"
+        },
+        {
+            type: "Blackberry",
+            name: "Ouachita",
+            category: "Thornless blackberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripening begins in early June and continues about 4 weeks.",
+            description: "Released in 2003; plant has very erect, thornless canes. Fruit is large with very good flavor and high sugar content. Yields are consistently high, producing amounts the same or higher than the other thornless varieties. Ripening begins in early June and continues about 4 weeks. Plants and fruit are relatively disease-resistant"
+        },
+        {
+            type: "Raspberry",
+            name: "Dormanred",
+            category: "Raspberry variety listed in Mississippi caneberry recommendations",
+            description: "This raspberry was developed at Mississippi State University. Red, extra-large fruit. Requires training"
+        },
+        {
+            type: "Blueberry",
+            name: "Austin",
+            category: "Early-season rabbiteye blueberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens May to early June.",
+            description: "Plants are moderately vigorous, productive, and upright. Berries are large, blue, firm, have dry scars, good flavor, and good shelf life. Ripens May to early June"
+        },
+        {
+            type: "Blueberry",
+            name: "Brightwell",
+            category: "Early-season rabbiteye blueberry varieties for Mississippi",
+            description: "Berries are medium in size, blue, and have small dry scars and good flavor. Plant growth is vigorous, upright, and produces enough new canes to renew the plant"
+        },
+        {
+            type: "Blueberry",
+            name: "Climax",
+            category: "Early-season rabbiteye blueberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens May to early June.",
+            description: "Upright, open plants. Berries are large, medium-dark blue, and have a small scar and good flavor. Concentrated ripening period. Ripens May to early June"
+        },
+        {
+            type: "Blueberry",
+            name: "Premier",
+            category: "Early-season rabbiteye blueberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens 2 to 3 weeks before Tifblue.",
+            description: "Ripens 2 to 3 weeks before Tifblue. Large fruit with good flavor. Plants are vigorous, upright, disease-resistant, and productive"
+        },
+        {
+            type: "Blueberry",
+            name: "Tifblue",
+            category: "Mid- to late-season rabbiteye blueberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens late June.",
+            description: "Bush is vigorous and widely adapted. Fruit is large, round, light blue, sweet, and very firm with a small dry scar. Berries appear to be ripe several days before full flavor develops. Berries remain on the plant several days after fully ripe. This is the most productive of all rabbiteye varieties and is the standard to which rabbiteyes are compared. Ripens late June"
+        },
+        {
+            type: "Blueberry",
+            name: "Powderblue",
+            category: "Mid- to late-season rabbiteye blueberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens similar to Tifblue with better fruit color and more foliage.",
+            description: "Plant is vigorous, disease-resistant, and productive. Ripens similar to Tifblue with better fruit color and more foliage. Resists cracking in periods of excess rain"
+        },
+        {
+            type: "Blueberry",
+            name: "Centurion",
+            category: "Mid- to late-season rabbiteye blueberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens later than Tifblue; adds 1 or more weeks to the rabbiteye ripening season.",
+            description: "Ripens later than Tifblue; adds 1 or more weeks to the rabbiteye ripening season. Plant is vigorous and upright. Fruit has good flavor; not as firm but darker than Tifblue"
+        },
+        {
+            type: "Blueberry",
+            name: "Baldwin",
+            category: "Mid- to late-season rabbiteye blueberry varieties for Mississippi",
+            description: "A productive, late-ripening variety with good flavor and firm, dark blue fruit; has a lengthy ripening period; adapted to pick-your-own and backyard plantings"
+        },
+        {
+            type: "Blueberry",
+            name: "Biloxi",
+            category: "Southern highbush blueberry varieties for Mississippi",
+            description: "Relatively low-chilling variety. Recommended for southern areas of Mississippi. Plants are upright, vigorous, and productive"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluecrisp",
+            category: "Southern highbush blueberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens early May.",
+            description: "The flesh of the ripe fruit is so firm it has been described as crunchy. Plant is moderately vigorous, more spreading than upright. Fruit is light blue with deep dry scar, firm, and sweet with a good shelf life. Ripens early May"
+        },
+        {
+            type: "Blueberry",
+            name: "Jubilee",
+            category: "Southern highbush blueberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens early May.",
+            description: "Upright, vigorous, productive plants. Medium-sized fruit with good color, flavor, firmness, and small picking scar. Ripens early May"
+        },
+        {
+            type: "Blueberry",
+            name: "Magnolia",
+            category: "Southern highbush blueberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens early May.",
+            description: "Medium-sized, productive, vigorous plants with a spreading growth habit. Medium-sized fruit with good flavor, color, firmness, and small picking scar. Ripens early May"
+        },
+        {
+            type: "Blueberry",
+            name: "Misty",
+            category: "Southern highbush blueberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens late April.",
+            description: "Blooms and ripens about the same time as Biloxi. Berries are light colored with a good scar and firmness. Plants are vigorous and upright. Ripens late April. Use Biloxi as pollinator"
+        },
+        {
+            type: "Blueberry",
+            name: "O'Neal",
+            category: "Southern highbush blueberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens early with large, high-quality fruit of medium blue color with good picking scar and flavor.",
+            description: "Ripens early with large, high-quality fruit of medium blue color with good picking scar and flavor. Bloom often begins in the fall and continues during warm periods until normal bloom time. Ripens late April to early May"
+        },
+        {
+            type: "Blueberry",
+            name: "Ozarkblue",
+            category: "Southern highbush blueberry varieties for Mississippi",
+            description: "Exceptional yields with good fruit size and quality. Recommended for planting in the upper South because it requires 800 to 1,000 chill hours. Ozarkblue has consistently fruited in variety trials when most other southern highbush and rabbiteye cultivars have had partial to total crop losses to spring freezes and frost. Pollinate with Summit"
+        },
+        {
+            type: "Blueberry",
+            name: "Pearl River",
+            category: "Southern highbush blueberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens early May.",
+            description: "Vigorous, productive, upright plants. Pearl River is a hybrid of highbush and rabbiteye blueberries. Fruit is firm, medium-sized, has good flavor, a small scar, and is somewhat darker than other cultivars. Ripens early May"
+        },
+        {
+            type: "Blueberry",
+            name: "Star",
+            category: "Southern highbush blueberry varieties for Mississippi",
+            harvest_time_unparsed: "Ripens late April to early May.",
+            description: "Fruit is large and easy to harvest because of a concentrated ripening period. Fruit has excellent scar, firmness, good color, and good flavor. The plant leafs strongly before the first flowers open. The recommended pollinator is Southmoon. Ripens late April to early May"
+        },
+        {
+            type: "Blueberry",
+            name: "Summit",
+            category: "Southern highbush blueberry varieties for Mississippi",
+            description: "A mid- to late-season southern highbush cultivar. Fruit is firm with large and excellent color, flavor, and picking scar. Resistant to cracking, tearing, and stemming. Excellent performance in postharvest studies. Plant is semi-upright with medium vigor. Ozarkblue is a good pollinator"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Montmorency",
+            category: "Tart cherries for North Mississippi",
+            description: "The best red tart cherry for home and commercial processing. Can be used for pies, preserves, and canning"
+        },
+        {
+            type: "Fig",
+            name: "Celeste",
+            category: "Fig varieties for Mississippi",
+            description: "A small, brown to purple fig produced on 2-year-old wood having a tight-closed eye and a very sweet taste. The bush is vigorous, large, productive, and the most cold-hardy of the common fig varieties"
+        },
+        {
+            type: "Fig",
+            name: "Brown Turkey",
+            category: "Fig varieties for Mississippi",
+            description: "A medium-sized, light-brown fig, produced on the current season's growth; has a mild sweet flavor and ripens over a 60-day period. The eye is moderately closed, which helps reduce fruit spoilage on the tree. The bush is very vigorous, large, and productive"
+        },
+        {
+            type: "Grape",
+            name: "Fredonia",
+            category: "Bunch grapes for North Mississippi",
+            description: "A deep-purple grape, early mid-season, vigorous, productive, with medium to small clusters of large berries. Berries ripen uniformly"
+        },
+        {
+            type: "Grape",
+            name: "Niagara",
+            category: "Bunch grapes for North Mississippi",
+            description: "A white grape, mid-season, vigorous, productive, medium size, with compact clusters of large berries"
+        },
+        {
+            type: "Grape",
+            name: "Midsouth",
+            category: "Bunch grapes for South Mississippi",
+            harvest_time_unparsed: "Harvest dates are from late July to mid-August.",
+            description: "A vigorous vine resistant to Pierce's disease but highly susceptible to root-knot nema-todes when grown in infected soil. Dark-blue grape good for eating fresh and making jellies. Harvest dates are from late July to mid-August. Source names this Mid South"
+        },
+        {
+            type: "Grape",
+            name: "Miss Blue",
+            category: "Bunch grapes for South Mississippi",
+            harvest_time_unparsed: "Harvest dates in Mississippi are from late July to mid-August.",
+            description: "A dark-blue grape with open clusters. Highly susceptible to anthracnose, requiring a per-sistent fungicide program to keep this disease under control. Harvest dates in Mississippi are from late July to mid-August. Recommended for juices and jellies"
+        },
+        {
+            type: "Grape",
+            name: "Miss Blanc",
+            category: "Bunch grapes for South Mississippi",
+            description: "Grapes of Miss Blanc are white to green in color, sweet, mild, and pleasantly flavored. Fruit ripens in late July to mid-August"
+        },
+        {
+            type: "Grape",
+            name: "Orlando Seedless",
+            category: "Bunch grapes for South Mississippi",
+            description: "A new seedless bunch grape released from Leesburg, Florida. The variety has good flavor; large, attractive bunches; early ripening; vigorous vines. Susceptible to anthracnose and root-knot nematodes"
+        },
+        {
+            type: "Grape",
+            name: "Daytona",
+            category: "Bunch grapes for South Mississippi",
+            description: "A pink bunch grape recommended for fresh fruit consumption, released by the University of Florida. The fruit has vinifera-like fresh fruit character, tenacious berries (permits handling without berries falling from the cluster), and superior bunch and berry size. Susceptible to anthracnose and root-knot nematodes"
+        },
+        {
+            type: "Grape",
+            name: "Conquistador",
+            category: "Bunch grapes for South Mississippi",
+            description: "A multipurpose bunch grape released by the University of Florida. It yields well and is recommended for wine, juice, and jelly, as well as table use. Susceptible to anthracnose and root-knot nematodes"
+        },
+        {
+            type: "Grape",
+            name: "Suwannee",
+            category: "Bunch grapes for South Mississippi",
+            description: "An early-ripening variety released by the University of Florida for wine and fresh fruit. The major advantages of Suwannee are its early ripening, improved berry size, later blooming, and vigorous growth. Susceptible to anthracnose and root-knot nematodes"
+        },
+        {
+            type: "Muscadine",
+            name: "Black Beauty",
+            category: "Muscadine varieties for Mississippi",
+            description: "Purple, crunchy skin, large size, excellent flavor; female; good yields, extended harvest, excellent vigor; excellent for fresh fruit"
+        },
+        {
+            type: "Muscadine",
+            name: "Black Fry",
+            category: "Muscadine varieties for Mississippi",
+            description: "Purple, large, good vigor; medium-tough skin, excellent flavor, excellent for fresh fruit; female"
+        },
+        {
+            type: "Muscadine",
+            name: "Carlos",
+            category: "Muscadine varieties for Mississippi",
+            description: "Bronze, tough skin, medium size, good flavor; self-fertile; excellent for juice, jelly, and wine; high yields"
+        },
+        {
+            type: "Muscadine",
+            name: "Darlene",
+            category: "Muscadine varieties for Mississippi",
+            description: "Bronze, large fruit, medium-tough skin, good flavor, poor vigor; female; good for fresh fruit"
+        },
+        {
+            type: "Muscadine",
+            name: "Dixieland",
+            category: "Muscadine varieties for Mississippi",
+            description: "Bronze, medium-large; excellent flavor, medium-tough skin, self-fertile; unpredictable yields and size; good for fresh fruit"
+        },
+        {
+            type: "Muscadine",
+            name: "Doreen",
+            category: "Muscadine varieties for Mississippi",
+            description: "Bronze, tough skin, medium size, good flavor; self-fertile, high yields; excellent for juice, wine, and jelly"
+        },
+        {
+            type: "Muscadine",
+            name: "Fry",
+            category: "Muscadine varieties for Mississippi",
+            description: "Good flavor, medium-large size; bronze, crunchy skin; female; must spray for disease control; cold-sensitive, poor vigor; good for fresh fruit"
+        },
+        {
+            type: "Muscadine",
+            name: "Fry Seedless",
+            category: "Muscadine varieties for Mississippi",
+            description: "Must spray with gibberellic acid to reach desirable size; skin moderately tough; light purple; good flavor; small fruit. Makes excellent raisins"
+        },
+        {
+            type: "Muscadine",
+            name: "Granny Val",
+            category: "Muscadine varieties for Mississippi",
+            description: "Bronze, medium-tough skin, large size; late-maturing, good flavor; self-fertile, uniform ripening; sensitive to cold weather; good for fresh fruit"
+        },
+        {
+            type: "Muscadine",
+            name: "Hunt",
+            category: "Muscadine varieties for Mississippi",
+            description: "Purple; medium size, good flavor, medium-tough skin; female; good for juice, wine, and jelly"
+        },
+        {
+            type: "Muscadine",
+            name: "Ison",
+            category: "Muscadine varieties for Mississippi",
+            description: "Purple, medium-large size, strong muscadine flavor, medium-tough skin; self-fertile; uniform ripening, good pollinator, good yields; good for fresh fruit"
+        },
+        {
+            type: "Muscadine",
+            name: "Jane Bell",
+            category: "Muscadine varieties for Mississippi",
+            description: "Bronze; medium-large size; tough skin; good sweet flavor, uneven ripening; self-fertile; good for fresh fruit"
+        },
+        {
+            type: "Muscadine",
+            name: "Jumbo",
+            category: "Muscadine varieties for Mississippi",
+            description: "Purple, large size, good flavor, tough skins; female"
+        },
+        {
+            type: "Muscadine",
+            name: "Magnolia",
+            category: "Muscadine varieties for Mississippi",
+            description: "Bronze, tough skin, medium size, good flavor; self-fertile; excellent for juice, wine, and jelly"
+        },
+        {
+            type: "Muscadine",
+            name: "Noble",
+            category: "Muscadine varieties for Mississippi",
+            description: "Small, purple, good flavor, tough skin; self-fertile; excellent for juice, wine, and jelly"
+        },
+        {
+            type: "Muscadine",
+            name: "Scuppernong",
+            category: "Muscadine varieties for Mississippi",
+            description: "Bronze, tough skin, medium size, good flavor; female; good for juice, wine, and jelly"
+        },
+        {
+            type: "Muscadine",
+            name: "Sterling",
+            category: "Muscadine varieties for Mississippi",
+            description: "Bronze, tough skin, medium size; self-fertile; excellent for juice, wine, and jelly"
+        },
+        {
+            type: "Muscadine",
+            name: "Sugargate",
+            category: "Muscadine varieties for Mississippi",
+            description: "Medium-large size, purple, inconsistent yield; good flavor, medium-tough skin; female; good for fresh fruit"
+        },
+        {
+            type: "Muscadine",
+            name: "Summit",
+            category: "Muscadine varieties for Mississippi",
+            description: "Bronze, medium-large fruit, excellent flavor; high sugar content, medium-tough skin; female; susceptible to disease and insect problems; good for fresh fruit"
+        },
+        {
+            type: "Muscadine",
+            name: "Supreme",
+            category: "Muscadine varieties for Mississippi",
+            description: "Purple, large fruit, good flavor, medium-tough skin, heavy yield; female; good for fresh fruit"
+        },
+        {
+            type: "Muscadine",
+            name: "Sweet Jenny",
+            category: "Muscadine varieties for Mississippi",
+            description: "Bronze, large size, excellent flavor; crunchy skin; female; good for fresh fruit"
+        },
+        {
+            type: "Muscadine",
+            name: "Triumph",
+            category: "Muscadine varieties for Mississippi",
+            description: "Bronze, medium-tough skin, medium-large size; good muscadine flavor; self-fertile; non-slip skin, dry scar, good for fresh fruit"
+        },
+        {
+            type: "Muscadine",
+            name: "Watergate",
+            category: "Muscadine varieties for Mississippi",
+            description: "Bronze, large size, good flavor, medium-tough skin; uneven ripening; female; good for fresh fruit"
+        },
+        {
+            type: "Euro Pear",
+            name: "Kieffer",
+            category: "Pear varieties for Mississippi",
+            description: "The most extensively grown pear in the South; this old variety has little resistance to fire blight and is poorly adapted. Considered an early to mid-bloomer, it may suffer late-frost damage. The Kieffer pear matures in late September or October. Rated good for preserves"
+        },
+        {
+            type: "Euro Pear",
+            name: "Orient",
+            category: "Pear varieties for Mississippi",
+            description: "This large-fruited, roundish pear ripens in mid-August to early September. The tree is vigorous and spreading, shows some resistance to fire blight, and is well-adapted throughout the state. The canning quality of the fruit is good. The blooming period is considered to be middle and late"
+        },
+        {
+            type: "Euro Pear",
+            name: "Moonglow",
+            category: "Pear varieties for Mississippi",
+            description: "This spur-type tree is vigorous, blooms late, and has good fire blight resistance. Fruit quality is good with a mild flavor, few grit cells, and soft flesh; good for canning. Fruit ripens in mid-August"
+        },
+        {
+            type: "Euro Pear",
+            name: "Magness",
+            category: "Pear varieties for Mississippi",
+            harvest_time_unparsed: "Ripens in late August.",
+            description: "This pear is rated high in quality but requires 5 to 6 years before fruit bearing begins. High resistance to fire blight. Ripens in late August. Does not produce good pollen"
+        },
+        {
+            type: "Euro Pear",
+            name: "Ayers",
+            category: "Pear varieties for Mississippi",
+            description: "Trees are vigorous, upright, and blight-resistant. The chilling requirement is high; recommended for North Mississippi only. Fruit is an attractive yellow with red blush and ripens in late July to early August. The blooming period is early"
+        },
+        {
+            type: "Euro Pear",
+            name: "Le Conte",
+            category: "Pear varieties for Mississippi",
+            description: "Adapted for northern and central Mississippi; good resistance to fire blight. Fruit is yellow with red blush. Excellent eating pear. Bloom period is early"
+        },
+        {
+            type: "Euro Pear",
+            name: "Baldwin",
+            category: "Pear varieties for Mississippi",
+            harvest_time_unparsed: "Ripens in mid-October, and the blooming period is early.",
+            description: "An excellent variety for coastal areas because of its low cold requirement to break dormancy. The fruit is almost round and golden-yellow when ripe. Ripens in mid-October, and the blooming period is early"
+        },
+        {
+            type: "Euro Pear",
+            name: "Maxine",
+            category: "Pear varieties for Mississippi",
+            description: "Less resistance to fire blight than Magness or Moonglow. Trees are vigorous and upright. Maxine can be planted with Moonglow or Magness for cross-pollination. It ripens in mid-September between Orient and Kieffer. Fruit quality is fair to good"
+        },
+        {
+            type: "Euro Pear",
+            name: "Cox",
+            category: "Local pear selections recommended for trial in Mississippi",
+            description: "Has been grown in the Lumberton-Poplarville area for 40 years and has never been known to fire blight. Excellent eating pear that ripens in September and blooms mid-season"
+        },
+        {
+            type: "Euro Pear",
+            name: "Diamond",
+            category: "Local pear selections recommended for trial in Mississippi",
+            harvest_time_unparsed: "Ripens in late summer and blooms mid-season.",
+            description: "This vigorously growing tree has not shown evidence of fire blight. It produces extremely large, firm fruit, excellent for preserves, cooking, and canning. Ripens in late summer and blooms mid-season"
+        },
+        {
+            type: "Euro Pear",
+            name: "Fan-Stil",
+            category: "Local pear selections recommended for trial in Mississippi",
+            description: "This bell-shaped pear is a creamy yellow with a touch of pink or blush. Some say it is an improved Le Conte. The tree is vigorous, disease-resistant, and consistently produces large quantities of fruit. It is good for eating fresh and for cooking. Bloom period is mid-season"
+        },
+        {
+            type: "Euro Pear",
+            name: "Southern Queen",
+            category: "Local pear selections recommended for trial in Mississippi",
+            description: "The true origin of this South Mississippi pear is unknown. Southern Queen produces bell-shaped (true pear) fruit. One-pound of fruit is not uncommon when fruit is thinned or in years of low fruit set. In most years fruit set is good, and the fruit is comparable in size to Bartlett or Kieffer. The fruit ripens in August and becomes very mellow at full maturity. The color of the fruit skin is a striking russet or bronzy brown. The flesh is creamy yellow with an excellent texture for eating. The Southern Queen has never been known to have fire blight and may be highly resistant as evidenced by the 60-year-old trees still in existence and bearing. Bloom period is early to mid-season"
+        },
+        {
+            type: "Euro Pear",
+            name: "Walt",
+            category: "Local pear selections recommended for trial in Mississippi",
+            description: "The parent tree appears to be small-growing. It produces small fruit that is edible while immature (green) with a decent flavor and sweetness. The fruit matures in late July and August, becoming mellow and soft-fleshed as it matures. When fully ripened, it is most suitable for eating fresh and for making jams and jellies, but it is not suitable for making preserves. During its 40-plus years, the tree has not shown evidence of fire blight or leaf spot diseases. The bloom period is considered early"
+        },
+        {
+            type: "Euro Pear",
+            name: "Warren",
+            category: "Local pear selections recommended for trial in Mississippi",
+            description: "Discovered in Hattiesburg by T. O. Warren, it has the quality of Magness, Comice, or Seckel and appears to be very resistant to blight, but it also takes several years to come into bearing"
+        },
+        {
+            type: "Asian Pear",
+            name: "Hosui",
+            category: "Asian pear varieties for Mississippi",
+            description: "An attractive fruit with a golden russet skin. The flesh is firm, juicy, and mild, with good quality"
+        },
+        {
+            type: "Asian Pear",
+            name: "Chojuro",
+            category: "Asian pear varieties for Mississippi",
+            description: "Large, round fruit; partially self-fruitful. The skin color is russet to brown-orange. Fruit is sweet and spicy, and the tree is highly productive"
+        },
+        {
+            type: "Asian Pear",
+            name: "Seuri",
+            category: "Asian pear varieties for Mississippi",
+            description: "Round-shaped Chinese pear. Skin is unusual-a yellow undercolor with a mottled partial russetting. Flesh is bright white with good, crisp texture; aromatic with a floral, sweet flavor. Fruit quality is good, and size is large to very large"
+        },
+        {
+            type: "Asian Pear",
+            name: "Twentieth Century (Nijiseiki)",
+            category: "Asian pear varieties for Mississippi",
+            description: "The medium-to-large fruit has very smooth greenish-yellow skin and creamy white flesh that is juicy and aromatic. The tree is upright and productive"
+        },
+        {
+            type: "Persimmon",
+            name: "Izu",
+            category: "Early-season non-astringent oriental persimmon cultivars for Mississippi",
+            description: "The earliest ripening non-astringent cultivar. The tree regulates crop loads well, producing large fruit that is generally blemish-free. Sugar content is not as high as later maturing cultivars"
+        },
+        {
+            type: "Persimmon",
+            name: "Matsumoto Wase Fuyu",
+            category: "Mid-season non-astringent oriental persimmon cultivars for Mississippi",
+            description: "An early-ripening bud sport of Fuyu. The tree sets many flowers and produces heavy-clustered crops. Thin clusters to prevent bent limbs with excessive fruit loads. The tree is moderately vigorous and medium-sized"
+        },
+        {
+            type: "Persimmon",
+            name: "Gosho",
+            category: "Mid-season non-astringent oriental persimmon cultivars for Mississippi",
+            description: "Unseeded fruit may have good size; seeded fruit has better flavor. Requires a pollinator for seeded fruit"
+        },
+        {
+            type: "Persimmon",
+            name: "Ichikikei Jiro",
+            category: "Mid-season non-astringent oriental persimmon cultivars for Mississippi",
+            description: "A bud sport from Jiro. The tree is comparatively smaller than most and regulates its crop well. It will mature seedless crops and is a good homeowner cultivar. Apical end splitting occurs in a percentage of the fruit. The tree is around 7 days later than most cultivars to begin growing in the spring, which helps it escape late-frost injury"
+        },
+        {
+            type: "Persimmon",
+            name: "Hana Fuyu",
+            category: "Mid-season non-astringent oriental persimmon cultivars for Mississippi",
+            description: "Also known as Giant Fuyu, it regulates its crop load well and is of medium vigor. The fruit is slightly larger than most, generally free of imperfections, and may be slow to lose astringency. The tree is a good homeowner cultivar"
+        },
+        {
+            type: "Persimmon",
+            name: "Hana Gosho",
+            category: "Mid-season non-astringent oriental persimmon cultivars for Mississippi",
+            description: "A large tree with vigorous, upright growth and a strong scaffold system. The tree usually has a few male flowers every year, and crop regulation is good. The tree is a good homeowner cultivar. Source names this Hanagosho"
+        },
+        {
+            type: "Persimmon",
+            name: "Jiro",
+            category: "Mid-season non-astringent oriental persimmon cultivars for Mississippi",
+            description: "Can be erratic in cropping when the tree is young. Older trees have a good, well-spreading shape and produce quality crops. Some apical end fruit splitting will occur"
+        },
+        {
+            type: "Persimmon",
+            name: "Midia",
+            category: "Mid-season non-astringent oriental persimmon cultivars for Mississippi",
+            description: "The largest of the non-astringent types, with fruit weighing 3/4 pounds. An indented ring forms around the top half of the fruit. The tree is an inconsistent cropper and seems more vulnerable to tree decline than other cultivars"
+        },
+        {
+            type: "Persimmon",
+            name: "Fuyu",
+            category: "Late-season non-astringent oriental persimmon cultivars for Mississippi",
+            description: "Also known as Fuyugaki, this is the most popular non-astringent cultivar and the most widely grown persimmon cultivar in the world. Fruit thinning is usually necessary to ensure large fruit, prevent clustering, and regulate crop loads. Fruit imperfections are few, yields are good, sugar content is high, and the tree is generally well adapted"
+        },
+        {
+            type: "Persimmon",
+            name: "Suruga",
+            category: "Late-season non-astringent oriental persimmon cultivars for Mississippi",
+            description: "The sweetest of the non-astringent types. Red coloration in mature fruit is strong, and fruit imperfections are infrequent. Thin crop loads to prevent overproduction"
+        },
+        {
+            type: "Persimmon",
+            name: "Siajo",
+            category: "Early-season astringent oriental persimmon cultivars for Mississippi",
+            description: "Considered one of the sweetest persimmons, although traces of astringency sometimes remain when the fruit is soft. Fruit are relatively small with a long, conic shape and a translucent, jelly-type flesh. The tree is large, upright, and can produce heavy crops. It is a good homeowner cultivar"
+        },
+        {
+            type: "Persimmon",
+            name: "Giombo",
+            category: "Early-season astringent oriental persimmon cultivars for Mississippi",
+            description: "Similar to Siajo in fruit quality, although the fruit are much larger. The fruit are light translucent-orange and thin-peeled with a sweet, juicy, jelly-type flesh. Giombo fruit are a connoisseur's choice. The tree is early to start growing in the spring and is sometimes injured by freezing temperatures"
+        },
+        {
+            type: "Persimmon",
+            name: "Tanenashi",
+            category: "Mid-season astringent oriental persimmon cultivars for Mississippi",
+            harvest_time_unparsed: "Harvest may extend from September through November.",
+            description: "The most popular astringent cultivar, it matures heavy crops without pollination and will seldom set seed even if pollinated. It is usually best to thin the fruit to encourage vegetative growth. The fruit, often large, can weigh more than three-fourths of a pound. Skin is deep yellow to orange when mature. The flesh is orange, pasty, comparatively dry, and of acceptable quality. Harvest may extend from September through November. It is a good tree for homeowners"
+        },
+        {
+            type: "Persimmon",
+            name: "Hachiya",
+            category: "Mid-season astringent oriental persimmon cultivars for Mississippi",
+            description: "A common commercial cultivar. Fruit is high quality and jelly is fleshed with an attractive red skin. Fruit often has concentric ring cracking at the apical end and will ripen unevenly, starting from these points"
+        },
+        {
+            type: "Persimmon",
+            name: "Sheng",
+            category: "Mid-season astringent oriental persimmon cultivars for Mississippi",
+            description: "This tree spreads well and has large fruit with lobed sections looking somewhat like a four- or six-leaf clover from the top. Fruit has a high jelly content, is bright orange, and when pollinated will set many seeds"
+        },
+        {
+            type: "Persimmon",
+            name: "Great Wall",
+            category: "Mid-season astringent oriental persimmon cultivars for Mississippi",
+            description: "A strong-growing, upright tree with small, four-sided fruit. The flesh is dry, similar to Tanenashi, but of excellent quality"
+        },
+        {
+            type: "Persimmon",
+            name: "Tamopan",
+            category: "Mid-season astringent oriental persimmon cultivars for Mississippi",
+            description: "A cultivar with large fruit having a cir-cular depression around the top third nearest the stem. The fruit is juicy, watery, and stringy with a thick peel"
+        },
+        {
+            type: "Persimmon",
+            name: "Gailey",
+            category: "Mid-season astringent oriental persimmon cultivars for Mississippi",
+            description: "A standard pollinating cultivar with small- to medium-sized fruit. Concentric ring cracking is common. Its fruit are very dark-fleshed, even with small seed numbers. The primary purpose of this cultivar is pollination"
+        },
+        {
+            type: "Persimmon",
+            name: "Ormond",
+            category: "Mid-season astringent oriental persimmon cultivars for Mississippi",
+            description: "Sometimes called the Christmas persimmon. Fruit are long, conic, and often harvested in January. The tree begins growing early in the spring, which increases chances for freeze injury"
+        },
+        {
+            type: "Japanese Plum",
+            name: "AU-Amber",
+            category: "Japanese-type plum varieties for Mississippi",
+            description: "Red-purple skin with yellow-amber flesh. Small fruit with medium firmness. Recommended for roadside stands, local markets, and home use; self-fruitful. Source names this Au-Amber"
+        },
+        {
+            type: "Japanese Plum",
+            name: "AU-Rubrum",
+            category: "Japanese-type plum varieties for Mississippi",
+            description: "Maroon skin with red flesh. Large, firm fruit makes cultivar suited for commercial market. Source names this Au-Rubrum"
+        },
+        {
+            type: "Japanese Plum",
+            name: "AU-Rosa",
+            category: "Japanese-type plum varieties for Mississippi",
+            description: "Red skin and yellow-red flesh. Has large, firm fruit suitable for the commercial market. Source names this Au-Rosa"
+        },
+        {
+            type: "Japanese Plum",
+            name: "AU-Cherry",
+            category: "Japanese-type plum varieties for Mississippi",
+            description: "Red skin and flesh. Small fruit of medium firmness. Recommended for home production. Source names this Au-Cherry"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Bruce",
+            category: "Japanese-type plum varieties for Mississippi",
+            description: "Usually marketed as a \"green plum.\"Reliable fruit production after late frost; self-fruitful"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Crimson",
+            category: "Japanese-type plum varieties for Mississippi",
+            description: "Red skin and flesh. Resistant to blackknot and bacterial canker"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Methley",
+            category: "Japanese-type plum varieties for Mississippi",
+            description: "Red-purple skin color with good fruit quality. Used primarily to pollinate other varieties but is susceptible to black knot; self-fruitful"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Morris",
+            category: "Japanese-type plum varieties for Mississippi",
+            harvest_time_unparsed: "Ripens around June 16.",
+            description: "Very attractive fruit; not self-fertile. Skin color is purple; flesh color is blood red. Fruit shape is round to oval with an average size of 1.8 inches. Ripens around June 16"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Robusto",
+            category: "Japanese-type plum varieties for Mississippi",
+            harvest_time_unparsed: "Ripens around June 5.",
+            description: "Usually picked as a green plum; vigorous and productive. Not self-fertile; skin color is bright red and flesh color is red; average fruit is round and about 1.6 inches. Ripens around June 5"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Segundo",
+            category: "Japanese-type plum varieties for Mississippi",
+            harvest_time_unparsed: "Ripens around June 11.",
+            description: "Can be picked as a green plum, like Robusto. Not self-fertile; skin color is yellow/red, flesh color is yellow/red; fruit shape is round with an average size of 1.9 inches. Ripens around June 11"
+        },
+        {
+            type: "Strawberry",
+            name: "Cardinal",
+            category: "Strawberry varieties for North Mississippi matted-row systems",
+            harvest_time_unparsed: "Ripens mid-season (mid-May) over a long period, with large yields produced at each harvest.",
+            description: "An Arkansas release. Ripens mid-season (mid-May) over a long period, with large yields produced at each harvest. Reported to be vigorous and resistant to the leaf diseases, leaf spot, leaf scorch, and powdery mildew. Cardinal is probably the best overall recommended strawberry"
+        },
+        {
+            type: "Strawberry",
+            name: "Sunrise",
+            category: "Strawberry varieties for North Mississippi matted-row systems",
+            description: "Glossy, bright-red berries that do not darken. Good dessert quality but poor freezer characteristics. Very vigorous plants; resistant to the soil-borne diseases red stele and verticillium wilt. Susceptible to leaf spots. Poor freezer characteristics"
+        },
+        {
+            type: "Strawberry",
+            name: "Dixieland",
+            category: "Strawberry varieties for North Mississippi matted-row systems",
+            description: "Large, firm berries. Skin and flesh are bright red; acidic; fair dessert quality. Good for freezing and preserving; early. Foliage is generally healthy; susceptible to virus diseases that may seriously reduce yields after the first year's harvest"
+        },
+        {
+            type: "Strawberry",
+            name: "Pocahontas",
+            category: "Strawberry varieties for North Mississippi matted-row systems",
+            description: "Large, attractive berries, blunt and conic. Medium firm; skin is bright and medium red; flesh is red; subacid. Good dessert quality; good for freezing. Foliage resistant to leaf scorch and partially resistant to leaf spots. Plants are vigorous and make runners freely"
+        },
+        {
+            type: "Strawberry",
+            name: "Tennessee Beauty",
+            category: "Strawberry varieties for North Mississippi matted-row systems",
+            description: "Berries are attractive, uniform, medium-size, and long conic. Color is a glossy medium to deep red. Good dessert quality; mildly subacid flavor. Good freezing quality; late season; large caps; runs freely. Plants are resistant to leaf spots and leaf scorch and tolerate virus diseases"
+        },
+        {
+            type: "Strawberry",
+            name: "Comet",
+            category: "Strawberry varieties for North Mississippi matted-row systems",
+            description: "Arkansas release. Yields better than Sunrise but not as productive as Cardinal; early ripening. Plants are vigorous, prolific, and resist leaf spot, leaf scorch, and powdery mildew with tolerance to spider mite injury. Do not plant Comet in soils with a history of red stele disease"
+        },
+        {
+            type: "Strawberry",
+            name: "Tangi",
+            category: "Strawberry varieties for South Mississippi annual hill systems",
+            description: "Louisiana release. Excellent production and resistant to most foliage and fruit diseases; acidic"
+        },
+        {
+            type: "Strawberry",
+            name: "Chandler",
+            category: "Strawberry varieties for South Mississippi annual hill systems",
+            description: "California release. Large, somewhat soft fruit; good production"
+        },
+        {
+            type: "Strawberry",
+            name: "Douglas",
+            category: "Strawberry varieties for South Mississippi annual hill systems",
+            description: "California release; large, soft fruit"
+        },
+        {
+            type: "Strawberry",
+            name: "Florida 90",
+            category: "Strawberry varieties for South Mississippi annual hill systems",
+            description: "Productive, but may lose fruit to late-spring freezes"
+        },
+        {
+            type: "Pecan",
+            name: "Forkert",
+            category: "Pecan varieties recommended for Mississippi home plantings",
+            description: "MSU Extension P966 recommends Forkert for Mississippi home pecan plantings and says disease resistance is the primary trait for home plantings"
+        },
+        {
+            type: "Pecan",
+            name: "Owens",
+            category: "Pecan varieties recommended for Mississippi home plantings",
+            description: "MSU Extension P966 recommends Owens for Mississippi home pecan plantings and says disease resistance is the primary trait for home plantings"
+        },
+        {
+            type: "Pecan",
+            name: "Sumner",
+            category: "Pecan varieties recommended for Mississippi home plantings",
+            description: "MSU Extension P966 recommends Sumner for Mississippi home pecan plantings and says disease resistance is the primary trait for home plantings"
+        },
+        {
+            type: "Pecan",
+            name: "Elliott",
+            category: "Pecan varieties recommended for Mississippi home plantings",
+            description: "MSU Extension P966 recommends Elliott for Mississippi home pecan plantings and says disease resistance is the primary trait for home plantings"
+        },
+        {
+            type: "Pecan",
+            name: "Pawnee",
+            category: "Pecan varieties recommended for Mississippi home plantings",
+            description: "MSU Extension P966 recommends Pawnee for Mississippi home pecan plantings and says disease resistance is the primary trait for home plantings"
+        },
+        {
+            type: "Pecan",
+            name: "Candy",
+            category: "Pecan varieties recommended for Mississippi home plantings",
+            description: "MSU Extension P966 recommends Candy for Mississippi home pecan plantings and says disease resistance is the primary trait for home plantings"
+        },
+        {
+            type: "Pecan",
+            name: "Melrose",
+            category: "Pecan varieties recommended for Mississippi home plantings",
+            description: "MSU Extension P966 recommends Melrose for Mississippi home pecan plantings and says disease resistance is the primary trait for home plantings"
+        },
+        {
+            type: "Pecan",
+            name: "Jackson",
+            category: "Pecan varieties recommended for Mississippi home plantings",
+            description: "MSU Extension P966 recommends Jackson for Mississippi home pecan plantings and says disease resistance is the primary trait for home plantings"
+        },
+        {
+            type: "Peach",
+            name: "Springold",
+            category: "Peach varieties for North Mississippi",
+            harvest_time_unparsed: "May 30",
+            description: "Stone: Cling. Required chilling hours: 850"
+        },
+        {
+            type: "Peach",
+            name: "Bicentennial",
+            category: "Peach varieties for North Mississippi",
+            harvest_time_unparsed: "June 4 north of Hattiesburg; May 26 south of Hattiesburg",
+            description: "Stone: Cling. Required chilling hours: 700 north of Hattiesburg; 750 south of Hattiesburg"
+        },
+        {
+            type: "Peach",
+            name: "Surecrop",
+            category: "Peach varieties for North Mississippi",
+            harvest_time_unparsed: "June 10",
+            description: "Stone: Cling. Required chilling hours: 950"
+        },
+        {
+            type: "Peach",
+            name: "Sentinel",
+            category: "Peach varieties for North Mississippi",
+            harvest_time_unparsed: "June 17",
+            description: "Stone: Semifree. Required chilling hours: 850"
+        },
+        {
+            type: "Peach",
+            name: "Harvester",
+            category: "Peach varieties for North Mississippi",
+            harvest_time_unparsed: "June 29 north of Hattiesburg; June 15 south of Hattiesburg",
+            description: "Stone: Free. Required chilling hours: 700 north of Hattiesburg; 750 south of Hattiesburg"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Peach varieties for North Mississippi",
+            harvest_time_unparsed: "June 27",
+            description: "Stone: Free. Required chilling hours: 950"
+        },
+        {
+            type: "Peach",
+            name: "Majestic",
+            category: "Peach varieties for North Mississippi",
+            harvest_time_unparsed: "July 9",
+            description: "Stone: Free. Required chilling hours: 800"
+        },
+        {
+            type: "Peach",
+            name: "Ruston Red",
+            category: "Peach varieties for North Mississippi",
+            harvest_time_unparsed: "July 20",
+            description: "Stone: Free. Required chilling hours: 850"
+        },
+        {
+            type: "Peach",
+            name: "Dixiland",
+            category: "Peach varieties for North Mississippi",
+            harvest_time_unparsed: "July 22 north of Hattiesburg; July 20 south of Hattiesburg",
+            description: "Stone: Free. Required chilling hours: 750"
+        },
+        {
+            type: "Peach",
+            name: "Redskin",
+            category: "Peach varieties for North Mississippi",
+            harvest_time_unparsed: "July 25",
+            description: "Stone: Free. Required chilling hours: 750"
+        },
+        {
+            type: "Peach",
+            name: "Ouachita Gold",
+            category: "Peach varieties for North Mississippi",
+            harvest_time_unparsed: "August 3",
+            description: "Stone: Free. Required chilling hours: 850. Source peach table spells this Quachita"
+        },
+        {
+            type: "Peach",
+            name: "La Jewel",
+            category: "Peach varieties for North Mississippi",
+            harvest_time_unparsed: "August 8",
+            description: "Stone: Free. Required chilling hours: 850"
+        },
+        {
+            type: "Peach",
+            name: "Florida King",
+            category: "Peach varieties for South Mississippi",
+            harvest_time_unparsed: "May 18",
+            description: "Stone: Cling. Required chilling hours: 450"
+        },
+        {
+            type: "Peach",
+            name: "June Gold",
+            category: "Peach varieties for South Mississippi",
+            harvest_time_unparsed: "May 30",
+            description: "Stone: Semifree. Required chilling hours: 600"
+        },
+        {
+            type: "Peach",
+            name: "La Pecher",
+            category: "Peach varieties for South Mississippi",
+            harvest_time_unparsed: "June 6",
+            description: "Stone: Semifree. Required chilling hours: 450"
+        },
+        {
+            type: "Peach",
+            name: "Idlewild",
+            category: "Peach varieties for South Mississippi",
+            harvest_time_unparsed: "June 9",
+            description: "Stone: Semifree. Required chilling hours: 550"
+        },
+        {
+            type: "Peach",
+            name: "La White",
+            category: "Peach varieties for South Mississippi",
+            harvest_time_unparsed: "June 18",
+            description: "Stone: Semifree. Required chilling hours: 650"
+        },
+        {
+            type: "Peach",
+            name: "La Gold",
+            category: "Peach varieties for South Mississippi",
+            harvest_time_unparsed: "June 19",
+            description: "Stone: Free. Required chilling hours: 700"
+        },
+        {
+            type: "Peach",
+            name: "La Festival",
+            category: "Peach varieties for South Mississippi",
+            harvest_time_unparsed: "June 25",
+            description: "Stone: Free. Required chilling hours: 450"
+        },
+        {
+            type: "Peach",
+            name: "La Feliciana",
+            category: "Peach varieties for South Mississippi",
+            harvest_time_unparsed: "July 5",
+            description: "Stone: Free. Required chilling hours: 550"
+        },
+    ]
+}

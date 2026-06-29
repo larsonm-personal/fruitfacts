@@ -1,0 +1,456 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.msstate.edu/publications/fruit-and-nut-recommendations-for-mississippi"
+  },
+  "reference_fields": [
+    ["title", "Fruit and Nut Recommendations for Mississippi"],
+    ["author", "Eric Stafne"],
+    ["description", "Mississippi State University Extension P966 guide with statewide fruit and nut cultivar recommendations"],
+    ["url", "https://extension.msstate.edu/publications/fruit-and-nut-recommendations-for-mississippi"],
+    ["thumbnail", "website"],
+    ["publication_number", "P966"],
+    ["reviewed", "Aug 2024"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Mississippi State University Extension, Starkville, Mississippi",
+      "latitude": 33.4552,
+      "longitude": -88.7944
+    }
+  ],
+  "name_overrides": {
+    "Ein Shiemer": {
+      "name": "Ein Shemer",
+      "note": "Source names this Ein Shiemer"
+    },
+    "Mid South": {
+      "name": "Midsouth",
+      "note": "Source names this Mid South"
+    },
+    "Hanagosho": {
+      "name": "Hana Gosho",
+      "note": "Source names this Hanagosho"
+    },
+    "Au-Amber": {
+      "name": "AU-Amber",
+      "note": "Source names this Au-Amber"
+    },
+    "Au-Rubrum": {
+      "name": "AU-Rubrum",
+      "note": "Source names this Au-Rubrum"
+    },
+    "Au-Rosa": {
+      "name": "AU-Rosa",
+      "note": "Source names this Au-Rosa"
+    },
+    "Au-Cherry": {
+      "name": "AU-Cherry",
+      "note": "Source names this Au-Cherry"
+    },
+    "Quachita": {
+      "name": "Ouachita Gold",
+      "note": "Source peach table spells this Quachita"
+    }
+  },
+  "categories": [
+    {
+      "name": "Apple varieties recommended for Mississippi",
+      "description": "MSU Extension P966 lists these apple varieties for Mississippi plantings"
+    },
+    {
+      "name": "Apple varieties recommended for trial in Mississippi",
+      "description": "MSU Extension P966 lists these apples as recommended for trial in Mississippi"
+    },
+    {
+      "name": "Low-chill apple varieties for coastal Mississippi",
+      "description": "MSU Extension P966 lists these low-chill apples for areas within about 50 miles of the Mississippi Gulf Coast"
+    },
+    {
+      "name": "Thorny blackberry varieties for Mississippi",
+      "description": "MSU Extension P966 lists these thorny blackberry varieties for Mississippi"
+    },
+    {
+      "name": "Thornless blackberry varieties for Mississippi",
+      "description": "MSU Extension P966 lists these thornless blackberry varieties for Mississippi"
+    },
+    {
+      "name": "Raspberry variety listed in Mississippi caneberry recommendations",
+      "description": "MSU Extension P966 includes this raspberry in the caneberry recommendation list"
+    },
+    {
+      "name": "Early-season rabbiteye blueberry varieties for Mississippi",
+      "description": "MSU Extension P966 lists these early-season rabbiteye blueberry varieties for Mississippi"
+    },
+    {
+      "name": "Mid- to late-season rabbiteye blueberry varieties for Mississippi",
+      "description": "MSU Extension P966 lists these mid- to late-season rabbiteye blueberry varieties for Mississippi"
+    },
+    {
+      "name": "Southern highbush blueberry varieties for Mississippi",
+      "description": "MSU Extension P966 lists these southern highbush blueberry varieties for Mississippi"
+    },
+    {
+      "name": "Tart cherries for North Mississippi",
+      "description": "MSU Extension P966 says only tart cherries are adapted to Mississippi, and only in the northern area"
+    },
+    {
+      "name": "Fig varieties for Mississippi",
+      "description": "MSU Extension P966 lists these fig varieties as adapted to Mississippi"
+    },
+    {
+      "name": "Bunch grapes for North Mississippi",
+      "description": "MSU Extension P966 lists these bunch grapes for North Mississippi"
+    },
+    {
+      "name": "Bunch grapes for South Mississippi",
+      "description": "MSU Extension P966 lists these Pierce's-disease-resistant bunch grapes for South Mississippi"
+    },
+    {
+      "name": "Muscadine varieties for Mississippi",
+      "description": "MSU Extension P966 lists these muscadine varieties for Mississippi"
+    },
+    {
+      "name": "Peach varieties for North Mississippi",
+      "description": "MSU Extension P966 Table 1 lists these peach varieties for Mississippi areas north of Hattiesburg"
+    },
+    {
+      "name": "Peach varieties for South Mississippi",
+      "description": "MSU Extension P966 Table 2 lists these peach varieties for Mississippi areas south of Hattiesburg"
+    },
+    {
+      "name": "Peach varieties for both North and South Mississippi",
+      "description": "MSU Extension P966 lists these peach varieties in both the north and south Mississippi peach tables"
+    },
+    {
+      "name": "Pear varieties for Mississippi",
+      "description": "MSU Extension P966 lists these European pear varieties for Mississippi"
+    },
+    {
+      "name": "Local pear selections recommended for trial in Mississippi",
+      "description": "MSU Extension P966 lists these local pear selections as recommended for trial planting"
+    },
+    {
+      "name": "Asian pear varieties for Mississippi",
+      "description": "MSU Extension P966 lists these Asian pear varieties for Mississippi"
+    },
+    {
+      "name": "Pecan varieties recommended for Mississippi home plantings",
+      "description": "MSU Extension P966 lists these pecan varieties for Mississippi home plantings"
+    },
+    {
+      "name": "Early-season non-astringent oriental persimmon cultivars for Mississippi",
+      "description": "MSU Extension P966 lists these non-astringent oriental persimmons as early-season cultivars"
+    },
+    {
+      "name": "Mid-season non-astringent oriental persimmon cultivars for Mississippi",
+      "description": "MSU Extension P966 lists these non-astringent oriental persimmons as mid-season cultivars"
+    },
+    {
+      "name": "Late-season non-astringent oriental persimmon cultivars for Mississippi",
+      "description": "MSU Extension P966 lists these non-astringent oriental persimmons as late-season cultivars"
+    },
+    {
+      "name": "Early-season astringent oriental persimmon cultivars for Mississippi",
+      "description": "MSU Extension P966 lists these astringent oriental persimmons as early-season cultivars"
+    },
+    {
+      "name": "Mid-season astringent oriental persimmon cultivars for Mississippi",
+      "description": "MSU Extension P966 lists these astringent oriental persimmons as mid-season cultivars"
+    },
+    {
+      "name": "Japanese-type plum varieties for Mississippi",
+      "description": "MSU Extension P966 lists these Japanese-type plum varieties for Mississippi"
+    },
+    {
+      "name": "Strawberry varieties for North Mississippi matted-row systems",
+      "description": "MSU Extension P966 lists these strawberries for North Mississippi matted-row production systems"
+    },
+    {
+      "name": "Strawberry varieties for South Mississippi annual hill systems",
+      "description": "MSU Extension P966 lists these strawberries for South Mississippi annual hill black-plastic-mulch production systems"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_list_items",
+      "start_after_text": "Fruit and Nut Recommendations for Mississippi",
+      "stop_headings": ["Download"],
+      "dedupe_keys": ["plant_type", "name"],
+      "section_rules": [
+        {
+          "text": "Apples",
+          "category": "Apple varieties recommended for Mississippi",
+          "plant_type": "Apple"
+        },
+        {
+          "text": "Cherries",
+          "category": "Tart cherries for North Mississippi",
+          "plant_type": "Sour Cherry"
+        },
+        {
+          "text": "Figs",
+          "category": "Fig varieties for Mississippi",
+          "plant_type": "Fig"
+        },
+        {
+          "text": "Grapes, Muscadine",
+          "category": "Muscadine varieties for Mississippi",
+          "plant_type": "Muscadine"
+        },
+        {
+          "text": "Pears",
+          "category": "Pear varieties for Mississippi",
+          "plant_type": "Euro Pear"
+        },
+        {
+          "text": "Asian Pear Varieties",
+          "category": "Asian pear varieties for Mississippi",
+          "plant_type": "Asian Pear"
+        },
+        {
+          "text": "Plums",
+          "category": "Japanese-type plum varieties for Mississippi",
+          "plant_type": "Japanese Plum"
+        },
+        {
+          "text": "Strawberries",
+          "category": "Strawberry varieties for North Mississippi matted-row systems",
+          "plant_type": "Strawberry"
+        }
+      ],
+      "subheading_rules": [
+        {
+          "text": "Recommended for Trial",
+          "section": "Apples",
+          "category": "Apple varieties recommended for trial in Mississippi",
+          "plant_type": "Apple"
+        },
+        {
+          "text": "Coastal Region",
+          "section": "Apples",
+          "category": "Low-chill apple varieties for coastal Mississippi",
+          "plant_type": "Apple"
+        },
+        {
+          "text": "Thorny",
+          "section": "Blackberries",
+          "category": "Thorny blackberry varieties for Mississippi",
+          "plant_type": "Blackberry"
+        },
+        {
+          "text": "Thornless",
+          "section": "Blackberries",
+          "category": "Thornless blackberry varieties for Mississippi",
+          "plant_type": "Blackberry"
+        },
+        {
+          "text": "Early-Season Varieties",
+          "section": "Blueberries",
+          "category": "Early-season rabbiteye blueberry varieties for Mississippi",
+          "plant_type": "Blueberry"
+        },
+        {
+          "text": "Mid- to Late-Season Varieties",
+          "section": "Blueberries",
+          "category": "Mid- to late-season rabbiteye blueberry varieties for Mississippi",
+          "plant_type": "Blueberry"
+        },
+        {
+          "text": "Southern Highbush Varieties",
+          "section": "Blueberries",
+          "category": "Southern highbush blueberry varieties for Mississippi",
+          "plant_type": "Blueberry"
+        },
+        {
+          "text": "North Mississippi",
+          "section": "Grapes, Bunch",
+          "category": "Bunch grapes for North Mississippi",
+          "plant_type": "Grape"
+        },
+        {
+          "text": "South Mississippi",
+          "section": "Grapes, Bunch",
+          "category": "Bunch grapes for South Mississippi",
+          "plant_type": "Grape"
+        },
+        {
+          "text": "Local Selection Recommended for Trial Planting",
+          "section": "Pears",
+          "category": "Local pear selections recommended for trial in Mississippi",
+          "plant_type": "Euro Pear"
+        },
+        {
+          "text": "Early Season",
+          "section": "Persimmons, Oriental or Japanese",
+          "subsection": "Non-astringent Cultivars",
+          "category": "Early-season non-astringent oriental persimmon cultivars for Mississippi",
+          "plant_type": "Persimmon"
+        },
+        {
+          "text": "Mid-Season",
+          "section": "Persimmons, Oriental or Japanese",
+          "subsection": "Non-astringent Cultivars",
+          "category": "Mid-season non-astringent oriental persimmon cultivars for Mississippi",
+          "plant_type": "Persimmon"
+        },
+        {
+          "text": "Late Season",
+          "section": "Persimmons, Oriental or Japanese",
+          "subsection": "Non-astringent Cultivars",
+          "category": "Late-season non-astringent oriental persimmon cultivars for Mississippi",
+          "plant_type": "Persimmon"
+        },
+        {
+          "text": "Early Season",
+          "section": "Persimmons, Oriental or Japanese",
+          "subsection": "Astringent Cultivars",
+          "category": "Early-season astringent oriental persimmon cultivars for Mississippi",
+          "plant_type": "Persimmon"
+        },
+        {
+          "text": "Mid-Season",
+          "section": "Persimmons, Oriental or Japanese",
+          "subsection": "Astringent Cultivars",
+          "category": "Mid-season astringent oriental persimmon cultivars for Mississippi",
+          "plant_type": "Persimmon"
+        }
+      ],
+      "row_overrides": {
+        "Dormanred Raspberry": {
+          "name": "Dormanred",
+          "plant_type": "Raspberry",
+          "category": "Raspberry variety listed in Mississippi caneberry recommendations"
+        },
+        "Tangi": {
+          "category": "Strawberry varieties for South Mississippi annual hill systems"
+        },
+        "Chandler": {
+          "category": "Strawberry varieties for South Mississippi annual hill systems"
+        },
+        "Douglas": {
+          "category": "Strawberry varieties for South Mississippi annual hill systems"
+        },
+        "Florida 90": {
+          "category": "Strawberry varieties for South Mississippi annual hill systems"
+        }
+      },
+      "harvest_from_key": "description",
+      "harvest_term_priority": true,
+      "harvest_term_prefix": true,
+      "harvest_terms": ["Ripens", "Ripe", "Matures", "Harvest"],
+      "description_key": "description"
+    },
+    {
+      "kind": "colon_paragraph_blocks",
+      "start_after_text": "Fruit and Nut Recommendations for Mississippi",
+      "stop_prefixes": ["Oriental persimmons"],
+      "category_rules": [
+        {
+          "tags": ["h2"],
+          "texts": ["Pecans"]
+        }
+      ],
+      "paragraph_pattern": "$a",
+      "generated_rows": [
+        {
+          "text_prefix": "Varieties recommended for home plantings are",
+          "rows": [
+            {
+              "name": "Forkert",
+              "category": "Pecan varieties recommended for Mississippi home plantings"
+            },
+            {
+              "name": "Owens",
+              "category": "Pecan varieties recommended for Mississippi home plantings"
+            },
+            {
+              "name": "Sumner",
+              "category": "Pecan varieties recommended for Mississippi home plantings"
+            },
+            {
+              "name": "Elliott",
+              "category": "Pecan varieties recommended for Mississippi home plantings"
+            },
+            {
+              "name": "Pawnee",
+              "category": "Pecan varieties recommended for Mississippi home plantings"
+            },
+            {
+              "name": "Candy",
+              "category": "Pecan varieties recommended for Mississippi home plantings"
+            },
+            {
+              "name": "Melrose",
+              "category": "Pecan varieties recommended for Mississippi home plantings"
+            },
+            {
+              "name": "Jackson",
+              "category": "Pecan varieties recommended for Mississippi home plantings"
+            }
+          ]
+        }
+      ],
+      "plant_type": "Pecan",
+      "category": {"row_key": "category"},
+      "description_template": "MSU Extension P966 recommends {name} for Mississippi home pecan plantings and says disease resistance is the primary trait for home plantings"
+    },
+    {
+      "kind": "html_table",
+      "table_index": 0,
+      "required_headers": [
+        "Variety",
+        "Stone",
+        "Required chilling hours",
+        "Average maturity date"
+      ],
+      "plant_type": "Peach",
+      "name_key": "variety",
+      "category": "Peach varieties for North Mississippi",
+      "harvest_key": "average_maturity_date",
+      "row_overrides": {
+        "Bicentennial": {
+          "category": "Peach varieties for both North and South Mississippi",
+          "average_maturity_date": "June 4 north of Hattiesburg; May 26 south of Hattiesburg",
+          "required_chilling_hours": "700 north of Hattiesburg; 750 south of Hattiesburg"
+        },
+        "Harvester": {
+          "category": "Peach varieties for both North and South Mississippi",
+          "average_maturity_date": "June 29 north of Hattiesburg; June 15 south of Hattiesburg",
+          "required_chilling_hours": "700 north of Hattiesburg; 750 south of Hattiesburg"
+        },
+        "Dixiland": {
+          "category": "Peach varieties for both North and South Mississippi",
+          "average_maturity_date": "July 22 north of Hattiesburg; July 20 south of Hattiesburg",
+          "required_chilling_hours": "750"
+        }
+      },
+      "description_labels": [
+        ["stone", "Stone"],
+        ["required_chilling_hours", "Required chilling hours"]
+      ]
+    },
+    {
+      "kind": "html_table",
+      "table_index": 1,
+      "required_headers": [
+        "Variety",
+        "Stone",
+        "Required chilling hours",
+        "Average maturity date"
+      ],
+      "plant_type": "Peach",
+      "name_key": "variety",
+      "category": "Peach varieties for South Mississippi",
+      "skip_names": ["Bicentennial", "Harvester", "Dixiland"],
+      "harvest_key": "average_maturity_date",
+      "description_labels": [
+        ["stone", "Stone"],
+        ["required_chilling_hours", "Required chilling hours"]
+      ]
+    }
+  ]
+}

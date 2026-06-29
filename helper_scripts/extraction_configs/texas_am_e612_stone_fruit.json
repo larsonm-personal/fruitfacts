@@ -61,6 +61,14 @@
     "ArmKing": {
       "name": "Armking",
       "note": "Source names this as ArmKing"
+    },
+    "Redgold": {
+      "name": "Red Gold",
+      "note": "Source names this as Redgold"
+    },
+    "All-In-One": {
+      "name": "All-in-One",
+      "note": "Source names this as All-In-One"
     }
   },
   "extractors": [

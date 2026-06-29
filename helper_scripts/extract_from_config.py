@@ -14,6 +14,7 @@ from fruitfacts_extract.pdf_tools import clean_pdf_layout_text
 from fruitfacts_extract.pdf_tools import pdf_url_to_text
 from fruitfacts_extract.pdf_table_tools import fixed_width_table_rows
 from fruitfacts_extract.pdf_table_tools import catalog_entry_rows
+from fruitfacts_extract.pdf_table_tools import line_matches_any
 from fruitfacts_extract.pdf_table_tools import numbered_block_rows
 from fruitfacts_extract.pdf_table_tools import pdf_bullet_list_rows
 from fruitfacts_extract.pdf_table_tools import pdf_quoted_entry_rows
@@ -119,6 +120,20 @@ def row_overrides(row, extractor):
     new_row = dict(row)
     new_row.update(override)
     return new_row
+
+
+def dedupe_rows(rows, keys):
+    if not keys:
+        return rows
+    seen = set()
+    deduped = []
+    for row in rows:
+        signature = tuple(row.get(key) for key in keys)
+        if signature in seen:
+            continue
+        seen.add(signature)
+        deduped.append(row)
+    return deduped
 
 
 def apply_text_fixes(text, fixes):
@@ -415,6 +430,189 @@ def plants_from_html_table(page, extractor, overrides, lookups):
     )
 
 
+def html_rule_matches(tag, text, state, rule):
+    if rule.get("tag") and tag != rule["tag"]:
+        return False
+    if rule.get("tags") and tag not in rule["tags"]:
+        return False
+    if rule.get("text") and text != rule["text"]:
+        return False
+    if rule.get("texts") and text not in rule["texts"]:
+        return False
+    if rule.get("prefix") and not text.startswith(rule["prefix"]):
+        return False
+    if rule.get("section") and state.get("section") != rule["section"]:
+        return False
+    if rule.get("subsection") and state.get("subsection") != rule["subsection"]:
+        return False
+    return True
+
+
+def html_rule_values(rule):
+    keys = {
+        "tag",
+        "tags",
+        "text",
+        "texts",
+        "prefix",
+        "section",
+        "subsection",
+    }
+    return {key: value for key, value in rule.items() if key not in keys}
+
+
+def apply_html_rules(tag, text, state, rules):
+    for rule in rules:
+        if html_rule_matches(tag, text, state, rule):
+            state.update(html_rule_values(rule))
+            return True
+    return False
+
+
+def parse_html_list_item(text, extractor):
+    pattern = extractor.get(
+        "item_pattern",
+        r"^(?P<name>[^:]+):\s*(?P<description>.+)$",
+    )
+    match = re.match(pattern, text)
+    if not match:
+        return None
+    row = {}
+    for key in ("name", "description"):
+        value = match.groupdict().get(key)
+        if value:
+            row[extractor.get(key + "_key", key)] = value.strip()
+    return row
+
+
+def html_list_item_rows(page, extractor):
+    rows = []
+    started = not extractor.get("start_after_text")
+    state = {
+        "section": None,
+        "subsection": None,
+        "category": None,
+        "plant_type": None,
+    }
+
+    for tag, text in page.blocks:
+        if not started:
+            if text == extractor["start_after_text"]:
+                started = True
+            continue
+
+        if tag.startswith("h") and text in extractor.get("stop_headings", []):
+            break
+
+        if tag == "h2":
+            state = {
+                "section": text,
+                "subsection": None,
+                "category": None,
+                "plant_type": None,
+            }
+            apply_html_rules(tag, text, state, extractor.get("section_rules", []))
+            continue
+
+        if tag == "h3":
+            state["subsection"] = text
+            apply_html_rules(tag, text, state, extractor.get("subheading_rules", []))
+            continue
+
+        if tag.startswith("h"):
+            apply_html_rules(tag, text, state, extractor.get("subheading_rules", []))
+            continue
+
+        if tag != "li" or not state.get("category") or not state.get("plant_type"):
+            continue
+        if line_matches_any(text, extractor.get("skip_item_patterns", [])):
+            continue
+
+        row = parse_html_list_item(text, extractor)
+        if not row:
+            continue
+        row.update(
+            {
+                "section": state.get("section"),
+                "subsection": state.get("subsection"),
+                "category": state.get("category"),
+                "plant_type": state.get("plant_type"),
+            }
+        )
+        rows.append(row)
+
+    return rows
+
+
+def plants_from_html_list_items(page, extractor, overrides, lookups):
+    extractor = {
+        "name_key": "name",
+        "description_key": "description",
+        "category": {"row_key": "category"},
+        "plant_type": {"row_key": "plant_type"},
+        **extractor,
+    }
+    rows = html_list_item_rows(page, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
+    return plant_records_from_config_rows(rows, extractor, overrides, lookups)
+
+
+def suffix_mapped_row(row, extractor):
+    name_key = extractor.get("name_key", "name")
+    name = row.get(name_key, "")
+    for rule in extractor.get("name_suffix_type_map", []):
+        suffix = rule["suffix"]
+        if not name.endswith(suffix):
+            continue
+        row = dict(row)
+        row[name_key] = name[: -len(suffix)].strip()
+        for key, value in rule.items():
+            if key != "suffix":
+                row[key] = value
+        return row
+    return row
+
+
+def html_name_matrix_rows(page, extractor):
+    name_key = extractor.get("name_key", "name")
+    table = page.tables[extractor["table_index"]]
+    rows = []
+    group_values = {}
+    skip_patterns = extractor.get("skip_cell_patterns", [])
+    skip_cells = set(extractor.get("skip_cells", []))
+    group_cells = extractor.get("group_cells", {})
+
+    for source_row in table:
+        for cell in source_row:
+            cell = clean_text(
+                apply_text_fixes(cell, extractor.get("cell_text_fixes", {}))
+            )
+            if not cell or cell in skip_cells or line_matches_any(cell, skip_patterns):
+                continue
+            if cell in group_cells:
+                group_values = dict(group_cells[cell])
+                continue
+            row = {name_key: cell}
+            row.update(extractor.get("row_fields", {}))
+            row.update(group_values)
+            rows.append(suffix_mapped_row(row, extractor))
+
+    return rows
+
+
+def plants_from_html_name_matrix(page, extractor, overrides, lookups):
+    extractor = {"name_key": "name", **extractor}
+    rows = html_name_matrix_rows(page, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
+    return plant_records_from_config_rows(rows, extractor, overrides, lookups)
+
+
 def pdf_marker_list_rows(text, extractor):
     section = text
     if extractor.get("section_start"):
@@ -703,6 +901,10 @@ def extract(config):
         extractor = merged_extractor(config, source_extractor)
         if extractor["kind"] == "html_table":
             plants.extend(plants_from_html_table(data, extractor, overrides, lookups))
+        elif extractor["kind"] == "html_list_items":
+            plants.extend(plants_from_html_list_items(data, extractor, overrides, lookups))
+        elif extractor["kind"] == "html_name_matrix":
+            plants.extend(plants_from_html_name_matrix(data, extractor, overrides, lookups))
         elif extractor["kind"] == "pdf_marker_list":
             plants.extend(plants_from_pdf_marker_list(data, extractor, overrides, lookups))
         elif extractor["kind"] == "pdf_fixed_width_table":

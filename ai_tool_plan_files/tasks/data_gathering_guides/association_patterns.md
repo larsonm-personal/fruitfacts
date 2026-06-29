@@ -100,6 +100,14 @@ Second pass:
   rules. A quoted cultivar at the start of a sentence may be a new record, but
   a quoted cultivar inside another cultivar's description is usually a
   pollinizer, parent, comparison, or figure caption.
+- HTML list pages can use `li` entries as cultivar rows when each item starts
+  with `Name:` and the nearest headings carry crop, region, or season meaning.
+  Keep those heading rules declarative so category changes are visible during
+  review.
+- Compact cultivar-grid tables may have no true row headers. Treat ordinary
+  cells as names, group-label cells as category switches, and suffixes such as
+  ` Plum` or ` Sour Cherry` as type hints only when the source pattern is
+  consistent.
 
 ## Locations
 
@@ -163,6 +171,9 @@ Second pass:
   the source-facing name in `AKA`.
 - If a source typo is corrected during encoding, leave a short comment with the
   source spelling or the reason for the correction.
+- If a source packs a caveat into the displayed name, such as a regional
+  parenthetical, keep the cultivar name clean and move the caveat into
+  `description` or a source note.
 
 ## Harvest Times
 

@@ -59,6 +59,9 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
 - `extract_from_config.py`
   - A config runner for simple sources that can be expressed as source
     metadata plus table, paragraph, or marker-list mappings
+  - Heading-aware HTML list items and unheaded HTML name-matrix tables for
+    extension pages where recommendations are nested under crop headings or
+    displayed as compact cultivar grids
   - Uses strict JSON config files under `helper_scripts/extraction_configs/`
     so the Python standard library can parse them
 - `extract_source.py`
@@ -98,6 +101,10 @@ script. The config runner currently supports:
 - HTML paragraph blocks where each useful paragraph starts with a quoted
   cultivar name
 - HTML paragraph blocks where each useful paragraph starts with `Name:`
+- HTML list items where `Name: description` entries inherit crop/category
+  context from `h2`, `h3`, and `h4` headings
+- HTML name-matrix tables where each cell is a cultivar name, including
+  optional group labels, suffix-to-type mapping, and generated source notes
 - Lookup tables keyed by cultivar, such as disease rating tables
 - Declarative row splits for source rows that clearly contain two varieties
 - Generated rows for source notes that explicitly name a small fixed set of
@@ -197,6 +204,12 @@ Source-specific scripts should do:
 - Texas A&M E-612 stone fruit: raw PDF quoted cultivar entries where
   `pdftotext` splits initial letters from names and some cultivar mentions
   inside descriptions should not become separate records
+- MSState P966 fruit and nut recommendations: HTML `li` entries where source
+  headings carry the crop, region, season, and astringency context, plus
+  separate HTML peach tables and a generated-row pecan home-planting list
+- NDSU FN590 jams and jellies: unheaded HTML cultivar grids embedded in a food
+  preservation publication, with group cells for raspberry bearing type,
+  suffix-to-type mapping for Prunus names, and prose-generated Juneberry rows
 
 ## Manifest Configs
 
@@ -254,6 +267,21 @@ narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
   rows.
 - Do not commit downloaded PDFs directly unless the DVC asset workflow is being
   used
+
+## HTML Lessons
+
+- When extension pages expose both a PDF and a clean HTML publication, inspect
+  the HTML first. P966's HTML list items and peach tables were cleaner than
+  parsing the PDF paragraphs.
+- For list pages where headings carry the source meaning, keep the heading
+  rules in config. This makes category switches such as Mississippi's
+  non-astringent and astringent persimmon seasons reviewable.
+- For unheaded cultivar-grid tables, treat group labels and suffixes as parser
+  inputs rather than cultivar names. NDSU FN590 uses cells such as `Summer
+  Bearing`, `Alderman Plum`, and `Bali Sour Cherry`, each of which needs a
+  different row interpretation.
+- If a source cell contains a regional caveat in parentheses, keep the cultivar
+  name clean and move the caveat to a source note.
 
 ## Next Library Steps
 

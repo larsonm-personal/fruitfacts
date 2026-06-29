@@ -434,3 +434,44 @@ The parser treats quoted names at the start of a line or after a sentence
 boundary as entry starts, while quoted names inside descriptions stay in the
 description. The committed reference covers plums, nectarines, apricots, sweet
 cherries, and the single almond variety named by the source.
+
+## MSState P966 Fruit And Nut Notes
+
+Mississippi State P966 is a broad HTML publication with a PDF fallback. The
+HTML page is easier to parse because most cultivar descriptions are `li` items
+in the form `Name: description`, while headings carry crop, region, season, or
+persimmon astringency context. The peach recommendations are separate HTML
+tables with chilling hours and average maturity dates.
+
+The config uses `html_list_items` for the heading-aware lists, two
+`html_table` extractors for the north and south Mississippi peach tables, and
+a generated-row paragraph for the home-planting pecan list. It keeps
+`needs_help` because the source also has narrative regional pecan lists and
+some rows, such as Cardinal strawberry, appear in more than one source group.
+Peaches repeated in both north and south tables are merged into one record
+with combined regional maturity and chilling-hour notes because the import
+schema allows only one collection item per type and name.
+
+This source added optional row dedupe for repeated list entries and showed why
+harvest extraction sometimes needs sentence-prefix matching. Broad substring
+matching caught phrases such as `ripen properly`, while prefix matching keeps
+only sentences that start with timing terms such as `Ripens`.
+
+## NDSU FN590 Jams And Jellies Notes
+
+NDSU FN590 is not primarily a horticulture publication, but its early sections
+contain useful fruit cultivar grids for North Dakota gardeners. The tables are
+not normal data tables with headers per cultivar row. Instead, most useful
+cells are just cultivar names, and some cells are group labels or names with
+type suffixes.
+
+The config uses `html_name_matrix` for the strawberry, raspberry, apple, grape,
+and Prunus grids. Raspberry rows inherit summer-bearing or fall-bearing
+category context from group cells. Prunus rows map suffixes such as ` Plum`,
+` Sour Cherry`, and ` Apricot` into plant types. Grape rows with parenthetical
+regional caveats are normalized to clean cultivar names with source notes.
+
+The Juneberry section names cultivars in prose rather than a table, so the
+config uses fixed generated rows under `colon_paragraph_blocks`. The reference
+keeps `needs_help` because the publication is a mixed food-preservation source
+and does not provide complete cultivar detail for every fruit crop it discusses.

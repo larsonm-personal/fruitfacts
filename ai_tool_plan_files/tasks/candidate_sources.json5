@@ -1440,7 +1440,7 @@
         },
         {
             id: "msstate-fruit-nut-recommendations-mississippi-p966",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Fruit and Nut Recommendations for Mississippi",
             institution: "Mississippi State University Extension",
@@ -1477,7 +1477,12 @@
                 "Existing Mississippi references cover blueberries and muscadine trials, not this broad recommendation guide",
             notes: [
                 "Official landing page has both HTML content and a PDF download",
-                "PDF text uses long sectioned cultivar paragraphs, so HTML may be cleaner but still needs crop-section parsing"
+                "PDF text uses long sectioned cultivar paragraphs, so HTML may be cleaner but still needs crop-section parsing",
+                "Encoded in plant_database/references/Mississippi/MSState P966 Fruit and Nut Recommendations for Mississippi.json5",
+                "Config extraction added at helper_scripts/extraction_configs/msstate_p966_fruit_nut_recommendations.json",
+                "Manifest entry added as msstate_p966_fruit_nut_recommendations",
+                "Worked example for HTML list items that inherit crop, region, season, and astringency categories from headings",
+                "Peach tables and home-planting pecan paragraph are included; broader regional pecan paragraph lists remain a review caveat"
             ]
         },
         {
@@ -1703,7 +1708,7 @@
         },
         {
             id: "ndsu-jams-jellies-north-dakota-fruits-fn590",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "From the Garden or Orchard to the Table: Jams and Jellies from North Dakota Fruits",
             institution: "North Dakota State University Extension",
@@ -1736,7 +1741,12 @@
                 "No North Dakota reference directory or candidate found during duplicate scan",
             notes: [
                 "Not a pure horticulture guide, but it lists hardy apples, grapes, and Prunus selections for North Dakota",
-                "Extraction is awkward because cultivar lists appear inside recipe and preservation narrative plus PDF tables"
+                "Extraction is awkward because cultivar lists appear inside recipe and preservation narrative plus PDF tables",
+                "Encoded in plant_database/references/North Dakota/NDSU FN590 Jams and Jellies from North Dakota Fruits.json5",
+                "Config extraction added at helper_scripts/extraction_configs/ndsu_fn590_jams_jellies_fruits.json",
+                "Manifest entry added as ndsu_fn590_jams_jellies_fruits",
+                "Worked example for unheaded HTML cultivar-grid tables with group cells, suffix-to-type mapping, and source-note cleanup",
+                "Currant and gooseberry narrative does not name specific cultivars, so no cultivar rows were added for those crops"
             ]
         },
         {

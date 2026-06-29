@@ -1,0 +1,222 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://www.ndsu.edu/agriculture/extension/publications/garden-or-orchard-table-jams-and-jellies-north-dakota-fruits"
+  },
+  "reference_fields": [
+    ["title", "From the Garden or Orchard to the Table: Jams and Jellies from North Dakota Fruits"],
+    ["author", "Ron Smith"],
+    ["description", "NDSU Extension FN590 guide with garden fruit cultivar lists embedded in a jam and jelly publication"],
+    ["url", "https://www.ndsu.edu/agriculture/extension/publications/garden-or-orchard-table-jams-and-jellies-north-dakota-fruits"],
+    ["thumbnail", "website"],
+    ["publication_number", "FN590"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "North Dakota State University Extension, Fargo, North Dakota",
+      "latitude": 46.8926,
+      "longitude": -96.8020
+    }
+  ],
+  "categories": [
+    {
+      "name": "Strawberry cultivars for North Dakota gardens",
+      "description": "NDSU FN590 Table 1 lists these strawberry cultivars for North Dakota gardens"
+    },
+    {
+      "name": "Summer-bearing raspberry cultivars for North Dakota gardens",
+      "description": "NDSU FN590 Table 2 lists these summer-bearing raspberry cultivars for North Dakota gardens"
+    },
+    {
+      "name": "Fall-bearing raspberry cultivars for North Dakota gardens",
+      "description": "NDSU FN590 Table 2 lists these fall-bearing raspberry cultivars for North Dakota gardens"
+    },
+    {
+      "name": "Hardy apple cultivars for the northern prairie region",
+      "description": "NDSU FN590 Table 3 lists these hardy apple cultivars for the northern prairie region"
+    },
+    {
+      "name": "Hardy grape cultivars for North Dakota",
+      "description": "NDSU FN590 Table 4 lists these hardy grape cultivars for North Dakota"
+    },
+    {
+      "name": "Prunus fruits for North Dakota jams and jellies",
+      "description": "NDSU FN590 Table 5 lists these plums, cherries, and apricots as members of the Prunus group to consider for jellies and jams"
+    },
+    {
+      "name": "Juneberry cultivars for North Dakota home gardens",
+      "description": "NDSU FN590 names these Juneberry cultivars in its Juneberries section"
+    }
+  ],
+  "name_overrides": {
+    "Gloosecap": {
+      "name": "Glooscap",
+      "note": "Source table spells this Gloosecap"
+    },
+    "Dolgo Grabapple": {
+      "name": "Dolgo",
+      "note": "Source table spells this Dolgo Grabapple"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_name_matrix",
+      "table_index": 0,
+      "row_fields": {
+        "plant_type": "Strawberry",
+        "category": "Strawberry cultivars for North Dakota gardens"
+      },
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "description_template": "NDSU FN590 lists {name} among strawberry cultivars that reflect successful North Dakota trials"
+    },
+    {
+      "kind": "html_name_matrix",
+      "table_index": 1,
+      "row_fields": {
+        "plant_type": "Raspberry"
+      },
+      "group_cells": {
+        "Summer Bearing": {
+          "category": "Summer-bearing raspberry cultivars for North Dakota gardens",
+          "bearing": "summer-bearing"
+        },
+        "Fall Bearing": {
+          "category": "Fall-bearing raspberry cultivars for North Dakota gardens",
+          "bearing": "fall-bearing"
+        }
+      },
+      "skip_cell_patterns": ["^\\*"],
+      "name_suffix_notes": [
+        {
+          "suffix": "*",
+          "note": "Source footnote says this cultivar is trial in North Dakota only, tested in Wisconsin and Minnesota"
+        }
+      ],
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "description_template": "NDSU FN590 lists this cultivar among {bearing} raspberry cultivars for North Dakota gardens"
+    },
+    {
+      "kind": "html_name_matrix",
+      "table_index": 2,
+      "row_fields": {
+        "plant_type": "Apple",
+        "category": "Hardy apple cultivars for the northern prairie region"
+      },
+      "row_splits": [
+        {
+          "match": {
+            "name": "Haralson and Haralred"
+          },
+          "rows": [
+            {
+              "name": "Haralson"
+            },
+            {
+              "name": "Haralred"
+            }
+          ],
+          "source_note": "Source table lists Haralson and Haralred in one cell"
+        }
+      ],
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "description_template": "NDSU FN590 lists {name} among the hardiest apple cultivars for the northern prairie region and says the listed apples make excellent applesauce"
+    },
+    {
+      "kind": "html_name_matrix",
+      "table_index": 3,
+      "row_fields": {
+        "plant_type": "Grape",
+        "category": "Hardy grape cultivars for North Dakota"
+      },
+      "row_overrides": {
+        "Bluebell (southern half of state)": {
+          "name": "Bluebell",
+          "_source_note": "Source table limits Bluebell to the southern half of North Dakota"
+        },
+        "Swenson Red (sourthern half of state)": {
+          "name": "Swenson Red",
+          "_source_note": "Source table limits Swenson Red to the southern half of North Dakota and spells southern as sourthern"
+        }
+      },
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "description_template": "NDSU FN590 lists {name} among hardy grape cultivars that can be grown in North Dakota and says all listed grapes make excellent jelly"
+    },
+    {
+      "kind": "html_name_matrix",
+      "table_index": 4,
+      "row_fields": {
+        "category": "Prunus fruits for North Dakota jams and jellies"
+      },
+      "name_suffix_type_map": [
+        {
+          "suffix": " Sour Cherry",
+          "plant_type": "Sour Cherry"
+        },
+        {
+          "suffix": " Cherry",
+          "plant_type": "Sour Cherry"
+        },
+        {
+          "suffix": " Plum",
+          "plant_type": "Japanese Plum"
+        },
+        {
+          "suffix": " Apricot",
+          "plant_type": "Apricot"
+        }
+      ],
+      "row_overrides": {
+        "Nanking": {
+          "plant_type": "Nanking Cherry"
+        }
+      },
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "description_template": "NDSU FN590 lists {name} among Prunus fruits to consider for North Dakota jellies and jams"
+    },
+    {
+      "kind": "colon_paragraph_blocks",
+      "start_after_text": "From the Garden or Orchard to the Table: Jams and Jellies from North Dakota Fruits",
+      "stop_prefixes": ["Rhubarb"],
+      "category_rules": [
+        {
+          "tags": ["h3"],
+          "texts": ["Juneberries"]
+        }
+      ],
+      "paragraph_pattern": "$a",
+      "generated_rows": [
+        {
+          "text_prefix": "There are many cultivars available on the market",
+          "rows": [
+            {
+              "name": "Moonlake"
+            },
+            {
+              "name": "Northline"
+            },
+            {
+              "name": "Pembina"
+            },
+            {
+              "name": "Honeywood"
+            },
+            {
+              "name": "Smoky"
+            }
+          ]
+        }
+      ],
+      "plant_type": "Saskatoon",
+      "category": "Juneberry cultivars for North Dakota home gardens",
+      "description_template": "NDSU FN590 names {name} in its Juneberry section for North Dakota home gardeners"
+    }
+  ]
+}
