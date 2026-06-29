@@ -1,0 +1,69 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://pubs.ext.vt.edu/422/422-018/422-018.html"
+  },
+  "reference_fields": [
+    ["title", "Growing Cherries in Virginia"],
+    ["author", "Richard P. Marini"],
+    ["description", "VCE cherry guide with tart, dark sweet, and light sweet cherry variety descriptions, harvest timing, fruit quality, cracking, and pollination context"],
+    ["url", "https://pubs.ext.vt.edu/422/422-018/422-018.html"],
+    ["thumbnail", "website"],
+    ["published", "Sep 21, 2020"],
+    ["reviewed", "Nov 2025"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Virginia Tech, Blacksburg, VA",
+      "latitude": 37.20248218528102,
+      "longitude": -80.5631271567992
+    }
+  ],
+  "categories": [
+    {
+      "name": "Tart cherry varieties described for Virginia",
+      "description": "Tart cherry varieties described in VCE 422-018"
+    },
+    {
+      "name": "Dark sweet cherry varieties described for Virginia",
+      "description": "Dark sweet cherry varieties described in VCE 422-018"
+    },
+    {
+      "name": "Light sweet cherry varieties described for Virginia",
+      "description": "Light sweet cherry varieties described in VCE 422-018"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "quoted_paragraph_blocks",
+      "start_heading": "Tart Cherries",
+      "end_heading": "Cherry Pollination",
+      "default_category": "Tart cherry varieties described for Virginia",
+      "category_switches": [
+        {
+          "text": "Dark Sweet Cherries",
+          "category": "Dark sweet cherry varieties described for Virginia"
+        },
+        {
+          "text": "Light Sweet Cherries",
+          "category": "Light sweet cherry varieties described for Virginia"
+        }
+      ],
+      "prepend_name_if_lowercase": true,
+      "harvest_terms": ["ripen"],
+      "plant_type": "Cherry",
+      "category": {"row_key": "category"},
+      "harvest_key": "harvest_time_unparsed",
+      "description_parts": [
+        {
+          "kind": "key",
+          "key": "description",
+          "rstrip_period": false
+        }
+      ]
+    }
+  ]
+}

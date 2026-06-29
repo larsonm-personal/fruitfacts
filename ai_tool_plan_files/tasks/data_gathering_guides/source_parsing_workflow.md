@@ -64,19 +64,21 @@ source-specific script. See
 [Extraction Helper Library](extraction_helper_library.md) for the current
 library boundary.
 
-When the source is a regular HTML table, first try a config-driven extraction
-instead of adding a new per-source Python file:
+When the source is a regular HTML table, a bounded PDF marker list, or a simple
+quoted-paragraph narrative, first try a config-driven extraction instead of
+adding a new per-source Python file:
 
 ```powershell
 python helper_scripts/extract_from_config.py helper_scripts/extraction_configs/uga_c740_apples.json > $env:TEMP\uga_c740_apples.json5
 ```
 
 This is the preferred shape for an eventual omniparser. The config should name
-the source, reference fields, locations, categories, name overrides, table
-headers, key columns, harvest source fields, and labelled description fields.
-The shared runner should own recurring mechanical repairs such as skipping note
-rows or stripping trailing footnote markers from plant names. Curated JSON5
-review still owns source judgment.
+the source, reference fields, locations, categories, name overrides, extraction
+shape, key columns, harvest source fields, and description fields. The shared
+runner should own recurring mechanical repairs such as skipping note rows,
+stripping trailing footnote markers from plant names, merging wrapped table
+name rows, or splitting a clearly combined source row. Curated JSON5 review
+still owns source judgment.
 
 After the first several worked examples, the repeated pieces were moved into
 shared helpers:
@@ -95,7 +97,11 @@ shared helpers:
 - `record_tools.plant_records_from_rows()` for the common case where parsed
   rows map directly to draft plant records
 - `extract_from_config.py` for sources that can be represented as source
-  metadata plus one or more table mappings
+  metadata plus table, paragraph, or marker-list mappings
+
+Existing command names can stay as tiny wrappers around a config. This keeps
+old notes and shell history working while making the real source-specific logic
+declarative.
 
 ## The Art
 
@@ -130,6 +136,10 @@ The committed reference file was then curated by hand. Long source paragraphs
 were compressed into concise descriptions, and vague ripening phrases were kept
 as `harvest_time_unparsed`.
 
+This source remains a Python script for now. The extraction has custom heading
+repair, category-description collection, a special everbearing blackberry note
+that generates multiple rows, and a hand-written harvest phrase matcher.
+
 ## UMaine 2184 Notes
 
 The UMaine strawberry page uses a related but slightly different structure:
@@ -145,13 +155,17 @@ season heading as each plant `category`, uses table ripening values as
 `harvest_time_unparsed` where appropriate, and keeps disease resistance and
 home-garden or plasticulture notes in concise descriptions.
 
+This source remains a Python script for now because it merges narrative
+paragraphs with a summary table and sometimes takes the description from the
+following paragraph.
+
 ## UMaine 2253 Notes
 
 The UMaine highbush blueberry page is a compact HTML table source. The cultivar
 table has headers `Variety`, `Plant Characteristics`, `Fruit Qualities`, and
 `Ripening Season`.
 
-The helper script uses `table_tools.find_table()` and `table_tools.table_to_dicts()`
+The config uses `table_tools.find_table()` and `table_tools.table_to_dicts()`
 for row extraction, then uses `text_tools.join_labelled_values()` to build a
 mechanical draft description from descriptive columns. The curated reference
 compresses those labelled draft sentences into more natural source notes while
@@ -166,7 +180,7 @@ description.
 
 The UMaine peach page is an HTML table source, but the first `Type` column uses
 rowspans. The simple HTML table parser sees the first row in a group as full
-width and later rows as one cell short. The helper script repairs this with
+width and later rows as one cell short. The config runner repairs this with
 `table_tools.fill_leading_group_cells()` before calling
 `table_tools.table_to_dicts()`.
 
@@ -181,17 +195,17 @@ This was the first PDF worked example. The source is short and born-digital, so
 table; it has bounded sections where sentences say `Suggested cultivars
 include ...`.
 
-The helper script uses shared PDF text extraction and then source-specific
-section parsing. A first naive regex stopped at the period inside `A.C. Wendy`,
-so the parser now bounds each category by the next section heading before
-splitting cultivar names.
+The config runner now handles this pattern with `pdf_marker_list` extractors.
+A first naive regex stopped at the period inside `A.C. Wendy`, so the parser
+bounds each category by the next section heading before splitting cultivar
+names.
 
 ## CSU GardenNotes 762 Notes
 
 The blackberry PDF uses the same broad shape as GardenNotes 763: bounded text
 sections with sentences such as `Suggested cultivars include ...`. The helper
-script uses `text_tools.section_between()` and `text_tools.names_after_marker()`
-for those repeated pieces.
+config uses `text_tools.section_between()` and `text_tools.names_after_marker()`
+through `extract_from_config.py` for those repeated pieces.
 
 Unlike the strawberry PDF, some category config fields such as `start`, `end`,
 and `marker` are parser instructions, not source data. The script passes the
@@ -202,7 +216,7 @@ draft so only `name` and `description` are printed.
 
 The grape PDF is another born-digital GardenNotes source, but its cultivar
 lists appear in ordinary prose near the start of the document. The helper
-script uses `text_tools.section_between()` to isolate `Types of Grapes`, then
+config uses `text_tools.section_between()` to isolate `Types of Grapes`, then
 uses `text_tools.names_after_marker()` with explicit end markers.
 
 Explicit end markers matter here because source names such as `St. Theresa`
@@ -212,13 +226,13 @@ would truncate those names.
 ## Penn State Non-Scab Apple Table Notes
 
 The Penn State page is a compact HTML table with headers `Variety`,
-`Characteristics`, and `Ripening Period`. The helper script uses
+`Characteristics`, and `Ripening Period`. The config uses
 `table_tools.find_table()` and `table_tools.table_to_dicts()` so the
-source-specific parser can refer to `row["variety"]`,
+runner can refer to `row["variety"]`,
 `row["characteristics"]`, and `row["ripening_period"]`.
 
-This source also showed why local name harmonization belongs in
-source-specific code. The table uses common or trademark-facing names such as
+This source also showed why local name harmonization belongs in source-local
+config. The table uses common or trademark-facing names such as
 Zestar!, Ginger Gold, Blondee, Cameo, and SunCrisp; the curated file maps those
 to existing FruitFacts canonical names and keeps the source names in
 descriptions.
@@ -252,7 +266,7 @@ the vague season values as `harvest_time_unparsed`.
 ## OSU HYG-1423 Grape Notes
 
 The Ohioline grape page has several HTML tables where the first row is a table
-title and the second row is the real header. The helper script uses
+title and the second row is the real header. The config runner uses
 `table_tools.find_table_with_header_row()` so it can find the actual header row
 inside each table.
 
@@ -265,7 +279,7 @@ rather than inventing a grape-specific disease schema.
 
 The Virginia apple page has a useful HTML cultivar table, but several names are
 split into name-only rows followed by rows with the harvest and trait values.
-The helper script repairs that source shape with
+The config runner repairs that source shape with
 `table_tools.merge_leading_fragment_rows()` before converting rows to
 dictionaries.
 
@@ -279,19 +293,19 @@ description.
 
 The Virginia peach and nectarine page has one HTML cultivar table with
 single-cell category rows for white-fleshed peaches and nectarines. The helper
-script uses `table_tools.table_to_dicts_with_sections()` to retain that section
+config uses `table_tools.table_to_dicts_with_sections()` to retain that section
 context and uses it to choose both plant `category` and `type`.
 
 The official HTML combines Morton and Raritan Rose into one row even though the
-PDF text confirms two dates and two descriptions. That repair stays local to
-the VCE script because it is source-specific judgment. The resulting plant
-descriptions keep a visible note that the HTML row was combined.
+PDF text confirms two dates and two descriptions. That repair is now a
+declarative row split in the VCE config. The resulting plant descriptions keep
+a visible note that the HTML row was combined.
 
 ## VCE 422-018 Cherry Notes
 
 The Virginia cherry page is a narrative source rather than a table. Useful
 cultivar paragraphs are bounded by the `Tart Cherries` and `Cherry Pollination`
-headings, so the helper script uses `html_tools.blocks_between_headings()`.
+headings, so the config runner uses `html_tools.blocks_between_headings()`.
 
 Each cultivar paragraph starts with a quoted cultivar name. The extractor uses
 `text_tools.quoted_name_paragraph()` to split the name from the paragraph, then

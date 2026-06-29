@@ -1,0 +1,171 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://ohioline.osu.edu/factsheet/hyg-1423"
+  },
+  "reference_fields": [
+    ["title", "Growing Grapes in the Home Fruit Planting"],
+    ["author", "Gary Y. Gao"],
+    ["url", "https://ohioline.osu.edu/factsheet/hyg-1423"],
+    ["published", "2017"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "categories": [
+    {
+      "name": "American cultivars suggested for Ohio",
+      "description": "American grape cultivars suggested by OSU for Ohio home fruit plantings"
+    },
+    {
+      "name": "Seedless table grape cultivars suggested for Ohio",
+      "description": "Seedless table grape cultivars suggested by OSU for Ohio home fruit plantings"
+    },
+    {
+      "name": "French-American hybrid cultivars suggested for Ohio",
+      "description": "French-American hybrid grape cultivars suggested by OSU for Ohio home fruit plantings"
+    }
+  ],
+  "lookups": [
+    {
+      "name": "diseases",
+      "kind": "html_table",
+      "header_row": true,
+      "title_contains": "Table 4",
+      "required_headers": [
+        "Cultivar",
+        "Black Rot",
+        "Downy Mildew",
+        "Powdery Mildew",
+        "Botrytis"
+      ],
+      "key": "cultivar",
+      "name_key": "cultivar"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_table",
+      "header_row": true,
+      "title_contains": "Table 1",
+      "required_headers": [
+        "Cultivar",
+        "Color",
+        "Winter Hardiness",
+        "Ripening Season",
+        "Remarks"
+      ],
+      "plant_type": "Grape",
+      "name_key": "cultivar",
+      "category": "American cultivars suggested for Ohio",
+      "harvest_key": "ripening_season",
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["color", "Color"],
+            ["winter_hardiness", "Winter hardiness"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "remarks"
+        },
+        {
+          "kind": "lookup_labels",
+          "lookup": "diseases",
+          "row_key": "cultivar",
+          "prefix": "Relative disease susceptibility: ",
+          "labels": [
+            ["black_rot", "black rot"],
+            ["downy_mildew", "downy mildew"],
+            ["powdery_mildew", "powdery mildew"],
+            ["botrytis", "botrytis"]
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "html_table",
+      "header_row": true,
+      "title_contains": "Table 2",
+      "required_headers": [
+        "Cultivar",
+        "Color",
+        "Winter Hardiness",
+        "Ripening Season",
+        "Remarks"
+      ],
+      "plant_type": "Grape",
+      "name_key": "cultivar",
+      "category": "Seedless table grape cultivars suggested for Ohio",
+      "harvest_key": "ripening_season",
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["color", "Color"],
+            ["winter_hardiness", "Winter hardiness"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "remarks"
+        },
+        {
+          "kind": "lookup_labels",
+          "lookup": "diseases",
+          "row_key": "cultivar",
+          "prefix": "Relative disease susceptibility: ",
+          "labels": [
+            ["black_rot", "black rot"],
+            ["downy_mildew", "downy mildew"],
+            ["powdery_mildew", "powdery mildew"],
+            ["botrytis", "botrytis"]
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "html_table",
+      "header_row": true,
+      "title_contains": "Table 3",
+      "required_headers": [
+        "Cultivar",
+        "Color",
+        "Winter Hardiness",
+        "Ripening Season",
+        "Remarks"
+      ],
+      "plant_type": "Grape",
+      "name_key": "cultivar",
+      "category": "French-American hybrid cultivars suggested for Ohio",
+      "harvest_key": "ripening_season",
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["color", "Color"],
+            ["winter_hardiness", "Winter hardiness"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "remarks"
+        },
+        {
+          "kind": "lookup_labels",
+          "lookup": "diseases",
+          "row_key": "cultivar",
+          "prefix": "Relative disease susceptibility: ",
+          "labels": [
+            ["black_rot", "black rot"],
+            ["downy_mildew", "downy mildew"],
+            ["powdery_mildew", "powdery mildew"],
+            ["botrytis", "botrytis"]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -42,28 +42,38 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
     top-level locations and categories
 - `extract_from_config.py`
   - A config runner for simple sources that can be expressed as source
-    metadata plus table mappings
+    metadata plus table, paragraph, or marker-list mappings
   - Uses strict JSON config files under `helper_scripts/extraction_configs/`
     so the Python standard library can parse them
 
-Source-specific scripts such as `extract_umaine_2172.py`,
-`extract_umaine_2184.py`, and `extract_csu_763.py` should import these helpers
-and keep only the source-specific rules locally.
+Most source-specific scripts should now be either replaced by a config or kept
+as a tiny compatibility wrapper around `extract_from_config.py`. Scripts such
+as `extract_umaine_2172.py` and `extract_umaine_2184.py` still contain real
+source-specific logic and should keep it local until a reusable pattern is
+clear.
 
-For regular HTML table sources, prefer a config file before adding another
-source-specific script. The config runner currently supports:
+For regular sources, prefer a config file before adding another source-specific
+script. The config runner currently supports:
 
 - HTML sources fetched with the shared browser-like user agent
+- Born-digital PDF sources extracted through `pdftotext`
 - Simple tables where the first row is the header
 - Tables with source title rows before the real header row
 - Required-header table selection
 - Key-column filtering for footnotes and note rows
+- Table transforms for leading rowspans, leading name fragments, and section
+  rows
+- PDF marker lists inside bounded sections
+- HTML paragraph blocks where each useful paragraph starts with a quoted
+  cultivar name
+- Lookup tables keyed by cultivar, such as disease rating tables
+- Declarative row splits for source rows that clearly contain two varieties
 - Optional category, location, harvest, and labelled description mapping
 - Name overrides and trailing footnote-marker stripping
 
-The worked UGA C740 and C742 configs show the intended direction: no
+The worked UGA C740 and C742 configs show the ideal direction: no
 source-specific Python file, only a source config that drives the shared
-extractor.
+extractor. Older command names are kept as wrappers where useful for continuity.
 
 ## Boundary
 
@@ -85,6 +95,9 @@ Source-specific scripts should do:
 - Resolve likely aliases or source typos with `needs_help`
 - Choose which source wording becomes `description`
 - Decide whether timing belongs in `harvest_time_unparsed`
+- Stay in source-specific Python when the source needs custom generated rows,
+  nontrivial narrative merging, or source-specific typo repair that has not
+  repeated elsewhere
 
 ## Worked Patterns
 
@@ -119,6 +132,29 @@ Source-specific scripts should do:
   title-row tables, footnote-row skipping, source name overrides, and trailing
   footnote-marker stripping
 
+## Converted Configs
+
+These earlier source-specific scripts now have strict JSON configs that
+reproduce the old script stdout exactly:
+
+- `extract_csu_762.py` -> `extraction_configs/csu_762_blackberries.json`
+- `extract_csu_763.py` -> `extraction_configs/csu_763_strawberries.json`
+- `extract_csu_764.py` -> `extraction_configs/csu_764_grapes.json`
+- `extract_osu_hyg_1401_apples.py` -> `extraction_configs/osu_hyg_1401_apples.json`
+- `extract_osu_hyg_1422_blueberries.py` -> `extraction_configs/osu_hyg_1422_blueberries.json`
+- `extract_osu_hyg_1423_grapes.py` -> `extraction_configs/osu_hyg_1423_grapes.json`
+- `extract_psu_non_scab_apples.py` -> `extraction_configs/psu_non_scab_apples.json`
+- `extract_umaine_2068.py` -> `extraction_configs/umaine_2068_peaches.json`
+- `extract_umaine_2253.py` -> `extraction_configs/umaine_2253_blueberries.json`
+- `extract_vce_422_018_cherries.py` -> `extraction_configs/vce_422_018_cherries.json`
+- `extract_vce_422_019_peaches.py` -> `extraction_configs/vce_422_019_peaches.json`
+- `extract_vce_422_023_apples.py` -> `extraction_configs/vce_422_023_apples.json`
+
+`extract_umaine_2172.py` and `extract_umaine_2184.py` remain source-specific
+for now. They combine narrative category detection, custom harvest phrase
+matching, follow-on paragraph merging, special-case rows, and table-summary
+joins in ways that are not yet worth forcing into generic config vocabulary.
+
 ## PDF Lessons
 
 - Prefer `pdftotext -layout` first for born-digital PDFs
@@ -141,7 +177,7 @@ Source-specific scripts should do:
    plant counts for representative HTML and PDF sources.
 4. Consider moving repeated source metadata into a small data object only if the
    current `REFERENCE_FIELDS` pattern starts to drift.
-5. Extend `extract_from_config.py` before writing a new source script when the
-   source can be described as metadata plus table or paragraph mappings.
+5. Add a small compatibility check script that compares each config-backed
+   wrapper against a saved golden draft output.
 6. Keep parsers source-specific when a pattern has not appeared in multiple
    unrelated sources or when the extraction requires source judgment.

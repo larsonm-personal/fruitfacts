@@ -1,0 +1,64 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://ohioline.osu.edu/factsheet/hyg-1401"
+  },
+  "reference_fields": [
+    ["title", "Growing Apples in the Home Orchard"],
+    ["author", "Gary Y. Gao and Kass Groner"],
+    ["url", "https://ohioline.osu.edu/factsheet/hyg-1401"],
+    ["published", "Dec 22, 2025"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "categories": [
+    {
+      "name": "Disease-resistant apple cultivars suggested for Ohio",
+      "description": "Disease-resistant apple cultivars suggested by OSU for Ohio home orchards"
+    }
+  ],
+  "name_overrides": {
+    "Pristine": {
+      "name": "Co-op 32",
+      "note": "Source table names this as Pristine"
+    },
+    "Pixie Crunch": {
+      "name": "Co-op 33",
+      "note": "Source table names this as Pixie Crunch"
+    },
+    "William's Pride": {
+      "name": "Williams' Pride",
+      "note": "Source table names this as William's Pride"
+    },
+    "Goldrush": {
+      "name": "GoldRush",
+      "note": "Source table names this as Goldrush"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "required_headers": [
+        "Cultivar",
+        "Bloom Season",
+        "Ripening Season",
+        "Description"
+      ],
+      "plant_type": "Apple",
+      "name_key": "cultivar",
+      "category": "Disease-resistant apple cultivars suggested for Ohio",
+      "harvest_key": "ripening_season",
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [["bloom_season", "Bloom season"]]
+        },
+        {
+          "kind": "key",
+          "key": "description"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.umaine.edu/publications/2253e/"
+  },
+  "reference_fields": [
+    ["title", "Growing Highbush Blueberries"],
+    ["author", "David T. Handley"],
+    ["url", "https://extension.umaine.edu/publications/2253e/"],
+    ["published", "1992, 2008"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "categories": [
+    {
+      "name": "Highbush Blueberry Varieties for Northern New England",
+      "description": "Highbush blueberry varieties listed by UMaine for Northern New England"
+    }
+  ],
+  "name_overrides": {
+    "Blue Gold": {
+      "name": "Bluegold",
+      "note": "Source table names this as Blue Gold"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "required_headers": [
+        "Variety",
+        "Plant Characteristics",
+        "Fruit Qualities",
+        "Ripening Season"
+      ],
+      "plant_type": "Blueberry",
+      "name_key": "variety",
+      "category": "Highbush Blueberry Varieties for Northern New England",
+      "harvest_key": "ripening_season",
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["plant_characteristics", "Plant characteristics"],
+            ["fruit_qualities", "Fruit qualities"]
+          ]
+        }
+      ]
+    }
+  ]
+}

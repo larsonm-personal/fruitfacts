@@ -1,0 +1,77 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://cmg.extension.colostate.edu/Gardennotes/762.pdf"
+  },
+  "reference_fields": [
+    ["title", "Growing Blackberries in Colorado Gardens"],
+    ["author", "David Whiting and Merrill Kingsbury"],
+    ["url", "https://cmg.extension.colostate.edu/Gardennotes/762.pdf"],
+    ["published", "2018"],
+    ["reviewed", "2023"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "categories": [
+    {
+      "name": "Primocane-fruiting erect blackberries",
+      "description": "CSU describes primocane-fruiting erect blackberries as fruiting on new canes, making winter management easier because canes can be cut to the ground"
+    },
+    {
+      "name": "Semi-erect blackberries",
+      "description": "CSU describes semi-erect blackberries as thornless, vigorous, trellis-requiring plants that generally yield more than trailing or erect types"
+    },
+    {
+      "name": "Blackberry/red raspberry hybrids",
+      "description": "CSU says blackberry-red raspberry hybrids are usually natural crosses and are generally considered a type of blackberry because the receptacle comes off with the fruit"
+    }
+  ],
+  "name_overrides": {
+    "Chester Thornless": {
+      "name": "Chester",
+      "note": "Source text names this as Chester Thornless"
+    },
+    "Boysen (Boysenberry)": {
+      "name": "Boysen",
+      "note": "Source text names this as Boysenberry"
+    },
+    "Logan (Loganberry)": {
+      "name": "Logan",
+      "note": "Source text names this as Loganberry"
+    },
+    "Tay (Tayberry)": {
+      "name": "Tay",
+      "note": "Source text names this as Tayberry"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Primocane-fruiting cultivars of erect blackberries",
+      "section_end": "Semi-erect blackberries",
+      "marker": "Suggested cultivars include ",
+      "plant_type": "Blackberry",
+      "category": "Primocane-fruiting erect blackberries",
+      "description_template": "Listed by CSU GardenNotes 762 as a {category_lower} for Colorado gardens"
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Semi-erect blackberries are",
+      "section_end": "Blackberry/red raspberry hybrids",
+      "marker": "Suggested cultivars include ",
+      "plant_type": "Blackberry",
+      "category": "Semi-erect blackberries",
+      "description_template": "Listed by CSU GardenNotes 762 as a {category_lower} for Colorado gardens"
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Blackberry/red raspberry hybrids are",
+      "section_end": "Planting and Care of Blackberries",
+      "marker": "Popular cultivars include ",
+      "plant_type": "Blackberry",
+      "category": "Blackberry/red raspberry hybrids",
+      "description_template": "Listed by CSU GardenNotes 762 as a {category_lower} for Colorado gardens"
+    }
+  ]
+}

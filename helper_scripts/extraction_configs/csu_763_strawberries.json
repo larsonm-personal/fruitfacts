@@ -1,0 +1,79 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://cmg.extension.colostate.edu/Gardennotes/763.pdf"
+  },
+  "reference_fields": [
+    ["title", "Growing Strawberries in Colorado Gardens"],
+    ["author", "David Whiting and Merrill Kingsbury"],
+    ["url", "https://cmg.extension.colostate.edu/Gardennotes/763.pdf"],
+    ["published", "2018"],
+    ["reviewed", "2023"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "categories": [
+    {
+      "name": "June-bearing cultivars",
+      "description": "CSU describes June-bearing strawberries as producing one large early summer crop with larger fruit and higher yields, but with more risk from spring temperature swings and late frosts in Colorado"
+    },
+    {
+      "name": "Ever-bearing cultivars",
+      "description": "CSU describes ever-bearing strawberries as producing one early summer crop and a second fall crop, with smaller berries but more dependability than June-bearing types in cold Colorado climates"
+    },
+    {
+      "name": "Day-neutral cultivars",
+      "description": "CSU describes day-neutral strawberries as flowering through most of summer and fall in cycles, slowing during hot weather, and giving a light daily harvest with small fruit"
+    }
+  ],
+  "name_overrides": {
+    "A.C. Wendy": {
+      "name": "Wendy",
+      "note": "Source text names this as A.C. Wendy"
+    },
+    "Bloominden Gem": {
+      "name": "Blomidon Gem",
+      "note": "Source text says Bloominden Gem, likely Blomidon Gem"
+    },
+    "Carskill": {
+      "name": "Catskill",
+      "note": "Source text says Carskill, likely Catskill"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "June-bearing cultivars have",
+      "section_end": "Ever-bearing cultivars have",
+      "marker": "Suggested cultivars include ",
+      "end_marker": null,
+      "plant_type": "Strawberry",
+      "category": "June-bearing cultivars",
+      "harvest_time_unparsed": "late June to early July along the Colorado Front Range",
+      "description_template": "Listed by CSU GardenNotes 763 as a suggested {category_lower} for Colorado gardens"
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Ever-bearing cultivars have",
+      "section_end": "Day-neutral cultivars",
+      "marker": "Suggested cultivars include ",
+      "end_marker": null,
+      "plant_type": "Strawberry",
+      "category": "Ever-bearing cultivars",
+      "harvest_time_unparsed": "early summer and fall",
+      "description_template": "Listed by CSU GardenNotes 763 as a suggested {category_lower} for Colorado gardens"
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Day-neutral cultivars",
+      "section_end": "Plantings",
+      "marker": "Suggested cultivars include ",
+      "end_marker": null,
+      "plant_type": "Strawberry",
+      "category": "Day-neutral cultivars",
+      "harvest_time_unparsed": "most of summer and fall",
+      "description_template": "Listed by CSU GardenNotes 763 as a suggested {category_lower} for Colorado gardens"
+    }
+  ]
+}

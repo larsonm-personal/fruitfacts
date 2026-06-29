@@ -5,19 +5,29 @@ import json
 import sys
 from pathlib import Path
 
+from fruitfacts_extract.html_tools import blocks_between_headings
 from fruitfacts_extract.html_tools import fetch_html_page
 from fruitfacts_extract.json5_draft import emit_reference
+from fruitfacts_extract.pdf_tools import clean_pdf_text
+from fruitfacts_extract.pdf_tools import pdf_url_to_text
 from fruitfacts_extract.record_tools import append_source_note
 from fruitfacts_extract.record_tools import category_records
 from fruitfacts_extract.record_tools import labelled_description_from_row
 from fruitfacts_extract.record_tools import normalized_name
 from fruitfacts_extract.record_tools import plant_record
 from fruitfacts_extract.record_tools import strip_trailing_note_markers
+from fruitfacts_extract.table_tools import fill_leading_group_cells
 from fruitfacts_extract.table_tools import find_table
 from fruitfacts_extract.table_tools import find_table_with_header_row
 from fruitfacts_extract.table_tools import keyed_data_rows
+from fruitfacts_extract.table_tools import merge_leading_fragment_rows
 from fruitfacts_extract.table_tools import table_to_dicts
+from fruitfacts_extract.table_tools import table_to_dicts_with_sections
+from fruitfacts_extract.text_tools import clean_text
 from fruitfacts_extract.text_tools import first_sentence_containing
+from fruitfacts_extract.text_tools import names_after_marker
+from fruitfacts_extract.text_tools import quoted_name_paragraph
+from fruitfacts_extract.text_tools import section_between
 
 
 def load_config(path):
@@ -35,24 +45,86 @@ def name_overrides(config):
     }
 
 
-def source_page(config):
+def source_data(config):
     source = config["source"]
-    if source["kind"] != "html":
-        raise ValueError("Unsupported source kind: " + source["kind"])
-    return fetch_html_page(source["url"])
+    if source["kind"] == "html":
+        return fetch_html_page(source["url"])
+    if source["kind"] == "pdf":
+        return clean_text(clean_pdf_text(pdf_url_to_text(source["url"])))
+    raise ValueError("Unsupported source kind: " + source["kind"])
 
 
-def table_rows(page, extractor):
+def raw_table(page, extractor):
     if extractor.get("header_row"):
-        table = find_table_with_header_row(
+        return find_table_with_header_row(
             page.tables,
             extractor["required_headers"],
             title_contains=extractor.get("title_contains"),
         )
+    return find_table(page.tables, extractor["required_headers"])
+
+
+def transformed_table(table, transforms):
+    for transform in transforms:
+        if transform == "fill_leading_group_cells":
+            table = fill_leading_group_cells(table)
+        elif transform == "merge_leading_fragment_rows":
+            table = merge_leading_fragment_rows(table)
+        else:
+            raise ValueError("Unsupported table transform: " + transform)
+    return table
+
+
+def row_text_fixes(row, fixes):
+    if not fixes:
+        return row
+    return {
+        key: apply_text_fixes(value, fixes) if isinstance(value, str) else value
+        for key, value in row.items()
+    }
+
+
+def apply_text_fixes(text, fixes):
+    for old, new in fixes.items():
+        text = text.replace(old, new)
+    return text
+
+
+def expanded_rows(rows, extractor):
+    for row in rows:
+        matched = False
+        for split in extractor.get("row_splits", []):
+            if all(row.get(key) == value for key, value in split["match"].items()):
+                matched = True
+                for replacement in split["rows"]:
+                    new_row = dict(row)
+                    new_row.update(replacement)
+                    if split.get("source_note"):
+                        new_row["_source_note"] = split["source_note"]
+                    yield new_row
+                break
+        if not matched:
+            yield row
+
+
+def table_rows(page, extractor):
+    table = raw_table(page, extractor)
+    if extractor.get("header_row"):
         rows = table["rows"]
     else:
-        table = find_table(page.tables, extractor["required_headers"])
-        rows = table_to_dicts(table)
+        transforms = extractor.get("table_transforms", [])
+        if isinstance(transforms, str):
+            transforms = [transforms]
+        table = transformed_table(table, transforms)
+        if extractor.get("section_rows"):
+            rows = table_to_dicts_with_sections(
+                table,
+                default_section=extractor.get("default_section"),
+            )
+        else:
+            rows = table_to_dicts(table)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("text_fixes")) for row in rows]
     return keyed_data_rows(
         rows,
         extractor["name_key"],
@@ -60,11 +132,92 @@ def table_rows(page, extractor):
     )
 
 
-def description(row, extractor):
-    description_value = labelled_description_from_row(
-        row,
-        pairs(extractor.get("description_labels", [])),
-    )
+def resolved_value(spec, row):
+    if spec is None:
+        return None
+    if isinstance(spec, str):
+        return spec
+    if "row_key" in spec:
+        value = row.get(spec["row_key"])
+        if "map" in spec and value in spec["map"]:
+            return spec["map"][value]
+        return spec.get("default", value)
+    if "template" in spec:
+        return format_template(spec["template"], row, None)
+    raise ValueError("Unsupported value spec: " + repr(spec))
+
+
+def format_template(template, row, extractor):
+    values = dict(row)
+    if extractor:
+        category = resolved_value(extractor.get("category"), row)
+        if category:
+            values["category"] = category
+            values["category_lower"] = category.lower()
+    return template.format(**values)
+
+
+def description_key_part(row, part):
+    value = row.get(part["key"])
+    if not value:
+        return None
+    value = apply_text_fixes(value, part.get("text_fixes", {}))
+    if part.get("rstrip_period", True):
+        value = value.rstrip(".")
+    return value
+
+
+def lookup_labels_part(row, part, lookups):
+    key_value = row.get(part.get("row_key", "name"))
+    lookup_row = lookups.get(part["lookup"], {}).get(key_value)
+    if not lookup_row:
+        return None
+    values = []
+    for key, label in pairs(part["labels"]):
+        value = lookup_row.get(key)
+        if value:
+            values.append(label + " " + value)
+    if not values:
+        return None
+    return part.get("prefix", "") + "; ".join(values)
+
+
+def description_part(row, extractor, part, lookups):
+    kind = part["kind"]
+    if kind == "labels":
+        return labelled_description_from_row(row, pairs(part["labels"]))
+    if kind == "key":
+        return description_key_part(row, part)
+    if kind == "template":
+        return format_template(part["template"], row, extractor)
+    if kind == "lookup_labels":
+        return lookup_labels_part(row, part, lookups)
+    raise ValueError("Unsupported description part: " + kind)
+
+
+def description(row, extractor, lookups):
+    if extractor.get("description_parts"):
+        parts = [
+            description_part(row, extractor, part, lookups)
+            for part in extractor["description_parts"]
+        ]
+        description_value = ". ".join(part for part in parts if part)
+    else:
+        parts = [
+            labelled_description_from_row(
+                row,
+                pairs(extractor.get("description_labels", [])),
+            )
+        ]
+        if extractor.get("description_key"):
+            parts.append(
+                description_key_part(row, {"key": extractor["description_key"]})
+            )
+        for key in extractor.get("description_keys", []):
+            parts.append(description_key_part(row, {"key": key}))
+        if extractor.get("description_template"):
+            parts.append(format_template(extractor["description_template"], row, extractor))
+        description_value = ". ".join(part for part in parts if part)
     if extractor.get("description_suffix"):
         description_value = append_source_note(
             description_value,
@@ -74,6 +227,8 @@ def description(row, extractor):
 
 
 def harvest_time(row, extractor):
+    if extractor.get("harvest_time_unparsed"):
+        return resolved_value(extractor["harvest_time_unparsed"], row)
     if extractor.get("harvest_key"):
         return row.get(extractor["harvest_key"])
     if extractor.get("harvest_from_key"):
@@ -84,33 +239,153 @@ def harvest_time(row, extractor):
     return None
 
 
-def plants_from_extractor(page, extractor, overrides):
+def combined_note(*notes):
+    return ". ".join(note for note in notes if note)
+
+
+def source_name_and_note(row, extractor, overrides):
+    source_name = row[extractor["name_key"]]
+    notes = []
+    for suffix_note in extractor.get("name_suffix_notes", []):
+        suffix = suffix_note["suffix"]
+        if source_name.endswith(suffix):
+            source_name = source_name[: -len(suffix)].strip()
+            notes.append(suffix_note["note"])
+    if extractor.get("strip_name_footnotes"):
+        source_name = strip_trailing_note_markers(source_name)
+    name, source_note = normalized_name(source_name, overrides)
+    notes.append(source_note)
+    notes.append(row.get("_source_note"))
+    return name, combined_note(*notes)
+
+
+def plant_records_from_config_rows(rows, extractor, overrides, lookups):
     plants = []
-    for row in table_rows(page, extractor):
-        source_name = row[extractor["name_key"]]
-        if extractor.get("strip_name_footnotes"):
-            source_name = strip_trailing_note_markers(source_name)
-        name, source_note = normalized_name(source_name, overrides)
+    for row in rows:
+        name, source_note = source_name_and_note(row, extractor, overrides)
         plants.append(
             plant_record(
-                extractor["plant_type"],
+                resolved_value(extractor["plant_type"], row),
                 name,
-                category=extractor.get("category"),
+                category=resolved_value(extractor.get("category"), row),
                 harvest_time_unparsed=harvest_time(row, extractor),
-                description=append_source_note(description(row, extractor), source_note),
+                description=append_source_note(
+                    description(row, extractor, lookups),
+                    source_note,
+                ),
             )
         )
     return plants
 
 
+def plants_from_html_table(page, extractor, overrides, lookups):
+    return plant_records_from_config_rows(
+        table_rows(page, extractor),
+        extractor,
+        overrides,
+        lookups,
+    )
+
+
+def pdf_marker_list_rows(text, extractor):
+    section = text
+    if extractor.get("section_start"):
+        section = section_between(
+            text,
+            extractor["section_start"],
+            extractor["section_end"],
+        )
+    rows = []
+    for name in names_after_marker(
+        section,
+        extractor["marker"],
+        extractor.get("end_marker", "."),
+    ):
+        rows.append({extractor.get("name_key", "name"): name})
+    return rows
+
+
+def plants_from_pdf_marker_list(text, extractor, overrides, lookups):
+    extractor = {"name_key": "name", **extractor}
+    return plant_records_from_config_rows(
+        pdf_marker_list_rows(text, extractor),
+        extractor,
+        overrides,
+        lookups,
+    )
+
+
+def quoted_paragraph_rows(page, extractor):
+    blocks = blocks_between_headings(
+        page.blocks,
+        extractor["start_heading"],
+        extractor.get("end_heading"),
+    )
+    category = extractor.get("default_category")
+    rows = []
+    for tag, text in blocks:
+        for switch in extractor.get("category_switches", []):
+            if text == switch["text"]:
+                category = switch["category"]
+                break
+        if tag not in extractor.get("paragraph_tags", ["p"]):
+            continue
+        if not text.startswith(extractor.get("quote_prefix", "'")):
+            continue
+        name, description_value = quoted_name_paragraph(text)
+        if extractor.get("prepend_name_if_lowercase") and description_value:
+            if description_value[0].islower():
+                description_value = name + " " + description_value
+        row = {
+            "name": name,
+            "category": category,
+            "description": description_value,
+        }
+        if extractor.get("harvest_terms"):
+            row["harvest_time_unparsed"] = first_sentence_containing(
+                description_value,
+                extractor["harvest_terms"],
+            )
+        rows.append(row)
+    return rows
+
+
+def plants_from_quoted_paragraphs(page, extractor, overrides, lookups):
+    extractor = {"name_key": "name", **extractor}
+    return plant_records_from_config_rows(
+        quoted_paragraph_rows(page, extractor),
+        extractor,
+        overrides,
+        lookups,
+    )
+
+
+def build_lookups(data, config):
+    lookups = {}
+    for lookup in config.get("lookups", []):
+        if lookup["kind"] != "html_table":
+            raise ValueError("Unsupported lookup kind: " + lookup["kind"])
+        rows = table_rows(data, lookup)
+        lookups[lookup["name"]] = {row[lookup["key"]]: row for row in rows}
+    return lookups
+
+
 def extract(config):
-    page = source_page(config)
+    data = source_data(config)
     overrides = name_overrides(config)
+    lookups = build_lookups(data, config)
     plants = []
     for extractor in config["extractors"]:
-        if extractor["kind"] != "html_table":
+        if extractor["kind"] == "html_table":
+            plants.extend(plants_from_html_table(data, extractor, overrides, lookups))
+        elif extractor["kind"] == "pdf_marker_list":
+            plants.extend(plants_from_pdf_marker_list(data, extractor, overrides, lookups))
+        elif extractor["kind"] == "quoted_paragraph_blocks":
+            plants.extend(
+                plants_from_quoted_paragraphs(data, extractor, overrides, lookups)
+            )
+        else:
             raise ValueError("Unsupported extractor kind: " + extractor["kind"])
-        plants.extend(plants_from_extractor(page, extractor, overrides))
     return plants
 
 

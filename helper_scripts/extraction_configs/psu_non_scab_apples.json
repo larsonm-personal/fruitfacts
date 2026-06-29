@@ -1,0 +1,53 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.psu.edu/home-orchards-table-4-2-non-scab-resistant-apple-varieties/"
+  },
+  "reference_fields": [
+    ["title", "Penn State Non-Scab-Resistant Apple Varieties"],
+    ["author", "Donald Seifrit"],
+    ["url", "https://extension.psu.edu/home-orchards-table-4-2-non-scab-resistant-apple-varieties/"],
+    ["reviewed", "2026"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "name_overrides": {
+    "Zestar!": {
+      "name": "Minnewashta",
+      "note": "Source table names this as Zestar!"
+    },
+    "Ginger Gold": {
+      "name": "Mountain Cove",
+      "note": "Source table names this as Ginger Gold"
+    },
+    "Blondee": {
+      "name": "McLaughlin Gala",
+      "note": "Source table names this as Blondee"
+    },
+    "Cameo": {
+      "name": "Caudle",
+      "note": "Source table names this as Cameo"
+    },
+    "SunCrisp": {
+      "name": "NJ 55",
+      "note": "Source table names this as SunCrisp"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "required_headers": ["Variety", "Characteristics", "Ripening Period"],
+      "plant_type": "Apple",
+      "name_key": "variety",
+      "harvest_key": "ripening_period",
+      "description_parts": [
+        {
+          "kind": "key",
+          "key": "characteristics",
+          "rstrip_period": false
+        }
+      ]
+    }
+  ]
+}

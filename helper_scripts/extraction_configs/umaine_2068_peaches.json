@@ -1,0 +1,65 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.umaine.edu/publications/2068e/"
+  },
+  "reference_fields": [
+    ["title", "Growing Peaches in Maine"],
+    ["author", "Renae Moran"],
+    ["url", "https://extension.umaine.edu/publications/2068e/"],
+    ["published", "2024"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "categories": [
+    {
+      "name": "Yellow flesh",
+      "description": "Yellow-fleshed peach varieties listed by UMaine"
+    },
+    {
+      "name": "White Flesh",
+      "description": "White-fleshed peach varieties listed by UMaine"
+    },
+    {
+      "name": "Flat (Donut)",
+      "description": "Flat or donut peach varieties listed by UMaine"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_table",
+      "required_headers": [
+        "Type",
+        "Variety",
+        "Flower bud cold hardiness",
+        "Ripening date",
+        "Leaf curl resistance",
+        "Fruit size",
+        "Fruit quality"
+      ],
+      "table_transforms": ["fill_leading_group_cells"],
+      "plant_type": "Peach",
+      "name_key": "variety",
+      "category": {"row_key": "type"},
+      "harvest_key": "ripening_date",
+      "name_suffix_notes": [
+        {
+          "suffix": "*",
+          "note": "Evaluated at the University of Maine Highmoor Farm"
+        }
+      ],
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["flower_bud_cold_hardiness", "Flower bud cold hardiness"],
+            ["leaf_curl_resistance", "Leaf curl resistance"],
+            ["fruit_size", "Fruit size"],
+            ["fruit_quality", "Fruit quality"]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://cmg.extension.colostate.edu/Gardennotes/764.pdf"
+  },
+  "reference_fields": [
+    ["title", "Growing Grapes in Colorado Gardens"],
+    ["author", "David Whiting and Merrill Kingsbury"],
+    ["description", "Colorado Master Gardener GardenNotes grape guide with popular table, juice, and jelly grape cultivars and home vineyard management context"],
+    ["url", "https://cmg.extension.colostate.edu/Gardennotes/764.pdf"],
+    ["thumbnail", "pdf"],
+    ["reviewed", "Mar 2023"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Colorado State University Extension, Fort Collins, Colorado",
+      "latitude": 40.5748,
+      "longitude": -105.0808
+    }
+  ],
+  "categories": [
+    {
+      "name": "Table grape cultivars popular in Colorado gardens",
+      "description": "CSU describes table grapes as used for fresh eating and says most popular cultivars are seedless"
+    },
+    {
+      "name": "Juice and jelly grape cultivars popular in Colorado gardens",
+      "description": "CSU lists these as popular juice and jelly grape cultivars"
+    }
+  ],
+  "name_overrides": {
+    "Niagra": {
+      "name": "Niagara",
+      "note": "Source text says Niagra, likely Niagara"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Types of Grapes",
+      "section_end": "Types of Cultivars",
+      "marker": "Popular cultivars include ",
+      "end_marker": ". Juice and jelly",
+      "plant_type": "Grape",
+      "category": "Table grape cultivars popular in Colorado gardens",
+      "description_template": "Listed by CSU GardenNotes 764 as a popular grape cultivar for Colorado gardens"
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Types of Grapes",
+      "section_end": "Types of Cultivars",
+      "marker": "Juice and jelly grapes whose popular cultivars include ",
+      "end_marker": ". Wine grapes",
+      "plant_type": "Grape",
+      "category": "Juice and jelly grape cultivars popular in Colorado gardens",
+      "description_template": "Listed by CSU GardenNotes 764 as a popular grape cultivar for Colorado gardens"
+    }
+  ]
+}

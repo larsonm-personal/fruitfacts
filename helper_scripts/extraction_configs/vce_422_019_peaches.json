@@ -1,0 +1,102 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://pubs.ext.vt.edu/422/422-019/422-019.html"
+  },
+  "reference_fields": [
+    ["title", "Growing Peaches and Nectarines in Virginia"],
+    ["author", "Richard P. Marini"],
+    ["url", "https://pubs.ext.vt.edu/422/422-019/422-019.html"],
+    ["published", "Sep 3, 2025"],
+    ["reviewed", "Sep 2025"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Virginia Tech, Blacksburg, VA",
+      "latitude": 37.20248218528102,
+      "longitude": -80.5631271567992
+    }
+  ],
+  "categories": [
+    {
+      "name": "Yellow flesh peaches recommended for Virginia",
+      "description": "Ripening dates are for Blacksburg; lower-elevation Virginia locations may ripen 3 to 20 days earlier"
+    },
+    {
+      "name": "White flesh peaches recommended for Virginia",
+      "description": "Ripening dates are for Blacksburg; lower-elevation Virginia locations may ripen 3 to 20 days earlier"
+    },
+    {
+      "name": "Nectarines recommended for Virginia",
+      "description": "Ripening dates are for Blacksburg; lower-elevation Virginia locations may ripen 3 to 20 days earlier"
+    }
+  ],
+  "name_overrides": {
+    "GarnetBeauty": {
+      "name": "Garnet Beauty",
+      "note": "Source table names this as GarnetBeauty"
+    },
+    "Earnie's Choice": {
+      "name": "Ernie's Choice",
+      "note": "Source table names this as Earnie's Choice"
+    },
+    "Flavor Top": {
+      "name": "Flavortop",
+      "note": "Source table names this as Flavor Top"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "required_headers": ["Variety", "Ripening Date", "Comments"],
+      "section_rows": true,
+      "default_section": "YELLOW FLESH PEACHES",
+      "text_fixes": {
+        "ClingStone": "clingstone",
+        "recom mended": "recommended"
+      },
+      "row_splits": [
+        {
+          "match": {"variety": "Morton Raritan Rose"},
+          "source_note": "Source HTML combines Morton and Raritan Rose into one row",
+          "rows": [
+            {
+              "variety": "Morton",
+              "ripening_date": "July 25",
+              "comments": "Small, highly colored, soft, good flavor"
+            },
+            {
+              "variety": "Raritan Rose",
+              "ripening_date": "July 26",
+              "comments": "Medium size, attractive, excellent flavor"
+            }
+          ]
+        }
+      ],
+      "plant_type": {
+        "row_key": "_section",
+        "map": {"NECTARINES": "Nectarine"},
+        "default": "Peach"
+      },
+      "name_key": "variety",
+      "category": {
+        "row_key": "_section",
+        "map": {
+          "YELLOW FLESH PEACHES": "Yellow flesh peaches recommended for Virginia",
+          "WHITE FLESH PEACHES": "White flesh peaches recommended for Virginia",
+          "NECTARINES": "Nectarines recommended for Virginia"
+        }
+      },
+      "harvest_key": "ripening_date",
+      "description_parts": [
+        {
+          "kind": "key",
+          "key": "comments"
+        }
+      ]
+    }
+  ]
+}

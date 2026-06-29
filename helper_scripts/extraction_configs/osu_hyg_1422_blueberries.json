@@ -1,0 +1,52 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://ohioline.osu.edu/factsheet/hyg-1422"
+  },
+  "reference_fields": [
+    ["title", "Growing Blueberries in the Home Garden"],
+    ["author", "Gary Y. Gao, Erik Draper, and Clifton Martin"],
+    ["url", "https://ohioline.osu.edu/factsheet/hyg-1422"],
+    ["published", "May 15, 2026"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "categories": [
+    {
+      "name": "Blueberry cultivars suggested for Ohio",
+      "description": "Blueberry cultivars suggested by OSU for Ohio home gardens"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_table",
+      "required_headers": [
+        "Cultivar",
+        "Ripening Season",
+        "Yield",
+        "Fruit Size",
+        "Fruit Quality",
+        "Remarks"
+      ],
+      "plant_type": "Blueberry",
+      "name_key": "cultivar",
+      "category": "Blueberry cultivars suggested for Ohio",
+      "harvest_key": "ripening_season",
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["yield", "Yield"],
+            ["fruit_size", "Fruit size"],
+            ["fruit_quality", "Fruit quality"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "remarks"
+        }
+      ]
+    }
+  ]
+}

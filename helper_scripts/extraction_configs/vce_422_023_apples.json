@@ -1,0 +1,59 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://pubs.ext.vt.edu/422/422-023/422-023.html"
+  },
+  "reference_fields": [
+    ["title", "Growing Apples in Virginia"],
+    ["author", "Richard P. Marini"],
+    ["url", "https://pubs.ext.vt.edu/422/422-023/422-023.html"],
+    ["published", "Sep 3, 2025"],
+    ["reviewed", "Sep 2025"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Virginia Tech, Blacksburg, VA",
+      "latitude": 37.20248218528102,
+      "longitude": -80.5631271567992
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple varieties recommended for Virginia",
+      "description": "VCE apple varieties recommended for Virginia. Ripening dates are for Blacksburg; regions east of the Blue Ridge may be 5 to 14 days earlier. E, G, F, and P ratings mean excellent, good, fair, and poor"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_table",
+      "required_headers": [
+        "Variety",
+        "Harvest Date",
+        "Freshz",
+        "Cookingz",
+        "Color",
+        "Taste"
+      ],
+      "table_transforms": ["merge_leading_fragment_rows"],
+      "plant_type": "Apple",
+      "name_key": "variety",
+      "category": "Apple varieties recommended for Virginia",
+      "harvest_key": "harvest_date",
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["freshz", "Fresh rating"],
+            ["cookingz", "Cooking rating"],
+            ["color", "Color"],
+            ["taste", "Taste"],
+            ["comments", "Comments"]
+          ]
+        }
+      ]
+    }
+  ]
+}

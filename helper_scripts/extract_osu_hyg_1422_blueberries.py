@@ -1,78 +1,14 @@
 #!/usr/bin/env python3
-"""Extract a draft JSON5 reference from OSU HYG-1422 blueberries"""
+"""Run the config-backed extractor for OSU HYG-1422 blueberries"""
 
 import sys
+from pathlib import Path
 
-from fruitfacts_extract.html_tools import fetch_html_page
-from fruitfacts_extract.json5_draft import emit_reference
-from fruitfacts_extract.record_tools import labelled_description_from_row
-from fruitfacts_extract.record_tools import plant_records_from_rows
-from fruitfacts_extract.table_tools import find_table, keyed_data_rows, table_to_dicts
+from extract_from_config import main as config_main
 
 
-SOURCE_URL = "https://ohioline.osu.edu/factsheet/hyg-1422"
-CATEGORY = "Blueberry cultivars suggested for Ohio"
-CATEGORIES = [
-    {
-        "name": CATEGORY,
-        "description": "Blueberry cultivars suggested by OSU for Ohio home gardens",
-    }
-]
-REFERENCE_FIELDS = [
-    ("title", "Growing Blueberries in the Home Garden"),
-    ("author", "Gary Y. Gao, Erik Draper, and Clifton Martin"),
-    ("url", SOURCE_URL),
-    ("published", "May 15, 2026"),
-    ("accessed", "Jun 2026"),
-    ("type", "state extension guide"),
-    ("needs_help", True),
-]
-
-
-def row_description(row):
-    parts = [
-        labelled_description_from_row(
-            row,
-            [
-                ("yield", "Yield"),
-                ("fruit_size", "Fruit size"),
-                ("fruit_quality", "Fruit quality"),
-            ],
-        )
-    ]
-    if row["remarks"]:
-        parts.append(row["remarks"].rstrip("."))
-    return ". ".join(part for part in parts if part)
-
-
-def extract():
-    page = fetch_html_page(SOURCE_URL)
-    table = find_table(
-        page.tables,
-        ["Cultivar", "Ripening Season", "Yield", "Fruit Size", "Fruit Quality", "Remarks"],
-    )
-    return plant_records_from_rows(
-        keyed_data_rows(table_to_dicts(table), "cultivar"),
-        "Blueberry",
-        "cultivar",
-        category_key=lambda row: CATEGORY,
-        harvest_key="ripening_season",
-        description=row_description,
-    )
-
-
-def emit_json5(plants):
-    emit_reference(REFERENCE_FIELDS, plants, categories=CATEGORIES)
-
-
-def main():
-    try:
-        emit_json5(extract())
-    except Exception as error:
-        print(f"Failed to extract OSU HYG-1422 blueberries: {error}", file=sys.stderr)
-        return 1
-    return 0
+CONFIG = Path(__file__).with_name("extraction_configs") / "osu_hyg_1422_blueberries.json"
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(config_main([sys.argv[0], str(CONFIG)]))
