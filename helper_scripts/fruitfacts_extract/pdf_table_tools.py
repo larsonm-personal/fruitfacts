@@ -95,6 +95,158 @@ def apply_row_transforms(row, transforms):
     return row
 
 
+def smart_title_token(token, preserve_upper_words):
+    if token in preserve_upper_words:
+        return token
+    if any(character.islower() for character in token):
+        return token
+    if any(character.isdigit() for character in token):
+        return token
+    return token[:1].upper() + token[1:].lower()
+
+
+def smart_title_name(name, preserve_upper_words=None):
+    preserve_upper_words = set(preserve_upper_words or [])
+    return " ".join(
+        smart_title_token(token, preserve_upper_words) for token in name.split()
+    )
+
+
+def parse_catalog_entry(line, extractor):
+    name_key = extractor.get("name_key", "name")
+    description_key = extractor.get("description_key", "description")
+    for name in sorted(extractor.get("entry_names", []), key=len, reverse=True):
+        if line == name:
+            return None
+        if line.startswith(name + " "):
+            return {
+                name_key: name,
+                description_key: line[len(name) :].strip(),
+            }
+
+    tokens = line.split()
+    if not tokens:
+        return None
+    description_starters = set(
+        extractor.get(
+            "description_start_words",
+            [
+                "A",
+                "An",
+                "Another",
+                "Bred",
+                "Developed",
+                "First",
+                "From",
+                "Fruit",
+                "Introduced",
+                "Large",
+                "Medium",
+                "Moderate",
+                "Originating",
+                "Produces",
+                "Released",
+                "Similar",
+                "Small",
+                "Sweetest",
+                "The",
+                "These",
+                "This",
+                "Vigorous",
+                "Winter-hardy",
+            ],
+        )
+    )
+    name_tokens = []
+    description_tokens = []
+    for index, token in enumerate(tokens):
+        if not name_tokens and token in description_starters:
+            return None
+        if name_tokens and (
+            token in description_starters or any(character.islower() for character in token)
+        ):
+            description_tokens = tokens[index:]
+            break
+        if any(character.islower() for character in token):
+            return None
+        name_tokens.append(token)
+
+    if not name_tokens or not description_tokens:
+        return None
+    return {
+        name_key: " ".join(name_tokens),
+        description_key: " ".join(description_tokens),
+    }
+
+
+def catalog_category_for_line(line, extractor):
+    for rule in extractor.get("category_rules", []):
+        if rule.get("text") and line == rule["text"]:
+            return rule, ""
+        prefix = rule.get("prefix")
+        if prefix and line.startswith(prefix):
+            return rule, line[len(prefix) :].strip()
+    return None, None
+
+
+def finish_catalog_row(row, extractor):
+    if extractor.get("name_case") == "smart_title":
+        row[extractor.get("name_key", "name")] = smart_title_name(
+            row[extractor.get("name_key", "name")],
+            preserve_upper_words=extractor.get("preserve_upper_words"),
+        )
+    return row
+
+
+def catalog_entry_rows(text, extractor):
+    lines = section_lines(text, extractor)
+    rows = []
+    current_category = None
+    current = None
+    name_key = extractor.get("name_key", "name")
+    description_key = extractor.get("description_key", "description")
+    for line in lines:
+        line = clean_text(line)
+        line = apply_text_fixes_to_line(line, extractor.get("text_fixes", {}))
+        if line_matches_any(line, extractor.get("skip_line_patterns", [])):
+            continue
+
+        rule, remainder = catalog_category_for_line(line, extractor)
+        if rule:
+            current_category = {
+                key: value
+                for key, value in rule.items()
+                if key not in ("text", "prefix", "parse_remainder")
+            }
+            current = None
+            if not rule.get("parse_remainder") or not remainder:
+                continue
+            line = remainder
+
+        if not current_category:
+            continue
+
+        row = parse_catalog_entry(line, extractor)
+        if row:
+            row.update(current_category)
+            row = finish_catalog_row(row, extractor)
+            rows.append(row)
+            current = row
+        elif current and extractor.get("append_continuation", True):
+            if line_matches_any(line, extractor.get("continuation_skip_patterns", [])):
+                continue
+            append_value(current, description_key, line)
+
+    skip_names = set(extractor.get("skip_names", []))
+    return [row for row in rows if row.get(name_key) not in skip_names]
+
+
+def apply_text_fixes_to_line(line, fixes):
+    for old, new in fixes.items():
+        line = line.replace(old, new)
+    return line
+
+
 def slice_row(line, columns, transforms=None):
     row = {}
     for column in columns:

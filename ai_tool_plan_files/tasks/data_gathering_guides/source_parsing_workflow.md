@@ -53,7 +53,7 @@ Source-specific helpers should normally:
 Example:
 
 ```powershell
-python helper_scripts/extract_umaine_2172.py > $env:TEMP\umaine_2172_draft.json5
+python helper_scripts/extract_source.py umaine_2172_caneberries > $env:TEMP\umaine_2172_draft.json5
 ```
 
 The helper output is a draft. Do not treat it as reviewed data.
@@ -69,7 +69,7 @@ quoted-paragraph narrative, or a `Name: description` paragraph list, first try
 a config-driven extraction instead of adding a new per-source Python file:
 
 ```powershell
-python helper_scripts/extract_from_config.py helper_scripts/extraction_configs/uga_c740_apples.json > $env:TEMP\uga_c740_apples.json5
+python helper_scripts/extract_source.py uga_c740_apples > $env:TEMP\uga_c740_apples.json5
 ```
 
 This is the preferred shape for an eventual omniparser. The config should name
@@ -99,10 +99,12 @@ shared helpers:
   rows map directly to draft plant records
 - `extract_from_config.py` for sources that can be represented as source
   metadata plus table, paragraph, or marker-list mappings
+- `extract_source.py` plus `extraction_manifest.json` for named source IDs
+  that point at config-backed extractors
 
-Existing command names can stay as tiny wrappers around a config. This keeps
-old notes and shell history working while making the real source-specific logic
-declarative.
+Named manifest entries replace tiny source-specific wrappers. This keeps the
+real source-specific logic declarative while avoiding one Python file per
+config.
 
 ## The Art
 
@@ -207,7 +209,8 @@ names.
 The blackberry PDF uses the same broad shape as GardenNotes 763: bounded text
 sections with sentences such as `Suggested cultivars include ...`. The helper
 config uses `text_tools.section_between()` and `text_tools.names_after_marker()`
-through `extract_from_config.py` for those repeated pieces.
+through `extract_source.py` and `extract_from_config.py` for those repeated
+pieces.
 
 Unlike the strawberry PDF, some category config fields such as `start`, `end`,
 and `marker` are parser instructions, not source data. The script passes the
@@ -321,7 +324,8 @@ though it is not marked up as a heading.
 The UGA apple and pear pages were encoded without source-specific Python
 scripts. Each source uses a strict JSON config in
 `helper_scripts/extraction_configs/` and the shared
-`helper_scripts/extract_from_config.py` runner.
+`helper_scripts/extract_source.py` manifest runner and
+`helper_scripts/extract_from_config.py` config runner.
 
 The apple source has one ordinary table and one disease-resistant table. The
 first table ends with a footnote row whose key cell starts with `1 Listed`, so
@@ -371,3 +375,28 @@ heading. Rather than write custom Python, the configs use
 `generated_rows` keyed by source paragraph prefixes. This keeps the source
 judgment visible in JSON while still letting the shared runner emit reference
 records and compare generated output to committed JSON5.
+
+## UWisc A2582 Southern Fruit Notes
+
+The Wisconsin A2582 PDF is more difficult than the earlier simple lists and
+HTML tables. Layout-mode `pdftotext` preserves some columns but splits many
+words. Flow-mode text produces a catalog-like stream where a heading sets the
+fruit group and most entries start with an all-caps cultivar name followed by
+a prose description.
+
+The config uses `pdf_catalog_entries` for the tree-fruit and stone-fruit
+sections. The parser keeps a current category from exact or prefix heading
+rules, then starts a new row when a line begins with all-caps name tokens and
+continues the description across following lines. Source-local `text_fixes`
+clean PDF word breaks, while `name_overrides` handles project canonical names
+such as `Autumncrisp`, `Co-op 39`, `GoldRush`, and `Sweet Cherry Pie`.
+
+This source also showed why harvest extraction should sometimes be prefix
+based. A broad search for `ripens` can catch comparison sentences such as
+`the fruit ripens earlier`; the A2582 config instead prefers sentence starts
+such as `Fruit ripens`, `Harvest beginning`, and `Harvest starting`.
+
+The committed reference currently encodes the tree-fruit and stone-fruit
+catalog sections only. The small-fruit sections remain in the candidate queue
+because the PDF flow text interleaves columns more aggressively there and
+needs a separate parser strategy.

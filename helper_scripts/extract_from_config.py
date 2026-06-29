@@ -13,6 +13,7 @@ from fruitfacts_extract.pdf_tools import clean_pdf_text
 from fruitfacts_extract.pdf_tools import clean_pdf_layout_text
 from fruitfacts_extract.pdf_tools import pdf_url_to_text
 from fruitfacts_extract.pdf_table_tools import fixed_width_table_rows
+from fruitfacts_extract.pdf_table_tools import catalog_entry_rows
 from fruitfacts_extract.pdf_table_tools import numbered_block_rows
 from fruitfacts_extract.record_tools import append_source_note
 from fruitfacts_extract.record_tools import category_records
@@ -31,6 +32,7 @@ from fruitfacts_extract.text_tools import first_sentence_containing
 from fruitfacts_extract.text_tools import names_after_marker
 from fruitfacts_extract.text_tools import quoted_name_paragraph
 from fruitfacts_extract.text_tools import section_between
+from fruitfacts_extract.text_tools import split_sentences
 
 
 def load_config(path):
@@ -318,8 +320,26 @@ def harvest_time(row, extractor, lookups):
     if extractor.get("harvest_key"):
         return row.get(extractor["harvest_key"])
     if extractor.get("harvest_from_key"):
+        text = row.get(extractor.get("harvest_from_key", "description"), "")
+        if extractor.get("harvest_term_priority"):
+            if extractor.get("harvest_term_prefix"):
+                sentences = split_sentences(text)
+                terms = [
+                    term.lower()
+                    for term in extractor.get("harvest_terms", ["ripen", "matur"])
+                ]
+                for term in terms:
+                    for sentence in sentences:
+                        if sentence.lower().startswith(term):
+                            return sentence
+                return None
+            for term in extractor.get("harvest_terms", ["ripen", "matur"]):
+                value = first_sentence_containing(text, [term])
+                if value:
+                    return value
+            return None
         return first_sentence_containing(
-            row.get(extractor["harvest_from_key"], ""),
+            text,
             extractor.get("harvest_terms", ["ripen", "matur"]),
         )
     return None
@@ -440,6 +460,26 @@ def plants_from_pdf_numbered_blocks(text, extractor, overrides, lookups):
     rows = numbered_block_rows(text, extractor)
     rows = expanded_rows(rows, extractor)
     rows = [row_text_fixes(row, extractor.get("text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    return plant_records_from_config_rows(
+        rows,
+        extractor,
+        overrides,
+        lookups,
+    )
+
+
+def plants_from_pdf_catalog_entries(text, extractor, overrides, lookups):
+    extractor = {
+        "name_key": "name",
+        "description_key": "description",
+        "category": {"row_key": "category"},
+        "plant_type": {"row_key": "plant_type"},
+        **extractor,
+    }
+    rows = catalog_entry_rows(text, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
     rows = [row_overrides(row, extractor) for row in rows]
     return plant_records_from_config_rows(
         rows,
@@ -631,6 +671,10 @@ def extract(config):
             plants.extend(
                 plants_from_pdf_numbered_blocks(data, extractor, overrides, lookups)
             )
+        elif extractor["kind"] == "pdf_catalog_entries":
+            plants.extend(
+                plants_from_pdf_catalog_entries(data, extractor, overrides, lookups)
+            )
         elif extractor["kind"] == "quoted_paragraph_blocks":
             plants.extend(
                 plants_from_quoted_paragraphs(data, extractor, overrides, lookups)
@@ -642,18 +686,22 @@ def extract(config):
     return plants
 
 
+def emit_config(path):
+    config = load_config(path)
+    emit_reference(
+        pairs(config["reference_fields"]),
+        extract(config),
+        categories=category_records(config.get("categories", [])),
+        locations=config.get("locations"),
+    )
+
+
 def main(argv):
     if len(argv) != 2:
         print("Usage: extract_from_config.py CONFIG.json", file=sys.stderr)
         return 2
     try:
-        config = load_config(argv[1])
-        emit_reference(
-            pairs(config["reference_fields"]),
-            extract(config),
-            categories=category_records(config.get("categories", [])),
-            locations=config.get("locations"),
-        )
+        emit_config(argv[1])
     except Exception as error:
         print(f"Failed to extract from config: {error}", file=sys.stderr)
         return 1

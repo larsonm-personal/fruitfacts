@@ -1,0 +1,808 @@
+{
+    title: "Home Fruit Cultivars for Southern Wisconsin",
+    author: "A. Atucha, B.R. Smith, and J. van Zoeren",
+    description: "University of Wisconsin-Extension guide to fruit cultivars for southern Wisconsin; this draft encodes the tree-fruit and stone-fruit catalog sections",
+    url: "https://learningstore.extension.wisc.edu/assets/pdfs/A2582.PDF",
+    thumbnail: "pdf",
+    published: "2017",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Wisconsin-Extension, Madison, Wisconsin",
+            latitude: 43.0766,
+            longitude: -89.4125
+        },
+    ],
+    categories: [
+        {
+            name: "Apple cultivars for southern Wisconsin",
+            description: "UW-Extension A2582 lists apple cultivars in order of ripening for southern Wisconsin"
+        },
+        {
+            name: "Antique apple cultivars for southern Wisconsin",
+            description: "UW-Extension A2582 lists selected antique apples suited to Wisconsin"
+        },
+        {
+            name: "Disease-resistant apple cultivars for southern Wisconsin",
+            description: "UW-Extension A2582 lists apple cultivars with apple-scab resistance and other disease-resistance notes"
+        },
+        {
+            name: "Crabapple cultivars for southern Wisconsin",
+            description: "UW-Extension A2582 lists crabapples for southern Wisconsin home landscapes and culinary use"
+        },
+        {
+            name: "Pear cultivars for southern Wisconsin",
+            description: "UW-Extension A2582 lists European pear cultivars for southern Wisconsin"
+        },
+        {
+            name: "Asian pear cultivars for southern Wisconsin",
+            description: "UW-Extension A2582 lists Asian pear cultivars for protected areas of southern Wisconsin"
+        },
+        {
+            name: "Sweet cherry cultivars for southern Wisconsin",
+            description: "UW-Extension A2582 lists sweet cherry cultivars that may perform in protected southern Wisconsin sites"
+        },
+        {
+            name: "Tart cherry cultivars for southern Wisconsin",
+            description: "UW-Extension A2582 lists self-fruitful tart cherry cultivars for southern Wisconsin"
+        },
+        {
+            name: "European plum cultivars for southern Wisconsin",
+            description: "UW-Extension A2582 lists blue European or prune plums for southern Wisconsin"
+        },
+        {
+            name: "American hybrid plum cultivars for southern Wisconsin",
+            description: "UW-Extension A2582 lists American hybrid plum cultivars for southern Wisconsin"
+        },
+        {
+            name: "American hybrid plum pollinizers for southern Wisconsin",
+            description: "UW-Extension A2582 lists pollinizer cultivars for American hybrid plums"
+        },
+        {
+            name: "Apricot cultivars for southern Wisconsin",
+            description: "UW-Extension A2582 lists apricot cultivars that may crop in southern Wisconsin"
+        },
+        {
+            name: "Peach cultivars for southern Wisconsin",
+            description: "UW-Extension A2582 lists cold-hardy peach cultivars for southern Wisconsin"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Autumncrisp",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late September.",
+            description: "A bright red, medium-large, non-browning apple. The fruit is very crisp and juicy, and the flavor is slightly sweeter than tart. Trees are easy to grow. Fruit ripens in late September. Source table names this as Autumn Crisp"
+        },
+        {
+            type: "Apple",
+            name: "Frostbite",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early October.",
+            description: "With an intense sweet, aromatic flavor, the small red apple is great for drying (chips) and cider. Storage life is about three months. The trees are very winter-hardy, moderately vigorous, and spreading. Fruit ripens in early October"
+        },
+        {
+            type: "Apple",
+            name: "Candy Crisp",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early October.",
+            description: "Golden skin with a pinkish blush, the apples are large, very sweet, and have a crisp texture. The fruit can be stored up to four months in refrigeration (32-45 F). The trees are moderately disease resistant and bear fruit annually. Fruit ripens in early October"
+        },
+        {
+            type: "Apple",
+            name: "Cortland",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late September.",
+            description: "A McIntosh offspring with very good quality fruit. The tender flesh is slow to brown, and the tangy-sweet flavor is good for fresh use and baking. This annual bearing tree has a weeping, willowy growth habit. It is winter-hardy, but is susceptible to apple scab. Red sports such as Redcort and Royalcort are similar, but the fruit ripens earlier and the trees have shorter lifespans. Fruit ripens in late September"
+        },
+        {
+            type: "Apple",
+            name: "Empire",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early October.",
+            description: "A high-quality, McIntosh-type, medium to small red apple with firm, crisp, and juicy flesh. Good for fresh use, and fruit stores well for three to five months. Trees are productive and medium-sized, with a spur-type growth habit; very susceptible to apple scab, but tolerant of fire blight. Fruit ripens in early October"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid- to late October.",
+            description: "First discovered in West Virginia, this flavorful variety is related to Red Delicious in name only. Medium to large fruit with yellowish-green skin, turning light-yellow at maturity. The flesh is tender, juicy, and yellow-white with outstanding flavor when mature. Fruit is excellent for fresh uses, baking, and freezing. However, the fruit shrivels rapidly in low-humidity storage conditions. The trees are medium-sized and marginally winter-hardy. Fruit ripens in mid- to late October"
+        },
+        {
+            type: "Apple",
+            name: "Honeycrisp",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late September.",
+            description: "Long-stemmed, large fruit with a red blush over a yellow background. The flesh is exceptionally crisp and juicy with a mild, sweet flavor. The fruit stays crisp even after storage; however, this variety is notorious for fruit quality disorders such as bitter pit. The trees are moderately vigorous and upright in growing habit with a strong alternate-bearing trait. Trees are winter-hardy, even in USDA Plant Hardiness Zone 3. Fruit ripens in late September"
+        },
+        {
+            type: "Apple",
+            name: "Jerseymac",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late August.",
+            description: "This red, McIntosh-type apple has excellent flavor for fresh use. Fruit only lasts in storage for two to three weeks at most. The trees are very large and susceptible to fire blight and scab. Fruit ripens in late August"
+        },
+        {
+            type: "Apple",
+            name: "Jonagold",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-October.",
+            description: "Producing large fruit, similar to Golden Delicious, the skin is yellow with a red blush on the exposed side. Used as a dessert apple, the creamy yellow flesh has an outstanding sweet flavor, and the fruit stores well. Jonagold is a triploid apple and should not be use as a pollinizer. Any diploid apple flowering at the same time (except Golden Delicious) will serve as a pollinizer. Trees are moderately winter-hardy. Fruit ripens in mid-October"
+        },
+        {
+            type: "Apple",
+            name: "Kinderkrisp",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late August.",
+            description: "Produces small- to medium-sized very crisp apples, perfect for a single serving or kids' lunches. Best eaten fresh; balanced sweet flavors similar to Honeycrisp. The trees are precocious and can start bearing fruit within the first three years after planting. Fruit ripens in late August"
+        },
+        {
+            type: "Apple",
+            name: "Lodi",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens around the second week of August.",
+            description: "An early, large, light green or yellow apple with tart, tender flesh. Best for pies or sauce not for storage. The trees are large, upright, and very susceptible to fire blight. This cultivar tends to be alternate bearing, with a heavy crop one year, followed by a light crop the next year. Fruit ripens around the second week of August"
+        },
+        {
+            type: "Apple",
+            name: "McIntosh",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-September.",
+            description: "First discovered in Ontario, Canada, this deep red to crimson, medium-large apple is aromatic, crisp, juicy, sweet, and tangy-tart with tender, white flesh. Very good for fresh use, sauces, and baking, McIntosh apples store well. The trees are winter-hardy and productive, although susceptible to apple scab, and the fruit tends to drop prematurely. Spur-type strains such as Macspur, Spur McIntosh, or Marshall McIntosh are similar and suitable. Fruit ripens in mid-September"
+        },
+        {
+            type: "Apple",
+            name: "Oriole",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late July to early August.",
+            description: "Probably the earliest dessert apple; quite large and round with yellow-orange skin and red striping. Flesh is juicy, fine-grained, and tender with low acidity and a sprightly flavor. Trees are rounded, medium-sized, and productive. Fruit ripens in late July to early August"
+        },
+        {
+            type: "Apple",
+            name: "Paulared",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late August to early September.",
+            description: "Another early McIntosh-type apple that is high-quality, and medium-sized with bright red skin and tart, juicy, crisp white flesh. Not for storage. Trees are winter-hardy, but very susceptible to fire blight. Fruit ripens in late August to early September"
+        },
+        {
+            type: "Apple",
+            name: "Pixie Crunch",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late September to early October.",
+            description: "Small, deep-red fruit with crunchy yellow flesh that is rich and very sweet with tart overtones. Trees are moderately vigorous, resistant to apple scab, but susceptible to fire blight and cedar apple rust. Fruit ripens in late September to early October"
+        },
+        {
+            type: "Apple",
+            name: "Regent",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early October.",
+            description: "Medium-sized, bright-red over yellow fruit, the skin is tough, but the flesh is crisp and juicy with a mild sweet flavor. The fruit is excellent for fresh use and cooking. Trees are moderately winter-hardy. Fruit ripens in early October"
+        },
+        {
+            type: "Apple",
+            name: "SnowSweet",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early to mid-October.",
+            description: "Consistent, medium-sized apple with a bronze-red blush. The firm, crisp, pure white flesh has a sweet-tart balance and is slow to oxidize (turn brown). Trees are moderately vigorous, produce annually, and have some resistance to apple scab and fire blight. Fruit ripens in early to mid-October"
+        },
+        {
+            type: "Apple",
+            name: "Spartan",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late September to early October.",
+            description: "Highly colored, medium-sized apple that is firm and crisp with a solid, dark red blush. The flesh is sweet-tart, white, and juicy. Quality is very good for fresh use and cooking. Trees are medium-sized and winter-hardy. Fruit ripens in late September to early October"
+        },
+        {
+            type: "Apple",
+            name: "Minnewashta",
+            category: "Apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late August.",
+            description: "A crisp, large fruit with striped, red skin, Zestar! is a juicy, early season apple with white flesh and a pleasant acid-sugar balance. Fruit can be stored up to seven weeks. The trees are susceptible to scab, moderately resistant to fire blight, cold-hardy, and vigorous in early years; the shape is upright to spreading. Fruit ripens in late August. Source table names this as Zestar!"
+        },
+        {
+            type: "Apple",
+            name: "Arkansas Black",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in October.",
+            description: "Deep red color that turns almost black in storage. Aromatic and flavorful, Arkansas Black has a crisp texture, sweet/tart flavor, and creamy to pale yellow flesh. Introduced in Arkansas in the 1800s, trees are winter-hardy to USDA hardiness zone 4. For best flavor, store fruit at least a month before eating; fruit can be stored up to eight months in refrigeration. Fruit ripens in October"
+        },
+        {
+            type: "Apple",
+            name: "Black Oxford",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in November.",
+            description: "Dark purple, almost black skinned fruit with aromatic, sweet-tart flavor and white flesh. Originating in Oxford County, Maine, in the late 1700s, the trees tolerate cold winters. The small to medium-sized apples keep well three or more months in storage. Fruit ripens in November"
+        },
+        {
+            type: "Apple",
+            name: "Court Pendu Plat",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early September.",
+            description: "Light green with red-orange overtones, this winter-hardy cultivar originated in Europe in the 15th-16th century, possibly of Roman origin. Also known as \"Wise Apple,\" the trees flower late, escaping spring frost damage. This small, flat, rounded dessert apple has cream-colored flesh and a fruity flavor. Its dense texture, balanced sweetness, and acidity make it excellent for cider and sauces. Apples can be stored for three or more months. Fruit ripens in early September"
+        },
+        {
+            type: "Apple",
+            name: "Duchess of Oldenburg",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late August.",
+            description: "Medium-sized, red, mottled-striped apple that originated in Russia in the 18th century. This winter-hardy, highly productive cultivar is a great, early-season option for northern growers. Apples are tart, juicy, and good for eating fresh; they have a short shelf life, and are best used for making pies or sauces. Fruit ripens in late August"
+        },
+        {
+            type: "Apple",
+            name: "Gravenstein",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late July or early August.",
+            description: "Medium to large, irregularly shaped apple with broad red stripes, it is thought to have originated in Denmark in 1669. Gravenstein is one of the earliest cultivars to ripen, and has a short shelf life of two to three weeks. An aromatic apple with white to creamy-yellow flesh, the flavor is sweet-tart balanced, excellent for eating fresh, making sauces, or cider. It is susceptible to many diseases. Fruit ripens in late July or early August"
+        },
+        {
+            type: "Apple",
+            name: "Holstein",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early September.",
+            description: "Large, greenish-yellow fruit with orange blush, some striping and slight russeting. A relative newcomer, Holstein was discovered in Germany in the early 1900s. Fruit is aromatic, balanced, sweet, and sharp. Flesh is white to cream or light yellow, and is excellent for eating, drying, juices, and cider. Shows some apple scab resistance. Fruit ripens in early September"
+        },
+        {
+            type: "Apple",
+            name: "Newtown Pippin",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late October.",
+            description: "Light green with slight reddish blush and variable size, Newtown (or Albermarle) Pippin originated in Newtown, Long Island in the 1700s. Apples are crisp with white to cream-colored flesh and a distinctive, aromatic, sweet-tart flavor. Excellent for eating fresh, cooking, or making cider. Fruit ripens in late October. Source table names this as New Town Pippin"
+        },
+        {
+            type: "Apple",
+            name: "Northfield Beauty",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late August.",
+            description: "Medium to large size with red stripes on a light green background. Originating in Vermont in the early 1800s, Northfield Beauty is highly productive and resistant to apple scab. Apples have a tart flavor, are extremely well-suited for pies and sauces, and can be stored for three or more months--better than most early season antique varieties. Fruit ripens in late August"
+        },
+        {
+            type: "Apple",
+            name: "Northwestern Greening",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in October.",
+            description: "Medium to large size, the skin is tough and green turning to yellow when fully mature. The pale-yellow flesh is firm and mildly tart with hints of citrus and pear. Originating in Wisconsin in the late 1800s, this apple is best for pies or sauces, and keeps well in cold storage. Fruit ripens in October"
+        },
+        {
+            type: "Apple",
+            name: "Egremont Russet",
+            category: "Antique apple cultivars for southern Wisconsin",
+            description: "Small to medium-sized apple is golden with fine sandpaper-like skin. Like other russetted cultivars, Egremont Russet has lost popularity to the smooth, shiny apples usually showcased in the grocery stores. However, despite its rough appearance, the flesh is white to creamy with a smooth, pear-like texture. The balanced sweet-tart flavor has been described as nutty, smoky, or with anise undertones, which"
+        },
+        {
+            type: "Apple",
+            name: "Pink Pearl",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-September.",
+            description: "Not only a novelty with its bright pink flesh underneath a smooth, red-orange blush skin, Pink Pearl also is a crisp, flavorful, tart, and juicy apple. The apples make rosy-pink applesauce. This cultivar originated in California in the early 1900s, and might not be a great fit for northern orchards. Fruit ripens in mid-September"
+        },
+        {
+            type: "Apple",
+            name: "Reinette Gris",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late September.",
+            description: "Produces medium-sized, sweet, crisp, and dry fruit with a red blush. Originating in France in the 1600s, the trees are very winter-hardy and the fruit stores well. Fruit ripens in late September"
+        },
+        {
+            type: "Apple",
+            name: "Summer Rambo",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early September.",
+            description: "Medium-sized, greenish-yellow fruit with red blush; good for fresh use or for cooking. This crisp, tart, and juicy apple originated in France in the 1500s. Fruit ripens in early September"
+        },
+        {
+            type: "Apple",
+            name: "Wealthy",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-September.",
+            description: "A good eating apple with mellow, sweet flavor, and smooth, red-striped skin. Originating in Minnesota in 1868, it is very winter-hardy, and is a good choice for northern growers. Fruit ripens in mid-September"
+        },
+        {
+            type: "Apple",
+            name: "Winesap",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late October.",
+            description: "An old-time favorite, small-to medium-sized, deep red over yellow, it originated in the U.S. in the early 1800s. The fruit is crisp and tart with a high sugar content and winelike aroma. Trees are high producers and fruit stores well. Fruit ripens in late October"
+        },
+        {
+            type: "Apple",
+            name: "Wolf River",
+            category: "Antique apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late September.",
+            description: "This old-time favorite originated in central Wisconsin in the late 1800s. Large apples are primarily used for baking (supposedly one apple makes one pie!). Flesh is white to cream-pale yellow and aromatic. The apples are good for eating fresh or cooking, and last one to two months in storage. Trees are frost-hardy, and are resistant to apple scab, cedar apple rust, powdery mildew, and fire blight. Fruit ripens in late September"
+        },
+        {
+            type: "Apple",
+            name: "Co-op 39",
+            category: "Disease-resistant apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late September to early October.",
+            description: "The most recent release of the Purdue-RutgersIllinois (P-R-I) breeding program (2004). Fruit has a full red color, crisp texture, and sweet-tart flavor. Trees are resistant to apple scab, but susceptible to cedar-apple rust and fire blight. An attractive apple, Crimson Crisp stores up to four or more months. Fruit ripens in late September to early October. Source table names this as Crimson Crisp"
+        },
+        {
+            type: "Apple",
+            name: "Enterprise",
+            category: "Disease-resistant apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late September to early October.",
+            description: "Also from the P-R-I breeding program, it is a large, attractive fruit with an orange-red blush on green, ripening to deep red. Resistant to apple scab, fire blight, and cedar-apple rust. The flavor can be overly acidic at harvest, and the fruit might require storing for several weeks to bring out the full flavor. Apples mature about 160-days postbloom, and store well. Fruit ripens in late September to early October"
+        },
+        {
+            type: "Apple",
+            name: "GoldRush",
+            category: "Disease-resistant apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late September to early October.",
+            description: "A flavorful, medium-sized, dessert apple with a dense, crisp texture, and tart-sweet flavor when picked. With Golden Delicious in its lineage, GoldRush has a lot of potential for fresh markets. The fruit stores well and does not turn brown, but rather more golden as it ages. As another product of the P-R-I program, it is resistant to apple scab. However, GoldRush ripens late in the season so may not be a good option for northern Wisconsin orchards. Fruit ripens in late September to early October. Source table names this as GoldRush"
+        },
+        {
+            type: "Apple",
+            name: "Liberty",
+            category: "Disease-resistant apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late September to early October.",
+            description: "This high-quality, red, dessert apple is crisp and juicy with yellowish flesh. Fruit is good for fresh use and cooking. Thin crops early in the season to attain good fruit size. Bred specifically for disease resistance, Liberty is scab free and resistant to fire blight and cedar-apple rust. Fruit ripens in late September to early October"
+        },
+        {
+            type: "Apple",
+            name: "Murray",
+            category: "Disease-resistant apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early September.",
+            description: "Dark red skin and medium-large sized fruit with fine-textured, soft, and juicy flesh. Good for eating fresh. It is a good early season replacement for McIntosh. Fruit ripens in early September"
+        },
+        {
+            type: "Apple",
+            name: "MacFree",
+            category: "Disease-resistant apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens with McIntosh in mid-September.",
+            description: "McIntosh-type with tender flesh and a fine, slightly sweet flavor, the fruit should be stored one month before eating. Macfree stores well in refrigerated conditions (32-45 F) until March. Resistant to apple scab and fire blight. Fruit ripens with McIntosh in mid-September. Source table names this as Macfree"
+        },
+        {
+            type: "Apple",
+            name: "Nova Easygro",
+            category: "Disease-resistant apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late September.",
+            description: "Producing large fruit, blushed red with white flesh and a sweet, sprightly flavor, this is a goodquality fall apple. The fruit is good for cider blends and should keep well. Fruit ripens in late September"
+        },
+        {
+            type: "Apple",
+            name: "Novamac",
+            category: "Disease-resistant apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late September.",
+            description: "Early ripening McIntosh-type. Fruit are primarily red striped. Tree is vigorous and resistant to cedar-apple rust, fire blight, and apple scab. Fruit ripens in late September"
+        },
+        {
+            type: "Apple",
+            name: "Redfree",
+            category: "Disease-resistant apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late August.",
+            description: "An early season, attractive, medium-sized, red apple with a smooth, waxy skin that is russet-free. The flesh is crisp and pleasantly sweet, and the fruit stores well in refrigeration up to 40 days. Another P-R-I introduction, the trees are medium-sized and upright. They are resistant to apple scab and cedarapple rust, moderately resistant to fire blight and powdery mildew, and highly cold-tolerant, making this variety a great option for northern growers. Fruit ripens in late August"
+        },
+        {
+            type: "Apple",
+            name: "Sansa",
+            category: "Disease-resistant apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid- to late August.",
+            description: "An excellent-quality, medium, conical-shaped, red apple with yellow streaking. Sweet and juicy with balanced acidity and flavor, this early cultivar has very good tolerance to apple scab and cedar apple rust. Fruit ripens in mid- to late August"
+        },
+        {
+            type: "Apple",
+            name: "Williams' Pride",
+            category: "Disease-resistant apple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late September to early October.",
+            description: "Fruit has a complex mix of sweet, tart, and spicy flavors. It is resistant to apple scab, cedar-apple blight, and fire blight, but shows a tendency toward water core, a disorder in which fruit become water-soaked and soft. It has a long window of maturity, requiring multiple pickings. Fruit ripens in late September to early October. Source table names this as William's Pride"
+        },
+        {
+            type: "Crabapple",
+            name: "Centennial",
+            category: "Crabapple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-September.",
+            description: "Fruit are usually 2 inches long with striped, red skin. The flesh is yellow, crisp, and juicy; and the flavor is mildly acidic and considered good for fresh use and sauce. Naturally semi-dwarf trees are moderately resistant to fire blight. Fruit ripens in mid-September"
+        },
+        {
+            type: "Crabapple",
+            name: "Chestnut",
+            category: "Crabapple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid- to late September.",
+            description: "This attractive, reddish bronze fruit that is about the size of a small apple, has fine-textured, yellowish flesh that has a pleasing, mildly tart, nut-like flavor. Fruit are excellent for dessert and make superb cider. The tree is vigorous and winter-hardy. Fruit ripens in mid- to late September"
+        },
+        {
+            type: "Crabapple",
+            name: "Dolgo",
+            category: "Crabapple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late August.",
+            description: "Tart for fresh use, the bright red, oval fruit, 1 1.25 inch in diameter, makes a high-quality orange-red jelly. The large-statured trees are extremely winter-hardy, apple scab-resistant, and good pollinizers for many apple cultivars. Fruit ripens in late August"
+        },
+        {
+            type: "Crabapple",
+            name: "Whitney",
+            category: "Crabapple cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late August to early September.",
+            description: "Large, dessert crabapple with yellow base and red blushstriping is juicy and sweet. The flesh is yellowish with just a hint of tartness and great for jelly, canning, and pickling. The spreading, precocious, and very productive trees have good apple scab and fire blight tolerance. Fruit ripens in late August to early September"
+        },
+        {
+            type: "Euro Pear",
+            name: "Bartlett",
+            category: "Pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Harvest beginning as early as September.",
+            description: "First discovered in England in the 1800s, this is the standard commercial pear in North America. It is moderately winter-hardy, but adapted to widely varying soil and climatic conditions. Very susceptible to fire blight. The fruit are medium to large size with melting flesh. Good for fresh use and canning. Red-skinned strains, such as Red Sensation, are also available but are not suitable pollinizers of Bartlett. Harvest beginning as early as September"
+        },
+        {
+            type: "Euro Pear",
+            name: "Flemish Beauty",
+            category: "Pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Harvest starting in late September.",
+            description: "The green skin with red flush turns more yellow as it ripens. Very good quality fruit that is juicy and tender with fair keeping quality. Timely harvesting is necessary to prevent overripening. These winter-hardy trees are susceptible to fire blight and very susceptible to pear scab, which seriously diminishes fruit quality. Harvest starting in late September"
+        },
+        {
+            type: "Euro Pear",
+            name: "Gem",
+            category: "Pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Harvest starting in early September.",
+            description: "A joint 2013 release of Michigan State University, Oregon State University, and Clemson University, it is resistant to fire blight. This gemshaped, light-green, flushed-red fruit is medium-sized, sweet, and mildly aromatic. The attractive, medium-sized fruit can be consumed crisp or softened, and can be harvested over a three-week period and stored for up to five months. Harvest starting in early September"
+        },
+        {
+            type: "Euro Pear",
+            name: "Gourmet",
+            category: "Pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Harvest starting mid- to late September.",
+            description: "The fruit are medium-sized and yellow to yellow-green in color. This cultivar combines the crisp flesh found in Asian pears with the sweet, rich flavor of European pears. Refrigerated, the fruit will keep several weeks. Medium-sized trees are upright and moderately productive, winter-hardy, and tolerant of fire blight, although they are not effective pollinizers. Harvest starting mid- to late September"
+        },
+        {
+            type: "Euro Pear",
+            name: "Harrow Delight",
+            category: "Pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Harvest starting in mid-August.",
+            description: "The fruit are medium-sized with red blush over yellow, of good quality, with fewer grit cells than most European pears. This Canadian introduction is moderately winter-hardy and highly resistant to fire blight. Harvest at \"mature green\" stage and after-ripened, otherwise fruit will drop heavily from the tree. Harvest starting in mid-August"
+        },
+        {
+            type: "Euro Pear",
+            name: "Harrow Sweet",
+            category: "Pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Harvest beginning in late September.",
+            description: "Similar in size and appearance to Bartlett, but with a more attractive blush, juicy, and sweet. Trees are moderately winter-hardy and have good resistance to fire blight. Precocious and productive trees tend to overbear, so fruit thinning may be needed to prevent biennial bearing. Harvest beginning in late September"
+        },
+        {
+            type: "Euro Pear",
+            name: "Harvest Queen",
+            category: "Pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Harvest beginning in late August.",
+            description: "From the Harrow Research and Development Centre in Ontario, Canada, the fruit is smaller than Bartlett, but has fewer grit cells and far superior fire blight resistance. Harvest beginning in late August"
+        },
+        {
+            type: "Euro Pear",
+            name: "Honeysweet",
+            category: "Pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Harvest beginning in early September.",
+            description: "Medium to large yellow pear with slight pink-red blush, the skin is smooth, and the flesh is very sweet and creamy. Trees tend to be somewhat self-fruitful for fruit set, but better with a pollinizer, are moderately fire blight resistant, and winter-hardy. Harvest beginning in early September"
+        },
+        {
+            type: "Euro Pear",
+            name: "Luscious",
+            category: "Pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Harvest beginning in late September.",
+            description: "The flavor of this medium to small fruit is similar to Bartlett, but sweeter. Luscious originated in South Dakota. The trees are very winter-hardy and considered fire blight tolerant for small fruit. Do not use as pollinizer. Harvest beginning in late September"
+        },
+        {
+            type: "Euro Pear",
+            name: "Parker",
+            category: "Pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Harvest starting in mid-August.",
+            description: "Introduced by the University of Minnesota, the tasty, medium-sized, reddish-brown fruit is excellent for eating fresh, jams, and jellies, but does not keep well. Trees are moderately winter-hardy. Harvest starting in mid-August"
+        },
+        {
+            type: "Euro Pear",
+            name: "Patten",
+            category: "Pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Harvest beginning in mid- to late September.",
+            description: "An excellent dessert pear, the medium- to large-sized, yellow fruit are very tender and juicy, though not good for canning. Moderate tolerance to fire blight. Harvest beginning in mid- to late September"
+        },
+        {
+            type: "Euro Pear",
+            name: "Summercrisp",
+            category: "Pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Harvest beginning in mid-August.",
+            description: "The red-blushed, small fruit with crisp, juicy flesh is similar to an Asian pear and has a mild flavor. Resistant to fire blight. Harvest beginning in mid-August"
+        },
+        {
+            type: "Euro Pear",
+            name: "Ubileen",
+            category: "Pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Harvest beginning in mid- to late July.",
+            description: "The fruit is large and attractive with a red blush. The flesh is aromatic, sweet, buttery, and finetextured. Trees are disease resistant. Harvest beginning in mid- to late July"
+        },
+        {
+            type: "Asian Pear",
+            name: "20th Century",
+            category: "Asian pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late August.",
+            description: "Round, medium-sized, green to yellow fruit. Crisp and very sweet with a delicate flavor at maturity. One of the older cultivars, it originated in Japan around 1900. This variety stores well. Fruit ripens in late August. Source table names this as 20TH Century (Nijiseiki)"
+        },
+        {
+            type: "Asian Pear",
+            name: "Chojuro",
+            category: "Asian pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-August.",
+            description: "Large, flat-shaped fruit, gold to orange skin turning orangebrown russet when fully mature. Fruit is sweet and stores extremely well. Trees are upright, vigorous, and very productive. Fruit ripens in mid-August"
+        },
+        {
+            type: "Asian Pear",
+            name: "Shinseiki",
+            category: "Asian pear cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-August.",
+            description: "Medium-sized, round, glossy yellow, and crisp like an apple, the fruit is similar to 20th Century in appearance but not as sweet. Fruit ripens in mid-August. Source table names this as Shinseiki (New Century)"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Benton",
+            category: "Sweet cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-July.",
+            description: "Medium-large fruit with dark red skin and flesh, Benton blooms later than many sweet cherries, reducing the risk of a spring frost damaging the flowers. The fruit also resists rain cracking (fruit skin will not split when it rains close to harvest). Fruit ripens in mid-July"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Ridgewood",
+            category: "Sweet cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-July.",
+            description: "The fruit is medium-large, firm, dark red, and heartshaped. BlackGold is self-fruitful with mid- to late bloom season. Fruit ripens in mid-July. Source table names this as BlackGoldTM"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Emperor Francis",
+            category: "Sweet cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early July.",
+            description: "This yellow cherry has a red blush, excellent flavor, and good fruit firmness. The fruit resists rain cracking, and trees consistently set a crop every year. Fruit ripens in early July"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Gold",
+            category: "Sweet cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid- to late July.",
+            description: "The most winter-hardy sweet cherry, Gold also blooms later so is less susceptible to injury from spring frost, offering prolific production. Small, yellow, firm fruit have sweet and tangy flavor and crack resistance. Birds are less apt to eat due to yellow color. Fruit ripens in mid- to late July"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Kristin",
+            category: "Sweet cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-July.",
+            description: "Very dark, purplish-red fruit, resists rain cracking. This cultivar presents higher tolerance to mid-winter temperatures than most sweet cherries. Fruit ripens in mid-July"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Lapins",
+            category: "Sweet cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid- to late July.",
+            description: "Large, dark red fruit with good rain cracking resistance. Consistently productive and winter-hardy. Fruit ripens in mid- to late July. Source table names this as Lapin"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Van",
+            category: "Sweet cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late June.",
+            description: "Dark, red cherry is second only to GOLD in winter-hardiness.The trees are vigorous and precocious. Fruit ripens in late June"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Newfane",
+            category: "Sweet cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-July.",
+            description: "Moderate-sized, yellow fruit with red blush and good resistance to rain cracking. Self-fruitful, with a mid- to late bloom season. The trees have good field tolerance to bacterial canker and cherry leaf spot. Fruit ripens in mid-July. Source table names this as Whitegold"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Balaton",
+            category: "Tart cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-July.",
+            description: "Sweeter than typical tart cherry varieties, Balaton originated in Hungary. The large, plump, firm fruit has red flesh that produces a bright red juice. Fruit ripens in mid-July"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Evans",
+            category: "Tart cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-July.",
+            description: "Very winter-hardy and productive, this Canadian introduction produces bright red, relatively sweet cherries with small pits. The trees may be marketed as Bali, Evans, or Evans Bali. Fruit ripens in mid-July"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Sweet Cherry Pie",
+            category: "Tart cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Ripens mid-July.",
+            description: "This cultivar from northern Wisconsin is very winter-hardy, producing reliably heavy crops of cherries sweeter than other tart cherry cultivars. Ripens mid-July. Source table names this as First Editions Sweet Cherry PieTM Cherry"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Meteor",
+            category: "Tart cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid- to late July.",
+            description: "This Amarello-type, large, bright-red, tart fruit with yellow flesh and small pits produces colorless to yellow juice. Trees are medium-sized, attractive, very winter-hardy, and relatively resistant to leaf spot. Fruit ripens in mid- to late July"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Montmorency",
+            category: "Tart cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-July.",
+            description: "The most well-known tart cherry in North America, it produces medium-sized, bright-red, firm, tangy fruit. The trees are self-pollinating, although growth tends to be willowy, as much of the fruit are borne at the base of one-year-old wood. Fruit ripens in mid-July"
+        },
+        {
+            type: "Sour Cherry",
+            name: "North Star",
+            category: "Tart cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early to mid-July.",
+            description: "This large, good-quality fruit with mahogany-red skin and tart, red flesh produces Morello-type juice (dark red). The small, compact trees are very winter-hardy and relatively resistant to cherry leaf spot. Fruit ripens in early to mid-July"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Suda",
+            category: "Tart cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late July.",
+            description: "Medium-sized, tart and juicy, this dark-red fruit makes the darkest Morello juice. Best for processing and freezing. Fruit ripens in late July"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Surefire",
+            category: "Tart cherry cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late July.",
+            description: "An introduction from the New York State Agricultural Experiment Station, Surefire blooms in late spring and tolerates frost. The fruit is bright red, juicy, and larger than Montmorency. Open growth habit of the trees make harvest much easier than most cultivars. Fruit ripens in late July"
+        },
+        {
+            type: "Plum",
+            name: "Mount Royal",
+            category: "European plum cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late August.",
+            description: "This small- to medium-sized, round, attractive fruit is a very good, winter-hardy blue plum for southern Wisconsin. A heavy producer, Mount Royal is a clingstone type, good for fresh use, canning, drying, and freezing. Fruit ripens in late August"
+        },
+        {
+            type: "Plum",
+            name: "Stanley",
+            category: "European plum cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early September.",
+            description: "A late-blooming, heavy annual producer with a good growth habit, yields are heavier if planted alongside Mount Royal. Stanley produces attractive, blue, ovalshaped fruit with sweet yellow flesh. This freestone variety is excellent for fresh use, preserves, processing, and drying. It is moderately winter-hardy. Fruit ripens in early September"
+        },
+        {
+            type: "Plum",
+            name: "Alderman",
+            category: "American hybrid plum cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens the third week of August.",
+            description: "This introduction from the University of Minnesota (1986) has very large, burgundy-red fruit. Clingstone type with soft flesh and sweet, slightly astringent flavor, Alderman has excellent quality for fresh use and preserves. Fruit ripens the third week of August"
+        },
+        {
+            type: "Plum",
+            name: "Lydecker",
+            category: "American hybrid plum cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late July to early August.",
+            description: "A University of Wisconsin-River Falls release in 2006. The large California-style dessert plum has dark-blue skin and red meaty flesh, with a rich and sweet, appetizing taste. Semi-freestone. High yield requires heavy, annual pruning and prompt thinning to avoid damage to branches. Susceptible to European brown rot twig blight. Fruit ripens in late July to early August. Source table names this as Black Ice TM"
+        },
+        {
+            type: "Plum",
+            name: "La Crescent",
+            category: "American hybrid plum cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early August.",
+            description: "A Minnesota cultivar with small- to medium-sized fruit that can present a light blue blush. The flesh is yellow, sweet, juicy, and of high quality. Freestone type. Fruit ripens in early August"
+        },
+        {
+            type: "Plum",
+            name: "Pipestone",
+            category: "American hybrid plum cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens around mid-August.",
+            description: "Medium-large, red-skinned fruit with yellow, sweet, clingstone-type flesh. Released by the University of Minnesota in 1942, trees are very winter-hardy, productive, and grow well in dry climates. Fruit ripens around mid-August"
+        },
+        {
+            type: "Plum",
+            name: "Superior",
+            category: "American hybrid plum cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late August.",
+            description: "Excellent quality, clingstone-type, bears large red fruit with sweet yellow flesh best eaten fresh or for preserves and baking. Another University of Minnesota release (1933), trees are hardy to -30 F with a somewhat weeping growth habit. Unless hand-thinned, trees tend to over-produce, resulting in small fruit. Fruit ripens in late August"
+        },
+        {
+            type: "Plum",
+            name: "Underwood",
+            category: "American hybrid plum cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early August, extending over a long season.",
+            description: "Released by the University of Minnesota in 1920-21, Underwood bears round to heartshaped, medium-sized fruit. This clingstone-type plum has red skin and tender yellow flesh. The trees are very winter-hardy. Fruit ripens in early August, extending over a long season"
+        },
+        {
+            type: "Plum",
+            name: "Waneta",
+            category: "American hybrid plum cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-August.",
+            description: "Introduced by the South Dakota Experiment Station in the mid-1900s, this clingstone-type over-produces, benefitting from thinning to produce medium-sized fruit with yellow skin, blushed red. The flesh is deep yellow and juicy. Trees are very winter-hardy and bear fruit annually. Fruit ripens in mid-August"
+        },
+        {
+            type: "Plum",
+            name: "Kaga",
+            category: "American hybrid plum pollinizers for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early August.",
+            description: "Bright red fruit are small- to medium-sized. Clingstone flesh is firm, meaty, and characterized by a strong but pleasing flavor. Good for fresh use and cooking. Trees are small, winter-hardy, and productive. Fruit ripens in early August"
+        },
+        {
+            type: "Plum",
+            name: "Toka",
+            category: "American hybrid plum pollinizers for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-August.",
+            description: "Also known as the Bubblegum Plum , this South Dakota Experiment Station introduction produces small- to medium-sized, clingstone-type, reddish bronze fruit with spicy-sweet, yellow flesh. Trees are very winter-hardy. Fruit ripens in mid-August"
+        },
+        {
+            type: "Apricot",
+            name: "Harcot",
+            category: "Apricot cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-July.",
+            description: "Medium-sized with orange skin blushed with pink, freestone flesh that is firm and sweet with good flavor. Fruit is good for fresh use and processing. Trees are self-fruitful with some tolerance to bacterial spot. Fruit ripens in mid-July"
+        },
+        {
+            type: "Apricot",
+            name: "Harlayne",
+            category: "Apricot cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late July.",
+            description: "Medium-sized, orange skin with red blush and freestone flesh that is firm. Tolerant to brown rot, bacterial spot, and canker. Trees are self-sterile, and can be planted with SUGAR PEARLS TM for pollination purposes. Fruit ripens in late July"
+        },
+        {
+            type: "Apricot",
+            name: "Moongold",
+            category: "Apricot cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-July.",
+            description: "Somewhat tough-skinned, medium-sized, yellow freestone fruit with a sweet, mild flavor that is good for processing or desserts. The trees are medium-sized and spreading, and can be planted with SUNGOLD for pollination purposes. Fruit ripens in mid-July"
+        },
+        {
+            type: "Apricot",
+            name: "Sugar Pearls TM",
+            category: "Apricot cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid- to late July.",
+            description: "White-fleshed cultivar from Rutgers Agricultural Experiment Station in New Jersey; has a very sweet, rich flavor. Blooms very late compared to most apricots, so less chance of crop loss due to spring frost. Self-sterile, can be planted with HARLAYNE for pollination purposes. Significantly more winter-hardy than any other eastern cultivar. Fruit ripens in mid- to late July"
+        },
+        {
+            type: "Apricot",
+            name: "Sungold",
+            category: "Apricot cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens mid- to late July.",
+            description: "Fruit are gold with an orange blush, and the skin is more delicate than Moongold's. The freestone flesh is light orange, with a mild and sweet flavor. Good quality for dessert or processing. Vigorous, winter-hardy trees are productive, but self-sterile. Plant with MOONGOLD for pollination purposes. Fruit ripens mid- to late July"
+        },
+        {
+            type: "Apricot",
+            name: "Westcot",
+            category: "Apricot cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early August.",
+            description: "An introduction from Manitoba, Canada, this is one of the most winter-hardy apricot cultivars available. The attractive orange-yellow skin has a pinkish blush, and the juicy freestone fruit are good for eating fresh. Self-fruitful. Fruit ripens in early August"
+        },
+        {
+            type: "Peach",
+            name: "Contender",
+            category: "Peach cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in late August.",
+            description: "Trees can tolerate temperatures below 0 F. Produces consistent crops of medium-large, sweet, juicy freestone fruit. Some resistance to bacterial spot. Fruit ripens in late August"
+        },
+        {
+            type: "Peach",
+            name: "Intrepid",
+            category: "Peach cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-August.",
+            description: "This cultivar combines good winter survival and late blooming, avoiding most spring frost damage. Trees are resistant to bacterial spot. With red skin and sweet yellow flesh, Intrepid is good for baking, canning, freezing, or eating fresh. Fruit ripens in mid-August"
+        },
+        {
+            type: "Peach",
+            name: "Reliance",
+            category: "Peach cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early August.",
+            description: "Among peach cultivars, this one is considered winter-hardy. Developed in New Hampshire in 1964, this late-blooming cultivar can be grown into Canada. A sweet, freestone-style peach with yellow flesh and medium to low fruit quality. Fruit ripens in early August"
+        },
+        {
+            type: "Peach",
+            name: "Madison",
+            category: "Peach cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in early September.",
+            description: "Part of the group of winter-hardy peach cultivars, the freestone fruit are medium-sized, with bright red skin and firm yellow flesh. Fruit ripens in early September"
+        },
+        {
+            type: "Peach",
+            name: "McKay",
+            category: "Peach cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens early to mid-August.",
+            description: "Considered a winter-hardy peach cultivar, the trees are self-fruitful, producing large firm fruit. Good for fresh use, preserves, or baking. Fruit ripens early to mid-August"
+        },
+        {
+            type: "Peach",
+            name: "PF 24C Cold Hardy",
+            category: "Peach cultivars for southern Wisconsin",
+            harvest_time_unparsed: "Fruit ripens in mid-September.",
+            description: "Attractive, large fruit with a red blush and sweet-acidic flavor. Some resistance to bacterial spot. Stores better for longer periods of time than most peach cultivars. Fruit ripens in mid-September. Source table names this as PF24C-Cold Hardy"
+        },
+    ]
+}

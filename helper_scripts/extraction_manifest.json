@@ -1,0 +1,100 @@
+{
+    "extractors": [
+        {
+            "id": "csu_762_blackberries",
+            "config": "extraction_configs/csu_762_blackberries.json"
+        },
+        {
+            "id": "csu_763_strawberries",
+            "config": "extraction_configs/csu_763_strawberries.json"
+        },
+        {
+            "id": "csu_764_grapes",
+            "config": "extraction_configs/csu_764_grapes.json"
+        },
+        {
+            "id": "osu_hyg_1401_apples",
+            "config": "extraction_configs/osu_hyg_1401_apples.json"
+        },
+        {
+            "id": "osu_hyg_1422_blueberries",
+            "config": "extraction_configs/osu_hyg_1422_blueberries.json"
+        },
+        {
+            "id": "osu_hyg_1423_grapes",
+            "config": "extraction_configs/osu_hyg_1423_grapes.json"
+        },
+        {
+            "id": "psu_non_scab_apples",
+            "config": "extraction_configs/psu_non_scab_apples.json"
+        },
+        {
+            "id": "purdue_ho_44_raspberries",
+            "config": "extraction_configs/purdue_ho_44_raspberries.json"
+        },
+        {
+            "id": "purdue_ho_46_strawberries",
+            "config": "extraction_configs/purdue_ho_46_strawberries.json"
+        },
+        {
+            "id": "uga_b807_bunch_grapes",
+            "config": "extraction_configs/uga_b807_bunch_grapes.json"
+        },
+        {
+            "id": "uga_c740_apples",
+            "config": "extraction_configs/uga_c740_apples.json"
+        },
+        {
+            "id": "uga_c742_pears",
+            "config": "extraction_configs/uga_c742_pears.json"
+        },
+        {
+            "id": "uga_c766_caneberries",
+            "config": "extraction_configs/uga_c766_caneberries.json"
+        },
+        {
+            "id": "umaine_2068_peaches",
+            "config": "extraction_configs/umaine_2068_peaches.json"
+        },
+        {
+            "id": "umaine_2172_caneberries",
+            "config": "extraction_configs/umaine_2172_caneberries.json"
+        },
+        {
+            "id": "umaine_2184_strawberries",
+            "config": "extraction_configs/umaine_2184_strawberries.json"
+        },
+        {
+            "id": "umaine_2253_blueberries",
+            "config": "extraction_configs/umaine_2253_blueberries.json"
+        },
+        {
+            "id": "umd_eb_2023_0684_apples",
+            "config": "extraction_configs/umd_eb_2023_0684_apples.json"
+        },
+        {
+            "id": "unl_g2354_fruit_tree_cultivars",
+            "config": "extraction_configs/unl_g2354_fruit_tree_cultivars.json"
+        },
+        {
+            "id": "uwisc_a2582_southern_tree_stone_fruit",
+            "config": "extraction_configs/uwisc_a2582_southern_tree_stone_fruit.json"
+        },
+        {
+            "id": "usu_apple_recommendations",
+            "config": "extraction_configs/usu_apple_recommendations.json"
+        },
+        {
+            "id": "vce_422_018_cherries",
+            "config": "extraction_configs/vce_422_018_cherries.json"
+        },
+        {
+            "id": "vce_422_019_peaches",
+            "config": "extraction_configs/vce_422_019_peaches.json"
+        },
+        {
+            "id": "vce_422_023_apples",
+            "config": "extraction_configs/vce_422_023_apples.json"
+        }
+    ]
+}

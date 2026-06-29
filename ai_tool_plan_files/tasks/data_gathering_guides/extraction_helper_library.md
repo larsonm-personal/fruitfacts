@@ -41,6 +41,8 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
     column
   - Raw `pdftotext` numbered block parsing for PDF tables that extract as
     `1.`, name, zones, regions, and tail lines rather than a horizontal table
+  - Flow-mode PDF catalog entry parsing where a heading sets the crop/category
+    and each following all-caps cultivar name starts a description line
   - Tail parsers for first-token splits such as `Fresh Dessert`, first-line
     prefix plus description, and self-fruitful token splits
 - `record_tools.py`
@@ -55,10 +57,15 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
     metadata plus table, paragraph, or marker-list mappings
   - Uses strict JSON config files under `helper_scripts/extraction_configs/`
     so the Python standard library can parse them
+- `extract_source.py`
+  - A manifest runner for named config-backed extractors listed in
+    `helper_scripts/extraction_manifest.json`
+  - Keeps one-source stdout output while avoiding one tiny Python wrapper per
+    config
 
-Most source-specific scripts should now be tiny compatibility wrappers around
-`extract_from_config.py`. Keep new source-specific parsing in Python only when
-the source shape cannot be expressed clearly in config.
+Config-backed sources should be listed in `extraction_manifest.json` and run
+through `extract_source.py`. Keep new source-specific parsing in Python only
+when the source shape cannot be expressed clearly in config.
 
 For regular sources, prefer a config file before adding another source-specific
 script. The config runner currently supports:
@@ -77,6 +84,8 @@ script. The config runner currently supports:
 - PDF fixed-width tables inside bounded sections
 - PDF numbered blocks from raw `pdftotext` output, with configurable zone,
   region, tail, and skip patterns
+- PDF catalog entries from flow-mode `pdftotext` output, with configurable
+  category heading rules, smart titlecase name repair, and continuation lines
 - HTML paragraph blocks where each useful paragraph starts with a quoted
   cultivar name
 - HTML paragraph blocks where each useful paragraph starts with `Name:`
@@ -85,6 +94,9 @@ script. The config runner currently supports:
 - Generated rows for source notes that explicitly name a small fixed set of
   varieties
 - Optional category, location, harvest, and labelled description mapping
+- Prefix-prioritized harvest sentence selection for catalog sources where
+  useful timing sentences start with phrases such as `Fruit ripens` or
+  `Harvest starting`
 - Description parts that turn source flag columns such as `X` under use columns
   into readable labelled text
 - Name overrides, `AKA` values, and trailing footnote-marker stripping
@@ -94,7 +106,7 @@ script. The config runner currently supports:
 
 The worked UGA C740 and C742 configs show the ideal direction: no
 source-specific Python file, only a source config that drives the shared
-extractor. Older command names are kept as wrappers where useful for continuity.
+extractor. Named manifest entries are preferred over compatibility wrappers.
 
 ## Boundary
 
@@ -167,33 +179,30 @@ Source-specific scripts should do:
 - UNL G2354 fruit tree cultivars: raw `pdftotext` numbered blocks with
   pollinizer numbers, zones, regions, uses, and descriptions, plus row
   overrides for PDF line-split cultivar names
+- UWisc A2582 southern tree and stone fruit: flow-mode PDF catalog entries
+  where section headings set categories and cultivar names appear as all-caps
+  lead tokens before prose descriptions
 
-## Converted Configs
+## Manifest Configs
 
-These earlier source-specific scripts now have strict JSON configs that
-reproduce the old script stdout exactly:
+Config-backed extractors are registered in
+`helper_scripts/extraction_manifest.json`. Run one by ID:
 
-- `extract_csu_762.py` -> `extraction_configs/csu_762_blackberries.json`
-- `extract_csu_763.py` -> `extraction_configs/csu_763_strawberries.json`
-- `extract_csu_764.py` -> `extraction_configs/csu_764_grapes.json`
-- `extract_osu_hyg_1401_apples.py` -> `extraction_configs/osu_hyg_1401_apples.json`
-- `extract_osu_hyg_1422_blueberries.py` -> `extraction_configs/osu_hyg_1422_blueberries.json`
-- `extract_osu_hyg_1423_grapes.py` -> `extraction_configs/osu_hyg_1423_grapes.json`
-- `extract_psu_non_scab_apples.py` -> `extraction_configs/psu_non_scab_apples.json`
-- `extract_umaine_2068.py` -> `extraction_configs/umaine_2068_peaches.json`
-- `extract_umaine_2172.py` -> `extraction_configs/umaine_2172_caneberries.json`
-- `extract_umaine_2184.py` -> `extraction_configs/umaine_2184_strawberries.json`
-- `extract_umaine_2253.py` -> `extraction_configs/umaine_2253_blueberries.json`
-- `extract_purdue_ho_44_raspberries.py` -> `extraction_configs/purdue_ho_44_raspberries.json`
-- `extract_purdue_ho_46_strawberries.py` -> `extraction_configs/purdue_ho_46_strawberries.json`
-- `extract_usu_apple_recommendations.py` -> `extraction_configs/usu_apple_recommendations.json`
-- `extract_uga_b807_bunch_grapes.py` -> `extraction_configs/uga_b807_bunch_grapes.json`
-- `extract_uga_c766_caneberries.py` -> `extraction_configs/uga_c766_caneberries.json`
-- `extract_vce_422_018_cherries.py` -> `extraction_configs/vce_422_018_cherries.json`
-- `extract_vce_422_019_peaches.py` -> `extraction_configs/vce_422_019_peaches.json`
-- `extract_vce_422_023_apples.py` -> `extraction_configs/vce_422_023_apples.json`
-- `extract_umd_eb_2023_0684_apples.py` -> `extraction_configs/umd_eb_2023_0684_apples.json`
-- `extract_unl_g2354_fruit_tree_cultivars.py` -> `extraction_configs/unl_g2354_fruit_tree_cultivars.json`
+```powershell
+python helper_scripts/extract_source.py umaine_2172_caneberries
+```
+
+List available IDs:
+
+```powershell
+python helper_scripts/extract_source.py --list
+```
+
+Run several entries to files:
+
+```powershell
+python helper_scripts/extract_source.py --all --output-dir $env:TEMP\fruitfacts_drafts
+```
 
 The UMaine 2172 and 2184 conversions added config support for colon-led
 narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
@@ -214,6 +223,13 @@ narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
 - Treat source spellings and extraction artifacts separately. If a likely source
   typo is normalized, keep the source spelling as `AKA` or in a note and leave
   `needs_help`
+- For catalog-like PDFs, try flow-mode text when layout text is column-heavy.
+  Category headings can be exact text or prefixes, and prefix rules may parse
+  the remainder of a line when a heading and first cultivar land together
+- For catalog harvest timing, prefer source-leading sentence prefixes such as
+  `Fruit ripens`, `Harvest beginning`, or `Harvest starting` over broad
+  substring searches. Broad searches can grab comparison sentences instead of
+  the actual timing sentence
 - Do not commit downloaded PDFs directly unless the DVC asset workflow is being
   used
 

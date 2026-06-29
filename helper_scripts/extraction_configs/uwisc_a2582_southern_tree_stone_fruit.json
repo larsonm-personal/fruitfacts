@@ -1,0 +1,331 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://learningstore.extension.wisc.edu/assets/pdfs/A2582.PDF",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Home Fruit Cultivars for Southern Wisconsin"],
+    ["author", "A. Atucha, B.R. Smith, and J. van Zoeren"],
+    ["description", "University of Wisconsin-Extension guide to fruit cultivars for southern Wisconsin; this draft encodes the tree-fruit and stone-fruit catalog sections"],
+    ["url", "https://learningstore.extension.wisc.edu/assets/pdfs/A2582.PDF"],
+    ["thumbnail", "pdf"],
+    ["published", "2017"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Wisconsin-Extension, Madison, Wisconsin",
+      "latitude": 43.0766,
+      "longitude": -89.4125
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple cultivars for southern Wisconsin",
+      "description": "UW-Extension A2582 lists apple cultivars in order of ripening for southern Wisconsin"
+    },
+    {
+      "name": "Antique apple cultivars for southern Wisconsin",
+      "description": "UW-Extension A2582 lists selected antique apples suited to Wisconsin"
+    },
+    {
+      "name": "Disease-resistant apple cultivars for southern Wisconsin",
+      "description": "UW-Extension A2582 lists apple cultivars with apple-scab resistance and other disease-resistance notes"
+    },
+    {
+      "name": "Crabapple cultivars for southern Wisconsin",
+      "description": "UW-Extension A2582 lists crabapples for southern Wisconsin home landscapes and culinary use"
+    },
+    {
+      "name": "Pear cultivars for southern Wisconsin",
+      "description": "UW-Extension A2582 lists European pear cultivars for southern Wisconsin"
+    },
+    {
+      "name": "Asian pear cultivars for southern Wisconsin",
+      "description": "UW-Extension A2582 lists Asian pear cultivars for protected areas of southern Wisconsin"
+    },
+    {
+      "name": "Sweet cherry cultivars for southern Wisconsin",
+      "description": "UW-Extension A2582 lists sweet cherry cultivars that may perform in protected southern Wisconsin sites"
+    },
+    {
+      "name": "Tart cherry cultivars for southern Wisconsin",
+      "description": "UW-Extension A2582 lists self-fruitful tart cherry cultivars for southern Wisconsin"
+    },
+    {
+      "name": "European plum cultivars for southern Wisconsin",
+      "description": "UW-Extension A2582 lists blue European or prune plums for southern Wisconsin"
+    },
+    {
+      "name": "American hybrid plum cultivars for southern Wisconsin",
+      "description": "UW-Extension A2582 lists American hybrid plum cultivars for southern Wisconsin"
+    },
+    {
+      "name": "American hybrid plum pollinizers for southern Wisconsin",
+      "description": "UW-Extension A2582 lists pollinizer cultivars for American hybrid plums"
+    },
+    {
+      "name": "Apricot cultivars for southern Wisconsin",
+      "description": "UW-Extension A2582 lists apricot cultivars that may crop in southern Wisconsin"
+    },
+    {
+      "name": "Peach cultivars for southern Wisconsin",
+      "description": "UW-Extension A2582 lists cold-hardy peach cultivars for southern Wisconsin"
+    }
+  ],
+  "text_fixes": {
+    "C ANDY CRISP": "CANDY CRISP",
+    "CORTL AND": "CORTLAND",
+    "HONE YCRISP": "HONEYCRISP",
+    "JERSE YMAC": "JERSEYMAC",
+    "PAUL ARED": "PAULARED",
+    "ARK ANSAS BL ACK": "ARKANSAS BLACK",
+    "BL ACK OXFORD": "BLACK OXFORD",
+    "COURT PENDU PL AT": "COURT PENDU PLAT",
+    "NORTHFIELD BEAUT Y": "NORTHFIELD BEAUTY",
+    "REINET TE GRIS": "REINETTE GRIS",
+    "LIBERT Y": "LIBERTY",
+    "WHITNE Y": "WHITNEY",
+    "BARTLET T": "BARTLETT",
+    "FLEMISH BEAUT Y": "FLEMISH BEAUTY",
+    "HONE YSWEET": "HONEYSWEET",
+    "PAT TEN": "PATTEN",
+    "BL ACKGOLDTM": "BLACKGOLDTM",
+    "L APIN": "LAPIN",
+    "VA N": "VAN",
+    "BAL ATON": "BALATON",
+    "STANLE Y": "STANLEY",
+    "B L AC K I C E TM": "BLACK ICE TM",
+    "L A CRESCENT": "LA CRESCENT",
+    "K AGA": "KAGA",
+    "HARL AYNE": "HARLAYNE",
+    "SUGAR PEARLSTM": "SUGAR PEARLS TM",
+    "AMERICAN HYBRID PLUM P O L L I N IZ E R CU LTIVAR S": "AMERICAN HYBRID PLUM POLLINIZER CULTIVARS",
+    "TOK A": "TOKA",
+    "MADI SON": "MADISON",
+    "MCK AY": "MCKAY",
+    "mediumlarge": "medium-large",
+    "mediumsized": "medium-sized",
+    "Mediumsized": "Medium-sized",
+    "smallto": "small-to",
+    "brightred": "bright-red",
+    "redskinned": "red-skinned",
+    "toughskinned": "tough-skinned",
+    "shelflife": "shelf life",
+    "orangeyellow": "orange-yellow",
+    "selffruitful": "self-fruitful",
+    "Selffruitful": "Self-fruitful",
+    "winterhardy": "winter-hardy",
+    "wellknown": "well-known",
+    "sweettart": "sweet-tart",
+    "midJuly": "mid-July",
+    "midAugust": "mid-August",
+    "midSeptember": "mid-September",
+    "midOctober": "mid-October",
+    "midto": "mid- to",
+    "earlyseason": "early-season",
+    "McIntoshtype": "McIntosh-type",
+    "3245 F": "32-45 F",
+    "PIETM": "PIE TM"
+  },
+  "name_overrides": {
+    "Autumn Crisp": {
+      "name": "Autumncrisp",
+      "note": "Source table names this as Autumn Crisp"
+    },
+    "Zestar!": {
+      "name": "Minnewashta",
+      "note": "Source table names this as Zestar!"
+    },
+    "Mcintosh": {
+      "name": "McIntosh"
+    },
+    "Snowsweet": {
+      "name": "SnowSweet"
+    },
+    "Duchess Of Oldenburg": {
+      "name": "Duchess of Oldenburg"
+    },
+    "New Town Pippin": {
+      "name": "Newtown Pippin",
+      "note": "Source table names this as New Town Pippin"
+    },
+    "Macfree": {
+      "name": "MacFree",
+      "note": "Source table names this as Macfree"
+    },
+    "Goldrush": {
+      "name": "GoldRush",
+      "note": "Source table names this as GoldRush"
+    },
+    "William's Pride": {
+      "name": "Williams' Pride",
+      "note": "Source table names this as William's Pride"
+    },
+    "Crimson Crisp": {
+      "name": "Co-op 39",
+      "note": "Source table names this as Crimson Crisp"
+    },
+    "Blackgoldtm": {
+      "name": "Ridgewood",
+      "note": "Source table names this as BlackGoldTM"
+    },
+    "Whitegold": {
+      "name": "Newfane",
+      "note": "Source table names this as Whitegold"
+    },
+    "Lapin": {
+      "name": "Lapins",
+      "note": "Source table names this as Lapin"
+    },
+    "First Editions Sweet Cherry Pie TM Cherry": {
+      "name": "Sweet Cherry Pie",
+      "note": "Source table names this as First Editions Sweet Cherry PieTM Cherry"
+    },
+    "Black Ice TM": {
+      "name": "Lydecker",
+      "note": "Source table names this as Black Ice TM"
+    },
+    "PF24C-COLD Hardy": {
+      "name": "PF 24C Cold Hardy",
+      "note": "Source table names this as PF24C-Cold Hardy"
+    },
+    "20TH Century (nijiseiki)": {
+      "name": "20th Century",
+      "note": "Source table names this as 20TH Century (Nijiseiki)"
+    },
+    "Shinseiki (new Century )": {
+      "name": "Shinseiki",
+      "note": "Source table names this as Shinseiki (New Century)"
+    },
+    "Mckay": {
+      "name": "McKay"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "TREE FRUITS\nApples",
+      "section_end": "\nSMALL FRUITS\nSmall fruits",
+      "name_case": "smart_title",
+      "preserve_upper_words": ["BP-1", "PF24C-COLD", "TM"],
+      "skip_line_patterns": [
+        "^\\d+$",
+        "^UNIVERSITY OF WISCONSIN-EXTENSION$",
+        "^H O M E F R U I T",
+        "^TREE FRUITS$",
+        "^STONE FRUITS$",
+        "^A single apple tree",
+        "^Plant at least two",
+        "^For backyards",
+        "^gated on",
+        "^rootstock",
+        "^crisp, similar",
+        "^G\\.11",
+        "^it highly",
+        "^and texture",
+        "^shelf-life",
+        "^such as",
+        "^with MM",
+        "^stable root",
+        "^Stone fruit trees",
+        "^Plums$",
+        "^combined with",
+        "^Sweet cherries bloom",
+        "^sites\\)",
+        "^These tart cherry",
+        "^Japanese plums",
+        "^Apricot trees",
+        "^Peaches can be"
+      ],
+      "continuation_skip_patterns": [
+        "^\\d+$",
+        "^UNIVERSITY OF WISCONSIN-EXTENSION$",
+        "^H O M E F R U I T"
+      ],
+      "category_rules": [
+        {
+          "text": "Apples",
+          "category": "Apple cultivars for southern Wisconsin",
+          "plant_type": "Apple"
+        },
+        {
+          "prefix": "ANTIQUE APPLES",
+          "category": "Antique apple cultivars for southern Wisconsin",
+          "plant_type": "Apple"
+        },
+        {
+          "prefix": "DISEASE-RESISTANT APPLES",
+          "category": "Disease-resistant apple cultivars for southern Wisconsin",
+          "plant_type": "Apple"
+        },
+        {
+          "prefix": "CRABAPPLES",
+          "category": "Crabapple cultivars for southern Wisconsin",
+          "plant_type": "Crabapple"
+        },
+        {
+          "text": "Pears",
+          "category": "Pear cultivars for southern Wisconsin",
+          "plant_type": "Euro Pear"
+        },
+        {
+          "text": "Asian pears",
+          "category": "Asian pear cultivars for southern Wisconsin",
+          "plant_type": "Asian Pear"
+        },
+        {
+          "text": "Sweet cherries",
+          "category": "Sweet cherry cultivars for southern Wisconsin",
+          "plant_type": "Sweet Cherry"
+        },
+        {
+          "text": "Tart cherries",
+          "category": "Tart cherry cultivars for southern Wisconsin",
+          "plant_type": "Sour Cherry"
+        },
+        {
+          "prefix": "BLUE (EUROPEAN OR PRUNE) PLUMS",
+          "category": "European plum cultivars for southern Wisconsin",
+          "plant_type": "Plum"
+        },
+        {
+          "prefix": "AMERICAN HYBRID PLUMS",
+          "category": "American hybrid plum cultivars for southern Wisconsin",
+          "plant_type": "Plum"
+        },
+        {
+          "text": "AMERICAN HYBRID PLUM POLLINIZER CULTIVARS",
+          "category": "American hybrid plum pollinizers for southern Wisconsin",
+          "plant_type": "Plum"
+        },
+        {
+          "text": "Apricots",
+          "category": "Apricot cultivars for southern Wisconsin",
+          "plant_type": "Apricot"
+        },
+        {
+          "text": "Peaches",
+          "category": "Peach cultivars for southern Wisconsin",
+          "plant_type": "Peach"
+        }
+      ],
+      "harvest_from_key": "description",
+      "harvest_terms": [
+        "Fruit ripens",
+        "Harvest beginning",
+        "Harvest starting",
+        "Harvest at",
+        "Harvest",
+        "Ripens"
+      ],
+      "harvest_term_priority": true,
+      "harvest_term_prefix": true,
+      "description_key": "description"
+    }
+  ]
+}

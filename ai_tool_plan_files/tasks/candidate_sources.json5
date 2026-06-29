@@ -76,7 +76,7 @@
                 "Landing page and PDF endpoint both returned 200",
                 "Encoded in plant_database/references/Nebraska/UNL G2354 Fruit Tree Cultivars for Nebraska.json5",
                 "Config extraction added at helper_scripts/extraction_configs/unl_g2354_fruit_tree_cultivars.json",
-                "Compatibility wrapper added at helper_scripts/extract_unl_g2354_fruit_tree_cultivars.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Worked example for raw pdftotext numbered blocks with pollinizer, zone, region, use, and description fields",
                 "Plum table remains unencoded because raw PDF extraction transposes columns and needs a separate parser or manual pass"
             ]
@@ -144,7 +144,7 @@
                 "Canonical source appears to be the web page",
                 "Page returned 200 and includes cultivar-level content",
                 "Encoded in plant_database/references/Maine/UMaine 2068 Growing Peaches in Maine.json5",
-                "Draft extraction helper added at helper_scripts/extract_umaine_2068.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Worked example for HTML tables where rowspans appear as short rows in the simple parser"
             ]
         },
@@ -221,7 +221,7 @@
                 "Web page returned 200",
                 "Likely companion to the scab-resistant apple table",
                 "Encoded in plant_database/references/Pennsylvania/Penn State Non-Scab-Resistant Apple Varieties.json5",
-                "Draft extraction helper added at helper_scripts/extract_psu_non_scab_apples.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Worked example for mapping HTML table rows to dictionaries by normalized header"
             ]
         },
@@ -282,7 +282,7 @@
                 "Landing page and PDF returned 200",
                 "Encoded in plant_database/references/Maryland/UMD EB-2023-0684 Important Apple Cultivars in the Mid-Atlantic Region.json5",
                 "Config extraction added at helper_scripts/extraction_configs/umd_eb_2023_0684_apples.json",
-                "Compatibility wrapper added at helper_scripts/extract_umd_eb_2023_0684_apples.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Landing page exposed a clean HTML table, preferred over the PDF layout table for data accuracy"
             ]
         },
@@ -451,7 +451,7 @@
                 "Page has several file links, but the web page itself appears to be the useful source",
                 "Encoded in plant_database/references/Utah/USU Apple Production and Variety Recommendations for the Utah Home Garden.json5",
                 "Config extraction added at helper_scripts/extraction_configs/usu_apple_recommendations.json",
-                "Compatibility wrapper added at helper_scripts/extract_usu_apple_recommendations.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Config reads the clean HTML table from the source page"
             ]
         },
@@ -547,7 +547,7 @@
                 "Landing page and PDF link were found on the official UGA page",
                 "Encoded in plant_database/references/Georgia/UGA C740 Home Garden Apples.json5",
                 "Config extraction added at helper_scripts/extraction_configs/uga_c740_apples.json",
-                "Generic config runner used at helper_scripts/extract_from_config.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Config reads the extension.uga.edu detail page because it exposes clean HTML tables"
             ]
         },
@@ -579,7 +579,7 @@
                 "Landing page shows a newer review date than the current PDF path suggests",
                 "Encoded in plant_database/references/Georgia/UGA C742 Home Garden Pears.json5",
                 "Config extraction added at helper_scripts/extraction_configs/uga_c742_pears.json",
-                "Generic config runner used at helper_scripts/extract_from_config.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Config reads the extension.uga.edu detail page because it exposes clean HTML tables"
             ]
         },
@@ -610,7 +610,7 @@
                 "Landing page and PDF link were found on the official UGA page",
                 "Encoded in plant_database/references/Georgia/UGA B807 Home Garden Bunch Grapes.json5",
                 "Config extraction added at helper_scripts/extraction_configs/uga_b807_bunch_grapes.json",
-                "Compatibility wrapper added at helper_scripts/extract_uga_b807_bunch_grapes.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Config reads the extension.uga.edu detail page because it exposes clean HTML tables"
             ]
         },
@@ -644,7 +644,7 @@
                 "Landing page and PDF link were found on the official UGA page",
                 "Encoded in plant_database/references/Georgia/UGA C766 Home Garden Raspberries and Blackberries.json5",
                 "Config extraction added at helper_scripts/extraction_configs/uga_c766_caneberries.json",
-                "Compatibility wrapper added at helper_scripts/extract_uga_c766_caneberries.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Config reads the extension.uga.edu detail page because it exposes a clean grouped HTML table"
             ]
         },
@@ -673,7 +673,7 @@
             notes: [
                 "Landing page and PDF link were found on the official Virginia Cooperative Extension page",
                 "Encoded in plant_database/references/Virginia/VCE 422-023 Growing Apples in Virginia.json5",
-                "Draft extraction helper added at helper_scripts/extract_vce_422_023_apples.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Worked example for VCE HTML tables with cultivar names split across fragment rows"
             ]
         },
@@ -702,7 +702,7 @@
             notes: [
                 "Landing page and PDF link were found on the official Virginia Cooperative Extension page",
                 "Encoded in plant_database/references/Virginia/VCE 422-018 Growing Cherries in Virginia.json5",
-                "Draft extraction helper added at helper_scripts/extract_vce_422_018_cherries.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Worked example for VCE HTML narrative cultivar paragraphs bounded by headings"
             ]
         },
@@ -734,7 +734,7 @@
             notes: [
                 "Landing page and PDF link were found on the official Virginia Cooperative Extension page",
                 "Encoded in plant_database/references/Virginia/VCE 422-019 Growing Peaches and Nectarines in Virginia.json5",
-                "Draft extraction helper added at helper_scripts/extract_vce_422_019_peaches.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Worked example for VCE HTML tables with single-cell category rows and one combined source row"
             ]
         },
@@ -941,7 +941,7 @@
                 "HLA-hosted PDF returned 200",
                 "Encoded in plant_database/references/Indiana/Purdue HO-44-W Raspberries.json5",
                 "Config extraction added at helper_scripts/extraction_configs/purdue_ho_44_raspberries.json",
-                "Compatibility wrapper added at helper_scripts/extract_purdue_ho_44_raspberries.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Config uses generated rows from the source cultivar recommendation paragraph"
             ]
         },
@@ -973,7 +973,7 @@
                 "HLA-hosted PDF returned 200",
                 "Encoded in plant_database/references/Indiana/Purdue HO-46-W Growing Strawberries.json5",
                 "Config extraction added at helper_scripts/extraction_configs/purdue_ho_46_strawberries.json",
-                "Compatibility wrapper added at helper_scripts/extract_purdue_ho_46_strawberries.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Config uses generated rows from the source cultivar recommendation paragraphs"
             ]
         },
@@ -1003,7 +1003,7 @@
             notes: [
                 "Official web page returned 200 and has cultivar-level content",
                 "Encoded in plant_database/references/Maine/UMaine 2172 Raspberry and Blackberry Varieties for Maine.json5",
-                "Draft extraction helper added at helper_scripts/extract_umaine_2172.py"
+                "Manifest entry added in helper_scripts/extraction_manifest.json"
             ]
         },
         {
@@ -1029,7 +1029,7 @@
             notes: [
                 "Official web page returned 200 and has cultivar-level content",
                 "Encoded in plant_database/references/Maine/UMaine 2184 Strawberry Varieties for Maine.json5",
-                "Draft extraction helper added at helper_scripts/extract_umaine_2184.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Helper combines season-heading narrative paragraphs with the summary variety table"
             ]
         },
@@ -1057,7 +1057,7 @@
                 "Official web page returned 200",
                 "Less cultivar-dense than the Maine caneberry and strawberry pages but still useful",
                 "Encoded in plant_database/references/Maine/UMaine 2253 Growing Highbush Blueberries.json5",
-                "Draft extraction helper added at helper_scripts/extract_umaine_2253.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Worked example for compact HTML cultivar tables with labelled descriptive columns"
             ]
         },
@@ -1084,7 +1084,7 @@
             notes: [
                 "Official Ohioline page returned 200",
                 "Encoded in plant_database/references/Ohio/OSU HYG-1401 Growing Apples in the Home Orchard.json5",
-                "Draft extraction helper added at helper_scripts/extract_osu_hyg_1401_apples.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Worked example for simple Ohioline HTML cultivar tables and source-name harmonization"
             ]
         },
@@ -1111,7 +1111,7 @@
             notes: [
                 "Official Ohioline page returned 200",
                 "Encoded in plant_database/references/Ohio/OSU HYG-1422 Growing Blueberries in the Home Garden.json5",
-                "Draft extraction helper added at helper_scripts/extract_osu_hyg_1422_blueberries.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Worked example for simple Ohioline HTML cultivar tables with a trailing note row"
             ]
         },
@@ -1138,7 +1138,7 @@
             notes: [
                 "Official Ohioline page returned 200",
                 "Encoded in plant_database/references/Ohio/OSU HYG-1423 Growing Grapes in the Home Fruit Planting.json5",
-                "Draft extraction helper added at helper_scripts/extract_osu_hyg_1423_grapes.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Worked example for Ohioline HTML tables with title rows before column headers"
             ]
         },
@@ -1196,7 +1196,7 @@
             notes: [
                 "Direct PDF returned 200",
                 "Encoded in plant_database/references/Colorado/CSU GardenNotes 764 Growing Grapes in Colorado Gardens.json5",
-                "Draft extraction helper added at helper_scripts/extract_csu_764.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Worked example for PDF marker lists where cultivar names contain periods"
             ]
         },
@@ -1223,7 +1223,7 @@
             notes: [
                 "Direct PDF returned 200",
                 "Encoded in plant_database/references/Colorado/CSU GardenNotes 763 Growing Strawberries in Colorado Gardens.json5",
-                "Draft extraction helper added at helper_scripts/extract_csu_763.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Worked example for PDF text extraction and suggested-cultivar list parsing"
             ]
         },
@@ -1250,7 +1250,7 @@
             notes: [
                 "Direct PDF returned 200",
                 "Encoded in plant_database/references/Colorado/CSU GardenNotes 762 Growing Blackberries in Colorado Gardens.json5",
-                "Draft extraction helper added at helper_scripts/extract_csu_762.py",
+                "Manifest entry added in helper_scripts/extraction_manifest.json",
                 "Worked example for shared PDF section parsing and suggested-cultivar list extraction"
             ]
         },
@@ -1282,7 +1282,7 @@
         },
         {
             id: "uwisc-home-fruit-cultivars-southern-wisconsin-a2582",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Home Fruit Cultivars for Southern Wisconsin",
             institution: "University of Wisconsin Extension",
@@ -1310,12 +1310,17 @@
                 "Southern Wisconsin cultivar guide across tree fruits, grapes, berries, and small fruits",
             asset_decision: "download and stub",
             proposed_reference_path:
-                "plant_database/references/Wisconsin/A2582 Home Fruit Cultivars for Southern Wisconsin.json5",
+                "plant_database/references/Wisconsin/A2582 Home Fruit Cultivars for Southern Wisconsin - Tree and Stone Fruit.json5",
             duplicate_check:
                 "Existing Wisconsin references include apple cultivars and stone fruit, but not this broader southern Wisconsin guide",
             notes: [
                 "Direct PDF returned 200",
-                "No current product landing page was found during this pass"
+                "No current product landing page was found during this pass",
+                "Encoded tree-fruit and stone-fruit catalog sections as 105 draft records",
+                "Config extraction added at helper_scripts/extraction_configs/uwisc_a2582_southern_tree_stone_fruit.json",
+                "Manifest entry added as uwisc_a2582_southern_tree_stone_fruit",
+                "This source drove the pdf_catalog_entries extractor pattern for flow-mode PDF catalog lines",
+                "Small-fruit sections remain unencoded because the PDF text interleaves columns more aggressively"
             ]
         },
         {
