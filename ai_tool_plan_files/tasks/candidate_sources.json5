@@ -1359,6 +1359,472 @@
                 "Direct PDF returned 200",
                 "No current product landing page was found during this pass"
             ]
+        },
+        {
+            id: "ua-az1162-backyard-fruit-production-3500-6000",
+            status: "accepted",
+            priority: "high",
+            title: "Backyard Fruit Production at Elevations 3,500 to 6,000 Feet",
+            institution: "University of Arizona Cooperative Extension",
+            region: "Arizona mid elevations",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Cherry",
+                "Grape",
+                "Peach",
+                "Pear",
+                "Plum"
+            ],
+            publication_number: "AZ1162",
+            source_type: "state extension guide",
+            landing_url:
+                "https://extension.arizona.edu/publication/backyard-fruit-production-elevations-3500-6000-feet",
+            download_url:
+                "https://extension.arizona.edu/sites/default/files/2024-08/az1162-2015.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "fresh official-source web search",
+            value_summary:
+                "Arizona mid-elevation backyard fruit guide with variety selection, site, pruning, and timing context",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Arizona/UA AZ1162 Backyard Fruit Production at Elevations 3500 to 6000 Feet.json5",
+            duplicate_check:
+                "Existing Arizona reference covers grapes only; no Arizona mid-elevation tree-fruit guide found",
+            notes: [
+                "Official landing page exposes a Download PDF link",
+                "PDF is layout-heavy and likely needs a manual or section-marker extraction pass"
+            ]
+        },
+        {
+            id: "ua-az1269-deciduous-fruit-nuts-low-desert",
+            status: "accepted",
+            priority: "high",
+            title: "Deciduous Fruit and Nuts for the Low Desert",
+            institution: "University of Arizona Cooperative Extension",
+            region: "Arizona low desert",
+            crops: [
+                "Almond",
+                "Apricot",
+                "Blackberry",
+                "Fig",
+                "Grape",
+                "Kiwi",
+                "Peach",
+                "Pear",
+                "Pecan",
+                "Persimmon",
+                "Plum",
+                "Quince",
+                "Strawberry"
+            ],
+            publication_number: "AZ1269",
+            source_type: "state extension guide",
+            landing_url:
+                "https://extension.arizona.edu/publication/deciduous-fruit-and-nuts-low-desert",
+            download_url:
+                "https://extension.arizona.edu/sites/default/files/2024-08/az1269.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "fresh official-source web search",
+            value_summary:
+                "Low-desert guide with species-level variety, chill, harvest, and site notes across fruit and nut crops",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Arizona/UA AZ1269 Deciduous Fruit and Nuts for the Low Desert.json5",
+            duplicate_check:
+                "Existing Arizona reference covers grapes only; no low-desert fruit and nut guide found",
+            notes: [
+                "Landing page exposes a large web version and a handle-based PDF download",
+                "Long species sections and harvest calendars will not be a simple table import"
+            ]
+        },
+        {
+            id: "msstate-fruit-nut-recommendations-mississippi-p966",
+            status: "accepted",
+            priority: "high",
+            title: "Fruit and Nut Recommendations for Mississippi",
+            institution: "Mississippi State University Extension",
+            region: "Mississippi",
+            crops: [
+                "Apple",
+                "Blackberry",
+                "Blueberry",
+                "Cherry",
+                "Fig",
+                "Grape",
+                "Muscadine",
+                "Peach",
+                "Pear",
+                "Pecan",
+                "Persimmon",
+                "Plum",
+                "Strawberry"
+            ],
+            publication_number: "P966",
+            source_type: "state extension guide",
+            landing_url:
+                "https://extension.msstate.edu/publications/fruit-and-nut-recommendations-for-mississippi",
+            download_url:
+                "https://extension.msstate.edu/sites/default/files/publications/P966_web.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "fresh official-source web search",
+            value_summary:
+                "Broad Mississippi fruit and nut recommendation guide with cultivar notes across tree fruit, berries, grapes, figs, and nuts",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Mississippi/MSState P966 Fruit and Nut Recommendations for Mississippi.json5",
+            duplicate_check:
+                "Existing Mississippi references cover blueberries and muscadine trials, not this broad recommendation guide",
+            notes: [
+                "Official landing page has both HTML content and a PDF download",
+                "PDF text uses long sectioned cultivar paragraphs, so HTML may be cleaner but still needs crop-section parsing"
+            ]
+        },
+        {
+            id: "montana-state-growing-cold-hardy-berries-small-fruits-mt202101ag",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Cold-Hardy Berries and Small Fruits in Montana",
+            institution: "Montana State University Extension",
+            region: "Montana",
+            crops: [
+                "Aronia",
+                "Cherry",
+                "Currant",
+                "Gooseberry",
+                "Haskap"
+            ],
+            publication_number: "MT202101AG",
+            source_type: "state extension guide",
+            landing_url:
+                "https://extension-store.montana.edu/montguides/growing-cold-hardy-berries-and-small-fruits-in-montana",
+            download_url:
+                "https://extension-store.montana.edu/assets/publications/montguidepdfs/mt202101ag-growing-cold-hardy-berries.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "fresh official-source web search",
+            value_summary:
+                "Montana MontGuide for cold-hardy currants, gooseberries, dwarf sour cherries, aronia, haskaps, and related small fruits",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Montana/MSU MT202101AG Growing Cold-Hardy Berries and Small Fruits in Montana.json5",
+            duplicate_check:
+                "No Montana reference directory or candidate found during duplicate scan",
+            notes: [
+                "Official MontGuide page exposes View Online and Download PDF controls",
+                "Cultivar data is mixed with narrative species sections and production notes"
+            ]
+        },
+        {
+            id: "montana-warc-fruit-research-sites",
+            status: "accepted",
+            priority: "high",
+            title: "MSU Extension Fruit Research Sites",
+            institution: "Montana State University Western Agricultural Research Center",
+            region: "Montana",
+            crops: [
+                "Apple",
+                "Cherry",
+                "Pear",
+                "Plum"
+            ],
+            source_type: "research trial site collection",
+            landing_url:
+                "https://agresearch.montana.edu/warc/research_current/msu-ext-fruit-research-sites/index.html",
+            discovered: "2026-06-29",
+            discovered_by: "fresh official-source web search",
+            value_summary:
+                "Tree fruit cultivar trial network evaluating apples, pears, plums, and sour cherries across Montana sites",
+            asset_decision: "stub only",
+            proposed_reference_path:
+                "plant_database/references/Montana/MSU Extension Fruit Research Sites.json5",
+            duplicate_check:
+                "No Montana reference directory or candidate found during duplicate scan",
+            notes: [
+                "Search result indicates cultivar trial data across ten Montana locations",
+                "Likely hard to encode because useful data may be spread across project pages, summaries, and downloads rather than one table"
+            ]
+        },
+        {
+            id: "uwyo-potential-fruit-trees-shrubs-zone-3-4-2023",
+            status: "accepted",
+            priority: "high",
+            title: "Potential Fruit Trees and Shrubs for Zone 3 and 4 Areas of Wyoming",
+            institution: "University of Wyoming Extension",
+            region: "Wyoming zones 3 and 4",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Cherry",
+                "Currant",
+                "Elderberry",
+                "Gooseberry",
+                "Grape",
+                "Haskap",
+                "Pear",
+                "Plum",
+                "Raspberry",
+                "Serviceberry",
+                "Strawberry"
+            ],
+            source_type: "state extension variety list",
+            landing_url: "https://www.uwyo.edu/barnbackyard/resources/fruit.html",
+            download_url:
+                "https://www.uwyo.edu/barnbackyard/_files/documents/resources/fruit/possiblefruitlistzone3and42023.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "fresh official-source web search",
+            value_summary:
+                "Wyoming zone 3 and 4 hardy fruit tree and shrub list for cold, short-season sites",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Wyoming/UWyo Potential Fruit Trees and Shrubs for Zone 3 and 4 Areas of Wyoming.json5",
+            duplicate_check:
+                "No Wyoming reference directory or candidate found during duplicate scan",
+            notes: [
+                "Official Barnyards and Backyards fruit page links to the Wyoming Extension publication",
+                "HTML/PDF handout format likely needs manual normalization of tree, shrub, cultivar, and rootstock notes"
+            ]
+        },
+        {
+            id: "sdsu-fruit-variety-recommendations-south-dakota-2023",
+            status: "accepted",
+            priority: "high",
+            title: "Fruit Variety Recommendations for South Dakota",
+            institution: "South Dakota State University Extension",
+            region: "South Dakota",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Blackberry",
+                "Cherry",
+                "Currant",
+                "Gooseberry",
+                "Grape",
+                "Haskap",
+                "Pear",
+                "Plum",
+                "Raspberry",
+                "Strawberry"
+            ],
+            publication_number: "P-00041-2023",
+            source_type: "state extension cultivar guide",
+            landing_url:
+                "https://extension.sdstate.edu/fruit-variety-recommendations-south-dakota",
+            download_url:
+                "https://extension.sdstate.edu/sites/default/files/2023-08/P-00041-2023.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "fresh official-source web search",
+            value_summary:
+                "Current South Dakota cultivar recommendations across tree fruit, grapes, berries, and hardy small fruits",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/South Dakota/SDSU P-00041-2023 Fruit Variety Recommendations for South Dakota.json5",
+            duplicate_check:
+                "No South Dakota reference directory or candidate found during duplicate scan",
+            notes: [
+                "Official landing page is dated August 17, 2023 and exposes a PDF download",
+                "Dense PDF tables and crop groupings may require a custom table parser or manual cleanup"
+            ]
+        },
+        {
+            id: "uaf-recommended-variety-list-interior-alaska-hga-00030",
+            status: "accepted",
+            priority: "high",
+            title: "Recommended Variety List for Interior Alaska",
+            institution: "University of Alaska Fairbanks Cooperative Extension Service",
+            region: "Interior Alaska",
+            crops: [
+                "Apple",
+                "Cherry",
+                "Currant",
+                "Gooseberry",
+                "Haskap",
+                "Pear",
+                "Plum",
+                "Raspberry",
+                "Saskatoon",
+                "Strawberry"
+            ],
+            publication_number: "HGA-00030",
+            source_type: "regional extension variety list",
+            landing_url:
+                "https://www.uaf.edu/ces/publications/database/gardening/recommended-variety.php",
+            download_url:
+                "https://www.uaf.edu/ces/publications/database/gardening/files/pdfs/HGA-00030_varieties.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "fresh official-source web search",
+            value_summary:
+                "Interior Alaska variety list with hardy fruit crops embedded among vegetable and garden recommendations",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Alaska/UAF HGA-00030 Recommended Variety List for Interior Alaska.json5",
+            duplicate_check:
+                "No Alaska reference directory or candidate found during duplicate scan",
+            notes: [
+                "Official PDF search result returned a direct UAF publication URL",
+                "Fruit content is embedded in a broader garden variety list and includes footnotes, maturity, and Alaska-trial context"
+            ]
+        },
+        {
+            id: "uaf-growing-tree-fruits-alaska-hga-00038",
+            status: "accepted",
+            priority: "high",
+            title: "Growing Tree Fruits in Alaska",
+            institution: "University of Alaska Fairbanks Cooperative Extension Service",
+            region: "Alaska",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Cherry",
+                "Pear",
+                "Plum"
+            ],
+            publication_number: "HGA-00038",
+            source_type: "state extension guide",
+            landing_url:
+                "https://www.uaf.edu/ces/publications/database/gardening/growing-tree-fruits.php",
+            discovered: "2026-06-29",
+            discovered_by: "fresh official-source web search",
+            value_summary:
+                "Alaska tree fruit guide with cultivar selection, hardiness, pollination, and short-season considerations",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Alaska/UAF HGA-00038 Growing Tree Fruits in Alaska.json5",
+            duplicate_check:
+                "No Alaska reference directory found; UAF HGA-00030 is a broader Interior variety list",
+            notes: [
+                "Official landing page exposes a PDF form link that still needs a stable direct download URL captured",
+                "Narrative cultivar and hardiness guidance will need manual or section-aware extraction"
+            ]
+        },
+        {
+            id: "ndsu-jams-jellies-north-dakota-fruits-fn590",
+            status: "accepted",
+            priority: "medium",
+            title: "From the Garden or Orchard to the Table: Jams and Jellies from North Dakota Fruits",
+            institution: "North Dakota State University Extension",
+            region: "North Dakota",
+            crops: [
+                "Apple",
+                "Cherry",
+                "Currant",
+                "Gooseberry",
+                "Grape",
+                "Juneberry",
+                "Plum",
+                "Raspberry",
+                "Strawberry"
+            ],
+            publication_number: "FN590",
+            source_type: "state extension food and fruit guide",
+            landing_url:
+                "https://www.ndsu.edu/agriculture/extension/publications/garden-or-orchard-table-jams-and-jellies-north-dakota-fruits",
+            download_url:
+                "https://www.ndsu.edu/agriculture/sites/default/files/2023-05/fn590.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "fresh official-source web search",
+            value_summary:
+                "North Dakota fruit guide with growable cultivar tables embedded in a preservation publication",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/North Dakota/NDSU FN590 Jams and Jellies from North Dakota Fruits.json5",
+            duplicate_check:
+                "No North Dakota reference directory or candidate found during duplicate scan",
+            notes: [
+                "Not a pure horticulture guide, but it lists hardy apples, grapes, and Prunus selections for North Dakota",
+                "Extraction is awkward because cultivar lists appear inside recipe and preservation narrative plus PDF tables"
+            ]
+        },
+        {
+            id: "unh-low-input-tree-fruits-nh-home-orchards",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Fruits: Low-Input Tree Fruits for NH Home Orchards",
+            institution: "University of New Hampshire Extension",
+            region: "New Hampshire",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Cherry",
+                "Nectarine",
+                "Peach",
+                "Pear",
+                "Plum"
+            ],
+            source_type: "state extension guide",
+            download_url:
+                "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource003728_Rep5308.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "fresh official-source web search",
+            value_summary:
+                "Low-input New Hampshire home orchard tree-fruit guide focused on manageable and disease-resistant choices",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/New Hampshire/UNH Low-Input Tree Fruits for NH Home Orchards.json5",
+            duplicate_check:
+                "Existing New Hampshire candidate covers peaches and nectarines only; existing references are breeding releases",
+            notes: [
+                "Official PDF search result returned a direct UNH Extension publication URL",
+                "Recommendations are embedded in narrative rather than a clean cultivar table"
+            ]
+        },
+        {
+            id: "uvm-scab-resistant-apple-cultivars",
+            status: "accepted",
+            priority: "medium",
+            title: "Scab Resistant Apple Cultivars",
+            institution: "University of Vermont Extension",
+            region: "Vermont",
+            crops: ["Apple"],
+            source_type: "state extension cultivar handout",
+            download_url:
+                "https://www.uvm.edu/d10-files/documents/2024-06/Scab-Resistant-Apples.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "fresh official-source web search",
+            value_summary:
+                "Northeast apple scab-resistant cultivar handout with disease-resistant variety signals for low-input orchards and gardens",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Vermont/UVM Scab Resistant Apple Cultivars.json5",
+            duplicate_check:
+                "Existing Penn State scab-resistant candidate is Pennsylvania-focused; no Vermont reference found",
+            notes: [
+                "Official UVM PDF search result returned a direct file URL",
+                "Short image-heavy handout is useful as cultivar signal but likely needs manual extraction and region qualification"
+            ]
+        },
+        {
+            id: "texas-am-plums-nectarines-apricots-e612",
+            status: "accepted",
+            priority: "medium",
+            title: "Texas Fruit and Nut Production: Plums, Nectarines, Apricots, Cherries, Almonds, and Prunus Hybrids",
+            institution: "Texas A&M AgriLife Extension",
+            region: "Texas",
+            crops: [
+                "Almond",
+                "Apricot",
+                "Cherry",
+                "Nectarine",
+                "Plum"
+            ],
+            publication_number: "E-612",
+            source_type: "state extension guide",
+            landing_url:
+                "https://agrilifeextension.tamu.edu/asset-external/texas-fruit-nut-production-plums-nectarines-apricots-cherries-almonds-prunes-hybrids/",
+            download_url:
+                "https://aggie-horticulture.tamu.edu/fruit-nut/wp-content/uploads/sites/6/2015/04/plums_and_stone_fruit_2015.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "fresh official-source web search",
+            value_summary:
+                "Texas fruit and nut production factsheet for adapted plum, nectarine, apricot, cherry, almond, and Prunus hybrid varieties",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Texas/Texas A&M E-612 Plums Nectarines Apricots.json5",
+            duplicate_check:
+                "Existing Texas references cover peaches and persimmons; no Texas plum, nectarine, apricot, cherry, or almond production factsheet found",
+            notes: [
+                "Official Aggie Horticulture PDF search result returned a direct file URL",
+                "PDF uses multi-column text and image captions with cultivar data embedded in prose"
+            ]
         }
     ]
 }
