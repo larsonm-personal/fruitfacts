@@ -420,7 +420,7 @@
         },
         {
             id: "usu-apple-production-variety-recommendations-utah-home-garden",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Apple Production and Variety Recommendations for the Utah Home Garden",
             institution: "Utah State University Extension",
@@ -439,7 +439,11 @@
             duplicate_check:
                 "Existing Utah references cover Uintah Basin tree fruit and peaches, not this statewide apple guide",
             notes: [
-                "Page has several file links, but the web page itself appears to be the useful source"
+                "Page has several file links, but the web page itself appears to be the useful source",
+                "Encoded in plant_database/references/Utah/USU Apple Production and Variety Recommendations for the Utah Home Garden.json5",
+                "Config extraction added at helper_scripts/extraction_configs/usu_apple_recommendations.json",
+                "Compatibility wrapper added at helper_scripts/extract_usu_apple_recommendations.py",
+                "Config reads the clean HTML table from the source page"
             ]
         },
         {
@@ -902,7 +906,7 @@
         },
         {
             id: "purdue-raspberries-ho-44-w",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Raspberries",
             institution: "Purdue University Cooperative Extension Service",
@@ -925,12 +929,16 @@
                 "Existing raspberry references are not Indiana-specific Purdue cultivar guidance",
             notes: [
                 "Current Purdue landing page returned 200",
-                "HLA-hosted PDF returned 200"
+                "HLA-hosted PDF returned 200",
+                "Encoded in plant_database/references/Indiana/Purdue HO-44-W Raspberries.json5",
+                "Config extraction added at helper_scripts/extraction_configs/purdue_ho_44_raspberries.json",
+                "Compatibility wrapper added at helper_scripts/extract_purdue_ho_44_raspberries.py",
+                "Config uses generated rows from the source cultivar recommendation paragraph"
             ]
         },
         {
             id: "purdue-growing-strawberries-ho-46-w",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Strawberries",
             institution: "Purdue University Cooperative Extension Service",
@@ -953,7 +961,11 @@
                 "No Indiana strawberry extension guide found in existing references",
             notes: [
                 "Current Purdue landing page returned 200",
-                "HLA-hosted PDF returned 200"
+                "HLA-hosted PDF returned 200",
+                "Encoded in plant_database/references/Indiana/Purdue HO-46-W Growing Strawberries.json5",
+                "Config extraction added at helper_scripts/extraction_configs/purdue_ho_46_strawberries.json",
+                "Compatibility wrapper added at helper_scripts/extract_purdue_ho_46_strawberries.py",
+                "Config uses generated rows from the source cultivar recommendation paragraphs"
             ]
         },
         {

@@ -140,6 +140,11 @@ Source-specific scripts should do:
   flag-column description parts
 - UGA C766 caneberries: grouped HTML table where fruit type is carried down
   through short rows before mapping rows to blackberry or raspberry records
+- USU apple recommendations: clean HTML table with local name harmonization,
+  `AKA` fields, and source suffix notes for table footnote markers
+- Purdue HO-44-W and HO-46-W small-fruit pages: compact HTML cultivar
+  recommendation paragraphs represented as fixed generated row groups in
+  config, without source-specific Python
 
 ## Converted Configs
 
@@ -157,6 +162,9 @@ reproduce the old script stdout exactly:
 - `extract_umaine_2172.py` -> `extraction_configs/umaine_2172_caneberries.json`
 - `extract_umaine_2184.py` -> `extraction_configs/umaine_2184_strawberries.json`
 - `extract_umaine_2253.py` -> `extraction_configs/umaine_2253_blueberries.json`
+- `extract_purdue_ho_44_raspberries.py` -> `extraction_configs/purdue_ho_44_raspberries.json`
+- `extract_purdue_ho_46_strawberries.py` -> `extraction_configs/purdue_ho_46_strawberries.json`
+- `extract_usu_apple_recommendations.py` -> `extraction_configs/usu_apple_recommendations.json`
 - `extract_uga_b807_bunch_grapes.py` -> `extraction_configs/uga_b807_bunch_grapes.json`
 - `extract_uga_c766_caneberries.py` -> `extraction_configs/uga_c766_caneberries.json`
 - `extract_vce_422_018_cherries.py` -> `extraction_configs/vce_422_018_cherries.json`

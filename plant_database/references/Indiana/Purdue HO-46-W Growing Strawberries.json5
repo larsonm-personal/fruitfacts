@@ -1,0 +1,188 @@
+{
+    title: "Growing Strawberries",
+    author: "Bruce Bordelon",
+    description: "Purdue Extension strawberry guide with cultivar recommendations for Indiana home gardens",
+    url: "https://ag.purdue.edu/department/hla/extension/extension-publications-library/ext-pubs/ho-46-w.html",
+    thumbnail: "website",
+    reviewed: "May 20, 2026",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Purdue University Cooperative Extension Service, West Lafayette, Indiana",
+            latitude: 40.4237,
+            longitude: -86.9212
+        },
+    ],
+    categories: [
+        {
+            name: "Early-season June-bearing strawberries for Indiana",
+            description: "Purdue lists these as good early-season June-bearing strawberry cultivars"
+        },
+        {
+            name: "Mid-season June-bearing strawberries for Indiana",
+            description: "Purdue lists these as suggested mid-season June-bearing strawberry cultivars"
+        },
+        {
+            name: "Late-season June-bearing strawberries for Indiana",
+            description: "Purdue lists these as suggested late-season June-bearing strawberry cultivars"
+        },
+        {
+            name: "Promising newer June-bearing strawberries for Indiana trial",
+            description: "Purdue recommends small trial plantings for these promising newer releases"
+        },
+        {
+            name: "Day-neutral strawberries for cooler Indiana sites",
+            description: "Purdue lists these as good day-neutral cultivars for cooler climates"
+        },
+        {
+            name: "Everbearing strawberries for Indiana",
+            description: "Purdue lists these as promising or potentially useful everbearing cultivars"
+        },
+    ],
+    plants: [
+        {
+            type: "Strawberry",
+            name: "Earliglow",
+            category: "Early-season June-bearing strawberries for Indiana",
+            harvest_time_unparsed: "early season",
+            description: "Purdue lists Earliglow as a good early-season June-bearing cultivar and notes excellent flavor with fruit size decreasing after the first harvest"
+        },
+        {
+            type: "Strawberry",
+            name: "Annapolis",
+            category: "Early-season June-bearing strawberries for Indiana",
+            harvest_time_unparsed: "early season",
+            description: "Purdue lists Annapolis as a good early-season June-bearing cultivar"
+        },
+        {
+            type: "Strawberry",
+            name: "Delmarvel",
+            category: "Early-season June-bearing strawberries for Indiana",
+            harvest_time_unparsed: "early season",
+            description: "Purdue lists Delmarvel as a good early-season June-bearing cultivar"
+        },
+        {
+            type: "Strawberry",
+            name: "Redchief",
+            category: "Mid-season June-bearing strawberries for Indiana",
+            harvest_time_unparsed: "mid-season",
+            description: "Purdue suggests Redchief as a mid-season cultivar and says it is a reliable plant producer across a range of sites and conditions"
+        },
+        {
+            type: "Strawberry",
+            name: "Honeoye",
+            category: "Mid-season June-bearing strawberries for Indiana",
+            harvest_time_unparsed: "mid-season",
+            description: "Purdue suggests Honeoye as a mid-season cultivar"
+        },
+        {
+            type: "Strawberry",
+            name: "Guardian",
+            category: "Mid-season June-bearing strawberries for Indiana",
+            harvest_time_unparsed: "mid-season",
+            description: "Purdue suggests Guardian as a mid-season cultivar"
+        },
+        {
+            type: "Strawberry",
+            name: "Surecrop",
+            category: "Mid-season June-bearing strawberries for Indiana",
+            harvest_time_unparsed: "mid-season",
+            description: "Purdue suggests Surecrop as a mid-season cultivar and says it is a reliable plant producer across a range of sites and conditions"
+        },
+        {
+            type: "Strawberry",
+            name: "Allstar",
+            category: "Late-season June-bearing strawberries for Indiana",
+            harvest_time_unparsed: "late season",
+            description: "Purdue suggests Allstar as a late-season cultivar and says it is a consistent producer of large berries with orange-red color"
+        },
+        {
+            type: "Strawberry",
+            name: "Jewel",
+            category: "Late-season June-bearing strawberries for Indiana",
+            harvest_time_unparsed: "late season",
+            description: "Purdue suggests Jewel as a late-season cultivar and says it is an excellent quality berry, but plantings do not renovate well"
+        },
+        {
+            type: "Strawberry",
+            name: "Sparkle",
+            category: "Late-season June-bearing strawberries for Indiana",
+            harvest_time_unparsed: "late season",
+            description: "Purdue suggests Sparkle as a late-season cultivar"
+        },
+        {
+            type: "Strawberry",
+            name: "Northeaster",
+            category: "Promising newer June-bearing strawberries for Indiana trial",
+            harvest_time_unparsed: "early season",
+            description: "Purdue lists Northeaster as a promising newer early-season release for small trial plantings"
+        },
+        {
+            type: "Strawberry",
+            name: "Kent",
+            category: "Promising newer June-bearing strawberries for Indiana trial",
+            harvest_time_unparsed: "mid-season",
+            description: "Purdue lists Kent as a promising newer mid-season release for small trial plantings"
+        },
+        {
+            type: "Strawberry",
+            name: "Mesabi",
+            category: "Promising newer June-bearing strawberries for Indiana trial",
+            harvest_time_unparsed: "mid-season",
+            description: "Purdue lists Mesabi as a promising newer mid-season release for small trial plantings"
+        },
+        {
+            type: "Strawberry",
+            name: "Primetime",
+            category: "Promising newer June-bearing strawberries for Indiana trial",
+            harvest_time_unparsed: "mid-season",
+            description: "Purdue lists Primetime as a promising newer mid-season release for small trial plantings"
+        },
+        {
+            type: "Strawberry",
+            name: "Cavendish",
+            category: "Promising newer June-bearing strawberries for Indiana trial",
+            harvest_time_unparsed: "mid-season",
+            description: "Purdue lists Cavendish as a promising newer mid-season release for small trial plantings"
+        },
+        {
+            type: "Strawberry",
+            name: "Winona",
+            category: "Promising newer June-bearing strawberries for Indiana trial",
+            harvest_time_unparsed: "late season",
+            description: "Purdue lists Winona as a promising newer late-season release for small trial plantings"
+        },
+        {
+            type: "Strawberry",
+            name: "Tribute",
+            category: "Day-neutral strawberries for cooler Indiana sites",
+            description: "Purdue lists Tribute as a good day-neutral cultivar for cooler climates and notes that day-neutral strawberries generally do not do well during summer heat unless in a protected site"
+        },
+        {
+            type: "Strawberry",
+            name: "Tristar",
+            category: "Day-neutral strawberries for cooler Indiana sites",
+            description: "Purdue lists Tristar as a good day-neutral cultivar for cooler climates and notes that day-neutral strawberries generally do not do well during summer heat unless in a protected site"
+        },
+        {
+            type: "Strawberry",
+            name: "Ozark Beauty",
+            category: "Everbearing strawberries for Indiana",
+            description: "Purdue says Ozark Beauty appears to be one of the most promising everbearing cultivars"
+        },
+        {
+            type: "Strawberry",
+            name: "Fort Laramie",
+            category: "Everbearing strawberries for Indiana",
+            description: "Purdue says Fort Laramie appears to be one of the most promising everbearing cultivars"
+        },
+        {
+            type: "Strawberry",
+            name: "Quinault",
+            category: "Everbearing strawberries for Indiana",
+            description: "Purdue says Quinault is a new release that may have potential"
+        },
+    ]
+}

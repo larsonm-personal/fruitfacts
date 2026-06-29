@@ -1,0 +1,314 @@
+{
+    title: "Apple Production and Variety Recommendations for the Utah Home Garden",
+    author: "Taun Beddes, Mike Pace, Brent Black, and Mark Ashcroft",
+    description: "USU Extension home garden apple guide with Utah variety recommendations, hardiness zones, bloom season, ripening time, fire blight resistance, and cultivar comments",
+    url: "https://extension.usu.edu/yardandgarden/research/apple-production-and-variety-recommendations-for-the-utah-home-garden",
+    thumbnail: "website",
+    published: "Mar 2012",
+    reviewed: "Jun 25, 2025",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Utah State University Extension, Logan, Utah",
+            latitude: 41.7452,
+            longitude: -111.8097
+        },
+    ],
+    categories: [
+        {
+            name: "Apple varieties recommended for Utah home gardens",
+            description: "USU Table 1 lists apple varieties recommended for Utah home gardens with hardiness zone, bloom season, ripening time, fire blight resistance, and comments"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Yellow Transparent",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late July to Early August",
+            description: "Hardiness zone: 3-8. Bloom season: Early. Fire blight resistance: Susceptible. Comments: Popular, relatively disease resistant, summer apple, a sweet flavor. Useful in colder areas of Utah. Does not store well. It also can be used for sauce"
+        },
+        {
+            type: "Apple",
+            name: "Lodi",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "August to Early September",
+            description: "Hardiness zone: (3)4-7. Bloom season: Early. Fire blight resistance: Very Susceptible. Comments: Popular summer apple. Useful fresh or in pies, sauces and cider. It does not store well. Source marks this as commonly commercially grown in Utah orchards"
+        },
+        {
+            type: "Apple",
+            name: "Minnewashta",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Mid to Late August",
+            description: "Hardiness zone: 3-6. Bloom season: Mid. Fire blight resistance: Very Resistant. Comments: Ripens early and is crisper than other summer apples. It can be eaten fresh or used for cooking. Can be stored for up to 2 months. Better suited to colder climates. Source table names this as Zestar(tm)"
+        },
+        {
+            type: "Apple",
+            name: "Sansa",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Mid to Late August",
+            description: "Hardiness zone: 5-7. Bloom season: Mid. Fire blight resistance: Susceptible. Comments: Well balanced flavor with hints of both sweet and tart. Disease resistant. Store for 6 to 8 weeks"
+        },
+        {
+            type: "Apple",
+            name: "Ginger Gold",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late August to September",
+            description: "Hardiness zone: 4-8. Bloom season: Mid. Fire blight resistance: Very Susceptible. Comments: A newer variety similar to Golden Delicious. Popular for eating or salads due to its sweet flavor with tart undertones. Resistant to browning but does not store well. Susceptible to fire blight. Those growing the apple should adopt management strategies to suppress infection"
+        },
+        {
+            type: "Apple",
+            name: "Earligold",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late August to Early September",
+            description: "Hardiness zone: 4-7. Bloom season: Mid. Fire blight resistance: Very Susceptible. Comments: A summer variety with improved flavor over older summer apples that stores longer. It may require multiple pickings but can be used fresh, for cooking and processing"
+        },
+        {
+            type: "Apple",
+            name: "Akane",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "September",
+            description: "Hardiness zone: 4-8. Bloom season: Early to mid. Fire blight resistance: Moderately Resistant. Comments: Its taste is similar to Jonathon and is best used for cooking, due to its tart flavor. Does not store well. Source table names this as Akane (Tokyo Rose)"
+        },
+        {
+            type: "Apple",
+            name: "Paulared",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "September",
+            description: "Hardiness zone: 4-8. Bloom season: Mid. Fire blight resistance: Very Susceptible. Comments: A relatively early ripening variety that can be used fresh, for cooking and processing. It has a balanced flavor that is neither too sweet nor tart. This variety does not store well. Source table names this as Paula Red"
+        },
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "September",
+            description: "Hardiness zone: 4-8. Bloom season: Mid. Fire blight resistance: Susceptible. Comments: Multiple strains of Gala apple are available, including spur types. Gala is one of the most popular apples in the United States"
+        },
+        {
+            type: "Apple",
+            name: "Cortland",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "September",
+            description: "Hardiness zone: 4-7. Bloom season: Mid. Fire blight resistance: Susceptible. Comments: Similar to McIntosh in flavor, but it has improved growth characteristics and is nonbrowning. It is often used as a dessert apple"
+        },
+        {
+            type: "Apple",
+            name: "Prima",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Mid September",
+            description: "Hardiness zone: 4-7. Bloom season: Late. Fire blight resistance: Resistant. Comments: Relatively early apple that may be useful where fire blight is a continual problem. Fruit does not store well"
+        },
+        {
+            type: "Apple",
+            name: "Co-op 39",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Mid September",
+            description: "Hardiness zone: 4-7. Bloom season: Mid. Fire blight resistance: Susceptible. Comments: Stores well and has a moderately tart flavor. Disease resistant. Useful as a juice apple. Source table names this as Crimson Crisp"
+        },
+        {
+            type: "Apple",
+            name: "Autumncrisp",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Mid September",
+            description: "Hardiness zone: 4-7. Bloom season: Mid. Fire blight resistance: Unknown. Comments: Well flavored with a texture similar to Honeycrisp. Does not brown and fruit has less tendency to drop. Source table names this as Autumn Crisp"
+        },
+        {
+            type: "Apple",
+            name: "Sweet Sixteen",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "September to Early October",
+            description: "Hardiness zone: 3-7. Bloom season: Mid - Late. Fire blight resistance: Moderately Susceptible. Comments: A newer apple variety that stores well, whose flesh is crisp and taste is sweet with slightly tart undertones. Show some resistance to fire blight"
+        },
+        {
+            type: "Apple",
+            name: "Honeycrisp",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Mid-September to Early October",
+            description: "Hardiness zone: 3-6. Bloom season: Early. Fire blight resistance: Moderately Resistant. Comments: Honeycrisp exhibits strong cold hardiness. Popular due to its aromatic, sweet flavor, it is excellent fresh, in salads, pies and stores well. It not may perform as well in warmer areas along the Wasatch Front. Source marks this as commonly commercially grown in Utah orchards"
+        },
+        {
+            type: "Apple",
+            name: "Jonathan",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Mid September to Mid October",
+            description: "Hardiness zone: 4-8. Bloom season: Mid. Fire blight resistance: Susceptible. Comments: Jonathon is used fresh, in baking and frozen. It has a sweet-tart flavor, is juicy and stores for up to 3 months. It is more susceptible to fire blight. Those growing it should adopt management strategies accordingly. Source marks this as commonly commercially grown in Utah orchards. Source table names this as Jonathon"
+        },
+        {
+            type: "Apple",
+            name: "Empire",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late September into Early October",
+            description: "Hardiness zone: 4-8. Bloom season: Mid. Fire blight resistance: Moderately Resistant. Comments: Empire is a result of a cross between McIntosh and Red Delicious. It has a sweet yet tangy flavor and will keep for 3-4 months. Fruit does not bruise easily. Source marks this as commonly commercially grown in Utah orchards"
+        },
+        {
+            type: "Apple",
+            name: "Acey Mac",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late September to Mid October",
+            description: "Hardiness zone: 4-8. Bloom season: Early. Fire blight resistance: Moderately Susceptible. Comments: Flavor like McIntosh but has better color, firmer texture and stores for a longer period of time"
+        },
+        {
+            type: "Apple",
+            name: "GoldRush",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late September into mid October",
+            description: "Hardiness zone: 4-8. Bloom season: Mid. Fire blight resistance: Moderately Resistant. Comments: This variety has golden delicious as one of its parents. It has enhanced resistance to fire blight and apple scab. Fruit is sweet and can be stored for several months. Source table names this as Gold Rush"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late September to October",
+            description: "Hardiness zone: 4-8. Bloom season: Mid. Fire blight resistance: Moderately Susceptible. Comments: This apple is commonly planted for its ever popular honey sweet taste. It should be used fresh, or is useful frozen and in pies. It does not store as well. Spur types are available and is semi-self pollinating. Source marks this as commonly commercially grown in Utah orchards"
+        },
+        {
+            type: "Apple",
+            name: "Golden Supreme",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late September to Early October",
+            description: "Hardiness zone: 4-8. Bloom season: Mid to Late. Fire blight resistance: Moderately Susceptible. Comments: Similar to Golden Delicious but ripens a few weeks earlier. Less likely to bear biannually and is resistant to russeting"
+        },
+        {
+            type: "Apple",
+            name: "Jonagold",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late September to Mid October",
+            description: "Hardiness zone: 4-8. Bloom season: Mid. Fire blight resistance: Moderately Susceptible. Comments: Jonagold can be eaten fresh and is excellent in salads, pies and baking purposes. It will not pollinate other apples and cannot be pollinated by Golden Delicious. It is highly susceptible to fire blight. Those growing the apple should adopt management strategies that suppress infection. Source marks this as commonly commercially grown in Utah orchards"
+        },
+        {
+            type: "Apple",
+            name: "Topaz",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late September to Mid October",
+            description: "Hardiness zone: 4-8. Bloom season: Mid. Fire blight resistance: Moderately resistant. Comments: Tart and unique flavor somewhat reminiscent of Granny Delicious. Stores very well. May be useful in areas where Granny Smith does not ripen"
+        },
+        {
+            type: "Apple",
+            name: "Idared",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Early October",
+            description: "Hardiness zone: 4-6. Bloom season: Early. Fire blight resistance: Very Susceptible. Comments: An apple developed in Idaho with flavor similar to Jonathon. It is useful for sauce and processing. It can be easily stored for 2 to 3 months"
+        },
+        {
+            type: "Apple",
+            name: "Jonamac",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late September to October",
+            description: "Hardiness zone: 4-8. Bloom season: Mid. Fire blight resistance: Moderately Susceptible. Comments: Jonamac is similar in flavor to McIntosh, but has a more tart flavor. Excellent for cooking, in desserts and salads"
+        },
+        {
+            type: "Apple",
+            name: "McIntosh",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "October",
+            description: "Hardiness zone: 5-8. Bloom season: Early to Mid. Fire blight resistance: Susceptible. Comments: Although it stores well, McIntosh is at its best soon after it's picked. It is not good for use in pies and desserts due to its high water content, but is useful for sauce. Source marks this as commonly commercially grown in Utah orchards"
+        },
+        {
+            type: "Apple",
+            name: "Northern Spy",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "October",
+            description: "Hardiness zone: (4)5-8. Bloom season: Late. Fire blight resistance: Moderately Susceptible. Comments: An heirloom variety that stores well and is very good for baking and desserts. It bruises easily, and the fruit is not commonly available commercially. Other \"spy\" type apples exist that are also good baking apples"
+        },
+        {
+            type: "Apple",
+            name: "Red Delicious",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "October",
+            description: "Hardiness zone: 4-8. Bloom season: Mid. Fire blight resistance: Resistant. Comments: Red Delicious has been popular but its popularity is waning because flavor has been sacrificed for improved red color in modern strains. Look for older strains with green striping. This usually indicates the desired classic flavor is present. Spur types are available"
+        },
+        {
+            type: "Apple",
+            name: "Rome Beauty",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "October",
+            description: "Hardiness zone: 5-8. Bloom season: Late. Fire blight resistance: Very Susceptible. Comments: A popular apple, especially for baking, due to its slightly tart flavor, but is also tasty eaten fresh. Consider using this apple where Granny Smith will not ripen. Source marks this as commonly commercially grown in Utah orchards"
+        },
+        {
+            type: "Apple",
+            name: "Wildung",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "October",
+            description: "Hardiness zone: 4-6. Bloom season: Mid. Fire blight resistance: Moderately Resistant. Comments: SnowSweet is bred for colder climates. Fruit can be used fresh, for cooking and for processing. The fruit can also be stored for 4 to 8 weeks. Source table names this as SnowSweet(tm)"
+        },
+        {
+            type: "Apple",
+            name: "Winesap",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "October",
+            description: "Hardiness zone: 5-8. Bloom season: Late. Fire blight resistance: Moderately Resistant. Comments: Winesap will not pollinate other apple varieties. It has red flesh and a tart flavor with undertones of wine. It is a popular choice for making cider. It also can be used in salads"
+        },
+        {
+            type: "Apple",
+            name: "Fortune",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Mid to late October",
+            description: "Hardiness zone: 5-8. Bloom season: Mid. Fire blight resistance: Moderately Susceptible. Comments: Very good, spicy pie apple. Considered by some to be superior to Northern Spy. Resists browning and useful for processing into sauce"
+        },
+        {
+            type: "Apple",
+            name: "NJ 55",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Mid to late October",
+            description: "Hardiness zone: 4-7. Bloom season: Mid. Fire blight resistance: Susceptible. Comments: Tastes similar to Golden Delicious but spicier. Source table names this as Suncrisp"
+        },
+        {
+            type: "Apple",
+            name: "Arkansas Black",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Mid to Late October",
+            description: "Hardiness zone: 4(5)-8. Bloom season: Mid. Fire blight resistance: Moderately Resistant. Comments: Arkansas Black, a seedling of Winesap. When first picked, fruit is very crisp (almost hard) and somewhat tart. Its flavor improves after a few months of storage"
+        },
+        {
+            type: "Apple",
+            name: "Candy Crisp",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late October",
+            description: "Hardiness zone: 5-8. Bloom season: Mid. Fire blight resistance: Moderately Resistant. Comments: Mild but well flavored apple with a growth habit similar to Red Delicious. Site in an area with good air drainage"
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "October into Early November",
+            description: "Hardiness zone: (4)5-8. Bloom season: Mid to Late. Fire blight resistance: Very Susceptible. Comments: Lasts up to 6 months when stored. It can be used for cooking and for sauce. When planted in colder areas, purchase earlier ripening strains. Spur types are available. Source marks this as commonly commercially grown in Utah orchards"
+        },
+        {
+            type: "Apple",
+            name: "Braeburn",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late October",
+            description: "Hardiness zone: 5-8. Bloom season: Early. Fire blight resistance: Moderately Susceptible. Comments: Due to its sweet, yet complex flavor, this apple is popular worldwide. It can be eaten fresh, used for cooking, for sauce and frozen. The fruit may drop prematurely in hot climates, but can be prevented by thinning. It can be stored for several months. A spur type Braeburn exists. Source marks this as commonly commercially grown in Utah orchards"
+        },
+        {
+            type: "Apple",
+            name: "AS510 Stayman",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late October",
+            description: "Hardiness zone: 5-8. Bloom season: Mid. Fire blight resistance: Moderately Resistant. Comments: Very flavorful with high a tart-acid flavor. Store for up to 7 months. Source table names this as Snapp Staymen"
+        },
+        {
+            type: "Apple",
+            name: "Caudle",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late October",
+            description: "Hardiness zone: 5-8. Bloom season: Mid to Late. Fire blight resistance: Moderately Susceptible. Comments: This apple stores well for long periods. It is suspected to be a cross between red and golden delicious, where its flavor has aspects of both Golden and Red Delicious apple varieties. It is also useful in desserts. Source table names this as Cameo (Carousel)"
+        },
+        {
+            type: "Apple",
+            name: "Granny Smith",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late October to November",
+            description: "Hardiness zone: 5-8. Bloom season: Mid. Fire blight resistance: Very Susceptible. Comments: Has a tart flavor and is an excellent for cooking. Unfortunately, it ripens late, even in warmer areas of the Wasatch Front. It should not be grown in Utah's colder mountain valleys. Source marks this as commonly commercially grown in Utah orchards"
+        },
+        {
+            type: "Apple",
+            name: "Mutsu",
+            category: "Apple varieties recommended for Utah home gardens",
+            harvest_time_unparsed: "Late October to Early November",
+            description: "Hardiness zone: 5-9. Bloom season: Mid. Fire blight resistance: Susceptible. Comments: An apple that is gaining in popularity. It is excellent fresh, for baking, sauces and frozen. The flavor is very sweet, crisp and juicy and somewhat similar to Golden Delicious but more complex in flavor. A spur type is available. Source table names this as Mutsu (Crispin)"
+        },
+    ]
+}

@@ -354,3 +354,20 @@ C766 has one grouped table where the `Fruit Type` cell spans several rows in
 the browser. The simple parser sees those following rows as short rows, so the
 config uses `fill_leading_group_cells` before mapping `Blackberries` to
 `Blackberry` records and `Raspberries` to `Raspberry` records.
+
+## USU Apples And Purdue Small Fruit Notes
+
+The USU apple page is a straightforward HTML table source. The config extracts
+the variety table directly, keeps source ripening values in
+`harvest_time_unparsed`, and uses `name_suffix_notes` for the source asterisk
+that marks Utah commercial cultivars. A few well-established FruitFacts names
+are harmonized in config, with source names retained as `AKA` values or source
+notes.
+
+The Purdue raspberry and strawberry pages are not table sources. Their useful
+cultivar content is in compact recommendation paragraphs under the `Cultivars`
+heading. Rather than write custom Python, the configs use
+`colon_paragraph_blocks` with an intentionally impossible paragraph regex and
+`generated_rows` keyed by source paragraph prefixes. This keeps the source
+judgment visible in JSON while still letting the shared runner emit reference
+records and compare generated output to committed JSON5.

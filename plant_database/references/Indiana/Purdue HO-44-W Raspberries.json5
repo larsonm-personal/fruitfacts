@@ -1,0 +1,106 @@
+{
+    title: "Raspberries",
+    author: "Bruce Bordelon",
+    description: "Purdue Extension raspberry guide with cultivar recommendations for Indiana home gardens",
+    url: "https://ag.purdue.edu/department/hla/extension/extension-publications-library/ext-pubs/ho-44-w.html",
+    thumbnail: "website",
+    reviewed: "Jun 23, 2026",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Purdue University Cooperative Extension Service, West Lafayette, Indiana",
+            latitude: 40.4237,
+            longitude: -86.9212
+        },
+    ],
+    categories: [
+        {
+            name: "Summer-bearing red raspberries for Indiana",
+            description: "Purdue lists these as good summer-bearing raspberry cultivars for Indiana"
+        },
+        {
+            name: "Primocane-fruiting red raspberries for Indiana",
+            description: "Purdue lists these among the best primocane-fruiting raspberry cultivars for Indiana"
+        },
+        {
+            name: "Purple raspberries for Indiana",
+            description: "Purdue lists these as good or promising purple raspberry cultivars for Indiana"
+        },
+        {
+            name: "Black raspberries for Indiana",
+            description: "Purdue lists these as recommended or promising black raspberry cultivars for Indiana"
+        },
+    ],
+    plants: [
+        {
+            type: "Raspberry",
+            name: "Latham",
+            category: "Summer-bearing red raspberries for Indiana",
+            description: "Purdue lists Latham as a good summer-bearing cultivar for Indiana"
+        },
+        {
+            type: "Raspberry",
+            name: "Canby",
+            category: "Summer-bearing red raspberries for Indiana",
+            description: "Purdue lists Canby as a good summer-bearing cultivar for Indiana"
+        },
+        {
+            type: "Raspberry",
+            name: "Nova",
+            category: "Summer-bearing red raspberries for Indiana",
+            description: "Purdue lists Nova as a good summer-bearing cultivar for Indiana"
+        },
+        {
+            type: "Raspberry",
+            name: "Autumn Bliss",
+            category: "Primocane-fruiting red raspberries for Indiana",
+            harvest_time_unparsed: "late summer and fall",
+            description: "Purdue lists Autumn Bliss among the best primocane-fruiting raspberry cultivars for Indiana"
+        },
+        {
+            type: "Raspberry",
+            name: "Heritage",
+            category: "Primocane-fruiting red raspberries for Indiana",
+            harvest_time_unparsed: "late summer and fall",
+            description: "Purdue lists Heritage among the best primocane-fruiting raspberry cultivars for Indiana and says it is widely adapted across the region"
+        },
+        {
+            type: "Raspberry",
+            name: "Royalty",
+            category: "Purple raspberries for Indiana",
+            description: "Purdue lists Royalty as a good purple raspberry cultivar"
+        },
+        {
+            type: "Raspberry",
+            name: "Brandywine",
+            category: "Purple raspberries for Indiana",
+            description: "Purdue lists Brandywine as a good purple raspberry cultivar with large, high-quality fruit and heavy yields"
+        },
+        {
+            type: "Raspberry",
+            name: "Estate",
+            category: "Purple raspberries for Indiana",
+            description: "Purdue says Estate is a new purple berry with promise for Indiana production"
+        },
+        {
+            type: "Raspberry",
+            name: "Bristol",
+            category: "Black raspberries for Indiana",
+            description: "Purdue lists Bristol as a currently recommended black raspberry cultivar for Indiana"
+        },
+        {
+            type: "Raspberry",
+            name: "Jewel",
+            category: "Black raspberries for Indiana",
+            description: "Purdue lists Jewel as a currently recommended black raspberry cultivar for Indiana"
+        },
+        {
+            type: "Raspberry",
+            name: "Mac Black",
+            category: "Black raspberries for Indiana",
+            description: "Purdue says MacBlack is a new black raspberry with promise. Source table names this as MacBlack"
+        },
+    ]
+}

@@ -1,0 +1,114 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.usu.edu/yardandgarden/research/apple-production-and-variety-recommendations-for-the-utah-home-garden"
+  },
+  "reference_fields": [
+    ["title", "Apple Production and Variety Recommendations for the Utah Home Garden"],
+    ["author", "Taun Beddes, Mike Pace, Brent Black, and Mark Ashcroft"],
+    ["description", "USU Extension home garden apple guide with Utah variety recommendations, hardiness zones, bloom season, ripening time, fire blight resistance, and cultivar comments"],
+    ["url", "https://extension.usu.edu/yardandgarden/research/apple-production-and-variety-recommendations-for-the-utah-home-garden"],
+    ["thumbnail", "website"],
+    ["published", "Mar 2012"],
+    ["reviewed", "Jun 25, 2025"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Utah State University Extension, Logan, Utah",
+      "latitude": 41.7452,
+      "longitude": -111.8097
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple varieties recommended for Utah home gardens",
+      "description": "USU Table 1 lists apple varieties recommended for Utah home gardens with hardiness zone, bloom season, ripening time, fire blight resistance, and comments"
+    }
+  ],
+  "name_overrides": {
+    "Akane (Tokyo Rose)": {
+      "name": "Akane",
+      "note": "Source table names this as Akane (Tokyo Rose)"
+    },
+    "Autumn Crisp": {
+      "name": "Autumncrisp",
+      "note": "Source table names this as Autumn Crisp"
+    },
+    "Cameo (Carousel)": {
+      "name": "Caudle",
+      "note": "Source table names this as Cameo (Carousel)"
+    },
+    "Crimson Crisp": {
+      "name": "Co-op 39",
+      "note": "Source table names this as Crimson Crisp"
+    },
+    "Gold Rush": {
+      "name": "GoldRush",
+      "note": "Source table names this as Gold Rush"
+    },
+    "Jonathon": {
+      "name": "Jonathan",
+      "note": "Source table names this as Jonathon"
+    },
+    "Mutsu (Crispin)": {
+      "name": "Mutsu",
+      "note": "Source table names this as Mutsu (Crispin)"
+    },
+    "Paula Red": {
+      "name": "Paulared",
+      "note": "Source table names this as Paula Red"
+    },
+    "Snapp Staymen": {
+      "name": "AS510 Stayman",
+      "note": "Source table names this as Snapp Staymen"
+    },
+    "SnowSweet(tm)": {
+      "name": "Wildung",
+      "note": "Source table names this as SnowSweet(tm)"
+    },
+    "Suncrisp": {
+      "name": "NJ 55",
+      "note": "Source table names this as Suncrisp"
+    },
+    "Zestar(tm)": {
+      "name": "Minnewashta",
+      "note": "Source table names this as Zestar(tm)"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "required_headers": [
+        "Variety",
+        "Hardiness Zone",
+        "Bloom Season",
+        "Time of Ripening",
+        "Fire Blight Resistance",
+        "Comments and Description"
+      ],
+      "plant_type": "Apple",
+      "name_key": "variety",
+      "category": "Apple varieties recommended for Utah home gardens",
+      "trim_name": true,
+      "text_fixes": {
+        "Late October to Early November.": "Late October to Early November"
+      },
+      "name_suffix_notes": [
+        {
+          "suffix": "*",
+          "note": "Source marks this as commonly commercially grown in Utah orchards"
+        }
+      ],
+      "harvest_key": "time_of_ripening",
+      "description_labels": [
+        ["hardiness_zone", "Hardiness zone"],
+        ["bloom_season", "Bloom season"],
+        ["fire_blight_resistance", "Fire blight resistance"],
+        ["comments_and_description", "Comments"]
+      ]
+    }
+  ]
+}
