@@ -1,0 +1,134 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.umaine.edu/publications/2172e/"
+  },
+  "reference_fields": [
+    ["title", "Raspberry and Blackberry Varieties for Maine"],
+    ["author", "David T. Handley"],
+    ["url", "https://extension.umaine.edu/publications/2172e/"],
+    ["published", "1995, 2009, 2020"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "categories": [
+    {
+      "name": "Red raspberries, summer-bearing",
+      "description": "listed by ripening date, earliest-latest"
+    },
+    {
+      "name": "Red raspberries, everbearing",
+      "description": "primocane-fruiting, listed by fall ripening date, earliest-latest"
+    },
+    {
+      "name": "Yellow raspberries, everbearing",
+      "description": "primocane-fruiting"
+    },
+    {
+      "name": "Purple raspberries, summer-bearing",
+      "description": "In general, purple raspberries are not adequately hardy to be commercially viable in most of Maine."
+    },
+    {
+      "name": "Black raspberries",
+      "description": "Black raspberries may winter-kill to the snowline if temperatures drop to -10 degrees F. They are also quite susceptible to virus infections, Verticillium, anthracnose, and rust. They are not considered commercially viable for Maine."
+    },
+    {
+      "name": "Blackberries, thorny",
+      "description": "erect Erect blackberries have tall, rugged canes with prominent thorns. They are sensitive to low temperatures (-10 degrees or colder) and are therefore not recommended for commercial production in Maine. Virus infections are common in blackberries and may cause poor winter survival and sterility, resulting in no fruit."
+    },
+    {
+      "name": "Blackberries, thornless",
+      "description": "Thornless blackberries have vigorous canes that must be staked or trellised. They tend to be more sensitive to winter injury than thorny varieties and are not hardy below -10 degrees F. They should only be planted in sites protected from wind and extreme cold. They are not considered commercially viable for Maine. They ripen later than most red raspberries."
+    },
+    {
+      "name": "Blackberries, everbearing",
+      "description": "Fall crop ripens too late to be practical in Maine"
+    }
+  ],
+  "name_overrides": {
+    "Fall Gold": {
+      "name": "Fallgold",
+      "aka": ["Fall Gold"]
+    }
+  },
+  "extractors": [
+    {
+      "kind": "colon_paragraph_blocks",
+      "start_after_text": "Choosing Varieties",
+      "stop_prefixes": ["Information in this publication"],
+      "category_rules": [
+        {"tags": ["h4"]},
+        {"texts": ["Blackberries, thorny (erect)"]}
+      ],
+      "category_text_fixes": {
+        "raspberrie s": "rasberries",
+        "B lack": "Black",
+        "rasberries": "raspberries"
+      },
+      "strip_category_parenthetical": true,
+      "paragraph_pattern": "([^:]{2,80}):\\s+(.+)$",
+      "generated_rows": [
+        {
+          "text_prefix": "Note: Newer everbearing type blackberries",
+          "rows": [
+            {
+              "name": "Prime Jan",
+              "category": "Blackberries, everbearing",
+              "description": "Newer everbearing blackberry. Not recommended because fall crop ripens too late in Maine"
+            },
+            {
+              "name": "Prime-Ark 45",
+              "category": "Blackberries, everbearing",
+              "description": "Newer everbearing blackberry. Not recommended because fall crop ripens too late in Maine"
+            },
+            {
+              "name": "Freedom",
+              "category": "Blackberries, everbearing",
+              "description": "Newer everbearing blackberry. Not recommended because fall crop ripens too late in Maine"
+            },
+            {
+              "name": "Traveler",
+              "category": "Blackberries, everbearing",
+              "description": "Newer everbearing blackberry. Not recommended because fall crop ripens too late in Maine"
+            }
+          ]
+        }
+      ],
+      "plant_type": {
+        "row_key": "category",
+        "prefix_map": {"Blackberries": "Blackberry"},
+        "default": "Raspberry"
+      },
+      "category": {"row_key": "category"},
+      "harvest_from_key": "description",
+      "harvest_phrase_map": [
+        ["late August-early September", "late August-early September"],
+        ["late August", "late August"],
+        ["early-midseason", "early-midseason"],
+        ["mid- to late-ripening", "mid to late"],
+        ["mid-season ripening", "mid-season"],
+        ["ripens mid-season", "mid-season"],
+        ["fruit ripens mid-season", "mid-season"],
+        ["late-season ripening", "late"],
+        ["late ripening", "late"],
+        ["ripens late", "late"],
+        ["ripens early", "early"],
+        ["early ripening", "early"],
+        ["early-ripening", "early"],
+        ["relatively early", "relatively early"],
+        ["relatively late", "relatively late"],
+        ["slightly before 'Heritage'", "slightly before Heritage"],
+        ["slightly earlier than 'Heritage'", "slightly earlier than Heritage"]
+      ],
+      "harvest_phrase_only": true,
+      "description_parts": [
+        {
+          "kind": "key",
+          "key": "description",
+          "rstrip_period": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.umaine.edu/publications/2184e/"
+  },
+  "reference_fields": [
+    ["title", "Strawberry Varieties for Maine"],
+    ["author", "David T. Handley"],
+    ["url", "https://extension.umaine.edu/publications/2184e/"],
+    ["published", "2011"],
+    ["reviewed", "2024"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "lookups": [
+    {
+      "name": "summary",
+      "kind": "html_table",
+      "required_headers": [
+        "Variety",
+        "Ripening Time",
+        "Pest Resistance",
+        "Comments"
+      ],
+      "key": "variety",
+      "name_key": "variety"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "colon_paragraph_blocks",
+      "category_rules": [
+        {
+          "tags": ["h3"],
+          "texts": [
+            "Early Season",
+            "Early-Midseason",
+            "Midseason",
+            "Mid-Late Season",
+            "Late Season",
+            "Day-Neutral"
+          ]
+        }
+      ],
+      "stop_prefixes": [
+        "Information in this publication",
+        "VIDEO:"
+      ],
+      "paragraph_pattern": "([^:]{2,80}):(?:\\s+(.+))?$",
+      "description_from_following": true,
+      "plant_type": "Strawberry",
+      "category": {"row_key": "category"},
+      "description_joiner": " ",
+      "harvest_from_key": "description",
+      "harvest_phrase_map": [
+        ["late summer-fall", "late summer-fall"],
+        ["very early ripening", "very early"],
+        ["early ripening", "early"],
+        ["early, late summer-fall ripening", "early and late summer-fall"],
+        ["late ripening", "late"]
+      ],
+      "harvest_lookup": {
+        "lookup": "summary",
+        "row_key": "name",
+        "key": "ripening_time"
+      },
+      "description_parts": [
+        {
+          "kind": "key",
+          "key": "description",
+          "rstrip_period": false
+        },
+        {
+          "kind": "lookup_key",
+          "lookup": "summary",
+          "row_key": "name",
+          "key": "pest_resistance",
+          "prefix": "Summary table lists pest resistance: "
+        },
+        {
+          "kind": "lookup_key",
+          "lookup": "summary",
+          "row_key": "name",
+          "key": "comments",
+          "prefix": "Summary table note: "
+        }
+      ]
+    }
+  ]
+}

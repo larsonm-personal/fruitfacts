@@ -2,6 +2,7 @@
 """Extract a draft JSON5 reference from a parser config"""
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -13,7 +14,6 @@ from fruitfacts_extract.pdf_tools import pdf_url_to_text
 from fruitfacts_extract.record_tools import append_source_note
 from fruitfacts_extract.record_tools import category_records
 from fruitfacts_extract.record_tools import labelled_description_from_row
-from fruitfacts_extract.record_tools import normalized_name
 from fruitfacts_extract.record_tools import plant_record
 from fruitfacts_extract.record_tools import strip_trailing_note_markers
 from fruitfacts_extract.table_tools import fill_leading_group_cells
@@ -39,10 +39,7 @@ def pairs(data):
 
 
 def name_overrides(config):
-    return {
-        source: (target["name"], target.get("note"))
-        for source, target in config.get("name_overrides", {}).items()
-    }
+    return config.get("name_overrides", {})
 
 
 def source_data(config):
@@ -141,6 +138,9 @@ def resolved_value(spec, row):
         value = row.get(spec["row_key"])
         if "map" in spec and value in spec["map"]:
             return spec["map"][value]
+        for prefix, mapped in spec.get("prefix_map", {}).items():
+            if isinstance(value, str) and value.startswith(prefix):
+                return mapped
         return spec.get("default", value)
     if "template" in spec:
         return format_template(spec["template"], row, None)
@@ -182,6 +182,17 @@ def lookup_labels_part(row, part, lookups):
     return part.get("prefix", "") + "; ".join(values)
 
 
+def lookup_key_part(row, part, lookups):
+    key_value = row.get(part.get("row_key", "name"))
+    lookup_row = lookups.get(part["lookup"], {}).get(key_value)
+    if not lookup_row:
+        return None
+    value = lookup_row.get(part["key"])
+    if not value:
+        return None
+    return part.get("prefix", "") + value
+
+
 def description_part(row, extractor, part, lookups):
     kind = part["kind"]
     if kind == "labels":
@@ -192,6 +203,8 @@ def description_part(row, extractor, part, lookups):
         return format_template(part["template"], row, extractor)
     if kind == "lookup_labels":
         return lookup_labels_part(row, part, lookups)
+    if kind == "lookup_key":
+        return lookup_key_part(row, part, lookups)
     raise ValueError("Unsupported description part: " + kind)
 
 
@@ -201,7 +214,9 @@ def description(row, extractor, lookups):
             description_part(row, extractor, part, lookups)
             for part in extractor["description_parts"]
         ]
-        description_value = ". ".join(part for part in parts if part)
+        description_value = extractor.get("description_joiner", ". ").join(
+            part for part in parts if part
+        )
     else:
         parts = [
             labelled_description_from_row(
@@ -226,9 +241,23 @@ def description(row, extractor, lookups):
     return description_value
 
 
-def harvest_time(row, extractor):
+def harvest_time(row, extractor, lookups):
     if extractor.get("harvest_time_unparsed"):
         return resolved_value(extractor["harvest_time_unparsed"], row)
+    if extractor.get("harvest_phrase_map"):
+        text = row.get(extractor.get("harvest_from_key", "description"), "")
+        lowered = text.lower()
+        for needle, value in pairs(extractor["harvest_phrase_map"]):
+            if needle.lower() in lowered:
+                return value
+        if extractor.get("harvest_phrase_only"):
+            return None
+    if extractor.get("harvest_lookup"):
+        lookup = extractor["harvest_lookup"]
+        key_value = row.get(lookup.get("row_key", "name"))
+        lookup_row = lookups.get(lookup["lookup"], {}).get(key_value)
+        if lookup_row:
+            return lookup_row.get(lookup["key"])
     if extractor.get("harvest_key"):
         return row.get(extractor["harvest_key"])
     if extractor.get("harvest_from_key"):
@@ -243,6 +272,19 @@ def combined_note(*notes):
     return ". ".join(note for note in notes if note)
 
 
+def normalized_source_name(source_name, overrides):
+    if source_name not in overrides:
+        return source_name, None, {}
+    target = overrides[source_name]
+    if isinstance(target, dict):
+        extra = {}
+        if target.get("aka"):
+            extra["AKA"] = target["aka"]
+        return target["name"], target.get("note"), extra
+    name, note = target
+    return name, note, {}
+
+
 def source_name_and_note(row, extractor, overrides):
     source_name = row[extractor["name_key"]]
     notes = []
@@ -253,28 +295,33 @@ def source_name_and_note(row, extractor, overrides):
             notes.append(suffix_note["note"])
     if extractor.get("strip_name_footnotes"):
         source_name = strip_trailing_note_markers(source_name)
-    name, source_note = normalized_name(source_name, overrides)
+    name, source_note, extra_fields = normalized_source_name(source_name, overrides)
     notes.append(source_note)
     notes.append(row.get("_source_note"))
-    return name, combined_note(*notes)
+    return name, combined_note(*notes), extra_fields
 
 
 def plant_records_from_config_rows(rows, extractor, overrides, lookups):
     plants = []
     for row in rows:
-        name, source_note = source_name_and_note(row, extractor, overrides)
-        plants.append(
-            plant_record(
-                resolved_value(extractor["plant_type"], row),
-                name,
-                category=resolved_value(extractor.get("category"), row),
-                harvest_time_unparsed=harvest_time(row, extractor),
-                description=append_source_note(
-                    description(row, extractor, lookups),
-                    source_note,
-                ),
-            )
+        name, source_note, extra_fields = source_name_and_note(row, extractor, overrides)
+        record = plant_record(
+            resolved_value(extractor["plant_type"], row),
+            name,
+            category=resolved_value(extractor.get("category"), row),
         )
+        for key, value in extra_fields.items():
+            record[key] = value
+        harvest = harvest_time(row, extractor, lookups)
+        if harvest:
+            record["harvest_time_unparsed"] = harvest
+        record_description = append_source_note(
+            description(row, extractor, lookups),
+            source_note,
+        )
+        if record_description:
+            record["description"] = record_description
+        plants.append(record)
     return plants
 
 
@@ -360,6 +407,114 @@ def plants_from_quoted_paragraphs(page, extractor, overrides, lookups):
     )
 
 
+def matches_category_rule(tag, text, rule):
+    if rule.get("tags") and tag not in rule["tags"]:
+        return False
+    if rule.get("texts") and text not in rule["texts"]:
+        return False
+    return True
+
+
+def category_from_text(text, extractor):
+    category = apply_text_fixes(text, extractor.get("category_text_fixes", {}))
+    if extractor.get("strip_category_parenthetical"):
+        match = re.match(r"(.+?)\s+\((.+)\)$", category)
+        if match:
+            category = match.group(1)
+    return category
+
+
+def generated_rows_for_text(text, extractor):
+    rows = []
+    for generated in extractor.get("generated_rows", []):
+        if not text.startswith(generated["text_prefix"]):
+            continue
+        rows.extend(generated["rows"])
+    return rows
+
+
+def paragraph_match(text, extractor):
+    pattern = extractor.get("paragraph_pattern", r"([^:]{2,80}):\s+(.+)$")
+    match = re.match(pattern, text)
+    if not match:
+        return None
+    return match
+
+
+def description_from_following(blocks, index, extractor):
+    if not extractor.get("description_from_following"):
+        return None
+    if index + 1 >= len(blocks):
+        return None
+    next_tag, next_text = blocks[index + 1]
+    if next_tag != "p":
+        return None
+    if re.match(extractor.get("following_disqualify_pattern", r"[^:]{2,80}:\s*"), next_text):
+        return None
+    return next_text
+
+
+def colon_paragraph_rows(page, extractor):
+    rows = []
+    current_category = None
+    started = not extractor.get("start_after_text")
+    skip_index = None
+    for index, (tag, text) in enumerate(page.blocks):
+        if index == skip_index:
+            continue
+        if not started:
+            if text == extractor["start_after_text"]:
+                started = True
+            continue
+        if current_category and any(
+            text.startswith(prefix) for prefix in extractor.get("stop_prefixes", [])
+        ):
+            break
+        if any(matches_category_rule(tag, text, rule) for rule in extractor["category_rules"]):
+            current_category = category_from_text(text, extractor)
+            continue
+        if not current_category or tag != "p":
+            continue
+        generated_rows = generated_rows_for_text(text, extractor)
+        if generated_rows:
+            rows.extend(generated_rows)
+            continue
+        match = paragraph_match(text, extractor)
+        if not match:
+            continue
+        name = match.group("name") if "name" in match.groupdict() else match.group(1)
+        description_value = (
+            match.group("description")
+            if "description" in match.groupdict()
+            else match.group(2)
+        )
+        description_value = (description_value or "").strip()
+        if not description_value:
+            description_value = description_from_following(page.blocks, index, extractor)
+            if description_value:
+                skip_index = index + 1
+        if not description_value:
+            continue
+        rows.append(
+            {
+                "name": name.strip(),
+                "category": current_category,
+                "description": description_value,
+            }
+        )
+    return rows
+
+
+def plants_from_colon_paragraphs(page, extractor, overrides, lookups):
+    extractor = {"name_key": "name", **extractor}
+    return plant_records_from_config_rows(
+        colon_paragraph_rows(page, extractor),
+        extractor,
+        overrides,
+        lookups,
+    )
+
+
 def build_lookups(data, config):
     lookups = {}
     for lookup in config.get("lookups", []):
@@ -384,6 +539,8 @@ def extract(config):
             plants.extend(
                 plants_from_quoted_paragraphs(data, extractor, overrides, lookups)
             )
+        elif extractor["kind"] == "colon_paragraph_blocks":
+            plants.extend(plants_from_colon_paragraphs(data, extractor, overrides, lookups))
         else:
             raise ValueError("Unsupported extractor kind: " + extractor["kind"])
     return plants

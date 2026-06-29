@@ -46,11 +46,9 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
   - Uses strict JSON config files under `helper_scripts/extraction_configs/`
     so the Python standard library can parse them
 
-Most source-specific scripts should now be either replaced by a config or kept
-as a tiny compatibility wrapper around `extract_from_config.py`. Scripts such
-as `extract_umaine_2172.py` and `extract_umaine_2184.py` still contain real
-source-specific logic and should keep it local until a reusable pattern is
-clear.
+Most source-specific scripts should now be tiny compatibility wrappers around
+`extract_from_config.py`. Keep new source-specific parsing in Python only when
+the source shape cannot be expressed clearly in config.
 
 For regular sources, prefer a config file before adding another source-specific
 script. The config runner currently supports:
@@ -66,10 +64,13 @@ script. The config runner currently supports:
 - PDF marker lists inside bounded sections
 - HTML paragraph blocks where each useful paragraph starts with a quoted
   cultivar name
+- HTML paragraph blocks where each useful paragraph starts with `Name:`
 - Lookup tables keyed by cultivar, such as disease rating tables
 - Declarative row splits for source rows that clearly contain two varieties
+- Generated rows for source notes that explicitly name a small fixed set of
+  varieties
 - Optional category, location, harvest, and labelled description mapping
-- Name overrides and trailing footnote-marker stripping
+- Name overrides, `AKA` values, and trailing footnote-marker stripping
 
 The worked UGA C740 and C742 configs show the ideal direction: no
 source-specific Python file, only a source config that drives the shared
@@ -95,9 +96,8 @@ Source-specific scripts should do:
 - Resolve likely aliases or source typos with `needs_help`
 - Choose which source wording becomes `description`
 - Decide whether timing belongs in `harvest_time_unparsed`
-- Stay in source-specific Python when the source needs custom generated rows,
-  nontrivial narrative merging, or source-specific typo repair that has not
-  repeated elsewhere
+- Stay in source-specific Python when the source needs nontrivial narrative
+  merging or source-specific judgment that has not repeated elsewhere
 
 ## Worked Patterns
 
@@ -145,15 +145,16 @@ reproduce the old script stdout exactly:
 - `extract_osu_hyg_1423_grapes.py` -> `extraction_configs/osu_hyg_1423_grapes.json`
 - `extract_psu_non_scab_apples.py` -> `extraction_configs/psu_non_scab_apples.json`
 - `extract_umaine_2068.py` -> `extraction_configs/umaine_2068_peaches.json`
+- `extract_umaine_2172.py` -> `extraction_configs/umaine_2172_caneberries.json`
+- `extract_umaine_2184.py` -> `extraction_configs/umaine_2184_strawberries.json`
 - `extract_umaine_2253.py` -> `extraction_configs/umaine_2253_blueberries.json`
 - `extract_vce_422_018_cherries.py` -> `extraction_configs/vce_422_018_cherries.json`
 - `extract_vce_422_019_peaches.py` -> `extraction_configs/vce_422_019_peaches.json`
 - `extract_vce_422_023_apples.py` -> `extraction_configs/vce_422_023_apples.json`
 
-`extract_umaine_2172.py` and `extract_umaine_2184.py` remain source-specific
-for now. They combine narrative category detection, custom harvest phrase
-matching, follow-on paragraph merging, special-case rows, and table-summary
-joins in ways that are not yet worth forcing into generic config vocabulary.
+The UMaine 2172 and 2184 conversions added config support for colon-led
+narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
+`AKA` values from name overrides, generated rows, and table-summary lookups.
 
 ## PDF Lessons
 

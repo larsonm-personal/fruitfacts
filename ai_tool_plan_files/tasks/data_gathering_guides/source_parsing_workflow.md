@@ -64,9 +64,9 @@ source-specific script. See
 [Extraction Helper Library](extraction_helper_library.md) for the current
 library boundary.
 
-When the source is a regular HTML table, a bounded PDF marker list, or a simple
-quoted-paragraph narrative, first try a config-driven extraction instead of
-adding a new per-source Python file:
+When the source is a regular HTML table, a bounded PDF marker list, a simple
+quoted-paragraph narrative, or a `Name: description` paragraph list, first try
+a config-driven extraction instead of adding a new per-source Python file:
 
 ```powershell
 python helper_scripts/extract_from_config.py helper_scripts/extraction_configs/uga_c740_apples.json > $env:TEMP\uga_c740_apples.json5
@@ -77,8 +77,9 @@ the source, reference fields, locations, categories, name overrides, extraction
 shape, key columns, harvest source fields, and description fields. The shared
 runner should own recurring mechanical repairs such as skipping note rows,
 stripping trailing footnote markers from plant names, merging wrapped table
-name rows, or splitting a clearly combined source row. Curated JSON5 review
-still owns source judgment.
+name rows, splitting a clearly combined source row, or turning a source note
+into a fixed set of generated rows. Curated JSON5 review still owns source
+judgment.
 
 After the first several worked examples, the repeated pieces were moved into
 shared helpers:
@@ -123,12 +124,12 @@ declarative.
 
 ## UMaine 2172 Notes
 
-The UMaine page was parsed from HTML, not PDF. The helper script:
+The UMaine page is parsed from HTML, not PDF. The config-backed helper:
 
 - Ignores script, style, and footer noise
-- Extracts headings and paragraphs
+- Extracts headings and `Name: description` paragraphs
 - Detects source categories such as red summer-bearing raspberries
-- Pulls `Name: description` cultivar paragraphs into draft plant records
+- Pulls cultivar paragraphs into draft plant records
 - Converts common web punctuation to ASCII
 - Emits JSON5-like output to stdout for review
 
@@ -136,9 +137,10 @@ The committed reference file was then curated by hand. Long source paragraphs
 were compressed into concise descriptions, and vague ripening phrases were kept
 as `harvest_time_unparsed`.
 
-This source remains a Python script for now. The extraction has custom heading
-repair, category-description collection, a special everbearing blackberry note
-that generates multiple rows, and a hand-written harvest phrase matcher.
+The config runner now handles this source's heading cleanup, static category
+descriptions, the special everbearing blackberry note that generates four
+fixed rows, the `Fall Gold` to `Fallgold` name override with `AKA`, and the
+hand-written harvest phrase map.
 
 ## UMaine 2184 Notes
 
@@ -149,15 +151,15 @@ The UMaine strawberry page uses a related but slightly different structure:
   followed by a description paragraph
 - A summary table with variety, ripening time, pest resistance, and comments
 
-The helper script parses both the narrative blocks and the summary table, then
-merges table notes into the draft plant records. The curated reference keeps the
-season heading as each plant `category`, uses table ripening values as
+The config runner parses both the narrative blocks and the summary table, then
+merges table notes into the draft plant records. The curated reference keeps
+the season heading as each plant `category`, uses table ripening values as
 `harvest_time_unparsed` where appropriate, and keeps disease resistance and
 home-garden or plasticulture notes in concise descriptions.
 
-This source remains a Python script for now because it merges narrative
-paragraphs with a summary table and sometimes takes the description from the
-following paragraph.
+This source added support for `Name:` paragraphs whose descriptions sometimes
+come from the following paragraph, plus lookup-derived description fragments
+from a summary table.
 
 ## UMaine 2253 Notes
 
