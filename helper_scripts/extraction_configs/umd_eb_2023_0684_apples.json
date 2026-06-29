@@ -1,0 +1,84 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.umd.edu/resource/important-apple-cultivars-mid-atlantic-region-eb-2023-0684"
+  },
+  "reference_fields": [
+    ["title", "Important Apple Cultivars in the Mid-Atlantic Region"],
+    ["author", "M. Miah and M. Farcuh"],
+    ["description", "University of Maryland Extension apple cultivar guide with Mid-Atlantic ripening season, skin color, size, shape, and taste summary table"],
+    ["url", "https://extension.umd.edu/resource/important-apple-cultivars-mid-atlantic-region-eb-2023-0684"],
+    ["thumbnail", "website"],
+    ["published", "Dec 2023"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Maryland Extension, College Park, Maryland",
+      "latitude": 38.9869,
+      "longitude": -76.9426
+    }
+  ],
+  "categories": [
+    {
+      "name": "Important apple cultivars for the Mid-Atlantic region",
+      "description": "UMD EB-2023-0684 Table 1 summarizes commercially important apple cultivars for the Mid-Atlantic region of the United States"
+    }
+  ],
+  "name_overrides": {
+    "Autumn Crisp": {
+      "name": "Autumncrisp",
+      "note": "Source table names this as Autumn Crisp"
+    },
+    "Zestar!(r)": {
+      "name": "Minnewashta",
+      "note": "Source table names this as Zestar!(r)"
+    },
+    "Crimson CrispTM": {
+      "name": "Co-op 39",
+      "note": "Source table names this as Crimson CrispTM"
+    },
+    "HoneycrispTM": {
+      "name": "Honeycrisp",
+      "note": "Source table names this as HoneycrispTM"
+    },
+    "Cameo(r)": {
+      "name": "Caudle",
+      "note": "Source table names this as Cameo(r)"
+    },
+    "Evercrisp": {
+      "name": "MAIA1",
+      "note": "Source table names this as Evercrisp"
+    },
+    "Gold Rush": {
+      "name": "GoldRush",
+      "note": "Source table names this as Gold Rush"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "required_headers": [
+        "Cultivar Name",
+        "Ripening Season",
+        "Skin Color",
+        "Size",
+        "Shape",
+        "Taste"
+      ],
+      "plant_type": "Apple",
+      "name_key": "cultivar_name",
+      "category": "Important apple cultivars for the Mid-Atlantic region",
+      "harvest_key": "ripening_season",
+      "description_labels": [
+        ["ripening_season", "Ripening season"],
+        ["skin_color", "Skin color"],
+        ["size", "Size"],
+        ["shape", "Shape"],
+        ["taste", "Taste"]
+      ]
+    }
+  ]
+}

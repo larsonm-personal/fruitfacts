@@ -33,6 +33,16 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
     tables produced from extension publication systems
 - `pdf_tools.py`
   - Download to temp storage and run `pdftotext`
+  - Preserve either layout text or cleaned raw line text depending on source
+    shape
+- `pdf_table_tools.py`
+  - Bounded PDF table sections, fixed-width row slicing, row continuation, and
+    row-start detection from either the name column or a separate row-number
+    column
+  - Raw `pdftotext` numbered block parsing for PDF tables that extract as
+    `1.`, name, zones, regions, and tail lines rather than a horizontal table
+  - Tail parsers for first-token splits such as `Fresh Dessert`, first-line
+    prefix plus description, and self-fruitful token splits
 - `record_tools.py`
   - Source-name normalization, source-note appending, plant-record creation,
     row-to-plant conversion, labelled row descriptions, and parser-config
@@ -64,6 +74,9 @@ script. The config runner currently supports:
 - Table transforms for leading rowspans, leading name fragments, and section
   rows
 - PDF marker lists inside bounded sections
+- PDF fixed-width tables inside bounded sections
+- PDF numbered blocks from raw `pdftotext` output, with configurable zone,
+  region, tail, and skip patterns
 - HTML paragraph blocks where each useful paragraph starts with a quoted
   cultivar name
 - HTML paragraph blocks where each useful paragraph starts with `Name:`
@@ -75,6 +88,9 @@ script. The config runner currently supports:
 - Description parts that turn source flag columns such as `X` under use columns
   into readable labelled text
 - Name overrides, `AKA` values, and trailing footnote-marker stripping
+- Row overrides for source rows where PDF extraction splits a name or moves a
+  word into the wrong field
+- Top-level config `text_fixes` shared by every extractor in one source
 
 The worked UGA C740 and C742 configs show the ideal direction: no
 source-specific Python file, only a source config that drives the shared
@@ -145,6 +161,12 @@ Source-specific scripts should do:
 - Purdue HO-44-W and HO-46-W small-fruit pages: compact HTML cultivar
   recommendation paragraphs represented as fixed generated row groups in
   config, without source-specific Python
+- UMD EB-2023-0684 apples: source offered both a PDF and a landing page, and
+  the landing page's clean HTML table was preferred over the PDF layout table
+  for the generated reference
+- UNL G2354 fruit tree cultivars: raw `pdftotext` numbered blocks with
+  pollinizer numbers, zones, regions, uses, and descriptions, plus row
+  overrides for PDF line-split cultivar names
 
 ## Converted Configs
 
@@ -170,6 +192,8 @@ reproduce the old script stdout exactly:
 - `extract_vce_422_018_cherries.py` -> `extraction_configs/vce_422_018_cherries.json`
 - `extract_vce_422_019_peaches.py` -> `extraction_configs/vce_422_019_peaches.json`
 - `extract_vce_422_023_apples.py` -> `extraction_configs/vce_422_023_apples.json`
+- `extract_umd_eb_2023_0684_apples.py` -> `extraction_configs/umd_eb_2023_0684_apples.json`
+- `extract_unl_g2354_fruit_tree_cultivars.py` -> `extraction_configs/unl_g2354_fruit_tree_cultivars.json`
 
 The UMaine 2172 and 2184 conversions added config support for colon-led
 narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
@@ -179,6 +203,12 @@ narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
 
 - Prefer `pdftotext -layout` first for born-digital PDFs
 - For two-column PDFs, test `pdftotext -raw` before writing column repair code
+- For dense table PDFs, compare `pdftotext -layout` and raw output. Layout may
+  preserve columns but split words; raw may preserve sentences but turn rows
+  into numbered blocks
+- If raw PDF output transposes a table into all names, then all zones, then all
+  descriptions, keep that table out of the first draft unless a separate parser
+  or manual review pass is justified
 - Parse bounded sections rather than stopping at the first period because names
   such as `A.C. Wendy` contain punctuation
 - Treat source spellings and extraction artifacts separately. If a likely source

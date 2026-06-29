@@ -1,0 +1,454 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://extensionpubs.unl.edu/publication/g2354/na/pdf/view",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Fruit Tree Cultivars for Nebraska"],
+    ["author", "Paul E. Read"],
+    ["description", "University of Nebraska-Lincoln Extension cultivar guide for Nebraska fruit trees, with pollinizer numbers, hardiness zones, horticultural regions, uses, and descriptions"],
+    ["url", "https://extensionpubs.unl.edu/publication/g2354/fruit-tree-cultivars-for-nebraska"],
+    ["thumbnail", "pdf"],
+    ["published", "2023"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Nebraska-Lincoln Extension, Lincoln, Nebraska",
+      "latitude": 40.8176,
+      "longitude": -96.7005
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple cultivars for Nebraska",
+      "description": "UNL G2354 Table 1 lists apple cultivars for Nebraska in order of ripening"
+    },
+    {
+      "name": "Sweet cherry cultivars for protected Nebraska sites",
+      "description": "UNL G2354 Table 2 lists sweet cherry cultivars as trial plantings only for very protected Nebraska locations"
+    },
+    {
+      "name": "Tart cherry cultivars for Nebraska",
+      "description": "UNL G2354 Table 2 lists tart cherry cultivars for Nebraska"
+    },
+    {
+      "name": "Nectarine cultivars for protected Nebraska sites",
+      "description": "UNL G2354 Table 3 lists nectarine cultivars for very protected Nebraska sites"
+    },
+    {
+      "name": "Peach cultivars for protected Nebraska sites",
+      "description": "UNL G2354 Table 4 lists peach cultivars for very protected Nebraska sites"
+    },
+    {
+      "name": "Pear cultivars for Nebraska",
+      "description": "UNL G2354 Table 5 lists European pear cultivars for Nebraska"
+    },
+    {
+      "name": "Asian pear cultivars worthy of trial in Nebraska",
+      "description": "UNL G2354 Table 6 lists Asian pear cultivars worthy of trial in Nebraska"
+    }
+  ],
+  "text_fixes": {
+    "Self-f ruitful": "Self-fruitful",
+    "Well-a dapted": "Well-adapted",
+    "Medium-s ize": "Medium-size",
+    "medium-s ize": "medium-size",
+    "medium-r ed": "medium-red",
+    "yellow-b rown": "yellow-brown",
+    "mahoga- ny": "mahogany",
+    "f ruit": "fruit",
+    "Euro- pean": "European",
+    "Sourc- es": "Sources",
+    "Source-1 )": "Source-1)",
+    "Source-1 0": "Source-10",
+    "Sources-1 1": "Sources-11",
+    "Sources-1 ,": "Sources-1,",
+    "Source-7 ": "Source-7",
+    "Source-8 ": "Source-8",
+    "Source-9 ": "Source-9",
+    "Sources-1 ": "Sources-1",
+    "Sources-2 ": "Sources-2",
+    "Sources-5 ": "Sources-5",
+    "Sources-6 ": "Sources-6",
+    "Sources-8 ": "Sources-8",
+    "Extra-h ardy": "Extra-hardy",
+    "High-q uality": "High-quality",
+    "Semi-d warf": "Semi-dwarf",
+    "Fire Blight, Cooking scab": "Fire Blight, scab",
+    "Cooking (formerly": "(formerly",
+    "cropper; Cooking bred": "cropper; bred",
+    "flavor; Cooking occasionally": "flavor; occasionally",
+    "McIntosh. Cooking May": "McIntosh. May",
+    "cropper, Cooking high-quality": "cropper, high-quality"
+  },
+  "name_overrides": {
+    "Whitegold": {
+      "name": "Newfane",
+      "note": "Source table names this as Whitegold"
+    },
+    "Blackgold": {
+      "name": "Ridgewood",
+      "note": "Source table names this as Blackgold"
+    },
+    "Allstar": {
+      "name": "FA 80",
+      "note": "Source table names this as Allstar"
+    },
+    "Blushingstar": {
+      "name": "FA 18",
+      "note": "Source table names this as Blushingstar"
+    },
+    "Zestar": {
+      "name": "Minnewashta",
+      "note": "Source table names this as Zestar"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_numbered_blocks",
+      "section_start": "Table 1: Apple Cultivars",
+      "section_end": "Table 2: Cherry",
+      "block_start_pattern": "^\\d+\\.$",
+      "zone_pattern": "\\d(?:[- ]\\d)?",
+      "region_pattern": "[A-E](?:-[A-E])?",
+      "skip_line_patterns": [
+        "^Table ",
+        "^Pollinizer",
+        "^Pollen Source",
+        "^Number ",
+        "^Cultivar$",
+        "^Zones$",
+        "^Regions$",
+        "^Cultivars$",
+        "^Uses$",
+        "^Brief Description$",
+        "^\\*",
+        "^Refers to",
+        "^3$"
+      ],
+      "tail_parser": {
+        "kind": "first_token_split",
+        "prefix_key": "pollen_source",
+        "token_key": "uses",
+        "description_key": "description",
+        "tokens": [
+          "Fresh Dessert Cooking",
+          "Fresh Cooking",
+          "Fresh Dessert",
+          "Applesauce",
+          "Cooking"
+        ]
+      },
+      "row_overrides": {
+        "Honey-": {
+          "name": "Honeycrisp",
+          "description": "University of Minnesota introduction; very high fruit quality; tree only moderately strong; biennial bearing tendency; susceptible to bitter pit. (Sources-1,2,5,6,7,8,9,10)"
+        },
+        "Jonathan and": {
+          "name": "Jonathan and Jonathan types",
+          "pollen_source": "1,3,4,7,8,12,14,15,17"
+        },
+        "North-": {
+          "name": "Northwestern Greening",
+          "pollen_source": "4,7,8,10,11,14,15,19"
+        },
+        "Golden": {
+          "name": "Golden Delicious",
+          "uses": "Fresh Dessert Applesauce",
+          "description": "A yellow apple, excellent for both processing and fresh market. Tree is productive and must be thinned to achieve annual production. Susceptible to russeting. Fruit tends to shrivel in storage. (Sources-1,4,6,9,10)"
+        },
+        "Red Deli-": {
+          "name": "Red Delicious",
+          "description": "A popular cultivar grown throughout the apple-producing areas of the country. No processing value, only fair fruit quality. Difficult to grow properly, strong tendency for biennial bearing. (Sources-1,4,5,9,10)"
+        },
+        "Fireside*,": {
+          "name": "Fireside",
+          "uses": "Fresh Dessert Cooking",
+          "description": "Extra hardy, excellent keeper, large size, attractive red. Flavor is rich and very high-quality, sweet. Source row also lists Connell Red as a red sport of Fireside. (Sources-5,6)"
+        }
+      },
+      "plant_type": "Apple",
+      "name_key": "name",
+      "category": "Apple cultivars for Nebraska",
+      "strip_name_footnotes": true,
+      "name_suffix_notes": [
+        {
+          "suffix": "**",
+          "note": "Source marks this cultivar as self-unfruitful and requiring a pollinizer"
+        },
+        {
+          "suffix": "*",
+          "note": "Source marks this cultivar as partially self-fruitful but still recommends a pollen source for good yields"
+        }
+      ],
+      "description_labels": [
+        ["number", "Pollinizer number"],
+        ["zones", "Hardiness zones"],
+        ["regions", "Nebraska horticultural regions"],
+        ["pollen_source", "Pollen-source cultivars"],
+        ["uses", "Uses"],
+        ["description", "Source description"]
+      ]
+    },
+    {
+      "kind": "pdf_numbered_blocks",
+      "section_start": "Sweet Cherry Cultivars-trial",
+      "section_end": "Tart (Sour) Cherry Cultivars",
+      "block_start_pattern": "^\\d+\\.$",
+      "zone_pattern": "\\d(?:[- ]\\d)?",
+      "region_pattern": "[A-E](?:-[A-E])?",
+      "skip_line_patterns": [
+        "^Table ",
+        "^Pollinizer",
+        "^Pollen Source",
+        "^Number ",
+        "^Cultivar$",
+        "^Zones$",
+        "^Regions$",
+        "^Cultivars$",
+        "^Brief Description$",
+        "^\\*"
+      ],
+      "tail_parser": {
+        "kind": "first_line_or_token_split",
+        "prefix_key": "pollen_source",
+        "token_key": "pollen_source",
+        "description_key": "description",
+        "tokens": ["Self-fruitful", "Self-f ruitful"]
+      },
+      "row_overrides": {
+        "Yellow Glass": {
+          "name": "Yellow Glass or Gold",
+          "description": "Hardiest of sweet cherries; large, bright yellow fruit; very high quality. (Sources-3,4,7,9)"
+        }
+      },
+      "plant_type": "Sweet Cherry",
+      "name_key": "name",
+      "category": "Sweet cherry cultivars for protected Nebraska sites",
+      "description_labels": [
+        ["number", "Pollinizer number"],
+        ["zones", "Hardiness zones"],
+        ["regions", "Nebraska horticultural regions"],
+        ["pollen_source", "Pollen-source cultivars"],
+        ["description", "Source description"]
+      ]
+    },
+    {
+      "kind": "pdf_numbered_blocks",
+      "section_start": "Tart (Sour) Cherry Cultivars",
+      "section_end": "Table 3: Nectarine",
+      "block_start_pattern": "^\\d+\\.$",
+      "zone_pattern": "\\d(?:[- ]\\d)?",
+      "region_pattern": "[A-E](?:-[A-E])?",
+      "skip_line_patterns": [
+        "^Table ",
+        "^Pollinizer",
+        "^Pollen Source",
+        "^Number ",
+        "^Cultivar$",
+        "^Zones$",
+        "^Regions$",
+        "^Cultivars$",
+        "^Brief Description$",
+        "^\\*"
+      ],
+      "tail_parser": {
+        "kind": "first_line_or_token_split",
+        "prefix_key": "pollen_source",
+        "token_key": "pollen_source",
+        "description_key": "description",
+        "tokens": ["Self-fruitful", "Self-f ruitful"]
+      },
+      "row_overrides": {
+        "Meteor (Ripens 7 10 days": {
+          "name": "Meteor",
+          "regions": "A-E",
+          "pollen_source": "Self-fruitful",
+          "description": "Ripens 7 to 10 days later than Montmorency. Extra-hardy, natural dwarf, 10 12 feet; annual bearing spur-type tree. Good quality. (Sources-4,5,6,7,8)"
+        }
+      },
+      "plant_type": "Sour Cherry",
+      "name_key": "name",
+      "category": "Tart cherry cultivars for Nebraska",
+      "description_labels": [
+        ["number", "Pollinizer number"],
+        ["zones", "Hardiness zones"],
+        ["regions", "Nebraska horticultural regions"],
+        ["pollen_source", "Pollen-source cultivars"],
+        ["description", "Source description"]
+      ]
+    },
+    {
+      "kind": "pdf_numbered_blocks",
+      "section_start": "Table 3: Nectarine Cultivars",
+      "section_end": "Table 4: Peach",
+      "block_start_pattern": "^\\d+\\.$",
+      "zone_pattern": "\\d(?:[- ]\\d)?",
+      "region_pattern": "[A-E](?:-[A-E])?",
+      "skip_line_patterns": [
+        "^Table ",
+        "^Pollinizer",
+        "^Pollen Source",
+        "^Number ",
+        "^Cultivar$",
+        "^Zones$",
+        "^Regions$",
+        "^Cultivars$",
+        "^Brief Description$"
+      ],
+      "tail_parser": {
+        "kind": "first_line_or_token_split",
+        "prefix_key": "pollen_source",
+        "token_key": "pollen_source",
+        "description_key": "description",
+        "tokens": ["Self-fruitful", "Self-f ruitful"]
+      },
+      "plant_type": "Nectarine",
+      "name_key": "name",
+      "category": "Nectarine cultivars for protected Nebraska sites",
+      "description_labels": [
+        ["number", "Pollinizer number"],
+        ["zones", "Hardiness zones"],
+        ["regions", "Nebraska horticultural regions"],
+        ["pollen_source", "Pollen-source cultivars"],
+        ["description", "Source description"]
+      ]
+    },
+    {
+      "kind": "pdf_numbered_blocks",
+      "section_start": "Table 4: Peach Cultivars",
+      "section_end": "Most peach cultivars",
+      "block_start_pattern": "^\\d+\\.$",
+      "zone_pattern": "\\d(?:[- ]\\d)?",
+      "region_pattern": "[A-E](?:-[A-E])?",
+      "skip_line_patterns": [
+        "^Table ",
+        "^Pollinizer",
+        "^Pollen Source",
+        "^Number ",
+        "^Cultivar$",
+        "^Zones$",
+        "^Regions$",
+        "^Cultivars$",
+        "^Brief Description$"
+      ],
+      "tail_parser": {
+        "kind": "first_line_or_token_split",
+        "prefix_key": "pollen_source",
+        "token_key": "pollen_source",
+        "description_key": "description",
+        "tokens": ["Self-fruitful", "Self-f ruitful"]
+      },
+      "plant_type": "Peach",
+      "name_key": "name",
+      "category": "Peach cultivars for protected Nebraska sites",
+      "strip_name_footnotes": true,
+      "name_suffix_notes": [
+        {
+          "suffix": "1",
+          "note": "Source footnote says Redhaven is also available in a natural genetic dwarf"
+        }
+      ],
+      "description_labels": [
+        ["number", "Pollinizer number"],
+        ["zones", "Hardiness zones"],
+        ["regions", "Nebraska horticultural regions"],
+        ["pollen_source", "Pollen-source cultivars"],
+        ["description", "Source description"]
+      ]
+    },
+    {
+      "kind": "pdf_numbered_blocks",
+      "section_start": "Table 5: Pear Cultivars",
+      "section_end": "Table 6: Asian Pears",
+      "block_start_pattern": "^\\d+\\.$",
+      "zone_pattern": "\\d(?:[- ]\\d)?",
+      "region_pattern": "[A-E](?:-[A-E])?",
+      "skip_line_patterns": [
+        "^Table ",
+        "^Pollinizer",
+        "^Pollen Source",
+        "^Number ",
+        "^Cultivar$",
+        "^Zones$",
+        "^Regions$",
+        "^Cultivars$",
+        "^Brief Description$",
+        "^\\*"
+      ],
+      "tail_parser": {
+        "kind": "first_line_then_description",
+        "prefix_key": "pollen_source",
+        "description_key": "description"
+      },
+      "row_overrides": {
+        "Harvest": {
+          "name": "Harvest Queen",
+          "pollen_source": "1,4 or 5",
+          "description": "Also from Harrow Research Station; selected for earliness and cold hardiness; flavor similar to Bartlett but less gritty; Fire Blight resistant. This cultivar does not produce good pollen so must be planted with two other cultivars if all are to produce fruit. (Sources-1,10)"
+        }
+      },
+      "plant_type": "Euro Pear",
+      "name_key": "name",
+      "category": "Pear cultivars for Nebraska",
+      "strip_name_footnotes": true,
+      "name_suffix_notes": [
+        {
+          "suffix": "*",
+          "note": "Source marks this cultivar as partially self-fruitful and says a pollinizer is required for good yields"
+        }
+      ],
+      "description_labels": [
+        ["number", "Pollinizer number"],
+        ["zones", "Hardiness zones"],
+        ["regions", "Nebraska horticultural regions"],
+        ["pollen_source", "Pollen-source cultivars"],
+        ["description", "Source description"]
+      ]
+    },
+    {
+      "kind": "pdf_numbered_blocks",
+      "section_start": "Table 6: Asian Pears",
+      "section_end": "Table 7: Plum",
+      "block_start_pattern": "^\\d+\\.$",
+      "zone_pattern": "\\d(?:[- ]\\d)?",
+      "region_pattern": "[A-E](?:-[A-E])?",
+      "skip_line_patterns": [
+        "^Table ",
+        "^are crunchy",
+        "^though many",
+        "^explain their",
+        "^cultivars.$",
+        "^Pollinizer",
+        "^Pollen Source",
+        "^Number ",
+        "^Cultivar$",
+        "^Zones$",
+        "^Regions$",
+        "^Cultivars$",
+        "^Brief Description$"
+      ],
+      "tail_parser": {
+        "kind": "first_line_then_description",
+        "prefix_key": "pollen_source",
+        "description_key": "description",
+        "prefix_continuation_patterns": ["pean Pears"]
+      },
+      "plant_type": "Asian Pear",
+      "name_key": "name",
+      "category": "Asian pear cultivars worthy of trial in Nebraska",
+      "description_labels": [
+        ["number", "Pollinizer number"],
+        ["zones", "Hardiness zones"],
+        ["regions", "Nebraska horticultural regions"],
+        ["pollen_source", "Pollen-source cultivars"],
+        ["description", "Source description"]
+      ]
+    }
+  ]
+}

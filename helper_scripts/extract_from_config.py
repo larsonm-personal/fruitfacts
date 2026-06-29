@@ -10,7 +10,10 @@ from fruitfacts_extract.html_tools import blocks_between_headings
 from fruitfacts_extract.html_tools import fetch_html_page
 from fruitfacts_extract.json5_draft import emit_reference
 from fruitfacts_extract.pdf_tools import clean_pdf_text
+from fruitfacts_extract.pdf_tools import clean_pdf_layout_text
 from fruitfacts_extract.pdf_tools import pdf_url_to_text
+from fruitfacts_extract.pdf_table_tools import fixed_width_table_rows
+from fruitfacts_extract.pdf_table_tools import numbered_block_rows
 from fruitfacts_extract.record_tools import append_source_note
 from fruitfacts_extract.record_tools import category_records
 from fruitfacts_extract.record_tools import labelled_description_from_row
@@ -34,6 +37,15 @@ def load_config(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
+def merged_extractor(config, extractor):
+    merged = dict(extractor)
+    text_fixes = dict(config.get("text_fixes", {}))
+    text_fixes.update(extractor.get("text_fixes", {}))
+    if text_fixes:
+        merged["text_fixes"] = text_fixes
+    return merged
+
+
 def pairs(data):
     return [(item[0], item[1]) for item in data]
 
@@ -47,7 +59,12 @@ def source_data(config):
     if source["kind"] == "html":
         return fetch_html_page(source["url"])
     if source["kind"] == "pdf":
-        return clean_text(clean_pdf_text(pdf_url_to_text(source["url"])))
+        pdf_text = pdf_url_to_text(source["url"], layout=source.get("layout", True))
+        if source.get("layout_text"):
+            return clean_pdf_layout_text(pdf_text)
+        if source.get("line_text"):
+            return clean_pdf_text(pdf_text)
+        return clean_text(clean_pdf_text(pdf_text))
     raise ValueError("Unsupported source kind: " + source["kind"])
 
 
@@ -88,6 +105,16 @@ def row_text_fixes(row, fixes):
         key: apply_text_fixes(value, fixes) if isinstance(value, str) else value
         for key, value in row.items()
     }
+
+
+def row_overrides(row, extractor):
+    key = row.get(extractor.get("name_key", "name"))
+    override = extractor.get("row_overrides", {}).get(key)
+    if not override:
+        return row
+    new_row = dict(row)
+    new_row.update(override)
+    return new_row
 
 
 def apply_text_fixes(text, fixes):
@@ -131,6 +158,7 @@ def table_rows(page, extractor):
             rows = table_to_dicts(table)
     rows = expanded_rows(rows, extractor)
     rows = [row_text_fixes(row, extractor.get("text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
     rows = keyed_data_rows(
         rows,
         extractor["name_key"],
@@ -393,6 +421,34 @@ def plants_from_pdf_marker_list(text, extractor, overrides, lookups):
     )
 
 
+def plants_from_pdf_fixed_width_table(text, extractor, overrides, lookups):
+    extractor = {"name_key": "name", **extractor}
+    rows = fixed_width_table_rows(text, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    return plant_records_from_config_rows(
+        rows,
+        extractor,
+        overrides,
+        lookups,
+    )
+
+
+def plants_from_pdf_numbered_blocks(text, extractor, overrides, lookups):
+    extractor = {"name_key": "name", **extractor}
+    rows = numbered_block_rows(text, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    return plant_records_from_config_rows(
+        rows,
+        extractor,
+        overrides,
+        lookups,
+    )
+
+
 def quoted_paragraph_rows(page, extractor):
     blocks = blocks_between_headings(
         page.blocks,
@@ -561,11 +617,20 @@ def extract(config):
     overrides = name_overrides(config)
     lookups = build_lookups(data, config)
     plants = []
-    for extractor in config["extractors"]:
+    for source_extractor in config["extractors"]:
+        extractor = merged_extractor(config, source_extractor)
         if extractor["kind"] == "html_table":
             plants.extend(plants_from_html_table(data, extractor, overrides, lookups))
         elif extractor["kind"] == "pdf_marker_list":
             plants.extend(plants_from_pdf_marker_list(data, extractor, overrides, lookups))
+        elif extractor["kind"] == "pdf_fixed_width_table":
+            plants.extend(
+                plants_from_pdf_fixed_width_table(data, extractor, overrides, lookups)
+            )
+        elif extractor["kind"] == "pdf_numbered_blocks":
+            plants.extend(
+                plants_from_pdf_numbered_blocks(data, extractor, overrides, lookups)
+            )
         elif extractor["kind"] == "quoted_paragraph_blocks":
             plants.extend(
                 plants_from_quoted_paragraphs(data, extractor, overrides, lookups)

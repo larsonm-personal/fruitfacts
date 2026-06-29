@@ -47,3 +47,8 @@ def pdf_url_to_text(url, layout=True):
 def clean_pdf_text(text):
     lines = [clean_text(line) for line in text.splitlines()]
     return "\n".join(line for line in lines if line)
+
+
+def clean_pdf_layout_text(text):
+    lines = [clean_text(line, collapse_whitespace=False).rstrip() for line in text.splitlines()]
+    return "\n".join(line for line in lines if line.strip())

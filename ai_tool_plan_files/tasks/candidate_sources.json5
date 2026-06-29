@@ -44,7 +44,7 @@
         },
         {
             id: "unl-fruit-tree-cultivars-nebraska-g2354",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Fruit Tree Cultivars for Nebraska",
             institution: "University of Nebraska-Lincoln Extension",
@@ -73,7 +73,12 @@
             duplicate_check:
                 "No Nebraska-specific extension reference found in existing references",
             notes: [
-                "Landing page and PDF endpoint both returned 200"
+                "Landing page and PDF endpoint both returned 200",
+                "Encoded in plant_database/references/Nebraska/UNL G2354 Fruit Tree Cultivars for Nebraska.json5",
+                "Config extraction added at helper_scripts/extraction_configs/unl_g2354_fruit_tree_cultivars.json",
+                "Compatibility wrapper added at helper_scripts/extract_unl_g2354_fruit_tree_cultivars.py",
+                "Worked example for raw pdftotext numbered blocks with pollinizer, zone, region, use, and description fields",
+                "Plum table remains unencoded because raw PDF extraction transposes columns and needs a separate parser or manual pass"
             ]
         },
         {
@@ -252,7 +257,7 @@
         },
         {
             id: "umd-important-apple-cultivars-mid-atlantic-eb-2023-0684",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Important Apple Cultivars in the Mid-Atlantic Region",
             institution: "University of Maryland Extension",
@@ -274,7 +279,11 @@
             duplicate_check:
                 "Existing Maryland apple reference is a UMD breeding release list, not this regional cultivar guide",
             notes: [
-                "Landing page and PDF returned 200"
+                "Landing page and PDF returned 200",
+                "Encoded in plant_database/references/Maryland/UMD EB-2023-0684 Important Apple Cultivars in the Mid-Atlantic Region.json5",
+                "Config extraction added at helper_scripts/extraction_configs/umd_eb_2023_0684_apples.json",
+                "Compatibility wrapper added at helper_scripts/extract_umd_eb_2023_0684_apples.py",
+                "Landing page exposed a clean HTML table, preferred over the PDF layout table for data accuracy"
             ]
         },
         {

@@ -1,0 +1,194 @@
+{
+    title: "Important Apple Cultivars in the Mid-Atlantic Region",
+    author: "M. Miah and M. Farcuh",
+    description: "University of Maryland Extension apple cultivar guide with Mid-Atlantic ripening season, skin color, size, shape, and taste summary table",
+    url: "https://extension.umd.edu/resource/important-apple-cultivars-mid-atlantic-region-eb-2023-0684",
+    thumbnail: "website",
+    published: "Dec 2023",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Maryland Extension, College Park, Maryland",
+            latitude: 38.9869,
+            longitude: -76.9426
+        },
+    ],
+    categories: [
+        {
+            name: "Important apple cultivars for the Mid-Atlantic region",
+            description: "UMD EB-2023-0684 Table 1 summarizes commercially important apple cultivars for the Mid-Atlantic region of the United States"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Early-Mid",
+            description: "Ripening season: Early-Mid. Skin color: Cream to red, yellow stripe. Size: Small to medium. Shape: Round (orange). Taste: Sweet"
+        },
+        {
+            type: "Apple",
+            name: "Ginger Gold",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Early",
+            description: "Ripening season: Early. Skin color: Pale green with minimal red blush. Size: Medium to large. Shape: Round or conical. Taste: Sweet tangy"
+        },
+        {
+            type: "Apple",
+            name: "Minnewashta",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Early",
+            description: "Ripening season: Early. Skin color: Red. Size: Medium to large. Shape: Globose. Taste: Sweet tart. Source table names this as Zestar!(r)"
+        },
+        {
+            type: "Apple",
+            name: "Autumncrisp",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Mid",
+            description: "Ripening season: Mid. Skin color: Bright red blush. Size: Small to medium. Shape: Round or slightly conical. Taste: Sweet tart. Source table names this as Autumn Crisp"
+        },
+        {
+            type: "Apple",
+            name: "Braeburn",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Mid",
+            description: "Ripening season: Mid. Skin color: Red over yellow/green background. Size: Small to medium. Shape: Oval. Taste: Sweet tart"
+        },
+        {
+            type: "Apple",
+            name: "Cortland",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Mid",
+            description: "Ripening season: Mid. Skin color: Deep purple red color with yellow streaks. Size: Medium to large. Shape: Roundish oblate. Taste: Sweet tart"
+        },
+        {
+            type: "Apple",
+            name: "Co-op 39",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Mid",
+            description: "Ripening season: Mid. Skin color: Deep red purple. Size: Small to medium. Shape: Round. Taste: Sweet tart. Source table names this as Crimson CrispTM"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Mid",
+            description: "Ripening season: Mid. Skin color: Pale green to golden yellow. Size: Medium. Shape: Conical to oblong. Taste: Sweet"
+        },
+        {
+            type: "Apple",
+            name: "Granny Smith",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Mid",
+            description: "Ripening season: Mid. Skin color: Bright green with grey dots. Size: Medium to large. Shape: Round. Taste: Tart"
+        },
+        {
+            type: "Apple",
+            name: "Honeycrisp",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Mid",
+            description: "Ripening season: Mid. Skin color: Bi-color (variable red with green/cream color). Size: Medium to large. Shape: Round to slightly oblong. Taste: Sweet tangy. Source table names this as HoneycrispTM"
+        },
+        {
+            type: "Apple",
+            name: "Macoun",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Mid",
+            description: "Ripening season: Mid. Skin color: Deep red over green base. Size: Medium to large. Shape: Boxy. Taste: Sweet tart"
+        },
+        {
+            type: "Apple",
+            name: "McIntosh",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Mid",
+            description: "Ripening season: Mid. Skin color: Two toned (red and green). Size: Small to medium. Shape: Round. Taste: Sweet tart"
+        },
+        {
+            type: "Apple",
+            name: "Ambrosia",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Mid-Late",
+            description: "Ripening season: Mid-Late. Skin color: Bi color (smooth red with yellow). Size: Medium. Shape: Round top with tempered bottom. Taste: Sweet"
+        },
+        {
+            type: "Apple",
+            name: "Empire",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Mid-Late",
+            description: "Ripening season: Mid-Late. Skin color: Deep red brushed with gold and green. Size: Medium to large. Shape: Round. Taste: Sweet tart"
+        },
+        {
+            type: "Apple",
+            name: "Jonagold",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Mid-Late",
+            description: "Ripening season: Mid-Late. Skin color: Orangish red. Size: Large. Shape: Slightly conical. Taste: Sweet tart"
+        },
+        {
+            type: "Apple",
+            name: "Red Delicious",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Mid-Late",
+            description: "Ripening season: Mid-Late. Skin color: Bright red. Size: Medium. Shape: Long conical. Taste: Sweet"
+        },
+        {
+            type: "Apple",
+            name: "Caudle",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Late",
+            description: "Ripening season: Late. Skin color: Dark red flush to pale green. Size: Medium to large. Shape: Round. Taste: Sweet tart. Source table names this as Cameo(r)"
+        },
+        {
+            type: "Apple",
+            name: "Cripps Pink",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Late",
+            description: "Ripening season: Late. Skin color: Pink/red mix over green. Size: Medium. Shape: Oblong. Taste: Sweet tart"
+        },
+        {
+            type: "Apple",
+            name: "MAIA1",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Late",
+            description: "Ripening season: Late. Skin color: Red. Size: Large. Shape: Round. Taste: Sweet tart. Source table names this as Evercrisp"
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Late",
+            description: "Ripening season: Late. Size: Medium to large. Shape: Round to conical. Taste: Sweet tart"
+        },
+        {
+            type: "Apple",
+            name: "GoldRush",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Late",
+            description: "Ripening season: Late. Skin color: Golden with bronze to red blush. Size: Medium to large. Shape: Round to slightly oblong. Taste: Sweet tart. Source table names this as Gold Rush"
+        },
+        {
+            type: "Apple",
+            name: "Idared",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Late",
+            description: "Ripening season: Late. Skin color: Bright crimson. Size: Large. Shape: Round. Taste: Sweet tart"
+        },
+        {
+            type: "Apple",
+            name: "Rome Beauty",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Late",
+            description: "Ripening season: Late. Skin color: Deep red. Size: Medium to large. Shape: Round. Taste: Sweet tart"
+        },
+        {
+            type: "Apple",
+            name: "York",
+            category: "Important apple cultivars for the Mid-Atlantic region",
+            harvest_time_unparsed: "Late",
+            description: "Ripening season: Late. Skin color: Deep red with greenish-yellow streaks. Size: Medium to large. Shape: Round. Taste: Sweet tart"
+        },
+    ]
+}
