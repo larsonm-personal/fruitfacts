@@ -1,0 +1,145 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://www.uaf.edu/ces/publications/database/gardening/files/pdfs/HGA-00030_varieties.pdf",
+    "layout": true,
+    "layout_text": true
+  },
+  "reference_fields": [
+    ["title", "Recommended Variety List for Interior Alaska"],
+    ["author", "Glenna Gannon; originally prepared by Wayne Vandre"],
+    ["description", "University of Alaska Fairbanks Cooperative Extension Service variety list for Interior Alaska gardens; this extracted draft covers the clean second fruit table page"],
+    ["url", "https://www.uaf.edu/ces/publications/database/gardening/recommended-variety.php"],
+    ["thumbnail", "pdf"],
+    ["published", "Revised September 2022"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Alaska Fairbanks, Fairbanks, Alaska",
+      "latitude": 64.8378,
+      "longitude": -147.7164
+    }
+  ],
+  "categories": [
+    {
+      "name": "Honeyberry varieties for Interior Alaska",
+      "description": "UAF HGA-00030 lists these haskap or honeyberry varieties for Interior Alaska and notes that haskaps require a pollinizer plant of a different variety"
+    },
+    {
+      "name": "Pear varieties for Interior Alaska",
+      "description": "UAF HGA-00030 lists these pear varieties for Interior Alaska and notes that pears require a pollinizer plant of a different variety"
+    },
+    {
+      "name": "Plum varieties for Interior Alaska",
+      "description": "UAF HGA-00030 lists these plum varieties for Interior Alaska and notes that plums require a pollinizer plant of a different variety"
+    },
+    {
+      "name": "Raspberry varieties for Interior Alaska",
+      "description": "UAF HGA-00030 lists these raspberry varieties for Interior Alaska"
+    },
+    {
+      "name": "Saskatoon varieties for Interior Alaska",
+      "description": "UAF HGA-00030 lists these saskatoon varieties for Interior Alaska"
+    },
+    {
+      "name": "Strawberry varieties for Interior Alaska",
+      "description": "UAF HGA-00030 lists these strawberry varieties for Interior Alaska"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "pdf_grouped_fixed_width_table",
+      "section_start": "Haskaps (Honey Berries) Note: Haskaps require a \"pollinizer plant\" of different variety to bear fruit",
+      "section_end": "1 Developed at the Agricultural and Forestry Experiment Station",
+      "group_key": "fruit",
+      "columns": [
+        {"key": "fruit", "start": 0, "end": 12},
+        {"key": "name", "start": 12, "end": 32},
+        {"key": "maturity", "start": 32, "end": 52},
+        {"key": "yield", "start": 52, "end": 64},
+        {"key": "comments", "start": 64}
+      ],
+      "row_start_key": "name",
+      "row_start_pattern": "^[A-Z0-9]",
+      "group_rules": [
+        {
+          "line_prefix": "Haskaps (Honey Berries)",
+          "category": "Honeyberry varieties for Interior Alaska",
+          "plant_type": "Honeyberry"
+        },
+        {
+          "line_prefix": "Pear Note:",
+          "category": "Pear varieties for Interior Alaska",
+          "plant_type": "Euro Pear"
+        },
+        {
+          "line_prefix": "Plum Note:",
+          "category": "Plum varieties for Interior Alaska",
+          "plant_type": "Plum"
+        },
+        {
+          "match_key": "fruit",
+          "text": "Raspberry",
+          "category": "Raspberry varieties for Interior Alaska",
+          "plant_type": "Raspberry"
+        },
+        {
+          "match_key": "fruit",
+          "text": "Saskatoon",
+          "category": "Saskatoon varieties for Interior Alaska",
+          "plant_type": "Saskatoon"
+        },
+        {
+          "match_key": "fruit",
+          "text": "Strawberry",
+          "category": "Strawberry varieties for Interior Alaska",
+          "plant_type": "Strawberry"
+        }
+      ],
+      "row_overrides": {
+        "Boreal Series (3)": {
+          "comments": "Boreal Beast has a long flowering period, making it a good pollinizer for other varieties"
+        },
+        "Kamchatka": {
+          "maturity": "Early - midseason",
+          "yield": "High"
+        },
+        "Lee Red": {
+          "comments": "Produces tangy-sweet 1-inch diameter fruit; fully hardy in hills (above 800-foot elevation) in Fairbanks"
+        },
+        "Vic Red": {
+          "comments": "Vigorous growing variety produces lots of fruit; fully hardy in hills (above 800-foot elevation) in Fairbanks"
+        }
+      },
+      "row_splits": [
+        {
+          "match": {
+            "name": "Brook - Red & Gold"
+          },
+          "source_note": "Source lists this row as Brook - Red & Gold",
+          "rows": [
+            {"name": "Brookred"},
+            {"name": "Brookgold"}
+          ]
+        }
+      ],
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["maturity", "Maturity"],
+            ["yield", "Yield"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "comments"
+        }
+      ],
+      "harvest_key": "maturity"
+    }
+  ]
+}

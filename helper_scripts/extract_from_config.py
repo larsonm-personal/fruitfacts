@@ -14,6 +14,7 @@ from fruitfacts_extract.pdf_tools import clean_pdf_layout_text
 from fruitfacts_extract.pdf_tools import pdf_url_to_text
 from fruitfacts_extract.pdf_table_tools import fixed_width_table_rows
 from fruitfacts_extract.pdf_table_tools import catalog_entry_rows
+from fruitfacts_extract.pdf_table_tools import grouped_fixed_width_table_rows
 from fruitfacts_extract.pdf_table_tools import line_matches_any
 from fruitfacts_extract.pdf_table_tools import numbered_block_rows
 from fruitfacts_extract.pdf_table_tools import pdf_bullet_list_rows
@@ -655,6 +656,25 @@ def plants_from_pdf_fixed_width_table(text, extractor, overrides, lookups):
     )
 
 
+def plants_from_pdf_grouped_fixed_width_table(text, extractor, overrides, lookups):
+    extractor = {
+        "name_key": "name",
+        "category": {"row_key": "category"},
+        "plant_type": {"row_key": "plant_type"},
+        **extractor,
+    }
+    rows = grouped_fixed_width_table_rows(text, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    return plant_records_from_config_rows(
+        rows,
+        extractor,
+        overrides,
+        lookups,
+    )
+
+
 def plants_from_pdf_numbered_blocks(text, extractor, overrides, lookups):
     extractor = {"name_key": "name", **extractor}
     rows = numbered_block_rows(text, extractor)
@@ -910,6 +930,15 @@ def extract(config):
         elif extractor["kind"] == "pdf_fixed_width_table":
             plants.extend(
                 plants_from_pdf_fixed_width_table(data, extractor, overrides, lookups)
+            )
+        elif extractor["kind"] == "pdf_grouped_fixed_width_table":
+            plants.extend(
+                plants_from_pdf_grouped_fixed_width_table(
+                    data,
+                    extractor,
+                    overrides,
+                    lookups,
+                )
             )
         elif extractor["kind"] == "pdf_numbered_blocks":
             plants.extend(

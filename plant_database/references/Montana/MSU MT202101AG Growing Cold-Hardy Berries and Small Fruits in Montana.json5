@@ -1,0 +1,75 @@
+{
+    title: "Growing Cold-Hardy Berries and Small Fruits in Montana",
+    author: "Zach Miller, Bridgid Jarrett, and Cheryl Moore-Gough",
+    description: "Montana State University Extension MontGuide for cold-hardy berries and small fruits in Montana",
+    url: "https://extension-store.montana.edu/montguides/growing-cold-hardy-berries-and-small-fruits-in-montana",
+    thumbnail: "pdf",
+    published: "January 2021",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Montana State University Western Agricultural Research Center, Corvallis, Montana",
+            latitude: 46.3147,
+            longitude: -114.1129
+        },
+    ],
+    categories: [
+        {
+            name: "Haskap varieties for Montana",
+            description: "Montana State University Extension names these haskap or honeyberry cultivars in its cold-hardy berry guide and points readers to WARC and NDSU-Carrington for additional recommendations"
+        },
+        {
+            name: "Dwarf sour cherry varieties for Montana",
+            description: "Montana State University Extension names these dwarf sour cherry cultivars in its cold-hardy berry guide"
+        },
+    ],
+    plants: [
+        {
+            type: "Honeyberry",
+            name: "Indigo Gem",
+            category: "Haskap varieties for Montana",
+            harvest_time_unparsed: "has been the best early maturing variety in Montana trials.",
+            description: "has been the best early maturing variety in Montana trials"
+        },
+        {
+            type: "Honeyberry",
+            name: "Aurora",
+            category: "Haskap varieties for Montana",
+            harvest_time_unparsed: "excellent tasting, mid-maturing varieties that pollinate each other.",
+            description: "excellent tasting, mid-maturing varieties that pollinate each other. There are several good tasting, productive (8 12 lbs. per bush), late-maturing varieties. See WARC website and the NDSU-Carrington Research and Extension Center's website for recommended cultivars for Montana. Source describes Aurora and Borealis together"
+        },
+        {
+            type: "Honeyberry",
+            name: "Borealis",
+            category: "Haskap varieties for Montana",
+            harvest_time_unparsed: "excellent tasting, mid-maturing varieties that pollinate each other.",
+            description: "excellent tasting, mid-maturing varieties that pollinate each other. There are several good tasting, productive (8 12 lbs. per bush), late-maturing varieties. See WARC website and the NDSU-Carrington Research and Extension Center's website for recommended cultivars for Montana. Source describes Aurora and Borealis together"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Carmine Jewel",
+            category: "Dwarf sour cherry varieties for Montana",
+            description: "has been the most productive and has a great dwarf sour pie cherry flavor"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Romeo",
+            category: "Dwarf sour cherry varieties for Montana",
+            description: "good productivity and taste sweeter than Carmine Jewel. Source describes Romeo and Juliet together"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Juliet",
+            category: "Dwarf sour cherry varieties for Montana",
+            description: "good productivity and taste sweeter than Carmine Jewel. Source describes Romeo and Juliet together"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Crimson Passion",
+            category: "Dwarf sour cherry varieties for Montana",
+            description: "survives in the Northern Great Plains but has had inconsistent or no fruit production in Montana and North Dakota trials"
+        },
+    ]
+}

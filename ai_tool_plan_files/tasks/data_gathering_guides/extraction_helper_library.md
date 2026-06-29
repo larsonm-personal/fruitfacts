@@ -39,6 +39,8 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
   - Bounded PDF table sections, fixed-width row slicing, row continuation, and
     row-start detection from either the name column or a separate row-number
     column
+  - Grouped fixed-width table parsing where sparse crop labels or heading
+    rows set category and plant type for following rows
   - Raw `pdftotext` numbered block parsing for PDF tables that extract as
     `1.`, name, zones, regions, and tail lines rather than a horizontal table
   - Flow-mode PDF catalog entry parsing where a heading sets the crop/category
@@ -47,6 +49,8 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
     indented continuation lines finish parenthesized cultivar notes
   - PDF quoted-entry parsing where cultivar paragraphs start with quoted names,
     including same-line entry splitting and repeated-name merging
+  - Optional line slicing for layout-mode PDF sections where the useful entries
+    are isolated in one extracted column
   - Tail parsers for first-token splits such as `Fresh Dessert`, first-line
     prefix plus description, and self-fruitful token splits
 - `record_tools.py`
@@ -89,6 +93,8 @@ script. The config runner currently supports:
   rows
 - PDF marker lists inside bounded sections
 - PDF fixed-width tables inside bounded sections
+- PDF grouped fixed-width tables where crop or category labels appear only on
+  heading rows or first rows in a group
 - PDF numbered blocks from raw `pdftotext` output, with configurable zone,
   region, tail, and skip patterns
 - PDF catalog entries from flow-mode `pdftotext` output, with configurable
@@ -98,6 +104,8 @@ script. The config runner currently supports:
 - PDF quoted cultivar entries with configurable quote characters, skipped
   figure/page lines, source-local initial-letter spacing repair, and repeated
   quoted-name merging
+- Layout-mode PDF line slicing for quoted-entry sections where only one
+  extracted column should be parsed
 - HTML paragraph blocks where each useful paragraph starts with a quoted
   cultivar name
 - HTML paragraph blocks where each useful paragraph starts with `Name:`
@@ -210,6 +218,12 @@ Source-specific scripts should do:
 - NDSU FN590 jams and jellies: unheaded HTML cultivar grids embedded in a food
   preservation publication, with group cells for raspberry bearing type,
   suffix-to-type mapping for Prunus names, and prose-generated Juneberry rows
+- UAF HGA-00030 Interior Alaska variety list: grouped fixed-width PDF table
+  rows where fruit labels set crop context for following rows, with explicit
+  row overrides for wrapped Lee Red and Vic Red plum notes
+- MSU MT202101AG cold-hardy berries: layout-mode PDF quoted entries where the
+  sour cherry cultivar prose is isolated by slicing the extracted right column
+  before quoted-name parsing
 
 ## Manifest Configs
 
@@ -265,6 +279,12 @@ narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
   the beginning of a line or after a sentence boundary. Cultivar names quoted
   inside descriptions are usually pollinizers, parents, or examples, not new
   rows.
+- For layout-mode PDFs with two columns, consider slicing the useful column
+  before parsing quoted entries. Keep column-edge artifacts as source-local
+  `row_text_fixes` unless the same artifact repeats across sources.
+- For fixed-width PDF tables with row-spanned crop labels, carry category and
+  plant type from heading or first-row labels, and leave `needs_help` when
+  `pdftotext` shifts row-spanned labels against the wrong cultivar rows.
 - Do not commit downloaded PDFs directly unless the DVC asset workflow is being
   used
 

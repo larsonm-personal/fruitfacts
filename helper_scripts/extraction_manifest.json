@@ -17,6 +17,10 @@
             "config": "extraction_configs/msstate_p966_fruit_nut_recommendations.json"
         },
         {
+            "id": "montana_state_mt202101ag_cold_hardy_berries",
+            "config": "extraction_configs/montana_state_mt202101ag_cold_hardy_berries.json"
+        },
+        {
             "id": "ndsu_fn590_jams_jellies_fruits",
             "config": "extraction_configs/ndsu_fn590_jams_jellies_fruits.json"
         },
@@ -95,6 +99,10 @@
         {
             "id": "texas_am_e612_stone_fruit",
             "config": "extraction_configs/texas_am_e612_stone_fruit.json"
+        },
+        {
+            "id": "uaf_hga_00030_interior_alaska_fruit",
+            "config": "extraction_configs/uaf_hga_00030_interior_alaska_fruit.json"
         },
         {
             "id": "usu_apple_recommendations",

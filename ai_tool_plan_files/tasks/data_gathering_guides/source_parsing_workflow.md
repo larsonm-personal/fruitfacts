@@ -475,3 +475,32 @@ The Juneberry section names cultivars in prose rather than a table, so the
 config uses fixed generated rows under `colon_paragraph_blocks`. The reference
 keeps `needs_help` because the publication is a mixed food-preservation source
 and does not provide complete cultivar detail for every fruit crop it discusses.
+
+## UAF HGA-00030 Interior Alaska Notes
+
+The UAF Interior Alaska variety list is a broad garden PDF with fruit rows
+embedded near the end. The second fruit table page is regular enough for
+layout-mode fixed-width slicing, but the first fruit page has row-spanned apple,
+crabapple, cherry, currant, and gooseberry labels shifted against the wrong
+rows by `pdftotext`.
+
+The config uses `pdf_grouped_fixed_width_table` for the clean page. Group rules
+carry fruit context from heading lines such as `Pear Note:` and from first-row
+labels such as `Raspberry`. The resulting draft covers honeyberries, pears,
+plums, raspberries, saskatoons, and strawberries, while keeping `needs_help`
+for the shifted first page. Lee Red and Vic Red use explicit row overrides
+because their descriptions share one extracted line.
+
+## MSU MT202101AG Cold-Hardy Berries Notes
+
+The Montana cold-hardy berry MontGuide is a two-column narrative PDF rather
+than a table. The haskap cultivar paragraph can be parsed as quoted entries,
+but Aurora and Borealis are described together. The config keeps that as a
+declarative row split with a source note.
+
+The dwarf sour cherry cultivar text is interleaved with pruning prose in the
+left column. The config uses layout-mode text plus `line_slice_start` to parse
+only the right-column cultivar prose, then applies small source-local
+`row_text_fixes` for column-edge artifacts. Currant, gooseberry, and aronia
+sections remain review caveats because they either point to other sources for
+recommendations or lack a current FruitFacts plant type fit.

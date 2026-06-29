@@ -1,0 +1,111 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://extension-store.montana.edu/assets/publications/montguidepdfs/mt202101ag-growing-cold-hardy-berries.pdf",
+    "layout": true,
+    "layout_text": true
+  },
+  "reference_fields": [
+    ["title", "Growing Cold-Hardy Berries and Small Fruits in Montana"],
+    ["author", "Zach Miller, Bridgid Jarrett, and Cheryl Moore-Gough"],
+    ["description", "Montana State University Extension MontGuide for cold-hardy berries and small fruits in Montana"],
+    ["url", "https://extension-store.montana.edu/montguides/growing-cold-hardy-berries-and-small-fruits-in-montana"],
+    ["thumbnail", "pdf"],
+    ["published", "January 2021"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Montana State University Western Agricultural Research Center, Corvallis, Montana",
+      "latitude": 46.3147,
+      "longitude": -114.1129
+    }
+  ],
+  "categories": [
+    {
+      "name": "Haskap varieties for Montana",
+      "description": "Montana State University Extension names these haskap or honeyberry cultivars in its cold-hardy berry guide and points readers to WARC and NDSU-Carrington for additional recommendations"
+    },
+    {
+      "name": "Dwarf sour cherry varieties for Montana",
+      "description": "Montana State University Extension names these dwarf sour cherry cultivars in its cold-hardy berry guide"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "pdf_quoted_entries",
+      "section_start": "Haskap (Honeyberry,",
+      "section_end": "Dwarf Sour Cherries",
+      "category_rules": [
+        {
+          "text": "Cultivars",
+          "category": "Haskap varieties for Montana",
+          "plant_type": "Honeyberry"
+        }
+      ],
+      "skip_line_patterns": ["^\\d+$"],
+      "skip_names": ["Borealis"],
+      "row_splits": [
+        {
+          "match": {
+            "name": "Aurora"
+          },
+          "source_note": "Source describes Aurora and Borealis together",
+          "rows": [
+            {
+              "name": "Aurora",
+              "description": "excellent tasting, mid-maturing varieties that pollinate each other. There are several good tasting, productive (8 12 lbs. per bush), late-maturing varieties. See WARC website and the NDSU-Carrington Research and Extension Center's website for recommended cultivars for Montana"
+            },
+            {
+              "name": "Borealis",
+              "description": "excellent tasting, mid-maturing varieties that pollinate each other. There are several good tasting, productive (8 12 lbs. per bush), late-maturing varieties. See WARC website and the NDSU-Carrington Research and Extension Center's website for recommended cultivars for Montana"
+            }
+          ]
+        }
+      ],
+      "harvest_from_key": "description",
+      "harvest_terms": ["maturing", "mature"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_quoted_entries",
+      "section_start": "productive bush will produce 10 30 lbs. of fruit.",
+      "section_end": "Pests                                                      Aronia",
+      "line_slice_start": 58,
+      "category_rules": [
+        {
+          "text": "Cultivars",
+          "category": "Dwarf sour cherry varieties for Montana",
+          "plant_type": "Sour Cherry"
+        }
+      ],
+      "row_text_fixes": {
+        "ie cherry flavor": "dwarf sour pie cherry flavor",
+        "en survives": "survives",
+        "`Juliet'": "Juliet",
+        "`Carmine Jewel'": "Carmine Jewel"
+      },
+      "row_splits": [
+        {
+          "match": {
+            "name": "Romeo"
+          },
+          "source_note": "Source describes Romeo and Juliet together",
+          "rows": [
+            {
+              "name": "Romeo",
+              "description": "good productivity and taste sweeter than Carmine Jewel"
+            },
+            {
+              "name": "Juliet",
+              "description": "good productivity and taste sweeter than Carmine Jewel"
+            }
+          ]
+        }
+      ],
+      "description_key": "description"
+    }
+  ]
+}

@@ -524,10 +524,115 @@ def fixed_width_table_rows(text, extractor):
     return [row for row in rows if row.get(name_key) not in skip_names]
 
 
+def group_rule_values(rule):
+    control_keys = {
+        "text",
+        "prefix",
+        "line_text",
+        "line_prefix",
+        "match_key",
+        "heading_only",
+    }
+    return {key: value for key, value in rule.items() if key not in control_keys}
+
+
+def group_rule_matches(row, line, extractor, rule):
+    if rule.get("line_text") and line == rule["line_text"]:
+        return True
+    if rule.get("line_prefix") and line.startswith(rule["line_prefix"]):
+        return True
+    key = rule.get("match_key", extractor.get("group_key", "group"))
+    value = row.get(key, "")
+    if rule.get("text") and value == rule["text"]:
+        return True
+    if rule.get("prefix") and value.startswith(rule["prefix"]):
+        return True
+    return False
+
+
+def group_rule_for_row(row, line, extractor):
+    for rule in extractor.get("group_rules", []):
+        if group_rule_matches(row, line, extractor, rule):
+            return rule
+    return None
+
+
+def grouped_fixed_width_table_rows(text, extractor):
+    columns = extractor["columns"]
+    rows = []
+    current = None
+    current_group = None
+    started = not extractor.get("start_after_pattern")
+    stop_patterns = extractor.get("stop_patterns", [])
+    skip_patterns = extractor.get("skip_line_patterns", [])
+
+    for raw_line in table_section(text, extractor).splitlines():
+        for switch in extractor.get("layout_switches", []):
+            if re.search(switch["pattern"], raw_line):
+                columns = switch["columns"]
+        if not started:
+            if re.search(extractor["start_after_pattern"], raw_line):
+                started = True
+            continue
+        if stop_patterns and line_matches_any(raw_line, stop_patterns):
+            break
+        if not raw_line.strip() or line_matches_any(raw_line, skip_patterns):
+            continue
+
+        row = slice_row(raw_line, columns, extractor.get("row_transforms"))
+        line = clean_text(raw_line)
+        rule = group_rule_for_row(row, line, extractor)
+        if rule:
+            current_group = group_rule_values(rule)
+
+        if new_row_started(row, extractor):
+            if current:
+                rows.append(current)
+            current = dict(row)
+            if current_group:
+                current.update(current_group)
+            continue
+
+        if rule:
+            continue
+        if current and extractor.get("append_continuation", True):
+            skip_keys = set(
+                extractor.get(
+                    "continuation_skip_keys",
+                    [extractor.get("group_key", "group"), extractor.get("name_key", "name")],
+                )
+            )
+            for key, value in row.items():
+                if key not in skip_keys:
+                    append_value(current, key, value)
+
+    if current:
+        rows.append(current)
+
+    skip_names = set(extractor.get("skip_names", []))
+    skip_patterns = extractor.get("skip_name_patterns", [])
+    name_key = extractor.get("name_key", "name")
+    return [
+        row
+        for row in rows
+        if row.get(name_key) not in skip_names
+        and not line_matches_any(row.get(name_key, ""), skip_patterns)
+    ]
+
+
+def slice_pdf_line(line, extractor):
+    start = extractor.get("line_slice_start")
+    end = extractor.get("line_slice_end")
+    if start is None and end is None:
+        return line
+    return line[start:end]
+
+
 def section_lines(text, extractor):
     skip_patterns = extractor.get("skip_line_patterns", [])
     lines = []
     for line in table_section(text, extractor).splitlines():
+        line = slice_pdf_line(line, extractor)
         line = clean_text(line)
         if not line or line_matches_any(line, skip_patterns):
             continue

@@ -1487,7 +1487,7 @@
         },
         {
             id: "montana-state-growing-cold-hardy-berries-small-fruits-mt202101ag",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Cold-Hardy Berries and Small Fruits in Montana",
             institution: "Montana State University Extension",
@@ -1516,7 +1516,12 @@
                 "No Montana reference directory or candidate found during duplicate scan",
             notes: [
                 "Official MontGuide page exposes View Online and Download PDF controls",
-                "Cultivar data is mixed with narrative species sections and production notes"
+                "Cultivar data is mixed with narrative species sections and production notes",
+                "Encoded in plant_database/references/Montana/MSU MT202101AG Growing Cold-Hardy Berries and Small Fruits in Montana.json5",
+                "Config extraction added at helper_scripts/extraction_configs/montana_state_mt202101ag_cold_hardy_berries.json",
+                "Manifest entry added as montana_state_mt202101ag_cold_hardy_berries",
+                "Worked example for layout-mode PDF quoted entries with a sliced second column and source-visible row splits for grouped cultivar sentences",
+                "Current draft covers named haskap and dwarf sour cherry cultivars; currant, gooseberry, and aronia narrative sections remain review caveats"
             ]
         },
         {
@@ -1637,7 +1642,7 @@
         },
         {
             id: "uaf-recommended-variety-list-interior-alaska-hga-00030",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Recommended Variety List for Interior Alaska",
             institution: "University of Alaska Fairbanks Cooperative Extension Service",
@@ -1671,7 +1676,12 @@
                 "No Alaska reference directory or candidate found during duplicate scan",
             notes: [
                 "Official PDF search result returned a direct UAF publication URL",
-                "Fruit content is embedded in a broader garden variety list and includes footnotes, maturity, and Alaska-trial context"
+                "Fruit content is embedded in a broader garden variety list and includes footnotes, maturity, and Alaska-trial context",
+                "Encoded in plant_database/references/Alaska/UAF HGA-00030 Recommended Variety List for Interior Alaska.json5",
+                "Config extraction added at helper_scripts/extraction_configs/uaf_hga_00030_interior_alaska_fruit.json",
+                "Manifest entry added as uaf_hga_00030_interior_alaska_fruit",
+                "Worked example for grouped fixed-width PDF tables where crop labels appear only on section or first rows",
+                "Current draft covers the cleaner second fruit table page; the first fruit page has row-spanned apple, crabapple, cherry, currant, and gooseberry labels shifted by pdftotext and remains a review caveat"
             ]
         },
         {
