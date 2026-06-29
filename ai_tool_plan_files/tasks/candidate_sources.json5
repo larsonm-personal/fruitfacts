@@ -621,7 +621,7 @@
         },
         {
             id: "virginia-growing-apples-422-023",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Apples in Virginia",
             institution: "Virginia Cooperative Extension",
@@ -642,7 +642,10 @@
             duplicate_check:
                 "Existing Virginia references cover apricot evaluations and commercial grapes, not home apple growing",
             notes: [
-                "Landing page and PDF link were found on the official Virginia Cooperative Extension page"
+                "Landing page and PDF link were found on the official Virginia Cooperative Extension page",
+                "Encoded in plant_database/references/Virginia/VCE 422-023 Growing Apples in Virginia.json5",
+                "Draft extraction helper added at helper_scripts/extract_vce_422_023_apples.py",
+                "Worked example for VCE HTML tables with cultivar names split across fragment rows"
             ]
         },
         {
@@ -673,7 +676,7 @@
         },
         {
             id: "virginia-growing-peaches-nectarines-422-019",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Peaches and Nectarines in Virginia",
             institution: "Virginia Cooperative Extension",
@@ -697,7 +700,10 @@
             duplicate_check:
                 "Existing Virginia references do not include a peach or nectarine extension guide",
             notes: [
-                "Landing page and PDF link were found on the official Virginia Cooperative Extension page"
+                "Landing page and PDF link were found on the official Virginia Cooperative Extension page",
+                "Encoded in plant_database/references/Virginia/VCE 422-019 Growing Peaches and Nectarines in Virginia.json5",
+                "Draft extraction helper added at helper_scripts/extract_vce_422_019_peaches.py",
+                "Worked example for VCE HTML tables with single-cell category rows and one combined source row"
             ]
         },
         {

@@ -5,9 +5,9 @@ import sys
 
 from fruitfacts_extract.html_tools import fetch_html_page
 from fruitfacts_extract.json5_draft import emit_reference
-from fruitfacts_extract.record_tools import plant_record
+from fruitfacts_extract.record_tools import labelled_description_from_row
+from fruitfacts_extract.record_tools import plant_records_from_rows
 from fruitfacts_extract.table_tools import find_table, keyed_data_rows, table_to_dicts
-from fruitfacts_extract.text_tools import join_labelled_values
 
 
 SOURCE_URL = "https://ohioline.osu.edu/factsheet/hyg-1422"
@@ -31,12 +31,13 @@ REFERENCE_FIELDS = [
 
 def row_description(row):
     parts = [
-        join_labelled_values(
+        labelled_description_from_row(
+            row,
             [
-                ("Yield", row["yield"]),
-                ("Fruit size", row["fruit_size"]),
-                ("Fruit quality", row["fruit_quality"]),
-            ]
+                ("yield", "Yield"),
+                ("fruit_size", "Fruit size"),
+                ("fruit_quality", "Fruit quality"),
+            ],
         )
     ]
     if row["remarks"]:
@@ -50,18 +51,14 @@ def extract():
         page.tables,
         ["Cultivar", "Ripening Season", "Yield", "Fruit Size", "Fruit Quality", "Remarks"],
     )
-    plants = []
-    for row in keyed_data_rows(table_to_dicts(table), "cultivar"):
-        plants.append(
-            plant_record(
-                "Blueberry",
-                row["cultivar"],
-                category=CATEGORY,
-                harvest_time_unparsed=row["ripening_season"],
-                description=row_description(row),
-            )
-        )
-    return plants
+    return plant_records_from_rows(
+        keyed_data_rows(table_to_dicts(table), "cultivar"),
+        "Blueberry",
+        "cultivar",
+        category_key=lambda row: CATEGORY,
+        harvest_key="ripening_season",
+        description=row_description,
+    )
 
 
 def emit_json5(plants):

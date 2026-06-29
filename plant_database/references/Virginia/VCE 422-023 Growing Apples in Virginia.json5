@@ -1,0 +1,123 @@
+{
+    title: "Growing Apples in Virginia",
+    author: "Richard P. Marini",
+    url: "https://pubs.ext.vt.edu/422/422-023/422-023.html",
+    published: "Sep 3, 2025",
+    reviewed: "Sep 2025",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Virginia Tech, Blacksburg, VA",
+            latitude: 37.20248218528102,
+            longitude: -80.5631271567992
+        },
+    ],
+    categories: [
+        {
+            name: "Apple varieties recommended for Virginia",
+            description: "VCE apple varieties recommended for Virginia. Ripening dates are for Blacksburg; regions east of the Blue Ridge may be 5 to 14 days earlier. E, G, F, and P ratings mean excellent, good, fair, and poor"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Lodi",
+            category: "Apple varieties recommended for Virginia",
+            harvest_time_unparsed: "July 1",
+            description: "Fresh rating: F. Cooking rating: F-G. Color: yellow-green. Taste: tart. Comments: stores poorly"
+        },
+        {
+            type: "Apple",
+            name: "Earlycrisp",
+            category: "Apple varieties recommended for Virginia",
+            harvest_time_unparsed: "July 13",
+            description: "Fresh rating: G. Cooking rating: F-G. Color: yellow. Taste: tart/sweet. Comments: best very early apple"
+        },
+        {
+            type: "Apple",
+            name: "Ginger Gold",
+            category: "Apple varieties recommended for Virginia",
+            harvest_time_unparsed: "Aug. 12",
+            description: "Fresh rating: E. Cooking rating: G. Color: yellow. Taste: mild/sweet. Comments: stores well"
+        },
+        {
+            type: "Apple",
+            name: "Redfree",
+            category: "Apple varieties recommended for Virginia",
+            harvest_time_unparsed: "Aug. 15",
+            description: "Fresh rating: F-E. Cooking rating: P. Color: red. Taste: tart/sweet. Comments: best in cool seasons, scab resistance"
+        },
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Apple varieties recommended for Virginia",
+            harvest_time_unparsed: "Aug. 20",
+            description: "Fresh rating: E. Cooking rating: P. Color: yellow. Taste: tart/sweet. Comments: best summer apple, very susceptible to fireblight"
+        },
+        {
+            type: "Apple",
+            name: "Jonagold",
+            category: "Apple varieties recommended for Virginia",
+            harvest_time_unparsed: "Sept. 8",
+            description: "Fresh rating: G. Cooking rating: E. Color: green/yellow. Taste: tart/sweet. Comments: stores poorly, triploid"
+        },
+        {
+            type: "Apple",
+            name: "Red Delicious",
+            category: "Apple varieties recommended for Virginia",
+            harvest_time_unparsed: "Sept. 16",
+            description: "Fresh rating: E. Cooking rating: F. Color: red. Taste: sweet. Comments: leading variety in US"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "Apple varieties recommended for Virginia",
+            harvest_time_unparsed: "Sept. 20",
+            description: "Fresh rating: E. Cooking rating: E. Color: yellow. Taste: sweet/tart. Comments: best all-around variety"
+        },
+        {
+            type: "Apple",
+            name: "Empire",
+            category: "Apple varieties recommended for Virginia",
+            harvest_time_unparsed: "Sept. 23",
+            description: "Fresh rating: E. Cooking rating: F. Color: red. Taste: sweet/tart. Comments: best McIntosh-type"
+        },
+        {
+            type: "Apple",
+            name: "Rome",
+            category: "Apple varieties recommended for Virginia",
+            harvest_time_unparsed: "Oct. 12",
+            description: "Fresh rating: F. Cooking rating: G. Color: red. Taste: sweet/tart. Comments: large fruit"
+        },
+        {
+            type: "Apple",
+            name: "Winesap",
+            category: "Apple varieties recommended for Virginia",
+            harvest_time_unparsed: "Oct. 20",
+            description: "Fresh rating: F. Cooking rating: G. Color: red. Taste: tart. Comments: stores well, triploid"
+        },
+        {
+            type: "Apple",
+            name: "York",
+            category: "Apple varieties recommended for Virginia",
+            harvest_time_unparsed: "Oct. 20",
+            description: "Fresh rating: G. Cooking rating: E. Color: red. Taste: tart. Comments: tastes best after 2 months storage"
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Apple varieties recommended for Virginia",
+            harvest_time_unparsed: "Oct. 25",
+            description: "Fresh rating: G. Cooking rating: E. Color: red. Taste: sweet. Comments: stores for a year"
+        },
+        {
+            type: "Apple",
+            name: "Arkansas Black",
+            category: "Apple varieties recommended for Virginia",
+            harvest_time_unparsed: "Oct. 25",
+            description: "Fresh rating: F. Cooking rating: G. Color: red. Taste: tart/sweet. Comments: tolerates heat"
+        },
+    ]
+}

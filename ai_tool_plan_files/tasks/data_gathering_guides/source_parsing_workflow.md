@@ -74,6 +74,12 @@ shared helpers:
   born-digital PDF section parsing
 - `table_tools.fill_leading_group_cells()` for simple HTML tables where a
   leading source group was represented by rowspans
+- `table_tools.merge_leading_fragment_rows()` for tables where a wrapped name
+  appears as a name-only row followed by the rest of the row
+- `table_tools.table_to_dicts_with_sections()` for tables with single-cell
+  section rows between groups of ordinary data rows
+- `record_tools.plant_records_from_rows()` for the common case where parsed
+  rows map directly to draft plant records
 
 ## The Art
 
@@ -227,3 +233,29 @@ The source also has a separate disease-susceptibility table keyed by cultivar.
 The parser builds a disease lookup and appends the source's star ratings to
 each plant description. The curated file keeps those ratings in text for now
 rather than inventing a grape-specific disease schema.
+
+## VCE 422-023 Apple Notes
+
+The Virginia apple page has a useful HTML cultivar table, but several names are
+split into name-only rows followed by rows with the harvest and trait values.
+The helper script repairs that source shape with
+`table_tools.merge_leading_fragment_rows()` before converting rows to
+dictionaries.
+
+The source also gives table ratings for fresh use and cooking use. The curated
+file keeps those source ratings in `description` and explains the rating legend
+in the category description. The harvest dates are kept as source dates for
+Blacksburg, with the source's Blue Ridge timing caveat left in the category
+description.
+
+## VCE 422-019 Peach And Nectarine Notes
+
+The Virginia peach and nectarine page has one HTML cultivar table with
+single-cell category rows for white-fleshed peaches and nectarines. The helper
+script uses `table_tools.table_to_dicts_with_sections()` to retain that section
+context and uses it to choose both plant `category` and `type`.
+
+The official HTML combines Morton and Raritan Rose into one row even though the
+PDF text confirms two dates and two descriptions. That repair stays local to
+the VCE script because it is source-specific judgment. The resulting plant
+descriptions keep a visible note that the HTML row was combined.

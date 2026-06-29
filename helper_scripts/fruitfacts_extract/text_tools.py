@@ -1,6 +1,7 @@
 """Shared text cleanup and list parsing helpers"""
 
 import re
+import unicodedata
 
 
 DEFAULT_USER_AGENT = "Mozilla/5.0 FruitFacts data helper"
@@ -13,16 +14,22 @@ def clean_text(text, collapse_whitespace=True, ascii_only=True):
         "\u00bd": "1/2",
         "\u00be": "3/4",
         "\u00b0": " degrees ",
+        "\u00ba": " degrees ",
         "\u00a9": "(c)",
         "\u00ae": "(r)",
+        "\u00ad": "",
         "\u2018": "'",
         "\u2019": "'",
         "\u201c": '"',
         "\u201d": '"',
+        "\u2010": "-",
+        "\u2011": "-",
         "\u2013": "-",
         "\u2014": "-",
         "\u2022": "*",
+        "\u200b": "",
         "\u2026": "...",
+        "\u2212": "-",
         "\u2122": "(tm)",
         "\ufb01": "fi",
         "\ufb02": "fl",
@@ -33,7 +40,8 @@ def clean_text(text, collapse_whitespace=True, ascii_only=True):
     if collapse_whitespace:
         text = re.sub(r"\s+", " ", text).strip()
     if ascii_only:
-        text.encode("ascii")
+        text = unicodedata.normalize("NFKD", text)
+        text = text.encode("ascii", "ignore").decode("ascii")
     return text
 
 

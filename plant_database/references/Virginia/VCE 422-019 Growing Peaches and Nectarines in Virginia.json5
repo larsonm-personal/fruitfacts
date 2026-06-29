@@ -1,0 +1,159 @@
+{
+    title: "Growing Peaches and Nectarines in Virginia",
+    author: "Richard P. Marini",
+    url: "https://pubs.ext.vt.edu/422/422-019/422-019.html",
+    published: "Sep 3, 2025",
+    reviewed: "Sep 2025",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Virginia Tech, Blacksburg, VA",
+            latitude: 37.20248218528102,
+            longitude: -80.5631271567992
+        },
+    ],
+    categories: [
+        {
+            name: "Yellow flesh peaches recommended for Virginia",
+            description: "Ripening dates are for Blacksburg; lower-elevation Virginia locations may ripen 3 to 20 days earlier"
+        },
+        {
+            name: "White flesh peaches recommended for Virginia",
+            description: "Ripening dates are for Blacksburg; lower-elevation Virginia locations may ripen 3 to 20 days earlier"
+        },
+        {
+            name: "Nectarines recommended for Virginia",
+            description: "Ripening dates are for Blacksburg; lower-elevation Virginia locations may ripen 3 to 20 days earlier"
+        },
+    ],
+    plants: [
+        {
+            type: "Peach",
+            name: "Garnet Beauty",
+            category: "Yellow flesh peaches recommended for Virginia",
+            harvest_time_unparsed: "July 17",
+            description: "Yellow flesh peaches small to medium - clingstone. Source table names this as GarnetBeauty"
+        },
+        {
+            type: "Peach",
+            name: "Laural",
+            category: "Yellow flesh peaches recommended for Virginia",
+            harvest_time_unparsed: "July 25",
+            description: "Medium, well colored freestone, recommended for trial"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Yellow flesh peaches recommended for Virginia",
+            harvest_time_unparsed: "Aug. 1",
+            description: "Medium size, very cold hardy, semi-cling stone"
+        },
+        {
+            type: "Peach",
+            name: "Rich Lady",
+            category: "Yellow flesh peaches recommended for Virginia",
+            harvest_time_unparsed: "Aug. 1",
+            description: "Large, firm, well colored yellow fruit, recommended for trial"
+        },
+        {
+            type: "Peach",
+            name: "Topaz",
+            category: "Yellow flesh peaches recommended for Virginia",
+            harvest_time_unparsed: "Aug. 7",
+            description: "Large, attractive freestone"
+        },
+        {
+            type: "Peach",
+            name: "Contender",
+            category: "Yellow flesh peaches recommended for Virginia",
+            harvest_time_unparsed: "Aug. 10",
+            description: "Large, attractive freestone"
+        },
+        {
+            type: "Peach",
+            name: "Ernie's Choice",
+            category: "Yellow flesh peaches recommended for Virginia",
+            harvest_time_unparsed: "Aug. 12",
+            description: "Large, firm attractive, freestone. Source table names this as Earnie's Choice"
+        },
+        {
+            type: "Peach",
+            name: "Loring",
+            category: "Yellow flesh peaches recommended for Virginia",
+            harvest_time_unparsed: "Aug. 18",
+            description: "Very large, firm freestone"
+        },
+        {
+            type: "Peach",
+            name: "Harcrest",
+            category: "Yellow flesh peaches recommended for Virginia",
+            harvest_time_unparsed: "Aug. 29",
+            description: "Medium to large, very attractive freestone"
+        },
+        {
+            type: "Peach",
+            name: "Fayette",
+            category: "Yellow flesh peaches recommended for Virginia",
+            harvest_time_unparsed: "Sept. 6",
+            description: "Very large, firm, well colored, freestone"
+        },
+        {
+            type: "Peach",
+            name: "Encore",
+            category: "Yellow flesh peaches recommended for Virginia",
+            harvest_time_unparsed: "Sept. 12",
+            description: "Large, firm, attractive freestone"
+        },
+        {
+            type: "Peach",
+            name: "Morton",
+            category: "White flesh peaches recommended for Virginia",
+            harvest_time_unparsed: "July 25",
+            description: "Small, highly colored, soft, good flavor. Source HTML combines Morton and Raritan Rose into one row"
+        },
+        {
+            type: "Peach",
+            name: "Raritan Rose",
+            category: "White flesh peaches recommended for Virginia",
+            harvest_time_unparsed: "July 26",
+            description: "Medium size, attractive, excellent flavor. Source HTML combines Morton and Raritan Rose into one row"
+        },
+        {
+            type: "Peach",
+            name: "White Lady",
+            category: "White flesh peaches recommended for Virginia",
+            harvest_time_unparsed: "Aug. 5",
+            description: "Large, attractive, firm, excellent flavor"
+        },
+        {
+            type: "Nectarine",
+            name: "Summer Beaut",
+            category: "Nectarines recommended for Virginia",
+            harvest_time_unparsed: "Aug. 3",
+            description: "Medium size, semi-freestone, good flavor"
+        },
+        {
+            type: "Nectarine",
+            name: "Sunglo",
+            category: "Nectarines recommended for Virginia",
+            harvest_time_unparsed: "Aug. 10",
+            description: "Large, attractive, firm, good flavor"
+        },
+        {
+            type: "Nectarine",
+            name: "Red Gold",
+            category: "Nectarines recommended for Virginia",
+            harvest_time_unparsed: "Aug. 21",
+            description: "Medium to large size, attractive, good flavor"
+        },
+        {
+            type: "Nectarine",
+            name: "Flavortop",
+            category: "Nectarines recommended for Virginia",
+            harvest_time_unparsed: "Aug. 21",
+            description: "Medium to large, attractive, good flavor. Source table names this as Flavor Top"
+        },
+    ]
+}

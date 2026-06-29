@@ -72,6 +72,12 @@ Second pass:
 - Appendix charts can contain entries that are absent from the main narrative.
   Mark the collection as incomplete when only the narrative or only the chart
   has been encoded.
+- HTML tables can contain extraction artifacts that still reflect source
+  structure, such as wrapped cultivar names appearing as fragment rows or
+  section headings appearing as single-cell rows. Repair these mechanically
+  when the intended source row is clear, and keep source-specific repairs
+  visible in descriptions or comments when the source table itself is
+  ambiguous.
 
 ## Locations
 

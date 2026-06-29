@@ -5,11 +5,9 @@ import sys
 
 from fruitfacts_extract.html_tools import fetch_html_page
 from fruitfacts_extract.json5_draft import emit_reference
-from fruitfacts_extract.record_tools import append_source_note
-from fruitfacts_extract.record_tools import normalized_name
-from fruitfacts_extract.record_tools import plant_record
+from fruitfacts_extract.record_tools import labelled_description_from_row
+from fruitfacts_extract.record_tools import plant_records_from_rows
 from fruitfacts_extract.table_tools import find_table, keyed_data_rows, table_to_dicts
-from fruitfacts_extract.text_tools import join_labelled_values
 
 
 SOURCE_URL = "https://extension.umaine.edu/publications/2253e/"
@@ -40,26 +38,21 @@ def extract():
         page.tables,
         ["Variety", "Plant Characteristics", "Fruit Qualities", "Ripening Season"],
     )
-    plants = []
-    for row in keyed_data_rows(table_to_dicts(table), "variety"):
-        source_name = row["variety"]
-        name, source_note = normalized_name(source_name, NAME_OVERRIDES)
-        description = join_labelled_values(
+    return plant_records_from_rows(
+        keyed_data_rows(table_to_dicts(table), "variety"),
+        "Blueberry",
+        "variety",
+        category_key=lambda row: CATEGORY,
+        harvest_key="ripening_season",
+        description=lambda row: labelled_description_from_row(
+            row,
             [
-                ("Plant characteristics", row["plant_characteristics"]),
-                ("Fruit qualities", row["fruit_qualities"]),
-            ]
-        )
-        plants.append(
-            plant_record(
-                "Blueberry",
-                name,
-                category=CATEGORY,
-                harvest_time_unparsed=row["ripening_season"],
-                description=append_source_note(description, source_note),
-            )
-        )
-    return plants
+                ("plant_characteristics", "Plant characteristics"),
+                ("fruit_qualities", "Fruit qualities"),
+            ],
+        ),
+        name_overrides=NAME_OVERRIDES,
+    )
 
 
 def emit_json5(plants):

@@ -25,13 +25,17 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
     dictionaries
   - Key-column filtering for blank or note rows and leading group-cell repair
     for simple rowspan tables
+  - Leading fragment-row repair and section-row retention for common HTML
+    tables produced from extension publication systems
 - `pdf_tools.py`
   - Download to temp storage and run `pdftotext`
 - `record_tools.py`
   - Source-name normalization, source-note appending, plant-record creation,
-    and parser-config category cleanup
+    row-to-plant conversion, labelled row descriptions, and parser-config
+    category cleanup
 - `json5_draft.py`
-  - JSON-safe quoting and reusable draft reference emission
+  - JSON-safe quoting and reusable draft reference emission, including optional
+    top-level locations and categories
 
 Source-specific scripts such as `extract_umaine_2172.py`,
 `extract_umaine_2184.py`, and `extract_csu_763.py` should import these helpers
@@ -78,6 +82,10 @@ Source-specific scripts should do:
   column
 - OSU HYG-1423 grape tables: Ohioline HTML tables with a title row before the
   real column header row, plus a second table keyed by cultivar
+- VCE 422-023 apple table: HTML cultivar table with several multi-word cultivar
+  names split into leading fragment rows before the full data row
+- VCE 422-019 peach and nectarine table: HTML cultivar table with single-cell
+  section rows and one combined source row that stays as a local repair
 
 ## PDF Lessons
 
@@ -97,7 +105,9 @@ Source-specific scripts should do:
    whether `pdftotext -layout` or `pdftotext -raw` looks cleaner.
 2. Add parser-backed checks for draft extractors after the library shape
    stabilizes.
-3. Consider moving repeated source metadata into a small data object only if the
+3. Consider a small regression test for helper scripts that compares extracted
+   plant counts for representative HTML and PDF sources.
+4. Consider moving repeated source metadata into a small data object only if the
    current `REFERENCE_FIELDS` pattern starts to drift.
-4. Keep parsers source-specific until a pattern appears in multiple unrelated
+5. Keep parsers source-specific until a pattern appears in multiple unrelated
    sources.

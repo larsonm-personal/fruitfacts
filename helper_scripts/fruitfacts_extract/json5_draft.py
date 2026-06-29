@@ -35,10 +35,12 @@ def emit_object_list(name, values, indent=1):
     print(prefix + "],")
 
 
-def emit_reference(fields, plants, categories=None):
+def emit_reference(fields, plants, categories=None, locations=None):
     print("{")
     for name, value in fields:
         emit_field(name, value)
+    if locations is not None:
+        emit_object_list("locations", locations)
     if categories:
         emit_object_list("categories", categories)
     print("    plants: [")
