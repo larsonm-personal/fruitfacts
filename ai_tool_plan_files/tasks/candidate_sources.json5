@@ -1014,7 +1014,7 @@
         },
         {
             id: "osu-growing-apples-home-orchard-hyg-1401",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Growing Apples in the Home Orchard",
             institution: "Ohio State University Extension",
@@ -1033,12 +1033,15 @@
             duplicate_check:
                 "Existing Ohio references include peaches and MAIA varieties, not this home apple guide",
             notes: [
-                "Official Ohioline page returned 200"
+                "Official Ohioline page returned 200",
+                "Encoded in plant_database/references/Ohio/OSU HYG-1401 Growing Apples in the Home Orchard.json5",
+                "Draft extraction helper added at helper_scripts/extract_osu_hyg_1401_apples.py",
+                "Worked example for simple Ohioline HTML cultivar tables and source-name harmonization"
             ]
         },
         {
             id: "osu-growing-blueberries-home-garden-hyg-1422",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Blueberries in the Home Garden",
             institution: "Ohio State University Extension",
@@ -1057,7 +1060,10 @@
             duplicate_check:
                 "No Ohio blueberry extension reference found in existing references",
             notes: [
-                "Official Ohioline page returned 200"
+                "Official Ohioline page returned 200",
+                "Encoded in plant_database/references/Ohio/OSU HYG-1422 Growing Blueberries in the Home Garden.json5",
+                "Draft extraction helper added at helper_scripts/extract_osu_hyg_1422_blueberries.py",
+                "Worked example for simple Ohioline HTML cultivar tables with a trailing note row"
             ]
         },
         {

@@ -1,0 +1,92 @@
+{
+    title: "HYG-1401 Growing Apples in the Home Orchard",
+    author: "Gary Y. Gao, Professor and Small Fruit Specialist, The Ohio State University South Centers, and Courtesy Professor, Department of Horticulture and Crop Science, CFAES, The Ohio State University; and Kass Groner, Undergraduate Student, Department of Horticulture and Crop Science, CFAES, The Ohio State University",
+    description:
+        "Ohio State Ohioline apple guide for home orchards. The source gives disease-resistant apple cultivars suggested for Ohio, with bloom season, ripening season, disease-resistance notes, uses, and pollination context",
+    url: "https://ohioline.osu.edu/factsheet/hyg-1401",
+    thumbnail: "website",
+    published: "Dec 22, 2025",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true, // todo - review source name harmonization and pollination text before clearing
+    locations: [
+        {
+            name: "OSU South Centers, Piketon, OH",
+            latitude: 39.049112794609925,
+            longitude: -82.99424252152453
+        }
+    ],
+    categories: [
+        {
+            name: "Disease-resistant apple cultivars suggested for Ohio",
+            description:
+                "Disease-resistant apple cultivars suggested by OSU for Ohio home orchards"
+        }
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Co-op 32",
+            category: "Disease-resistant apple cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early",
+            description:
+                "Early bloom. Medium-large canary-yellow fruit, often blushed, with fine texture and tart flavor for cooking or fresh eating. Source says field-immune to apple scab, highly resistant to powdery mildew, resistant to cedar apple rust, and moderately resistant to fire blight. Pollination partners listed: Pristine, Williams' Pride, Redfree, Jonafree, and Liberty. Source table names this as Pristine"
+        },
+        {
+            type: "Apple",
+            name: "Co-op 33",
+            category: "Disease-resistant apple cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early to Mid",
+            description:
+                "Early to mid bloom. Snack-size dark-red fruit over a yellow background, slightly smaller than Gala, with Honeycrisp-like crispness. Source says fruit stays crisp on the tree for several weeks. Pollination partners listed: Empire, Enterprise, GoldRush, Pink Lady, SunCrisp, or other early to midseason bloomers. Source table names this as Pixie Crunch"
+        },
+        {
+            type: "Apple",
+            name: "Williams' Pride",
+            category: "Disease-resistant apple cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early",
+            description:
+                "Mid bloom. Medium-large dark-red to purple-red striped fruit with firm, juicy, spicy flesh and good keeping quality. Good for fresh eating and cooking. Source says field-immune to apple scab and apple rusts, and resistant to powdery mildew and fire blight. Source table names this as William's Pride"
+        },
+        {
+            type: "Apple",
+            name: "Redfree",
+            category: "Disease-resistant apple cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early",
+            description:
+                "Mid bloom. Medium-size bright-red fruit with firm texture and sweet aromatic flavor. Good for fresh eating and cooking, with one month or more of refrigerated storage. Source says field-immune to apple scab and cedar apple rust, moderately resistant to powdery mildew, and good fire blight resistance"
+        },
+        {
+            type: "Apple",
+            name: "Jonafree",
+            category: "Disease-resistant apple cultivars suggested for Ohio",
+            harvest_time_unparsed: "Mid",
+            description:
+                "Mid bloom. Medium fruit with medium-red blush, firm crisp flesh, and Jonathan-like flavor for fresh eating, sauce, pies, and cider. Source says field-immune to scab and less susceptible than Jonathan to powdery mildew, fire blight, and cedar apple rust. Pollination partners listed: GoldRush and Enterprise"
+        },
+        {
+            type: "Apple",
+            name: "Liberty",
+            category: "Disease-resistant apple cultivars suggested for Ohio",
+            harvest_time_unparsed: "Mid",
+            description:
+                "Mid bloom. Medium mostly red-striped fruit over greenish-yellow background, with white, fine-textured, crisp, juicy flesh. Good for fresh eating, cooking, canning, and desserts. Source says highly resistant to apple scab, resistant to cedar apple rust and fire blight, and moderately resistant to powdery mildew"
+        },
+        {
+            type: "Apple",
+            name: "Enterprise",
+            category: "Disease-resistant apple cultivars suggested for Ohio",
+            harvest_time_unparsed: "Late",
+            description:
+                "Mid to late bloom. Large glossy bright-red fruit with firm crisp texture and spicy juicy flavor. Good for fresh eating and cooking, and stores well under refrigeration. Source says field-immune to apple scab, moderately resistant to powdery mildew, and highly resistant to cedar apple rust and fire blight. Pollination partners listed: GoldRush, Gala, and Golden Delicious"
+        },
+        {
+            type: "Apple",
+            name: "GoldRush",
+            category: "Disease-resistant apple cultivars suggested for Ohio",
+            harvest_time_unparsed: "Late",
+            description:
+                "Late bloom. Large firm very crisp yellow fruit with semi-tart juicy flavor and exceptional storage life. Good for fresh eating and cooking. Source says field-immune to apple scab, moderately resistant to powdery mildew, and highly resistant to fire blight. Pollination partners listed: Enterprise, Gala, and Golden Delicious. Source table names this as Goldrush"
+        }
+    ]
+}

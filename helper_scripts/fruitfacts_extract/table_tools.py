@@ -22,6 +22,18 @@ def table_to_dicts(table):
     return rows
 
 
+def keyed_data_rows(rows, key, skip_prefixes=("Note:",)):
+    data = []
+    for row in rows:
+        value = row.get(key)
+        if not value:
+            continue
+        if any(value.startswith(prefix) for prefix in skip_prefixes):
+            continue
+        data.append(row)
+    return data
+
+
 def table_from_header_row(table, required_headers):
     wanted = {header_key(value) for value in required_headers}
     for index, row in enumerate(table):

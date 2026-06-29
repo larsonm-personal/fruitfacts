@@ -1,0 +1,156 @@
+{
+    title: "HYG-1422 Growing Blueberries in the Home Garden",
+    author: "Gary Y. Gao, Professor and Extension Specialist for Small Fruit, Agriculture and Natural Resources and South Centers, Ohio State University Extension, College of Food, Agricultural and Environmental Sciences; Erik Draper, Assistant Professor and Extension Educator, Commercial Horticulture, Ohio State University Extension - Geauga County, College of Food, Agricultural and Environmental Sciences; Clifton Martin, Assistant Professor and Extension Educator, Agriculture and Natural Resources, Ohio State University Extension - Muskingum County, College of Food, Agricultural and Environmental Sciences",
+    description:
+        "Ohio State Ohioline blueberry guide for home gardens. The source recommends northern highbush blueberries and selected cold-hardy northern and southern highbush hybrids for Ohio, with cultivar-level notes on ripening season, yield, fruit size, fruit quality, and plant habit",
+    url: "https://ohioline.osu.edu/factsheet/hyg-1422",
+    thumbnail: "website",
+    published: "May 15, 2026",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true, // todo - review cultivar identity and hybrid-type notes before clearing
+    locations: [
+        {
+            name: "OSU South Centers, Piketon, OH",
+            latitude: 39.049112794609925,
+            longitude: -82.99424252152453
+        }
+    ],
+    categories: [
+        {
+            name: "Blueberry cultivars suggested for Ohio",
+            description:
+                "Blueberry cultivars suggested by OSU for Ohio home gardens"
+        }
+    ],
+    plants: [
+        {
+            type: "Blueberry",
+            name: "Bluetta",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early",
+            description:
+                "Source rates yield good, fruit size medium, and fruit quality fair. Vigorous upright plant"
+        },
+        {
+            type: "Blueberry",
+            name: "Collins",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early",
+            description:
+                "Source rates yield fair, fruit size large, and fruit quality good. Hardy, vigorous, upright plant"
+        },
+        {
+            type: "Blueberry",
+            name: "Sweetheart",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early",
+            description:
+                "Source rates yield good, fruit size medium, and fruit quality good. Northern and southern highbush hybrid with vigorous upright plant habit"
+        },
+        {
+            type: "Blueberry",
+            name: "Duke",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early-Mid",
+            description:
+                "Source rates yield good, fruit size medium, and fruit quality good. Vigorous upright plant that blooms late to avoid frost and tolerates fluctuating winter temperature"
+        },
+        {
+            type: "Blueberry",
+            name: "Patriot",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early-Mid",
+            description:
+                "Source rates yield good, fruit size large, and fruit quality good. Vigorous upright plant of small to medium height. Very cold hardy but blooms early. Resistant to root rot"
+        },
+        {
+            type: "Blueberry",
+            name: "Draper",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Early-Mid",
+            description:
+                "Source rates yield good, fruit size large, and fruit quality excellent. Productive, vigorous, hardy plant"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluejay",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Mid",
+            description:
+                "Source rates yield moderate, fruit size large, and fruit quality good. Mummy berry resistant"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluecrop",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Mid",
+            description:
+                "Source rates yield good, fruit size large, and fruit quality good but tart. Productive, vigorous, hardy plant"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluegold",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Mid",
+            description:
+                "Source rates yield good, fruit size medium to large, and fruit quality good. Very winter hardy plant with bushy growth habit and concentrated ripening"
+        },
+        {
+            type: "Blueberry",
+            name: "Berkeley",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Mid",
+            description:
+                "Source rates yield good, fruit size large, and fruit quality fair. Productive, vigorous, hardy plant"
+        },
+        {
+            type: "Blueberry",
+            name: "Chandler",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Mid-Late",
+            description:
+                "Source rates yield good, fruit size large, and fruit quality good. Fewer canes and large berries"
+        },
+        {
+            type: "Blueberry",
+            name: "Legacy",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Mid-Late",
+            description:
+                "Source rates yield good, fruit size medium, and fruit quality good. Northern and southern highbush hybrid with vigorous, upright, productive plant habit"
+        },
+        {
+            type: "Blueberry",
+            name: "Nelson",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Mid-Late",
+            description:
+                "Source rates yield good, fruit size large, and fruit quality good. Productive, vigorous, open plant"
+        },
+        {
+            type: "Blueberry",
+            name: "Pink Lemonade",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Mid-Late",
+            description:
+                "Source rates yield moderate, fruit size medium, and fruit quality good. Ornamental qualities, pink ripe fruit, and rabbiteye by highbush hybrid background"
+        },
+        {
+            type: "Blueberry",
+            name: "Herbert",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Late",
+            description:
+                "Source rates yield good, fruit size large, and fruit quality excellent. Productive, vigorous, hardy plant"
+        },
+        {
+            type: "Blueberry",
+            name: "Elliott",
+            category: "Blueberry cultivars suggested for Ohio",
+            harvest_time_unparsed: "Late",
+            description:
+                "Source rates yield good, fruit size medium, and fruit quality good. Vigorous hardy plant. Mummy berry resistant"
+        }
+    ]
+}

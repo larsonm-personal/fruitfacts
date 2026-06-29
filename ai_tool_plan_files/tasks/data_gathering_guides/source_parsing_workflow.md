@@ -155,6 +155,32 @@ Zestar!, Ginger Gold, Blondee, Cameo, and SunCrisp; the curated file maps those
 to existing FruitFacts canonical names and keeps the source names in
 descriptions.
 
+## OSU HYG-1401 Apple Notes
+
+The Ohioline apple page has one compact cultivar table with headers
+`Cultivar`, `Bloom Season`, `Ripening Season`, and `Description`. The helper
+script uses `table_tools.find_table()`, `table_tools.table_to_dicts()`, and
+`table_tools.keyed_data_rows()`.
+
+This source has several names that need local FruitFacts normalization:
+`Pristine` becomes `Co-op 32`, `Pixie Crunch` becomes `Co-op 33`,
+`William's Pride` becomes `Williams' Pride`, and `Goldrush` becomes
+`GoldRush`. The source spelling is kept in each curated description. This is a
+good example of why name normalization belongs in source-specific scripts until
+there is a reviewed alias authority.
+
+## OSU HYG-1422 Blueberry Notes
+
+The Ohioline blueberry page has one cultivar table with headers `Cultivar`,
+`Ripening Season`, `Yield`, `Fruit Size`, `Fruit Quality`, and `Remarks`.
+It ends with a `Note:` row, which should not become a plant record. The helper
+script uses `table_tools.keyed_data_rows()` to drop that row after converting
+the table to dictionaries.
+
+The source gives relative ratings rather than measured yield or fruit-size
+values. The curated reference keeps those ratings in descriptions and preserves
+the vague season values as `harvest_time_unparsed`.
+
 ## OSU HYG-1423 Grape Notes
 
 The Ohioline grape page has several HTML tables where the first row is a table
