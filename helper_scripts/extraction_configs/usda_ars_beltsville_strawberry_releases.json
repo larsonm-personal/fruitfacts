@@ -1,0 +1,65 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/genetic-improvement-for-fruits-vegetables-laboratory/docs/strawberry-releases/"
+  },
+  "reference_fields": [
+    ["title", "USDA ARS Beltsville Strawberry Releases"],
+    ["author", "USDA Agricultural Research Service, Genetic Improvement for Fruits and Vegetables Laboratory"],
+    ["description", "USDA ARS Beltsville strawberry release page with recent cultivar records"],
+    ["url", "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/genetic-improvement-for-fruits-vegetables-laboratory/docs/strawberry-releases/"],
+    ["thumbnail", "website"],
+    ["accessed", "Jun 2026"],
+    ["type", "public breeding program list"],
+    ["ignore_for_nearby_searches", true],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "USDA ARS Beltsville Agricultural Research Center, Beltsville, Maryland",
+      "latitude": 39.033,
+      "longitude": -76.9
+    }
+  ],
+  "categories": [
+    {
+      "name": "Beltsville strawberry releases",
+      "description": "USDA ARS Beltsville lists these on its strawberry release page"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_paragraph_sequences",
+      "start_after_text": "New USDA Strawberry Releases",
+      "stop_patterns": ["^Commercial Endorsement Disclaimer"],
+      "default_category": "Beltsville strawberry releases",
+      "default_plant_type": "Strawberry",
+      "record_pattern": "^(?P<name>[A-Z][A-Za-z' ]+) - (?P<released>\\d{4})(?: (?P<patent>PP[\\d,]+))?$",
+      "field_patterns": [
+        {
+          "pattern": "^Season: (?P<season>.+)$"
+        },
+        {
+          "pattern": "^Description of fruit: (?P<fruit_description>.+)$"
+        }
+      ],
+      "required_row_keys": ["fruit_description"],
+      "dedupe_keys": ["name", "category"],
+      "record_fields": [
+        ["released", {"template": "USDA ARS Beltsville {released}*"}],
+        ["patent", {"row_key": "patent"}]
+      ],
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["season", "Season/adaptation"],
+            ["fruit_description", "Fruit description"]
+          ]
+        }
+      ],
+      "harvest_from_key": "season",
+      "harvest_terms": ["season"]
+    }
+  ]
+}

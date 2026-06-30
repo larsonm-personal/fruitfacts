@@ -1,0 +1,52 @@
+{
+    title: "USDA ARS Beltsville Strawberry Releases",
+    author: "USDA Agricultural Research Service, Genetic Improvement for Fruits and Vegetables Laboratory",
+    description: "USDA ARS Beltsville strawberry release page with recent cultivar records",
+    url: "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/genetic-improvement-for-fruits-vegetables-laboratory/docs/strawberry-releases/",
+    thumbnail: "website",
+    accessed: "Jun 2026",
+    type: "public breeding program list",
+    ignore_for_nearby_searches: true,
+    needs_help: true,
+    locations: [
+        {
+            name: "USDA ARS Beltsville Agricultural Research Center, Beltsville, Maryland",
+            latitude: 39.033,
+            longitude: -76.9
+        },
+    ],
+    categories: [
+        {
+            name: "Beltsville strawberry releases",
+            description: "USDA ARS Beltsville lists these on its strawberry release page"
+        },
+    ],
+    plants: [
+        {
+            type: "Strawberry",
+            name: "Cordial",
+            category: "Beltsville strawberry releases",
+            released: "USDA ARS Beltsville 2021*",
+            patent: "PP33,636",
+            harvest_time_unparsed: "late-season, short-day Adaptation: Mid-Atlantic US.",
+            description: "Season/adaptation: late-season, short-day Adaptation: Mid-Atlantic US. Tested well in annual black plasticulture, but not yet tested in traditional matted row production systems. Fruit description: 'Cordial' follows 'Keepsake' as the second cultivar resulting from a USDA-ARS effort at Beltsville, MD, to develop strawberries with increased shelf life. 'Cordial' and 'Keepsake' strawberries had similarly low proportions of rot and degradation in two weeks of refrigerated storage, compared with other cultivars and breeding selections. 'Cordial' has consistently provided very high yields and very low rot with no fumigation or fungicides in annual plasticulture at Beltsville, MD. 'Cordial' strawberries are large and attractive, quite firm, and tough enough for handling. The name, 'Cordial', is in reference to the flavor being \"friendly\", and not tart, even in rainy weather. 'Cordial' is expected to be adapted to the Mid-Atlantic and regions with similar climate"
+        },
+        {
+            type: "Strawberry",
+            name: "Keepsake",
+            category: "Beltsville strawberry releases",
+            released: "USDA ARS Beltsville 2019*",
+            patent: "PP30,578",
+            harvest_time_unparsed: "mid-season, short-day Adaptation: Mid-Atlantic and Northeast US into Southern Canada.",
+            description: "Season/adaptation: mid-season, short-day Adaptation: Mid-Atlantic and Northeast US into Southern Canada. Tested well in annual black plasticulture and traditional matted row production systems. Fruit description: 'Keepsake', trialed as B1806, is the first cultivar resulting from a USDA-ARS effort at Beltsville, MD, to develop strawberries with increased shelf life. Compared with other current cultivars and breeding selections evaluated after two weeks in cold storage, 'Keepsake' strawberries had a lower proportion of degraded fruits and low rot. The fruits have outstanding flavor with high percent soluble solids and moderate acidity. They have a pleasing texture and are juicy when eaten. 'Keepsake' has consistently provided competitive yields and low field rot with no fumigation or fungicides in annual plasticulture at Beltsville, MD. 'Keepsake' fruit are attractive with good size, color, gloss, and a showy calyx. They are quite firm, and tough enough for handling. 'Keepsake' was named for its exceptional quality and shelf life"
+        },
+        {
+            type: "Strawberry",
+            name: "Flavorfest",
+            category: "Beltsville strawberry releases",
+            released: "USDA ARS Beltsville 2012*",
+            harvest_time_unparsed: "long mid-season, short-day Adaptation: Mid-Atlantic US and similar regions.",
+            description: "Season/adaptation: long mid-season, short-day Adaptation: Mid-Atlantic US and similar regions. Tested well in annual black plasticulture and traditional matted row production systems. Fruit description: 'Flavorfest' was trialed as B1033 and has consistently performed as a top-yielding, large-fruited selection in the plasticulture production system at Beltsville, MD. 'Flavorfest' fruit have excellent flavor, are large, bright red, and appear distinctively plump. Fruiting season in plasticulture is similar to that of 'Chandler,' in that it is longer than most other cultivars and peaks at the same time. 'Flavorfest' has shown no susceptibility to anthracnose crown and fruit rot in the Beltsville fields. 'Flavorfest' is resistant or tolerant to most of the stem and leaf diseases. Percentage of 'Flavorfest' fruits showing Botrytis fruit rot, when harvested from untreated fields, is similar to or lower than other currently available mid-season cultivars grown in the Mid-Atlantic"
+        },
+    ]
+}

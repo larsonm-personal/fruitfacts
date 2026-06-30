@@ -117,6 +117,14 @@
             "config": "extraction_configs/uwisc_a2582_southern_tree_stone_fruit.json"
         },
         {
+            "id": "usda_ars_beltsville_blueberry_releases",
+            "config": "extraction_configs/usda_ars_beltsville_blueberry_releases.json"
+        },
+        {
+            "id": "usda_ars_beltsville_strawberry_releases",
+            "config": "extraction_configs/usda_ars_beltsville_strawberry_releases.json"
+        },
+        {
             "id": "usda_ars_poplarville_plant_releases",
             "config": "extraction_configs/usda_ars_poplarville_plant_releases.json"
         },

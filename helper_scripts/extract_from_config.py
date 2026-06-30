@@ -431,6 +431,10 @@ def plant_records_from_config_rows(rows, extractor, overrides, lookups):
         )
         for key, value in extra_fields.items():
             record[key] = value
+        for key, spec in pairs(extractor.get("record_fields", [])):
+            value = resolved_value(spec, row)
+            if value:
+                record[key] = value
         harvest = harvest_time(row, extractor, lookups)
         if harvest:
             record["harvest_time_unparsed"] = harvest
@@ -1140,6 +1144,220 @@ def plants_from_quoted_releases(page, extractor, overrides, lookups):
     return plant_records_from_config_rows(rows, extractor, overrides, lookups)
 
 
+def link_matches(text, href, extractor):
+    if not text:
+        return False
+    if extractor.get("link_text_pattern") and not re.match(
+        extractor["link_text_pattern"],
+        text,
+    ):
+        return False
+    if extractor.get("link_url_contains") and extractor["link_url_contains"] not in href:
+        return False
+    if text in set(extractor.get("skip_link_texts", [])):
+        return False
+    return True
+
+
+def child_text_candidates(page):
+    for tag, text in page.blocks:
+        yield tag, text
+    for table_index, table in enumerate(page.tables):
+        for row_index, row in enumerate(table):
+            for cell_index, cell in enumerate(row):
+                yield "table", cell
+
+
+def child_description_candidate(text, extractor):
+    if len(text) < extractor.get("min_description_length", 160):
+        return False
+    for prefix in extractor.get("description_skip_prefixes", []):
+        if text.startswith(prefix):
+            return False
+    if line_matches_any(text, extractor.get("description_skip_patterns", [])):
+        return False
+    patterns = extractor.get("description_candidate_patterns", [])
+    if patterns and not line_matches_any(text, patterns):
+        return False
+    return True
+
+
+def row_pattern(pattern, row):
+    source_name = row.get("source_name") or row.get("name") or ""
+    return (
+        pattern.replace("{name}", re.escape(source_name))
+        .replace("{upper_name}", re.escape(source_name.upper()))
+    )
+
+
+def trim_child_description(text, row, extractor):
+    for pattern in extractor.get("description_start_patterns", []):
+        match = re.search(row_pattern(pattern, row), text)
+        if match:
+            return text[match.start() :].strip()
+    return text
+
+
+def limited_description(text, extractor):
+    sentence_count = extractor.get("max_description_sentences")
+    if sentence_count:
+        sentences = split_sentences(text)
+        text = " ".join(sentences[:sentence_count])
+    max_length = extractor.get("max_description_length")
+    if max_length and len(text) > max_length:
+        end = max(
+            text.rfind(".", 0, max_length),
+            text.rfind("?", 0, max_length),
+            text.rfind("!", 0, max_length),
+        )
+        if end > max_length * 0.6:
+            text = text[: end + 1]
+        else:
+            text = text[:max_length].rsplit(" ", 1)[0].rstrip(",;")
+    return text
+
+
+def child_description(row, child_page, extractor):
+    candidates = [
+        text
+        for _, text in child_text_candidates(child_page)
+        if child_description_candidate(text, extractor)
+    ]
+    if not candidates:
+        return None
+    description_value = max(candidates, key=len)
+    description_value = trim_child_description(description_value, row, extractor)
+    return limited_description(description_value, extractor)
+
+
+def linked_child_release_rows(page, extractor):
+    rows = []
+    seen = set()
+    for text, href in page.links:
+        text = clean_text(text)
+        if not link_matches(text, href, extractor):
+            continue
+        if text in seen:
+            continue
+        seen.add(text)
+        row = {
+            "name": text,
+            "source_name": text,
+            "child_url": href,
+            "category": extractor.get("default_category"),
+            "plant_type": extractor.get("default_plant_type"),
+        }
+        child_page = fetch_html_page(href)
+        description_value = child_description(row, child_page, extractor)
+        if not description_value and extractor.get("name_only_description_template"):
+            description_value = format_template(
+                extractor["name_only_description_template"],
+                row,
+                extractor,
+            )
+        if description_value:
+            row["description"] = description_value
+        rows.append(row)
+    return rows
+
+
+def plants_from_linked_child_releases(page, extractor, overrides, lookups):
+    extractor = {
+        "name_key": "name",
+        "description_key": "description",
+        "category": {"row_key": "category"},
+        "plant_type": {"row_key": "plant_type"},
+        **extractor,
+    }
+    rows = linked_child_release_rows(page, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
+    return plant_records_from_config_rows(rows, extractor, overrides, lookups)
+
+
+def paragraph_record_match(text, extractor):
+    match = re.match(extractor["record_pattern"], text)
+    if not match:
+        return None
+    row = {key: value for key, value in match.groupdict().items() if value}
+    if not row.get(extractor.get("name_key", "name")):
+        return None
+    row["source_heading"] = text
+    return row
+
+
+def apply_paragraph_field(row, text, extractor):
+    for field in extractor.get("field_patterns", []):
+        match = re.match(field["pattern"], text)
+        if not match:
+            continue
+        for key, value in match.groupdict().items():
+            if not value:
+                continue
+            if row.get(key) and field.get("append", True):
+                row[key] = row[key] + " " + value.strip()
+            else:
+                row[key] = value.strip()
+        return True
+    description_key = extractor.get("unmatched_paragraph_key")
+    if description_key:
+        if row.get(description_key):
+            row[description_key] = row[description_key] + " " + text
+        else:
+            row[description_key] = text
+        return True
+    return False
+
+
+def paragraph_sequence_rows(page, extractor):
+    rows = []
+    current = None
+    started = not extractor.get("start_after_text")
+    for tag, text in page.blocks:
+        if not started:
+            if text == extractor["start_after_text"]:
+                started = True
+            continue
+        if tag.startswith("h") and text in extractor.get("stop_headings", []):
+            break
+        if line_matches_any(text, extractor.get("stop_patterns", [])):
+            break
+        if tag in extractor.get("record_tags", ["p"]):
+            row = paragraph_record_match(text, extractor)
+            if row:
+                if current:
+                    rows.append(current)
+                current = row
+                current.setdefault("category", extractor.get("default_category"))
+                current.setdefault("plant_type", extractor.get("default_plant_type"))
+                continue
+        if current and tag in extractor.get("field_tags", ["p"]):
+            apply_paragraph_field(current, text, extractor)
+    if current:
+        rows.append(current)
+    required_keys = set(extractor.get("required_row_keys", []))
+    if required_keys:
+        rows = [row for row in rows if all(row.get(key) for key in required_keys)]
+    return rows
+
+
+def plants_from_paragraph_sequences(page, extractor, overrides, lookups):
+    extractor = {
+        "name_key": "name",
+        "category": {"row_key": "category"},
+        "plant_type": {"row_key": "plant_type"},
+        **extractor,
+    }
+    rows = paragraph_sequence_rows(page, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
+    return plant_records_from_config_rows(rows, extractor, overrides, lookups)
+
+
 def build_lookups(data, config):
     lookups = {}
     for lookup in config.get("lookups", []):
@@ -1212,6 +1430,12 @@ def extract(config):
             plants.extend(plants_from_inline_quoted_names(data, extractor, overrides, lookups))
         elif extractor["kind"] == "quoted_release_blocks":
             plants.extend(plants_from_quoted_releases(data, extractor, overrides, lookups))
+        elif extractor["kind"] == "html_linked_child_releases":
+            plants.extend(
+                plants_from_linked_child_releases(data, extractor, overrides, lookups)
+            )
+        elif extractor["kind"] == "html_paragraph_sequences":
+            plants.extend(plants_from_paragraph_sequences(data, extractor, overrides, lookups))
         else:
             raise ValueError("Unsupported extractor kind: " + extractor["kind"])
     return plants

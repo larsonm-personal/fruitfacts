@@ -24,6 +24,8 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
   - HTML block and table extraction with script/style noise skipped
   - Heading-bounded block slices for pages where useful source content sits
     between named sections
+  - Link capture alongside block and table parsing for index pages that point
+    to child cultivar records
 - `table_tools.py`
   - Simple table header normalization, title-row skipping, and table rows as
     dictionaries
@@ -71,6 +73,11 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
   - Heading-aware HTML list items and unheaded HTML name-matrix tables for
     extension pages where recommendations are nested under crop headings or
     displayed as compact cultivar grids
+  - Linked child-page release extraction for index pages whose useful cultivar
+    text lives in uneven child pages
+  - Sequential paragraph-record parsing for pages where a cultivar heading is
+    followed by labelled paragraphs such as season, adaptation, and fruit
+    description
   - Uses strict JSON config files under `helper_scripts/extraction_configs/`
     so the Python standard library can parse them
 - `extract_source.py`
@@ -118,6 +125,13 @@ script. The config runner currently supports:
   quoted-name merging
 - Layout-mode PDF line slicing for quoted-entry sections where only one
   extracted column should be parsed
+- HTML linked child-page release records where link text supplies the cultivar
+  name and the child page supplies release prose from either paragraphs or
+  table cells
+- HTML sequential paragraph records where a title paragraph starts the row and
+  following labelled paragraphs fill row fields
+- Configured `record_fields` for adding source values such as release year or
+  patent text after row extraction
 - HTML paragraph blocks where each useful paragraph starts with a quoted
   cultivar name
 - HTML paragraph blocks where each useful paragraph starts with `Name:`
@@ -254,6 +268,14 @@ Source-specific scripts should do:
   region headings collect several wrapped cultivar-list lines, while spacing
   columns and note rows are removed through config and repeated regional rows
   are merged after record creation
+- USDA ARS Beltsville blueberry releases: HTML release index where cultivar
+  links point to child pages with uneven layouts. The parser captures index
+  links and fetches child pages, then chooses useful release prose from either
+  paragraph blocks or table cells while falling back to name-only rows where
+  only performance tables are exposed.
+- USDA ARS Beltsville strawberry releases: sequential HTML paragraph records
+  where a cultivar heading contains release year and patent text, followed by
+  labelled season/adaptation and fruit-description paragraphs.
 
 ## Manifest Configs
 
@@ -342,6 +364,11 @@ narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
   different row interpretation.
 - If a source cell contains a regional caveat in parentheses, keep the cultivar
   name clean and move the caveat to a source note.
+- For official release indexes, child pages may put the release statement in a
+  table cell rather than a paragraph. A child-page parser should inspect both
+  block text and table cells before deciding the record is name-only.
+- For paragraph-sequence pages, keep record-start patterns strict enough that
+  links, video captions, and disclaimers cannot begin false cultivar rows.
 
 ## Next Library Steps
 

@@ -1,0 +1,65 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/genetic-improvement-for-fruits-vegetables-laboratory/docs/blueberry-releases/"
+  },
+  "reference_fields": [
+    ["title", "USDA ARS Beltsville Blueberry Releases"],
+    ["author", "USDA Agricultural Research Service, Genetic Improvement for Fruits and Vegetables Laboratory"],
+    ["description", "USDA ARS Beltsville blueberry release index with linked cultivar release pages"],
+    ["url", "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/genetic-improvement-for-fruits-vegetables-laboratory/docs/blueberry-releases/"],
+    ["thumbnail", "website"],
+    ["accessed", "Jun 2026"],
+    ["type", "public breeding program list"],
+    ["ignore_for_nearby_searches", true],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "USDA ARS Beltsville Agricultural Research Center, Beltsville, Maryland",
+      "latitude": 39.033,
+      "longitude": -76.9
+    }
+  ],
+  "categories": [
+    {
+      "name": "Beltsville blueberry releases",
+      "description": "USDA ARS Beltsville lists these on its blueberry release index"
+    }
+  ],
+  "name_overrides": {
+    "Blue Suede TM": {
+      "name": "Blue Suede",
+      "aka": ["Blue Suede TM"],
+      "note": "Source page names this as Blue Suede TM"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_linked_child_releases",
+      "default_category": "Beltsville blueberry releases",
+      "default_plant_type": "Blueberry",
+      "dedupe_keys": ["name", "category"],
+      "link_text_pattern": "^[A-Za-z][A-Za-z' -]+(?: TM)?$",
+      "link_url_contains": "docid=",
+      "min_description_length": 250,
+      "description_skip_prefixes": [
+        "Official websites use",
+        "Secure .gov websites use",
+        "Commercial Endorsement Disclaimer",
+        "For more information"
+      ],
+      "description_skip_patterns": [
+        "^\\d+ Color in the",
+        "^\\d+ Grams of force",
+        "^\\d+ Soluble solids"
+      ],
+      "description_start_patterns": [
+        "\\b{upper_name}\\b(?:,| is| was)",
+        "\\b{name}\\b(?:,| is| was)",
+        "\\bTH-682\\b"
+      ],
+      "name_only_description_template": "USDA ARS Beltsville lists {name} on its blueberry release index"
+    }
+  ]
+}

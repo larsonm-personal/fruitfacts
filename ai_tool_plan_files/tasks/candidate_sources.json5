@@ -2641,7 +2641,7 @@
         },
         {
             id: "usda-ars-beltsville-blueberry-releases",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Blueberry Releases",
             institution: "USDA Agricultural Research Service, Beltsville Agricultural Research Center",
@@ -2662,12 +2662,18 @@
             notes: [
                 "Found from USDA ARS release clues in existing National and North Carolina comments",
                 "Official release index may contain nested release links instead of a uniform table",
-                "Likely parsing issue: cultivar records may require following child pages and preserving release-program attribution"
+                "Likely parsing issue: cultivar records may require following child pages and preserving release-program attribution",
+                "Encoded in plant_database/references/National/USDA ARS Beltsville Blueberry Releases.json5",
+                "Config extraction added at helper_scripts/extraction_configs/usda_ars_beltsville_blueberry_releases.json",
+                "Manifest entry added as usda_ars_beltsville_blueberry_releases",
+                "Worked example for an HTML table/index where cultivar names are links to uneven child release pages",
+                "Parser now captures HTML links and can fetch linked child pages, choosing useful release text from either paragraph blocks or table cells",
+                "Current draft keeps name-only descriptions where ARS child pages expose only performance tables rather than release prose"
             ]
         },
         {
             id: "usda-ars-beltsville-strawberry-releases",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Strawberry Releases",
             institution: "USDA Agricultural Research Service, Beltsville Agricultural Research Center",
@@ -2688,7 +2694,13 @@
             notes: [
                 "Found by searching USDA ARS release names already noted in local blueberry and strawberry comments",
                 "Official release index is a web source with multiple cultivar records",
-                "Likely parsing issue: release names, dates, and descriptions are spread across page sections and child links"
+                "Likely parsing issue: release names, dates, and descriptions are spread across page sections and child links",
+                "Encoded in plant_database/references/National/USDA ARS Beltsville Strawberry Releases.json5",
+                "Config extraction added at helper_scripts/extraction_configs/usda_ars_beltsville_strawberry_releases.json",
+                "Manifest entry added as usda_ars_beltsville_strawberry_releases",
+                "Worked example for sequential HTML paragraph records where a cultivar heading is followed by labelled season and fruit-description paragraphs",
+                "Parser now supports configurable paragraph-sequence records and record_fields for values such as release year and patent text",
+                "Current draft covers the three cultivar records visible on the current ARS page"
             ]
         },
         {

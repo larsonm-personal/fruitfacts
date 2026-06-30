@@ -2,6 +2,7 @@
 
 from dataclasses import dataclass
 from html.parser import HTMLParser
+from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 
 from fruitfacts_extract.text_tools import DEFAULT_USER_AGENT, clean_text
@@ -11,6 +12,7 @@ from fruitfacts_extract.text_tools import DEFAULT_USER_AGENT, clean_text
 class HtmlPage:
     blocks: list
     tables: list
+    links: list
 
 
 class HtmlBlockTableParser(HTMLParser):
@@ -18,7 +20,9 @@ class HtmlBlockTableParser(HTMLParser):
         super().__init__()
         self.blocks = []
         self.tables = []
+        self.links = []
         self.current = None
+        self.current_link = None
         self.skip_depth = 0
         self.in_table = False
         self.current_row = None
@@ -31,6 +35,8 @@ class HtmlBlockTableParser(HTMLParser):
         if self.skip_depth:
             return
 
+        if tag == "a":
+            self.current_link = [dict(attrs).get("href", ""), []]
         if tag == "table":
             self.in_table = True
             self.tables.append([])
@@ -56,6 +62,13 @@ class HtmlBlockTableParser(HTMLParser):
         if self.skip_depth:
             return
 
+        if tag == "a" and self.current_link is not None:
+            href = self.current_link[0]
+            text = clean_text("".join(self.current_link[1]))
+            if href or text:
+                self.links.append((text, href))
+            self.current_link = None
+
         if self.in_table:
             if tag in ("th", "td") and self.current_cell is not None:
                 text = clean_text("".join(self.current_cell))
@@ -78,6 +91,8 @@ class HtmlBlockTableParser(HTMLParser):
     def handle_data(self, data):
         if self.skip_depth:
             return
+        if self.current_link is not None:
+            self.current_link[1].append(data)
         if self.current_cell is not None:
             self.current_cell.append(data)
         elif self.current:
@@ -89,7 +104,8 @@ def fetch_html_page(url, user_agent=DEFAULT_USER_AGENT, timeout=45):
     html = urlopen(request, timeout=timeout).read().decode("utf-8", "replace")
     parser = HtmlBlockTableParser()
     parser.feed(html)
-    return HtmlPage(blocks=parser.blocks, tables=parser.tables)
+    links = [(text, urljoin(url, href)) for text, href in parser.links]
+    return HtmlPage(blocks=parser.blocks, tables=parser.tables, links=links)
 
 
 def blocks_between_headings(blocks, start_heading, end_heading=None):
