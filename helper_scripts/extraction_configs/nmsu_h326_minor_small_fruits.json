@@ -1,0 +1,134 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://pubs.nmsu.edu/_h/H326/index.html"
+  },
+  "reference_fields": [
+    ["title", "Minor Small Fruit Crops for New Mexico Gardens"],
+    ["author", "Shengrui Yao"],
+    ["description", "NMSU Guide H-326 with New Mexico notes for currants, gooseberries, elderberries, bush cherries, sea buckthorn, and honeyberries"],
+    ["url", "https://pubs.nmsu.edu/_h/H326/index.html"],
+    ["thumbnail", "website"],
+    ["published", "Revised April 2019"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "NMSU Sustainable Agriculture Science Center at Alcalde, NM",
+      "latitude": 36.0889,
+      "longitude": -106.0583
+    },
+    {
+      "name": "NMSU Los Lunas Science Center, Los Lunas, NM",
+      "latitude": 34.772,
+      "longitude": -106.759
+    }
+  ],
+  "categories": [
+    {
+      "name": "Red currant cultivars noted for New Mexico gardens",
+      "description": "Red currant cultivars named in NMSU Guide H-326"
+    },
+    {
+      "name": "Black currant cultivars noted for New Mexico gardens",
+      "description": "Black currant cultivars named in NMSU Guide H-326"
+    },
+    {
+      "name": "Clove currant cultivars trialed at Alcalde",
+      "description": "Clove currants said by NMSU Guide H-326 to have produced well at the NMSU Alcalde Center trial"
+    },
+    {
+      "name": "Gooseberry cultivars noted for New Mexico gardens",
+      "description": "Gooseberry cultivars named in NMSU Guide H-326"
+    },
+    {
+      "name": "Elderberry varieties noted for New Mexico gardens",
+      "description": "Elderberry varieties named in NMSU Guide H-326"
+    },
+    {
+      "name": "Bush cherry cultivars described for New Mexico gardens",
+      "description": "Bush cherry cultivars described in NMSU Guide H-326"
+    }
+  ],
+  "name_overrides": {
+    "Hinomaki": {
+      "name": "Hinnomaki Red",
+      "note": "Source names this gooseberry Hinomaki"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "inline_quoted_names",
+      "start_heading": "Currants and Gooseberries",
+      "end_heading": "For More Information On Small Fruit Crops",
+      "strip_trailing_name_punctuation": true,
+      "dedupe_keys": ["plant_type", "name", "category"],
+      "paragraph_rules": [
+        {
+          "contains": "are two of the most popular red currants",
+          "names_before": "are two of the most popular red currants",
+          "plant_type": "Currant",
+          "category": "Red currant cultivars noted for New Mexico gardens"
+        },
+        {
+          "contains": "are some black currant cultivars",
+          "names_after": "are two of the most popular red currants, and",
+          "names_before": "are some black currant cultivars",
+          "plant_type": "Currant",
+          "category": "Black currant cultivars noted for New Mexico gardens"
+        },
+        {
+          "contains": "produced well at the NMSU Alcalde Center trial",
+          "names_after": "Red currant",
+          "names_before": "and 'Crandall'",
+          "plant_type": "Currant",
+          "category": "Red currant cultivars noted for New Mexico gardens"
+        },
+        {
+          "contains": "produced well at the NMSU Alcalde Center trial",
+          "names_after": "Red currant 'Rovada' and",
+          "names_before": ", which are clove currants",
+          "plant_type": "Currant",
+          "category": "Clove currant cultivars trialed at Alcalde"
+        },
+        {
+          "contains": "are popular gooseberries cultivars",
+          "names_after": "produced well at the NMSU Alcalde Center trial.",
+          "names_before": "are popular gooseberries cultivars",
+          "plant_type": "Gooseberry",
+          "category": "Gooseberry cultivars noted for New Mexico gardens"
+        },
+        {
+          "contains": "Popular varieties include",
+          "names_after": "Popular varieties include",
+          "names_before": ".",
+          "plant_type": "Elderberry",
+          "category": "Elderberry varieties noted for New Mexico gardens"
+        },
+        {
+          "contains": "the Romance series cultivars",
+          "names_after": "the Romance series cultivars:",
+          "names_before": ". The fruit quality",
+          "plant_type": "Sour Cherry",
+          "category": "Bush cherry cultivars described for New Mexico gardens"
+        },
+        {
+          "contains": "'Carmine Jewel' was the first release",
+          "names_after": "cultivars.",
+          "names_before": "was the first release",
+          "plant_type": "Sour Cherry",
+          "category": "Bush cherry cultivars described for New Mexico gardens"
+        }
+      ],
+      "description_parts": [
+        {
+          "kind": "key",
+          "key": "paragraph",
+          "rstrip_period": false
+        }
+      ]
+    }
+  ]
+}

@@ -191,6 +191,22 @@
         {
             "id": "vce_422_023_apples",
             "config": "extraction_configs/vce_422_023_apples.json"
+        },
+        {
+            "id": "vce_422_017_pears",
+            "config": "extraction_configs/vce_422_017_pears.json"
+        },
+        {
+            "id": "nmsu_h326_minor_small_fruits",
+            "config": "extraction_configs/nmsu_h326_minor_small_fruits.json"
+        },
+        {
+            "id": "nmsu_h310_fruits_nuts",
+            "config": "extraction_configs/nmsu_h310_fruits_nuts.json"
+        },
+        {
+            "id": "texas_am_eht_017_apples",
+            "config": "extraction_configs/texas_am_eht_017_apples.json"
         }
     ]
 }

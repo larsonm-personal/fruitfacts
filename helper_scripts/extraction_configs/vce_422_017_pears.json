@@ -1,0 +1,117 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/422/422-017/422-017.html"
+  },
+  "reference_fields": [
+    ["title", "Growing Pears in Virginia"],
+    ["author", "Richard Marini"],
+    ["description", "VCE pear guide with fire-blight-resistant European pear and Asian pear variety descriptions for Virginia gardeners"],
+    ["url", "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/422/422-017/422-017.html"],
+    ["thumbnail", "website"],
+    ["published", "September 14, 2020"],
+    ["reviewed", "November 2025"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Virginia Tech, Blacksburg, VA",
+      "latitude": 37.20248218528102,
+      "longitude": -80.5631271567992
+    }
+  ],
+  "categories": [
+    {
+      "name": "European pear varieties described for Virginia",
+      "description": "European pear varieties described in VCE 422-017 as having considerable fire blight resistance or use in Virginia"
+    },
+    {
+      "name": "Asian pear varieties described for Virginia",
+      "description": "Asian pear varieties described in VCE 422-017"
+    }
+  ],
+  "name_overrides": {
+    "Nitaka": {
+      "name": "Niitaka",
+      "note": "Source names this Asian pear Nitaka"
+    },
+    "Olympic": {
+      "name": "Korean Giant",
+      "note": "Source names this Asian pear Olympic"
+    },
+    "Shinseiki": {
+      "name": "Shinseiki",
+      "note": "Source gives English translation as Twentieth Century"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "quoted_paragraph_blocks",
+      "start_heading": "European Pears",
+      "end_heading": "Pollination",
+      "stop_at": {
+        "text": "Asian Pears. Asian pears vary in their resistance to fireblight, but most are susceptible to fireblight."
+      },
+      "default_category": "European pear varieties described for Virginia",
+      "plant_type": "Euro Pear",
+      "category": {"row_key": "category"},
+      "trim_name": true,
+      "harvest_key": "harvest_time_unparsed",
+      "harvest_terms": ["ripens"],
+      "row_text_fixes": {
+        "Waurtemburg'and": "Waurtemburg' and"
+      },
+      "description_parts": [
+        {
+          "kind": "key",
+          "key": "description",
+          "rstrip_period": false
+        }
+      ]
+    },
+    {
+      "kind": "quoted_paragraph_blocks",
+      "start_heading": "Pear Varieties",
+      "end_heading": "Pollination",
+      "start_after": {
+        "text": "Asian Pears. Asian pears vary in their resistance to fireblight, but most are susceptible to fireblight."
+      },
+      "default_category": "Asian pear varieties described for Virginia",
+      "plant_type": "Asian Pear",
+      "category": {"row_key": "category"},
+      "trim_name": true,
+      "harvest_key": "harvest_time_unparsed",
+      "harvest_terms": ["ripens"],
+      "row_text_fixes": {
+        "sur- face": "surface"
+      },
+      "row_splits": [
+        {
+          "match": {
+            "name": "Kosui"
+          },
+          "rows": [
+            {
+              "name": "Kosui",
+              "description": "This variety is a hybrid of 'Kikusui' x 'Wasekozo' and was released in 1959 by the National Horticultural Research Station, Tsukuba, Japan. The fruit is medium in size, and the surface is yellow-bronze with russet. The flesh is crisp, very sweet, juicy, and has low acid."
+            },
+            {
+              "name": "Hosui",
+              "description": "This variety is a hybrid of 'Kikusui' x 'Yakumo' and was released in 1972 by the National Horticultural Research Station, Tsukuba, Japan. The fruit is large and round globular in shape. The skin is solid russet and golden with pronounced lenticels. The flesh is off-white sweet, mild, crisp, and juicy. There is a little acid, which gives it a fairly complex flavor. Fruits store about 4 weeks."
+            }
+          ],
+          "source_note": "Source HTML extraction combines Kosui and Hosui in one paragraph"
+        }
+      ],
+      "description_parts": [
+        {
+          "kind": "key",
+          "key": "description",
+          "rstrip_period": false
+        }
+      ]
+    }
+  ]
+}

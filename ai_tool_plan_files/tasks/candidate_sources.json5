@@ -1877,7 +1877,7 @@
         },
         {
             id: "nmsu-fruits-nuts-new-mexico-orchards-h310",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Fruits and Nuts for New Mexico Orchards",
             institution: "New Mexico State University Cooperative Extension Service",
@@ -1913,12 +1913,16 @@
             notes: [
                 "Found by searching the NMSU publication family after existing New Mexico trial and grape references surfaced locally",
                 "HTML and PDF versions are both official NMSU publication endpoints",
-                "Likely parsing issue: species sections mix recommended cultivars, climate notes, and rootstock or site advice in prose"
+                "Likely parsing issue: species sections mix recommended cultivars, climate notes, and rootstock or site advice in prose",
+                "Encoded in plant_database/references/New Mexico/NMSU H-310 Fruits and Nuts for New Mexico Orchards.json5",
+                "Config extraction added at helper_scripts/extraction_configs/nmsu_h310_fruits_nuts.json",
+                "Manifest entry added as nmsu_h310_fruits_nuts",
+                "Worked example for inline quoted-name extraction from crop prose with source-local slices, internal apostrophes in names, and alias exclusions"
             ]
         },
         {
             id: "nmsu-minor-small-fruit-crops-new-mexico-h326",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Minor Small Fruit Crops for New Mexico Gardens",
             institution: "New Mexico State University Cooperative Extension Service",
@@ -1947,7 +1951,11 @@
             notes: [
                 "Found alongside NMSU H-310 during targeted NMSU publication searches",
                 "Official HTML guide has a print-friendly PDF link",
-                "Likely parsing issue: cultivar recommendations are nested under crop-specific cultural notes rather than a uniform table"
+                "Likely parsing issue: cultivar recommendations are nested under crop-specific cultural notes rather than a uniform table",
+                "Encoded in plant_database/references/New Mexico/NMSU H-326 Minor Small Fruit Crops for New Mexico Gardens.json5",
+                "Config extraction added at helper_scripts/extraction_configs/nmsu_h326_minor_small_fruits.json",
+                "Manifest entry added as nmsu_h326_minor_small_fruits",
+                "Worked example for extracting several crop categories from one dense quoted-name prose paragraph"
             ]
         },
         {
@@ -2171,13 +2179,13 @@
         },
         {
             id: "texas-am-apples-eht-016",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Texas Fruit and Nut Production: Apples",
             institution: "Texas A&M AgriLife Extension",
             region: "Texas",
             crops: ["Apple"],
-            publication_number: "EHT-016",
+            publication_number: "EHT-017",
             source_type: "state extension guide",
             landing_url:
                 "https://agrilifeextension.tamu.edu/asset-external/texas-fruit-and-nut-production-apples/",
@@ -2189,13 +2197,18 @@
                 "Texas AgriLife apple guide with adapted regions, variety lists, rootstock selection, and harvest context",
             asset_decision: "download and stub",
             proposed_reference_path:
-                "plant_database/references/Texas/Texas A&M EHT-016 Apples.json5",
+                "plant_database/references/Texas/Texas A&M EHT-017 Apples.json5",
             duplicate_check:
                 "Existing Texas references include peaches, persimmons, and the E-612 Prunus sheet, but not apples",
             notes: [
                 "Found by searching companion publications in the Texas Fruit and Nut Production series already represented by E-612",
                 "Official AgriLife landing page and Aggie Horticulture PDF were both discovered",
-                "Likely parsing issue: PDF uses production-guide prose with cultivar lists embedded in regional discussion"
+                "Likely parsing issue: PDF uses production-guide prose with cultivar lists embedded in regional discussion",
+                "Candidate was first queued as EHT-016, but the source PDF is labeled EHT-017 1-14",
+                "Encoded in plant_database/references/Texas/Texas A&M EHT-017 Apples.json5",
+                "Config extraction added at helper_scripts/extraction_configs/texas_am_eht_017_apples.json",
+                "Manifest entry added as texas_am_eht_017_apples",
+                "Worked example for PDF marker-list extraction with wrapped quote cleanup and names containing internal apostrophes"
             ]
         },
         {
@@ -2229,7 +2242,7 @@
         },
         {
             id: "vce-growing-pears-virginia-422-017",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Pears in Virginia",
             institution: "Virginia Cooperative Extension",
@@ -2251,7 +2264,11 @@
             notes: [
                 "Found from a Fairfax Master Gardener pear handout reference list, then verified on the official VCE publication page",
                 "Companion publication to already encoded VCE 422-series fruit guides",
-                "Likely parsing issue: variety descriptions are prose paragraphs under European and Asian pear headings"
+                "Likely parsing issue: variety descriptions are prose paragraphs under European and Asian pear headings",
+                "Encoded in plant_database/references/Virginia/VCE 422-017 Growing Pears in Virginia.json5",
+                "Config extraction added at helper_scripts/extraction_configs/vce_422_017_pears.json",
+                "Manifest entry added as vce_422_017_pears",
+                "Worked example for quoted HTML cultivar paragraphs split by prose markers and declarative row splits"
             ]
         },
         {

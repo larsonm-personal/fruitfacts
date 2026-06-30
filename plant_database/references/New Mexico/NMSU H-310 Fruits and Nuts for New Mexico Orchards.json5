@@ -1,0 +1,436 @@
+{
+    title: "Fruits and Nuts for New Mexico Orchards",
+    author: "Shengrui Yao and Richard Heerema",
+    description: "NMSU Guide H-310 with New Mexico tree-fruit and nut crop adaptation notes and cultivar recommendations",
+    url: "https://pubs.nmsu.edu/_h/H310/index.html",
+    thumbnail: "website",
+    published: "Revised August 2014",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "NMSU Sustainable Agriculture Science Center at Alcalde, NM",
+            latitude: 36.0889,
+            longitude: -106.0583
+        },
+    ],
+    categories: [
+        {
+            name: "Japanese plum varieties noted as tolerant in New Mexico",
+            description: "Japanese plum varieties NMSU Guide H-310 names as self-fruiting or frost-tolerant"
+        },
+        {
+            name: "European plum varieties recommended for northern New Mexico",
+            description: "European plum varieties recommended by NMSU Guide H-310 for northern New Mexico and high elevations"
+        },
+        {
+            name: "Peach varieties recommended for central and northern New Mexico",
+            description: "Peach varieties recommended by NMSU Guide H-310 for central and northern New Mexico"
+        },
+        {
+            name: "Sour cherry varieties noted for northern New Mexico",
+            description: "Sour cherry varieties named by NMSU Guide H-310 for northern New Mexico"
+        },
+        {
+            name: "Apple varieties recommended for central and northern New Mexico",
+            description: "Apple varieties recommended by NMSU Guide H-310 for central and northern New Mexico"
+        },
+        {
+            name: "Apple varieties noted for southern New Mexico",
+            description: "Apple varieties NMSU Guide H-310 says do better in the southern half of New Mexico"
+        },
+        {
+            name: "European pear varieties suggested for New Mexico",
+            description: "European pear varieties suggested by NMSU Guide H-310 for New Mexico"
+        },
+        {
+            name: "Asian pear varieties grown successfully in New Mexico backyards",
+            description: "Asian pear varieties NMSU Guide H-310 says have been grown successfully in New Mexico backyards"
+        },
+        {
+            name: "Table grape varieties recommended for northern New Mexico",
+            description: "Table grape varieties recommended by NMSU Guide H-310 for northern New Mexico"
+        },
+        {
+            name: "Fig varieties noted for New Mexico",
+            description: "Fig varieties NMSU Guide H-310 says can be grown in New Mexico"
+        },
+        {
+            name: "Pecan varieties noted for New Mexico orchards",
+            description: "Pecan varieties named by NMSU Guide H-310 for New Mexico orchards"
+        },
+        {
+            name: "Jujube varieties noted for New Mexico",
+            description: "Jujube varieties named by NMSU Guide H-310 for New Mexico"
+        },
+    ],
+    plants: [
+        {
+            type: "Japanese Plum",
+            name: "Methley",
+            category: "Japanese plum varieties noted as tolerant in New Mexico",
+            description: "Japanese plums flower about the same time as apricots, but young fruits are a little more cold-tolerant, and production is more reliable in southern areas of the state. It is hard to get a crop of Japanese plums in northern New Mexico. Most varieties need cross pollination (two different varieties need to be planted). 'Methley' is self-fruiting (can pollinate itself) and more frost-tolerant than most varieties. Other tolerant varieties are 'Santa Rosa' and 'Satsuma'. Two hybrids that are reliable are 'Gold' and 'Sepa'. Japanese plums are short-lived and frequently chlorotic (iron deficient) in New Mexico because of high soil pH."
+        },
+        {
+            type: "Japanese Plum",
+            name: "Santa Rosa",
+            category: "Japanese plum varieties noted as tolerant in New Mexico",
+            description: "Japanese plums flower about the same time as apricots, but young fruits are a little more cold-tolerant, and production is more reliable in southern areas of the state. It is hard to get a crop of Japanese plums in northern New Mexico. Most varieties need cross pollination (two different varieties need to be planted). 'Methley' is self-fruiting (can pollinate itself) and more frost-tolerant than most varieties. Other tolerant varieties are 'Santa Rosa' and 'Satsuma'. Two hybrids that are reliable are 'Gold' and 'Sepa'. Japanese plums are short-lived and frequently chlorotic (iron deficient) in New Mexico because of high soil pH."
+        },
+        {
+            type: "Japanese Plum",
+            name: "Satsuma",
+            category: "Japanese plum varieties noted as tolerant in New Mexico",
+            description: "Japanese plums flower about the same time as apricots, but young fruits are a little more cold-tolerant, and production is more reliable in southern areas of the state. It is hard to get a crop of Japanese plums in northern New Mexico. Most varieties need cross pollination (two different varieties need to be planted). 'Methley' is self-fruiting (can pollinate itself) and more frost-tolerant than most varieties. Other tolerant varieties are 'Santa Rosa' and 'Satsuma'. Two hybrids that are reliable are 'Gold' and 'Sepa'. Japanese plums are short-lived and frequently chlorotic (iron deficient) in New Mexico because of high soil pH."
+        },
+        {
+            type: "Euro Plum",
+            name: "Early Blue",
+            category: "European plum varieties recommended for northern New Mexico",
+            description: "European plums (the blue/purple ones in general; Figure 1) flower later than Japanese types and more frequently escape frost injury. They are recommended for northern New Mexico and high elevations. Recommended varieties are 'Early Blue', 'Castleton', and 'Stanley'. In general, their performance has been poor in southern New Mexico."
+        },
+        {
+            type: "Euro Plum",
+            name: "Castleton",
+            category: "European plum varieties recommended for northern New Mexico",
+            description: "European plums (the blue/purple ones in general; Figure 1) flower later than Japanese types and more frequently escape frost injury. They are recommended for northern New Mexico and high elevations. Recommended varieties are 'Early Blue', 'Castleton', and 'Stanley'. In general, their performance has been poor in southern New Mexico."
+        },
+        {
+            type: "Euro Plum",
+            name: "Stanley",
+            category: "European plum varieties recommended for northern New Mexico",
+            description: "European plums (the blue/purple ones in general; Figure 1) flower later than Japanese types and more frequently escape frost injury. They are recommended for northern New Mexico and high elevations. Recommended varieties are 'Early Blue', 'Castleton', and 'Stanley'. In general, their performance has been poor in southern New Mexico."
+        },
+        {
+            type: "Peach",
+            name: "PF 1",
+            category: "Peach varieties recommended for central and northern New Mexico",
+            description: "Peach trees are short-lived in all areas of New Mexico, with an average life of 10-15 years. Painting the trunks with exterior white latex paint or kaolin clay to reflect the winter sun reduces sunscald and prolongs life (this also applies to other fruit/nut species). Annual pruning (to promote compact trees) protects the main branches from burning. Iron deficiency may be a problem, especially on sandy soils. Peaches flower about two weeks before apples. Full crops should be expected once every three to five years. Based on a variety trial at Alcalde, NM, 'Sureprince', 'Challenger', and 'Saturn' were the earliest to bloom, while 'China Pearl' (Figure 2), 'Encore', 'Intrepid', and 'Risingstar' were the late bloomers among the 20 varieties tested. Overall, 'PF-1', 'Surecrop', 'Blazingstar', 'Intrepid', 'Contender', 'Blushingstar', 'China Pearl', and 'Encore' are recommended for central and northern New Mexico. Source names this peach PF-1"
+        },
+        {
+            type: "Peach",
+            name: "Surecrop",
+            category: "Peach varieties recommended for central and northern New Mexico",
+            description: "Peach trees are short-lived in all areas of New Mexico, with an average life of 10-15 years. Painting the trunks with exterior white latex paint or kaolin clay to reflect the winter sun reduces sunscald and prolongs life (this also applies to other fruit/nut species). Annual pruning (to promote compact trees) protects the main branches from burning. Iron deficiency may be a problem, especially on sandy soils. Peaches flower about two weeks before apples. Full crops should be expected once every three to five years. Based on a variety trial at Alcalde, NM, 'Sureprince', 'Challenger', and 'Saturn' were the earliest to bloom, while 'China Pearl' (Figure 2), 'Encore', 'Intrepid', and 'Risingstar' were the late bloomers among the 20 varieties tested. Overall, 'PF-1', 'Surecrop', 'Blazingstar', 'Intrepid', 'Contender', 'Blushingstar', 'China Pearl', and 'Encore' are recommended for central and northern New Mexico."
+        },
+        {
+            type: "Peach",
+            name: "FA 12",
+            category: "Peach varieties recommended for central and northern New Mexico",
+            description: "Peach trees are short-lived in all areas of New Mexico, with an average life of 10-15 years. Painting the trunks with exterior white latex paint or kaolin clay to reflect the winter sun reduces sunscald and prolongs life (this also applies to other fruit/nut species). Annual pruning (to promote compact trees) protects the main branches from burning. Iron deficiency may be a problem, especially on sandy soils. Peaches flower about two weeks before apples. Full crops should be expected once every three to five years. Based on a variety trial at Alcalde, NM, 'Sureprince', 'Challenger', and 'Saturn' were the earliest to bloom, while 'China Pearl' (Figure 2), 'Encore', 'Intrepid', and 'Risingstar' were the late bloomers among the 20 varieties tested. Overall, 'PF-1', 'Surecrop', 'Blazingstar', 'Intrepid', 'Contender', 'Blushingstar', 'China Pearl', and 'Encore' are recommended for central and northern New Mexico. Source names this peach Blazingstar"
+        },
+        {
+            type: "Peach",
+            name: "Intrepid",
+            category: "Peach varieties recommended for central and northern New Mexico",
+            description: "Peach trees are short-lived in all areas of New Mexico, with an average life of 10-15 years. Painting the trunks with exterior white latex paint or kaolin clay to reflect the winter sun reduces sunscald and prolongs life (this also applies to other fruit/nut species). Annual pruning (to promote compact trees) protects the main branches from burning. Iron deficiency may be a problem, especially on sandy soils. Peaches flower about two weeks before apples. Full crops should be expected once every three to five years. Based on a variety trial at Alcalde, NM, 'Sureprince', 'Challenger', and 'Saturn' were the earliest to bloom, while 'China Pearl' (Figure 2), 'Encore', 'Intrepid', and 'Risingstar' were the late bloomers among the 20 varieties tested. Overall, 'PF-1', 'Surecrop', 'Blazingstar', 'Intrepid', 'Contender', 'Blushingstar', 'China Pearl', and 'Encore' are recommended for central and northern New Mexico."
+        },
+        {
+            type: "Peach",
+            name: "Contender",
+            category: "Peach varieties recommended for central and northern New Mexico",
+            description: "Peach trees are short-lived in all areas of New Mexico, with an average life of 10-15 years. Painting the trunks with exterior white latex paint or kaolin clay to reflect the winter sun reduces sunscald and prolongs life (this also applies to other fruit/nut species). Annual pruning (to promote compact trees) protects the main branches from burning. Iron deficiency may be a problem, especially on sandy soils. Peaches flower about two weeks before apples. Full crops should be expected once every three to five years. Based on a variety trial at Alcalde, NM, 'Sureprince', 'Challenger', and 'Saturn' were the earliest to bloom, while 'China Pearl' (Figure 2), 'Encore', 'Intrepid', and 'Risingstar' were the late bloomers among the 20 varieties tested. Overall, 'PF-1', 'Surecrop', 'Blazingstar', 'Intrepid', 'Contender', 'Blushingstar', 'China Pearl', and 'Encore' are recommended for central and northern New Mexico."
+        },
+        {
+            type: "Peach",
+            name: "FA 18",
+            category: "Peach varieties recommended for central and northern New Mexico",
+            description: "Peach trees are short-lived in all areas of New Mexico, with an average life of 10-15 years. Painting the trunks with exterior white latex paint or kaolin clay to reflect the winter sun reduces sunscald and prolongs life (this also applies to other fruit/nut species). Annual pruning (to promote compact trees) protects the main branches from burning. Iron deficiency may be a problem, especially on sandy soils. Peaches flower about two weeks before apples. Full crops should be expected once every three to five years. Based on a variety trial at Alcalde, NM, 'Sureprince', 'Challenger', and 'Saturn' were the earliest to bloom, while 'China Pearl' (Figure 2), 'Encore', 'Intrepid', and 'Risingstar' were the late bloomers among the 20 varieties tested. Overall, 'PF-1', 'Surecrop', 'Blazingstar', 'Intrepid', 'Contender', 'Blushingstar', 'China Pearl', and 'Encore' are recommended for central and northern New Mexico. Source names this peach Blushingstar"
+        },
+        {
+            type: "Peach",
+            name: "China Pearl",
+            category: "Peach varieties recommended for central and northern New Mexico",
+            description: "Peach trees are short-lived in all areas of New Mexico, with an average life of 10-15 years. Painting the trunks with exterior white latex paint or kaolin clay to reflect the winter sun reduces sunscald and prolongs life (this also applies to other fruit/nut species). Annual pruning (to promote compact trees) protects the main branches from burning. Iron deficiency may be a problem, especially on sandy soils. Peaches flower about two weeks before apples. Full crops should be expected once every three to five years. Based on a variety trial at Alcalde, NM, 'Sureprince', 'Challenger', and 'Saturn' were the earliest to bloom, while 'China Pearl' (Figure 2), 'Encore', 'Intrepid', and 'Risingstar' were the late bloomers among the 20 varieties tested. Overall, 'PF-1', 'Surecrop', 'Blazingstar', 'Intrepid', 'Contender', 'Blushingstar', 'China Pearl', and 'Encore' are recommended for central and northern New Mexico."
+        },
+        {
+            type: "Peach",
+            name: "Encore",
+            category: "Peach varieties recommended for central and northern New Mexico",
+            description: "Peach trees are short-lived in all areas of New Mexico, with an average life of 10-15 years. Painting the trunks with exterior white latex paint or kaolin clay to reflect the winter sun reduces sunscald and prolongs life (this also applies to other fruit/nut species). Annual pruning (to promote compact trees) protects the main branches from burning. Iron deficiency may be a problem, especially on sandy soils. Peaches flower about two weeks before apples. Full crops should be expected once every three to five years. Based on a variety trial at Alcalde, NM, 'Sureprince', 'Challenger', and 'Saturn' were the earliest to bloom, while 'China Pearl' (Figure 2), 'Encore', 'Intrepid', and 'Risingstar' were the late bloomers among the 20 varieties tested. Overall, 'PF-1', 'Surecrop', 'Blazingstar', 'Intrepid', 'Contender', 'Blushingstar', 'China Pearl', and 'Encore' are recommended for central and northern New Mexico."
+        },
+        {
+            type: "Sour Cherry",
+            name: "Balaton",
+            category: "Sour cherry varieties noted for northern New Mexico",
+            description: "Sour cherries (Figure 3) bloom later and have a longer blooming period than sweet cherries. Sour cherries are less vulnerable to late frosts and always have a better crop than sweet cherries. 'Montmorency' is the main variety. 'Balaton' and 'Danube' are red-flesh varieties and do well in northern New Mexico."
+        },
+        {
+            type: "Sour Cherry",
+            name: "Danube",
+            category: "Sour cherry varieties noted for northern New Mexico",
+            description: "Sour cherries (Figure 3) bloom later and have a longer blooming period than sweet cherries. Sour cherries are less vulnerable to late frosts and always have a better crop than sweet cherries. 'Montmorency' is the main variety. 'Balaton' and 'Danube' are red-flesh varieties and do well in northern New Mexico."
+        },
+        {
+            type: "Sour Cherry",
+            name: "Montmorency",
+            category: "Sour cherry varieties noted for northern New Mexico",
+            description: "Sour cherries (Figure 3) bloom later and have a longer blooming period than sweet cherries. Sour cherries are less vulnerable to late frosts and always have a better crop than sweet cherries. 'Montmorency' is the main variety. 'Balaton' and 'Danube' are red-flesh varieties and do well in northern New Mexico."
+        },
+        {
+            type: "Apple",
+            name: "Ginger Gold",
+            category: "Apple varieties recommended for central and northern New Mexico",
+            description: "Among newer varieties, 'Gala' (Figure 4) is a reliable variety in northern New Mexico and 'Honeycrisp' is a late bloomer. 'Pink Lady' and 'Braeburn' were the first to bloom and the most vulnerable to late frosts among the 20 varieties tested at Alcalde. 'Ginger Gold', 'Gala', 'Honeycrisp', 'Golden Delicious', 'Fuji', and 'Arkansas Black' are recommended for central and northern New Mexico. 'Mutsu' and 'Granny Smith' do better in the southern half of the state."
+        },
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Apple varieties recommended for central and northern New Mexico",
+            description: "Among newer varieties, 'Gala' (Figure 4) is a reliable variety in northern New Mexico and 'Honeycrisp' is a late bloomer. 'Pink Lady' and 'Braeburn' were the first to bloom and the most vulnerable to late frosts among the 20 varieties tested at Alcalde. 'Ginger Gold', 'Gala', 'Honeycrisp', 'Golden Delicious', 'Fuji', and 'Arkansas Black' are recommended for central and northern New Mexico. 'Mutsu' and 'Granny Smith' do better in the southern half of the state."
+        },
+        {
+            type: "Apple",
+            name: "Honeycrisp",
+            category: "Apple varieties recommended for central and northern New Mexico",
+            description: "Among newer varieties, 'Gala' (Figure 4) is a reliable variety in northern New Mexico and 'Honeycrisp' is a late bloomer. 'Pink Lady' and 'Braeburn' were the first to bloom and the most vulnerable to late frosts among the 20 varieties tested at Alcalde. 'Ginger Gold', 'Gala', 'Honeycrisp', 'Golden Delicious', 'Fuji', and 'Arkansas Black' are recommended for central and northern New Mexico. 'Mutsu' and 'Granny Smith' do better in the southern half of the state."
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "Apple varieties recommended for central and northern New Mexico",
+            description: "Among newer varieties, 'Gala' (Figure 4) is a reliable variety in northern New Mexico and 'Honeycrisp' is a late bloomer. 'Pink Lady' and 'Braeburn' were the first to bloom and the most vulnerable to late frosts among the 20 varieties tested at Alcalde. 'Ginger Gold', 'Gala', 'Honeycrisp', 'Golden Delicious', 'Fuji', and 'Arkansas Black' are recommended for central and northern New Mexico. 'Mutsu' and 'Granny Smith' do better in the southern half of the state."
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Apple varieties recommended for central and northern New Mexico",
+            description: "Among newer varieties, 'Gala' (Figure 4) is a reliable variety in northern New Mexico and 'Honeycrisp' is a late bloomer. 'Pink Lady' and 'Braeburn' were the first to bloom and the most vulnerable to late frosts among the 20 varieties tested at Alcalde. 'Ginger Gold', 'Gala', 'Honeycrisp', 'Golden Delicious', 'Fuji', and 'Arkansas Black' are recommended for central and northern New Mexico. 'Mutsu' and 'Granny Smith' do better in the southern half of the state."
+        },
+        {
+            type: "Apple",
+            name: "Arkansas Black",
+            category: "Apple varieties recommended for central and northern New Mexico",
+            description: "Among newer varieties, 'Gala' (Figure 4) is a reliable variety in northern New Mexico and 'Honeycrisp' is a late bloomer. 'Pink Lady' and 'Braeburn' were the first to bloom and the most vulnerable to late frosts among the 20 varieties tested at Alcalde. 'Ginger Gold', 'Gala', 'Honeycrisp', 'Golden Delicious', 'Fuji', and 'Arkansas Black' are recommended for central and northern New Mexico. 'Mutsu' and 'Granny Smith' do better in the southern half of the state."
+        },
+        {
+            type: "Apple",
+            name: "Mutsu",
+            category: "Apple varieties noted for southern New Mexico",
+            description: "Among newer varieties, 'Gala' (Figure 4) is a reliable variety in northern New Mexico and 'Honeycrisp' is a late bloomer. 'Pink Lady' and 'Braeburn' were the first to bloom and the most vulnerable to late frosts among the 20 varieties tested at Alcalde. 'Ginger Gold', 'Gala', 'Honeycrisp', 'Golden Delicious', 'Fuji', and 'Arkansas Black' are recommended for central and northern New Mexico. 'Mutsu' and 'Granny Smith' do better in the southern half of the state."
+        },
+        {
+            type: "Apple",
+            name: "Granny Smith",
+            category: "Apple varieties noted for southern New Mexico",
+            description: "Among newer varieties, 'Gala' (Figure 4) is a reliable variety in northern New Mexico and 'Honeycrisp' is a late bloomer. 'Pink Lady' and 'Braeburn' were the first to bloom and the most vulnerable to late frosts among the 20 varieties tested at Alcalde. 'Ginger Gold', 'Gala', 'Honeycrisp', 'Golden Delicious', 'Fuji', and 'Arkansas Black' are recommended for central and northern New Mexico. 'Mutsu' and 'Granny Smith' do better in the southern half of the state."
+        },
+        {
+            type: "Euro Pear",
+            name: "D'Anjou",
+            category: "European pear varieties suggested for New Mexico",
+            description: "Just like apples, pears also need pollinizers and a spray program to manage wormy fruit. Pears flower after peaches and before apples. They are adapted to all areas, but production is better in southern New Mexico. There has been no formal pear variety trial in New Mexico, but scattered plantings indicated that 'Bartlett' always has some fruit even in years with severe late frosts. Other suggested varieties are 'D'Anjou', 'Bosc', 'Comice', and 'Seckel'. Pear varieties on dwarfing rootstocks are recommended over standard trees. Asian pears also do well in New Mexico. While there has not yet been a formal cultivar trial for Asian pears, the varieties '20th Century' (aka 'Nijisseiki'), 'Hosui', 'Kikusui', 'Kosui', 'Niitaka', 'Shinko', 'Shinseiki', 'Yakumo', and 'Yoinashi' have all been grown successfully in New Mexico backyards."
+        },
+        {
+            type: "Euro Pear",
+            name: "Bosc",
+            category: "European pear varieties suggested for New Mexico",
+            description: "Just like apples, pears also need pollinizers and a spray program to manage wormy fruit. Pears flower after peaches and before apples. They are adapted to all areas, but production is better in southern New Mexico. There has been no formal pear variety trial in New Mexico, but scattered plantings indicated that 'Bartlett' always has some fruit even in years with severe late frosts. Other suggested varieties are 'D'Anjou', 'Bosc', 'Comice', and 'Seckel'. Pear varieties on dwarfing rootstocks are recommended over standard trees. Asian pears also do well in New Mexico. While there has not yet been a formal cultivar trial for Asian pears, the varieties '20th Century' (aka 'Nijisseiki'), 'Hosui', 'Kikusui', 'Kosui', 'Niitaka', 'Shinko', 'Shinseiki', 'Yakumo', and 'Yoinashi' have all been grown successfully in New Mexico backyards."
+        },
+        {
+            type: "Euro Pear",
+            name: "Comice",
+            category: "European pear varieties suggested for New Mexico",
+            description: "Just like apples, pears also need pollinizers and a spray program to manage wormy fruit. Pears flower after peaches and before apples. They are adapted to all areas, but production is better in southern New Mexico. There has been no formal pear variety trial in New Mexico, but scattered plantings indicated that 'Bartlett' always has some fruit even in years with severe late frosts. Other suggested varieties are 'D'Anjou', 'Bosc', 'Comice', and 'Seckel'. Pear varieties on dwarfing rootstocks are recommended over standard trees. Asian pears also do well in New Mexico. While there has not yet been a formal cultivar trial for Asian pears, the varieties '20th Century' (aka 'Nijisseiki'), 'Hosui', 'Kikusui', 'Kosui', 'Niitaka', 'Shinko', 'Shinseiki', 'Yakumo', and 'Yoinashi' have all been grown successfully in New Mexico backyards."
+        },
+        {
+            type: "Euro Pear",
+            name: "Seckel",
+            category: "European pear varieties suggested for New Mexico",
+            description: "Just like apples, pears also need pollinizers and a spray program to manage wormy fruit. Pears flower after peaches and before apples. They are adapted to all areas, but production is better in southern New Mexico. There has been no formal pear variety trial in New Mexico, but scattered plantings indicated that 'Bartlett' always has some fruit even in years with severe late frosts. Other suggested varieties are 'D'Anjou', 'Bosc', 'Comice', and 'Seckel'. Pear varieties on dwarfing rootstocks are recommended over standard trees. Asian pears also do well in New Mexico. While there has not yet been a formal cultivar trial for Asian pears, the varieties '20th Century' (aka 'Nijisseiki'), 'Hosui', 'Kikusui', 'Kosui', 'Niitaka', 'Shinko', 'Shinseiki', 'Yakumo', and 'Yoinashi' have all been grown successfully in New Mexico backyards."
+        },
+        {
+            type: "Asian Pear",
+            name: "Nijisseiki",
+            category: "Asian pear varieties grown successfully in New Mexico backyards",
+            description: "Just like apples, pears also need pollinizers and a spray program to manage wormy fruit. Pears flower after peaches and before apples. They are adapted to all areas, but production is better in southern New Mexico. There has been no formal pear variety trial in New Mexico, but scattered plantings indicated that 'Bartlett' always has some fruit even in years with severe late frosts. Other suggested varieties are 'D'Anjou', 'Bosc', 'Comice', and 'Seckel'. Pear varieties on dwarfing rootstocks are recommended over standard trees. Asian pears also do well in New Mexico. While there has not yet been a formal cultivar trial for Asian pears, the varieties '20th Century' (aka 'Nijisseiki'), 'Hosui', 'Kikusui', 'Kosui', 'Niitaka', 'Shinko', 'Shinseiki', 'Yakumo', and 'Yoinashi' have all been grown successfully in New Mexico backyards. Source names this Asian pear 20th Century and gives Nijisseiki as an aka"
+        },
+        {
+            type: "Asian Pear",
+            name: "Hosui",
+            category: "Asian pear varieties grown successfully in New Mexico backyards",
+            description: "Just like apples, pears also need pollinizers and a spray program to manage wormy fruit. Pears flower after peaches and before apples. They are adapted to all areas, but production is better in southern New Mexico. There has been no formal pear variety trial in New Mexico, but scattered plantings indicated that 'Bartlett' always has some fruit even in years with severe late frosts. Other suggested varieties are 'D'Anjou', 'Bosc', 'Comice', and 'Seckel'. Pear varieties on dwarfing rootstocks are recommended over standard trees. Asian pears also do well in New Mexico. While there has not yet been a formal cultivar trial for Asian pears, the varieties '20th Century' (aka 'Nijisseiki'), 'Hosui', 'Kikusui', 'Kosui', 'Niitaka', 'Shinko', 'Shinseiki', 'Yakumo', and 'Yoinashi' have all been grown successfully in New Mexico backyards."
+        },
+        {
+            type: "Asian Pear",
+            name: "Kikusui",
+            category: "Asian pear varieties grown successfully in New Mexico backyards",
+            description: "Just like apples, pears also need pollinizers and a spray program to manage wormy fruit. Pears flower after peaches and before apples. They are adapted to all areas, but production is better in southern New Mexico. There has been no formal pear variety trial in New Mexico, but scattered plantings indicated that 'Bartlett' always has some fruit even in years with severe late frosts. Other suggested varieties are 'D'Anjou', 'Bosc', 'Comice', and 'Seckel'. Pear varieties on dwarfing rootstocks are recommended over standard trees. Asian pears also do well in New Mexico. While there has not yet been a formal cultivar trial for Asian pears, the varieties '20th Century' (aka 'Nijisseiki'), 'Hosui', 'Kikusui', 'Kosui', 'Niitaka', 'Shinko', 'Shinseiki', 'Yakumo', and 'Yoinashi' have all been grown successfully in New Mexico backyards."
+        },
+        {
+            type: "Asian Pear",
+            name: "Kosui",
+            category: "Asian pear varieties grown successfully in New Mexico backyards",
+            description: "Just like apples, pears also need pollinizers and a spray program to manage wormy fruit. Pears flower after peaches and before apples. They are adapted to all areas, but production is better in southern New Mexico. There has been no formal pear variety trial in New Mexico, but scattered plantings indicated that 'Bartlett' always has some fruit even in years with severe late frosts. Other suggested varieties are 'D'Anjou', 'Bosc', 'Comice', and 'Seckel'. Pear varieties on dwarfing rootstocks are recommended over standard trees. Asian pears also do well in New Mexico. While there has not yet been a formal cultivar trial for Asian pears, the varieties '20th Century' (aka 'Nijisseiki'), 'Hosui', 'Kikusui', 'Kosui', 'Niitaka', 'Shinko', 'Shinseiki', 'Yakumo', and 'Yoinashi' have all been grown successfully in New Mexico backyards."
+        },
+        {
+            type: "Asian Pear",
+            name: "Niitaka",
+            category: "Asian pear varieties grown successfully in New Mexico backyards",
+            description: "Just like apples, pears also need pollinizers and a spray program to manage wormy fruit. Pears flower after peaches and before apples. They are adapted to all areas, but production is better in southern New Mexico. There has been no formal pear variety trial in New Mexico, but scattered plantings indicated that 'Bartlett' always has some fruit even in years with severe late frosts. Other suggested varieties are 'D'Anjou', 'Bosc', 'Comice', and 'Seckel'. Pear varieties on dwarfing rootstocks are recommended over standard trees. Asian pears also do well in New Mexico. While there has not yet been a formal cultivar trial for Asian pears, the varieties '20th Century' (aka 'Nijisseiki'), 'Hosui', 'Kikusui', 'Kosui', 'Niitaka', 'Shinko', 'Shinseiki', 'Yakumo', and 'Yoinashi' have all been grown successfully in New Mexico backyards."
+        },
+        {
+            type: "Asian Pear",
+            name: "Shinko",
+            category: "Asian pear varieties grown successfully in New Mexico backyards",
+            description: "Just like apples, pears also need pollinizers and a spray program to manage wormy fruit. Pears flower after peaches and before apples. They are adapted to all areas, but production is better in southern New Mexico. There has been no formal pear variety trial in New Mexico, but scattered plantings indicated that 'Bartlett' always has some fruit even in years with severe late frosts. Other suggested varieties are 'D'Anjou', 'Bosc', 'Comice', and 'Seckel'. Pear varieties on dwarfing rootstocks are recommended over standard trees. Asian pears also do well in New Mexico. While there has not yet been a formal cultivar trial for Asian pears, the varieties '20th Century' (aka 'Nijisseiki'), 'Hosui', 'Kikusui', 'Kosui', 'Niitaka', 'Shinko', 'Shinseiki', 'Yakumo', and 'Yoinashi' have all been grown successfully in New Mexico backyards."
+        },
+        {
+            type: "Asian Pear",
+            name: "Shinseiki",
+            category: "Asian pear varieties grown successfully in New Mexico backyards",
+            description: "Just like apples, pears also need pollinizers and a spray program to manage wormy fruit. Pears flower after peaches and before apples. They are adapted to all areas, but production is better in southern New Mexico. There has been no formal pear variety trial in New Mexico, but scattered plantings indicated that 'Bartlett' always has some fruit even in years with severe late frosts. Other suggested varieties are 'D'Anjou', 'Bosc', 'Comice', and 'Seckel'. Pear varieties on dwarfing rootstocks are recommended over standard trees. Asian pears also do well in New Mexico. While there has not yet been a formal cultivar trial for Asian pears, the varieties '20th Century' (aka 'Nijisseiki'), 'Hosui', 'Kikusui', 'Kosui', 'Niitaka', 'Shinko', 'Shinseiki', 'Yakumo', and 'Yoinashi' have all been grown successfully in New Mexico backyards."
+        },
+        {
+            type: "Asian Pear",
+            name: "Yakumo",
+            category: "Asian pear varieties grown successfully in New Mexico backyards",
+            description: "Just like apples, pears also need pollinizers and a spray program to manage wormy fruit. Pears flower after peaches and before apples. They are adapted to all areas, but production is better in southern New Mexico. There has been no formal pear variety trial in New Mexico, but scattered plantings indicated that 'Bartlett' always has some fruit even in years with severe late frosts. Other suggested varieties are 'D'Anjou', 'Bosc', 'Comice', and 'Seckel'. Pear varieties on dwarfing rootstocks are recommended over standard trees. Asian pears also do well in New Mexico. While there has not yet been a formal cultivar trial for Asian pears, the varieties '20th Century' (aka 'Nijisseiki'), 'Hosui', 'Kikusui', 'Kosui', 'Niitaka', 'Shinko', 'Shinseiki', 'Yakumo', and 'Yoinashi' have all been grown successfully in New Mexico backyards."
+        },
+        {
+            type: "Asian Pear",
+            name: "Yoinashi",
+            category: "Asian pear varieties grown successfully in New Mexico backyards",
+            description: "Just like apples, pears also need pollinizers and a spray program to manage wormy fruit. Pears flower after peaches and before apples. They are adapted to all areas, but production is better in southern New Mexico. There has been no formal pear variety trial in New Mexico, but scattered plantings indicated that 'Bartlett' always has some fruit even in years with severe late frosts. Other suggested varieties are 'D'Anjou', 'Bosc', 'Comice', and 'Seckel'. Pear varieties on dwarfing rootstocks are recommended over standard trees. Asian pears also do well in New Mexico. While there has not yet been a formal cultivar trial for Asian pears, the varieties '20th Century' (aka 'Nijisseiki'), 'Hosui', 'Kikusui', 'Kosui', 'Niitaka', 'Shinko', 'Shinseiki', 'Yakumo', and 'Yoinashi' have all been grown successfully in New Mexico backyards."
+        },
+        {
+            type: "Grape",
+            name: "Himrod",
+            category: "Table grape varieties recommended for northern New Mexico",
+            description: "There are three main species or types of grapes that will grow in New Mexico (Figure 5). European (California) varieties are not entirely winter-hardy in northern New Mexico and should be planted only in southern areas, unless winter protection is given. American varieties are cold-tolerant, but some, such as 'Concord', become chlorotic in alkaline soil. French hybrids and American hybrids do better in northern New Mexico. Recommended table grape varieties for northern New Mexico are 'Himrod', 'Reliance', 'Venus', and 'Jupiter'. Southern New Mexico has more choices for table grapes and wine grapes; please contact your county Extension agent (http://aces.nmsu.edu/county/) for more information."
+        },
+        {
+            type: "Grape",
+            name: "Reliance",
+            category: "Table grape varieties recommended for northern New Mexico",
+            description: "There are three main species or types of grapes that will grow in New Mexico (Figure 5). European (California) varieties are not entirely winter-hardy in northern New Mexico and should be planted only in southern areas, unless winter protection is given. American varieties are cold-tolerant, but some, such as 'Concord', become chlorotic in alkaline soil. French hybrids and American hybrids do better in northern New Mexico. Recommended table grape varieties for northern New Mexico are 'Himrod', 'Reliance', 'Venus', and 'Jupiter'. Southern New Mexico has more choices for table grapes and wine grapes; please contact your county Extension agent (http://aces.nmsu.edu/county/) for more information."
+        },
+        {
+            type: "Grape",
+            name: "Venus",
+            category: "Table grape varieties recommended for northern New Mexico",
+            description: "There are three main species or types of grapes that will grow in New Mexico (Figure 5). European (California) varieties are not entirely winter-hardy in northern New Mexico and should be planted only in southern areas, unless winter protection is given. American varieties are cold-tolerant, but some, such as 'Concord', become chlorotic in alkaline soil. French hybrids and American hybrids do better in northern New Mexico. Recommended table grape varieties for northern New Mexico are 'Himrod', 'Reliance', 'Venus', and 'Jupiter'. Southern New Mexico has more choices for table grapes and wine grapes; please contact your county Extension agent (http://aces.nmsu.edu/county/) for more information."
+        },
+        {
+            type: "Grape",
+            name: "Jupiter",
+            category: "Table grape varieties recommended for northern New Mexico",
+            description: "There are three main species or types of grapes that will grow in New Mexico (Figure 5). European (California) varieties are not entirely winter-hardy in northern New Mexico and should be planted only in southern areas, unless winter protection is given. American varieties are cold-tolerant, but some, such as 'Concord', become chlorotic in alkaline soil. French hybrids and American hybrids do better in northern New Mexico. Recommended table grape varieties for northern New Mexico are 'Himrod', 'Reliance', 'Venus', and 'Jupiter'. Southern New Mexico has more choices for table grapes and wine grapes; please contact your county Extension agent (http://aces.nmsu.edu/county/) for more information."
+        },
+        {
+            type: "Fig",
+            name: "Celeste",
+            category: "Fig varieties noted for New Mexico",
+            description: "There are few pest or disease issues for figs in New Mexico. The primary limitation for figs is low winter or spring temperatures that may sometimes partially or completely kill fig tree canopies, even in southern New Mexico. If the roots were not killed during winter, fig trees that have experienced freezing temperatures usually grow back vigorously and can even produce some main crop fruit in the first year of regrowth. Figs are grown on their own roots (not grafted onto a rootstock), so the variety remains true even after the tree grows back from the root. In central New Mexico, outdoor trees should be planted in a protected area and mulched or tarped to minimize freeze damage. For backyard growers in colder areas of the state, fig trees can be grown in large portable containers and moved indoors during winter. 'Celeste', 'Brown Turkey', 'Hardy Chicago', 'Desert King', 'Kadota', and 'Violette de Bordeaux' are only a few of the fig varieties that can be grown in New Mexico. 'Black Mission' is a readily available fig variety in the nursery trade, but is not very cold-hardy and, therefore, may not be the best variety choice for outdoor planting in most New Mexico backyards. In general, backyard fig varieties require no cross-pollination to produce fruit, but there are some varieties, such as 'Calimyrna', that require the presence of a nearby pollinizer tree (called a \"caprifig,\" which produces no edible fruit) and specialized fig wasp pollinators to set fruit."
+        },
+        {
+            type: "Fig",
+            name: "Brown Turkey",
+            category: "Fig varieties noted for New Mexico",
+            description: "There are few pest or disease issues for figs in New Mexico. The primary limitation for figs is low winter or spring temperatures that may sometimes partially or completely kill fig tree canopies, even in southern New Mexico. If the roots were not killed during winter, fig trees that have experienced freezing temperatures usually grow back vigorously and can even produce some main crop fruit in the first year of regrowth. Figs are grown on their own roots (not grafted onto a rootstock), so the variety remains true even after the tree grows back from the root. In central New Mexico, outdoor trees should be planted in a protected area and mulched or tarped to minimize freeze damage. For backyard growers in colder areas of the state, fig trees can be grown in large portable containers and moved indoors during winter. 'Celeste', 'Brown Turkey', 'Hardy Chicago', 'Desert King', 'Kadota', and 'Violette de Bordeaux' are only a few of the fig varieties that can be grown in New Mexico. 'Black Mission' is a readily available fig variety in the nursery trade, but is not very cold-hardy and, therefore, may not be the best variety choice for outdoor planting in most New Mexico backyards. In general, backyard fig varieties require no cross-pollination to produce fruit, but there are some varieties, such as 'Calimyrna', that require the presence of a nearby pollinizer tree (called a \"caprifig,\" which produces no edible fruit) and specialized fig wasp pollinators to set fruit."
+        },
+        {
+            type: "Fig",
+            name: "Hardy Chicago",
+            category: "Fig varieties noted for New Mexico",
+            description: "There are few pest or disease issues for figs in New Mexico. The primary limitation for figs is low winter or spring temperatures that may sometimes partially or completely kill fig tree canopies, even in southern New Mexico. If the roots were not killed during winter, fig trees that have experienced freezing temperatures usually grow back vigorously and can even produce some main crop fruit in the first year of regrowth. Figs are grown on their own roots (not grafted onto a rootstock), so the variety remains true even after the tree grows back from the root. In central New Mexico, outdoor trees should be planted in a protected area and mulched or tarped to minimize freeze damage. For backyard growers in colder areas of the state, fig trees can be grown in large portable containers and moved indoors during winter. 'Celeste', 'Brown Turkey', 'Hardy Chicago', 'Desert King', 'Kadota', and 'Violette de Bordeaux' are only a few of the fig varieties that can be grown in New Mexico. 'Black Mission' is a readily available fig variety in the nursery trade, but is not very cold-hardy and, therefore, may not be the best variety choice for outdoor planting in most New Mexico backyards. In general, backyard fig varieties require no cross-pollination to produce fruit, but there are some varieties, such as 'Calimyrna', that require the presence of a nearby pollinizer tree (called a \"caprifig,\" which produces no edible fruit) and specialized fig wasp pollinators to set fruit."
+        },
+        {
+            type: "Fig",
+            name: "Desert King",
+            category: "Fig varieties noted for New Mexico",
+            description: "There are few pest or disease issues for figs in New Mexico. The primary limitation for figs is low winter or spring temperatures that may sometimes partially or completely kill fig tree canopies, even in southern New Mexico. If the roots were not killed during winter, fig trees that have experienced freezing temperatures usually grow back vigorously and can even produce some main crop fruit in the first year of regrowth. Figs are grown on their own roots (not grafted onto a rootstock), so the variety remains true even after the tree grows back from the root. In central New Mexico, outdoor trees should be planted in a protected area and mulched or tarped to minimize freeze damage. For backyard growers in colder areas of the state, fig trees can be grown in large portable containers and moved indoors during winter. 'Celeste', 'Brown Turkey', 'Hardy Chicago', 'Desert King', 'Kadota', and 'Violette de Bordeaux' are only a few of the fig varieties that can be grown in New Mexico. 'Black Mission' is a readily available fig variety in the nursery trade, but is not very cold-hardy and, therefore, may not be the best variety choice for outdoor planting in most New Mexico backyards. In general, backyard fig varieties require no cross-pollination to produce fruit, but there are some varieties, such as 'Calimyrna', that require the presence of a nearby pollinizer tree (called a \"caprifig,\" which produces no edible fruit) and specialized fig wasp pollinators to set fruit."
+        },
+        {
+            type: "Fig",
+            name: "Kadota",
+            category: "Fig varieties noted for New Mexico",
+            description: "There are few pest or disease issues for figs in New Mexico. The primary limitation for figs is low winter or spring temperatures that may sometimes partially or completely kill fig tree canopies, even in southern New Mexico. If the roots were not killed during winter, fig trees that have experienced freezing temperatures usually grow back vigorously and can even produce some main crop fruit in the first year of regrowth. Figs are grown on their own roots (not grafted onto a rootstock), so the variety remains true even after the tree grows back from the root. In central New Mexico, outdoor trees should be planted in a protected area and mulched or tarped to minimize freeze damage. For backyard growers in colder areas of the state, fig trees can be grown in large portable containers and moved indoors during winter. 'Celeste', 'Brown Turkey', 'Hardy Chicago', 'Desert King', 'Kadota', and 'Violette de Bordeaux' are only a few of the fig varieties that can be grown in New Mexico. 'Black Mission' is a readily available fig variety in the nursery trade, but is not very cold-hardy and, therefore, may not be the best variety choice for outdoor planting in most New Mexico backyards. In general, backyard fig varieties require no cross-pollination to produce fruit, but there are some varieties, such as 'Calimyrna', that require the presence of a nearby pollinizer tree (called a \"caprifig,\" which produces no edible fruit) and specialized fig wasp pollinators to set fruit."
+        },
+        {
+            type: "Fig",
+            name: "Violette de Bordeaux",
+            category: "Fig varieties noted for New Mexico",
+            description: "There are few pest or disease issues for figs in New Mexico. The primary limitation for figs is low winter or spring temperatures that may sometimes partially or completely kill fig tree canopies, even in southern New Mexico. If the roots were not killed during winter, fig trees that have experienced freezing temperatures usually grow back vigorously and can even produce some main crop fruit in the first year of regrowth. Figs are grown on their own roots (not grafted onto a rootstock), so the variety remains true even after the tree grows back from the root. In central New Mexico, outdoor trees should be planted in a protected area and mulched or tarped to minimize freeze damage. For backyard growers in colder areas of the state, fig trees can be grown in large portable containers and moved indoors during winter. 'Celeste', 'Brown Turkey', 'Hardy Chicago', 'Desert King', 'Kadota', and 'Violette de Bordeaux' are only a few of the fig varieties that can be grown in New Mexico. 'Black Mission' is a readily available fig variety in the nursery trade, but is not very cold-hardy and, therefore, may not be the best variety choice for outdoor planting in most New Mexico backyards. In general, backyard fig varieties require no cross-pollination to produce fruit, but there are some varieties, such as 'Calimyrna', that require the presence of a nearby pollinizer tree (called a \"caprifig,\" which produces no edible fruit) and specialized fig wasp pollinators to set fruit."
+        },
+        {
+            type: "Pecan",
+            name: "Western",
+            category: "Pecan varieties noted for New Mexico orchards",
+            description: "'Western' (or 'Western Schley'), 'Wichita', and 'Bradley' are the most common commercial pecan varieties and are also quite common for backyard orchards. Of these, 'Western' is the best adapted to New Mexico's soils and climate. 'Burkett' pecan trees produce a round nut with speckled kernels and are favored by backyard orchardists for their excellent flavor. However, 'Burkett' trees are highly susceptible to aphid infestations. In central New Mexico where the growing season is too short to mature 'Western' or 'Burkett' nuts, early ripening varieties like 'Pawnee' are recommended. \"Northern-type\" pecans (for example, 'Witte', 'Colby', and 'Lucas') are also available and are adapted to cold climates; they may survive the winters of northern or higher-elevation areas of New Mexico, but the summers may still be too cool to regularly mature even a \"Northern-type\" pecan crop in these areas. Pecans are grouped into Type I and Type II varieties according to the timing of pollen shed and pollen receptivity of flowers. Orchards produce best if at least one variety of each pollination type is included in the planting. Source says Western is also called Western Schley"
+        },
+        {
+            type: "Pecan",
+            name: "Wichita",
+            category: "Pecan varieties noted for New Mexico orchards",
+            description: "'Western' (or 'Western Schley'), 'Wichita', and 'Bradley' are the most common commercial pecan varieties and are also quite common for backyard orchards. Of these, 'Western' is the best adapted to New Mexico's soils and climate. 'Burkett' pecan trees produce a round nut with speckled kernels and are favored by backyard orchardists for their excellent flavor. However, 'Burkett' trees are highly susceptible to aphid infestations. In central New Mexico where the growing season is too short to mature 'Western' or 'Burkett' nuts, early ripening varieties like 'Pawnee' are recommended. \"Northern-type\" pecans (for example, 'Witte', 'Colby', and 'Lucas') are also available and are adapted to cold climates; they may survive the winters of northern or higher-elevation areas of New Mexico, but the summers may still be too cool to regularly mature even a \"Northern-type\" pecan crop in these areas. Pecans are grouped into Type I and Type II varieties according to the timing of pollen shed and pollen receptivity of flowers. Orchards produce best if at least one variety of each pollination type is included in the planting."
+        },
+        {
+            type: "Pecan",
+            name: "Bradley",
+            category: "Pecan varieties noted for New Mexico orchards",
+            description: "'Western' (or 'Western Schley'), 'Wichita', and 'Bradley' are the most common commercial pecan varieties and are also quite common for backyard orchards. Of these, 'Western' is the best adapted to New Mexico's soils and climate. 'Burkett' pecan trees produce a round nut with speckled kernels and are favored by backyard orchardists for their excellent flavor. However, 'Burkett' trees are highly susceptible to aphid infestations. In central New Mexico where the growing season is too short to mature 'Western' or 'Burkett' nuts, early ripening varieties like 'Pawnee' are recommended. \"Northern-type\" pecans (for example, 'Witte', 'Colby', and 'Lucas') are also available and are adapted to cold climates; they may survive the winters of northern or higher-elevation areas of New Mexico, but the summers may still be too cool to regularly mature even a \"Northern-type\" pecan crop in these areas. Pecans are grouped into Type I and Type II varieties according to the timing of pollen shed and pollen receptivity of flowers. Orchards produce best if at least one variety of each pollination type is included in the planting."
+        },
+        {
+            type: "Pecan",
+            name: "Pawnee",
+            category: "Pecan varieties noted for New Mexico orchards",
+            description: "'Western' (or 'Western Schley'), 'Wichita', and 'Bradley' are the most common commercial pecan varieties and are also quite common for backyard orchards. Of these, 'Western' is the best adapted to New Mexico's soils and climate. 'Burkett' pecan trees produce a round nut with speckled kernels and are favored by backyard orchardists for their excellent flavor. However, 'Burkett' trees are highly susceptible to aphid infestations. In central New Mexico where the growing season is too short to mature 'Western' or 'Burkett' nuts, early ripening varieties like 'Pawnee' are recommended. \"Northern-type\" pecans (for example, 'Witte', 'Colby', and 'Lucas') are also available and are adapted to cold climates; they may survive the winters of northern or higher-elevation areas of New Mexico, but the summers may still be too cool to regularly mature even a \"Northern-type\" pecan crop in these areas. Pecans are grouped into Type I and Type II varieties according to the timing of pollen shed and pollen receptivity of flowers. Orchards produce best if at least one variety of each pollination type is included in the planting."
+        },
+        {
+            type: "Pecan",
+            name: "Witte",
+            category: "Pecan varieties noted for New Mexico orchards",
+            description: "'Western' (or 'Western Schley'), 'Wichita', and 'Bradley' are the most common commercial pecan varieties and are also quite common for backyard orchards. Of these, 'Western' is the best adapted to New Mexico's soils and climate. 'Burkett' pecan trees produce a round nut with speckled kernels and are favored by backyard orchardists for their excellent flavor. However, 'Burkett' trees are highly susceptible to aphid infestations. In central New Mexico where the growing season is too short to mature 'Western' or 'Burkett' nuts, early ripening varieties like 'Pawnee' are recommended. \"Northern-type\" pecans (for example, 'Witte', 'Colby', and 'Lucas') are also available and are adapted to cold climates; they may survive the winters of northern or higher-elevation areas of New Mexico, but the summers may still be too cool to regularly mature even a \"Northern-type\" pecan crop in these areas. Pecans are grouped into Type I and Type II varieties according to the timing of pollen shed and pollen receptivity of flowers. Orchards produce best if at least one variety of each pollination type is included in the planting."
+        },
+        {
+            type: "Pecan",
+            name: "Colby",
+            category: "Pecan varieties noted for New Mexico orchards",
+            description: "'Western' (or 'Western Schley'), 'Wichita', and 'Bradley' are the most common commercial pecan varieties and are also quite common for backyard orchards. Of these, 'Western' is the best adapted to New Mexico's soils and climate. 'Burkett' pecan trees produce a round nut with speckled kernels and are favored by backyard orchardists for their excellent flavor. However, 'Burkett' trees are highly susceptible to aphid infestations. In central New Mexico where the growing season is too short to mature 'Western' or 'Burkett' nuts, early ripening varieties like 'Pawnee' are recommended. \"Northern-type\" pecans (for example, 'Witte', 'Colby', and 'Lucas') are also available and are adapted to cold climates; they may survive the winters of northern or higher-elevation areas of New Mexico, but the summers may still be too cool to regularly mature even a \"Northern-type\" pecan crop in these areas. Pecans are grouped into Type I and Type II varieties according to the timing of pollen shed and pollen receptivity of flowers. Orchards produce best if at least one variety of each pollination type is included in the planting."
+        },
+        {
+            type: "Pecan",
+            name: "Lucas",
+            category: "Pecan varieties noted for New Mexico orchards",
+            description: "'Western' (or 'Western Schley'), 'Wichita', and 'Bradley' are the most common commercial pecan varieties and are also quite common for backyard orchards. Of these, 'Western' is the best adapted to New Mexico's soils and climate. 'Burkett' pecan trees produce a round nut with speckled kernels and are favored by backyard orchardists for their excellent flavor. However, 'Burkett' trees are highly susceptible to aphid infestations. In central New Mexico where the growing season is too short to mature 'Western' or 'Burkett' nuts, early ripening varieties like 'Pawnee' are recommended. \"Northern-type\" pecans (for example, 'Witte', 'Colby', and 'Lucas') are also available and are adapted to cold climates; they may survive the winters of northern or higher-elevation areas of New Mexico, but the summers may still be too cool to regularly mature even a \"Northern-type\" pecan crop in these areas. Pecans are grouped into Type I and Type II varieties according to the timing of pollen shed and pollen receptivity of flowers. Orchards produce best if at least one variety of each pollination type is included in the planting."
+        },
+        {
+            type: "Jujube",
+            name: "Li",
+            category: "Jujube varieties noted for New Mexico",
+            description: "With its nutritious fruit, late start-up, wide adaption, and freedom from pests/disease, jujubes are a good choice for home orchardists. In northern areas, growers should avoid the late-maturing varieties since the early frost limits the length of the growing season. For southern New Mexico, all varieties perform well. 'Li' and 'Lang' are the two most popular varieties; 'GA866' and 'Sugarcane' are also available. 'Sherwood' is too late for northern New Mexico. 'So' is an ornamental variety, but exhibits winter damage in some years in northern New Mexico. We are evaluating jujube varieties at Alcalde and will recommend more varieties after a few more years' observation. As a precaution, jujube trees do have thorns and occasional suckers."
+        },
+        {
+            type: "Jujube",
+            name: "Lang",
+            category: "Jujube varieties noted for New Mexico",
+            description: "With its nutritious fruit, late start-up, wide adaption, and freedom from pests/disease, jujubes are a good choice for home orchardists. In northern areas, growers should avoid the late-maturing varieties since the early frost limits the length of the growing season. For southern New Mexico, all varieties perform well. 'Li' and 'Lang' are the two most popular varieties; 'GA866' and 'Sugarcane' are also available. 'Sherwood' is too late for northern New Mexico. 'So' is an ornamental variety, but exhibits winter damage in some years in northern New Mexico. We are evaluating jujube varieties at Alcalde and will recommend more varieties after a few more years' observation. As a precaution, jujube trees do have thorns and occasional suckers."
+        },
+        {
+            type: "Jujube",
+            name: "GA866",
+            category: "Jujube varieties noted for New Mexico",
+            description: "With its nutritious fruit, late start-up, wide adaption, and freedom from pests/disease, jujubes are a good choice for home orchardists. In northern areas, growers should avoid the late-maturing varieties since the early frost limits the length of the growing season. For southern New Mexico, all varieties perform well. 'Li' and 'Lang' are the two most popular varieties; 'GA866' and 'Sugarcane' are also available. 'Sherwood' is too late for northern New Mexico. 'So' is an ornamental variety, but exhibits winter damage in some years in northern New Mexico. We are evaluating jujube varieties at Alcalde and will recommend more varieties after a few more years' observation. As a precaution, jujube trees do have thorns and occasional suckers."
+        },
+        {
+            type: "Jujube",
+            name: "Sugarcane",
+            category: "Jujube varieties noted for New Mexico",
+            description: "With its nutritious fruit, late start-up, wide adaption, and freedom from pests/disease, jujubes are a good choice for home orchardists. In northern areas, growers should avoid the late-maturing varieties since the early frost limits the length of the growing season. For southern New Mexico, all varieties perform well. 'Li' and 'Lang' are the two most popular varieties; 'GA866' and 'Sugarcane' are also available. 'Sherwood' is too late for northern New Mexico. 'So' is an ornamental variety, but exhibits winter damage in some years in northern New Mexico. We are evaluating jujube varieties at Alcalde and will recommend more varieties after a few more years' observation. As a precaution, jujube trees do have thorns and occasional suckers."
+        },
+        {
+            type: "Jujube",
+            name: "Sherwood",
+            category: "Jujube varieties noted for New Mexico",
+            description: "With its nutritious fruit, late start-up, wide adaption, and freedom from pests/disease, jujubes are a good choice for home orchardists. In northern areas, growers should avoid the late-maturing varieties since the early frost limits the length of the growing season. For southern New Mexico, all varieties perform well. 'Li' and 'Lang' are the two most popular varieties; 'GA866' and 'Sugarcane' are also available. 'Sherwood' is too late for northern New Mexico. 'So' is an ornamental variety, but exhibits winter damage in some years in northern New Mexico. We are evaluating jujube varieties at Alcalde and will recommend more varieties after a few more years' observation. As a precaution, jujube trees do have thorns and occasional suckers."
+        },
+        {
+            type: "Jujube",
+            name: "So",
+            category: "Jujube varieties noted for New Mexico",
+            description: "With its nutritious fruit, late start-up, wide adaption, and freedom from pests/disease, jujubes are a good choice for home orchardists. In northern areas, growers should avoid the late-maturing varieties since the early frost limits the length of the growing season. For southern New Mexico, all varieties perform well. 'Li' and 'Lang' are the two most popular varieties; 'GA866' and 'Sugarcane' are also available. 'Sherwood' is too late for northern New Mexico. 'So' is an ornamental variety, but exhibits winter damage in some years in northern New Mexico. We are evaluating jujube varieties at Alcalde and will recommend more varieties after a few more years' observation. As a precaution, jujube trees do have thorns and occasional suckers."
+        },
+    ]
+}

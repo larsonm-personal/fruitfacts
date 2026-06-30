@@ -1,0 +1,117 @@
+{
+    title: "Growing Pears in Virginia",
+    author: "Richard Marini",
+    description: "VCE pear guide with fire-blight-resistant European pear and Asian pear variety descriptions for Virginia gardeners",
+    url: "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/422/422-017/422-017.html",
+    thumbnail: "website",
+    published: "September 14, 2020",
+    reviewed: "November 2025",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Virginia Tech, Blacksburg, VA",
+            latitude: 37.20248218528102,
+            longitude: -80.5631271567992
+        },
+    ],
+    categories: [
+        {
+            name: "European pear varieties described for Virginia",
+            description: "European pear varieties described in VCE 422-017 as having considerable fire blight resistance or use in Virginia"
+        },
+        {
+            name: "Asian pear varieties described for Virginia",
+            description: "Asian pear varieties described in VCE 422-017"
+        },
+    ],
+    plants: [
+        {
+            type: "Euro Pear",
+            name: "Harrow Delight",
+            category: "European pear varieties described for Virginia",
+            harvest_time_unparsed: "It ripens about two weeks ahead of 'Bartlett'.",
+            description: "This variety is a hybrid of (Old Home x 'Early Sweet') x 'Bartlett', and was introduced in 1982 by the Harrow Research Station, in Harrow, Ontario, Canada. The fruit is medium size, similar to 'Bartlett' in appearance and has excellent flavor. The skin is light green to yellow-green with 20% to 30% light red blush. The flesh is smooth with no grit cells. It ripens about two weeks ahead of 'Bartlett'."
+        },
+        {
+            type: "Euro Pear",
+            name: "Stark Honeysweet",
+            category: "European pear varieties described for Virginia",
+            harvest_time_unparsed: "The large fruit is covered with golden russet and ripens in late August.",
+            description: "This variety is a hybrid of 'Seckel' x ('Vermont Beauty' x 'Roi Charles de Waurtemburg') and was patented by Stark Brothers Nurseries in 1979. The large fruit is covered with golden russet and ripens in late August. The flesh is smooth, and buttery with no grit. The flavor is rich, sweet and similar to 'Seckel'."
+        },
+        {
+            type: "Euro Pear",
+            name: "Moonglow",
+            category: "European pear varieties described for Virginia",
+            harvest_time_unparsed: "It ripens in early to mid-August, about one week ahead of 'Bartlett'.",
+            description: "This variety is a hybrid of US-Mich. 437 x 'Roi Charles de Waurtemburg' and was introduced in 1960 by the USDA, Beltsville, MD. The fruit is medium to large in size and yellow. The flesh is soft, white, moderately juicy, and nearly free of grit cells. The flavor is mild and sub acid. It ripens in early to mid-August, about one week ahead of 'Bartlett'."
+        },
+        {
+            type: "Euro Pear",
+            name: "Harvest Queen",
+            category: "European pear varieties described for Virginia",
+            harvest_time_unparsed: "It ripens one week ahead of 'Bartlett'.",
+            description: "This variety is a hybrid of 'Barseck' x 'Bartlett' and was introduced by the Harrow Research Station in Harrow, Ontario in 1982. This is a new 'Bartlett' type pear with good fireblight resistance. The flesh is similar to Bartlett, but less gritty. It ripens one week ahead of 'Bartlett'. The fruit is very similar to 'Bartlett' in appearance and flavor, but slightly smaller in size. Reports indicate that it is good for canning."
+        },
+        {
+            type: "Euro Pear",
+            name: "Magness",
+            category: "European pear varieties described for Virginia",
+            harvest_time_unparsed: "It ripens about a week after Bartlett.",
+            description: "This variety is a hybrid of 'Seckel' seedling x 'Comice', and was released from the USDA breeding program in 1968. The fruit is medium in size and the skin is covered with a slight russet. The flesh is soft, juicy, and nearly free of grit cells. The flavor is sweet, highly perfumed, and aromatic. The fruit is generally considered to be of very high quality. It ripens about a week after Bartlett. 'Magness' does not produce good pollen and must be planted with two other varieties to ensure that all three varieties will produce fruit."
+        },
+        {
+            type: "Euro Pear",
+            name: "Potomac",
+            category: "European pear varieties described for Virginia",
+            harvest_time_unparsed: "It ripens about two weeks after Bartlett.",
+            description: "This is a hybrid of 'Moonglow' x 'Buerre D'Anjou' and was released in 1993 by the USDA. The fruit is moderate in size and the skin is light green and glossy. The flesh is moderately fine, buttery, and has some grit cells. The flavor is mild and sub acid and the aroma is mild. It ripens about two weeks after Bartlett."
+        },
+        {
+            type: "Euro Pear",
+            name: "Seckel",
+            category: "European pear varieties described for Virginia",
+            description: "This variety is sometimes called \"sugar pear.\" The fruit is small and yellowish brown with a pale red russet. The flesh is fine grained, smooth, juicy, and extremely sweet. The tree is fairly resistant to fireblight and is considered to be one of the highest quality pears. It is excellent for canning whole or for making spiced pears."
+        },
+        {
+            type: "Euro Pear",
+            name: "Harrow Sweet",
+            category: "European pear varieties described for Virginia",
+            harvest_time_unparsed: "This new variety ripens about 25 days after 'Bartlett' and has good fireblight resistance.",
+            description: "This variety is a hybrid of 'Bartlett' x Purdue 80-51, and was recently released by the Harrow Research Station in Harrow, Ontario. This new variety ripens about 25 days after 'Bartlett' and has good fireblight resistance. The size is similar to 'Bartlett'. The skin is yellow with red blush and some russetting. The flesh is white, sweet, juicy, and flavorful."
+        },
+        {
+            type: "Asian Pear",
+            name: "Shinseiki",
+            category: "Asian pear varieties described for Virginia",
+            harvest_time_unparsed: "This pear ripens in early August.",
+            description: "(English translation = Twentieth Century) - This pear originated as a chance seedling in Japan in 1888. This variety is the standard against which other Asian pears are compared. This pear ripens in early August. The fruit is round and the skin is greenish yellow with no russet and is semi-glossy. The flesh is sweet, crisp, and juicy, and the fruit stores for about 20 weeks. Source gives English translation as Twentieth Century"
+        },
+        {
+            type: "Asian Pear",
+            name: "Kosui",
+            category: "Asian pear varieties described for Virginia",
+            description: "This variety is a hybrid of 'Kikusui' x 'Wasekozo' and was released in 1959 by the National Horticultural Research Station, Tsukuba, Japan. The fruit is medium in size, and the surface is yellow-bronze with russet. The flesh is crisp, very sweet, juicy, and has low acid. Source HTML extraction combines Kosui and Hosui in one paragraph"
+        },
+        {
+            type: "Asian Pear",
+            name: "Hosui",
+            category: "Asian pear varieties described for Virginia",
+            description: "This variety is a hybrid of 'Kikusui' x 'Yakumo' and was released in 1972 by the National Horticultural Research Station, Tsukuba, Japan. The fruit is large and round globular in shape. The skin is solid russet and golden with pronounced lenticels. The flesh is off-white sweet, mild, crisp, and juicy. There is a little acid, which gives it a fairly complex flavor. Fruits store about 4 weeks. Source HTML extraction combines Kosui and Hosui in one paragraph"
+        },
+        {
+            type: "Asian Pear",
+            name: "Niitaka",
+            category: "Asian pear varieties described for Virginia",
+            description: "This is a highly russetted orange-brown pear with excellent size. The flesh is juicy and sweet and is heavier textured than most Asian Pears. Fruit can be stored six months. Source names this Asian pear Nitaka"
+        },
+        {
+            type: "Asian Pear",
+            name: "Korean Giant",
+            category: "Asian pear varieties described for Virginia",
+            description: "This round, large, heavily russetted brown Asian Pear has a crisp, juicy sweet taste. Fruit can be stored eight months. Source names this Asian pear Olympic"
+        },
+    ]
+}

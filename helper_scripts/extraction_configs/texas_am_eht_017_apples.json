@@ -1,0 +1,78 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://aggie-horticulture.tamu.edu/fruit-nut/wp-content/uploads/sites/6/2015/04/apples_2015.pdf",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Texas Fruit and Nut Production: Apples"],
+    ["author", "Jim Kamas, Monte Nesbitt, and Larry Stein"],
+    ["description", "Texas A&M AgriLife Extension apple guide with chill-hour variety guidance and production notes for Texas"],
+    ["url", "https://agrilifeextension.tamu.edu/asset-external/texas-fruit-and-nut-production-apples/"],
+    ["thumbnail", "pdf"],
+    ["published", "January 2014"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Texas A&M University, College Station, TX",
+      "latitude": 30.6104,
+      "longitude": -96.3434
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple varieties suitable for Texas areas with more than 400 chilling hours",
+      "description": "Apple varieties Texas A&M EHT-017 says are suitable for Texas areas with more than 400 hours of winter chilling"
+    },
+    {
+      "name": "Apple varieties reliable for Texas areas with 400 or fewer chilling hours",
+      "description": "Apple varieties Texas A&M EHT-017 says will grow and fruit reliably in Texas areas receiving 400 or fewer chilling hours"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Varieties",
+      "section_end": "Table 1: Apple varieties suitable for growing in Texas",
+      "marker": "suitable apple varieties include",
+      "end_marker": ". In areas receiving",
+      "plant_type": "Apple",
+      "category": "Apple varieties suitable for Texas areas with more than 400 chilling hours",
+      "trim_name": true,
+      "strip_name_quotes": true,
+      "row_text_fixes": {
+        "`": ""
+      },
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "For areas with more than 400 hours of winter chilling, the source lists this as a suitable apple variety."
+        }
+      ]
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Varieties",
+      "section_end": "Table 1: Apple varieties suitable for growing in Texas",
+      "marker": "two varieties will grow and fruit reliably:",
+      "end_marker": "(Table 1",
+      "plant_type": "Apple",
+      "category": "Apple varieties reliable for Texas areas with 400 or fewer chilling hours",
+      "trim_name": true,
+      "strip_name_quotes": true,
+      "row_text_fixes": {
+        "`": ""
+      },
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "For Texas areas receiving 400 or fewer chilling hours, the source says this variety will grow and fruit reliably."
+        }
+      ]
+    }
+  ]
+}

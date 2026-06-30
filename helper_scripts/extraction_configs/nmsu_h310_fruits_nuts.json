@@ -1,0 +1,252 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://pubs.nmsu.edu/_h/H310/index.html"
+  },
+  "reference_fields": [
+    ["title", "Fruits and Nuts for New Mexico Orchards"],
+    ["author", "Shengrui Yao and Richard Heerema"],
+    ["description", "NMSU Guide H-310 with New Mexico tree-fruit and nut crop adaptation notes and cultivar recommendations"],
+    ["url", "https://pubs.nmsu.edu/_h/H310/index.html"],
+    ["thumbnail", "website"],
+    ["published", "Revised August 2014"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "NMSU Sustainable Agriculture Science Center at Alcalde, NM",
+      "latitude": 36.0889,
+      "longitude": -106.0583
+    }
+  ],
+  "categories": [
+    {
+      "name": "Japanese plum varieties noted as tolerant in New Mexico",
+      "description": "Japanese plum varieties NMSU Guide H-310 names as self-fruiting or frost-tolerant"
+    },
+    {
+      "name": "European plum varieties recommended for northern New Mexico",
+      "description": "European plum varieties recommended by NMSU Guide H-310 for northern New Mexico and high elevations"
+    },
+    {
+      "name": "Peach varieties recommended for central and northern New Mexico",
+      "description": "Peach varieties recommended by NMSU Guide H-310 for central and northern New Mexico"
+    },
+    {
+      "name": "Sour cherry varieties noted for northern New Mexico",
+      "description": "Sour cherry varieties named by NMSU Guide H-310 for northern New Mexico"
+    },
+    {
+      "name": "Apple varieties recommended for central and northern New Mexico",
+      "description": "Apple varieties recommended by NMSU Guide H-310 for central and northern New Mexico"
+    },
+    {
+      "name": "Apple varieties noted for southern New Mexico",
+      "description": "Apple varieties NMSU Guide H-310 says do better in the southern half of New Mexico"
+    },
+    {
+      "name": "European pear varieties suggested for New Mexico",
+      "description": "European pear varieties suggested by NMSU Guide H-310 for New Mexico"
+    },
+    {
+      "name": "Asian pear varieties grown successfully in New Mexico backyards",
+      "description": "Asian pear varieties NMSU Guide H-310 says have been grown successfully in New Mexico backyards"
+    },
+    {
+      "name": "Table grape varieties recommended for northern New Mexico",
+      "description": "Table grape varieties recommended by NMSU Guide H-310 for northern New Mexico"
+    },
+    {
+      "name": "Fig varieties noted for New Mexico",
+      "description": "Fig varieties NMSU Guide H-310 says can be grown in New Mexico"
+    },
+    {
+      "name": "Pecan varieties noted for New Mexico orchards",
+      "description": "Pecan varieties named by NMSU Guide H-310 for New Mexico orchards"
+    },
+    {
+      "name": "Jujube varieties noted for New Mexico",
+      "description": "Jujube varieties named by NMSU Guide H-310 for New Mexico"
+    }
+  ],
+  "name_overrides": {
+    "PF-1": {
+      "name": "PF 1",
+      "note": "Source names this peach PF-1"
+    },
+    "20th Century": {
+      "name": "Nijisseiki",
+      "note": "Source names this Asian pear 20th Century and gives Nijisseiki as an aka"
+    },
+    "Western": {
+      "name": "Western",
+      "note": "Source says Western is also called Western Schley"
+    },
+    "Blazingstar": {
+      "name": "FA 12",
+      "note": "Source names this peach Blazingstar"
+    },
+    "Blushingstar": {
+      "name": "FA 18",
+      "note": "Source names this peach Blushingstar"
+    },
+    "Western Schley": {
+      "name": "Western",
+      "aka": ["Western Schley"],
+      "note": "Source lists Western Schley as another name for Western"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "inline_quoted_names",
+      "start_heading": "Apricots",
+      "end_heading": "References",
+      "strip_trailing_name_punctuation": true,
+      "exclude_names": ["Nijisseiki", "Western Schley"],
+      "dedupe_keys": ["plant_type", "name", "category"],
+      "merge_duplicate_plants": true,
+      "paragraph_rules": [
+        {
+          "contains": "'Methley' is self-fruiting",
+          "names_after": "Most varieties need cross pollination",
+          "names_before": "is self-fruiting",
+          "plant_type": "Japanese Plum",
+          "category": "Japanese plum varieties noted as tolerant in New Mexico"
+        },
+        {
+          "contains": "Other tolerant varieties are",
+          "names_after": "Other tolerant varieties are",
+          "names_before": ". Two hybrids",
+          "plant_type": "Japanese Plum",
+          "category": "Japanese plum varieties noted as tolerant in New Mexico"
+        },
+        {
+          "contains": "Recommended varieties are",
+          "names_after": "Recommended varieties are",
+          "names_before": ". In general",
+          "plant_type": "Euro Plum",
+          "category": "European plum varieties recommended for northern New Mexico"
+        },
+        {
+          "contains": "are recommended for central and northern New Mexico",
+          "names_after": "Overall,",
+          "names_before": "are recommended for central and northern New Mexico",
+          "plant_type": "Peach",
+          "category": "Peach varieties recommended for central and northern New Mexico"
+        },
+        {
+          "contains": "are red-flesh varieties and do well in northern New Mexico",
+          "names_after": "is the main variety.",
+          "names_before": "are red-flesh varieties",
+          "plant_type": "Sour Cherry",
+          "category": "Sour cherry varieties noted for northern New Mexico"
+        },
+        {
+          "contains": "is the main variety",
+          "names_after": "better crop than sweet cherries.",
+          "names_before": "is the main variety",
+          "plant_type": "Sour Cherry",
+          "category": "Sour cherry varieties noted for northern New Mexico"
+        },
+        {
+          "contains": "are recommended for central and northern New Mexico",
+          "names_after": "frosts among the 20 varieties tested at Alcalde.",
+          "names_before": "are recommended for central and northern New Mexico",
+          "plant_type": "Apple",
+          "category": "Apple varieties recommended for central and northern New Mexico"
+        },
+        {
+          "contains": "do better in the southern half of the state",
+          "names_after": "are recommended for central and northern New Mexico.",
+          "names_before": "do better in the southern half of the state",
+          "plant_type": "Apple",
+          "category": "Apple varieties noted for southern New Mexico"
+        },
+        {
+          "contains": "Other suggested varieties are",
+          "names_after": "Other suggested varieties are",
+          "names_before": ". Pear varieties",
+          "plant_type": "Euro Pear",
+          "category": "European pear varieties suggested for New Mexico"
+        },
+        {
+          "contains": "have all been grown successfully in New Mexico backyards",
+          "names_after": "the varieties",
+          "names_before": "have all been grown successfully in New Mexico backyards",
+          "plant_type": "Asian Pear",
+          "category": "Asian pear varieties grown successfully in New Mexico backyards"
+        },
+        {
+          "contains": "Recommended table grape varieties for northern New Mexico are",
+          "names_after": "Recommended table grape varieties for northern New Mexico are",
+          "names_before": ". Southern New Mexico",
+          "plant_type": "Grape",
+          "category": "Table grape varieties recommended for northern New Mexico"
+        },
+        {
+          "contains": "are only a few of the fig varieties that can be grown in New Mexico",
+          "names_after": "moved indoors during winter.",
+          "names_before": "are only a few of the fig varieties",
+          "plant_type": "Fig",
+          "category": "Fig varieties noted for New Mexico"
+        },
+        {
+          "contains": "are the most common commercial pecan varieties",
+          "names_before": "are the most common commercial pecan varieties",
+          "plant_type": "Pecan",
+          "category": "Pecan varieties noted for New Mexico orchards"
+        },
+        {
+          "contains": "early ripening varieties like",
+          "names_after": "early ripening varieties like",
+          "names_before": "are recommended",
+          "plant_type": "Pecan",
+          "category": "Pecan varieties noted for New Mexico orchards"
+        },
+        {
+          "contains": "are adapted to cold climates",
+          "names_after": "for example,",
+          "names_before": "are also available",
+          "plant_type": "Pecan",
+          "category": "Pecan varieties noted for New Mexico orchards"
+        },
+        {
+          "contains": "are the two most popular varieties",
+          "names_before": "are the two most popular varieties",
+          "plant_type": "Jujube",
+          "category": "Jujube varieties noted for New Mexico"
+        },
+        {
+          "contains": "are also available",
+          "names_after": "are the two most popular varieties;",
+          "names_before": "are also available",
+          "plant_type": "Jujube",
+          "category": "Jujube varieties noted for New Mexico"
+        },
+        {
+          "contains": "'Sherwood' is too late for northern New Mexico",
+          "names_after": "are also available.",
+          "names_before": "is too late for northern New Mexico",
+          "plant_type": "Jujube",
+          "category": "Jujube varieties noted for New Mexico"
+        },
+        {
+          "contains": "'So' is an ornamental variety",
+          "names_after": "northern New Mexico.",
+          "names_before": "is an ornamental variety",
+          "plant_type": "Jujube",
+          "category": "Jujube varieties noted for New Mexico"
+        }
+      ],
+      "description_parts": [
+        {
+          "kind": "key",
+          "key": "paragraph",
+          "rstrip_period": false
+        }
+      ]
+    }
+  ]
+}

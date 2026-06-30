@@ -409,6 +409,8 @@ def source_name_and_note(row, extractor, overrides):
     source_name = row[extractor["name_key"]]
     if extractor.get("trim_name"):
         source_name = source_name.strip()
+    if extractor.get("strip_name_quotes"):
+        source_name = source_name.strip().strip("\"'`").strip()
     notes = []
     for suffix_note in extractor.get("name_suffix_notes", []):
         suffix = suffix_note["suffix"]
@@ -791,14 +793,22 @@ def pdf_marker_list_rows(text, extractor):
         extractor["marker"],
         extractor.get("end_marker", "."),
     ):
-        rows.append({extractor.get("name_key", "name"): name})
+        row = {extractor.get("name_key", "name"): name}
+        row.update(extractor.get("row_fields", {}))
+        rows.append(row)
     return rows
 
 
 def plants_from_pdf_marker_list(text, extractor, overrides, lookups):
     extractor = {"name_key": "name", **extractor}
+    rows = pdf_marker_list_rows(text, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    rows = skip_named_rows(rows, extractor["name_key"], extractor.get("skip_names", []))
+    rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
     return plant_records_from_config_rows(
-        pdf_marker_list_rows(text, extractor),
+        rows,
         extractor,
         overrides,
         lookups,
@@ -988,15 +998,39 @@ def plants_from_pdf_quoted_entries(text, extractor, overrides, lookups):
     )
 
 
+def text_selector_matches(text, selector):
+    if not selector:
+        return False
+    if isinstance(selector, str):
+        return text == selector
+    if selector.get("text") and text == selector["text"]:
+        return True
+    if selector.get("prefix") and text.startswith(selector["prefix"]):
+        return True
+    if selector.get("contains") and selector["contains"] in text:
+        return True
+    return False
+
+
 def quoted_paragraph_rows(page, extractor):
-    blocks = blocks_between_headings(
-        page.blocks,
-        extractor["start_heading"],
-        extractor.get("end_heading"),
-    )
+    blocks = page.blocks
+    if extractor.get("start_heading"):
+        blocks = blocks_between_headings(
+            blocks,
+            extractor["start_heading"],
+            extractor.get("end_heading"),
+        )
+    start_after = extractor.get("start_after")
+    started = not start_after
     category = extractor.get("default_category")
     rows = []
     for tag, text in blocks:
+        if not started:
+            if text_selector_matches(text, start_after):
+                started = True
+            continue
+        if text_selector_matches(text, extractor.get("stop_at")):
+            break
         for switch in extractor.get("category_switches", []):
             if text == switch["text"]:
                 category = switch["category"]
@@ -1025,8 +1059,14 @@ def quoted_paragraph_rows(page, extractor):
 
 def plants_from_quoted_paragraphs(page, extractor, overrides, lookups):
     extractor = {"name_key": "name", **extractor}
+    rows = quoted_paragraph_rows(page, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    rows = skip_named_rows(rows, extractor["name_key"], extractor.get("skip_names", []))
+    rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
     return plant_records_from_config_rows(
-        quoted_paragraph_rows(page, extractor),
+        rows,
         extractor,
         overrides,
         lookups,

@@ -1,0 +1,183 @@
+{
+    title: "Minor Small Fruit Crops for New Mexico Gardens",
+    author: "Shengrui Yao",
+    description: "NMSU Guide H-326 with New Mexico notes for currants, gooseberries, elderberries, bush cherries, sea buckthorn, and honeyberries",
+    url: "https://pubs.nmsu.edu/_h/H326/index.html",
+    thumbnail: "website",
+    published: "Revised April 2019",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "NMSU Sustainable Agriculture Science Center at Alcalde, NM",
+            latitude: 36.0889,
+            longitude: -106.0583
+        },
+        {
+            name: "NMSU Los Lunas Science Center, Los Lunas, NM",
+            latitude: 34.772,
+            longitude: -106.759
+        },
+    ],
+    categories: [
+        {
+            name: "Red currant cultivars noted for New Mexico gardens",
+            description: "Red currant cultivars named in NMSU Guide H-326"
+        },
+        {
+            name: "Black currant cultivars noted for New Mexico gardens",
+            description: "Black currant cultivars named in NMSU Guide H-326"
+        },
+        {
+            name: "Clove currant cultivars trialed at Alcalde",
+            description: "Clove currants said by NMSU Guide H-326 to have produced well at the NMSU Alcalde Center trial"
+        },
+        {
+            name: "Gooseberry cultivars noted for New Mexico gardens",
+            description: "Gooseberry cultivars named in NMSU Guide H-326"
+        },
+        {
+            name: "Elderberry varieties noted for New Mexico gardens",
+            description: "Elderberry varieties named in NMSU Guide H-326"
+        },
+        {
+            name: "Bush cherry cultivars described for New Mexico gardens",
+            description: "Bush cherry cultivars described in NMSU Guide H-326"
+        },
+    ],
+    plants: [
+        {
+            type: "Currant",
+            name: "Red Lake",
+            category: "Red currant cultivars noted for New Mexico gardens",
+            description: "'Red Lake' and 'Perfection' are two of the most popular red currants, and 'Black September' and 'Blackout' are some black currant cultivars. But some black currants have strong flavor and are not suitable for fresh eating. Red currant 'Rovada' and 'Crandall', which are clove currants (Ribes odoratum) that are black in color, produced well at the NMSU Alcalde Center trial. 'Pixwell', 'Poorman', 'Invicta', 'Hinomaki', and 'Tixia' are popular gooseberries cultivars; 'Hinomaki' was the top performer in an 8-year trial at Alcalde. Both currants and gooseberries are generally self-fruitful, so only one variety is necessary for pollination."
+        },
+        {
+            type: "Currant",
+            name: "Perfection",
+            category: "Red currant cultivars noted for New Mexico gardens",
+            description: "'Red Lake' and 'Perfection' are two of the most popular red currants, and 'Black September' and 'Blackout' are some black currant cultivars. But some black currants have strong flavor and are not suitable for fresh eating. Red currant 'Rovada' and 'Crandall', which are clove currants (Ribes odoratum) that are black in color, produced well at the NMSU Alcalde Center trial. 'Pixwell', 'Poorman', 'Invicta', 'Hinomaki', and 'Tixia' are popular gooseberries cultivars; 'Hinomaki' was the top performer in an 8-year trial at Alcalde. Both currants and gooseberries are generally self-fruitful, so only one variety is necessary for pollination."
+        },
+        {
+            type: "Currant",
+            name: "Black September",
+            category: "Black currant cultivars noted for New Mexico gardens",
+            description: "'Red Lake' and 'Perfection' are two of the most popular red currants, and 'Black September' and 'Blackout' are some black currant cultivars. But some black currants have strong flavor and are not suitable for fresh eating. Red currant 'Rovada' and 'Crandall', which are clove currants (Ribes odoratum) that are black in color, produced well at the NMSU Alcalde Center trial. 'Pixwell', 'Poorman', 'Invicta', 'Hinomaki', and 'Tixia' are popular gooseberries cultivars; 'Hinomaki' was the top performer in an 8-year trial at Alcalde. Both currants and gooseberries are generally self-fruitful, so only one variety is necessary for pollination."
+        },
+        {
+            type: "Currant",
+            name: "Blackout",
+            category: "Black currant cultivars noted for New Mexico gardens",
+            description: "'Red Lake' and 'Perfection' are two of the most popular red currants, and 'Black September' and 'Blackout' are some black currant cultivars. But some black currants have strong flavor and are not suitable for fresh eating. Red currant 'Rovada' and 'Crandall', which are clove currants (Ribes odoratum) that are black in color, produced well at the NMSU Alcalde Center trial. 'Pixwell', 'Poorman', 'Invicta', 'Hinomaki', and 'Tixia' are popular gooseberries cultivars; 'Hinomaki' was the top performer in an 8-year trial at Alcalde. Both currants and gooseberries are generally self-fruitful, so only one variety is necessary for pollination."
+        },
+        {
+            type: "Currant",
+            name: "Rovada",
+            category: "Red currant cultivars noted for New Mexico gardens",
+            description: "'Red Lake' and 'Perfection' are two of the most popular red currants, and 'Black September' and 'Blackout' are some black currant cultivars. But some black currants have strong flavor and are not suitable for fresh eating. Red currant 'Rovada' and 'Crandall', which are clove currants (Ribes odoratum) that are black in color, produced well at the NMSU Alcalde Center trial. 'Pixwell', 'Poorman', 'Invicta', 'Hinomaki', and 'Tixia' are popular gooseberries cultivars; 'Hinomaki' was the top performer in an 8-year trial at Alcalde. Both currants and gooseberries are generally self-fruitful, so only one variety is necessary for pollination."
+        },
+        {
+            type: "Currant",
+            name: "Crandall",
+            category: "Clove currant cultivars trialed at Alcalde",
+            description: "'Red Lake' and 'Perfection' are two of the most popular red currants, and 'Black September' and 'Blackout' are some black currant cultivars. But some black currants have strong flavor and are not suitable for fresh eating. Red currant 'Rovada' and 'Crandall', which are clove currants (Ribes odoratum) that are black in color, produced well at the NMSU Alcalde Center trial. 'Pixwell', 'Poorman', 'Invicta', 'Hinomaki', and 'Tixia' are popular gooseberries cultivars; 'Hinomaki' was the top performer in an 8-year trial at Alcalde. Both currants and gooseberries are generally self-fruitful, so only one variety is necessary for pollination."
+        },
+        {
+            type: "Gooseberry",
+            name: "Pixwell",
+            category: "Gooseberry cultivars noted for New Mexico gardens",
+            description: "'Red Lake' and 'Perfection' are two of the most popular red currants, and 'Black September' and 'Blackout' are some black currant cultivars. But some black currants have strong flavor and are not suitable for fresh eating. Red currant 'Rovada' and 'Crandall', which are clove currants (Ribes odoratum) that are black in color, produced well at the NMSU Alcalde Center trial. 'Pixwell', 'Poorman', 'Invicta', 'Hinomaki', and 'Tixia' are popular gooseberries cultivars; 'Hinomaki' was the top performer in an 8-year trial at Alcalde. Both currants and gooseberries are generally self-fruitful, so only one variety is necessary for pollination."
+        },
+        {
+            type: "Gooseberry",
+            name: "Poorman",
+            category: "Gooseberry cultivars noted for New Mexico gardens",
+            description: "'Red Lake' and 'Perfection' are two of the most popular red currants, and 'Black September' and 'Blackout' are some black currant cultivars. But some black currants have strong flavor and are not suitable for fresh eating. Red currant 'Rovada' and 'Crandall', which are clove currants (Ribes odoratum) that are black in color, produced well at the NMSU Alcalde Center trial. 'Pixwell', 'Poorman', 'Invicta', 'Hinomaki', and 'Tixia' are popular gooseberries cultivars; 'Hinomaki' was the top performer in an 8-year trial at Alcalde. Both currants and gooseberries are generally self-fruitful, so only one variety is necessary for pollination."
+        },
+        {
+            type: "Gooseberry",
+            name: "Invicta",
+            category: "Gooseberry cultivars noted for New Mexico gardens",
+            description: "'Red Lake' and 'Perfection' are two of the most popular red currants, and 'Black September' and 'Blackout' are some black currant cultivars. But some black currants have strong flavor and are not suitable for fresh eating. Red currant 'Rovada' and 'Crandall', which are clove currants (Ribes odoratum) that are black in color, produced well at the NMSU Alcalde Center trial. 'Pixwell', 'Poorman', 'Invicta', 'Hinomaki', and 'Tixia' are popular gooseberries cultivars; 'Hinomaki' was the top performer in an 8-year trial at Alcalde. Both currants and gooseberries are generally self-fruitful, so only one variety is necessary for pollination."
+        },
+        {
+            type: "Gooseberry",
+            name: "Hinnomaki Red",
+            category: "Gooseberry cultivars noted for New Mexico gardens",
+            description: "'Red Lake' and 'Perfection' are two of the most popular red currants, and 'Black September' and 'Blackout' are some black currant cultivars. But some black currants have strong flavor and are not suitable for fresh eating. Red currant 'Rovada' and 'Crandall', which are clove currants (Ribes odoratum) that are black in color, produced well at the NMSU Alcalde Center trial. 'Pixwell', 'Poorman', 'Invicta', 'Hinomaki', and 'Tixia' are popular gooseberries cultivars; 'Hinomaki' was the top performer in an 8-year trial at Alcalde. Both currants and gooseberries are generally self-fruitful, so only one variety is necessary for pollination. Source names this gooseberry Hinomaki"
+        },
+        {
+            type: "Gooseberry",
+            name: "Tixia",
+            category: "Gooseberry cultivars noted for New Mexico gardens",
+            description: "'Red Lake' and 'Perfection' are two of the most popular red currants, and 'Black September' and 'Blackout' are some black currant cultivars. But some black currants have strong flavor and are not suitable for fresh eating. Red currant 'Rovada' and 'Crandall', which are clove currants (Ribes odoratum) that are black in color, produced well at the NMSU Alcalde Center trial. 'Pixwell', 'Poorman', 'Invicta', 'Hinomaki', and 'Tixia' are popular gooseberries cultivars; 'Hinomaki' was the top performer in an 8-year trial at Alcalde. Both currants and gooseberries are generally self-fruitful, so only one variety is necessary for pollination."
+        },
+        {
+            type: "Elderberry",
+            name: "Adams",
+            category: "Elderberry varieties noted for New Mexico gardens",
+            description: "Popular varieties include 'Adams', 'Johns', 'Nova', 'Kent', and 'York'. 'Nova' and 'York' are doing very well at the NMSU Los Lunas Science Center."
+        },
+        {
+            type: "Elderberry",
+            name: "Johns",
+            category: "Elderberry varieties noted for New Mexico gardens",
+            description: "Popular varieties include 'Adams', 'Johns', 'Nova', 'Kent', and 'York'. 'Nova' and 'York' are doing very well at the NMSU Los Lunas Science Center."
+        },
+        {
+            type: "Elderberry",
+            name: "Nova",
+            category: "Elderberry varieties noted for New Mexico gardens",
+            description: "Popular varieties include 'Adams', 'Johns', 'Nova', 'Kent', and 'York'. 'Nova' and 'York' are doing very well at the NMSU Los Lunas Science Center."
+        },
+        {
+            type: "Elderberry",
+            name: "Kent",
+            category: "Elderberry varieties noted for New Mexico gardens",
+            description: "Popular varieties include 'Adams', 'Johns', 'Nova', 'Kent', and 'York'. 'Nova' and 'York' are doing very well at the NMSU Los Lunas Science Center."
+        },
+        {
+            type: "Elderberry",
+            name: "York",
+            category: "Elderberry varieties noted for New Mexico gardens",
+            description: "Popular varieties include 'Adams', 'Johns', 'Nova', 'Kent', and 'York'. 'Nova' and 'York' are doing very well at the NMSU Los Lunas Science Center."
+        },
+        {
+            type: "Sour Cherry",
+            name: "Juliet",
+            category: "Bush cherry cultivars described for New Mexico gardens",
+            description: "Bush cherries are lesser known tart cherries from the University of Saskatchewan, Canada. Breeding began in the 1940s and resulted in Mongolia cherries (cross of sour cherry [Prunus cerasus]  Mongolia cherry [P. fruticosa]). In the 1980s, Mongolia cherries were crossed with a high-fruit-quality and cold-hardy cultivar 'North Star' and produced a series of bush cherry cultivars. They are very hardy (USDA hardiness zone 2) with higher sugar content than traditional tree-type tart cherries. 'Carmine Jewel' was the first release and is self-pollinating, which means planting one tree will fruit, but cross pollination with another bush cherry cultivar always increases fruit set. In 2005, they released the Romance series cultivars: 'Juliet', 'Valentine', 'Cupid', 'Romeo', and 'Crimson Passion'. The fruit quality is the best when they are dark red in color. They can grow to 6 feet tall and 5-6 feet wide. Low in stature, these varieties are easy for picking and frost protection during blooming time. Very suitable for home orchards or landscapes."
+        },
+        {
+            type: "Sour Cherry",
+            name: "Valentine",
+            category: "Bush cherry cultivars described for New Mexico gardens",
+            description: "Bush cherries are lesser known tart cherries from the University of Saskatchewan, Canada. Breeding began in the 1940s and resulted in Mongolia cherries (cross of sour cherry [Prunus cerasus]  Mongolia cherry [P. fruticosa]). In the 1980s, Mongolia cherries were crossed with a high-fruit-quality and cold-hardy cultivar 'North Star' and produced a series of bush cherry cultivars. They are very hardy (USDA hardiness zone 2) with higher sugar content than traditional tree-type tart cherries. 'Carmine Jewel' was the first release and is self-pollinating, which means planting one tree will fruit, but cross pollination with another bush cherry cultivar always increases fruit set. In 2005, they released the Romance series cultivars: 'Juliet', 'Valentine', 'Cupid', 'Romeo', and 'Crimson Passion'. The fruit quality is the best when they are dark red in color. They can grow to 6 feet tall and 5-6 feet wide. Low in stature, these varieties are easy for picking and frost protection during blooming time. Very suitable for home orchards or landscapes."
+        },
+        {
+            type: "Sour Cherry",
+            name: "Cupid",
+            category: "Bush cherry cultivars described for New Mexico gardens",
+            description: "Bush cherries are lesser known tart cherries from the University of Saskatchewan, Canada. Breeding began in the 1940s and resulted in Mongolia cherries (cross of sour cherry [Prunus cerasus]  Mongolia cherry [P. fruticosa]). In the 1980s, Mongolia cherries were crossed with a high-fruit-quality and cold-hardy cultivar 'North Star' and produced a series of bush cherry cultivars. They are very hardy (USDA hardiness zone 2) with higher sugar content than traditional tree-type tart cherries. 'Carmine Jewel' was the first release and is self-pollinating, which means planting one tree will fruit, but cross pollination with another bush cherry cultivar always increases fruit set. In 2005, they released the Romance series cultivars: 'Juliet', 'Valentine', 'Cupid', 'Romeo', and 'Crimson Passion'. The fruit quality is the best when they are dark red in color. They can grow to 6 feet tall and 5-6 feet wide. Low in stature, these varieties are easy for picking and frost protection during blooming time. Very suitable for home orchards or landscapes."
+        },
+        {
+            type: "Sour Cherry",
+            name: "Romeo",
+            category: "Bush cherry cultivars described for New Mexico gardens",
+            description: "Bush cherries are lesser known tart cherries from the University of Saskatchewan, Canada. Breeding began in the 1940s and resulted in Mongolia cherries (cross of sour cherry [Prunus cerasus]  Mongolia cherry [P. fruticosa]). In the 1980s, Mongolia cherries were crossed with a high-fruit-quality and cold-hardy cultivar 'North Star' and produced a series of bush cherry cultivars. They are very hardy (USDA hardiness zone 2) with higher sugar content than traditional tree-type tart cherries. 'Carmine Jewel' was the first release and is self-pollinating, which means planting one tree will fruit, but cross pollination with another bush cherry cultivar always increases fruit set. In 2005, they released the Romance series cultivars: 'Juliet', 'Valentine', 'Cupid', 'Romeo', and 'Crimson Passion'. The fruit quality is the best when they are dark red in color. They can grow to 6 feet tall and 5-6 feet wide. Low in stature, these varieties are easy for picking and frost protection during blooming time. Very suitable for home orchards or landscapes."
+        },
+        {
+            type: "Sour Cherry",
+            name: "Crimson Passion",
+            category: "Bush cherry cultivars described for New Mexico gardens",
+            description: "Bush cherries are lesser known tart cherries from the University of Saskatchewan, Canada. Breeding began in the 1940s and resulted in Mongolia cherries (cross of sour cherry [Prunus cerasus]  Mongolia cherry [P. fruticosa]). In the 1980s, Mongolia cherries were crossed with a high-fruit-quality and cold-hardy cultivar 'North Star' and produced a series of bush cherry cultivars. They are very hardy (USDA hardiness zone 2) with higher sugar content than traditional tree-type tart cherries. 'Carmine Jewel' was the first release and is self-pollinating, which means planting one tree will fruit, but cross pollination with another bush cherry cultivar always increases fruit set. In 2005, they released the Romance series cultivars: 'Juliet', 'Valentine', 'Cupid', 'Romeo', and 'Crimson Passion'. The fruit quality is the best when they are dark red in color. They can grow to 6 feet tall and 5-6 feet wide. Low in stature, these varieties are easy for picking and frost protection during blooming time. Very suitable for home orchards or landscapes."
+        },
+        {
+            type: "Sour Cherry",
+            name: "Carmine Jewel",
+            category: "Bush cherry cultivars described for New Mexico gardens",
+            description: "Bush cherries are lesser known tart cherries from the University of Saskatchewan, Canada. Breeding began in the 1940s and resulted in Mongolia cherries (cross of sour cherry [Prunus cerasus]  Mongolia cherry [P. fruticosa]). In the 1980s, Mongolia cherries were crossed with a high-fruit-quality and cold-hardy cultivar 'North Star' and produced a series of bush cherry cultivars. They are very hardy (USDA hardiness zone 2) with higher sugar content than traditional tree-type tart cherries. 'Carmine Jewel' was the first release and is self-pollinating, which means planting one tree will fruit, but cross pollination with another bush cherry cultivar always increases fruit set. In 2005, they released the Romance series cultivars: 'Juliet', 'Valentine', 'Cupid', 'Romeo', and 'Crimson Passion'. The fruit quality is the best when they are dark red in color. They can grow to 6 feet tall and 5-6 feet wide. Low in stature, these varieties are easy for picking and frost protection during blooming time. Very suitable for home orchards or landscapes."
+        },
+    ]
+}

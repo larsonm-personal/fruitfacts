@@ -624,3 +624,43 @@ Repeated cultivars, such as peaches listed in two Louisiana regions, are merged
 after record creation so one importable plant record keeps both source
 descriptions. Mayhaw is intentionally left unencoded because the current plant
 type list does not include it.
+
+## VCE 422-017 Virginia Pear Notes
+
+The VCE pear page uses quoted cultivar paragraphs under a European pear
+heading, then switches to Asian pears with an ordinary prose paragraph rather
+than a heading. The config uses `quoted_paragraph_blocks` with `stop_at` and
+`start_after` prose selectors so the two pear types keep separate categories.
+
+One extracted Asian pear paragraph contains both Kosui and Hosui. The config
+keeps that source-specific cleanup as a declarative `row_splits` entry instead
+of adding custom parser code.
+
+## NMSU H-310 And H-326 Prose Notes
+
+The NMSU orchard and minor-fruit guides name cultivars inside crop prose rather
+than tables. The configs use `inline_quoted_names` with source-local
+`names_after` and `names_before` slices for each recommendation sentence.
+
+These sources showed two reusable quoted-name edge cases. Cultivar names can
+contain internal apostrophes, such as `D'Anjou`, and a sliced phrase can end
+immediately after the closing quote, such as the last cultivar in a list. The
+shared quoted-name parser now handles both cases.
+
+Alias names inside the same quoted list, such as `20th Century` and
+`Nijisseiki`, should be handled with `exclude_names`, `AKA`, and source notes
+so one plant record carries the source relationship without duplicating the
+paragraph.
+
+## Texas A&M EHT-017 Apple Notes
+
+The Texas apple PDF lists the most useful cultivar recommendations in prose
+before a table. The config uses two `pdf_marker_list` extractors bounded by the
+`Varieties` and table markers to separate higher-chill and lower-chill apple
+lists.
+
+The source PDF wraps cultivar names in backtick and apostrophe quote pairs, and
+one cultivar name contains an internal apostrophe. `pdf_marker_list` rows now
+run through the normal cleanup pipeline, and `strip_name_quotes` removes only
+the wrapping quote characters while leaving names such as `Mollie's Delicious`
+intact.

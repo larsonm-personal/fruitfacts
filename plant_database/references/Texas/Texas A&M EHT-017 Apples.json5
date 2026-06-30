@@ -1,0 +1,84 @@
+{
+    title: "Texas Fruit and Nut Production: Apples",
+    author: "Jim Kamas, Monte Nesbitt, and Larry Stein",
+    description: "Texas A&M AgriLife Extension apple guide with chill-hour variety guidance and production notes for Texas",
+    url: "https://agrilifeextension.tamu.edu/asset-external/texas-fruit-and-nut-production-apples/",
+    thumbnail: "pdf",
+    published: "January 2014",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Texas A&M University, College Station, TX",
+            latitude: 30.6104,
+            longitude: -96.3434
+        },
+    ],
+    categories: [
+        {
+            name: "Apple varieties suitable for Texas areas with more than 400 chilling hours",
+            description: "Apple varieties Texas A&M EHT-017 says are suitable for Texas areas with more than 400 hours of winter chilling"
+        },
+        {
+            name: "Apple varieties reliable for Texas areas with 400 or fewer chilling hours",
+            description: "Apple varieties Texas A&M EHT-017 says will grow and fruit reliably in Texas areas receiving 400 or fewer chilling hours"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Apple varieties suitable for Texas areas with more than 400 chilling hours",
+            description: "For areas with more than 400 hours of winter chilling, the source lists this as a suitable apple variety."
+        },
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Apple varieties suitable for Texas areas with more than 400 chilling hours",
+            description: "For areas with more than 400 hours of winter chilling, the source lists this as a suitable apple variety."
+        },
+        {
+            type: "Apple",
+            name: "Imperial Gala",
+            category: "Apple varieties suitable for Texas areas with more than 400 chilling hours",
+            description: "For areas with more than 400 hours of winter chilling, the source lists this as a suitable apple variety."
+        },
+        {
+            type: "Apple",
+            name: "Mollie's Delicious",
+            category: "Apple varieties suitable for Texas areas with more than 400 chilling hours",
+            description: "For areas with more than 400 hours of winter chilling, the source lists this as a suitable apple variety."
+        },
+        {
+            type: "Apple",
+            name: "Mutsu",
+            category: "Apple varieties suitable for Texas areas with more than 400 chilling hours",
+            description: "For areas with more than 400 hours of winter chilling, the source lists this as a suitable apple variety."
+        },
+        {
+            type: "Apple",
+            name: "Pink Lady",
+            category: "Apple varieties suitable for Texas areas with more than 400 chilling hours",
+            description: "For areas with more than 400 hours of winter chilling, the source lists this as a suitable apple variety."
+        },
+        {
+            type: "Apple",
+            name: "Royal Gala",
+            category: "Apple varieties suitable for Texas areas with more than 400 chilling hours",
+            description: "For areas with more than 400 hours of winter chilling, the source lists this as a suitable apple variety."
+        },
+        {
+            type: "Apple",
+            name: "Anna",
+            category: "Apple varieties reliable for Texas areas with 400 or fewer chilling hours",
+            description: "For Texas areas receiving 400 or fewer chilling hours, the source says this variety will grow and fruit reliably."
+        },
+        {
+            type: "Apple",
+            name: "Dorsett Golden",
+            category: "Apple varieties reliable for Texas areas with 400 or fewer chilling hours",
+            description: "For Texas areas receiving 400 or fewer chilling hours, the source says this variety will grow and fruit reliably."
+        },
+    ]
+}

@@ -86,14 +86,15 @@ def first_sentence_containing(text, terms):
 
 
 def quoted_name_paragraph(text):
-    match = re.match(r"^'([^']+)'\s*(?:-\s*)?(.*)$", text)
+    match = re.match(r"^'((?:[^']|'(?=[A-Za-z]))+)'\s*(?:-\s*)?(.*)$", text)
     if not match:
         raise ValueError("Could not parse quoted-name paragraph: " + text)
     return match.group(1), match.group(2).strip()
 
 
 def quoted_names(text):
-    return [match.strip() for match in re.findall(r"'([^']+)'", text) if match.strip()]
+    matches = re.findall(r"'((?:[^']|'(?=[A-Za-z]))+)'(?=$|[\s,.;:)])", text)
+    return [match.strip() for match in matches if match.strip()]
 
 
 def section_between(text, start, end):

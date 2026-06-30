@@ -80,6 +80,13 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
     description
   - Heading-record parsing for HTML sections where category headings are
     followed by cultivar headings and one or more description paragraphs
+  - Quoted paragraph parsing can be bounded by prose selectors with
+    `start_after` and `stop_at`, and now shares row splits, row text fixes, row
+    overrides, skipped names, and dedupe handling with other config extractors
+  - PDF marker-list parsing now shares the normal row cleanup pipeline,
+    including row fields, row splits, row text fixes, row overrides, skipped
+    names, dedupe handling, and wrapping quote cleanup through
+    `strip_name_quotes`
   - Uses strict JSON config files under `helper_scripts/extraction_configs/`
     so the Python standard library can parse them
 - `extract_source.py`
@@ -173,6 +180,8 @@ script. The config runner currently supports:
 - Row overrides for source rows where PDF extraction splits a name or moves a
   word into the wrong field
 - Top-level config `text_fixes` shared by every extractor in one source
+- Quoted-name parsing for internal apostrophes in names such as `D'Anjou`, plus
+  quoted names that end exactly at the end of a source-local slice
 
 The worked UGA C740 and C742 configs show the ideal direction: no
 source-specific Python file, only a source config that drives the shared
@@ -416,6 +425,9 @@ narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
   block text and table cells before deciding the record is name-only.
 - For paragraph-sequence pages, keep record-start patterns strict enough that
   links, video captions, and disclaimers cannot begin false cultivar rows.
+- For prose lists that mention aliases inside the same quoted-name run, prefer
+  `exclude_names` plus a source note on the canonical row. Add `AKA` only when
+  the base plant does not already carry a richer alias list.
 
 ## Next Library Steps
 
