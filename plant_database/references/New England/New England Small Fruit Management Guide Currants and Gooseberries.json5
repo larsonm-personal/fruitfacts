@@ -1,0 +1,249 @@
+{
+    title: "New England Small Fruit Management Guide: Currants and Gooseberries",
+    author: "University of Massachusetts Amherst Extension and New England Extension collaborators",
+    description: "New England Small Fruit Management Guide section for currant, gooseberry, and jostaberry cultivar selection",
+    url: "https://ag.umass.edu/fruit/ne-small-fruit-management-guide",
+    thumbnail: "website",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Massachusetts Amherst Extension, Amherst, Massachusetts",
+            latitude: 42.3912,
+            longitude: -72.5267
+        },
+    ],
+    categories: [
+        {
+            name: "Red currants for New England",
+            description: "New England Small Fruit Management Guide names these popular red currant cultivars"
+        },
+        {
+            name: "White currants for New England",
+            description: "New England Small Fruit Management Guide names these white or pale currant cultivars"
+        },
+        {
+            name: "Black currants resistant to white pine blister rust",
+            description: "New England Small Fruit Management Guide names these black currants as immune or resistant to white pine blister rust"
+        },
+        {
+            name: "Jostaberries for New England",
+            description: "New England Small Fruit Management Guide names these jostaberry cultivars"
+        },
+        {
+            name: "American gooseberries for New England",
+            description: "New England Small Fruit Management Guide names these American gooseberry cultivars"
+        },
+        {
+            name: "European gooseberries for New England",
+            description: "New England Small Fruit Management Guide names these European gooseberry cultivars"
+        },
+    ],
+    plants: [
+        {
+            type: "Currant",
+            name: "Cascade",
+            category: "Red currants for New England",
+            description: "New England Small Fruit Management Guide names Cascade in its red currants for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Detvan",
+            category: "Red currants for New England",
+            description: "New England Small Fruit Management Guide names Detvan in its red currants for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Jonkheer van Tets",
+            category: "Red currants for New England",
+            description: "New England Small Fruit Management Guide names Jonkeer van Tets in its red currants for new england cultivar discussion. Source names this as Jonkeer van Tets"
+        },
+        {
+            type: "Currant",
+            name: "Red Lake",
+            category: "Red currants for New England",
+            description: "New England Small Fruit Management Guide names Red Lake in its red currants for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Rovada",
+            category: "Red currants for New England",
+            description: "New England Small Fruit Management Guide names Rovada in its red currants for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Tatran",
+            category: "Red currants for New England",
+            description: "New England Small Fruit Management Guide names Tatran in its red currants for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Honeyqueen",
+            category: "Red currants for New England",
+            description: "New England Small Fruit Management Guide names Honeyqueen in its red currants for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Wilder",
+            category: "Red currants for New England",
+            description: "New England Small Fruit Management Guide names Wilder in its red currants for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Blanka",
+            category: "White currants for New England",
+            description: "New England Small Fruit Management Guide names Blanka in its white currants for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "White Imperial",
+            category: "White currants for New England",
+            description: "New England Small Fruit Management Guide names White Imperial in its white currants for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Primus",
+            category: "White currants for New England",
+            description: "New England Small Fruit Management Guide names Primus in its white currants for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Pink Champagne",
+            category: "White currants for New England",
+            description: "New England Small Fruit Management Guide names Pink Champagne in its white currants for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "White Dutch",
+            category: "White currants for New England",
+            description: "New England Small Fruit Management Guide names White Dutch in its white currants for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Consort",
+            category: "Black currants resistant to white pine blister rust",
+            description: "New England Small Fruit Management Guide names Consort in its black currants resistant to white pine blister rust cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Crusader",
+            category: "Black currants resistant to white pine blister rust",
+            description: "New England Small Fruit Management Guide names Crusader in its black currants resistant to white pine blister rust cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Ben Sarek",
+            category: "Black currants resistant to white pine blister rust",
+            description: "New England Small Fruit Management Guide names Ben Sarek in its black currants resistant to white pine blister rust cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Titania",
+            category: "Black currants resistant to white pine blister rust",
+            description: "New England Small Fruit Management Guide names Titania in its black currants resistant to white pine blister rust cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Jostaberry",
+            category: "Jostaberries for New England",
+            description: "New England Small Fruit Management Guide names Jostaberry in its jostaberries for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Orus 8",
+            category: "Jostaberries for New England",
+            description: "New England Small Fruit Management Guide names Orus 8 in its jostaberries for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Jostine",
+            category: "Jostaberries for New England",
+            description: "New England Small Fruit Management Guide names Jostine in its jostaberries for new england cultivar discussion"
+        },
+        {
+            type: "Currant",
+            name: "Jogranda",
+            category: "Jostaberries for New England",
+            description: "New England Small Fruit Management Guide names Jogranda in its jostaberries for new england cultivar discussion"
+        },
+        {
+            type: "Gooseberry",
+            name: "Poorman",
+            category: "American gooseberries for New England",
+            description: "New England Small Fruit Management Guide names Poorman in its american gooseberries for new england cultivar discussion"
+        },
+        {
+            type: "Gooseberry",
+            name: "Oregon Champion",
+            category: "American gooseberries for New England",
+            description: "New England Small Fruit Management Guide names Oregon Champion in its american gooseberries for new england cultivar discussion"
+        },
+        {
+            type: "Gooseberry",
+            name: "Captivator",
+            category: "American gooseberries for New England",
+            description: "New England Small Fruit Management Guide names Captivator in its american gooseberries for new england cultivar discussion"
+        },
+        {
+            type: "Gooseberry",
+            name: "Pixwell",
+            category: "American gooseberries for New England",
+            description: "New England Small Fruit Management Guide names Pixwell in its american gooseberries for new england cultivar discussion"
+        },
+        {
+            type: "Gooseberry",
+            name: "Hinnonmaki Red",
+            category: "European gooseberries for New England",
+            description: "New England Small Fruit Management Guide names Hinnonmaki Red in its european gooseberries for new england cultivar discussion"
+        },
+        {
+            type: "Gooseberry",
+            name: "Invicta",
+            category: "European gooseberries for New England",
+            description: "New England Small Fruit Management Guide names Invicta in its european gooseberries for new england cultivar discussion"
+        },
+        {
+            type: "Gooseberry",
+            name: "Hinnonmaki Yellow",
+            category: "European gooseberries for New England",
+            description: "New England Small Fruit Management Guide names Hinnonmaki Yellow in its european gooseberries for new england cultivar discussion"
+        },
+        {
+            type: "Gooseberry",
+            name: "Leveller",
+            category: "European gooseberries for New England",
+            description: "New England Small Fruit Management Guide names Leveller in its european gooseberries for new england cultivar discussion"
+        },
+        {
+            type: "Gooseberry",
+            name: "Careless",
+            category: "European gooseberries for New England",
+            description: "New England Small Fruit Management Guide names Careless in its european gooseberries for new england cultivar discussion"
+        },
+        {
+            type: "Gooseberry",
+            name: "Early Sulfur",
+            category: "European gooseberries for New England",
+            description: "New England Small Fruit Management Guide names Early Sulfur in its european gooseberries for new england cultivar discussion"
+        },
+        {
+            type: "Gooseberry",
+            name: "Catherina",
+            category: "European gooseberries for New England",
+            description: "New England Small Fruit Management Guide names Catherina in its european gooseberries for new england cultivar discussion"
+        },
+        {
+            type: "Gooseberry",
+            name: "Achilles",
+            category: "European gooseberries for New England",
+            description: "New England Small Fruit Management Guide names Achilles in its european gooseberries for new england cultivar discussion"
+        },
+        {
+            type: "Gooseberry",
+            name: "Tixia",
+            category: "European gooseberries for New England",
+            description: "New England Small Fruit Management Guide names Tixia(tm) in its european gooseberries for new england cultivar discussion. Source names this as Tixia(tm)"
+        },
+    ]
+}

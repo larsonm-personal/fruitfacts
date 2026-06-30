@@ -37,6 +37,7 @@ from fruitfacts_extract.text_tools import clean_text
 from fruitfacts_extract.text_tools import first_sentence_containing
 from fruitfacts_extract.text_tools import names_after_marker
 from fruitfacts_extract.text_tools import quoted_name_paragraph
+from fruitfacts_extract.text_tools import quoted_names
 from fruitfacts_extract.text_tools import section_between
 from fruitfacts_extract.text_tools import split_sentences
 
@@ -486,6 +487,10 @@ def html_rule_matches(tag, text, state, rule):
         return False
     if rule.get("prefix") and not text.startswith(rule["prefix"]):
         return False
+    if rule.get("contains") and rule["contains"] not in text:
+        return False
+    if rule.get("pattern") and not re.search(rule["pattern"], text):
+        return False
     if rule.get("section") and state.get("section") != rule["section"]:
         return False
     if rule.get("subsection") and state.get("subsection") != rule["subsection"]:
@@ -500,6 +505,10 @@ def html_rule_values(rule):
         "text",
         "texts",
         "prefix",
+        "contains",
+        "pattern",
+        "names_after",
+        "names_before",
         "section",
         "subsection",
     }
@@ -984,6 +993,153 @@ def plants_from_colon_paragraphs(page, extractor, overrides, lookups):
     )
 
 
+def inline_quoted_name_rows(page, extractor):
+    blocks = blocks_between_headings(
+        page.blocks,
+        extractor["start_heading"],
+        extractor.get("end_heading"),
+    )
+    rows = []
+    excluded = set(extractor.get("exclude_names", []))
+    for tag, text in blocks:
+        if tag not in extractor.get("paragraph_tags", ["p"]):
+            continue
+        for rule in extractor["paragraph_rules"]:
+            if not html_rule_matches(tag, text, {}, rule):
+                continue
+            name_text = text
+            if rule.get("names_after"):
+                if rule["names_after"] not in name_text:
+                    continue
+                name_text = name_text.split(rule["names_after"], 1)[1]
+            if rule.get("names_before"):
+                if rule["names_before"] not in name_text:
+                    continue
+                name_text = name_text.split(rule["names_before"], 1)[0]
+            values = html_rule_values(rule)
+            for name in quoted_names(name_text):
+                if name in excluded:
+                    continue
+                row = {
+                    "name": name,
+                    "paragraph": text,
+                }
+                row.update(values)
+                rows.append(row)
+    return rows
+
+
+def plants_from_inline_quoted_names(page, extractor, overrides, lookups):
+    extractor = {
+        "name_key": "name",
+        "category": {"row_key": "category"},
+        "plant_type": {"row_key": "plant_type"},
+        **extractor,
+    }
+    rows = inline_quoted_name_rows(page, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
+    return plant_records_from_config_rows(rows, extractor, overrides, lookups)
+
+
+def clean_release_remainder(text):
+    return text.strip().lstrip("-").strip()
+
+
+def release_following_description(blocks, index, extractor):
+    if index + 1 >= len(blocks):
+        return None
+    next_tag, next_text = blocks[index + 1]
+    if next_tag != "p" or next_text.startswith("'"):
+        return None
+    for prefix in extractor.get("skip_following_prefixes", []):
+        if next_text.startswith(prefix):
+            return None
+    return next_text
+
+
+def release_remainder_is_description(remainder, extractor):
+    if not remainder:
+        return False
+    patterns = extractor.get(
+        "description_remainder_patterns",
+        [r"^(?:a|an|has|is|produces|was)\b"],
+    )
+    return line_matches_any(remainder, patterns)
+
+
+def quoted_release_rows(page, extractor):
+    blocks = blocks_between_headings(
+        page.blocks,
+        extractor["start_heading"],
+        extractor.get("end_heading"),
+    )
+    rows = []
+    state = {
+        "category": None,
+        "plant_type": None,
+    }
+    for index, (tag, text) in enumerate(blocks):
+        if tag.startswith("h"):
+            apply_html_rules(tag, text, state, extractor.get("heading_rules", []))
+            continue
+        if tag != "p" or not text.startswith("'"):
+            continue
+        match = re.match(r"^'([^']+)'\s*(.*)$", text)
+        if not match:
+            continue
+        row = {
+            "name": match.group(1).strip(),
+            "category": state.get("category"),
+            "plant_type": state.get("plant_type"),
+            "title_remainder": clean_release_remainder(match.group(2)),
+        }
+        for rule in extractor.get("remainder_rules", []):
+            if html_rule_matches(tag, row["title_remainder"], {}, rule):
+                row.update(html_rule_values(rule))
+        if not row.get("category") or not row.get("plant_type"):
+            continue
+        description_value = None
+        if release_remainder_is_description(row["title_remainder"], extractor):
+            description_value = row["title_remainder"]
+        elif extractor.get("description_from_following", True):
+            description_value = release_following_description(blocks, index, extractor)
+        if (
+            extractor.get("prepend_name_if_lowercase")
+            and description_value
+            and description_value[0].islower()
+        ):
+            description_value = row["name"] + " " + description_value
+        if not description_value and extractor.get("name_only_description_template"):
+            description_value = format_template(
+                extractor["name_only_description_template"],
+                row,
+                extractor,
+            )
+        if description_value:
+            row["description"] = description_value
+        rows.append(row)
+    return rows
+
+
+def plants_from_quoted_releases(page, extractor, overrides, lookups):
+    extractor = {
+        "name_key": "name",
+        "description_key": "description",
+        "category": {"row_key": "category"},
+        "plant_type": {"row_key": "plant_type"},
+        **extractor,
+    }
+    rows = quoted_release_rows(page, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
+    return plant_records_from_config_rows(rows, extractor, overrides, lookups)
+
+
 def build_lookups(data, config):
     lookups = {}
     for lookup in config.get("lookups", []):
@@ -1052,6 +1208,10 @@ def extract(config):
             )
         elif extractor["kind"] == "colon_paragraph_blocks":
             plants.extend(plants_from_colon_paragraphs(data, extractor, overrides, lookups))
+        elif extractor["kind"] == "inline_quoted_names":
+            plants.extend(plants_from_inline_quoted_names(data, extractor, overrides, lookups))
+        elif extractor["kind"] == "quoted_release_blocks":
+            plants.extend(plants_from_quoted_releases(data, extractor, overrides, lookups))
         else:
             raise ValueError("Unsupported extractor kind: " + extractor["kind"])
     return plants

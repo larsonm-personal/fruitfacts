@@ -2435,7 +2435,7 @@
         },
         {
             id: "new-england-small-fruit-management-guide",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "New England Small Fruit Management Guide",
             institution: "University of Massachusetts Amherst Extension and New England Extension collaborators",
@@ -2457,13 +2457,18 @@
                 "Large regional small-fruit guide with cultivar, pest, disease, and management sections for New England",
             asset_decision: "stub from web",
             proposed_reference_path:
-                "plant_database/references/New England/New England Small Fruit Management Guide.json5",
+                "plant_database/references/New England/New England Small Fruit Management Guide Currants and Gooseberries.json5",
             duplicate_check:
                 "Existing references include Maine and New Hampshire crop-specific sources, but no broad New England small-fruit guide",
             notes: [
                 "Found while searching for UMass and New England sources adjacent to existing Maine, New Hampshire, and Vermont references",
                 "Useful but intentionally difficult: multi-page guide with many non-cultivar tables mixed into cultivar guidance",
-                "Likely parsing issue: crawler or manual extraction needs to isolate variety sections from pesticide and disease-management tables"
+                "Likely parsing issue: crawler or manual extraction needs to isolate variety sections from pesticide and disease-management tables",
+                "Encoded in plant_database/references/New England/New England Small Fruit Management Guide Currants and Gooseberries.json5",
+                "Config extraction added at helper_scripts/extraction_configs/new_england_small_fruit_ribes.json",
+                "Manifest entry added as new_england_small_fruit_ribes",
+                "Worked example for inline quoted-name extraction from a bounded HTML heading section with source-local paragraph slicing",
+                "Current draft covers the Currants and Gooseberries Choosing Cultivars section; blueberry, strawberry, bramble, and grape management pages remain review caveats"
             ]
         },
         {
@@ -2688,7 +2693,7 @@
         },
         {
             id: "usda-ars-poplarville-plant-releases",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Plant Releases",
             institution: "USDA Agricultural Research Service, Thad Cochran Southern Horticultural Laboratory",
@@ -2713,7 +2718,12 @@
             notes: [
                 "Found from USDA ARS Poplarville release comments in the North Carolina blueberry release reference",
                 "Includes non-fruit ornamental releases, so future extraction should filter crop type carefully",
-                "Likely parsing issue: source is an index of links, not a single cultivar table"
+                "Likely parsing issue: source is an index of links, not a single cultivar table",
+                "Encoded in plant_database/references/National/USDA ARS Poplarville Plant Releases.json5",
+                "Config extraction added at helper_scripts/extraction_configs/usda_ars_poplarville_plant_releases.json",
+                "Manifest entry added as usda_ars_poplarville_plant_releases",
+                "Worked example for quoted release paragraphs where cultivar heading and description are sometimes split across adjacent paragraphs",
+                "Current draft filters out non-fruit hibiscus ornamental releases and keeps Native Blue as an ornamental blueberry category"
             ]
         }
     ]

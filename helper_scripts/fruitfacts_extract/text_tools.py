@@ -92,6 +92,10 @@ def quoted_name_paragraph(text):
     return match.group(1), match.group(2).strip()
 
 
+def quoted_names(text):
+    return [match.strip() for match in re.findall(r"'([^']+)'", text) if match.strip()]
+
+
 def section_between(text, start, end):
     start_index = text.find(start)
     if start_index < 0:

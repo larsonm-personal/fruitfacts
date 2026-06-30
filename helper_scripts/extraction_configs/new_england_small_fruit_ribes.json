@@ -1,0 +1,104 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://ag.umass.edu/agriculture-food-environment/fruit/ne-small-fruit-management-guide/currants-gooseberries"
+  },
+  "reference_fields": [
+    ["title", "New England Small Fruit Management Guide: Currants and Gooseberries"],
+    ["author", "University of Massachusetts Amherst Extension and New England Extension collaborators"],
+    ["description", "New England Small Fruit Management Guide section for currant, gooseberry, and jostaberry cultivar selection"],
+    ["url", "https://ag.umass.edu/fruit/ne-small-fruit-management-guide"],
+    ["thumbnail", "website"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Massachusetts Amherst Extension, Amherst, Massachusetts",
+      "latitude": 42.3912,
+      "longitude": -72.5267
+    }
+  ],
+  "categories": [
+    {
+      "name": "Red currants for New England",
+      "description": "New England Small Fruit Management Guide names these popular red currant cultivars"
+    },
+    {
+      "name": "White currants for New England",
+      "description": "New England Small Fruit Management Guide names these white or pale currant cultivars"
+    },
+    {
+      "name": "Black currants resistant to white pine blister rust",
+      "description": "New England Small Fruit Management Guide names these black currants as immune or resistant to white pine blister rust"
+    },
+    {
+      "name": "Jostaberries for New England",
+      "description": "New England Small Fruit Management Guide names these jostaberry cultivars"
+    },
+    {
+      "name": "American gooseberries for New England",
+      "description": "New England Small Fruit Management Guide names these American gooseberry cultivars"
+    },
+    {
+      "name": "European gooseberries for New England",
+      "description": "New England Small Fruit Management Guide names these European gooseberry cultivars"
+    }
+  ],
+  "name_overrides": {
+    "Jonkeer van Tets": {
+      "name": "Jonkheer van Tets",
+      "note": "Source names this as Jonkeer van Tets"
+    },
+    "Tixia(tm)": {
+      "name": "Tixia",
+      "note": "Source names this as Tixia(tm)"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "inline_quoted_names",
+      "start_heading": "Choosing Cultivars",
+      "end_heading": "Site Selection and Soil Preparation",
+      "dedupe_keys": ["name", "category"],
+      "paragraph_rules": [
+        {
+          "prefix": "Red currants",
+          "category": "Red currants for New England",
+          "plant_type": "Currant"
+        },
+        {
+          "prefix": "White currants",
+          "category": "White currants for New England",
+          "plant_type": "Currant"
+        },
+        {
+          "prefix": "Black currants",
+          "category": "Black currants resistant to white pine blister rust",
+          "plant_type": "Currant"
+        },
+        {
+          "prefix": "Jostaberries",
+          "category": "Jostaberries for New England",
+          "plant_type": "Currant"
+        },
+        {
+          "prefix": "Gooseberries",
+          "names_after": "American cultivars include",
+          "names_before": "The fruits of the European cultivars",
+          "category": "American gooseberries for New England",
+          "plant_type": "Gooseberry"
+        },
+        {
+          "prefix": "Gooseberries",
+          "contains": "European cultivars",
+          "names_after": "European cultivars are larger and better flavored and include",
+          "category": "European gooseberries for New England",
+          "plant_type": "Gooseberry"
+        }
+      ],
+      "description_template": "New England Small Fruit Management Guide names {name} in its {category_lower} cultivar discussion"
+    }
+  ]
+}

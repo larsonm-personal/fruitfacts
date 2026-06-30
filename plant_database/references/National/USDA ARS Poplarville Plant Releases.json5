@@ -1,0 +1,143 @@
+{
+    title: "USDA ARS Poplarville Plant Releases",
+    author: "USDA Agricultural Research Service, Thad Cochran Southern Horticultural Laboratory",
+    description: "USDA ARS Poplarville release index for blueberry and muscadine cultivars",
+    url: "https://www.ars.usda.gov/southeast-area/poplarville-ms/tcshl/docs/plant-releases/",
+    thumbnail: "website",
+    accessed: "Jun 2026",
+    type: "public breeding program list",
+    ignore_for_nearby_searches: true,
+    needs_help: true,
+    locations: [
+        {
+            name: "USDA ARS Thad Cochran Southern Horticultural Laboratory, Poplarville, Mississippi",
+            latitude: 30.8472,
+            longitude: -89.5342
+        },
+    ],
+    categories: [
+        {
+            name: "Recent rabbiteye blueberry releases",
+            description: "USDA ARS Poplarville lists these under recent rabbiteye blueberry releases"
+        },
+        {
+            name: "Recent southern highbush blueberry releases",
+            description: "USDA ARS Poplarville lists these under recent southern highbush blueberry releases"
+        },
+        {
+            name: "Recent muscadine releases",
+            description: "USDA ARS Poplarville lists this under recent muscadine releases"
+        },
+        {
+            name: "Ornamental blueberry releases",
+            description: "USDA ARS Poplarville lists this as an ornamental blueberry release"
+        },
+        {
+            name: "Past blueberry releases",
+            description: "USDA ARS Poplarville lists these under past blueberry releases"
+        },
+    ],
+    plants: [
+        {
+            type: "Blueberry",
+            name: "DeSoto",
+            category: "Recent rabbiteye blueberry releases",
+            harvest_time_unparsed: "DeSoto blooms two to three weeks later than early-to-mid season cultivars, and its fruit mature 14-21 days after cultivars such as Climax.",
+            description: "Produces medium to large fruit having excellent color, flavor and firmness. Plants of DeSoto are productive and vigorous but semi-dwarf, upright and spreading. Bushes obtain a maximum height of approximately 2 meters, reducing the necessity of top-pruning. DeSoto blooms two to three weeks later than early-to-mid season cultivars, and its fruit mature 14-21 days after cultivars such as Climax. The name DeSoto was chosen to reflect the site at which they were developed, which is adjacent to the DeSoto National Forest"
+        },
+        {
+            type: "Blueberry",
+            name: "Prince",
+            category: "Recent rabbiteye blueberry releases",
+            harvest_time_unparsed: "Produces berries which ripen earlier than currently grown rabbiteye blueberry cultivars and are medium-size with small picking scars, good color, firmness and flavor characteristics.",
+            description: "Produces berries which ripen earlier than currently grown rabbiteye blueberry cultivars and are medium-size with small picking scars, good color, firmness and flavor characteristics. Prince has a relatively tall and spreading growth habit, grows vigorously, and produces numerous canes. The development of numerous flower-buds arising from vigorous new annual growth resuts in a high yield potential"
+        },
+        {
+            type: "Blueberry",
+            name: "Gumbo",
+            category: "Recent southern highbush blueberry releases",
+            harvest_time_unparsed: "Gumbo has a bloom and ripening period are adapted to Southern US.",
+            description: "Gumbo has a bloom and ripening period are adapted to Southern US. It typically misses the later spring freezes, yet ripens in a time frame that puts it into a window before Rabbiteye come onto the market. 'Gumbo' is a vigorous plant with good longevity which is uncharacteristic of other Southern Highbush varieties that are currently available to the area. It is very productive with good fruit quality which is also uncharacteristic of other Southern Highbush. 'Gumbo' productivity is rival to many Rabbiteye Cultivars without sacrificing the fruit quality of other Southern Highbush. This new Southern Highbush cultivar will put growers into a niche for early fresh fruit market that is prior to rabbiteye ripening; therefore giving the grower a chance at premium prices for their fruit"
+        },
+        {
+            type: "Blueberry",
+            name: "Gupton",
+            category: "Recent southern highbush blueberry releases",
+            harvest_time_unparsed: "Plants bloom in mid-late March in south Mississippi and fruit ripen about ten days before the earliest maturing rabbiteye blueberries.",
+            description: "Berries of Gupton are medium to large with very good flavor, color and firmness and have small picking scars. It is vigorous and productive and has an upright growth habit. Plants bloom in mid-late March in south Mississippi and fruit ripen about ten days before the earliest maturing rabbiteye blueberries"
+        },
+        {
+            type: "Blueberry",
+            name: "Biloxi",
+            category: "Recent southern highbush blueberry releases",
+            harvest_time_unparsed: "Fruit of Biloxi ripens early, has a medium size, with good color, firmness, stem scar and flavor.",
+            description: "Fruit of Biloxi ripens early, has a medium size, with good color, firmness, stem scar and flavor. Plants are upright, vigorous and productive. Biloxi blooms early, about the same time as Climax rabbiteye blueberry, but fruit ripening precedes the earliest ripening rabbiteye cultivar by about 14-21 days"
+        },
+        {
+            type: "Muscadine",
+            name: "Eudora",
+            category: "Recent muscadine releases",
+            description: "A new purple skinned muscadine for the fresh market. Notable attributes include vigorous and productive vines producing medium-large flavorful berries with edible skins and relatively crisp pulp"
+        },
+        {
+            type: "Blueberry",
+            name: "Native Blue",
+            category: "Ornamental blueberry releases",
+            description: "An evergreen ornamental blueberry that is low growing, compact and finely branched, with small glaucous leaves. Native Blue has beautiful foliage that changes color in different seasons. Mature leaves are darker green while newer growth exhibits a light pinkish hue that changes to a bluish green. Other desirable characteristics are its dwarf growth habit, hardy and vigorous growth and its capacity for a high level of fruit prodution that serves as an attractant to birds and other wildlife"
+        },
+        {
+            type: "Blueberry",
+            name: "Cooper",
+            category: "Past blueberry releases",
+            description: "USDA ARS Poplarville lists Cooper under past blueberry releases"
+        },
+        {
+            type: "Blueberry",
+            name: "Gulfcoast",
+            category: "Past blueberry releases",
+            description: "USDA ARS Poplarville lists Gulfcoast under past blueberry releases"
+        },
+        {
+            type: "Blueberry",
+            name: "Jubilee",
+            category: "Past blueberry releases",
+            description: "USDA ARS Poplarville lists Jubilee under past blueberry releases"
+        },
+        {
+            type: "Blueberry",
+            name: "Magnolia",
+            category: "Past blueberry releases",
+            description: "USDA ARS Poplarville lists Magnolia under past blueberry releases"
+        },
+        {
+            type: "Blueberry",
+            name: "Pearl River",
+            category: "Past blueberry releases",
+            description: "USDA ARS Poplarville lists Pearl River under past blueberry releases"
+        },
+        {
+            type: "Blueberry",
+            name: "Austin",
+            category: "Past blueberry releases",
+            description: "USDA ARS Poplarville lists Austin under past blueberry releases"
+        },
+        {
+            type: "Blueberry",
+            name: "Alapaha",
+            category: "Past blueberry releases",
+            description: "USDA ARS Poplarville lists Alapaha under past blueberry releases"
+        },
+        {
+            type: "Blueberry",
+            name: "Ochlockonee",
+            category: "Past blueberry releases",
+            description: "USDA ARS Poplarville lists Ochlockonee under past blueberry releases"
+        },
+        {
+            type: "Blueberry",
+            name: "Dixieblue",
+            category: "Past blueberry releases",
+            description: "USDA ARS Poplarville lists Dixieblue under past blueberry releases"
+        },
+    ]
+}

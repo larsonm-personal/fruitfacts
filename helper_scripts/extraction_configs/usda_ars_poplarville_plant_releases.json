@@ -1,0 +1,97 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://www.ars.usda.gov/southeast-area/poplarville-ms/tcshl/docs/plant-releases/"
+  },
+  "reference_fields": [
+    ["title", "USDA ARS Poplarville Plant Releases"],
+    ["author", "USDA Agricultural Research Service, Thad Cochran Southern Horticultural Laboratory"],
+    ["description", "USDA ARS Poplarville release index for blueberry and muscadine cultivars"],
+    ["url", "https://www.ars.usda.gov/southeast-area/poplarville-ms/tcshl/docs/plant-releases/"],
+    ["thumbnail", "website"],
+    ["accessed", "Jun 2026"],
+    ["type", "public breeding program list"],
+    ["ignore_for_nearby_searches", true],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "USDA ARS Thad Cochran Southern Horticultural Laboratory, Poplarville, Mississippi",
+      "latitude": 30.8472,
+      "longitude": -89.5342
+    }
+  ],
+  "categories": [
+    {
+      "name": "Recent rabbiteye blueberry releases",
+      "description": "USDA ARS Poplarville lists these under recent rabbiteye blueberry releases"
+    },
+    {
+      "name": "Recent southern highbush blueberry releases",
+      "description": "USDA ARS Poplarville lists these under recent southern highbush blueberry releases"
+    },
+    {
+      "name": "Recent muscadine releases",
+      "description": "USDA ARS Poplarville lists this under recent muscadine releases"
+    },
+    {
+      "name": "Ornamental blueberry releases",
+      "description": "USDA ARS Poplarville lists this as an ornamental blueberry release"
+    },
+    {
+      "name": "Past blueberry releases",
+      "description": "USDA ARS Poplarville lists these under past blueberry releases"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "quoted_release_blocks",
+      "start_heading": "Blueberry, Muscadine and Ornamental Plant Releases",
+      "end_heading": "Connect with ARS",
+      "dedupe_keys": ["name", "category"],
+      "heading_rules": [
+        {
+          "text": "Rabbiteye varieties",
+          "category": "Recent rabbiteye blueberry releases",
+          "plant_type": "Blueberry"
+        },
+        {
+          "text": "Southern Highbush varieties",
+          "category": "Recent southern highbush blueberry releases",
+          "plant_type": "Blueberry"
+        },
+        {
+          "text": "Recent Muscadine Releases",
+          "category": "Recent muscadine releases",
+          "plant_type": "Muscadine"
+        },
+        {
+          "text": "Recent Ornamental Releases",
+          "category": null,
+          "plant_type": null
+        },
+        {
+          "text": "Past Blueberry Releases",
+          "category": "Past blueberry releases",
+          "plant_type": "Blueberry"
+        }
+      ],
+      "remainder_rules": [
+        {
+          "contains": "ornamental blueberry",
+          "category": "Ornamental blueberry releases",
+          "plant_type": "Blueberry"
+        }
+      ],
+      "skip_following_prefixes": [
+        "See Release Notice",
+        "Check out"
+      ],
+      "prepend_name_if_lowercase": true,
+      "name_only_description_template": "USDA ARS Poplarville lists {name} under {category_lower}",
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripen", "fruit mature", "bloom"],
+      "description_key": "description"
+    }
+  ]
+}

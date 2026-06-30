@@ -33,6 +33,10 @@
             "config": "extraction_configs/ndsu_fn590_jams_jellies_fruits.json"
         },
         {
+            "id": "new_england_small_fruit_ribes",
+            "config": "extraction_configs/new_england_small_fruit_ribes.json"
+        },
+        {
             "id": "osu_hyg_1401_apples",
             "config": "extraction_configs/osu_hyg_1401_apples.json"
         },
@@ -111,6 +115,10 @@
         {
             "id": "uwisc_a2582_southern_tree_stone_fruit",
             "config": "extraction_configs/uwisc_a2582_southern_tree_stone_fruit.json"
+        },
+        {
+            "id": "usda_ars_poplarville_plant_releases",
+            "config": "extraction_configs/usda_ars_poplarville_plant_releases.json"
         },
         {
             "id": "texas_am_e612_stone_fruit",
