@@ -1,0 +1,178 @@
+{
+    title: "Plum Varieties for New Jersey",
+    author: "Jerome L. Frecon and Dan Ward",
+    description: "Rutgers Cooperative Extension FS1083 factsheet describing Asian, Asian-American hybrid, and European plum varieties suggested for New Jersey",
+    url: "https://njaes.rutgers.edu/pubs/publication.php?pid=fs1083",
+    thumbnail: "pdf",
+    published: "June 26, 2008",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Rutgers New Jersey Agricultural Experiment Station, New Brunswick, New Jersey",
+            latitude: 40.4862,
+            longitude: -74.4518
+        },
+    ],
+    categories: [
+        {
+            name: "Asian and Asian-American plum varieties for New Jersey",
+            description: "Rutgers FS1083 suggests these Asian type and Asian-American hybrid plum varieties for small commercial plantings in New Jersey"
+        },
+        {
+            name: "European plum varieties for New Jersey",
+            description: "Rutgers FS1083 suggests these European plum varieties for New Jersey"
+        },
+    ],
+    plants: [
+        {
+            type: "Japanese Plum",
+            name: "Methley",
+            category: "Asian and Asian-American plum varieties for New Jersey",
+            harvest_time_unparsed: "Small, globose, reddish purple, red fleshed clingstone ripening in early July.",
+            description: "Small, globose, reddish purple, red fleshed clingstone ripening in early July. The flesh is soft, juicy and of fair to good flavor. The tree is upright spreading, vigorous, and productive with low susceptibility to bacterial spot. The tree is an Asian X American hybrid that is self-fruitful"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Shiro",
+            category: "Asian and Asian-American plum varieties for New Jersey",
+            harvest_time_unparsed: "Medium, globose, yellow, yellow-fleshed clingstone ripening in early to mid-July.",
+            description: "Medium, globose, yellow, yellow-fleshed clingstone ripening in early to mid-July. The flesh is soft and very juicy, with excellent flavor. The tree is vigorous, spreading, large, and moderately productive with low susceptibility to bacterial spot. It is pollinated by Methley, Vanier and other Asian type varieties"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Black Ruby",
+            category: "Asian and Asian-American plum varieties for New Jersey",
+            harvest_time_unparsed: "Medium, globose, reddish black to purple black, yellow-fleshed freestone ripening in mid July.",
+            description: "Medium, globose, reddish black to purple black, yellow-fleshed freestone ripening in mid July. The flesh is semi-juicy with very good flavor. The tree is spreading medium, vigorous, and lightly productive, with moderate susceptibility to bacterial spot. It is a good pollinator for Ruby Queen. It is pollinated by other Asian type varieties including Methley. Source table names this as Black Ruby (PICTURED FRONT RIGHT)"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Santa Rosa",
+            category: "Asian and Asian-American plum varieties for New Jersey",
+            harvest_time_unparsed: "Medium size, globose, purple red, yellow fleshed, ripening in late July.",
+            description: "Medium size, globose, purple red, yellow fleshed, ripening in late July. The flesh is firm, juicy, and sweet with very good flavor. The tree is spreading, vigorous, irregularly productive with medium susceptibility to bacterial spot. It is self-incompatible and must be cross-pollinated with other Asian type varieties"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Red Ace",
+            category: "Asian and Asian-American plum varieties for New Jersey",
+            AKA: ["Ace"],
+            harvest_time_unparsed: "Medium, globose to slightly oval, light red, yellowish-red fleshed semi-freestone, ripening in late July.",
+            description: "Medium, globose to slightly oval, light red, yellowish-red fleshed semi-freestone, ripening in late July. The flesh is moderately firm and sweet with very good flavor. The tree is spreading, vigorous and moderately productive with moderate susceptibility to bacterial spot. It is self incompatible and should be pollinated with Redheart, Ozark Premier or Shiro. Source table names this as Red Ace (Ace)"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Red Heart",
+            category: "Asian and Asian-American plum varieties for New Jersey",
+            harvest_time_unparsed: "Medium-large, globose to heart-shaped, yellowish- red fleshed semi-freestone, ripening in early August.",
+            description: "Medium-large, globose to heart-shaped, yellowish- red fleshed semi-freestone, ripening in early August. The flesh is firm, crisp, and fine-grained with very good flavor. The tree is upright spreading, vigorous, and moderately productive. It is self-incompatible and is pollinated by Red Ace, Shiro, Santa Rosa, or other early blooming Asian types. Source table names this as Redheart"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ozark Premier",
+            category: "Asian and Asian-American plum varieties for New Jersey",
+            harvest_time_unparsed: "Medium-large, globose, reddish blush, yellow-fleshed clingstone ripening in early August.",
+            description: "Medium-large, globose, reddish blush, yellow-fleshed clingstone ripening in early August. The flesh is moderately firm and juicy with good to very good flavor. The tree is spreading vigorous, moderately productive with moderate susceptibility to bacterial spot. It is self incompatible and should be planted with Red Ace, Shiro and Vanier"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Vanier",
+            category: "Asian and Asian-American plum varieties for New Jersey",
+            harvest_time_unparsed: "Medium size, globose, bluish-red, yellow-fleshed clingstone, ripening in early August.",
+            description: "Medium size, globose, bluish-red, yellow-fleshed clingstone, ripening in early August. The flesh is moderately firm, juicy with good flavor. The fruit hangs on the tree well. The tree is upright-spreading, vigorous, and moderately productive with low susceptibility to bacterial spot. It is self-incompatible and pollinated by Ozark Premier and Santa Rosa. Source table names this as Vanier (PICTURED FRONT LEFT)"
+        },
+        {
+            type: "Japanese Plum",
+            name: "South Dakota",
+            category: "Asian and Asian-American plum varieties for New Jersey",
+            harvest_time_unparsed: "Medium to small, globose to ovate, yellow with slight red blush, yellow-fleshed freestone, ripening in early August.",
+            description: "Medium to small, globose to ovate, yellow with slight red blush, yellow-fleshed freestone, ripening in early August. The flesh is soft and juicy, with very good flavor. The tree is spreading, very vigorous, and productive. This Asian x American plum hybrid is winter hardy and produces many blooms. It is partially self fruitful and an excellent pollinator for other Asian x American hybrids"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ruby Queen",
+            category: "Asian and Asian-American plum varieties for New Jersey",
+            harvest_time_unparsed: "Large, globose, dark reddish purple, red-fleshed, clingstone ripening in mid August.",
+            description: "Large, globose, dark reddish purple, red-fleshed, clingstone ripening in mid August. The flesh is firm, and juicy with excellent flavor. The fruit hangs on the tree well. The tree is medium, spreading, vigorous, and productive with moderate susceptibility to bacterial spot. It is pollinated with another Asian type variety like Black Ruby. Tested as USDA BY8155-70. Source table names this as Ruby Queen (PICTURED FRONT CENTER)"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Fortune",
+            category: "Asian and Asian-American plum varieties for New Jersey",
+            harvest_time_unparsed: "Large, globose, reddish purple blush over yellow ground color, yellow fleshed clingstone, ripening in late August.",
+            description: "Large, globose, reddish purple blush over yellow ground color, yellow fleshed clingstone, ripening in late August. The flesh is firm, juicy and sweet with very good flavor. The tree is upright-spreading, vigorous and productive. It is pollinated by other Asian type varieties"
+        },
+        {
+            type: "Euro Plum",
+            name: "Earliblue",
+            category: "European plum varieties for New Jersey",
+            harvest_time_unparsed: "Medium, slightly oblong to ovate, blue, greenish-yellow-fleshed semi freestone, ripening in early August.",
+            description: "Medium, slightly oblong to ovate, blue, greenish-yellow-fleshed semi freestone, ripening in early August. The flesh is soft with very good flavor. The tree is upright spreading, vigorous, and moderately productive. It needs cross pollination from other European varieties"
+        },
+        {
+            type: "Euro Plum",
+            name: "Castleton",
+            category: "European plum varieties for New Jersey",
+            harvest_time_unparsed: "Medium size, slightly oval, purplish blue, greenish-yellow-fleshed freestone ripening in mid August.",
+            description: "Medium size, slightly oval, purplish blue, greenish-yellow-fleshed freestone ripening in mid August. The flesh is firm and juicy, with good flavor. The tree is upright spreading, vigorous, and productive. It looks very much like Stanley and is best pollinated by Stanley"
+        },
+        {
+            type: "Euro Plum",
+            name: "Mohawk",
+            category: "European plum varieties for New Jersey",
+            harvest_time_unparsed: "Medium-large, oval, blue, amber yellow flesh, semi freestone, ripening in mid to late August.",
+            description: "Medium-large, oval, blue, amber yellow flesh, semi freestone, ripening in mid to late August. The flesh is sweet and firm with very good flavor. The tree is upright spreading and productive. It benefits from cross pollination like Stanley"
+        },
+        {
+            type: "Euro Plum",
+            name: "Early Italian",
+            category: "European plum varieties for New Jersey",
+            harvest_time_unparsed: "Medium-large, oval, blue, greenish-yellow-fleshed, freestone ripening in late August.",
+            description: "Medium-large, oval, blue, greenish-yellow-fleshed, freestone ripening in late August. The flesh is firm, with excellent flavor. The tree is upright spreading, vigorous, and moderately productive. Source table names this as Richards Early Italian"
+        },
+        {
+            type: "Euro Plum",
+            name: "Italian",
+            category: "European plum varieties for New Jersey",
+            harvest_time_unparsed: "Large, oval, purplish blue, greenish-yellow-fleshed, freestone ripening in early September.",
+            description: "Large, oval, purplish blue, greenish-yellow-fleshed, freestone ripening in early September. The flesh is firm and sweet with excellent flavor. The tree is upright spreading, vigorous, and moderately productive. It is self-fruitful but benefits from cross pollination"
+        },
+        {
+            type: "Euro Plum",
+            name: "Brooks",
+            category: "European plum varieties for New Jersey",
+            harvest_time_unparsed: "Large, oval, dark blue, ovate, greenish-yellow-fleshed freestone, ripening in early September just after Italian.",
+            description: "Large, oval, dark blue, ovate, greenish-yellow-fleshed freestone, ripening in early September just after Italian. The flesh is firm and slightly tart with excellent flavor. The tree is upright-spreading, vigorous and has been productive, more that Italian. Self-fruitful"
+        },
+        {
+            type: "Euro Plum",
+            name: "Valor",
+            category: "European plum varieties for New Jersey",
+            harvest_time_unparsed: "Medium-large, dark bluish-purple, greenish-yellow- fleshed freestone, ripening in early September.",
+            description: "Medium-large, dark bluish-purple, greenish-yellow- fleshed freestone, ripening in early September. The flesh is moderately firm with very good flavor. The tree is upright-spreading, vigorous, and productive"
+        },
+        {
+            type: "Euro Plum",
+            name: "Bluefre",
+            category: "European plum varieties for New Jersey",
+            harvest_time_unparsed: "Large, ovate, dark blue, greenish-yellow freestone, ripening in mid September.",
+            description: "Large, ovate, dark blue, greenish-yellow freestone, ripening in mid September. The flesh is firm with very good flavor. The tree is spreading, vigorous, and moderately productive. It has been an inconsistent cropper in southern New Jersey. It is self fruitful but benefits from cross-pollination with other European varieties"
+        },
+        {
+            type: "Euro Plum",
+            name: "Longjohn",
+            category: "European plum varieties for New Jersey",
+            harvest_time_unparsed: "Large to very large, oblong to ovate, purplish blue, amber-yellow-fleshed freestone, ripening with Stanley.",
+            description: "Large to very large, oblong to ovate, purplish blue, amber-yellow-fleshed freestone, ripening with Stanley. The flesh is firm, with excellent flavor better than Stanley. The tree is upright-spreading, vigorous, and productive. The tree benefits by pollination with Stanley or Castleton. Source table names this as Long John"
+        },
+        {
+            type: "Euro Plum",
+            name: "Stanley",
+            category: "European plum varieties for New Jersey",
+            harvest_time_unparsed: "Medium-large, oval, blue, greenish-yellow freestone, ripening in mid September just after Bluefre.",
+            description: "Medium-large, oval, blue, greenish-yellow freestone, ripening in mid September just after Bluefre. The flesh is firm with good flavor. The tree is of medium vigor, upright-spreading and productive. Stanley has always been a consistent cropper in Southern Jersey. Self-fruitful"
+        },
+    ]
+}

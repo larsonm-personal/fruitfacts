@@ -1,0 +1,283 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://www.uaex.uada.edu/publications/pdf/FSA-6129.pdf",
+    "layout": true,
+    "layout_text": true
+  },
+  "reference_fields": [
+    ["title", "Tree Fruit Cultivar Recommendations for Arkansas"],
+    ["author", "Dawn Braxton, Amanda McWhirt, Margaret Worthington, and Curt Rom"],
+    ["description", "University of Arkansas System Division of Agriculture FSA6129 tree-fruit cultivar recommendations for Arkansas apples, pears, peaches, and nectarines"],
+    ["url", "https://www.uaex.uada.edu/publications/pdf/FSA-6129.pdf"],
+    ["thumbnail", "pdf"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Arkansas System Division of Agriculture, Little Rock, Arkansas",
+      "latitude": 34.7465,
+      "longitude": -92.2896
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple cultivar recommendations for Arkansas",
+      "description": "University of Arkansas FSA6129 lists these apple cultivars for Arkansas tree-fruit plantings"
+    },
+    {
+      "name": "Common pear cultivar recommendations for Arkansas",
+      "description": "University of Arkansas FSA6129 lists these common pear cultivars for Arkansas tree-fruit plantings"
+    },
+    {
+      "name": "Asian pear cultivar recommendations for Arkansas",
+      "description": "University of Arkansas FSA6129 lists these Asian pear cultivars for Arkansas tree-fruit plantings"
+    },
+    {
+      "name": "Peach cultivar recommendations for Arkansas",
+      "description": "University of Arkansas FSA6129 lists these peach cultivars for Arkansas tree-fruit plantings"
+    },
+    {
+      "name": "Nectarine cultivar recommendations for Arkansas",
+      "description": "University of Arkansas FSA6129 lists these nectarine cultivars for Arkansas tree-fruit plantings"
+    }
+  ],
+  "name_overrides": {
+    "William's Pride": {
+      "name": "Williams' Pride",
+      "note": "Source table names this as William's Pride"
+    },
+    "Suncrisp": {
+      "name": "SunCrisp",
+      "note": "Source table names this as Suncrisp"
+    },
+    "Gold Rush": {
+      "name": "GoldRush",
+      "note": "Source table names this as Gold Rush"
+    },
+    "Pink lady": {
+      "name": "Cripps Pink",
+      "note": "Source table names this as Pink lady"
+    },
+    "Ayers (Ayres)": {
+      "name": "Ayers",
+      "aka": ["Ayres"],
+      "note": "Source table names this as Ayers (Ayres)"
+    },
+    "Kiefer": {
+      "name": "Kieffer",
+      "note": "Source table names this as Kiefer"
+    },
+    "Shinsesiki": {
+      "name": "Shinseiki",
+      "note": "Source table names this as Shinsesiki"
+    },
+    "20th Century (Nijisseiki)": {
+      "name": "Nijisseiki",
+      "note": "Source table names this as 20th Century (Nijisseiki)"
+    },
+    "Red globe": {
+      "name": "Red Globe",
+      "note": "Source table names this as Red globe"
+    },
+    "Amore Sweet": {
+      "name": "Amoore Sweet",
+      "note": "Source table names this as Amore Sweet"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Apples will generally be more successful",
+      "section_end": "References",
+      "default_category": "Apple cultivar recommendations for Arkansas",
+      "default_plant_type": "Apple",
+      "category_rules": [
+        {
+          "prefix": "Early (July - Aug)",
+          "parse_remainder": true,
+          "category": "Apple cultivar recommendations for Arkansas",
+          "plant_type": "Apple"
+        },
+        {
+          "prefix": "Mid (Sept)",
+          "parse_remainder": true,
+          "category": "Apple cultivar recommendations for Arkansas",
+          "plant_type": "Apple"
+        },
+        {
+          "prefix": "Late (Oct)",
+          "parse_remainder": true,
+          "category": "Apple cultivar recommendations for Arkansas",
+          "plant_type": "Apple"
+        },
+        {
+          "prefix": "Common Pears",
+          "parse_remainder": true,
+          "category": "Common pear cultivar recommendations for Arkansas",
+          "plant_type": "Euro Pear"
+        },
+        {
+          "prefix": "Asian Pears",
+          "parse_remainder": true,
+          "category": "Asian pear cultivar recommendations for Arkansas",
+          "plant_type": "Asian Pear"
+        },
+        {
+          "text": "Peaches",
+          "category": "Peach cultivar recommendations for Arkansas",
+          "plant_type": "Peach"
+        },
+        {
+          "text": "Peaches (cont.)",
+          "category": "Peach cultivar recommendations for Arkansas",
+          "plant_type": "Peach"
+        },
+        {
+          "text": "Nectarines",
+          "category": "Nectarine cultivar recommendations for Arkansas",
+          "plant_type": "Nectarine"
+        }
+      ],
+      "skip_line_patterns": [
+        "^Apples$",
+        "^Apples will",
+        "^Fire blight",
+        "^Fruit\\s+Cultivar",
+        "^Pears$",
+        "^Selection of peach",
+        "^Arkansas\\. Varieties",
+        "^to several",
+        "^on disease",
+        "^several white",
+        "^Nectarines will",
+        "^that are well",
+        "^\\* Denotes",
+        "^University of Arkansas"
+      ],
+      "description_start_words": [
+        "A",
+        "An",
+        "Another",
+        "Bred",
+        "Can",
+        "Developed",
+        "First",
+        "From",
+        "Fruit",
+        "Introduced",
+        "Large",
+        "Medium",
+        "Moderate",
+        "Originating",
+        "Produces",
+        "Released",
+        "Similar",
+        "Small",
+        "Stores",
+        "The",
+        "These",
+        "This",
+        "Vigorous",
+        "Winter-hardy",
+        "30",
+        "800",
+        "850",
+        "600-800",
+        "750",
+        "1050",
+        "13",
+        "Elberta",
+        "Little",
+        "staff"
+      ],
+      "entry_names": [
+        "William's Pride",
+        "Pristine",
+        "Gala",
+        "Suncrisp",
+        "Red Delicious",
+        "Golden Delicious",
+        "Jonagold",
+        "Crimson Crisp",
+        "Enterprise",
+        "Fuji",
+        "Arkansas Black",
+        "Gold Rush",
+        "Liberty",
+        "Pink lady",
+        "SunCrisp",
+        "Ayers (Ayres)",
+        "Comice",
+        "Harrow Delight",
+        "Kiefer",
+        "Magness",
+        "Maxine",
+        "Moonglow",
+        "Orient",
+        "Seckel",
+        "Chojuro",
+        "Hosui",
+        "Shinsesiki",
+        "20th Century (Nijisseiki)",
+        "Whitewater*",
+        "Souvenirs*",
+        "Redhaven",
+        "Intrepid",
+        "White County*",
+        "Scarletprince",
+        "Red globe",
+        "Loring",
+        "White River*",
+        "Contender",
+        "Julyprince",
+        "White Rock*",
+        "Cresthaven",
+        "White Diamond*",
+        "Carolina Gold",
+        "Flameprince",
+        "Arrington*",
+        "Ozark Mango*",
+        "Bradley*",
+        "Bowden*",
+        "Amore Sweet*",
+        "Effie*"
+      ],
+      "name_suffix_notes": [
+        {
+          "suffix": "*",
+          "note": "Source marks this as a University of Arkansas release"
+        }
+      ],
+      "row_text_fixes": {
+        "Suscep- tible": "Susceptible",
+        "Susceptibl e": "Susceptible",
+        "resis- tant": "resistant",
+        "cross-pollina- tion": "cross-pollination",
+        "skincolor": "skin color",
+        "cream- like": "cream-like",
+        "moderate- ly": "moderately",
+        "ex- cellent": "excellent",
+        "culti- var": "cultivar",
+        "suscepti- ble": "susceptible",
+        "stor- age": "storage",
+        "called`Ayer'released": "called `Ayer' released",
+        "as`Redglobe'in": "as `Redglobe' in",
+        "fully\"nectarine\"as": "fully \"nectarine\" as",
+        "Suscep-": "Suscep",
+        "cultivar": "cultivar"
+      },
+      "harvest_from_key": "description",
+      "harvest_terms": [
+        "ripen",
+        "days before Elberta",
+        "after Elberta",
+        "around July"
+      ],
+      "description_key": "description",
+      "merge_duplicate_plants": true
+    }
+  ]
+}

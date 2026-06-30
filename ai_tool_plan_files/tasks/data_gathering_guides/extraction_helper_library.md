@@ -83,6 +83,9 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
   - Quoted paragraph parsing can be bounded by prose selectors with
     `start_after` and `stop_at`, and now shares row splits, row text fixes, row
     overrides, skipped names, and dedupe handling with other config extractors
+  - Row text fixes can include source-local regex replacements when repeated
+    source markers, such as citation superscripts, are flattened into ordinary
+    table text
   - PDF marker-list parsing now shares the normal row cleanup pipeline,
     including row fields, row splits, row text fixes, row overrides, skipped
     names, dedupe handling, and wrapping quote cleanup through
@@ -126,7 +129,8 @@ script. The config runner currently supports:
   need source-local skip and text-fix rules
 - PDF catalog entries from flow-mode `pdftotext` output, with configurable
   category heading rules, default category context, smart titlecase name
-  repair, and continuation lines
+  repair, explicit entry-name separators such as `Name - description`, and
+  continuation lines
 - PDF bullet lists with configurable heading rules, continuation indentation,
   skip rules, row overrides, and partial parenthetical entry repair
 - PDF quoted cultivar entries with configurable quote characters, skipped
@@ -167,7 +171,8 @@ script. The config runner currently supports:
   varieties
 - Opt-in merging for repeated plant records from one source, keyed by type and
   name, so regional duplicate rows can keep all source descriptions while
-  satisfying the import schema
+  satisfying the import schema. This can be applied inside one extractor or at
+  the top level across several extractors in the same config
 - Optional category, location, harvest, and labelled description mapping
 - Prefix-prioritized harvest sentence selection for catalog sources where
   useful timing sentences start with phrases such as `Fruit ripens` or
@@ -179,6 +184,8 @@ script. The config runner currently supports:
   repeated source name belongs to one plant type
 - Row overrides for source rows where PDF extraction splits a name or moves a
   word into the wrong field
+- Regex row text fixes for repeated source-local cleanup, such as changing
+  `Moderately Resistant4, 5` into readable citation-note text
 - Top-level config `text_fixes` shared by every extractor in one source
 - Quoted-name parsing for internal apostrophes in names such as `D'Anjou`, plus
   quoted names that end exactly at the end of a source-local slice
@@ -332,6 +339,20 @@ Source-specific scripts should do:
   table followed by a useful variety-detail table. The config selects the
   second table by index and keeps source name harmonization in reviewable
   overrides.
+- Texas A&M EHT-023 pears: raw PDF marker lists where zone headings bound
+  separate European hybrid and Asian pear lists, with source-local end markers
+  preventing parenthetical caveats from becoming cultivar names and top-level
+  duplicate merging combining varieties recommended in more than one zone.
+- Arkansas FSA6129 tree fruit: layout-mode PDF catalog entries where season
+  and crop prefixes share lines with the first cultivar, handled with
+  `parse_remainder`, release asterisk suffix notes, and typo-preserving name
+  overrides.
+- Cornell fire blight apples: a large HTML table where flattened citation
+  superscripts are repaired through row regex fixes before labelled
+  descriptions are emitted.
+- Rutgers FS1083 plums: two-column PDF catalog entries parsed with line
+  slices, explicit entry names, `Name - description` separator handling, and a
+  single source-local row override for a page-break continuation.
 
 ## Manifest Configs
 

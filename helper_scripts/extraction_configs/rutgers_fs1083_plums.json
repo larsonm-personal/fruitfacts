@@ -1,0 +1,189 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://njaes.rutgers.edu/pubs/download.php?strPubID=FS1083",
+    "layout": true,
+    "layout_text": true
+  },
+  "reference_fields": [
+    ["title", "Plum Varieties for New Jersey"],
+    ["author", "Jerome L. Frecon and Dan Ward"],
+    ["description", "Rutgers Cooperative Extension FS1083 factsheet describing Asian, Asian-American hybrid, and European plum varieties suggested for New Jersey"],
+    ["url", "https://njaes.rutgers.edu/pubs/publication.php?pid=fs1083"],
+    ["thumbnail", "pdf"],
+    ["published", "June 26, 2008"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Rutgers New Jersey Agricultural Experiment Station, New Brunswick, New Jersey",
+      "latitude": 40.4862,
+      "longitude": -74.4518
+    }
+  ],
+  "categories": [
+    {
+      "name": "Asian and Asian-American plum varieties for New Jersey",
+      "description": "Rutgers FS1083 suggests these Asian type and Asian-American hybrid plum varieties for small commercial plantings in New Jersey"
+    },
+    {
+      "name": "European plum varieties for New Jersey",
+      "description": "Rutgers FS1083 suggests these European plum varieties for New Jersey"
+    }
+  ],
+  "name_overrides": {
+    "Black Ruby (PICTURED FRONT RIGHT)": {
+      "name": "Black Ruby",
+      "note": "Source table names this as Black Ruby (PICTURED FRONT RIGHT)"
+    },
+    "Red Ace (Ace)": {
+      "name": "Red Ace",
+      "aka": ["Ace"],
+      "note": "Source table names this as Red Ace (Ace)"
+    },
+    "Redheart": {
+      "name": "Red Heart",
+      "note": "Source table names this as Redheart"
+    },
+    "Vanier (PICTURED FRONT LEFT)": {
+      "name": "Vanier",
+      "note": "Source table names this as Vanier (PICTURED FRONT LEFT)"
+    },
+    "Ruby Queen (PICTURED FRONT CENTER)": {
+      "name": "Ruby Queen",
+      "note": "Source table names this as Ruby Queen (PICTURED FRONT CENTER)"
+    },
+    "Richards Early Italian": {
+      "name": "Early Italian",
+      "note": "Source table names this as Richards Early Italian"
+    },
+    "Long John": {
+      "name": "Longjohn",
+      "note": "Source table names this as Long John"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Methley - Small",
+      "section_end": "Plum Varieties for New Jersey",
+      "line_slice_end": 69,
+      "default_category": "Asian and Asian-American plum varieties for New Jersey",
+      "default_plant_type": "Japanese Plum",
+      "entry_names": [
+        "Methley",
+        "Shiro",
+        "Black Ruby (PICTURED FRONT RIGHT)",
+        "Santa Rosa",
+        "Red Ace (Ace)",
+        "Redheart",
+        "Ozark Premier"
+      ],
+      "continuation_skip_patterns": [
+        "^Mid-Season$",
+        "^Late-Season$",
+        "^Fact Sheet"
+      ],
+      "row_text_fixes": {
+        "cling- stone": "clingstone",
+        "self incompat- ible": "self incompatible",
+        "irregu- larly": "irregularly",
+        "moder- ate": "moderate",
+        "yellow- fleshed": "yellow-fleshed",
+        "semi- freestone": "semi-freestone"
+      },
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripening", "ripens"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Early-Season",
+      "section_end": "European types",
+      "line_slice_start": 69,
+      "default_category": "Asian and Asian-American plum varieties for New Jersey",
+      "default_plant_type": "Japanese Plum",
+      "entry_names": [
+        "Early Golden",
+        "Vanier (PICTURED FRONT LEFT)",
+        "South Dakota",
+        "Ruby Queen (PICTURED FRONT CENTER)",
+        "Fortune"
+      ],
+      "continuation_skip_patterns": [
+        "^Late-Season$",
+        "^There are many other",
+        "^varieties that",
+        "^Fact Sheet"
+      ],
+      "row_text_fixes": {
+        "self incompat- ible": "self incompatible",
+        "yellow- fleshed": "yellow-fleshed",
+        "upright- spreading": "upright-spreading"
+      },
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripening", "ripens"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "European types",
+      "section_end": "There are many other European varieties not tested",
+      "line_slice_start": 69,
+      "default_category": "European plum varieties for New Jersey",
+      "default_plant_type": "Euro Plum",
+      "entry_names": [
+        "Earliblue",
+        "Castleton"
+      ],
+      "continuation_skip_patterns": [
+        "^Early-Season$",
+        "^Fact Sheet"
+      ],
+      "row_text_fixes": {
+        "greenish- yellow-fleshed": "greenish-yellow-fleshed",
+        "green- ish-yellow-fleshed": "greenish-yellow-fleshed"
+      },
+      "row_overrides": {
+        "Castleton": {
+          "description": "Medium size, slightly oval, purplish blue, greenish-yellow-fleshed freestone ripening in mid August. The flesh is firm and juicy, with good flavor. The tree is upright spreading, vigorous, and productive. It looks very much like Stanley and is best pollinated by Stanley."
+        }
+      },
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripening", "ripens"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Mid-Season                                                           Rootstocks",
+      "section_end": "For a comprehensive list",
+      "line_slice_end": 69,
+      "default_category": "European plum varieties for New Jersey",
+      "default_plant_type": "Euro Plum",
+      "entry_names": [
+        "Mohawk",
+        "Richards Early Italian",
+        "Italian",
+        "Brooks",
+        "Valor",
+        "Bluefre",
+        "Long John",
+        "Stanley"
+      ],
+      "continuation_skip_patterns": [
+        "^Mid-Season$",
+        "^Late-Season$",
+        "^Fact Sheet"
+      ],
+      "row_text_fixes": {
+        "greenish- yellow-fleshed": "greenish-yellow-fleshed",
+        "upright- spreading": "upright-spreading"
+      },
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripening", "ripens"],
+      "description_key": "description"
+    }
+  ]
+}

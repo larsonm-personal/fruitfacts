@@ -664,3 +664,35 @@ one cultivar name contains an internal apostrophe. `pdf_marker_list` rows now
 run through the normal cleanup pipeline, and `strip_name_quotes` removes only
 the wrapping quote characters while leaving names such as `Mollie's Delicious`
 intact.
+
+## Texas A&M EHT-023 Pear Notes
+
+The Texas pear PDF keeps its useful variety recommendations in raw prose lists
+by zone. The config uses separate `pdf_marker_list` extractors for each zone
+and pear type, with tight end markers so page numbers and parenthetical caveats
+do not become cultivar names. Several pears are recommended in more than one
+zone, so the config uses top-level duplicate merging and broad pear-type
+categories while keeping the zone wording in each merged description.
+
+## Arkansas FSA6129 Tree Fruit Notes
+
+FSA6129 is a layout-mode PDF table where season and crop labels can share a
+line with the first cultivar. Prefix category rules with `parse_remainder`
+preserve the heading context while parsing the cultivar name that follows.
+Trailing asterisks are kept as source notes for University of Arkansas
+releases, and source spelling repairs are made through local name overrides.
+
+## Cornell Fire Blight Apple Notes
+
+The Cornell fire-blight page is a large HTML table, but citation superscripts
+flatten into digits attached to rating labels. The config uses row regex fixes
+to convert those repeated patterns into readable `source refs.` text before
+the description is emitted.
+
+## Rutgers FS1083 Plum Notes
+
+Rutgers FS1083 is a two-column PDF. The config parses the left and right
+columns separately with `line_slice_end` and `line_slice_start`, and the shared
+catalog parser handles explicit entries followed by separators such as
+`Name - description`. One Castleton page-break continuation is kept as a
+source-local row override.

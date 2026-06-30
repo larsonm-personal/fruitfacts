@@ -1,0 +1,358 @@
+{
+    title: "Tree Fruit Cultivar Recommendations for Arkansas",
+    author: "Dawn Braxton, Amanda McWhirt, Margaret Worthington, and Curt Rom",
+    description: "University of Arkansas System Division of Agriculture FSA6129 tree-fruit cultivar recommendations for Arkansas apples, pears, peaches, and nectarines",
+    url: "https://www.uaex.uada.edu/publications/pdf/FSA-6129.pdf",
+    thumbnail: "pdf",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Arkansas System Division of Agriculture, Little Rock, Arkansas",
+            latitude: 34.7465,
+            longitude: -92.2896
+        },
+    ],
+    categories: [
+        {
+            name: "Apple cultivar recommendations for Arkansas",
+            description: "University of Arkansas FSA6129 lists these apple cultivars for Arkansas tree-fruit plantings"
+        },
+        {
+            name: "Common pear cultivar recommendations for Arkansas",
+            description: "University of Arkansas FSA6129 lists these common pear cultivars for Arkansas tree-fruit plantings"
+        },
+        {
+            name: "Asian pear cultivar recommendations for Arkansas",
+            description: "University of Arkansas FSA6129 lists these Asian pear cultivars for Arkansas tree-fruit plantings"
+        },
+        {
+            name: "Peach cultivar recommendations for Arkansas",
+            description: "University of Arkansas FSA6129 lists these peach cultivars for Arkansas tree-fruit plantings"
+        },
+        {
+            name: "Nectarine cultivar recommendations for Arkansas",
+            description: "University of Arkansas FSA6129 lists these nectarine cultivars for Arkansas tree-fruit plantings"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Williams' Pride",
+            category: "Apple cultivar recommendations for Arkansas",
+            description: "Maroon-red, medium to large, dessert apple with crisp-like flavor. Trees are annually productive and easy to grow. Resistant to apple scab, cedar apple rust, fire blight, powdery mildew. A summer apple that does not store well. Source table names this as William's Pride"
+        },
+        {
+            type: "Apple",
+            name: "Pristine",
+            category: "Apple cultivar recommendations for Arkansas",
+            description: "A yellow, dessert apple. Tree has a tendency toward biennial bearing. Resistant to scab and powdery mildew, moderately resistant to fire blight and cedar apple rust. A summer apple that does not store well"
+        },
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Apple cultivar recommendations for Arkansas",
+            description: "Golden color with red stripes, medium size, crisp texture, highly susceptible to cedar apple rust and to fire blight, stores well for 30 days in common refrigeration"
+        },
+        {
+            type: "Apple",
+            name: "SunCrisp",
+            category: "Apple cultivar recommendations for Arkansas",
+            description: "Yellow, medium to large, firm, crisp, rich fruit. Used for cooking and desserts. High yield and precocious tree. Resistant to cedar apple rust. Susceptible to fire blight. Stores well for 30 to 60 days in common refrigeration. Source table names this as Suncrisp. Golden yellow, with orange-red blush. Similar taste to Golden Delicious with a little more spice. Resistant to scab but somewhat susceptible to cedar apple rust and very susceptible fire blight"
+        },
+        {
+            type: "Apple",
+            name: "Red Delicious",
+            category: "Apple cultivar recommendations for Arkansas",
+            description: "Red, large, mild flavor, dessert apple. Standard older cultivar. Susceptible to apple scab, but good resistance to fire blight and cedar apple rust. Good storage for 30 to 60 days in common refrigeration"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "Apple cultivar recommendations for Arkansas",
+            description: "Yellow, large apple. Mild and juicy flavor. Used for cooking and as dessert apple. Susceptible to cedar apple rust, powdery mildew and apple scab. Good storage for 30 to 60 days in common refrigeration"
+        },
+        {
+            type: "Apple",
+            name: "Jonagold",
+            category: "Apple cultivar recommendations for Arkansas",
+            description: "Crimson red stippled with yellow-gold, large size, can be eaten fresh or used for baking. Susceptible to, cedar-apple and rust fire blight, store well if kept cool. A cross between `Golden Delicious' and `Jonathan'"
+        },
+        {
+            type: "Apple",
+            name: "Crimson Crisp",
+            category: "Apple cultivar recommendations for Arkansas",
+            description: "Deep crimson, large apple with sweet/tart flavor. Highly susceptible to cedar apple rust but some resistance to fire blight, stores well"
+        },
+        {
+            type: "Apple",
+            name: "Enterprise",
+            category: "Apple cultivar recommendations for Arkansas",
+            description: "Red, medium to large apple with spicy full flavor. Best disease resistance available and stores well"
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Apple cultivar recommendations for Arkansas",
+            description: "Bi-colored, pink blush to yellow-green with orange/red striped skin, medium size, highly susceptible to cedar apple rust and fire blight has good shelf life in cold storage"
+        },
+        {
+            type: "Apple",
+            name: "Arkansas Black",
+            category: "Apple cultivar recommendations for Arkansas",
+            description: "Heritage apple. Red, medium-size fruit. Arkansas favorite. Hard, distinctive flavor. Used for cooking and fresh consumption. Susceptible to apple scab and fire blight. Good storage. Must be held for many months after harvest to soften, can be held through January"
+        },
+        {
+            type: "Apple",
+            name: "GoldRush",
+            category: "Apple cultivar recommendations for Arkansas",
+            description: "Yellow, medium-size, very firm, crisp, unique flavor, dessert apple. Disease resistant to scab, powdery mildew and fire blight. High susceptibility to cedar apple rust. Source table names this as Gold Rush"
+        },
+        {
+            type: "Apple",
+            name: "Liberty",
+            category: "Apple cultivar recommendations for Arkansas",
+            description: "Dark red large fruit with sweet-tart and crisp flesh. Very resistant to cedar apple rust and moderately resistant to fire blight, stores well"
+        },
+        {
+            type: "Apple",
+            name: "Cripps Pink",
+            category: "Apple cultivar recommendations for Arkansas",
+            description: "Pink blush on yellow background skin at maturity with firm texture. Susceptible to cedar apple rust and fire blight. All-purpose for fresh eating, and baking. Stores well. Source table names this as Pink lady"
+        },
+        {
+            type: "Euro Pear",
+            name: "Ayers",
+            category: "Common pear cultivar recommendations for Arkansas",
+            AKA: ["Ayres"],
+            harvest_time_unparsed: "Fruits are juicy and sweet, ripen early, moderately resistant to fire blight, used fresh or in canning.",
+            description: "Released by the Univ of TN in 1954. Some confusion exists in the nursery trade regarding this variety. A variety called `Ayer' released in Kansas is a separate variety. Fruits are juicy and sweet, ripen early, moderately resistant to fire blight, used fresh or in canning. Source table names this as Ayers (Ayres)"
+        },
+        {
+            type: "Euro Pear",
+            name: "Comice",
+            category: "Common pear cultivar recommendations for Arkansas",
+            description: "Greenish-yellow fruit. Large, broad-based, finely textured flesh. Excellent dessert, but not canning. Large, vigorous tree. Good fire blight resistance. Low chill: 600 chilling hours"
+        },
+        {
+            type: "Euro Pear",
+            name: "Harrow Delight",
+            category: "Common pear cultivar recommendations for Arkansas",
+            description: "Red blush over yellow background, medium-size fruit. Flesh is high quality with very low grit cells. Attractive, Hardy, productive tree with high resistance to Fire Blight"
+        },
+        {
+            type: "Euro Pear",
+            name: "Kieffer",
+            category: "Common pear cultivar recommendations for Arkansas",
+            description: "Yellow-golden, large and long fruit. Coarse texture. Good for canning. Fruit is picked while still hard and stored in a cool place. Can be self-fruitful. Hard, vigorous tree. High resistance to Fire Blight. Source table names this as Kiefer"
+        },
+        {
+            type: "Euro Pear",
+            name: "Magness",
+            category: "Common pear cultivar recommendations for Arkansas",
+            description: "Greenish-yellow, medium-size fruit with a red blush. Smooth flesh. Good for fresh eating, but not canning. Stores well. Does not produce good pollen. High fire blight resistance"
+        },
+        {
+            type: "Euro Pear",
+            name: "Maxine",
+            category: "Common pear cultivar recommendations for Arkansas",
+            description: "Golden, Large, Bartlett type. Firm fruit with very low grit cells. Good for fresh eating, canning and preserves. Tree highly productive, upright habit. High fire blight resistance"
+        },
+        {
+            type: "Euro Pear",
+            name: "Moonglow",
+            category: "Common pear cultivar recommendations for Arkansas",
+            description: "Dull yellow fruit. Medium-large A Comice seedling. Excellent for fresh juice or canning; stores well. High resistance to fire blight. Requires 700 chilling hours"
+        },
+        {
+            type: "Euro Pear",
+            name: "Orient",
+            category: "Common pear cultivar recommendations for Arkansas",
+            description: "Fruits are firm, trees are large, vigorous, and productive. Fruit can be used for canning or cooking. Good fire blight resistance. Released by University of Tennessee. 350-400 chilling hours. Can be self-fruitful. An oriental European hybrid"
+        },
+        {
+            type: "Euro Pear",
+            name: "Seckel",
+            category: "Common pear cultivar recommendations for Arkansas",
+            description: "Russeted color, commonly called Sugar Pear. Not very attractive looking due to its russet skin, but great flavor. Smooth flesh. Excellent dessert pear. Self-fertile, but benefits from cross-pollination. Some fire blight resistance"
+        },
+        {
+            type: "Asian Pear",
+            name: "Chojuro",
+            category: "Asian pear cultivar recommendations for Arkansas",
+            description: "Yellow/Green- color russeted skin with medium to large sized fruit. Unique butterscotch flavor. Tree is medium size, and can be self-fruitful, fruit set improved with cross-pollination. Some resistance to fire blight"
+        },
+        {
+            type: "Asian Pear",
+            name: "Hosui",
+            category: "Asian pear cultivar recommendations for Arkansas",
+            description: "Golden-brown russet color, medium to large sized fruit, with a juicy, tangy flavor and crisp flesh. Tree is moderately vigorous and slightly spreading. Some resistance to fire blight"
+        },
+        {
+            type: "Asian Pear",
+            name: "Shinseiki",
+            category: "Asian pear cultivar recommendations for Arkansas",
+            description: "Yellow and round, medium to large sized fruit which is firm and can be stored up to three months. Can be self-fruitful. Moderate resistance to fire blight. Source table names this as Shinsesiki"
+        },
+        {
+            type: "Asian Pear",
+            name: "Nijisseiki",
+            category: "Asian pear cultivar recommendations for Arkansas",
+            description: "Yellow, round, medium sized fruit if thinned properly. Can store for a long period of time. Can be self-fruitful. Moderate resistance to fire blight. Source table names this as 20th Century (Nijisseiki)"
+        },
+        {
+            type: "Peach",
+            name: "Whitewater",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "Whitewater is the earliest ripening peach cultivar from the UA breeding program.",
+            description: "White flesh, medium to large size, freestone, and slow-melting texture. Low acid and attractive and flavorful fruit. Early season. Whitewater is the earliest ripening peach cultivar from the UA breeding program. 800 estimated chilling hours, moderate resistance to bacterial spot, stores well. 41 days before Elberta. Source marks this as a University of Arkansas release"
+        },
+        {
+            type: "Peach",
+            name: "Souvenirs",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "31 days before Elberta.",
+            description: "Yellow flesh, medium to large size fruit, freestone and slow-melting, 800 estimated chilling hours, low acid flavor, little to no incidence of bacterial spot, excellent storage potential. 31 days before Elberta. Source marks this as a University of Arkansas release"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "28 days before Elberta.",
+            description: "Yellow, small- to medium-size fruit, semi-freestone. 800-900 chilling hours, medium crop potential. Resistant to bacterial spot. 28 days before Elberta"
+        },
+        {
+            type: "Peach",
+            name: "Intrepid",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "17 days before Elberta.",
+            description: "Yellow flesh, good fruit size, freestone, 1000 chilling hours. Late blooming, highly resistant to bacterial spot. 17 days before Elberta"
+        },
+        {
+            type: "Peach",
+            name: "White County",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "14 days before Elberta.",
+            description: "White flesh, freestone and slow-melting. Low-acid flavor, distinct exceptional white peach flavor; sweet with an average of 14% soluble solids. Very productive, mid-season 800 estimated chilling hours. Bacterial spot occasionally seen on the leaves, but no economic damage on fruit. 14 days before Elberta. Source marks this as a University of Arkansas release"
+        },
+        {
+            type: "Peach",
+            name: "Scarletprince",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "13 days before Elberta.",
+            description: "Yellow flesh and deep red skin color. Large fruit size and freestone with firm texture and slow-melting. 850 chilling. Moderately resistant to bacterial spot disease. 13 days before Elberta"
+        },
+        {
+            type: "Peach",
+            name: "Red Globe",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "13 days before Elberta.",
+            description: "Yellow flesh and red skin color. Large fruit size, and freestone with firm texture. 850 chilling. 13 days before Elberta. Sometimes listed as `Redglobe' in the nursery trade. Source table names this as Red globe"
+        },
+        {
+            type: "Peach",
+            name: "Loring",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "12 days before Elberta.",
+            description: "Yellow flesh, large fruit, freestone, melting. 750 chilling hours so is frost prone. If evades frost can be a good cropper. Moderate resistance to bacterial spot. 12 days before Elberta"
+        },
+        {
+            type: "Peach",
+            name: "White River",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "10 days before Elberta.",
+            description: "White flesh, large-fruited, freestone, melting flesh. Red blush over 60%-80% of skin with cream-like ground color; very attractive. Very productive, high-quality, mid-late season, 800 estimated chilling hours. High resistance to bacterial spot and only very seldom seen on leaves; one of the more resistant peaches in the Arkansas breeding program. 10 days before Elberta. Source marks this as a University of Arkansas release"
+        },
+        {
+            type: "Peach",
+            name: "Contender",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "9 days before Elberta.",
+            description: "Yellow flesh, good-size fruit, freestone and melting, non-browning flesh. More than 900 chilling hours. Hardy. Late bloomer, resistant to bacterial spot. 9 days before Elberta"
+        },
+        {
+            type: "Peach",
+            name: "Julyprince",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "8 days before Elberta.",
+            description: "Yellow flesh and yellow skin with red blush. Large fruit size and freestone with firm texture and slow-melting. 850 chilling. Moderately resistant to bacterial spot disease. 8 days before Elberta"
+        },
+        {
+            type: "Peach",
+            name: "White Rock",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "5 days before Elberta.",
+            description: "White flesh, freestone, melting flesh. Low acid, very firm, non-melting flesh that remains firm when fully mature to overmature. Early maturing. 800 estimated chilling hours. Moderate resistance to bacterial spot, spots occasionally seen on leaves but no economic damage on fruits. Stores well. 5 days before Elberta. Source marks this as a University of Arkansas release"
+        },
+        {
+            type: "Peach",
+            name: "Cresthaven",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "3 days before Elberta.",
+            description: "Yellow flesh. Large fruit size, freestone, and melting flesh. More than 900 chilling hours. Very good cropping potential, and resistant to bacterial spot. 3 days before Elberta"
+        },
+        {
+            type: "Peach",
+            name: "White Diamond",
+            category: "Peach cultivar recommendations for Arkansas",
+            description: "White flesh, medium to large size, freestone, and slow-melting. Low acid, very sweet taste and firm flesh. Late season. 800 estimated chilling hours. Little to no incidence of bacterial spot. With Elberta in season. Source marks this as a University of Arkansas release"
+        },
+        {
+            type: "Peach",
+            name: "Carolina Gold",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "Ripens a few days after Contender.",
+            description: "Yellow flesh, large fruit size, freestone, excellent quality. 1050 chilling hours. Ripens a few days after Contender. Moderately resistant to bacterial spot. Released by NC State University. 4 days after Elberta"
+        },
+        {
+            type: "Peach",
+            name: "Flameprince",
+            category: "Peach cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "12 days after Elberta.",
+            description: "Yellow flesh, medium to large size fruit, freestone, and melting. 750-900 chilling hours, moderately resistant to bacterial spot. Recommended in NC, SC and GA. 12 days after Elberta"
+        },
+        {
+            type: "Nectarine",
+            name: "Arrington",
+            category: "Nectarine cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "Early ripening.",
+            description: "Yellow fleshed. Medium-size fruit, non-melting flesh, clingstone. Resistant to bacterial spot, and this disease has seldom been observed on fruits. Early ripening. 44 days before Elberta. Source marks this as a University of Arkansas release"
+        },
+        {
+            type: "Nectarine",
+            name: "Ozark Mango",
+            category: "Nectarine cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "Mid-season, ripens with Bradley.",
+            description: "Yellow-orange fleshed medium-large size fruit, clingstone, non-melting flesh. Standard acid level and exceptional flavor with distinct tropical aromatics. Mid-season, ripens with Bradley. Estimated 600-800 chilling hours. Tailored for growers in the SE or Mid-South of the US. Moderate resistance to bacterial spot. 30 days before Elberta. Typically harvested around July 1 in Clarksville AR. Source marks this as a University of Arkansas release"
+        },
+        {
+            type: "Nectarine",
+            name: "Bradley",
+            category: "Nectarine cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "30 days before Elberta.",
+            description: "Yellow fleshed, non-melting flesh, cling. Resistant to bacterial spot. Bradley is the largest fruited of the Arkansas releases thus far. Its flavor is not as fully \"nectarine\" as the others but is considered good. It has very firm fruit and should handle well after harvest compared to many melting-flesh nectarines. 30 days before Elberta. Source marks this as a University of Arkansas release"
+        },
+        {
+            type: "Nectarine",
+            name: "Bowden",
+            category: "Nectarine cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "25 days before Elberta.",
+            description: "White-fleshed. Large fruit size, clingstone and mid-season. Standard acidity, a sibling of Amoore Sweet, little to no incidence of bacterial spot. 25 days before Elberta. Source marks this as a University of Arkansas release"
+        },
+        {
+            type: "Nectarine",
+            name: "Amoore Sweet",
+            category: "Nectarine cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "24 days before Elberta.",
+            description: "Yellow-fleshed clingstone. Medium size fruit. Distinct low acidity, firm and non-melting flesh. Little to no incidence of bacterial spot, a sibling of Bowden, stores well. 24 days before Elberta. Source marks this as a University of Arkansas release. Source table names this as Amore Sweet"
+        },
+        {
+            type: "Nectarine",
+            name: "Effie",
+            category: "Nectarine cultivar recommendations for Arkansas",
+            harvest_time_unparsed: "Latest ripening nectarine released by UA program, ripening about a week after `Amoore Sweet' and `Bowden' and 2 weeks after `Bradley.",
+            description: "White-fleshed medium-large size fruit, clingstone and non-melting flesh. Medium acidity, excellent white nectarine flavor. Latest ripening nectarine released by UA program, ripening about a week after `Amoore Sweet' and `Bowden' and 2 weeks after `Bradley. Considered a mid-season nectarine. Little to no incidence of bacterial spot. Named in honor of Mrs. Effie Gilmore, who made major contributions to the UA fruit breeding program during her 32 years of service on the staff of the Fruit Research Station (FRS), Clarksville, AR. 17 days before Elberta. Source marks this as a University of Arkansas release"
+        },
+    ]
+}

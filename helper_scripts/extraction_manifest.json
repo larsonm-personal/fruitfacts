@@ -207,6 +207,22 @@
         {
             "id": "texas_am_eht_017_apples",
             "config": "extraction_configs/texas_am_eht_017_apples.json"
+        },
+        {
+            "id": "texas_am_eht_023_pears",
+            "config": "extraction_configs/texas_am_eht_023_pears.json"
+        },
+        {
+            "id": "uada_fsa6129_tree_fruit",
+            "config": "extraction_configs/uada_fsa6129_tree_fruit.json"
+        },
+        {
+            "id": "cornell_fire_blight_susceptibility_apples",
+            "config": "extraction_configs/cornell_fire_blight_susceptibility_apples.json"
+        },
+        {
+            "id": "rutgers_fs1083_plums",
+            "config": "extraction_configs/rutgers_fs1083_plums.json"
         }
     ]
 }

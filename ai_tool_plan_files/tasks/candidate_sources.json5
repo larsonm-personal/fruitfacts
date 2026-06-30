@@ -1996,7 +1996,7 @@
         },
         {
             id: "uada-tree-fruit-cultivar-recommendations-arkansas-fsa6129",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Tree Fruit Cultivar Recommendations for Arkansas",
             institution: "University of Arkansas System Division of Agriculture Cooperative Extension Service",
@@ -2025,12 +2025,16 @@
             notes: [
                 "Found from the Arkansas fruit-tree portal after existing Arkansas small-fruit and breeding references surfaced locally",
                 "Direct PDF search result indicates a revised FSA6129 publication",
-                "Likely parsing issue: PDF references and cultivar notes are mixed with narrative and breeding-program footnotes"
+                "Likely parsing issue: PDF references and cultivar notes are mixed with narrative and breeding-program footnotes",
+                "Encoded in plant_database/references/Arkansas/FSA6129 Tree Fruit Cultivar Recommendations for Arkansas.json5",
+                "Config extraction added at helper_scripts/extraction_configs/uada_fsa6129_tree_fruit.json",
+                "Manifest entry added as uada_fsa6129_tree_fruit",
+                "Worked example for layout-mode PDF catalog entries with season-prefix rows, source asterisks, and source-typo name notes"
             ]
         },
         {
             id: "cornell-fire-blight-susceptibility-common-apple-varieties",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Fire blight Susceptibility of Common Apple Varieties",
             institution: "Cornell University Khan Lab",
@@ -2051,7 +2055,11 @@
             notes: [
                 "Found from the references section of Arkansas FSA6129",
                 "Official Cornell lab page lists many cultivars with conflicting ratings and superscripted source numbers",
-                "Likely parsing issue: cultivar names, ratings, and citation superscripts are flattened together in web text"
+                "Likely parsing issue: cultivar names, ratings, and citation superscripts are flattened together in web text",
+                "Encoded in plant_database/references/New York/Cornell Fire Blight Susceptibility of Common Apple Varieties.json5",
+                "Config extraction added at helper_scripts/extraction_configs/cornell_fire_blight_susceptibility_apples.json",
+                "Manifest entry added as cornell_fire_blight_susceptibility_apples",
+                "Parser support added for row regex cleanup so flattened citation digits become readable source-ref notes"
             ]
         },
         {
@@ -2153,7 +2161,7 @@
         },
         {
             id: "rutgers-plum-varieties-new-jersey-fs1083",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Plum Varieties for New Jersey",
             institution: "Rutgers New Jersey Agricultural Experiment Station",
@@ -2174,7 +2182,11 @@
             notes: [
                 "Found from the NJAES fruit and nut crop publication catalog after local Rutgers references surfaced",
                 "Publication catalog page is stable even though the content may be served differently from newer Rutgers factsheets",
-                "Likely parsing issue: may require finding a linked PDF or archived text if the catalog page lacks body content"
+                "Likely parsing issue: may require finding a linked PDF or archived text if the catalog page lacks body content",
+                "Encoded in plant_database/references/New Jersey/FS1083 Plum Varieties for New Jersey.json5",
+                "Config extraction added at helper_scripts/extraction_configs/rutgers_fs1083_plums.json",
+                "Manifest entry added as rutgers_fs1083_plums",
+                "Worked example for two-column PDF catalog entries using line slices and one source-local row override for a page-break continuation"
             ]
         },
         {
@@ -2213,7 +2225,7 @@
         },
         {
             id: "texas-am-pears-eht-023",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Texas Fruit and Nut Production: Pears",
             institution: "Texas A&M AgriLife Extension",
@@ -2237,7 +2249,11 @@
             notes: [
                 "Found by following the Texas Fruit and Nut Production source family and by matching a pear reference cited from a Virginia pear handout",
                 "Official AgriLife landing page and Aggie Horticulture PDF were both discovered",
-                "Likely parsing issue: pear variety zones and descriptions span captions, prose, and tables"
+                "Likely parsing issue: pear variety zones and descriptions span captions, prose, and tables",
+                "Encoded in plant_database/references/Texas/Texas A&M EHT-023 Pears.json5",
+                "Config extraction added at helper_scripts/extraction_configs/texas_am_eht_023_pears.json",
+                "Manifest entry added as texas_am_eht_023_pears",
+                "Worked example for raw PDF marker lists where zone headings, wrapped quote marks, and parenthetical notes need source-local bounds"
             ]
         },
         {

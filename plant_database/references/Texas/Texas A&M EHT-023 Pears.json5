@@ -1,0 +1,144 @@
+{
+    title: "Texas Fruit and Nut Production: Pears",
+    author: "Larry Stein, Jim Kamas, and Monte Nesbitt",
+    description: "Texas A&M AgriLife Extension guide to pear production and European hybrid and Asian pear variety recommendations by Texas zone",
+    url: "https://agrilifeextension.tamu.edu/asset-external/texas-fruit-and-nut-production-pears/",
+    thumbnail: "pdf",
+    published: "November 2013",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Texas A&M University, College Station, TX",
+            latitude: 30.6104,
+            longitude: -96.3434
+        },
+    ],
+    categories: [
+        {
+            name: "European hybrid pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists these European hybrid pear varieties for one or more Texas production zones"
+        },
+        {
+            name: "Asian pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists these Asian pear varieties for one or more Texas production zones"
+        },
+    ],
+    plants: [
+        {
+            type: "Euro Pear",
+            name: "Ayers",
+            category: "European hybrid pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this European hybrid pear for Zone 1: Hill Country and West Texas."
+        },
+        {
+            type: "Euro Pear",
+            name: "Warren",
+            category: "European hybrid pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this European hybrid pear for Zone 1: Hill Country and West Texas."
+        },
+        {
+            type: "Euro Pear",
+            name: "Le Conte",
+            category: "European hybrid pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this European hybrid pear for Zone 1: Hill Country and West Texas. Source table names this as LeConte"
+        },
+        {
+            type: "Euro Pear",
+            name: "Magness",
+            category: "European hybrid pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this European hybrid pear for Zone 1: Hill Country and West Texas. Texas A&M EHT-023 lists this European hybrid pear for Zone 2: East Texas."
+        },
+        {
+            type: "Euro Pear",
+            name: "Maxine",
+            category: "European hybrid pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this European hybrid pear for Zone 1: Hill Country and West Texas."
+        },
+        {
+            type: "Euro Pear",
+            name: "Moonglow",
+            category: "European hybrid pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this European hybrid pear for Zone 1: Hill Country and West Texas. Texas A&M EHT-023 lists this European hybrid pear for Zone 2: East Texas."
+        },
+        {
+            type: "Euro Pear",
+            name: "Orient",
+            category: "European hybrid pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this European hybrid pear for Zone 1: Hill Country and West Texas. Texas A&M EHT-023 lists this European hybrid pear for Zone 2: East Texas."
+        },
+        {
+            type: "Euro Pear",
+            name: "Kieffer",
+            category: "European hybrid pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this European hybrid pear for Zone 1: Hill Country and West Texas. Texas A&M EHT-023 lists this European hybrid pear for Zone 2: East Texas."
+        },
+        {
+            type: "Asian Pear",
+            name: "Shinseiki",
+            category: "Asian pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this Asian pear for Zone 1: Hill Country and West Texas."
+        },
+        {
+            type: "Asian Pear",
+            name: "Nijisseiki",
+            category: "Asian pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this Asian pear for Zone 1: Hill Country and West Texas."
+        },
+        {
+            type: "Asian Pear",
+            name: "Chojuro",
+            category: "Asian pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this Asian pear for Zone 1: Hill Country and West Texas."
+        },
+        {
+            type: "Asian Pear",
+            name: "Hosui",
+            category: "Asian pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this Asian pear for Zone 1: Hill Country and West Texas."
+        },
+        {
+            type: "Asian Pear",
+            name: "Shinko",
+            category: "Asian pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this Asian pear for Zone 1: Hill Country and West Texas. Texas A&M EHT-023 lists this Asian pear for Zone 2: East Texas."
+        },
+        {
+            type: "Asian Pear",
+            name: "Shin Li",
+            category: "Asian pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this Asian pear for Zone 1: Hill Country and West Texas. Texas A&M EHT-023 lists this Asian pear for Zone 2: East Texas."
+        },
+        {
+            type: "Euro Pear",
+            name: "Baldwin",
+            category: "European hybrid pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this European hybrid pear for Zone 3: Deep South Texas."
+        },
+        {
+            type: "Euro Pear",
+            name: "Hood",
+            category: "European hybrid pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this European hybrid pear for Zone 3: Deep South Texas."
+        },
+        {
+            type: "Euro Pear",
+            name: "Floridahome",
+            category: "European hybrid pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this European hybrid pear for Zone 3: Deep South Texas."
+        },
+        {
+            type: "Asian Pear",
+            name: "Ya Li",
+            category: "Asian pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this Asian pear for Zone 3: Deep South Texas and says the listed Asian pears require about 300 chilling hours."
+        },
+        {
+            type: "Asian Pear",
+            name: "Tsu Li",
+            category: "Asian pear varieties for Texas",
+            description: "Texas A&M EHT-023 lists this Asian pear for Zone 3: Deep South Texas and says the listed Asian pears require about 300 chilling hours."
+        },
+    ]
+}

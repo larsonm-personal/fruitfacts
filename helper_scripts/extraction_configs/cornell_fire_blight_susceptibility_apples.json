@@ -1,0 +1,130 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://blogs.cornell.edu/khanlab/extension/fire-blight-susceptibility-of-common-apple-cultivars/"
+  },
+  "reference_fields": [
+    ["title", "Fire Blight Susceptibility of Common Apple Varieties"],
+    ["author", "Cornell University Khan Lab"],
+    ["description", "Cornell Khan Lab table compiling fire-blight susceptibility ratings for common apple cultivars with citation numbers from multiple sources"],
+    ["url", "https://blogs.cornell.edu/khanlab/extension/fire-blight-susceptibility-of-common-apple-cultivars/"],
+    ["thumbnail", "website"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Cornell AgriTech, Geneva, New York",
+      "latitude": 42.8766,
+      "longitude": -77.0073
+    }
+  ],
+  "categories": [
+    {
+      "name": "Cornell fire blight susceptibility ratings for apples",
+      "description": "Cornell Khan Lab lists these apple cultivars in its fire-blight susceptibility table"
+    }
+  ],
+  "name_overrides": {
+    "Gold Rush": {
+      "name": "GoldRush",
+      "note": "Source table names this as Gold Rush"
+    },
+    "Goldrush": {
+      "name": "GoldRush",
+      "note": "Source table names this as Goldrush"
+    },
+    "Suncrisp": {
+      "name": "SunCrisp",
+      "note": "Source table names this as Suncrisp"
+    },
+    "William's Pride": {
+      "name": "Williams' Pride",
+      "note": "Source table names this as William's Pride"
+    },
+    "CrimsonCrisp": {
+      "name": "Crimson Crisp",
+      "note": "Source table names this as CrimsonCrisp"
+    },
+    "Gold Spur": {
+      "name": "Goldspur",
+      "note": "Source table names this as Gold Spur"
+    },
+    "Honey Crisp": {
+      "name": "Honeycrisp",
+      "note": "Source table names this as Honey Crisp"
+    },
+    "Honey Gold": {
+      "name": "Honeygold",
+      "note": "Source table names this as Honey Gold"
+    },
+    "Macfree": {
+      "name": "MacFree",
+      "note": "Source table names this as Macfree"
+    },
+    "Lurared": {
+      "name": "Lura Red",
+      "note": "Source table names this as Lurared"
+    },
+    "Medaille d'Or": {
+      "name": "Medaille D'Or",
+      "note": "Source table names this as Medaille d'Or"
+    },
+    "Mollies Delicious": {
+      "name": "Mollie's Delicious",
+      "note": "Source table names this as Mollies Delicious"
+    },
+    "NJ90": {
+      "name": "NJ 90",
+      "note": "Source table names this as NJ90"
+    },
+    "NovaEasyGro": {
+      "name": "Nova Easygro",
+      "note": "Source table names this as NovaEasyGro"
+    },
+    "Red Cort": {
+      "name": "Redcort",
+      "note": "Source table names this as Red Cort"
+    },
+    "Pink Lady": {
+      "name": "Cripps Pink",
+      "note": "Source table names this as Pink Lady"
+    },
+    "Zestar!": {
+      "name": "Minnewashta",
+      "note": "Source table names this as Zestar!"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "required_headers": [
+        "Variety Name",
+        "Fire blight Susceptibility Rating"
+      ],
+      "name_key": "variety_name",
+      "plant_type": "Apple",
+      "category": "Cornell fire blight susceptibility ratings for apples",
+      "row_text_fixes": {
+        "regex": [
+          [
+            "(Highly Resistant|Highly Susceptible|Highly susceptible|Moderately Resistant|Moderately Susceptible|Very Susceptible|Very Resistant|Intermediate|Resistant|Susceptible)([0-9](?:, ?[0-9])*)",
+            "\\1 (source refs. \\2)"
+          ]
+        ]
+      },
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            [
+              "fire_blight_susceptibility_rating",
+              "Fire blight susceptibility rating"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

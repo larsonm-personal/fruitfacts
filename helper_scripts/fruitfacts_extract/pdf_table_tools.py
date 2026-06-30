@@ -118,10 +118,14 @@ def parse_catalog_entry(line, extractor):
     for name in sorted(extractor.get("entry_names", []), key=len, reverse=True):
         if line == name:
             return None
-        if line.startswith(name + " "):
+        entry_match = re.match(
+            r"^" + re.escape(name) + r"(?:\s*[-:]\s*|\s+)(?P<description>.*)$",
+            line,
+        )
+        if entry_match:
             return {
                 name_key: name,
-                description_key: line[len(name) :].strip(),
+                description_key: entry_match.group("description").strip(),
             }
 
     tokens = line.split()

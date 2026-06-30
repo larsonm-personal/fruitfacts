@@ -1,0 +1,1633 @@
+{
+    title: "Fire Blight Susceptibility of Common Apple Varieties",
+    author: "Cornell University Khan Lab",
+    description: "Cornell Khan Lab table compiling fire-blight susceptibility ratings for common apple cultivars with citation numbers from multiple sources",
+    url: "https://blogs.cornell.edu/khanlab/extension/fire-blight-susceptibility-of-common-apple-cultivars/",
+    thumbnail: "website",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Cornell AgriTech, Geneva, New York",
+            latitude: 42.8766,
+            longitude: -77.0073
+        },
+    ],
+    categories: [
+        {
+            name: "Cornell fire blight susceptibility ratings for apples",
+            description: "Cornell Khan Lab lists these apple cultivars in its fire-blight susceptibility table"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Ace Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Adam's Permain",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Akane",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4, 5, 7)"
+        },
+        {
+            type: "Apple",
+            name: "Ambrosia",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Susceptible (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Arkansas Black",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 1, 2, 3, 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Ashmead's Kernel",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Baldwin",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Moderately Susceptible (source refs. 4); Susceptible (source refs. 7, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Barry",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Beacon",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Moderately Susceptible (source refs. 4); Susceptible (source refs. 7, 8, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Bechtel",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Belle de Boskoop",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Ben Davis",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Binet Rouge",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Black Twig",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Blushing Golden",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Braeburn",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 2, 4, 9); Very Susceptible (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Brandywine",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Britegold",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Resistant (source refs. 6, 7)"
+        },
+        {
+            type: "Apple",
+            name: "Britemac",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Brown Snout",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Burgundy",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Cameo",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Susceptible (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Carroll",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Cascade Spur Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Centurion",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Chisel Jersey",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Classic Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Coralburst",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Cortland",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 1, 4); Moderately Susceptible (source refs. 4); Susceptible (source refs. 7, 8, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Cox's Orange Pippin",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Crimson Crisp",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 7). Source table names this as CrimsonCrisp"
+        },
+        {
+            type: "Apple",
+            name: "Dabinette",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Dana Red Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "David",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Dayton",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 5, 6); Resistant (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Delbarestival",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Moderately Susceptible (source refs. 4); Moderately Resistant (source refs. 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Discovery",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Dixi Red Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Dolgo",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Durello di Forli",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Dutchess",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Resistant (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Earli Jon",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Earligold",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Moderately Susceptible (source refs. 4); Susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Early McIntosh",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Moderately Resistant (source refs. 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Early Red One Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Early Spur Rome",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Ellis Bitter",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Elstar",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Elstar Red",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Empire",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 1, 2, 3, 4, 9); Moderately Susceptible (source refs. 4); Intermediate (source refs. 5); Resistant (source refs. 7, 8)"
+        },
+        {
+            type: "Apple",
+            name: "Enterprise",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 3, 4); Moderately Susceptible (source refs. 4); Resistant (source refs. 5, 6, 7)"
+        },
+        {
+            type: "Apple",
+            name: "Evereste",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Florina (Querina)",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Moderately Resistant (source refs. 6, 7)"
+        },
+        {
+            type: "Apple",
+            name: "Freedom",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 1, 2, 4); Moderately Resistant (source refs. 3, 4); Intermediate (source refs. 5); Resistant (source refs. 6); Very Resistant (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 1); Highly Susceptible (source refs. 2, 4, 9); Very Susceptible (source refs. 7); Susceptible (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Fulford Gala",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 1, 2, 4, 9); Moderately Susceptible (source refs. 4); Very Susceptible (source refs. 5, 7); Susceptible (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Geneva Early",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Ginger Gold",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 1, 4, 9); Very Susceptible (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Gloster",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Gloster 69",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "GoldRush",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 3, 4, 6, 7); Intermediate (source refs. 5); Resistant (source refs. 8). Source table names this as Gold Rush"
+        },
+        {
+            type: "Apple",
+            name: "Goldspur",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4). Source table names this as Gold Spur"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 1, 2, 4); Highly Susceptible (source refs. 2, 4); Susceptible (source refs. 7, 8, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Golden Hornet",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Golden More Super",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Golden Russett",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Susceptible (source refs. 5)"
+        },
+        {
+            type: "Apple",
+            name: "Granny Smith",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 2, 4, 9); Moderately Susceptible (source refs. 4); Very Susceptible (source refs. 7); Susceptible (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Gravenstein",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Susceptible (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Gravenstein Holly",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Grimes Golden",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Susceptible (source refs. 7, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Haralson",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Moderately Resistant (source refs. 4); Resistant (source refs. 7, 8)"
+        },
+        {
+            type: "Apple",
+            name: "Hereford Redstreak",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Hilleri",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Honeycrisp",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 3); Resistant (source refs. 7, 8). Source table names this as Honey Crisp"
+        },
+        {
+            type: "Apple",
+            name: "Honeygold",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4); Very Susceptible (source refs. 7); Susceptible (source refs. 8). Source table names this as Honey Gold"
+        },
+        {
+            type: "Apple",
+            name: "Hopa",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Hyslop",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Idared",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4, 9); Very Susceptible (source refs. 7); Susceptible (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Imperial Gala",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Indian Magic",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Indian Summer",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Jamba",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "James Grieve",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Jerseymac",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Susceptible (source refs. 7, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Jonafree",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 1, 2, 4, 5); Highly Susceptible (source refs. 4); Moderately Resistant (source refs. 4, 6); Highly Resistant (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Jonagold",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 1, 4, 9); Moderately Susceptible (source refs. 2, 4); Very Susceptible (source refs. 7); Resistant (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Jonamac",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Moderately Resistant (source refs. 4); Susceptible (source refs. 7, 9); Resistant (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Jonathan",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 1, 2, 4, 9); Very Susceptible (source refs. 7), Susceptible (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Jonnee",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Julyred",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 1, 2); Moderately Susceptible (source refs. 4); Susceptible (source refs. 7, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Keepsake",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Kelsey",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Kidd's Orange Red",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Kingston Black",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Late Harrison",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Liberty",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 1, 2, 3, 4, 9); Moderately Susceptible (source refs. 4); Resistant (source refs. 5, 6, 7, 8)"
+        },
+        {
+            type: "Apple",
+            name: "Lodi",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 1, 2, 4, 9); Very Susceptible (source refs. 7), Susceptible (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Lura Red",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4). Source table names this as Lurared"
+        },
+        {
+            type: "Apple",
+            name: "Lustre Elstar",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Lysgolden",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "MacFree",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4, 6, 7). Source table names this as Macfree"
+        },
+        {
+            type: "Apple",
+            name: "Macoun",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Susceptible (source refs. 7, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Macspur",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Magog's Restreak",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Maiden Blush",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Manchurian",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Margil",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Marshall McIntosh",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Mary Potter",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "McIntosh",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 1, 2); Moderately Susceptible (source refs. 4); Susceptible (source refs. 7, 9); Resistant (source refs. 7, 8)"
+        },
+        {
+            type: "Apple",
+            name: "Medaille D'Or",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4). Source table names this as Medaille d'Or"
+        },
+        {
+            type: "Apple",
+            name: "Melba",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Melrose",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4, 7); Highly Resistant (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Milton",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Susceptible (source refs. 7, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Milwa",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Minyon",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Missouri Pippin",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Moira",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Susceptible (source refs. 6, 7)"
+        },
+        {
+            type: "Apple",
+            name: "Mollie's Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 2); Moderately Susceptible (source refs. 4); Susceptible (source refs. 7, 9). Source table names this as Mollies Delicious"
+        },
+        {
+            type: "Apple",
+            name: "Monroe",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Moderately Susceptible (source refs. 4); Susceptible (source refs. 8, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Mor Spur Mac",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Murray",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 6, 7)"
+        },
+        {
+            type: "Apple",
+            name: "Mutsu (Crispin)",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 1, 2, 4, 9); Moderately Susceptible (source refs. 4); Very Susceptible (source refs. 7); Susceptible (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Newtown Pippon",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Niagra",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Nicobel Jonagold",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Nittany",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "NJ 90",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Susceptible (source refs. 7). Source table names this as NJ90"
+        },
+        {
+            type: "Apple",
+            name: "Northern Spy",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Moderately Resistant (source refs. 4); Susceptible (source refs. 7, 9); Resistant (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Northwestern Greening",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Moderately Resistant (source refs. 4, 9); Highly Resistant (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Nova Easygro",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4, 5, 6, 7); Highly Resistant (source refs. 8). Source table names this as NovaEasyGro"
+        },
+        {
+            type: "Apple",
+            name: "Novamac",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Very Resistant (source refs. 7); Resistant (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Nured Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Nured Jon",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Nured Winesap",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "NY 758401",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Intermediate (source refs. 5)"
+        },
+        {
+            type: "Apple",
+            name: "Old Hope",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Ormiston Roy",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Otava",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Ozark Gold",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Paulared",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 1, 2, 4, 9); Very Susceptible (source refs. 7), Susceptible (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Perfect Spur Criterion",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Cripps Pink",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Very Susceptible (source refs. 7). Source table names this as Pink Lady"
+        },
+        {
+            type: "Apple",
+            name: "Pinova",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Pinova (Corrail)",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Pioneer Mac",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Porter's Perfection",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Prairie Fire",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Prima",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 1, 2, 4, 7); Moderately Resistant (source refs. 3, 4, 5, 6); Highly Resistant (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Priscilla",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 1, 2, 3, 4, 5, 9); Resistant (source refs. 6, 7); Highly Resistant (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Pristine",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Resistant (source refs. 5, 7); Moderately Resistant (source refs. 6)"
+        },
+        {
+            type: "Apple",
+            name: "Profusion",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Puritan",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Very Susceptible (source refs. 7); Susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Quinte",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Moderately Resistant (source refs. 4); Highly Resistant (source refs. 8); Susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Radiant",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Ramey York",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Raritan",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4); Highly susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Reanda",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Red Barron",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Red Chief (Campbell)",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Red Chief (Mercier)",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Redcort",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4). Source table names this as Red Cort"
+        },
+        {
+            type: "Apple",
+            name: "Red Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 1, 2, 3); Moderately Susceptible (source refs. 4); Resistant (source refs. 7, 8)"
+        },
+        {
+            type: "Apple",
+            name: "Red Fuji",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Red Fuji 4",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Red Fuji Nagano",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Red Jade",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Red Max",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Red Splendor",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Red Vein Russian",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Red Winesap",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Red Yorking",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4); Highly susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Redfree",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 1, 2, 4); Moderately Resistant (source refs. 5, 6, 7); Highly Resistant (source refs. 8); Susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Redspur",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 1, 2)"
+        },
+        {
+            type: "Apple",
+            name: "Regent",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Reglindis",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Reine de Hatives",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Reine des Reinettes",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Reinette Grise du",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Remo",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Rhode Island Greening",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4); Very Susceptible (source refs. 7); Highly susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Roberts crab",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Rome",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 1, 2); Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Rome Beauty",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4); Very Susceptible (source refs. 7); Susceptible (source refs. 8); Highly susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Rosedale",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Roxbury Russett",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Intermediate (source refs. 5); Resistant (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Royal Gala",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Royalty",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Rubinette",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Rubinola",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Runkel",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Resistant (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Sampion",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Santana",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Scarlet Gala",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Scarlet O'Hara",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Susceptible (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Scarlet Spur Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Scotia",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Sharon",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Sir Prize",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Moderately Susceptible (source refs. 4); Moderately Resistant (source refs. 4, 6); Susceptible (source refs. 5, 7); Highly Resistant (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Smoothee",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Snow Cloud",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Snowdrift",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Sommerset Redstreak",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Sops of Wine",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Spartan",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Resistant (source refs. 8); Susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Spigold",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4); Highly susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Spijon",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Susceptible (source refs. 7, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Spring Snow",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Spur Gala Go Red",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Stamared",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Stark Bounty",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Resistant (source refs. 7); Moderately Resistant (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Stark Gala",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Stark Splendor",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Resistant (source refs. 7); Moderately Resistant (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Starking Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Starkrimson [Delicious]",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Starkspur Compact Red",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Starkspur Earliblaze",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Susceptible (source refs. 7, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Starkspur Law Rome",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Starkspur Supreme",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Starkspur Ultra Stripe",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Starr",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Staybrite",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Stayman",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 1, 2); Moderately Resistant (source refs. 4); Susceptible (source refs. 7, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Stembridge Jersey",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Stokes Red",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Strathmore",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Sturdeespur Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Summer Rambo",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Susceptible (source refs. 9)"
+        },
+        {
+            type: "Apple",
+            name: "Summer Treat",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Summerred",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Susceptible (source refs. 7, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Sun Fuji",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "SunCrisp",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Very Susceptible (source refs. 7). Source table names this as Suncrisp"
+        },
+        {
+            type: "Apple",
+            name: "Sundance",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Resistant (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Super Chief Red",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Super Jon",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Swiss Gormet (Arlet)",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Thunderchild",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Thundercloud",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Top Spur Delicious",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Topaz",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Topred",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 1, 2)"
+        },
+        {
+            type: "Apple",
+            name: "Transcendent",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Transparent",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 1, 2)"
+        },
+        {
+            type: "Apple",
+            name: "Tremletts Bitter",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Trent",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 6, 7)"
+        },
+        {
+            type: "Apple",
+            name: "Turley",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 1, 2); Moderately Resistant (source refs. 3, 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Twenty Ounce",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Tydman's Red",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 1, 2, 4)"
+        },
+        {
+            type: "Apple",
+            name: "Ultra Red Jonathan",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Vanguard",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Viking",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4, 9); Resistant (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Virginiagold",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Wayne",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4); Moderately Susceptible (source refs. 4); Susceptible (source refs. 7, 8, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Wealthy",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 4); Susceptible (source refs. 7, 8, 9)"
+        },
+        {
+            type: "Apple",
+            name: "Wellington",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 3, 4, 9); Resistant (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "White Cascade",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "White Jersey",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Williams' Pride",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 3, 4, 6); Resistant (source refs. 5, 7). Source table names this as William's Pride"
+        },
+        {
+            type: "Apple",
+            name: "Williams Red",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 4)"
+        },
+        {
+            type: "Apple",
+            name: "Winesap",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 1, 2, 4); Moderately Resistant (source refs. 4); Susceptible (source refs. 7, 9); Highly Resistant (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "Winter Banana",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Susceptible (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Wolf River",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Yates",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Resistant (source refs. 2)"
+        },
+        {
+            type: "Apple",
+            name: "Yellow Transparent",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4, 9); Very Susceptible (source refs. 7); Susceptible (source refs. 8)"
+        },
+        {
+            type: "Apple",
+            name: "York Imperial",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Highly Susceptible (source refs. 4, 9); Very Susceptible (source refs. 7)"
+        },
+        {
+            type: "Apple",
+            name: "Minnewashta",
+            category: "Cornell fire blight susceptibility ratings for apples",
+            description: "Fire blight susceptibility rating: Moderately Susceptible (source refs. 7); Susceptible (source refs. 8). Source table names this as Zestar!"
+        },
+    ]
+}

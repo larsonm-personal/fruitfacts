@@ -111,7 +111,7 @@ def row_text_fixes(row, fixes):
     if not fixes:
         return row
     return {
-        key: apply_text_fixes(value, fixes) if isinstance(value, str) else value
+        key: apply_config_text_fixes(value, fixes) if isinstance(value, str) else value
         for key, value in row.items()
     }
 
@@ -150,6 +150,20 @@ def skip_named_rows(rows, name_key, skip_names):
 def apply_text_fixes(text, fixes):
     for old, new in fixes.items():
         text = text.replace(old, new)
+    return text
+
+
+def text_fix_parts(fixes):
+    if "literal" in fixes or "regex" in fixes:
+        return fixes.get("literal", {}), fixes.get("regex", [])
+    return fixes, []
+
+
+def apply_config_text_fixes(text, fixes):
+    literal_fixes, regex_fixes = text_fix_parts(fixes)
+    text = apply_text_fixes(text, literal_fixes)
+    for pattern, replacement in regex_fixes:
+        text = re.sub(pattern, replacement, text)
     return text
 
 
@@ -477,8 +491,10 @@ def merge_duplicate_plant_records(plants, merge_spec):
 
 
 def plants_from_html_table(page, extractor, overrides, lookups):
+    rows = table_rows(page, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
     return plant_records_from_config_rows(
-        table_rows(page, extractor),
+        rows,
         extractor,
         overrides,
         lookups,
@@ -1630,7 +1646,7 @@ def extract(config):
             plants.extend(plants_from_paragraph_sequences(data, extractor, overrides, lookups))
         else:
             raise ValueError("Unsupported extractor kind: " + extractor["kind"])
-    return plants
+    return merge_duplicate_plant_records(plants, config.get("merge_duplicate_plants"))
 
 
 def emit_config(path):

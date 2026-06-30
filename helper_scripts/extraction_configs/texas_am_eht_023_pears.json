@@ -1,0 +1,168 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://aggie-horticulture.tamu.edu/fruit-nut/wp-content/uploads/sites/6/2015/04/pears_2015.pdf",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Texas Fruit and Nut Production: Pears"],
+    ["author", "Larry Stein, Jim Kamas, and Monte Nesbitt"],
+    ["description", "Texas A&M AgriLife Extension guide to pear production and European hybrid and Asian pear variety recommendations by Texas zone"],
+    ["url", "https://agrilifeextension.tamu.edu/asset-external/texas-fruit-and-nut-production-pears/"],
+    ["thumbnail", "pdf"],
+    ["published", "November 2013"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Texas A&M University, College Station, TX",
+      "latitude": 30.6104,
+      "longitude": -96.3434
+    }
+  ],
+  "categories": [
+    {
+      "name": "European hybrid pear varieties for Texas",
+      "description": "Texas A&M EHT-023 lists these European hybrid pear varieties for one or more Texas production zones"
+    },
+    {
+      "name": "Asian pear varieties for Texas",
+      "description": "Texas A&M EHT-023 lists these Asian pear varieties for one or more Texas production zones"
+    }
+  ],
+  "merge_duplicate_plants": {
+    "keys": ["type", "name"],
+    "fields": ["description"]
+  },
+  "name_overrides": {
+    "LeConte": {
+      "name": "Le Conte",
+      "note": "Source table names this as LeConte"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Zone 1: Hill Country and West Texas",
+      "section_end": "Zone 2:",
+      "marker": "European hybrids:",
+      "end_marker": "Asian varieties:",
+      "plant_type": "Euro Pear",
+      "category": "European hybrid pear varieties for Texas",
+      "trim_name": true,
+      "strip_name_quotes": true,
+      "row_text_fixes": {
+        "`": ""
+      },
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "Texas A&M EHT-023 lists this European hybrid pear for Zone 1: Hill Country and West Texas."
+        }
+      ]
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Zone 1: Hill Country and West Texas",
+      "section_end": "Zone 2:",
+      "marker": "Asian varieties:",
+      "plant_type": "Asian Pear",
+      "category": "Asian pear varieties for Texas",
+      "trim_name": true,
+      "strip_name_quotes": true,
+      "row_text_fixes": {
+        "`Nijisseiki' (`20th Century')": "Nijisseiki",
+        "Shin Li'\n2": "Shin Li'",
+        "`": ""
+      },
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "Texas A&M EHT-023 lists this Asian pear for Zone 1: Hill Country and West Texas."
+        }
+      ]
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Zone 2: East Texas",
+      "section_end": "Zone 3:",
+      "marker": "European hybrids:",
+      "end_marker": "Asian varieties:",
+      "plant_type": "Euro Pear",
+      "category": "European hybrid pear varieties for Texas",
+      "trim_name": true,
+      "strip_name_quotes": true,
+      "row_text_fixes": {
+        "`": ""
+      },
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "Texas A&M EHT-023 lists this European hybrid pear for Zone 2: East Texas."
+        }
+      ]
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Zone 2: East Texas",
+      "section_end": "Zone 3:",
+      "marker": "Asian varieties:",
+      "plant_type": "Asian Pear",
+      "category": "Asian pear varieties for Texas",
+      "trim_name": true,
+      "strip_name_quotes": true,
+      "row_text_fixes": {
+        "`": ""
+      },
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "Texas A&M EHT-023 lists this Asian pear for Zone 2: East Texas."
+        }
+      ]
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Zone 3: Deep South Texas",
+      "section_end": "Rootstocks",
+      "marker": "European hybrids:",
+      "end_marker": " (not",
+      "plant_type": "Euro Pear",
+      "category": "European hybrid pear varieties for Texas",
+      "trim_name": true,
+      "strip_name_quotes": true,
+      "row_text_fixes": {
+        "`": ""
+      },
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "Texas A&M EHT-023 lists this European hybrid pear for Zone 3: Deep South Texas."
+        }
+      ]
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Zone 3: Deep South Texas",
+      "section_end": "Rootstocks",
+      "marker": "Asian varieties:",
+      "end_marker": "(both require",
+      "plant_type": "Asian Pear",
+      "category": "Asian pear varieties for Texas",
+      "trim_name": true,
+      "strip_name_quotes": true,
+      "row_text_fixes": {
+        "`": ""
+      },
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "Texas A&M EHT-023 lists this Asian pear for Zone 3: Deep South Texas and says the listed Asian pears require about 300 chilling hours."
+        }
+      ]
+    }
+  ]
+}
