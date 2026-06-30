@@ -501,6 +501,9 @@ def html_rule_matches(tag, text, state, rule):
         return False
     if rule.get("subsection") and state.get("subsection") != rule["subsection"]:
         return False
+    for key, value in rule.get("when", {}).items():
+        if state.get(key) != value:
+            return False
     return True
 
 
@@ -517,6 +520,7 @@ def html_rule_values(rule):
         "names_before",
         "section",
         "subsection",
+        "when",
     }
     return {key: value for key, value in rule.items() if key not in keys}
 
@@ -581,6 +585,9 @@ def html_list_item_rows(page, extractor):
 
         if tag.startswith("h"):
             apply_html_rules(tag, text, state, extractor.get("subheading_rules", []))
+            continue
+
+        if apply_html_rules(tag, text, state, extractor.get("context_rules", [])):
             continue
 
         if tag != "li" or not state.get("category") or not state.get("plant_type"):
@@ -1120,6 +1127,8 @@ def inline_quoted_name_rows(page, extractor):
                 name_text = name_text.split(rule["names_before"], 1)[0]
             values = html_rule_values(rule)
             for name in quoted_names(name_text):
+                if extractor.get("strip_trailing_name_punctuation"):
+                    name = name.rstrip(",;").strip()
                 if name in excluded:
                     continue
                 row = {

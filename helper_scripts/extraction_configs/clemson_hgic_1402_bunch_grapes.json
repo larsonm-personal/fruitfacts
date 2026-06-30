@@ -1,0 +1,144 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://hgic.clemson.edu/factsheet/bunch-grapes/"
+  },
+  "reference_fields": [
+    ["title", "HGIC 1402 Bunch Grapes"],
+    ["author", "Marjan Kluepfel and Robert F. Polomski"],
+    ["description", "Clemson HGIC bunch grape factsheet for South Carolina, with mountain, Piedmont, sandhills, and coastal plain cultivar suggestions by use"],
+    ["url", "https://hgic.clemson.edu/factsheet/bunch-grapes/"],
+    ["thumbnail", "website"],
+    ["published", "June 1999"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Clemson University Cooperative Extension, Clemson, South Carolina",
+      "latitude": 34.6773,
+      "longitude": -82.8364
+    }
+  ],
+  "categories": [
+    {
+      "name": "White wine grapes for South Carolina mountains and Piedmont",
+      "description": "Clemson HGIC 1402 suggests these bunch grapes for white wine in the South Carolina mountains and Piedmont"
+    },
+    {
+      "name": "Red wine grapes for South Carolina mountains and Piedmont",
+      "description": "Clemson HGIC 1402 suggests these bunch grapes for red wine in the South Carolina mountains and Piedmont"
+    },
+    {
+      "name": "Fresh eating grapes for South Carolina mountains and Piedmont",
+      "description": "Clemson HGIC 1402 suggests these bunch grapes for fresh eating in the South Carolina mountains and Piedmont"
+    },
+    {
+      "name": "Dual-purpose grapes for South Carolina mountains and Piedmont",
+      "description": "Clemson HGIC 1402 suggests these bunch grapes for both fresh consumption and wine production in the South Carolina mountains and Piedmont"
+    },
+    {
+      "name": "White wine grapes for South Carolina sandhills and coastal plains",
+      "description": "Clemson HGIC 1402 suggests these bunch grapes for white wine in the South Carolina sandhills and coastal plains"
+    },
+    {
+      "name": "Red wine grapes for South Carolina sandhills and coastal plains",
+      "description": "Clemson HGIC 1402 suggests these bunch grapes for red wine in the South Carolina sandhills and coastal plains"
+    },
+    {
+      "name": "Fresh eating grapes for South Carolina sandhills and coastal plains",
+      "description": "Clemson HGIC 1402 suggests these bunch grapes for fresh eating in the South Carolina sandhills and coastal plains"
+    },
+    {
+      "name": "Dual-purpose grapes for South Carolina sandhills and coastal plains",
+      "description": "Clemson HGIC 1402 suggests this bunch grape for both fresh consumption and wine production in the South Carolina sandhills and coastal plains"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "inline_quoted_names",
+      "start_heading": "Cultivation",
+      "end_heading": "Pruning Schedule",
+      "plant_type": "Grape",
+      "strip_trailing_name_punctuation": true,
+      "row_overrides": {
+        "Vidal": {
+          "name": "Vidal Blanc",
+          "_source_note": "Source text names this as Vidal"
+        },
+        "Blanc Du Bois": {
+          "name": "Blanc du Bois",
+          "_source_note": "Source text names this as Blanc Du Bois"
+        },
+        "Black Spanish": {
+          "name": "Black Spanish (Lenoir)",
+          "_source_note": "Source text names this as Black Spanish"
+        },
+        "Orlando seedless": {
+          "name": "Orlando Seedless",
+          "_source_note": "Source text names this as Orlando seedless"
+        }
+      },
+      "description_template": "Clemson HGIC 1402 suggests {name} for {category_lower}",
+      "paragraph_rules": [
+        {
+          "tag": "p",
+          "contains": "Varieties suggested for the mountains and Piedmont include",
+          "names_after": "include:",
+          "names_before": "for white wine",
+          "category": "White wine grapes for South Carolina mountains and Piedmont"
+        },
+        {
+          "tag": "p",
+          "contains": "Varieties suggested for the mountains and Piedmont include",
+          "names_after": "for white wine;",
+          "names_before": "for red wine",
+          "category": "Red wine grapes for South Carolina mountains and Piedmont"
+        },
+        {
+          "tag": "p",
+          "contains": "Varieties suggested for the mountains and Piedmont include",
+          "names_after": "for red wine;",
+          "names_before": "for fresh eating",
+          "category": "Fresh eating grapes for South Carolina mountains and Piedmont"
+        },
+        {
+          "tag": "p",
+          "contains": "Varieties suggested for the mountains and Piedmont include",
+          "names_after": "for fresh eating;",
+          "names_before": "for both fresh consumption",
+          "category": "Dual-purpose grapes for South Carolina mountains and Piedmont"
+        },
+        {
+          "tag": "p",
+          "contains": "Varieties suggested for the sandhills and coastal plains include",
+          "names_after": "include:",
+          "names_before": "for white wine",
+          "category": "White wine grapes for South Carolina sandhills and coastal plains"
+        },
+        {
+          "tag": "p",
+          "contains": "Varieties suggested for the sandhills and coastal plains include",
+          "names_after": "for white wine;",
+          "names_before": "for red wine",
+          "category": "Red wine grapes for South Carolina sandhills and coastal plains"
+        },
+        {
+          "tag": "p",
+          "contains": "Varieties suggested for the sandhills and coastal plains include",
+          "names_after": "for red wine;",
+          "names_before": "for fresh eating",
+          "category": "Fresh eating grapes for South Carolina sandhills and coastal plains"
+        },
+        {
+          "tag": "p",
+          "contains": "Varieties suggested for the sandhills and coastal plains include",
+          "names_after": "for fresh eating; and",
+          "names_before": "for both fresh consumption",
+          "category": "Dual-purpose grapes for South Carolina sandhills and coastal plains"
+        }
+      ]
+    }
+  ]
+}

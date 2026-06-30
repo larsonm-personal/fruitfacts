@@ -2337,7 +2337,7 @@
         },
         {
             id: "clemson-hgic-1401-blueberry",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Blueberry",
             institution: "Clemson Cooperative Extension Home and Garden Information Center",
@@ -2358,7 +2358,13 @@
             notes: [
                 "Found while expanding the Clemson HGIC source family beyond tree fruit",
                 "Official page is useful for low-chill southeastern blueberry variety context",
-                "Likely parsing issue: recommendations are split by blueberry type and may include narrative pollination advice"
+                "Likely parsing issue: recommendations are split by blueberry type and may include narrative pollination advice",
+                "Encoded in plant_database/references/South Carolina/Clemson HGIC 1401 Blueberry.json5",
+                "Config extraction added at helper_scripts/extraction_configs/clemson_hgic_1401_blueberry.json",
+                "Manifest entry added as clemson_hgic_1401_blueberry",
+                "Worked example for HTML list items whose categories are driven by paragraph context rather than headings",
+                "Parser support extended so html_list_items can use context_rules and when conditions to switch state from prose blocks",
+                "Source-visible trademark spellings such as Krewer(tm), Titan(tm), and BerryBux(r) were normalized with notes"
             ]
         },
         {
@@ -2389,7 +2395,7 @@
         },
         {
             id: "clemson-hgic-1402-bunch-grapes",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Bunch Grapes",
             institution: "Clemson Cooperative Extension Home and Garden Information Center",
@@ -2410,7 +2416,13 @@
             notes: [
                 "Found through the Clemson HGIC fruit factsheet family",
                 "Official page helps fill southeastern grape variety context beyond muscadine-heavy sources",
-                "Likely parsing issue: grape type, disease susceptibility, and variety names are intertwined in narrative lists"
+                "Likely parsing issue: grape type, disease susceptibility, and variety names are intertwined in narrative lists",
+                "Encoded in plant_database/references/South Carolina/Clemson HGIC 1402 Bunch Grapes.json5",
+                "Config extraction added at helper_scripts/extraction_configs/clemson_hgic_1402_bunch_grapes.json",
+                "Manifest entry added as clemson_hgic_1402_bunch_grapes",
+                "Worked example for inline quoted-name extraction from prose lists sliced by repeated region and use clauses",
+                "Parser support extended so inline_quoted_names can strip terminal punctuation from quoted names before description generation",
+                "Row overrides keep source-visible names such as Vidal, Blanc Du Bois, Black Spanish, and Orlando seedless as notes while generating canonical record names"
             ]
         },
         {

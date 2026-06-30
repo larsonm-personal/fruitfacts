@@ -469,6 +469,24 @@ harvest extraction sometimes needs sentence-prefix matching. Broad substring
 matching caught phrases such as `ripen properly`, while prefix matching keeps
 only sentences that start with timing terms such as `Ripens`.
 
+## Clemson HGIC Blueberry And Bunch Grape Notes
+
+Clemson HGIC 1401 is an HTML list source, but the useful category changes are
+ordinary paragraphs rather than section headings. The config uses
+`html_list_items` with `context_rules` to switch from rabbiteye to Southern
+highbush and to set early, midseason, late, and dwarf container categories
+before the following `li` rows. The parser supports `when` checks so repeated
+paragraph text such as `Early season cultivars:` can mean different categories
+depending on the current blueberry group.
+
+Clemson HGIC 1402 puts all bunch grape cultivar names inside two narrative
+paragraphs, with region and use clauses dividing the lists. The config uses
+`inline_quoted_names` with repeated `names_after` and `names_before` slices to
+preserve those source groups. The extractor can strip terminal punctuation from
+quoted names because the source includes commas inside some quotes, such as
+`'Mars,'`, and row overrides keep source spellings like `Blanc Du Bois` visible
+while generating canonical names.
+
 ## NDSU FN590 Jams And Jellies Notes
 
 NDSU FN590 is not primarily a horticulture publication, but its early sections

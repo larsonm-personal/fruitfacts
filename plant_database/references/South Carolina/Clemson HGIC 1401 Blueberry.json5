@@ -1,0 +1,226 @@
+{
+    title: "HGIC 1401 Blueberry",
+    author: "Robert F. Polomski, Greg Reighard, and Joey Williamson",
+    description: "Clemson HGIC blueberry factsheet for South Carolina, with rabbiteye, Southern highbush, and dwarf container cultivar recommendations",
+    url: "https://hgic.clemson.edu/factsheet/blueberry/",
+    thumbnail: "website",
+    published: "November 1999",
+    reviewed: "March 2023",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Clemson University Cooperative Extension, Clemson, South Carolina",
+            latitude: 34.6773,
+            longitude: -82.8364
+        },
+    ],
+    categories: [
+        {
+            name: "Early season rabbiteye blueberries for South Carolina",
+            description: "Clemson HGIC 1401 recommends these early season rabbiteye blueberry cultivars for South Carolina"
+        },
+        {
+            name: "Midseason rabbiteye blueberries for South Carolina",
+            description: "Clemson HGIC 1401 recommends these midseason rabbiteye blueberry cultivars for South Carolina"
+        },
+        {
+            name: "Late season rabbiteye blueberries for South Carolina",
+            description: "Clemson HGIC 1401 recommends these late season rabbiteye blueberry cultivars for South Carolina"
+        },
+        {
+            name: "Early season southern highbush blueberries for South Carolina",
+            description: "Clemson HGIC 1401 suggests these early season Southern highbush blueberry cultivars for South Carolina"
+        },
+        {
+            name: "Midseason southern highbush blueberries for South Carolina",
+            description: "Clemson HGIC 1401 suggests these midseason Southern highbush blueberry cultivars for South Carolina"
+        },
+        {
+            name: "Dwarf blueberry cultivars for South Carolina containers",
+            description: "Clemson HGIC 1401 names these dwarf blueberry plants for container growing"
+        },
+    ],
+    plants: [
+        {
+            type: "Blueberry",
+            name: "Climax",
+            category: "Early season rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "early season",
+            description: "Plants require 450 chilling hours. This cultivar has a concentrated fruit set with small to medium sized fruit. Recommended cross pollination with Premier or Austin"
+        },
+        {
+            type: "Blueberry",
+            name: "Krewer",
+            category: "Early season rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "early season",
+            description: "PP 28623. Requires 400 to 450 chilling hours. Fruit are very large and have a very favorable firmness and sweet flavor. It is a companion to Titan and suitable for commercial growing, pick your own operations, and home gardens. Source text names this as Krewer(tm)"
+        },
+        {
+            type: "Blueberry",
+            name: "Vernon",
+            category: "Early season rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "early season",
+            description: "PP19291. Requires 450 hours of chilling. Flowers 7 days after Climax, but ripens before Climax and Premier. Fruit are large, firmness is excellent, and have good flavor and color. Recommended cross pollination with Alapaha"
+        },
+        {
+            type: "Blueberry",
+            name: "Alapaha",
+            category: "Early season rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "early season",
+            description: "PP16266. Requires 450 to 500 chilling hours. This cultivar has a medium size fruit with good firmness and flavor. Flowers 7 to 10 days after Climax, which helps avoid spring freeze damage to flowers. Recommended cross pollination with Vernon"
+        },
+        {
+            type: "Blueberry",
+            name: "Austin",
+            category: "Early season rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "early season",
+            description: "Plants require 500 chilling hours. Plants are productive and produce medium-large berries. Recommended cross pollination with Climax or Premier"
+        },
+        {
+            type: "Blueberry",
+            name: "Titan",
+            category: "Early season rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "early season",
+            description: "PP24135. Requires 500 to 550 hours of chilling. Fruit are very large - larger than Vernon or Premier. Flavor and color are good, but fruit may crack under wet conditions during ripening. Recommended cross pollination with Vernon and Krewer. Source text names this as Titan(tm)"
+        },
+        {
+            type: "Blueberry",
+            name: "Premier",
+            category: "Early season rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "early season",
+            description: "Requires 550 chilling hours. Plants produce medium to large sized fruit. Recommended cross pollination with Austin or Alapaha"
+        },
+        {
+            type: "Blueberry",
+            name: "Summer Sunset",
+            category: "Early season rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "early season",
+            description: "PPAF. Chilling requirement is 500 to 550 hours. Fruit are medium-sized and multi-colored as they go through the stages of ripening (first yellow-green, then orange-red, to red, to purple, and finally black). The plant is vigorous. Recommended cross-pollination with Titan. Source text names this as Summer Sunset(tm)"
+        },
+        {
+            type: "Blueberry",
+            name: "Brightwell",
+            category: "Midseason rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "midseason",
+            description: "Requires 400 chilling hours. Fruits are medium to large size, but may split during wet weather. Recommended cross pollination with Austin or Premier"
+        },
+        {
+            type: "Blueberry",
+            name: "Powderblue",
+            category: "Midseason rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "midseason",
+            description: "Plants require 600 chilling hours. Plants have good production of medium sized, light blue fruit. Recommended cross pollination with Tifblue or Brightwell"
+        },
+        {
+            type: "Blueberry",
+            name: "Tifblue",
+            category: "Midseason rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "midseason",
+            description: "Requires 650 chilling hours. Plants produce small to medium size fruit, which must get fully ripe or they will be tart"
+        },
+        {
+            type: "Blueberry",
+            name: "Baldwin",
+            category: "Late season rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "late season",
+            description: "This late maturing cultivar requires 450 to 500 chilling hours. The plants have moderate yield and high vigor. The fruit are large, of good quality and very dark blue color. Cross pollinate with Brightwell, Powderblue, and Centurian"
+        },
+        {
+            type: "Blueberry",
+            name: "Centurian",
+            category: "Late season rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "late season",
+            description: "Centurian plants need 550 to 600 chilling hours for fruiting. The fruit are very good quality, medium-sized, firm, and darkish-blue. The fruit may crack with heavy rainfall. Pollinate with Brightwell, Ochlockonee, and Powderblue"
+        },
+        {
+            type: "Blueberry",
+            name: "Ochlockonee",
+            category: "Late season rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "late season",
+            description: "PP17300. Requires 650 to 700 chilling hours. This cultivar is very productive with fruit larger than Tifblue. Fruit has good color, firmness and flavor. Recommended cross pollination with Powderblue"
+        },
+        {
+            type: "Blueberry",
+            name: "Onslow",
+            category: "Late season rabbiteye blueberries for South Carolina",
+            harvest_time_unparsed: "late season",
+            description: "This cultivar has fruit slightly larger and darker than Powderblue. For fruiting the plants require 500 to 600 chilling hours. The plants are productive and vigorous. It has been reported that Onslow may tolerate soils of a higher pH than other cultivars. The fruit are large, with very good firmness and a medium blue color"
+        },
+        {
+            type: "Blueberry",
+            name: "Georgia Dawn",
+            category: "Early season southern highbush blueberries for South Carolina",
+            harvest_time_unparsed: "early season",
+            description: "PP16756. Plants require 300 to 400 chilling hours. Fruit are medium to large size with a medium dark blue color. Fruit have acceptable firmness with outstanding flavor. Plants are vigorous growers and very early ripening. Recommended cross pollination with Rebel. Source text names this as Georgia Dawn(tm)"
+        },
+        {
+            type: "Blueberry",
+            name: "Palmetto",
+            category: "Early season southern highbush blueberries for South Carolina",
+            harvest_time_unparsed: "early season",
+            description: "PP17656. Chilling requirement is 350 to 450 hours. Fruit are medium sized with a medium dark blue color with acceptable firmness. Plants are very productive and have good vigor. Recommended cross pollination with Suziblue"
+        },
+        {
+            type: "Blueberry",
+            name: "Rebel",
+            category: "Early season southern highbush blueberries for South Carolina",
+            harvest_time_unparsed: "early season",
+            description: "PP18138. Plants require 400 to 450 chilling hours. The fruit are large with good to excellent color and firmness. Fruit can become bland if they remain on the plant too long. Plants are productive. Recommended cross pollination with Suziblue"
+        },
+        {
+            type: "Blueberry",
+            name: "Southern Splendour",
+            category: "Early season southern highbush blueberries for South Carolina",
+            harvest_time_unparsed: "early season",
+            description: "PP22692. Fruit are medium to medium-large, very firm and with outstanding flavor. Plants produce a medium yield. The chilling requirement is 450 to 550 hours. Recommended cross pollination with Suziblue. Source text names this as Southern Slendour"
+        },
+        {
+            type: "Blueberry",
+            name: "Blue Suede",
+            category: "Early season southern highbush blueberries for South Carolina",
+            harvest_time_unparsed: "early season",
+            description: "PP21222. Plants are productive with attractive light blue fruit. Fruit are large and flavorful. The chilling requirement is 500 to 550 hours. Recommended cross pollination with Camellia or Palmetto. The fall foliage has a deep red color. Source text names this as Blue Suede(tm)"
+        },
+        {
+            type: "Blueberry",
+            name: "Suziblue",
+            category: "Midseason southern highbush blueberries for South Carolina",
+            harvest_time_unparsed: "midseason",
+            description: "PP21167. The chilling requirement is 400 hours or less. This cultivar has fruit that are large, with very good firmness, and good flavor. Plants are vigorous. Recommended cross pollination with Rebel"
+        },
+        {
+            type: "Blueberry",
+            name: "Camellia",
+            category: "Midseason southern highbush blueberries for South Carolina",
+            harvest_time_unparsed: "midseason",
+            description: "PP18151. The chilling requirement is 500 hours. The fruit are large, firm and flavorful. The plants are vigorous growers. Recommended cross pollination with Suziblue"
+        },
+        {
+            type: "Blueberry",
+            name: "Blueberry Sunshine",
+            category: "Dwarf blueberry cultivars for South Carolina containers",
+            description: "Fruiting requires 150 chilling hours, and plants grow well in USDA zones 5 to 10. Flowers are white to pink. Fruits ripen mid- to late season, and berries are medium sized. Foliage turns burgundy in fall. Plants grow to 3 to 4 feet tall and wide. Source text names this as 'Blueberry Sunshine'"
+        },
+        {
+            type: "Blueberry",
+            name: "Peach Sorbet",
+            category: "Dwarf blueberry cultivars for South Carolina containers",
+            description: "PP23,325. This dwarf cultivar has white flowers and emerald green leaves with new foliage in shades of pink and orange. It grows well in USDA zones 5 to 10 and is semi-evergreen. These compact plants grow to 11/2 to 2 feet tall and wide. Source text names this as Peach Sorbet(r)"
+        },
+        {
+            type: "Blueberry",
+            name: "Pink Icing",
+            category: "Dwarf blueberry cultivars for South Carolina containers",
+            description: "PP23,336. This cultivar has pink flowers and grows to 3 to 4 feet tall and wide. It grows well in USDA zones 5 to 10, and its fruit ripen in mid-season. Source text names this as Pink Icing(tm)"
+        },
+        {
+            type: "Blueberry",
+            name: "BerryBux",
+            category: "Dwarf blueberry cultivars for South Carolina containers",
+            AKA: ["Blueberry Glaze"],
+            description: "PP25,467. (Formerly Blueberry Glaze) This is a dwarf cultivar that requires a bit more chilling hours than the others (500 to 600 hours below 45 degrees). Plants grow to 2 to 3 feet tall and wide and grow well in USDA zones 5 to 8. The fruit are small black berries with intense flavor and ripen mid-season. Source text names this as BerryBux(r) and says it was formerly Blueberry Glaze"
+        },
+    ]
+}

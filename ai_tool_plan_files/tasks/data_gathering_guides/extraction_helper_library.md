@@ -140,9 +140,13 @@ script. The config runner currently supports:
   patent text after row extraction
 - HTML paragraph blocks where each useful paragraph starts with a quoted
   cultivar name
+- HTML prose blocks with inline quoted cultivar names sliced by repeated
+  paragraph rules, with optional terminal punctuation stripping for source
+  quotes such as `'Mars,'`
 - HTML paragraph blocks where each useful paragraph starts with `Name:`
 - HTML list items where `Name: description` entries inherit crop/category
-  context from `h2`, `h3`, and `h4` headings
+  context from `h2`, `h3`, and `h4` headings, or from configured prose
+  `context_rules` with `when` state checks
 - HTML name-matrix tables where each cell is a cultivar name, including
   optional group labels, suffix-to-type mapping, and generated source notes
 - Lookup tables keyed by cultivar, such as disease rating tables
@@ -252,6 +256,12 @@ Source-specific scripts should do:
 - MSState P966 fruit and nut recommendations: HTML `li` entries where source
   headings carry the crop, region, season, and astringency context, plus
   separate HTML peach tables and a generated-row pecan home-planting list
+- Clemson HGIC 1401 blueberry: HTML `li` entries where ordinary paragraphs,
+  not headings, switch the blueberry group and season category before the
+  following cultivar list
+- Clemson HGIC 1402 bunch grapes: inline quoted cultivar names in prose lists,
+  sliced by repeated region and use clauses, with terminal punctuation stripped
+  before generated descriptions are built
 - NDSU FN590 jams and jellies: unheaded HTML cultivar grids embedded in a food
   preservation publication, with group cells for raspberry bearing type,
   suffix-to-type mapping for Prunus names, and prose-generated Juneberry rows

@@ -13,6 +13,14 @@
             "config": "extraction_configs/csu_764_grapes.json"
         },
         {
+            "id": "clemson_hgic_1401_blueberry",
+            "config": "extraction_configs/clemson_hgic_1401_blueberry.json"
+        },
+        {
+            "id": "clemson_hgic_1402_bunch_grapes",
+            "config": "extraction_configs/clemson_hgic_1402_bunch_grapes.json"
+        },
+        {
             "id": "ksre_mf1028_small_tree_fruit_cultivars",
             "config": "extraction_configs/ksre_mf1028_small_tree_fruit_cultivars.json"
         },

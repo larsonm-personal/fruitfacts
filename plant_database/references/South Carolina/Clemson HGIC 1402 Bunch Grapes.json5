@@ -1,0 +1,174 @@
+{
+    title: "HGIC 1402 Bunch Grapes",
+    author: "Marjan Kluepfel and Robert F. Polomski",
+    description: "Clemson HGIC bunch grape factsheet for South Carolina, with mountain, Piedmont, sandhills, and coastal plain cultivar suggestions by use",
+    url: "https://hgic.clemson.edu/factsheet/bunch-grapes/",
+    thumbnail: "website",
+    published: "June 1999",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Clemson University Cooperative Extension, Clemson, South Carolina",
+            latitude: 34.6773,
+            longitude: -82.8364
+        },
+    ],
+    categories: [
+        {
+            name: "White wine grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests these bunch grapes for white wine in the South Carolina mountains and Piedmont"
+        },
+        {
+            name: "Red wine grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests these bunch grapes for red wine in the South Carolina mountains and Piedmont"
+        },
+        {
+            name: "Fresh eating grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests these bunch grapes for fresh eating in the South Carolina mountains and Piedmont"
+        },
+        {
+            name: "Dual-purpose grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests these bunch grapes for both fresh consumption and wine production in the South Carolina mountains and Piedmont"
+        },
+        {
+            name: "White wine grapes for South Carolina sandhills and coastal plains",
+            description: "Clemson HGIC 1402 suggests these bunch grapes for white wine in the South Carolina sandhills and coastal plains"
+        },
+        {
+            name: "Red wine grapes for South Carolina sandhills and coastal plains",
+            description: "Clemson HGIC 1402 suggests these bunch grapes for red wine in the South Carolina sandhills and coastal plains"
+        },
+        {
+            name: "Fresh eating grapes for South Carolina sandhills and coastal plains",
+            description: "Clemson HGIC 1402 suggests these bunch grapes for fresh eating in the South Carolina sandhills and coastal plains"
+        },
+        {
+            name: "Dual-purpose grapes for South Carolina sandhills and coastal plains",
+            description: "Clemson HGIC 1402 suggests this bunch grape for both fresh consumption and wine production in the South Carolina sandhills and coastal plains"
+        },
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Aurora",
+            category: "White wine grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests Aurora for white wine grapes for south carolina mountains and piedmont"
+        },
+        {
+            type: "Grape",
+            name: "Chancellor",
+            category: "White wine grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests Chancellor for white wine grapes for south carolina mountains and piedmont"
+        },
+        {
+            type: "Grape",
+            name: "Vidal Blanc",
+            category: "White wine grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests Vidal Blanc for white wine grapes for south carolina mountains and piedmont. Source text names this as Vidal"
+        },
+        {
+            type: "Grape",
+            name: "Villard Blanc",
+            category: "White wine grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests Villard Blanc for white wine grapes for south carolina mountains and piedmont"
+        },
+        {
+            type: "Grape",
+            name: "Baco Noir",
+            category: "Red wine grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests Baco Noir for red wine grapes for south carolina mountains and piedmont"
+        },
+        {
+            type: "Grape",
+            name: "Foch",
+            category: "Red wine grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests Foch for red wine grapes for south carolina mountains and piedmont"
+        },
+        {
+            type: "Grape",
+            name: "Interlaken",
+            category: "Fresh eating grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests Interlaken for fresh eating grapes for south carolina mountains and piedmont"
+        },
+        {
+            type: "Grape",
+            name: "Mars",
+            category: "Fresh eating grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests Mars for fresh eating grapes for south carolina mountains and piedmont"
+        },
+        {
+            type: "Grape",
+            name: "Reliance",
+            category: "Fresh eating grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests Reliance for fresh eating grapes for south carolina mountains and piedmont"
+        },
+        {
+            type: "Grape",
+            name: "Saturn",
+            category: "Fresh eating grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests Saturn for fresh eating grapes for south carolina mountains and piedmont"
+        },
+        {
+            type: "Grape",
+            name: "Concord",
+            category: "Dual-purpose grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests Concord for dual-purpose grapes for south carolina mountains and piedmont"
+        },
+        {
+            type: "Grape",
+            name: "Delaware",
+            category: "Dual-purpose grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests Delaware for dual-purpose grapes for south carolina mountains and piedmont"
+        },
+        {
+            type: "Grape",
+            name: "Catawba",
+            category: "Dual-purpose grapes for South Carolina mountains and Piedmont",
+            description: "Clemson HGIC 1402 suggests Catawba for dual-purpose grapes for south carolina mountains and piedmont"
+        },
+        {
+            type: "Grape",
+            name: "Blanc du Bois",
+            category: "White wine grapes for South Carolina sandhills and coastal plains",
+            description: "Clemson HGIC 1402 suggests Blanc du Bois for white wine grapes for south carolina sandhills and coastal plains. Source text names this as Blanc Du Bois"
+        },
+        {
+            type: "Grape",
+            name: "Lake Emerald",
+            category: "White wine grapes for South Carolina sandhills and coastal plains",
+            description: "Clemson HGIC 1402 suggests Lake Emerald for white wine grapes for south carolina sandhills and coastal plains"
+        },
+        {
+            type: "Grape",
+            name: "Roucaneuf",
+            category: "Red wine grapes for South Carolina sandhills and coastal plains",
+            description: "Clemson HGIC 1402 suggests Roucaneuf for red wine grapes for south carolina sandhills and coastal plains"
+        },
+        {
+            type: "Grape",
+            name: "Black Spanish (Lenoir)",
+            category: "Red wine grapes for South Carolina sandhills and coastal plains",
+            description: "Clemson HGIC 1402 suggests Black Spanish (Lenoir) for red wine grapes for south carolina sandhills and coastal plains. Source text names this as Black Spanish"
+        },
+        {
+            type: "Grape",
+            name: "Daytona",
+            category: "Fresh eating grapes for South Carolina sandhills and coastal plains",
+            description: "Clemson HGIC 1402 suggests Daytona for fresh eating grapes for south carolina sandhills and coastal plains"
+        },
+        {
+            type: "Grape",
+            name: "Orlando Seedless",
+            category: "Fresh eating grapes for South Carolina sandhills and coastal plains",
+            description: "Clemson HGIC 1402 suggests Orlando Seedless for fresh eating grapes for south carolina sandhills and coastal plains. Source text names this as Orlando seedless"
+        },
+        {
+            type: "Grape",
+            name: "Conquistador",
+            category: "Dual-purpose grapes for South Carolina sandhills and coastal plains",
+            description: "Clemson HGIC 1402 suggests Conquistador for dual-purpose grapes for south carolina sandhills and coastal plains"
+        },
+    ]
+}
