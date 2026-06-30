@@ -1,0 +1,234 @@
+{
+    title: "Growing Fruit: Raspberry and Blackberry Varieties for New Hampshire",
+    author: "Becky Sideman",
+    description: "University of New Hampshire Cooperative Extension bramble variety factsheet for New Hampshire growers and home gardeners",
+    url: "https://extension.unh.edu/resource/growing-fruit-raspberry-and-blackberry-varieties-new-hampshire-fact-sheet",
+    thumbnail: "pdf",
+    reviewed: "March 2016",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of New Hampshire Cooperative Extension, Durham, New Hampshire",
+            latitude: 43.1389,
+            longitude: -70.937
+        },
+    ],
+    categories: [
+        {
+            name: "Summer red raspberry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these summer red raspberry varieties with hardiness, flavor, harvest-time, and description ratings for New Hampshire"
+        },
+        {
+            name: "Fall red raspberry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these fall red raspberry varieties with flavor and harvest-time ratings for New Hampshire; hardiness is marked not applicable for fall bearers"
+        },
+        {
+            name: "Yellow raspberry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these yellow raspberry varieties with flavor and harvest-time ratings for New Hampshire"
+        },
+        {
+            name: "Purple raspberry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these purple raspberry varieties with hardiness, flavor, harvest-time, and description ratings for New Hampshire"
+        },
+        {
+            name: "Blackberry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these blackberry varieties with hardiness, flavor, harvest-time, and description ratings for New Hampshire"
+        },
+    ],
+    plants: [
+        {
+            type: "Raspberry",
+            name: "Prelude",
+            category: "Summer red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: 5. Flavor rating: G. Harvest-time rating: VE. very early crop, hardy, may produce early fall crop as well"
+        },
+        {
+            type: "Raspberry",
+            name: "Boyne",
+            category: "Summer red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: 5. Flavor rating: F. Harvest-time rating: E. very hardy, good yields, fair flavor, dark and soft fruit"
+        },
+        {
+            type: "Raspberry",
+            name: "Killarney",
+            category: "Summer red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: 5. Flavor rating: VG. Harvest-time rating: E. very good flavor, hardy, susceptible to mildew & anthracnose"
+        },
+        {
+            type: "Raspberry",
+            name: "Canby",
+            category: "Summer red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: 3. Flavor rating: E. Harvest-time rating: M. nearly thornless, excellent flavor, not hardy"
+        },
+        {
+            type: "Raspberry",
+            name: "Latham",
+            category: "Summer red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: 5. Flavor rating: F. Harvest-time rating: M. very hardy,vigorous plants, crumbly, fair flavor"
+        },
+        {
+            type: "Raspberry",
+            name: "Nova",
+            category: "Summer red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: 5. Flavor rating: G. Harvest-time rating: M. few thorns, hardy, acidic fruits"
+        },
+        {
+            type: "Raspberry",
+            name: "Algonquin",
+            category: "Summer red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: 3. Flavor rating: G. Harvest-time rating: M/L. yields, large fruit, firm, not hardy"
+        },
+        {
+            type: "Raspberry",
+            name: "Titan",
+            category: "Summer red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: 3. Flavor rating: F. Harvest-time rating: M/L. disease susceptible, semi-hardy"
+        },
+        {
+            type: "Raspberry",
+            name: "Encore",
+            category: "Summer red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: 5. Flavor rating: VG. Harvest-time rating: L. good quality, large fruit"
+        },
+        {
+            type: "Raspberry",
+            name: "K81-6",
+            category: "Summer red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: 4. Flavor rating: G. Harvest-time rating: L. large, firm fruit, has shown some winter injury in NH"
+        },
+        {
+            type: "Raspberry",
+            name: "Taylor",
+            category: "Summer red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: 4. Flavor rating: E. Harvest-time rating: L. excellent flavor, color, firm, disease susceptible, semi-hardy"
+        },
+        {
+            type: "Raspberry",
+            name: "Polana",
+            category: "Fall red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: -. Flavor rating: F. Harvest-time rating: E. very early ripening, productive, misshapen fruit, fair flavor"
+        },
+        {
+            type: "Raspberry",
+            name: "Fall Red",
+            category: "Fall red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: -. Flavor rating: VG. Harvest-time rating: E. flavor, good for short seasons, spiny, soft fruit"
+        },
+        {
+            type: "Raspberry",
+            name: "Joan J",
+            category: "Fall red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: -. Flavor rating: G. Harvest-time rating: E. firm fruit, dark red, high yields, darkens in storage, thin skin"
+        },
+        {
+            type: "Raspberry",
+            name: "Autumn Bliss",
+            category: "Fall red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: -. Flavor rating: E. Harvest-time rating: E. flavor, early fruiting, productive"
+        },
+        {
+            type: "Raspberry",
+            name: "Autumn Britten",
+            category: "Fall red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: -. Flavor rating: VG. Harvest-time rating: E/M. flavor, fruit quality, productive"
+        },
+        {
+            type: "Raspberry",
+            name: "Caroline",
+            category: "Fall red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: -. Flavor rating: G. Harvest-time rating: M/L. vigorous plants, productive, rough-shaped fruit"
+        },
+        {
+            type: "Raspberry",
+            name: "Josephine",
+            category: "Fall red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: -. Flavor rating: VG. Harvest-time rating: L. Phytophthora resistant, late, needs long season"
+        },
+        {
+            type: "Raspberry",
+            name: "Heritage",
+            category: "Fall red raspberry varieties for New Hampshire",
+            description: "Hardiness rating: -. Flavor rating: G. Harvest-time rating: VL. high yields, good flavor, late, needs long season"
+        },
+        {
+            type: "Raspberry",
+            name: "Fallgold",
+            category: "Yellow raspberry varieties for New Hampshire",
+            description: "Hardiness rating: -. Flavor rating: VG. Harvest-time rating: M/L. vigorous, good flavor, earliest yellow, soft. Source names this as Fall Gold"
+        },
+        {
+            type: "Raspberry",
+            name: "Anne",
+            category: "Yellow raspberry varieties for New Hampshire",
+            description: "Hardiness rating: -. Flavor rating: E. Harvest-time rating: VL. very sweet, productive, resistant to Phytophthora, brittle canes"
+        },
+        {
+            type: "Raspberry",
+            name: "Kiwigold",
+            category: "Yellow raspberry varieties for New Hampshire",
+            description: "Hardiness rating: -. Flavor rating: G. Harvest-time rating: VL. good flavor, firm, disease resistant, very late"
+        },
+        {
+            type: "Raspberry",
+            name: "Goldie",
+            category: "Yellow raspberry varieties for New Hampshire",
+            description: "Hardiness rating: -. Flavor rating: G. Harvest-time rating: VL. good flavor, firm, disease resistant, very late"
+        },
+        {
+            type: "Raspberry",
+            name: "Brandywine",
+            category: "Purple raspberry varieties for New Hampshire",
+            description: "Hardiness rating: 3. Flavor rating: G. Harvest-time rating: L. excellent for jam, tart fruits, susceptible to crown gall"
+        },
+        {
+            type: "Raspberry",
+            name: "Royalty",
+            category: "Purple raspberry varieties for New Hampshire",
+            description: "Hardiness rating: 3. Flavor rating: VG. Harvest-time rating: L. excellent flavor, productive, soft fruit, susceptible to crown gall"
+        },
+        {
+            type: "Raspberry",
+            name: "Success",
+            category: "Purple raspberry varieties for New Hampshire",
+            description: "Hardiness rating: 4. Flavor rating: G. Harvest-time rating: M/L. hardiest purple, productive, not vigorous"
+        },
+        {
+            type: "Blackberry",
+            name: "Illini",
+            category: "Blackberry varieties for New Hampshire",
+            description: "Hardiness rating: 4. Flavor rating: E. Harvest-time rating: -. moderately hardy, vigorous, excellent fruit quality"
+        },
+        {
+            type: "Blackberry",
+            name: "Darrow",
+            category: "Blackberry varieties for New Hampshire",
+            description: "Hardiness rating: 3. Flavor rating: VG. Harvest-time rating: -. moderately hardy, productive, attractive fruit"
+        },
+        {
+            type: "Blackberry",
+            name: "Chester",
+            category: "Blackberry varieties for New Hampshire",
+            description: "Hardiness rating: 1. Flavor rating: G. Harvest-time rating: L. quality fruit, tart, vigorous, hard to pick, not hardy"
+        },
+        {
+            type: "Blackberry",
+            name: "Triple Crown",
+            category: "Blackberry varieties for New Hampshire",
+            description: "Hardiness rating: 1. Flavor rating: VG. Harvest-time rating: M/L. quality fruit, vigorous, not hardy"
+        },
+        {
+            type: "Blackberry",
+            name: "Prime Jim",
+            category: "Blackberry varieties for New Hampshire",
+            description: "Hardiness rating: -. Flavor rating: F. Harvest-time rating: VL. primocane-fruiting, low productivity, fair flavor"
+        },
+        {
+            type: "Blackberry",
+            name: "Prime Jan",
+            category: "Blackberry varieties for New Hampshire",
+            description: "Hardiness rating: -. Flavor rating: F. Harvest-time rating: VL. primocane-fruiting, low productivity, fair flavor"
+        },
+    ]
+}

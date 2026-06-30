@@ -128,6 +128,9 @@ def parse_catalog_entry(line, extractor):
                 description_key: entry_match.group("description").strip(),
             }
 
+    if extractor.get("entry_names_only"):
+        return None
+
     tokens = line.split()
     if not tokens:
         return None
@@ -181,6 +184,22 @@ def parse_catalog_entry(line, extractor):
         name_key: " ".join(name_tokens),
         description_key: " ".join(description_tokens),
     }
+
+
+def embedded_catalog_segments(line, extractor):
+    names = sorted(extractor.get("entry_names", []), key=len, reverse=True)
+    if not names:
+        return "", []
+    pattern = r"(?<![\w'])(" + "|".join(re.escape(name) for name in names) + r")\s*:"
+    matches = list(re.finditer(pattern, line))
+    if not matches:
+        return "", []
+    prefix = line[: matches[0].start()].strip()
+    segments = []
+    for index, match in enumerate(matches):
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(line)
+        segments.append(line[match.start() : end].strip())
+    return prefix, segments
 
 
 def catalog_category_for_line(line, extractor):
@@ -239,12 +258,28 @@ def catalog_entry_rows(text, extractor):
         if rule:
             current_category = rule_context(rule)
             current = None
+            pending_name = None
             if not rule.get("parse_remainder") or not remainder:
                 continue
             line = remainder
 
         if not current_category:
             continue
+
+        if extractor.get("split_embedded_entries"):
+            prefix, segments = embedded_catalog_segments(line, extractor)
+            if segments:
+                if current and prefix:
+                    append_value(current, description_key, prefix)
+                for segment in segments:
+                    row = parse_catalog_entry(segment, extractor)
+                    if not row:
+                        continue
+                    row.update(current_category)
+                    row = finish_catalog_row(row, extractor)
+                    rows.append(row)
+                    current = row
+                continue
 
         row = parse_catalog_entry(line, extractor)
         if row:
@@ -617,8 +652,18 @@ def pdf_quoted_entry_rows(text, extractor):
 
 
 def apply_text_fixes_to_line(line, fixes):
-    for old, new in fixes.items():
+    if not fixes:
+        return line
+    if "literal" in fixes or "regex" in fixes:
+        literal_fixes = fixes.get("literal", {})
+        regex_fixes = fixes.get("regex", [])
+    else:
+        literal_fixes = fixes
+        regex_fixes = []
+    for old, new in literal_fixes.items():
         line = line.replace(old, new)
+    for pattern, replacement in regex_fixes:
+        line = re.sub(pattern, replacement, line)
     return line
 
 
@@ -695,6 +740,232 @@ def fixed_width_table_rows(text, extractor):
 
     skip_names = set(extractor.get("skip_names", []))
     name_key = extractor.get("name_key", "name")
+    return [row for row in rows if row.get(name_key) not in skip_names]
+
+
+def source_name_matches(line, name, start=0):
+    pattern = r"(?<![\w'])" + re.escape(name) + r"(?![\w'])"
+    return re.finditer(pattern, line[start:])
+
+
+def known_name_match(line, extractor):
+    best = None
+    for name in sorted(extractor.get("entry_names", []), key=len, reverse=True):
+        for relative_match in source_name_matches(line, name):
+            match = re.match(
+                r"^(?P<prefix>.*?)(?P<name>"
+                + re.escape(name)
+                + r")(?P<rest>.*)$",
+                line[relative_match.start() :],
+            )
+            if not match:
+                continue
+            absolute_start = relative_match.start()
+            prefix = line[:absolute_start] + match.group("prefix")
+            if prefix.strip() and not line_matches_any(
+                prefix.strip(),
+                extractor.get("allowed_name_prefix_patterns", []),
+            ):
+                continue
+            candidate = {
+                "name": name,
+                "start": absolute_start + len(match.group("prefix")),
+                "end": absolute_start + len(match.group("prefix")) + len(name),
+                "prefix": prefix.strip(),
+                "rest": match.group("rest").strip(),
+            }
+            if not best or candidate["start"] < best["start"]:
+                best = candidate
+    return best
+
+
+def known_names_in_line(line, extractor):
+    values = []
+    search_start = 0
+    while search_start < len(line):
+        match = known_name_match(line[search_start:], extractor)
+        if not match:
+            break
+        values.append(match["name"])
+        search_start += match["end"]
+    return values
+
+
+def parse_rating_segment(segment, extractor):
+    segment = clean_text(segment)
+    pattern = extractor["rating_pattern"]
+    match = re.match(pattern, segment)
+    if not match:
+        return None
+    row = {}
+    for key, value in match.groupdict().items():
+        if value:
+            row[key] = clean_text(value)
+    return row
+
+
+def rating_segments(text, extractor):
+    starts = list(re.finditer(extractor["rating_start_pattern"], text))
+    rows = []
+    for index, start in enumerate(starts):
+        end = starts[index + 1].start() if index + 1 < len(starts) else len(text)
+        row = parse_rating_segment(text[start.start() : end], extractor)
+        if row:
+            rows.append(row)
+    return rows
+
+
+def add_rating_context(row, context):
+    if context:
+        row.update(context)
+    return row
+
+
+def pdf_named_rating_rows(text, extractor):
+    rows = []
+    current_category = initial_context(extractor)
+    current = None
+    pending_name = None
+    name_key = extractor.get("name_key", "name")
+    description_key = extractor.get("description_key", "description")
+
+    for line in section_lines(text, extractor):
+        line = apply_text_fixes_to_line(line, extractor.get("text_fixes", {}))
+        if line_matches_any(line, extractor.get("skip_line_patterns", [])):
+            continue
+
+        rule, remainder = catalog_category_for_line(line, extractor)
+        if rule:
+            current_category = rule_context(rule)
+            current = None
+            if not rule.get("parse_remainder") or not remainder:
+                continue
+            line = remainder
+
+        if not current_category:
+            continue
+
+        match = known_name_match(line, extractor)
+        if match and match["rest"]:
+            row = {name_key: match["name"]}
+            parsed = parse_rating_segment(match["rest"], extractor)
+            if parsed:
+                row.update(parsed)
+            elif extractor.get("raw_remainder_key"):
+                row[extractor["raw_remainder_key"]] = match["rest"]
+            else:
+                continue
+            row = add_rating_context(row, current_category)
+            rows.append(row)
+            current = row
+            pending_name = None
+            continue
+
+        if match:
+            pending_name = match["name"]
+            current = None
+            continue
+
+        if pending_name:
+            parsed = parse_rating_segment(line, extractor)
+            if parsed:
+                row = {name_key: pending_name}
+                row.update(parsed)
+                row = add_rating_context(row, current_category)
+                rows.append(row)
+                current = row
+                pending_name = None
+                continue
+
+        if current and extractor.get("append_continuation", True):
+            append_value(current, description_key, line)
+
+    skip_names = set(extractor.get("skip_names", []))
+    return [row for row in rows if row.get(name_key) not in skip_names]
+
+
+def flush_sequential_rating_group(rows, names, rating_lines, context, extractor):
+    if not names or not rating_lines or not context:
+        return
+    rating_rows = rating_segments(" ".join(rating_lines), extractor)
+    for name, rating_row in zip(names, rating_rows):
+        row = {extractor.get("name_key", "name"): name}
+        row.update(rating_row)
+        row.update(context)
+        rows.append(row)
+
+
+def pdf_sequential_rating_rows(text, extractor):
+    rows = []
+    current_category = initial_context(extractor)
+    names = []
+    rating_lines = []
+    reading_ratings = False
+    name_key = extractor.get("name_key", "name")
+
+    def flush():
+        flush_sequential_rating_group(
+            rows,
+            names,
+            rating_lines,
+            current_category,
+            extractor,
+        )
+
+    for line in section_lines(text, extractor):
+        line = apply_text_fixes_to_line(line, extractor.get("text_fixes", {}))
+        if line_matches_any(line, extractor.get("skip_line_patterns", [])):
+            continue
+
+        rule, remainder = catalog_category_for_line(line, extractor)
+        if rule:
+            flush()
+            current_category = rule_context(rule)
+            names = []
+            rating_lines = []
+            reading_ratings = False
+            if rule.get("parse_remainder") and remainder:
+                names.extend(known_names_in_line(remainder, extractor))
+            continue
+
+        if not current_category:
+            continue
+
+        if line == extractor.get("ratings_start_text", "DESCRIPTION"):
+            reading_ratings = True
+            continue
+
+        if not reading_ratings and names and re.search(
+            extractor["rating_start_pattern"],
+            line,
+        ):
+            reading_ratings = True
+            rating_lines.append(line)
+            continue
+
+        if reading_ratings:
+            rating_match = re.search(extractor["rating_start_pattern"], line)
+            name_match = known_name_match(line, extractor)
+            if (
+                extractor.get("stop_rating_at_named_row")
+                and rating_match
+                and name_match
+                and name_match["start"] < rating_match.start()
+            ):
+                flush()
+                names = []
+                rating_lines = []
+                reading_ratings = False
+                continue
+            if re.search(extractor["rating_start_pattern"], line):
+                rating_lines.append(line)
+            continue
+
+        names.extend(known_names_in_line(line, extractor))
+
+    flush()
+
+    skip_names = set(extractor.get("skip_names", []))
     return [row for row in rows if row.get(name_key) not in skip_names]
 
 

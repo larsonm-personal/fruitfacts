@@ -1,0 +1,410 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://extension.arizona.edu/sites/default/files/2024-08/az1162-2015.pdf",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Backyard Fruit Production at Elevations 3500 to 6000 Feet"],
+    ["author", "Deborah Young, Robert E. Call, Michael Kilby, and Tom DeGomez"],
+    ["description", "University of Arizona Cooperative Extension AZ1162 backyard fruit guide for Arizona elevations from 3500 to 6000 feet"],
+    ["url", "https://extension.arizona.edu/publication/backyard-fruit-production-elevations-3500-6000-feet"],
+    ["thumbnail", "pdf"],
+    ["publication_number", "AZ1162"],
+    ["revised", "March 2015"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Arizona Cooperative Extension, Tucson, Arizona",
+      "latitude": 32.2319,
+      "longitude": -110.9501
+    }
+  ],
+  "name_overrides": {
+    "Pink Lady (Cripps Pink)": {
+      "name": "Cripps Pink",
+      "note": "Source names this as Pink Lady (Cripps Pink)"
+    },
+    "Sun Glo": {
+      "name": "Sunglo",
+      "note": "Source names this as Sun Glo"
+    }
+  },
+  "categories": [
+    {
+      "name": "Early apple varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these early apple varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Midseason apple varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these midseason apple varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Late apple varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these late apple varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Early apricot varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists this early apricot variety for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Midseason apricot varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these midseason apricot varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Late apricot varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists this late apricot variety for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Sour cherry varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists this sour, tart, or pie cherry variety for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Early sweet cherry varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these early sweet cherry varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Late sweet cherry varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these late sweet cherry varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Fig varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these fig varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Nectarine varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these nectarine varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Early peach varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these early peach varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Midseason peach varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these midseason peach varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Late peach varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these late peach varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Early pear varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists this early European pear variety for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Midseason pear varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these midseason European pear varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Late pear varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists this late European pear variety for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Asian pear varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these Asian pear varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Persimmon varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these persimmon varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Midseason European plum varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists this midseason European plum variety for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Late European plum varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists this late European plum variety for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Early Japanese plum varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists this early Japanese plum variety for backyard fruit production at elevations from 3500 to 6000 feet"
+    },
+    {
+      "name": "Midseason Japanese plum varieties for Arizona elevations 3500 to 6000 feet",
+      "description": "University of Arizona AZ1162 lists these midseason Japanese plum varieties for backyard fruit production at elevations from 3500 to 6000 feet"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "apple\nAlthough",
+      "section_end": "apricot\nOf",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "entry_names": [
+        "Earligold",
+        "Gravenstein",
+        "Lodi",
+        "Red Astrachan",
+        "Criterion",
+        "Gala",
+        "Golden Delicious",
+        "Red Delicious",
+        "Arkansas Black",
+        "Fuji",
+        "Granny Smith",
+        "Idared",
+        "Jonagold",
+        "Pink Lady (Cripps Pink)",
+        "Rome Beauty"
+      ],
+      "category_rules": [
+        {
+          "text": "Early",
+          "category": "Early apple varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Apple"
+        },
+        {
+          "text": "Midseason",
+          "category": "Midseason apple varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Apple"
+        },
+        {
+          "text": "Late",
+          "category": "Late apple varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Apple"
+        }
+      ],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "apricot\nOf",
+      "section_end": "cherry\nMost",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "entry_names": [
+        "Perfection",
+        "Harglow",
+        "Tilton",
+        "Wenatchee",
+        "Goldcot"
+      ],
+      "category_rules": [
+        {
+          "text": "Early",
+          "category": "Early apricot varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Apricot"
+        },
+        {
+          "text": "Midseason",
+          "category": "Midseason apricot varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Apricot"
+        },
+        {
+          "text": "Late",
+          "category": "Late apricot varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Apricot"
+        }
+      ],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "sour, tart, or pie cherry",
+      "section_end": "sweet cherry",
+      "default_category": "Sour cherry varieties for Arizona elevations 3500 to 6000 feet",
+      "default_plant_type": "Sour Cherry",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "entry_names": ["Montmorency"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "sweet cherry",
+      "section_end": "fig\nNo pollenizer",
+      "default_category": "Early sweet cherry varieties for Arizona elevations 3500 to 6000 feet",
+      "default_plant_type": "Sweet Cherry",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "entry_names": [
+        "Bing",
+        "Rainier",
+        "Van",
+        "Lambert",
+        "Stella"
+      ],
+      "row_overrides": {
+        "Lambert": {
+          "category": "Late sweet cherry varieties for Arizona elevations 3500 to 6000 feet"
+        },
+        "Stella": {
+          "category": "Late sweet cherry varieties for Arizona elevations 3500 to 6000 feet"
+        }
+      },
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "fig\nNo pollenizer",
+      "section_end": "nectarine\nNectarines",
+      "default_category": "Fig varieties for Arizona elevations 3500 to 6000 feet",
+      "default_plant_type": "Fig",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "entry_names": [
+        "Mission",
+        "Kadota"
+      ],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "nectarine\nNectarines",
+      "section_end": "peach\nNearly",
+      "default_category": "Nectarine varieties for Arizona elevations 3500 to 6000 feet",
+      "default_plant_type": "Nectarine",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "entry_names": [
+        "Red Glo",
+        "Sun Glo"
+      ],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "peach\nNearly",
+      "section_end": "pear\nMost",
+      "default_category": "Early peach varieties for Arizona elevations 3500 to 6000 feet",
+      "default_plant_type": "Peach",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "entry_names": [
+        "Redhaven",
+        "Sunhaven",
+        "Early Elberta",
+        "Rio Oso Gem",
+        "Cresthaven",
+        "Indian Free",
+        "Madison"
+      ],
+      "category_rules": [
+        {
+          "text": "Midseason",
+          "category": "Midseason peach varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Peach"
+        },
+        {
+          "text": "Late",
+          "category": "Late peach varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Peach"
+        }
+      ],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "pear\nMost",
+      "section_end": "asian pear\nAsian",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "entry_names": [
+        "Bartlett",
+        "Seckel",
+        "Surecrop",
+        "Comice"
+      ],
+      "category_rules": [
+        {
+          "text": "Early",
+          "category": "Early pear varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Euro Pear"
+        },
+        {
+          "text": "Midseason",
+          "category": "Midseason pear varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Euro Pear"
+        },
+        {
+          "text": "Late",
+          "category": "Late pear varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Euro Pear"
+        }
+      ],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "asian pear\nAsian",
+      "section_end": "persimmon No pollenizer",
+      "default_category": "Asian pear varieties for Arizona elevations 3500 to 6000 feet",
+      "default_plant_type": "Asian Pear",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "entry_names": [
+        "Chojuro",
+        "20th Century"
+      ],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "persimmon No pollenizer",
+      "section_end": "european plum",
+      "default_category": "Persimmon varieties for Arizona elevations 3500 to 6000 feet",
+      "default_plant_type": "Persimmon",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "entry_names": [
+        "Hachiya",
+        "Fuyu"
+      ],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "european plum",
+      "section_end": "japanese plum",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "entry_names": [
+        "Green Gage",
+        "Stanley"
+      ],
+      "category_rules": [
+        {
+          "text": "Midseason",
+          "category": "Midseason European plum varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Euro Plum"
+        },
+        {
+          "text": "Late",
+          "category": "Late European plum varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Euro Plum"
+        }
+      ],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "japanese plum",
+      "section_end": "Selecting Trees",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "entry_names": [
+        "Santa Rosa",
+        "Ozark Premier",
+        "Satsuma"
+      ],
+      "category_rules": [
+        {
+          "text": "Early",
+          "category": "Early Japanese plum varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Japanese Plum"
+        },
+        {
+          "text": "Midseason",
+          "category": "Midseason Japanese plum varieties for Arizona elevations 3500 to 6000 feet",
+          "plant_type": "Japanese Plum"
+        }
+      ],
+      "description_key": "description"
+    }
+  ]
+}

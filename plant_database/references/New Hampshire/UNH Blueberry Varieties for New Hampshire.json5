@@ -1,0 +1,232 @@
+{
+    title: "Blueberry Varieties for New Hampshire",
+    author: "Becky Sideman",
+    description: "University of New Hampshire Cooperative Extension blueberry variety factsheet for New Hampshire growers and home gardeners",
+    url: "https://extension.unh.edu/resource/blueberry-varieties-new-hampshire-fact-sheet",
+    thumbnail: "pdf",
+    reviewed: "March 2016",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of New Hampshire Cooperative Extension, Durham, New Hampshire",
+            latitude: 43.1389,
+            longitude: -70.937
+        },
+    ],
+    categories: [
+        {
+            name: "Early highbush blueberry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these early highbush blueberry varieties with hardiness, disease, and description notes for New Hampshire"
+        },
+        {
+            name: "Early-mid highbush blueberry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these early-mid highbush blueberry varieties with hardiness, disease, and description notes for New Hampshire"
+        },
+        {
+            name: "Mid-season highbush blueberry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these mid-season highbush blueberry varieties with hardiness, disease, and description notes for New Hampshire"
+        },
+        {
+            name: "Mid-late highbush blueberry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these mid-late highbush blueberry varieties with hardiness, disease, and description notes for New Hampshire"
+        },
+        {
+            name: "Late highbush blueberry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these late highbush blueberry varieties with hardiness, disease, and description notes for New Hampshire"
+        },
+        {
+            name: "Half-high blueberry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these half-high blueberry varieties with hardiness, disease, and description notes for New Hampshire"
+        },
+    ],
+    plants: [
+        {
+            type: "Blueberry",
+            name: "Earliblue",
+            category: "Early highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: MH. M - Early, hardy; small dark berries with good flavor, large scar"
+        },
+        {
+            type: "Blueberry",
+            name: "Hannah's Choice",
+            category: "Early highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: MH. - - Productive, attractive firm fruit, moderate flavor and vigor"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluejay",
+            category: "Early-mid highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: MH. M - Quality fruit, nice landscape plant, fair productivity"
+        },
+        {
+            type: "Blueberry",
+            name: "Blueray",
+            category: "Early-mid highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: H. - B,M Hardy, productive, large fruits, good flavor, spreading habit"
+        },
+        {
+            type: "Blueberry",
+            name: "Meader",
+            category: "Early-mid highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: VH. RR - Early, productive, good flavor"
+        },
+        {
+            type: "Blueberry",
+            name: "Patriot",
+            category: "Early-mid highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: MH. - - Tolerant of wetter ground, new release (untested)"
+        },
+        {
+            type: "Blueberry",
+            name: "Reka",
+            category: "Early-mid highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: H. M - Nice fall foliage, large, firm flavorful fruit, needs X-pollination"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluecrop",
+            category: "Mid-season highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: HM. - Good yields, quality, adaptation; needs excellent drainage"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluegold",
+            category: "Mid-season highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: H-. M High quality fruit, twiggy growth, mummyberry-susceptible"
+        },
+        {
+            type: "Blueberry",
+            name: "Cara's Choice",
+            category: "Mid-season highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: --. - High quality fruit, low to moderate vigor, moderate yields"
+        },
+        {
+            type: "Blueberry",
+            name: "Chandler",
+            category: "Mid-season highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: H-. - High quality fruit, inconsistent in colder sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Herbert",
+            category: "Mid-season highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: H-. - Very small fruit with high anthocyanin levels, lowbush flavor"
+        },
+        {
+            type: "Blueberry",
+            name: "Little Giant",
+            category: "Mid-season highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: H-. - Very productive, high quality fruit"
+        },
+        {
+            type: "Blueberry",
+            name: "Nelson",
+            category: "Mid-season highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: MH. - M Productive, large firm fruit, less hardy"
+        },
+        {
+            type: "Blueberry",
+            name: "Rubel",
+            category: "Mid-season highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: MH. - - Upright, thick canes, productive, large fruit"
+        },
+        {
+            type: "Blueberry",
+            name: "Berkeley",
+            category: "Mid-late highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: L. - M Productive, large firm fruit, only moderately hardy, large scar"
+        },
+        {
+            type: "Blueberry",
+            name: "Brigitta",
+            category: "Mid-late highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: H-. - Huge fruit, new release (untested)"
+        },
+        {
+            type: "Blueberry",
+            name: "Elizabeth",
+            category: "Mid-late highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: MH. - - Productive, large fruit, only moderately hardy, lower yields"
+        },
+        {
+            type: "Blueberry",
+            name: "Jersey",
+            category: "Mid-late highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: L. M,F - Large, tart fruit, moderate yields"
+        },
+        {
+            type: "Blueberry",
+            name: "Legacy",
+            category: "Mid-late highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: MH. - - Fair quality, hardiness and productivity"
+        },
+        {
+            type: "Blueberry",
+            name: "Aurora",
+            category: "Late highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: -. - - Good flavor, needs cross-pollination, very late"
+        },
+        {
+            type: "Blueberry",
+            name: "Elliott",
+            category: "Late highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: H. M,P - Productive, large firm fruit, tart flavor. Source names this as Elliot"
+        },
+        {
+            type: "Blueberry",
+            name: "Liberty",
+            category: "Late highbush blueberry varieties for New Hampshire",
+            description: "Hardiness rating: H. M - May ripen too late in colder sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Northblue",
+            category: "Half-high blueberry varieties for New Hampshire",
+            description: "Hardiness rating: VH. - M Productive"
+        },
+        {
+            type: "Blueberry",
+            name: "Northcountry",
+            category: "Half-high blueberry varieties for New Hampshire",
+            description: "Hardiness rating: VH. - - Hardy, medium-small fruit and short bush"
+        },
+        {
+            type: "Blueberry",
+            name: "Northland",
+            category: "Half-high blueberry varieties for New Hampshire",
+            description: "Hardiness rating: VH. - G,M Hardy, productive, shrubby bush, soft fruit, Gibbera blight"
+        },
+        {
+            type: "Blueberry",
+            name: "Polaris",
+            category: "Half-high blueberry varieties for New Hampshire",
+            description: "Hardiness rating: VH. - - Productivity only fair"
+        },
+        {
+            type: "Blueberry",
+            name: "St. Cloud",
+            category: "Half-high blueberry varieties for New Hampshire",
+            description: "Hardiness rating: VH. - - Requires cross-pollination"
+        },
+        {
+            type: "Blueberry",
+            name: "Chippewa",
+            category: "Half-high blueberry varieties for New Hampshire",
+            description: "Hardiness rating: VH. - - Productivity only fair"
+        },
+        {
+            type: "Blueberry",
+            name: "Friendship",
+            category: "Half-high blueberry varieties for New Hampshire",
+            description: "Hardiness rating: VH. - - Productivity only fair, hardy, fair quality fruit"
+        },
+        {
+            type: "Blueberry",
+            name: "Northsky",
+            category: "Half-high blueberry varieties for New Hampshire",
+            description: "Hardiness rating: VH. M - Productivity only fair, hardy, medium-small fruit, short bush"
+        },
+    ]
+}

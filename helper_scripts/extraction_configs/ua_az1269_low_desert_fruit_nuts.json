@@ -1,0 +1,358 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://extension.arizona.edu/sites/default/files/2024-08/az1269.pdf",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Deciduous Fruit and Nuts for the Low Desert"],
+    ["author", "Lucy Bradley and Michael Maurer"],
+    ["description", "University of Arizona Cooperative Extension AZ1269 guide to low-chill deciduous fruit and nut varieties for Arizona low desert conditions"],
+    ["url", "https://extension.arizona.edu/publication/deciduous-fruit-and-nuts-low-desert"],
+    ["thumbnail", "pdf"],
+    ["publication_number", "AZ1269"],
+    ["published", "March 2002"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Arizona Cooperative Extension, Tucson, Arizona",
+      "latitude": 32.2319,
+      "longitude": -110.9501
+    }
+  ],
+  "name_overrides": {
+    "Ein shemer": {
+      "name": "Ein Shemer",
+      "note": "Source names this as Ein shemer"
+    },
+    "Desert Gold": {
+      "name": "Desertgold",
+      "note": "Source names this as Desert Gold"
+    },
+    "Tropic Beauty": {
+      "name": "TropicBeauty",
+      "note": "Source names this as Tropic Beauty"
+    },
+    "Tropic Snow": {
+      "name": "TropicSnow",
+      "note": "Source names this as Tropic Snow"
+    },
+    "Tropic Sweet": {
+      "name": "TropicSweet",
+      "note": "Source names this as Tropic Sweet"
+    },
+    "Gulf Gold": {
+      "name": "Gulfgold",
+      "note": "Source names this as Gulf Gold"
+    },
+    "Gulf Ruby": {
+      "name": "Gulfruby",
+      "note": "Source names this as Gulf Ruby"
+    },
+    "Fuyu (Jiro) (\"Apple Persimmon\")": {
+      "name": "Jiro",
+      "note": "Source names this as Fuyu (Jiro) (\"Apple Persimmon\")"
+    },
+    "All-in-One (semi-dwarfing)": {
+      "name": "All-in-One",
+      "note": "Source names this as All-in-One (semi-dwarfing)"
+    },
+    "Garden Prince Genetic Dwarf": {
+      "name": "Garden Prince",
+      "note": "Source names this as Garden Prince Genetic Dwarf"
+    },
+    "Western Schley (Western)": {
+      "name": "Western Schley",
+      "note": "Source names this as Western Schley (Western)"
+    },
+    "Ruby seedless": {
+      "name": "Ruby Seedless",
+      "note": "Source names this as Ruby seedless"
+    },
+    "Thompson seedless": {
+      "name": "Thompson Seedless",
+      "note": "Source names this as Thompson seedless"
+    },
+    "Flame seedless": {
+      "name": "Flame Seedless",
+      "note": "Source names this as Flame seedless"
+    },
+    "Camerosa": {
+      "name": "Camarosa",
+      "note": "Source names this as Camerosa"
+    }
+  },
+  "categories": [
+    {
+      "name": "Low-desert apple varieties",
+      "description": "University of Arizona AZ1269 lists these low-chill apple varieties for low-desert Arizona conditions"
+    },
+    {
+      "name": "Low-desert apricot varieties",
+      "description": "University of Arizona AZ1269 lists these low-chill apricot varieties for low-desert Arizona conditions"
+    },
+    {
+      "name": "Low-desert fig varieties",
+      "description": "University of Arizona AZ1269 lists these fig varieties for low-desert Arizona conditions"
+    },
+    {
+      "name": "Low-desert peach varieties",
+      "description": "University of Arizona AZ1269 lists these low-chill peach varieties for low-desert Arizona conditions"
+    },
+    {
+      "name": "Low-desert pear varieties",
+      "description": "University of Arizona AZ1269 lists these low-chill European pear varieties for low-desert Arizona conditions"
+    },
+    {
+      "name": "Low-desert Asian pear varieties",
+      "description": "University of Arizona AZ1269 lists these low-chill Asian pear varieties for low-desert Arizona conditions"
+    },
+    {
+      "name": "Low-desert plum varieties",
+      "description": "University of Arizona AZ1269 lists these low-chill plum varieties for low-desert Arizona conditions"
+    },
+    {
+      "name": "Low-desert quince varieties",
+      "description": "University of Arizona AZ1269 lists these low-chill quince varieties for low-desert Arizona conditions"
+    },
+    {
+      "name": "Low-desert persimmon varieties",
+      "description": "University of Arizona AZ1269 lists these low-chill persimmon varieties for low-desert Arizona conditions"
+    },
+    {
+      "name": "Low-desert almond varieties",
+      "description": "University of Arizona AZ1269 lists these low-chill almond varieties for low-desert Arizona conditions"
+    },
+    {
+      "name": "Low-desert pecan varieties",
+      "description": "University of Arizona AZ1269 lists these pecan varieties for low-desert Arizona conditions"
+    },
+    {
+      "name": "Low-desert grape varieties",
+      "description": "University of Arizona AZ1269 lists these grape varieties for low-desert Arizona conditions"
+    },
+    {
+      "name": "Low-desert blackberry varieties",
+      "description": "University of Arizona AZ1269 lists these blackberry varieties for low-desert Arizona conditions"
+    },
+    {
+      "name": "Low-desert strawberry varieties",
+      "description": "University of Arizona AZ1269 lists these strawberry varieties for low-desert Arizona conditions"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Apples",
+      "section_end": "Chilling Hours Fruit Color",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "text_fixes": {
+        "literal": {
+          "!": ""
+        }
+      },
+      "skip_line_patterns": [
+        "^At a Glance",
+        "^Select deciduous",
+        "^require less",
+        "^produce early",
+        "^are self",
+        "^=Varieties",
+        "^\\d+$",
+        "^The University"
+      ],
+      "category_rules": [
+        {
+          "text": "Apples",
+          "category": "Low-desert apple varieties",
+          "plant_type": "Apple"
+        },
+        {
+          "text": "Apricots",
+          "category": "Low-desert apricot varieties",
+          "plant_type": "Apricot"
+        },
+        {
+          "text": "Figs",
+          "category": "Low-desert fig varieties",
+          "plant_type": "Fig"
+        },
+        {
+          "text": "Peaches",
+          "category": "Low-desert peach varieties",
+          "plant_type": "Peach"
+        },
+        {
+          "text": "Pears",
+          "category": "Low-desert pear varieties",
+          "plant_type": "Euro Pear"
+        },
+        {
+          "text": "Asian Pears",
+          "category": "Low-desert Asian pear varieties",
+          "plant_type": "Asian Pear"
+        },
+        {
+          "text": "Plums",
+          "category": "Low-desert plum varieties",
+          "plant_type": "Japanese Plum"
+        },
+        {
+          "text": "Quince",
+          "category": "Low-desert quince varieties",
+          "plant_type": "Quince"
+        },
+        {
+          "text": "Persimmons",
+          "category": "Low-desert persimmon varieties",
+          "plant_type": "Persimmon"
+        },
+        {
+          "text": "Almonds",
+          "category": "Low-desert almond varieties",
+          "plant_type": "Almond"
+        },
+        {
+          "text": "Pecans",
+          "category": "Low-desert pecan varieties",
+          "plant_type": "Pecan"
+        },
+        {
+          "text": "Grapes",
+          "category": "Low-desert grape varieties",
+          "plant_type": "Grape"
+        },
+        {
+          "text": "Blackberries",
+          "category": "Low-desert blackberry varieties",
+          "plant_type": "Blackberry"
+        },
+        {
+          "text": "Strawberries",
+          "category": "Low-desert strawberry varieties",
+          "plant_type": "Strawberry"
+        }
+      ],
+      "entry_names": [
+        "Anna",
+        "Beverly Hills",
+        "Ein shemer",
+        "Fuji",
+        "Gala",
+        "Golden Dorsett",
+        "Gordon",
+        "Castlebrite",
+        "Gold Kist",
+        "Katy",
+        "Modesto",
+        "Patterson",
+        "Royal Rosa",
+        "Black Mission",
+        "Brown Turkey",
+        "Conadria (White)",
+        "White Kadota",
+        "Bonanza Miniature",
+        "August Pride",
+        "Babcock",
+        "Desert Gold",
+        "Desert Red",
+        "Earligrande",
+        "Eva's Pride",
+        "Flordaking",
+        "Flordaprince",
+        "Flordagrande",
+        "May Pride",
+        "Mid-Pride",
+        "Tropic Beauty",
+        "Tropic Snow",
+        "Tropic Sweet",
+        "Vallegrande",
+        "Flordahome",
+        "Kieffer",
+        "Izu",
+        "Beauty",
+        "Gulf Gold",
+        "Gulf Ruby",
+        "Methley",
+        "Santa Rosa",
+        "Shinseiki",
+        "Yakumo",
+        "Fuyu (Jiro) (\"Apple Persimmon\")",
+        "Giant Fuyu",
+        "Orange Quince",
+        "Pineapple Quince",
+        "All-in-One (semi-dwarfing)",
+        "Garden Prince Genetic Dwarf",
+        "Neplus Ultra",
+        "Nonpareil Almond",
+        "Cheyenne",
+        "Choctaw",
+        "Comanche",
+        "Sioux",
+        "Western Schley (Western)",
+        "Wichita",
+        "Cardinal",
+        "Perlette",
+        "Ruby seedless",
+        "Thompson seedless",
+        "Brazos",
+        "Rosborough",
+        "Camerosa",
+        "Chandler",
+        "Sequoia",
+        "Exotic",
+        "Tioga",
+        "Fantasy",
+        "Flame seedless"
+      ],
+      "row_overrides": {
+        "Izu": {
+          "category": "Low-desert persimmon varieties",
+          "plant_type": "Persimmon"
+        },
+        "Shinseiki": {
+          "category": "Low-desert Asian pear varieties",
+          "plant_type": "Asian Pear"
+        },
+        "Yakumo": {
+          "category": "Low-desert Asian pear varieties",
+          "plant_type": "Asian Pear"
+        },
+        "Orange Quince": {
+          "category": "Low-desert quince varieties",
+          "plant_type": "Quince"
+        },
+        "Pineapple Quince": {
+          "category": "Low-desert quince varieties",
+          "plant_type": "Quince"
+        },
+        "Neplus Ultra": {
+          "category": "Low-desert almond varieties",
+          "plant_type": "Almond"
+        },
+        "Nonpareil Almond": {
+          "category": "Low-desert almond varieties",
+          "plant_type": "Almond"
+        },
+        "Exotic": {
+          "category": "Low-desert grape varieties",
+          "plant_type": "Grape"
+        },
+        "Fantasy": {
+          "category": "Low-desert grape varieties",
+          "plant_type": "Grape"
+        },
+        "Flame seedless": {
+          "category": "Low-desert grape varieties",
+          "plant_type": "Grape"
+        }
+      },
+      "description_key": "description"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource000003_Rep5.pdf",
+    "layout": true,
+    "layout_text": true
+  },
+  "reference_fields": [
+    ["title", "Blueberry Varieties for New Hampshire"],
+    ["author", "Becky Sideman"],
+    ["description", "University of New Hampshire Cooperative Extension blueberry variety factsheet for New Hampshire growers and home gardeners"],
+    ["url", "https://extension.unh.edu/resource/blueberry-varieties-new-hampshire-fact-sheet"],
+    ["thumbnail", "pdf"],
+    ["reviewed", "March 2016"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of New Hampshire Cooperative Extension, Durham, New Hampshire",
+      "latitude": 43.1389,
+      "longitude": -70.937
+    }
+  ],
+  "categories": [
+    {
+      "name": "Early highbush blueberry varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these early highbush blueberry varieties with hardiness, disease, and description notes for New Hampshire"
+    },
+    {
+      "name": "Early-mid highbush blueberry varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these early-mid highbush blueberry varieties with hardiness, disease, and description notes for New Hampshire"
+    },
+    {
+      "name": "Mid-season highbush blueberry varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these mid-season highbush blueberry varieties with hardiness, disease, and description notes for New Hampshire"
+    },
+    {
+      "name": "Mid-late highbush blueberry varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these mid-late highbush blueberry varieties with hardiness, disease, and description notes for New Hampshire"
+    },
+    {
+      "name": "Late highbush blueberry varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these late highbush blueberry varieties with hardiness, disease, and description notes for New Hampshire"
+    },
+    {
+      "name": "Half-high blueberry varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these half-high blueberry varieties with hardiness, disease, and description notes for New Hampshire"
+    }
+  ],
+  "name_overrides": {
+    "Elliot": {
+      "name": "Elliott",
+      "note": "Source names this as Elliot"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_named_rating_rows",
+      "section_start": "Variety             Hardiness",
+      "section_end": "Half-High Varieties",
+      "entry_names": [
+        "Bluetta",
+        "Duke",
+        "Earliblue",
+        "Hannah's Choice",
+        "Bluejay",
+        "Blueray",
+        "Meader",
+        "Patriot",
+        "Reka",
+        "Spartan",
+        "Bluecrop",
+        "Bluegold",
+        "Cara's Choice",
+        "Chandler",
+        "Herbert",
+        "Little Giant",
+        "Nelson",
+        "Rubel",
+        "Sierra",
+        "Toro",
+        "Berkeley",
+        "Bonus",
+        "Brigitta",
+        "Coville",
+        "Elizabeth",
+        "Jersey",
+        "Legacy",
+        "Aurora",
+        "Elliot",
+        "Lateblue",
+        "Liberty"
+      ],
+      "allowed_name_prefix_patterns": [
+        "^(?:c|t)?$"
+      ],
+      "category_rules": [
+        {
+          "prefix": "EARLY-MID",
+          "parse_remainder": true,
+          "category": "Early-mid highbush blueberry varieties for New Hampshire",
+          "plant_type": "Blueberry"
+        },
+        {
+          "prefix": "MID-SEASON",
+          "parse_remainder": true,
+          "category": "Mid-season highbush blueberry varieties for New Hampshire",
+          "plant_type": "Blueberry"
+        },
+        {
+          "prefix": "MID-LATE",
+          "parse_remainder": true,
+          "category": "Mid-late highbush blueberry varieties for New Hampshire",
+          "plant_type": "Blueberry"
+        },
+        {
+          "prefix": "LATE",
+          "parse_remainder": true,
+          "category": "Late highbush blueberry varieties for New Hampshire",
+          "plant_type": "Blueberry"
+        },
+        {
+          "prefix": "EARLY",
+          "parse_remainder": true,
+          "category": "Early highbush blueberry varieties for New Hampshire",
+          "plant_type": "Blueberry"
+        }
+      ],
+      "row_overrides": {
+        "Berkeley": {
+          "category": "Mid-late highbush blueberry varieties for New Hampshire"
+        },
+        "Brigitta": {
+          "category": "Mid-late highbush blueberry varieties for New Hampshire"
+        },
+        "Aurora": {
+          "category": "Late highbush blueberry varieties for New Hampshire"
+        }
+      },
+      "rating_pattern": "(?P<hardiness>VH|MH|HM|HF|H-|H|L|--|-)\\s+(?P<description>.+)",
+      "append_continuation": false,
+      "skip_line_patterns": [
+        "^KEY:",
+        "^c Consider",
+        "^t For trial",
+        "^http://",
+        "^Hardiness",
+        "^Resis",
+        "^Susceptible",
+        "^Variety",
+        "^Fact sheet",
+        "^UNH Cooperative"
+      ],
+      "row_text_fixes": {
+        "literal": {
+          "Hew Hampshire": "New Hampshire"
+        }
+      },
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["hardiness", "Hardiness rating"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "description"
+        }
+      ]
+    },
+    {
+      "kind": "pdf_named_rating_rows",
+      "section_start": "Half-High Varieties",
+      "section_end": "KEY:",
+      "default_category": "Half-high blueberry varieties for New Hampshire",
+      "default_plant_type": "Blueberry",
+      "entry_names": [
+        "Northblue",
+        "Northcountry",
+        "Northland",
+        "Polaris",
+        "St. Cloud",
+        "Chippewa",
+        "Friendship",
+        "Northsky"
+      ],
+      "allowed_name_prefix_patterns": [
+        "^(?:c|t)?$",
+        "^(?:EARLY-MID|MID)\\s*(?:c|t)?$"
+      ],
+      "rating_pattern": "(?P<hardiness>VH|MH|HM|HF|H-|H|L|--|-)\\s+(?P<description>.+)",
+      "append_continuation": false,
+      "skip_line_patterns": [
+        "^KEY:",
+        "^c Consider",
+        "^t For trial",
+        "^http://",
+        "^Hardiness",
+        "^Fact sheet",
+        "^UNH Cooperative"
+      ],
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["hardiness", "Hardiness rating"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "description"
+        }
+      ]
+    }
+  ]
+}

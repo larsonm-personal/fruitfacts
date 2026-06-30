@@ -1,0 +1,251 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource007472_Rep10777.pdf",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Growing Fruit: Raspberry and Blackberry Varieties for New Hampshire"],
+    ["author", "Becky Sideman"],
+    ["description", "University of New Hampshire Cooperative Extension bramble variety factsheet for New Hampshire growers and home gardeners"],
+    ["url", "https://extension.unh.edu/resource/growing-fruit-raspberry-and-blackberry-varieties-new-hampshire-fact-sheet"],
+    ["thumbnail", "pdf"],
+    ["reviewed", "March 2016"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of New Hampshire Cooperative Extension, Durham, New Hampshire",
+      "latitude": 43.1389,
+      "longitude": -70.937
+    }
+  ],
+  "categories": [
+    {
+      "name": "Summer red raspberry varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these summer red raspberry varieties with hardiness, flavor, harvest-time, and description ratings for New Hampshire"
+    },
+    {
+      "name": "Fall red raspberry varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these fall red raspberry varieties with flavor and harvest-time ratings for New Hampshire; hardiness is marked not applicable for fall bearers"
+    },
+    {
+      "name": "Yellow raspberry varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these yellow raspberry varieties with flavor and harvest-time ratings for New Hampshire"
+    },
+    {
+      "name": "Purple raspberry varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these purple raspberry varieties with hardiness, flavor, harvest-time, and description ratings for New Hampshire"
+    },
+    {
+      "name": "Blackberry varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these blackberry varieties with hardiness, flavor, harvest-time, and description ratings for New Hampshire"
+    }
+  ],
+  "name_overrides": {
+    "Fall Gold": {
+      "name": "Fallgold",
+      "note": "Source names this as Fall Gold"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_sequential_rating_rows",
+      "section_start": "Hardiness Flavor Harvest Time",
+      "section_end": "FALL - REDS",
+      "entry_names": [
+        "Prelude",
+        "Boyne",
+        "Killarney",
+        "Canby",
+        "Latham",
+        "Nova",
+        "Algonquin",
+        "Titan",
+        "Encore",
+        "K81-6",
+        "Taylor"
+      ],
+      "allowed_name_prefix_patterns": ["^(?:c|t|g|ht|c, ht)?$"],
+      "category_rules": [
+        {
+          "text": "RED RASPBERRIES SUMMER REDS",
+          "category": "Summer red raspberry varieties for New Hampshire",
+          "plant_type": "Raspberry"
+        }
+      ],
+      "rating_start_pattern": "(?<!\\S)[1-5-]\\s+(?:E|VG|G|F)\\s+(?:VE|VL|E/M|M/L|E|M|L|-)\\s+",
+      "rating_pattern": "(?P<hardiness>[1-5-])\\s+(?P<flavor>E|VG|G|F)\\s+(?P<harvest>VE|VL|E/M|M/L|E|M|L|-)\\s+(?P<description>.+)",
+      "skip_line_patterns": [
+        "^Variety$",
+        "^c Consider",
+        "^Hardiness",
+        "^http://"
+      ],
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["hardiness", "Hardiness rating"],
+            ["flavor", "Flavor rating"],
+            ["harvest", "Harvest-time rating"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "description"
+        }
+      ]
+    },
+    {
+      "kind": "pdf_sequential_rating_rows",
+      "section_start": "FALL - REDS",
+      "section_end": "Hardiness (1-5",
+      "default_category": "Fall red raspberry varieties for New Hampshire",
+      "default_plant_type": "Raspberry",
+      "default_context": {
+        "hardiness": "-"
+      },
+      "entry_names": [
+        "Polana",
+        "Fall Red",
+        "Joan J",
+        "Autumn Bliss",
+        "Autumn Britten",
+        "Caroline",
+        "Josephine",
+        "Heritage"
+      ],
+      "allowed_name_prefix_patterns": ["^(?:c|t|g|ht|c, ht)?$"],
+      "rating_start_pattern": "(?<!\\S)(?:E|VG|G|F)\\s+(?:VE|VL|E/M|M/L|E|M|L|-)\\s+",
+      "rating_pattern": "(?P<flavor>E|VG|G|F)\\s+(?P<harvest>VE|VL|E/M|M/L|E|M|L|-)\\s+(?P<description>.+)",
+      "skip_line_patterns": [
+        "^c Consider",
+        "^ht Consider",
+        "^g Suitable",
+        "^Hardiness",
+        "^http://"
+      ],
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["hardiness", "Hardiness rating"],
+            ["flavor", "Flavor rating"],
+            ["harvest", "Harvest-time rating"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "description"
+        }
+      ]
+    },
+    {
+      "kind": "pdf_sequential_rating_rows",
+      "section_start": "YELLO W",
+      "section_end": "Brandywine 3 G L",
+      "default_category": "Yellow raspberry varieties for New Hampshire",
+      "default_plant_type": "Raspberry",
+      "entry_names": [
+        "Fall Gold",
+        "Anne",
+        "Kiwigold",
+        "Goldie"
+      ],
+      "allowed_name_prefix_patterns": ["^(?:c|t|g|ht|c, ht)?$"],
+      "rating_start_pattern": "(?<!\\S)[1-5-]\\s+(?:E|VG|G|F)\\s+(?:VE|VL|E/M|M/L|E|M|L|-)\\s+",
+      "rating_pattern": "(?P<hardiness>[1-5-])\\s+(?P<flavor>E|VG|G|F)\\s+(?P<harvest>VE|VL|E/M|M/L|E|M|L|-)\\s+(?P<description>.+)",
+      "skip_line_patterns": [
+        "^Variety$",
+        "^g$"
+      ],
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["hardiness", "Hardiness rating"],
+            ["flavor", "Flavor rating"],
+            ["harvest", "Harvest-time rating"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "description"
+        }
+      ]
+    },
+    {
+      "kind": "pdf_named_rating_rows",
+      "section_start": "Brandywine 3 G L",
+      "section_end": "PURPLE",
+      "default_category": "Purple raspberry varieties for New Hampshire",
+      "default_plant_type": "Raspberry",
+      "entry_names": [
+        "Brandywine",
+        "Royalty",
+        "Success"
+      ],
+      "allowed_name_prefix_patterns": ["^(?:c|t|g|ht|c, ht)?$"],
+      "rating_pattern": "(?P<hardiness>[1-5-])\\s+(?P<flavor>E|VG|G|F)\\s+(?P<harvest>VE|VL|E/M|M/L|E|M|L|-)\\s+(?P<description>.+)",
+      "skip_line_patterns": [
+        "^g$",
+        "^c$",
+        "^RASPBERRIES - OTHER$"
+      ],
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["hardiness", "Hardiness rating"],
+            ["flavor", "Flavor rating"],
+            ["harvest", "Harvest-time rating"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "description"
+        }
+      ]
+    },
+    {
+      "kind": "pdf_named_rating_rows",
+      "section_start": "BLACKBERRIES",
+      "section_end": "c Consider for commercial production ht Consider for high tunnel production g Suitable for home gardeners",
+      "default_category": "Blackberry varieties for New Hampshire",
+      "default_plant_type": "Blackberry",
+      "entry_names": [
+        "Illini",
+        "Darrow",
+        "Chester",
+        "Triple Crown",
+        "Prime Jim",
+        "Prime Jan"
+      ],
+      "allowed_name_prefix_patterns": ["^(?:c|t|g|ht|c, ht)?$"],
+      "rating_pattern": "(?P<hardiness>[1-5-])\\s+(?P<flavor>E|VG|G|F)\\s+(?P<harvest>VE|VL|E/M|M/L|E|M|L|-)\\s+(?P<description>.+)",
+      "skip_line_patterns": [
+        "^g$",
+        "^c$",
+        "^ht$"
+      ],
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["hardiness", "Hardiness rating"],
+            ["flavor", "Flavor rating"],
+            ["harvest", "Harvest-time rating"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "description"
+        }
+      ]
+    }
+  ]
+}

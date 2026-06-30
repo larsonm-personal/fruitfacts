@@ -696,3 +696,38 @@ columns separately with `line_slice_end` and `line_slice_start`, and the shared
 catalog parser handles explicit entries followed by separators such as
 `Name - description`. One Castleton page-break continuation is kept as a
 source-local row override.
+
+## UNH Small-Fruit Rating PDF Notes
+
+The UNH blueberry and bramble factsheets are old migrated PDFs where the same
+source table extracts differently depending on raw versus layout text.
+
+For the bramble sheet, raw text preserves source order for some sections but
+extracts names as one block and ratings/descriptions as a later block. The
+`pdf_sequential_rating_rows` parser zips configured source names to rating
+segments for the regular red and yellow raspberry sections. Blackberry rows
+use `pdf_named_rating_rows`, which can hold a pending name when the source
+puts the cultivar on one line and the rating payload on the next.
+
+For the blueberry sheet, layout text keeps more row alignment, but some names
+are still detached from their rating rows. The config extracts only rows that
+can be tied back to visible names and leaves `needs_help` for the skipped
+detached rows. This is preferable to guessing at the row offset.
+
+## Arizona Catalog PDF Notes
+
+UA AZ1162 and AZ1269 are catalog-like PDFs with useful `Name: description`
+entries. Use raw text first for these guides: it preserves prose better than
+layout text, even though it can place multiple cultivar entries on one line.
+
+`pdf_catalog_entries` now has two useful switches for this shape:
+`entry_names_only` prevents fallback parsing from turning continuation text
+into fake cultivar names, and `split_embedded_entries` splits several embedded
+`Name: description` entries out of one extracted line while attaching leading
+continuation text to the previous row.
+
+AZ1162 is safest when bounded by crop sections because `Early`, `Midseason`,
+and `Late` headings repeat under several crops. AZ1269 needs row overrides for
+known two-column heading drift, such as Asian pears, quince, persimmons,
+almonds, and grapes appearing under neighboring headings. The kiwi rows were
+skipped because the database does not currently define a `Kiwi` plant type.

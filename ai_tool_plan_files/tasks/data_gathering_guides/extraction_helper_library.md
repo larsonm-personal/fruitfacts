@@ -47,6 +47,10 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
     `1.`, name, zones, regions, and tail lines rather than a horizontal table
   - Flow-mode PDF catalog entry parsing where a heading sets the crop/category
     and each following all-caps cultivar name starts a description line
+  - Explicit-entry PDF catalog parsing can be limited to configured
+    `entry_names`, and can split several embedded `Name: description` entries
+    out of one extracted PDF line while appending leading continuation text to
+    the prior row
   - Wrapped PDF bullet-list parsing where headings set crop/category and
     indented continuation lines finish parenthesized cultivar notes
   - PDF quoted-entry parsing where cultivar paragraphs start with quoted names,
@@ -60,6 +64,11 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
     multiple following list lines until the next heading appears
   - Tail parsers for first-token splits such as `Fresh Dessert`, first-line
     prefix plus description, and self-fruitful token splits
+  - Known-name PDF rating-row parsing for table rows where a visible cultivar
+    name is followed by source rating tokens and a description payload
+  - Sequential PDF rating-table parsing for sources where `pdftotext` extracts
+    a block of cultivar names first and a matching block of rating/description
+    segments later
 - `record_tools.py`
   - Source-name normalization, source-note appending, plant-record creation,
     row-to-plant conversion, labelled row descriptions, and parser-config
@@ -131,6 +140,9 @@ script. The config runner currently supports:
   category heading rules, default category context, smart titlecase name
   repair, explicit entry-name separators such as `Name - description`, and
   continuation lines
+- PDF catalog entries limited to explicit `entry_names`, plus optional
+  embedded `Name: description` splitting when one extracted line contains
+  several cultivar paragraphs
 - PDF bullet lists with configurable heading rules, continuation indentation,
   skip rules, row overrides, and partial parenthetical entry repair
 - PDF quoted cultivar entries with configurable quote characters, skipped
@@ -186,6 +198,9 @@ script. The config runner currently supports:
   word into the wrong field
 - Regex row text fixes for repeated source-local cleanup, such as changing
   `Moderately Resistant4, 5` into readable citation-note text
+- Known-name and sequential PDF rating-row parsers for older extension sheets
+  where cultivar names, hardiness ratings, flavor ratings, harvest ratings, and
+  descriptions do not extract as a rectangular table
 - Top-level config `text_fixes` shared by every extractor in one source
 - Quoted-name parsing for internal apostrophes in names such as `D'Anjou`, plus
   quoted names that end exactly at the end of a source-local slice
@@ -353,6 +368,21 @@ Source-specific scripts should do:
 - Rutgers FS1083 plums: two-column PDF catalog entries parsed with line
   slices, explicit entry names, `Name - description` separator handling, and a
   single source-local row override for a page-break continuation.
+- UNH raspberry and blackberry varieties: migrated PDF tables where raw text
+  extracts cultivar names as one block and ratings/descriptions as another.
+  The sequential rating parser zips those visible blocks for red and yellow
+  raspberries, while the pending-name parser handles blackberry rows split over
+  separate name and rating lines.
+- UNH blueberry varieties: layout-mode PDF rating rows parsed by configured
+  cultivar names, with detached-name rows left under `needs_help` rather than
+  guessed.
+- UA AZ1162 mid-elevation backyard fruit: raw PDF catalog entries bounded by
+  crop sections so season headings stay attached to the right plant type, plus
+  embedded `Name: description` splitting for lines with several cultivar
+  paragraphs.
+- UA AZ1269 low-desert fruit and nuts: explicit-entry PDF catalog parsing with
+  source-local row overrides for two-column heading drift, such as Asian pears,
+  quince, persimmons, almonds, and grapes appearing under neighboring headings.
 
 ## Manifest Configs
 

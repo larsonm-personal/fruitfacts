@@ -1,0 +1,499 @@
+{
+    title: "Deciduous Fruit and Nuts for the Low Desert",
+    author: "Lucy Bradley and Michael Maurer",
+    description: "University of Arizona Cooperative Extension AZ1269 guide to low-chill deciduous fruit and nut varieties for Arizona low desert conditions",
+    url: "https://extension.arizona.edu/publication/deciduous-fruit-and-nuts-low-desert",
+    thumbnail: "pdf",
+    publication_number: "AZ1269",
+    published: "March 2002",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Arizona Cooperative Extension, Tucson, Arizona",
+            latitude: 32.2319,
+            longitude: -110.9501
+        },
+    ],
+    categories: [
+        {
+            name: "Low-desert apple varieties",
+            description: "University of Arizona AZ1269 lists these low-chill apple varieties for low-desert Arizona conditions"
+        },
+        {
+            name: "Low-desert apricot varieties",
+            description: "University of Arizona AZ1269 lists these low-chill apricot varieties for low-desert Arizona conditions"
+        },
+        {
+            name: "Low-desert fig varieties",
+            description: "University of Arizona AZ1269 lists these fig varieties for low-desert Arizona conditions"
+        },
+        {
+            name: "Low-desert peach varieties",
+            description: "University of Arizona AZ1269 lists these low-chill peach varieties for low-desert Arizona conditions"
+        },
+        {
+            name: "Low-desert pear varieties",
+            description: "University of Arizona AZ1269 lists these low-chill European pear varieties for low-desert Arizona conditions"
+        },
+        {
+            name: "Low-desert Asian pear varieties",
+            description: "University of Arizona AZ1269 lists these low-chill Asian pear varieties for low-desert Arizona conditions"
+        },
+        {
+            name: "Low-desert plum varieties",
+            description: "University of Arizona AZ1269 lists these low-chill plum varieties for low-desert Arizona conditions"
+        },
+        {
+            name: "Low-desert quince varieties",
+            description: "University of Arizona AZ1269 lists these low-chill quince varieties for low-desert Arizona conditions"
+        },
+        {
+            name: "Low-desert persimmon varieties",
+            description: "University of Arizona AZ1269 lists these low-chill persimmon varieties for low-desert Arizona conditions"
+        },
+        {
+            name: "Low-desert almond varieties",
+            description: "University of Arizona AZ1269 lists these low-chill almond varieties for low-desert Arizona conditions"
+        },
+        {
+            name: "Low-desert pecan varieties",
+            description: "University of Arizona AZ1269 lists these pecan varieties for low-desert Arizona conditions"
+        },
+        {
+            name: "Low-desert grape varieties",
+            description: "University of Arizona AZ1269 lists these grape varieties for low-desert Arizona conditions"
+        },
+        {
+            name: "Low-desert blackberry varieties",
+            description: "University of Arizona AZ1269 lists these blackberry varieties for low-desert Arizona conditions"
+        },
+        {
+            name: "Low-desert strawberry varieties",
+            description: "University of Arizona AZ1269 lists these strawberry varieties for low-desert Arizona conditions"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Anna",
+            category: "Low-desert apple varieties",
+            description: "Remarkable fruit for mild-winter climates in Southern Arizona. Heavy crops of sweet, crisp, flavorful apples even in low desert. Fresh or cooked. Keeps 2 months in refrigerator. Chilling requirement 200 hours. Self-fruitful or pollinated by Dorsett Golden or Ein shemer"
+        },
+        {
+            type: "Apple",
+            name: "Beverly Hills",
+            category: "Low-desert apple varieties",
+            description: "Produces a pale yellow medium sized fruit. Chilling requirement 300 hours. Self-fruitful"
+        },
+        {
+            type: "Apple",
+            name: "Ein Shemer",
+            category: "Low-desert apple varieties",
+            description: "Heavy-bearing, very low chilling requirement of 100 hours. Sweet yellow apples in early summer (June in the low desert). Excellent pollenizer for Anna. Self- fruitful. Source names this as Ein shemer"
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Low-desert apple varieties",
+            description: "Recently introduced from Japan, has quickly become California's favorite apple. Sweet, very crisp and flavorful, excellent keeper. Dull reddish-orange skin, sometimes russeted. Chilling requirement listed as 600 hours, but preliminary testing in the low desert indicate that it may be less. Self-fruitful"
+        },
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Low-desert apple varieties",
+            description: "Wonderful dessert apple from New Zealand. Crisp, nice blend of sweetness and tartness, rich flavor. Skin reddish-orange over yellow. Chilling requirement listed as 500-600 hours, preliminary testings suggest it maybe less. Self-fruitful"
+        },
+        {
+            type: "Apple",
+            name: "Golden Dorsett",
+            category: "Low-desert apple varieties",
+            description: "Outstanding sweet apple for warm winter areas. Firm, very flavorful, sweet like Golden Delicious. Productive throughout the low desert. Good early season sweet apple. Chilling requirement of 100 hours. Self-fruitful"
+        },
+        {
+            type: "Apple",
+            name: "Gordon",
+            category: "Low-desert apple varieties",
+            description: "Produces a reddish-green fruit for fresh use and cooking. Chilling requirement, 400 hours. Self-fruitful"
+        },
+        {
+            type: "Apricot",
+            name: "Castlebrite",
+            category: "Low-desert apricot varieties",
+            description: "Firm and juicy. Good flavor when fully ripe, otherwise somewhat tart. Good size. Bright orange with red blush. 450 chill hours. Self-fruitful"
+        },
+        {
+            type: "Apricot",
+            name: "Gold Kist",
+            category: "Low-desert apricot varieties",
+            description: "Excellent backyard apricot for warm winter climates. Freestone, very good quality. Heavy bearing. Early harvest, late May to early June. Requires 300 chill hours. Self-fruitful"
+        },
+        {
+            type: "Apricot",
+            name: "Katy",
+            category: "Low-desert apricot varieties",
+            description: "Large, all purpose flavorful freestone. Tree ripe fruit is subacid (not tart). A favorite apricot for warm-winter climates. Early harvest, late May to early June. Requires 400 chill hours. Self-fruitful"
+        },
+        {
+            type: "Apricot",
+            name: "Modesto",
+            category: "Low-desert apricot varieties",
+            description: "Commercially grown for shipping. 300-400 hours chilling. Self-fruitful"
+        },
+        {
+            type: "Apricot",
+            name: "Patterson",
+            category: "Low-desert apricot varieties",
+            description: "A vigorous tree. Fruit are medium to large in size with good firm, modestly flavorful flesh. Good for freezing, drying, and canning. Requires 500 chill hours. Self-fruitful"
+        },
+        {
+            type: "Apricot",
+            name: "Royal Rosa",
+            category: "Low-desert apricot varieties",
+            description: "Extremely vigorous, more disease tolerant than other apricots. Bears young and heavy. Especially nice fruit: sweet, low acid, fine flavor. Very early harvest (early-to-mid May). Excellent backyard apricot. Requires 500 chill hours. Self-fruitful"
+        },
+        {
+            type: "Fig",
+            name: "Black Mission",
+            category: "Low-desert fig varieties",
+            description: "Popular and flavorful for eating fresh or dried. Medium to large pear-shaped fruit has skin which is black-purple and strawberry-colored flesh. Tree is large and long lived. Well adapted to elevations below 2,000 feet"
+        },
+        {
+            type: "Fig",
+            name: "Brown Turkey",
+            category: "Low-desert fig varieties",
+            description: "Sweet tasting and best eaten fresh. Bell shaped medium to large fruit has browish- purple skin with pink flesh. Tree is large and best adapted to 2,000 - 3,000 feet. Not as prolific as Mission"
+        },
+        {
+            type: "Fig",
+            name: "Conadria (White)",
+            category: "Low-desert fig varieties",
+            description: "Mild and sweet with whitish-pink flesh. Large fruit with cream to light green colored skin. Good, eaten fresh or dried. Tolerates heat well"
+        },
+        {
+            type: "Fig",
+            name: "White Kadota",
+            category: "Low-desert fig varieties",
+            description: "Good, fresh or dried, suitable for canning. Fruit is medium sized with yellow skin. Flesh is amber with few seeds. Hot weather aids in ripening"
+        },
+        {
+            type: "Peach",
+            name: "Bonanza Miniature",
+            category: "Low-desert peach varieties",
+            description: "Popular yellow freestone - large fruit is sweet, low in acid, with a mild, refreshing flavor. Mid-to-late May in low desert climates. Five- to six-foot tree. Chilling requirement very low, 250 hours or less. Self-fruitful"
+        },
+        {
+            type: "Peach",
+            name: "August Pride",
+            category: "Low-desert peach varieties",
+            description: "Large, all-purpose yellow freestone for mild-winter climates. Sweet, aromatic, rich flavor, one of the best. Chilling requirement less than 300 hours. Selffruitful"
+        },
+        {
+            type: "Peach",
+            name: "Babcock",
+            category: "Low-desert peach varieties",
+            description: "Long-time favorite white-fleshed freestone. Sweet and juicy, aromatic, low in acid. Very high-scoring in taste test. Chilling requirement of 250-300 hours. Self-fruitful"
+        },
+        {
+            type: "Peach",
+            name: "Desertgold",
+            category: "Low-desert peach varieties",
+            description: "Very early ripening: mid-May in Arizona. Tree-ripened fruit has good flavor and sweetness for such an early variety. Yellow Clingstone. Heavy bearing. Chilling requirement of 250 hours. Self-fruitful. Source names this as Desert Gold"
+        },
+        {
+            type: "Peach",
+            name: "Desert Red",
+            category: "Low-desert peach varieties",
+            description: "An excellent quality, firm cling peach that has good color. Produces large fruit when thinned and girdled. Chilling requirement of 200-300 hours. Self-fruitful"
+        },
+        {
+            type: "Peach",
+            name: "Earligrande",
+            category: "Low-desert peach varieties",
+            description: "Medium size, low-chill peach from Gulf Coast Texas. Yellow semi-freestone. Very early (May). Successful in Arizona and similar climates. Chilling requirement of 275 hours. Self-fruitful"
+        },
+        {
+            type: "Peach",
+            name: "Eva's Pride",
+            category: "Low-desert peach varieties",
+            description: "Delicious, fine-flavored peach with very low-chilling requirement. Medium- to large-sized yellow freestone. Ripens early-to-late May. Chilling requirement of 100-200 hours. Self-fruitful"
+        },
+        {
+            type: "Peach",
+            name: "Flordaking",
+            category: "Low-desert peach varieties",
+            description: "High quality early season peach. Large, firm, flavorful semi-freestone, very sweet when fully ripe. MidMay in warm winter climates. Chilling requirement 450 hours or less. Self-fruitful"
+        },
+        {
+            type: "Peach",
+            name: "Flordaprince",
+            category: "Low-desert peach varieties",
+            description: "From Florida, successfully grown in Arizona. Yellow, semi-cling, larger fruit than Desert Gold, more tolerant of desert heat. Ripens late April to early May in Arizona. Very good quality when tree-ripe. Chilling requirement of 150 hours. Self-fruitful"
+        },
+        {
+            type: "Peach",
+            name: "Flordagrande",
+            category: "Low-desert peach varieties",
+            description: "Excellent yellow-fleshed semi-freestone peach. Flesh will have some red coloration at maturity. Requires less than 100 chill hours"
+        },
+        {
+            type: "Peach",
+            name: "May Pride",
+            category: "Low-desert peach varieties",
+            description: "Very early-ripening, semi-freestone peach for warm winter climates. Ripens in May with Desert Gold. Delicious, sweet and tangy fruit. Very large for such an early peach. Large, showy pink blossoms. Chilling requirement 175 - 200 hours. Self-fruitful"
+        },
+        {
+            type: "Peach",
+            name: "Mid-Pride",
+            category: "Low-desert peach varieties",
+            description: "Best yellow freestone for warm winter climates. Mid-season peach. Chilling requirement of 250 hours. Self-fruitful"
+        },
+        {
+            type: "Peach",
+            name: "TropicBeauty",
+            category: "Low-desert peach varieties",
+            description: "Excellent quality yellow flesh, firm freestone peach. Produces a large fruit when thinned and girdled properly. Chilling requirement of 100-200 hours. Good for the low desert. Self-fruitful. Ripens early May. Source names this as Tropic Beauty"
+        },
+        {
+            type: "Peach",
+            name: "TropicSnow",
+            category: "Low-desert peach varieties",
+            description: "Medium-sized fruit. Skin is white with red blush. White sweet flesh. Good flavor. Freestone. Ripens early May. Chilling requirement 175-200 hours. Self-fruitful. Source names this as Tropic Snow"
+        },
+        {
+            type: "Peach",
+            name: "TropicSweet",
+            category: "Low-desert peach varieties",
+            description: "Good quality freestone, yellow-fleshed peach. Fruit are very large when thinned and girdled properly. Ripens just after Tropic Beauty. Chilling requirement of 100-200 hours. Self-fruitful. Ripens midMay. Source names this as Tropic Sweet"
+        },
+        {
+            type: "Peach",
+            name: "Vallegrande",
+            category: "Low-desert peach varieties",
+            description: "This is an excellent quality, semi-freestone, yellow-fleshed peach. Flesh is firm and ripens to 60% blush at maturity. Flesh becomes red as fruit matures. Chilling requirement of 100-200 hours. Self-fruitful. Ripens early May"
+        },
+        {
+            type: "Euro Pear",
+            name: "Flordahome",
+            category: "Low-desert pear varieties",
+            description: "Very nice quality, sweet, smooth-textured, juicy, flavorful. Early bloom. Chilling requirement less than 400 hours. Partly self-fruitful"
+        },
+        {
+            type: "Euro Pear",
+            name: "Kieffer",
+            category: "Low-desert pear varieties",
+            description: "Medium to large late season fruit. Canning/cooking. Sprightly flavor, coarse texture. Resists fireblight, tolerates hot climates. Dependable crops. 350 hours. Self-fruitful"
+        },
+        {
+            type: "Persimmon",
+            name: "Izu",
+            category: "Low-desert persimmon varieties",
+            description: "Very sweet, tasty, non-astringent. Fruit ripen about three weeks before Fuyu. Medium to large size, round shape. Relatively small tree, good choice for backyard persimmon. Sometimes difficult to start from bareroot. Chilling requirement of 100 hours. Self-fruitful"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Beauty",
+            category: "Low-desert plum varieties",
+            description: "Sweet, flavorful plum. Red over yellow skin, amber flesh streaked red. Chilling requirement of 250 hours. Selffruitful"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Gulfgold",
+            category: "Low-desert plum varieties",
+            description: "Green-skinned plum which turns yellowish when ripe. Juicy, sweet, yellow flesh. Chilling requirement of 250 hours. Self-fruitful. Source names this as Gulf Gold"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Gulfruby",
+            category: "Low-desert plum varieties",
+            description: "Sweet, juicy plum, with reddish-purple skin and amber flesh. Chilling requirement of 250 hours. Selffruitful. Source names this as Gulf Ruby"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Methley",
+            category: "Low-desert plum varieties",
+            description: "Juicy, sweet, red flesh, mild flavor. Reddish purple skin. Attractive tree, heavy bearing and vigorous. Chilling requirement of 250 hours. Self-fruitful"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Santa Rosa",
+            category: "Low-desert plum varieties",
+            description: "Most popular plum in California and Arizona. Juicy, tangy, flavorful. Reddish-purple skin, amber flesh tinged red. Chilling requirement of 300 hours. Self-fruitful"
+        },
+        {
+            type: "Asian Pear",
+            name: "Shinseiki",
+            category: "Low-desert Asian pear varieties",
+            description: "Juicy, sweet, refreshing, crisp like an apple. Easy to grow. Keeps well. Harvest June in the desert. Bright yellow skin. Vigorous, heavy bearing. Chilling requirement of 350-400 hours. Self-fruitful"
+        },
+        {
+            type: "Asian Pear",
+            name: "Yakumo",
+            category: "Low-desert Asian pear varieties",
+            description: "Early harvest, before Shinseiki. Slight tapered neck, instead of round shape of other Japanese pears. Very nice quality - sweet, juicy, refreshing. Crisp like apple when ripe. Chilling requirement of 450 hours. Pollenizer required"
+        },
+        {
+            type: "Persimmon",
+            name: "Jiro",
+            category: "Low-desert persimmon varieties",
+            description: "Medium size, flat shape, still hard when ripe, non-astringent. Cool or hot climate. Hardy, attractive tree, practically pest free. Chilling requirement 200 hours. Self-fruitful. Source names this as Fuyu (Jiro) (\"Apple Persimmon\")"
+        },
+        {
+            type: "Persimmon",
+            name: "Giant Fuyu",
+            category: "Low-desert persimmon varieties",
+            description: "Larger, not so flat as Fuyu. Crunchy when ripe like Fuyu. Sweet, flavorful, non-astringent. Easy to grow, cool or hot climates. Chilling requirement of 200 hours. Self-fruitful"
+        },
+        {
+            type: "Quince",
+            name: "Orange Quince",
+            category: "Low-desert quince varieties",
+            description: "Large, round, bright yellow fruits often exceed 1 lb. Flavorful, aromatic, used for cooking. Early harvest. Old variety. Cold hardy, yet low chilling requirement of 300 hours. Self-fruitful"
+        },
+        {
+            type: "Quince",
+            name: "Pineapple Quince",
+            category: "Low-desert quince varieties",
+            description: "Heavy crops of large, tart fruit used in baking, jams, and jellies. Profuse, ornamental bloom. Cold hardy, yet low chilling requirement of 300 hours. Self-fruitful"
+        },
+        {
+            type: "Almond",
+            name: "All-in-One",
+            category: "Low-desert almond varieties",
+            description: "Medium to large. Soft shelled with good quality sweet kernels. Classified semi-dwarf to 15 feet. Chilling requirement of 500 hours (may not be suited for Salt River Valley). Self-fruitful. Number 1 almond for home orchards. Source names this as All-in-One (semi-dwarfing)"
+        },
+        {
+            type: "Almond",
+            name: "Garden Prince",
+            category: "Low-desert almond varieties",
+            description: "Compact, lushly foliated 10-12 foot tree. Soft shell, kernels especially sweet and tasty. Bears young and heavy. Chilling requirement of 250 hours. Self-fruitful. Source names this as Garden Prince Genetic Dwarf"
+        },
+        {
+            type: "Almond",
+            name: "Neplus Ultra",
+            category: "Low-desert almond varieties",
+            description: "Large soft-shelled nut, long broad flat kernel. Chilling requirement of 250 hours. Needs pollenizer. Best pollenizer: Nonpareil"
+        },
+        {
+            type: "Almond",
+            name: "Nonpareil Almond",
+            category: "Low-desert almond varieties",
+            description: "No. 1 commercial almond, the standard of quality. Inter-fruitful with All-In-One and Neplus. Chilling requirement 400 hours. Pollenizer required"
+        },
+        {
+            type: "Pecan",
+            name: "Cheyenne",
+            category: "Low-desert pecan varieties",
+            description: "Bears heavy and early. Nuts are medium size, soft shell, with excellent kernel quality. Tree is somewhat susceptible to limb breakage; slow growing tree"
+        },
+        {
+            type: "Pecan",
+            name: "Choctaw",
+            category: "Low-desert pecan varieties",
+            description: "Tree is vigorous and is an excellent producer. Moderately precocious. Produces pecans of outstanding quality. Shells are thin and cracks into half kernels very easily"
+        },
+        {
+            type: "Pecan",
+            name: "Comanche",
+            category: "Low-desert pecan varieties",
+            description: "Medium to large sized nuts, nearly round, thin shelled. Good producer, nut quality is excellent. Nuts tend to sprout"
+        },
+        {
+            type: "Pecan",
+            name: "Sioux",
+            category: "Low-desert pecan varieties",
+            description: "Good producer with small to medium sized nuts with outstanding kernel quality. A little slow to begin producing, moderately precocious"
+        },
+        {
+            type: "Pecan",
+            name: "Western Schley",
+            category: "Low-desert pecan varieties",
+            description: "Easy to grow, nut long, tapered, medium sized, thin-shelled, good kernel quality. Self-fruitful. Early bearing 4 to 5 years. Recommended for single tree planting in home garden. Less affected by zinc deficiency than other cultivars. Prolific. Tendency for nuts to sprout (pregerm) in the low desert. Source names this as Western Schley (Western)"
+        },
+        {
+            type: "Pecan",
+            name: "Wichita",
+            category: "Low-desert pecan varieties",
+            description: "Highly flavored, medium to large sized nuts are well-filled, soft shell. Plump, rich, distinctively flavored kernel. Bears heavy at young age. Pollinators are Cheyenne or Western Schley. Prone to zinc deficiency. Strong tendency for nuts to sprout (pregerm) in the low desert"
+        },
+        {
+            type: "Grape",
+            name: "Cardinal",
+            category: "Low-desert grape varieties",
+            description: "Clusters large to medium in size. Very large, seeded, cherry red berries become reddish black with maturity. Use for arbor or summer house. Spur pruned"
+        },
+        {
+            type: "Grape",
+            name: "Perlette",
+            category: "Low-desert grape varieties",
+            description: "Pale green, round, crisp, juicy seedless medium sized berry. Larger than Thompson, unique flavor - mild aromatic in flavor. Spur pruned, ripens in June"
+        },
+        {
+            type: "Grape",
+            name: "Ruby Seedless",
+            category: "Low-desert grape varieties",
+            description: "Dark red, sweet, crisp, excellent fresh or raisin. Ripens after Thompson seedless. Chilling requirement of 100 hours, self-fruitful. Ripens in June. Spur pruned. Source names this as Ruby seedless"
+        },
+        {
+            type: "Grape",
+            name: "Thompson Seedless",
+            category: "Low-desert grape varieties",
+            description: "Most popular grape. Green, seedless berry, fresh or raisin. Very sweet. Self-fruitful. Chilling requirement of 100 hours. Ripens mid June - July. Cane pruned. Kiwi Tomari Male: Pollenizer for Vincent Female. Does not bear fruit. One male can pollinate up to eight Vincent females. Vincent Female: Low chilling required, which is adapted to Southern California. Tasty, well-regarded fuzzy skinned fruit. Pollinated by Tomuri male. Source names this as Thompson seedless"
+        },
+        {
+            type: "Blackberry",
+            name: "Brazos",
+            category: "Low-desert blackberry varieties",
+            description: "Very vigorous, thorny, erect plant which produces an abundance of large high quality berries. Berries are large, attractive appearance and heavy yields, tart acid flavor"
+        },
+        {
+            type: "Blackberry",
+            name: "Rosborough",
+            category: "Low-desert blackberry varieties",
+            description: "Vigorous moderately upright canes which produces well in a wide variety of soil and climatic conditions. Fruit are large, attractive in appearance and have a sweeter flavor than Brazos"
+        },
+        {
+            type: "Strawberry",
+            name: "Camarosa",
+            category: "Low-desert strawberry varieties",
+            description: "Plants are large and vigorous. Fruit are large, firm wedge shaped berries of good quality. Source names this as Camerosa"
+        },
+        {
+            type: "Strawberry",
+            name: "Chandler",
+            category: "Low-desert strawberry varieties",
+            description: "Plant is large and vigorous. Produces nice berries which are smaller than Camerosa, but tend to be sweeter"
+        },
+        {
+            type: "Strawberry",
+            name: "Sequoia",
+            category: "Low-desert strawberry varieties",
+            description: "Produces a big vigorous plant. Fruit are large, wedge shaped of high quality, but soft when ripe"
+        },
+        {
+            type: "Grape",
+            name: "Exotic",
+            category: "Low-desert grape varieties",
+            description: "Berries are black, large, seeded, crisp and sweet. Berry irregular to oval in shape and has large clusters. Ripen in July. Spur pruned"
+        },
+        {
+            type: "Strawberry",
+            name: "Tioga",
+            category: "Low-desert strawberry varieties",
+            description: "This plant is very large and vigorous with big, dark green glossy leaves. Fruit are very large, firm wedge shaped berries of medium quality"
+        },
+        {
+            type: "Grape",
+            name: "Fantasy",
+            category: "Low-desert grape varieties",
+            description: "Large, black, seedless berry used for table or raisin. Excellent flavor. Ripens in July. Cane pruned"
+        },
+        {
+            type: "Grape",
+            name: "Flame Seedless",
+            category: "Low-desert grape varieties",
+            description: "light red, seedless, crisp, sweet berry. Cool nights are required for full color development. Ripens June - July. Spur pruned. Source names this as Flame seedless"
+        },
+    ]
+}

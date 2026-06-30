@@ -1372,7 +1372,7 @@
         },
         {
             id: "ua-az1162-backyard-fruit-production-3500-6000",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Backyard Fruit Production at Elevations 3,500 to 6,000 Feet",
             institution: "University of Arizona Cooperative Extension",
@@ -1403,12 +1403,17 @@
                 "Existing Arizona reference covers grapes only; no Arizona mid-elevation tree-fruit guide found",
             notes: [
                 "Official landing page exposes a Download PDF link",
-                "PDF is layout-heavy and likely needs a manual or section-marker extraction pass"
+                "PDF is layout-heavy and likely needs a manual or section-marker extraction pass",
+                "Encoded in plant_database/references/Arizona/UA AZ1162 Backyard Fruit Production at Elevations 3500 to 6000 Feet.json5",
+                "Config extraction added at helper_scripts/extraction_configs/ua_az1162_backyard_fruit_mid_elevations.json",
+                "Manifest entry added as ua_az1162_backyard_fruit_mid_elevations",
+                "Parser support added for embedded Name: catalog entries so multiple cultivar descriptions on one extracted PDF line can split into separate rows",
+                "Crop-bounded extractors keep Early, Midseason, and Late headings from carrying the wrong plant type across PDF sections"
             ]
         },
         {
             id: "ua-az1269-deciduous-fruit-nuts-low-desert",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Deciduous Fruit and Nuts for the Low Desert",
             institution: "University of Arizona Cooperative Extension",
@@ -1445,7 +1450,12 @@
                 "Existing Arizona reference covers grapes only; no low-desert fruit and nut guide found",
             notes: [
                 "Landing page exposes a large web version and a handle-based PDF download",
-                "Long species sections and harvest calendars will not be a simple table import"
+                "Long species sections and harvest calendars will not be a simple table import",
+                "Encoded in plant_database/references/Arizona/UA AZ1269 Deciduous Fruit and Nuts for the Low Desert.json5",
+                "Config extraction added at helper_scripts/extraction_configs/ua_az1269_low_desert_fruit_nuts.json",
+                "Manifest entry added as ua_az1269_low_desert_fruit_nuts",
+                "Worked example for explicit-entry PDF catalog parsing with source-local row overrides where two-column extraction shifts headings",
+                "Kiwi rows were intentionally skipped because the current database does not define a Kiwi plant type"
             ]
         },
         {
@@ -2618,7 +2628,7 @@
         },
         {
             id: "unh-blueberry-varieties-new-hampshire",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Fruit: Blueberry Varieties for New Hampshire",
             institution: "University of New Hampshire Extension",
@@ -2641,12 +2651,17 @@
             notes: [
                 "Found by expanding from the encoded UNH low-input tree-fruit source to UNH small-fruit factsheets",
                 "Official page links to an older migrated PDF",
-                "Likely parsing issue: current web page and PDF may not have identical layout or content"
+                "Likely parsing issue: current web page and PDF may not have identical layout or content",
+                "Encoded in plant_database/references/New Hampshire/UNH Blueberry Varieties for New Hampshire.json5",
+                "Config extraction added at helper_scripts/extraction_configs/unh_blueberry_varieties_new_hampshire.json",
+                "Manifest entry added as unh_blueberry_varieties_new_hampshire",
+                "Parser support added for known-name PDF rating rows where a cultivar name and rating payload appear on the same extracted line",
+                "Current draft covers rows the layout text can tie to visible names; several detached-name rows remain review caveats under needs_help"
             ]
         },
         {
             id: "unh-raspberry-blackberry-varieties-new-hampshire",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Fruit: Raspberry and Blackberry Varieties for New Hampshire",
             institution: "University of New Hampshire Extension",
@@ -2672,7 +2687,12 @@
             notes: [
                 "Found by searching UNH fruit factsheets after the existing UNH tree-fruit source",
                 "Official page links to a migrated PDF with tabular variety information",
-                "Likely parsing issue: color and bearing-habit categories are source categories, not plant types"
+                "Likely parsing issue: color and bearing-habit categories are source categories, not plant types",
+                "Encoded in plant_database/references/New Hampshire/UNH Raspberry and Blackberry Varieties for New Hampshire.json5",
+                "Config extraction added at helper_scripts/extraction_configs/unh_raspberry_blackberry_varieties_new_hampshire.json",
+                "Manifest entry added as unh_raspberry_blackberry_varieties_new_hampshire",
+                "Parser support added for sequential PDF rating tables where cultivar names appear as a block and ratings/descriptions appear later",
+                "Current draft covers red, yellow, purple raspberry and blackberry rows; black raspberry rows remain a review caveat because the PDF splits one row across several rating-only lines"
             ]
         },
         {

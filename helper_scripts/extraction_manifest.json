@@ -223,6 +223,22 @@
         {
             "id": "rutgers_fs1083_plums",
             "config": "extraction_configs/rutgers_fs1083_plums.json"
+        },
+        {
+            "id": "unh_raspberry_blackberry_varieties_new_hampshire",
+            "config": "extraction_configs/unh_raspberry_blackberry_varieties_new_hampshire.json"
+        },
+        {
+            "id": "unh_blueberry_varieties_new_hampshire",
+            "config": "extraction_configs/unh_blueberry_varieties_new_hampshire.json"
+        },
+        {
+            "id": "ua_az1162_backyard_fruit_mid_elevations",
+            "config": "extraction_configs/ua_az1162_backyard_fruit_mid_elevations.json"
+        },
+        {
+            "id": "ua_az1269_low_desert_fruit_nuts",
+            "config": "extraction_configs/ua_az1269_low_desert_fruit_nuts.json"
         }
     ]
 }
