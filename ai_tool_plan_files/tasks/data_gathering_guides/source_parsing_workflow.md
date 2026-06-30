@@ -531,3 +531,35 @@ on cultivar prose rather than a category heading, so the parser now supports
 default category context. The Red Wing raspberry text contains the word
 `Heritage.` before the true Heritage entry, so the right-column raspberry
 section is split into two extractor passes around that source paragraph.
+
+## KSRE MF1028 Kansas Notes
+
+Kansas MF1028 is a dense two-column PDF with broad fruit tables. The full
+publication covers tree fruit and small fruit, but the safest first pass is a
+bounded layout-mode slice of the small-fruit table where the grape and
+raspberry columns stay mechanically reproducible.
+
+The config uses `pdf_catalog_entries` with `line_slice_start` for grapes and
+`line_slice_end` for raspberries. Raspberry color labels such as Black, Yellow,
+and Purple land on the same extracted lines as the first words of the next
+cultivar note, so the config uses continuation skips plus row overrides for
+Black Allen, Fall Gold, and Brandywine. The reference keeps `needs_help`
+because the remaining stacked blackberry, blueberry, tree-fruit, and strawberry
+tables need separate review.
+
+## LSU Louisiana Home Orchard Notes
+
+The LSU AgCenter home orchard PDF has a variety and spacing table that raw
+`pdftotext` extracts as crop headings followed by wrapped cultivar-name lines.
+Spacing values and explanatory notes are mixed into the cultivar stream, so a
+simple comma splitter produces false names unless the heading and note rows are
+handled explicitly.
+
+The config uses `pdf_wrapped_name_lists`. Each heading sets the crop and
+regional category, then the parser collects following lines until the next
+heading. Source-local text fixes remove spacing-column artifacts such as `20`
+inside peach and plum lists and repair wrapped names such as `Ichikikei Jiro`.
+Repeated cultivars, such as peaches listed in two Louisiana regions, are merged
+after record creation so one importable plant record keeps both source
+descriptions. Mayhaw is intentionally left unencoded because the current plant
+type list does not include it.

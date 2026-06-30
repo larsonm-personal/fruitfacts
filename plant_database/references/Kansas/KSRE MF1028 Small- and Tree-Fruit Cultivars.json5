@@ -1,0 +1,205 @@
+{
+    title: "Small- and Tree-Fruit Cultivars",
+    author: "Ward Upham",
+    description: "Kansas State University cultivar guide for fruit crops in Kansas and surrounding states; this draft covers selected small-fruit table columns that can be reproduced safely from layout-mode PDF text",
+    url: "https://bookstore.ksre.ksu.edu/item/small-and-tree-fruit-cultivars_MF1028",
+    thumbnail: "pdf",
+    published: "April 2013",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Kansas State University, Manhattan, Kansas",
+            latitude: 39.1974,
+            longitude: -96.5847
+        },
+    ],
+    categories: [
+        {
+            name: "Grape cultivars for Kansas and surrounding states",
+            description: "K-State Research and Extension MF1028 lists these grape cultivars among small-fruit cultivars tested in Kansas or surrounding states"
+        },
+        {
+            name: "Raspberry cultivars for Kansas and surrounding states",
+            description: "K-State Research and Extension MF1028 lists these raspberry cultivars among small-fruit cultivars tested in Kansas or surrounding states"
+        },
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Beta",
+            category: "Grape cultivars for Kansas and surrounding states",
+            description: "Blue fruit; juice and jelly; small-size fruit. Vigorous and hardy"
+        },
+        {
+            type: "Grape",
+            name: "Catawba",
+            category: "Grape cultivars for Kansas and surrounding states",
+            description: "Red; table, juice and wine; large fruit; vigorous and cold hardy"
+        },
+        {
+            type: "Grape",
+            name: "Concord",
+            category: "Grape cultivars for Kansas and surrounding states",
+            harvest_time_unparsed: "Greatest problem in Kansas is uneven ripening during hot summers or heavy crop loads.",
+            description: "Blue-black fruit, the quality standard for juice, jam, and jelly; medium clusters of medium to large berries. Greatest problem in Kansas is uneven ripening during hot summers or heavy crop loads. Cold hardy"
+        },
+        {
+            type: "Grape",
+            name: "Cynthiana",
+            category: "Grape cultivars for Kansas and surrounding states",
+            description: "Black fruit; excellent red wine; medium to small clusters of small grapes; moderate vigor, moderately productive, very disease resistant and good cold hardiness"
+        },
+        {
+            type: "Grape",
+            name: "Fredonia",
+            category: "Grape cultivars for Kansas and surrounding states",
+            description: "Blue; extra-large fruit and thick skin; juicy and good quality; vigorous and cold hardy"
+        },
+        {
+            type: "Grape",
+            name: "Mars",
+            category: "Grape cultivars for Kansas and surrounding states",
+            description: "Blue; seedless table grape; medium-size clusters with large fruit; resistance to common grape diseases; vigorous and cold hardy"
+        },
+        {
+            type: "Grape",
+            name: "Niagara",
+            category: "Grape cultivars for Kansas and surrounding states",
+            description: "White; table and wine; large-size fruit with good flavor; vigorous and cold hardy"
+        },
+        {
+            type: "Grape",
+            name: "Reliance",
+            category: "Grape cultivars for Kansas and surrounding states",
+            harvest_time_unparsed: "Red; seedless table grape; excellent raisins; ripens early mid-season; vigorous and winter-hardy.",
+            description: "Red; seedless table grape; excellent raisins; ripens early mid-season; vigorous and winter-hardy"
+        },
+        {
+            type: "Grape",
+            name: "Steuben",
+            category: "Grape cultivars for Kansas and surrounding states",
+            description: "Blue fruit; table and wine; concord type; vigorous and cold hardy"
+        },
+        {
+            type: "Grape",
+            name: "Venus",
+            category: "Grape cultivars for Kansas and surrounding states",
+            harvest_time_unparsed: "Blue-black; seedless table grape; large berries; early ripening; vines are vigorous, moderately cold hardy.",
+            description: "Blue-black; seedless table grape; large berries; early ripening; vines are vigorous, moderately cold hardy"
+        },
+        {
+            type: "Grape",
+            name: "Aurore",
+            category: "Grape cultivars for Kansas and surrounding states",
+            description: "White; table; vines are hardy and productive but susceptible to black rot and splitting at harvest"
+        },
+        {
+            type: "Grape",
+            name: "Baco Noir",
+            category: "Grape cultivars for Kansas and surrounding states",
+            description: "Blue; wine; clusters are large with small fruit; vines are vigorous and productive; moderately winter hardy. Source table names this as Baco noir"
+        },
+        {
+            type: "Grape",
+            name: "Chancellor",
+            category: "Grape cultivars for Kansas and surrounding states",
+            description: "Blue; wine use; good vigor, productive and moderate hardiness"
+        },
+        {
+            type: "Grape",
+            name: "Foch",
+            category: "Grape cultivars for Kansas and surrounding states",
+            description: "Blue; wine use; very vigorous and winter hardy"
+        },
+        {
+            type: "Grape",
+            name: "Seyval Blanc",
+            category: "Grape cultivars for Kansas and surrounding states",
+            description: "Medium-size white-yellow berries in large clusters. Good wine; one of the better white grapes. French hybrids. Medium to high vigor; not very cold hardy"
+        },
+        {
+            type: "Grape",
+            name: "Vidal Blanc",
+            category: "Grape cultivars for Kansas and surrounding states",
+            description: "Yellow-white fruit; large clusters of large berries; excellent wine; moderate cold hardiness"
+        },
+        {
+            type: "Grape",
+            name: "Vignoles",
+            category: "Grape cultivars for Kansas and surrounding states",
+            description: "Small to medium white-yellow berries in small clusters; very good wine; medium vigor and cold hardy; berries very susceptible to botrytis"
+        },
+        {
+            type: "Raspberry",
+            name: "Heritage",
+            category: "Raspberry cultivars for Kansas and surrounding states",
+            description: "Vigorous, most widely planted red raspberry. Medium, firm, excellent quality fruit. Canes strong and upright; bear in the fall and spring"
+        },
+        {
+            type: "Raspberry",
+            name: "Latham",
+            category: "Raspberry cultivars for Kansas and surrounding states",
+            description: "Excellent cold hardy with a long bearing season, spring crop and medium yields. Mid-season berry, small to medium fruit, acceptable flavor"
+        },
+        {
+            type: "Raspberry",
+            name: "Reveille",
+            category: "Raspberry cultivars for Kansas and surrounding states",
+            description: "Medium to large, good flavored fruit. Vigorous, high-yielding plants"
+        },
+        {
+            type: "Raspberry",
+            name: "Titan",
+            category: "Raspberry cultivars for Kansas and surrounding states",
+            harvest_time_unparsed: "Very large, mild-flavored, early ripening berry.",
+            description: "Good cold hardy, high yield. Very large, mild-flavored, early ripening berry. Erect canes are nearly thornless"
+        },
+        {
+            type: "Raspberry",
+            name: "Black Allen",
+            category: "Raspberry cultivars for Kansas and surrounding states",
+            description: "Intermediate cold hardy, vigorous plant with attractive fruit. Fruit size comparable to Jewell. Not fully tested in Kansas. Source table breaks the name Black Allen across two layout lines"
+        },
+        {
+            type: "Raspberry",
+            name: "Bristol",
+            category: "Raspberry cultivars for Kansas and surrounding states",
+            harvest_time_unparsed: "Early ripening, medium, excellent quality fruit.",
+            description: "Excellent cold hardy, vigorous, most widely grown. High yield. Early ripening, medium, excellent quality fruit"
+        },
+        {
+            type: "Raspberry",
+            name: "Jewell",
+            category: "Raspberry cultivars for Kansas and surrounding states",
+            description: "Excellent cold hardy, large, glossy fruit. Very productive and vigorous plant"
+        },
+        {
+            type: "Raspberry",
+            name: "Fallgold",
+            category: "Raspberry cultivars for Kansas and surrounding states",
+            harvest_time_unparsed: "Ripens with Heritage in the fall",
+            description: "Moderate cold hardy. Soft, medium to large, sweet, flavorful, amber fruit. Primocane. Ripens with Heritage in the fall. Source table names this as Fall Gold"
+        },
+        {
+            type: "Raspberry",
+            name: "Goldie",
+            category: "Raspberry cultivars for Kansas and surrounding states",
+            description: "Fruiting and productivity similar to Heritage. Berries are medium, round, firm, deep yellow with pink blush. Prone to sun bleaching. Primocane. Multiple uses"
+        },
+        {
+            type: "Raspberry",
+            name: "Brandywine",
+            category: "Raspberry cultivars for Kansas and surrounding states",
+            description: "Good cold hardy, good quality, firm, round, tart, red fruit. Productive, vigorous plant that will not spread"
+        },
+        {
+            type: "Raspberry",
+            name: "Royalty",
+            category: "Raspberry cultivars for Kansas and surrounding states",
+            harvest_time_unparsed: "Good cold hardy, cone-shaped berry, very soft, sweeter than Brandywine, productive and vigorous plant, late ripening.",
+            description: "Good cold hardy, cone-shaped berry, very soft, sweeter than Brandywine, productive and vigorous plant, late ripening"
+        },
+    ]
+}

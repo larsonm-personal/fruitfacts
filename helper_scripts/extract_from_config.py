@@ -18,6 +18,7 @@ from fruitfacts_extract.pdf_table_tools import grouped_fixed_width_table_rows
 from fruitfacts_extract.pdf_table_tools import line_matches_any
 from fruitfacts_extract.pdf_table_tools import numbered_block_rows
 from fruitfacts_extract.pdf_table_tools import pdf_category_name_list_rows
+from fruitfacts_extract.pdf_table_tools import pdf_wrapped_name_list_rows
 from fruitfacts_extract.pdf_table_tools import pdf_bullet_list_rows
 from fruitfacts_extract.pdf_table_tools import pdf_quoted_entry_rows
 from fruitfacts_extract.record_tools import append_source_note
@@ -368,10 +369,29 @@ def combined_note(*notes):
     return ". ".join(note for note in notes if note)
 
 
-def normalized_source_name(source_name, overrides):
+def override_applies(target, row):
+    if not isinstance(target, dict):
+        return True
+    for key, value in target.get("when", {}).items():
+        if row.get(key) != value:
+            return False
+    return True
+
+
+def normalized_source_name(source_name, overrides, row):
     if source_name not in overrides:
         return source_name, None, {}
     target = overrides[source_name]
+    if isinstance(target, list) and all(isinstance(item, dict) for item in target):
+        target = next(
+            (item for item in target if override_applies(item, row)),
+            None,
+        )
+        if not target:
+            return source_name, None, {}
+    elif isinstance(target, dict) and not override_applies(target, row):
+        return source_name, None, {}
+
     if isinstance(target, dict):
         extra = {}
         if target.get("aka"):
@@ -393,7 +413,7 @@ def source_name_and_note(row, extractor, overrides):
             notes.append(suffix_note["note"])
     if extractor.get("strip_name_footnotes"):
         source_name = strip_trailing_note_markers(source_name)
-    name, source_note, extra_fields = normalized_source_name(source_name, overrides)
+    name, source_note, extra_fields = normalized_source_name(source_name, overrides, row)
     notes.append(source_note)
     notes.append(row.get("_source_note"))
     return name, combined_note(*notes), extra_fields
@@ -420,7 +440,30 @@ def plant_records_from_config_rows(rows, extractor, overrides, lookups):
         if record_description:
             record["description"] = record_description
         plants.append(record)
-    return plants
+    return merge_duplicate_plant_records(plants, extractor.get("merge_duplicate_plants"))
+
+
+def merge_duplicate_plant_records(plants, merge_spec):
+    if not merge_spec:
+        return plants
+    if merge_spec is True:
+        merge_spec = {}
+    keys = merge_spec.get("keys", ["type", "name"])
+    fields = merge_spec.get("fields", ["description"])
+    merged = []
+    seen = {}
+    for plant in plants:
+        signature = tuple(plant.get(key) for key in keys)
+        existing = seen.get(signature)
+        if not existing:
+            seen[signature] = plant
+            merged.append(plant)
+            continue
+        for field in fields:
+            value = plant.get(field)
+            if value and value not in (existing.get(field) or ""):
+                existing[field] = append_source_note(existing.get(field), value)
+    return merged
 
 
 def plants_from_html_table(page, extractor, overrides, lookups):
@@ -709,6 +752,25 @@ def plants_from_pdf_category_name_lists(text, extractor, overrides, lookups):
     )
 
 
+def plants_from_pdf_wrapped_name_lists(text, extractor, overrides, lookups):
+    extractor = {
+        "name_key": "name",
+        "category": {"row_key": "category"},
+        "plant_type": {"row_key": "plant_type"},
+        **extractor,
+    }
+    rows = pdf_wrapped_name_list_rows(text, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    return plant_records_from_config_rows(
+        rows,
+        extractor,
+        overrides,
+        lookups,
+    )
+
+
 def plants_from_pdf_catalog_entries(text, extractor, overrides, lookups):
     extractor = {
         "name_key": "name",
@@ -967,6 +1029,10 @@ def extract(config):
         elif extractor["kind"] == "pdf_category_name_lists":
             plants.extend(
                 plants_from_pdf_category_name_lists(data, extractor, overrides, lookups)
+            )
+        elif extractor["kind"] == "pdf_wrapped_name_lists":
+            plants.extend(
+                plants_from_pdf_wrapped_name_lists(data, extractor, overrides, lookups)
             )
         elif extractor["kind"] == "pdf_catalog_entries":
             plants.extend(

@@ -1,0 +1,157 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://bookstore.ksre.ksu.edu/download/small-and-tree-fruit-cultivars_MF1028",
+    "layout": true,
+    "layout_text": true
+  },
+  "reference_fields": [
+    ["title", "Small- and Tree-Fruit Cultivars"],
+    ["author", "Ward Upham"],
+    ["description", "Kansas State University cultivar guide for fruit crops in Kansas and surrounding states; this draft covers selected small-fruit table columns that can be reproduced safely from layout-mode PDF text"],
+    ["url", "https://bookstore.ksre.ksu.edu/item/small-and-tree-fruit-cultivars_MF1028"],
+    ["thumbnail", "pdf"],
+    ["published", "April 2013"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Kansas State University, Manhattan, Kansas",
+      "latitude": 39.1974,
+      "longitude": -96.5847
+    }
+  ],
+  "categories": [
+    {
+      "name": "Grape cultivars for Kansas and surrounding states",
+      "description": "K-State Research and Extension MF1028 lists these grape cultivars among small-fruit cultivars tested in Kansas or surrounding states"
+    },
+    {
+      "name": "Raspberry cultivars for Kansas and surrounding states",
+      "description": "K-State Research and Extension MF1028 lists these raspberry cultivars among small-fruit cultivars tested in Kansas or surrounding states"
+    }
+  ],
+  "name_overrides": {
+    "Vidal blanc": {
+      "name": "Vidal Blanc"
+    },
+    "Baco noir": {
+      "name": "Baco Noir",
+      "note": "Source table names this as Baco noir"
+    },
+    "Fall Gold": {
+      "name": "Fallgold",
+      "note": "Source table names this as Fall Gold"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Blackberries                                                   Grapes",
+      "section_end": "For more information see K-State Research and Extension",
+      "line_slice_start": 62,
+      "default_category": "Grape cultivars for Kansas and surrounding states",
+      "default_plant_type": "Grape",
+      "skip_line_patterns": [
+        "^Grapes$",
+        "^American varieties",
+        "^French-American hybrids",
+        "^Variety",
+        "^Publication"
+      ],
+      "entry_names": [
+        "Seyval Blanc",
+        "Vidal blanc",
+        "Chancellor",
+        "Cynthiana",
+        "Reliance",
+        "Baco noir",
+        "Catawba",
+        "Concord",
+        "Fredonia",
+        "Niagara",
+        "Steuben",
+        "Vignoles",
+        "Aurore",
+        "Beta",
+        "Foch",
+        "Mars",
+        "Venus"
+      ],
+      "row_text_fixes": {
+        "fruit.Vigorous": "fruit. Vigorous",
+        "prob- lem": "problem",
+        "moder- ate": "moderate",
+        "ripen- ing": "ripening",
+        "Me- dium": "Medium",
+        "pro- ductive": "productive",
+        "vigor- ous": "vigorous",
+        "sus- ceptible": "susceptible"
+      },
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripens", "ripening"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Raspberries                                                       Apples",
+      "section_end": "Strawberries",
+      "line_slice_end": 61,
+      "default_category": "Raspberry cultivars for Kansas and surrounding states",
+      "default_plant_type": "Raspberry",
+      "skip_line_patterns": [
+        "^Raspberries$",
+        "^Red,",
+        "^Black$",
+        "^Yellow$",
+        "^Purple$"
+      ],
+      "entry_names": [
+        "Brandywine",
+        "Fall Gold",
+        "Heritage",
+        "Reveille",
+        "Bristol",
+        "Latham",
+        "Royalty",
+        "Goldie",
+        "Jewell",
+        "Allen",
+        "Titan"
+      ],
+      "row_overrides": {
+        "Allen": {
+          "name": "Black Allen",
+          "description": "Intermediate cold hardy, vigorous plant with attractive fruit. Fruit size comparable to Jewell. Not fully tested in Kansas",
+          "_source_note": "Source table breaks the name Black Allen across two layout lines"
+        },
+        "Fall Gold": {
+          "description": "Moderate cold hardy. Soft, medium to large, sweet, flavorful, amber fruit. Primocane. Ripens with Heritage in the fall"
+        },
+        "Brandywine": {
+          "description": "Good cold hardy, good quality, firm, round, tart, red fruit. Productive, vigorous plant that will not spread"
+        }
+      },
+      "continuation_skip_patterns": [
+        "^Black ",
+        "^Yellow ",
+        "^Purple "
+      ],
+      "row_text_fixes": {
+        "red rasp- berry": "red raspberry",
+        "Pri- mocane": "Primocane",
+        "Heri- tage": "Heritage",
+        "flavor- ful": "flavorful",
+        "ripen- ing": "ripening",
+        "pro- ductive": "productive",
+        "vigor- ous": "vigorous",
+        "compara- ble": "comparable"
+      },
+      "harvest_from_key": "description",
+      "harvest_terms": ["Ripens", "ripening"],
+      "description_key": "description"
+    }
+  ]
+}

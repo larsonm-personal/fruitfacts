@@ -644,77 +644,77 @@
             description: "An introduction from the New York State Agricultural Experiment Station, Surefire blooms in late spring and tolerates frost. The fruit is bright red, juicy, and larger than Montmorency. Open growth habit of the trees make harvest much easier than most cultivars. Fruit ripens in late July"
         },
         {
-            type: "Plum",
+            type: "Euro Plum",
             name: "Mount Royal",
             category: "European plum cultivars for southern Wisconsin",
             harvest_time_unparsed: "Fruit ripens in late August.",
             description: "This small- to medium-sized, round, attractive fruit is a very good, winter-hardy blue plum for southern Wisconsin. A heavy producer, Mount Royal is a clingstone type, good for fresh use, canning, drying, and freezing. Fruit ripens in late August"
         },
         {
-            type: "Plum",
+            type: "Euro Plum",
             name: "Stanley",
             category: "European plum cultivars for southern Wisconsin",
             harvest_time_unparsed: "Fruit ripens in early September.",
             description: "A late-blooming, heavy annual producer with a good growth habit, yields are heavier if planted alongside Mount Royal. Stanley produces attractive, blue, ovalshaped fruit with sweet yellow flesh. This freestone variety is excellent for fresh use, preserves, processing, and drying. It is moderately winter-hardy. Fruit ripens in early September"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "Alderman",
             category: "American hybrid plum cultivars for southern Wisconsin",
             harvest_time_unparsed: "Fruit ripens the third week of August.",
             description: "This introduction from the University of Minnesota (1986) has very large, burgundy-red fruit. Clingstone type with soft flesh and sweet, slightly astringent flavor, Alderman has excellent quality for fresh use and preserves. Fruit ripens the third week of August"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "Lydecker",
             category: "American hybrid plum cultivars for southern Wisconsin",
             harvest_time_unparsed: "Fruit ripens in late July to early August.",
             description: "A University of Wisconsin-River Falls release in 2006. The large California-style dessert plum has dark-blue skin and red meaty flesh, with a rich and sweet, appetizing taste. Semi-freestone. High yield requires heavy, annual pruning and prompt thinning to avoid damage to branches. Susceptible to European brown rot twig blight. Fruit ripens in late July to early August. Source table names this as Black Ice TM"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "La Crescent",
             category: "American hybrid plum cultivars for southern Wisconsin",
             harvest_time_unparsed: "Fruit ripens in early August.",
             description: "A Minnesota cultivar with small- to medium-sized fruit that can present a light blue blush. The flesh is yellow, sweet, juicy, and of high quality. Freestone type. Fruit ripens in early August"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "Pipestone",
             category: "American hybrid plum cultivars for southern Wisconsin",
             harvest_time_unparsed: "Fruit ripens around mid-August.",
             description: "Medium-large, red-skinned fruit with yellow, sweet, clingstone-type flesh. Released by the University of Minnesota in 1942, trees are very winter-hardy, productive, and grow well in dry climates. Fruit ripens around mid-August"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "Superior",
             category: "American hybrid plum cultivars for southern Wisconsin",
             harvest_time_unparsed: "Fruit ripens in late August.",
             description: "Excellent quality, clingstone-type, bears large red fruit with sweet yellow flesh best eaten fresh or for preserves and baking. Another University of Minnesota release (1933), trees are hardy to -30 F with a somewhat weeping growth habit. Unless hand-thinned, trees tend to over-produce, resulting in small fruit. Fruit ripens in late August"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "Underwood",
             category: "American hybrid plum cultivars for southern Wisconsin",
             harvest_time_unparsed: "Fruit ripens in early August, extending over a long season.",
             description: "Released by the University of Minnesota in 1920-21, Underwood bears round to heartshaped, medium-sized fruit. This clingstone-type plum has red skin and tender yellow flesh. The trees are very winter-hardy. Fruit ripens in early August, extending over a long season"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "Waneta",
             category: "American hybrid plum cultivars for southern Wisconsin",
             harvest_time_unparsed: "Fruit ripens in mid-August.",
             description: "Introduced by the South Dakota Experiment Station in the mid-1900s, this clingstone-type over-produces, benefitting from thinning to produce medium-sized fruit with yellow skin, blushed red. The flesh is deep yellow and juicy. Trees are very winter-hardy and bear fruit annually. Fruit ripens in mid-August"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "Kaga",
             category: "American hybrid plum pollinizers for southern Wisconsin",
             harvest_time_unparsed: "Fruit ripens in early August.",
             description: "Bright red fruit are small- to medium-sized. Clingstone flesh is firm, meaty, and characterized by a strong but pleasing flavor. Good for fresh use and cooking. Trees are small, winter-hardy, and productive. Fruit ripens in early August"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "Toka",
             category: "American hybrid plum pollinizers for southern Wisconsin",
             harvest_time_unparsed: "Fruit ripens in mid-August.",

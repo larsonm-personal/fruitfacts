@@ -1,0 +1,536 @@
+{
+    title: "The Louisiana Home Orchard: Deciduous Tree Fruits",
+    author: "Mary Helen Ferguson and Michael Polozola",
+    description: "LSU AgCenter guide to deciduous tree fruits for Louisiana home orchards",
+    url: "https://www.lsuagcenter.com/articles/page1753363828432",
+    thumbnail: "pdf",
+    published: "July 2025",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "LSU AgCenter, Baton Rouge, Louisiana",
+            latitude: 30.4073,
+            longitude: -91.174
+        },
+    ],
+    categories: [
+        {
+            name: "Apple varieties for north Louisiana",
+            description: "LSU AgCenter lists these apple varieties for north Louisiana home orchards"
+        },
+        {
+            name: "Apple varieties for south Louisiana",
+            description: "LSU AgCenter lists these apple varieties for south Louisiana home orchards"
+        },
+        {
+            name: "Common fig varieties for Louisiana",
+            description: "LSU AgCenter lists these common fig varieties for Louisiana home orchards"
+        },
+        {
+            name: "Nectarine varieties for north Louisiana",
+            description: "LSU AgCenter lists this nectarine variety for north Louisiana home orchards"
+        },
+        {
+            name: "Peach varieties for north Louisiana",
+            description: "LSU AgCenter lists these peach varieties for north Louisiana, north of Alexandria"
+        },
+        {
+            name: "Peach varieties for mid-Louisiana",
+            description: "LSU AgCenter lists these peach varieties for latitudes between Alexandria and Baton Rouge"
+        },
+        {
+            name: "Peach varieties for coastal Louisiana",
+            description: "LSU AgCenter lists these peach varieties for latitudes south of Baton Rouge"
+        },
+        {
+            name: "Pear varieties for north Louisiana",
+            description: "LSU AgCenter lists these pear varieties for north Louisiana home orchards"
+        },
+        {
+            name: "Pear varieties for north and south Louisiana",
+            description: "LSU AgCenter lists these pear varieties for both north and south Louisiana home orchards"
+        },
+        {
+            name: "Pear varieties for south Louisiana",
+            description: "LSU AgCenter lists these pear varieties for south Louisiana home orchards"
+        },
+        {
+            name: "Oriental persimmon varieties for Louisiana",
+            description: "LSU AgCenter lists these Oriental persimmon varieties for Louisiana home orchards"
+        },
+        {
+            name: "Plum varieties for north Louisiana",
+            description: "LSU AgCenter lists these plum varieties for north Louisiana home orchards"
+        },
+        {
+            name: "Plum varieties for north and south Louisiana",
+            description: "LSU AgCenter lists these plum varieties for both north and south Louisiana home orchards"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Apple varieties for north Louisiana",
+            description: "LSU AgCenter lists Gala in its apple varieties for north louisiana table"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "Apple varieties for north Louisiana",
+            description: "LSU AgCenter lists Golden Delicious in its apple varieties for north louisiana table"
+        },
+        {
+            type: "Apple",
+            name: "Granny Smith",
+            category: "Apple varieties for north Louisiana",
+            description: "LSU AgCenter lists Granny Smith in its apple varieties for north louisiana table"
+        },
+        {
+            type: "Apple",
+            name: "Mollie's Delicious",
+            category: "Apple varieties for north Louisiana",
+            description: "LSU AgCenter lists Mollie's Delicious in its apple varieties for north louisiana table. LSU AgCenter lists Mollie's Delicious in its apple varieties for south louisiana table"
+        },
+        {
+            type: "Apple",
+            name: "Ozark Gold",
+            category: "Apple varieties for north Louisiana",
+            description: "LSU AgCenter lists Ozark Gold in its apple varieties for north louisiana table"
+        },
+        {
+            type: "Apple",
+            name: "Red Delicious",
+            category: "Apple varieties for north Louisiana",
+            description: "LSU AgCenter lists Red Delicious in its apple varieties for north louisiana table"
+        },
+        {
+            type: "Apple",
+            name: "Stayman",
+            category: "Apple varieties for north Louisiana",
+            description: "LSU AgCenter lists Stayman in its apple varieties for north louisiana table"
+        },
+        {
+            type: "Apple",
+            name: "Anna",
+            category: "Apple varieties for south Louisiana",
+            description: "LSU AgCenter lists Anna in its apple varieties for south louisiana table"
+        },
+        {
+            type: "Apple",
+            name: "Dorsett Golden",
+            category: "Apple varieties for south Louisiana",
+            description: "LSU AgCenter lists Dorsett Golden in its apple varieties for south louisiana table"
+        },
+        {
+            type: "Apple",
+            name: "Ein Shemer",
+            category: "Apple varieties for south Louisiana",
+            description: "LSU AgCenter lists Ein Shemer in its apple varieties for south louisiana table"
+        },
+        {
+            type: "Apple",
+            name: "TropicSweet",
+            category: "Apple varieties for south Louisiana",
+            description: "LSU AgCenter lists TropicSweet in its apple varieties for south louisiana table"
+        },
+        {
+            type: "Fig",
+            name: "Alma",
+            category: "Common fig varieties for Louisiana",
+            description: "LSU AgCenter lists Alma in its common fig varieties for louisiana table"
+        },
+        {
+            type: "Fig",
+            name: "Celeste",
+            category: "Common fig varieties for Louisiana",
+            description: "LSU AgCenter lists Celeste in its common fig varieties for louisiana table"
+        },
+        {
+            type: "Fig",
+            name: "Champagne",
+            category: "Common fig varieties for Louisiana",
+            description: "LSU AgCenter lists Champagne (Golden Celeste) in its common fig varieties for louisiana table. Source names this as Champagne (Golden Celeste)"
+        },
+        {
+            type: "Fig",
+            name: "Hardy Chicago",
+            category: "Common fig varieties for Louisiana",
+            description: "LSU AgCenter lists Hardy Chicago in its common fig varieties for louisiana table"
+        },
+        {
+            type: "Fig",
+            name: "Kadota",
+            category: "Common fig varieties for Louisiana",
+            description: "LSU AgCenter lists Kadota in its common fig varieties for louisiana table"
+        },
+        {
+            type: "Fig",
+            name: "LSU Purple",
+            category: "Common fig varieties for Louisiana",
+            description: "LSU AgCenter lists LSU Purple in its common fig varieties for louisiana table"
+        },
+        {
+            type: "Fig",
+            name: "LSU Gold",
+            category: "Common fig varieties for Louisiana",
+            description: "LSU AgCenter lists LSU Gold in its common fig varieties for louisiana table"
+        },
+        {
+            type: "Fig",
+            name: "O'Rourke",
+            category: "Common fig varieties for Louisiana",
+            description: "LSU AgCenter lists O'Rourke (Improved Celeste) in its common fig varieties for louisiana table. Source names this as O'Rourke (Improved Celeste)"
+        },
+        {
+            type: "Fig",
+            name: "Scott's Black",
+            category: "Common fig varieties for Louisiana",
+            description: "LSU AgCenter lists Scott's Black in its common fig varieties for louisiana table"
+        },
+        {
+            type: "Fig",
+            name: "Southeastern Brown Turkey",
+            category: "Common fig varieties for Louisiana",
+            description: "LSU AgCenter lists Southeastern Brown Turkey (Texas Everbearing) in its common fig varieties for louisiana table. Source names this as Southeastern Brown Turkey (Texas Everbearing)"
+        },
+        {
+            type: "Fig",
+            name: "Tiger",
+            category: "Common fig varieties for Louisiana",
+            description: "LSU AgCenter lists Tiger (Giant Celeste) in its common fig varieties for louisiana table. Source names this as Tiger (Giant Celeste)"
+        },
+        {
+            type: "Nectarine",
+            name: "Karla Rose",
+            category: "Nectarine varieties for north Louisiana",
+            description: "LSU AgCenter lists Karla Rose in its nectarine varieties for north louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Surecrop",
+            category: "Peach varieties for north Louisiana",
+            description: "LSU AgCenter lists Surecrop in its peach varieties for north louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Ruston Red",
+            category: "Peach varieties for north Louisiana",
+            description: "LSU AgCenter lists Ruston Red in its peach varieties for north louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Flameprince",
+            category: "Peach varieties for north Louisiana",
+            description: "LSU AgCenter lists Flameprince in its peach varieties for north louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Red Globe",
+            category: "Peach varieties for north Louisiana",
+            description: "LSU AgCenter lists Redglobe in its peach varieties for north louisiana table. Source names this as Redglobe"
+        },
+        {
+            type: "Peach",
+            name: "Majestic",
+            category: "Peach varieties for north Louisiana",
+            description: "LSU AgCenter lists Majestic in its peach varieties for north louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Ouachita Gold",
+            category: "Peach varieties for north Louisiana",
+            description: "LSU AgCenter lists Ouachita Gold in its peach varieties for north louisiana table. LSU AgCenter lists Ouachita Gold in its peach varieties for mid-louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Dixiland",
+            category: "Peach varieties for north Louisiana",
+            description: "LSU AgCenter lists Dixiland in its peach varieties for north louisiana table. LSU AgCenter lists Dixiland in its peach varieties for mid-louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Harvester",
+            category: "Peach varieties for north Louisiana",
+            description: "LSU AgCenter lists Harvester in its peach varieties for north louisiana table. LSU AgCenter lists Harvester in its peach varieties for mid-louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Regal",
+            category: "Peach varieties for north Louisiana",
+            description: "LSU AgCenter lists Regal in its peach varieties for north louisiana table. LSU AgCenter lists Regal in its peach varieties for mid-louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "GaLa",
+            category: "Peach varieties for north Louisiana",
+            description: "LSU AgCenter lists Gala in its peach varieties for north louisiana table. Source names this peach as Gala. LSU AgCenter lists Gala in its peach varieties for mid-louisiana table. Source names this peach as Gala"
+        },
+        {
+            type: "Peach",
+            name: "Goldprince",
+            category: "Peach varieties for north Louisiana",
+            description: "LSU AgCenter lists Goldprince in its peach varieties for north louisiana table. LSU AgCenter lists Goldprince in its peach varieties for mid-louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Springprince",
+            category: "Peach varieties for north Louisiana",
+            description: "LSU AgCenter lists Springprince in its peach varieties for north louisiana table. LSU AgCenter lists Springprince in its peach varieties for mid-louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Juneprince",
+            category: "Peach varieties for north Louisiana",
+            description: "LSU AgCenter lists Juneprince in its peach varieties for north louisiana table. LSU AgCenter lists Juneprince in its peach varieties for mid-louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "La Rouge",
+            category: "Peach varieties for mid-Louisiana",
+            description: "LSU AgCenter lists La Rouge in its peach varieties for mid-louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "La Belle",
+            category: "Peach varieties for mid-Louisiana",
+            description: "LSU AgCenter lists La Belle in its peach varieties for mid-louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "La Feliciana",
+            category: "Peach varieties for mid-Louisiana",
+            description: "LSU AgCenter lists La Feliciana in its peach varieties for mid-louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Delta",
+            category: "Peach varieties for mid-Louisiana",
+            description: "LSU AgCenter lists Delta in its peach varieties for mid-louisiana table. LSU AgCenter lists Delta in its peach varieties for coastal louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Sam Houston",
+            category: "Peach varieties for mid-Louisiana",
+            description: "LSU AgCenter lists Sam Houston in its peach varieties for mid-louisiana table. LSU AgCenter lists Sam Houston in its peach varieties for coastal louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Texstar",
+            category: "Peach varieties for mid-Louisiana",
+            description: "LSU AgCenter lists Texstar in its peach varieties for mid-louisiana table. LSU AgCenter lists Texstar in its peach varieties for coastal louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "La Festival",
+            category: "Peach varieties for mid-Louisiana",
+            description: "LSU AgCenter lists La Festival in its peach varieties for mid-louisiana table. LSU AgCenter lists La Festival in its peach varieties for coastal louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "La Pecher",
+            category: "Peach varieties for mid-Louisiana",
+            description: "LSU AgCenter lists La Pecher in its peach varieties for mid-louisiana table. LSU AgCenter lists La Pecher in its peach varieties for coastal louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Gulfcrest",
+            category: "Peach varieties for coastal Louisiana",
+            description: "LSU AgCenter lists Gulfcrest in its peach varieties for coastal louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Rio Grande",
+            category: "Peach varieties for coastal Louisiana",
+            description: "LSU AgCenter lists Rio Grande in its peach varieties for coastal louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Flordaking",
+            category: "Peach varieties for coastal Louisiana",
+            description: "LSU AgCenter lists Flordaking in its peach varieties for coastal louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Gulfking",
+            category: "Peach varieties for coastal Louisiana",
+            description: "LSU AgCenter lists Gulfking in its peach varieties for coastal louisiana table"
+        },
+        {
+            type: "Peach",
+            name: "Earligrande",
+            category: "Peach varieties for coastal Louisiana",
+            description: "LSU AgCenter lists EarliGrande in its peach varieties for coastal louisiana table. Source names this as EarliGrande"
+        },
+        {
+            type: "Peach",
+            name: "Flordaprince",
+            category: "Peach varieties for coastal Louisiana",
+            description: "LSU AgCenter lists Flordaprince in its peach varieties for coastal louisiana table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Ayers",
+            category: "Pear varieties for north Louisiana",
+            description: "LSU AgCenter lists Ayers in its pear varieties for north louisiana table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Maxine",
+            category: "Pear varieties for north Louisiana",
+            description: "LSU AgCenter lists Maxine in its pear varieties for north louisiana table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Moonglow",
+            category: "Pear varieties for north Louisiana",
+            description: "LSU AgCenter lists Moonglow in its pear varieties for north louisiana table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Kieffer",
+            category: "Pear varieties for north and south Louisiana",
+            description: "LSU AgCenter lists Kieffer in its pear varieties for north and south louisiana table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Orient",
+            category: "Pear varieties for north and south Louisiana",
+            description: "LSU AgCenter lists Orient in its pear varieties for north and south louisiana table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Spalding",
+            category: "Pear varieties for north and south Louisiana",
+            description: "LSU AgCenter lists Spalding in its pear varieties for north and south louisiana table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Baldwin",
+            category: "Pear varieties for south Louisiana",
+            description: "LSU AgCenter lists Baldwin in its pear varieties for south louisiana table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Flordahome",
+            category: "Pear varieties for south Louisiana",
+            description: "LSU AgCenter lists Flordahome in its pear varieties for south louisiana table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Pineapple",
+            category: "Pear varieties for south Louisiana",
+            description: "LSU AgCenter lists Pineapple in its pear varieties for south louisiana table"
+        },
+        {
+            type: "Persimmon",
+            name: "Eureka",
+            category: "Oriental persimmon varieties for Louisiana",
+            description: "LSU AgCenter lists Eureka in its oriental persimmon varieties for louisiana table"
+        },
+        {
+            type: "Persimmon",
+            name: "Fuyu",
+            category: "Oriental persimmon varieties for Louisiana",
+            description: "LSU AgCenter lists Fuyu in its oriental persimmon varieties for louisiana table"
+        },
+        {
+            type: "Persimmon",
+            name: "Fuyu (Imoto)",
+            category: "Oriental persimmon varieties for Louisiana",
+            description: "LSU AgCenter lists Fuyu Imoto in its oriental persimmon varieties for louisiana table. Source names this as Fuyu Imoto"
+        },
+        {
+            type: "Persimmon",
+            name: "Hachiya",
+            category: "Oriental persimmon varieties for Louisiana",
+            description: "LSU AgCenter lists Hachiya in its oriental persimmon varieties for louisiana table"
+        },
+        {
+            type: "Persimmon",
+            name: "Hana Fuyu",
+            category: "Oriental persimmon varieties for Louisiana",
+            description: "LSU AgCenter lists Hana Fuyu in its oriental persimmon varieties for louisiana table"
+        },
+        {
+            type: "Persimmon",
+            name: "Ichikikei Jiro",
+            category: "Oriental persimmon varieties for Louisiana",
+            description: "LSU AgCenter lists Ichikikei Jiro in its oriental persimmon varieties for louisiana table"
+        },
+        {
+            type: "Persimmon",
+            name: "Jiro",
+            category: "Oriental persimmon varieties for Louisiana",
+            description: "LSU AgCenter lists Jiro in its oriental persimmon varieties for louisiana table"
+        },
+        {
+            type: "Persimmon",
+            name: "Saijo",
+            category: "Oriental persimmon varieties for Louisiana",
+            description: "LSU AgCenter lists Saijo in its oriental persimmon varieties for louisiana table"
+        },
+        {
+            type: "Persimmon",
+            name: "Suruga",
+            category: "Oriental persimmon varieties for Louisiana",
+            description: "LSU AgCenter lists Suruga in its oriental persimmon varieties for louisiana table"
+        },
+        {
+            type: "Persimmon",
+            name: "Tanenashi",
+            category: "Oriental persimmon varieties for Louisiana",
+            description: "LSU AgCenter lists Tanenashi in its oriental persimmon varieties for louisiana table"
+        },
+        {
+            type: "Japanese Plum",
+            name: "AU-Rubrum",
+            category: "Plum varieties for north Louisiana",
+            description: "LSU AgCenter lists AU Rubrum in its plum varieties for north louisiana table. Source names this as AU Rubrum"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Explorer",
+            category: "Plum varieties for north Louisiana",
+            description: "LSU AgCenter lists Explorer in its plum varieties for north louisiana table"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Morris",
+            category: "Plum varieties for north Louisiana",
+            description: "LSU AgCenter lists Morris in its plum varieties for north louisiana table"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ozark Premier",
+            category: "Plum varieties for north Louisiana",
+            description: "LSU AgCenter lists Ozark Premier in its plum varieties for north louisiana table"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Shirley",
+            category: "Plum varieties for north Louisiana",
+            description: "LSU AgCenter lists Shirley in its plum varieties for north louisiana table"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Bruce",
+            category: "Plum varieties for north and south Louisiana",
+            description: "LSU AgCenter lists Bruce in its plum varieties for north and south louisiana table"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Byrongold",
+            category: "Plum varieties for north and south Louisiana",
+            description: "LSU AgCenter lists Byrongold in its plum varieties for north and south louisiana table"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Methley",
+            category: "Plum varieties for north and south Louisiana",
+            description: "LSU AgCenter lists Methley in its plum varieties for north and south louisiana table"
+        },
+    ]
+}

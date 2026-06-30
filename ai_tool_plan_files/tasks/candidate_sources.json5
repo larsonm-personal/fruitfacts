@@ -6,7 +6,7 @@
     candidates: [
         {
             id: "ksre-small-and-tree-fruit-cultivars-mf1028",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Small- and Tree-Fruit Cultivars",
             institution: "Kansas State University Extension",
@@ -35,11 +35,16 @@
                 "Cultivar tables for small fruits and tree fruits adapted to Kansas",
             asset_decision: "download and stub",
             proposed_reference_path:
-                "plant_database/references/Kansas/KSRE Small- and Tree-Fruit Cultivars.json5",
+                "plant_database/references/Kansas/KSRE MF1028 Small- and Tree-Fruit Cultivars.json5",
             duplicate_check:
                 "No Kansas-specific extension cultivar guide found in existing references",
             notes: [
-                "Landing page and download endpoint both returned 200"
+                "Landing page and download endpoint both returned 200",
+                "Encoded in plant_database/references/Kansas/KSRE MF1028 Small- and Tree-Fruit Cultivars.json5",
+                "Config extraction added at helper_scripts/extraction_configs/ksre_mf1028_small_tree_fruit_cultivars.json",
+                "Manifest entry added as ksre_mf1028_small_tree_fruit_cultivars",
+                "Worked example for layout-mode sliced PDF catalog entries from selected small-fruit columns",
+                "Current draft covers reproducible grape and raspberry table columns; stacked blackberry, blueberry, tree-fruit, and strawberry table areas remain review caveats"
             ]
         },
         {
@@ -288,7 +293,7 @@
         },
         {
             id: "lsu-louisiana-home-orchard-deciduous-tree-fruits",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "The Louisiana Home Orchard: Deciduous Tree Fruits",
             institution: "LSU AgCenter",
@@ -316,7 +321,12 @@
             duplicate_check:
                 "Existing Louisiana reference is an LSU release list, not this home orchard guide",
             notes: [
-                "Landing page and PDF returned 200"
+                "Landing page and PDF returned 200",
+                "Encoded in plant_database/references/Louisiana/LSU The Louisiana Home Orchard Deciduous Tree Fruits.json5",
+                "Config extraction added at helper_scripts/extraction_configs/lsu_louisiana_home_orchard_deciduous_tree_fruits.json",
+                "Manifest entry added as lsu_louisiana_home_orchard_deciduous_tree_fruits",
+                "Worked example for raw PDF wrapped name-list tables with spacing columns and notes mixed into the cultivar stream",
+                "Current draft covers the variety and spacing recommendation table for plant types already represented in the database; mayhaw remains unencoded because there is no Mayhaw plant type"
             ]
         },
         {

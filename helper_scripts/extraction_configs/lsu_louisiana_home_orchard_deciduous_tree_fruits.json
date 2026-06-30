@@ -1,0 +1,233 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://www.lsuagcenter.com/~/media/system/4/8/f/9/48f9c697389440401d293f1ca9028600/the%20louisiana%20home%20orchard%20deciduous%20tree%20fruitspdf.pdf",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "The Louisiana Home Orchard: Deciduous Tree Fruits"],
+    ["author", "Mary Helen Ferguson and Michael Polozola"],
+    ["description", "LSU AgCenter guide to deciduous tree fruits for Louisiana home orchards"],
+    ["url", "https://www.lsuagcenter.com/articles/page1753363828432"],
+    ["thumbnail", "pdf"],
+    ["published", "July 2025"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "LSU AgCenter, Baton Rouge, Louisiana",
+      "latitude": 30.4073,
+      "longitude": -91.174
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple varieties for north Louisiana",
+      "description": "LSU AgCenter lists these apple varieties for north Louisiana home orchards"
+    },
+    {
+      "name": "Apple varieties for south Louisiana",
+      "description": "LSU AgCenter lists these apple varieties for south Louisiana home orchards"
+    },
+    {
+      "name": "Common fig varieties for Louisiana",
+      "description": "LSU AgCenter lists these common fig varieties for Louisiana home orchards"
+    },
+    {
+      "name": "Nectarine varieties for north Louisiana",
+      "description": "LSU AgCenter lists this nectarine variety for north Louisiana home orchards"
+    },
+    {
+      "name": "Peach varieties for north Louisiana",
+      "description": "LSU AgCenter lists these peach varieties for north Louisiana, north of Alexandria"
+    },
+    {
+      "name": "Peach varieties for mid-Louisiana",
+      "description": "LSU AgCenter lists these peach varieties for latitudes between Alexandria and Baton Rouge"
+    },
+    {
+      "name": "Peach varieties for coastal Louisiana",
+      "description": "LSU AgCenter lists these peach varieties for latitudes south of Baton Rouge"
+    },
+    {
+      "name": "Pear varieties for north Louisiana",
+      "description": "LSU AgCenter lists these pear varieties for north Louisiana home orchards"
+    },
+    {
+      "name": "Pear varieties for north and south Louisiana",
+      "description": "LSU AgCenter lists these pear varieties for both north and south Louisiana home orchards"
+    },
+    {
+      "name": "Pear varieties for south Louisiana",
+      "description": "LSU AgCenter lists these pear varieties for south Louisiana home orchards"
+    },
+    {
+      "name": "Oriental persimmon varieties for Louisiana",
+      "description": "LSU AgCenter lists these Oriental persimmon varieties for Louisiana home orchards"
+    },
+    {
+      "name": "Plum varieties for north Louisiana",
+      "description": "LSU AgCenter lists these plum varieties for north Louisiana home orchards"
+    },
+    {
+      "name": "Plum varieties for north and south Louisiana",
+      "description": "LSU AgCenter lists these plum varieties for both north and south Louisiana home orchards"
+    }
+  ],
+  "name_overrides": {
+    "Champagne (Golden Celeste)": {
+      "name": "Champagne",
+      "note": "Source names this as Champagne (Golden Celeste)"
+    },
+    "Gala": {
+      "name": "GaLa",
+      "note": "Source names this peach as Gala",
+      "when": {
+        "plant_type": "Peach"
+      }
+    },
+    "EarliGrande": {
+      "name": "Earligrande",
+      "note": "Source names this as EarliGrande"
+    },
+    "Fuyu Imoto": {
+      "name": "Fuyu (Imoto)",
+      "note": "Source names this as Fuyu Imoto"
+    },
+    "O'Rourke (Improved Celeste)": {
+      "name": "O'Rourke",
+      "note": "Source names this as O'Rourke (Improved Celeste)"
+    },
+    "Redglobe": {
+      "name": "Red Globe",
+      "note": "Source names this as Redglobe"
+    },
+    "Southeastern Brown Turkey (Texas Everbearing)": {
+      "name": "Southeastern Brown Turkey",
+      "note": "Source names this as Southeastern Brown Turkey (Texas Everbearing)"
+    },
+    "Tiger (Giant Celeste)": {
+      "name": "Tiger",
+      "note": "Source names this as Tiger (Giant Celeste)"
+    },
+    "AU Rubrum": {
+      "name": "AU-Rubrum",
+      "note": "Source names this as AU Rubrum"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_wrapped_name_lists",
+      "merge_duplicate_plants": true,
+      "section_start": "Table 1. Variety and Spacing Recommendations.",
+      "section_end": "Starting with Quality Plant Material",
+      "skip_line_patterns": [
+        "^Table 1\\.",
+        "^Fruit$",
+        "^Varieties$",
+        "^Within-Row",
+        "^Notes$",
+        "^\\d",
+        "^Trees on rootstocks",
+        "^TropicSweet is suggested",
+        "^Alma may",
+        "^Jujube Mayhaw$",
+        "^Many available$",
+        "^Double G,",
+        "^Mulberry$",
+        "^Boysenberry,",
+        "^Pawpaw$",
+        "^Louisiana seedlings",
+        "^May not",
+        "^Peach variety suitability",
+        "^See above",
+        "^Flordahome and Pineapple",
+        "^Methley is self-fruitful",
+        "^1 Distances",
+        "^2 The latitude"
+      ],
+      "name_list_text_fixes": {
+        "See above row. ": "",
+        "Champagne (Golden 15-20 Celeste)": "Champagne (Golden Celeste)",
+        "between Alexandria and Baton Harvester": "Harvester",
+        "Rouge)": "",
+        "Sam Houston, 20 Texstar": "Sam Houston, Texstar",
+        "Morris, 20 Ozark Premier": "Morris, Ozark Premier",
+        "Methley 20": "Methley",
+        "Ichikikei- Jiro": "Ichikikei Jiro"
+      },
+      "category_rules": [
+        {
+          "text": "Apple north",
+          "category": "Apple varieties for north Louisiana",
+          "plant_type": "Apple"
+        },
+        {
+          "prefix": "Apple south",
+          "parse_remainder": true,
+          "category": "Apple varieties for south Louisiana",
+          "plant_type": "Apple"
+        },
+        {
+          "text": "Fig (Common)",
+          "category": "Common fig varieties for Louisiana",
+          "plant_type": "Fig"
+        },
+        {
+          "text": "Nectarine north",
+          "category": "Nectarine varieties for north Louisiana",
+          "plant_type": "Nectarine"
+        },
+        {
+          "text": "Peach north (north of Alexandria)",
+          "category": "Peach varieties for north Louisiana",
+          "plant_type": "Peach"
+        },
+        {
+          "text": "Peach mid (latitudes",
+          "category": "Peach varieties for mid-Louisiana",
+          "plant_type": "Peach"
+        },
+        {
+          "text": "Peach coastal (latitudes south of Baton Rouge)",
+          "category": "Peach varieties for coastal Louisiana",
+          "plant_type": "Peach"
+        },
+        {
+          "text": "Pear north",
+          "category": "Pear varieties for north Louisiana",
+          "plant_type": "Euro Pear"
+        },
+        {
+          "text": "Pear north and south",
+          "category": "Pear varieties for north and south Louisiana",
+          "plant_type": "Euro Pear"
+        },
+        {
+          "text": "Pear south",
+          "category": "Pear varieties for south Louisiana",
+          "plant_type": "Euro Pear"
+        },
+        {
+          "text": "Persimmon (Oriental)",
+          "category": "Oriental persimmon varieties for Louisiana",
+          "plant_type": "Persimmon"
+        },
+        {
+          "text": "Plum north",
+          "category": "Plum varieties for north Louisiana",
+          "plant_type": "Japanese Plum"
+        },
+        {
+          "text": "Plum north and south",
+          "category": "Plum varieties for north and south Louisiana",
+          "plant_type": "Japanese Plum"
+        }
+      ],
+      "description_template": "LSU AgCenter lists {name} in its {category_lower} table"
+    }
+  ]
+}

@@ -54,6 +54,8 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
   - Raw PDF category/name-list parsing for collapsed tables where several
     category headings appear before the corresponding comma-separated cultivar
     lists
+  - Raw PDF wrapped name-list parsing where one category heading collects
+    multiple following list lines until the next heading appears
   - Tail parsers for first-token splits such as `Fresh Dessert`, first-line
     prefix plus description, and self-fruitful token splits
 - `record_tools.py`
@@ -103,6 +105,9 @@ script. The config runner currently supports:
 - PDF category/name lists where raw `pdftotext` collapses a table into heading
   lines followed by comma-separated cultivar lists, including grouped split
   markers for two categories on one extracted line
+- PDF wrapped name lists where raw `pdftotext` keeps cultivar lists under a
+  heading but wraps the source rows and mixes in spacing columns or notes that
+  need source-local skip and text-fix rules
 - PDF catalog entries from flow-mode `pdftotext` output, with configurable
   category heading rules, default category context, smart titlecase name
   repair, and continuation lines
@@ -124,6 +129,9 @@ script. The config runner currently supports:
 - Declarative row splits for source rows that clearly contain two varieties
 - Generated rows for source notes that explicitly name a small fixed set of
   varieties
+- Opt-in merging for repeated plant records from one source, keyed by type and
+  name, so regional duplicate rows can keep all source descriptions while
+  satisfying the import schema
 - Optional category, location, harvest, and labelled description mapping
 - Prefix-prioritized harvest sentence selection for catalog sources where
   useful timing sentences start with phrases such as `Fruit ripens` or
@@ -131,6 +139,8 @@ script. The config runner currently supports:
 - Description parts that turn source flag columns such as `X` under use columns
   into readable labelled text
 - Name overrides, `AKA` values, and trailing footnote-marker stripping
+- Row-scoped name overrides, such as applying a canonical spelling only when a
+  repeated source name belongs to one plant type
 - Row overrides for source rows where PDF extraction splits a name or moves a
   word into the wrong field
 - Top-level config `text_fixes` shared by every extractor in one source
@@ -237,6 +247,13 @@ Source-specific scripts should do:
 - SDSU P-00041-2023 fruit recommendations: layout-mode PDF catalog entries
   parsed from left and right column slices, with default category contexts for
   columns that start directly on cultivar prose
+- KSRE MF1028 Small- and Tree-Fruit Cultivars: layout-mode PDF catalog entries
+  parsed from selected small-fruit table columns, with source-local row
+  overrides where raspberry color group labels carry text for the next cultivar
+- LSU Louisiana Home Orchard: raw PDF wrapped name-list table where crop and
+  region headings collect several wrapped cultivar-list lines, while spacing
+  columns and note rows are removed through config and repeated regional rows
+  are merged after record creation
 
 ## Manifest Configs
 
@@ -302,6 +319,12 @@ narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
   lists, queue category contexts and parse the following lines in order. When
   `pdftotext` joins two category lists onto one line, use explicit split
   markers such as the first cultivar of the second group.
+- For wrapped name-list tables, make heading rules exact whenever a heading
+  contains parenthetical source context. Prefix rules with `parse_remainder`
+  can turn that context into a false cultivar name.
+- For layout slices that keep category labels inside cultivar prose, prefer
+  source-local continuation skips and row overrides over broad parser behavior
+  until the same bleed pattern appears in more than one source.
 - Do not commit downloaded PDFs directly unless the DVC asset workflow is being
   used
 

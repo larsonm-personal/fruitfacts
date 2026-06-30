@@ -13,6 +13,14 @@
             "config": "extraction_configs/csu_764_grapes.json"
         },
         {
+            "id": "ksre_mf1028_small_tree_fruit_cultivars",
+            "config": "extraction_configs/ksre_mf1028_small_tree_fruit_cultivars.json"
+        },
+        {
+            "id": "lsu_louisiana_home_orchard_deciduous_tree_fruits",
+            "config": "extraction_configs/lsu_louisiana_home_orchard_deciduous_tree_fruits.json"
+        },
+        {
             "id": "msstate_p966_fruit_nut_recommendations",
             "config": "extraction_configs/msstate_p966_fruit_nut_recommendations.json"
         },

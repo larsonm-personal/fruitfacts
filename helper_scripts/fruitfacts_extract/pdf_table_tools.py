@@ -367,6 +367,50 @@ def pdf_category_name_list_rows(text, extractor):
     return rows
 
 
+def pdf_wrapped_name_list_rows(text, extractor):
+    rows = []
+    current_context = None
+    current_lines = []
+    name_key = extractor.get("name_key", "name")
+
+    def flush_current():
+        if not current_context or not current_lines:
+            return
+        names = split_name_list(" ".join(current_lines), extractor)
+        for name in names:
+            row = {name_key: name}
+            row.update(current_context)
+            rows.append(row)
+
+    for line in section_lines(text, extractor):
+        line = apply_text_fixes_to_line(line, extractor.get("text_fixes", {}))
+        if line_matches_any(line, extractor.get("skip_line_patterns", [])):
+            continue
+
+        rule, remainder = name_list_rule_for_line(line, extractor)
+        if rule:
+            flush_current()
+            current_context = rule_context(rule)
+            current_lines = []
+            if rule.get("parse_remainder") and remainder:
+                current_lines.append(remainder)
+            continue
+
+        if current_context:
+            current_lines.append(line)
+
+    flush_current()
+
+    skip_names = set(extractor.get("skip_names", []))
+    skip_patterns = extractor.get("skip_name_patterns", [])
+    return [
+        row
+        for row in rows
+        if row.get(name_key) not in skip_names
+        and not line_matches_any(row.get(name_key, ""), skip_patterns)
+    ]
+
+
 def bullet_segments(line, extractor):
     bullet_pattern = extractor.get("bullet_pattern", r"-\s+")
     matches = list(re.finditer(bullet_pattern, line))

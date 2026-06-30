@@ -99,28 +99,28 @@
             description: "Maturity: Late. Yield: Good. Produces tangy-sweet medium-sized fruit with white juicy flesh; hardy to zone 2b - 3a (above 800-1000 foot elevation in Fairbanks"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "Brookred",
             category: "Plum varieties for Interior Alaska",
             harvest_time_unparsed: "Late",
             description: "Maturity: Late. Yield: OK. Not heavy producers, but nice quality fruit; good pollinizer for Lee and Vic. Source lists this row as Brook - Red & Gold"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "Brookgold",
             category: "Plum varieties for Interior Alaska",
             harvest_time_unparsed: "Late",
             description: "Maturity: Late. Yield: OK. Not heavy producers, but nice quality fruit; good pollinizer for Lee and Vic. Source lists this row as Brook - Red & Gold"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "Lee Red",
             category: "Plum varieties for Interior Alaska",
             harvest_time_unparsed: "Late",
             description: "Maturity: Late. Yield: Good. Produces tangy-sweet 1-inch diameter fruit; fully hardy in hills (above 800-foot elevation) in Fairbanks"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "Vic Red",
             category: "Plum varieties for Interior Alaska",
             harvest_time_unparsed: "Late",

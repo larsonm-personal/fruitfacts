@@ -316,13 +316,13 @@
             description: "UNH Cooperative Extension lists Burbank in its japanese plum varieties for new hampshire table"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "Alderman",
             category: "Hybrid plum varieties for New Hampshire",
             description: "UNH Cooperative Extension lists Alderman in its hybrid plum varieties for new hampshire table"
         },
         {
-            type: "Plum",
+            type: "Japanese Plum",
             name: "Superior",
             category: "Hybrid plum varieties for New Hampshire",
             description: "UNH Cooperative Extension lists Superior in its hybrid plum varieties for new hampshire table"
