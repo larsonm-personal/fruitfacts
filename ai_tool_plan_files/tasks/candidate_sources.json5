@@ -2248,6 +2248,473 @@
                 "Companion publication to already encoded VCE 422-series fruit guides",
                 "Likely parsing issue: variety descriptions are prose paragraphs under European and Asian pear headings"
             ]
+        },
+        {
+            id: "clemson-hgic-1350-apple",
+            status: "accepted",
+            priority: "medium",
+            title: "Apple",
+            institution: "Clemson Cooperative Extension Home and Garden Information Center",
+            region: "South Carolina",
+            crops: ["Apple"],
+            publication_number: "HGIC 1350",
+            source_type: "state extension factsheet",
+            landing_url: "https://hgic.clemson.edu/factsheet/apple/",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "South Carolina apple factsheet with regionally adapted variety recommendations and pollination context",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/South Carolina/Clemson HGIC 1350 Apple.json5",
+            duplicate_check:
+                "Existing South Carolina references cover Clemson peach releases and peach evaluations, not HGIC apple recommendations",
+            notes: [
+                "Found by searching Clemson HGIC crop factsheets after the existing Clemson peach-evaluation candidate surfaced locally",
+                "Official HGIC page is a web factsheet rather than a PDF",
+                "Likely parsing issue: varieties are embedded in prose and headings rather than a single stable table"
+            ]
+        },
+        {
+            id: "clemson-hgic-1354-peaches-nectarines",
+            status: "accepted",
+            priority: "medium",
+            title: "Peaches and Nectarines",
+            institution: "Clemson Cooperative Extension Home and Garden Information Center",
+            region: "South Carolina",
+            crops: [
+                "Nectarine",
+                "Peach"
+            ],
+            publication_number: "HGIC 1354",
+            source_type: "state extension factsheet",
+            landing_url: "https://hgic.clemson.edu/factsheet/peaches-nectarines/",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "South Carolina home-garden peach and nectarine factsheet that complements the Clemson peach evaluation candidate",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/South Carolina/Clemson HGIC 1354 Peaches and Nectarines.json5",
+            duplicate_check:
+                "Existing South Carolina peach sources are breeding releases and evaluation pages, not this home-garden factsheet",
+            notes: [
+                "Found through the Clemson HGIC fruit factsheet family",
+                "Useful as a current consumer-facing recommendation source distinct from trial/evaluation data",
+                "Likely parsing issue: cultivar suitability, chill, and harvest notes are interleaved with culture advice"
+            ]
+        },
+        {
+            id: "clemson-hgic-1358-plum",
+            status: "accepted",
+            priority: "medium",
+            title: "Plum",
+            institution: "Clemson Cooperative Extension Home and Garden Information Center",
+            region: "South Carolina",
+            crops: ["Plum"],
+            publication_number: "HGIC 1358",
+            source_type: "state extension factsheet",
+            landing_url: "https://hgic.clemson.edu/factsheet/plum/",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "South Carolina plum factsheet with recommended Japanese-hybrid and related plum cultivars for home gardens",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/South Carolina/Clemson HGIC 1358 Plum.json5",
+            duplicate_check:
+                "No South Carolina plum factsheet found in existing references or candidate queue",
+            notes: [
+                "Found through the Clemson HGIC fruit factsheet family",
+                "Important to preserve cultivar type carefully during future parsing and not overuse species-plum classification",
+                "Likely parsing issue: cultivar lists are short but mixed with species, rootstock, and pollination prose"
+            ]
+        },
+        {
+            id: "clemson-hgic-1401-blueberry",
+            status: "accepted",
+            priority: "medium",
+            title: "Blueberry",
+            institution: "Clemson Cooperative Extension Home and Garden Information Center",
+            region: "South Carolina",
+            crops: ["Blueberry"],
+            publication_number: "HGIC 1401",
+            source_type: "state extension factsheet",
+            landing_url: "https://hgic.clemson.edu/factsheet/blueberry/",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "South Carolina blueberry factsheet with rabbiteye and southern highbush variety guidance",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/South Carolina/Clemson HGIC 1401 Blueberry.json5",
+            duplicate_check:
+                "No South Carolina blueberry factsheet found in existing references or candidate queue",
+            notes: [
+                "Found while expanding the Clemson HGIC source family beyond tree fruit",
+                "Official page is useful for low-chill southeastern blueberry variety context",
+                "Likely parsing issue: recommendations are split by blueberry type and may include narrative pollination advice"
+            ]
+        },
+        {
+            id: "clemson-hgic-1400-blackberry",
+            status: "accepted",
+            priority: "medium",
+            title: "Blackberry",
+            institution: "Clemson Cooperative Extension Home and Garden Information Center",
+            region: "South Carolina",
+            crops: ["Blackberry"],
+            publication_number: "HGIC 1400",
+            source_type: "state extension factsheet",
+            landing_url: "https://hgic.clemson.edu/factsheet/blackberry/",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "South Carolina blackberry factsheet with thorny, thornless, and primocane-fruiting cultivar recommendations",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/South Carolina/Clemson HGIC 1400 Blackberry.json5",
+            duplicate_check:
+                "No South Carolina blackberry factsheet found in existing references or candidate queue",
+            notes: [
+                "Found while expanding from existing Arkansas and North Carolina blackberry sources to a South Carolina extension source",
+                "Official HGIC page likely has cultivar names in short paragraphs rather than a table",
+                "Likely parsing issue: cultivar categories need to be kept as source notes rather than flattened away"
+            ]
+        },
+        {
+            id: "clemson-hgic-1402-bunch-grapes",
+            status: "accepted",
+            priority: "medium",
+            title: "Bunch Grapes",
+            institution: "Clemson Cooperative Extension Home and Garden Information Center",
+            region: "South Carolina",
+            crops: ["Grape"],
+            publication_number: "HGIC 1402",
+            source_type: "state extension factsheet",
+            landing_url: "https://hgic.clemson.edu/factsheet/bunch-grapes/",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "South Carolina bunch grape factsheet with cultivar lists and southeastern adaptation cautions",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/South Carolina/Clemson HGIC 1402 Bunch Grapes.json5",
+            duplicate_check:
+                "Existing grape references include Georgia, Arkansas, Virginia, Arizona, Nebraska, and Utah, but no South Carolina bunch-grape factsheet",
+            notes: [
+                "Found through the Clemson HGIC fruit factsheet family",
+                "Official page helps fill southeastern grape variety context beyond muscadine-heavy sources",
+                "Likely parsing issue: grape type, disease susceptibility, and variety names are intertwined in narrative lists"
+            ]
+        },
+        {
+            id: "uconn-home-garden-plums-connecticut",
+            status: "accepted",
+            priority: "medium",
+            title: "Plums",
+            institution: "University of Connecticut Home and Garden Education Center",
+            region: "Connecticut",
+            crops: ["Plum"],
+            source_type: "state extension factsheet",
+            landing_url: "https://homegarden.cahnr.uconn.edu/factsheets/plums/",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "Connecticut plum factsheet with suggested varieties, ripening season, fruit color, and pollination notes",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/Connecticut/UConn Plums.json5",
+            duplicate_check:
+                "No Connecticut reference directory or Connecticut candidate entry found locally",
+            notes: [
+                "Found by searching UConn Home and Garden fruit factsheets after New England source gaps surfaced",
+                "Official page appears to include a compact suggested-variety table",
+                "Likely parsing issue: source mixes European, Japanese, and hybrid plums with pollination guidance, so type handling needs review"
+            ]
+        },
+        {
+            id: "new-england-small-fruit-management-guide",
+            status: "accepted",
+            priority: "high",
+            title: "New England Small Fruit Management Guide",
+            institution: "University of Massachusetts Amherst Extension and New England Extension collaborators",
+            region: "New England",
+            crops: [
+                "Blackberry",
+                "Blueberry",
+                "Currant",
+                "Gooseberry",
+                "Grape",
+                "Raspberry",
+                "Strawberry"
+            ],
+            source_type: "regional extension guide",
+            landing_url: "https://ag.umass.edu/fruit/ne-small-fruit-management-guide",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "Large regional small-fruit guide with cultivar, pest, disease, and management sections for New England",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/New England/New England Small Fruit Management Guide.json5",
+            duplicate_check:
+                "Existing references include Maine and New Hampshire crop-specific sources, but no broad New England small-fruit guide",
+            notes: [
+                "Found while searching for UMass and New England sources adjacent to existing Maine, New Hampshire, and Vermont references",
+                "Useful but intentionally difficult: multi-page guide with many non-cultivar tables mixed into cultivar guidance",
+                "Likely parsing issue: crawler or manual extraction needs to isolate variety sections from pesticide and disease-management tables"
+            ]
+        },
+        {
+            id: "ontario-growing-blueberries-home-gardens-small-scale",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Blueberries for Home Gardens and Small Scale Production",
+            institution: "Ontario Ministry of Agriculture, Food and Agribusiness",
+            region: "Ontario",
+            crops: ["Blueberry"],
+            source_type: "provincial extension guide",
+            landing_url:
+                "https://www.ontario.ca/page/growing-blueberries-home-gardens-and-small-scale-production",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "Ontario blueberry guide with highbush and half-high variety recommendations for home and small-scale growers",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/Ontario/OMAFRA Growing Blueberries for Home Gardens and Small Scale Production.json5",
+            duplicate_check:
+                "Existing Ontario references are mostly breeding-program sources, not provincial home-garden blueberry recommendations",
+            notes: [
+                "Found by searching Ontario cultivar guidance after existing Harrow, Vineland, and Ontario breeding sources surfaced locally",
+                "Official provincial web guide rather than a static PDF",
+                "Likely parsing issue: cultivar recommendations are embedded in crop establishment prose and may be separated by plant type"
+            ]
+        },
+        {
+            id: "ontario-growing-raspberries-blackberries-home-gardens",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Raspberries and Blackberries in a Home Garden",
+            institution: "Ontario Ministry of Agriculture, Food and Agribusiness",
+            region: "Ontario",
+            crops: [
+                "Blackberry",
+                "Raspberry"
+            ],
+            source_type: "provincial extension guide",
+            landing_url:
+                "https://www.ontario.ca/page/growing-raspberries-and-blackberries-home-gardens",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "Ontario home-garden bramble guide with cultivar recommendations and cane-type distinctions",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/Ontario/OMAFRA Growing Raspberries and Blackberries in a Home Garden.json5",
+            duplicate_check:
+                "Existing Ontario references do not include a provincial raspberry or blackberry home-garden guide",
+            notes: [
+                "Found alongside the Ontario blueberry guide in provincial small-fruit searches",
+                "Official guide likely uses narrative cultivar lists rather than a clean table",
+                "Likely parsing issue: summer-bearing, fall-bearing, red, black, purple, and blackberry categories should be preserved"
+            ]
+        },
+        {
+            id: "unh-blueberry-varieties-new-hampshire",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Fruit: Blueberry Varieties for New Hampshire",
+            institution: "University of New Hampshire Extension",
+            region: "New Hampshire",
+            crops: ["Blueberry"],
+            source_type: "state extension factsheet",
+            landing_url:
+                "https://extension.unh.edu/resource/blueberry-varieties-new-hampshire-fact-sheet",
+            download_url:
+                "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource000003_Rep5.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "New Hampshire blueberry variety factsheet with highbush cultivar descriptions and northern adaptation notes",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/New Hampshire/UNH Blueberry Varieties for New Hampshire.json5",
+            duplicate_check:
+                "Existing New Hampshire reference covers low-input tree fruits, not blueberries",
+            notes: [
+                "Found by expanding from the encoded UNH low-input tree-fruit source to UNH small-fruit factsheets",
+                "Official page links to an older migrated PDF",
+                "Likely parsing issue: current web page and PDF may not have identical layout or content"
+            ]
+        },
+        {
+            id: "unh-raspberry-blackberry-varieties-new-hampshire",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Fruit: Raspberry and Blackberry Varieties for New Hampshire",
+            institution: "University of New Hampshire Extension",
+            region: "New Hampshire",
+            crops: [
+                "Blackberry",
+                "Raspberry"
+            ],
+            source_type: "state extension factsheet",
+            landing_url:
+                "https://extension.unh.edu/resource/growing-fruit-raspberry-and-blackberry-varieties-new-hampshire-fact-sheet",
+            download_url:
+                "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource007472_Rep10777.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "New Hampshire bramble variety factsheet with red, yellow, black, purple, and blackberry cultivar lists",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/New Hampshire/UNH Raspberry and Blackberry Varieties for New Hampshire.json5",
+            duplicate_check:
+                "No New Hampshire raspberry or blackberry variety reference found locally",
+            notes: [
+                "Found by searching UNH fruit factsheets after the existing UNH tree-fruit source",
+                "Official page links to a migrated PDF with tabular variety information",
+                "Likely parsing issue: color and bearing-habit categories are source categories, not plant types"
+            ]
+        },
+        {
+            id: "unh-seedless-table-grape-variety-training-system-evaluation-2019",
+            status: "accepted",
+            priority: "medium",
+            title: "Seedless Table Grape Variety and Training System Evaluation in New Hampshire, 2019",
+            institution: "University of New Hampshire Extension",
+            region: "New Hampshire",
+            crops: ["Grape"],
+            source_type: "extension trial report",
+            landing_url:
+                "https://extension.unh.edu/resource/research-report-seedless-table-grape-variety-and-training-system-evaluation-2019",
+            download_url:
+                "https://scholars.unh.edu/cgi/viewcontent.cgi?article=1034&context=extension",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "New Hampshire seedless table grape trial report with variety performance and training-system results",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/New Hampshire/UNH Seedless Table Grape Variety and Training System Evaluation 2019.json5",
+            duplicate_check:
+                "No New Hampshire grape trial reference found locally",
+            notes: [
+                "Found while searching for UNH small-fruit and grape sources beyond the encoded tree-fruit factsheet",
+                "Official extension page points to the Scholars Repository PDF",
+                "Likely parsing issue: cultivar performance is spread across trial narrative, tables, and training-system comparisons"
+            ]
+        },
+        {
+            id: "unh-day-neutral-strawberries-northern-new-england",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Day-neutral Strawberries in New Hampshire: Variety Selection and Production Tips",
+            institution: "University of New Hampshire Extension",
+            region: "New Hampshire",
+            crops: ["Strawberry"],
+            source_type: "regional extension factsheet",
+            download_url:
+                "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource007790_Rep11405.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "Northern New England day-neutral strawberry factsheet with cultivar recommendations and season-extension notes",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/New Hampshire/UNH Day-neutral Strawberries for Northern New England.json5",
+            duplicate_check:
+                "Existing Maine strawberry source covers Maine varieties, but no UNH day-neutral strawberry guide is queued",
+            notes: [
+                "Found in the UNH small-fruit source family",
+                "Official UNH PDF is available through a migrated file URL",
+                "Likely parsing issue: cultivar guidance is intertwined with plasticulture, planting-date, and season-extension advice"
+            ]
+        },
+        {
+            id: "usda-ars-beltsville-blueberry-releases",
+            status: "accepted",
+            priority: "medium",
+            title: "Blueberry Releases",
+            institution: "USDA Agricultural Research Service, Beltsville Agricultural Research Center",
+            region: "National",
+            crops: ["Blueberry"],
+            source_type: "federal cultivar release index",
+            landing_url:
+                "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/genetic-improvement-for-fruits-vegetables-laboratory/docs/blueberry-releases/",
+            discovered: "2026-06-29",
+            discovered_by: "reference-section follow-up search",
+            value_summary:
+                "USDA ARS Beltsville blueberry release page for cultivar-origin and release metadata",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/National/USDA ARS Beltsville Blueberry Releases.json5",
+            duplicate_check:
+                "Existing National references include USDA pear releases and patents, but not the Beltsville blueberry release page",
+            notes: [
+                "Found from USDA ARS release clues in existing National and North Carolina comments",
+                "Official release index may contain nested release links instead of a uniform table",
+                "Likely parsing issue: cultivar records may require following child pages and preserving release-program attribution"
+            ]
+        },
+        {
+            id: "usda-ars-beltsville-strawberry-releases",
+            status: "accepted",
+            priority: "medium",
+            title: "Strawberry Releases",
+            institution: "USDA Agricultural Research Service, Beltsville Agricultural Research Center",
+            region: "National",
+            crops: ["Strawberry"],
+            source_type: "federal cultivar release index",
+            landing_url:
+                "https://www.ars.usda.gov/northeast-area/beltsville-md-barc/beltsville-agricultural-research-center/genetic-improvement-for-fruits-vegetables-laboratory/docs/strawberry-releases/",
+            discovered: "2026-06-29",
+            discovered_by: "reference-section follow-up search",
+            value_summary:
+                "USDA ARS Beltsville strawberry release page covering cultivars such as Flavorfest, Latestar, Ovation, and other federal releases",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/National/USDA ARS Beltsville Strawberry Releases.json5",
+            duplicate_check:
+                "No USDA ARS Beltsville strawberry release index found in existing references or candidate queue",
+            notes: [
+                "Found by searching USDA ARS release names already noted in local blueberry and strawberry comments",
+                "Official release index is a web source with multiple cultivar records",
+                "Likely parsing issue: release names, dates, and descriptions are spread across page sections and child links"
+            ]
+        },
+        {
+            id: "usda-ars-poplarville-plant-releases",
+            status: "accepted",
+            priority: "medium",
+            title: "Plant Releases",
+            institution: "USDA Agricultural Research Service, Thad Cochran Southern Horticultural Laboratory",
+            region: "Southeastern United States",
+            crops: [
+                "Blueberry",
+                "Muscadine",
+                "Ornamental"
+            ],
+            source_type: "federal cultivar release index",
+            landing_url:
+                "https://www.ars.usda.gov/southeast-area/poplarville-ms/tcshl/docs/plant-releases/",
+            discovered: "2026-06-29",
+            discovered_by: "reference-section follow-up search",
+            value_summary:
+                "USDA ARS Poplarville plant-release index for southern blueberry, muscadine, and related releases cited in local comments",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/National/USDA ARS Poplarville Plant Releases.json5",
+            duplicate_check:
+                "Existing comments mention USDA ARS Poplarville blueberry releases, but no consolidated Poplarville release index is queued",
+            notes: [
+                "Found from USDA ARS Poplarville release comments in the North Carolina blueberry release reference",
+                "Includes non-fruit ornamental releases, so future extraction should filter crop type carefully",
+                "Likely parsing issue: source is an index of links, not a single cultivar table"
+            ]
         }
     ]
 }
