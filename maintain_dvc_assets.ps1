@@ -2,6 +2,7 @@ param(
     [switch]$RedoAllThumbnails,
     [switch]$RefreshAllDvcPointers,
     [switch]$ShowDvcDiff,
+    [switch]$SkipReferencePdfDiscovery,
     [switch]$SkipThumbnails,
     [switch]$SkipPdfThumbnails,
     [switch]$SkipWebsiteThumbnails,
@@ -17,9 +18,9 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
 function Write-Usage {
-    Write-Host "Usage: .\maintain_dvc_assets.ps1 [-RedoAllThumbnails] [-RefreshAllDvcPointers] [-ShowDvcDiff] [-SkipThumbnails] [-SkipPdfThumbnails] [-SkipWebsiteThumbnails] [-RequireWebsiteThumbnails] [-SkipNodeInstall] [-SkipDvc] [-SkipDvcInstall] [-NoPush]"
+    Write-Host "Usage: .\maintain_dvc_assets.ps1 [-RedoAllThumbnails] [-RefreshAllDvcPointers] [-ShowDvcDiff] [-SkipReferencePdfDiscovery] [-SkipThumbnails] [-SkipPdfThumbnails] [-SkipWebsiteThumbnails] [-RequireWebsiteThumbnails] [-SkipNodeInstall] [-SkipDvc] [-SkipDvcInstall] [-NoPush]"
     Write-Host ""
-    Write-Host "Generates missing reference thumbnails, adds new PDF/JPG assets to DVC, and pushes cached data"
+    Write-Host "Discovers reference PDF companions, generates missing thumbnails, adds new PDF/JPG assets to DVC, and pushes cached data"
     Write-Host "By default, DVC add only runs for files missing a neighboring .dvc file"
     Write-Host "Website thumbnail dependencies are installed through helper_scripts\web_screenshot_install_or_update.ps1 when needed"
     Write-Host ""
@@ -28,6 +29,7 @@ function Write-Usage {
     Write-Host "  .\maintain_dvc_assets.ps1 -NoPush"
     Write-Host "  .\maintain_dvc_assets.ps1 -RedoAllThumbnails"
     Write-Host "  .\maintain_dvc_assets.ps1 -SkipWebsiteThumbnails"
+    Write-Host "  .\maintain_dvc_assets.ps1 -SkipReferencePdfDiscovery"
     Write-Host "  .\maintain_dvc_assets.ps1 -SkipNodeInstall"
     Write-Host "  .\maintain_dvc_assets.ps1 -RequireWebsiteThumbnails"
     Write-Host "  .\maintain_dvc_assets.ps1 -RefreshAllDvcPointers -ShowDvcDiff -NoPush"
@@ -273,6 +275,10 @@ if ($Help) {
 $repoRoot = Get-RepoRoot
 Push-Location $repoRoot
 try {
+    if (!$SkipReferencePdfDiscovery) {
+        Invoke-Checked "Discovering reference PDF companions" "python" @("helper_scripts\archive_reference_pdfs.py")
+    }
+
     if (!$SkipThumbnails) {
         $thumbnailArgs = @()
         if ($RedoAllThumbnails) {
