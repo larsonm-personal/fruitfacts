@@ -65,8 +65,9 @@ source-specific script. See
 library boundary.
 
 When the source is a regular HTML table, a bounded PDF marker list, a simple
-quoted-paragraph narrative, or a `Name: description` paragraph list, first try
-a config-driven extraction instead of adding a new per-source Python file:
+quoted-paragraph narrative, a `Name: description` paragraph list, or cultivar
+headings under category headings, first try a config-driven extraction instead
+of adding a new per-source Python file:
 
 ```powershell
 python helper_scripts/extract_source.py uga_c740_apples > $env:TEMP\uga_c740_apples.json5
@@ -105,6 +106,17 @@ shared helpers:
 Named manifest entries replace tiny source-specific wrappers. This keeps the
 real source-specific logic declarative while avoiding one Python file per
 config.
+
+The Ontario bramble guide added `html_heading_records` for pages where a
+category heading such as `Red raspberry cultivars` is followed by cultivar
+headings and paragraph descriptions. Use heading rules to preserve category
+context, and use row splits when a source heading clearly combines two
+cultivars.
+
+The Ontario blueberry guide reused `html_heading_records` with the record tag
+set to `h3`. When non-cultivar section headings share that same tag, use
+`skip_names` and add generated rows or a second extractor for cultivar names
+embedded together in prose.
 
 ## The Art
 

@@ -1,0 +1,119 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://www.ontario.ca/page/growing-raspberries-and-blackberries-home-gardens"
+  },
+  "reference_fields": [
+    ["title", "Growing Raspberries and Blackberries in a Home Garden"],
+    ["author", "Ontario Ministry of Agriculture, Food and Agribusiness"],
+    ["description", "Ontario provincial home-garden bramble guide with cultivar descriptions for red, fall-bearing, purple, and black raspberries plus blackberry notes"],
+    ["url", "https://www.ontario.ca/page/growing-raspberries-and-blackberries-home-gardens"],
+    ["thumbnail", "website"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Vineland, Ontario",
+      "latitude": 43.1501,
+      "longitude": -79.3927
+    }
+  ],
+  "categories": [
+    {
+      "name": "Red raspberry cultivars for Ontario",
+      "description": "Ontario lists these red raspberry cultivars from early to late season for home gardens"
+    },
+    {
+      "name": "Fall-bearing red raspberry cultivars for Ontario",
+      "description": "Ontario lists these fall-bearing red raspberry cultivars from early to late season for home gardens"
+    },
+    {
+      "name": "Purple raspberry cultivars for Ontario",
+      "description": "Ontario lists this purple raspberry cultivar for home gardens"
+    },
+    {
+      "name": "Black raspberry cultivars for Ontario",
+      "description": "Ontario lists this black raspberry cultivar for home gardens"
+    },
+    {
+      "name": "Blackberry cultivars for Ontario",
+      "description": "Ontario says these blackberry cultivars may have potential under Ontario conditions, while noting blackberry winter-hardiness limits"
+    }
+  ],
+  "name_overrides": {
+    "Chester Thornless": {
+      "name": "Chester",
+      "note": "Source heading names this as Chester Thornless"
+    },
+    "Illini Hardy": {
+      "name": "Illini",
+      "note": "Source heading names this as Illini Hardy"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_heading_records",
+      "section_start": "Choice of cultivar",
+      "section_end": "Establishment",
+      "name_tag": "h4",
+      "description_tags": ["p"],
+      "category_rules": [
+        {
+          "tag": "h3",
+          "text": "Red raspberry cultivars (early to late season)",
+          "category": "Red raspberry cultivars for Ontario",
+          "plant_type": "Raspberry"
+        },
+        {
+          "tag": "h3",
+          "text": "Fall-bearing red raspberry cultivars (early to late season)",
+          "category": "Fall-bearing red raspberry cultivars for Ontario",
+          "plant_type": "Raspberry"
+        },
+        {
+          "tag": "h3",
+          "text": "Purple raspberry cultivars",
+          "category": "Purple raspberry cultivars for Ontario",
+          "plant_type": "Raspberry"
+        },
+        {
+          "tag": "h3",
+          "text": "Black raspberry cultivars",
+          "category": "Black raspberry cultivars for Ontario",
+          "plant_type": "Raspberry"
+        },
+        {
+          "tag": "h3",
+          "text": "Blackberry cultivars",
+          "category": "Blackberry cultivars for Ontario",
+          "plant_type": "Blackberry"
+        }
+      ],
+      "row_splits": [
+        {
+          "match": {
+            "name": "Chester Thornless and Illini Hardy (erect-spring)"
+          },
+          "source_note": "Source combines Chester Thornless and Illini Hardy in one blackberry heading and labels them erect-spring",
+          "rows": [
+            {"name": "Chester Thornless"},
+            {"name": "Illini Hardy"}
+          ]
+        }
+      ],
+      "harvest_from_key": "description",
+      "harvest_terms": [
+        "picking",
+        "harvest",
+        "crop starts",
+        "ripen",
+        "mature",
+        "season"
+      ],
+      "harvest_term_priority": true,
+      "description_key": "description"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+    title: "Growing Raspberries and Blackberries in a Home Garden",
+    author: "Ontario Ministry of Agriculture, Food and Agribusiness",
+    description: "Ontario provincial home-garden bramble guide with cultivar descriptions for red, fall-bearing, purple, and black raspberries plus blackberry notes",
+    url: "https://www.ontario.ca/page/growing-raspberries-and-blackberries-home-gardens",
+    thumbnail: "website",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Vineland, Ontario",
+            latitude: 43.1501,
+            longitude: -79.3927
+        },
+    ],
+    categories: [
+        {
+            name: "Red raspberry cultivars for Ontario",
+            description: "Ontario lists these red raspberry cultivars from early to late season for home gardens"
+        },
+        {
+            name: "Fall-bearing red raspberry cultivars for Ontario",
+            description: "Ontario lists these fall-bearing red raspberry cultivars from early to late season for home gardens"
+        },
+        {
+            name: "Purple raspberry cultivars for Ontario",
+            description: "Ontario lists this purple raspberry cultivar for home gardens"
+        },
+        {
+            name: "Black raspberry cultivars for Ontario",
+            description: "Ontario lists this black raspberry cultivar for home gardens"
+        },
+        {
+            name: "Blackberry cultivars for Ontario",
+            description: "Ontario says these blackberry cultivars may have potential under Ontario conditions, while noting blackberry winter-hardiness limits"
+        },
+    ],
+    plants: [
+        {
+            type: "Raspberry",
+            name: "Prelude",
+            category: "Red raspberry cultivars for Ontario",
+            harvest_time_unparsed: "Picking begins 4-5 days ahead of Boyne.",
+            description: "A very early variety with medium-sized berries. Canes are vigorous with sparse but noticeable spines. Berries are round, medium-dark colour, with a mild flavour. Picking begins 4-5 days ahead of Boyne"
+        },
+        {
+            type: "Raspberry",
+            name: "Boyne",
+            category: "Red raspberry cultivars for Ontario",
+            harvest_time_unparsed: "Mean date of 5% harvest is July 3 in Vineland, Ontario (Niagara Region).",
+            description: "Early mid-season, productive. Fruit is dark-red, medium sized, soft, good flavour, good cohesion of drupelets, fair for processing. Mean date of 5% harvest is July 3 in Vineland, Ontario (Niagara Region). Canes are of medium height, spiny, extremely hardy. Recommended for colder areas of the province"
+        },
+        {
+            type: "Raspberry",
+            name: "Nova",
+            category: "Red raspberry cultivars for Ontario",
+            harvest_time_unparsed: "The berries mature 1-2 days after Boyne, are medium-sized, firm, bright, moderately dark.",
+            description: "A very productive, early-to-mid-season cultivar, introduced by Agriculture Canada, Kentville, Nova Scotia, in 1980. The berries mature 1-2 days after Boyne, are medium-sized, firm, bright, moderately dark. Flavour is fair. The plant is hardy with erect tall canes with few spines"
+        },
+        {
+            type: "Raspberry",
+            name: "Killarney",
+            category: "Red raspberry cultivars for Ontario",
+            harvest_time_unparsed: "First picking about July 16 at Vineland.",
+            description: "First picking about July 16 at Vineland. The fruit are medium-light red, bright, very attractive, large, medium firm, with very good cohesion of drupelets but poor flavour and poor to fair for processing. The canes are medium in height, strong, very spiny, very hardy, somewhat susceptible to mildew, but mildew does not occur on the berries"
+        },
+        {
+            type: "Raspberry",
+            name: "Autumn Britten",
+            category: "Fall-bearing red raspberry cultivars for Ontario",
+            harvest_time_unparsed: "Early fall-bearing variety, picking beginning 10 days ahead of Heritage.",
+            description: "Early fall-bearing variety, picking beginning 10 days ahead of Heritage. Berries are large with excellent fruit quality. This cultivar is a sparse cane producer and requires planting at closer spacing"
+        },
+        {
+            type: "Raspberry",
+            name: "Polka",
+            category: "Fall-bearing red raspberry cultivars for Ontario",
+            harvest_time_unparsed: "Early-season fall-bearing variety.",
+            description: "Early-season fall-bearing variety. Produces medium-large berries with high fruit quality and consistent drupelet size. Canes are self-supporting and semi-vigorous"
+        },
+        {
+            type: "Raspberry",
+            name: "Heritage",
+            category: "Fall-bearing red raspberry cultivars for Ontario",
+            harvest_time_unparsed: "The fall crop starts to ripen at the end of August.",
+            description: "The performance of this variety is very promising at Vineland. The fall crop starts to ripen at the end of August. A summer crop is also produced in mid-July. The fruit are medium-red, bright, attractive, small in the summer crop but of medium size in the fall crop, firm with very good cohesion of drupelets and fair flavour. It is good for processing. The canes are somewhat short, strong, spiny, fairly upright, hardy, fairly resistant to mildew but susceptible to leafhoppers. This cultivar is of interest mainly for the fall crop in parts of Ontario where severe fall frosts do not occur early in September"
+        },
+        {
+            type: "Raspberry",
+            name: "Royalty",
+            category: "Purple raspberry cultivars for Ontario",
+            description: "The fruit are very large, purple, firm and have a sweet flavour. Canes tend to be sparse but very vigorous and winter-hardy. This variety is resistant to two types of aphids that are known to transmit virus diseases. This should extend the productive life of the planting. It has shown excellent promise in limited Ontario trials"
+        },
+        {
+            type: "Raspberry",
+            name: "Jewel",
+            category: "Black raspberry cultivars for Ontario",
+            harvest_time_unparsed: "Early-season, picking begins ahead of Boyne.",
+            description: "Early-season, picking begins ahead of Boyne. Medium-sized, glossy-black berries with excellent fruit quality. May be more winter-hardy and disease-resistant than other black raspberries. Black raspberries are very susceptible to verticillium wilt"
+        },
+        {
+            type: "Blackberry",
+            name: "Chester",
+            category: "Blackberry cultivars for Ontario",
+            description: "May have potential under Ontario conditions. Blackberries are not winter-hardy and may be winter-killed in the colder areas of Ontario. Source heading names this as Chester Thornless. Source combines Chester Thornless and Illini Hardy in one blackberry heading and labels them erect-spring"
+        },
+        {
+            type: "Blackberry",
+            name: "Illini",
+            category: "Blackberry cultivars for Ontario",
+            description: "May have potential under Ontario conditions. Blackberries are not winter-hardy and may be winter-killed in the colder areas of Ontario. Source heading names this as Illini Hardy. Source combines Chester Thornless and Illini Hardy in one blackberry heading and labels them erect-spring"
+        },
+    ]
+}

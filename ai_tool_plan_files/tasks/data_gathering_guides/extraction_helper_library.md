@@ -78,6 +78,8 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
   - Sequential paragraph-record parsing for pages where a cultivar heading is
     followed by labelled paragraphs such as season, adaptation, and fruit
     description
+  - Heading-record parsing for HTML sections where category headings are
+    followed by cultivar headings and one or more description paragraphs
   - Uses strict JSON config files under `helper_scripts/extraction_configs/`
     so the Python standard library can parse them
 - `extract_source.py`
@@ -130,6 +132,10 @@ script. The config runner currently supports:
   table cells
 - HTML sequential paragraph records where a title paragraph starts the row and
   following labelled paragraphs fill row fields
+- HTML heading records where `h3` or similar category headings set crop context,
+  `h4` or similar cultivar headings start records, and following paragraphs
+  provide descriptions, with optional `skip_names` for non-cultivar headings
+  that share the record heading tag
 - Configured `record_fields` for adding source values such as release year or
   patent text after row extraction
 - HTML paragraph blocks where each useful paragraph starts with a quoted
@@ -276,6 +282,22 @@ Source-specific scripts should do:
 - USDA ARS Beltsville strawberry releases: sequential HTML paragraph records
   where a cultivar heading contains release year and patent text, followed by
   labelled season/adaptation and fruit-description paragraphs.
+- UConn plums: compact HTML tables where one table label mixed species and
+  cultivar context. The source config skips duplicate European rows from the
+  ambiguous table and encodes only the natural American plum row as
+  `Species Plum`.
+- Ontario raspberries and blackberries: HTML category headings followed by
+  cultivar headings and paragraph descriptions, handled by
+  `html_heading_records` with a row split for the combined Chester Thornless
+  and Illini Hardy blackberry heading.
+- Ontario blueberries: HTML `h3` cultivar headings under one cultivar section,
+  with `skip_names` used to avoid non-cultivar lowbush and half-high section
+  headings, plus generated rows for the half-high cultivars named together in
+  one paragraph.
+- Rutgers FS419 blueberries: an HTML factsheet with a malformed harvest chart
+  table followed by a useful variety-detail table. The config selects the
+  second table by index and keeps source name harmonization in reviewable
+  overrides.
 
 ## Manifest Configs
 

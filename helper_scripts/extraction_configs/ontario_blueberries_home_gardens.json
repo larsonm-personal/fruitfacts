@@ -1,0 +1,95 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://www.ontario.ca/page/growing-blueberries-home-gardens-and-small-scale-production"
+  },
+  "reference_fields": [
+    ["title", "Growing Blueberries for Home Gardens and Small Scale Production"],
+    ["author", "Ontario Ministry of Agriculture, Food and Agribusiness"],
+    ["description", "Ontario provincial home-garden and small-scale blueberry guide with highbush cultivar descriptions plus lowbush and half-high blueberry guidance"],
+    ["url", "https://www.ontario.ca/page/growing-blueberries-home-gardens-and-small-scale-production"],
+    ["thumbnail", "website"],
+    ["published", "February 2023"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Ontario Ministry of Agriculture, Food and Agribusiness, Guelph, Ontario",
+      "latitude": 43.5448,
+      "longitude": -80.2482
+    }
+  ],
+  "categories": [
+    {
+      "name": "Highbush blueberry cultivars for Ontario",
+      "description": "Ontario lists these highbush blueberry cultivars from earliest to latest for home gardens and small-scale production"
+    },
+    {
+      "name": "Half-high blueberry cultivars for Ontario",
+      "description": "Ontario names these half-high blueberries after explaining that colder regions of Ontario may be better suited to lowbush or half-high blueberries than highbush blueberries"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_heading_records",
+      "section_start": "Cultivars: earliest to latest",
+      "section_end": "Control of insects and diseases",
+      "name_tag": "h3",
+      "description_tags": ["p"],
+      "default_category": "Highbush blueberry cultivars for Ontario",
+      "default_plant_type": "Blueberry",
+      "skip_names": ["Lowbush blueberries", "Half-high blueberries"],
+      "skip_description_patterns": [
+        "^The colder regions of Ontario are only marginally suitable"
+      ],
+      "harvest_from_key": "description",
+      "harvest_terms": ["season", "early", "late"],
+      "harvest_term_priority": true,
+      "description_key": "description"
+    },
+    {
+      "kind": "colon_paragraph_blocks",
+      "start_after_text": "Cultivars: earliest to latest",
+      "stop_prefixes": ["Control of insects and diseases"],
+      "category_rules": [
+        {
+          "tags": ["h3"],
+          "texts": ["Half-high blueberries"]
+        }
+      ],
+      "generated_rows": [
+        {
+          "text_prefix": "Half-high blueberries resulted from crossing lowbush and highbush blueberries together",
+          "rows": [
+            {
+              "name": "Northblue",
+              "category": "Half-high blueberry cultivars for Ontario",
+              "description": "Ontario describes Northblue as a vigorous half-high blueberry that reaches 50-75 cm and produces dark blue, large, firm berries"
+            },
+            {
+              "name": "St. Cloud",
+              "category": "Half-high blueberry cultivars for Ontario",
+              "description": "Ontario describes St. Cloud as a large half-high blueberry, 100-120 cm, with an upright growth habit and medium-blue, large, slightly flattened fruit"
+            },
+            {
+              "name": "Northcountry",
+              "category": "Half-high blueberry cultivars for Ontario",
+              "description": "Ontario describes Northcountry as a smaller half-high blueberry, 45-60 cm, that produces sweet, mild, sky-blue blueberries"
+            }
+          ]
+        }
+      ],
+      "plant_type": "Blueberry",
+      "category": {"row_key": "category"},
+      "description_parts": [
+        {
+          "kind": "key",
+          "key": "description",
+          "rstrip_period": false
+        }
+      ]
+    }
+  ]
+}

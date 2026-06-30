@@ -49,8 +49,20 @@
             "config": "extraction_configs/osu_hyg_1423_grapes.json"
         },
         {
+            "id": "ontario_blueberries_home_gardens",
+            "config": "extraction_configs/ontario_blueberries_home_gardens.json"
+        },
+        {
+            "id": "ontario_raspberries_blackberries_home_gardens",
+            "config": "extraction_configs/ontario_raspberries_blackberries_home_gardens.json"
+        },
+        {
             "id": "psu_non_scab_apples",
             "config": "extraction_configs/psu_non_scab_apples.json"
+        },
+        {
+            "id": "rutgers_fs419_blueberries",
+            "config": "extraction_configs/rutgers_fs419_blueberries.json"
         },
         {
             "id": "sdsu_p_00041_2023_fruit_varieties",
@@ -131,6 +143,10 @@
         {
             "id": "texas_am_e612_stone_fruit",
             "config": "extraction_configs/texas_am_e612_stone_fruit.json"
+        },
+        {
+            "id": "uconn_plums",
+            "config": "extraction_configs/uconn_plums.json"
         },
         {
             "id": "uaf_hga_00030_interior_alaska_fruit",

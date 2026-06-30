@@ -1,0 +1,82 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://njaes.rutgers.edu/fs419/"
+  },
+  "reference_fields": [
+    ["title", "Selecting Blueberry Varieties for the Home Garden"],
+    ["author", "William Sciarappa and Gary Pavlis"],
+    ["description", "Rutgers NJAES Cooperative Extension FS419 guide to selecting highbush blueberry varieties for New Jersey home gardens, with variety season, fruit, plant habit, flavor, and comment table"],
+    ["url", "https://njaes.rutgers.edu/fs419/"],
+    ["thumbnail", "website"],
+    ["published", "January 2005"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Rutgers New Jersey Agricultural Experiment Station, New Brunswick, New Jersey",
+      "latitude": 40.4862,
+      "longitude": -74.4518
+    }
+  ],
+  "categories": [
+    {
+      "name": "Highbush blueberry varieties for New Jersey home gardens",
+      "description": "Rutgers FS419 lists these highbush blueberry varieties in a home-garden selection table for New Jersey"
+    }
+  ],
+  "name_overrides": {
+    "Elliot": {
+      "name": "Elliott",
+      "note": "Source table names this as Elliot"
+    },
+    "Late Blue": {
+      "name": "Lateblue",
+      "note": "Source table names this as Late Blue"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "table_index": 1,
+      "required_headers": [
+        "Variety",
+        "Season",
+        "Fruit Size",
+        "Color",
+        "Plant Type",
+        "Flavor",
+        "Comments"
+      ],
+      "name_key": "variety",
+      "plant_type": "Blueberry",
+      "category": "Highbush blueberry varieties for New Jersey home gardens",
+      "harvest_key": "season",
+      "text_fixes": {
+        "Dwaft patio type": "Dwarf patio type"
+      },
+      "row_overrides": {
+        "Darrow": {
+          "flavor": "Excellent"
+        }
+      },
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["fruit_size", "Fruit size"],
+            ["color", "Color"],
+            ["plant_type", "Plant habit"],
+            ["flavor", "Flavor"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "comments"
+        }
+      ]
+    }
+  ]
+}

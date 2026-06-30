@@ -1,0 +1,83 @@
+{
+    title: "Growing Blueberries for Home Gardens and Small Scale Production",
+    author: "Ontario Ministry of Agriculture, Food and Agribusiness",
+    description: "Ontario provincial home-garden and small-scale blueberry guide with highbush cultivar descriptions plus lowbush and half-high blueberry guidance",
+    url: "https://www.ontario.ca/page/growing-blueberries-home-gardens-and-small-scale-production",
+    thumbnail: "website",
+    published: "February 2023",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Ontario Ministry of Agriculture, Food and Agribusiness, Guelph, Ontario",
+            latitude: 43.5448,
+            longitude: -80.2482
+        },
+    ],
+    categories: [
+        {
+            name: "Highbush blueberry cultivars for Ontario",
+            description: "Ontario lists these highbush blueberry cultivars from earliest to latest for home gardens and small-scale production"
+        },
+        {
+            name: "Half-high blueberry cultivars for Ontario",
+            description: "Ontario names these half-high blueberries after explaining that colder regions of Ontario may be better suited to lowbush or half-high blueberries than highbush blueberries"
+        },
+    ],
+    plants: [
+        {
+            type: "Blueberry",
+            name: "Patriot",
+            category: "Highbush blueberry cultivars for Ontario",
+            harvest_time_unparsed: "Early mid-season, productive.",
+            description: "Early mid-season, productive. Plants are small to medium sized, vigorous, upright and very hardy. Fruit clusters are tight; berries are medium blue, very large, slightly flattened, firm, with very good flavour. Good ornamental value"
+        },
+        {
+            type: "Blueberry",
+            name: "Northland",
+            category: "Highbush blueberry cultivars for Ontario",
+            harvest_time_unparsed: "Early mid-season, very productive.",
+            description: "Early mid-season, very productive. Plants are slightly short, bushy, moderately spreading and very hardy. Fruit clusters are long and loose; berries are medium to dark blue, medium-small, moderately firm, with good flavour. Very good ornamental value"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluecrop",
+            category: "Highbush blueberry cultivars for Ontario",
+            harvest_time_unparsed: "Mid-season, productive.",
+            description: "Mid-season, productive. Plants are vigorous, upright, open and hardy. Fruit clusters are loose; berries are light blue, large in size, very firm, with a good, slightly tart flavour. Fall leaf colour is a medium dark red"
+        },
+        {
+            type: "Blueberry",
+            name: "Blueray",
+            category: "Highbush blueberry cultivars for Ontario",
+            harvest_time_unparsed: "Mid-season, productive.",
+            description: "Mid-season, productive. Plants are vigorous, erect and fairly hardy. Fruit clusters are small and tight; berries are medium to dark blue, very large, firm, aromatic, with good flavour. Blossoms are reddish and fall leaf colour is a medium dark red"
+        },
+        {
+            type: "Blueberry",
+            name: "Jersey",
+            category: "Highbush blueberry cultivars for Ontario",
+            harvest_time_unparsed: "Late mid-season, productive.",
+            description: "Late mid-season, productive. Plants are large, bushy, upright and hardy. Fruit clusters are loose; berries are medium blue, medium sized, firm, with fair flavour, lacking aroma. Fall leaf colour is a light, bright red"
+        },
+        {
+            type: "Blueberry",
+            name: "Northblue",
+            category: "Half-high blueberry cultivars for Ontario",
+            description: "Ontario describes Northblue as a vigorous half-high blueberry that reaches 50-75 cm and produces dark blue, large, firm berries"
+        },
+        {
+            type: "Blueberry",
+            name: "St. Cloud",
+            category: "Half-high blueberry cultivars for Ontario",
+            description: "Ontario describes St. Cloud as a large half-high blueberry, 100-120 cm, with an upright growth habit and medium-blue, large, slightly flattened fruit"
+        },
+        {
+            type: "Blueberry",
+            name: "Northcountry",
+            category: "Half-high blueberry cultivars for Ontario",
+            description: "Ontario describes Northcountry as a smaller half-high blueberry, 45-60 cm, that produces sweet, mild, sky-blue blueberries"
+        },
+    ]
+}

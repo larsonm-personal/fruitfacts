@@ -140,6 +140,13 @@ def dedupe_rows(rows, keys):
     return deduped
 
 
+def skip_named_rows(rows, name_key, skip_names):
+    if not skip_names:
+        return rows
+    skipped = set(skip_names)
+    return [row for row in rows if row.get(name_key, "").strip() not in skipped]
+
+
 def apply_text_fixes(text, fixes):
     for old, new in fixes.items():
         text = text.replace(old, new)
@@ -188,12 +195,7 @@ def table_rows(page, extractor):
         skip_prefixes=tuple(extractor.get("skip_prefixes", ["Note:"])),
     )
     skip_names = set(extractor.get("skip_names", []))
-    if skip_names:
-        rows = [
-            row
-            for row in rows
-            if row.get(extractor["name_key"], "").strip() not in skip_names
-        ]
+    rows = skip_named_rows(rows, extractor["name_key"], skip_names)
     return rows
 
 
@@ -614,6 +616,102 @@ def plants_from_html_list_items(page, extractor, overrides, lookups):
     rows = expanded_rows(rows, extractor)
     rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
     rows = [row_overrides(row, extractor) for row in rows]
+    rows = skip_named_rows(rows, extractor["name_key"], extractor.get("skip_names", []))
+    rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
+    return plant_records_from_config_rows(rows, extractor, overrides, lookups)
+
+
+def append_heading_record(rows, row, extractor):
+    if not row:
+        return
+    description_key = extractor.get("description_key", "description")
+    parts = row.pop("_description_parts", [])
+    if parts and not row.get(description_key):
+        row[description_key] = extractor.get("record_text_joiner", " ").join(parts)
+    required_keys = set(extractor.get("required_row_keys", []))
+    if required_keys and not all(row.get(key) for key in required_keys):
+        return
+    rows.append(row)
+
+
+def html_heading_record_rows(page, extractor):
+    rows = []
+    current = None
+    started = not extractor.get("section_start") and not extractor.get("start_after_text")
+    state = {
+        "category": extractor.get("default_category"),
+        "plant_type": extractor.get("default_plant_type"),
+    }
+    name_tag = extractor.get("name_tag", "h4")
+    description_tags = set(extractor.get("description_tags", ["p"]))
+    boundary_tags = set(extractor.get("record_boundary_tags", ["h2", "h3"]))
+
+    for tag, text in page.blocks:
+        if not started:
+            if text in (extractor.get("section_start"), extractor.get("start_after_text")):
+                started = True
+            continue
+
+        if tag.startswith("h") and text == extractor.get("section_end"):
+            append_heading_record(rows, current, extractor)
+            current = None
+            break
+        if tag.startswith("h") and text in extractor.get("stop_headings", []):
+            append_heading_record(rows, current, extractor)
+            current = None
+            break
+
+        if any(
+            html_rule_matches(tag, text, state, rule)
+            for rule in extractor.get("category_rules", [])
+        ):
+            append_heading_record(rows, current, extractor)
+            current = None
+            apply_html_rules(tag, text, state, extractor.get("category_rules", []))
+            continue
+
+        if tag == name_tag:
+            append_heading_record(rows, current, extractor)
+            if not state.get("category") or not state.get("plant_type"):
+                current = None
+                continue
+            current = {
+                extractor.get("name_key", "name"): text,
+                "category": state.get("category"),
+                "plant_type": state.get("plant_type"),
+                "_description_parts": [],
+            }
+            continue
+
+        if current and tag in description_tags:
+            if line_matches_any(text, extractor.get("skip_description_patterns", [])):
+                continue
+            current["_description_parts"].append(text)
+            continue
+
+        if current and tag in boundary_tags:
+            append_heading_record(rows, current, extractor)
+            current = None
+
+    if current:
+        append_heading_record(rows, current, extractor)
+
+    return rows
+
+
+def plants_from_html_heading_records(page, extractor, overrides, lookups):
+    extractor = {
+        "name_key": "name",
+        "description_key": "description",
+        "category": {"row_key": "category"},
+        "plant_type": {"row_key": "plant_type"},
+        **extractor,
+    }
+    rows = html_heading_record_rows(page, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    rows = skip_named_rows(rows, extractor["name_key"], extractor.get("skip_names", []))
     rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
     return plant_records_from_config_rows(rows, extractor, overrides, lookups)
 
@@ -1379,6 +1477,10 @@ def extract(config):
             plants.extend(plants_from_html_table(data, extractor, overrides, lookups))
         elif extractor["kind"] == "html_list_items":
             plants.extend(plants_from_html_list_items(data, extractor, overrides, lookups))
+        elif extractor["kind"] == "html_heading_records":
+            plants.extend(
+                plants_from_html_heading_records(data, extractor, overrides, lookups)
+            )
         elif extractor["kind"] == "html_name_matrix":
             plants.extend(plants_from_html_name_matrix(data, extractor, overrides, lookups))
         elif extractor["kind"] == "pdf_marker_list":

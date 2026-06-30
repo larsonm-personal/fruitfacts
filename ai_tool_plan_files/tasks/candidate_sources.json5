@@ -2114,7 +2114,7 @@
         },
         {
             id: "rutgers-blueberry-varieties-home-garden-fs419",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Blueberry Varieties for the Home Garden",
             institution: "Rutgers New Jersey Agricultural Experiment Station",
@@ -2135,7 +2135,12 @@
             notes: [
                 "Found from the NJAES fruit and nut crop publication catalog",
                 "Official Rutgers page presents the factsheet as HTML",
-                "Likely parsing issue: cultivar descriptions are narrative and may need disease or harvest traits separated manually"
+                "Likely parsing issue: cultivar descriptions are narrative and may need disease or harvest traits separated manually",
+                "Encoded in plant_database/references/New Jersey/FS419 Blueberry Varieties for the Home Garden.json5",
+                "Config extraction added at helper_scripts/extraction_configs/rutgers_fs419_blueberries.json",
+                "Manifest entry added as rutgers_fs419_blueberries",
+                "Parser uses the useful variety-detail table and intentionally ignores the preceding malformed harvest chart table",
+                "Source names Elliot and Late Blue were normalized to Elliott and Lateblue with source notes"
             ]
         },
         {
@@ -2410,7 +2415,7 @@
         },
         {
             id: "uconn-home-garden-plums-connecticut",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Plums",
             institution: "University of Connecticut Home and Garden Education Center",
@@ -2430,7 +2435,12 @@
             notes: [
                 "Found by searching UConn Home and Garden fruit factsheets after New England source gaps surfaced",
                 "Official page appears to include a compact suggested-variety table",
-                "Likely parsing issue: source mixes European, Japanese, and hybrid plums with pollination guidance, so type handling needs review"
+                "Likely parsing issue: source mixes European, Japanese, and hybrid plums with pollination guidance, so type handling needs review",
+                "Encoded in plant_database/references/Connecticut/UConn Plums.json5",
+                "Config extraction added at helper_scripts/extraction_configs/uconn_plums.json",
+                "Manifest entry added as uconn_plums",
+                "Worked example for a source whose table headers carry type context but one table contains duplicate European plum rows",
+                "Only the American plum species row was encoded as Species Plum; named hybrid and European plum cultivars were kept as Japanese Plum or Euro Plum"
             ]
         },
         {
@@ -2473,7 +2483,7 @@
         },
         {
             id: "ontario-growing-blueberries-home-gardens-small-scale",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Blueberries for Home Gardens and Small Scale Production",
             institution: "Ontario Ministry of Agriculture, Food and Agribusiness",
@@ -2494,12 +2504,17 @@
             notes: [
                 "Found by searching Ontario cultivar guidance after existing Harrow, Vineland, and Ontario breeding sources surfaced locally",
                 "Official provincial web guide rather than a static PDF",
-                "Likely parsing issue: cultivar recommendations are embedded in crop establishment prose and may be separated by plant type"
+                "Likely parsing issue: cultivar recommendations are embedded in crop establishment prose and may be separated by plant type",
+                "Encoded in plant_database/references/Ontario/OMAFRA Growing Blueberries for Home Gardens and Small Scale Production.json5",
+                "Config extraction added at helper_scripts/extraction_configs/ontario_blueberries_home_gardens.json",
+                "Manifest entry added as ontario_blueberries_home_gardens",
+                "Reused html_heading_records for h3 cultivar headings and added skip_names filtering for non-cultivar h3 headings",
+                "Half-high cultivars were generated from the source paragraph because the page describes Northblue, St. Cloud, and Northcountry together"
             ]
         },
         {
             id: "ontario-growing-raspberries-blackberries-home-gardens",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Raspberries and Blackberries in a Home Garden",
             institution: "Ontario Ministry of Agriculture, Food and Agribusiness",
@@ -2523,7 +2538,12 @@
             notes: [
                 "Found alongside the Ontario blueberry guide in provincial small-fruit searches",
                 "Official guide likely uses narrative cultivar lists rather than a clean table",
-                "Likely parsing issue: summer-bearing, fall-bearing, red, black, purple, and blackberry categories should be preserved"
+                "Likely parsing issue: summer-bearing, fall-bearing, red, black, purple, and blackberry categories should be preserved",
+                "Encoded in plant_database/references/Ontario/OMAFRA Growing Raspberries and Blackberries in a Home Garden.json5",
+                "Config extraction added at helper_scripts/extraction_configs/ontario_raspberries_blackberries_home_gardens.json",
+                "Manifest entry added as ontario_raspberries_blackberries_home_gardens",
+                "Added html_heading_records parser support for h3 category headings followed by h4 cultivar headings and paragraph descriptions",
+                "Split the combined Chester Thornless and Illini Hardy blackberry heading into two reviewable records"
             ]
         },
         {

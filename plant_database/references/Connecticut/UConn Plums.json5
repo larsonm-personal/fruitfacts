@@ -1,0 +1,173 @@
+{
+    title: "Plums",
+    author: "University of Connecticut Home and Garden Education Center",
+    description: "UConn Home and Garden Education Center factsheet for Connecticut plums, with suggested American species, hybrid Japanese-American, and European plum entries plus hardiness and pollination notes",
+    url: "https://homegarden.cahnr.uconn.edu/factsheets/plums/",
+    thumbnail: "website",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Connecticut, Storrs, Connecticut",
+            latitude: 41.8077,
+            longitude: -72.253
+        },
+    ],
+    categories: [
+        {
+            name: "American plum species for Connecticut",
+            description: "UConn lists American plum as a hardy species plum for Connecticut and notes that it can pollinate hybrid Japanese-American plums"
+        },
+        {
+            name: "Hybrid Japanese-American plum varieties for Connecticut",
+            description: "UConn lists these hybrid Japanese-American plums among suggested varieties for Connecticut"
+        },
+        {
+            name: "European plum varieties for Connecticut",
+            description: "UConn lists these European plums among suggested varieties for Connecticut"
+        },
+    ],
+    plants: [
+        {
+            type: "Species Plum",
+            name: "American Plum",
+            category: "American plum species for Connecticut",
+            description: "Hardiness: Zone 3. One inch fruit in red, orange and yellow. Grows 15 - 20 ft. White flowers. Red fall color. Suckers freely Great pollinator for hybrid Japanese-American plums. Source table names this as American plum (Prunus americana)"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Elephant Heart",
+            category: "Hybrid Japanese-American plum varieties for Connecticut",
+            harvest_time_unparsed: "Ripens in September.",
+            description: "Hardiness: Zones 5 - 8. Developed by Luther Burbank in 1929. Dark red flesh, flavorful, freestone. Fresh or for canning. Ripens in September. Pollinate with Redheart, Starking Delicious, Shiro or Ozark Premier"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Gracious",
+            category: "Hybrid Japanese-American plum varieties for Connecticut",
+            description: "Hardiness: Zone 3 or 4. Developed at the North Dakota Northern Great Plains Experiment Station. Cross of Japanese and American plums. Oval yellow-orange fruit that are firm, sweet and juicy. Freestone. Fresh, dried or preserved. Upright, spreading habit. (Fedco)"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Methley",
+            category: "Hybrid Japanese-American plum varieties for Connecticut",
+            harvest_time_unparsed: "Early ripening.",
+            description: "Hardiness: Zones 5 - 9. Early ripening. Round, sweet, juicy purple fruit with a red blush. Heat tolerant. Disease resistant. Partially self-fruitful but better with Shiro or Ozark Premier"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ozark Premier",
+            category: "Hybrid Japanese-American plum varieties for Connecticut",
+            harvest_time_unparsed: "Ripens early to mid-August.",
+            description: "Hardiness: Zones 5 - 9. Bright red fruit with a tough skin. Yellow flesh, slightly tart. Clingstone. Ripens early to mid-August. Pollinate with Starking Delicious, Methley, Shiro, Burbank or Red Ace"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Santa Rosa",
+            category: "Hybrid Japanese-American plum varieties for Connecticut",
+            harvest_time_unparsed: "Mid-season.",
+            description: "Hardiness: Zones 5 -9. Developed by Luther Burbank, introduced in 1906. Large, sweet and juicy red fleshed, clingstone plums. Vigorous tree to 12 feet. Mid-season. Somewhat self-fruitful but best with another Japanese plum variety for pollination. References say slow to bear, sometimes produces small crops and requires above average skill to grow. Upright growth habit. High quality dessert plum or use for canning and freezing"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Satsuma",
+            category: "Hybrid Japanese-American plum varieties for Connecticut",
+            harvest_time_unparsed: "Midseason ripening.",
+            description: "Hardiness: Zone 4 - 9. Medium red Japanese plum. Sweet, hardy, productive. Midseason ripening. Needs another Japanese plum for pollination"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Shiro",
+            category: "Hybrid Japanese-American plum varieties for Connecticut",
+            harvest_time_unparsed: "An early ripening, yellow round plum that is mild and sweet.",
+            description: "Hardiness: Zones 5 - 8. An early ripening, yellow round plum that is mild and sweet. Good for fresh eating, preserving or cooking. Reliable bearer. Grows 12 to 15 feet high. Easy to grow, vigorous and productive. Grown since 1899. Needs another Japanese plum for cross-pollination and is a good pollinator for Santa Rosa,Methley and Satsuma. Spreading growth habit. Plan on thinning the fruit"
+        },
+        {
+            type: "Japanese Plum",
+            name: "South Dakota",
+            category: "Hybrid Japanese-American plum varieties for Connecticut",
+            harvest_time_unparsed: "Late season.",
+            description: "Hardiness: To zone 3. Developed by M. E. Hansen at the South Dakota Agriculture Exp. Stn. in early 1900's and later brought by one of his students to the University of Minnesota where it was introduced. Parentage unknown. It is a good pollinator because it blooms over a long period of time. Small to medium size yellow fleshed, freestone fruit with tough yellow skin sporting a reddish blush. Late season"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Superior",
+            category: "Hybrid Japanese-American plum varieties for Connecticut",
+            description: "Hardiness: Zone 3 or 4. Another hybrid with large, dark red, dessert plums. Sweet yellow flesh. Clingstone. One grower says some resistance to brown rot. Introduced by U. Minn. In 1933. Vigorous tree. Precocious producer. Source table names this as Superior (P. salicina 'Burbank' x Kaga) (P. americana x P. simonii)"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Toka",
+            category: "Hybrid Japanese-American plum varieties for Connecticut",
+            harvest_time_unparsed: "Upright plants with fruit ripening mid-season.",
+            description: "Hardiness: Zone 4 - 8. Reddish bronze fruit on 10 to 14 foot trees. Easy to grow with sweet, spicy, medium size fruit used for fresh eating or canning. Upright plants with fruit ripening mid-season. Developed by Dr. Hansen at the South Dakota Experiment Station. Says hybrid of Japanese and European types and needs to be pollinated with another hybrid like 'Pipestone'"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Waneta",
+            category: "Hybrid Japanese-American plum varieties for Connecticut",
+            harvest_time_unparsed: "Midseason.",
+            description: "Hardiness: To zone 3. Midseason. Released by M.E. Hansen from SD Exp. Station. Named after a Yanktonai youth who rose to fame during the War of 1812 and went on to become a chief. Two-inch maroon-skinned, orange fleshed, slightly tart juicy fruit. Open, spreading growth habit. Blooms early. Source table names this as Waneta (P. salicina 'Apple' x P. americana 'Terry')"
+        },
+        {
+            type: "Euro Plum",
+            name: "Empress",
+            category: "European plum varieties for Connecticut",
+            harvest_time_unparsed: "Ripens late in season.",
+            description: "Hardiness: Zones 5 - 8. Large, dark blue fruit. Ripens late in season. Productive. 10 to 14 feet high and wide. Pollinator recommended. President x Emily cross. Use fresh or for cooking"
+        },
+        {
+            type: "Euro Plum",
+            name: "Fellenberg",
+            category: "European plum varieties for Connecticut",
+            harvest_time_unparsed: "Ripens in early to mid-September.",
+            description: "Hardiness: Zones 5 - 8. A German type prune plum. Self-fertile. Ripens in early to mid-September. Purple skinned, yellow fleshed fruit. Very productive with a spreading growth habit. Used for fresh, canning and preserves"
+        },
+        {
+            type: "Euro Plum",
+            name: "Green Gage",
+            category: "European plum varieties for Connecticut",
+            harvest_time_unparsed: "Ripens in August.",
+            description: "Hardiness: Zones 5 - 7. Greenish yellow fruit. Ripens in August. Freestone. Good for cooking and fresh eating. Self-fertile. Good pollinator. Old European plum known by many names. Brought to France by Queen Claude and called the 'Reine Claude'. Later plum trees imported by an English family and as they had no name tags the gardener named it 'Green Gage' after the owners. Several sports including the Golden Transparent Gage and the Reine Red"
+        },
+        {
+            type: "Euro Plum",
+            name: "Italian",
+            category: "European plum varieties for Connecticut",
+            harvest_time_unparsed: "Ripens mid-season.",
+            description: "Hardiness: Zones 5 - 8. Dark purple skin with sweet yellow flash. Somewhat self-fertile, freestone, upright growth habit. Bears young. Good pollinator. 10 to 14 feet. Ripens mid-season. Says aka Fellenberg and was replaced in East by hardier Stanley. Good for dessert, drying, canning and cooking. Source table names this as Italian Plum"
+        },
+        {
+            type: "Euro Plum",
+            name: "Polly",
+            category: "European plum varieties for Connecticut",
+            description: "Hardiness: Zones 5 - 9. Large, purple, oval fruit for fresh eating. Upright-spreading tree of medium vigor. Productive and self-fertile"
+        },
+        {
+            type: "Euro Plum",
+            name: "President",
+            category: "European plum varieties for Connecticut",
+            harvest_time_unparsed: "Ripens late in season.",
+            description: "Hardiness: Zones 5 - 8. Large, blue prune plum. Vigorous. Productive. Freestone. Ripens late in season. Resistant to black knot and bacterial spot. 10 - 14 feet. Use fresh, canned or in preserves. Pollinator recommended. Vigorous, upright tree"
+        },
+        {
+            type: "Euro Plum",
+            name: "Seneca",
+            category: "European plum varieties for Connecticut",
+            description: "Hardiness: Zones 4 - 9. Large, sweet, reddish purple plums. Fresh or dried. Resistant to cracking and brown rot. Self-unfruitful. Vigorous, upright tree. Developed in 1937 at the New York State Agricultural Experiment Station, Geneva and named after a local Native American tribe. Source table names this as Seneca Plum"
+        },
+        {
+            type: "Euro Plum",
+            name: "Stanley",
+            category: "European plum varieties for Connecticut",
+            description: "Hardiness: Zones 5 - 8. Dark blue skin and greenish-yellow flesh. Heavy bearing. Bears young. Fresh, preserved or dried. Self-fertile. Susceptible to black knot. Bred at the New York State Experiment Station. Source table names this as Stanley Prune Plum"
+        },
+        {
+            type: "Euro Plum",
+            name: "Blue Damson",
+            category: "European plum varieties for Connecticut",
+            description: "Hardiness: Zones 4 - 9. Oval, blue plums used mainly for preserves. Late blooming. Dependable. Self-fertile. Source table names this as Blue Damson Plum (P. insititia)"
+        },
+    ]
+}

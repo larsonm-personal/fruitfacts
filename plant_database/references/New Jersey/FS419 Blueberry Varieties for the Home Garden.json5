@@ -1,0 +1,201 @@
+{
+    title: "Selecting Blueberry Varieties for the Home Garden",
+    author: "William Sciarappa and Gary Pavlis",
+    description: "Rutgers NJAES Cooperative Extension FS419 guide to selecting highbush blueberry varieties for New Jersey home gardens, with variety season, fruit, plant habit, flavor, and comment table",
+    url: "https://njaes.rutgers.edu/fs419/",
+    thumbnail: "website",
+    published: "January 2005",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Rutgers New Jersey Agricultural Experiment Station, New Brunswick, New Jersey",
+            latitude: 40.4862,
+            longitude: -74.4518
+        },
+    ],
+    categories: [
+        {
+            name: "Highbush blueberry varieties for New Jersey home gardens",
+            description: "Rutgers FS419 lists these highbush blueberry varieties in a home-garden selection table for New Jersey"
+        },
+    ],
+    plants: [
+        {
+            type: "Blueberry",
+            name: "Earliblue",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Very Early",
+            description: "Fruit size: Large. Color: 8. Plant habit: Upright/Spreading. Flavor: Good. Firm, good aroma, good dessert quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluetta",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Very Early",
+            description: "Fruit size: Medium. Color: 5. Plant habit: Spreading. Flavor: Mild. Soft, fair, short size"
+        },
+        {
+            type: "Blueberry",
+            name: "Ivanhoe",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Fruit size: Medium. Color: 7. Plant habit: Upright. Flavor: Excellent. Firm aromatic, high dessert quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Patriot",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Fruit size: Large. Color: 8. Plant habit: Upright. Flavor: Very Good. Firm, aromatic, tasty, small bush"
+        },
+        {
+            type: "Blueberry",
+            name: "Stanley",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Fruit size: Medium. Color: 7. Plant habit: Upright. Flavor: Very Good. Firm, aromatic, high dessert quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Blueray",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Late Early",
+            description: "Fruit size: Large. Color: 8. Plant habit: Spreading. Flavor: Very Good. Aromatic, high dessert quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Duke",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Late Early",
+            description: "Fruit size: Large. Color: 8. Plant habit: Upright. Flavor: Good. Firm, big bush, high yielder"
+        },
+        {
+            type: "Blueberry",
+            name: "Collins",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Late Early",
+            description: "Fruit size: Large. Color: 8. Plant habit: Upright/Spreading. Flavor: Good. Firm, good aroma, good dessert quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluecrop",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Mid Season",
+            description: "Fruit size: Large. Color: 9. Plant habit: Upright. Flavor: Good. Firm, slightly aromatic, most popular"
+        },
+        {
+            type: "Blueberry",
+            name: "Berkeley",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Mid Season",
+            description: "Fruit size: V Large. Color: 8. Plant habit: Spreading. Flavor: Mild. Firm, good for storage"
+        },
+        {
+            type: "Blueberry",
+            name: "Concord",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Mid Season",
+            description: "Fruit size: Small. Color: 6. Plant habit: Upright/Spreading. Flavor: Excellent. Soft, slightly aromatic, good dessert quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Pioneer",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Mid Season",
+            description: "Fruit size: Medium. Color: 6. Plant habit: Spreading. Flavor: Very Good. Firm, aromatic, high dessert quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Atlantic",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Late Mid",
+            description: "Fruit size: Large. Color: 7. Plant habit: Very Spreading. Flavor: Very Good. Firm, slightly aromatic, medium dessert quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Herbert",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Late Mid",
+            description: "Fruit size: V Large. Color: 7. Plant habit: Very Spreading. Flavor: Excellent. Soft aromatic, very high dessert quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Legacy",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Late Mid",
+            description: "Fruit size: Large. Color: 8. Plant habit: Upright/Spreading. Flavor: Excellent. Firm, sweet, aromatic, stores well"
+        },
+        {
+            type: "Blueberry",
+            name: "Dixi",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Late",
+            description: "Fruit size: Large. Color: 6. Plant habit: Very Spreading. Flavor: Very Good. Firm, aromatic, high dessert quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Elizabeth",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Late",
+            description: "Fruit size: Large. Color: 8. Plant habit: Very Spreading. Flavor: Excellent. Slightly acidic, aromatic, very high dessert quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Darrow",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Late",
+            description: "Fruit size: V Large. Color: 8. Plant habit: Upright. Flavor: Excellent. Firm, slightly acidic, high dessert quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Wareham",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Late",
+            description: "Fruit size: Medium. Color: 6. Plant habit: Spreading. Flavor: Excellent. Soft, aromatic, good dessert quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Tophat",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Late",
+            description: "Fruit size: Medium. Color: 7. Plant habit: Dwarf patio type. Flavor: Fair. Firm, 2' tall, no pollinator needed, baking"
+        },
+        {
+            type: "Blueberry",
+            name: "Coville",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Late",
+            description: "Fruit size: Large. Color: 7. Plant habit: Very Spreading. Flavor: Very Good. Firm, highly aromatic, tart, very high dessert quality"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluegold",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Late",
+            description: "Fruit size: Medium. Color: 8. Plant habit: Upright/Spreading. Flavor: Excellent. Medium, firmness, productive, winter hardy"
+        },
+        {
+            type: "Blueberry",
+            name: "Jersey",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Very Late",
+            description: "Fruit size: Medium. Color: 6. Plant habit: Upright. Flavor: Good. Classic taste, stores well"
+        },
+        {
+            type: "Blueberry",
+            name: "Lateblue",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Very Late",
+            description: "Fruit size: Small. Color: 8. Plant habit: Upright. Flavor: Very Good. Firm, strong flavor. Source table names this as Late Blue"
+        },
+        {
+            type: "Blueberry",
+            name: "Elliott",
+            category: "Highbush blueberry varieties for New Jersey home gardens",
+            harvest_time_unparsed: "Very Late",
+            description: "Fruit size: Medium. Color: 8. Plant habit: Upright. Flavor: Mild. Firm, reddish wood, good dessert quality"
+        },
+    ]
+}
