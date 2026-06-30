@@ -115,11 +115,15 @@ def smart_title_name(name, preserve_upper_words=None):
 def parse_catalog_entry(line, extractor):
     name_key = extractor.get("name_key", "name")
     description_key = extractor.get("description_key", "description")
+    separator_pattern = extractor.get(
+        "entry_separator_pattern",
+        r"(?:\s*[-:]\s*|\s+)",
+    )
     for name in sorted(extractor.get("entry_names", []), key=len, reverse=True):
         if line == name:
             return None
         entry_match = re.match(
-            r"^" + re.escape(name) + r"(?:\s*[-:]\s*|\s+)(?P<description>.*)$",
+            r"^" + re.escape(name) + separator_pattern + r"(?P<description>.*)$",
             line,
         )
         if entry_match:
@@ -207,7 +211,15 @@ def embedded_catalog_segments(line, extractor):
     names = sorted(extractor.get("entry_names", []), key=len, reverse=True)
     if not names:
         return "", []
-    pattern = r"(?<![\w'])(" + "|".join(re.escape(name) for name in names) + r")\s*:"
+    prefix_pattern = extractor.get("embedded_entry_prefix_pattern", r"(?<![\w'])")
+    separator_pattern = extractor.get("embedded_entry_separator_pattern", r"\s*:")
+    pattern = (
+        prefix_pattern
+        + r"("
+        + "|".join(re.escape(name) for name in names)
+        + r")"
+        + separator_pattern
+    )
     matches = list(re.finditer(pattern, line))
     if not matches:
         return "", []
@@ -306,6 +318,9 @@ def catalog_entry_rows(text, extractor):
                 for segment in segments:
                     row = parse_catalog_entry(segment, extractor)
                     if not row:
+                        continue
+                    if current and row.get(name_key) == current.get(name_key):
+                        append_value(current, description_key, segment)
                         continue
                     row.update(current_category)
                     row = finish_catalog_row(row, extractor)

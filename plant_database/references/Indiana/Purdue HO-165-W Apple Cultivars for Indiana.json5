@@ -1,0 +1,250 @@
+{
+    title: "Apple Cultivars for Indiana",
+    author: "Peter Hirst and B. Rosie Lerner",
+    description: "Purdue University Cooperative Extension Service HO-165-W apple cultivar guide for Indiana home gardens and orchards",
+    url: "https://www.purdue.edu/hla/sites/yardandgarden/wp-content/uploads/sites/2/2016/10/HO-165.pdf",
+    thumbnail: "pdf",
+    published: "Feb 2003",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Purdue University Cooperative Extension Service, West Lafayette, Indiana",
+            latitude: 40.4237,
+            longitude: -86.9212
+        },
+    ],
+    categories: [
+        {
+            name: "General purpose apple cultivars for Indiana",
+            description: "Purdue HO-165-W lists these general-purpose apple cultivars in approximate order of ripening for Indiana"
+        },
+        {
+            name: "Special purpose apple cultivars for Indiana",
+            description: "Purdue HO-165-W lists these apple cultivars as special-purpose choices that may be useful for home fruit production"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Yellow Transparent",
+            category: "General purpose apple cultivars for Indiana",
+            description: "is one of the earliest cultivars grown in Indiana, is well adapted to all parts of Indiana. The tree is vigorous and spreading, and comes into bearing early. It tends toward biennial bearing if not well thinned early in the season. The tree is very susceptible to fire blight. The fruit is greenish yellow until mature when it becomes yellowish white. The fruit is very desirable for use in apple sauce and is usually harvested immature for this purpose. When mature, the fruit softens and goes out of salable condition quickly. This cultivar is recommended for limited planting only"
+        },
+        {
+            type: "Apple",
+            name: "Lodi",
+            category: "General purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "ripens a week after Yellow Transparent.",
+            description: "ripens a week after Yellow Transparent. The tree is vigorous, hardy, and tends toward annual production. The fruit is larger than Yellow Transparent. It is green but becomes pale yellow upon maturity. Fruit are ordinarily harvested when still green for use in apple sauce. However, some people consider its sauce too tart, and it is considered by some to be less desirable than Yellow Transparent. Fruit tends to \"blow up\" or break down internally if harvested mature and not stored immediately. This cultivar is recommended for very limited planting only"
+        },
+        {
+            type: "Apple",
+            name: "Co-op 32",
+            category: "General purpose apple cultivars for Indiana",
+            description: "has medium-large, yellow fruit with a red blush and slightly tart flavor. The tree has excellent resistance to scab, fire blight, and powdery mildew. The fruits are good for fresh eating and salads. Source text names this as Pristine"
+        },
+        {
+            type: "Apple",
+            name: "Williams' Pride",
+            category: "General purpose apple cultivars for Indiana",
+            description: "has medium-large red fruit with nice flavor, but has a soft texture. The tree has good disease resistance to most common apple diseases. Does not perform well in high temperatures. Source text names this as William's Pride"
+        },
+        {
+            type: "Apple",
+            name: "Redfree",
+            category: "General purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "Fruit ripens 3 weeks before Prima and 7 weeks before Delicious.",
+            description: "is a large, scab-immune apple with 90% good, red color on a smooth, waxy, russet-free skin. The flesh is white, crisp, juicy, sub-acid, and retains quality for 2 months in cold storage. The tree is immune to apple scab and cedar rust and moderately resistant to fire blight and mildew. Fruit ripens 3 weeks before Prima and 7 weeks before Delicious"
+        },
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "General purpose apple cultivars for Indiana",
+            description: "has small to medium, yellow-red fruit with excellent flavor, but the tree is highly susceptible to fire blight and moderately susceptible to the other common apple diseases. A very popular apple because of its excellent eating quality"
+        },
+        {
+            type: "Apple",
+            name: "Honeycrisp",
+            category: "General purpose apple cultivars for Indiana",
+            description: "has large yellow fruits with red mottling and excellent sweet flavor, but the tree is susceptible to most common apple diseases. It is a weak-growing tree that is prone to biennial bearing. Poor fruit quality in very hot areas, but in northern-central parts of the state it should produce fruit of exceptional eating quality"
+        },
+        {
+            type: "Apple",
+            name: "Paulared",
+            category: "General purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "a promising, early-fall apple for Indiana, ripens about a month ahead of Jonathan and has good fruit quality.",
+            description: "a promising, early-fall apple for Indiana, ripens about a month ahead of Jonathan and has good fruit quality. The tree is upright, rather willowy in growth, hardy, productive, very susceptible to fire blight, and tends to be biennial in bearing if not properly thinned. The fruit, which stores well, is uniform and medium-sized with a shape similar to McIntosh. It has good red color overlying a greenish ground color"
+        },
+        {
+            type: "Apple",
+            name: "Prima",
+            category: "General purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "is a scab-immune apple ripening 3 weeks ahead of Jonathan.",
+            description: "is a scab-immune apple ripening 3 weeks ahead of Jonathan. The tree is vigorous, spreading, productive and moderately hardy. The fruit is medium to large in size and somewhat blocky in shape, most resembling Jonathan. The fruit has 70-80% good, bright red color over a greenish-yellow undercolor when mature. The color and quality are best on low to medium vigor trees. The flavor is tart, quality and texture are excellent, also resembling Jonathan. This apple has considerable promise for early fall market. However, it does not store well and should be marketed or used promptly. It is a good apple for home fruit gardens because of its scab resistance"
+        },
+        {
+            type: "Apple",
+            name: "Priscilla",
+            category: "General purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "is a scab-immune apple ripening with McIntosh and a week ahead of Jonathan.",
+            description: "is a scab-immune apple ripening with McIntosh and a week ahead of Jonathan. The tree is upright, vigorous and hardy. It is somewhat resistant to fire blight and immune to cedar apple rust. The fruit is medium-sized and uniform, with bright red blush over 75-90% of the surface. It has a sweet, aromatic flavor and a juicy, crisp texture. This high-quality fruit stores extremely well. Best-suited to the home garden"
+        },
+        {
+            type: "Apple",
+            name: "McIntosh",
+            category: "General purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "Under central and southern Indiana conditions, the fruit matures too early with poor color and poor flesh quality.",
+            description: "is a standard cultivar in the northeastern United States. The tree is very vigorous, hardy, annual bearing and very susceptible to apple scab. Under central and southern Indiana conditions, the fruit matures too early with poor color and poor flesh quality. In the northern quarter of the state, it can be grown with satisfactory fruit color, quality, and texture in most years. In good years the fruit is crisp and juicy with excellent flavor. Some red strains of McIntosh available include: Rogers McIntosh, Blackmac, and Geneva. These strains develop better color but otherwise are similar to McIntosh. Spur types of McIntosh are also available, including Macspur and Spur McIntosh that often have better bearing characteristics than the standard types. McIntosh is suggested for use only in the northern tier of counties in Indiana. Fruit has a tendency to drop off the tree prior to reaching full maturity"
+        },
+        {
+            type: "Apple",
+            name: "Spartan",
+            category: "General purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "Spartan ripens just after McIntosh and before Jonathan.",
+            description: "is a promising cultivar originating in Summerland, British Columbia, with fruit characters similar to McIntosh. Spartan ripens just after McIntosh and before Jonathan. The tree is moderately vigorous and upright-spreading. It tends toward biennial bearing unless thinned well. The fruit is firm and has an attractive, bright red color. The flesh is white. Its quality is similar to McIntosh but crisper when grown in more southern areas. Fruit size is small to medium and uniform. Spartan should replace McIntosh in warmer areas"
+        },
+        {
+            type: "Apple",
+            name: "Grimes Golden",
+            category: "General purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "is an old, high-quality yellow apple which ripens with Jonathan.",
+            description: "is an old, high-quality yellow apple which ripens with Jonathan. The tree is vigorous, highly productive, and biennial bearing if not thinned properly. It is late coming into production. The tree is very susceptible to collar rot and should either be double worked or worked high on the rootstock. In areas where this cultivar is known to the public, there is a small but spirited demand for it and limited plantings appear to be justified. The fruit is susceptible to bitter pit, especially when the crop is light and fruit size is large. It is no longer suggested for most plantings"
+        },
+        {
+            type: "Apple",
+            name: "Jonathan",
+            category: "General purpose apple cultivars for Indiana",
+            description: "is an old standard cultivar in Indiana. The tree is vigorous, precocious, hardy, and productive but very susceptible to fire blight and powdery mildew. Jonathan is grown throughout Indiana, although it develops its best fruit color in the cooler nights of northern Indiana. The fruit is bright red and medium to small in size. The fruit flesh is firm with a tart flavor and excellent quality. Jonathan is excellent for both cooking and eating out of hand. It should be stored at 34-36 F to minimize storage problems and may be stored until midwinter"
+        },
+        {
+            type: "Apple",
+            name: "Jonafree",
+            category: "General purpose apple cultivars for Indiana",
+            description: "closely resembles Jonathan but with some disease resistance. The fruit is 2 1/4 to 2 3/4 inches in diameter, 95% medium red in color, and has a smooth, russet-free skin. The flesh is pale yellow, medium texture, firm, crisp, and juicy. It has good dessert quality which holds flavor well in storage. Jonafree is immune to apple scab, moderately resistant to fire blight and cedar rust, and moderately susceptible to mildew. Fruits hang well at maturity and do not develop Jonathan spot as is common with the parent cultivar"
+        },
+        {
+            type: "Apple",
+            name: "Liberty",
+            category: "General purpose apple cultivars for Indiana",
+            description: "is a McIntosh type apple, has small to medium sized, green fruit with a red overlay and a tart flavor, coarse texture. The fruit is good for fresh eating, salads, and cooking. The tree is very productive and has excellent disease resistance"
+        },
+        {
+            type: "Apple",
+            name: "Cortland",
+            category: "General purpose apple cultivars for Indiana",
+            description: "has many of the characteristics of McIntosh. The tree is vigorous and spreading. The fruit is red striped or blushed over a greenish yellow ground color. The flesh is tart, white, and tender. It is excellent for cooking, salads, and eating out-of-hand. Cortland should be limited to the northern half of Indiana for best performance"
+        },
+        {
+            type: "Apple",
+            name: "Delicious",
+            category: "General purpose apple cultivars for Indiana",
+            description: "is the most popular and widely planted apple cultivar in the nation, including Indiana. The tree is vigorous and upright in growth, comes into bearing slowly, and tends toward annual bearing. It is moderately productive but quite susceptible to frost damage. The fruit is conic in shape with five prominent lobes at the apex. Under Indiana conditions, the `'typiness\" of the apple (shape) varies from poor to good. The fruit is striped to solid red, depending upon the strain. The fruit has a sweet, mild flavor and is fair-to-good in quality. It is used as a salad or dessert apple but is not suitable for most other culinary purposes. Over 150 strains of Delicious are now available. Most are superior in color to the old standard Delicious, however, considerable care should be taken in selecting strains that are suitable. There are a number of spur-type strains. Because of their growth habit and precocity, they are desirable in most commercial orchards. However, they require special care in early training. Fruit is born primarily on spurs which are produced on the main scaffold branches. When pruning, more scaffold limbs are allowed to remain and these branch less than the non-spur types. When well trained, spur-type trees tend to come into production earlier and to be more productive than the non-spur types"
+        },
+        {
+            type: "Apple",
+            name: "Empire",
+            category: "General purpose apple cultivars for Indiana",
+            description: "is a vigorous, spreading, productive tree that tends toward biennial production unless well thinned. It is a McIntosh-type apple with a slightly coarser fruit texture. The fruit is firmer, more highly colored, and develops an attractive overall oxblood color in central Indiana. The flesh is creamy white and of excellent flavor and quality. The fruit size is medium to large. It stores well into midwinter. Empire is suggested where a high quality, McIntosh-type apple is desired"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "General purpose apple cultivars for Indiana",
+            description: "is a high quality, yellow apple widely planted in Indiana and well adapted to conditions across the state. This cultivar is second only to Delicious in popularity. The tree comes into bearing early but becomes biennial in bearing unless thinned regularly and kept in adequate vigor. Under certain conditions, the fruit"
+        },
+        {
+            type: "Apple",
+            name: "Melrose",
+            category: "General purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "Melrose matures just after Golden Delicious and before Stayman or Rome.",
+            description: "originated at the Ohio Agricultural Experiment Station from a cross between Jonathan and Delicious. Melrose matures just after Golden Delicious and before Stayman or Rome. The fruit is firm, large and deep red over a greenish yellow ground color. It is of outstanding cooking and dessert quality and stores well. While Melrose is not particularly attractive, its quality, flavor, and texture make it worthy of trial in home orchards or commercial plantings where point-of-purchase information can be used to help develop demand"
+        },
+        {
+            type: "Apple",
+            name: "Idared",
+            category: "General purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "ripening with Golden Delicious, is a well-colored, attractive red apple developed in Idaho.",
+            description: "ripening with Golden Delicious, is a well-colored, attractive red apple developed in Idaho. The tree is vigorous and productive, similar in size to Jonathan and, like Jonathan, very susceptible to fire blight and mildew. The tree is precocious and tends to bear annually. The fruit is white-fleshed, tart, firm and of good-to-excellent quality. The storage quality is good. Idared is recommended only when fire blight can be controlled"
+        },
+        {
+            type: "Apple",
+            name: "Sir Prize",
+            category: "General purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "ripening with Golden Delicious, is a yellow, russet-free apple with immunity to apple scab.",
+            description: "ripening with Golden Delicious, is a yellow, russet-free apple with immunity to apple scab. The tree is vigorous and upright, tending toward annual production. The large fruit is very attractive, light greenish yellow, waxy smooth, and shaped like Golden Delicious. The fine-grained flesh texture is tender, juicy, sub-acid, rich in flavor, and excellent for eating out of hand. Tree fruit is too tender to be handled or graded like other apples and must be handled very carefully to avoid bruising. Sir Prize stores extremely well. Its high quality and excellent appearance make it worthy of limited trial for roadside market. It will also be excellent in home plantings because of its quality because of its quality and scab immunity. Since Sir Prize is a triploid, it will not pollinate other cultivars"
+        },
+        {
+            type: "Apple",
+            name: "Rome Beauty",
+            category: "General purpose apple cultivars for Indiana",
+            description: "is one of the older cultivars grown in Indiana. Rome Beauty is enjoying a new popularity. Wellgrown, well-colored Red Rome apples have been very profitable for many Indiana growers. Care should be taken in selecting the best strain for your conditions. The tree is spreading, precocious, productive, and tends toward annual bearing. Rome Beauty blooms relatively late in the season and thus may escape frost damage. It is susceptible to apple scab, powdery mildew, cedar apple rust and Botrysphaeria rot. The fruit is red striped to blushed, large, firm, and of fair quality. It is best for culinary uses and stores well. Red strains of Rome such as Gallia Beauty and several strains of Red Rome are quite similar to the parent cultivar but develop better red color. Considerable difference exists in color of the red strains. The Law strain appears to be one of the better strains for color in most of Indiana. The spur-type Rome has not been fully evaluated but appears to be a promising improvement in growth habit. Several spur-type Rome strains are available. These retain the red fruit color of the corresponding nonspur Red Rome strains. They are of improved growth habit and are suggested for trial. The new cultivar, Enterprise, is very similar to Rome but incorporates disease resistance"
+        },
+        {
+            type: "Apple",
+            name: "Turley",
+            category: "General purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "is a large, well-colored apple ripening 7 to 10 days ahead of Stayman Winesap.",
+            description: "is a large, well-colored apple ripening 7 to 10 days ahead of Stayman Winesap. The tree is vigorous, productive and forms naturally strong scaffold branches. Although Turley is similar in many characteristics to Stayman, the fruit does not split as badly. It is good for cooking or baking with fair-to-good dessert quality. The fruit keeps well in cold storage. Since Turley is a triploid, it will not pollinate other cultivars. Planting should be limited"
+        },
+        {
+            type: "Apple",
+            name: "Stayman",
+            category: "General purpose apple cultivars for Indiana",
+            description: "is a large, dark, dull red, firm, coarse-fleshed apple cultivar. The tree is easily injured by low winter temperatures and blossoms are quite susceptible to frost injury in the spring. It tends to set light crops unless optimum conditions for pollination are provided. It is a high-quality dessert and culinary apple. The fruit is subject to preharvest cracking, especially in seasons of variable moisture supply. Stayman fails to color satisfactorily. The Tuttle strain of Staymared, originating in Indiana, is considered to be less subject to cracking. Since Stayman is a triploid, it will not pollinate other cultivars. Planting should be limited. Blaxtayman, Staymared. Scarlet Stayman and other red strains of Stayman produce better red color and are preferred, especially in southern areas of the state"
+        },
+        {
+            type: "Apple",
+            name: "Winesap",
+            category: "General purpose apple cultivars for Indiana",
+            description: "is an old cultivar but still grown in some areas. The fruit is red, small, very firm to hard, good quality, and it keeps well in storage. Winesap is suggested primarily for retail farm market where the cultivar is known, and a market already developed. Planting should be limited"
+        },
+        {
+            type: "Apple",
+            name: "Enterprise",
+            category: "General purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "The fruit ripens late, around mid October.",
+            description: "has a large, red, juicy fruit and is good for fresh eating as well as in salads, and stores well. The tree has excellent scab and powdery mildew resistance and moderate fire blight resistance. The fruit ripens late, around mid October"
+        },
+        {
+            type: "Apple",
+            name: "Northern Spy",
+            category: "Special purpose apple cultivars for Indiana",
+            description: "is a firm, prized processing apple for northern areas. It is very desirable for culinary use. The tree is late in coming into bearing and should be planted only on dwarfing rootstocks"
+        },
+        {
+            type: "Apple",
+            name: "Mutsu",
+            category: "Special purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "is a Golden Delicious-type apple, maturing after Golden Delicious.",
+            description: "is a Golden Delicious-type apple, maturing after Golden Delicious. The fruit is very large and stores well. The flesh is firm and of excellent quality. It is susceptible to blister spot, which is difficult to control. It is suggested for trial in commercial plantings where a large; high quality Golden-type apple is desired. Because it is a triploid, it will not act as a pollinizer for other cultivars"
+        },
+        {
+            type: "Apple",
+            name: "Braeburn",
+            category: "Special purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "The fruit ripens late, around mid October.",
+            description: "bears a large, red, firm fruit with excellent flavor good for fresh eating and stores well. However, the tree is susceptible to most common apple diseases and especially so to fire blight. The fruit ripens late, around mid October. Susceptible to frost damage due to early bloom time"
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Special purpose apple cultivars for Indiana",
+            harvest_time_unparsed: "It ripens late, around mid-late October.",
+            description: "has an unusual looking fruit, light red and a bit known for poor color and russeting, but very sweet, crisp and juicy. It ripens late, around mid-late October. The tree is susceptible to most common apple diseases"
+        },
+        {
+            type: "Apple",
+            name: "Granny Smith",
+            category: "Special purpose apple cultivars for Indiana",
+            description: "is a very late, tart apple. The fruit is green, large, firm and of excellent quality. Highly productive tree. Its adaptability is restricted to southern areas of the state due to its requirements for a long growing season. Enterprise, Goldrush, Jonafree, Liberty, Pristine, Redfree, Prima, Priscilla, and Sir Prize (described above) also must be considered to be special-purpose apples because of their immunity to apple scab. These cultivars are highly recommended for homeowners because of the reduced amount of spraying necessary to obtain quality fruit"
+        },
+        {
+            type: "Apple",
+            name: "GoldRush",
+            category: "General purpose apple cultivars for Indiana",
+            description: "has large, yellow, tart, juicy apples, but requires a very long growing season. The tree has excellent scab and fire blight resistance. Excellent fruit quality but can russet badly in some years. Very firm and retains its firmness well in cold storage. Very precocious and productive. Source text names this as Goldrush"
+        },
+    ]
+}

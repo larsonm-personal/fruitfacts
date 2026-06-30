@@ -1,0 +1,111 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://extension.unh.edu/resources/files/Resource000586_Rep608.pdf",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Growing Peaches and Nectarines in the Home Garden"],
+    ["author", "William Lord and Amy Ouellette"],
+    ["description", "UNH Cooperative Extension home garden guide with peach and nectarine varieties for New Hampshire"],
+    ["url", "https://extension.unh.edu/resources/files/Resource000586_Rep608.pdf"],
+    ["thumbnail", "pdf"],
+    ["published", "Nov 2013"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "UNH Cooperative Extension, Durham, New Hampshire",
+      "latitude": 43.1389,
+      "longitude": -70.937
+    }
+  ],
+  "categories": [
+    {
+      "name": "Peach varieties for New Hampshire home gardens",
+      "description": "UNH Cooperative Extension describes these peach varieties for New Hampshire home gardens, especially southern New Hampshire sites"
+    },
+    {
+      "name": "Nectarine varieties for New Hampshire home gardens",
+      "description": "UNH Cooperative Extension describes these nectarine varieties for New Hampshire home gardens, especially southern New Hampshire sites"
+    }
+  ],
+  "name_overrides": {
+    "Red Haven": {
+      "name": "Redhaven",
+      "note": "Source text names this as Red Haven"
+    },
+    "Blushing Star": {
+      "name": "FA 18",
+      "note": "Source text names this as Blushing Star"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "static_rows",
+      "rows": [
+            {
+              "name": "Reliance",
+              "plant_type": "Peach",
+              "category": "Peach varieties for New Hampshire home gardens",
+              "description": "UNH says Reliance peach is one of the most hardy varieties available to New Hampshire gardeners and should be considered for marginal sites"
+            },
+            {
+              "name": "Merricrest",
+              "plant_type": "Nectarine",
+              "category": "Nectarine varieties for New Hampshire home gardens",
+              "description": "UNH says Merricrest nectarine is one of the most hardy varieties available to New Hampshire gardeners and should be considered for marginal sites"
+            },
+            {
+              "name": "Red Haven",
+              "plant_type": "Peach",
+              "category": "Peach varieties for New Hampshire home gardens",
+              "description": "UNH says Red Haven is the hardiest high-quality peach variety"
+            },
+            {
+              "name": "Canadian Harmony",
+              "plant_type": "Peach",
+              "category": "Peach varieties for New Hampshire home gardens",
+              "description": "UNH says Canadian Harmony does well on better sites in southern New Hampshire"
+            },
+            {
+              "name": "Madison",
+              "plant_type": "Peach",
+              "category": "Peach varieties for New Hampshire home gardens",
+              "description": "UNH says Madison does well on better sites in southern New Hampshire"
+            },
+            {
+              "name": "Raritan Rose",
+              "plant_type": "Peach",
+              "category": "Peach varieties for New Hampshire home gardens",
+              "description": "UNH lists Raritan Rose as a white-fleshed peach to try"
+            },
+            {
+              "name": "Blushing Star",
+              "plant_type": "Peach",
+              "category": "Peach varieties for New Hampshire home gardens",
+              "description": "UNH lists Blushing Star as a white-fleshed peach to try"
+            },
+            {
+              "name": "Eastern Glo",
+              "plant_type": "Nectarine",
+              "category": "Nectarine varieties for New Hampshire home gardens",
+              "description": "UNH lists Eastern Glo as a nectarine to try"
+            },
+            {
+              "name": "Fantasia",
+              "plant_type": "Nectarine",
+              "category": "Nectarine varieties for New Hampshire home gardens",
+              "description": "UNH lists Fantasia as a nectarine to try"
+            }
+      ],
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "name_key": "name",
+      "description_key": "description"
+    }
+  ]
+}

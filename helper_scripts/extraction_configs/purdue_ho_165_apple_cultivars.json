@@ -1,0 +1,158 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://www.purdue.edu/hla/sites/yardandgarden/wp-content/uploads/sites/2/2016/10/HO-165.pdf",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Apple Cultivars for Indiana"],
+    ["author", "Peter Hirst and B. Rosie Lerner"],
+    ["description", "Purdue University Cooperative Extension Service HO-165-W apple cultivar guide for Indiana home gardens and orchards"],
+    ["url", "https://www.purdue.edu/hla/sites/yardandgarden/wp-content/uploads/sites/2/2016/10/HO-165.pdf"],
+    ["thumbnail", "pdf"],
+    ["published", "Feb 2003"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Purdue University Cooperative Extension Service, West Lafayette, Indiana",
+      "latitude": 40.4237,
+      "longitude": -86.9212
+    }
+  ],
+  "categories": [
+    {
+      "name": "General purpose apple cultivars for Indiana",
+      "description": "Purdue HO-165-W lists these general-purpose apple cultivars in approximate order of ripening for Indiana"
+    },
+    {
+      "name": "Special purpose apple cultivars for Indiana",
+      "description": "Purdue HO-165-W lists these apple cultivars as special-purpose choices that may be useful for home fruit production"
+    }
+  ],
+  "text_fixes": {
+    "fireblight": "fire blight",
+    "mediumsized": "medium-sized",
+    "MacIntosh": "McIntosh",
+    "mid late": "mid-late",
+    "34-36A F": "34-36 F",
+    "30-32A F": "30-32 F"
+  },
+  "name_overrides": {
+    "William's Pride": {
+      "name": "Williams' Pride",
+      "note": "Source text names this as William's Pride"
+    },
+    "Pristine": {
+      "name": "Co-op 32",
+      "note": "Source text names this as Pristine"
+    },
+    "Goldrush": {
+      "name": "GoldRush",
+      "note": "Source text names this as Goldrush"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "General Purpose Cultivars",
+      "section_end": "Special Purpose Cultivars",
+      "allow_name_only_entries": false,
+      "default_category": "General purpose apple cultivars for Indiana",
+      "default_plant_type": "Apple",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "embedded_entry_prefix_pattern": "(?:^|(?<=[.!?])\\s+)",
+      "embedded_entry_separator_pattern": "(?:\\s*,\\s+(?=(?:a|an|bears|has|is|ripening)\\b)|\\s+(?=(?:bears|closely|has|is|requires)\\b))",
+      "entry_separator_pattern": "(?:\\s*[-:,]\\s*|\\s+)",
+      "entry_names": [
+        "Yellow Transparent",
+        "Lodi",
+        "Pristine",
+        "William's Pride",
+        "Redfree",
+        "Gala",
+        "Honeycrisp",
+        "Paulared",
+        "Prima",
+        "Priscilla",
+        "McIntosh",
+        "Spartan",
+        "Grimes Golden",
+        "Jonathan",
+        "Jonafree",
+        "Liberty",
+        "Cortland",
+        "Delicious",
+        "Empire",
+        "Golden Delicious",
+        "Melrose",
+        "Idared",
+        "Sir Prize",
+        "Rome Beauty",
+        "Turley",
+        "Stayman",
+        "Winesap",
+        "Enterprise"
+      ],
+      "skip_line_patterns": [
+        "^\\d+$",
+        "^Fruit HO-165-W$",
+        "^Revised 2/03$",
+        "^Purdue University Cooperative Extension Service$",
+        "^Page \\d+ of \\d+$",
+        "^\\(Listed in approximate order of ripening\\)$",
+        "^tends to russet severely\\.",
+        "^retains its firmness well in cold storage\\."
+      ],
+      "continuation_skip_patterns": [
+        "^Special Purpose Cultivars$"
+      ],
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripens", "ripening", "matures", "maturing"]
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Special Purpose Cultivars",
+      "section_end": "Pollination",
+      "allow_name_only_entries": false,
+      "default_category": "Special purpose apple cultivars for Indiana",
+      "default_plant_type": "Apple",
+      "entry_names_only": true,
+      "split_embedded_entries": true,
+      "embedded_entry_prefix_pattern": "(?:^|(?<=[.!?])\\s+)",
+      "embedded_entry_separator_pattern": "(?:\\s*,\\s+(?=(?:a|an|bears|has|is|ripening)\\b)|\\s+(?=(?:bears|closely|has|is|requires)\\b))",
+      "entry_separator_pattern": "(?:\\s*[-:,]\\s*|\\s+)",
+      "entry_names": [
+        "Northern Spy",
+        "Mutsu",
+        "Braeburn",
+        "Fuji",
+        "Granny Smith",
+        "Goldrush"
+      ],
+      "row_overrides": {
+        "Goldrush": {
+          "category": "General purpose apple cultivars for Indiana",
+          "append_description": "retains its firmness well in cold storage. Very precocious and productive"
+        }
+      },
+      "skip_line_patterns": [
+        "^\\d+$",
+        "^Fruit HO-165-W$",
+        "^Revised 2/03$",
+        "^Purdue University Cooperative Extension Service$",
+        "^Page \\d+ of \\d+$",
+        "^Those cultivars listed below",
+        "^However, they are considered"
+      ],
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripens", "ripening", "matures", "maturing"]
+    }
+  ]
+}

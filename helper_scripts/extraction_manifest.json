@@ -261,6 +261,14 @@
             "config": "extraction_configs/unh_day_neutral_strawberries_northern_new_england.json"
         },
         {
+            "id": "purdue_ho_165_apple_cultivars",
+            "config": "extraction_configs/purdue_ho_165_apple_cultivars.json"
+        },
+        {
+            "id": "unh_growing_peaches_nectarines_home_garden",
+            "config": "extraction_configs/unh_growing_peaches_nectarines_home_garden.json"
+        },
+        {
             "id": "uwisc_a3639_stone_fruit",
             "config": "extraction_configs/uwisc_a3639_stone_fruit.json"
         }

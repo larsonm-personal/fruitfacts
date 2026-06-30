@@ -122,7 +122,8 @@
             notes: [
                 "Landing page returned 200",
                 "Page exposes a hidden download controller for PM453.pdf",
-                "A stable direct download URL still needs to be captured before DVC work"
+                "Resolved hidden download URL as https://shop.iastate.edu/on/demandware.store/Sites-isu-Site/default/Download-File?file=UE00NTMucGRm&container=shop",
+                "Deferred from the Purdue/UNH parsing round because the PDF tables are heavily transposed and need a custom table pass"
             ]
         },
         {
@@ -155,7 +156,7 @@
         },
         {
             id: "unh-growing-peaches-and-nectarines-home-garden",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Peaches and Nectarines in the Home Garden",
             institution: "University of New Hampshire Extension",
@@ -174,7 +175,11 @@
             duplicate_check:
                 "Existing New Hampshire references are breeding releases, not this home garden guide",
             notes: [
-                "PDF returned 200 from the UNH Extension domain"
+                "PDF returned 200 from the UNH Extension domain and redirected to the migrated unmanaged file URL during archival",
+                "Encoded 9 peach and nectarine records in plant_database/references/New Hampshire/UNH Growing Peaches and Nectarines in the Home Garden.json5",
+                "Config extraction added at helper_scripts/extraction_configs/unh_growing_peaches_nectarines_home_garden.json",
+                "Manifest entry added as unh_growing_peaches_nectarines_home_garden",
+                "Worked example for a short recommendation paragraph encoded through the static_rows extractor"
             ]
         },
         {
@@ -879,7 +884,7 @@
         },
         {
             id: "purdue-apple-cultivars-indiana-ho-165-w",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Apple Cultivars for Indiana",
             institution: "Purdue University Cooperative Extension Service",
@@ -900,7 +905,13 @@
                 "Existing Indiana references include PRI releases and apple disease susceptibility, not this Indiana cultivar guide",
             notes: [
                 "HLA-hosted PDF returned 200",
-                "No current HTML landing page was found during this pass"
+                "No current HTML landing page was found during this pass",
+                "Encoded 34 apple cultivar records in plant_database/references/Indiana/Purdue HO-165-W Apple Cultivars for Indiana.json5",
+                "Config extraction added at helper_scripts/extraction_configs/purdue_ho_165_apple_cultivars.json",
+                "Manifest entry added as purdue_ho_165_apple_cultivars",
+                "Worked example for flow-mode PDF catalog entries where cultivar headings can appear mid-line after prior descriptions",
+                "Parser now supports configurable embedded PDF catalog entry separators and append-style row overrides for displaced continuation text",
+                "Bloom-season figure remains unencoded and is retained in the archived PDF"
             ]
         },
         {

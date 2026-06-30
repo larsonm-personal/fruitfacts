@@ -124,7 +124,17 @@ def row_overrides(row, extractor):
     if not override:
         return row
     new_row = dict(row)
-    new_row.update(override)
+    for override_key, override_value in override.items():
+        if override_key.startswith("append_"):
+            target_key = override_key[len("append_") :]
+            existing_value = new_row.get(target_key)
+            new_row[target_key] = " ".join(
+                str(value).strip()
+                for value in (existing_value, override_value)
+                if value
+            )
+        else:
+            new_row[override_key] = override_value
     return new_row
 
 
@@ -863,6 +873,23 @@ def html_marker_list_rows(page, extractor):
 def plants_from_html_marker_list(page, extractor, overrides, lookups):
     extractor = {"name_key": "name", **extractor}
     rows = html_marker_list_rows(page, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    rows = skip_named_rows(rows, extractor["name_key"], extractor.get("skip_names", []))
+    rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
+    return plant_records_from_config_rows(rows, extractor, overrides, lookups)
+
+
+def plants_from_static_rows(data, extractor, overrides, lookups):
+    extractor = {
+        "name_key": "name",
+        "description_key": "description",
+        "category": {"row_key": "category"},
+        "plant_type": {"row_key": "plant_type"},
+        **extractor,
+    }
+    rows = list(extractor["rows"])
     rows = expanded_rows(rows, extractor)
     rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
     rows = [row_overrides(row, extractor) for row in rows]
@@ -1633,6 +1660,8 @@ def extract(config):
             plants.extend(plants_from_pdf_marker_list(data, extractor, overrides, lookups))
         elif extractor["kind"] == "html_marker_list":
             plants.extend(plants_from_html_marker_list(data, extractor, overrides, lookups))
+        elif extractor["kind"] == "static_rows":
+            plants.extend(plants_from_static_rows(data, extractor, overrides, lookups))
         elif extractor["kind"] == "pdf_fixed_width_table":
             plants.extend(
                 plants_from_pdf_fixed_width_table(data, extractor, overrides, lookups)
