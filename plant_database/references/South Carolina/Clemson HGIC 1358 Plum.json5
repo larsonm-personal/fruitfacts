@@ -1,0 +1,122 @@
+{
+    title: "HGIC 1358 Plum",
+    author: "David Parker, Greg Reighard, and Robert F. Polomski",
+    description: "Clemson HGIC plum factsheet for South Carolina, with a prose list of popular plum cultivars and pollination context",
+    url: "https://hgic.clemson.edu/factsheet/plum/",
+    thumbnail: "website",
+    published: "October 1999",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Clemson University Cooperative Extension, Clemson, South Carolina",
+            latitude: 34.6773,
+            longitude: -82.8364
+        },
+    ],
+    categories: [
+        {
+            name: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names these among more popular plum varieties for South Carolina home gardens"
+        },
+    ],
+    plants: [
+        {
+            type: "Japanese Plum",
+            name: "AU-Amber",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names AU-Amber among more popular plum varieties for South Carolina home gardens. Source text names this as AU Amber"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Homeside",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names Homeside among more popular plum varieties for South Carolina home gardens. Source text names this as AU Homeside"
+        },
+        {
+            type: "Japanese Plum",
+            name: "AU-Producer",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names AU-Producer among more popular plum varieties for South Carolina home gardens. Source text names this as AU Producer"
+        },
+        {
+            type: "Japanese Plum",
+            name: "AU-Roadside",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names AU-Roadside among more popular plum varieties for South Carolina home gardens. Source text names this as AU Roadside"
+        },
+        {
+            type: "Japanese Plum",
+            name: "AU-Rubrum",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names AU-Rubrum among more popular plum varieties for South Carolina home gardens. Source text names this as AU Rubrum"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Black Ruby",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names Black Ruby among more popular plum varieties for South Carolina home gardens"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Byrongold",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names Byrongold among more popular plum varieties for South Carolina home gardens. Source text names this as Byron Gold"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Crimson",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names Crimson among more popular plum varieties for South Carolina home gardens"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Frontier",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names Frontier among more popular plum varieties for South Carolina home gardens"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Methley",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names Methley among more popular plum varieties for South Carolina home gardens"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Morris",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names Morris among more popular plum varieties for South Carolina home gardens"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ozark Premier",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names Ozark Premier among more popular plum varieties for South Carolina home gardens"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Robusto",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names Robusto among more popular plum varieties for South Carolina home gardens"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ruby Sweet",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names Ruby Sweet among more popular plum varieties for South Carolina home gardens"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Segundo",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names Segundo among more popular plum varieties for South Carolina home gardens"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Wade",
+            category: "Popular plum varieties for South Carolina",
+            description: "Clemson HGIC 1358 names Wade among more popular plum varieties for South Carolina home gardens"
+        },
+    ]
+}

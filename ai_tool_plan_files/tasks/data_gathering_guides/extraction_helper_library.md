@@ -143,6 +143,9 @@ script. The config runner currently supports:
 - HTML prose blocks with inline quoted cultivar names sliced by repeated
   paragraph rules, with optional terminal punctuation stripping for source
   quotes such as `'Mars,'`
+- HTML paragraph marker lists where a bounded section contains one prose
+  sentence with comma-separated cultivar names after a phrase such as
+  `Among the more popular varieties are`
 - HTML paragraph blocks where each useful paragraph starts with `Name:`
 - HTML list items where `Name: description` entries inherit crop/category
   context from `h2`, `h3`, and `h4` headings, or from configured prose
@@ -262,6 +265,11 @@ Source-specific scripts should do:
 - Clemson HGIC 1402 bunch grapes: inline quoted cultivar names in prose lists,
   sliced by repeated region and use clauses, with terminal punctuation stripped
   before generated descriptions are built
+- Clemson HGIC 1358 plum: one bounded HTML paragraph marker list where named
+  plum cultivars are kept as `Japanese Plum`, not `Species Plum`
+- Clemson HGIC 1400 blackberry: a compact HTML recommendation table where cane
+  type and fruiting habit become categories and thorniness stays in labelled
+  descriptions
 - NDSU FN590 jams and jellies: unheaded HTML cultivar grids embedded in a food
   preservation publication, with group cells for raspberry bearing type,
   suffix-to-type mapping for Prunus names, and prose-generated Juneberry rows

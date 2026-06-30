@@ -1,0 +1,79 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://hgic.clemson.edu/factsheet/blackberry/"
+  },
+  "reference_fields": [
+    ["title", "HGIC 1400 Blackberry"],
+    ["author", "David Parker, Greg Reighard, and Zack Snipes"],
+    ["description", "Clemson HGIC blackberry factsheet for South Carolina, with recommended varieties and source traits for cane type, fruiting habit, and thorniness"],
+    ["url", "https://hgic.clemson.edu/factsheet/blackberry/"],
+    ["thumbnail", "website"],
+    ["published", "September 1999"],
+    ["revised", "November 2023"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Clemson University Cooperative Extension, Clemson, South Carolina",
+      "latitude": 34.6773,
+      "longitude": -82.8364
+    }
+  ],
+  "categories": [
+    {
+      "name": "Erect Floricane blackberries for South Carolina",
+      "description": "Clemson HGIC 1400 recommends these erect floricane blackberry varieties for South Carolina home gardens"
+    },
+    {
+      "name": "Semi-trailing Floricane blackberries for South Carolina",
+      "description": "Clemson HGIC 1400 recommends these semi-trailing floricane blackberry varieties for South Carolina home gardens"
+    },
+    {
+      "name": "Trailing Floricane blackberries for South Carolina",
+      "description": "Clemson HGIC 1400 recommends this trailing floricane blackberry variety for South Carolina home gardens"
+    },
+    {
+      "name": "Erect Primocane blackberries for South Carolina",
+      "description": "Clemson HGIC 1400 recommends these erect primocane blackberry varieties for South Carolina home gardens"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_table",
+      "table_index": 0,
+      "required_headers": ["Variety", "Cane Type", "Fruiting Habit", "Thorniness"],
+      "name_key": "variety",
+      "plant_type": "Blackberry",
+      "row_overrides": {
+        "Prime-Ark Freedom": {
+          "variety": "Prime Ark Freedom",
+          "_source_note": "Source text names this as Prime-Ark Freedom"
+        },
+        "Prime-Ark Traveler": {
+          "variety": "Traveler",
+          "_source_note": "Source text names this as Prime-Ark Traveler"
+        }
+      },
+      "category": {
+        "template": "{cane_type} {fruiting_habit} blackberries for South Carolina"
+      },
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "Clemson HGIC 1400 recommends {variety} for South Carolina home gardens"
+        },
+        {
+          "kind": "labels",
+          "labels": [
+            ["cane_type", "Cane type"],
+            ["fruiting_habit", "Fruiting habit"],
+            ["thorniness", "Thorniness"]
+          ]
+        }
+      ]
+    }
+  ]
+}

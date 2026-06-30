@@ -83,7 +83,13 @@ def main(argv=None):
                 print(f"{entry['id']}\t{entry['config']}")
             return 0
 
-        selected = entries if args.all else [by_id[id_] for id_ in args.source_ids]
+        selected = entries if args.all else []
+        if not args.all:
+            for id_ in args.source_ids:
+                if id_ not in by_id:
+                    print(f"Unknown source ID: {id_}", file=sys.stderr)
+                    return 1
+                selected.append(by_id[id_])
         if not selected:
             print("Use --list or pass a source ID", file=sys.stderr)
             return 2
@@ -93,9 +99,6 @@ def main(argv=None):
 
         for entry in selected:
             run_entry(manifest_path, entry, output_dir=args.output_dir)
-    except KeyError as error:
-        print(f"Unknown source ID: {error.args[0]}", file=sys.stderr)
-        return 1
     except Exception as error:
         print(f"Failed to extract source: {error}", file=sys.stderr)
         return 1

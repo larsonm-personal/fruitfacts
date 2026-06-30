@@ -1,0 +1,68 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://hgic.clemson.edu/factsheet/plum/"
+  },
+  "reference_fields": [
+    ["title", "HGIC 1358 Plum"],
+    ["author", "David Parker, Greg Reighard, and Robert F. Polomski"],
+    ["description", "Clemson HGIC plum factsheet for South Carolina, with a prose list of popular plum cultivars and pollination context"],
+    ["url", "https://hgic.clemson.edu/factsheet/plum/"],
+    ["thumbnail", "website"],
+    ["published", "October 1999"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Clemson University Cooperative Extension, Clemson, South Carolina",
+      "latitude": 34.6773,
+      "longitude": -82.8364
+    }
+  ],
+  "categories": [
+    {
+      "name": "Popular plum varieties for South Carolina",
+      "description": "Clemson HGIC 1358 names these among more popular plum varieties for South Carolina home gardens"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_marker_list",
+      "start_heading": "Varieties",
+      "end_heading": "Harvest",
+      "marker": "Among the more popular varieties are",
+      "contains": "Among the more popular varieties are",
+      "plant_type": "Japanese Plum",
+      "category": "Popular plum varieties for South Carolina",
+      "description_template": "Clemson HGIC 1358 names {name} among more popular plum varieties for South Carolina home gardens",
+      "row_overrides": {
+        "AU Amber": {
+          "name": "AU-Amber",
+          "_source_note": "Source text names this as AU Amber"
+        },
+        "AU Homeside": {
+          "name": "Homeside",
+          "_source_note": "Source text names this as AU Homeside"
+        },
+        "AU Producer": {
+          "name": "AU-Producer",
+          "_source_note": "Source text names this as AU Producer"
+        },
+        "AU Roadside": {
+          "name": "AU-Roadside",
+          "_source_note": "Source text names this as AU Roadside"
+        },
+        "AU Rubrum": {
+          "name": "AU-Rubrum",
+          "_source_note": "Source text names this as AU Rubrum"
+        },
+        "Byron Gold": {
+          "name": "Byrongold",
+          "_source_note": "Source text names this as Byron Gold"
+        }
+      }
+    }
+  ]
+}

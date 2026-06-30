@@ -487,6 +487,23 @@ quoted names because the source includes commas inside some quotes, such as
 `'Mars,'`, and row overrides keep source spellings like `Blanc Du Bois` visible
 while generating canonical names.
 
+Clemson HGIC 1358 is a prose marker-list source. The useful cultivar list is a
+single sentence under the `Varieties` heading, while nearby prose discusses
+species groups, rootstocks, and pollination. The config uses `html_marker_list`
+bounded by `Varieties` and `Harvest` to extract only the comma-separated named
+cultivars after `Among the more popular varieties are`. These named cultivars
+are encoded as `Japanese Plum`; `Species Plum` is not used because the list is
+not a natural species listing.
+
+Clemson HGIC 1400 is table-shaped but still benefits from category preservation.
+The recommendation table has variety, cane type, fruiting habit, and thorniness
+columns. The config maps cane type plus fruiting habit into categories such as
+`Erect Floricane blackberries for South Carolina`, while keeping cane type,
+fruiting habit, and thorniness as labelled description fields. The source names
+`Prime-Ark Freedom` and `Prime-Ark Traveler`; the config harmonizes them to
+existing FruitFacts blackberry names with source notes because the importer
+uses normalized name strings for uniqueness.
+
 ## NDSU FN590 Jams And Jellies Notes
 
 NDSU FN590 is not primarily a horticulture publication, but its early sections

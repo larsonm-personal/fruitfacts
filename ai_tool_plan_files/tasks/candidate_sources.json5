@@ -2311,7 +2311,7 @@
         },
         {
             id: "clemson-hgic-1358-plum",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Plum",
             institution: "Clemson Cooperative Extension Home and Garden Information Center",
@@ -2332,7 +2332,14 @@
             notes: [
                 "Found through the Clemson HGIC fruit factsheet family",
                 "Important to preserve cultivar type carefully during future parsing and not overuse species-plum classification",
-                "Likely parsing issue: cultivar lists are short but mixed with species, rootstock, and pollination prose"
+                "Likely parsing issue: cultivar lists are short but mixed with species, rootstock, and pollination prose",
+                "Encoded in plant_database/references/South Carolina/Clemson HGIC 1358 Plum.json5",
+                "Config extraction added at helper_scripts/extraction_configs/clemson_hgic_1358_plum.json",
+                "Manifest entry added as clemson_hgic_1358_plum",
+                "Worked example for an HTML prose sentence where a marker introduces a comma-separated cultivar list",
+                "Parser support extended with html_marker_list for bounded HTML paragraph marker lists",
+                "All named plum cultivars were encoded as Japanese Plum, not Species Plum; Species Plum remains reserved for natural species listings",
+                "Source-visible spellings such as AU Amber, AU Homeside, and Byron Gold were normalized to existing FruitFacts names with source notes"
             ]
         },
         {
@@ -2369,7 +2376,7 @@
         },
         {
             id: "clemson-hgic-1400-blackberry",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Blackberry",
             institution: "Clemson Cooperative Extension Home and Garden Information Center",
@@ -2390,7 +2397,13 @@
             notes: [
                 "Found while expanding from existing Arkansas and North Carolina blackberry sources to a South Carolina extension source",
                 "Official HGIC page likely has cultivar names in short paragraphs rather than a table",
-                "Likely parsing issue: cultivar categories need to be kept as source notes rather than flattened away"
+                "Likely parsing issue: cultivar categories need to be kept as source notes rather than flattened away",
+                "Encoded in plant_database/references/South Carolina/Clemson HGIC 1400 Blackberry.json5",
+                "Config extraction added at helper_scripts/extraction_configs/clemson_hgic_1400_blackberry.json",
+                "Manifest entry added as clemson_hgic_1400_blackberry",
+                "Worked example for a compact HTML recommendation table where cane type and fruiting habit become source categories",
+                "Cane type, fruiting habit, and thorniness were preserved as labelled description fields rather than flattened away",
+                "Prime-Ark Freedom and Prime-Ark Traveler were harmonized to existing FruitFacts names with source notes to avoid normalized-name duplicates"
             ]
         },
         {

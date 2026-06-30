@@ -1,0 +1,129 @@
+{
+    title: "HGIC 1400 Blackberry",
+    author: "David Parker, Greg Reighard, and Zack Snipes",
+    description: "Clemson HGIC blackberry factsheet for South Carolina, with recommended varieties and source traits for cane type, fruiting habit, and thorniness",
+    url: "https://hgic.clemson.edu/factsheet/blackberry/",
+    thumbnail: "website",
+    published: "September 1999",
+    revised: "November 2023",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Clemson University Cooperative Extension, Clemson, South Carolina",
+            latitude: 34.6773,
+            longitude: -82.8364
+        },
+    ],
+    categories: [
+        {
+            name: "Erect Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends these erect floricane blackberry varieties for South Carolina home gardens"
+        },
+        {
+            name: "Semi-trailing Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends these semi-trailing floricane blackberry varieties for South Carolina home gardens"
+        },
+        {
+            name: "Trailing Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends this trailing floricane blackberry variety for South Carolina home gardens"
+        },
+        {
+            name: "Erect Primocane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends these erect primocane blackberry varieties for South Carolina home gardens"
+        },
+    ],
+    plants: [
+        {
+            type: "Blackberry",
+            name: "Arapaho",
+            category: "Erect Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Arapaho for South Carolina home gardens. Cane type: Erect. Fruiting habit: Floricane. Thorniness: Thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Caddo",
+            category: "Erect Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Caddo for South Carolina home gardens. Cane type: Erect. Fruiting habit: Floricane. Thorniness: Thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Chester",
+            category: "Semi-trailing Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Chester for South Carolina home gardens. Cane type: Semi-trailing. Fruiting habit: Floricane. Thorniness: Thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Hull",
+            category: "Semi-trailing Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Hull for South Carolina home gardens. Cane type: Semi-trailing. Fruiting habit: Floricane. Thorniness: Thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Kiowa",
+            category: "Erect Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Kiowa for South Carolina home gardens. Cane type: Erect. Fruiting habit: Floricane. Thorniness: Thorny"
+        },
+        {
+            type: "Blackberry",
+            name: "Natchez",
+            category: "Semi-trailing Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Natchez for South Carolina home gardens. Cane type: Semi-trailing. Fruiting habit: Floricane. Thorniness: Thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Osage",
+            category: "Erect Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Osage for South Carolina home gardens. Cane type: Erect. Fruiting habit: Floricane. Thorniness: Thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Ouachita",
+            category: "Erect Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Ouachita for South Carolina home gardens. Cane type: Erect. Fruiting habit: Floricane. Thorniness: Thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Ponca",
+            category: "Erect Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Ponca for South Carolina home gardens. Cane type: Erect. Fruiting habit: Floricane. Thorniness: Thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Prime-Ark 45",
+            category: "Erect Primocane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Prime-Ark 45 for South Carolina home gardens. Cane type: Erect. Fruiting habit: Primocane. Thorniness: Thorny"
+        },
+        {
+            type: "Blackberry",
+            name: "Prime Ark Freedom",
+            category: "Erect Primocane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Prime Ark Freedom for South Carolina home gardens. Cane type: Erect. Fruiting habit: Primocane. Thorniness: Thornless. Source text names this as Prime-Ark Freedom"
+        },
+        {
+            type: "Blackberry",
+            name: "Traveler",
+            category: "Erect Primocane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Traveler for South Carolina home gardens. Cane type: Erect. Fruiting habit: Primocane. Thorniness: Thornless. Source text names this as Prime-Ark Traveler"
+        },
+        {
+            type: "Blackberry",
+            name: "Sweetie Pie",
+            category: "Trailing Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Sweetie Pie for South Carolina home gardens. Cane type: Trailing. Fruiting habit: Floricane. Thorniness: Thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Triple Crown",
+            category: "Semi-trailing Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Triple Crown for South Carolina home gardens. Cane type: Semi-trailing. Fruiting habit: Floricane. Thorniness: Thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Von",
+            category: "Semi-trailing Floricane blackberries for South Carolina",
+            description: "Clemson HGIC 1400 recommends Von for South Carolina home gardens. Cane type: Semi-trailing. Fruiting habit: Floricane. Thorniness: Thornless"
+        },
+    ]
+}
