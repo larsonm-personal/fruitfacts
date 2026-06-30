@@ -1874,6 +1874,380 @@
                 "Manifest entry added as texas_am_e612_stone_fruit",
                 "Worked example for PDF quoted cultivar paragraphs, repeated quoted-name merging, and source-local repair of pdftotext initial-letter spacing"
             ]
+        },
+        {
+            id: "nmsu-fruits-nuts-new-mexico-orchards-h310",
+            status: "accepted",
+            priority: "high",
+            title: "Fruits and Nuts for New Mexico Orchards",
+            institution: "New Mexico State University Cooperative Extension Service",
+            region: "New Mexico",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Cherry",
+                "Fig",
+                "Grape",
+                "Jujube",
+                "Nectarine",
+                "Peach",
+                "Pear",
+                "Persimmon",
+                "Plum",
+                "Pomegranate",
+                "Quince"
+            ],
+            publication_number: "Guide H-310",
+            source_type: "state extension guide",
+            landing_url: "https://pubs.nmsu.edu/_h/H310/index.html",
+            download_url: "https://pubs.nmsu.edu/_h/H310.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "Broad New Mexico orchard guide with tree-fruit and nut species, climate limits, and cultivar recommendations",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/New Mexico/NMSU H-310 Fruits and Nuts for New Mexico Orchards.json5",
+            duplicate_check:
+                "Existing New Mexico references cover grapes, jujube, peach trials, and apple trials, but not a broad orchard guide",
+            notes: [
+                "Found by searching the NMSU publication family after existing New Mexico trial and grape references surfaced locally",
+                "HTML and PDF versions are both official NMSU publication endpoints",
+                "Likely parsing issue: species sections mix recommended cultivars, climate notes, and rootstock or site advice in prose"
+            ]
+        },
+        {
+            id: "nmsu-minor-small-fruit-crops-new-mexico-h326",
+            status: "accepted",
+            priority: "medium",
+            title: "Minor Small Fruit Crops for New Mexico Gardens",
+            institution: "New Mexico State University Cooperative Extension Service",
+            region: "New Mexico",
+            crops: [
+                "Blackberry",
+                "Blueberry",
+                "Currant",
+                "Gooseberry",
+                "Raspberry",
+                "Strawberry"
+            ],
+            publication_number: "Guide H-326",
+            source_type: "state extension guide",
+            landing_url: "https://pubs.nmsu.edu/_h/H326/index.html",
+            download_url: "https://pubs.nmsu.edu/_h/H326.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "New Mexico small-fruit guide covering crops that are not represented by the existing New Mexico tree-fruit references",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/New Mexico/NMSU H-326 Minor Small Fruit Crops for New Mexico Gardens.json5",
+            duplicate_check:
+                "No New Mexico small-fruit guide found in existing references or candidate queue",
+            notes: [
+                "Found alongside NMSU H-310 during targeted NMSU publication searches",
+                "Official HTML guide has a print-friendly PDF link",
+                "Likely parsing issue: cultivar recommendations are nested under crop-specific cultural notes rather than a uniform table"
+            ]
+        },
+        {
+            id: "unr-research-orchard-fruit-evaluations-southern-nevada-pub-3171",
+            status: "accepted",
+            priority: "medium",
+            title: "Research Orchard Fruit Evaluations and Recommendations for Southern Nevada",
+            institution: "University of Nevada, Reno Extension",
+            region: "Southern Nevada",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Fig",
+                "Grape",
+                "Nectarine",
+                "Peach",
+                "Pear",
+                "Persimmon",
+                "Plum",
+                "Pomegranate"
+            ],
+            source_type: "extension orchard evaluation",
+            landing_url: "https://extension.unr.edu/publication.aspx?PubID=3171",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "Southern Nevada orchard evaluation source with locally tested fruit types and recommendations",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Nevada/UNR Research Orchard Fruit Evaluations Southern Nevada.json5",
+            duplicate_check:
+                "No Nevada reference directory or Nevada candidate entry found locally",
+            notes: [
+                "Found by searching Nevada Extension because L.E. Cooke regional recommendations already cover southern Nevada commercially",
+                "Official UNR page exposes an older factsheet through PubID 3171",
+                "Likely parsing issue: older publication formatting may need manual PDF slicing or web text cleanup"
+            ]
+        },
+        {
+            id: "uada-tree-fruit-cultivar-recommendations-arkansas-fsa6129",
+            status: "accepted",
+            priority: "high",
+            title: "Tree Fruit Cultivar Recommendations for Arkansas",
+            institution: "University of Arkansas System Division of Agriculture Cooperative Extension Service",
+            region: "Arkansas",
+            crops: [
+                "Apple",
+                "Nectarine",
+                "Peach",
+                "Pear",
+                "Plum"
+            ],
+            publication_number: "FSA6129",
+            source_type: "state extension cultivar guide",
+            landing_url:
+                "https://www.uaex.uada.edu/yard-garden/fruits-nuts/fruit-trees.aspx",
+            download_url: "https://www.uaex.uada.edu/publications/pdf/FSA-6129.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "Current Arkansas tree-fruit cultivar recommendations, including home-garden and University of Arkansas release context",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Arkansas/FSA6129 Tree Fruit Cultivar Recommendations for Arkansas.json5",
+            duplicate_check:
+                "Existing Arkansas references include small fruit, grapes, blueberries, and breeding pages, but not the tree-fruit cultivar sheet",
+            notes: [
+                "Found from the Arkansas fruit-tree portal after existing Arkansas small-fruit and breeding references surfaced locally",
+                "Direct PDF search result indicates a revised FSA6129 publication",
+                "Likely parsing issue: PDF references and cultivar notes are mixed with narrative and breeding-program footnotes"
+            ]
+        },
+        {
+            id: "cornell-fire-blight-susceptibility-common-apple-varieties",
+            status: "accepted",
+            priority: "medium",
+            title: "Fire blight Susceptibility of Common Apple Varieties",
+            institution: "Cornell University Khan Lab",
+            region: "Northeastern United States",
+            crops: ["Apple"],
+            source_type: "university disease rating table",
+            landing_url:
+                "https://blogs.cornell.edu/khanlab/extension/fire-blight-susceptibility-of-common-apple-cultivars/",
+            discovered: "2026-06-29",
+            discovered_by: "reference-section follow-up search",
+            value_summary:
+                "Large apple cultivar disease-rating table with fire-blight susceptibility ratings and source references",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/New York/Cornell Fire Blight Susceptibility of Common Apple Varieties.json5",
+            duplicate_check:
+                "Existing references include Purdue disease-susceptibility data, but no Cornell fire-blight compilation",
+            notes: [
+                "Found from the references section of Arkansas FSA6129",
+                "Official Cornell lab page lists many cultivars with conflicting ratings and superscripted source numbers",
+                "Likely parsing issue: cultivar names, ratings, and citation superscripts are flattened together in web text"
+            ]
+        },
+        {
+            id: "illinois-fruit-trees-home-gardens-guide",
+            status: "accepted",
+            priority: "medium",
+            title: "Fruit Trees for Home Gardens",
+            institution: "University of Illinois Extension",
+            region: "Illinois",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Cherry",
+                "Nectarine",
+                "Peach",
+                "Pear",
+                "Plum"
+            ],
+            source_type: "state extension web guide",
+            landing_url: "https://extension.illinois.edu/fruit-trees",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "Illinois tree-fruit guide with crop pages and recommended cultivar sets for home gardens",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/Illinois/Illinois Extension Fruit Trees for Home Gardens.json5",
+            duplicate_check:
+                "No Illinois reference directory or Illinois candidate entry found locally",
+            notes: [
+                "Found while searching for official Midwest sources adjacent to existing Wisconsin, Indiana, Nebraska, and Ohio entries",
+                "Official web guide has cultivar lists split across multiple crop-specific pages",
+                "Likely parsing issue: values are spread over separate routed pages rather than a single downloadable source"
+            ]
+        },
+        {
+            id: "illinois-small-fruits-home-gardens-guide",
+            status: "accepted",
+            priority: "medium",
+            title: "Small Fruits for Home Gardens",
+            institution: "University of Illinois Extension",
+            region: "Illinois",
+            crops: [
+                "Blackberry",
+                "Blueberry",
+                "Currant",
+                "Gooseberry",
+                "Grape",
+                "Raspberry",
+                "Strawberry"
+            ],
+            source_type: "state extension web guide",
+            landing_url: "https://extension.illinois.edu/small-fruits",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "Illinois small-fruit guide with crop-specific pages and cultivar recommendations for home gardens",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/Illinois/Illinois Extension Small Fruits for Home Gardens.json5",
+            duplicate_check:
+                "No Illinois small-fruit guide found in existing references or candidate queue",
+            notes: [
+                "Found by expanding the Illinois Extension fruit-tree search to the companion small-fruit guide",
+                "Official guide likely requires crawling several linked crop pages",
+                "Likely parsing issue: cultivar recommendations are embedded in separate HTML pages and may use image or card sections"
+            ]
+        },
+        {
+            id: "rutgers-blueberry-varieties-home-garden-fs419",
+            status: "accepted",
+            priority: "medium",
+            title: "Blueberry Varieties for the Home Garden",
+            institution: "Rutgers New Jersey Agricultural Experiment Station",
+            region: "New Jersey",
+            crops: ["Blueberry"],
+            publication_number: "FS419",
+            source_type: "state extension factsheet",
+            landing_url: "https://njaes.rutgers.edu/fs419/",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "New Jersey blueberry cultivar factsheet with recommended varieties for home gardens",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/New Jersey/FS419 Blueberry Varieties for the Home Garden.json5",
+            duplicate_check:
+                "Existing New Jersey references cover Rutgers apples, apricots, peaches, nectarines, Asian pear maturity, cider apples, and ARS releases, but not blueberries",
+            notes: [
+                "Found from the NJAES fruit and nut crop publication catalog",
+                "Official Rutgers page presents the factsheet as HTML",
+                "Likely parsing issue: cultivar descriptions are narrative and may need disease or harvest traits separated manually"
+            ]
+        },
+        {
+            id: "rutgers-plum-varieties-new-jersey-fs1083",
+            status: "accepted",
+            priority: "medium",
+            title: "Plum Varieties for New Jersey",
+            institution: "Rutgers New Jersey Agricultural Experiment Station",
+            region: "New Jersey",
+            crops: ["Plum"],
+            publication_number: "FS1083",
+            source_type: "state extension factsheet",
+            landing_url: "https://njaes.rutgers.edu/pubs/publication.php?pid=fs1083",
+            discovered: "2026-06-29",
+            discovered_by: "reference-seeded official web search",
+            value_summary:
+                "Rutgers plum factsheet that complements existing New Jersey peach, nectarine, apple, and apricot references",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/New Jersey/FS1083 Plum Varieties for New Jersey.json5",
+            duplicate_check:
+                "No New Jersey plum factsheet found in existing references or candidate queue",
+            notes: [
+                "Found from the NJAES fruit and nut crop publication catalog after local Rutgers references surfaced",
+                "Publication catalog page is stable even though the content may be served differently from newer Rutgers factsheets",
+                "Likely parsing issue: may require finding a linked PDF or archived text if the catalog page lacks body content"
+            ]
+        },
+        {
+            id: "texas-am-apples-eht-016",
+            status: "accepted",
+            priority: "medium",
+            title: "Texas Fruit and Nut Production: Apples",
+            institution: "Texas A&M AgriLife Extension",
+            region: "Texas",
+            crops: ["Apple"],
+            publication_number: "EHT-016",
+            source_type: "state extension guide",
+            landing_url:
+                "https://agrilifeextension.tamu.edu/asset-external/texas-fruit-and-nut-production-apples/",
+            download_url:
+                "https://aggie-horticulture.tamu.edu/fruit-nut/wp-content/uploads/sites/6/2015/04/apples_2015.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "source-family follow-up search",
+            value_summary:
+                "Texas AgriLife apple guide with adapted regions, variety lists, rootstock selection, and harvest context",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Texas/Texas A&M EHT-016 Apples.json5",
+            duplicate_check:
+                "Existing Texas references include peaches, persimmons, and the E-612 Prunus sheet, but not apples",
+            notes: [
+                "Found by searching companion publications in the Texas Fruit and Nut Production series already represented by E-612",
+                "Official AgriLife landing page and Aggie Horticulture PDF were both discovered",
+                "Likely parsing issue: PDF uses production-guide prose with cultivar lists embedded in regional discussion"
+            ]
+        },
+        {
+            id: "texas-am-pears-eht-023",
+            status: "accepted",
+            priority: "medium",
+            title: "Texas Fruit and Nut Production: Pears",
+            institution: "Texas A&M AgriLife Extension",
+            region: "Texas",
+            crops: ["Pear"],
+            publication_number: "EHT-023",
+            source_type: "state extension guide",
+            landing_url:
+                "https://agrilifeextension.tamu.edu/asset-external/texas-fruit-and-nut-production-pears/",
+            download_url:
+                "https://aggie-horticulture.tamu.edu/fruit-nut/wp-content/uploads/sites/6/2015/04/pears_2015.pdf",
+            discovered: "2026-06-29",
+            discovered_by: "source-family follow-up search",
+            value_summary:
+                "Texas AgriLife pear guide with Asian, European, and hybrid pear variety recommendations by Texas production zones",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Texas/Texas A&M EHT-023 Pears.json5",
+            duplicate_check:
+                "Existing Texas references include peaches, persimmons, and the E-612 Prunus sheet, but not pears",
+            notes: [
+                "Found by following the Texas Fruit and Nut Production source family and by matching a pear reference cited from a Virginia pear handout",
+                "Official AgriLife landing page and Aggie Horticulture PDF were both discovered",
+                "Likely parsing issue: pear variety zones and descriptions span captions, prose, and tables"
+            ]
+        },
+        {
+            id: "vce-growing-pears-virginia-422-017",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Pears in Virginia",
+            institution: "Virginia Cooperative Extension",
+            region: "Virginia",
+            crops: ["Pear"],
+            publication_number: "422-017",
+            source_type: "state extension guide",
+            landing_url:
+                "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/422/422-017/422-017.html",
+            discovered: "2026-06-29",
+            discovered_by: "reference-section follow-up search",
+            value_summary:
+                "Virginia pear guide with fire-blight-resistant European pear and Asian pear variety descriptions",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/Virginia/VCE 422-017 Growing Pears in Virginia.json5",
+            duplicate_check:
+                "Candidate queue already has Virginia apples, cherries, peaches, and nectarines; local references include commercial grapes and apricots, but not pears",
+            notes: [
+                "Found from a Fairfax Master Gardener pear handout reference list, then verified on the official VCE publication page",
+                "Companion publication to already encoded VCE 422-series fruit guides",
+                "Likely parsing issue: variety descriptions are prose paragraphs under European and Asian pear headings"
+            ]
         }
     ]
 }
