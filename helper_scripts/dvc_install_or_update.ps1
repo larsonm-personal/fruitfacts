@@ -3,6 +3,7 @@ param(
     [string]$DvcVersion = "",
     [switch]$Pull,
     [switch]$Doctor,
+    [switch]$AllowMissing,
     [switch]$Help
 )
 
@@ -10,7 +11,7 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
 function Write-Usage {
-    Write-Host "Usage: .\helper_scripts\dvc_install_or_update.ps1 [-VenvPath path] [-DvcVersion version] [-Pull] [-Doctor]"
+    Write-Host "Usage: .\helper_scripts\dvc_install_or_update.ps1 [-VenvPath path] [-DvcVersion version] [-Pull] [-Doctor] [-AllowMissing]"
     Write-Host ""
     Write-Host "Installs or updates DVC with Google Drive support using pip in a local virtualenv"
     Write-Host "This avoids Chocolatey and the Windows exe installer path noted as unreliable in README.md"
@@ -18,6 +19,7 @@ function Write-Usage {
     Write-Host "Examples:"
     Write-Host "  .\helper_scripts\dvc_install_or_update.ps1"
     Write-Host "  .\helper_scripts\dvc_install_or_update.ps1 -Pull"
+    Write-Host "  .\helper_scripts\dvc_install_or_update.ps1 -Pull -AllowMissing"
     Write-Host "  .\helper_scripts\dvc_install_or_update.ps1 -DvcVersion 3.60.1"
 }
 
@@ -71,6 +73,47 @@ function Invoke-Python {
     }
 }
 
+function Test-GDriveCredential {
+    param(
+        [string]$CredentialPath,
+        [string]$RepoRoot
+    )
+
+    if (!(Test-Path $CredentialPath)) {
+        throw "Google Drive credential file was not found at $CredentialPath"
+    }
+
+    try {
+        $credential = Get-Content -Raw $CredentialPath | ConvertFrom-Json
+    } catch {
+        throw "Google Drive credential file is not valid JSON"
+    }
+
+    $fields = $credential.PSObject.Properties.Name
+    foreach ($field in @("type", "project_id", "private_key", "client_email", "token_uri")) {
+        if ($fields -notcontains $field) {
+            throw "Google Drive credential file is missing required field $field"
+        }
+    }
+
+    if ($credential.type -ne "service_account") {
+        throw "Google Drive credential type must be service_account"
+    }
+
+    if (!$credential.private_key.StartsWith("-----BEGIN PRIVATE KEY-----")) {
+        throw "Google Drive credential private_key does not look like a service account private key"
+    }
+
+    $dvcConfigPath = Join-Path $RepoRoot ".dvc\config"
+    $dvcConfig = Get-Content -Raw $dvcConfigPath
+    $emailMatch = [regex]::Match($dvcConfig, "gdrive_service_account_user_email\s*=\s*(\S+)")
+    if ($emailMatch.Success -and $credential.client_email -ne $emailMatch.Groups[1].Value) {
+        throw "Google Drive credential client_email does not match .dvc/config"
+    }
+
+    Write-Host "Google Drive credential format looks like a matching service account JSON"
+}
+
 if ($Help) {
     Write-Usage
     exit 0
@@ -114,6 +157,7 @@ if ($DvcVersion) {
     $packages += "dvc[gdrive]"
 }
 $packages += "pydrive2"
+$packages += "pyOpenSSL==24.2.1"
 
 Write-Host "Installing DVC packages: $($packages -join ', ')"
 & $venvPython -m pip install --upgrade @packages
@@ -134,8 +178,12 @@ if ($LASTEXITCODE -ne 0) {
 $credentialPath = Join-Path $repoRoot "michael-gdrive-credentials.json"
 if (Test-Path $credentialPath) {
     Write-Host "Found Google Drive credential file: $credentialPath"
+    Test-GDriveCredential -CredentialPath $credentialPath -RepoRoot $repoRoot
 } else {
     Write-Warning "Google Drive credential file was not found at $credentialPath"
+    if ($Pull) {
+        throw "Cannot run dvc pull without the Google Drive credential file"
+    }
 }
 
 if ($Doctor) {
@@ -150,7 +198,11 @@ if ($Pull) {
     Write-Host "Running dvc pull"
     Push-Location $repoRoot
     try {
-        & $dvcExe pull
+        $pullArgs = @("pull")
+        if ($AllowMissing) {
+            $pullArgs += "--allow-missing"
+        }
+        & $dvcExe @pullArgs
         if ($LASTEXITCODE -ne 0) {
             throw "dvc pull failed with exit code $LASTEXITCODE"
         }

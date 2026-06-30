@@ -47,4 +47,16 @@ $envLines = @(
 )
 Set-Content -LiteralPath $envBatPath -Value $envLines -Encoding Ascii
 
+$envPsPath = Join-Path $InstallRoot "node_env.ps1"
+$nodeDirPs = $nodeDir.Replace("'", "''")
+$npmGlobalDirPs = $npmGlobalDir.Replace("'", "''")
+$envPsLines = @(
+    "`$nodeDir = '$nodeDirPs'",
+    "`$npmGlobalDir = '$npmGlobalDirPs'",
+    "`$env:PATH = ""`$nodeDir;`$npmGlobalDir;`$env:PATH""",
+    "`$env:FRUITFACTS_NODE_VERSION = '$version'"
+)
+Set-Content -LiteralPath $envPsPath -Value $envPsLines -Encoding Ascii
+
 Write-Host "Node $version ready"
+Write-Host "PowerShell env helper: $envPsPath"

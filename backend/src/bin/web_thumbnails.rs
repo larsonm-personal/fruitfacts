@@ -9,6 +9,23 @@ use anyhow::{anyhow, Result};
 use clap::{crate_version, Arg, Command as ClapApp};
 use std::io::Write;
 
+#[cfg(windows)]
+fn node_compatible_path(path: &Path) -> String {
+    let path_text = path.to_string_lossy();
+    if let Some(rest) = path_text.strip_prefix(r"\\?\UNC\") {
+        format!(r"\\{rest}")
+    } else if let Some(rest) = path_text.strip_prefix(r"\\?\") {
+        rest.to_string()
+    } else {
+        path_text.into_owned()
+    }
+}
+
+#[cfg(not(windows))]
+fn node_compatible_path(path: &Path) -> String {
+    path.to_string_lossy().into_owned()
+}
+
 #[cfg(feature = "binaries")]
 fn web_address_to_jpg(web_address: &str, script_path: &str, output_path: &Path) -> Result<()> {
     println!(
@@ -63,7 +80,7 @@ fn main() {
 
     let binding =
         fs::canonicalize(database_dir.join("../backend/web_screenshot/index.js")).unwrap();
-    let script_path = binding.as_path().to_str().unwrap();
+    let script_path = node_compatible_path(binding.as_path());
 
     for entry in walkdir::WalkDir::new(database_dir.join("references"))
         .max_depth(5)
@@ -118,7 +135,8 @@ fn main() {
             if output_path.exists() && !matches.get_flag("redo_all") {
                 // println!("jpg already exists");
                 skipped += 1;
-            } else if let Err(error) = web_address_to_jpg(&web_address, script_path, &output_path) {
+            } else if let Err(error) = web_address_to_jpg(&web_address, &script_path, &output_path)
+            {
                 println!("error: {error:?}");
                 errored += 1;
             } else {
