@@ -2256,7 +2256,7 @@
         },
         {
             id: "clemson-hgic-1350-apple",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Apple",
             institution: "Clemson Cooperative Extension Home and Garden Information Center",
@@ -2277,12 +2277,17 @@
             notes: [
                 "Found by searching Clemson HGIC crop factsheets after the existing Clemson peach-evaluation candidate surfaced locally",
                 "Official HGIC page is a web factsheet rather than a PDF",
-                "Likely parsing issue: varieties are embedded in prose and headings rather than a single stable table"
+                "Likely parsing issue: varieties are embedded in prose and headings rather than a single stable table",
+                "Encoded in plant_database/references/South Carolina/Clemson HGIC 1350 Apple.json5",
+                "Config extraction added at helper_scripts/extraction_configs/clemson_hgic_1350_apple.json",
+                "Manifest entry added as clemson_hgic_1350_apple",
+                "Worked example for a Clemson HGIC recommendation table with numbered headers, regional area codes, pollination codes, and a footnote row",
+                "Harvest windows were kept as source-textual phrases from the characteristics column"
             ]
         },
         {
             id: "clemson-hgic-1354-peaches-nectarines",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Peaches and Nectarines",
             institution: "Clemson Cooperative Extension Home and Garden Information Center",
@@ -2306,7 +2311,14 @@
             notes: [
                 "Found through the Clemson HGIC fruit factsheet family",
                 "Useful as a current consumer-facing recommendation source distinct from trial/evaluation data",
-                "Likely parsing issue: cultivar suitability, chill, and harvest notes are interleaved with culture advice"
+                "Likely parsing issue: cultivar suitability, chill, and harvest notes are interleaved with culture advice",
+                "Encoded in plant_database/references/South Carolina/Clemson HGIC 1354 Peaches and Nectarines.json5",
+                "Config extraction added at helper_scripts/extraction_configs/clemson_hgic_1354_peaches_nectarines.json",
+                "Manifest entry added as clemson_hgic_1354_peaches_nectarines",
+                "Worked example for a mixed peach and nectarine HTML table where starred names carry the plant type",
+                "Parser support extended so ordinary html_table rows can use name_suffix_type_map, allowing asterisked rows to become Nectarine records with source notes",
+                "Harvest windows were kept as source-textual table values rather than converted to exact dates",
+                "Junegold, Roseprincess, Redglobe, and Redgold were harmonized to existing FruitFacts names with source notes to avoid normalized-name duplicates"
             ]
         },
         {

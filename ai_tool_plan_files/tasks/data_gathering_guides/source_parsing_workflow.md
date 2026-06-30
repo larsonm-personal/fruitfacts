@@ -504,6 +504,20 @@ fruiting habit, and thorniness as labelled description fields. The source names
 existing FruitFacts blackberry names with source notes because the importer
 uses normalized name strings for uniqueness.
 
+Clemson HGIC 1350 is a straightforward HTML table after the surrounding prose
+is ignored. The config uses the numbered headers directly, skips the source
+footnote row that begins with `1Listed`, keeps regional area codes and
+pollination codes in labelled descriptions, and pulls harvest phrases from the
+characteristics text without converting them into exact dates.
+
+Clemson HGIC 1354 is a mixed peach and nectarine table. The source marks
+nectarine rows by adding `*` to the variety name and explaining `*Nectarine` in
+the footnote row. The shared table parser now applies `name_suffix_type_map` to
+ordinary `html_table` rows, so those suffixes are stripped from names and the
+affected rows become `Nectarine` records with source notes. The config also
+harmonizes source names such as `Junegold`, `Roseprincess`, `Redglobe`, and
+`Redgold` to existing FruitFacts names to avoid normalized-name duplicates.
+
 ## NDSU FN590 Jams And Jellies Notes
 
 NDSU FN590 is not primarily a horticulture publication, but its early sections

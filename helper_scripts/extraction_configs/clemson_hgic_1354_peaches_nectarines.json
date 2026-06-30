@@ -1,0 +1,89 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://hgic.clemson.edu/factsheet/peaches-nectarines/"
+  },
+  "reference_fields": [
+    ["title", "HGIC 1354 Peaches and Nectarines"],
+    ["author", "Nancy Doubrava, Robert F. Polomski, Greg Reighard, and Guido Schnabel"],
+    ["description", "Clemson HGIC peach and nectarine factsheet for South Carolina, with recommended varieties by area, characteristics, and harvest window"],
+    ["url", "https://hgic.clemson.edu/factsheet/peaches-nectarines/"],
+    ["thumbnail", "website"],
+    ["published", "June 1999"],
+    ["reviewed", "June 2022"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Clemson University Cooperative Extension, Clemson, South Carolina",
+      "latitude": 34.6773,
+      "longitude": -82.8364
+    }
+  ],
+  "categories": [
+    {
+      "name": "Peach varieties recommended for South Carolina home use",
+      "description": "Clemson HGIC 1354 lists these peach varieties for home use in South Carolina"
+    },
+    {
+      "name": "Nectarine varieties recommended for South Carolina home use",
+      "description": "Clemson HGIC 1354 marks these table rows as nectarine varieties for South Carolina home use"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_table",
+      "table_index": 0,
+      "required_headers": ["Variety", "Area1", "Characteristics", "Harvest2"],
+      "name_key": "variety",
+      "skip_prefixes": ["*Nectarine", "Note:"],
+      "plant_type": {
+        "row_key": "plant_type",
+        "map": {
+          "Nectarine": "Nectarine"
+        },
+        "default": "Peach"
+      },
+      "category": {
+        "row_key": "plant_type",
+        "map": {
+          "Nectarine": "Nectarine varieties recommended for South Carolina home use"
+        },
+        "default": "Peach varieties recommended for South Carolina home use"
+      },
+      "row_overrides": {
+        "Junegold": {
+          "variety": "June Gold",
+          "_source_note": "Source table names this as Junegold"
+        },
+        "Roseprincess": {
+          "variety": "Rose Princess",
+          "_source_note": "Source table marks this row as a nectarine and names it Roseprincess"
+        },
+        "Redglobe": {
+          "variety": "Red Globe",
+          "_source_note": "Source table names this as Redglobe"
+        },
+        "Redgold": {
+          "variety": "Red Gold",
+          "_source_note": "Source table marks this row as a nectarine and names it Redgold"
+        }
+      },
+      "name_suffix_type_map": [
+        {
+          "suffix": "*",
+          "plant_type": "Nectarine",
+          "_source_note": "Source table marks this row as a nectarine"
+        }
+      ],
+      "harvest_key": "harvest2",
+      "description_labels": [
+        ["area1", "South Carolina area code"],
+        ["characteristics", "Characteristics"],
+        ["harvest2", "Harvest window"]
+      ]
+    }
+  ]
+}

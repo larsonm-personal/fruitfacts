@@ -1,0 +1,53 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://hgic.clemson.edu/factsheet/apple/"
+  },
+  "reference_fields": [
+    ["title", "HGIC 1350 Apple"],
+    ["author", "Robert F. Polomski and Greg Reighard"],
+    ["description", "Clemson HGIC apple factsheet for South Carolina, with home-use variety recommendations by regional area and pollination code"],
+    ["url", "https://hgic.clemson.edu/factsheet/apple/"],
+    ["thumbnail", "website"],
+    ["published", "February 27, 2000"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Clemson University Cooperative Extension, Clemson, South Carolina",
+      "latitude": 34.6773,
+      "longitude": -82.8364
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple varieties recommended for South Carolina home use",
+      "description": "Clemson HGIC 1350 lists these apple varieties for home use in different South Carolina zones"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_table",
+      "table_index": 0,
+      "required_headers": [
+        "Variety1",
+        "Area2",
+        "Characteristics3",
+        "Pollination Code4"
+      ],
+      "plant_type": "Apple",
+      "name_key": "variety1",
+      "category": "Apple varieties recommended for South Carolina home use",
+      "skip_prefixes": ["1Listed", "Note:"],
+      "harvest_from_key": "characteristics3",
+      "harvest_terms": ["ripen", "matur"],
+      "description_labels": [
+        ["area2", "South Carolina area code"],
+        ["characteristics3", "Characteristics"],
+        ["pollination_code4", "Pollination code"]
+      ]
+    }
+  ]
+}

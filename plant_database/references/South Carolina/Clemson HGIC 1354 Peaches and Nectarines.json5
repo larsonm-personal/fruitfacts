@@ -1,0 +1,143 @@
+{
+    title: "HGIC 1354 Peaches and Nectarines",
+    author: "Nancy Doubrava, Robert F. Polomski, Greg Reighard, and Guido Schnabel",
+    description: "Clemson HGIC peach and nectarine factsheet for South Carolina, with recommended varieties by area, characteristics, and harvest window",
+    url: "https://hgic.clemson.edu/factsheet/peaches-nectarines/",
+    thumbnail: "website",
+    published: "June 1999",
+    reviewed: "June 2022",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Clemson University Cooperative Extension, Clemson, South Carolina",
+            latitude: 34.6773,
+            longitude: -82.8364
+        },
+    ],
+    categories: [
+        {
+            name: "Peach varieties recommended for South Carolina home use",
+            description: "Clemson HGIC 1354 lists these peach varieties for home use in South Carolina"
+        },
+        {
+            name: "Nectarine varieties recommended for South Carolina home use",
+            description: "Clemson HGIC 1354 marks these table rows as nectarine varieties for South Carolina home use"
+        },
+    ],
+    plants: [
+        {
+            type: "Peach",
+            name: "Flordaking",
+            category: "Peach varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "May 5-10",
+            description: "South Carolina area code: CP. Characteristics: Large clingstone; medium quality, yellow flesh. Harvest window: May 5-10"
+        },
+        {
+            type: "Peach",
+            name: "Springcrest",
+            category: "Peach varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "May 10-20",
+            description: "South Carolina area code: SR,CP. Characteristics: Small clingstone; medium quality; deep red blush, bright yellow under color; medium quality. Harvest window: May 10-20"
+        },
+        {
+            type: "Nectarine",
+            name: "Armking",
+            category: "Nectarine varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "May 15-25",
+            description: "South Carolina area code: CP. Characteristics: Medium-size fruit for early season; solid red-color skin with yellow flesh. Harvest window: May 15-25. Source table marks this row as a nectarine"
+        },
+        {
+            type: "Peach",
+            name: "June Gold",
+            category: "Peach varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "May 24-30",
+            description: "South Carolina area code: SR,CP. Characteristics: Large clingstone with bright reddish blush; fine texture, yellow flesh. Harvest window: May 24-30. Source table names this as Junegold"
+        },
+        {
+            type: "Peach",
+            name: "Dixiered",
+            category: "Peach varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "June 5-15",
+            description: "South Carolina area code: M,P,SR. Characteristics: Medium size, round clingstone: flesh yellow, skin red; good quality. Harvest window: June 5-15"
+        },
+        {
+            type: "Nectarine",
+            name: "Juneprincess",
+            category: "Nectarine varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "June 10-17",
+            description: "South Carolina area code: M,P,SR. Characteristics: Medium-large freestone; 80-90% bright red. Harvest window: June 10-17. Source table marks this row as a nectarine"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Peach varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "June 20-30",
+            description: "South Carolina area code: M,P,SR. Characteristics: Medium size; very red skin; skin is tough and firm; freestone; very good for picking, canning and freezing; non-browning. Harvest window: June 20-30"
+        },
+        {
+            type: "Peach",
+            name: "Harvester",
+            category: "Peach varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "June 25-July 2",
+            description: "South Carolina area code: SR,CP. Characteristics: Medium to large size with bright red skin color; has golden yellow flesh for excellent quality; freestone. Harvest window: June 25-July 2"
+        },
+        {
+            type: "Nectarine",
+            name: "Rose Princess",
+            category: "Nectarine varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "June 25-July 2",
+            description: "South Carolina area code: M,P,SR. Characteristics: White flesh; semi-freestone. Harvest window: June 25-July 2. Source table marks this row as a nectarine and names it Roseprincess"
+        },
+        {
+            type: "Peach",
+            name: "Nectar",
+            category: "Peach varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "June 25-July 2",
+            description: "South Carolina area code: M,P,SR. Characteristics: Excellent quality freestone, white flesh peach; outstanding for its sweetness and aroma. Harvest window: June 25-July 2"
+        },
+        {
+            type: "Peach",
+            name: "Red Globe",
+            category: "Peach varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "July 5-15",
+            description: "South Carolina area code: M,P,SR. Characteristics: Medium to large, attractive deep-red freestone; yellow flesh; good quality. Harvest window: July 5-15. Source table names this as Redglobe"
+        },
+        {
+            type: "Nectarine",
+            name: "Red Gold",
+            category: "Nectarine varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "July 5-15",
+            description: "South Carolina area code: All. Characteristics: Large size, freestone fruit; excellent quality yellow flesh. Harvest window: July 5-15. Source table marks this row as a nectarine and names it Redgold"
+        },
+        {
+            type: "Peach",
+            name: "Georgia Belle",
+            category: "Peach varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "July 20-31",
+            description: "South Carolina area code: M,P,SR. Characteristics: Medium to large, white flesh freestone; skin red blush; excellent for eating; fair for freezing and poor for canning. Harvest window: July 20-31"
+        },
+        {
+            type: "Peach",
+            name: "Redskin",
+            category: "Peach varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "July 20-31",
+            description: "South Carolina area code: All. Characteristics: Medium to large, freestone fruit; yellow flesh with red at pit; good quality; melting texture but firm; very attractive; good for canning and freezing. Harvest window: July 20-31"
+        },
+        {
+            type: "Nectarine",
+            name: "Fantasia",
+            category: "Nectarine varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "July 20",
+            description: "South Carolina area code: SR,CP. Characteristics: Large size, freestone fruit; yellow flesh; very high quality; firm fruit; excellent color. Harvest window: July 20. Source table marks this row as a nectarine"
+        },
+        {
+            type: "Peach",
+            name: "Jefferson",
+            category: "Peach varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "July 25-August 5",
+            description: "South Carolina area code: M,P,SR. Characteristics: Reliable producer; yellow flesh peach of excellent quality; buds and flower. Harvest window: July 25-August 5"
+        },
+    ]
+}

@@ -188,6 +188,7 @@ def table_rows(page, extractor):
             rows = table_to_dicts(table)
     rows = expanded_rows(rows, extractor)
     rows = [row_text_fixes(row, extractor.get("text_fixes")) for row in rows]
+    rows = [suffix_mapped_row(row, extractor) for row in rows]
     rows = [row_overrides(row, extractor) for row in rows]
     rows = keyed_data_rows(
         rows,

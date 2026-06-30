@@ -17,6 +17,14 @@
             "config": "extraction_configs/clemson_hgic_1401_blueberry.json"
         },
         {
+            "id": "clemson_hgic_1350_apple",
+            "config": "extraction_configs/clemson_hgic_1350_apple.json"
+        },
+        {
+            "id": "clemson_hgic_1354_peaches_nectarines",
+            "config": "extraction_configs/clemson_hgic_1354_peaches_nectarines.json"
+        },
+        {
             "id": "clemson_hgic_1358_plum",
             "config": "extraction_configs/clemson_hgic_1358_plum.json"
         },

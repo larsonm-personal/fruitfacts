@@ -1,0 +1,152 @@
+{
+    title: "HGIC 1350 Apple",
+    author: "Robert F. Polomski and Greg Reighard",
+    description: "Clemson HGIC apple factsheet for South Carolina, with home-use variety recommendations by regional area and pollination code",
+    url: "https://hgic.clemson.edu/factsheet/apple/",
+    thumbnail: "website",
+    published: "February 27, 2000",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Clemson University Cooperative Extension, Clemson, South Carolina",
+            latitude: 34.6773,
+            longitude: -82.8364
+        },
+    ],
+    categories: [
+        {
+            name: "Apple varieties recommended for South Carolina home use",
+            description: "Clemson HGIC 1350 lists these apple varieties for home use in different South Carolina zones"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Anna",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Excellent-shape fruit with blush of red; ripens mid-June to early July; spur-type.",
+            description: "South Carolina area code: CP. Characteristics: Excellent-shape fruit with blush of red; ripens mid-June to early July; spur-type. Pollination code: A"
+        },
+        {
+            type: "Apple",
+            name: "Dorsett Golden",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Yellow apple of good quality; ripens mid-June to early July; spur-type.",
+            description: "South Carolina area code: CP. Characteristics: Yellow apple of good quality; ripens mid-June to early July; spur-type. Pollination code: A"
+        },
+        {
+            type: "Apple",
+            name: "Jerseymac",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Very early red apple of excellent quality; good for fresh eating, sauce and pies; ripens in July; non-spur.",
+            description: "South Carolina area code: M, P, SR. Characteristics: Very early red apple of excellent quality; good for fresh eating, sauce and pies; ripens in July; non-spur. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Ginger Gold",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Very early crisp yellow apple of excellent quality; good for fresh eating, sauce and pies; ripens late July to early August; non-spur.",
+            description: "South Carolina area code: M, P, SR. Characteristics: Very early crisp yellow apple of excellent quality; good for fresh eating, sauce and pies; ripens late July to early August; non-spur. Susceptible to fireblight. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Excellent quality apple; good for fresh eating or salads; ripens in early August; non-spur.",
+            description: "South Carolina area code: M, P, SR. Characteristics: Excellent quality apple; good for fresh eating or salads; ripens in early August; non-spur. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Priscilla",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Red skin color; crisp flesh; mildly sub-acid; excellent dessert quality; ripens late July to early August; non-spur.",
+            description: "South Carolina area code: M, P, SR. Characteristics: Red skin color; crisp flesh; mildly sub-acid; excellent dessert quality; ripens late July to early August; non-spur. Pollination code: C"
+        },
+        {
+            type: "Apple",
+            name: "Mollie's Delicious",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "A versatile apple; good for fresh eating, pies and sauce; susceptible to fire blight; ripens in late July; non-spur.",
+            description: "South Carolina area code: M, P, SR. Characteristics: A versatile apple; good for fresh eating, pies and sauce; susceptible to fire blight; ripens in late July; non-spur. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Ozark Gold",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Matures late July to early August; yellow, russet-free apple of excellent quality; non-spur.",
+            description: "South Carolina area code: M, P, SR. Characteristics: Matures late July to early August; yellow, russet-free apple of excellent quality; non-spur. Pollination code: C"
+        },
+        {
+            type: "Apple",
+            name: "Red Delicious",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Early fall variety ripening in late August; large, firm, crisp; sweet; good for fresh eating or salads; non-spur and spur strains available.",
+            description: "South Carolina area code: All. Characteristics: Early fall variety ripening in late August; large, firm, crisp; sweet; good for fresh eating or salads; non-spur and spur strains available. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Early fall variety ripening in late August; large, firm, crisp; sweet; good for fresh eating or salads; non-spur and spur strains available.",
+            description: "South Carolina area code: All. Characteristics: Early fall variety ripening in late August; large, firm, crisp; sweet; good for fresh eating or salads; non-spur and spur strains available. Pollination code: C"
+        },
+        {
+            type: "Apple",
+            name: "Jonagold",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Ripens early September; very large, yellow apple with red blush; very high quality; sweet, juicy apple.",
+            description: "South Carolina area code: M, P, SR. Characteristics: Ripens early September; very large, yellow apple with red blush; very high quality; sweet, juicy apple. Pollination code: C"
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Fall variety ripening in early October; does not color well, but quality is superb; good for cooking, eating and baking; non-spur strains available.",
+            description: "South Carolina area code: M, P, SR. Characteristics: Fall variety ripening in early October; does not color well, but quality is superb; good for cooking, eating and baking; non-spur strains available. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Mutsu",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Ripens early October; yellow apple of exceptional quality; crisp and juicy; slightly tart; all-purpose.",
+            description: "South Carolina area code: M, P, SR. Characteristics: Ripens early October; yellow apple of exceptional quality; crisp and juicy; slightly tart; all-purpose. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Rome Beauty",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Ripens early October; red apple primarily grown for baking; spur and non-spur.",
+            description: "South Carolina area code: M, P. Characteristics: Ripens early October; red apple primarily grown for baking; spur and non-spur. Pollination code: C"
+        },
+        {
+            type: "Apple",
+            name: "Stayman",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Ripens early October; rusty red finish; superb quality, tart, all-purpose apple; fruit-cracking a problem when dry period is followed by rainy period.",
+            description: "South Carolina area code: M, P. Characteristics: Ripens early October; rusty red finish; superb quality, tart, all-purpose apple; fruit-cracking a problem when dry period is followed by rainy period. Pollination code: C"
+        },
+        {
+            type: "Apple",
+            name: "Arkansas Black",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Fall variety ripening in October; very dark and red and very firm; great keeping; tart, juicy; good cooking, eating and baking; non-spur and spur strains available.",
+            description: "South Carolina area code: M, P. Characteristics: Fall variety ripening in October; very dark and red and very firm; great keeping; tart, juicy; good cooking, eating and baking; non-spur and spur strains available. Pollination code: C"
+        },
+        {
+            type: "Apple",
+            name: "Yates",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Late fall variety ripening in October; small, dark red; juicy; mellow, sub-acid; best keeper; non-spur.",
+            description: "South Carolina area code: All. Characteristics: Late fall variety ripening in October; small, dark red; juicy; mellow, sub-acid; best keeper; non-spur. Pollination code: B"
+        },
+        {
+            type: "Apple",
+            name: "Granny Smith",
+            category: "Apple varieties recommended for South Carolina home use",
+            harvest_time_unparsed: "Matures in late September to early October; yellow-green apple of excellent quality; good all-purpose variety; non-spur and spur strains available; susceptible to fire blight.",
+            description: "South Carolina area code: All. Characteristics: Matures in late September to early October; yellow-green apple of excellent quality; good all-purpose variety; non-spur and spur strains available; susceptible to fire blight. Pollination code: B"
+        },
+    ]
+}

@@ -152,6 +152,8 @@ script. The config runner currently supports:
   `context_rules` with `when` state checks
 - HTML name-matrix tables where each cell is a cultivar name, including
   optional group labels, suffix-to-type mapping, and generated source notes
+- HTML table rows can also use suffix-to-type mapping when a name marker such
+  as `*` carries plant type or other row context
 - Lookup tables keyed by cultivar, such as disease rating tables
 - Declarative row splits for source rows that clearly contain two varieties
 - Generated rows for source notes that explicitly name a small fixed set of
@@ -270,6 +272,11 @@ Source-specific scripts should do:
 - Clemson HGIC 1400 blackberry: a compact HTML recommendation table where cane
   type and fruiting habit become categories and thorniness stays in labelled
   descriptions
+- Clemson HGIC 1350 apple: a numbered-header HTML recommendation table where
+  regional area codes and pollination codes stay as labelled source fields
+- Clemson HGIC 1354 peaches and nectarines: a mixed HTML table where an
+  asterisk suffix strips from cultivar names and marks those rows as
+  `Nectarine`
 - NDSU FN590 jams and jellies: unheaded HTML cultivar grids embedded in a food
   preservation publication, with group cells for raspberry bearing type,
   suffix-to-type mapping for Prunus names, and prose-generated Juneberry rows
