@@ -1,0 +1,74 @@
+{
+    title: "Growing Day-neutral Strawberries in New Hampshire: Variety Selection and Production Tips",
+    author: "Kaitlyn Orde and Becky Sideman",
+    description: "University of New Hampshire Cooperative Extension guide summarizing day-neutral strawberry variety observations from UNH trials",
+    url: "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource007790_Rep11405.pdf",
+    thumbnail: "pdf",
+    published: "September 2019",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of New Hampshire Agricultural Experiment Station, Durham, New Hampshire",
+            latitude: 43.1389,
+            longitude: -70.937
+        },
+    ],
+    categories: [
+        {
+            name: "Day-neutral strawberry varieties evaluated at UNH",
+            description: "UNH Cooperative Extension describes these day-neutral strawberry varieties from replicated studies in Durham, New Hampshire"
+        },
+    ],
+    plants: [
+        {
+            type: "Strawberry",
+            name: "Albion",
+            category: "Day-neutral strawberry varieties evaluated at UNH",
+            description: "Albion produced very attractive and deep-colored fruit with a beautiful sheen. Plants were often compact in size. Individual plants tended to produce fruit in flushes, but since each plant had its own pattern, together they provided a consistent fruit supply of fruit throughout the season. Albion has a reputation for being a heavy nitrogen feeder. Eating quality: Excellent -- we consider Albion to be the gold standard among the day-neutral varieties we evaluated. Fruit had a high sugar content, were full of flavor, and consistently juicy"
+        },
+        {
+            type: "Strawberry",
+            name: "Aromas",
+            category: "Day-neutral strawberry varieties evaluated at UNH",
+            description: "Aromas fruit had a long conical shape, a unique and attractive fluffy calyx, and a beautiful deep magenta color. The variety was notable for producing high late-season yields in our 2017 experiment. Plants were very vigorous and produced high numbers of runners. Aromas may be more difficult to obtain than other varieties, and the plant phenotype has varied among plant sources. Thus, growers should ensure plants are purchased from a reputable nursery. Eating quality: Fair to good -- sugar content was low compared with other varieties we evaluated, but fruit quality improved as the season progressed into fall, with fruit being quite flavorful during late-fall harvests"
+        },
+        {
+            type: "Strawberry",
+            name: "Cabrillo",
+            category: "Day-neutral strawberry varieties evaluated at UNH",
+            description: "Cabrillo is a relatively new variety that has not been widely evaluated on the East Coast, but we were able to evaluate it at UNH from 2018 to 2019. Fruit were quite round, very shiny and smooth, and had an attractive deep-red color. Fruit and plant size were incredibly consistent from plant to plant. Plants produced a flush of high yields during the mid-summer. In year 1 during the warm summer months, fruit tended to crack following rain; yet this tendency was not observed late in the fall or for plants overwintered into a second year. Eating quality: Fair -- sugar content was low compared with other varieties, and fruit lacked sweetness and flavor"
+        },
+        {
+            type: "Strawberry",
+            name: "Monterey",
+            category: "Day-neutral strawberry varieties evaluated at UNH",
+            description: "Monterey fruit were medium to large in size, and ranged from slightly-orange to dark-red in color. Fruit tended to have a dull sheen, especially compared to Albion, but were still very attractive. Plants produced long flower trusses and had an open growth habit, making the variety easy to pick. Like Albion, Monterey was a consistent producer throughout the season. Eating quality: Good to excellent -- sugar content was high and fruit were flavorful"
+        },
+        {
+            type: "Strawberry",
+            name: "Portola",
+            category: "Day-neutral strawberry varieties evaluated at UNH",
+            description: "Portola fruit were light-red to deep-orange in color and were often too soft (mushy) in texture. Portola did not establish well in 2017 or 2018, when plants remained small and stunted in their first year of growth. However, after plants overwintered, they became vigorous and produced large fruit during the spring season in the second year. Poor first year establishment has not been widely reported, and the variety has actually produced remarkably high yields in NY, MN, and PA in recent years. Eating quality: Poor to fair -- fruit had a low sugar content compared with other varieties and tended to be too soft, and lacking structure, sweetness, and flavor"
+        },
+        {
+            type: "Strawberry",
+            name: "San Andreas",
+            category: "Day-neutral strawberry varieties evaluated at UNH",
+            description: "San Andreas fruit were large with a rounded tip. Fruit tended to appear ripe when they were actually slightly under-ripe. Thus, it is important to teach harvesters to be patient with this variety, and wait until the underside is fully ripe before harvesting. Flower trusses were long, making San Andreas an easy variety to pick; thus, quickly filling a container. San Andreas was an excellent mid- to late-season producer. At UNH, plants (especially runners) occasionally displayed calcium deficiency when grown under low tunnels. Eating quality: Good -- sugar levels and flavor were moderate. Fruit may be too firm (even crunchy) if not allowed to fully ripen"
+        },
+        {
+            type: "Strawberry",
+            name: "Seascape",
+            category: "Day-neutral strawberry varieties evaluated at UNH",
+            description: "Seascape is a popular early-season variety that produced very attractive fruit with a deep-red color in our location. Fruit were large during the early and late-season, but the variety tended to produce high numbers of small fruit during the middle of the season. While not observed in all locations across the Northeast, prominent achenes gave the fruit an attractive \"seedy\" appearance at our site. Plants established very well and had vigorous vegetative growth in the early season compared with other varieties. Eating quality: Good to excellent -- fruit contained a high sugar content, and were juicy and flavorful"
+        },
+        {
+            type: "Strawberry",
+            name: "Sweet Ann",
+            category: "Day-neutral strawberry varieties evaluated at UNH",
+            description: "Sweet Ann produced large fruit that were very shiny and had a light-red color. Plants were large, vigorous, and produced high numbers of small tender runners. Flower trusses were long, making the variety easy to pick. Sweet Ann had substantially higher marketable yields under low tunnels than open beds in Durham NH in 2018, likely due to the fact that fruit were soft and fragile and thus, easily damaged by precipitation. Therefore, this variety may be better suited for protected culture than open field culture. Eating quality: Good to excellent -- fruit contained a high sugar content, and were juicy and flavorful"
+        },
+    ]
+}

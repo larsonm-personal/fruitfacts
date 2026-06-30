@@ -1,0 +1,98 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://www.uvm.edu/d10-files/documents/2024-06/Scab-Resistant-Apples.pdf",
+    "layout": true,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Scab Resistant Apple Cultivars"],
+    ["author", "UVM Fruit Program"],
+    ["description", "University of Vermont Extension handout describing selected scab-resistant apple cultivars by harvest season"],
+    ["url", "https://www.uvm.edu/d10-files/documents/2024-06/Scab-Resistant-Apples.pdf"],
+    ["thumbnail", "pdf"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Vermont Extension, Burlington, Vermont",
+      "latitude": 44.4759,
+      "longitude": -73.2121
+    }
+  ],
+  "categories": [
+    {
+      "name": "Early scab-resistant apple cultivars highlighted by UVM",
+      "description": "UVM Extension lists these scab-resistant apples under its early harvest section"
+    },
+    {
+      "name": "Mid-season scab-resistant apple cultivars highlighted by UVM",
+      "description": "UVM Extension lists these scab-resistant apples under its mid-season harvest section"
+    },
+    {
+      "name": "Late scab-resistant apple cultivars highlighted by UVM",
+      "description": "UVM Extension lists these scab-resistant apples under its late harvest section"
+    }
+  ],
+  "name_overrides": {
+    "Williams Pride": {
+      "name": "Williams' Pride",
+      "note": "Source heading names this as Williams Pride"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "For Early Harvest",
+      "section_end": "If you can not find any of these scab-resistant apples",
+      "entry_names": [
+        "Williams Pride",
+        "Redfree",
+        "Dayton",
+        "Prima",
+        "Nova Easygro",
+        "Jonafree",
+        "Liberty",
+        "Freedom"
+      ],
+      "entry_names_only": true,
+      "category_rules": [
+        {
+          "text": "For Early Harvest",
+          "category": "Early scab-resistant apple cultivars highlighted by UVM",
+          "plant_type": "Apple"
+        },
+        {
+          "text": "For Mid-Season Harvest",
+          "category": "Mid-season scab-resistant apple cultivars highlighted by UVM",
+          "plant_type": "Apple"
+        },
+        {
+          "text": "For Late Harvest",
+          "category": "Late scab-resistant apple cultivars highlighted by UVM",
+          "plant_type": "Apple"
+        }
+      ],
+      "skip_line_patterns": [
+        "^CULTIVATING HEALTHY COMMUNITIES$",
+        "^COLLEGE OF AGRICULTURE AND LIFE SCIENCES$",
+        "^Figure 1\\."
+      ],
+      "row_text_fixes": {
+        "medium sized": "medium-sized",
+        "mid-late": "mid- to late"
+      },
+      "harvest_from_key": "description",
+      "harvest_terms": [
+        "matures",
+        "maturing",
+        "ripening",
+        "ripens",
+        "harvested"
+      ],
+      "description_key": "description"
+    }
+  ]
+}

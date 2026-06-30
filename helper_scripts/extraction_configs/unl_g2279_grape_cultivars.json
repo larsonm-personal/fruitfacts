@@ -1,0 +1,140 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://extensionpubs.unl.edu/publication/g2279/na/pdf/view",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Grape Growing for the Home Garden"],
+    ["author", "Paul E. Read"],
+    ["description", "University of Nebraska-Lincoln Extension NebGuide G2279 with grape cultivars recommended for Nebraska home fruit plantings"],
+    ["url", "https://extensionpubs.unl.edu/publication/g2279/grape-cultivars-for-nebraska"],
+    ["thumbnail", "pdf"],
+    ["published", "Dec 2016"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Nebraska-Lincoln Extension, Lincoln, Nebraska",
+      "latitude": 40.8176,
+      "longitude": -96.7005
+    }
+  ],
+  "categories": [
+    {
+      "name": "Grape cultivars for Nebraska home fruit plantings",
+      "description": "UNL G2279 Table I lists common grape cultivars recommended for home fruit plantings in Nebraska; this draft preserves the clean first table segment through La Crosse, while continuation-table parsing remains a review caveat"
+    }
+  ],
+  "name_overrides": {
+    "Concord &": {
+      "name": "Concord",
+      "note": "Source table groups Concord and Concord Seedless across adjacent rows"
+    },
+    "deChaunac": {
+      "name": "DeChaunac",
+      "note": "Source text names this as deChaunac"
+    },
+    "Lacrosse": {
+      "name": "La Crosse",
+      "note": "Source text names this as Lacrosse"
+    },
+    "Cabernet Franc": {
+      "name": "Cabernet franc",
+      "note": "Source text capitalizes Franc"
+    },
+    "Mar chal Foch": {
+      "name": "Marechal Foch",
+      "note": "Source PDF text extracts this as Mar chal Foch"
+    },
+    "Frontenac Gris": {
+      "name": "Frontenac gris",
+      "note": "Source text capitalizes Gris and table special notes describe it as a Frontenac mutation"
+    },
+    "Frontenac Blanc": {
+      "name": "Frontenac blanc",
+      "note": "Source text capitalizes Blanc"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Features of Grape Cultivars for Home Gardens",
+      "section_end": "Cultivar\nLeon Millot",
+      "default_category": "Grape cultivars for Nebraska home fruit plantings",
+      "default_plant_type": "Grape",
+      "entry_names_only": true,
+      "entry_names": [
+        "Arandell*",
+        "Baco Noir",
+        "Beta",
+        "Bluebell*",
+        "Brianna*",
+        "Cabernet Franc**",
+        "Canadice*",
+        "Cayuga White",
+        "Chambourcin*",
+        "Concord &",
+        "Concord Seedless*",
+        "deChaunac*",
+        "Delaware",
+        "Edelweiss*",
+        "Elvira",
+        "Frontenac",
+        "Frontenac Blanc",
+        "Frontenac Gris",
+        "Geneva Red",
+        "Himrod",
+        "King of the North",
+        "La Crescent",
+        "Lacrosse",
+        "Leon Millot*",
+        "Mar chal Foch*",
+        "Marquette*",
+        "Marquis*",
+        "Mars",
+        "Niagara",
+        "Noiret",
+        "Norton*",
+        "Prairie Star",
+        "Reliance",
+        "Riesling**",
+        "Saint Croix",
+        "Seyval Blanc",
+        "Somerset Seedless",
+        "Swenson Red",
+        "Traminette",
+        "Valiant*",
+        "Vanessa",
+        "Vignoles"
+      ],
+      "skip_line_patterns": [
+        "^Cultivar$",
+        "^Skin$",
+        "^Uses$",
+        "^Range of$",
+        "^Disease Suggested Trellising$",
+        "^Color#$",
+        "^Adaptability Tolerance$",
+        "^Style$",
+        "^Special notes$",
+        "^Frontenac mutation$"
+      ],
+      "name_suffix_notes": [
+        {
+          "suffix": "**",
+          "note": "Source table marks this as vinifera: plant only grafted vines and protect the graft union over winter"
+        },
+        {
+          "suffix": "*",
+          "note": "Source table marks this as sulfur sensitive and says not to use sulfur sprays"
+        }
+      ],
+      "description_key": "description",
+      "description_suffix": "Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes"
+    }
+  ]
+}

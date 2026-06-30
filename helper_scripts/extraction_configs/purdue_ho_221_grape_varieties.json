@@ -1,0 +1,217 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://www.extension.purdue.edu/extmedia/HO/HO-221-W.pdf",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Grape Varieties for Indiana"],
+    ["author", "Bruce Bordelon"],
+    ["description", "Purdue Extension HO-221-W grape cultivar guide for Indiana, with source descriptions for wine, juice, and table grapes"],
+    ["url", "https://www.extension.purdue.edu/extmedia/HO/HO-221-W.pdf"],
+    ["thumbnail", "pdf"],
+    ["published", "Jun 2009"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Purdue University Cooperative Extension Service, West Lafayette, Indiana",
+      "latitude": 40.4237,
+      "longitude": -86.9212
+    }
+  ],
+  "categories": [
+    {
+      "name": "Hybrid red wine grapes for Indiana",
+      "description": "Purdue HO-221-W describes these as major hybrid red wine grapes grown or trialed in Indiana"
+    },
+    {
+      "name": "Hybrid white wine grapes for Indiana",
+      "description": "Purdue HO-221-W describes these as major hybrid white wine grapes grown or trialed in Indiana"
+    },
+    {
+      "name": "American grapes for Indiana",
+      "description": "Purdue HO-221-W describes these American grape varieties for juice, wine, preserves, or fresh use in Indiana"
+    },
+    {
+      "name": "Vinifera white wine grapes for southern Indiana sites",
+      "description": "Purdue HO-221-W says European grapes are only suitable for the southern part of Indiana on favorable sites"
+    },
+    {
+      "name": "Vinifera red wine grapes for southern Indiana sites",
+      "description": "Purdue HO-221-W says European grapes are only suitable for the southern part of Indiana on favorable sites"
+    },
+    {
+      "name": "Seeded table grapes for Indiana",
+      "description": "Purdue HO-221-W describes these seeded table grape varieties for Indiana"
+    },
+    {
+      "name": "Seedless table grapes for Indiana",
+      "description": "Purdue HO-221-W describes these seedless table grape varieties for Indiana"
+    }
+  ],
+  "text_fixes": {
+    "FrenchAmerican": "French-American",
+    "Mildflavored": "mild-flavored",
+    "mildflavored": "mild-flavored",
+    "fullbodied": "full-bodied",
+    "mildew.Wines": "mildew. Wines",
+    "mint.A": "mint. A",
+    "size.Vigorous": "size. Vigorous",
+    "late-season": "late-season"
+  },
+  "name_overrides": {
+    "Mar chal Foch": {
+      "name": "Marechal Foch",
+      "note": "Source PDF text extracts this as Mar chal Foch"
+    },
+    "NoiretTM": {
+      "name": "Noiret",
+      "note": "Source text names this as NoiretTM"
+    },
+    "Corot noirTM": {
+      "name": "NY 70.0809.10",
+      "aka": ["Corot noir (tm)"],
+      "note": "Source text names this as Corot noirTM"
+    },
+    "Valvin MuscatTM": {
+      "name": "Valvin Muscat",
+      "note": "Source text names this as Valvin MuscatTM"
+    },
+    "Pinot gris": {
+      "name": "Pinot Gris",
+      "note": "Source text names this as Pinot gris"
+    },
+    "Cabernet Franc": {
+      "name": "Cabernet franc",
+      "note": "Source text capitalizes Franc"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "There are several wine grape varieties adapted to Indiana",
+      "section_end": "Summary",
+      "allow_name_only_entries": false,
+      "default_category": "Hybrid red wine grapes for Indiana",
+      "default_plant_type": "Grape",
+      "entry_names_only": true,
+      "entry_names": [
+        "Chambourcin",
+        "Mar chal Foch",
+        "Norton (aka Cynthiana)",
+        "NoiretTM",
+        "Corot noirTM",
+        "Frontenac",
+        "Marquette",
+        "Seyval",
+        "Vidal",
+        "Vignoles",
+        "Traminette",
+        "Chardonel",
+        "Cayuga White",
+        "La Crosse",
+        "Valvin MuscatTM",
+        "La Crescent",
+        "Frontenac gris",
+        "Concord",
+        "Catawba",
+        "Niagara",
+        "Steuben",
+        "Chardonnay",
+        "Riesling",
+        "Pinot gris",
+        "Cabernet Franc",
+        "Cabernet Sauvignon",
+        "Lemberger",
+        "Golden Muscat",
+        "Swenson Red",
+        "Sunbelt",
+        "Himrod",
+        "Mars",
+        "Jupiter",
+        "Marquis",
+        "Neptune",
+        "Suffolk Red",
+        "Vanessa",
+        "Reliance"
+      ],
+      "skip_line_patterns": [
+        "^\\d+$",
+        "^Purdue Extension$",
+        "^Grape Varieties for Indiana",
+        "^Recently Introduced Varieties",
+        "^European \\(Vitis vinifera\\) Wine GrapeVarieties$",
+        "^(Chambourcin|Noiret|Corot noir|Frontenac|Vidal|Vignoles|Traminette|Chardonel|Cayuga White|Concord|Catawba|Cabernet Franc|Cabernet Sauvignon|Mars|Neptune|Vanessa|Jupiter)$"
+      ],
+      "category_rules": [
+        {
+          "text": "Hybrid Varieties for Red Wine Production",
+          "category": "Hybrid red wine grapes for Indiana",
+          "plant_type": "Grape"
+        },
+        {
+          "text": "Hybrid Varieties for White Wine Production",
+          "category": "Hybrid white wine grapes for Indiana",
+          "plant_type": "Grape"
+        },
+        {
+          "text": "Leading American Varieties",
+          "category": "American grapes for Indiana",
+          "plant_type": "Grape"
+        },
+        {
+          "text": "Other American Varieties",
+          "category": "American grapes for Indiana",
+          "plant_type": "Grape"
+        },
+        {
+          "text": "Vitis vinifera Varieties for White Wine Production",
+          "category": "Vinifera white wine grapes for southern Indiana sites",
+          "plant_type": "Grape"
+        },
+        {
+          "prefix": "Leading Vitis vinifera Varieties for Red Wine Production",
+          "parse_remainder": true,
+          "category": "Vinifera red wine grapes for southern Indiana sites",
+          "plant_type": "Grape"
+        },
+        {
+          "text": "Table Grape Varieties for Indiana",
+          "category": "Seeded table grapes for Indiana",
+          "plant_type": "Grape"
+        },
+        {
+          "text": "Seeded Grapes",
+          "category": "Seeded table grapes for Indiana",
+          "plant_type": "Grape"
+        },
+        {
+          "text": "Seedless Grapes",
+          "category": "Seedless table grapes for Indiana",
+          "plant_type": "Grape"
+        }
+      ],
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripen", "matur"]
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Other American Varieties",
+      "section_end": "European (Vitis vinifera) Wine GrapeVarieties",
+      "marker": "There are several other V. labrusca-derived varieties that are suitable for production in Indiana. ",
+      "end_marker": " have all performed well in our trials",
+      "skip_names": ["Swenson Red"],
+      "row_fields": {
+        "category": "American grapes for Indiana"
+      },
+      "plant_type": "Grape",
+      "category": {"row_key": "category"},
+      "description_template": "Purdue HO-221-W says {name} has performed well in Purdue trials and should perform well in Indiana"
+    }
+  ]
+}

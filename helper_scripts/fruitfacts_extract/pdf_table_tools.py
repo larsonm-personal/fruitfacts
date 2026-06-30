@@ -186,6 +186,23 @@ def parse_catalog_entry(line, extractor):
     }
 
 
+def exact_catalog_name(line, extractor):
+    for name in sorted(extractor.get("entry_names", []), key=len, reverse=True):
+        if line == name:
+            return name
+    return None
+
+
+def strip_current_name_prefix(line, row, name_key):
+    name = row.get(name_key)
+    if not name:
+        return line
+    match = re.match(r"^" + re.escape(name) + r"(?:\s*[-:]\s*|\s+)(.*)$", line)
+    if match:
+        return match.group(1).strip()
+    return line
+
+
 def embedded_catalog_segments(line, extractor):
     names = sorted(extractor.get("entry_names", []), key=len, reverse=True)
     if not names:
@@ -265,6 +282,21 @@ def catalog_entry_rows(text, extractor):
 
         if not current_category:
             continue
+
+        exact_name = exact_catalog_name(line, extractor)
+        if exact_name and extractor.get("allow_name_only_entries", True):
+            row = {name_key: exact_name, description_key: ""}
+            row.update(current_category)
+            row = finish_catalog_row(row, extractor)
+            rows.append(row)
+            current = row
+            continue
+
+        if current:
+            continuation = strip_current_name_prefix(line, current, name_key)
+            if continuation != line:
+                append_value(current, description_key, line)
+                continue
 
         if extractor.get("split_embedded_entries"):
             prefix, segments = embedded_catalog_segments(line, extractor)

@@ -1,0 +1,71 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://learningstore.extension.wisc.edu/assets/pdfs/A3639.PDF",
+    "layout": false
+  },
+  "reference_fields": [
+    ["title", "Growing Apricots, Cherries, Peaches and Plums in Wisconsin"],
+    ["author", "Teryl R. Roper, Daniel L. Mahr, and Patricia S. McManus"],
+    ["description", "University of Wisconsin-Extension A3639 stone fruit guide with cultivar-selection cautions and a few named cultivars for Wisconsin sites"],
+    ["url", "https://learningstore.extension.wisc.edu/assets/pdfs/A3639.PDF"],
+    ["thumbnail", "pdf"],
+    ["publication_number", "A3639"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Wisconsin-Extension, Madison, Wisconsin",
+      "latitude": 43.0766,
+      "longitude": -89.4125
+    }
+  ],
+  "categories": [
+    {
+      "name": "Peach cultivars most likely to succeed in extreme southeastern Wisconsin",
+      "description": "UW-Extension A3639 says peaches are not generally recommended for Wisconsin, but names these peach cultivars as most likely to succeed in extreme southeastern Wisconsin"
+    },
+    {
+      "name": "Apricot cultivars noted in UW-Extension A3639",
+      "description": "UW-Extension A3639 names these apricot cultivars in its selecting plant material section"
+    },
+    {
+      "name": "Sweet cherry cultivars that may survive in Wisconsin",
+      "description": "UW-Extension A3639 says these sweet cherry cultivars may survive in Wisconsin"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "SELECTING PLANT MATERIAL",
+      "section_end": "PLANTING",
+      "marker": "The peach cultivars most likely to succeed are",
+      "end_marker": ", all of which",
+      "plant_type": "Peach",
+      "category": "Peach cultivars most likely to succeed in extreme southeastern Wisconsin",
+      "description_template": "UW-Extension A3639 names {name} among the peach cultivars most likely to succeed in extreme southeastern Wisconsin"
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "SELECTING PLANT MATERIAL",
+      "section_end": "PLANTING",
+      "marker": "Apricot cultivars include",
+      "end_marker": ".",
+      "plant_type": "Apricot",
+      "category": "Apricot cultivars noted in UW-Extension A3639",
+      "description_template": "UW-Extension A3639 names {name} in its apricot cultivar sentence"
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "SELECTING PLANT MATERIAL",
+      "section_end": "PLANTING",
+      "marker": "Sweet cherries that may survive in Wisconsin include",
+      "end_marker": ".",
+      "plant_type": "Sweet Cherry",
+      "category": "Sweet cherry cultivars that may survive in Wisconsin",
+      "description_template": "UW-Extension A3639 says {name} is among the sweet cherries that may survive in Wisconsin"
+    }
+  ]
+}

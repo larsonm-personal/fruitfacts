@@ -1,0 +1,164 @@
+{
+    title: "Grape Growing for the Home Garden",
+    author: "Paul E. Read",
+    description: "University of Nebraska-Lincoln Extension NebGuide G2279 with grape cultivars recommended for Nebraska home fruit plantings",
+    url: "https://extensionpubs.unl.edu/publication/g2279/grape-cultivars-for-nebraska",
+    thumbnail: "pdf",
+    published: "Dec 2016",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Nebraska-Lincoln Extension, Lincoln, Nebraska",
+            latitude: 40.8176,
+            longitude: -96.7005
+        },
+    ],
+    categories: [
+        {
+            name: "Grape cultivars for Nebraska home fruit plantings",
+            description: "UNL G2279 Table I lists common grape cultivars recommended for home fruit plantings in Nebraska; this draft preserves the clean first table segment through La Crosse, while continuation-table parsing remains a review caveat"
+        },
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Arandell",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "B Wine A-C G TWC Developed from Cornell University's \"No Spray\" program. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes. Source table marks this as sulfur sensitive and says not to use sulfur sprays"
+        },
+        {
+            type: "Grape",
+            name: "Baco Noir",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "B Wine A-B F TWC Wines are fruity and deeply colored. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes"
+        },
+        {
+            type: "Grape",
+            name: "Beta",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "B Juice, A-E G TWC One of the most cold-hardy grapes, poor Jams, wine quality Jellies. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes"
+        },
+        {
+            type: "Grape",
+            name: "Bluebell",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "B Juice, A-E Jams, Jellies G TWC, GDC Similar to Concord, smaller berries, more cold hardy. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes. Source table marks this as sulfur sensitive and says not to use sulfur sprays"
+        },
+        {
+            type: "Grape",
+            name: "Brianna",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "W Wine A-C F-G TWC, GDC Fruity white wines, increasingly popular in the Midwest. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes. Source table marks this as sulfur sensitive and says not to use sulfur sprays"
+        },
+        {
+            type: "Grape",
+            name: "Cabernet franc",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "B Wine A P VSP One of the most cold-hardy Vinifera. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes. Source table marks this as vinifera: plant only grafted vines and protect the graft union over winter. Source text capitalizes Franc"
+        },
+        {
+            type: "Grape",
+            name: "Canadice",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "P-R Table A-B F MWC Seedless, deep pink if exposed to sunlight. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes. Source table marks this as sulfur sensitive and says not to use sulfur sprays"
+        },
+        {
+            type: "Grape",
+            name: "Cayuga White",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "W Wine A-C G TWC Large open bunches. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes"
+        },
+        {
+            type: "Grape",
+            name: "Chambourcin",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "B Wine A F TWC Hardy only in the best sites. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes. Source table marks this as sulfur sensitive and says not to use sulfur sprays"
+        },
+        {
+            type: "Grape",
+            name: "Concord",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "B Juice, A-C. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes. Source table groups Concord and Concord Seedless across adjacent rows"
+        },
+        {
+            type: "Grape",
+            name: "Concord Seedless",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "Jams, Jellies, Pies F-P TWC, GDC Standard for commercial juice, jams and jellies. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes. Source table marks this as sulfur sensitive and says not to use sulfur sprays"
+        },
+        {
+            type: "Grape",
+            name: "DeChaunac",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "B Wine A-E F MWC Can become bushy in growth habit. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes. Source table marks this as sulfur sensitive and says not to use sulfur sprays. Source text names this as deChaunac"
+        },
+        {
+            type: "Grape",
+            name: "Delaware",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "P-R Wine A-C F TWC Pink color develops if exposed to sunlight. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes"
+        },
+        {
+            type: "Grape",
+            name: "Edelweiss",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "W Wine, A-D Table G TWC, GDC Introduced as a table grape. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes. Source table marks this as sulfur sensitive and says not to use sulfur sprays"
+        },
+        {
+            type: "Grape",
+            name: "Elvira",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "W Wine A-E F TWC Very cold hardy, performs best in western Nebraska. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes"
+        },
+        {
+            type: "Grape",
+            name: "Frontenac",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "B Wine A-E G TWC, GDC Wines highly acidic, makes excellent port-style wines. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes"
+        },
+        {
+            type: "Grape",
+            name: "Frontenac blanc",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "W Wine A-E G TWC, GDC Better for white wine than Frontenac Gris. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes. Source text capitalizes Blanc"
+        },
+        {
+            type: "Grape",
+            name: "Frontenac gris",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "G Wine A-E G TWC, GDC. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes. Source text capitalizes Gris and table special notes describe it as a Frontenac mutation"
+        },
+        {
+            type: "Grape",
+            name: "Geneva Red",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "B Wine A-C F TWC, GDC Was known as GR7. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes"
+        },
+        {
+            type: "Grape",
+            name: "Himrod",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "W Table A-B F-P MWC Seedless. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes"
+        },
+        {
+            type: "Grape",
+            name: "King of the North",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "B Juice, A-E Jams, Jellies G TWC Very cold hardy. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes"
+        },
+        {
+            type: "Grape",
+            name: "La Crescent",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "W Wine A-C F TWC Fruity wines; clusters may shatter. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes"
+        },
+        {
+            type: "Grape",
+            name: "La Crosse",
+            category: "Grape cultivars for Nebraska home fruit plantings",
+            description: "W Wine A-E F-P TWC Very susceptible to Black Rot. Source table columns are skin color, uses, Nebraska adaptability range, disease tolerance, suggested trellising style, and special notes. Source text names this as Lacrosse"
+        },
+    ]
+}

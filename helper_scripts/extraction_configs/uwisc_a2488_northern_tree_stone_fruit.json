@@ -1,0 +1,315 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://learningstore.extension.wisc.edu/assets/pdfs/A2488.PDF",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Home Fruit Cultivars for Northern Wisconsin"],
+    ["author", "Brian R. Smith and Teryl R. Roper"],
+    ["description", "University of Wisconsin-Extension guide to fruit cultivars for northern Wisconsin; this draft encodes the tree-fruit and stone-fruit catalog sections"],
+    ["url", "https://learningstore.extension.wisc.edu/assets/pdfs/A2488.PDF"],
+    ["thumbnail", "pdf"],
+    ["published", "2005"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Wisconsin-Extension, Madison, Wisconsin",
+      "latitude": 43.0766,
+      "longitude": -89.4125
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple cultivars for northern Wisconsin",
+      "description": "UW-Extension A2488 lists apple cultivars in order of ripening for northern Wisconsin"
+    },
+    {
+      "name": "Disease-resistant apple cultivars for northern Wisconsin trial",
+      "description": "UW-Extension A2488 says these apple cultivars have not been fully evaluated in northern Wisconsin and suggests limited trial plantings"
+    },
+    {
+      "name": "Crabapple cultivars for northern Wisconsin",
+      "description": "UW-Extension A2488 lists crabapples for northern Wisconsin home plantings"
+    },
+    {
+      "name": "Pear cultivars for northern Wisconsin",
+      "description": "UW-Extension A2488 lists hardy pear cultivars for northern Wisconsin, while noting that crops are often lost to spring frosts"
+    },
+    {
+      "name": "Tart cherry cultivars for northern Wisconsin",
+      "description": "UW-Extension A2488 lists self-fruitful tart cherry cultivars for northern Wisconsin"
+    },
+    {
+      "name": "Apricot cultivars for northern Wisconsin",
+      "description": "UW-Extension A2488 says apricots may survive northern Wisconsin winters but crop only about one to two years out of every five"
+    },
+    {
+      "name": "European plum cultivars for northern Wisconsin",
+      "description": "UW-Extension A2488 lists blue European or prune plums for northern Wisconsin"
+    },
+    {
+      "name": "Red plum cultivars for northern Wisconsin",
+      "description": "UW-Extension A2488 lists red plum cultivars that require a pollinizer for northern Wisconsin"
+    },
+    {
+      "name": "Red plum pollinizer cultivars for northern Wisconsin",
+      "description": "UW-Extension A2488 lists pollinizer cultivars for red plums"
+    },
+    {
+      "name": "Cherry plum cultivars for northern Wisconsin",
+      "description": "UW-Extension A2488 lists cherry plum cultivars for northern Wisconsin"
+    }
+  ],
+  "text_fixes": {
+    "McIntoshtype": "McIntosh-type",
+    "semidwarf": "semi-dwarf",
+    "Selffruitful": "Self-fruitful",
+    "selffruitful": "self-fruitful",
+    "crosspollination": "cross-pollination",
+    "earlyripening": "early-ripening",
+    "Midto": "Mid- to",
+    "midto": "mid- to",
+    "2 3 weeks": "2-3 weeks",
+    "3 5 months": "3-5 months",
+    "55 65 F": "55-65 F",
+    "WisconsinMadison": "Wisconsin-Madison"
+  },
+  "name_overrides": {
+    "Zestar!": {
+      "name": "Minnewashta",
+      "note": "Source table names this as Zestar!"
+    },
+    "Macfree": {
+      "name": "MacFree",
+      "note": "Source table names this as Macfree"
+    },
+    "LaCrescent": {
+      "name": "La Crescent",
+      "note": "Source text names this as LaCrescent"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "TREE FRUITS\nApples",
+      "section_end": "\nSMALL FRUITS\nSmall fruits",
+      "allow_name_only_entries": false,
+      "entry_names_only": true,
+      "entry_names": [
+        "Honeycrisp",
+        "Lodi",
+        "Zestar!",
+        "Jerseymac",
+        "McIntosh",
+        "Spartan",
+        "Haralson",
+        "Empire",
+        "Regent",
+        "Cortland",
+        "Redfree",
+        "Novamac",
+        "Macfree",
+        "Nova Easygro",
+        "Liberty",
+        "Chestnut",
+        "Dolgo",
+        "Centennial",
+        "Parker",
+        "Summercrisp",
+        "Gourmet",
+        "Luscious",
+        "Flemish Beauty",
+        "Patten",
+        "Golden Spice",
+        "Ure",
+        "Harcot",
+        "Montmorency",
+        "North Star",
+        "Meteor",
+        "Scout",
+        "Mount Royal",
+        "Underwood",
+        "Waneta",
+        "LaCrescent",
+        "Pipestone",
+        "Alderman",
+        "Superior",
+        "Monitor",
+        "Kaga",
+        "Toka",
+        "Sapalta",
+        "Compass"
+      ],
+      "skip_line_patterns": [
+        "^\\d+$",
+        "^H F C",
+        "^Home fruit cultivars",
+        "^FOR NORTHERN WISCONSIN$",
+        "^BRIAN R\\. SMITH",
+        "^TREE FRUITS$",
+        "^STONE FRUITS$",
+        "^Plant at least",
+        "^Nurseries offer",
+        "^Cultivars are arranged",
+        "^strain\\.",
+        "^For backyards",
+        "^Older, hardy",
+        "^Homeowners who",
+        "^good for fresh use",
+        "^Stone fruits such",
+        "^Peaches and sweet cherries",
+        "^See Extension",
+        "^These tart cherry",
+        "^Apricots bloom",
+        "^In Wisconsin",
+        "^Japanese plums",
+        "^The following cultivars",
+        "^These cultivars require",
+        "^Cherry plums are",
+        "^They are selfunfruitful",
+        "^To maintain"
+      ],
+      "category_rules": [
+        {
+          "text": "Apples",
+          "category": "Apple cultivars for northern Wisconsin",
+          "plant_type": "Apple"
+        },
+        {
+          "text": "Disease-resistant apples",
+          "category": "Disease-resistant apple cultivars for northern Wisconsin trial",
+          "plant_type": "Apple"
+        },
+        {
+          "text": "Crabapples",
+          "category": "Crabapple cultivars for northern Wisconsin",
+          "plant_type": "Crabapple"
+        },
+        {
+          "text": "Pears",
+          "category": "Pear cultivars for northern Wisconsin",
+          "plant_type": "Euro Pear"
+        },
+        {
+          "text": "Tart cherries",
+          "category": "Tart cherry cultivars for northern Wisconsin",
+          "plant_type": "Sour Cherry"
+        },
+        {
+          "text": "Apricots",
+          "category": "Apricot cultivars for northern Wisconsin",
+          "plant_type": "Apricot"
+        },
+        {
+          "text": "Blue (European or prune) plums",
+          "category": "European plum cultivars for northern Wisconsin",
+          "plant_type": "Euro Plum"
+        },
+        {
+          "text": "Red plums",
+          "category": "Red plum cultivars for northern Wisconsin",
+          "plant_type": "Japanese Plum"
+        },
+        {
+          "text": "Red plum pollinizer cultivars",
+          "category": "Red plum pollinizer cultivars for northern Wisconsin",
+          "plant_type": "Japanese Plum"
+        },
+        {
+          "text": "Cherry plums",
+          "category": "Cherry plum cultivars for northern Wisconsin",
+          "plant_type": "Japanese Plum"
+        }
+      ],
+      "row_overrides": {
+        "Redfree": {
+          "category": "Disease-resistant apple cultivars for northern Wisconsin trial",
+          "plant_type": "Apple"
+        },
+        "Novamac": {
+          "category": "Disease-resistant apple cultivars for northern Wisconsin trial",
+          "plant_type": "Apple"
+        },
+        "Macfree": {
+          "category": "Disease-resistant apple cultivars for northern Wisconsin trial",
+          "plant_type": "Apple"
+        },
+        "Nova Easygro": {
+          "category": "Disease-resistant apple cultivars for northern Wisconsin trial",
+          "plant_type": "Apple"
+        },
+        "Liberty": {
+          "category": "Disease-resistant apple cultivars for northern Wisconsin trial",
+          "plant_type": "Apple"
+        },
+        "Chestnut": {
+          "category": "Crabapple cultivars for northern Wisconsin",
+          "plant_type": "Crabapple"
+        },
+        "Dolgo": {
+          "category": "Crabapple cultivars for northern Wisconsin",
+          "plant_type": "Crabapple"
+        },
+        "Centennial": {
+          "category": "Crabapple cultivars for northern Wisconsin",
+          "plant_type": "Crabapple"
+        },
+        "Parker": {
+          "category": "Pear cultivars for northern Wisconsin",
+          "plant_type": "Euro Pear"
+        },
+        "Summercrisp": {
+          "category": "Pear cultivars for northern Wisconsin",
+          "plant_type": "Euro Pear"
+        },
+        "Gourmet": {
+          "category": "Pear cultivars for northern Wisconsin",
+          "plant_type": "Euro Pear"
+        },
+        "Luscious": {
+          "category": "Pear cultivars for northern Wisconsin",
+          "plant_type": "Euro Pear"
+        },
+        "Flemish Beauty": {
+          "category": "Pear cultivars for northern Wisconsin",
+          "plant_type": "Euro Pear"
+        },
+        "Patten": {
+          "category": "Pear cultivars for northern Wisconsin",
+          "plant_type": "Euro Pear"
+        },
+        "Golden Spice": {
+          "category": "Pear cultivars for northern Wisconsin",
+          "plant_type": "Euro Pear"
+        },
+        "Ure": {
+          "category": "Pear cultivars for northern Wisconsin",
+          "plant_type": "Euro Pear"
+        },
+        "Harcot": {
+          "category": "Apricot cultivars for northern Wisconsin",
+          "plant_type": "Apricot"
+        },
+        "Scout": {
+          "category": "Apricot cultivars for northern Wisconsin",
+          "plant_type": "Apricot"
+        }
+      },
+      "harvest_from_key": "description",
+      "harvest_terms": [
+        "Fruit matures",
+        "Matures",
+        "Harvest",
+        "Ripens"
+      ],
+      "harvest_term_priority": true,
+      "harvest_term_prefix": true,
+      "description_key": "description"
+    }
+  ]
+}

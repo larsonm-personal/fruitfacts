@@ -101,6 +101,10 @@
             "config": "extraction_configs/purdue_ho_46_strawberries.json"
         },
         {
+            "id": "purdue_ho_221_grape_varieties",
+            "config": "extraction_configs/purdue_ho_221_grape_varieties.json"
+        },
+        {
             "id": "uga_b807_bunch_grapes",
             "config": "extraction_configs/uga_b807_bunch_grapes.json"
         },
@@ -145,12 +149,20 @@
             "config": "extraction_configs/unl_g2354_fruit_tree_cultivars.json"
         },
         {
+            "id": "unl_g2279_grape_cultivars",
+            "config": "extraction_configs/unl_g2279_grape_cultivars.json"
+        },
+        {
             "id": "uwyo_zone_3_4_fruit_list",
             "config": "extraction_configs/uwyo_zone_3_4_fruit_list.json"
         },
         {
             "id": "uwisc_a2582_southern_tree_stone_fruit",
             "config": "extraction_configs/uwisc_a2582_southern_tree_stone_fruit.json"
+        },
+        {
+            "id": "uwisc_a2488_northern_tree_stone_fruit",
+            "config": "extraction_configs/uwisc_a2488_northern_tree_stone_fruit.json"
         },
         {
             "id": "usda_ars_beltsville_blueberry_releases",
@@ -239,6 +251,18 @@
         {
             "id": "ua_az1269_low_desert_fruit_nuts",
             "config": "extraction_configs/ua_az1269_low_desert_fruit_nuts.json"
+        },
+        {
+            "id": "uvm_scab_resistant_apple_cultivars",
+            "config": "extraction_configs/uvm_scab_resistant_apple_cultivars.json"
+        },
+        {
+            "id": "unh_day_neutral_strawberries_northern_new_england",
+            "config": "extraction_configs/unh_day_neutral_strawberries_northern_new_england.json"
+        },
+        {
+            "id": "uwisc_a3639_stone_fruit",
+            "config": "extraction_configs/uwisc_a3639_stone_fruit.json"
         }
     ]
 }

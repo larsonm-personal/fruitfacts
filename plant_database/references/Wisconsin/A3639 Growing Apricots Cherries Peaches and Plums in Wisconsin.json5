@@ -1,0 +1,88 @@
+{
+    title: "Growing Apricots, Cherries, Peaches and Plums in Wisconsin",
+    author: "Teryl R. Roper, Daniel L. Mahr, and Patricia S. McManus",
+    description: "University of Wisconsin-Extension A3639 stone fruit guide with cultivar-selection cautions and a few named cultivars for Wisconsin sites",
+    url: "https://learningstore.extension.wisc.edu/assets/pdfs/A3639.PDF",
+    thumbnail: "pdf",
+    publication_number: "A3639",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Wisconsin-Extension, Madison, Wisconsin",
+            latitude: 43.0766,
+            longitude: -89.4125
+        },
+    ],
+    categories: [
+        {
+            name: "Peach cultivars most likely to succeed in extreme southeastern Wisconsin",
+            description: "UW-Extension A3639 says peaches are not generally recommended for Wisconsin, but names these peach cultivars as most likely to succeed in extreme southeastern Wisconsin"
+        },
+        {
+            name: "Apricot cultivars noted in UW-Extension A3639",
+            description: "UW-Extension A3639 names these apricot cultivars in its selecting plant material section"
+        },
+        {
+            name: "Sweet cherry cultivars that may survive in Wisconsin",
+            description: "UW-Extension A3639 says these sweet cherry cultivars may survive in Wisconsin"
+        },
+    ],
+    plants: [
+        {
+            type: "Peach",
+            name: "Reliance",
+            category: "Peach cultivars most likely to succeed in extreme southeastern Wisconsin",
+            description: "UW-Extension A3639 names Reliance among the peach cultivars most likely to succeed in extreme southeastern Wisconsin"
+        },
+        {
+            type: "Peach",
+            name: "Harrow Beauty",
+            category: "Peach cultivars most likely to succeed in extreme southeastern Wisconsin",
+            description: "UW-Extension A3639 names Harrow Beauty among the peach cultivars most likely to succeed in extreme southeastern Wisconsin"
+        },
+        {
+            type: "Peach",
+            name: "Madison",
+            category: "Peach cultivars most likely to succeed in extreme southeastern Wisconsin",
+            description: "UW-Extension A3639 names Madison among the peach cultivars most likely to succeed in extreme southeastern Wisconsin"
+        },
+        {
+            type: "Apricot",
+            name: "Goldcot",
+            category: "Apricot cultivars noted in UW-Extension A3639",
+            description: "UW-Extension A3639 names Goldcot in its apricot cultivar sentence"
+        },
+        {
+            type: "Apricot",
+            name: "Harcot",
+            category: "Apricot cultivars noted in UW-Extension A3639",
+            description: "UW-Extension A3639 names Harcot in its apricot cultivar sentence"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Gold",
+            category: "Sweet cherry cultivars that may survive in Wisconsin",
+            description: "UW-Extension A3639 says Gold is among the sweet cherries that may survive in Wisconsin"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Hedelfingen",
+            category: "Sweet cherry cultivars that may survive in Wisconsin",
+            description: "UW-Extension A3639 says Hedelfingen is among the sweet cherries that may survive in Wisconsin"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Lapins",
+            category: "Sweet cherry cultivars that may survive in Wisconsin",
+            description: "UW-Extension A3639 says Lapins is among the sweet cherries that may survive in Wisconsin"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Van",
+            category: "Sweet cherry cultivars that may survive in Wisconsin",
+            description: "UW-Extension A3639 says Van is among the sweet cherries that may survive in Wisconsin"
+        },
+    ]
+}

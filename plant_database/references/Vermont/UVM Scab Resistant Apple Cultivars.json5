@@ -1,0 +1,88 @@
+{
+    title: "Scab Resistant Apple Cultivars",
+    author: "UVM Fruit Program",
+    description: "University of Vermont Extension handout describing selected scab-resistant apple cultivars by harvest season",
+    url: "https://www.uvm.edu/d10-files/documents/2024-06/Scab-Resistant-Apples.pdf",
+    thumbnail: "pdf",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Vermont Extension, Burlington, Vermont",
+            latitude: 44.4759,
+            longitude: -73.2121
+        },
+    ],
+    categories: [
+        {
+            name: "Early scab-resistant apple cultivars highlighted by UVM",
+            description: "UVM Extension lists these scab-resistant apples under its early harvest section"
+        },
+        {
+            name: "Mid-season scab-resistant apple cultivars highlighted by UVM",
+            description: "UVM Extension lists these scab-resistant apples under its mid-season harvest section"
+        },
+        {
+            name: "Late scab-resistant apple cultivars highlighted by UVM",
+            description: "UVM Extension lists these scab-resistant apples under its late harvest section"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Williams' Pride",
+            category: "Early scab-resistant apple cultivars highlighted by UVM",
+            harvest_time_unparsed: "Williams Pride is a late summer apple that matures during the peak of sweet corn season!",
+            description: "Williams Pride is a late summer apple that matures during the peak of sweet corn season! William's Pride is a maroon-red, medium-large apple with crisp, fall-like flavor. Trees are annually productive and easy to grow. Williams Pride was developed by the cooperative breeding program (PRI) of Illinois, Indiana, and New Jersey Agricultural Experiment Stations. For that early start on the apple season, ask for William's Pride on your next farm stand visit. Source heading names this as Williams Pride"
+        },
+        {
+            type: "Apple",
+            name: "Redfree",
+            category: "Early scab-resistant apple cultivars highlighted by UVM",
+            harvest_time_unparsed: "Also a PRI introduction, Redfree is a medium-sized fruit, maturing in late August with a solid, bright red blush.",
+            description: "Redfree is another late summer apple with fall-like flavor. Also a PRI introduction, Redfree is a medium-sized fruit, maturing in late August with a solid, bright red blush. Redfree has a tip-bearing habit, similar to Cortland, and is annually productive. We always pick Redfree just before the first of September- what a fine fresh fruit addition to that end of summer Labor Day picnic!"
+        },
+        {
+            type: "Apple",
+            name: "Dayton",
+            category: "Early scab-resistant apple cultivars highlighted by UVM",
+            harvest_time_unparsed: "Dayton ripens during the first week in September, making it an ideal candidate for those who can't wait for the first true Fall apples!",
+            description: "Third in a series of early apples released by PRI (see Williams Pride and Redfree, above), Dayton is a large, glossy-red apple with good, full-flavored dessert quality. Vigorous and upright, Dayton trees set a moderate crop of fruit annually. Dayton ripens during the first week in September, making it an ideal candidate for those who can't wait for the first true Fall apples!"
+        },
+        {
+            type: "Apple",
+            name: "Prima",
+            category: "Mid-season scab-resistant apple cultivars highlighted by UVM",
+            harvest_time_unparsed: "Prima is another PRI introduction, and kicks off the true start of the Fall harvest, ripening with the first McIntosh during mid-September.",
+            description: "Prima is another PRI introduction, and kicks off the true start of the Fall harvest, ripening with the first McIntosh during mid-September. An attractive, medium-sized fruit, Prima is reported to make an excellent addition to applesauce. Prima's tree growth habit- moderately vigorous, spreading and sturdy- is especially desirable. For your next fresh apple treat, be sure and enjoy Prima's unique, fruity flavor- and don't forget to include Prima in that first batch of home-made applesauce!"
+        },
+        {
+            type: "Apple",
+            name: "Nova Easygro",
+            category: "Mid-season scab-resistant apple cultivars highlighted by UVM",
+            harvest_time_unparsed: "Ripening during the peak of the McIntosh harvest (mid- to late September), Nova Easygro fruit are picked with a dull-red, striped overcast on a green background.",
+            description: "Nova Easygro is an apple selection introduced by the Canadian Department Agricultural Research Station in Kentville, Nova Scotia. Nova Easygro apples are produced on a non-vigorous tree with weak, thin wood. Nova Easygro apples, however, are nicely distributed throughout the tree and produced annually. Ripening during the peak of the McIntosh harvest (mid- to late September), Nova Easygro fruit are picked with a dull-red, striped overcast on a green background. Nova Easygro flavor is very good- firm, crunchy, sweet and not tart- and fruit flesh is snow white. Unlike the early scab-resistant apples mentioned above, Nova Easygro keeps well for several months under refrigeration. Those desiring a sweet- not tart, Fall apple, are encouraged to try Nova Easygro!"
+        },
+        {
+            type: "Apple",
+            name: "Jonafree",
+            category: "Mid-season scab-resistant apple cultivars highlighted by UVM",
+            description: "Jonafree is another PRI introduction that we suspect is more commonly grown in the mid-West. Jonafree is very firm - almost 'hard' compared to McIntosh- with pale yellow, juicy flesh that closely resembles Jonathan. Although Jonafree apples have a tendency to be small, they are very attractive- nearly 100% bright red skin with a cheek of green-yellow. Trees are moderately vigorous, annually productive, and must be carefully pruned to avoid producing too many small, green apples. If you're from the mid-West, and like Jonathan, then Jonafree is the scab-resistant apple for you!"
+        },
+        {
+            type: "Apple",
+            name: "Liberty",
+            category: "Late scab-resistant apple cultivars highlighted by UVM",
+            harvest_time_unparsed: "When harvested just before Empire, Liberty has a Fall apple flavor reminiscent of fresh squeezed cider that just can't be beat!",
+            description: "Liberty is arguably the premier scab-resistant apple; we suspect there are more Liberty being grown in the Northeast than all other scab-resistant varieties combined! Liberty has ranked consistently high in consumer taste tests, and the trees are extremely productive, often out-yielding McIntosh and Empire when grown side by side. Liberty is a product of the New York State Agricultural Experiment Station at Geneva fruit breeding program, resulting from a cross made with Macoun- a scarce 'cult' apple that is prized for its outstanding flavor. When harvested just before Empire, Liberty has a Fall apple flavor reminiscent of fresh squeezed cider that just can't be beat! The fruit is very attractive- a bright red blush with hints of striping- although somewhat irregular in shape. Although best eaten fresh, Liberty does store well for several months, and then makes an excellent pie"
+        },
+        {
+            type: "Apple",
+            name: "Freedom",
+            category: "Late scab-resistant apple cultivars highlighted by UVM",
+            harvest_time_unparsed: "Harvested in early October, Freedom makes a fine addition to baked goods, and juice or cider.",
+            description: "Freedom is perhaps the 'ugly duckling' among this group of scab-resistant apples, however, Freedom is certainly not without merit. Like Liberty, Freedom originated from the Cornell-Geneva breeding program in New York state. Their focus is on breeding fruit with multiple disease-resistance, hence Freedom is 100% immune to apple scab, and is highly resistant to other apple diseases too. Although not particularly attractive- Freedom apples are bronze-red striped on a yellow-green background. Fruit is large, and produced annually on well-thinned trees. Freedom trees are very vigorous, however, and require considerable pruning effort to maintain a productive tree shape and promote good fruit coloring. Although somewhat lacking in fresh fruit flavor, the flesh is firm, juicy and nearly crisp. Harvested in early October, Freedom makes a fine addition to baked goods, and juice or cider"
+        },
+    ]
+}

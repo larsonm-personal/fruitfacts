@@ -1,0 +1,62 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource007790_Rep11405.pdf",
+    "layout": true,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Growing Day-neutral Strawberries in New Hampshire: Variety Selection and Production Tips"],
+    ["author", "Kaitlyn Orde and Becky Sideman"],
+    ["description", "University of New Hampshire Cooperative Extension guide summarizing day-neutral strawberry variety observations from UNH trials"],
+    ["url", "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource007790_Rep11405.pdf"],
+    ["thumbnail", "pdf"],
+    ["published", "September 2019"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of New Hampshire Agricultural Experiment Station, Durham, New Hampshire",
+      "latitude": 43.1389,
+      "longitude": -70.937
+    }
+  ],
+  "categories": [
+    {
+      "name": "Day-neutral strawberry varieties evaluated at UNH",
+      "description": "UNH Cooperative Extension describes these day-neutral strawberry varieties from replicated studies in Durham, New Hampshire"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Albion\nAlbion produced",
+      "section_end": "9\nAlbion Aromas Cabrillo",
+      "default_category": "Day-neutral strawberry varieties evaluated at UNH",
+      "default_plant_type": "Strawberry",
+      "entry_names": [
+        "Albion",
+        "Aromas",
+        "Cabrillo",
+        "Monterey",
+        "Portola",
+        "San Andreas",
+        "Seascape",
+        "Sweet Ann"
+      ],
+      "entry_names_only": true,
+      "row_text_fixes": {
+        "literal": {
+          "large a with": "large with",
+          "large a with a rounded tip": "large with a rounded tip"
+        },
+        "regex": [
+          ["\\.\\s+[0-9]+$", "."]
+        ]
+      },
+      "description_key": "description"
+    }
+  ]
+}

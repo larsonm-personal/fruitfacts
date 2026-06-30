@@ -367,7 +367,7 @@
         },
         {
             id: "wisconsin-growing-apricots-cherries-peaches-plums-a3639",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Apricots, Cherries, Peaches and Plums in Wisconsin",
             institution: "University of Wisconsin Extension",
@@ -392,7 +392,11 @@
                 "Existing Wisconsin reference covers apples, not this stone fruit guide",
             notes: [
                 "Direct PDF returned 200",
-                "Old UWEX PDF URL also still returned 200, but the extension.wisc.edu URL is preferred"
+                "Old UWEX PDF URL also still returned 200, but the extension.wisc.edu URL is preferred",
+                "Encoded in plant_database/references/Wisconsin/A3639 Growing Apricots Cherries Peaches and Plums in Wisconsin.json5",
+                "Config extraction added at helper_scripts/extraction_configs/uwisc_a3639_stone_fruit.json",
+                "Manifest entry added as uwisc_a3639_stone_fruit",
+                "Current draft encodes only the named cultivar sentences in the selecting plant material section; broader cultural guidance remains source context"
             ]
         },
         {
@@ -901,7 +905,7 @@
         },
         {
             id: "purdue-grape-varieties-indiana-ho-221-w",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Grape Varieties for Indiana",
             institution: "Purdue Extension",
@@ -920,7 +924,12 @@
             duplicate_check:
                 "No Indiana grape cultivar guide found in existing references",
             notes: [
-                "Direct Purdue Extension PDF returned 200"
+                "Direct Purdue Extension PDF returned 200",
+                "Encoded 39 grape records in plant_database/references/Indiana/Purdue HO-221-W Grape Varieties for Indiana.json5",
+                "Config extraction added at helper_scripts/extraction_configs/purdue_ho_221_grape_varieties.json",
+                "Manifest entry added as purdue_ho_221_grape_varieties",
+                "Worked example for flow-mode catalog text with a supplemental sentence-list extractor",
+                "Dense relative disease susceptibility tables remain unencoded and are retained in the archived PDF"
             ]
         },
         {
@@ -1266,7 +1275,7 @@
         },
         {
             id: "unl-grape-cultivars-nebraska-g2279",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Grape Cultivars for Nebraska",
             institution: "University of Nebraska-Lincoln Extension",
@@ -1287,7 +1296,12 @@
             duplicate_check:
                 "Existing Nebraska candidate G2354 covers tree fruit; this source covers grapes",
             notes: [
-                "Landing page and PDF endpoint both returned 200"
+                "Landing page and PDF endpoint both returned 200",
+                "Encoded 23 grape records in plant_database/references/Nebraska/UNL G2279 Grape Cultivars for Nebraska.json5",
+                "Config extraction added at helper_scripts/extraction_configs/unl_g2279_grape_cultivars.json",
+                "Manifest entry added as unl_g2279_grape_cultivars",
+                "Current draft preserves the clean first table segment through La Crosse",
+                "Later continuation-table columns remain unencoded because the PDF text interleaves rows and columns"
             ]
         },
         {
@@ -1335,7 +1349,7 @@
         },
         {
             id: "uwisc-home-fruit-cultivars-northern-wisconsin-a2488",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Home Fruit Cultivars for Northern Wisconsin",
             institution: "University of Wisconsin Extension",
@@ -1362,12 +1376,16 @@
                 "Northern Wisconsin cultivar guide with cold-climate recommendations across tree fruit and small fruit",
             asset_decision: "download and stub",
             proposed_reference_path:
-                "plant_database/references/Wisconsin/A2488 Home Fruit Cultivars for Northern Wisconsin.json5",
+                "plant_database/references/Wisconsin/A2488 Home Fruit Cultivars for Northern Wisconsin - Tree and Stone Fruit.json5",
             duplicate_check:
                 "Existing Wisconsin references include apple cultivars and stone fruit, but not this broader northern Wisconsin guide",
             notes: [
                 "Direct PDF returned 200",
-                "No current product landing page was found during this pass"
+                "No current product landing page was found during this pass",
+                "Encoded 43 tree-fruit and stone-fruit records in plant_database/references/Wisconsin/A2488 Home Fruit Cultivars for Northern Wisconsin - Tree and Stone Fruit.json5",
+                "Config extraction added at helper_scripts/extraction_configs/uwisc_a2488_northern_tree_stone_fruit.json",
+                "Manifest entry added as uwisc_a2488_northern_tree_stone_fruit",
+                "Small-fruit sections remain unencoded because the PDF text interleaves columns more aggressively"
             ]
         },
         {
@@ -1824,7 +1842,7 @@
         },
         {
             id: "uvm-scab-resistant-apple-cultivars",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Scab Resistant Apple Cultivars",
             institution: "University of Vermont Extension",
@@ -1844,7 +1862,11 @@
                 "Existing Penn State scab-resistant candidate is Pennsylvania-focused; no Vermont reference found",
             notes: [
                 "Official UVM PDF search result returned a direct file URL",
-                "Short image-heavy handout is useful as cultivar signal but likely needs manual extraction and region qualification"
+                "Short image-heavy handout is useful as cultivar signal but likely needs manual extraction and region qualification",
+                "Encoded in plant_database/references/Vermont/UVM Scab Resistant Apple Cultivars.json5",
+                "Config extraction added at helper_scripts/extraction_configs/uvm_scab_resistant_apple_cultivars.json",
+                "Manifest entry added as uvm_scab_resistant_apple_cultivars",
+                "Parser support added for PDF catalog entries where a name-only heading is followed by prose on the next line"
             ]
         },
         {
@@ -2725,7 +2747,7 @@
         },
         {
             id: "unh-day-neutral-strawberries-northern-new-england",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Day-neutral Strawberries in New Hampshire: Variety Selection and Production Tips",
             institution: "University of New Hampshire Extension",
@@ -2746,7 +2768,11 @@
             notes: [
                 "Found in the UNH small-fruit source family",
                 "Official UNH PDF is available through a migrated file URL",
-                "Likely parsing issue: cultivar guidance is intertwined with plasticulture, planting-date, and season-extension advice"
+                "Likely parsing issue: cultivar guidance is intertwined with plasticulture, planting-date, and season-extension advice",
+                "Encoded in plant_database/references/New Hampshire/UNH Day-neutral Strawberries for Northern New England.json5",
+                "Config extraction added at helper_scripts/extraction_configs/unh_day_neutral_strawberries_northern_new_england.json",
+                "Manifest entry added as unh_day_neutral_strawberries_northern_new_england",
+                "Current draft covers the eight named day-neutral variety description sections; Table 1 yield and fruit-characteristic columns remain a review caveat"
             ]
         },
         {

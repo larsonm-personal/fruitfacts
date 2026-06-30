@@ -1,0 +1,305 @@
+{
+    title: "Grape Varieties for Indiana",
+    author: "Bruce Bordelon",
+    description: "Purdue Extension HO-221-W grape cultivar guide for Indiana, with source descriptions for wine, juice, and table grapes",
+    url: "https://www.extension.purdue.edu/extmedia/HO/HO-221-W.pdf",
+    thumbnail: "pdf",
+    published: "Jun 2009",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Purdue University Cooperative Extension Service, West Lafayette, Indiana",
+            latitude: 40.4237,
+            longitude: -86.9212
+        },
+    ],
+    categories: [
+        {
+            name: "Hybrid red wine grapes for Indiana",
+            description: "Purdue HO-221-W describes these as major hybrid red wine grapes grown or trialed in Indiana"
+        },
+        {
+            name: "Hybrid white wine grapes for Indiana",
+            description: "Purdue HO-221-W describes these as major hybrid white wine grapes grown or trialed in Indiana"
+        },
+        {
+            name: "American grapes for Indiana",
+            description: "Purdue HO-221-W describes these American grape varieties for juice, wine, preserves, or fresh use in Indiana"
+        },
+        {
+            name: "Vinifera white wine grapes for southern Indiana sites",
+            description: "Purdue HO-221-W says European grapes are only suitable for the southern part of Indiana on favorable sites"
+        },
+        {
+            name: "Vinifera red wine grapes for southern Indiana sites",
+            description: "Purdue HO-221-W says European grapes are only suitable for the southern part of Indiana on favorable sites"
+        },
+        {
+            name: "Seeded table grapes for Indiana",
+            description: "Purdue HO-221-W describes these seeded table grape varieties for Indiana"
+        },
+        {
+            name: "Seedless table grapes for Indiana",
+            description: "Purdue HO-221-W describes these seedless table grape varieties for Indiana"
+        },
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Chambourcin",
+            category: "Hybrid red wine grapes for Indiana",
+            harvest_time_unparsed: "It is a late-ripening grape that produces a highly rated red wine when the fruit fully matures.",
+            description: "(SHAM-bore-sin) (Joannes Seyve 26.205) has been available since 1963 and is one of the most widely planted hybrids in France. It is a late-ripening grape that produces a highly rated red wine when the fruit fully matures. It requires a long growing season and a site with mild winter temperatures. The large, moderately loose bunches set medium-sized, blue berries. The vine can be very productive, and cluster thinning is required to prevent reduction in vine vigor. The foliage is resistant to downy mildew, but moderately susceptible to powdery mildew. Wines from this grape are ranked among the best of the hybrid varieties. Because of its late ripening and moderate cold hardiness, Chambourcin is recommended for the southern half of Indiana only"
+        },
+        {
+            type: "Grape",
+            name: "Marechal Foch",
+            category: "Hybrid red wine grapes for Indiana",
+            harvest_time_unparsed: "(Kuhlmann 188-2), usually referred to as simply Foch (FOE-sh), is an early-ripening, black grape with small berries and clusters.",
+            description: "(Kuhlmann 188-2), usually referred to as simply Foch (FOE-sh), is an early-ripening, black grape with small berries and clusters. The vines are cold hardy and medium in vigor and production. Grafted vines are recommended to improve vigor, especially on heavy soils. Its small, black berries are attractive to birds. This variety is particularly sensitive to 2,4-D herbicide drift, which is commonly used in row crops, turf, and right-of-ways. Foch is one of the most popular red wine grapes grown in northern Indiana. Wine styles can range from fruity, light red table wines, to hearty, full-bodied reds. Source PDF text extracts this as Mar chal Foch"
+        },
+        {
+            type: "Grape",
+            name: "Norton (aka Cynthiana)",
+            category: "Hybrid red wine grapes for Indiana",
+            harvest_time_unparsed: "It ripens late in the season so is best suited to southern Indiana.",
+            description: "is a seedling of Vitis aestivalis, a species native to eastern North America. There is some disagreement as to its origin. Some claim it came from Virginia (Norton's seedling) and others claim it originated in Arkansas (Cynthiana). That argument may never be solved and most growers today consider the varieties synonymous with each other. It is widely grown in Missouri and is known for excellent wine quality. The vine is vigorous, resistant to most diseases, and well-adapted to the region. It ripens late in the season so is best suited to southern Indiana. Both berries and clusters are small and yields can be low. Wine quality can be excellent with careful handling in the vineyard and winery"
+        },
+        {
+            type: "Grape",
+            name: "Noiret",
+            category: "Hybrid red wine grapes for Indiana",
+            harvest_time_unparsed: "Its fruit ripens with relatively low acidity compared to other hybrids, resulting in wines that are not overly tart.",
+            description: "(NWAHR-ay) is a complex interspecific hybrid resulting from a cross between NY65.0467.08 (NY33277 x Chancellor) and Steuben. It is a mid- to late-season red wine grape suitable for the production of varietal wines. The distinctive red wine is richly colored and has aromas of green and black pepper along with raspberry, blackberry, and mint. A major distinguishing characteristic of this variety is its tannin structure, the absence of any hybrid aromas, and the low acidity at harvest. The vine is winter hardy and moderately resistant to powdery mildew and Botrytis bunch rot. The vine is productive with good vigor on a variety of soil types. It has performed very well in our trials in Indiana and is a good alternative to Chambourcin for the northern part of Indiana. wines. The wine has a deep red color, decent tannins, and attractive cherry and berry aromas. Its fruit ripens with relatively low acidity compared to other hybrids, resulting in wines that are not overly tart. The vine is winter hardy and moderately resistant to powdery mildew and Botrytis bunch rot. It is, however, susceptible to downy mildew and Phomopsis cane and leaf spot. Vines are vigorous on a wide range of soil types and quite productive. Like its half-sibling Noiret, it has performed well in our trials. One fault of this hybrid is its tendency to produce a secondary crop on summer lateral shoots. Source text names this as NoiretTM"
+        },
+        {
+            type: "Grape",
+            name: "NY 70.0809.10",
+            category: "Hybrid red wine grapes for Indiana",
+            AKA: ["Corot noir (tm)"],
+            description: "(KOR-oh nwahr) is a complex interspecific hybrid resulting from a cross between Seyve Villard 18-307 and Steuben. It is a mid- to late-season red wine grape suitable for either blending or producing varietal. Source text names this as Corot noirTM"
+        },
+        {
+            type: "Grape",
+            name: "Frontenac",
+            category: "Hybrid red wine grapes for Indiana",
+            harvest_time_unparsed: "Fruit ripens midseason with very high sugar and acid.",
+            description: "(fron-tin-ACK) reflects the best characteristics of its parents, V. riparia 89 and the French hybrid Landot 4511. This vine is extremely winter hardy and has borne a full crop even after winter temperatures went as low as -33 F. It is disease resistant with near immunity to downy mildew. Frontenac is productive, with small, black berries in medium to large clusters. Fruit ripens midseason with very high sugar and acid. Frontenac's deep garnet color complements its distinctive cherry, blackberry, black currant, and plum aromas. This versatile grape can be made into a variety of wine styles, including ros s, reds, and Port style dessert wines. Because of its high acidity, it may be best suited to blending"
+        },
+        {
+            type: "Grape",
+            name: "Seyval",
+            category: "Hybrid white wine grapes for Indiana",
+            harvest_time_unparsed: "When grapes are harvested at optimal maturity, wines have attractive aromas of honeysuckle, grapefruit, melons, and fresh-cut grass.",
+            description: "(SAY-vall) (Seyve Villard 5-276) is one of the most widely planted hybrid grapes east of the Rocky Mountains. When grapes are harvested at optimal maturity, wines have attractive aromas of honeysuckle, grapefruit, melons, and fresh-cut grass. The body tends to be thin, and either malolactic fermentation or barrel fermentation followed by oak aging will enhance mouthfeel. The vine tends to overbear and its clusters and shoots must be thinned to ensure proper ripening and vine size. Grafting is recommended on all but the most fertile sites. Fruit clusters are very susceptible to Botrytis bunch rot. In recent years, newer varieties have been replacing Seyval"
+        },
+        {
+            type: "Grape",
+            name: "Vidal",
+            category: "Hybrid white wine grapes for Indiana",
+            harvest_time_unparsed: "(vee-DAHL) (Vidal 256) is a productive white grape that produces excellent quality wine when the fruit reaches reasonable maturity.",
+            description: "(vee-DAHL) (Vidal 256) is a productive white grape that produces excellent quality wine when the fruit reaches reasonable maturity. It requires sites with long growing seasons and moderate winter temperatures. Budbreak is late, which reduces the risk of spring freeze injury. It bears small berries on very large, loose, tapering clusters. Cluster thinning is sometimes required to prevent overcropping. The berries have thick skins, and"
+        },
+        {
+            type: "Grape",
+            name: "Marquette",
+            category: "Hybrid white wine grapes for Indiana",
+            harvest_time_unparsed: "Marquette's high sugar and moderate acidity at ripeness make it very manageable in the winery.",
+            description: "(mar-KETT) is a cousin of Frontenac and grandson of Pinot noir. It originated from a cross of MN 1094 (a complex hybrid of V. riparia,V. vinifera, and other Vitis species) and Ravat 262. Marquette has outstanding cold hardiness, and good resistance to downy mildew, powdery mildew, and black rot. Marquette's high sugar and moderate acidity at ripeness make it very manageable in the winery. Finished wines are complex, with an attractive ruby color, pronounced tannins, and desirable aromas of cherry, berry, black pepper, and other spices. It has performed well in trials in Indiana and ripens early enough for production even in the northern part of the state. fruit rots are seldom a problem, so the variety is often used in ice wine production, which requires long hang times. The variety lends itself to a number of other wine styles from sparkling and still wines to the production of brandy, as one of its parents is the grape of Cognac, Ugni blanc (St. Emilion)"
+        },
+        {
+            type: "Grape",
+            name: "Vignoles",
+            category: "Hybrid white wine grapes for Indiana",
+            description: "(vin-YOLES) (Ravat 51) produces excellent wines of many different styles. It is favored for dessert wines, especially when picked late in the season. The fruit can develop a high sugar content while retaining high acidity.Vines are hardy with low to moderate vigor and productivity. Budbreak is late, reducing the risk of spring freeze injury. Its clusters are small, very compact, and highly susceptible to Botrytis bunch rot.Vine vigor can be poor on heavy soils, so grafting is recommended to increase vigor and yield"
+        },
+        {
+            type: "Grape",
+            name: "Traminette",
+            category: "Hybrid white wine grapes for Indiana",
+            description: "(tram-e-NET) was introduced by Cornell University in 1996 and has quickly become one of the top new white wine varieties in the region. Traminette resulted from a cross between Joannes Seyve 23.416 and Gew rztraminer. It is a mid-late season grape that produces wine with pronounced floral (roses and jasmine) and spicy (nutmeg, black pepper, cloves and cinnamon) varietal characteristics similar to its Gew rztraminer parent. Its vines are vigorous and moderately productive. Traminette's cold hardiness is much better than that of it's V. vinifera parent, Gew rztraminer, and appears to be sufficient for all regions of Indiana. Trunk injury on young vines has been observed occasionally. The fruit and wine qualities of Traminette have been excellent in our trials. Good fruit exposure is necessary for developing the varietal aroma compounds. Because the vine is vigorous, good canopy management is necessary. The vines are susceptible to downy mildew and Phomopsis cane and leaf spot, and the fruit is resistant to Botrytis bunch rot"
+        },
+        {
+            type: "Grape",
+            name: "Chardonel",
+            category: "Hybrid white wine grapes for Indiana",
+            harvest_time_unparsed: "Chardonel is cross of Seyval and Chardonnay, and produces an excellent wine when mature fruit are used, with aromas characteristic of both parents.",
+            description: "(SHAR-doh-nell) (Plant patent 7860) was released by Cornell University in 1990 based on its superior performance in the Midwest. Its cold hardiness has been nearly as good as Seyval and it is widely grown in Indiana. Chardonel is cross of Seyval and Chardonnay, and produces an excellent wine when mature fruit are used, with aromas characteristic of both parents. Its potential for sparkling wine production appears to be good. It is susceptible to Phomopsis cane and leaf spot, which must be controlled to prevent fruit rots"
+        },
+        {
+            type: "Grape",
+            name: "Cayuga White",
+            category: "Hybrid white wine grapes for Indiana",
+            description: "(kai-YU-guh wite), released by Cornell University in 1972, is one of the most productive and disease-resistant varieties grown in the Eastern United States. Its wines, which have medium body and acquire good balance between acid, alcohol, and residual sugar, have been highly rated. This versatile grape can be made into a semisweet wine, which brings out the fruit aromas, or, into a dry, less fruit-driven wine using oak aging. When harvested early, it may produce a very attractive sparkling wine with good acidity, good structure, and pleasant aromas. Its excellent cultural characteristics and high wine quality make it a recommended variety. It is not quite as cold hardy as other hybrids, so it may suffer winter injury in colder than average winters"
+        },
+        {
+            type: "Grape",
+            name: "La Crosse",
+            category: "Hybrid white wine grapes for Indiana",
+            harvest_time_unparsed: "(Plant patent 5588) is a fruity, white wine grape derived from Seyval, but its vine is more cold hardy, its fruit ripens slightly earlier, and its wine is somewhat fruitier than Seyval.",
+            description: "(Plant patent 5588) is a fruity, white wine grape derived from Seyval, but its vine is more cold hardy, its fruit ripens slightly earlier, and its wine is somewhat fruitier than Seyval. La Crosse has performed very well in Indiana and is a good choice for the northern half of the state"
+        },
+        {
+            type: "Grape",
+            name: "Valvin Muscat",
+            category: "Hybrid white wine grapes for Indiana",
+            description: "(val-VEEN mus-CAT) is a complex interspecific hybrid resulting from a cross between Couderc 299-35 (Muscat du Moulin) and Muscat Ottonel. It is a midseason white wine grape with a distinctive muscat flavor. It is suitable for producing highly aromatic varietal wines or for blending. It is more winter hardy and disease resistant than pure V. vinifera muscat grapes. On their own roots, the vines are low in vigor, so grafting to a phylloxera-resistant rootstock such as 5C or Couderc 3309 is recommended. Source text names this as Valvin MuscatTM"
+        },
+        {
+            type: "Grape",
+            name: "La Crescent",
+            category: "Hybrid white wine grapes for Indiana",
+            description: "(luh CREH-sant) combines St. Pepin and a Swenson selection from V. riparia x Muscat Hamburg. With this hardy heritage, La Crescent trunks have survived an amazing -36 F. Moderately disease resistant, its leaves sometimes exhibit downy mildew, which can be controlled with a standard spray program. Proper conditions and care result in very productive harvests. La Crescent's intense nose of apricot, peach, and citrus lends itself to high-quality, off-dry or sweet white wines. Produced in a stainless steel, cold fermented style, La Crescent wine is reminiscent of Vignoles or Riesling. The grape's high acidity provides good structure for fine dessert or late-harvest style wines"
+        },
+        {
+            type: "Grape",
+            name: "Frontenac gris",
+            category: "Hybrid white wine grapes for Indiana",
+            harvest_time_unparsed: "In Indiana, Frontenac and Frontenac gris ripen in late midseason and are good sugar producers with 24-25 Brix not uncommon.",
+            description: "(frawn-tin-ACK GREE), the white wine version of Frontenac, started as a single bud mutation that yielded gray fruit (thus named gris) and initially amber-colored juice. The vine exhibits the same optimum growth characteristics as Frontenac and requires the same cultural practices. Arching canes and minimal tendrils provide easy training and pruning to simplify vine management. In Indiana, Frontenac and Frontenac gris ripen in late midseason and are good sugar producers with 24-25 Brix not uncommon. Frontenac gris wines present aromas of peach and apricot with hints of enticing citrus and tropical fruit. Its good balance of fruit and acidity creates lively, refreshing wines. Unique and complex flavors make this an excellent grape for table (dry or sweet, less than 14 percent alcohol), ice, and other dessert wines"
+        },
+        {
+            type: "Grape",
+            name: "Concord",
+            category: "American grapes for Indiana",
+            harvest_time_unparsed: "Its vine is vigorous and productive, ripening in mid- to late September in Indiana.",
+            description: "is grown on a greater variety of soils and under a wider range of climatic conditions than any other American grape variety. Its vine is vigorous and productive, ripening in mid- to late September in Indiana. It is the most important variety for sweet juice, jelly, and preserves, and it also is used in quantity for wine production and fresh market sales. Concord produces medium-sized clusters that bear large, blueblack berries. It is typical of the American V. labrusca derived grapes in that it has a tough skin that separates readily from the pulpy flesh (slipskin). Concord's pronounced fruity labrusca (American) flavor makes it a desirable table grape. Concord is best suited to the northern half of Indiana. In southern areas, it may exhibit a condition known as uneven ripening. Uneven ripening is a condition in which some of the berries within each cluster fail to ripen normally despite reaching full size, and instead remain green and hard. The condition appears to be physiological and only occurs on Concord grown in warm climates. Catawba (kuh-TAW-buh), discovered in the early 1800s, is a spicy-flavored, slipskin grape with a pronounced labrusca flavor and aroma. The vines are vigorous, hardy, and productive, but the foliage is somewhat more susceptible to downy mildew than Concord. Ozone pollution also can cause foliar injury in Catawba. This grape is used primarily in white or pink dessert wines, but it also is used for juice production and fresh market sales. This grape was widely grown in the Cincinnati area during the mid-1800s"
+        },
+        {
+            type: "Grape",
+            name: "Niagara",
+            category: "American grapes for Indiana",
+            harvest_time_unparsed: "It is less cold hardy than Concord and ripens somewhat earlier.",
+            description: "is a floral white grape with a strong labrusca flavor used for juice, wine, and fresh consumption. It is less cold hardy than Concord and ripens somewhat earlier. On favorable sites, yields can equal or surpass those of Concord. Its acidity is lower than most other American varieties. Niagara is more susceptible to black rot and downy mildew than Concord"
+        },
+        {
+            type: "Grape",
+            name: "Steuben",
+            category: "American grapes for Indiana",
+            description: "(STOO-bin) is a reddish-blue grape that produces long, tapering, compact clusters that are among the most attractive of all American varieties. The flavor is sweet with a spicy tang. The vines are hardy, vigorous, productive, and easily grown by home gardeners. Steuben is one of the most disease-resistant varieties available and usually requires cluster thinning. Steuben is grown commercially for wine production, especially in the northeast part of Indiana"
+        },
+        {
+            type: "Grape",
+            name: "Chardonnay",
+            category: "Vinifera white wine grapes for southern Indiana sites",
+            harvest_time_unparsed: "Its advantages include high quality wines, early and reliable fruit and wood maturity, and moderate vigor.",
+            description: "(SHAR-doh-NAY) is probably the most widely planted V. vinifera variety in the Eastern United States. It is cold hardy, but not as hardy as Riesling or Cabernet franc. Its advantages include high quality wines, early and reliable fruit and wood maturity, and moderate vigor. Its primary disadvantage is its relatively high susceptibility to Botrytis bunch rot. For that reason, vertical shoot training combined with summer pruning and leaf removal are necessary for best results"
+        },
+        {
+            type: "Grape",
+            name: "Riesling",
+            category: "Vinifera white wine grapes for southern Indiana sites",
+            description: "(REECE-ling) is planted widely because of its relative cold hardiness and excellent quality wines. Its major disadvantages are the fruit's susceptibility to Botrytis bunch rot and the variety's relatively late harvest date. Although used in certain parts of the world to make extraordinary, late-harvest \"botrytized\" dessert wines, Botrytis infections of Riesling (and other) grapes grown under Indiana conditions do not normally constitute desirable \"noble rot.\" Riesling's susceptibility to bunch rot dictates the use of additional canopy management techniques such as leaf removal and extra sprays"
+        },
+        {
+            type: "Grape",
+            name: "Pinot Gris",
+            category: "Vinifera white wine grapes for southern Indiana sites",
+            description: "(PEE-no GREE) (grigio) is the \"gray\" (light red) form of Pinot noir. It is being grown in more Midwest locations and appears to be hardier than Pinot noir. It also appears to resist bunch rot. Pinot gris makes a full-bodied white wine. It offers an interesting alternative to Chardonnay or Riesling for high-quality wine production. Source text names this as Pinot gris"
+        },
+        {
+            type: "Grape",
+            name: "Cabernet franc",
+            category: "Vinifera red wine grapes for southern Indiana sites",
+            harvest_time_unparsed: "The fruit ripens earlier and may produce good-quality wines more consistently than Cabernet Sauvignon.",
+            description: "(CAB-er-NAY frahnk) can be considered the most suitable red vinifera variety in very cool climates. A parent to Cabernet Sauvignon, it is the preferred red grape variety in one of France's most northern grape growing areas, the Loire Valley, because it is the most cold hardy V. vinifera variety. The fruit ripens earlier and may produce good-quality wines more consistently than Cabernet Sauvignon. Source text capitalizes Franc"
+        },
+        {
+            type: "Grape",
+            name: "Cabernet Sauvignon",
+            category: "Vinifera red wine grapes for southern Indiana sites",
+            harvest_time_unparsed: "However, it ripens late and satisfactory sugar concentration (Brix) is rarely attained.",
+            description: "(CAB-er-NAY SAHV-een-YON), the main variety of many of the great wines of Bordeaux, is also one of the most cold hardy and disease-resistant V. vinifera varieties. However, it ripens late and satisfactory sugar concentration (Brix) is rarely attained. Sugar alone does not determine wine quality, but consistently good wines can be produced only in the warmer production areas in Indiana. In shorter season areas, a green bell pepper aroma dominates the typical varietal aroma of the wines"
+        },
+        {
+            type: "Grape",
+            name: "Lemberger",
+            category: "Vinifera red wine grapes for southern Indiana sites",
+            description: "(LEHM-ber-gur) is grown under several different names in Europe's northern wine production areas (for example, it's called Blaufr nkisch in Austria). It has not been widely grown commercially, but to date, results have been favorable in southern Indiana. Lemberger's cold hardiness appears acceptable, and its Botrytis resistance is good. Its clusters are large and its yield potential is high, which may dictate the need for crop control in some years. Lemberger wines have been rated highly and can have deep red color and sufficient tannins"
+        },
+        {
+            type: "Grape",
+            name: "Golden Muscat",
+            category: "Seeded table grapes for Indiana",
+            harvest_time_unparsed: "The late-ripening fruit may be high in acid if not fully ripened and its clusters are susceptible to bunch rot.",
+            description: "produces very large clusters of large, oval, amber berries. The late-ripening fruit may be high in acid if not fully ripened and its clusters are susceptible to bunch rot. The flavor is a rich combination of muscat and labrusca grape types. The vine is moderately hardy and productive. Wine producers also use this variety. Steuben, mentioned earlier under American wine grapes, also is a popular table grape"
+        },
+        {
+            type: "Grape",
+            name: "Swenson Red",
+            category: "Seeded table grapes for Indiana",
+            description: "produces large bunches with large, red berries that may turn reddish-blue if harvested late. The variety easily withstands winters throughout Indiana. The berries are medium to large, firm in texture, and have an adherent skin. The flavor is mildly fruity and pleasant. However, downy mildew infections can be severe. The University of Minnesota and private grape breeder Elmer Swenson of Osceola, Wisconsin released this variety jointly in 1980"
+        },
+        {
+            type: "Grape",
+            name: "Sunbelt",
+            category: "Seeded table grapes for Indiana",
+            harvest_time_unparsed: "Sunbelt withstands high summer temperatures better than Concord and does not exhibit the uneven ripening phenomenon so common to Concord grown in warm areas.",
+            description: "is a Concord-type grape variety developed by the University of Arkansas. Sunbelt withstands high summer temperatures better than Concord and does not exhibit the uneven ripening phenomenon so common to Concord grown in warm areas. Sunbelt is cold hardy and more disease resistant than Concord"
+        },
+        {
+            type: "Grape",
+            name: "Himrod",
+            category: "Seedless table grapes for Indiana",
+            description: "was released from the Cornell University grape breeding program in 1952. It produces large bunches of white, seedless grapes with an excellent, honey-like flavor and melting, juicy texture. The clusters are loosely filled, but growers may girdle canes, make gibberellic acid treatments, or thin clusters to increase cluster compactness and improve berry size. Himrod has a brittle rachis (stem), which may break when handled, and the berries may fall off (shell) in storage. Its vines are moderately cold hardy"
+        },
+        {
+            type: "Grape",
+            name: "Mars",
+            category: "Seedless table grapes for Indiana",
+            description: "(Plant patent 5680), a release from the University of Arkansas, is a vigorous, blue, seedless grape. The flavor is mildly labrusca-like, and has slipskin berries. Mars clusters are medium sized, cylindrical, and well-filled. Its cold hardiness has been very good in Indiana, and its vines are resistant to the major leaf diseases. The vines may bear fruit precociously, so growers should control production on young vines to prevent delays in establishment. Mars has been recommended as a home garden grape, but has shown potential for commercial marketing. It makes excellent pies and preserves. Fruit cracking is not a problem"
+        },
+        {
+            type: "Grape",
+            name: "Jupiter",
+            category: "Seedless table grapes for Indiana",
+            harvest_time_unparsed: "Maturity is early to midseason.",
+            description: "(Plant patent 13309) produces large, oval, firm, seedless, dark red berries on medium-sized clusters. Maturity is early to midseason. It has an excellent flavor, with a mild muscat character. Jupiter is very productive and often requires cluster thinning. It is more winter hardy than Marquis and Himrod, but not as hardy as Reliance and Mars. Growers must control downy mildew for best results, and fruit cracking can be a problem in wet years"
+        },
+        {
+            type: "Grape",
+            name: "Marquis",
+            category: "Seedless table grapes for Indiana",
+            description: "(Plant patent 11,012) was named and released by Cornell University in 1996. Its clusters are very large, medium compact, and attractive, with large, round, yellow-green berries. It has a melting texture, and is very flavorful. Ripe fruit holds well on the vine, and it goes from a mild, fruity flavor when first ripe, to a stronger labrusca flavor two weeks later. Gibberellic acid treatment is not recommended, but well-timed cluster thinning and cane girdling can increase berry size and improve cluster compactness. Marquis vines are moderately hardy, medium in vigor, and productive. Its main fault is its susceptibility to fungal diseases, but with a good spray program, this variety has excellent potential"
+        },
+        {
+            type: "Grape",
+            name: "Neptune",
+            category: "Seedless table grapes for Indiana",
+            harvest_time_unparsed: "It matures mid- to late season.",
+            description: "(Plant patent 12,302), a 1998 release from the University of Arkansas, is a yellow-green, seedless grape cultivar of moderate vigor. The clusters are large and very showy, but its productivity is moderate. It has a mild and fruity flavor, with a firm fruit texture and relatively thick skin. There is little experience growing Neptune in Indiana and it appears to be only moderately winter hardy, making it best adapted to the southern part of the state. It matures mid- to late season"
+        },
+        {
+            type: "Grape",
+            name: "Suffolk Red",
+            category: "Seedless table grapes for Indiana",
+            description: "produces medium to large clusters of mild-flavored, red berries. The clusters are loose but may be made more compact by applying gibberellic acid or girdling canes. It has moderate cold hardiness, and may experience excessive vine vigor following poor crops and winter bud damage"
+        },
+        {
+            type: "Grape",
+            name: "Vanessa",
+            category: "Seedless table grapes for Indiana",
+            description: "was developed in Ontario, Canada, and is a red grape of excellent quality. It has medium-sized berries and clusters. The flavor is mild and fruity, and its texture is firm to crisp. The vine is moderately vigorous and hardy. Grafting may be desirable on many sites to increase vine size. Vigorous vines have shown poor fruit set and loosely filled clusters, but cane girdling, gibberellic acid treatments, or thinning may be used to increase cluster compactness and improve berry size. The seed remnant is usually large and soft; when noticeable it is sometimes a cause for limited marketability. It has good storage potential and the fruit quality is among the best of the red seedless types"
+        },
+        {
+            type: "Grape",
+            name: "Reliance",
+            category: "Seedless table grapes for Indiana",
+            description: "(Plant patent 5174), also a variety from the University of Arkansas, produces large clusters of round, red, medium-sized berries. The skins are tender and the flesh is melting in texture, with a sweet labrusca flavor. In warm years, it may have poor coloring, and in wet seasons, the fruit often cracks. However, its cold hardiness is among the highest of the seedless varieties. Growers must control downy mildew for best results"
+        },
+        {
+            type: "Grape",
+            name: "Delaware",
+            category: "American grapes for Indiana",
+            description: "Purdue HO-221-W says Delaware has performed well in Purdue trials and should perform well in Indiana"
+        },
+        {
+            type: "Grape",
+            name: "Fredonia",
+            category: "American grapes for Indiana",
+            description: "Purdue HO-221-W says Fredonia has performed well in Purdue trials and should perform well in Indiana"
+        },
+    ]
+}
