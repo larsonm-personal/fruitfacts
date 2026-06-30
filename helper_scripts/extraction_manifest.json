@@ -189,6 +189,10 @@
             "config": "extraction_configs/uaf_hga_00030_interior_alaska_fruit.json"
         },
         {
+            "id": "uaf_hga_00038_growing_tree_fruits",
+            "config": "extraction_configs/uaf_hga_00038_growing_tree_fruits.json"
+        },
+        {
             "id": "usu_apple_recommendations",
             "config": "extraction_configs/usu_apple_recommendations.json"
         },
@@ -243,6 +247,14 @@
         {
             "id": "unh_blueberry_varieties_new_hampshire",
             "config": "extraction_configs/unh_blueberry_varieties_new_hampshire.json"
+        },
+        {
+            "id": "nc_state_extension_gardener_tree_fruit_nuts",
+            "config": "extraction_configs/nc_state_extension_gardener_tree_fruit_nuts.json"
+        },
+        {
+            "id": "nc_state_extension_gardener_small_fruits",
+            "config": "extraction_configs/nc_state_extension_gardener_small_fruits.json"
         },
         {
             "id": "ua_az1162_backyard_fruit_mid_elevations",

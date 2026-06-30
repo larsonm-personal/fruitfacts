@@ -30,7 +30,7 @@ PDF_WORD_RE = re.compile(r"\bpdf\b", re.IGNORECASE)
 DOWNLOAD_RE = re.compile(r"\bdownload\b", re.IGNORECASE)
 PDF_HREF_RE = re.compile(r"(?:\.pdf(?:$|[?#])|/pdf(?:$|[/?#]))", re.IGNORECASE)
 SKIP_PDF_RE = re.compile(
-    r"\b(form|registration|poster|flyer|agenda|newsletter|privacy|accessibility)\b",
+    r"\b(application form|registration form|poster|flyer|agenda|newsletter|privacy|accessibility)\b",
     re.IGNORECASE,
 )
 

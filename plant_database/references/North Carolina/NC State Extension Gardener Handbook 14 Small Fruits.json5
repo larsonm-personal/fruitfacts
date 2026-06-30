@@ -1,0 +1,615 @@
+{
+    title: "NC State Extension Gardener Handbook 14 Small Fruits",
+    description: "NC State Extension Gardener Handbook chapter with recommended strawberry, blackberry, raspberry, blueberry, grape, and muscadine cultivars for North Carolina home landscapes",
+    url: "https://content.ces.ncsu.edu/extension-gardener-handbook/14-small-fruits",
+    thumbnail: "website",
+    publication_number: "AG-831",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "NC State Extension, Raleigh, North Carolina",
+            latitude: 35.7877,
+            longitude: -78.6443
+        },
+    ],
+    categories: [
+        {
+            name: "Strawberry cultivars recommended for North Carolina home gardens",
+            description: "NC State Extension Gardener Handbook chapter 14 table 14-2 lists these strawberry cultivars for North Carolina home gardens"
+        },
+        {
+            name: "Erect blackberry cultivars recommended for North Carolina home gardens",
+            description: "NC State Extension Gardener Handbook chapter 14 table 14-4 lists these erect blackberry cultivars for North Carolina home gardens"
+        },
+        {
+            name: "Semi-trailing blackberry cultivars recommended for North Carolina home gardens",
+            description: "NC State Extension Gardener Handbook chapter 14 table 14-4 lists these semi-trailing blackberry cultivars for North Carolina home gardens"
+        },
+        {
+            name: "Primocane-fruiting blackberry cultivars recommended for North Carolina home gardens",
+            description: "NC State Extension Gardener Handbook chapter 14 table 14-4 lists these primocane-fruiting blackberry cultivars for North Carolina home gardens"
+        },
+        {
+            name: "Red raspberry cultivars recommended for North Carolina home gardens",
+            description: "NC State Extension Gardener Handbook chapter 14 table 14-5 lists these red raspberry cultivars for North Carolina home gardens"
+        },
+        {
+            name: "Black raspberry cultivars recommended for North Carolina home gardens",
+            description: "NC State Extension Gardener Handbook chapter 14 table 14-5 lists these black raspberry cultivars for North Carolina home gardens"
+        },
+        {
+            name: "Highbush blueberry varieties for western North Carolina mountains",
+            description: "NC State Extension Gardener Handbook chapter 14 table 14-9 lists these highbush blueberry varieties for western North Carolina mountain sites above 2500 feet or with extended winter temperatures below 10 degrees F"
+        },
+        {
+            name: "Rabbiteye blueberry varieties for North Carolina",
+            description: "NC State Extension Gardener Handbook chapter 14 table 14-9 lists these rabbiteye blueberry varieties for most sandhills-coastal plain, piedmont, and foothill sites below 2500 feet"
+        },
+        {
+            name: "Southern highbush blueberry varieties for North Carolina trial sites",
+            description: "NC State Extension Gardener Handbook chapter 14 table 14-9 lists these highbush and southern highbush blueberry varieties for sand-based, high-organic soils in the sandhills-coastal plain and on a trial basis for amended piedmont and foothill sites"
+        },
+        {
+            name: "Bunch grape cultivars recommended for North Carolina home gardens",
+            description: "NC State Extension Gardener Handbook chapter 14 table 14-10 lists these bunch grape cultivars for North Carolina home gardens"
+        },
+        {
+            name: "French-American hybrid wine grape cultivars for North Carolina",
+            description: "NC State Extension Gardener Handbook chapter 14 table 14-11 lists these French-American hybrid wine grape cultivars for North Carolina"
+        },
+        {
+            name: "European wine grape cultivars for North Carolina",
+            description: "NC State Extension Gardener Handbook chapter 14 table 14-11 lists these European wine grape cultivars for North Carolina"
+        },
+        {
+            name: "Muscadine cultivars recommended for North Carolina home gardens",
+            description: "NC State Extension Gardener Handbook chapter 14 table 14-12 lists these muscadine cultivars for North Carolina home gardens"
+        },
+    ],
+    plants: [
+        {
+            type: "Strawberry",
+            name: "Albion",
+            category: "Strawberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Spring-fall",
+            description: "Area: M. Berry size: Medium. Yield: Medium. Fresh use: Good. Processing use: Good. Comments: Everbearing"
+        },
+        {
+            type: "Strawberry",
+            name: "Chandler",
+            category: "Strawberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid-late",
+            description: "Area: All. Berry size: Large. Yield: High. Fresh use: Good. Processing use: Good. Comments: Commercial standard"
+        },
+        {
+            type: "Strawberry",
+            name: "Galletta",
+            category: "Strawberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Area: All. Berry size: Large. Yield: High. Fresh use: Good. Processing use: Poor. Comments: Glossy fruit"
+        },
+        {
+            type: "Strawberry",
+            name: "Jewel",
+            category: "Strawberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Late",
+            description: "Area: P, M. Berry size: Medium. Yield: High. Fresh use: Good. Processing use: Good. Comments: Rot resistant"
+        },
+        {
+            type: "Blackberry",
+            name: "Apache",
+            category: "Erect blackberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid",
+            description: "Area: All. Hardiness: Good. Yield: Moderate. Fruit character: White drupelets"
+        },
+        {
+            type: "Blackberry",
+            name: "Arapaho",
+            category: "Erect blackberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Area: All. Hardiness: Good. Yield: Moderate-high. Fruit character: Earliest thornless; sweet"
+        },
+        {
+            type: "Blackberry",
+            name: "Cheyenne",
+            category: "Erect blackberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid",
+            description: "Area: All. Hardiness: Good. Yield: Moderate. Fruit character: Large, firm fruit, good for processing"
+        },
+        {
+            type: "Blackberry",
+            name: "Choctaw",
+            category: "Erect blackberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Area: M, P. Hardiness: Moderate. Yield: High. Fruit character: Smaller seeds than most cultivars"
+        },
+        {
+            type: "Blackberry",
+            name: "Navaho",
+            category: "Erect blackberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid-late",
+            description: "Area: All. Hardiness: Good. Yield: Moderate. Fruit character: Sweet; aromatic; large seeds; thornless; rust susceptible"
+        },
+        {
+            type: "Blackberry",
+            name: "Ouachita",
+            category: "Erect blackberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid",
+            description: "Area: All. Hardiness: Good. Yield: High. Fruit character: Very sweet; large"
+        },
+        {
+            type: "Blackberry",
+            name: "Shawnee",
+            category: "Erect blackberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid",
+            description: "Area: All. Hardiness: Good. Yield: Moderate-high. Fruit character: Produces heavily for several weeks"
+        },
+        {
+            type: "Blackberry",
+            name: "Chester",
+            category: "Semi-trailing blackberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid-late",
+            description: "Area: All. Hardiness: Moderate. Yield: High. Fruit character: Semi-tart; large"
+        },
+        {
+            type: "Blackberry",
+            name: "Triple Crown",
+            category: "Semi-trailing blackberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid",
+            description: "Area: All. Hardiness: Moderate. Yield: High. Fruit character: Semi-tart; large"
+        },
+        {
+            type: "Blackberry",
+            name: "Freedom",
+            category: "Primocane-fruiting blackberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Very late",
+            description: "Area: All. Hardiness: Good. Yield: High. Fruit character: Tart, thornless canes"
+        },
+        {
+            type: "Blackberry",
+            name: "Prime Jan",
+            category: "Primocane-fruiting blackberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Very late",
+            description: "Area: M. Hardiness: Good. Yield: Moderate. Fruit character: Tart. Source table names this as Prime-Jan"
+        },
+        {
+            type: "Raspberry",
+            name: "Dormanred",
+            category: "Red raspberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Summer",
+            description: "Region: CP, P, M. Yield: Medium. Berry size: Medium. Flavor: Fair. Remarks: Shiny fruit, good for jams"
+        },
+        {
+            type: "Raspberry",
+            name: "Latham",
+            category: "Red raspberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Summer",
+            description: "Region: P, M. Yield: Medium. Berry size: Medium. Flavor: Fair. Remarks: Fruit can be soft, plant is vigorous"
+        },
+        {
+            type: "Raspberry",
+            name: "Joan J",
+            category: "Red raspberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Everbearing",
+            description: "Region: M. Yield: High. Berry size: Large. Flavor: Good. Remarks: Early everbearing season"
+        },
+        {
+            type: "Raspberry",
+            name: "Caroline",
+            category: "Red raspberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Everbearing",
+            description: "Region: M. Yield: High. Berry size: Large. Flavor: Good. Remarks: Mid everbearing season"
+        },
+        {
+            type: "Raspberry",
+            name: "Nantahala",
+            category: "Red raspberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Everbearing",
+            description: "Region: M. Yield: Medium. Berry size: Medium. Flavor: Excellent. Remarks: Sold as 'Sweet Repeat' in some catalogs, late everbearing season"
+        },
+        {
+            type: "Raspberry",
+            name: "Allen",
+            category: "Black raspberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Summer",
+            description: "Region: M. Yield: Medium. Berry size: Large. Flavor: Good. Remarks: Good adaptation, early to midseason"
+        },
+        {
+            type: "Raspberry",
+            name: "Bristol",
+            category: "Black raspberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Summer",
+            description: "Region: M. Yield: Medium. Berry size: Large. Flavor: Good. Remarks: Disease susceptible, midseason"
+        },
+        {
+            type: "Raspberry",
+            name: "Jewell",
+            category: "Black raspberry cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Summer",
+            description: "Region: M. Yield: High. Berry size: Large. Flavor: Excellent. Remarks: Firm berry; hardy, most widely adapted and reliable yield, mid-season"
+        },
+        {
+            type: "Blueberry",
+            name: "Duke",
+            category: "Highbush blueberry varieties for western North Carolina mountains",
+            description: "Listed in the Highbush column for western mountain sites. Listed in the Highbush and Southern Highbush column for sandhills-coastal plain and trial sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Robeson",
+            category: "Rabbiteye blueberry varieties for North Carolina",
+            description: "Listed in the Rabbiteye column for most lower-elevation North Carolina sites. Source note: early pentaploid. Source table spells this Robesone"
+        },
+        {
+            type: "Blueberry",
+            name: "O'Neal",
+            category: "Southern highbush blueberry varieties for North Carolina trial sites",
+            description: "Listed in the Highbush and Southern Highbush column for sandhills-coastal plain and trial sites. Source note: begins May 15 in sandhills-coastal plain"
+        },
+        {
+            type: "Blueberry",
+            name: "Sunrise",
+            category: "Highbush blueberry varieties for western North Carolina mountains",
+            description: "Listed in the Highbush column for western mountain sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Climax",
+            category: "Rabbiteye blueberry varieties for North Carolina",
+            description: "Listed in the Rabbiteye column for most lower-elevation North Carolina sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Star",
+            category: "Southern highbush blueberry varieties for North Carolina trial sites",
+            description: "Listed in the Highbush and Southern Highbush column for sandhills-coastal plain and trial sites. Source table spells this Stare"
+        },
+        {
+            type: "Blueberry",
+            name: "Draper",
+            category: "Highbush blueberry varieties for western North Carolina mountains",
+            description: "Listed in the Highbush column for western mountain sites. Source table spells this Drapere"
+        },
+        {
+            type: "Blueberry",
+            name: "Premier",
+            category: "Rabbiteye blueberry varieties for North Carolina",
+            description: "Listed in the Rabbiteye column for most lower-elevation North Carolina sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluecrop",
+            category: "Highbush blueberry varieties for western North Carolina mountains",
+            description: "Listed in the Highbush column for western mountain sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Columbus",
+            category: "Rabbiteye blueberry varieties for North Carolina",
+            description: "Listed in the Rabbiteye column for most lower-elevation North Carolina sites. Source note: mid-season. Source table spells this Columbuse"
+        },
+        {
+            type: "Blueberry",
+            name: "New Hanover",
+            category: "Southern highbush blueberry varieties for North Carolina trial sites",
+            description: "Listed in the Highbush and Southern Highbush column for sandhills-coastal plain and trial sites. Source table spells this New Hanovere"
+        },
+        {
+            type: "Blueberry",
+            name: "Echota",
+            category: "Highbush blueberry varieties for western North Carolina mountains",
+            description: "Listed in the Highbush column for western mountain sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Ira",
+            category: "Rabbiteye blueberry varieties for North Carolina",
+            description: "Listed in the Rabbiteye column for most lower-elevation North Carolina sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Legacy",
+            category: "Southern highbush blueberry varieties for North Carolina trial sites",
+            description: "Listed in the Highbush and Southern Highbush column for sandhills-coastal plain and trial sites. Source note: begins June 1 in sandhills-coastal plain"
+        },
+        {
+            type: "Blueberry",
+            name: "Blueray",
+            category: "Highbush blueberry varieties for western North Carolina mountains",
+            description: "Listed in the Highbush column for western mountain sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Tifblue",
+            category: "Rabbiteye blueberry varieties for North Carolina",
+            description: "Listed in the Rabbiteye column for most lower-elevation North Carolina sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Toro",
+            category: "Highbush blueberry varieties for western North Carolina mountains",
+            description: "Listed in the Highbush column for western mountain sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Powderblue",
+            category: "Rabbiteye blueberry varieties for North Carolina",
+            description: "Listed in the Rabbiteye column for most lower-elevation North Carolina sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Berkeley",
+            category: "Highbush blueberry varieties for western North Carolina mountains",
+            description: "Listed in the Highbush column for western mountain sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Onslow",
+            category: "Rabbiteye blueberry varieties for North Carolina",
+            description: "Listed in the Rabbiteye column for most lower-elevation North Carolina sites. Source table spells this Onslowe"
+        },
+        {
+            type: "Blueberry",
+            name: "Jersey",
+            category: "Highbush blueberry varieties for western North Carolina mountains",
+            description: "Listed in the Highbush column for western mountain sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Patriot",
+            category: "Highbush blueberry varieties for western North Carolina mountains",
+            description: "Listed in the Highbush column for western mountain sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Liberty",
+            category: "Highbush blueberry varieties for western North Carolina mountains",
+            description: "Listed in the Highbush column for western mountain sites. Source table carries a trial-basis footnote marker on Liberty"
+        },
+        {
+            type: "Blueberry",
+            name: "Elliott",
+            category: "Highbush blueberry varieties for western North Carolina mountains",
+            description: "Listed in the Highbush column for western mountain sites"
+        },
+        {
+            type: "Blueberry",
+            name: "Aurora",
+            category: "Highbush blueberry varieties for western North Carolina mountains",
+            description: "Listed in the Highbush column for western mountain sites. Source table carries a trial-basis footnote marker on Aurora"
+        },
+        {
+            type: "Grape",
+            name: "Catawba",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Late",
+            description: "Color: Red. Berry size: Medium. Best use: F, J, W. Skin: Slipskin. Comments: All purpose grape; thick skin; seeded"
+        },
+        {
+            type: "Grape",
+            name: "Concord",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early- Mid",
+            description: "Color: Black. Berry size: Medium. Best use: F, J. Skin: Slipskin. Comments: Ripens unevenly within the cluster in warm to hot climates; thick skin; seeded"
+        },
+        {
+            type: "Grape",
+            name: "Delaware",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid",
+            description: "Color: Red. Berry size: Small. Best use: F, J, W. Skin: Slipskin. Comments: Excellent wine quality for American type; good flavor; thick skin; seeded"
+        },
+        {
+            type: "Grape",
+            name: "Faith",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Color: Blue. Berry size: Medium. Best use: F. Skin: Non-slipskin. Comments: Seedless though occasional seed traces can be found; uneven fruit set some years; occasional slight skin astringency"
+        },
+        {
+            type: "Grape",
+            name: "Gratitude",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid-Late",
+            description: "Color: White. Berry size: Medium. Best use: F. Skin: Non-slipskin. Comments: Seedless; exceptionally thin skin; very tight clusters; occasional winter injury"
+        },
+        {
+            type: "Grape",
+            name: "Hope",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid",
+            description: "Color: White. Berry size: Small-medium. Best use: F. Skin: Non-slipskin. Comments: Seedless; thin skin; slight fruit cracking after rain; tight clusters"
+        },
+        {
+            type: "Grape",
+            name: "Joy",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Color: Blue. Berry size: Small-medium. Best use: F. Skin: Non-slipskin. Comments: Seedless; thinnest skin of University of Arkansas cultivars; soft texture; occasional variable berry set (some shot berries) and shatter of ripe berries in some years"
+        },
+        {
+            type: "Grape",
+            name: "Jupiter",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Very early",
+            description: "Color: Blue. Berry size: Large. Best use: F. Skin: Non-slipskin. Comments: Semi-crisp; seedless with some small soft seed traces"
+        },
+        {
+            type: "Grape",
+            name: "Mars",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Color: Blue. Berry size: Medium. Best use: F. Skin: Slipskin. Comments: Thick skin; seedless with occasional seed traces; very winter hardy"
+        },
+        {
+            type: "Grape",
+            name: "Neptune",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early-Mid",
+            description: "Color: White. Berry size: Medium. Best use: F. Skin: Non-slipskin. Comments: Seedless though some soft seed traces can be found"
+        },
+        {
+            type: "Grape",
+            name: "Niagara",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid",
+            description: "Color: White. Berry size: Medium. Best use: F, J. Skin: Slipskin. Comments: Harvest early if a reduction in foxy (musty odor/flavor) character is desired; thick skin; seeded"
+        },
+        {
+            type: "Grape",
+            name: "Norton",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Late",
+            description: "Color: Black. Berry size: Medium. Best use: W. Skin: Slipskin. Comments: High acid, high pH fruit; small clusters; very vigorous; also known as Cynthiana"
+        },
+        {
+            type: "Grape",
+            name: "Reliance",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Color: Pink. Berry size: Medium. Best use: F. Skin: Slipskin. Comments: Hardiest of University of Arkansas cultivars; seedless and seed trace free; susceptible to fruit cracking with rain near maturity"
+        },
+        {
+            type: "Grape",
+            name: "Saturn",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Color: Red. Berry size: Medium. Best use: F. Skin: Non-slipskin. Comments: Crisp texture; moderately hardy; seedless but small seed traces observed"
+        },
+        {
+            type: "Grape",
+            name: "Sunbelt",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early-Mid",
+            description: "Color: Blue. Berry size: Large. Best use: F, J. Skin: Slipskin. Comments: Nicknamed \"Southern Concord\"; characteristics very comparable to Concord grapes, however, it is more adapted to hot weather; ripens more evenly than Concord; thick skin; seeded"
+        },
+        {
+            type: "Grape",
+            name: "Venus",
+            category: "Bunch grape cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Very early",
+            description: "Color: Blue. Berry size: Medium. Best use: F. Skin: Slipskin. Comments: Seed traces often noticeable"
+        },
+        {
+            type: "Grape",
+            name: "Chambourcin",
+            category: "French-American hybrid wine grape cultivars for North Carolina",
+            harvest_time_unparsed: "Late",
+            description: "Color: Blue. Berry size: Small. Skin: Non-slipskin. Comments: Wine can have herbaceous flavors if fruit is under ripe or with poor wine-making techniques; otherwise, excellent wine quality; cold tender; more disease resistant than European cultivars"
+        },
+        {
+            type: "Grape",
+            name: "Chardonel",
+            category: "French-American hybrid wine grape cultivars for North Carolina",
+            harvest_time_unparsed: "Early-Mid",
+            description: "Color: White. Berry size: Small. Skin: Non-slipskin. Comments: Excellent wine quality; flavor similar to Chardonnay; has similar disease susceptibility as Chardonnay"
+        },
+        {
+            type: "Grape",
+            name: "Seyval",
+            category: "French-American hybrid wine grape cultivars for North Carolina",
+            harvest_time_unparsed: "Late",
+            description: "Color: White. Berry size: Small. Skin: Non-slipskin. Comments: Good wine; crop reduction required to achieve good quality"
+        },
+        {
+            type: "Grape",
+            name: "Traminette",
+            category: "French-American hybrid wine grape cultivars for North Carolina",
+            harvest_time_unparsed: "Early-Mid",
+            description: "Color: White to pink. Berry size: Small. Skin: Non-slipskin. Comments: Fruit and wine flavor similar to Gewurztraminer (\"spicy\"); more disease resistant than its Gewurztraminer parent, but still susceptible to downy mildew"
+        },
+        {
+            type: "Grape",
+            name: "Cabernet franc",
+            category: "European wine grape cultivars for North Carolina",
+            harvest_time_unparsed: "Mid",
+            description: "Color: Blue. Berry size: Small. Skin: Non-slipskin. Comments: Performs better than Cabernet Sauvignon. Source table names this as Cabernet Franc"
+        },
+        {
+            type: "Grape",
+            name: "Cabernet Sauvignon",
+            category: "European wine grape cultivars for North Carolina",
+            harvest_time_unparsed: "Very Late",
+            description: "Color: Blue. Berry size: Small. Skin: Non-slipskin. Comments: Wine can be herbaceous if vegetative growth is not controlled"
+        },
+        {
+            type: "Grape",
+            name: "Chardonnay",
+            category: "European wine grape cultivars for North Carolina",
+            harvest_time_unparsed: "Early-Mid",
+            description: "Color: White. Berry size: Small. Skin: Non-slipskin. Comments: Early bud break, frost problems; very susceptible to foliar diseases; excellent wine quality"
+        },
+        {
+            type: "Muscadine",
+            name: "Carlos",
+            category: "Muscadine cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid",
+            description: "Color: Bronze. Berry size: Medium. Stem scar: Very dry. Use: Good fresh or for wine"
+        },
+        {
+            type: "Muscadine",
+            name: "Doreen",
+            category: "Muscadine cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Very late",
+            description: "Color: Bronze. Berry size: Medium. Stem scar: Dry. Use: Good fresh or for wine"
+        },
+        {
+            type: "Muscadine",
+            name: "Magnolia",
+            category: "Muscadine cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Color: Bronze. Berry size: Medium to large. Stem scar: Wet. Use: Excellent fresh flavor; wine and juice"
+        },
+        {
+            type: "Muscadine",
+            name: "Nesbitt",
+            category: "Muscadine cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Color: Black. Berry size: Large. Stem scar: Dry. Use: Good fresh; poor wine color"
+        },
+        {
+            type: "Muscadine",
+            name: "Noble",
+            category: "Muscadine cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Color: Black. Berry size: Small. Stem scar: Wet. Use: Good fresh; wine and juice"
+        },
+        {
+            type: "Muscadine",
+            name: "Regale",
+            category: "Muscadine cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid",
+            description: "Color: Black. Berry size: Medium. Stem scar: Wet. Use: Good fresh; wine and juice"
+        },
+        {
+            type: "Muscadine",
+            name: "Scarlett",
+            category: "Muscadine cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid",
+            description: "Color: Bronze-pink. Berry size: Very large. Stem scar: Dry. Use: Good fresh"
+        },
+        {
+            type: "Muscadine",
+            name: "Southern Home",
+            category: "Muscadine cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Mid",
+            description: "Color: Black. Berry size: Medium. Stem scar: Dry. Use: Hybrid, ornamental, home winemaking"
+        },
+        {
+            type: "Muscadine",
+            name: "Tara",
+            category: "Muscadine cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Color: Bronze. Berry size: Very large. Stem scar: Dry. Use: Good fresh"
+        },
+        {
+            type: "Muscadine",
+            name: "Triumph",
+            category: "Muscadine cultivars recommended for North Carolina home gardens",
+            harvest_time_unparsed: "Early",
+            description: "Color: Bronze. Berry size: Large. Stem scar: Dry. Use: Good fresh; fair wine"
+        },
+    ]
+}

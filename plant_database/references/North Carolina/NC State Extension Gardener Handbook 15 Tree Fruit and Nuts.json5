@@ -1,0 +1,612 @@
+{
+    title: "NC State Extension Gardener Handbook 15 Tree Fruit and Nuts",
+    description: "NC State Extension Gardener Handbook chapter with cultivar recommendations, pollination notes, disease notes, and harvest guidance for North Carolina tree fruit and nut plantings",
+    url: "https://content.ces.ncsu.edu/extension-gardener-handbook/15-tree-fruit-and-nuts",
+    thumbnail: "website",
+    publication_number: "AG-831",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "NC State Extension, Raleigh, North Carolina",
+            latitude: 35.7877,
+            longitude: -78.6443
+        },
+    ],
+    categories: [
+        {
+            name: "Apple cultivars recommended for North Carolina home landscapes",
+            description: "NC State Extension Gardener Handbook chapter 15 lists these apple cultivars in its tree selection table for North Carolina home landscapes"
+        },
+        {
+            name: "Chestnut cultivars recommended for North Carolina home landscapes",
+            description: "NC State Extension Gardener Handbook chapter 15 lists these chestnut cultivars in its tree selection table for North Carolina home landscapes"
+        },
+        {
+            name: "Fig cultivars recommended for North Carolina home landscapes",
+            description: "NC State Extension Gardener Handbook chapter 15 lists these fig cultivars in its tree selection table for North Carolina home landscapes"
+        },
+        {
+            name: "Nectarine cultivars recommended for North Carolina home landscapes",
+            description: "NC State Extension Gardener Handbook chapter 15 lists these nectarine cultivars in its tree selection table for North Carolina home landscapes"
+        },
+        {
+            name: "Peach cultivars recommended for North Carolina home landscapes",
+            description: "NC State Extension Gardener Handbook chapter 15 lists these peach cultivars in its tree selection table for North Carolina home landscapes"
+        },
+        {
+            name: "European pear cultivars recommended for North Carolina home landscapes",
+            description: "NC State Extension Gardener Handbook chapter 15 lists these European pear cultivars in its tree selection table for North Carolina home landscapes"
+        },
+        {
+            name: "Asian pear cultivars recommended for North Carolina home landscapes",
+            description: "NC State Extension Gardener Handbook chapter 15 lists these Asian pear cultivars in its tree selection table for North Carolina home landscapes"
+        },
+        {
+            name: "Pecan cultivars recommended for North Carolina home landscapes",
+            description: "NC State Extension Gardener Handbook chapter 15 lists these pecan cultivars in its tree selection table for North Carolina home landscapes"
+        },
+        {
+            name: "Persimmon cultivars recommended for North Carolina home landscapes",
+            description: "NC State Extension Gardener Handbook chapter 15 lists these Asian persimmon cultivars in its tree selection table for North Carolina home landscapes"
+        },
+        {
+            name: "Plum cultivars recommended for North Carolina home landscapes",
+            description: "NC State Extension Gardener Handbook chapter 15 lists these Japanese and European plum cultivars in its tree selection table for North Carolina home landscapes"
+        },
+        {
+            name: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "NC State Extension Gardener Handbook chapter 15 lists these minor tree fruit and nut varieties in its table of lesser-used options"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Apple cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Requirements vary. Some cultivars are self-fruitful. Others require a pollinator.a. Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No cultivars are resistant. Some cultivars are resistant to apple scab, powdery mildew, cedar apple rust or fire blight. These include Redfree, Prima, Priscilla, Jonafree, and Liberty (which performs poorly in North Carolina). Other considerations: In warmer regions, red cultivars may not color well"
+        },
+        {
+            type: "Apple",
+            name: "Mountain Cove",
+            category: "Apple cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Requirements vary. Some cultivars are self-fruitful. Others require a pollinator.a. Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No cultivars are resistant. Some cultivars are resistant to apple scab, powdery mildew, cedar apple rust or fire blight. These include Redfree, Prima, Priscilla, Jonafree, and Liberty (which performs poorly in North Carolina). Other considerations: In warmer regions, red cultivars may not color well. Source table names this as Ginger Gold"
+        },
+        {
+            type: "Apple",
+            name: "Jonagold",
+            category: "Apple cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Requirements vary. Some cultivars are self-fruitful. Others require a pollinator.a. Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No cultivars are resistant. Some cultivars are resistant to apple scab, powdery mildew, cedar apple rust or fire blight. These include Redfree, Prima, Priscilla, Jonafree, and Liberty (which performs poorly in North Carolina). Other considerations: In warmer regions, red cultivars may not color well"
+        },
+        {
+            type: "Apple",
+            name: "Empire",
+            category: "Apple cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Requirements vary. Some cultivars are self-fruitful. Others require a pollinator.a. Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No cultivars are resistant. Some cultivars are resistant to apple scab, powdery mildew, cedar apple rust or fire blight. These include Redfree, Prima, Priscilla, Jonafree, and Liberty (which performs poorly in North Carolina). Other considerations: In warmer regions, red cultivars may not color well"
+        },
+        {
+            type: "Apple",
+            name: "Red Delicious",
+            category: "Apple cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Requirements vary. Some cultivars are self-fruitful. Others require a pollinator.a. Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No cultivars are resistant. Some cultivars are resistant to apple scab, powdery mildew, cedar apple rust or fire blight. These include Redfree, Prima, Priscilla, Jonafree, and Liberty (which performs poorly in North Carolina). Other considerations: In warmer regions, red cultivars may not color well"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "Apple cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Requirements vary. Some cultivars are self-fruitful. Others require a pollinator.a. Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No cultivars are resistant. Some cultivars are resistant to apple scab, powdery mildew, cedar apple rust or fire blight. These include Redfree, Prima, Priscilla, Jonafree, and Liberty (which performs poorly in North Carolina). Other considerations: In warmer regions, red cultivars may not color well"
+        },
+        {
+            type: "Apple",
+            name: "Mutsu",
+            category: "Apple cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Requirements vary. Some cultivars are self-fruitful. Others require a pollinator.a. Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No cultivars are resistant. Some cultivars are resistant to apple scab, powdery mildew, cedar apple rust or fire blight. These include Redfree, Prima, Priscilla, Jonafree, and Liberty (which performs poorly in North Carolina). Other considerations: In warmer regions, red cultivars may not color well. Source table names this as Crispin (Mutsu)"
+        },
+        {
+            type: "Apple",
+            name: "Stayman",
+            category: "Apple cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Requirements vary. Some cultivars are self-fruitful. Others require a pollinator.a. Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No cultivars are resistant. Some cultivars are resistant to apple scab, powdery mildew, cedar apple rust or fire blight. These include Redfree, Prima, Priscilla, Jonafree, and Liberty (which performs poorly in North Carolina). Other considerations: In warmer regions, red cultivars may not color well"
+        },
+        {
+            type: "Apple",
+            name: "Rome",
+            category: "Apple cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Requirements vary. Some cultivars are self-fruitful. Others require a pollinator.a. Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No cultivars are resistant. Some cultivars are resistant to apple scab, powdery mildew, cedar apple rust or fire blight. These include Redfree, Prima, Priscilla, Jonafree, and Liberty (which performs poorly in North Carolina). Other considerations: In warmer regions, red cultivars may not color well"
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Apple cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Requirements vary. Some cultivars are self-fruitful. Others require a pollinator.a. Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No cultivars are resistant. Some cultivars are resistant to apple scab, powdery mildew, cedar apple rust or fire blight. These include Redfree, Prima, Priscilla, Jonafree, and Liberty (which performs poorly in North Carolina). Other considerations: In warmer regions, red cultivars may not color well"
+        },
+        {
+            type: "Chestnut",
+            name: "Nanking",
+            category: "Chestnut cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: All require pollination from another cultivar. Plant at least two cultivars of the same type to ensure optimal size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut cultivars, citing superior quality over the Chinese cultivars"
+        },
+        {
+            type: "Chestnut",
+            name: "Meiling",
+            category: "Chestnut cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: All require pollination from another cultivar. Plant at least two cultivars of the same type to ensure optimal size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut cultivars, citing superior quality over the Chinese cultivars"
+        },
+        {
+            type: "Chestnut",
+            name: "Kuling",
+            category: "Chestnut cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: All require pollination from another cultivar. Plant at least two cultivars of the same type to ensure optimal size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut cultivars, citing superior quality over the Chinese cultivars"
+        },
+        {
+            type: "Chestnut",
+            name: "Abundance",
+            category: "Chestnut cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: All require pollination from another cultivar. Plant at least two cultivars of the same type to ensure optimal size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut cultivars, citing superior quality over the Chinese cultivars"
+        },
+        {
+            type: "Chestnut",
+            name: "Crane",
+            category: "Chestnut cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: All require pollination from another cultivar. Plant at least two cultivars of the same type to ensure optimal size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut cultivars, citing superior quality over the Chinese cultivars"
+        },
+        {
+            type: "Chestnut",
+            name: "Revival",
+            category: "Chestnut cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: All require pollination from another cultivar. Plant at least two cultivars of the same type to ensure optimal size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut cultivars, citing superior quality over the Chinese cultivars"
+        },
+        {
+            type: "Chestnut",
+            name: "Carolina",
+            category: "Chestnut cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: All require pollination from another cultivar. Plant at least two cultivars of the same type to ensure optimal size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut cultivars, citing superior quality over the Chinese cultivars"
+        },
+        {
+            type: "Chestnut",
+            name: "Willamette",
+            category: "Chestnut cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: All require pollination from another cultivar. Plant at least two cultivars of the same type to ensure optimal size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut cultivars, citing superior quality over the Chinese cultivars"
+        },
+        {
+            type: "Fig",
+            name: "Celeste",
+            category: "Fig cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Only cultivars that do not require pollination can be grown in North Carolina. Disease notes: Few serious disease problems except nematodes. Other considerations: Fruit may drop prematurely because of drought or excessive shade, moisture, or fertilization"
+        },
+        {
+            type: "Fig",
+            name: "Brown Turkey",
+            category: "Fig cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Only cultivars that do not require pollination can be grown in North Carolina. Disease notes: Few serious disease problems except nematodes. Other considerations: Fruit may drop prematurely because of drought or excessive shade, moisture, or fertilization"
+        },
+        {
+            type: "Fig",
+            name: "Magnolia",
+            category: "Fig cultivars recommended for North Carolina home landscapes",
+            AKA: ["Brunswick"],
+            description: "Pollination: Only cultivars that do not require pollination can be grown in North Carolina. Disease notes: Few serious disease problems except nematodes. Other considerations: Fruit may drop prematurely because of drought or excessive shade, moisture, or fertilization. Source table names this as Brunswick/Magnolia"
+        },
+        {
+            type: "Fig",
+            name: "Marseille",
+            category: "Fig cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Only cultivars that do not require pollination can be grown in North Carolina. Disease notes: Few serious disease problems except nematodes. Other considerations: Fruit may drop prematurely because of drought or excessive shade, moisture, or fertilization"
+        },
+        {
+            type: "Nectarine",
+            name: "Summer Beaut",
+            category: "Nectarine cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Plant nectarines and peaches only on Lovell or Halford rootstocks to avoid premature death. Hairless nectarines are more susceptible to diseases than peaches so require a multipurpose fungicide and insecticide spray program. Other considerations: Many cultivars were developed in California and may not do well in North Carolina"
+        },
+        {
+            type: "Nectarine",
+            name: "Sunglo",
+            category: "Nectarine cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Plant nectarines and peaches only on Lovell or Halford rootstocks to avoid premature death. Hairless nectarines are more susceptible to diseases than peaches so require a multipurpose fungicide and insecticide spray program. Other considerations: Many cultivars were developed in California and may not do well in North Carolina"
+        },
+        {
+            type: "Nectarine",
+            name: "Red Gold",
+            category: "Nectarine cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Plant nectarines and peaches only on Lovell or Halford rootstocks to avoid premature death. Hairless nectarines are more susceptible to diseases than peaches so require a multipurpose fungicide and insecticide spray program. Other considerations: Many cultivars were developed in California and may not do well in North Carolina. Source table names this as Redgold"
+        },
+        {
+            type: "Nectarine",
+            name: "Flavortop",
+            category: "Nectarine cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Plant nectarines and peaches only on Lovell or Halford rootstocks to avoid premature death. Hairless nectarines are more susceptible to diseases than peaches so require a multipurpose fungicide and insecticide spray program. Other considerations: Many cultivars were developed in California and may not do well in North Carolina"
+        },
+        {
+            type: "Nectarine",
+            name: "Fantasia",
+            category: "Nectarine cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Plant nectarines and peaches only on Lovell or Halford rootstocks to avoid premature death. Hairless nectarines are more susceptible to diseases than peaches so require a multipurpose fungicide and insecticide spray program. Other considerations: Many cultivars were developed in California and may not do well in North Carolina"
+        },
+        {
+            type: "Nectarine",
+            name: "Carolina Red",
+            category: "Nectarine cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Plant nectarines and peaches only on Lovell or Halford rootstocks to avoid premature death. Hairless nectarines are more susceptible to diseases than peaches so require a multipurpose fungicide and insecticide spray program. Other considerations: Many cultivars were developed in California and may not do well in North Carolina"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Peach cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Needs a multipurpose fungicide and insecticide spray program during the growing season. Other considerations: Choose cultivars requiring at least 750 hours of chilling"
+        },
+        {
+            type: "Peach",
+            name: "Norman",
+            category: "Peach cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Needs a multipurpose fungicide and insecticide spray program during the growing season. Other considerations: Choose cultivars requiring at least 750 hours of chilling"
+        },
+        {
+            type: "Peach",
+            name: "Carolina Belle",
+            category: "Peach cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Needs a multipurpose fungicide and insecticide spray program during the growing season. Other considerations: Choose cultivars requiring at least 750 hours of chilling"
+        },
+        {
+            type: "Peach",
+            name: "Winblo",
+            category: "Peach cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Needs a multipurpose fungicide and insecticide spray program during the growing season. Other considerations: Choose cultivars requiring at least 750 hours of chilling"
+        },
+        {
+            type: "Peach",
+            name: "Contender",
+            category: "Peach cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Needs a multipurpose fungicide and insecticide spray program during the growing season. Other considerations: Choose cultivars requiring at least 750 hours of chilling"
+        },
+        {
+            type: "Peach",
+            name: "Summer Pearl",
+            category: "Peach cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Needs a multipurpose fungicide and insecticide spray program during the growing season. Other considerations: Choose cultivars requiring at least 750 hours of chilling"
+        },
+        {
+            type: "Peach",
+            name: "China Pearl",
+            category: "Peach cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Needs a multipurpose fungicide and insecticide spray program during the growing season. Other considerations: Choose cultivars requiring at least 750 hours of chilling"
+        },
+        {
+            type: "Peach",
+            name: "Cresthaven",
+            category: "Peach cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Needs a multipurpose fungicide and insecticide spray program during the growing season. Other considerations: Choose cultivars requiring at least 750 hours of chilling"
+        },
+        {
+            type: "Peach",
+            name: "Encore",
+            category: "Peach cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Self-fruitful. Do not require pollination by other cultivars. Disease notes: Needs a multipurpose fungicide and insecticide spray program during the growing season. Other considerations: Choose cultivars requiring at least 750 hours of chilling"
+        },
+        {
+            type: "Euro Pear",
+            name: "Moonglow",
+            category: "European pear cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: At least two cultivars are recommended to ensure adequate pollination. Disease notes: Plant only fire blight-resistant cultivars. Other considerations: Plant pears on higher sites than apples; they bloom earlier"
+        },
+        {
+            type: "Euro Pear",
+            name: "Magness",
+            category: "European pear cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: At least two cultivars are recommended to ensure adequate pollination. Disease notes: Plant only fire blight-resistant cultivars. Other considerations: Plant pears on higher sites than apples; they bloom earlier"
+        },
+        {
+            type: "Euro Pear",
+            name: "Kieffer",
+            category: "European pear cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: At least two cultivars are recommended to ensure adequate pollination. Disease notes: Plant only fire blight-resistant cultivars. Other considerations: Plant pears on higher sites than apples; they bloom earlier"
+        },
+        {
+            type: "Euro Pear",
+            name: "Harrow Delight",
+            category: "European pear cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: At least two cultivars are recommended to ensure adequate pollination. Disease notes: Plant only fire blight-resistant cultivars. Other considerations: Plant pears on higher sites than apples; they bloom earlier"
+        },
+        {
+            type: "Euro Pear",
+            name: "Harrow Sweet",
+            category: "European pear cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: At least two cultivars are recommended to ensure adequate pollination. Disease notes: Plant only fire blight-resistant cultivars. Other considerations: Plant pears on higher sites than apples; they bloom earlier"
+        },
+        {
+            type: "Euro Pear",
+            name: "Harvest Queen",
+            category: "European pear cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: At least two cultivars are recommended to ensure adequate pollination. Disease notes: Plant only fire blight-resistant cultivars. Other considerations: Plant pears on higher sites than apples; they bloom earlier"
+        },
+        {
+            type: "Euro Pear",
+            name: "Seckel",
+            category: "European pear cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: At least two cultivars are recommended to ensure adequate pollination. Disease notes: Plant only fire blight-resistant cultivars. Other considerations: Plant pears on higher sites than apples; they bloom earlier"
+        },
+        {
+            type: "Asian Pear",
+            name: "Nijisseiki",
+            category: "Asian pear cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: At least two cultivars are needed to ensure adequate pollination. Disease notes: Fire blight is the biggest concern. Other considerations: Fruit needs to be thinned heavily. Flower is very susceptible to frost damage. Source table names this as Twentieth Century (Nijisseiki)"
+        },
+        {
+            type: "Asian Pear",
+            name: "Niitaka",
+            category: "Asian pear cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: At least two cultivars are needed to ensure adequate pollination. Disease notes: Fire blight is the biggest concern. Other considerations: Fruit needs to be thinned heavily. Flower is very susceptible to frost damage. Source table names this as Nititaka"
+        },
+        {
+            type: "Asian Pear",
+            name: "Shinseiki",
+            category: "Asian pear cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: At least two cultivars are needed to ensure adequate pollination. Disease notes: Fire blight is the biggest concern. Other considerations: Fruit needs to be thinned heavily. Flower is very susceptible to frost damage. Source table names this as Shinseiki (New Century)"
+        },
+        {
+            type: "Asian Pear",
+            name: "Chojuro",
+            category: "Asian pear cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: At least two cultivars are needed to ensure adequate pollination. Disease notes: Fire blight is the biggest concern. Other considerations: Fruit needs to be thinned heavily. Flower is very susceptible to frost damage"
+        },
+        {
+            type: "Pecan",
+            name: "Cape Fear",
+            category: "Pecan cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Pollination requires two cultivars. Disease notes: Scab is the most serious disease in North Carolina. A fungicide spray program is usually not practical. Other considerations: Careful cultivar selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Pecan",
+            name: "Pawnee",
+            category: "Pecan cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Pollination requires two cultivars. Disease notes: Scab is the most serious disease in North Carolina. A fungicide spray program is usually not practical. Other considerations: Careful cultivar selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Pecan",
+            name: "Chickasaw",
+            category: "Pecan cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Pollination requires two cultivars. Disease notes: Scab is the most serious disease in North Carolina. A fungicide spray program is usually not practical. Other considerations: Careful cultivar selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Pecan",
+            name: "Elliot",
+            category: "Pecan cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Pollination requires two cultivars. Disease notes: Scab is the most serious disease in North Carolina. A fungicide spray program is usually not practical. Other considerations: Careful cultivar selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Pecan",
+            name: "Forkert",
+            category: "Pecan cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Pollination requires two cultivars. Disease notes: Scab is the most serious disease in North Carolina. A fungicide spray program is usually not practical. Other considerations: Careful cultivar selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Pecan",
+            name: "Gloria Grande",
+            category: "Pecan cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Pollination requires two cultivars. Disease notes: Scab is the most serious disease in North Carolina. A fungicide spray program is usually not practical. Other considerations: Careful cultivar selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Pecan",
+            name: "Kiowa",
+            category: "Pecan cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Pollination requires two cultivars. Disease notes: Scab is the most serious disease in North Carolina. A fungicide spray program is usually not practical. Other considerations: Careful cultivar selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Pecan",
+            name: "Stuart",
+            category: "Pecan cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Pollination requires two cultivars. Disease notes: Scab is the most serious disease in North Carolina. A fungicide spray program is usually not practical. Other considerations: Careful cultivar selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Pecan",
+            name: "Sumner",
+            category: "Pecan cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Pollination requires two cultivars. Disease notes: Scab is the most serious disease in North Carolina. A fungicide spray program is usually not practical. Other considerations: Careful cultivar selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Persimmon",
+            name: "Fuyu",
+            category: "Persimmon cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: For best fruit set, plant two cultivars. Disease notes: No serious disease problems. Other considerations: Fruits of non-astringent cultivars may only be suitable for eating when fully mature and flesh is soft"
+        },
+        {
+            type: "Persimmon",
+            name: "Jiro",
+            category: "Persimmon cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: For best fruit set, plant two cultivars. Disease notes: No serious disease problems. Other considerations: Fruits of non-astringent cultivars may only be suitable for eating when fully mature and flesh is soft"
+        },
+        {
+            type: "Persimmon",
+            name: "Hana Gosho",
+            category: "Persimmon cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: For best fruit set, plant two cultivars. Disease notes: No serious disease problems. Other considerations: Fruits of non-astringent cultivars may only be suitable for eating when fully mature and flesh is soft. Source table names this as Hanagosho"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Methley",
+            category: "Plum cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Some cultivars are self-fruitful, but planting two cultivars is recommended. Disease notes: Needs a multipurpose fungicide-insecticide spray program during the growing season. Other considerations: Select later-blooming cultivars to avoid damaging temperatures"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Byrongold",
+            category: "Plum cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Some cultivars are self-fruitful, but planting two cultivars is recommended. Disease notes: Needs a multipurpose fungicide-insecticide spray program during the growing season. Other considerations: Select later-blooming cultivars to avoid damaging temperatures"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Burbank",
+            category: "Plum cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Some cultivars are self-fruitful, but planting two cultivars is recommended. Disease notes: Needs a multipurpose fungicide-insecticide spray program during the growing season. Other considerations: Select later-blooming cultivars to avoid damaging temperatures"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ozark Premier",
+            category: "Plum cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Some cultivars are self-fruitful, but planting two cultivars is recommended. Disease notes: Needs a multipurpose fungicide-insecticide spray program during the growing season. Other considerations: Select later-blooming cultivars to avoid damaging temperatures"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Bluefre",
+            category: "Plum cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Some cultivars are self-fruitful, but planting two cultivars is recommended. Disease notes: Needs a multipurpose fungicide-insecticide spray program during the growing season. Other considerations: Select later-blooming cultivars to avoid damaging temperatures"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Stanley",
+            category: "Plum cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Some cultivars are self-fruitful, but planting two cultivars is recommended. Disease notes: Needs a multipurpose fungicide-insecticide spray program during the growing season. Other considerations: Select later-blooming cultivars to avoid damaging temperatures"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Shropshire",
+            category: "Plum cultivars recommended for North Carolina home landscapes",
+            description: "Pollination: Some cultivars are self-fruitful, but planting two cultivars is recommended. Disease notes: Needs a multipurpose fungicide-insecticide spray program during the growing season. Other considerations: Select later-blooming cultivars to avoid damaging temperatures. Source table names this as Shropshire (Damson)"
+        },
+        {
+            type: "Persimmon",
+            name: "C-100",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Tough tree; grows in a variety of locations. Disadvantages: Wild trees are either male or female and thus usually not self-pollinating"
+        },
+        {
+            type: "Persimmon",
+            name: "Killen",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Tough tree; grows in a variety of locations. Disadvantages: Wild trees are either male or female and thus usually not self-pollinating"
+        },
+        {
+            type: "Persimmon",
+            name: "Meader",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Tough tree; grows in a variety of locations. Disadvantages: Wild trees are either male or female and thus usually not self-pollinating"
+        },
+        {
+            type: "Persimmon",
+            name: "Morris Burton",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Tough tree; grows in a variety of locations. Disadvantages: Wild trees are either male or female and thus usually not self-pollinating"
+        },
+        {
+            type: "Persimmon",
+            name: "Prok",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Tough tree; grows in a variety of locations. Disadvantages: Wild trees are either male or female and thus usually not self-pollinating"
+        },
+        {
+            type: "Chestnut",
+            name: "Fuller",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Grows more like a shrub than a tree; a good producer of sweet nuts reminiscent of American chestnut. Disadvantages: Nuts are covered in prickly burrs that can be a nuisance; birds and small mammals love them; somewhat difficult to harvest; susceptible to problems that attack chestnut trees"
+        },
+        {
+            type: "Chestnut",
+            name: "Rush",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Grows more like a shrub than a tree; a good producer of sweet nuts reminiscent of American chestnut. Disadvantages: Nuts are covered in prickly burrs that can be a nuisance; birds and small mammals love them; somewhat difficult to harvest; susceptible to problems that attack chestnut trees"
+        },
+        {
+            type: "Mulberry",
+            name: "Collier",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Tasty fruit similar to that of blackberry; tolerant of dry, poor soil; cold hardy; can grow near the shore with protection from wind. Disadvantages: For fruit production, choose a self-pollinating variety"
+        },
+        {
+            type: "Mulberry",
+            name: "Hicks Everbearing",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Tasty fruit similar to that of blackberry; tolerant of dry, poor soil; cold hardy; can grow near the shore with protection from wind. Disadvantages: For fruit production, choose a self-pollinating variety"
+        },
+        {
+            type: "Mulberry",
+            name: "Illinois Everbearing",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Tasty fruit similar to that of blackberry; tolerant of dry, poor soil; cold hardy; can grow near the shore with protection from wind. Disadvantages: For fruit production, choose a self-pollinating variety"
+        },
+        {
+            type: "Mulberry",
+            name: "Silk Hope",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Tasty fruit similar to that of blackberry; tolerant of dry, poor soil; cold hardy; can grow near the shore with protection from wind. Disadvantages: For fruit production, choose a self-pollinating variety"
+        },
+        {
+            type: "Mulberry",
+            name: "Townsend",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Tasty fruit similar to that of blackberry; tolerant of dry, poor soil; cold hardy; can grow near the shore with protection from wind. Disadvantages: For fruit production, choose a self-pollinating variety"
+        },
+        {
+            type: "Mulberry",
+            name: "Travis",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Tasty fruit similar to that of blackberry; tolerant of dry, poor soil; cold hardy; can grow near the shore with protection from wind. Disadvantages: For fruit production, choose a self-pollinating variety"
+        },
+        {
+            type: "Pawpaw",
+            name: "Allegheny",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Can be grown on the border of the forest line or in partial shade; high nutritional value compared to apples, peaches, and grapes. Disadvantages: Deer love fruit; tree requires some chilling, so may not be adapted to some coastal areas"
+        },
+        {
+            type: "Pawpaw",
+            name: "NC-1",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Can be grown on the border of the forest line or in partial shade; high nutritional value compared to apples, peaches, and grapes. Disadvantages: Deer love fruit; tree requires some chilling, so may not be adapted to some coastal areas"
+        },
+        {
+            type: "Pawpaw",
+            name: "Overleese",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Can be grown on the border of the forest line or in partial shade; high nutritional value compared to apples, peaches, and grapes. Disadvantages: Deer love fruit; tree requires some chilling, so may not be adapted to some coastal areas"
+        },
+        {
+            type: "Pawpaw",
+            name: "Potomac",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Can be grown on the border of the forest line or in partial shade; high nutritional value compared to apples, peaches, and grapes. Disadvantages: Deer love fruit; tree requires some chilling, so may not be adapted to some coastal areas"
+        },
+        {
+            type: "Pawpaw",
+            name: "Shenandoah",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Can be grown on the border of the forest line or in partial shade; high nutritional value compared to apples, peaches, and grapes. Disadvantages: Deer love fruit; tree requires some chilling, so may not be adapted to some coastal areas"
+        },
+        {
+            type: "Pawpaw",
+            name: "Sunflower",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Can be grown on the border of the forest line or in partial shade; high nutritional value compared to apples, peaches, and grapes. Disadvantages: Deer love fruit; tree requires some chilling, so may not be adapted to some coastal areas"
+        },
+        {
+            type: "Pawpaw",
+            name: "Susquehanna",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Can be grown on the border of the forest line or in partial shade; high nutritional value compared to apples, peaches, and grapes. Disadvantages: Deer love fruit; tree requires some chilling, so may not be adapted to some coastal areas"
+        },
+        {
+            type: "Pawpaw",
+            name: "Wabash",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Can be grown on the border of the forest line or in partial shade; high nutritional value compared to apples, peaches, and grapes. Disadvantages: Deer love fruit; tree requires some chilling, so may not be adapted to some coastal areas"
+        },
+        {
+            type: "Species Plum",
+            name: "Guthrie",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Tolerates high humidity; great for jelly. Disadvantages: Tends to bloom early so fruit can be killed when there is a late spring freeze; plant has spines or sharp edges"
+        },
+        {
+            type: "Walnut",
+            name: "Black Gem",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Bears nuts most years. Disadvantages: Thousand cankers, new to the South in 2011, will kill the tree; nuts have a gamey taste; walnut tree roots produce juglone, an allelopathic chemical that can injure or kill some nearby plants"
+        },
+        {
+            type: "Walnut",
+            name: "Kwik-Krop",
+            category: "Minor tree fruit and nut varieties for North Carolina home landscapes",
+            description: "Advantages: Bears nuts most years. Disadvantages: Thousand cankers, new to the South in 2011, will kill the tree; nuts have a gamey taste; walnut tree roots produce juglone, an allelopathic chemical that can injure or kill some nearby plants"
+        },
+    ]
+}

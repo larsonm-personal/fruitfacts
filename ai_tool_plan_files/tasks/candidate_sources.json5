@@ -367,7 +367,8 @@
                 "Existing Missouri references include peach culture and Murphy Orchards, but not this broad G6005 cultivar guide",
             notes: [
                 "Direct official PDF returned 200",
-                "A current landing page was not found during this pass"
+                "A current landing page was not found during this pass",
+                "Deferred during the NC/UAF parsing round because the current official PDF endpoint returned 403 to Python and browser-like header fetches"
             ]
         },
         {
@@ -443,7 +444,8 @@
                 "Existing Oklahoma reference is HLA-6210 apple and peach varieties; this broader home fruit guide is separate",
             notes: [
                 "Official page and PDF path found by search",
-                "PowerShell fetch hit an Oklahoma State Cloudflare challenge during link scraping"
+                "PowerShell fetch hit an Oklahoma State Cloudflare challenge during link scraping",
+                "Deferred during the NC/UAF parsing round because both landing page and PDF returned 403 to Python and browser-like header fetches"
             ]
         },
         {
@@ -785,12 +787,13 @@
                 "Existing North Carolina references include releases, muscadine guide, and western NC peach evaluations, not this broad orchard guide",
             notes: [
                 "Web page returned from official NC State Extension Publications",
-                "Linked PDFs on the page are mostly supporting pest or regional references, not the primary source"
+                "Linked PDFs on the page are mostly supporting pest or regional references, not the primary source",
+                "Deferred during the NC handbook parsing round because the comprehensive AG-831 tree-fruit chapter overlaps heavily and was encoded instead"
             ]
         },
         {
             id: "nc-state-extension-gardener-small-fruits",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "14. Small Fruits",
             institution: "NC State Extension",
@@ -819,12 +822,18 @@
                 "Existing North Carolina references include muscadine production and release lists, not this broad small-fruit chapter",
             notes: [
                 "Correct chapter URL is 14-small-fruits",
-                "A first scrape of 16-small-fruits returned 404 because chapter numbers changed"
+                "A first scrape of 16-small-fruits returned 404 because chapter numbers changed",
+                "Encoded in plant_database/references/North Carolina/NC State Extension Gardener Handbook 14 Small Fruits.json5",
+                "Config extraction added at helper_scripts/extraction_configs/nc_state_extension_gardener_small_fruits.json",
+                "Manifest entry added as nc_state_extension_gardener_small_fruits",
+                "Current draft extracts 81 records from strawberry, blackberry, raspberry, blueberry, bunch grape, wine grape, and muscadine tables",
+                "Parser support added for column-oriented HTML name matrices, used for the blueberry variety table",
+                "Primary NC State PDF endpoint was not found; obvious PDF links on the page are supporting documents rather than this chapter"
             ]
         },
         {
             id: "nc-state-extension-gardener-tree-fruit-and-nuts",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "15. Tree Fruit and Nuts",
             institution: "NC State Extension",
@@ -854,7 +863,14 @@
             duplicate_check:
                 "Existing North Carolina references do not include a broad home tree fruit and nut chapter",
             notes: [
-                "Web page returned from official NC State Extension Publications"
+                "Web page returned from official NC State Extension Publications",
+                "Encoded in plant_database/references/North Carolina/NC State Extension Gardener Handbook 15 Tree Fruit and Nuts.json5",
+                "Config extraction added at helper_scripts/extraction_configs/nc_state_extension_gardener_tree_fruit_nuts.json",
+                "Manifest entry added as nc_state_extension_gardener_tree_fruit_nuts",
+                "Current draft extracts 91 records from the cultivar recommendation table and minor tree fruit table",
+                "Parser support added for splitting delimited cultivar cells while preserving pollination, disease, and other row notes",
+                "Guthrie is encoded as Species Plum because the source lists it as a Chickasaw plum selection; Japanese and European named plum cultivars remain Japanese Plum or Euro Plum",
+                "Primary NC State PDF endpoint was not found; print endpoints returned HTML with print styles rather than PDF bytes"
             ]
         },
         {
@@ -1200,7 +1216,8 @@
             duplicate_check:
                 "Existing Colorado references appear limited to commercial or indirect mentions, not this extension guide",
             notes: [
-                "Direct PDF returned 200"
+                "Direct PDF returned 200",
+                "Inspected during the NC/UAF parsing round; PDF appears mostly cultural, spacing, frost, and pruning guidance rather than cultivar-level recommendation data"
             ]
         },
         {
@@ -1740,7 +1757,7 @@
         },
         {
             id: "uaf-growing-tree-fruits-alaska-hga-00038",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Growing Tree Fruits in Alaska",
             institution: "University of Alaska Fairbanks Cooperative Extension Service",
@@ -1766,8 +1783,13 @@
             duplicate_check:
                 "No Alaska reference directory found; UAF HGA-00030 is a broader Interior variety list",
             notes: [
-                "Official landing page exposes a PDF form link that still needs a stable direct download URL captured",
-                "Narrative cultivar and hardiness guidance will need manual or section-aware extraction"
+                "Official landing page exposes a PDF form link to https://www.uaf.edu/ces/publications/database/gardening/files/pdfs/HGA-00038-Growing-Tree-Fruits.pdf",
+                "Encoded in plant_database/references/Alaska/UAF HGA-00038 Growing Tree Fruits in Alaska.json5",
+                "PDF archived in DVC at plant_database/references/Alaska/UAF HGA-00038 Growing Tree Fruits in Alaska.pdf.dvc",
+                "Config extraction added at helper_scripts/extraction_configs/uaf_hga_00038_growing_tree_fruits.json",
+                "Manifest entry added as uaf_hga_00038_growing_tree_fruits",
+                "Current draft extracts 49 records from section-aware recommendation paragraphs for apples, sour cherries, plums, apricots, and pears",
+                "Worked example for paragraph sequences with source-visible row splits where one paragraph describes two cultivars"
             ]
         },
         {

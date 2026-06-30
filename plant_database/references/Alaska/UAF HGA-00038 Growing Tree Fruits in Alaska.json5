@@ -1,0 +1,373 @@
+{
+    title: "Growing Tree Fruits in Alaska",
+    description: "University of Alaska Fairbanks Cooperative Extension Service guide with recommended apple, cherry, plum, apricot, and pear varieties for Alaska",
+    url: "https://www.uaf.edu/ces/publications/database/gardening/growing-tree-fruits.php",
+    thumbnail: "website",
+    publication_number: "HGA-00038",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Alaska Fairbanks, Fairbanks, Alaska",
+            latitude: 64.8378,
+            longitude: -147.7164
+        },
+    ],
+    categories: [
+        {
+            name: "Apple varieties recommended for Alaska",
+            description: "UAF HGA-00038 lists these recommended apple varieties in approximate order of ripening for Alaska"
+        },
+        {
+            name: "Sour cherry varieties recommended for Alaska",
+            description: "UAF HGA-00038 lists these sour or tart cherry varieties for Alaska"
+        },
+        {
+            name: "Japanese-American hybrid plums recommended experimentally for Alaska",
+            description: "UAF HGA-00038 lists these Japanese-American hybrid plums as experimental options that have survived three or more winters in Anchorage or show promise for Southcentral and Southeast Alaska"
+        },
+        {
+            name: "European plum varieties recommended experimentally for Alaska",
+            description: "UAF HGA-00038 lists Mount Royal as a European plum that produces ripe fruit in Juneau and may be tried experimentally in Southcentral Alaska"
+        },
+        {
+            name: "Apricot varieties recommended experimentally for Alaska",
+            description: "UAF HGA-00038 lists these named apricot cultivars as worth planting experimentally in Alaska based on hardiness and early ripening"
+        },
+        {
+            name: "European pear varieties recommended experimentally for Alaska",
+            description: "UAF HGA-00038 lists these pear cultivars as recommended for planting on an experimental basis only in Alaska"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Rescue",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Fruit ripens early to mid-September in Southcentral, early September in Fairbanks.",
+            description: "Hardy in Zones 1 and 2. Rounded to spreading in form. This apple-crabapple cross (applecrab) is highly productive, an annual bearer and bears very young. Fruit has greenish-yellow background well washed with dull to bright red, is conic, 3 to 4 centimeters, firm, spicy-sweet, good for eating and excellent for culinary use. It keeps less than a month and becomes mealy when overmature. Fruit ripens early to mid-September in Southcentral, early September in Fairbanks"
+        },
+        {
+            type: "Apple",
+            name: "Heyer 12",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Fair for eating, better for sauce and pies, the fruit is highly perishable and breaks down quickly after ripening.",
+            description: "Hardy in Zones 1 and 2. This apple grows upright to spreading with large limb-to-trunk angles. Tree bears regularly in Fairbanks and Southcentral. Tree bears very young, is moderately productive and recovers well if winter-injured. Fruit is yellowish-green, yellow when overmature, 4 to 6 centimeters across, mildly acid and tart with creamy white, coarse flesh. Fair for eating, better for sauce and pies, the fruit is highly perishable and breaks down quickly after ripening. Ripens early September in Fairbanks, mid-September in Anchorage. Source names this as Heyer #12"
+        },
+        {
+            type: "Apple",
+            name: "Patterson",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "The fruit is said to keep well and ripens early to mid-September in Fairbanks, mid-September in Southcentral.",
+            description: "Hardy in Zones 1 and 2. This Canadian apple is represented by bearing trees in Fairbanks. It is productive and moderately precocious in bearing. Fruits are pale green, overlaid with a purplish-red blush, 5 to 6 centimeters diameter. Flesh is crisp and juicy with a good flavor. The fruit is said to keep well and ripens early to mid-September in Fairbanks, mid-September in Southcentral"
+        },
+        {
+            type: "Apple",
+            name: "Kerr",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Hardy in Zones 1 and 2, represented by productive, healthy trees in Fairbanks, where fruit ripens early to mid-September.",
+            description: "Hardy in Zones 1 and 2, represented by productive, healthy trees in Fairbanks, where fruit ripens early to mid-September. Fruit is purplish-red in color, 3 to 4 centimeters in diameter, best for sauce, jellies and pies. It should be allowed to mellow in storage for a month or two before eating. Keeps until March. This is an applecrab"
+        },
+        {
+            type: "Apple",
+            name: "Norland",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Ripens early to mid-September in Southcentral.",
+            description: "Hardy in Zone 2. This Canadian apple is represented by bearing trees in Fairbanks, Palmer and Anchorage. Tree is a genetic semidwarf, upright to spreading, very hardy, precocious and productive in bearing. Fruit is oblong, conic in shape, 5 to 7 centimeters long, greenish-yellow background with striped red overcolor. Flesh is cream colored, slightly coarse, moderately acid but with a very good flavor. Fruit is good for both eating and cooking and stores at least 16 weeks if picked slightly immature. Ripens early to mid-September in Southcentral"
+        },
+        {
+            type: "Apple",
+            name: "Norkent",
+            category: "Apple varieties recommended for Alaska",
+            description: "Hardy in Zone 2. Very hardy and sturdy. Parentage is a cross of the Haralson and Rescue varieties. Orange striped yellow apple, 7 centimeters in diameter. May produce fruit a year earlier than other varieties. Taste is similar to an apple-pear and often compared to the Golden Delicious. Fruit is good for both eating and cooking. May store for approximately three months"
+        },
+        {
+            type: "Apple",
+            name: "Parkland",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Ripens late August to September in Southcentral.",
+            description: "Hardy in Zone 2. This Canadian apple is one of the leading apples grown in Alaska. A genetic semidwarf resulting from a Melba and Rescue crossing. The tree is very hard and productive. Fruit is 6 to 7 centimeters long, yellow green in color with red blush. Flesh is white with a pleasant tart taste. Makes excellent preserves. Generally, stores longer and considered a better quality fruit than Norland. Ripens late August to September in Southcentral"
+        },
+        {
+            type: "Apple",
+            name: "Yellow Transparent",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Ripens early to mid-September in Southcentral.",
+            description: "Hardy in Zones 2 and 3, a popular variety in Southcentral and Southeast Alaska. Tree is somewhat upright in form, bears very young, is an excellent pollinizer and is productive. Fruit or skin of fruit is clear, white to pale yellow. Flesh is white and of good flavor for eating; excellent for culinary uses. Fruit is round, 5 to 8 centimeters, best picked when slightly immature. It keeps for only a few weeks, even under refrigeration. Ripens early to mid-September in Southcentral. Lodi (Improved Yellow Transparent) - Tree is hardy in Zones 2 and 3. Very similar to Yellow Transparent except that it ripens a few days later, is slightly larger and more tart, and it keeps longer. Excellent for culinary use, the fruit is greenish when ripe. Lodi is a commercial cultivar in parts of the Western United States"
+        },
+        {
+            type: "Apple",
+            name: "Red Duchess",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Tree blossoms early in season, produces red fruits 5 to 7 centimeters diameter and ripens mid- to late September.",
+            description: "Hardy in Zones 2 and 3. Tree blossoms early in season, produces red fruits 5 to 7 centimeters diameter and ripens mid- to late September. Fruit is tart, best for culinary use only"
+        },
+        {
+            type: "Apple",
+            name: "Oriole",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Fruit is of excellent quality for eating and cooking, stores 8 to 12 weeks and ripens late September in Southcentral.",
+            description: "Hardy in Zones 2 and 3. Tree is a cross of Yellow Transparent with Liveland Raspberry (Minnesota, 1949). Fruit is round to slightly flattened, 6 to 8 centimeters across, yellow with orange-red stripes on one side. Flesh is very firm, moderately sweet with some underlying tartness. Fruit is of excellent quality for eating and cooking, stores 8 to 12 weeks and ripens late September in Southcentral. Represented by 20-year-old trees in Anchorage"
+        },
+        {
+            type: "Apple",
+            name: "Mantet",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Ripens mid- to late September in Southcentral.",
+            description: "Hardy in Zone 3. Tree is somewhat spreading, attractive and productive. Fruit is amber, washed and striped with red, 5 to 7 centimeters diameter, excellent for fresh eating and pies but bruises easily. Flesh is juicy, tender, aromatic and sweet. Ripens mid- to late September in Southcentral. Tree is a cross of McIntosh with the Russian apple Tetovsky"
+        },
+        {
+            type: "Apple",
+            name: "Westland",
+            category: "Apple varieties recommended for Alaska",
+            description: "Hardy in Zone 3, possibly in 2. Tree is upright-spreading, moderately precocious and productive, represented by bearing trees in Anchorage and Palmer. Fruits are 6 to 8 centimeters in diameter, greenish when ripe, very good for cooking, fair for eating"
+        },
+        {
+            type: "Apple",
+            name: "Hazen",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Ripens mid- to late September in Southcentral.",
+            description: "Hardy in Zone 3. Tree is spreading, moderately productive, a cross of Duchess with Delicious from North Dakota. Fruit is medium to large, dark red, with firm yellowish-green flesh, juicy, mild and sweet in flavor. Good for eating and cooking; should keep for a month or two. Ripens mid- to late September in Southcentral"
+        },
+        {
+            type: "Apple",
+            name: "State Fair",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Ripens late September in Southcentral.",
+            description: "Hardy in Zone 3. Tree is spreading and productive. Fruit is bright red, medium sized, sub-acid to sweet with crisp, yellowish flesh. Very good keeper, excellent for all purposes. Ripens late September in Southcentral"
+        },
+        {
+            type: "Apple",
+            name: "Beacon",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Ripens late September in Southcentral Alaska.",
+            description: "Hardy in Zone 3. Tree produces fruits 4 to 6 centimeters in diameter and pinkish-red in color. Fruit is juicy, good for eating, and should keep for a few months. Beacon was produced commercially in Washington in the 1970s. Tree is extremely productive, and fruit size may be improved by thinning the fruit when it is marble-sized. Ripens late September in Southcentral Alaska"
+        },
+        {
+            type: "Apple",
+            name: "Chinese Golden Early",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Ripens from late August to mid-September in Southcentral Alaska.",
+            description: "Hardy in Zone 3. Tree is very upright, forms numerous fruit spurs, bears very young and annually, and appears to be a good pollinator. Fruit is yellow, sweet, 3 to 5 centimeters in diameter, good for eating but only fair for cooking and pies. It is highly perishable and subject to watercore when fully ripe. Ripens from late August to mid-September in Southcentral Alaska"
+        },
+        {
+            type: "Apple",
+            name: "Geneva Early",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Ripens early September.",
+            description: "Hardy in Zone 3. Tree is a vigorous grower. Fruit is 5 to 7 centimeters across, solid pinkish-red. Flesh is aromatic, creamy white tinged with pink, semi-firm. Best for fresh eating but will keep at least a month. Ripens early September"
+        },
+        {
+            type: "Apple",
+            name: "Vista Bella",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Vista Bella is being grown commercially in Washington, and it ripens in Alaska in early September, with Geneva Early.",
+            description: "Hardy in Zone 3. Tree is a vigorous grower and produces fruit 5 to 8 centimeters across, dark red, sweet, and firm. Should keep a month or two. Vista Bella is being grown commercially in Washington, and it ripens in Alaska in early September, with Geneva Early"
+        },
+        {
+            type: "Apple",
+            name: "Summerred",
+            category: "Apple varieties recommended for Alaska",
+            harvest_time_unparsed: "Fruit is 4 to 7 centimeters diameter and ripens late September in Southcentral Alaska.",
+            description: "Hardy in Zone 3. Tree is upright to spreading, productive, moderately precocious, somewhat self-fertile. Tends to grow long and lanky. Fruit turns red before it is ripe. Flesh is very firm. Fruit is best for culinary use when first picked but makes excellent eating after a few months of storage. Keeps until March or April. Fruit is 4 to 7 centimeters diameter and ripens late September in Southcentral Alaska. There are a number of less available Canadian apples surviving on Siberian crabapple rootstocks. These bearing trees are located at the University of Alaska Fairbanks Experiment Farm and the Plant Materials Center in Palmer. Included are the six Nor-series cultivars from Beaverlodge, Alberta: (in order of ripening) Norcue, Noret, Norhey, Norson, Norda and Noran. The Trailman applecrab likewise survives, bears and ripens fully at those locations. All seven cultivars are precocious in bearing, hardy and good to eat, but only Norson, Norda and Noran will keep more than three months. Norda and Noran may not always ripen fully in Fairbanks' short growing season. Goodland, Battleford and Carroll are three other Canadian cultivars which are bearing apples in one or two locations in Fairbanks. Other apples surviving and bearing in Southcentral are Collet, Viking and Sweet 16. This list is by no means exhaustive. It is provided to give detailed descriptions of cultivars noted for their early ripening, hardiness, good flavor, and availability"
+        },
+        {
+            type: "Sour Cherry",
+            name: "North Star",
+            category: "Sour cherry varieties recommended for Alaska",
+            harvest_time_unparsed: "Fruit ripens late July to early August in Anchorage and is about 15 to 20 millimeters diameter; keeps about two weeks.",
+            description: "Tree is genetic dwarf, grows about 6 to 8 feet high at maturity. Fruit is dark red with yellowish flesh, meaty, juicy, with good flavor for pies and fresh eating. Fruit ripens late July to early August in Anchorage and is about 15 to 20 millimeters diameter; keeps about two weeks. Source names this as North Star Dwarf"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Meteor",
+            category: "Sour cherry varieties recommended for Alaska",
+            harvest_time_unparsed: "Good for pies and fresh eating; ripens about the same time as North Star Dwarf.",
+            description: "Tree is 8 to 10 feet tall when mature and is slightly more cold-hardy than North Star Dwarf. Fruit is bright red with yellowish flesh, medium firm, medium juicy, with freestone pit. Good for pies and fresh eating; ripens about the same time as North Star Dwarf. Fruit slightly larger than North Star Dwarf. Source page places Meteor and Montmorency in one continued paragraph"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Montmorency",
+            category: "Sour cherry varieties recommended for Alaska",
+            description: "The standard commercial pie cherry. Hardy to Zone 4, possibly Zone 3, but not as hardy as North Star Dwarf or Meteor. Fruit is brilliant red, excellent for pies and preserves. Tree is larger than Meteor. Source page places Meteor and Montmorency in one continued paragraph"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Toka",
+            category: "Japanese-American hybrid plums recommended experimentally for Alaska",
+            description: "This plum is a superb pollinator of other hardy Japanese-American hybrids and produces spicy-sweet, good-quality fruit. Toka has survived and blossomed in a few locations in Anchorage but has not fruited yet"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Underwood",
+            category: "Japanese-American hybrid plums recommended experimentally for Alaska",
+            harvest_time_unparsed: "This cultivar ripens very early and has proved hardy in Anchorage and the Matanuska-Susitna Valley.",
+            description: "This cultivar ripens very early and has proved hardy in Anchorage and the Matanuska-Susitna Valley. It has blossomed in these locations but has not fruited"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Pembina",
+            category: "Japanese-American hybrid plums recommended experimentally for Alaska",
+            description: "Originating in Canada, this plum has proved fully hardy in west Anchorage and has blossomed, but not fruited, there after three winters. Source page places Pembina and Sapa in one paragraph"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Sapa",
+            category: "Japanese-American hybrid plums recommended experimentally for Alaska",
+            description: "Has survived three winters, including a test winter, in west Anchorage and is worth a try elsewhere. Source page places Pembina and Sapa in one paragraph"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Pipestone",
+            category: "Japanese-American hybrid plums recommended experimentally for Alaska",
+            harvest_time_unparsed: "The fruit ripens fairly early and shows promise of being fairly hardy, but its pollen is sterile and will not pollinize other plums.",
+            description: "The fruit ripens fairly early and shows promise of being fairly hardy, but its pollen is sterile and will not pollinize other plums"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Superior",
+            category: "Japanese-American hybrid plums recommended experimentally for Alaska",
+            description: "A Minnesota plum whose fruit quality is worthy of the name, it is the pollinizer of choice for Toka. Superior is not as hardy as the above and is best for warmer and more sheltered locations. Other Japanese-American hybrid plums that show promise for Southcentral and Southeast Alaska include LaCrescent, Alderman and Waneta. Mount Royal, of the European plums, produces ripe fruit in Juneau. This Canadian cultivar is self-fertile and may be tried on an experimental basis in Southcentral Alaska. Plums have proven difficult to pollinate in Alaska. Use at least two different Japanese-American hybrid cultivars or seedling Manchurian plums to insure cross pollination and plant in full sunlight. Plant trees close together (8 to 10 feet). Planting the trees near a source of bumblebees or honeybees will also help. The trees will blossom in late May to early June"
+        },
+        {
+            type: "Japanese Plum",
+            name: "La Crescent",
+            category: "Japanese-American hybrid plums recommended experimentally for Alaska",
+            description: "UAF HGA-00038 says LaCrescent is among other Japanese-American hybrid plums that show promise for Southcentral and Southeast Alaska. Source names this as LaCrescent"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Alderman",
+            category: "Japanese-American hybrid plums recommended experimentally for Alaska",
+            description: "UAF HGA-00038 says Alderman is among other Japanese-American hybrid plums that show promise for Southcentral and Southeast Alaska"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Waneta",
+            category: "Japanese-American hybrid plums recommended experimentally for Alaska",
+            description: "UAF HGA-00038 says Waneta is among other Japanese-American hybrid plums that show promise for Southcentral and Southeast Alaska"
+        },
+        {
+            type: "Euro Plum",
+            name: "Mount Royal",
+            category: "European plum varieties recommended experimentally for Alaska",
+            description: "Mount Royal, of the European plums, produces ripe fruit in Juneau. This Canadian cultivar is self-fertile and may be tried on an experimental basis in Southcentral Alaska"
+        },
+        {
+            type: "Apricot",
+            name: "Moongold",
+            category: "Apricot varieties recommended experimentally for Alaska",
+            description: "These two Minnesota apricots have survived three winters at one location in west Anchorage. Each requires the other for cross pollination. (The other apricots mentioned are self-fertile). Source page describes Moongold and Sungold together"
+        },
+        {
+            type: "Apricot",
+            name: "Sungold",
+            category: "Apricot varieties recommended experimentally for Alaska",
+            description: "These two Minnesota apricots have survived three winters at one location in west Anchorage. Each requires the other for cross pollination. (The other apricots mentioned are self-fertile). Source page describes Moongold and Sungold together"
+        },
+        {
+            type: "Apricot",
+            name: "Harcot",
+            category: "Apricot varieties recommended experimentally for Alaska",
+            harvest_time_unparsed: "Developed in the province of Ontario, the two earliest ripening are Harcot and Hargrand, which ripens nine days later than Harcot.",
+            description: "Developed in the province of Ontario, the two earliest ripening are Harcot and Hargrand, which ripens nine days later than Harcot. In Illinois, they fruited after -25 degrees F. Fruit quality is high. Source page describes the Har-Series and names Harcot and Hargrand as the two earliest ripening"
+        },
+        {
+            type: "Apricot",
+            name: "Hargrand",
+            category: "Apricot varieties recommended experimentally for Alaska",
+            harvest_time_unparsed: "Developed in the province of Ontario, the two earliest ripening are Harcot and Hargrand, which ripens nine days later than Harcot.",
+            description: "Developed in the province of Ontario, the two earliest ripening are Harcot and Hargrand, which ripens nine days later than Harcot. In Illinois, they fruited after -25 degrees F. Fruit quality is high. Source page describes the Har-Series and names Harcot and Hargrand as the two earliest ripening"
+        },
+        {
+            type: "Apricot",
+            name: "Goldcot",
+            category: "Apricot varieties recommended experimentally for Alaska",
+            harvest_time_unparsed: "This Michigan apricot, more self-fertile than most, ripens four days after Harcot.",
+            description: "This Michigan apricot, more self-fertile than most, ripens four days after Harcot. Fruit is medium-sized with good flavor, although the skin is said to be thick and tough"
+        },
+        {
+            type: "Apricot",
+            name: "Scout",
+            category: "Apricot varieties recommended experimentally for Alaska",
+            harvest_time_unparsed: "They evidently ripen at the same time as Goldcot or slightly later.",
+            description: "These two selected Manchurian apricot seedlings were selected for good-quality fruit as well as for hardiness. Both are said to be better for cooking than for eating. They evidently ripen at the same time as Goldcot or slightly later. Source page describes Scout and Manchu together"
+        },
+        {
+            type: "Apricot",
+            name: "Manchu",
+            category: "Apricot varieties recommended experimentally for Alaska",
+            harvest_time_unparsed: "They evidently ripen at the same time as Goldcot or slightly later.",
+            description: "These two selected Manchurian apricot seedlings were selected for good-quality fruit as well as for hardiness. Both are said to be better for cooking than for eating. They evidently ripen at the same time as Goldcot or slightly later. Source page describes Scout and Manchu together"
+        },
+        {
+            type: "Apricot",
+            name: "Puget Gold",
+            category: "Apricot varieties recommended experimentally for Alaska",
+            harvest_time_unparsed: "The tree appears to be better adapted to cool, moist growing conditions than most apricots and the fruit ripens early.",
+            description: "This 1987 introduction from Washington State University originated as a seedling tree in Anacortes, Washington, on Puget Sound. Its blossoms are exceptionally frost-resistant. The tree appears to be better adapted to cool, moist growing conditions than most apricots and the fruit ripens early. As such, it may be worth trying in Southcentral or Southeast Alaska"
+        },
+        {
+            type: "Apricot",
+            name: "Strathmore",
+            category: "Apricot varieties recommended experimentally for Alaska",
+            harvest_time_unparsed: "The ripening times of other named cultivars are unknown but probably will not occur before September 1.",
+            description: "This Canadian cultivar is represented by two trees in south Anchorage that survived the winter of 1987-88 with little winterkill on their branch tips. According to Valley Nursery in Helena, Montana, it is hardier and bears better quality fruit than Scout. Other apricots that, if available, are worth planting on an experimental basis include Precious and Adirondack Gold (from New York) and from Canada, the cultivars Westcot, Morden 604, Debbie's Gold and Sunrise, all of which were developed in the Prairie Provinces. Manchurian apricots bloom in mid- to late May in Anchorage and are ripe by late September. The ripening times of other named cultivars are unknown but probably will not occur before September 1"
+        },
+        {
+            type: "Euro Pear",
+            name: "Hudar",
+            category: "European pear varieties recommended experimentally for Alaska",
+            harvest_time_unparsed: "It should ripen in Southcentral Alaska in early September.",
+            description: "This New York pear is described as hardy in Zones 1 and 2. Fruit is yellow, juicy, good for eating and fair for canning. It should ripen in Southcentral Alaska in early September. Hudar has survived three winters in Anchorage"
+        },
+        {
+            type: "Euro Pear",
+            name: "Summercrisp",
+            category: "European pear varieties recommended experimentally for Alaska",
+            harvest_time_unparsed: "Discovered in 1933, this Minnesota pear is similar to Luscious but ripens much earlier.",
+            description: "Discovered in 1933, this Minnesota pear is similar to Luscious but ripens much earlier. It is a superb pollinizer of other pears and blossoms at a young age. The original tree has withstood -35 degrees F temperatures and bears fruit, which is best picked while still crisp. Good for eating and fair for canning, this cultivar shows good promise for Southcentral and Southeast Alaska. It should ripen in mid-September in Southcentral. Source names this as Summer Crisp"
+        },
+        {
+            type: "Euro Pear",
+            name: "Parker",
+            category: "European pear varieties recommended experimentally for Alaska",
+            harvest_time_unparsed: "Fruit quality is said to be good; ripening time, mid- to late September.",
+            description: "These are two Minnesota pears that have both survived three winters in one location in west Anchorage, but are said to be slightly less hardy than Summer Crisp. Fruit quality is said to be good; ripening time, mid- to late September. Source page describes Parker and Patten together"
+        },
+        {
+            type: "Euro Pear",
+            name: "Patten",
+            category: "European pear varieties recommended experimentally for Alaska",
+            harvest_time_unparsed: "Fruit quality is said to be good; ripening time, mid- to late September.",
+            description: "These are two Minnesota pears that have both survived three winters in one location in west Anchorage, but are said to be slightly less hardy than Summer Crisp. Fruit quality is said to be good; ripening time, mid- to late September. Source page describes Parker and Patten together"
+        },
+        {
+            type: "Euro Pear",
+            name: "Clapp's Favorite",
+            category: "European pear varieties recommended experimentally for Alaska",
+            harvest_time_unparsed: "It should ripen mid- to late September in Southcentral.",
+            description: "Similar to Bartlett but more intense in flavor. Its hardiness in Southcentral Alaska is not fully proven. It should ripen mid- to late September in Southcentral"
+        },
+        {
+            type: "Euro Pear",
+            name: "Ure",
+            category: "European pear varieties recommended experimentally for Alaska",
+            description: "An extremely hardy Canadian cross of European with Ussurian pear, yielding medium-sized, flavorful fruits. Hardy in Zone 1. The tree is a slow grower"
+        },
+        {
+            type: "Euro Pear",
+            name: "Nova",
+            category: "European pear varieties recommended experimentally for Alaska",
+            description: "A high-quality New York pear, hardy to Zone 1, can be used green or ripe"
+        },
+        {
+            type: "Euro Pear",
+            name: "Luscious",
+            category: "European pear varieties recommended experimentally for Alaska",
+            harvest_time_unparsed: "Ure, Nova and Luscious should ripen in late September in Southcentral Alaska.",
+            description: "Prairie pear, very hardy, good quality. Ure, Nova and Luscious should ripen in late September in Southcentral Alaska"
+        },
+    ]
+}

@@ -109,6 +109,22 @@ def transformed_table(table, transforms):
     return table
 
 
+def filtered_source_table(table, extractor):
+    patterns = extractor.get("table_skip_row_patterns", [])
+    if not patterns:
+        return table
+    filtered = []
+    for index, row in enumerate(table):
+        if index == 0:
+            filtered.append(row)
+            continue
+        text = clean_text(" ".join(row))
+        if line_matches_any(text, patterns):
+            continue
+        filtered.append(row)
+    return filtered
+
+
 def row_text_fixes(row, fixes):
     if not fixes:
         return row
@@ -196,6 +212,40 @@ def expanded_rows(rows, extractor):
             yield row
 
 
+def split_name_value(value, split):
+    value = apply_config_text_fixes(value, split.get("text_fixes", {}))
+    separator_pattern = split.get("separator_pattern", r"\s*,\s*")
+    names = []
+    for part in re.split(separator_pattern, value):
+        name = clean_text(part)
+        for pattern in split.get("name_strip_patterns", []):
+            name = re.sub(pattern, "", name).strip()
+        if name and name not in set(split.get("skip_names", [])):
+            names.append(name)
+    return names
+
+
+def split_name_field_rows(rows, extractor):
+    split = extractor.get("split_name_field")
+    if not split:
+        return rows
+    source_key = split.get("source_key", extractor.get("name_key", "name"))
+    target_key = split.get("target_key", extractor.get("name_key", "name"))
+    source_value_key = split.get("source_value_key")
+    expanded = []
+    for row in rows:
+        source_value = row.get(source_key, "")
+        if not source_value:
+            continue
+        for name in split_name_value(source_value, split):
+            new_row = dict(row)
+            new_row[target_key] = name
+            if source_value_key:
+                new_row[source_value_key] = source_value
+            expanded.append(new_row)
+    return expanded
+
+
 def table_rows(page, extractor):
     table = raw_table(page, extractor)
     if extractor.get("header_row"):
@@ -204,6 +254,7 @@ def table_rows(page, extractor):
         transforms = extractor.get("table_transforms", [])
         if isinstance(transforms, str):
             transforms = [transforms]
+        table = filtered_source_table(table, extractor)
         table = transformed_table(table, transforms)
         if extractor.get("section_rows"):
             rows = table_to_dicts_with_sections(
@@ -214,6 +265,7 @@ def table_rows(page, extractor):
             rows = table_to_dicts(table)
     rows = expanded_rows(rows, extractor)
     rows = [row_text_fixes(row, extractor.get("text_fixes")) for row in rows]
+    rows = split_name_field_rows(rows, extractor)
     rows = [suffix_mapped_row(row, extractor) for row in rows]
     rows = [row_overrides(row, extractor) for row in rows]
     rows = keyed_data_rows(
@@ -797,12 +849,77 @@ def html_name_matrix_rows(page, extractor):
     return rows
 
 
+def column_rule_for_heading(heading, rules):
+    for rule in rules:
+        if rule.get("text") and heading == rule["text"]:
+            return rule
+        if rule.get("prefix") and heading.startswith(rule["prefix"]):
+            return rule
+    return None
+
+
+def column_rule_context(rule, heading):
+    context = {
+        key: value
+        for key, value in rule.items()
+        if key not in ("text", "prefix")
+    }
+    context.setdefault("column_heading", heading)
+    return context
+
+
+def html_column_name_matrix_rows(page, extractor):
+    name_key = extractor.get("name_key", "name")
+    table = page.tables[extractor["table_index"]]
+    rows = []
+    skip_patterns = extractor.get("skip_cell_patterns", [])
+    note_pattern = extractor.get("cell_note_pattern")
+    column_contexts = {}
+    for index, heading in enumerate(table[0]):
+        heading = clean_text(heading)
+        rule = column_rule_for_heading(heading, extractor["column_rules"])
+        if rule:
+            column_contexts[index] = column_rule_context(rule, heading)
+
+    for source_row in table[1:]:
+        for index, context in column_contexts.items():
+            if index >= len(source_row):
+                continue
+            cell = clean_text(
+                apply_text_fixes(source_row[index], extractor.get("cell_text_fixes", {}))
+            )
+            if not cell or line_matches_any(cell, skip_patterns):
+                continue
+            row = {name_key: cell}
+            if note_pattern:
+                match = re.match(note_pattern, cell)
+                if match:
+                    row[name_key] = match.group("name").strip()
+                    row["cell_note"] = match.group("note").strip()
+            row.update(extractor.get("row_fields", {}))
+            row.update(context)
+            rows.append(row)
+
+    return rows
+
+
 def plants_from_html_name_matrix(page, extractor, overrides, lookups):
     extractor = {"name_key": "name", **extractor}
     rows = html_name_matrix_rows(page, extractor)
     rows = expanded_rows(rows, extractor)
     rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
     rows = [row_overrides(row, extractor) for row in rows]
+    rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
+    return plant_records_from_config_rows(rows, extractor, overrides, lookups)
+
+
+def plants_from_html_column_name_matrix(page, extractor, overrides, lookups):
+    extractor = {"name_key": "name", **extractor}
+    rows = html_column_name_matrix_rows(page, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    rows = skip_named_rows(rows, extractor["name_key"], extractor.get("skip_names", []))
     rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
     return plant_records_from_config_rows(rows, extractor, overrides, lookups)
 
@@ -892,6 +1009,7 @@ def plants_from_static_rows(data, extractor, overrides, lookups):
     rows = list(extractor["rows"])
     rows = expanded_rows(rows, extractor)
     rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = split_name_field_rows(rows, extractor)
     rows = [row_overrides(row, extractor) for row in rows]
     rows = skip_named_rows(rows, extractor["name_key"], extractor.get("skip_names", []))
     rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
@@ -1656,6 +1774,10 @@ def extract(config):
             )
         elif extractor["kind"] == "html_name_matrix":
             plants.extend(plants_from_html_name_matrix(data, extractor, overrides, lookups))
+        elif extractor["kind"] == "html_column_name_matrix":
+            plants.extend(
+                plants_from_html_column_name_matrix(data, extractor, overrides, lookups)
+            )
         elif extractor["kind"] == "pdf_marker_list":
             plants.extend(plants_from_pdf_marker_list(data, extractor, overrides, lookups))
         elif extractor["kind"] == "html_marker_list":

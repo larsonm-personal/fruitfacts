@@ -1,0 +1,224 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://content.ces.ncsu.edu/extension-gardener-handbook/15-tree-fruit-and-nuts"
+  },
+  "reference_fields": [
+    ["title", "NC State Extension Gardener Handbook 15 Tree Fruit and Nuts"],
+    ["description", "NC State Extension Gardener Handbook chapter with cultivar recommendations, pollination notes, disease notes, and harvest guidance for North Carolina tree fruit and nut plantings"],
+    ["url", "https://content.ces.ncsu.edu/extension-gardener-handbook/15-tree-fruit-and-nuts"],
+    ["thumbnail", "website"],
+    ["publication_number", "AG-831"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "NC State Extension, Raleigh, North Carolina",
+      "latitude": 35.7877,
+      "longitude": -78.6443
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple cultivars recommended for North Carolina home landscapes",
+      "description": "NC State Extension Gardener Handbook chapter 15 lists these apple cultivars in its tree selection table for North Carolina home landscapes"
+    },
+    {
+      "name": "Chestnut cultivars recommended for North Carolina home landscapes",
+      "description": "NC State Extension Gardener Handbook chapter 15 lists these chestnut cultivars in its tree selection table for North Carolina home landscapes"
+    },
+    {
+      "name": "Fig cultivars recommended for North Carolina home landscapes",
+      "description": "NC State Extension Gardener Handbook chapter 15 lists these fig cultivars in its tree selection table for North Carolina home landscapes"
+    },
+    {
+      "name": "Nectarine cultivars recommended for North Carolina home landscapes",
+      "description": "NC State Extension Gardener Handbook chapter 15 lists these nectarine cultivars in its tree selection table for North Carolina home landscapes"
+    },
+    {
+      "name": "Peach cultivars recommended for North Carolina home landscapes",
+      "description": "NC State Extension Gardener Handbook chapter 15 lists these peach cultivars in its tree selection table for North Carolina home landscapes"
+    },
+    {
+      "name": "European pear cultivars recommended for North Carolina home landscapes",
+      "description": "NC State Extension Gardener Handbook chapter 15 lists these European pear cultivars in its tree selection table for North Carolina home landscapes"
+    },
+    {
+      "name": "Asian pear cultivars recommended for North Carolina home landscapes",
+      "description": "NC State Extension Gardener Handbook chapter 15 lists these Asian pear cultivars in its tree selection table for North Carolina home landscapes"
+    },
+    {
+      "name": "Pecan cultivars recommended for North Carolina home landscapes",
+      "description": "NC State Extension Gardener Handbook chapter 15 lists these pecan cultivars in its tree selection table for North Carolina home landscapes"
+    },
+    {
+      "name": "Persimmon cultivars recommended for North Carolina home landscapes",
+      "description": "NC State Extension Gardener Handbook chapter 15 lists these Asian persimmon cultivars in its tree selection table for North Carolina home landscapes"
+    },
+    {
+      "name": "Plum cultivars recommended for North Carolina home landscapes",
+      "description": "NC State Extension Gardener Handbook chapter 15 lists these Japanese and European plum cultivars in its tree selection table for North Carolina home landscapes"
+    },
+    {
+      "name": "Minor tree fruit and nut varieties for North Carolina home landscapes",
+      "description": "NC State Extension Gardener Handbook chapter 15 lists these minor tree fruit and nut varieties in its table of lesser-used options"
+    }
+  ],
+  "name_overrides": {
+    "Ginger Gold": {
+      "name": "Mountain Cove",
+      "note": "Source table names this as Ginger Gold"
+    },
+    "Crispin (Mutsu)": {
+      "name": "Mutsu",
+      "note": "Source table names this as Crispin (Mutsu)"
+    },
+    "Gold Rush": {
+      "name": "GoldRush",
+      "note": "Source table names this as Gold Rush"
+    },
+    "Redgold": {
+      "name": "Red Gold",
+      "note": "Source table names this as Redgold"
+    },
+    "Brunswick/Magnolia": {
+      "name": "Magnolia",
+      "aka": ["Brunswick"],
+      "note": "Source table names this as Brunswick/Magnolia"
+    },
+    "Twentieth Century (Nijisseiki)": {
+      "name": "Nijisseiki",
+      "note": "Source table names this as Twentieth Century (Nijisseiki)"
+    },
+    "Nititaka": {
+      "name": "Niitaka",
+      "note": "Source table names this as Nititaka"
+    },
+    "Shinseiki (New Century)": {
+      "name": "Shinseiki",
+      "note": "Source table names this as Shinseiki (New Century)"
+    },
+    "Hanagosho": {
+      "name": "Hana Gosho",
+      "note": "Source table names this as Hanagosho"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "required_headers": [
+        "Fruit",
+        "Recommended Cultivars",
+        "Pollination Notes",
+        "Disease Notes",
+        "Other Considerations"
+      ],
+      "name_key": "name",
+      "split_name_field": {
+        "source_key": "recommended_cultivars",
+        "source_value_key": "source_cultivar_list",
+        "separator_pattern": "\\s*,\\s*|\\s*;\\s*",
+        "text_fixes": {
+          "Chinese: ": "",
+          "Chinese-American Hybrid: ": "",
+          "Japanese: ": "",
+          "European: ": "",
+          "Type I: ": "",
+          "Type II: Type II: ": "",
+          "Type II: ": "",
+          ". Many cultivars were developed for North Carolina by the peach breeding program at NC Stateb": ""
+        },
+        "name_strip_patterns": [
+          "\\s*\\((?:white-fleshed|not a pollen source|self-fruitful|may bloom early|very good pollen source|pollen source|for preserves|Damson)\\)",
+          "\\s*\\. For North Carolina.*$",
+          "(?<=\\D)b$"
+        ]
+      },
+      "plant_type": {
+        "row_key": "fruit",
+        "prefix_map": {
+          "Pears, Asian": "Asian Pear",
+          "Pears Pyrus communis": "Euro Pear",
+          "Apples": "Apple",
+          "Chestnuts": "Chestnut",
+          "Figs": "Fig",
+          "Nectarines": "Nectarine",
+          "Peaches": "Peach",
+          "Pecans": "Pecan",
+          "Persimmons": "Persimmon",
+          "Plums": "Japanese Plum"
+        }
+      },
+      "category": {
+        "row_key": "fruit",
+        "prefix_map": {
+          "Pears, Asian": "Asian pear cultivars recommended for North Carolina home landscapes",
+          "Pears Pyrus communis": "European pear cultivars recommended for North Carolina home landscapes",
+          "Apples": "Apple cultivars recommended for North Carolina home landscapes",
+          "Chestnuts": "Chestnut cultivars recommended for North Carolina home landscapes",
+          "Figs": "Fig cultivars recommended for North Carolina home landscapes",
+          "Nectarines": "Nectarine cultivars recommended for North Carolina home landscapes",
+          "Peaches": "Peach cultivars recommended for North Carolina home landscapes",
+          "Pecans": "Pecan cultivars recommended for North Carolina home landscapes",
+          "Persimmons": "Persimmon cultivars recommended for North Carolina home landscapes",
+          "Plums": "Plum cultivars recommended for North Carolina home landscapes"
+        }
+      },
+      "name_suffix_notes": [
+        {
+          "suffix": "b",
+          "note": "Source footnote says peaches, nectarines, and plums should have at least 750 chilling hours for North Carolina"
+        }
+      ],
+      "row_overrides": {
+        "Bluefre": {
+          "plant_type": "Euro Plum"
+        },
+        "Stanley": {
+          "plant_type": "Euro Plum"
+        },
+        "Shropshire": {
+          "plant_type": "Euro Plum",
+          "_source_note": "Source table names this as Shropshire (Damson)"
+        }
+      },
+      "description_labels": [
+        ["pollination_notes", "Pollination"],
+        ["disease_notes", "Disease notes"],
+        ["other_considerations", "Other considerations"]
+      ]
+    },
+    {
+      "kind": "html_table",
+      "required_headers": [
+        "Fruit",
+        "Varieties",
+        "Advantages",
+        "Disadvantages"
+      ],
+      "name_key": "name",
+      "split_name_field": {
+        "source_key": "varieties",
+        "separator_pattern": "\\s*,\\s*"
+      },
+      "plant_type": {
+        "row_key": "fruit",
+        "prefix_map": {
+          "American persimmon": "Persimmon",
+          "Chinquapin": "Chestnut",
+          "Mulberry, Red": "Mulberry",
+          "Pawpaw": "Pawpaw",
+          "Plum, Chickasaw": "Species Plum",
+          "Walnut, Black": "Walnut"
+        }
+      },
+      "category": "Minor tree fruit and nut varieties for North Carolina home landscapes",
+      "description_labels": [
+        ["advantages", "Advantages"],
+        ["disadvantages", "Disadvantages"]
+      ]
+    }
+  ]
+}

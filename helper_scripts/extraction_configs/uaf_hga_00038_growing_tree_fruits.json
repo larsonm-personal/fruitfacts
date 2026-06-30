@@ -1,0 +1,250 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://www.uaf.edu/ces/publications/database/gardening/growing-tree-fruits.php"
+  },
+  "reference_fields": [
+    ["title", "Growing Tree Fruits in Alaska"],
+    ["description", "University of Alaska Fairbanks Cooperative Extension Service guide with recommended apple, cherry, plum, apricot, and pear varieties for Alaska"],
+    ["url", "https://www.uaf.edu/ces/publications/database/gardening/growing-tree-fruits.php"],
+    ["thumbnail", "website"],
+    ["publication_number", "HGA-00038"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Alaska Fairbanks, Fairbanks, Alaska",
+      "latitude": 64.8378,
+      "longitude": -147.7164
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple varieties recommended for Alaska",
+      "description": "UAF HGA-00038 lists these recommended apple varieties in approximate order of ripening for Alaska"
+    },
+    {
+      "name": "Sour cherry varieties recommended for Alaska",
+      "description": "UAF HGA-00038 lists these sour or tart cherry varieties for Alaska"
+    },
+    {
+      "name": "Japanese-American hybrid plums recommended experimentally for Alaska",
+      "description": "UAF HGA-00038 lists these Japanese-American hybrid plums as experimental options that have survived three or more winters in Anchorage or show promise for Southcentral and Southeast Alaska"
+    },
+    {
+      "name": "European plum varieties recommended experimentally for Alaska",
+      "description": "UAF HGA-00038 lists Mount Royal as a European plum that produces ripe fruit in Juneau and may be tried experimentally in Southcentral Alaska"
+    },
+    {
+      "name": "Apricot varieties recommended experimentally for Alaska",
+      "description": "UAF HGA-00038 lists these named apricot cultivars as worth planting experimentally in Alaska based on hardiness and early ripening"
+    },
+    {
+      "name": "European pear varieties recommended experimentally for Alaska",
+      "description": "UAF HGA-00038 lists these pear cultivars as recommended for planting on an experimental basis only in Alaska"
+    }
+  ],
+  "name_overrides": {
+    "Lodi (Improved Yellow Transparent)": {
+      "name": "Lodi",
+      "note": "Source names this as Lodi (Improved Yellow Transparent)"
+    },
+    "North Star Dwarf": {
+      "name": "North Star",
+      "note": "Source names this as North Star Dwarf"
+    },
+    "Summer Crisp": {
+      "name": "Summercrisp",
+      "note": "Source names this as Summer Crisp"
+    },
+    "Heyer #12": {
+      "name": "Heyer 12",
+      "note": "Source names this as Heyer #12"
+    },
+    "LaCrescent": {
+      "name": "La Crescent",
+      "note": "Source names this as LaCrescent"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_paragraph_sequences",
+      "start_after_text": "Recommended Varieties of Apples",
+      "stop_headings": ["Recommended Varieties of Cherries"],
+      "default_category": "Apple varieties recommended for Alaska",
+      "default_plant_type": "Apple",
+      "record_pattern": "^(?P<name>[A-Z][A-Za-z0-9#' &-]+?)\\s+-\\s+(?P<description>.*)$",
+      "unmatched_paragraph_key": "description",
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripens", "ripen"]
+    },
+    {
+      "kind": "html_paragraph_sequences",
+      "start_after_text": "Recommended Varieties of Cherries",
+      "stop_headings": ["Recommended Varieties of Plums"],
+      "default_category": "Sour cherry varieties recommended for Alaska",
+      "default_plant_type": "Sour Cherry",
+      "record_pattern": "^(?P<name>[A-Z][A-Za-z0-9#' &-]+?)\\s+-\\s+(?P<description>.*)$",
+      "unmatched_paragraph_key": "description",
+      "description_key": "description",
+      "row_splits": [
+        {
+          "match": {
+            "name": "Meteor"
+          },
+          "source_note": "Source page places Meteor and Montmorency in one continued paragraph",
+          "rows": [
+            {
+              "name": "Meteor",
+              "description": "Tree is 8 to 10 feet tall when mature and is slightly more cold-hardy than North Star Dwarf. Fruit is bright red with yellowish flesh, medium firm, medium juicy, with freestone pit. Good for pies and fresh eating; ripens about the same time as North Star Dwarf. Fruit slightly larger than North Star Dwarf"
+            },
+            {
+              "name": "Montmorency",
+              "description": "The standard commercial pie cherry. Hardy to Zone 4, possibly Zone 3, but not as hardy as North Star Dwarf or Meteor. Fruit is brilliant red, excellent for pies and preserves. Tree is larger than Meteor"
+            }
+          ]
+        }
+      ],
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripens", "ripen"]
+    },
+    {
+      "kind": "html_paragraph_sequences",
+      "start_after_text": "Recommended Varieties of Plums",
+      "stop_headings": ["Recommended Varieties of Apricots"],
+      "default_category": "Japanese-American hybrid plums recommended experimentally for Alaska",
+      "default_plant_type": "Japanese Plum",
+      "record_pattern": "^(?P<name>[A-Z][A-Za-z0-9#' &-]+?)\\s+-\\s+(?P<description>.*)$",
+      "unmatched_paragraph_key": "description",
+      "description_key": "description",
+      "row_splits": [
+        {
+          "match": {
+            "name": "Pembina"
+          },
+          "source_note": "Source page places Pembina and Sapa in one paragraph",
+          "rows": [
+            {
+              "name": "Pembina",
+              "description": "Originating in Canada, this plum has proved fully hardy in west Anchorage and has blossomed, but not fruited, there after three winters"
+            },
+            {
+              "name": "Sapa",
+              "description": "Has survived three winters, including a test winter, in west Anchorage and is worth a try elsewhere"
+            }
+          ]
+        }
+      ],
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripens", "ripen"]
+    },
+    {
+      "kind": "html_marker_list",
+      "start_heading": "Recommended Varieties of Plums",
+      "end_heading": "Recommended Varieties of Apricots",
+      "contains": "Other Japanese-American hybrid plums that show promise",
+      "marker": "include",
+      "plant_type": "Japanese Plum",
+      "category": "Japanese-American hybrid plums recommended experimentally for Alaska",
+      "description_template": "UAF HGA-00038 says {name} is among other Japanese-American hybrid plums that show promise for Southcentral and Southeast Alaska"
+    },
+    {
+      "kind": "static_rows",
+      "rows": [
+        {
+          "name": "Mount Royal",
+          "plant_type": "Euro Plum",
+          "category": "European plum varieties recommended experimentally for Alaska",
+          "description": "Mount Royal, of the European plums, produces ripe fruit in Juneau. This Canadian cultivar is self-fertile and may be tried on an experimental basis in Southcentral Alaska"
+        }
+      ]
+    },
+    {
+      "kind": "html_paragraph_sequences",
+      "start_after_text": "Recommended Varieties of Apricots",
+      "stop_headings": ["Recommended Varieties of Pears"],
+      "default_category": "Apricot varieties recommended experimentally for Alaska",
+      "default_plant_type": "Apricot",
+      "record_pattern": "^(?P<name>[A-Z][A-Za-z0-9#' &-]+?)\\s+-\\s+(?P<description>.*)$",
+      "unmatched_paragraph_key": "description",
+      "description_key": "description",
+      "row_splits": [
+        {
+          "match": {
+            "name": "Moongold and Sungold"
+          },
+          "source_note": "Source page describes Moongold and Sungold together",
+          "rows": [
+            {
+              "name": "Moongold"
+            },
+            {
+              "name": "Sungold"
+            }
+          ]
+        },
+        {
+          "match": {
+            "name": "The Har-Series"
+          },
+          "source_note": "Source page describes the Har-Series and names Harcot and Hargrand as the two earliest ripening",
+          "rows": [
+            {
+              "name": "Harcot"
+            },
+            {
+              "name": "Hargrand"
+            }
+          ]
+        },
+        {
+          "match": {
+            "name": "Scout and Manchu"
+          },
+          "source_note": "Source page describes Scout and Manchu together",
+          "rows": [
+            {
+              "name": "Scout"
+            },
+            {
+              "name": "Manchu"
+            }
+          ]
+        }
+      ],
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripens", "ripen"]
+    },
+    {
+      "kind": "html_paragraph_sequences",
+      "start_after_text": "Recommended Varieties of Pears",
+      "stop_headings": ["General Considerations for Experimentation"],
+      "default_category": "European pear varieties recommended experimentally for Alaska",
+      "default_plant_type": "Euro Pear",
+      "record_pattern": "^(?P<name>[A-Z][A-Za-z0-9#' &-]+?)\\s+-\\s+(?P<description>.*)$",
+      "unmatched_paragraph_key": "description",
+      "description_key": "description",
+      "row_splits": [
+        {
+          "match": {
+            "name": "Parker and Patten"
+          },
+          "source_note": "Source page describes Parker and Patten together",
+          "rows": [
+            {
+              "name": "Parker"
+            },
+            {
+              "name": "Patten"
+            }
+          ]
+        }
+      ],
+      "harvest_from_key": "description",
+      "harvest_terms": ["ripen", "ripens"]
+    }
+  ]
+}

@@ -1,0 +1,332 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://content.ces.ncsu.edu/extension-gardener-handbook/14-small-fruits"
+  },
+  "reference_fields": [
+    ["title", "NC State Extension Gardener Handbook 14 Small Fruits"],
+    ["description", "NC State Extension Gardener Handbook chapter with recommended strawberry, blackberry, raspberry, blueberry, grape, and muscadine cultivars for North Carolina home landscapes"],
+    ["url", "https://content.ces.ncsu.edu/extension-gardener-handbook/14-small-fruits"],
+    ["thumbnail", "website"],
+    ["publication_number", "AG-831"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "NC State Extension, Raleigh, North Carolina",
+      "latitude": 35.7877,
+      "longitude": -78.6443
+    }
+  ],
+  "categories": [
+    {
+      "name": "Strawberry cultivars recommended for North Carolina home gardens",
+      "description": "NC State Extension Gardener Handbook chapter 14 table 14-2 lists these strawberry cultivars for North Carolina home gardens"
+    },
+    {
+      "name": "Erect blackberry cultivars recommended for North Carolina home gardens",
+      "description": "NC State Extension Gardener Handbook chapter 14 table 14-4 lists these erect blackberry cultivars for North Carolina home gardens"
+    },
+    {
+      "name": "Semi-trailing blackberry cultivars recommended for North Carolina home gardens",
+      "description": "NC State Extension Gardener Handbook chapter 14 table 14-4 lists these semi-trailing blackberry cultivars for North Carolina home gardens"
+    },
+    {
+      "name": "Primocane-fruiting blackberry cultivars recommended for North Carolina home gardens",
+      "description": "NC State Extension Gardener Handbook chapter 14 table 14-4 lists these primocane-fruiting blackberry cultivars for North Carolina home gardens"
+    },
+    {
+      "name": "Red raspberry cultivars recommended for North Carolina home gardens",
+      "description": "NC State Extension Gardener Handbook chapter 14 table 14-5 lists these red raspberry cultivars for North Carolina home gardens"
+    },
+    {
+      "name": "Black raspberry cultivars recommended for North Carolina home gardens",
+      "description": "NC State Extension Gardener Handbook chapter 14 table 14-5 lists these black raspberry cultivars for North Carolina home gardens"
+    },
+    {
+      "name": "Highbush blueberry varieties for western North Carolina mountains",
+      "description": "NC State Extension Gardener Handbook chapter 14 table 14-9 lists these highbush blueberry varieties for western North Carolina mountain sites above 2500 feet or with extended winter temperatures below 10 degrees F"
+    },
+    {
+      "name": "Rabbiteye blueberry varieties for North Carolina",
+      "description": "NC State Extension Gardener Handbook chapter 14 table 14-9 lists these rabbiteye blueberry varieties for most sandhills-coastal plain, piedmont, and foothill sites below 2500 feet"
+    },
+    {
+      "name": "Southern highbush blueberry varieties for North Carolina trial sites",
+      "description": "NC State Extension Gardener Handbook chapter 14 table 14-9 lists these highbush and southern highbush blueberry varieties for sand-based, high-organic soils in the sandhills-coastal plain and on a trial basis for amended piedmont and foothill sites"
+    },
+    {
+      "name": "Bunch grape cultivars recommended for North Carolina home gardens",
+      "description": "NC State Extension Gardener Handbook chapter 14 table 14-10 lists these bunch grape cultivars for North Carolina home gardens"
+    },
+    {
+      "name": "French-American hybrid wine grape cultivars for North Carolina",
+      "description": "NC State Extension Gardener Handbook chapter 14 table 14-11 lists these French-American hybrid wine grape cultivars for North Carolina"
+    },
+    {
+      "name": "European wine grape cultivars for North Carolina",
+      "description": "NC State Extension Gardener Handbook chapter 14 table 14-11 lists these European wine grape cultivars for North Carolina"
+    },
+    {
+      "name": "Muscadine cultivars recommended for North Carolina home gardens",
+      "description": "NC State Extension Gardener Handbook chapter 14 table 14-12 lists these muscadine cultivars for North Carolina home gardens"
+    }
+  ],
+  "name_overrides": {
+    "Robesone": {
+      "name": "Robeson",
+      "note": "Source table spells this Robesone"
+    },
+    "Stare": {
+      "name": "Star",
+      "note": "Source table spells this Stare"
+    },
+    "Drapere": {
+      "name": "Draper",
+      "note": "Source table spells this Drapere"
+    },
+    "Columbuse": {
+      "name": "Columbus",
+      "note": "Source table spells this Columbuse"
+    },
+    "New Hanovere": {
+      "name": "New Hanover",
+      "note": "Source table spells this New Hanovere"
+    },
+    "Onslowe": {
+      "name": "Onslow",
+      "note": "Source table spells this Onslowe"
+    },
+    "Libertye": {
+      "name": "Liberty",
+      "note": "Source table carries a trial-basis footnote marker on Liberty"
+    },
+    "Aurorae": {
+      "name": "Aurora",
+      "note": "Source table carries a trial-basis footnote marker on Aurora"
+    },
+    "Prime-Jan": {
+      "name": "Prime Jan",
+      "note": "Source table names this as Prime-Jan"
+    },
+    "Cabernet Franc": {
+      "name": "Cabernet franc",
+      "note": "Source table names this as Cabernet Franc"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "table_index": 1,
+      "required_headers": [
+        "Cultivar",
+        "Areaa",
+        "Season",
+        "Berry Size",
+        "Yield",
+        "Fresh",
+        "Processing",
+        "Comments"
+      ],
+      "plant_type": "Strawberry",
+      "name_key": "cultivar",
+      "category": "Strawberry cultivars recommended for North Carolina home gardens",
+      "skip_prefixes": ["a "],
+      "harvest_key": "season",
+      "description_labels": [
+        ["areaa", "Area"],
+        ["berry_size", "Berry size"],
+        ["yield", "Yield"],
+        ["fresh", "Fresh use"],
+        ["processing", "Processing use"],
+        ["comments", "Comments"]
+      ]
+    },
+    {
+      "kind": "html_table",
+      "table_index": 3,
+      "required_headers": [
+        "Cultivar",
+        "Areaa",
+        "Season",
+        "Hardiness",
+        "Yield",
+        "Fruit Character"
+      ],
+      "section_rows": true,
+      "plant_type": "Blackberry",
+      "name_key": "cultivar",
+      "category": {
+        "row_key": "_section",
+        "map": {
+          "Erect": "Erect blackberry cultivars recommended for North Carolina home gardens",
+          "Semi-trailing": "Semi-trailing blackberry cultivars recommended for North Carolina home gardens",
+          "Primocane-fruiting": "Primocane-fruiting blackberry cultivars recommended for North Carolina home gardens"
+        }
+      },
+      "skip_prefixes": ["a "],
+      "harvest_key": "season",
+      "description_labels": [
+        ["areaa", "Area"],
+        ["hardiness", "Hardiness"],
+        ["yield", "Yield"],
+        ["fruit_character", "Fruit character"]
+      ]
+    },
+    {
+      "kind": "html_table",
+      "table_index": 4,
+      "required_headers": [
+        "Type",
+        "Cultivar",
+        "Season",
+        "Region*",
+        "Yield",
+        "Berry Size",
+        "Flavor",
+        "Remarks"
+      ],
+      "table_transforms": "fill_leading_group_cells",
+      "table_skip_row_patterns": ["^\\*M="],
+      "plant_type": "Raspberry",
+      "name_key": "cultivar",
+      "category": {
+        "row_key": "type",
+        "map": {
+          "Red Cultivars": "Red raspberry cultivars recommended for North Carolina home gardens",
+          "Black Cultivars": "Black raspberry cultivars recommended for North Carolina home gardens"
+        }
+      },
+      "skip_prefixes": ["*"],
+      "harvest_key": "season",
+      "description_labels": [
+        ["region", "Region"],
+        ["yield", "Yield"],
+        ["berry_size", "Berry size"],
+        ["flavor", "Flavor"],
+        ["remarks", "Remarks"]
+      ]
+    },
+    {
+      "kind": "html_column_name_matrix",
+      "table_index": 7,
+      "plant_type": "Blueberry",
+      "category": {"row_key": "category"},
+      "cell_note_pattern": "^(?P<name>.*?)\\s*\\((?P<note>.*)\\)$",
+      "skip_cell_patterns": ["^a Listed"],
+      "column_rules": [
+        {
+          "prefix": "Highbush and Southern Highbush",
+          "category": "Southern highbush blueberry varieties for North Carolina trial sites",
+          "column_description": "Listed in the Highbush and Southern Highbush column for sandhills-coastal plain and trial sites"
+        },
+        {
+          "prefix": "Highbush",
+          "category": "Highbush blueberry varieties for western North Carolina mountains",
+          "column_description": "Listed in the Highbush column for western mountain sites"
+        },
+        {
+          "prefix": "Rabbiteye",
+          "category": "Rabbiteye blueberry varieties for North Carolina",
+          "column_description": "Listed in the Rabbiteye column for most lower-elevation North Carolina sites"
+        }
+      ],
+      "description_parts": [
+        {
+          "kind": "key",
+          "key": "column_description"
+        },
+        {
+          "kind": "labels",
+          "labels": [
+            ["cell_note", "Source note"]
+          ]
+        }
+      ],
+      "dedupe_keys": ["name", "category"],
+      "merge_duplicate_plants": {
+        "keys": ["type", "name"],
+        "fields": ["description"]
+      }
+    },
+    {
+      "kind": "html_table",
+      "table_index": 8,
+      "required_headers": [
+        "Cultivar",
+        "Season",
+        "Color",
+        "Berry Size",
+        "Best Useb",
+        "Skin",
+        "Comments"
+      ],
+      "plant_type": "Grape",
+      "name_key": "cultivar",
+      "category": "Bunch grape cultivars recommended for North Carolina home gardens",
+      "skip_prefixes": ["a ", "b "],
+      "harvest_key": "season",
+      "description_labels": [
+        ["color", "Color"],
+        ["berry_size", "Berry size"],
+        ["best_useb", "Best use"],
+        ["skin", "Skin"],
+        ["comments", "Comments"]
+      ]
+    },
+    {
+      "kind": "html_table",
+      "table_index": 9,
+      "required_headers": [
+        "Cultivar",
+        "Season",
+        "Color",
+        "Berry Size",
+        "Skin",
+        "Comments"
+      ],
+      "section_rows": true,
+      "plant_type": "Grape",
+      "name_key": "cultivar",
+      "category": {
+        "row_key": "_section",
+        "prefix_map": {
+          "French-American Hybrids": "French-American hybrid wine grape cultivars for North Carolina",
+          "European Wine Grapes": "European wine grape cultivars for North Carolina"
+        }
+      },
+      "skip_prefixes": ["a ", "b "],
+      "harvest_key": "season",
+      "description_labels": [
+        ["color", "Color"],
+        ["berry_size", "Berry size"],
+        ["skin", "Skin"],
+        ["comments", "Comments"]
+      ]
+    },
+    {
+      "kind": "html_table",
+      "table_index": 10,
+      "required_headers": [
+        "Cultivar",
+        "Season",
+        "Color",
+        "Berry Size",
+        "Stem Scar",
+        "Use"
+      ],
+      "plant_type": "Muscadine",
+      "name_key": "cultivar",
+      "category": "Muscadine cultivars recommended for North Carolina home gardens",
+      "harvest_key": "season",
+      "description_labels": [
+        ["color", "Color"],
+        ["berry_size", "Berry size"],
+        ["stem_scar", "Stem scar"],
+        ["use", "Use"]
+      ]
+    }
+  ]
+}
