@@ -51,6 +51,9 @@ The first shared helpers live under `helper_scripts/fruitfacts_extract/`:
     including same-line entry splitting and repeated-name merging
   - Optional line slicing for layout-mode PDF sections where the useful entries
     are isolated in one extracted column
+  - Raw PDF category/name-list parsing for collapsed tables where several
+    category headings appear before the corresponding comma-separated cultivar
+    lists
   - Tail parsers for first-token splits such as `Fresh Dessert`, first-line
     prefix plus description, and self-fruitful token splits
 - `record_tools.py`
@@ -97,8 +100,12 @@ script. The config runner currently supports:
   heading rows or first rows in a group
 - PDF numbered blocks from raw `pdftotext` output, with configurable zone,
   region, tail, and skip patterns
+- PDF category/name lists where raw `pdftotext` collapses a table into heading
+  lines followed by comma-separated cultivar lists, including grouped split
+  markers for two categories on one extracted line
 - PDF catalog entries from flow-mode `pdftotext` output, with configurable
-  category heading rules, smart titlecase name repair, and continuation lines
+  category heading rules, default category context, smart titlecase name
+  repair, and continuation lines
 - PDF bullet lists with configurable heading rules, continuation indentation,
   skip rules, row overrides, and partial parenthetical entry repair
 - PDF quoted cultivar entries with configurable quote characters, skipped
@@ -224,6 +231,12 @@ Source-specific scripts should do:
 - MSU MT202101AG cold-hardy berries: layout-mode PDF quoted entries where the
   sour cherry cultivar prose is isolated by slicing the extracted right column
   before quoted-name parsing
+- UNH low-input tree fruits: raw PDF table text where category headings queue
+  before their name-list lines, plus grouped splits for sour cherry/European
+  plum and hybrid plum/apricot rows
+- SDSU P-00041-2023 fruit recommendations: layout-mode PDF catalog entries
+  parsed from left and right column slices, with default category contexts for
+  columns that start directly on cultivar prose
 
 ## Manifest Configs
 
@@ -285,6 +298,10 @@ narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
 - For fixed-width PDF tables with row-spanned crop labels, carry category and
   plant type from heading or first-row labels, and leave `needs_help` when
   `pdftotext` shifts row-spanned labels against the wrong cultivar rows.
+- For raw PDF tables that collapse into category headings followed by name
+  lists, queue category contexts and parse the following lines in order. When
+  `pdftotext` joins two category lists onto one line, use explicit split
+  markers such as the first cultivar of the second group.
 - Do not commit downloaded PDFs directly unless the DVC asset workflow is being
   used
 

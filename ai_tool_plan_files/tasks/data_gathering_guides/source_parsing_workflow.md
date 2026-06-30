@@ -504,3 +504,30 @@ only the right-column cultivar prose, then applies small source-local
 `row_text_fixes` for column-edge artifacts. Currant, gooseberry, and aronia
 sections remain review caveats because they either point to other sources for
 recommendations or lack a current FruitFacts plant type fit.
+
+## UNH Low-Input Tree Fruits Notes
+
+The UNH low-input tree fruit guide has a compact Table 2 in the PDF. Raw
+`pdftotext` collapses that table into category headings followed by
+comma-separated cultivar lists. Several headings appear before their lists,
+and a few extracted lines contain two source categories at once.
+
+The config uses `pdf_category_name_lists`. Simple category lines queue context
+for the next cultivar list. Grouped category lines, such as `Sour Cherry
+European Plum`, use an explicit `split_before` marker to separate the two
+lists on the following extracted line. Footnote markers like `Reliance2,3` are
+removed before comma splitting so they do not become false cultivar rows.
+
+## SDSU P-00041-2023 South Dakota Notes
+
+The SDSU fruit variety recommendations PDF has dense tables and two-column
+pages. Some major tables, especially tree fruit and strawberries, are
+transposed or split too aggressively by `pdftotext` for a broad first pass.
+
+The config uses `pdf_catalog_entries` on bounded layout-mode slices for the
+sections that remain structurally reviewable: currants, gooseberries,
+raspberries, honeyberries, and dwarf tart cherries. Some slices start directly
+on cultivar prose rather than a category heading, so the parser now supports
+default category context. The Red Wing raspberry text contains the word
+`Heritage.` before the true Heritage entry, so the right-column raspberry
+section is split into two extractor passes around that source paragraph.

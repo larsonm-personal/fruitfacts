@@ -189,6 +189,26 @@ def catalog_category_for_line(line, extractor):
     return None, None
 
 
+def rule_context(rule):
+    control_keys = {
+        "text",
+        "prefix",
+        "parse_remainder",
+        "groups",
+        "split_before",
+    }
+    return {key: value for key, value in rule.items() if key not in control_keys}
+
+
+def initial_context(extractor):
+    context = dict(extractor.get("default_context", {}))
+    if extractor.get("default_category"):
+        context["category"] = extractor["default_category"]
+    if extractor.get("default_plant_type"):
+        context["plant_type"] = extractor["default_plant_type"]
+    return context or None
+
+
 def finish_catalog_row(row, extractor):
     if extractor.get("name_case") == "smart_title":
         row[extractor.get("name_key", "name")] = smart_title_name(
@@ -201,7 +221,7 @@ def finish_catalog_row(row, extractor):
 def catalog_entry_rows(text, extractor):
     lines = section_lines(text, extractor)
     rows = []
-    current_category = None
+    current_category = initial_context(extractor)
     current = None
     name_key = extractor.get("name_key", "name")
     description_key = extractor.get("description_key", "description")
@@ -213,11 +233,7 @@ def catalog_entry_rows(text, extractor):
 
         rule, remainder = catalog_category_for_line(line, extractor)
         if rule:
-            current_category = {
-                key: value
-                for key, value in rule.items()
-                if key not in ("text", "prefix", "parse_remainder")
-            }
+            current_category = rule_context(rule)
             current = None
             if not rule.get("parse_remainder") or not remainder:
                 continue
@@ -239,6 +255,116 @@ def catalog_entry_rows(text, extractor):
 
     skip_names = set(extractor.get("skip_names", []))
     return [row for row in rows if row.get(name_key) not in skip_names]
+
+
+def name_list_rule_for_line(line, extractor):
+    for rule in extractor.get("category_rules", []):
+        if rule.get("text") and line == rule["text"]:
+            return rule, ""
+        prefix = rule.get("prefix")
+        if prefix and line.startswith(prefix):
+            return rule, line[len(prefix) :].strip()
+    return None, None
+
+
+def split_name_list(value, extractor):
+    value = apply_text_fixes_to_line(value, extractor.get("name_list_text_fixes", {}))
+    if extractor.get("strip_name_footnotes"):
+        value = re.sub(r"(?<=\D)\d+(?:,\d+)*(?=\s*(?:,|$))", "", value)
+    for marker in extractor.get("split_before_names", []):
+        value = re.sub(r"\s+" + re.escape(marker), ", " + marker, value)
+    separator = extractor.get("name_separator_pattern", r"\s*,\s*")
+    return [
+        clean_text(name)
+        for name in re.split(separator, value)
+        if clean_text(name)
+    ]
+
+
+def row_group_context(group):
+    return {
+        key: value
+        for key, value in group.items()
+        if key not in ("split_before", "name_list_text_fixes")
+    }
+
+
+def name_list_rows_for_group(group, value, extractor):
+    group_extractor = {
+        **extractor,
+        "name_list_text_fixes": group.get(
+            "name_list_text_fixes",
+            extractor.get("name_list_text_fixes", {}),
+        ),
+    }
+    context = row_group_context(group)
+    rows = []
+    for name in split_name_list(value, group_extractor):
+        row = {extractor.get("name_key", "name"): name}
+        row.update(context)
+        rows.append(row)
+    return rows
+
+
+def split_line_for_groups(line, groups):
+    starts = [0]
+    for group in groups[1:]:
+        marker = group.get("split_before")
+        if not marker:
+            raise ValueError("Grouped name-list rules need split_before after first group")
+        index = line.find(marker)
+        if index < 0:
+            raise ValueError("Could not find grouped name-list split marker: " + marker)
+        starts.append(index)
+    values = []
+    for index, start in enumerate(starts):
+        end = starts[index + 1] if index + 1 < len(starts) else None
+        values.append(line[start:end].strip())
+    return values
+
+
+def pdf_category_name_list_rows(text, extractor):
+    rows = []
+    pending = []
+
+    for line in section_lines(text, extractor):
+        line = apply_text_fixes_to_line(line, extractor.get("text_fixes", {}))
+        if line_matches_any(line, extractor.get("skip_line_patterns", [])):
+            continue
+
+        rule, remainder = name_list_rule_for_line(line, extractor)
+        if rule:
+            if rule.get("groups"):
+                pending.append(rule["groups"])
+                continue
+            context = rule_context(rule)
+            if rule.get("parse_remainder") and remainder:
+                rows.extend(name_list_rows_for_group(context, remainder, extractor))
+            else:
+                pending.append([context])
+            continue
+
+        if not pending:
+            continue
+
+        groups = pending[0]
+        if len(groups) == 1:
+            rows.extend(name_list_rows_for_group(groups[0], line, extractor))
+            pending.pop(0)
+            continue
+
+        if any(group.get("split_before") for group in groups[1:]):
+            for group, value in zip(groups, split_line_for_groups(line, groups)):
+                rows.extend(name_list_rows_for_group(group, value, extractor))
+            pending.pop(0)
+            continue
+
+        group = groups.pop(0)
+        rows.extend(name_list_rows_for_group(group, line, extractor))
+        if not groups:
+            pending.pop(0)
+
+    return rows
 
 
 def bullet_segments(line, extractor):

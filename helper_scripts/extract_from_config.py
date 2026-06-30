@@ -17,6 +17,7 @@ from fruitfacts_extract.pdf_table_tools import catalog_entry_rows
 from fruitfacts_extract.pdf_table_tools import grouped_fixed_width_table_rows
 from fruitfacts_extract.pdf_table_tools import line_matches_any
 from fruitfacts_extract.pdf_table_tools import numbered_block_rows
+from fruitfacts_extract.pdf_table_tools import pdf_category_name_list_rows
 from fruitfacts_extract.pdf_table_tools import pdf_bullet_list_rows
 from fruitfacts_extract.pdf_table_tools import pdf_quoted_entry_rows
 from fruitfacts_extract.record_tools import append_source_note
@@ -689,6 +690,25 @@ def plants_from_pdf_numbered_blocks(text, extractor, overrides, lookups):
     )
 
 
+def plants_from_pdf_category_name_lists(text, extractor, overrides, lookups):
+    extractor = {
+        "name_key": "name",
+        "category": {"row_key": "category"},
+        "plant_type": {"row_key": "plant_type"},
+        **extractor,
+    }
+    rows = pdf_category_name_list_rows(text, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    return plant_records_from_config_rows(
+        rows,
+        extractor,
+        overrides,
+        lookups,
+    )
+
+
 def plants_from_pdf_catalog_entries(text, extractor, overrides, lookups):
     extractor = {
         "name_key": "name",
@@ -943,6 +963,10 @@ def extract(config):
         elif extractor["kind"] == "pdf_numbered_blocks":
             plants.extend(
                 plants_from_pdf_numbered_blocks(data, extractor, overrides, lookups)
+            )
+        elif extractor["kind"] == "pdf_category_name_lists":
+            plants.extend(
+                plants_from_pdf_category_name_lists(data, extractor, overrides, lookups)
             )
         elif extractor["kind"] == "pdf_catalog_entries":
             plants.extend(

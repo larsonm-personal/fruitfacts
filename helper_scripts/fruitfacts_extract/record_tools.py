@@ -12,7 +12,7 @@ def normalized_name(source_name, overrides=None):
 
 
 def strip_trailing_note_markers(source_name):
-    return re.sub(r"(?<=\D)\d+$", "", source_name).strip()
+    return re.sub(r"(?<=\D)\d+(?:,\d+)*$", "", source_name).strip()
 
 
 def append_source_note(description, source_note):

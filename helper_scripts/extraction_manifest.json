@@ -41,6 +41,10 @@
             "config": "extraction_configs/psu_non_scab_apples.json"
         },
         {
+            "id": "sdsu_p_00041_2023_fruit_varieties",
+            "config": "extraction_configs/sdsu_p_00041_2023_fruit_varieties.json"
+        },
+        {
             "id": "purdue_ho_44_raspberries",
             "config": "extraction_configs/purdue_ho_44_raspberries.json"
         },
@@ -63,6 +67,10 @@
         {
             "id": "uga_c766_caneberries",
             "config": "extraction_configs/uga_c766_caneberries.json"
+        },
+        {
+            "id": "unh_low_input_tree_fruits",
+            "config": "extraction_configs/unh_low_input_tree_fruits.json"
         },
         {
             "id": "umaine_2068_peaches",

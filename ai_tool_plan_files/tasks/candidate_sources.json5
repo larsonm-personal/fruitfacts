@@ -1601,7 +1601,7 @@
         },
         {
             id: "sdsu-fruit-variety-recommendations-south-dakota-2023",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Fruit Variety Recommendations for South Dakota",
             institution: "South Dakota State University Extension",
@@ -1637,7 +1637,12 @@
                 "No South Dakota reference directory or candidate found during duplicate scan",
             notes: [
                 "Official landing page is dated August 17, 2023 and exposes a PDF download",
-                "Dense PDF tables and crop groupings may require a custom table parser or manual cleanup"
+                "Dense PDF tables and crop groupings may require a custom table parser or manual cleanup",
+                "Encoded in plant_database/references/South Dakota/SDSU P-00041-2023 Fruit Variety Recommendations for South Dakota.json5",
+                "Config extraction added at helper_scripts/extraction_configs/sdsu_p_00041_2023_fruit_varieties.json",
+                "Manifest entry added as sdsu_p_00041_2023_fruit_varieties",
+                "Worked example for layout-mode PDF catalog entries isolated by left and right column slices with default category contexts",
+                "Current draft covers currants, gooseberries, raspberries, honeyberries, and dwarf tart cherries; apple, pear, plum, strawberry, and grape tables remain review caveats"
             ]
         },
         {
@@ -1761,7 +1766,7 @@
         },
         {
             id: "unh-low-input-tree-fruits-nh-home-orchards",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Fruits: Low-Input Tree Fruits for NH Home Orchards",
             institution: "University of New Hampshire Extension",
@@ -1789,7 +1794,12 @@
                 "Existing New Hampshire candidate covers peaches and nectarines only; existing references are breeding releases",
             notes: [
                 "Official PDF search result returned a direct UNH Extension publication URL",
-                "Recommendations are embedded in narrative rather than a clean cultivar table"
+                "Recommendations are embedded in narrative rather than a clean cultivar table",
+                "Encoded in plant_database/references/New Hampshire/UNH Low-Input Tree Fruits for NH Home Orchards.json5",
+                "Config extraction added at helper_scripts/extraction_configs/unh_low_input_tree_fruits.json",
+                "Manifest entry added as unh_low_input_tree_fruits",
+                "Worked example for raw PDF category/name-list extraction where several category headings queue before their corresponding cultivar lines",
+                "Current draft covers the low-input Table 2 variety list; the broader pest-management narrative remains source context rather than plant rows"
             ]
         },
         {

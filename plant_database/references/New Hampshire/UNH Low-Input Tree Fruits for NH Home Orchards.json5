@@ -1,0 +1,343 @@
+{
+    title: "Growing Fruits: Low-Input Tree Fruits for NH Home Orchards",
+    author: "William Lord; revised by Becky Sideman",
+    description: "University of New Hampshire Cooperative Extension low-input tree-fruit guide for New Hampshire home orchards",
+    url: "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource003728_Rep5308.pdf",
+    thumbnail: "pdf",
+    published: "March 2017",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of New Hampshire Cooperative Extension, Durham, New Hampshire",
+            latitude: 43.1389,
+            longitude: -70.937
+        },
+    ],
+    categories: [
+        {
+            name: "Apple scab-resistant apple varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these apple scab-resistant apple varieties for low-input New Hampshire home orchards in approximate ripening order"
+        },
+        {
+            name: "Moderate apple scab-resistant apple varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these moderately apple scab-resistant apple varieties for low-input New Hampshire home orchards in approximate ripening order"
+        },
+        {
+            name: "Fire blight-resistant pear varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these fire blight-resistant pear varieties for low-input New Hampshire home orchards in approximate ripening order"
+        },
+        {
+            name: "Hardiest peach varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these hardiest peach varieties for low-input New Hampshire home orchards in approximate ripening order"
+        },
+        {
+            name: "Hardiest nectarine varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists this hardiest nectarine variety for low-input New Hampshire home orchards in approximate ripening order"
+        },
+        {
+            name: "Hardiest sweet cherry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these hardiest sweet cherry varieties for low-input New Hampshire home orchards in approximate ripening order"
+        },
+        {
+            name: "Sour cherry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these sour cherry varieties for low-input New Hampshire home orchards in approximate ripening order"
+        },
+        {
+            name: "European plum varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these European plum varieties for low-input New Hampshire home orchards in approximate ripening order"
+        },
+        {
+            name: "Japanese plum varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these Japanese plum varieties for low-input New Hampshire home orchards in approximate ripening order"
+        },
+        {
+            name: "Hybrid plum varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these hybrid plum varieties for low-input New Hampshire home orchards in approximate ripening order"
+        },
+        {
+            name: "Apricot varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists these apricot varieties for low-input New Hampshire home orchards in approximate ripening order"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Pristine",
+            category: "Apple scab-resistant apple varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Pristine in its apple scab-resistant apple varieties for new hampshire table"
+        },
+        {
+            type: "Apple",
+            name: "Redfree",
+            category: "Apple scab-resistant apple varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Redfree in its apple scab-resistant apple varieties for new hampshire table"
+        },
+        {
+            type: "Apple",
+            name: "Co-op 39",
+            category: "Apple scab-resistant apple varieties for New Hampshire",
+            AKA: ["CrimsonCrisp (tm)"],
+            description: "UNH Cooperative Extension lists CrimsonCrisp in its apple scab-resistant apple varieties for new hampshire table. Source names this as CrimsonCrisp"
+        },
+        {
+            type: "Apple",
+            name: "Wolf River",
+            category: "Apple scab-resistant apple varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Wolf River in its apple scab-resistant apple varieties for new hampshire table"
+        },
+        {
+            type: "Apple",
+            name: "Liberty",
+            category: "Apple scab-resistant apple varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Liberty in its apple scab-resistant apple varieties for new hampshire table"
+        },
+        {
+            type: "Apple",
+            name: "Crimson Gold",
+            category: "Apple scab-resistant apple varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Crimson Gold in its apple scab-resistant apple varieties for new hampshire table"
+        },
+        {
+            type: "Apple",
+            name: "Crimson Topaz",
+            category: "Apple scab-resistant apple varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Crimson Topaz in its apple scab-resistant apple varieties for new hampshire table"
+        },
+        {
+            type: "Apple",
+            name: "Galarina",
+            category: "Apple scab-resistant apple varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Galarina in its apple scab-resistant apple varieties for new hampshire table"
+        },
+        {
+            type: "Apple",
+            name: "Freedom",
+            category: "Apple scab-resistant apple varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Freedom in its apple scab-resistant apple varieties for new hampshire table"
+        },
+        {
+            type: "Apple",
+            name: "Enterprise",
+            category: "Apple scab-resistant apple varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Enterprise in its apple scab-resistant apple varieties for new hampshire table"
+        },
+        {
+            type: "Apple",
+            name: "Paulared",
+            category: "Moderate apple scab-resistant apple varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Paulared in its moderate apple scab-resistant apple varieties for new hampshire table"
+        },
+        {
+            type: "Apple",
+            name: "Akane",
+            category: "Moderate apple scab-resistant apple varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Akane in its moderate apple scab-resistant apple varieties for new hampshire table"
+        },
+        {
+            type: "Apple",
+            name: "Honeycrisp",
+            category: "Moderate apple scab-resistant apple varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Honeycrisp in its moderate apple scab-resistant apple varieties for new hampshire table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Sunrise",
+            category: "Fire blight-resistant pear varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Sunrise in its fire blight-resistant pear varieties for new hampshire table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Harrow Delight",
+            category: "Fire blight-resistant pear varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Harrow Delight in its fire blight-resistant pear varieties for new hampshire table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Moonglow",
+            category: "Fire blight-resistant pear varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Moonglow in its fire blight-resistant pear varieties for new hampshire table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Seckel",
+            category: "Fire blight-resistant pear varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Seckel in its fire blight-resistant pear varieties for new hampshire table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Blake's Pride",
+            category: "Fire blight-resistant pear varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Blake's Pride in its fire blight-resistant pear varieties for new hampshire table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Magness",
+            category: "Fire blight-resistant pear varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Magness in its fire blight-resistant pear varieties for new hampshire table"
+        },
+        {
+            type: "Euro Pear",
+            name: "Potomac",
+            category: "Fire blight-resistant pear varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Potomac in its fire blight-resistant pear varieties for new hampshire table"
+        },
+        {
+            type: "Peach",
+            name: "Reliance",
+            category: "Hardiest peach varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Reliance in its hardiest peach varieties for new hampshire table"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Hardiest peach varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Red Haven in its hardiest peach varieties for new hampshire table. Source names this as Red Haven"
+        },
+        {
+            type: "Peach",
+            name: "Madison",
+            category: "Hardiest peach varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Madison in its hardiest peach varieties for new hampshire table"
+        },
+        {
+            type: "Nectarine",
+            name: "Mericrest",
+            category: "Hardiest nectarine varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Mericrest in its hardiest nectarine varieties for new hampshire table"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Ridgewood",
+            category: "Hardiest sweet cherry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Black Gold in its hardiest sweet cherry varieties for new hampshire table. Source names this as Black Gold"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Hedelfinger",
+            category: "Hardiest sweet cherry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Hedelfinger in its hardiest sweet cherry varieties for new hampshire table"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Sam",
+            category: "Hardiest sweet cherry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Sam in its hardiest sweet cherry varieties for new hampshire table"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Lapins",
+            category: "Hardiest sweet cherry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Lapins in its hardiest sweet cherry varieties for new hampshire table"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Kristin",
+            category: "Hardiest sweet cherry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Kristin in its hardiest sweet cherry varieties for new hampshire table"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Hudson",
+            category: "Hardiest sweet cherry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Hudson in its hardiest sweet cherry varieties for new hampshire table"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Montmorency",
+            category: "Sour cherry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Montmorency in its sour cherry varieties for new hampshire table"
+        },
+        {
+            type: "Sour Cherry",
+            name: "North Star",
+            category: "Sour cherry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists North Star in its sour cherry varieties for new hampshire table"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Meteor",
+            category: "Sour cherry varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Meteor in its sour cherry varieties for new hampshire table"
+        },
+        {
+            type: "Euro Plum",
+            name: "Mount Royal",
+            category: "European plum varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Mount Royal in its european plum varieties for new hampshire table"
+        },
+        {
+            type: "Euro Plum",
+            name: "Green Gage",
+            category: "European plum varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Green Gage in its european plum varieties for new hampshire table"
+        },
+        {
+            type: "Euro Plum",
+            name: "Castleton",
+            category: "European plum varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Castleton in its european plum varieties for new hampshire table"
+        },
+        {
+            type: "Euro Plum",
+            name: "Longjohn",
+            category: "European plum varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Long John in its european plum varieties for new hampshire table. Source names this as Long John"
+        },
+        {
+            type: "Euro Plum",
+            name: "Bluebyrd",
+            category: "European plum varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists BlueByrd in its european plum varieties for new hampshire table. Source names this as BlueByrd"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Santa Rosa",
+            category: "Japanese plum varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Santa Rosa in its japanese plum varieties for new hampshire table"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Shiro",
+            category: "Japanese plum varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Shiro in its japanese plum varieties for new hampshire table"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ozark Premier",
+            category: "Japanese plum varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Ozark Premier in its japanese plum varieties for new hampshire table"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Burbank",
+            category: "Japanese plum varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Burbank in its japanese plum varieties for new hampshire table"
+        },
+        {
+            type: "Plum",
+            name: "Alderman",
+            category: "Hybrid plum varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Alderman in its hybrid plum varieties for new hampshire table"
+        },
+        {
+            type: "Plum",
+            name: "Superior",
+            category: "Hybrid plum varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Superior in its hybrid plum varieties for new hampshire table"
+        },
+        {
+            type: "Apricot",
+            name: "Hargrande",
+            category: "Apricot varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Hargrande in its apricot varieties for new hampshire table"
+        },
+        {
+            type: "Apricot",
+            name: "Goldcot",
+            category: "Apricot varieties for New Hampshire",
+            description: "UNH Cooperative Extension lists Goldcot in its apricot varieties for new hampshire table"
+        },
+    ]
+}

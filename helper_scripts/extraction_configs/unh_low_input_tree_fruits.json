@@ -1,0 +1,170 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource003728_Rep5308.pdf",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Growing Fruits: Low-Input Tree Fruits for NH Home Orchards"],
+    ["author", "William Lord; revised by Becky Sideman"],
+    ["description", "University of New Hampshire Cooperative Extension low-input tree-fruit guide for New Hampshire home orchards"],
+    ["url", "https://extension.unh.edu/sites/default/files/migrated_unmanaged_files/Resource003728_Rep5308.pdf"],
+    ["thumbnail", "pdf"],
+    ["published", "March 2017"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of New Hampshire Cooperative Extension, Durham, New Hampshire",
+      "latitude": 43.1389,
+      "longitude": -70.937
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple scab-resistant apple varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these apple scab-resistant apple varieties for low-input New Hampshire home orchards in approximate ripening order"
+    },
+    {
+      "name": "Moderate apple scab-resistant apple varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these moderately apple scab-resistant apple varieties for low-input New Hampshire home orchards in approximate ripening order"
+    },
+    {
+      "name": "Fire blight-resistant pear varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these fire blight-resistant pear varieties for low-input New Hampshire home orchards in approximate ripening order"
+    },
+    {
+      "name": "Hardiest peach varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these hardiest peach varieties for low-input New Hampshire home orchards in approximate ripening order"
+    },
+    {
+      "name": "Hardiest nectarine varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists this hardiest nectarine variety for low-input New Hampshire home orchards in approximate ripening order"
+    },
+    {
+      "name": "Hardiest sweet cherry varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these hardiest sweet cherry varieties for low-input New Hampshire home orchards in approximate ripening order"
+    },
+    {
+      "name": "Sour cherry varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these sour cherry varieties for low-input New Hampshire home orchards in approximate ripening order"
+    },
+    {
+      "name": "European plum varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these European plum varieties for low-input New Hampshire home orchards in approximate ripening order"
+    },
+    {
+      "name": "Japanese plum varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these Japanese plum varieties for low-input New Hampshire home orchards in approximate ripening order"
+    },
+    {
+      "name": "Hybrid plum varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these hybrid plum varieties for low-input New Hampshire home orchards in approximate ripening order"
+    },
+    {
+      "name": "Apricot varieties for New Hampshire",
+      "description": "UNH Cooperative Extension lists these apricot varieties for low-input New Hampshire home orchards in approximate ripening order"
+    }
+  ],
+  "name_overrides": {
+    "CrimsonCrisp": {
+      "name": "Co-op 39",
+      "aka": ["CrimsonCrisp (tm)"],
+      "note": "Source names this as CrimsonCrisp"
+    },
+    "Red Haven": {
+      "name": "Redhaven",
+      "note": "Source names this as Red Haven"
+    },
+    "BlueByrd": {
+      "name": "Bluebyrd",
+      "note": "Source names this as BlueByrd"
+    },
+    "Black Gold": {
+      "name": "Ridgewood",
+      "note": "Source names this as Black Gold"
+    },
+    "Long John": {
+      "name": "Longjohn",
+      "note": "Source names this as Long John"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_category_name_lists",
+      "section_start": "Table 2. Low input tree fruit varieties for New Hampshire",
+      "section_end": "1 Will ripen crop in southern half of NH only.",
+      "strip_name_footnotes": true,
+      "category_rules": [
+        {
+          "text": "Apple (Apple Scab Resistant)",
+          "category": "Apple scab-resistant apple varieties for New Hampshire",
+          "plant_type": "Apple"
+        },
+        {
+          "text": "Apple (Moderate Apple Scab Resistant)",
+          "category": "Moderate apple scab-resistant apple varieties for New Hampshire",
+          "plant_type": "Apple"
+        },
+        {
+          "text": "Pear (Fire Blight Resistant)",
+          "category": "Fire blight-resistant pear varieties for New Hampshire",
+          "plant_type": "Euro Pear"
+        },
+        {
+          "text": "Peach (Hardiest)",
+          "category": "Hardiest peach varieties for New Hampshire",
+          "plant_type": "Peach"
+        },
+        {
+          "text": "Nectarine (Hardiest)",
+          "category": "Hardiest nectarine varieties for New Hampshire",
+          "plant_type": "Nectarine"
+        },
+        {
+          "text": "Sweet Cherry (Hardiest)",
+          "category": "Hardiest sweet cherry varieties for New Hampshire",
+          "plant_type": "Sweet Cherry"
+        },
+        {
+          "text": "Sour Cherry European Plum",
+          "groups": [
+            {
+              "category": "Sour cherry varieties for New Hampshire",
+              "plant_type": "Sour Cherry"
+            },
+            {
+              "category": "European plum varieties for New Hampshire",
+              "plant_type": "Euro Plum",
+              "split_before": "Mount Royal"
+            }
+          ]
+        },
+        {
+          "prefix": "Japanese Plum ",
+          "parse_remainder": true,
+          "category": "Japanese plum varieties for New Hampshire",
+          "plant_type": "Japanese Plum"
+        },
+        {
+          "text": "Hybrid Plum Apricot",
+          "groups": [
+            {
+              "category": "Hybrid plum varieties for New Hampshire",
+              "plant_type": "Plum"
+            },
+            {
+              "category": "Apricot varieties for New Hampshire",
+              "plant_type": "Apricot",
+              "split_before": "Hargrande"
+            }
+          ]
+        }
+      ],
+      "description_template": "UNH Cooperative Extension lists {name} in its {category_lower} table"
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://extension.sdstate.edu/sites/default/files/2023-08/P-00041-2023.pdf",
+    "layout": true,
+    "layout_text": true
+  },
+  "reference_fields": [
+    ["title", "Fruit Variety Recommendations for South Dakota"],
+    ["author", "Rhoda Burrows"],
+    ["description", "South Dakota State University Extension cultivar recommendations for fruit crops in South Dakota; this draft covers selected small-fruit and shrub-fruit sections that parse cleanly from the PDF columns"],
+    ["url", "https://extension.sdstate.edu/fruit-variety-recommendations-south-dakota"],
+    ["thumbnail", "pdf"],
+    ["published", "August 2023"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "South Dakota State University Extension, Brookings, South Dakota",
+      "latitude": 44.3184,
+      "longitude": -96.7836
+    }
+  ],
+  "categories": [
+    {
+      "name": "Currant varieties for South Dakota",
+      "description": "SDSU Extension lists these currant varieties in its fruit variety recommendations for South Dakota"
+    },
+    {
+      "name": "Gooseberry varieties for South Dakota",
+      "description": "SDSU Extension lists these gooseberry varieties in its fruit variety recommendations for South Dakota"
+    },
+    {
+      "name": "Summer-fruiting raspberry varieties for South Dakota",
+      "description": "SDSU Extension lists these summer-fruiting raspberry varieties in its fruit variety recommendations for South Dakota"
+    },
+    {
+      "name": "Fall-fruiting raspberry varieties for South Dakota",
+      "description": "SDSU Extension lists these fall-fruiting raspberry varieties in its fruit variety recommendations for South Dakota"
+    },
+    {
+      "name": "Honeyberry and haskap varieties for South Dakota",
+      "description": "SDSU Extension lists these honeyberry and haskap varieties and says plantings should be considered experimental because honeyberry is new to South Dakota"
+    },
+    {
+      "name": "Dwarf tart cherry varieties for South Dakota",
+      "description": "SDSU Extension lists these dwarf tart cherry varieties and says adaptability knowledge is still limited for South Dakota"
+    }
+  ],
+  "name_overrides": {
+    "Consort.": {
+      "name": "Consort"
+    },
+    "Titiana": {
+      "name": "Titania",
+      "note": "Source names this as Titiana"
+    },
+    "Fall Gold": {
+      "name": "Fallgold",
+      "note": "Source names this as Fall Gold"
+    },
+    "Red Wing.": {
+      "name": "Redwing",
+      "note": "Source names this as Red Wing."
+    },
+    "Anne.": {
+      "name": "Anne"
+    },
+    "Heritage.": {
+      "name": "Heritage"
+    },
+    "Kiwi Gold (Heritage sport).": {
+      "name": "Kiwigold",
+      "note": "Source names this as Kiwi Gold (Heritage sport)"
+    },
+    "Solo `Kapu'": {
+      "name": "Solo",
+      "aka": ["Kapu"],
+      "note": "Source names this as Solo `Kapu'"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Small Fruit                                                            Gooseberries",
+      "section_end": "Strawberries",
+      "line_slice_end": 72,
+      "category_rules": [
+        {
+          "text": "Currants",
+          "category": "Currant varieties for South Dakota",
+          "plant_type": "Currant"
+        }
+      ],
+      "skip_line_patterns": [
+        "^Small Fruit",
+        "^Page \\d+",
+        "^Red Currant",
+        "^Photo courtesy",
+        "^Red and White",
+        "^second red",
+        "^Black currants",
+        "^currant varieties"
+      ],
+      "entry_names": [
+        "Pink Champagne",
+        "Minaj Smyriou",
+        "Ben Sarek",
+        "Red Lake",
+        "Consort.",
+        "Titiana",
+        "Blanka",
+        "Rovada",
+        "Lentaj"
+      ],
+      "harvest_from_key": "description",
+      "harvest_terms": ["Late season"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Small Fruit                                                            Gooseberries",
+      "section_end": "Strawberries",
+      "line_slice_start": 72,
+      "default_category": "Gooseberry varieties for South Dakota",
+      "default_plant_type": "Gooseberry",
+      "skip_line_patterns": [
+        "^ooseberries",
+        "^Jostaberry",
+        "^cross\\.",
+        "^Recommended only"
+      ],
+      "entry_names": [
+        "Hinnomaki Red",
+        "Jahn's Prairie",
+        "Black Velvet",
+        "Poorman",
+        "Welcome",
+        "Pixwell",
+        "Jewel"
+      ],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Raspberries                                                              Autumn Britten",
+      "section_end": "Page 8",
+      "line_slice_end": 69,
+      "category_rules": [
+        {
+          "text": "Summer-fruiting:",
+          "category": "Summer-fruiting raspberry varieties for South Dakota",
+          "plant_type": "Raspberry"
+        },
+        {
+          "text": "Fall-fruiting:",
+          "category": "Fall-fruiting raspberry varieties for South Dakota",
+          "plant_type": "Raspberry"
+        }
+      ],
+      "skip_line_patterns": [
+        "^Raspberries",
+        "^European red raspberry",
+        "^Photo by",
+        "^other diseases",
+        "^that ensures"
+      ],
+      "entry_names": [
+        "Autumn Bliss",
+        "Killarney",
+        "Prelude",
+        "Latham",
+        "Encore",
+        "Boyne",
+        "Nova"
+      ],
+      "harvest_from_key": "description",
+      "harvest_terms": ["early summer", "Early to mid-season", "Mid-season", "Late season"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Raspberries                                                              Autumn Britten",
+      "section_end": "The following fall-fruiting",
+      "line_slice_start": 69,
+      "default_category": "Fall-fruiting raspberry varieties for South Dakota",
+      "default_plant_type": "Raspberry",
+      "skip_line_patterns": [
+        "^The following",
+        "^very late season",
+        "^they should",
+        "^South Dakota"
+      ],
+      "entry_names": [
+        "Double Delight",
+        "Autumn Britten",
+        "Fall Gold",
+        "Red Wing.",
+        "Caroline",
+        "Polana"
+      ],
+      "harvest_from_key": "description",
+      "harvest_terms": ["early yield", "Early fall", "three weeks before Heritage"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "The following fall-fruiting",
+      "section_end": "Purple raspberries:",
+      "line_slice_start": 69,
+      "default_category": "Fall-fruiting raspberry varieties for South Dakota",
+      "default_plant_type": "Raspberry",
+      "skip_line_patterns": [
+        "^The following",
+        "^very late season",
+        "^they should",
+        "^South Dakota"
+      ],
+      "entry_names": [
+        "Kiwi Gold (Heritage sport).",
+        "Heritage.",
+        "Anne."
+      ],
+      "harvest_from_key": "description",
+      "harvest_terms": ["very late", "same time as Heritage"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Early to Mid-season bloom",
+      "section_end": "Page 10",
+      "line_slice_end": 69,
+      "category_rules": [
+        {
+          "text": "Early to Mid-season bloom",
+          "category": "Honeyberry and haskap varieties for South Dakota",
+          "plant_type": "Honeyberry"
+        },
+        {
+          "text": "Later Season (Japanese selections)",
+          "category": "Honeyberry and haskap varieties for South Dakota",
+          "plant_type": "Honeyberry"
+        }
+      ],
+      "skip_line_patterns": [
+        "^Note:",
+        "^considerable sunburn"
+      ],
+      "entry_names": [
+        "Boreal Beast",
+        "Indigo Treat",
+        "Honey Bee",
+        "Solo `Kapu'",
+        "Borealis",
+        "Aurora",
+        "Maxie",
+        "Keiko"
+      ],
+      "harvest_from_key": "description",
+      "harvest_terms": ["Early", "Mid-to late season", "Later Season"],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Tart Cherries (dwarf/shrub)",
+      "section_end": "Nanking cherry",
+      "line_slice_start": 69,
+      "default_category": "Dwarf tart cherry varieties for South Dakota",
+      "default_plant_type": "Sour Cherry",
+      "skip_line_patterns": [
+        "^Tart Cherries",
+        "^of Saskatchewan",
+        "^will browse",
+        "^South Dakota",
+        "^adaptability",
+        "^Nanking"
+      ],
+      "entry_names": [
+        "Carmine Jewel",
+        "Lutowka Rose",
+        "Juliet",
+        "Romeo"
+      ],
+      "description_key": "description"
+    }
+  ]
+}

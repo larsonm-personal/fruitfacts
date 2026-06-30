@@ -1,0 +1,323 @@
+{
+    title: "Fruit Variety Recommendations for South Dakota",
+    author: "Rhoda Burrows",
+    description: "South Dakota State University Extension cultivar recommendations for fruit crops in South Dakota; this draft covers selected small-fruit and shrub-fruit sections that parse cleanly from the PDF columns",
+    url: "https://extension.sdstate.edu/fruit-variety-recommendations-south-dakota",
+    thumbnail: "pdf",
+    published: "August 2023",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "South Dakota State University Extension, Brookings, South Dakota",
+            latitude: 44.3184,
+            longitude: -96.7836
+        },
+    ],
+    categories: [
+        {
+            name: "Currant varieties for South Dakota",
+            description: "SDSU Extension lists these currant varieties in its fruit variety recommendations for South Dakota"
+        },
+        {
+            name: "Gooseberry varieties for South Dakota",
+            description: "SDSU Extension lists these gooseberry varieties in its fruit variety recommendations for South Dakota"
+        },
+        {
+            name: "Summer-fruiting raspberry varieties for South Dakota",
+            description: "SDSU Extension lists these summer-fruiting raspberry varieties in its fruit variety recommendations for South Dakota"
+        },
+        {
+            name: "Fall-fruiting raspberry varieties for South Dakota",
+            description: "SDSU Extension lists these fall-fruiting raspberry varieties in its fruit variety recommendations for South Dakota"
+        },
+        {
+            name: "Honeyberry and haskap varieties for South Dakota",
+            description: "SDSU Extension lists these honeyberry and haskap varieties and says plantings should be considered experimental because honeyberry is new to South Dakota"
+        },
+        {
+            name: "Dwarf tart cherry varieties for South Dakota",
+            description: "SDSU Extension lists these dwarf tart cherry varieties and says adaptability knowledge is still limited for South Dakota"
+        },
+    ],
+    plants: [
+        {
+            type: "Currant",
+            name: "Blanka",
+            category: "Currant varieties for South Dakota",
+            description: "White fruit, heavy yields on vigorous plants"
+        },
+        {
+            type: "Currant",
+            name: "Red Lake",
+            category: "Currant varieties for South Dakota",
+            description: "Vigorous upright shrub with clusters of large, bright red berries; susceptible to powdery mildew"
+        },
+        {
+            type: "Currant",
+            name: "Pink Champagne",
+            category: "Currant varieties for South Dakota",
+            description: "Light pink berries; good fresh or processed"
+        },
+        {
+            type: "Currant",
+            name: "Rovada",
+            category: "Currant varieties for South Dakota",
+            harvest_time_unparsed: "Late season, very large red fruit; resistant to powdery mildew and other leaf diseases.",
+            description: "Late season, very large red fruit; resistant to powdery mildew and other leaf diseases"
+        },
+        {
+            type: "Currant",
+            name: "Ben Sarek",
+            category: "Currant varieties for South Dakota",
+            description: "Very hardy compact plants, large soft fruit; good flavor; self-fertile; some susceptibility to white pine blister rust"
+        },
+        {
+            type: "Currant",
+            name: "Consort",
+            category: "Currant varieties for South Dakota",
+            description: "Resistant to white pine blister rust, susceptible to mildew. Strong bitter flavor. Moderate hardiness"
+        },
+        {
+            type: "Currant",
+            name: "Lentaj",
+            category: "Currant varieties for South Dakota",
+            description: "Hardy to -40 F, self-fertile, mild, sweet flavor"
+        },
+        {
+            type: "Currant",
+            name: "Minaj Smyriou",
+            category: "Currant varieties for South Dakota",
+            description: "Very hardy; Resistant to white pine blister rust; fruit somewhat dry"
+        },
+        {
+            type: "Currant",
+            name: "Titania",
+            category: "Currant varieties for South Dakota",
+            description: "Very good resistance to white pine blister rust; heavy yield of good quality sweet-tart fruit. Source names this as Titiana"
+        },
+        {
+            type: "Gooseberry",
+            name: "Pixwell",
+            category: "Gooseberry varieties for South Dakota",
+            description: "Medium-sized pinkish berries; bland flavor; has relatively few thorns"
+        },
+        {
+            type: "Gooseberry",
+            name: "Hinnomaki Red",
+            category: "Gooseberry varieties for South Dakota",
+            description: "Good flavor and high yield; deep red, almost purple berries; good disease resistance"
+        },
+        {
+            type: "Gooseberry",
+            name: "Poorman",
+            category: "Gooseberry varieties for South Dakota",
+            description: "Berries red with good flavor; sturdy, vigorous but thorny bush"
+        },
+        {
+            type: "Gooseberry",
+            name: "Welcome",
+            category: "Gooseberry varieties for South Dakota",
+            description: "Very hardy with few thorns. Berries light dull red, larger than Pixwell"
+        },
+        {
+            type: "Gooseberry",
+            name: "Jewel",
+            category: "Gooseberry varieties for South Dakota",
+            description: "Polish variety with peach-colored intensely flavored fruit, good disease resistance, compact growth"
+        },
+        {
+            type: "Gooseberry",
+            name: "Black Velvet",
+            category: "Gooseberry varieties for South Dakota",
+            description: "Very hardy; sweet dark-red fruit; disease resistant"
+        },
+        {
+            type: "Gooseberry",
+            name: "Jahn's Prairie",
+            category: "Gooseberry varieties for South Dakota",
+            description: "Very hardy; large sweet reddish-pink fruit; 5 ft. tall bush; resistant to mildew"
+        },
+        {
+            type: "Raspberry",
+            name: "Prelude",
+            category: "Summer-fruiting raspberry varieties for South Dakota",
+            harvest_time_unparsed: "Technically fall bearing, but produces biggest portion of crop in early summer (late June?) on floricanes.",
+            description: "Technically fall bearing, but produces biggest portion of crop in early summer (late June?) on floricanes. Hardy in warmer areas of state, medium to large berries, variable flavor. Vigorous plants. Resistant to root rots"
+        },
+        {
+            type: "Raspberry",
+            name: "Boyne",
+            category: "Summer-fruiting raspberry varieties for South Dakota",
+            harvest_time_unparsed: "Early to mid-season.",
+            description: "Early to mid-season. Berries are medium- sized, dark-red, sweet. Very hardy; productive; suckers freely. Susceptible to anthracnose and fire blight. Fruit can be quite small, freezes well. Upright, short, very spiny canes"
+        },
+        {
+            type: "Raspberry",
+            name: "Latham",
+            category: "Summer-fruiting raspberry varieties for South Dakota",
+            description: "Bright red fruit opens over long period; very good for processing but not fresh eating. Fruit can be quite small. Spiny canes; vigorous plants require trellis. Not as productive, but disease- resistant, except for viruses. Hardy"
+        },
+        {
+            type: "Raspberry",
+            name: "Nova",
+            category: "Summer-fruiting raspberry varieties for South Dakota",
+            harvest_time_unparsed: "Early to mid-season.",
+            description: "Early to mid-season. Bright-red medium to large firm fruit, somewhat acidic. Stores very well. Very few spines; vigorous; with high yield. Hardy and disease resistant. Very reliable. May be particular attractive to deer!"
+        },
+        {
+            type: "Raspberry",
+            name: "Killarney",
+            category: "Summer-fruiting raspberry varieties for South Dakota",
+            harvest_time_unparsed: "Mid-season; very productive; very bright red firm fruit that softens in hot weather.",
+            description: "Mid-season; very productive; very bright red firm fruit that softens in hot weather. Fair flavor, tends to turn brown if canned. Susceptible to anthracnose and mildew, but resistant to root rots. Canes are medium short, spiny, and very hardy. High yielding"
+        },
+        {
+            type: "Raspberry",
+            name: "Encore",
+            category: "Summer-fruiting raspberry varieties for South Dakota",
+            harvest_time_unparsed: "Late season; Large sweet berries; vigorous, nearly thornless canes.",
+            description: "Late season; Large sweet berries; vigorous, nearly thornless canes. Moderately hardy. Moderately susceptible to root rots"
+        },
+        {
+            type: "Raspberry",
+            name: "Autumn Bliss",
+            category: "Fall-fruiting raspberry varieties for South Dakota",
+            description: "Large dark red to purplish fruit; good tart flavor; fruit freezes well. Spiny canes, medium height. High yield. Susceptible to crumbly fruit virus, otherwise very reliable"
+        },
+        {
+            type: "Raspberry",
+            name: "Autumn Britten",
+            category: "Fall-fruiting raspberry varieties for South Dakota",
+            harvest_time_unparsed: "Medium to dark red fruit; early yield.",
+            description: "Medium to dark red fruit; early yield. Compared to Autumn Bliss, it has fewer spines, better quality fruit, less vigorous canes and lower yielding (plant closer together to compensate)"
+        },
+        {
+            type: "Raspberry",
+            name: "Caroline",
+            category: "Fall-fruiting raspberry varieties for South Dakota",
+            description: "Large, long red fruit, sweet with fair flavor and shelf life; freezes well. Some disease resistance; good yield, but late for northern areas. Sensitive to drought. Moderate to good resistance to Phytophthora root rot"
+        },
+        {
+            type: "Raspberry",
+            name: "Double Delight",
+            category: "Fall-fruiting raspberry varieties for South Dakota",
+            description: "Early, high yielding (smallish fruit, but many double fruit), medium-red fruit, hardy"
+        },
+        {
+            type: "Raspberry",
+            name: "Fallgold",
+            category: "Fall-fruiting raspberry varieties for South Dakota",
+            description: "Medium fruit, yellow with pink blush, soft, with excellent very sweet flavor; poor for processing. Vigorous canes; suckers profusely. Source names this as Fall Gold"
+        },
+        {
+            type: "Raspberry",
+            name: "Polana",
+            category: "Fall-fruiting raspberry varieties for South Dakota",
+            harvest_time_unparsed: "Early fall (three weeks before Heritage).",
+            description: "Early fall (three weeks before Heritage). Large, bright red fruit; good flavor. Many double fruits. Short canes with high yield. Thrives under high soil fertility. Susceptible to Verticillium wilt and Phytophthora crown rots"
+        },
+        {
+            type: "Raspberry",
+            name: "Redwing",
+            category: "Fall-fruiting raspberry varieties for South Dakota",
+            description: "Very productive in areas with later fall frosts (fruits later than Autumn Bliss but before Heritage. Fruit tends to be soft; doesn't ship well. Tall canes with high yield. Susceptible to anthracnose cut all canes to ground during the winter. Source names this as Red Wing."
+        },
+        {
+            type: "Raspberry",
+            name: "Anne",
+            category: "Fall-fruiting raspberry varieties for South Dakota",
+            description: "Large, yellow, excellently flavored fruit; slightly earlier than Heritage; slow-growing, relatively low yield, but disease resistant"
+        },
+        {
+            type: "Raspberry",
+            name: "Heritage",
+            category: "Fall-fruiting raspberry varieties for South Dakota",
+            harvest_time_unparsed: "Good quality bright red fruit; taller canes, requires trellis; very late.",
+            description: "Good quality bright red fruit; taller canes, requires trellis; very late"
+        },
+        {
+            type: "Raspberry",
+            name: "Kiwigold",
+            category: "Fall-fruiting raspberry varieties for South Dakota",
+            harvest_time_unparsed: "Medium to large peachy yellow berries with excellent flavor; ripens same time as Heritage.",
+            description: "Medium to large peachy yellow berries with excellent flavor; ripens same time as Heritage. Source names this as Kiwi Gold (Heritage sport)"
+        },
+        {
+            type: "Honeyberry",
+            name: "Aurora",
+            category: "Honeyberry and haskap varieties for South Dakota",
+            description: "Large firm relatively sweet berries, upright growth to 6 ft., hybrid of Japanese and Russian varieties, at least partially self-fruitful, uneven ripening, good yields, mildew resistant"
+        },
+        {
+            type: "Honeyberry",
+            name: "Borealis",
+            category: "Honeyberry and haskap varieties for South Dakota",
+            description: "Large \"sweetly sour\" fruit, good pollinator for Aurora (1 Borealis plant can pollinate 8 Aurora), somewhat susceptible to powdery mildew"
+        },
+        {
+            type: "Honeyberry",
+            name: "Boreal Beast",
+            category: "Honeyberry and haskap varieties for South Dakota",
+            harvest_time_unparsed: "Mid-to late season; Large, sweet-tart fruit; upright shrub",
+            description: "Mid-to late season; Large, sweet-tart fruit; upright shrub"
+        },
+        {
+            type: "Honeyberry",
+            name: "Honey Bee",
+            category: "Honeyberry and haskap varieties for South Dakota",
+            description: "Large tart berries, upright growth to 5 ft., leaves resistant to sunburn and mildew; good pollinizer"
+        },
+        {
+            type: "Honeyberry",
+            name: "Indigo Treat",
+            category: "Honeyberry and haskap varieties for South Dakota",
+            harvest_time_unparsed: "Sweet-tart firm berries; very early; some tolerance to mildew and sunburn",
+            description: "Sweet-tart firm berries; very early; some tolerance to mildew and sunburn"
+        },
+        {
+            type: "Honeyberry",
+            name: "Solo",
+            category: "Honeyberry and haskap varieties for South Dakota",
+            AKA: ["Kapu"],
+            description: "Self-fruitful (but has larger berries with pollinizer); sweet-tart firm berry; a YezBerryTM cultivar. Source names this as Solo `Kapu'"
+        },
+        {
+            type: "Honeyberry",
+            name: "Maxie",
+            category: "Honeyberry and haskap varieties for South Dakota",
+            description: "Very large sweet-tart fruit; a YezBerryTM cultivar"
+        },
+        {
+            type: "Honeyberry",
+            name: "Keiko",
+            category: "Honeyberry and haskap varieties for South Dakota",
+            description: "Sweet, medium-large berries; susceptible to powdery mildew"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Carmine Jewel",
+            category: "Dwarf tart cherry varieties for South Dakota",
+            description: "Productive, sweet dark red fruit"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Juliet",
+            category: "Dwarf tart cherry varieties for South Dakota",
+            description: "Sweeter fruit"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Romeo",
+            category: "Dwarf tart cherry varieties for South Dakota",
+            description: "Sweeter smaller fruit"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Lutowka Rose",
+            category: "Dwarf tart cherry varieties for South Dakota",
+            description: "Larger fruit"
+        },
+    ]
+}
