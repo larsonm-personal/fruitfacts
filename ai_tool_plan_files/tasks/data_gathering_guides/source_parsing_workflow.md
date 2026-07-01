@@ -753,3 +753,27 @@ leaves following cells blank while preserving row width. The
 category mapping. This is different from row-spanning tables where following
 rows are one cell short and `fill_leading_group_cells` is still the better
 tool.
+
+## USU Grape And Montana WARC Notes
+
+The USU grape page is a multi-table HTML source where several tables share the
+same cultivar columns, harvest-code legend, and footnote suffixes. The config
+runner now lets top-level `name_suffix_notes` and `harvest_value_map` flow down
+to extractors unless an extractor overrides them. This keeps repeated table
+extractors small while still stripping use suffixes such as J, W, R, and T
+from names and expanding harvest codes such as E, M, and L into source-visible
+phrases.
+
+The Montana WARC fruit research sites source is a routed project site. The
+committed reference keeps the project landing page as the citation URL, while
+each extractor fetches the linked cultivar-description child page. Use
+extractor-level `source` fields for this shape instead of making separate
+references for every child page.
+
+The Montana cultivar page uses quoted paragraph blocks under fruit headings.
+Apple, pear, plum, and sour cherry sections can be parsed with repeated
+`quoted_paragraph_blocks` extractors. Named plum cultivars should remain
+ordinary cultivated plum records, such as Euro Plum or Japanese Plum, rather
+than Species Plum. Source symbols for fire-blight susceptibility are retained
+in descriptions as caveats instead of being interpreted as structured disease
+ratings.

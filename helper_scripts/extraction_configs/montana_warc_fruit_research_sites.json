@@ -1,0 +1,168 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://agresearch.montana.edu/warc/research_current/msu-ext-fruit-research-sites/index.html"
+  },
+  "reference_fields": [
+    ["title", "MSU Extension Fruit Research Sites"],
+    ["author", "Toby Day and Brent Sarchet"],
+    [
+      "description",
+      "Montana State University Western Agricultural Research Center tree fruit trial network with cultivar descriptions for apple, pear, plum, and sour cherry entries in the research sites project. Source symbols *, **, ***, and ?? are fire-blight susceptibility or unknown-susceptibility codes"
+    ],
+    [
+      "url",
+      "https://agresearch.montana.edu/warc/research_current/msu-ext-fruit-research-sites/index.html"
+    ],
+    ["thumbnail", "website"],
+    ["accessed", "Jun 2026"],
+    ["type", "extension test"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Western Agricultural Research Center, Corvallis, Montana",
+      "latitude": 46.3142,
+      "longitude": -114.1141
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple cultivars in MSU Extension fruit research sites",
+      "description": "Apple cultivars described for the MSU Extension fruit research sites project"
+    },
+    {
+      "name": "Pear cultivars in MSU Extension fruit research sites",
+      "description": "Pear cultivars described for the MSU Extension fruit research sites project"
+    },
+    {
+      "name": "Plum cultivars in MSU Extension fruit research sites",
+      "description": "Plum cultivars described for the MSU Extension fruit research sites project"
+    },
+    {
+      "name": "Sour cherry cultivars in MSU Extension fruit research sites",
+      "description": "Sour cherry cultivars described for the MSU Extension fruit research sites project"
+    }
+  ],
+  "name_overrides": {
+    "Blondee": {
+      "name": "McLaughlin Gala",
+      "note": "Source names this apple Blondee"
+    },
+    "Zestar!": {
+      "name": "Minnewashta",
+      "note": "Source names this apple Zestar!"
+    },
+    "Ruby Mac": {
+      "name": "RubyMac",
+      "note": "Source names this apple Ruby Mac"
+    },
+    "Evans Bali": {
+      "name": "Bali",
+      "aka": ["Evans Bali"],
+      "note": "Source names this sour cherry Evans Bali"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "quoted_paragraph_blocks",
+      "source": {
+        "kind": "html",
+        "url": "https://agresearch.montana.edu/warc/research_current/msu-ext-fruit-research-sites/MSU_Extension_Fruit_Research_Cultivars.html"
+      },
+      "start_heading": "Apple",
+      "end_heading": "Pear",
+      "default_category": "Apple cultivars in MSU Extension fruit research sites",
+      "plant_type": "Apple",
+      "trim_name": true,
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "MSU Extension fruit research sites describe this apple cultivar"
+        },
+        {
+          "kind": "key",
+          "key": "description",
+          "rstrip_period": false
+        }
+      ]
+    },
+    {
+      "kind": "quoted_paragraph_blocks",
+      "source": {
+        "kind": "html",
+        "url": "https://agresearch.montana.edu/warc/research_current/msu-ext-fruit-research-sites/MSU_Extension_Fruit_Research_Cultivars.html"
+      },
+      "start_heading": "Pear",
+      "end_heading": "Plum",
+      "default_category": "Pear cultivars in MSU Extension fruit research sites",
+      "plant_type": "Euro Pear",
+      "trim_name": true,
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "MSU Extension fruit research sites describe this pear cultivar"
+        },
+        {
+          "kind": "key",
+          "key": "description",
+          "rstrip_period": false
+        }
+      ]
+    },
+    {
+      "kind": "quoted_paragraph_blocks",
+      "source": {
+        "kind": "html",
+        "url": "https://agresearch.montana.edu/warc/research_current/msu-ext-fruit-research-sites/MSU_Extension_Fruit_Research_Cultivars.html"
+      },
+      "start_heading": "Plum",
+      "end_heading": "Sour Cherry",
+      "default_category": "Plum cultivars in MSU Extension fruit research sites",
+      "plant_type": {
+        "row_key": "name",
+        "map": {
+          "Mount Royal": "Euro Plum",
+          "Pipestone": "Japanese Plum",
+          "Toka": "Japanese Plum"
+        },
+        "default": "Japanese Plum"
+      },
+      "trim_name": true,
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "MSU Extension fruit research sites describe this plum cultivar"
+        },
+        {
+          "kind": "key",
+          "key": "description",
+          "rstrip_period": false
+        }
+      ]
+    },
+    {
+      "kind": "quoted_paragraph_blocks",
+      "source": {
+        "kind": "html",
+        "url": "https://agresearch.montana.edu/warc/research_current/msu-ext-fruit-research-sites/MSU_Extension_Fruit_Research_Cultivars.html"
+      },
+      "start_heading": "Sour Cherry",
+      "end_heading": "Western Ag Research Center",
+      "default_category": "Sour cherry cultivars in MSU Extension fruit research sites",
+      "plant_type": "Sour Cherry",
+      "trim_name": true,
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "MSU Extension fruit research sites describe this sour cherry cultivar"
+        },
+        {
+          "kind": "key",
+          "key": "description",
+          "rstrip_period": false
+        }
+      ]
+    }
+  ]
+}

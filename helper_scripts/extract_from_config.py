@@ -55,6 +55,9 @@ def merged_extractor(config, extractor):
     text_fixes.update(extractor.get("text_fixes", {}))
     if text_fixes:
         merged["text_fixes"] = text_fixes
+    for key in ("name_suffix_notes", "harvest_value_map"):
+        if key in config and key not in merged:
+            merged[key] = config[key]
     return merged
 
 
@@ -429,7 +432,8 @@ def harvest_time(row, extractor, lookups):
         if lookup_row:
             return lookup_row.get(lookup["key"])
     if extractor.get("harvest_key"):
-        return row.get(extractor["harvest_key"])
+        value = row.get(extractor["harvest_key"])
+        return extractor.get("harvest_value_map", {}).get(value, value)
     if extractor.get("harvest_from_key"):
         text = row.get(extractor.get("harvest_from_key", "description"), "")
         if extractor.get("harvest_term_priority"):

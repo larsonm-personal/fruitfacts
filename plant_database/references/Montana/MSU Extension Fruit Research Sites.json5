@@ -1,0 +1,208 @@
+{
+    title: "MSU Extension Fruit Research Sites",
+    author: "Toby Day and Brent Sarchet",
+    description: "Montana State University Western Agricultural Research Center tree fruit trial network with cultivar descriptions for apple, pear, plum, and sour cherry entries in the research sites project. Source symbols *, **, ***, and ?? are fire-blight susceptibility or unknown-susceptibility codes",
+    url: "https://agresearch.montana.edu/warc/research_current/msu-ext-fruit-research-sites/index.html",
+    thumbnail: "website",
+    accessed: "Jun 2026",
+    type: "extension test",
+    needs_help: true,
+    locations: [
+        {
+            name: "Western Agricultural Research Center, Corvallis, Montana",
+            latitude: 46.3142,
+            longitude: -114.1141
+        },
+    ],
+    categories: [
+        {
+            name: "Apple cultivars in MSU Extension fruit research sites",
+            description: "Apple cultivars described for the MSU Extension fruit research sites project"
+        },
+        {
+            name: "Pear cultivars in MSU Extension fruit research sites",
+            description: "Pear cultivars described for the MSU Extension fruit research sites project"
+        },
+        {
+            name: "Plum cultivars in MSU Extension fruit research sites",
+            description: "Plum cultivars described for the MSU Extension fruit research sites project"
+        },
+        {
+            name: "Sour cherry cultivars in MSU Extension fruit research sites",
+            description: "Sour cherry cultivars described for the MSU Extension fruit research sites project"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Arkansas Black",
+            description: "MSU Extension fruit research sites describe this apple cultivar. Old cultivar discovered in Arkansas in 1870; known for good storage. *"
+        },
+        {
+            type: "Apple",
+            name: "McLaughlin Gala",
+            description: "MSU Extension fruit research sites describe this apple cultivar. Cultivar discovered in Ohio in 1998; early ripening. ??. Source names this apple Blondee"
+        },
+        {
+            type: "Apple",
+            name: "Carroll",
+            description: "MSU Extension fruit research sites describe this apple cultivar. 'Moscow' pear x 'Melba' cross developed at the Experimental Farm in Morden, Manitoba in 1961. Excellent eating apple. Not as vigorous as other apple cultivars. ***"
+        },
+        {
+            type: "Apple",
+            name: "Chestnut Crab",
+            description: "MSU Extension fruit research sites describe this apple cultivar. University of Minnesota release in 1949. ***"
+        },
+        {
+            type: "Apple",
+            name: "Cox's Orange Pippin",
+            description: "MSU Extension fruit research sites describe this apple cultivar. Originates to England in 1825. **"
+        },
+        {
+            type: "Apple",
+            name: "Frostbite",
+            description: "MSU Extension fruit research sites describe this apple cultivar. A 'Malinda' seedling released from the University of Minnesota in 2008; grandparent of 'Honeycrisp' and parent of 'Keepsake' and 'Sweet 16.' ??"
+        },
+        {
+            type: "Apple",
+            name: "Gale Gala",
+            description: "MSU Extension fruit research sites describe this apple cultivar. A 'Gala' sport discovered by Wally Gale in his Malaga, WA orchard. **"
+        },
+        {
+            type: "Apple",
+            name: "Ginger Gold",
+            description: "MSU Extension fruit research sites describe this apple cultivar. A seedling discovered in the Harvey orchard near Lovingston, Virginia in 1980. *"
+        },
+        {
+            type: "Apple",
+            name: "Goodland",
+            description: "MSU Extension fruit research sites describe this apple cultivar. Developed from a 'Patten Greening' seedling at the Experimental Farm in Morden, Manitoba in 1931. Excellent eating apple, and excellent cold hardiness. Best performing apple cultivar in the research. **"
+        },
+        {
+            type: "Apple",
+            name: "Good Mac",
+            description: "MSU Extension fruit research sites describe this apple cultivar. 'Goodland' x 'McIntosh' cross released from the Experimental Farm in Morden, Manitoba; one of the best performing apple cultivars in the trial. ***"
+        },
+        {
+            type: "Apple",
+            name: "Gravenstein",
+            description: "MSU Extension fruit research sites describe this apple cultivar. Old cultivar originating from Denmark in the 1700's. Questionable cold hardiness east of the divide. **"
+        },
+        {
+            type: "Apple",
+            name: "Honeycrisp",
+            description: "MSU Extension fruit research sites describe this apple cultivar. 'Macoun' x 'Honeygold' release from the University of Minnesota in 1991. **"
+        },
+        {
+            type: "Apple",
+            name: "Northern Lights",
+            description: "MSU Extension fruit research sites describe this apple cultivar. 'Haralson' x 'McIntosh' cross made in 1938 at Geneva, New York and introduced from North Dakota State University in 1990. It has not performed in the research; we have had to replace them frequently from winter kill. ***"
+        },
+        {
+            type: "Apple",
+            name: "Mutsu",
+            description: "MSU Extension fruit research sites describe this apple cultivar. 'Golden Delicious' x 'Indo' cross developed from the Aomori Apple Experiment Station in Japan, 1937. **"
+        },
+        {
+            type: "Apple",
+            name: "Prairie Magic",
+            description: "MSU Extension fruit research sites describe this apple cultivar. 'Goodland' x 'Mantet' cross released by Mr. Wilfred Drysdale of Neepawa, Manitoba. Limited number of propagators. ??"
+        },
+        {
+            type: "Apple",
+            name: "RubyMac",
+            description: "MSU Extension fruit research sites describe this apple cultivar. 'McIntosh' sport. ***. Source names this apple Ruby Mac"
+        },
+        {
+            type: "Apple",
+            name: "Smokehouse",
+            description: "MSU Extension fruit research sites describe this apple cultivar. Old cultivar discovered in Pennsylvania in 1837. ***"
+        },
+        {
+            type: "Apple",
+            name: "Stayman Winesap #20",
+            description: "MSU Extension fruit research sites describe this apple cultivar. A cultivar of the original 'Stayman Winesap' discovered by Dr. J Stayman of Leavenworth, Kansas in 1886. Known for its long shelf life. **"
+        },
+        {
+            type: "Apple",
+            name: "Sweet 16",
+            description: "MSU Extension fruit research sites describe this apple cultivar. University of Minnesota release in 1977; good cold hardiness. ***"
+        },
+        {
+            type: "Apple",
+            name: "Wealthy",
+            description: "MSU Extension fruit research sites describe this apple cultivar. Old seedling cultivar discovered in 1869 in Minnesota; a popular choice in many of Montana's first orchards. It is still a dominate cultivar in heritage orchards located across the state where trees are 100 plus years old. *"
+        },
+        {
+            type: "Apple",
+            name: "Minnewashta",
+            description: "MSU Extension fruit research sites describe this apple cultivar. 'State Fair' x 'Minnesota 1691' cross released from University of Minnesota in 1999. One of the best apple cultivars in the trial; great flavor; good cold hardiness. **. Source names this apple Zestar!"
+        },
+        {
+            type: "Euro Pear",
+            name: "Clapp's Favorite",
+            description: "MSU Extension fruit research sites describe this pear cultivar. Discovered in Massachusetts in the 1800s. *"
+        },
+        {
+            type: "Euro Pear",
+            name: "Flemish Beauty",
+            description: "MSU Extension fruit research sites describe this pear cultivar. A seedling discovered in Belgium in the early 1800's; very cold hardy with excellent fruit; few propagators of this cultivar. *"
+        },
+        {
+            type: "Euro Pear",
+            name: "Golden Spice",
+            description: "MSU Extension fruit research sites describe this pear cultivar. A release from the University of Minnesota in 1949; best performing pear cultivars in our research; small fruit but makes a wonderful cider and is very cold hardy. ??"
+        },
+        {
+            type: "Euro Pear",
+            name: "John",
+            description: "MSU Extension fruit research sites describe this pear cultivar. 'Aspa' x 'Siberian' pear cross released from the University of Saskatchewan in 1960; vigorous growth, very cold hardy, early blooms (late April in Helena area) are susceptible to frost damage. ??"
+        },
+        {
+            type: "Euro Pear",
+            name: "Luscious",
+            description: "MSU Extension fruit research sites describe this pear cultivar. A South Dakota State University release; questionable cold hardiness east of the divide. **"
+        },
+        {
+            type: "Euro Pear",
+            name: "Parker",
+            description: "MSU Extension fruit research sites describe this pear cultivar. A University of Minnesota release in 1934; questionable cold hardiness east of the divide. ??"
+        },
+        {
+            type: "Euro Pear",
+            name: "Patten",
+            description: "MSU Extension fruit research sites describe this pear cultivar. Seedling discovered in Iowa; questionable cold hardiness east of the divide. ??"
+        },
+        {
+            type: "Euro Pear",
+            name: "Pioneer",
+            description: "MSU Extension fruit research sites describe this pear cultivar. Developed by A.L. Young of Brooks, Alberta in 1936; good cold hardiness. ??"
+        },
+        {
+            type: "Euro Pear",
+            name: "Ure",
+            description: "MSU Extension fruit research sites describe this pear cultivar. A release of the Morden, Manitoba Research Station in 1978. ??"
+        },
+        {
+            type: "Euro Plum",
+            name: "Mount Royal",
+            description: "MSU Extension fruit research sites describe this plum cultivar. A European plum with dark blue fruit."
+        },
+        {
+            type: "Japanese Plum",
+            name: "Pipestone",
+            description: "MSU Extension fruit research sites describe this plum cultivar. A University of Minnesota release in 1942."
+        },
+        {
+            type: "Japanese Plum",
+            name: "Toka",
+            description: "MSU Extension fruit research sites describe this plum cultivar. A Prunus americana x simonii cross introduced in 1911 by Dr. Neils Hansen."
+        },
+        {
+            type: "Sour Cherry",
+            name: "Bali",
+            AKA: ["Evans Bali"],
+            description: "MSU Extension fruit research sites describe this sour cherry cultivar. Discovered by Leuan Evans in an old orchard near Edmonton, Alberta, Canada in 1920s. Source names this sour cherry Evans Bali"
+        },
+    ]
+}

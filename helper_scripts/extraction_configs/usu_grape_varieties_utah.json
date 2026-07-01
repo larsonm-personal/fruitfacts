@@ -1,0 +1,284 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.usu.edu/yardandgarden/research/grapes-in-utah"
+  },
+  "reference_fields": [
+    ["title", "USU Grape Varieties for Utah"],
+    [
+      "author",
+      "Tiffany Maughan, Mike Pace, Brent Black, Michael Caron, and Taun Beddes"
+    ],
+    [
+      "description",
+      "Utah State University Extension grape variety guide with tabled cultivar recommendations by grape group, use, trial location, hardiness zone, and harvest timing. Trial location abbreviations are K: Kaysville, Utah; T: Thanksgiving Point, Utah; I: Idaho; NM: New Mexico; C: Colorado"
+    ],
+    ["url", "https://extension.usu.edu/yardandgarden/research/grapes-in-utah"],
+    ["thumbnail", "website"],
+    ["published", "January 2022"],
+    ["reviewed", "2021"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Utah State University Extension, Logan, Utah",
+      "latitude": 41.7455,
+      "longitude": -111.8046
+    }
+  ],
+  "categories": [
+    {
+      "name": "American table grapes recommended for Utah",
+      "description": "USU table of recommended American hybrid table grapes for Utah"
+    },
+    {
+      "name": "Early-maturing French hybrid table grapes recommended for Utah",
+      "description": "USU table of recommended early-maturing French hybrid table grapes for Utah"
+    },
+    {
+      "name": "Later-maturing French hybrid and European table grapes recommended for Utah",
+      "description": "USU table of recommended later-maturing French hybrid and European table grapes for Utah"
+    },
+    {
+      "name": "New cold-hardy wine grape hybrids recommended for Utah",
+      "description": "USU wine grape table section for new cold-hardy hybrids"
+    },
+    {
+      "name": "French/American hybrid wine grapes recommended for Utah",
+      "description": "USU wine grape table section for French/American hybrids"
+    },
+    {
+      "name": "European vinifera wine grapes recommended for Utah",
+      "description": "USU wine grape table section for European vinifera grapes"
+    }
+  ],
+  "harvest_value_map": {
+    "E": "Early-season (late summer)",
+    "M": "Mid-season (early fall)",
+    "L": "Late-season (late fall)",
+    "E/M": "Early to mid-season (late summer to early fall)"
+  },
+  "name_suffix_notes": [
+    {
+      "suffix": "JWR",
+      "note": "Source footnotes mark this grape as also suitable for juice, wine, and raisin"
+    },
+    {
+      "suffix": "JW",
+      "note": "Source footnotes mark this grape as also suitable for juice and wine"
+    },
+    {
+      "suffix": "JR",
+      "note": "Source footnotes mark this grape as also suitable for juice and raisin"
+    },
+    {
+      "suffix": "RW",
+      "note": "Source footnotes mark this grape as also suitable for raisin and wine"
+    },
+    {
+      "suffix": "JT",
+      "note": "Source footnotes mark this grape as also suitable for juice and table use"
+    },
+    {
+      "suffix": "J",
+      "note": "Source footnote marks this grape as also suitable for juice"
+    },
+    {
+      "suffix": "W",
+      "note": "Source footnote marks this grape as also suitable for wine"
+    },
+    {
+      "suffix": "T",
+      "note": "Source footnote marks this grape as also suitable for table use"
+    }
+  ],
+  "name_overrides": {
+    "Somerset seedless": {
+      "name": "Somerset Seedless",
+      "note": "Source table names this as Somerset seedless"
+    },
+    "Frontenac gris": {
+      "name": "Frontenac gris",
+      "note": "Source table names this as Frontenac gris"
+    },
+    "De Chaunac": {
+      "name": "DeChaunac",
+      "note": "Source table names this as De Chaunac"
+    },
+    "Cabernet Franc": {
+      "name": "Cabernet franc",
+      "note": "Source table names this as Cabernet Franc"
+    },
+    "ThompsonR Seedless": {
+      "name": "Thompson Seedless",
+      "note": "Source footnote R marks this grape as also suitable for raisin; source table names this as ThompsonR Seedless"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "table_index": 0,
+      "section_rows": true,
+      "required_headers": [
+        "Cultivar",
+        "Seedless",
+        "Location Tested1",
+        "Color",
+        "Zone",
+        "Days to Maturity",
+        "Harvest Time2",
+        "Other Considerations"
+      ],
+      "plant_type": "Grape",
+      "name_key": "cultivar",
+      "category": {
+        "row_key": "_section",
+        "default": "American table grapes recommended for Utah",
+        "map": {
+          "Table Grape: American": "American table grapes recommended for Utah"
+        }
+      },
+      "harvest_key": "harvest_time2",
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["seedless", "Seedless"],
+            ["location_tested1", "Trial locations"],
+            ["color", "Color"],
+            ["zone", "Hardiness zone"],
+            ["days_to_maturity", "Days to maturity"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "other_considerations",
+          "rstrip_period": false
+        }
+      ]
+    },
+    {
+      "kind": "html_table",
+      "table_index": 1,
+      "required_headers": [
+        "Cultivar",
+        "Seedless",
+        "Location Tested1",
+        "Color",
+        "Zone",
+        "Days to Maturity",
+        "Harvest Time2",
+        "Other Considerations"
+      ],
+      "plant_type": "Grape",
+      "name_key": "cultivar",
+      "category": "Early-maturing French hybrid table grapes recommended for Utah",
+      "harvest_key": "harvest_time2",
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["seedless", "Seedless"],
+            ["location_tested1", "Trial locations"],
+            ["color", "Color"],
+            ["zone", "Hardiness zone"],
+            ["days_to_maturity", "Days to maturity"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "other_considerations",
+          "rstrip_period": false
+        }
+      ]
+    },
+    {
+      "kind": "html_table",
+      "table_index": 2,
+      "section_rows": true,
+      "required_headers": [
+        "Cultivar",
+        "Seedless",
+        "Location Tested1",
+        "Color",
+        "Zone",
+        "Days to Maturity",
+        "Harvest Time2",
+        "Other Considerations"
+      ],
+      "plant_type": "Grape",
+      "name_key": "cultivar",
+      "category": {
+        "row_key": "_section",
+        "default": "Later-maturing French hybrid and European table grapes recommended for Utah",
+        "map": {
+          "Table Grape: European": "Later-maturing French hybrid and European table grapes recommended for Utah"
+        }
+      },
+      "harvest_key": "harvest_time2",
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["seedless", "Seedless"],
+            ["location_tested1", "Trial locations"],
+            ["color", "Color"],
+            ["zone", "Hardiness zone"],
+            ["days_to_maturity", "Days to maturity"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "other_considerations",
+          "rstrip_period": false
+        }
+      ]
+    },
+    {
+      "kind": "html_table",
+      "table_index": 3,
+      "section_rows": true,
+      "required_headers": [
+        "Cultivar",
+        "Seedless",
+        "Location Tested1",
+        "Color",
+        "Zone",
+        "Days to Maturity",
+        "Harvest Time2",
+        "Other Considerations"
+      ],
+      "plant_type": "Grape",
+      "name_key": "cultivar",
+      "category": {
+        "row_key": "_section",
+        "map": {
+          "Wine Grape: New Cold-Hardy Hybrids": "New cold-hardy wine grape hybrids recommended for Utah",
+          "Wine Grape: French/American Hybrids": "French/American hybrid wine grapes recommended for Utah",
+          "Wine Grape: European": "European vinifera wine grapes recommended for Utah"
+        },
+        "default": "Hybrid and European wine grapes recommended for Utah"
+      },
+      "harvest_key": "harvest_time2",
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["seedless", "Seedless"],
+            ["location_tested1", "Trial locations"],
+            ["color", "Color"],
+            ["zone", "Hardiness zone"],
+            ["days_to_maturity", "Days to maturity"]
+          ]
+        },
+        {
+          "kind": "key",
+          "key": "other_considerations",
+          "rstrip_period": false
+        }
+      ]
+    }
+  ]
+}

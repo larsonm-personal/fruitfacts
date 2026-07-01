@@ -1,0 +1,376 @@
+{
+    title: "USU Grape Varieties for Utah",
+    author: "Tiffany Maughan, Mike Pace, Brent Black, Michael Caron, and Taun Beddes",
+    description: "Utah State University Extension grape variety guide with tabled cultivar recommendations by grape group, use, trial location, hardiness zone, and harvest timing. Trial location abbreviations are K: Kaysville, Utah; T: Thanksgiving Point, Utah; I: Idaho; NM: New Mexico; C: Colorado",
+    url: "https://extension.usu.edu/yardandgarden/research/grapes-in-utah",
+    thumbnail: "website",
+    published: "January 2022",
+    reviewed: "2021",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Utah State University Extension, Logan, Utah",
+            latitude: 41.7455,
+            longitude: -111.8046
+        },
+    ],
+    categories: [
+        {
+            name: "American table grapes recommended for Utah",
+            description: "USU table of recommended American hybrid table grapes for Utah"
+        },
+        {
+            name: "Early-maturing French hybrid table grapes recommended for Utah",
+            description: "USU table of recommended early-maturing French hybrid table grapes for Utah"
+        },
+        {
+            name: "Later-maturing French hybrid and European table grapes recommended for Utah",
+            description: "USU table of recommended later-maturing French hybrid and European table grapes for Utah"
+        },
+        {
+            name: "New cold-hardy wine grape hybrids recommended for Utah",
+            description: "USU wine grape table section for new cold-hardy hybrids"
+        },
+        {
+            name: "French/American hybrid wine grapes recommended for Utah",
+            description: "USU wine grape table section for French/American hybrids"
+        },
+        {
+            name: "European vinifera wine grapes recommended for Utah",
+            description: "USU wine grape table section for European vinifera grapes"
+        },
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Beta",
+            category: "American table grapes recommended for Utah",
+            harvest_time_unparsed: "Early to mid-season (late summer to early fall)",
+            description: "Seedless: No. Trial locations: T. Color: Black. Hardiness zone: 4. Days to maturity: 120+. Small, acidic berries. Also good for jelly. Very prone to iron chlorosis. Similar to Concord in flavor and yields, but ripens 3 weeks earlier. Has not been as vigorous in Utah as reported elsewhere. Source footnote marks this grape as also suitable for juice"
+        },
+        {
+            type: "Grape",
+            name: "Bluebell",
+            category: "American table grapes recommended for Utah",
+            harvest_time_unparsed: "Early to mid-season (late summer to early fall)",
+            description: "Seedless: No. Trial locations: T. Color: Blue. Hardiness zone: 4. Days to maturity: 120+. Very susceptible to iron chlorosis. Good for jelly. Low vigor in our trials. Source footnote marks this grape as also suitable for juice"
+        },
+        {
+            type: "Grape",
+            name: "Niagara",
+            category: "American table grapes recommended for Utah",
+            harvest_time_unparsed: "Early to mid-season (late summer to early fall)",
+            description: "Seedless: Yes. Trial locations: K, T, I. Color: White. Hardiness zone: 5. Days to maturity: 120+. Very sweet with strong V. labrusca flavor. Very popular green grape. Source footnotes mark this grape as also suitable for juice and wine"
+        },
+        {
+            type: "Grape",
+            name: "Delaware",
+            category: "American table grapes recommended for Utah",
+            harvest_time_unparsed: "Early to mid-season (late summer to early fall)",
+            description: "Seedless: Yes. Trial locations: T, I. Color: Red. Hardiness zone: 5. Days to maturity: 130+. Small berries & clusters. Mild foxy flavor. Was difficult to establish and survival was only at 50% after 5 years. Like most American grapes, it may perform poorly overall in clay-loam soil, as at T. Source footnotes mark this grape as also suitable for juice and wine"
+        },
+        {
+            type: "Grape",
+            name: "Edelweiss",
+            category: "American table grapes recommended for Utah",
+            harvest_time_unparsed: "Early to mid-season (late summer to early fall)",
+            description: "Seedless: No. Trial locations: K, T. Color: Green. Hardiness zone: 4. Days to maturity: 130+. Good disease resistance. Very hardy, vigorous. Very prone to iron chlorosis. Has 62% survival, and produced the lowest yields at T. Source footnotes mark this grape as also suitable for juice and wine"
+        },
+        {
+            type: "Grape",
+            name: "Steuben",
+            category: "American table grapes recommended for Utah",
+            harvest_time_unparsed: "Early to mid-season (late summer to early fall)",
+            description: "Seedless: Yes. Trial locations: K, I. Color: Black. Hardiness zone: 5. Days to maturity: 130+. Likes warm and long growing season. Source footnotes mark this grape as also suitable for juice and wine"
+        },
+        {
+            type: "Grape",
+            name: "Catawba",
+            category: "American table grapes recommended for Utah",
+            harvest_time_unparsed: "Late-season (late fall)",
+            description: "Seedless: Yes. Trial locations: K, I. Color: Red. Hardiness zone: 5. Days to maturity: 150+. Late ripening. Requires a long season. Source footnotes mark this grape as also suitable for juice and wine"
+        },
+        {
+            type: "Grape",
+            name: "Concord",
+            category: "American table grapes recommended for Utah",
+            harvest_time_unparsed: "Late-season (late fall)",
+            description: "Seedless: No. Trial locations: T, I. Color: Black. Hardiness zone: 4. Days to maturity: 150+. Popular cold-hardy home garden cultivar. Latest ripening cultivar in the trial at T (September 22). Prone to uneven ripening. Other cultivars such as Valiant and Jupiter had higher yields in our trials. Source footnotes mark this grape as also suitable for juice and wine"
+        },
+        {
+            type: "Grape",
+            name: "Canadice",
+            category: "Early-maturing French hybrid table grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: Yes. Trial locations: K, T, I. Color: Red. Hardiness zone: 5. Days to maturity: 120+. Slipskin. Compact clusters with small pink berries. Crisp and sweet. Source footnotes mark this grape as also suitable for juice and wine"
+        },
+        {
+            type: "Grape",
+            name: "Faith",
+            category: "Early-maturing French hybrid table grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: Yes. Trial locations: K. Color: Blue. Hardiness zone: 5. Days to maturity: 120+. Clingskin. Medium-sized berries & clusters. Can have uneven set and seed traces."
+        },
+        {
+            type: "Grape",
+            name: "Himrod",
+            category: "Early-maturing French hybrid table grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: Yes. Trial locations: K, T, I. Color: White. Hardiness zone: 6. Days to maturity: 120+. Slipskin. Large clusters and excellent flavor. Grapes are soft and easily damaged. A reliable favorite for fresh eating. Earliest cultivar to ripen at T. (August 22). Source footnotes mark this grape as also suitable for juice and raisin"
+        },
+        {
+            type: "Grape",
+            name: "Interlaken Seedless",
+            category: "Early-maturing French hybrid table grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: Yes. Trial locations: K, I. Color: White. Hardiness zone: 5. Days to maturity: 120+. Medium-sized clusters with small berries. Source footnotes mark this grape as also suitable for juice, wine, and raisin"
+        },
+        {
+            type: "Grape",
+            name: "Joy",
+            category: "Early-maturing French hybrid table grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: Yes. Trial locations: K. Color: Blue. Hardiness zone: 5. Days to maturity: 120+. Clingskin with thin skin. Small berries & clusters. High yield. Seed traces."
+        },
+        {
+            type: "Grape",
+            name: "Mars",
+            category: "Early-maturing French hybrid table grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: Yes. Trial locations: K. Color: Blue. Hardiness zone: 5. Days to maturity: 120+. Slipskin. High yield & vigorous growth. Very disease-resistant. Good for jelly. Source footnotes mark this grape as also suitable for juice and wine"
+        },
+        {
+            type: "Grape",
+            name: "Reliance",
+            category: "Early-maturing French hybrid table grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: Yes. Trial locations: K, T, I. Color: Pink. Hardiness zone: 5. Days to maturity: 120+. Slipskin. Large clusters. Prone to fruit cracking in wet conditions. Iron chlorosis was noted on heavy soils. Good jelly. Source footnotes mark this grape as also suitable for juice and wine"
+        },
+        {
+            type: "Grape",
+            name: "Somerset Seedless",
+            category: "Early-maturing French hybrid table grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: Yes. Trial locations: K. Color: Red. Hardiness zone: 4. Days to maturity: 120+. Clingskin. Small orange-red berries. Excellent table grape. Source table names this as Somerset seedless"
+        },
+        {
+            type: "Grape",
+            name: "Valiant",
+            category: "Early-maturing French hybrid table grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: No. Trial locations: K, T. Color: Blue. Hardiness zone: 3. Days to maturity: 120+. Slipskin. Prone to mildew diseases. Excellent juice and jam. Moderate to heavy yields. Source footnote marks this grape as also suitable for juice"
+        },
+        {
+            type: "Grape",
+            name: "Venus",
+            category: "Early-maturing French hybrid table grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: Yes. Trial locations: K. Color: Blue. Hardiness zone: 5. Days to maturity: 120+. Slipskin. Reliable producer. Tightly packed clusters. Source footnote marks this grape as also suitable for juice"
+        },
+        {
+            type: "Grape",
+            name: "Alden",
+            category: "Later-maturing French hybrid and European table grapes recommended for Utah",
+            harvest_time_unparsed: "Mid-season (early fall)",
+            description: "Seedless: No. Trial locations: T. Color: Black. Hardiness zone: 5. Days to maturity: 130+. Slipskin. Very large berries. Vigorous; tendency to overbear. Low vigor and iron chlorosis were noted on heavy soils. Source footnote marks this grape as also suitable for wine"
+        },
+        {
+            type: "Grape",
+            name: "Concord Seedless",
+            category: "Later-maturing French hybrid and European table grapes recommended for Utah",
+            harvest_time_unparsed: "Mid-season (early fall)",
+            description: "Seedless: Yes. Trial locations: K, I. Color: Red. Hardiness zone: 5. Days to maturity: 130+. Slipskin. Similar to Concord with smaller clusters and berries. Source footnote marks this grape as also suitable for juice"
+        },
+        {
+            type: "Grape",
+            name: "Einset Seedless",
+            category: "Later-maturing French hybrid and European table grapes recommended for Utah",
+            harvest_time_unparsed: "Mid-season (early fall)",
+            description: "Seedless: Yes. Color: Red. Hardiness zone: 5. Days to maturity: 130+. Clingskin. Medium-sized clusters and berries. Unique flavor."
+        },
+        {
+            type: "Grape",
+            name: "Gratitude",
+            category: "Later-maturing French hybrid and European table grapes recommended for Utah",
+            harvest_time_unparsed: "Mid-season (early fall)",
+            description: "Seedless: Yes. Trial locations: K. Color: Green. Hardiness zone: 5. Days to maturity: 130+. Clingskin. Excellent crisp texture, medium berries. Moderate productivity."
+        },
+        {
+            type: "Grape",
+            name: "Jupiter",
+            category: "Later-maturing French hybrid and European table grapes recommended for Utah",
+            harvest_time_unparsed: "Mid-season (early fall)",
+            description: "Seedless: Yes. Trial locations: K, T. Color: Blue. Hardiness zone: 5. Days to maturity: 130+. Clingskin. Mild foxy flavor. Crisp texture. Large berries, clusters. Seed traces. Great for almost all uses, a clear favorite in the trial at T. Source footnotes mark this grape as also suitable for juice, wine, and raisin"
+        },
+        {
+            type: "Grape",
+            name: "Marquis",
+            category: "Later-maturing French hybrid and European table grapes recommended for Utah",
+            harvest_time_unparsed: "Mid-season (early fall)",
+            description: "Seedless: Yes. Trial locations: T. Color: White. Hardiness zone: 5. Days to maturity: 130+. Slipskin. Soft seed traces. Very sweet, juicy, mild flavor. Prune clusters for better size. Source footnotes mark this grape as also suitable for raisin and wine"
+        },
+        {
+            type: "Grape",
+            name: "Neptune",
+            category: "Later-maturing French hybrid and European table grapes recommended for Utah",
+            harvest_time_unparsed: "Mid-season (early fall)",
+            description: "Seedless: Yes. Trial locations: K. Color: Green. Hardiness zone: 5. Days to maturity: 130+. Clingskin. Large loose clusters. Low vine vigor."
+        },
+        {
+            type: "Grape",
+            name: "Swenson Red",
+            category: "Later-maturing French hybrid and European table grapes recommended for Utah",
+            harvest_time_unparsed: "Mid-season (early fall)",
+            description: "Seedless: No. Trial locations: K, T. Color: Red. Hardiness zone: 4. Days to maturity: 130+. Clingskin. Excellent taste, very hardy. Seems to struggle with root rot in heavy soils. Source footnotes mark this grape as also suitable for juice and wine"
+        },
+        {
+            type: "Grape",
+            name: "Vanessa",
+            category: "Later-maturing French hybrid and European table grapes recommended for Utah",
+            harvest_time_unparsed: "Mid-season (early fall)",
+            description: "Seedless: Yes. Trial locations: K. Color: Red. Hardiness zone: 4. Days to maturity: 120+. Clingskin. Reliable yield. Small clusters and berries, very mild flavor. Excellent fresh-eating quality. Source footnotes mark this grape as also suitable for juice, wine, and raisin"
+        },
+        {
+            type: "Grape",
+            name: "Thompson Seedless",
+            category: "Later-maturing French hybrid and European table grapes recommended for Utah",
+            harvest_time_unparsed: "Mid-season (early fall)",
+            description: "Seedless: Yes. Trial locations: T. Color: White. Hardiness zone: 7. Days to maturity: 130+. Clingskin. Widely planted worldwide as a table and raisin grape. Source footnote R marks this grape as also suitable for raisin; source table names this as ThompsonR Seedless"
+        },
+        {
+            type: "Grape",
+            name: "La Crosse",
+            category: "New cold-hardy wine grape hybrids recommended for Utah",
+            harvest_time_unparsed: "Early to mid-season (late summer to early fall)",
+            description: "Seedless: No. Trial locations: T. Color: White. Hardiness zone: 5. Days to maturity: 110+. From Wisconsin. Good as a varietal and for blending. Very small berries and clusters. Have noticed low vigor on heavy soils."
+        },
+        {
+            type: "Grape",
+            name: "Marquette",
+            category: "New cold-hardy wine grape hybrids recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: No. Trial locations: T, C. Color: Red. Hardiness zone: 4. Days to maturity: 110+. From U of MN. VERY early bud break & harvest. High sugar and acidity at harvest. Small berries and tight clusters. Net early to avoid severe bird damage."
+        },
+        {
+            type: "Grape",
+            name: "Arandell",
+            category: "New cold-hardy wine grape hybrids recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: No. Trial locations: C. Color: Red. Hardiness zone: 5. Days to maturity: 130+. From Cornell. Blueberry aroma."
+        },
+        {
+            type: "Grape",
+            name: "Aromella",
+            category: "New cold-hardy wine grape hybrids recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: No. Trial locations: T, C. Color: White. Hardiness zone: 5. Days to maturity: 130+. From Cornell. Muscat aroma/flavor. Beautiful golden berries."
+        },
+        {
+            type: "Grape",
+            name: "Frontenac gris",
+            category: "New cold-hardy wine grape hybrids recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: No. Trial locations: C. Color: White. Hardiness zone: 3. Days to maturity: 130+. From U of MN. Grey mutation of Frontenac. Source table names this as Frontenac gris"
+        },
+        {
+            type: "Grape",
+            name: "La Crescent",
+            category: "New cold-hardy wine grape hybrids recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: No. Trial locations: C. Color: White. Hardiness zone: 3. Days to maturity: 130+. From U of MN. Used for aromatic, floral wine."
+        },
+        {
+            type: "Grape",
+            name: "Frontenac",
+            category: "New cold-hardy wine grape hybrids recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: No. Trial locations: T, C. Color: Blue. Hardiness zone: 3. Days to maturity: 140+. From U of MN. Vigorous & productive, loose clusters. High sugar & acid at harvest. Net early to avoid severe bird damage."
+        },
+        {
+            type: "Grape",
+            name: "Kay Gray",
+            category: "French/American hybrid wine grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: No. Trial locations: K. Color: Green. Hardiness zone: 3. Days to maturity: 120+. Generally used for blending. Very vigorous. Small fruit clusters. Source footnotes mark this grape as also suitable for juice and table use"
+        },
+        {
+            type: "Grape",
+            name: "Leon Millot",
+            category: "French/American hybrid wine grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: No. Trial locations: NM. Color: Red. Hardiness zone: 5. Days to maturity: 120+. Early ripening makes it a good option for short growing seasons. Nice color for wine."
+        },
+        {
+            type: "Grape",
+            name: "Regent",
+            category: "French/American hybrid wine grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: No. Trial locations: NM. Color: Red. Hardiness zone: 5. Days to maturity: 120+. Thick skin w/ high tannins. Good yields. Resistant to disease. Red stained flesh. Source footnote marks this grape as also suitable for juice"
+        },
+        {
+            type: "Grape",
+            name: "Seyval Blanc",
+            category: "French/American hybrid wine grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: No. Trial locations: NM. Color: Green. Hardiness zone: 5. Days to maturity: 120+. High acidity."
+        },
+        {
+            type: "Grape",
+            name: "Baco Noir",
+            category: "French/American hybrid wine grapes recommended for Utah",
+            harvest_time_unparsed: "Mid-season (early fall)",
+            description: "Seedless: No. Trial locations: NM. Color: Red. Hardiness zone: 5. Days to maturity: 130+. Good acidity and does well in cooler climates. No foxy aromas."
+        },
+        {
+            type: "Grape",
+            name: "Chardonel",
+            category: "French/American hybrid wine grapes recommended for Utah",
+            harvest_time_unparsed: "Mid-season (early fall)",
+            description: "Seedless: No. Trial locations: NM. Color: White. Hardiness zone: 5. Days to maturity: 130+. Similar to chardonnay, trunks may need winter protection."
+        },
+        {
+            type: "Grape",
+            name: "DeChaunac",
+            category: "French/American hybrid wine grapes recommended for Utah",
+            harvest_time_unparsed: "Mid-season (early fall)",
+            description: "Seedless: No. Trial locations: K, I. Color: Bluish Black. Hardiness zone: 5. Days to maturity: 130+. Used for red wine. Very productive and vigorous. Must cluster thin. Source table names this as De Chaunac"
+        },
+        {
+            type: "Grape",
+            name: "Traminette",
+            category: "French/American hybrid wine grapes recommended for Utah",
+            harvest_time_unparsed: "Mid-season (early fall)",
+            description: "Seedless: No. Trial locations: C, NM. Color: White. Hardiness zone: 5. Days to maturity: 130+. Seyval blanc x Gewurztraminer cross. Wine reminiscent of Gewurztraminer; floral, spicy. Source footnotes mark this grape as also suitable for juice and table use"
+        },
+        {
+            type: "Grape",
+            name: "Chambourcin",
+            category: "French/American hybrid wine grapes recommended for Utah",
+            harvest_time_unparsed: "Late-season (late fall)",
+            description: "Seedless: No. Trial locations: C. Color: Red. Hardiness zone: 5. Days to maturity: 150+. Late bud break. Highly rated red wine when fruit fully matures. Very productive. Must cluster thin."
+        },
+        {
+            type: "Grape",
+            name: "Pinot Noir",
+            category: "European vinifera wine grapes recommended for Utah",
+            harvest_time_unparsed: "Early-season (late summer)",
+            description: "Seedless: No. Trial locations: NM, I. Color: Blue. Hardiness zone: 7. Days to maturity: 120+. Used to make pinkish-red wine. Source footnote marks this grape as also suitable for table use"
+        },
+        {
+            type: "Grape",
+            name: "Cabernet franc",
+            category: "European vinifera wine grapes recommended for Utah",
+            harvest_time_unparsed: "Late-season (late fall)",
+            description: "Seedless: No. Trial locations: C. Color: Red. Hardiness zone: 6. Days to maturity: 150+. Bud breaks early, is sensitive to spring frosts but still has reliable yields. Source table names this as Cabernet Franc"
+        },
+        {
+            type: "Grape",
+            name: "White Riesling",
+            category: "European vinifera wine grapes recommended for Utah",
+            harvest_time_unparsed: "Late-season (late fall)",
+            description: "Seedless: No. Trial locations: K, C. Color: White. Hardiness zone: 6. Days to maturity: 150+. Makes excellent still and sparkling wines with apricot or peach aromas."
+        },
+    ]
+}

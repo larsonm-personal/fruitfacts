@@ -291,6 +291,14 @@
         {
             "id": "illinois_small_fruits_home_gardens",
             "config": "extraction_configs/illinois_small_fruits_home_gardens.json"
+        },
+        {
+            "id": "usu_grape_varieties_utah",
+            "config": "extraction_configs/usu_grape_varieties_utah.json"
+        },
+        {
+            "id": "montana_warc_fruit_research_sites",
+            "config": "extraction_configs/montana_warc_fruit_research_sites.json"
         }
     ]
 }

@@ -478,7 +478,7 @@
         },
         {
             id: "usu-grape-varieties-in-utah",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Grape Varieties in Utah",
             institution: "Utah State University Extension",
@@ -486,19 +486,24 @@
             crops: ["Grape"],
             source_type: "state extension guide",
             landing_url:
-                "https://extension.usu.edu/yardandgarden/research/grape-varieties-in-utah",
+                "https://extension.usu.edu/yardandgarden/research/grapes-in-utah",
             discovered: "2026-06-28",
             discovered_by: "official site search",
             value_summary:
                 "Utah grape variety guide with tabled cultivar traits for American, French-American, and wine grapes",
             asset_decision: "stub only",
             proposed_reference_path:
-                "plant_database/references/Utah/USU Grape Varieties in Utah.json5",
+                "plant_database/references/Utah/USU Grape Varieties for Utah.json5",
             duplicate_check:
                 "No Utah grape-specific extension reference found in existing references",
             notes: [
+                "Original queued URL https://extension.usu.edu/yardandgarden/research/grape-varieties-in-utah now returns the USU notfound page; current official page used for encoding is https://extension.usu.edu/yardandgarden/research/grapes-in-utah",
                 "Web page returned useful cultivar-level content",
-                "No stable direct PDF was captured during this pass"
+                "No stable direct PDF was captured during this pass",
+                "Encoded in plant_database/references/Utah/USU Grape Varieties for Utah.json5",
+                "Config extraction added at helper_scripts/extraction_configs/usu_grape_varieties_utah.json",
+                "Manifest entry added as usu_grape_varieties_utah",
+                "Worked example for inherited table suffix notes and harvest-code mapping across repeated HTML table extractors"
             ]
         },
         {
@@ -1592,7 +1597,7 @@
         },
         {
             id: "montana-warc-fruit-research-sites",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "MSU Extension Fruit Research Sites",
             institution: "Montana State University Western Agricultural Research Center",
@@ -1603,7 +1608,7 @@
                 "Pear",
                 "Plum"
             ],
-            source_type: "research trial site collection",
+            source_type: "extension test",
             landing_url:
                 "https://agresearch.montana.edu/warc/research_current/msu-ext-fruit-research-sites/index.html",
             discovered: "2026-06-29",
@@ -1617,7 +1622,12 @@
                 "No Montana reference directory or candidate found during duplicate scan",
             notes: [
                 "Search result indicates cultivar trial data across ten Montana locations",
-                "Likely hard to encode because useful data may be spread across project pages, summaries, and downloads rather than one table"
+                "Likely hard to encode because useful data may be spread across project pages, summaries, and downloads rather than one table",
+                "Encoded in plant_database/references/Montana/MSU Extension Fruit Research Sites.json5",
+                "Config extraction added at helper_scripts/extraction_configs/montana_warc_fruit_research_sites.json",
+                "Manifest entry added as montana_warc_fruit_research_sites",
+                "Cultivar records extracted from linked cultivar-description page while retaining project landing page as reference URL",
+                "Used quoted paragraph blocks for apple, pear, plum, and sour cherry headings; site-level performance PDFs and spreadsheets remain review caveats"
             ]
         },
         {
