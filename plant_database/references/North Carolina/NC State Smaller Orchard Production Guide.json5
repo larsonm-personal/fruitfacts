@@ -1,0 +1,481 @@
+{
+    title: "NC State Smaller Orchard Production Guide",
+    author: "NC State Extension",
+    description: "NC State Extension production guide with fruit and nut cultivar recommendations for smaller North Carolina orchard plantings",
+    url: "https://content.ces.ncsu.edu/north-carolina-production-guide-for-smaller-orchard-plantings",
+    thumbnail: "website",
+    reviewed: "Jan 12, 2026",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "NC State Extension, Raleigh, North Carolina",
+            latitude: 35.7847,
+            longitude: -78.6821
+        },
+    ],
+    categories: [
+        {
+            name: "Apple cultivars recommended for smaller North Carolina orchards",
+            description: "NC State smaller-orchard guide lists these apple cultivars in its recommended varieties table"
+        },
+        {
+            name: "Asian pear cultivars recommended for smaller North Carolina orchards",
+            description: "NC State smaller-orchard guide lists these Asian pear cultivars in its recommended varieties table"
+        },
+        {
+            name: "Chestnut cultivars recommended for smaller North Carolina orchards",
+            description: "NC State smaller-orchard guide lists these chestnut cultivars in its recommended varieties table"
+        },
+        {
+            name: "Fig cultivars recommended for smaller North Carolina orchards",
+            description: "NC State smaller-orchard guide lists these fig cultivars in its recommended varieties table"
+        },
+        {
+            name: "Nectarine cultivars recommended for smaller North Carolina orchards",
+            description: "NC State smaller-orchard guide lists these nectarine cultivars in its recommended varieties table"
+        },
+        {
+            name: "Peach cultivars recommended for smaller North Carolina orchards",
+            description: "NC State smaller-orchard guide lists these peach cultivars in its recommended varieties table"
+        },
+        {
+            name: "European pear cultivars recommended for smaller North Carolina orchards",
+            description: "NC State smaller-orchard guide lists these European pear cultivars in its recommended varieties table"
+        },
+        {
+            name: "Pecan cultivars recommended for smaller North Carolina orchards",
+            description: "NC State smaller-orchard guide lists these pecan cultivars in its recommended varieties table"
+        },
+        {
+            name: "Persimmon cultivars recommended for smaller North Carolina orchards",
+            description: "NC State smaller-orchard guide lists these Oriental persimmon cultivars in its recommended varieties table"
+        },
+        {
+            name: "Japanese plum cultivars recommended for smaller North Carolina orchards",
+            description: "NC State smaller-orchard guide lists these Japanese plum cultivars in its recommended varieties table"
+        },
+        {
+            name: "European plum cultivars recommended for smaller North Carolina orchards",
+            description: "NC State smaller-orchard guide lists these European plum cultivars in its recommended varieties table"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Ginger Gold",
+            category: "Apple cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Requirements vary. Some varieties are self-fruitful. Others require pollination (see note 1). Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No varieties are resistant to apple scan, powdery mildew, cedar apple rust, or fire blight. Other considerations: In warmer regions, red varieties may not color well. Rootstocks will affect production style. Trees on dwarfing rootstock will need to be staked"
+        },
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Apple cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Requirements vary. Some varieties are self-fruitful. Others require pollination (see note 1). Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No varieties are resistant to apple scan, powdery mildew, cedar apple rust, or fire blight. Other considerations: In warmer regions, red varieties may not color well. Rootstocks will affect production style. Trees on dwarfing rootstock will need to be staked"
+        },
+        {
+            type: "Apple",
+            name: "Jonagold",
+            category: "Apple cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Requirements vary. Some varieties are self-fruitful. Others require pollination (see note 1). Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No varieties are resistant to apple scan, powdery mildew, cedar apple rust, or fire blight. Other considerations: In warmer regions, red varieties may not color well. Rootstocks will affect production style. Trees on dwarfing rootstock will need to be staked"
+        },
+        {
+            type: "Apple",
+            name: "Empire",
+            category: "Apple cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Requirements vary. Some varieties are self-fruitful. Others require pollination (see note 1). Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No varieties are resistant to apple scan, powdery mildew, cedar apple rust, or fire blight. Other considerations: In warmer regions, red varieties may not color well. Rootstocks will affect production style. Trees on dwarfing rootstock will need to be staked"
+        },
+        {
+            type: "Apple",
+            name: "Red Delicious",
+            category: "Apple cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Requirements vary. Some varieties are self-fruitful. Others require pollination (see note 1). Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No varieties are resistant to apple scan, powdery mildew, cedar apple rust, or fire blight. Other considerations: In warmer regions, red varieties may not color well. Rootstocks will affect production style. Trees on dwarfing rootstock will need to be staked"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "Apple cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Requirements vary. Some varieties are self-fruitful. Others require pollination (see note 1). Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No varieties are resistant to apple scan, powdery mildew, cedar apple rust, or fire blight. Other considerations: In warmer regions, red varieties may not color well. Rootstocks will affect production style. Trees on dwarfing rootstock will need to be staked"
+        },
+        {
+            type: "Apple",
+            name: "Crispin",
+            category: "Apple cultivars recommended for smaller North Carolina orchards",
+            AKA: ["Mutsu"],
+            description: "Pollination: Requirements vary. Some varieties are self-fruitful. Others require pollination (see note 1). Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No varieties are resistant to apple scan, powdery mildew, cedar apple rust, or fire blight. Other considerations: In warmer regions, red varieties may not color well. Rootstocks will affect production style. Trees on dwarfing rootstock will need to be staked. Source table names this as Crispin (Mutsu)"
+        },
+        {
+            type: "Apple",
+            name: "Stayman",
+            category: "Apple cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Requirements vary. Some varieties are self-fruitful. Others require pollination (see note 1). Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No varieties are resistant to apple scan, powdery mildew, cedar apple rust, or fire blight. Other considerations: In warmer regions, red varieties may not color well. Rootstocks will affect production style. Trees on dwarfing rootstock will need to be staked"
+        },
+        {
+            type: "Apple",
+            name: "Rome",
+            category: "Apple cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Requirements vary. Some varieties are self-fruitful. Others require pollination (see note 1). Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No varieties are resistant to apple scan, powdery mildew, cedar apple rust, or fire blight. Other considerations: In warmer regions, red varieties may not color well. Rootstocks will affect production style. Trees on dwarfing rootstock will need to be staked"
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Apple cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Requirements vary. Some varieties are self-fruitful. Others require pollination (see note 1). Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No varieties are resistant to apple scan, powdery mildew, cedar apple rust, or fire blight. Other considerations: In warmer regions, red varieties may not color well. Rootstocks will affect production style. Trees on dwarfing rootstock will need to be staked"
+        },
+        {
+            type: "Apple",
+            name: "GoldRush",
+            category: "Apple cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Requirements vary. Some varieties are self-fruitful. Others require pollination (see note 1). Disease notes: Summer rots are the most serious disease problems and can destroy an entire crop. No varieties are resistant to apple scan, powdery mildew, cedar apple rust, or fire blight. Other considerations: In warmer regions, red varieties may not color well. Rootstocks will affect production style. Trees on dwarfing rootstock will need to be staked. Source table names this as Gold Rush"
+        },
+        {
+            type: "Asian Pear",
+            name: "Olympic",
+            category: "Asian pear cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Two varieties are recommended to ensure adequate pollination. Disease notes: Fire blight is the biggest concern. Other considerations: Fruit sensitive to bruising"
+        },
+        {
+            type: "Asian Pear",
+            name: "Hosui",
+            category: "Asian pear cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Two varieties are recommended to ensure adequate pollination. Disease notes: Fire blight is the biggest concern. Other considerations: Fruit sensitive to bruising"
+        },
+        {
+            type: "Asian Pear",
+            name: "Kosui",
+            category: "Asian pear cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Two varieties are recommended to ensure adequate pollination. Disease notes: Fire blight is the biggest concern. Other considerations: Fruit sensitive to bruising"
+        },
+        {
+            type: "Asian Pear",
+            name: "Shinko",
+            category: "Asian pear cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Two varieties are recommended to ensure adequate pollination. Disease notes: Fire blight is the biggest concern. Other considerations: Fruit sensitive to bruising"
+        },
+        {
+            type: "Chestnut",
+            name: "Nanking",
+            category: "Chestnut cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: All require pollination from another variety. Plant at least two varieties of the same type to assure optimal nut size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut varieties, citing superior quality over the Chinese varieties"
+        },
+        {
+            type: "Chestnut",
+            name: "Meiling",
+            category: "Chestnut cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: All require pollination from another variety. Plant at least two varieties of the same type to assure optimal nut size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut varieties, citing superior quality over the Chinese varieties"
+        },
+        {
+            type: "Chestnut",
+            name: "Kuling",
+            category: "Chestnut cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: All require pollination from another variety. Plant at least two varieties of the same type to assure optimal nut size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut varieties, citing superior quality over the Chinese varieties"
+        },
+        {
+            type: "Chestnut",
+            name: "Abundance",
+            category: "Chestnut cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: All require pollination from another variety. Plant at least two varieties of the same type to assure optimal nut size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut varieties, citing superior quality over the Chinese varieties"
+        },
+        {
+            type: "Chestnut",
+            name: "Crane",
+            category: "Chestnut cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: All require pollination from another variety. Plant at least two varieties of the same type to assure optimal nut size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut varieties, citing superior quality over the Chinese varieties"
+        },
+        {
+            type: "Chestnut",
+            name: "Revival",
+            category: "Chestnut cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: All require pollination from another variety. Plant at least two varieties of the same type to assure optimal nut size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut varieties, citing superior quality over the Chinese varieties"
+        },
+        {
+            type: "Chestnut",
+            name: "Carolina",
+            category: "Chestnut cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: All require pollination from another variety. Plant at least two varieties of the same type to assure optimal nut size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut varieties, citing superior quality over the Chinese varieties"
+        },
+        {
+            type: "Chestnut",
+            name: "Willamette",
+            category: "Chestnut cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: All require pollination from another variety. Plant at least two varieties of the same type to assure optimal nut size and production. Disease notes: Most Chinese and hybrid chestnuts are highly resistant to the chestnut blight fungus. Other considerations: Many people prefer the hybrid chestnut varieties, citing superior quality over the Chinese varieties"
+        },
+        {
+            type: "Fig",
+            name: "Celeste",
+            category: "Fig cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Only varieties that do not require pollination can be grown in North Carolina. Disease notes: No serious disease problems except nematodes. Other considerations: Fruit may drop prematurely as a result of drought or excessive shade, moisture or fertilization. Are grown on own roots. Can be cold sensitive at 12-15 degrees F"
+        },
+        {
+            type: "Fig",
+            name: "Brown Turkey",
+            category: "Fig cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Only varieties that do not require pollination can be grown in North Carolina. Disease notes: No serious disease problems except nematodes. Other considerations: Fruit may drop prematurely as a result of drought or excessive shade, moisture or fertilization. Are grown on own roots. Can be cold sensitive at 12-15 degrees F"
+        },
+        {
+            type: "Fig",
+            name: "Magnolia",
+            category: "Fig cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Only varieties that do not require pollination can be grown in North Carolina. Disease notes: No serious disease problems except nematodes. Other considerations: Fruit may drop prematurely as a result of drought or excessive shade, moisture or fertilization. Are grown on own roots. Can be cold sensitive at 12-15 degrees F. Source table names this as Brunswick/Magnolia"
+        },
+        {
+            type: "Fig",
+            name: "Greenish",
+            category: "Fig cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Only varieties that do not require pollination can be grown in North Carolina. Disease notes: No serious disease problems except nematodes. Other considerations: Fruit may drop prematurely as a result of drought or excessive shade, moisture or fertilization. Are grown on own roots. Can be cold sensitive at 12-15 degrees F"
+        },
+        {
+            type: "Fig",
+            name: "Marseille",
+            category: "Fig cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Only varieties that do not require pollination can be grown in North Carolina. Disease notes: No serious disease problems except nematodes. Other considerations: Fruit may drop prematurely as a result of drought or excessive shade, moisture or fertilization. Are grown on own roots. Can be cold sensitive at 12-15 degrees F"
+        },
+        {
+            type: "Nectarine",
+            name: "Summer Beaut",
+            category: "Nectarine cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. So not require pollination by other varieties. Disease notes: Nectarines should be planted only on 'Lovell' or 'Halford' rootstocks on heavier soils. 'Guardian' rootstocks are suggested for plantings on sandier soils. The lack of hair on nectarines makes the fruit more susceptible to diseases than peaches, and a multipurpose fungicide and insecticide spray program will be required. Other considerations: Many varieties were developed in California and may not do well in North Carolina. Only varieties that require at least 750 hours of chilling are recommended. Guardian rootstock is recommended on sandy soils"
+        },
+        {
+            type: "Nectarine",
+            name: "Sunglo",
+            category: "Nectarine cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. So not require pollination by other varieties. Disease notes: Nectarines should be planted only on 'Lovell' or 'Halford' rootstocks on heavier soils. 'Guardian' rootstocks are suggested for plantings on sandier soils. The lack of hair on nectarines makes the fruit more susceptible to diseases than peaches, and a multipurpose fungicide and insecticide spray program will be required. Other considerations: Many varieties were developed in California and may not do well in North Carolina. Only varieties that require at least 750 hours of chilling are recommended. Guardian rootstock is recommended on sandy soils"
+        },
+        {
+            type: "Nectarine",
+            name: "Red Gold",
+            category: "Nectarine cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. So not require pollination by other varieties. Disease notes: Nectarines should be planted only on 'Lovell' or 'Halford' rootstocks on heavier soils. 'Guardian' rootstocks are suggested for plantings on sandier soils. The lack of hair on nectarines makes the fruit more susceptible to diseases than peaches, and a multipurpose fungicide and insecticide spray program will be required. Other considerations: Many varieties were developed in California and may not do well in North Carolina. Only varieties that require at least 750 hours of chilling are recommended. Guardian rootstock is recommended on sandy soils. Source table names this as Redgold"
+        },
+        {
+            type: "Nectarine",
+            name: "Flavortop",
+            category: "Nectarine cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. So not require pollination by other varieties. Disease notes: Nectarines should be planted only on 'Lovell' or 'Halford' rootstocks on heavier soils. 'Guardian' rootstocks are suggested for plantings on sandier soils. The lack of hair on nectarines makes the fruit more susceptible to diseases than peaches, and a multipurpose fungicide and insecticide spray program will be required. Other considerations: Many varieties were developed in California and may not do well in North Carolina. Only varieties that require at least 750 hours of chilling are recommended. Guardian rootstock is recommended on sandy soils"
+        },
+        {
+            type: "Nectarine",
+            name: "Fantasia",
+            category: "Nectarine cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. So not require pollination by other varieties. Disease notes: Nectarines should be planted only on 'Lovell' or 'Halford' rootstocks on heavier soils. 'Guardian' rootstocks are suggested for plantings on sandier soils. The lack of hair on nectarines makes the fruit more susceptible to diseases than peaches, and a multipurpose fungicide and insecticide spray program will be required. Other considerations: Many varieties were developed in California and may not do well in North Carolina. Only varieties that require at least 750 hours of chilling are recommended. Guardian rootstock is recommended on sandy soils"
+        },
+        {
+            type: "Nectarine",
+            name: "Carolina Red",
+            category: "Nectarine cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. So not require pollination by other varieties. Disease notes: Nectarines should be planted only on 'Lovell' or 'Halford' rootstocks on heavier soils. 'Guardian' rootstocks are suggested for plantings on sandier soils. The lack of hair on nectarines makes the fruit more susceptible to diseases than peaches, and a multipurpose fungicide and insecticide spray program will be required. Other considerations: Many varieties were developed in California and may not do well in North Carolina. Only varieties that require at least 750 hours of chilling are recommended. Guardian rootstock is recommended on sandy soils"
+        },
+        {
+            type: "Peach",
+            name: "Candor",
+            category: "Peach cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. Do not require pollination by other varieties. Disease notes: A multipurpose fungicide and insecticide spray program will be needed during the growing season. Other considerations: Only varieties that require at least 750 hours of chilling are recommended. 'Guardian' rootstock is the only recommended rootstock on sandy soils where ring nematodes can cause issues. 'Lovell' or 'Halford' rootstocks are suggested for peaches planted in heavier soils where ring nematodes are not present"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Peach cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. Do not require pollination by other varieties. Disease notes: A multipurpose fungicide and insecticide spray program will be needed during the growing season. Other considerations: Only varieties that require at least 750 hours of chilling are recommended. 'Guardian' rootstock is the only recommended rootstock on sandy soils where ring nematodes can cause issues. 'Lovell' or 'Halford' rootstocks are suggested for peaches planted in heavier soils where ring nematodes are not present"
+        },
+        {
+            type: "Peach",
+            name: "Norman",
+            category: "Peach cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. Do not require pollination by other varieties. Disease notes: A multipurpose fungicide and insecticide spray program will be needed during the growing season. Other considerations: Only varieties that require at least 750 hours of chilling are recommended. 'Guardian' rootstock is the only recommended rootstock on sandy soils where ring nematodes can cause issues. 'Lovell' or 'Halford' rootstocks are suggested for peaches planted in heavier soils where ring nematodes are not present"
+        },
+        {
+            type: "Peach",
+            name: "Carolina Belle",
+            category: "Peach cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. Do not require pollination by other varieties. Disease notes: A multipurpose fungicide and insecticide spray program will be needed during the growing season. Other considerations: Only varieties that require at least 750 hours of chilling are recommended. 'Guardian' rootstock is the only recommended rootstock on sandy soils where ring nematodes can cause issues. 'Lovell' or 'Halford' rootstocks are suggested for peaches planted in heavier soils where ring nematodes are not present"
+        },
+        {
+            type: "Peach",
+            name: "Winblo",
+            category: "Peach cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. Do not require pollination by other varieties. Disease notes: A multipurpose fungicide and insecticide spray program will be needed during the growing season. Other considerations: Only varieties that require at least 750 hours of chilling are recommended. 'Guardian' rootstock is the only recommended rootstock on sandy soils where ring nematodes can cause issues. 'Lovell' or 'Halford' rootstocks are suggested for peaches planted in heavier soils where ring nematodes are not present"
+        },
+        {
+            type: "Peach",
+            name: "Contender",
+            category: "Peach cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. Do not require pollination by other varieties. Disease notes: A multipurpose fungicide and insecticide spray program will be needed during the growing season. Other considerations: Only varieties that require at least 750 hours of chilling are recommended. 'Guardian' rootstock is the only recommended rootstock on sandy soils where ring nematodes can cause issues. 'Lovell' or 'Halford' rootstocks are suggested for peaches planted in heavier soils where ring nematodes are not present"
+        },
+        {
+            type: "Peach",
+            name: "Summer Pearl",
+            category: "Peach cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. Do not require pollination by other varieties. Disease notes: A multipurpose fungicide and insecticide spray program will be needed during the growing season. Other considerations: Only varieties that require at least 750 hours of chilling are recommended. 'Guardian' rootstock is the only recommended rootstock on sandy soils where ring nematodes can cause issues. 'Lovell' or 'Halford' rootstocks are suggested for peaches planted in heavier soils where ring nematodes are not present"
+        },
+        {
+            type: "Peach",
+            name: "China Pearl",
+            category: "Peach cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. Do not require pollination by other varieties. Disease notes: A multipurpose fungicide and insecticide spray program will be needed during the growing season. Other considerations: Only varieties that require at least 750 hours of chilling are recommended. 'Guardian' rootstock is the only recommended rootstock on sandy soils where ring nematodes can cause issues. 'Lovell' or 'Halford' rootstocks are suggested for peaches planted in heavier soils where ring nematodes are not present"
+        },
+        {
+            type: "Peach",
+            name: "Cresthaven",
+            category: "Peach cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. Do not require pollination by other varieties. Disease notes: A multipurpose fungicide and insecticide spray program will be needed during the growing season. Other considerations: Only varieties that require at least 750 hours of chilling are recommended. 'Guardian' rootstock is the only recommended rootstock on sandy soils where ring nematodes can cause issues. 'Lovell' or 'Halford' rootstocks are suggested for peaches planted in heavier soils where ring nematodes are not present"
+        },
+        {
+            type: "Peach",
+            name: "Carolina Gold",
+            category: "Peach cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. Do not require pollination by other varieties. Disease notes: A multipurpose fungicide and insecticide spray program will be needed during the growing season. Other considerations: Only varieties that require at least 750 hours of chilling are recommended. 'Guardian' rootstock is the only recommended rootstock on sandy soils where ring nematodes can cause issues. 'Lovell' or 'Halford' rootstocks are suggested for peaches planted in heavier soils where ring nematodes are not present"
+        },
+        {
+            type: "Peach",
+            name: "Flameprince",
+            category: "Peach cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Self-fruitful. Do not require pollination by other varieties. Disease notes: A multipurpose fungicide and insecticide spray program will be needed during the growing season. Other considerations: Only varieties that require at least 750 hours of chilling are recommended. 'Guardian' rootstock is the only recommended rootstock on sandy soils where ring nematodes can cause issues. 'Lovell' or 'Halford' rootstocks are suggested for peaches planted in heavier soils where ring nematodes are not present. Source table names this as Flame Prince"
+        },
+        {
+            type: "Euro Pear",
+            name: "Moonglow",
+            category: "European pear cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: At least two varieties are recommended to ensure adequate pollination. Disease notes: Plant only fire blight-resistant varieties. Other considerations: Pears bloom earlier than apples and should be planted on higher sites"
+        },
+        {
+            type: "Euro Pear",
+            name: "Magness",
+            category: "European pear cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: At least two varieties are recommended to ensure adequate pollination. Disease notes: Plant only fire blight-resistant varieties. Other considerations: Pears bloom earlier than apples and should be planted on higher sites"
+        },
+        {
+            type: "Euro Pear",
+            name: "Kieffer",
+            category: "European pear cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: At least two varieties are recommended to ensure adequate pollination. Disease notes: Plant only fire blight-resistant varieties. Other considerations: Pears bloom earlier than apples and should be planted on higher sites"
+        },
+        {
+            type: "Euro Pear",
+            name: "Harrow Sweet",
+            category: "European pear cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: At least two varieties are recommended to ensure adequate pollination. Disease notes: Plant only fire blight-resistant varieties. Other considerations: Pears bloom earlier than apples and should be planted on higher sites"
+        },
+        {
+            type: "Euro Pear",
+            name: "Seckel",
+            category: "European pear cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: At least two varieties are recommended to ensure adequate pollination. Disease notes: Plant only fire blight-resistant varieties. Other considerations: Pears bloom earlier than apples and should be planted on higher sites"
+        },
+        {
+            type: "Euro Pear",
+            name: "Potomac",
+            category: "European pear cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: At least two varieties are recommended to ensure adequate pollination. Disease notes: Plant only fire blight-resistant varieties. Other considerations: Pears bloom earlier than apples and should be planted on higher sites. Source table names this as Potomoc"
+        },
+        {
+            type: "Euro Pear",
+            name: "Shenandoah",
+            category: "European pear cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: At least two varieties are recommended to ensure adequate pollination. Disease notes: Plant only fire blight-resistant varieties. Other considerations: Pears bloom earlier than apples and should be planted on higher sites"
+        },
+        {
+            type: "Pecan",
+            name: "Cape Fear",
+            category: "Pecan cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Pollination by another variety is essential. One variety from each of the two types (I and II) must be used for pollination. Disease notes: Scab is the most serious disease in North Carolina; however, a fungicide spray program is usually not practical. Other considerations: Careful variety selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Pecan",
+            name: "Pawnee",
+            category: "Pecan cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Pollination by another variety is essential. One variety from each of the two types (I and II) must be used for pollination. Disease notes: Scab is the most serious disease in North Carolina; however, a fungicide spray program is usually not practical. Other considerations: Careful variety selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Pecan",
+            name: "Stuart",
+            category: "Pecan cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Pollination by another variety is essential. One variety from each of the two types (I and II) must be used for pollination. Disease notes: Scab is the most serious disease in North Carolina; however, a fungicide spray program is usually not practical. Other considerations: Careful variety selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Pecan",
+            name: "Forkert",
+            category: "Pecan cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Pollination by another variety is essential. One variety from each of the two types (I and II) must be used for pollination. Disease notes: Scab is the most serious disease in North Carolina; however, a fungicide spray program is usually not practical. Other considerations: Careful variety selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Pecan",
+            name: "Sumner",
+            category: "Pecan cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Pollination by another variety is essential. One variety from each of the two types (I and II) must be used for pollination. Disease notes: Scab is the most serious disease in North Carolina; however, a fungicide spray program is usually not practical. Other considerations: Careful variety selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Pecan",
+            name: "Kiowa",
+            category: "Pecan cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Pollination by another variety is essential. One variety from each of the two types (I and II) must be used for pollination. Disease notes: Scab is the most serious disease in North Carolina; however, a fungicide spray program is usually not practical. Other considerations: Careful variety selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Pecan",
+            name: "Gloria Grande",
+            category: "Pecan cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Pollination by another variety is essential. One variety from each of the two types (I and II) must be used for pollination. Disease notes: Scab is the most serious disease in North Carolina; however, a fungicide spray program is usually not practical. Other considerations: Careful variety selection is essential to avoid frost or freeze problems and to allow a long enough season for maturation"
+        },
+        {
+            type: "Persimmon",
+            name: "Fuyu",
+            category: "Persimmon cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Cross-pollination is not required for fruit set but is recommended. Disease notes: No serious disease problems. Other considerations: If non-astrigent carieties are planted, fruit may not be suitable for eating until they are fully mature and their flesh is soft. Are very cold sensitive, suggest using trees propagated on American persimmon rootstock (D. virginiana)"
+        },
+        {
+            type: "Persimmon",
+            name: "Jiro",
+            category: "Persimmon cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Cross-pollination is not required for fruit set but is recommended. Disease notes: No serious disease problems. Other considerations: If non-astrigent carieties are planted, fruit may not be suitable for eating until they are fully mature and their flesh is soft. Are very cold sensitive, suggest using trees propagated on American persimmon rootstock (D. virginiana)"
+        },
+        {
+            type: "Persimmon",
+            name: "Hana Gosho",
+            category: "Persimmon cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Cross-pollination is not required for fruit set but is recommended. Disease notes: No serious disease problems. Other considerations: If non-astrigent carieties are planted, fruit may not be suitable for eating until they are fully mature and their flesh is soft. Are very cold sensitive, suggest using trees propagated on American persimmon rootstock (D. virginiana). Source table names this as Hanagosho"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Methley",
+            category: "Japanese plum cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Some varieties are self-fruitful, but planting two varieties is recommended. Disease notes: A multipurpose fungicide spray program will be needed during the growing season. Other considerations: Later-blooming varieties should be selected to avoid damaging spring temperatures"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Byrongold",
+            category: "Japanese plum cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Some varieties are self-fruitful, but planting two varieties is recommended. Disease notes: A multipurpose fungicide spray program will be needed during the growing season. Other considerations: Later-blooming varieties should be selected to avoid damaging spring temperatures"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Burbank",
+            category: "Japanese plum cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Some varieties are self-fruitful, but planting two varieties is recommended. Disease notes: A multipurpose fungicide spray program will be needed during the growing season. Other considerations: Later-blooming varieties should be selected to avoid damaging spring temperatures"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ozark Premier",
+            category: "Japanese plum cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Some varieties are self-fruitful, but planting two varieties is recommended. Disease notes: A multipurpose fungicide spray program will be needed during the growing season. Other considerations: Later-blooming varieties should be selected to avoid damaging spring temperatures"
+        },
+        {
+            type: "Euro Plum",
+            name: "Bluefre",
+            category: "European plum cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Some varieties are self-fruitful, but planting two varieties is recommended. Disease notes: A multipurpose fungicide spray program will be needed during the growing season. Other considerations: Later-blooming varieties should be selected to avoid damaging spring temperatures"
+        },
+        {
+            type: "Euro Plum",
+            name: "Stanley",
+            category: "European plum cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Some varieties are self-fruitful, but planting two varieties is recommended. Disease notes: A multipurpose fungicide spray program will be needed during the growing season. Other considerations: Later-blooming varieties should be selected to avoid damaging spring temperatures"
+        },
+        {
+            type: "Euro Plum",
+            name: "Shropshire",
+            category: "European plum cultivars recommended for smaller North Carolina orchards",
+            description: "Pollination: Some varieties are self-fruitful, but planting two varieties is recommended. Disease notes: A multipurpose fungicide spray program will be needed during the growing season. Other considerations: Later-blooming varieties should be selected to avoid damaging spring temperatures. Source table names this as Shropshire (Damson)"
+        },
+    ]
+}

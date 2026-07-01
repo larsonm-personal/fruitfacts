@@ -315,6 +315,14 @@
         {
             "id": "clemson_peach_variety_evaluations_cooley_2016",
             "config": "extraction_configs/clemson_peach_variety_evaluations_cooley_2016.json"
+        },
+        {
+            "id": "nc_state_smaller_orchard_production_guide",
+            "config": "extraction_configs/nc_state_smaller_orchard_production_guide.json"
+        },
+        {
+            "id": "unh_seedless_table_grape_2019",
+            "config": "extraction_configs/unh_seedless_table_grape_2019.json"
         }
     ]
 }

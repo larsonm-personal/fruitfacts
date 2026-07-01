@@ -1,0 +1,191 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://content.ces.ncsu.edu/north-carolina-production-guide-for-smaller-orchard-plantings"
+  },
+  "reference_fields": [
+    ["title", "NC State Smaller Orchard Production Guide"],
+    ["author", "NC State Extension"],
+    ["description", "NC State Extension production guide with fruit and nut cultivar recommendations for smaller North Carolina orchard plantings"],
+    ["url", "https://content.ces.ncsu.edu/north-carolina-production-guide-for-smaller-orchard-plantings"],
+    ["thumbnail", "website"],
+    ["reviewed", "Jan 12, 2026"],
+    ["accessed", "Jul 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "NC State Extension, Raleigh, North Carolina",
+      "latitude": 35.7847,
+      "longitude": -78.6821
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple cultivars recommended for smaller North Carolina orchards",
+      "description": "NC State smaller-orchard guide lists these apple cultivars in its recommended varieties table"
+    },
+    {
+      "name": "Asian pear cultivars recommended for smaller North Carolina orchards",
+      "description": "NC State smaller-orchard guide lists these Asian pear cultivars in its recommended varieties table"
+    },
+    {
+      "name": "Chestnut cultivars recommended for smaller North Carolina orchards",
+      "description": "NC State smaller-orchard guide lists these chestnut cultivars in its recommended varieties table"
+    },
+    {
+      "name": "Fig cultivars recommended for smaller North Carolina orchards",
+      "description": "NC State smaller-orchard guide lists these fig cultivars in its recommended varieties table"
+    },
+    {
+      "name": "Nectarine cultivars recommended for smaller North Carolina orchards",
+      "description": "NC State smaller-orchard guide lists these nectarine cultivars in its recommended varieties table"
+    },
+    {
+      "name": "Peach cultivars recommended for smaller North Carolina orchards",
+      "description": "NC State smaller-orchard guide lists these peach cultivars in its recommended varieties table"
+    },
+    {
+      "name": "European pear cultivars recommended for smaller North Carolina orchards",
+      "description": "NC State smaller-orchard guide lists these European pear cultivars in its recommended varieties table"
+    },
+    {
+      "name": "Pecan cultivars recommended for smaller North Carolina orchards",
+      "description": "NC State smaller-orchard guide lists these pecan cultivars in its recommended varieties table"
+    },
+    {
+      "name": "Persimmon cultivars recommended for smaller North Carolina orchards",
+      "description": "NC State smaller-orchard guide lists these Oriental persimmon cultivars in its recommended varieties table"
+    },
+    {
+      "name": "Japanese plum cultivars recommended for smaller North Carolina orchards",
+      "description": "NC State smaller-orchard guide lists these Japanese plum cultivars in its recommended varieties table"
+    },
+    {
+      "name": "European plum cultivars recommended for smaller North Carolina orchards",
+      "description": "NC State smaller-orchard guide lists these European plum cultivars in its recommended varieties table"
+    }
+  ],
+  "name_overrides": {
+    "Gold Rush": {
+      "name": "GoldRush",
+      "note": "Source table names this as Gold Rush"
+    },
+    "Crispin (Mutsu)": {
+      "name": "Crispin",
+      "aka": ["Mutsu"],
+      "note": "Source table names this as Crispin (Mutsu)"
+    },
+    "Brunswick/Magnolia": {
+      "name": "Magnolia",
+      "note": "Source table names this as Brunswick/Magnolia"
+    },
+    "Redgold": {
+      "name": "Red Gold",
+      "note": "Source table names this as Redgold"
+    },
+    "Flame Prince": {
+      "name": "Flameprince",
+      "note": "Source table names this as Flame Prince"
+    },
+    "Hanagosho": {
+      "name": "Hana Gosho",
+      "note": "Source table names this as Hanagosho"
+    },
+    "Potomoc": {
+      "name": "Potomac",
+      "note": "Source table names this as Potomoc"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "table_index": 1,
+      "required_headers": [
+        "Fruit",
+        "Recommended Varieties",
+        "Pollination Notes",
+        "Disease Notes",
+        "Other Considerations"
+      ],
+      "name_key": "name",
+      "split_name_field": {
+        "source_key": "recommended_varieties",
+        "source_value_key": "source_variety_list",
+        "separator_pattern": "\\s*,\\s*|\\s+and\\s+",
+        "text_fixes": {
+          "literal": {
+            "Chinese: ": "",
+            " Chinese-American Hybrid: ": ", ",
+            "Type I: ": "",
+            " Type II: ": ", ",
+            "Japanese: ": "",
+            " European: ": ", "
+          },
+          "regex": [
+            [
+              "\\s*\\(Many varieties are the result of a peach breeding program at NC State University and have been developed for North Carolina\\)",
+              ""
+            ]
+          ]
+        },
+        "name_strip_patterns": [
+          "\\s*\\((?:white-fleshed|not a pollen source|self-fruitful|may bloom early|very good pollen source|for preserves|Damson|see note 2)\\)",
+          "\\s*\\(Only large-fruited Oriental persimmons are recommended for North Carolina\\)",
+          "\\s*\\(Many varieties.*$"
+        ]
+      },
+      "plant_type": {
+        "row_key": "fruit",
+        "map": {
+          "Apples": "Apple",
+          "Asian Pears": "Asian Pear",
+          "Chestnuts": "Chestnut",
+          "Figs": "Fig",
+          "Nectarines": "Nectarine",
+          "Peaches": "Peach",
+          "Pears": "Euro Pear",
+          "Pecans": "Pecan",
+          "Persimmons": "Persimmon",
+          "Plums": "Japanese Plum"
+        }
+      },
+      "category": {
+        "row_key": "fruit",
+        "map": {
+          "Apples": "Apple cultivars recommended for smaller North Carolina orchards",
+          "Asian Pears": "Asian pear cultivars recommended for smaller North Carolina orchards",
+          "Chestnuts": "Chestnut cultivars recommended for smaller North Carolina orchards",
+          "Figs": "Fig cultivars recommended for smaller North Carolina orchards",
+          "Nectarines": "Nectarine cultivars recommended for smaller North Carolina orchards",
+          "Peaches": "Peach cultivars recommended for smaller North Carolina orchards",
+          "Pears": "European pear cultivars recommended for smaller North Carolina orchards",
+          "Pecans": "Pecan cultivars recommended for smaller North Carolina orchards",
+          "Persimmons": "Persimmon cultivars recommended for smaller North Carolina orchards",
+          "Plums": "Japanese plum cultivars recommended for smaller North Carolina orchards"
+        }
+      },
+      "row_overrides": {
+        "Bluefre": {
+          "plant_type": "Euro Plum",
+          "category": "European plum cultivars recommended for smaller North Carolina orchards"
+        },
+        "Stanley": {
+          "plant_type": "Euro Plum",
+          "category": "European plum cultivars recommended for smaller North Carolina orchards"
+        },
+        "Shropshire": {
+          "plant_type": "Euro Plum",
+          "category": "European plum cultivars recommended for smaller North Carolina orchards",
+          "_source_note": "Source table names this as Shropshire (Damson)"
+        }
+      },
+      "description_labels": [
+        ["pollination_notes", "Pollination"],
+        ["disease_notes", "Disease notes"],
+        ["other_considerations", "Other considerations"]
+      ]
+    }
+  ]
+}

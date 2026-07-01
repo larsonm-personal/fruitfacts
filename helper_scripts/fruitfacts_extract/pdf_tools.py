@@ -10,15 +10,17 @@ from urllib.request import Request, urlopen
 from fruitfacts_extract.text_tools import DEFAULT_USER_AGENT, clean_text
 
 
-def fetch_url_bytes(url, user_agent=DEFAULT_USER_AGENT, timeout=60):
+def fetch_url_bytes(url, user_agent=None, timeout=60):
+    if user_agent is None:
+        user_agent = DEFAULT_USER_AGENT
     request = Request(url, headers={"User-Agent": user_agent})
     try:
         return urlopen(request, timeout=timeout).read()
     except Exception as original_error:
-        return fetch_url_bytes_with_powershell(url, timeout, original_error)
+        return fetch_url_bytes_with_powershell(url, timeout, original_error, user_agent)
 
 
-def fetch_url_bytes_with_powershell(url, timeout, original_error):
+def fetch_url_bytes_with_powershell(url, timeout, original_error, user_agent):
     powershell = shutil.which("pwsh") or shutil.which("powershell")
     if not powershell:
         raise original_error
@@ -28,10 +30,11 @@ def fetch_url_bytes_with_powershell(url, timeout, original_error):
         script_path.write_text(
             "\n".join(
                 [
-                    "param($Url, $OutFile, $TimeoutSec)",
+                    "param($Url, $OutFile, $TimeoutSec, $UserAgent)",
                     "$ProgressPreference='SilentlyContinue'",
                     "Invoke-WebRequest -Uri $Url -UseBasicParsing "
                     + "-MaximumRedirection 5 -TimeoutSec ([int]$TimeoutSec) "
+                    + "-UserAgent $UserAgent "
                     + "-OutFile $OutFile",
                 ]
             ),
@@ -50,6 +53,7 @@ def fetch_url_bytes_with_powershell(url, timeout, original_error):
                     url,
                     str(pdf_path),
                     str(timeout),
+                    user_agent,
                 ],
                 check=True,
                 capture_output=True,
@@ -82,10 +86,10 @@ def pdf_file_to_text(pdf_path, layout=True):
         text_path.unlink(missing_ok=True)
 
 
-def pdf_url_to_text(url, layout=True):
+def pdf_url_to_text(url, layout=True, user_agent=None):
     with tempfile.TemporaryDirectory(prefix="fruitfacts_pdf_") as temp_dir:
         pdf_path = Path(temp_dir) / "source.pdf"
-        pdf_path.write_bytes(fetch_url_bytes(url))
+        pdf_path.write_bytes(fetch_url_bytes(url, user_agent=user_agent))
         return pdf_file_to_text(pdf_path, layout=layout)
 
 

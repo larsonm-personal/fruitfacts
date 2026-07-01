@@ -74,7 +74,11 @@ def source_data(config):
     if source["kind"] == "html":
         return fetch_html_page(source["url"])
     if source["kind"] == "pdf":
-        pdf_text = pdf_url_to_text(source["url"], layout=source.get("layout", True))
+        pdf_text = pdf_url_to_text(
+            source["url"],
+            layout=source.get("layout", True),
+            user_agent=source.get("user_agent"),
+        )
         if source.get("layout_text"):
             return clean_pdf_layout_text(pdf_text)
         if source.get("line_text"):
@@ -523,9 +527,9 @@ def plant_records_from_config_rows(rows, extractor, overrides, lookups):
     for row in rows:
         name, source_note, extra_fields = source_name_and_note(row, extractor, overrides)
         record = plant_record(
-            resolved_value(extractor["plant_type"], row),
+            row.get("plant_type") or resolved_value(extractor["plant_type"], row),
             name,
-            category=resolved_value(extractor.get("category"), row),
+            category=row.get("category") or resolved_value(extractor.get("category"), row),
         )
         for key, value in extra_fields.items():
             record[key] = value

@@ -1,0 +1,82 @@
+{
+    title: "UNH Seedless Table Grape Variety and Training System Evaluation 2019",
+    author: "Becky Sideman and George Hamilton",
+    description: "University of New Hampshire research update on seedless table grape cultivar performance and training systems in Durham, New Hampshire",
+    url: "https://scholars.unh.edu/cgi/viewcontent.cgi?article=1034&context=extension",
+    thumbnail: "pdf",
+    published: "2019",
+    accessed: "Jul 2026",
+    type: "extension test",
+    needs_help: true,
+    locations: [
+        {
+            name: "UNH Agricultural Experiment Station, Durham, New Hampshire",
+            latitude: 43.1389,
+            longitude: -70.937
+        },
+    ],
+    categories: [
+        {
+            name: "Seedless table grape cultivars evaluated at UNH",
+            description: "UNH evaluated these seedless table grape cultivars in Durham, New Hampshire from 2016 to 2019"
+        },
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Canadice",
+            category: "Seedless table grape cultivars evaluated at UNH",
+            harvest_time_unparsed: "2019 harvest period was Sept 15 to Oct 4",
+            description: "UNH evaluated Canadice as a seedless table grape in Durham, New Hampshire. Fruit color: red. 2016-2019 ratings: anthracnose low, downy mildew low, powdery mildew low, vigor high. Fruit notes: Tight, very attractive and uniform clusters. Trial notes: 2019 preliminary results say Mars and Canadice produced more marketable fruit than all other varieties. Source conclusion: UNH preliminary conclusions identify Mars and Canadice as most promising for commercial production of seedless table grapes in the region"
+        },
+        {
+            type: "Grape",
+            name: "Concord Seedless",
+            category: "Seedless table grape cultivars evaluated at UNH",
+            harvest_time_unparsed: "early maturing; 2019 harvest period was Sept 15 to Oct 4",
+            description: "UNH evaluated Concord Seedless as a seedless table grape in Durham, New Hampshire. Fruit color: blue. 2016-2019 ratings: anthracnose low, downy mildew low, powdery mildew low, vigor high. Fruit notes: Small clusters with some variability in fruit size; prone to cracking; early maturing"
+        },
+        {
+            type: "Grape",
+            name: "Lakemont",
+            category: "Seedless table grape cultivars evaluated at UNH",
+            harvest_time_unparsed: "among the earliest to mature; 2019 harvest period was Sept 15 to Oct 4",
+            description: "UNH evaluated Lakemont as a seedless table grape in Durham, New Hampshire. Fruit color: green or white. 2016-2019 ratings: anthracnose medium, downy mildew high, powdery mildew high, vigor medium. Fruit notes: Moderately loose clusters of uniform golden-green fruit with nice flavor. Source conclusion: UNH says Vanessa and Lakemont produced very high quality fruit, but their limitation was susceptibility to downy and powdery mildews"
+        },
+        {
+            type: "Grape",
+            name: "Marquis",
+            category: "Seedless table grape cultivars evaluated at UNH",
+            harvest_time_unparsed: "among the last to mature; 2019 harvest period was Sept 15 to Oct 4",
+            description: "UNH evaluated Marquis as a seedless table grape in Durham, New Hampshire. Fruit color: green or white. 2016-2019 ratings: anthracnose high, downy mildew high, powdery mildew medium, vigor low. Fruit notes: Latest to mature of these cultivars; beautiful clusters of large fruit; skin somewhat tough"
+        },
+        {
+            type: "Grape",
+            name: "Mars",
+            category: "Seedless table grape cultivars evaluated at UNH",
+            harvest_time_unparsed: "among the last to mature; 2019 harvest period was Sept 15 to Oct 4",
+            description: "UNH evaluated Mars as a seedless table grape in Durham, New Hampshire. Fruit color: blue. 2016-2019 ratings: anthracnose low, downy mildew medium, powdery mildew low, vigor high. Fruit notes: Tight, very attractive and uniform clusters. Trial notes: Mars produced higher yields than all other varieties in 2018, at 22 to 27 pounds per vine, and was among the top marketable-yield cultivars in 2019. Source conclusion: UNH preliminary conclusions identify Mars and Canadice as most promising for commercial production of seedless table grapes in the region"
+        },
+        {
+            type: "Grape",
+            name: "Reliance",
+            category: "Seedless table grape cultivars evaluated at UNH",
+            harvest_time_unparsed: "among the earliest to mature; 2019 harvest period was Sept 15 to Oct 4",
+            description: "UNH evaluated Reliance as a seedless table grape in Durham, New Hampshire. Fruit color: red. 2016-2019 ratings: anthracnose high, downy mildew medium, powdery mildew high, vigor high. Fruit notes: Somewhat loose clusters; inconsistent ripening and color development; prone to shattering"
+        },
+        {
+            type: "Grape",
+            name: "Thomcord",
+            category: "Seedless table grape cultivars evaluated at UNH",
+            harvest_time_unparsed: "among the earliest to mature; 2019 harvest period was Sept 15 to Oct 4",
+            description: "UNH evaluated Thomcord as a seedless table grape in Durham, New Hampshire. Fruit color: blue. 2016-2019 ratings: anthracnose high, downy mildew high, powdery mildew high, vigor low. Fruit notes: Poor fruit set, leading to uneven clusters; some bird damage due to minimal canopy cover. Trial notes: UNH observed the highest mortality and lowest vigor for Thomcord"
+        },
+        {
+            type: "Grape",
+            name: "Vanessa",
+            category: "Seedless table grape cultivars evaluated at UNH",
+            harvest_time_unparsed: "among the earliest to mature; 2019 harvest period was Sept 15 to Oct 4",
+            description: "UNH evaluated Vanessa as a seedless table grape in Durham, New Hampshire. Fruit color: red. 2016-2019 ratings: anthracnose low, downy mildew high, powdery mildew high, vigor high. Fruit notes: Loose clusters of oval-shaped berries; fruit are firm and crisp with excellent flavor. Source conclusion: UNH says Vanessa and Lakemont produced very high quality fruit, but their limitation was susceptibility to downy and powdery mildews"
+        },
+    ]
+}

@@ -821,3 +821,30 @@ Some official PDFs may reject Python urllib even when PowerShell can download
 the same URL. The PDF helper now falls back to PowerShell `Invoke-WebRequest`
 on Windows before failing the source fetch, so configs can remain ordinary
 `kind: pdf` configs for these blocked official PDFs.
+
+## NC Smaller Orchard And UNH Grape Notes
+
+The NC State smaller-orchard guide is one broad HTML recommendation table. Its
+variety cells include source sublabels such as Japanese, European, Type I, and
+Type II inside the same cell as cultivar names. Use `split_name_field`
+`text_fixes` to turn those source labels into ordinary split points only when
+the labels are not cultivar names.
+
+The NC plum row needs row-level corrections after splitting. The config runner
+now lets a `row_override` supply `plant_type` and `category`, and those values
+win over the extractor's row default. That keeps Bluefre, Stanley, and
+Shropshire as European plums while the rest of the source plum row remains
+Japanese plum. Do not use Species Plum for named bred plum cultivars.
+
+The UNH 2019 seedless table grape report is a repository PDF linked from an
+official Extension landing page. The Scholars download rejected the default
+Python urllib request in this environment, so PDF configs can set
+`source.user_agent` and the shared PDF helper passes it through both urllib and
+the Windows PowerShell fallback.
+
+This report spreads useful cultivar facts across narrative, disease-rating
+tables, fruit notes, and conclusion paragraphs. Static rows were the clearest
+config shape here: they keep the citation, thumbnail, and manifest path
+reusable while preserving the disease ratings, vigor ratings, harvest wording,
+fruit notes, and preliminary conclusions without pretending the PDF has one
+clean cultivar table.
