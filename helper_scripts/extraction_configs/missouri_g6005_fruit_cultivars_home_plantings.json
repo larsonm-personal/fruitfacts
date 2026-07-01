@@ -1,0 +1,477 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://extension.missouri.edu/media/wysiwyg/Extensiondata/Pub/pdf/agguides/hort/g06005.pdf",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "MU G6005 Fruit Cultivars for Home Plantings"],
+    ["author", "Michele Warmund"],
+    ["description", "University of Missouri Extension G6005 guide with suggested fruit cultivars for Missouri home plantings"],
+    ["url", "https://extension.missouri.edu/media/wysiwyg/Extensiondata/Pub/pdf/agguides/hort/g06005.pdf"],
+    ["thumbnail", "pdf"],
+    ["published", "Revised January 2012"],
+    ["accessed", "Jul 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Missouri Extension, Columbia, Missouri",
+      "latitude": 38.9453,
+      "longitude": -92.3288
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple cultivars for Missouri home plantings",
+      "description": "MU G6005 lists these apple cultivars as suggested home planting choices for Missouri"
+    },
+    {
+      "name": "Pear cultivars for Missouri home plantings",
+      "description": "MU G6005 lists these fire-blight-resistant pear cultivars as suggested choices for Missouri"
+    },
+    {
+      "name": "Peach and nectarine cultivars for Missouri home plantings",
+      "description": "MU G6005 lists these peach and nectarine cultivars for Missouri home plantings"
+    },
+    {
+      "name": "Apricot cultivars for Missouri home plantings",
+      "description": "MU G6005 lists these apricot cultivars for Missouri home plantings, while noting that apricot crops are unreliable in central Missouri"
+    },
+    {
+      "name": "Plum cultivars for Missouri home plantings",
+      "description": "MU G6005 lists these European and Japanese plum cultivars for Missouri home plantings"
+    },
+    {
+      "name": "Cherry cultivars for Missouri home plantings",
+      "description": "MU G6005 lists these sour and sweet cherry cultivars for Missouri home plantings"
+    },
+    {
+      "name": "Grape cultivars for Missouri home plantings",
+      "description": "MU G6005 lists these seeded table, wine, and seedless grape cultivars for Missouri home plantings"
+    },
+    {
+      "name": "Small fruit cultivars for Missouri home plantings",
+      "description": "MU G6005 lists these strawberry, blackberry, raspberry, blueberry, gooseberry, currant, and elderberry cultivars for Missouri home plantings"
+    }
+  ],
+  "text_fixes": {
+    "mediumsize": "medium-size",
+    "wedge shaped": "wedge-shaped",
+    "diseaseresistant": "disease-resistant",
+    "selfpollinating": "self-pollinating",
+    "self-fertile": "self-fruitful",
+    "selfpollination": "self-pollination",
+    "Vitus aestavalis": "Vitis aestivalis"
+  },
+  "name_overrides": {
+    "Olympic (Korean) Giant": {
+      "name": "Korean Giant",
+      "note": "Source text names this pear Olympic (Korean) Giant"
+    },
+    "Norton (Cynthiana)": {
+      "name": "Norton",
+      "note": "Source text names this grape Norton (Cynthiana)"
+    },
+    "Blackgold": {
+      "name": "BlackGold",
+      "note": "Source text names this cherry Blackgold"
+    },
+    "Blazing Star": {
+      "name": "Blazingstar",
+      "note": "Source text names this peach Blazing Star"
+    },
+    "Redheart": {
+      "name": "Red Heart",
+      "note": "Source text names this Japanese plum Redheart"
+    },
+    "Wyldwood": {
+      "name": "Wyldewood",
+      "note": "Source text names this elderberry Wyldwood"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Apples",
+      "section_end": "Pears",
+      "default_category": "Apple cultivars for Missouri home plantings",
+      "default_plant_type": "Apple",
+      "entry_names_only": true,
+      "entry_separator_pattern": "(?:\\.\\s+|\\s*[-:]\\s*|\\s+)",
+      "entry_names": [
+        "Liberty",
+        "September Wonder Fuji",
+        "Enterprise",
+        "Arkansas Black"
+      ],
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["Matures", "Ripens", "Harvest"]
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Pears",
+      "section_end": "Peaches",
+      "default_category": "Pear cultivars for Missouri home plantings",
+      "default_plant_type": "Euro Pear",
+      "entry_names_only": true,
+      "entry_separator_pattern": "(?:\\.\\s+|\\s*[-:]\\s*|\\s+)",
+      "entry_names": [
+        "Harrow Delight",
+        "Seckel",
+        "Honeysweet",
+        "Starking Delicious",
+        "Olympic (Korean) Giant"
+      ],
+      "row_overrides": {
+        "Olympic (Korean) Giant": {
+          "plant_type": "Asian Pear"
+        }
+      },
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["Matures", "Ripens", "Harvest"]
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Peaches",
+      "section_end": "Nectarines",
+      "default_category": "Peach and nectarine cultivars for Missouri home plantings",
+      "default_plant_type": "Peach",
+      "entry_names_only": true,
+      "entry_separator_pattern": "(?:\\.\\s+|\\s*[-:]\\s*|\\s+)",
+      "entry_names": [
+        "Flamin' Fury PF-1",
+        "Redhaven",
+        "Blazing Star",
+        "Contender",
+        "TangOs",
+        "Blushingstar"
+      ],
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["Matures", "Ripens", "Harvest", "picked", "harvested"]
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Nectarines",
+      "section_end": "Apricots",
+      "default_category": "Peach and nectarine cultivars for Missouri home plantings",
+      "default_plant_type": "Nectarine",
+      "entry_names_only": true,
+      "entry_separator_pattern": "(?:\\.\\s+|\\s*[-:]\\s*|\\s+)",
+      "entry_names": [
+        "Flamin' Fury PF-11",
+        "Emeraude",
+        "Fantasia",
+        "Stark Ovation"
+      ],
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["Matures", "Ripens", "Harvest", "picked", "harvested"]
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Apricots",
+      "section_end": "Plums",
+      "default_category": "Apricot cultivars for Missouri home plantings",
+      "default_plant_type": "Apricot",
+      "entry_names_only": true,
+      "entry_separator_pattern": "(?:\\.\\s+|\\s*[-:]\\s*|\\s+)",
+      "entry_names": [
+        "Goldcot",
+        "Wilson Delicious",
+        "Harglow"
+      ],
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["Matures", "Ripens", "Harvest", "picked", "harvested"]
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Plums",
+      "section_end": "Sour cherries",
+      "entry_names_only": true,
+      "entry_separator_pattern": "(?:\\.\\s+|\\s*[-:]\\s*|\\s+)",
+      "entry_names": [
+        "Earliblue",
+        "Stanley",
+        "Damson",
+        "Shiro",
+        "Ozark Premier",
+        "Redheart"
+      ],
+      "category_rules": [
+        {
+          "text": "European",
+          "category": "Plum cultivars for Missouri home plantings",
+          "plant_type": "Euro Plum"
+        },
+        {
+          "text": "Japanese",
+          "category": "Plum cultivars for Missouri home plantings",
+          "plant_type": "Japanese Plum"
+        }
+      ],
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["Matures", "Ripens", "Harvest"]
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Sour cherries",
+      "section_end": "Grapes",
+      "entry_names_only": true,
+      "entry_separator_pattern": "(?:\\.\\s+|\\s*[-:]\\s*|\\s+)",
+      "entry_names": [
+        "Montmorency",
+        "North Star",
+        "Balaton",
+        "Stella",
+        "Blackgold",
+        "Starkrimson",
+        "Royalton",
+        "Emperor Francis",
+        "Gold"
+      ],
+      "category_rules": [
+        {
+          "text": "Sour cherries",
+          "category": "Cherry cultivars for Missouri home plantings",
+          "plant_type": "Sour Cherry"
+        },
+        {
+          "text": "Self-pollinating types",
+          "category": "Cherry cultivars for Missouri home plantings",
+          "plant_type": "Sweet Cherry"
+        },
+        {
+          "text": "Cross-pollinating types",
+          "category": "Cherry cultivars for Missouri home plantings",
+          "plant_type": "Sweet Cherry"
+        }
+      ],
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["Matures", "Ripens", "Harvest"]
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Grapes",
+      "section_end": "Strawberries",
+      "entry_names_only": true,
+      "entry_separator_pattern": "(?:\\.\\s+|\\s*[-:]\\s*|\\s+)",
+      "entry_names": [
+        "Fredonia",
+        "Concord",
+        "Niagara",
+        "Catawba",
+        "Seyval",
+        "Vidal Blanc",
+        "Norton (Cynthiana)",
+        "Glenora",
+        "Reliance",
+        "Mars",
+        "Neptune"
+      ],
+      "category_rules": [
+        {
+          "text": "Table grapes with seeds",
+          "category": "Grape cultivars for Missouri home plantings",
+          "plant_type": "Grape"
+        },
+        {
+          "text": "Wine grapes",
+          "category": "Grape cultivars for Missouri home plantings",
+          "plant_type": "Grape"
+        },
+        {
+          "text": "Seedless grapes",
+          "category": "Grape cultivars for Missouri home plantings",
+          "plant_type": "Grape"
+        }
+      ],
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["Matures", "Ripens", "Ripen", "Harvest", "Harvested"]
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Strawberries",
+      "section_end": "Blackberries",
+      "entry_names_only": true,
+      "entry_separator_pattern": "(?:\\.\\s+|\\s*[-:]\\s*|\\s+)",
+      "entry_names": [
+        "Earliglow",
+        "Surecrop",
+        "Honeoye",
+        "Redchief",
+        "Allstar",
+        "Jewel"
+      ],
+      "category_rules": [
+        {
+          "text": "Early",
+          "category": "Small fruit cultivars for Missouri home plantings",
+          "plant_type": "Strawberry"
+        },
+        {
+          "text": "Midseason",
+          "category": "Small fruit cultivars for Missouri home plantings",
+          "plant_type": "Strawberry"
+        },
+        {
+          "text": "Late midseason",
+          "category": "Small fruit cultivars for Missouri home plantings",
+          "plant_type": "Strawberry"
+        }
+      ],
+      "description_key": "description"
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Blackberries",
+      "section_end": "Raspberries",
+      "entry_names_only": true,
+      "entry_separator_pattern": "(?:\\.\\s+|\\s*[-:]\\s*|\\s+)",
+      "entry_names": [
+        "Darrow",
+        "Shawnee",
+        "Arapaho",
+        "Apache",
+        "Ouachita",
+        "Navaho"
+      ],
+      "category_rules": [
+        {
+          "text": "Thorned",
+          "category": "Small fruit cultivars for Missouri home plantings",
+          "plant_type": "Blackberry"
+        },
+        {
+          "text": "Thornless",
+          "category": "Small fruit cultivars for Missouri home plantings",
+          "plant_type": "Blackberry"
+        }
+      ],
+      "skip_line_patterns": [
+        "^Note: Primocane"
+      ],
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["Matures", "Ripens", "Harvest"]
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Raspberries",
+      "section_end": "Blueberries",
+      "default_category": "Small fruit cultivars for Missouri home plantings",
+      "default_plant_type": "Raspberry",
+      "entry_names_only": true,
+      "entry_separator_pattern": "(?:\\.\\s+|\\s*[-:]\\s*|\\s+)",
+      "entry_names": [
+        "Jewel",
+        "Royalty",
+        "Latham",
+        "Heritage"
+      ],
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["Matures", "Ripens", "Harvest"]
+    },
+    {
+      "kind": "pdf_catalog_entries",
+      "section_start": "Blueberries",
+      "section_end": "Gooseberries",
+      "default_category": "Small fruit cultivars for Missouri home plantings",
+      "default_plant_type": "Blueberry",
+      "entry_names_only": true,
+      "entry_separator_pattern": "(?:\\.\\s+|\\s*[-:]\\s*|\\s+)",
+      "entry_names": [
+        "Duke",
+        "Blueray",
+        "Bluecrop"
+      ],
+      "description_key": "description",
+      "harvest_from_key": "description",
+      "harvest_terms": ["Matures", "Ripens", "Harvest"]
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Gooseberries",
+      "section_end": "Currants",
+      "marker": "Improved cultivars such as",
+      "end_marker": "produce",
+      "row_fields": {
+        "category": "Small fruit cultivars for Missouri home plantings",
+        "plant_type": "Gooseberry"
+      },
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "description_template": "MU G6005 names {name} among improved gooseberry cultivars for Missouri home plantings"
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Currants",
+      "section_end": "Elderberries",
+      "marker": "Black currant cultivars, including",
+      "end_marker": ", require",
+      "row_fields": {
+        "category": "Small fruit cultivars for Missouri home plantings",
+        "plant_type": "Currant",
+        "source_context": "black currants"
+      },
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "description_template": "MU G6005 names {name} among {source_context} for Missouri home plantings"
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Currants",
+      "section_end": "Elderberries",
+      "marker": "Blackdown, Consort and Crusader, require cross-pollination. ",
+      "end_marker": "currants are",
+      "row_fields": {
+        "category": "Small fruit cultivars for Missouri home plantings",
+        "plant_type": "Currant",
+        "source_context": "self-fruitful red currants"
+      },
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "description_template": "MU G6005 names {name} among {source_context} for Missouri home plantings"
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Elderberries",
+      "section_end": "Also from MU Extension Publications",
+      "marker": "Missouri cultivars include",
+      "end_marker": ", but others",
+      "row_fields": {
+        "category": "Small fruit cultivars for Missouri home plantings",
+        "plant_type": "Elderberry",
+        "source_context": "Missouri elderberry cultivars"
+      },
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "description_template": "MU G6005 names {name} among {source_context}"
+    },
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Elderberries",
+      "section_end": "Also from MU Extension Publications",
+      "marker": "but others such as",
+      "end_marker": "are available",
+      "row_fields": {
+        "category": "Small fruit cultivars for Missouri home plantings",
+        "plant_type": "Elderberry",
+        "source_context": "other elderberries available for Missouri home plantings"
+      },
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "description_template": "MU G6005 names {name} among {source_context}"
+    }
+  ]
+}

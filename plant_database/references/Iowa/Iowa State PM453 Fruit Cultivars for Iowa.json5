@@ -1,0 +1,376 @@
+{
+    title: "Iowa State PM453 Fruit Cultivars for Iowa",
+    author: "Iowa State University Extension and Outreach",
+    description: "Iowa State University Extension PM453 cultivar guide for Iowa fruit plantings",
+    url: "https://shop.iastate.edu/on/demandware.store/Sites-isu-Site/default/Download-File?file=UE00NTMucGRm&container=shop",
+    thumbnail: "pdf",
+    publication_number: "PM453",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Iowa State University Extension and Outreach, Ames, Iowa",
+            latitude: 42.0267,
+            longitude: -93.6465
+        },
+    ],
+    categories: [
+        {
+            name: "Apricot cultivars for Iowa",
+            description: "Iowa State PM453 lists these apricot cultivars for Iowa plantings"
+        },
+        {
+            name: "Sour cherry cultivars for Iowa",
+            description: "Iowa State PM453 lists these sour cherry cultivars for Iowa plantings"
+        },
+        {
+            name: "Sweet cherry cultivars for Iowa",
+            description: "Iowa State PM453 lists these sweet cherry cultivars for Iowa plantings"
+        },
+        {
+            name: "Peach cultivars for Iowa",
+            description: "Iowa State PM453 lists these peach cultivars for Iowa plantings"
+        },
+        {
+            name: "European pear cultivars for Iowa",
+            description: "Iowa State PM453 lists these European pear cultivars for Iowa plantings"
+        },
+        {
+            name: "Asian pear cultivars for Iowa",
+            description: "Iowa State PM453 lists these Asian pear cultivars for Iowa plantings"
+        },
+        {
+            name: "European plum cultivars for Iowa",
+            description: "Iowa State PM453 lists these European plum cultivars for Iowa plantings"
+        },
+        {
+            name: "Japanese-American hybrid plum cultivars for Iowa",
+            description: "Iowa State PM453 lists these Japanese-American hybrid plum cultivars for Iowa plantings"
+        },
+    ],
+    plants: [
+        {
+            type: "Apricot",
+            name: "Goldcot",
+            category: "Apricot cultivars for Iowa",
+            harvest_time_unparsed: "Early July",
+            description: "Iowa State PM453 lists Goldcot for Iowa fruit plantings. Season: Early July. Adapted to Iowa: S. Use: Fresh and processed. Source remarks: Strong, vigorous, spreading tree. Medium-size, medium-firm fruit; self-fruitful"
+        },
+        {
+            type: "Apricot",
+            name: "Moongold",
+            category: "Apricot cultivars for Iowa",
+            harvest_time_unparsed: "Mid July",
+            description: "Iowa State PM453 lists Moongold for Iowa fruit plantings. Season: Mid July. Adapted to Iowa: All. Use: Fresh and processed. Source remarks: Medium-vigor, spreading tree. Medium-size fruit; self-unfruitful, pollinate with Sungold"
+        },
+        {
+            type: "Apricot",
+            name: "Sungold",
+            category: "Apricot cultivars for Iowa",
+            harvest_time_unparsed: "Late July",
+            description: "Iowa State PM453 lists Sungold for Iowa fruit plantings. Season: Late July. Adapted to Iowa: All. Use: Fresh and processed. Source remarks: Medium-vigor, upright tree. Large fruit; self-unfruitful, pollinate with Moongold"
+        },
+        {
+            type: "Apricot",
+            name: "Moorpark",
+            category: "Apricot cultivars for Iowa",
+            harvest_time_unparsed: "Early Aug",
+            description: "Iowa State PM453 lists Moorpark for Iowa fruit plantings. Season: Early Aug. Adapted to Iowa: C, S. Use: Fresh and processed. Source remarks: Vigorous tree. Large fruit; self-fruitful"
+        },
+        {
+            type: "Sour Cherry",
+            name: "North Star",
+            category: "Sour cherry cultivars for Iowa",
+            harvest_time_unparsed: "Late June",
+            description: "Iowa State PM453 lists Northstar for Iowa fruit plantings. Season: Late June. Adapted to Iowa: All. Use: Processed and fresh. Source remarks: Natural dwarf, spreading tree. Red skin, red flesh fruit. Source spells the name Northstar"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Meteor",
+            category: "Sour cherry cultivars for Iowa",
+            harvest_time_unparsed: "Early July",
+            description: "Iowa State PM453 lists Meteor for Iowa fruit plantings. Season: Early July. Adapted to Iowa: All. Use: Processed and fresh. Source remarks: Semi-dwarf, upright tree. Red skin, yellow flesh fruit"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Montmorency",
+            category: "Sour cherry cultivars for Iowa",
+            harvest_time_unparsed: "Early July",
+            description: "Iowa State PM453 lists Montmorency for Iowa fruit plantings. Season: Early July. Adapted to Iowa: C, S. Use: Processed and fresh. Source remarks: Vigorous, spreading tree. Red skin, yellow flesh fruit"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Mesabi",
+            category: "Sweet cherry cultivars for Iowa",
+            harvest_time_unparsed: "Mid July",
+            description: "Iowa State PM453 lists Mesabi for Iowa fruit plantings. Season: Mid July. Adapted to Iowa: All. Use: Fresh and processed. Source remarks: Sweet cherry by sour cherry hybrid. Sweet red flesh. Ten to fourteen foot pyramidal tree when unpruned"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Gold",
+            category: "Sweet cherry cultivars for Iowa",
+            harvest_time_unparsed: "Late June",
+            description: "Iowa State PM453 lists Gold for Iowa fruit plantings. Season: Late June. Adapted to Iowa: C, S. Use: Fresh and processed. Source remarks: Vigorous, semi-upright tree; hardiest cultivar. Yellow fruit"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "BlackGold",
+            category: "Sweet cherry cultivars for Iowa",
+            harvest_time_unparsed: "Early July",
+            description: "Iowa State PM453 lists Black Gold for Iowa fruit plantings. Season: Early July. Adapted to Iowa: C, S. Use: Fresh and processed. Source remarks: Vigorous, semi-upright tree; medium-large fruit. Self-fertile, will pollinate Gold. Source spells the name Black Gold"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Hedelfingen",
+            category: "Sweet cherry cultivars for Iowa",
+            harvest_time_unparsed: "Mid July",
+            description: "Iowa State PM453 lists Hedelfingen for Iowa fruit plantings. Season: Mid July. Adapted to Iowa: S. Use: Fresh and processed. Source remarks: Vigorous tree. Large, red, crack resistant fruit"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Kristin",
+            category: "Sweet cherry cultivars for Iowa",
+            harvest_time_unparsed: "Mid July",
+            description: "Iowa State PM453 lists Kristin for Iowa fruit plantings. Season: Mid July. Adapted to Iowa: S. Use: Fresh. Source remarks: Vigorous tree. Large, purplish-black fruit"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Rainier",
+            category: "Sweet cherry cultivars for Iowa",
+            harvest_time_unparsed: "Mid July",
+            description: "Iowa State PM453 lists Rainier for Iowa fruit plantings. Season: Mid July. Adapted to Iowa: S. Use: Fresh. Source remarks: Vigorous, semi-spreading tree. Large, red-blushed yellow fruit"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Royal Ann",
+            category: "Sweet cherry cultivars for Iowa",
+            harvest_time_unparsed: "Mid July",
+            description: "Iowa State PM453 lists Royal Ann for Iowa fruit plantings. Season: Mid July. Adapted to Iowa: S. Use: Fresh and processed. Source remarks: Also known as Napoleon. Vigorous, semi-spreading tree. Red-blushed yellow fruit"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Sam",
+            category: "Sweet cherry cultivars for Iowa",
+            harvest_time_unparsed: "Mid July",
+            description: "Iowa State PM453 lists Sam for Iowa fruit plantings. Season: Mid July. Adapted to Iowa: S. Use: Fresh. Source remarks: Vigorous tree. Large, dark red fruit"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Van",
+            category: "Sweet cherry cultivars for Iowa",
+            harvest_time_unparsed: "Mid July",
+            description: "Iowa State PM453 lists Van for Iowa fruit plantings. Season: Mid July. Adapted to Iowa: S. Use: Fresh. Source remarks: Vigorous, upright tree. Crack resistant, red fruit"
+        },
+        {
+            type: "Peach",
+            name: "Polly",
+            category: "Peach cultivars for Iowa",
+            harvest_time_unparsed: "Aug",
+            description: "Iowa State PM453 lists Polly for Iowa fruit plantings. Season: Aug. Adapted to Iowa: S. Use: Fresh and processed. Source remarks: Hardy white-fleshed cultivar; clingstone"
+        },
+        {
+            type: "Peach",
+            name: "Reliance",
+            category: "Peach cultivars for Iowa",
+            harvest_time_unparsed: "Aug",
+            description: "Iowa State PM453 lists Reliance for Iowa fruit plantings. Season: Aug. Adapted to Iowa: S. Use: Fresh and processed. Source remarks: Hardiest yellow-fleshed cultivar; freestone"
+        },
+        {
+            type: "Euro Pear",
+            name: "Summercrisp",
+            category: "European pear cultivars for Iowa",
+            harvest_time_unparsed: "Early Aug",
+            description: "Iowa State PM453 lists Summercrisp for Iowa fruit plantings. Season: Early Aug. Adapted to Iowa: All. Use: Fresh. Source remarks: Medium-vigor, upright tree; fire blight resistant. Large fruit; should be consumed while firm and crisp"
+        },
+        {
+            type: "Euro Pear",
+            name: "Harrow Delight",
+            category: "European pear cultivars for Iowa",
+            harvest_time_unparsed: "Mid Aug",
+            description: "Iowa State PM453 lists Harrow Delight for Iowa fruit plantings. Season: Mid Aug. Adapted to Iowa: C, S. Use: Fresh and canning. Source remarks: Medium-vigor, spreading tree; fire blight resistant. Medium-size fruit"
+        },
+        {
+            type: "Euro Pear",
+            name: "Moonglow",
+            category: "European pear cultivars for Iowa",
+            harvest_time_unparsed: "Mid Aug",
+            description: "Iowa State PM453 lists Moonglow for Iowa fruit plantings. Season: Mid Aug. Adapted to Iowa: C, S. Use: Fresh and canning. Source remarks: Vigorous, very upright tree; fire blight resistant. Large fruit"
+        },
+        {
+            type: "Euro Pear",
+            name: "Ambrosia",
+            category: "European pear cultivars for Iowa",
+            harvest_time_unparsed: "Mid Aug",
+            description: "Iowa State PM453 lists Ambrosia for Iowa fruit plantings. Season: Mid Aug. Adapted to Iowa: C, S. Use: Fresh and canning. Source remarks: New cultivar; fire blight resistant. Large fruit"
+        },
+        {
+            type: "Euro Pear",
+            name: "Bartlett",
+            category: "European pear cultivars for Iowa",
+            harvest_time_unparsed: "Late Aug",
+            description: "Iowa State PM453 lists Bartlett for Iowa fruit plantings. Season: Late Aug. Adapted to Iowa: C, S. Use: Fresh and canning. Source remarks: Medium-vigor, upright tree; fire blight susceptible. Large, excellent-quality fruit. Does not pollinate Seckel"
+        },
+        {
+            type: "Euro Pear",
+            name: "Delicious",
+            category: "European pear cultivars for Iowa",
+            harvest_time_unparsed: "Early Sept",
+            description: "Iowa State PM453 lists Delicious for Iowa fruit plantings. Season: Early Sept. Adapted to Iowa: C, S. Use: Fresh and canning. Source remarks: Medium-vigor, upright tree; fire blight resistant. Large fruit. Apparently identical to Maxine"
+        },
+        {
+            type: "Euro Pear",
+            name: "Honeysweet",
+            category: "European pear cultivars for Iowa",
+            harvest_time_unparsed: "Early Sept",
+            description: "Iowa State PM453 lists Honey Sweet for Iowa fruit plantings. Season: Early Sept. Adapted to Iowa: C, S. Use: Fresh and canning. Source remarks: Vigorous, spreading tree; fire blight moderately resistant. Medium-large fruit. Source spells the name Honey Sweet"
+        },
+        {
+            type: "Euro Pear",
+            name: "Maxine",
+            category: "European pear cultivars for Iowa",
+            harvest_time_unparsed: "Early Sept",
+            description: "Iowa State PM453 lists Maxine for Iowa fruit plantings. Season: Early Sept. Adapted to Iowa: All. Use: Fresh and canning. Source remarks: Medium-vigor, upright tree; fire blight resistant. Large fruit. Apparently identical to Delicious"
+        },
+        {
+            type: "Euro Pear",
+            name: "Douglas",
+            category: "European pear cultivars for Iowa",
+            harvest_time_unparsed: "Mid Sept",
+            description: "Iowa State PM453 lists Douglas for Iowa fruit plantings. Season: Mid Sept. Adapted to Iowa: All. Use: Fresh and canning. Source remarks: Medium-vigor, upright tree; fire blight moderately resistant. Medium-large fruit"
+        },
+        {
+            type: "Euro Pear",
+            name: "Luscious",
+            category: "European pear cultivars for Iowa",
+            harvest_time_unparsed: "Mid Sept",
+            description: "Iowa State PM453 lists Luscious for Iowa fruit plantings. Season: Mid Sept. Adapted to Iowa: All. Use: Fresh and canning. Source remarks: Vigorous, hardy tree; fire blight moderately resistant. Medium-size fruit"
+        },
+        {
+            type: "Euro Pear",
+            name: "Patten",
+            category: "European pear cultivars for Iowa",
+            harvest_time_unparsed: "Mid Sept",
+            description: "Iowa State PM453 lists Patten for Iowa fruit plantings. Season: Mid Sept. Adapted to Iowa: All. Use: Fresh. Source remarks: Vigorous, upright tree; fire blight moderately resistant. Large fruit"
+        },
+        {
+            type: "Euro Pear",
+            name: "Seckel",
+            category: "European pear cultivars for Iowa",
+            harvest_time_unparsed: "Mid Sept",
+            description: "Iowa State PM453 lists Seckel for Iowa fruit plantings. Season: Mid Sept. Adapted to Iowa: All. Use: Fresh and canning. Source remarks: Small-fruited European pear listed by Iowa State PM453"
+        },
+        {
+            type: "Euro Pear",
+            name: "Kieffer",
+            category: "European pear cultivars for Iowa",
+            harvest_time_unparsed: "Late Sept",
+            description: "Iowa State PM453 lists Kieffer for Iowa fruit plantings. Season: Late Sept. Adapted to Iowa: All. Use: Canning. Source remarks: Very vigorous, semi-upright tree; hardy; fire blight moderately resistant. Small fruit. Does not pollinate Bartlett"
+        },
+        {
+            type: "Asian Pear",
+            name: "Hosui",
+            category: "Asian pear cultivars for Iowa",
+            harvest_time_unparsed: "Mid Aug",
+            description: "Iowa State PM453 lists Hosui for Iowa fruit plantings. Season: Mid Aug. Adapted to Iowa: S. Use: Fresh. Source remarks: Medium-vigor, upright tree; fire blight moderately resistant. Early fall frost is a risk in northern Iowa"
+        },
+        {
+            type: "Asian Pear",
+            name: "Shinseiki",
+            category: "Asian pear cultivars for Iowa",
+            harvest_time_unparsed: "Mid Aug",
+            description: "Iowa State PM453 lists Shinseiki for Iowa fruit plantings. Season: Mid Aug. Adapted to Iowa: S. Use: Fresh. Source remarks: Trial only"
+        },
+        {
+            type: "Asian Pear",
+            name: "20th Century",
+            category: "Asian pear cultivars for Iowa",
+            harvest_time_unparsed: "Late Aug",
+            description: "Iowa State PM453 lists 20th Century for Iowa fruit plantings. Season: Late Aug. Adapted to Iowa: S. Use: Fresh. Source remarks: Medium-vigor, willowy tree; very fire blight susceptible. Large, round fruit"
+        },
+        {
+            type: "Asian Pear",
+            name: "Chojuro",
+            category: "Asian pear cultivars for Iowa",
+            harvest_time_unparsed: "Late Aug",
+            description: "Iowa State PM453 lists Chojuro for Iowa fruit plantings. Season: Late Aug. Adapted to Iowa: S. Use: Fresh. Source remarks: Medium-vigor, spreading tree; very fire blight susceptible. Medium-size, round fruit"
+        },
+        {
+            type: "Euro Plum",
+            name: "Mount Royal",
+            category: "European plum cultivars for Iowa",
+            harvest_time_unparsed: "Mid Aug",
+            description: "Iowa State PM453 lists Mount Royal for Iowa fruit plantings. Season: Mid Aug. Adapted to Iowa: All. Use: Fresh and processed. Source remarks: Vigorous, semi-spreading tree. Medium-small, roundish fruit; blue-black skin, greenish-yellow flesh, clingstone"
+        },
+        {
+            type: "Euro Plum",
+            name: "Blue Ribbon",
+            category: "European plum cultivars for Iowa",
+            harvest_time_unparsed: "Late Aug",
+            description: "Iowa State PM453 lists Blue Ribbon for Iowa fruit plantings. Season: Late Aug. Adapted to Iowa: C, S. Use: Processed and fresh. Source remarks: Medium-vigor, semi-upright tree. Medium-size, oblong fruit; blue-red skin, freestone"
+        },
+        {
+            type: "Euro Plum",
+            name: "Green Gage",
+            category: "European plum cultivars for Iowa",
+            harvest_time_unparsed: "Late Aug",
+            description: "Iowa State PM453 lists Green Gage for Iowa fruit plantings. Season: Late Aug. Adapted to Iowa: S. Use: Processed and fresh. Source remarks: Medium-vigor, semi-spreading tree. Small, roundish-oval fruit; green skin, amber flesh, semi-clingstone"
+        },
+        {
+            type: "Euro Plum",
+            name: "Stanley",
+            category: "European plum cultivars for Iowa",
+            harvest_time_unparsed: "Late Aug",
+            description: "Iowa State PM453 lists Stanley for Iowa fruit plantings. Season: Late Aug. Adapted to Iowa: C, S. Use: Processed and fresh. Source remarks: Medium-vigor, upright tree. Large, oblong fruit; dark blue skin, greenish-yellow flesh, semi-freestone"
+        },
+        {
+            type: "Euro Plum",
+            name: "Damson",
+            category: "European plum cultivars for Iowa",
+            harvest_time_unparsed: "Early Sept",
+            description: "Iowa State PM453 lists Damson for Iowa fruit plantings. Season: Early Sept. Adapted to Iowa: C, S. Use: Processed and fresh. Source remarks: Vigorous, semi-upright tree. Small, oval fruit; blue skin, yellow flesh, clingstone"
+        },
+        {
+            type: "Euro Plum",
+            name: "Italian",
+            category: "European plum cultivars for Iowa",
+            harvest_time_unparsed: "Early Sept",
+            description: "Iowa State PM453 lists Italian for Iowa fruit plantings. Season: Early Sept. Adapted to Iowa: S. Use: Processed and fresh. Source remarks: Medium-vigor, semi-upright tree. Medium-size, oblong fruit; dark purple skin, greenish-yellow flesh, freestone. Can be dried"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Underwood",
+            category: "Japanese-American hybrid plum cultivars for Iowa",
+            harvest_time_unparsed: "Mid July",
+            description: "Iowa State PM453 lists Underwood for Iowa fruit plantings. Season: Mid July. Adapted to Iowa: All. Use: Fresh and processed. Source remarks: Vigorous, spreading tree. Large, conic fruit; dull-red skin, golden-yellow flesh, clingstone"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Toka",
+            category: "Japanese-American hybrid plum cultivars for Iowa",
+            harvest_time_unparsed: "Early Aug",
+            description: "Iowa State PM453 lists Toka for Iowa fruit plantings. Season: Early Aug. Adapted to Iowa: All. Use: Processed. Source remarks: Medium-vigor, semi-spreading tree. Small, conic fruit; red skin, yellow flesh. Excellent pollinator"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Alderman",
+            category: "Japanese-American hybrid plum cultivars for Iowa",
+            harvest_time_unparsed: "Mid Aug",
+            description: "Iowa State PM453 lists Alderman for Iowa fruit plantings. Season: Mid Aug. Adapted to Iowa: All. Use: Fresh and processed. Source remarks: Vigorous, spreading tree. Large, conic fruit; burgundy-red skin, yellow flesh, clingstone"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Pipestone",
+            category: "Japanese-American hybrid plum cultivars for Iowa",
+            harvest_time_unparsed: "Mid Aug",
+            description: "Iowa State PM453 lists Pipestone for Iowa fruit plantings. Season: Mid Aug. Adapted to Iowa: All. Use: Fresh and processed. Source remarks: Vigorous tree. Large, conic fruit; red skin, amber flesh, clingstone"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Superior",
+            category: "Japanese-American hybrid plum cultivars for Iowa",
+            harvest_time_unparsed: "Mid Aug",
+            description: "Iowa State PM453 lists Superior for Iowa fruit plantings. Season: Mid Aug. Adapted to Iowa: All. Use: Fresh and processed. Source remarks: Vigorous, semi-spreading tree. Large, conic fruit; red skin, yellow flesh, clingstone"
+        },
+    ]
+}

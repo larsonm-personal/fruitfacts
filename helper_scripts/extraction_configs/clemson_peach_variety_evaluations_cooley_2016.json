@@ -1,0 +1,59 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://www.clemsonpeach.org/index.php?p=180&location=Cooley%20Farms&year=2016&season=Redglobe%20Season"
+  },
+  "reference_fields": [
+    ["title", "Clemson Peach Variety Evaluations - Cooley Farms 2016 Redglobe Season"],
+    ["author", "Clemson Peach Team"],
+    ["description", "Clemson peach evaluation database snapshot for Cooley Farms in the 2016 Redglobe season"],
+    ["url", "https://www.clemsonpeach.org/index.php?p=180&location=Cooley%20Farms&year=2016&season=Redglobe%20Season"],
+    ["thumbnail", "website"],
+    ["accessed", "Jun 2026"],
+    ["type", "extension test"],
+    ["ignore_for_nearby_searches", true],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Clemson Peach Team, Clemson, South Carolina",
+      "latitude": 34.6834,
+      "longitude": -82.8374
+    }
+  ],
+  "categories": [
+    {
+      "name": "Cooley Farms 2016 Redglobe-season peach trial",
+      "description": "Clemson Peach Variety Evaluations lists these cultivars in the Cooley Farms 2016 Redglobe Season table"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_table",
+      "table_index": 9,
+      "required_headers": [
+        "Variety",
+        "Ripe Date",
+        "Set",
+        "Size",
+        "Shape",
+        "Pubes",
+        "Red",
+        "Attribute",
+        "Firm",
+        "Free",
+        "Status"
+      ],
+      "name_key": "variety",
+      "plant_type": "Peach",
+      "category": "Cooley Farms 2016 Redglobe-season peach trial",
+      "harvest_key": "ripe_date",
+      "row_fields": {
+        "trial_location": "Cooley Farms",
+        "trial_year": "2016",
+        "trial_season": "Redglobe Season"
+      },
+      "description_template": "Clemson Peach Variety Evaluations recorded {variety} at {trial_location} in the {trial_year} {trial_season} trial. Ripe date: {ripe_date}. Set: {set}. Size: {size}. Shape: {shape}. Pubescence: {pubes}. Red color: {red}. Attribute score: {attribute}. Firmness: {firm}. Freestone score: {free}. Status: {status}"
+    }
+  ]
+}

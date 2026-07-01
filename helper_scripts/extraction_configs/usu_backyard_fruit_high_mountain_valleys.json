@@ -1,0 +1,306 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.usu.edu/yardandgarden/research/backyard-fruit-production-in-utah"
+  },
+  "reference_fields": [
+    ["title", "USU Backyard Fruit Production in Utah High Mountain Valleys"],
+    ["author", "Tiffany Maughan, Mike Pace, and Brent Black"],
+    ["description", "Utah State University Extension guide to fruit cultivar suitability in Utah high mountain valleys and other short-season cold locations"],
+    ["url", "https://extension.usu.edu/yardandgarden/research/backyard-fruit-production-in-utah"],
+    ["thumbnail", "website"],
+    ["published", "December 2021"],
+    ["reviewed", "2021"],
+    ["accessed", "Jul 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Utah State University Extension, Logan, Utah",
+      "latitude": 41.7455,
+      "longitude": -111.8046
+    }
+  ],
+  "categories": [
+    {
+      "name": "June-bearing strawberries for Utah high mountain valleys",
+      "description": "USU lists these June-bearing strawberries as potential cultivars for Utah high mountain valleys"
+    },
+    {
+      "name": "Day-neutral strawberries for Utah high mountain valleys",
+      "description": "USU lists these day-neutral strawberries as potential cultivars for Utah high mountain valleys"
+    },
+    {
+      "name": "Raspberries for Utah high mountain valleys",
+      "description": "USU lists these raspberries for Utah high mountain valleys, with bearing habit preserved in descriptions"
+    },
+    {
+      "name": "Minor fruits for Utah high mountain valleys",
+      "description": "USU lists these currants, haskaps, gooseberries, serviceberries, elderberries, and blackberries for Utah high mountain valleys"
+    },
+    {
+      "name": "Tree fruits for Utah high mountain valleys",
+      "description": "USU lists these apples, pears, sour cherries, apricots, peaches, nectarines, and plums as possible tree-fruit choices for Utah high mountain valleys"
+    }
+  ],
+  "name_overrides": {
+    "Zestar": {
+      "name": "Minnewashta",
+      "note": "Source table names this apple Zestar"
+    },
+    "Jonathon": {
+      "name": "Jonathan",
+      "note": "Source text names this apple Jonathon"
+    },
+    "Red Haven": {
+      "name": "Redhaven",
+      "note": "Source text names this peach Red Haven"
+    },
+    "Mt. Royal": {
+      "name": "Mount Royal",
+      "note": "Source text names this plum Mt. Royal"
+    },
+    "Jersey Mac": {
+      "name": "Jerseymac",
+      "note": "Source text names this apple Jersey Mac"
+    },
+    "Paula Red": {
+      "name": "Paulared",
+      "note": "Source text names this apple Paula Red"
+    },
+    "Hale Haven": {
+      "name": "Halehaven",
+      "note": "Source text names this peach Hale Haven"
+    },
+    "Fall Gold": {
+      "name": "Fallgold",
+      "note": "Source table names this raspberry Fall Gold"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_marker_list",
+      "start_heading": "Strawberries",
+      "end_heading": "Associated Publications",
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "harvest_time_unparsed": {"row_key": "harvest_time_unparsed"},
+      "description_template": "USU high mountain valley guide lists {name} among {source_context}",
+      "row_splits": [
+        {
+          "match": {"name": "White Imperial or Blanka"},
+          "source_note": "Source text lists White Imperial or Blanka together",
+          "rows": [
+            {
+              "name": "White Imperial"
+            },
+            {
+              "name": "Blanka"
+            }
+          ]
+        }
+      ],
+      "row_overrides": {
+        "zone 4 Hardired": {
+          "name": "Hardired",
+          "_source_note": "Source text names this nectarine as zone 4 Hardired"
+        },
+        "zone 5 Merricrest": {
+          "name": "Merricrest",
+          "_source_note": "Source text names this nectarine as zone 5 Merricrest"
+        }
+      },
+      "paragraph_rules": [
+        {
+          "contains": "Potential June-bearing strawberries include",
+          "marker": "Potential June-bearing strawberries include",
+          "plant_type": "Strawberry",
+          "category": "June-bearing strawberries for Utah high mountain valleys",
+          "source_context": "potential June-bearing strawberries for Utah high mountain valleys"
+        },
+        {
+          "contains": "Day-neutral types include",
+          "marker": "Day-neutral types include",
+          "plant_type": "Strawberry",
+          "category": "Day-neutral strawberries for Utah high mountain valleys",
+          "source_context": "day-neutral strawberries for Utah high mountain valleys"
+        },
+        {
+          "contains": "Hardy blackberry cultivars include",
+          "marker": "Hardy blackberry cultivars include",
+          "end_marker": ", which is",
+          "plant_type": "Blackberry",
+          "category": "Minor fruits for Utah high mountain valleys",
+          "source_context": "hardy blackberry cultivars for Utah high mountain valleys"
+        },
+        {
+          "contains": "Red cultivars include",
+          "marker": "Red cultivars include",
+          "plant_type": "Currant",
+          "category": "Minor fruits for Utah high mountain valleys",
+          "source_context": "red currants for Utah high mountain valleys"
+        },
+        {
+          "contains": "White cultivars include",
+          "marker": "White cultivars include",
+          "end_marker": " and have",
+          "plant_type": "Currant",
+          "category": "Minor fruits for Utah high mountain valleys",
+          "source_context": "white currants for Utah high mountain valleys"
+        },
+        {
+          "contains": "Black currant cultivars include",
+          "marker": "Black currant cultivars include",
+          "plant_type": "Currant",
+          "category": "Minor fruits for Utah high mountain valleys",
+          "source_context": "black currants for Utah high mountain valleys"
+        },
+        {
+          "contains": "Early cultivars include",
+          "marker": "Early cultivars include",
+          "plant_type": "Honeyberry",
+          "category": "Minor fruits for Utah high mountain valleys",
+          "harvest_time_unparsed": "Early haskap season",
+          "source_context": "early haskap cultivars for Utah high mountain valleys"
+        },
+        {
+          "contains": "Mid-season fruiting cultivars include",
+          "marker": "Mid-season fruiting cultivars include",
+          "plant_type": "Honeyberry",
+          "category": "Minor fruits for Utah high mountain valleys",
+          "harvest_time_unparsed": "Mid-season haskap season",
+          "source_context": "mid-season haskap cultivars for Utah high mountain valleys"
+        },
+        {
+          "contains": "Late-fruiting cultivars are",
+          "marker": "Late-fruiting cultivars are",
+          "plant_type": "Honeyberry",
+          "category": "Minor fruits for Utah high mountain valleys",
+          "harvest_time_unparsed": "Late haskap season",
+          "source_context": "late-fruiting haskap cultivars for Utah high mountain valleys"
+        },
+        {
+          "contains": "Cultivars to consider include Poorman",
+          "marker": "Cultivars to consider include",
+          "plant_type": "Gooseberry",
+          "category": "Minor fruits for Utah high mountain valleys",
+          "source_context": "gooseberries to consider for Utah high mountain valleys"
+        },
+        {
+          "contains": "Recommended cultivars include Honeywood",
+          "marker": "Recommended cultivars include",
+          "plant_type": "Saskatoon",
+          "category": "Minor fruits for Utah high mountain valleys",
+          "harvest_time_unparsed": "Fruit ripens in mid to late summer",
+          "source_context": "serviceberries, also called juneberries or Saskatoons, for Utah high mountain valleys"
+        },
+        {
+          "contains": "Recommended cultivars include Adams 2",
+          "marker": "Recommended cultivars include",
+          "plant_type": "Elderberry",
+          "category": "Minor fruits for Utah high mountain valleys",
+          "source_context": "elderberries for Utah high mountain valleys"
+        },
+        {
+          "contains": "Early ripening cultivars include",
+          "marker": "Early ripening cultivars include",
+          "end_marker": ". Early ripening cultivars",
+          "plant_type": "Apple",
+          "category": "Tree fruits for Utah high mountain valleys",
+          "harvest_time_unparsed": "Early ripening apple season",
+          "source_context": "early ripening apples for Utah high mountain valleys"
+        },
+        {
+          "contains": "potential cultivars include Gala",
+          "marker": "potential cultivars include",
+          "plant_type": "Apple",
+          "category": "Tree fruits for Utah high mountain valleys",
+          "harvest_time_unparsed": "September apples may not mature in short growing seasons",
+          "source_context": "September-ripening apples that may be possible in Utah high mountain valleys"
+        },
+        {
+          "contains": "Pears to consider",
+          "marker": "Pears to consider due to their zone 5 hardiness and early ripening time in August and early September include",
+          "plant_type": "Euro Pear",
+          "category": "Tree fruits for Utah high mountain valleys",
+          "harvest_time_unparsed": "August to early September",
+          "source_context": "pears to consider for Utah high mountain valleys because of zone 5 hardiness and early ripening"
+        },
+        {
+          "contains": "Cultivars to consider include Montmorency",
+          "marker": "Cultivars to consider include",
+          "plant_type": "Sour Cherry",
+          "category": "Tree fruits for Utah high mountain valleys",
+          "source_context": "tart cherries to consider for Utah high mountain valleys"
+        },
+        {
+          "contains": "Cultivars include Harcot",
+          "marker": "Cultivars include",
+          "plant_type": "Apricot",
+          "category": "Tree fruits for Utah high mountain valleys",
+          "source_context": "apricots named by USU while cautioning that apricots are not ideal for high mountain valleys"
+        },
+        {
+          "contains": "Cold hardy, zone 4 freestone peaches include",
+          "marker": "Cold hardy, zone 4 freestone peaches include",
+          "plant_type": "Peach",
+          "category": "Tree fruits for Utah high mountain valleys",
+          "source_context": "cold hardy zone 4 freestone peaches for Utah high mountain valleys"
+        },
+        {
+          "contains": "Other less hardy zone 5 freestone peaches include",
+          "marker": "Other less hardy zone 5 freestone peaches include",
+          "plant_type": "Peach",
+          "category": "Tree fruits for Utah high mountain valleys",
+          "source_context": "less hardy zone 5 freestone peaches that may be possible in Utah high mountain valleys"
+        },
+        {
+          "contains": "Nectarine cultivars that could be tried include",
+          "marker": "Nectarine cultivars that could be tried include",
+          "plant_type": "Nectarine",
+          "category": "Tree fruits for Utah high mountain valleys",
+          "source_context": "nectarines that could be tried, while USU cautions nectarines are less hardy than peaches and not recommended for high mountain valleys"
+        },
+        {
+          "contains": "Some hardier cultivars to consider include",
+          "marker": "Some hardier cultivars to consider include",
+          "end_marker": ". Asian plums",
+          "plant_type": "Euro Plum",
+          "category": "Tree fruits for Utah high mountain valleys",
+          "source_context": "hardier European plums to consider for Utah high mountain valleys"
+        }
+      ]
+    },
+    {
+      "kind": "html_column_name_matrix",
+      "table_index": 1,
+      "plant_type": "Raspberry",
+      "category": "Raspberries for Utah high mountain valleys",
+      "column_rules": [
+        {
+          "prefix": "Summer-bearing raspberries",
+          "bearing_habit": "Summer-bearing raspberry",
+          "column_description": "USU lists this as a summer-bearing raspberry for Utah high mountain valleys"
+        },
+        {
+          "prefix": "Fall-bearing raspberries",
+          "bearing_habit": "Fall-bearing raspberry",
+          "column_description": "USU lists this as a fall-bearing raspberry for Utah high mountain valleys"
+        },
+        {
+          "prefix": "Fall-bearing (yellow) raspberries",
+          "bearing_habit": "Fall-bearing yellow raspberry",
+          "column_description": "USU lists this as a fall-bearing yellow raspberry for Utah high mountain valleys"
+        }
+      ],
+      "description_parts": [
+        {
+          "kind": "key",
+          "key": "column_description"
+        }
+      ],
+      "dedupe_keys": ["name", "bearing_habit"]
+    }
+  ]
+}

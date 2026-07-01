@@ -33,7 +33,7 @@
             discovered_by: "official site search",
             value_summary:
                 "Cultivar tables for small fruits and tree fruits adapted to Kansas",
-            asset_decision: "download and stub",
+            asset_decision: "download and encode tree-fruit sections",
             proposed_reference_path:
                 "plant_database/references/Kansas/KSRE MF1028 Small- and Tree-Fruit Cultivars.json5",
             duplicate_check:
@@ -88,7 +88,7 @@
         },
         {
             id: "iowa-state-fruit-cultivars-for-iowa-pm453",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Fruit Cultivars for Iowa",
             institution: "Iowa State University Extension and Outreach",
@@ -123,7 +123,12 @@
                 "Landing page returned 200",
                 "Page exposes a hidden download controller for PM453.pdf",
                 "Resolved hidden download URL as https://shop.iastate.edu/on/demandware.store/Sites-isu-Site/default/Download-File?file=UE00NTMucGRm&container=shop",
-                "Deferred from the Purdue/UNH parsing round because the PDF tables are heavily transposed and need a custom table pass"
+                "Encoded in plant_database/references/Iowa/Iowa State PM453 Fruit Cultivars for Iowa.json5",
+                "Config extraction added at helper_scripts/extraction_configs/iowa_state_pm453_fruit_cultivars.json",
+                "Manifest entry added as iowa_state_pm453_fruit_cultivars",
+                "Current pass uses static_rows for manually aligned tree-fruit sections because the PDF tables are heavily transposed",
+                "Small-fruit tables and the bush/sand/Nanking/cherry-plum subsection remain unencoded and the reference keeps needs_help",
+                "Japanese-American hybrid plum cultivars are encoded as Japanese Plum, not Species Plum"
             ]
         },
         {
@@ -141,7 +146,7 @@
             discovered_by: "official site search",
             value_summary:
                 "Maine peach growing guide with cultivar discussion and Northeast source links",
-            asset_decision: "stub only",
+            asset_decision: "encode scoped database snapshot",
             proposed_reference_path:
                 "plant_database/references/Maine/UMaine 2068 Growing Peaches in Maine.json5",
             duplicate_check:
@@ -336,16 +341,22 @@
         },
         {
             id: "missouri-fruit-cultivars-home-plantings-g6005",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Fruit Cultivars for Home Plantings",
             institution: "University of Missouri Extension",
             region: "Missouri",
             crops: [
                 "Apple",
+                "Apricot",
                 "Blackberry",
                 "Blueberry",
+                "Cherry",
+                "Currant",
+                "Elderberry",
+                "Gooseberry",
                 "Grape",
+                "Nectarine",
                 "Peach",
                 "Pear",
                 "Plum",
@@ -368,7 +379,12 @@
             notes: [
                 "Direct official PDF returned 200",
                 "A current landing page was not found during this pass",
-                "Deferred during the NC/UAF parsing round because the current official PDF endpoint returned 403 to Python and browser-like header fetches"
+                "Deferred during the NC/UAF parsing round because the current official PDF endpoint returned 403 to Python and browser-like header fetches",
+                "Official PDF still returned 403 to Python urllib during encoding; parser PDF tools now fall back to PowerShell Invoke-WebRequest on Windows",
+                "Encoded in plant_database/references/Missouri/MU G6005 Fruit Cultivars for Home Plantings.json5",
+                "Config extraction added at helper_scripts/extraction_configs/missouri_g6005_fruit_cultivars_home_plantings.json",
+                "Manifest entry added as missouri_g6005_fruit_cultivars_home_plantings",
+                "Worked example for a flow-mode PDF catalog with crop and subtype heading context plus marker-list rows for small-fruit prose"
             ]
         },
         {
@@ -508,7 +524,7 @@
         },
         {
             id: "usu-backyard-fruit-production-utah-high-mountain-valleys",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Backyard Fruit Production in Utah's High Mountain Valleys",
             institution: "Utah State University Extension",
@@ -532,7 +548,7 @@
             ],
             source_type: "regional extension guide",
             landing_url:
-                "https://extension.usu.edu/yardandgarden/research/backyard-fruit-production-in-utahs-high-mountain-valleys",
+                "https://extension.usu.edu/yardandgarden/research/backyard-fruit-production-in-utah",
             discovered: "2026-06-28",
             discovered_by: "official site search",
             value_summary:
@@ -543,7 +559,12 @@
             duplicate_check:
                 "Existing Utah Uintah Basin guide is tree-fruit focused; this one is broader and high-mountain oriented",
             notes: [
-                "Web page returned useful regional crop and cultivar suitability content"
+                "Original queued URL https://extension.usu.edu/yardandgarden/research/backyard-fruit-production-in-utahs-high-mountain-valleys now returns the USU notfound page",
+                "Current official URL https://extension.usu.edu/yardandgarden/research/backyard-fruit-production-in-utah returned useful regional crop and cultivar suitability content",
+                "Encoded in plant_database/references/Utah/USU Backyard Fruit Production in Utah High Mountain Valleys.json5",
+                "Config extraction added at helper_scripts/extraction_configs/usu_backyard_fruit_high_mountain_valleys.json",
+                "Manifest entry added as usu_backyard_fruit_high_mountain_valleys",
+                "Worked example for rule-based HTML marker lists over many recommendation sentences plus a column-oriented raspberry table"
             ]
         },
         {
@@ -880,7 +901,7 @@
         },
         {
             id: "clemson-peach-variety-evaluations",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Peach Variety Evaluations",
             institution: "Clemson Cooperative Extension",
@@ -895,12 +916,17 @@
                 "Clemson peach evaluation gateway linking to a searchable database of variety observations",
             asset_decision: "stub only",
             proposed_reference_path:
-                "plant_database/references/South Carolina/Clemson Peach Variety Evaluations.json5",
+                "plant_database/references/South Carolina/Clemson Peach Variety Evaluations Cooley Farms 2016 Redglobe Season.json5",
             duplicate_check:
                 "Existing South Carolina reference is Clemson peach releases, not the evaluation database",
             notes: [
                 "Official Clemson page links to https://www.clemsonpeach.org/",
-                "Database should be reviewed before deciding whether to encode as one source or multiple trial records"
+                "Encoded one scoped database snapshot from the old ClemsonPeach.org tables",
+                "Snapshot URL is https://www.clemsonpeach.org/index.php?p=180&location=Cooley%20Farms&year=2016&season=Redglobe%20Season",
+                "Config extraction added at helper_scripts/extraction_configs/clemson_peach_variety_evaluations_cooley_2016.json",
+                "Manifest entry added as clemson_peach_variety_evaluations_cooley_2016",
+                "Parser support added so html_table extractors can attach fixed row_fields such as trial location, year, and season",
+                "Reference keeps needs_help because the full database has many location-year-season combinations that should be batched later"
             ]
         },
         {

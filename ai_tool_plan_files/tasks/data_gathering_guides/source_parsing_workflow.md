@@ -518,6 +518,29 @@ affected rows become `Nectarine` records with source notes. The config also
 harmonizes source names such as `Junegold`, `Roseprincess`, `Redglobe`, and
 `Redgold` to existing FruitFacts names to avoid normalized-name duplicates.
 
+The Clemson Peach Variety Evaluations database has old-style HTML pages where
+the trial location, year, and season live in the URL rather than in each table
+row. `html_table` extractors now accept `row_fields` so a config can attach
+fixed table context before row expansion and description rendering. The first
+encoded snapshot is the Cooley Farms 2016 Redglobe Season table; it stays
+`needs_help` because the database has many location-year-season combinations
+that should be batched later instead of treated as one complete source.
+
+## Iowa State PM453 Notes
+
+Iowa State PM453 is a broad PDF cultivar guide whose small-fruit and tree-fruit
+tables are visually useful but text extraction transposes some columns. The
+current config uses `static_rows` for the tree-fruit pages after manually
+aligning the reliable apricot, sour cherry, sweet cherry, peach, pear, and plum
+sections. The bush, sand, Nanking, and cherry-plum subsection is intentionally
+left unencoded for now because the source mixes species and minor selections,
+and the small-fruit tables need a separate table pass.
+
+The Iowa plum rows use `Euro Plum` for the European/prune-plum table and
+`Japanese Plum` for the source's Japanese-American hybrid plum table. They do
+not use `Species Plum`, which is reserved for natural species listings such as
+plain American plum rather than bred hybrid cultivars.
+
 ## NDSU FN590 Jams And Jellies Notes
 
 NDSU FN590 is not primarily a horticulture publication, but its early sections
@@ -777,3 +800,24 @@ ordinary cultivated plum records, such as Euro Plum or Japanese Plum, rather
 than Species Plum. Source symbols for fire-blight susceptibility are retained
 in descriptions as caveats instead of being interpreted as structured disease
 ratings.
+
+## USU High Mountain And Missouri G6005 Notes
+
+The USU high mountain valleys page is an HTML article with cultivar lists
+embedded in many separate recommendation paragraphs. `html_marker_list`
+supports `paragraph_rules`, so one extractor can match multiple paragraph
+markers while assigning crop-specific row fields such as plant type, category,
+harvest wording, and source context. Use source-local `row_splits` and
+`row_overrides` for combined phrases such as `White Imperial or Blanka` or
+zone labels that are adjacent to names.
+
+The Missouri G6005 PDF is best parsed as flow text rather than visual layout.
+`pdf_catalog_entries` works well when each crop subsection is bounded tightly,
+for example peach, nectarine, apricot, then plum. The smaller prose-only
+sections for gooseberries, currants, and elderberries can stay as
+`pdf_marker_list` extractors.
+
+Some official PDFs may reject Python urllib even when PowerShell can download
+the same URL. The PDF helper now falls back to PowerShell `Invoke-WebRequest`
+on Windows before failing the source fetch, so configs can remain ordinary
+`kind: pdf` configs for these blocked official PDFs.

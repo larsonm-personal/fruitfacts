@@ -1,0 +1,591 @@
+{
+    title: "MU G6005 Fruit Cultivars for Home Plantings",
+    author: "Michele Warmund",
+    description: "University of Missouri Extension G6005 guide with suggested fruit cultivars for Missouri home plantings",
+    url: "https://extension.missouri.edu/media/wysiwyg/Extensiondata/Pub/pdf/agguides/hort/g06005.pdf",
+    thumbnail: "pdf",
+    published: "Revised January 2012",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Missouri Extension, Columbia, Missouri",
+            latitude: 38.9453,
+            longitude: -92.3288
+        },
+    ],
+    categories: [
+        {
+            name: "Apple cultivars for Missouri home plantings",
+            description: "MU G6005 lists these apple cultivars as suggested home planting choices for Missouri"
+        },
+        {
+            name: "Pear cultivars for Missouri home plantings",
+            description: "MU G6005 lists these fire-blight-resistant pear cultivars as suggested choices for Missouri"
+        },
+        {
+            name: "Peach and nectarine cultivars for Missouri home plantings",
+            description: "MU G6005 lists these peach and nectarine cultivars for Missouri home plantings"
+        },
+        {
+            name: "Apricot cultivars for Missouri home plantings",
+            description: "MU G6005 lists these apricot cultivars for Missouri home plantings, while noting that apricot crops are unreliable in central Missouri"
+        },
+        {
+            name: "Plum cultivars for Missouri home plantings",
+            description: "MU G6005 lists these European and Japanese plum cultivars for Missouri home plantings"
+        },
+        {
+            name: "Cherry cultivars for Missouri home plantings",
+            description: "MU G6005 lists these sour and sweet cherry cultivars for Missouri home plantings"
+        },
+        {
+            name: "Grape cultivars for Missouri home plantings",
+            description: "MU G6005 lists these seeded table, wine, and seedless grape cultivars for Missouri home plantings"
+        },
+        {
+            name: "Small fruit cultivars for Missouri home plantings",
+            description: "MU G6005 lists these strawberry, blackberry, raspberry, blueberry, gooseberry, currant, and elderberry cultivars for Missouri home plantings"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Liberty",
+            category: "Apple cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Matures in early September.",
+            description: "Immune to apple scab and cedar apple rust. Resistant to fire blight and powdery mildew. Red with yellow background color, medium-size fruit with a tart flavor. A good general-purpose apple for eating fresh, cooking or processing. Matures in early September"
+        },
+        {
+            type: "Apple",
+            name: "September Wonder Fuji",
+            category: "Apple cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in mid-September.",
+            description: "Large fruit with a red blush. Very sweet with firm flesh. Excellent quality for eating fresh. Ripens in mid-September"
+        },
+        {
+            type: "Apple",
+            name: "Enterprise",
+            category: "Apple cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in early October.",
+            description: "Immune to apple scab, resistant to cedar apple rust and mildew. Moderately resistant to powdery mildew. Medium-size to large fruit, red with yellow undercolor. Mild, sub-acid, spicy flavored fruit. Ripens in early October"
+        },
+        {
+            type: "Apple",
+            name: "Arkansas Black",
+            category: "Apple cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in late October.",
+            description: "Dark red, medium-size fruit. Fruit is very firm, keeps well and has a spicy, tart flavor. Ripens in late October"
+        },
+        {
+            type: "Euro Pear",
+            name: "Harrow Delight",
+            category: "Pear cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Matures in early August.",
+            description: "Medium-size fruit is yellow and smooth, resembling Bartlett. Matures in early August"
+        },
+        {
+            type: "Euro Pear",
+            name: "Seckel",
+            category: "Pear cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Matures in mid- to late August.",
+            description: "Small, yellow fruit with red blush. Very sweet and productive. Matures in mid- to late August"
+        },
+        {
+            type: "Euro Pear",
+            name: "Honeysweet",
+            category: "Pear cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Matures in late August.",
+            description: "Yellow fruit, larger than Seckel but with a similar flavor. For best production, cross-pollinate with Starking Delicious. Matures in late August"
+        },
+        {
+            type: "Euro Pear",
+            name: "Starking Delicious",
+            category: "Pear cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Matures in early September.",
+            description: "Medium-size, yellow fruit with white flesh. Good all-around quality. Matures in early September"
+        },
+        {
+            type: "Asian Pear",
+            name: "Korean Giant",
+            category: "Pear cultivars for Missouri home plantings",
+            harvest_time_unparsed: "g6005 page 2 University of Missouri Extension Tips for success as a family fruit grower Plant only two or three kinds of fruits that are easily produced and harvested.",
+            description: "Very large, round Asian pear with russetted surface. Has very crunchy texture. g6005 page 2 University of Missouri Extension Tips for success as a family fruit grower Plant only two or three kinds of fruits that are easily produced and harvested. Select the most disease-resistant cultivars to minimize the amount of spraying, especially if you decide to grow fruit trees. If you cannot spray, plant fruits that are most likely to bear some edible fruits without spraying: blackberry, gooseberry or blueberry. Source text names this pear Olympic (Korean) Giant"
+        },
+        {
+            type: "Peach",
+            name: "Flamin' Fury PF-1",
+            category: "Peach and nectarine cultivars for Missouri home plantings",
+            harvest_time_unparsed: "A very early peach, picked in mid- to late June.",
+            description: "Good resistance to bacterial spot. Small with yellow flesh. Semifreestone with few split pits. A very early peach, picked in mid- to late June"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Peach and nectarine cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in mid-July.",
+            description: "Moderately resistant to bacterial spot. Excellent winter hardiness and fair frost tolerance. Freestone with soft, yellow flesh. To maintain medium-size peaches, aggressive fruit thinning is needed. Ripens in mid-July"
+        },
+        {
+            type: "Peach",
+            name: "Blazingstar",
+            category: "Peach and nectarine cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Fruit is softer than Redhaven and ripens a few days later.",
+            description: "Medium-size fruit with yellow flesh and freestone. Fruit is softer than Redhaven and ripens a few days later. Source text names this peach Blazing Star"
+        },
+        {
+            type: "Peach",
+            name: "Contender",
+            category: "Peach and nectarine cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in August.",
+            description: "Very resistant to bacterial spot. Good winter hardiness. Red peel with juicy, yellow flesh and freestone. Ripens in August"
+        },
+        {
+            type: "Peach",
+            name: "TangOs",
+            category: "Peach and nectarine cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Harvest after Redhaven in mid- to late July.",
+            description: "Excellent resistance to bacterial spot. Good winter hardiness. Flat, doughnut-shaped fruit with yellow peel and yellow flesh. Harvest after Redhaven in mid- to late July"
+        },
+        {
+            type: "Peach",
+            name: "Blushingstar",
+            category: "Peach and nectarine cultivars for Missouri home plantings",
+            harvest_time_unparsed: "A late-ripening peach harvested in mid-August.",
+            description: "Good resistance to bacterial spot. Medium-size fruit with white flesh and freestone. A late-ripening peach harvested in mid-August"
+        },
+        {
+            type: "Nectarine",
+            name: "Flamin' Fury PF-11",
+            category: "Peach and nectarine cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in early July.",
+            description: "Some resistance to bacterial spot and brown rot. Medium-size with yellow flesh. Requires aggressive thinning. Ripens in early July"
+        },
+        {
+            type: "Nectarine",
+            name: "Emeraude",
+            category: "Peach and nectarine cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Harvest in mid-July.",
+            description: "Good resistance to bacterial spot. Large fruit, white-fleshed with low acid flavor. Harvest in mid-July"
+        },
+        {
+            type: "Nectarine",
+            name: "Fantasia",
+            category: "Peach and nectarine cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in mid-August.",
+            description: "Moderate tolerance to bacterial spot. Mediumsize to large, freestone fruit with yellow flesh. Ripens in mid-August"
+        },
+        {
+            type: "Nectarine",
+            name: "Stark Ovation",
+            category: "Peach and nectarine cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Harvest after Fantasia in late August.",
+            description: "Moderate tolerance to bacterial spot. Medium-size fruit with yellow flesh and low acid flavor. Harvest after Fantasia in late August"
+        },
+        {
+            type: "Apricot",
+            name: "Goldcot",
+            category: "Apricot cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in early July.",
+            description: "Fruit is medium-size with a smooth gold skin and firm, orange flesh. Ripens in early July"
+        },
+        {
+            type: "Apricot",
+            name: "Wilson Delicious",
+            category: "Apricot cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Matures in early July.",
+            description: "Fruit peel is red-spotted and red blush with a yellowish-orange background color. Flesh is salmon-orange and freestone. Matures in early July"
+        },
+        {
+            type: "Apricot",
+            name: "Harglow",
+            category: "Apricot cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in mid- to late July.",
+            description: "Some resistance to bacterial spot and perennial canker. Fruit is smaller than Wilson Delicious. Peel is bright orange with speckled blush. Flesh is freestone. Tree has compact growth habit. Ripens in mid- to late July"
+        },
+        {
+            type: "Euro Plum",
+            name: "Earliblue",
+            category: "Plum cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in early August.",
+            description: "Earliest of the prune-type plums. Small fruit. Ripens in early August"
+        },
+        {
+            type: "Euro Plum",
+            name: "Stanley",
+            category: "Plum cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Matures in mid-August.",
+            description: "No. 1 prune-type plum with gold-colored, freestone flesh. Tree is self-fruitful but cross-pollination improves fruit set. Matures in mid-August"
+        },
+        {
+            type: "Euro Plum",
+            name: "Damson",
+            category: "Plum cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in mid-August.",
+            description: "A small, blue plum with a tart flavor, good for jams and jellies. Ripens in mid-August"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Shiro",
+            category: "Plum cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in mid-July.",
+            description: "Medium-size, round, yellow fruit. Pollinate with a red plum such as Ozark Premier or Redheart. Ripens in mid-July"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ozark Premier",
+            category: "Plum cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in early August.",
+            description: "Disease tolerance is slightly better than that of other Japanese plums. Thick-skinned, bright red fruit with yellow, clingstone flesh. Pollinate with Shiro plum. Ripens in early August"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Red Heart",
+            category: "Plum cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in early August.",
+            description: "Semi-freestone fruit with greenish-red peel and red flesh. Cross pollinate with Shiro or Ozark Premier. Ripens in early August. g6005 page 3 University of Missouri Extension. Source text names this Japanese plum Redheart"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Montmorency",
+            category: "Cherry cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in mid- to late-June.",
+            description: "Bright red, medium-size fruit. Excellent for pies. Heavy bearing and vigorous-growing tree. Ripens in mid- to late-June"
+        },
+        {
+            type: "Sour Cherry",
+            name: "North Star",
+            category: "Cherry cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Light red fruit that turns deep red as it matures on the tree.",
+            description: "A natural dwarf tree with upright growth habit, about half the height of Montmorency trees. Light red fruit that turns deep red as it matures on the tree. Ripens in early June and continues for about 14 days"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Balaton",
+            category: "Cherry cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Harvest in early July.",
+            description: "Bears large fruit and has large pits. Crop size enhanced with cross-pollination from other sour cherry cultivars. Harvest in early July. Sweet cherries Sweet cherries are marginal fruit trees for Missouri. They must have a well-drained soil. The best soils in Missouri are the river hill (loessal) soils. River hill soils also provide the best spring frost protection by draining cold air away from the trees. Sweet cherries usually bloom early enough to be damaged by spring frosts or freezes unless they are planted on excellent sites. Most sweet cherries need cross-pollination for fruit set (with the exception of the self-pollinating types listed below), so two or more different cultivars must be planted. Fruit tends to crack when rainfall occurs near harvest, and brown rot is often problematic"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Stella",
+            category: "Cherry cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in June.",
+            description: "Large, heart-shaped fruit, moderately susceptible to cracking. Skin and flesh are dark red. Hardiness questionable north of Interstate 44. Ripens in June"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "BlackGold",
+            category: "Cherry cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Harvest in mid-June.",
+            description: "Late-blooming tree that produces dark red fruit. Cherries are purportedly crack-resistant. Harvest in mid-June. Source text names this cherry Blackgold"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Starkrimson",
+            category: "Cherry cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens after Blackgold.",
+            description: "Excellent quality large fruit with red skin and flesh. Tree height about 12 to 14 feet. Ripens after Blackgold"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Royalton",
+            category: "Cherry cultivars for Missouri home plantings",
+            description: "Large, dark reddish-purple fruit. Crosspollinate with Van, Gold, Stella or other sweet cherry types"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Emperor Francis",
+            category: "Cherry cultivars for Missouri home plantings",
+            description: "Medium-size fruit with yellow skin and red blush. Use fresh or for jams or for brining as maraschinos. Cross-pollinate with Stella or Hedelfingen"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Gold",
+            category: "Cherry cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Harvest in mid-June.",
+            description: "Small, firm, yellow fruit. Purportedly birdresistant. Can be pollinated by most other sweet cherry cultivars. Harvest in mid-June"
+        },
+        {
+            type: "Grape",
+            name: "Fredonia",
+            category: "Grape cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripen in early September.",
+            description: "Susceptible to downy mildew. Similar to Concord with slip-skin fruit, but berries are larger. Multiuse grape with \"foxy\" flavor. Ripen in early September"
+        },
+        {
+            type: "Grape",
+            name: "Concord",
+            category: "Grape cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Fruit ripens unevenly during warm weather.",
+            description: "Very susceptible to black rot. Vines are cold-hardy. Large blue grapes with medium-size to large bunches. Fruit ripens unevenly during warm weather. An old-time favorite slip-skin grape used fresh or for juice and jelly. Harvest in mid-September"
+        },
+        {
+            type: "Grape",
+            name: "Niagara",
+            category: "Grape cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Harvest in September.",
+            description: "Susceptible to black rot. Vigorous-growing vines. Large white berries with thick slip-skin in loose clusters. Used fresh, or for juice and wine with a foxy flavor. Harvest in September"
+        },
+        {
+            type: "Grape",
+            name: "Catawba",
+            category: "Grape cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens two weeks after Concord.",
+            description: "Vines susceptible to black rot and downy mildew. Medium-size, coppery red berries. Used fresh, or as sweet juice, blush wine with foxy character and jellies. Ripens two weeks after Concord"
+        },
+        {
+            type: "Grape",
+            name: "Seyval",
+            category: "Grape cultivars for Missouri home plantings",
+            description: "Black rot and powdery mildew susceptible. A midseason-maturing French-American hybrid with white berries on medium-size clusters. Used to make high-quality white wine. Vines are only moderately hardy but have medium vigor and are highly productive. Cluster thinning is needed in most years"
+        },
+        {
+            type: "Grape",
+            name: "Vidal Blanc",
+            category: "Grape cultivars for Missouri home plantings",
+            description: "A late French-American hybrid with long, narrow clusters. Berries small and golden with characteristic \"freckle spots.\" Vines are vigorous and productive"
+        },
+        {
+            type: "Grape",
+            name: "Norton",
+            category: "Grape cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Matures late-season.",
+            description: "Tends to be slightly less susceptible to diseases. Very cold-hardy, native grape species (mostly Vitis aestivalis) used for high-quality dry red wine. Blue-black berries. Vines may exhibit sulphur-sensitivity when sprayed. Matures late-season. Source text names this grape Norton (Cynthiana)"
+        },
+        {
+            type: "Grape",
+            name: "Glenora",
+            category: "Grape cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in mid-August.",
+            description: "Small, black berries on medium clusters. Flesh firm (not slip-skin) and very sweet. Vine medium in vigor. Ripens in mid-August"
+        },
+        {
+            type: "Grape",
+            name: "Reliance",
+            category: "Grape cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Susceptible to fruit cracking when rainfall occurs near harvest.",
+            description: "Susceptible to black rot and anthracnose. Small to medium-size, pink slip-skin berries on medium-size clusters. Fruit is very sweet with mild foxy flavor. Susceptible to fruit cracking when rainfall occurs near harvest. Vines are productive, vigorous and relatively hardy. Ripens in August"
+        },
+        {
+            type: "Grape",
+            name: "Mars",
+            category: "Grape cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens about five days after Reliance.",
+            description: "Disease-susceptible under humid, wet growing conditions. Medium-size, dark blue slip-skin berries in small, loose clusters. Strong foxy flavor. Vines slightly less cold-hardy than Reliance. Ripens about five days after Reliance"
+        },
+        {
+            type: "Grape",
+            name: "Neptune",
+            category: "Grape cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Harvested at the same time as Mars.",
+            description: "Susceptible to fungal diseases. Yellow-green fruit without slip-skin and foxy character. Berries are sweeter than Mars. Harvested at the same time as Mars. g6005 page 4 University of Missouri Extension"
+        },
+        {
+            type: "Strawberry",
+            name: "Earliglow",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "Shows some resistance to gray mold, verticillium wilt and red stele diseases, but susceptible to powdery mildew and leaf spot. Small berries with excellent flavor. Yield tends to decrease as season progresses. Berries are dark red, sweet and good for freezing"
+        },
+        {
+            type: "Strawberry",
+            name: "Surecrop",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "Resistant to leaf scorch, leaf spot, verticillium wilt and red stele. Medium-size berries, light colored, tart and fair quality. Plants are vigorous and productive"
+        },
+        {
+            type: "Strawberry",
+            name: "Honeoye",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "Not resistant to leaf spot. Berries are very large and have good red color throughout the fruit. Under certain conditions, not as flavorful as other cultivars. Plants produce a heavy crop when grown on raised bed"
+        },
+        {
+            type: "Strawberry",
+            name: "Redchief",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "Resistant to red stele and verticillium wilt. Berries are medium-large to large, dark colored, sweet and good quality. A good plant producer. Excellent for freezing"
+        },
+        {
+            type: "Strawberry",
+            name: "Allstar",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "Resistant to red-stele and verticillium wilt, but susceptible to gray mold. Berries are large, glossy and orange-red color, and tend to be soft"
+        },
+        {
+            type: "Strawberry",
+            name: "Jewel",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "Susceptible to foliar diseases. Large, wedgeshaped, firm berries of excellent color and quality. Plants have moderately vigorous runner production. Very good for eating fresh or for freezing"
+        },
+        {
+            type: "Blackberry",
+            name: "Darrow",
+            category: "Small fruit cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens late June to early July.",
+            description: "Berries small to medium-size. The hardiest of all blackberries. Ripens late June to early July"
+        },
+        {
+            type: "Blackberry",
+            name: "Shawnee",
+            category: "Small fruit cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Large, shiny black, high-quality berries that can be harvested over a four-week period.",
+            description: "Large, shiny black, high-quality berries that can be harvested over a four-week period. Less hardy than Darrow but can tolerate temperatures to -9 degrees F. Canes may die back after a cold winter, resulting in crop loss, but fruit is generally produced the following year"
+        },
+        {
+            type: "Blackberry",
+            name: "Arapaho",
+            category: "Small fruit cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in early July",
+            description: "Fruit is less sweet than Navaho but has better flavor than Shawnee. Berries have small seeds. Canes not as vigorous growing as other cultivars. Plants are hardy to -11 degrees F. Ripens in early July"
+        },
+        {
+            type: "Blackberry",
+            name: "Apache",
+            category: "Small fruit cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Plants produce many canes Ripens 10 days later than Arapaho.",
+            description: "Very large, sweet fruit with good quality. Plants produce many canes Ripens 10 days later than Arapaho"
+        },
+        {
+            type: "Blackberry",
+            name: "Ouachita",
+            category: "Small fruit cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Harvest between Arapaho and Navaho.",
+            description: "Small but very sweet berries. Canes are very erect with high productivity. Harvest between Arapaho and Navaho"
+        },
+        {
+            type: "Blackberry",
+            name: "Navaho",
+            category: "Small fruit cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Matures in mid-July.",
+            description: "Fruit is medium-size, glossy and black, and stores well. Excellent sweet flavor. Canes are hardy to -13 degrees F. Matures in mid-July"
+        },
+        {
+            type: "Raspberry",
+            name: "Jewel",
+            category: "Small fruit cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in midseason.",
+            description: "Resistant to anthracnose fungus and more disease-resistant than many black raspberries. Plants are cold-hardy and productive under good care. Black, medium-size firm fruit with good flavor. Ripens in midseason"
+        },
+        {
+            type: "Raspberry",
+            name: "Royalty",
+            category: "Small fruit cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Matures in June.",
+            description: "Very susceptible to root rot. Produces large purple fruit. More productive than red raspberry cultivars. Matures in June"
+        },
+        {
+            type: "Raspberry",
+            name: "Latham",
+            category: "Small fruit cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in June.",
+            description: "Red, medium-size, firm fruit of good quality. Good preserved or frozen. Ripens in June"
+        },
+        {
+            type: "Raspberry",
+            name: "Heritage",
+            category: "Small fruit cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in August.",
+            description: "Bears a fall crop of red fruit. Fruit good for fresh uses or for preserving. Ripens in August"
+        },
+        {
+            type: "Blueberry",
+            name: "Duke",
+            category: "Small fruit cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens very early (in mid-June).",
+            description: "Fruit is mild-flavored, medium-size with very firm skin. Best for eating fresh. Berries have long stems and loose clusters. Ripens very early (in mid-June)"
+        },
+        {
+            type: "Blueberry",
+            name: "Blueray",
+            category: "Small fruit cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Ripens in late June to early July.",
+            description: "Berries are large and light blue and have good flavor. Good all-purpose berry. Bushes are vigorous and productive. Ripens in late June to early July"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluecrop",
+            category: "Small fruit cultivars for Missouri home plantings",
+            harvest_time_unparsed: "Fruit ripens a few days later than Blueray.",
+            description: "Large fruit (about 65 berries per cup) with bright blue color and good flavor. Good all-purpose berry. Very productive. Fruit ripens a few days later than Blueray. g6005 page 5 University of Missouri Extension"
+        },
+        {
+            type: "Gooseberry",
+            name: "Welcome",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "MU G6005 names Welcome among improved gooseberry cultivars for Missouri home plantings"
+        },
+        {
+            type: "Gooseberry",
+            name: "Pixwell",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "MU G6005 names Pixwell among improved gooseberry cultivars for Missouri home plantings"
+        },
+        {
+            type: "Gooseberry",
+            name: "Invicta",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "MU G6005 names Invicta among improved gooseberry cultivars for Missouri home plantings"
+        },
+        {
+            type: "Currant",
+            name: "Blackdown",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "MU G6005 names Blackdown among black currants for Missouri home plantings"
+        },
+        {
+            type: "Currant",
+            name: "Consort",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "MU G6005 names Consort among black currants for Missouri home plantings"
+        },
+        {
+            type: "Currant",
+            name: "Crusader",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "MU G6005 names Crusader among black currants for Missouri home plantings"
+        },
+        {
+            type: "Currant",
+            name: "Red Lake",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "MU G6005 names Red Lake among self-fruitful red currants for Missouri home plantings"
+        },
+        {
+            type: "Currant",
+            name: "Cherry Red",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "MU G6005 names Cherry Red among self-fruitful red currants for Missouri home plantings"
+        },
+        {
+            type: "Elderberry",
+            name: "Wyldewood",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "MU G6005 names Wyldwood among Missouri elderberry cultivars. Source text names this elderberry Wyldwood"
+        },
+        {
+            type: "Elderberry",
+            name: "Bob Gordon",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "MU G6005 names Bob Gordon among Missouri elderberry cultivars"
+        },
+        {
+            type: "Elderberry",
+            name: "Adams",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "MU G6005 names Adams among other elderberries available for Missouri home plantings"
+        },
+        {
+            type: "Elderberry",
+            name: "York",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "MU G6005 names York among other elderberries available for Missouri home plantings"
+        },
+        {
+            type: "Elderberry",
+            name: "Scotia",
+            category: "Small fruit cultivars for Missouri home plantings",
+            description: "MU G6005 names Scotia among other elderberries available for Missouri home plantings"
+        },
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    title: "Clemson Peach Variety Evaluations - Cooley Farms 2016 Redglobe Season",
+    author: "Clemson Peach Team",
+    description: "Clemson peach evaluation database snapshot for Cooley Farms in the 2016 Redglobe season",
+    url: "https://www.clemsonpeach.org/index.php?p=180&location=Cooley%20Farms&year=2016&season=Redglobe%20Season",
+    thumbnail: "website",
+    accessed: "Jun 2026",
+    type: "extension test",
+    ignore_for_nearby_searches: true,
+    needs_help: true,
+    locations: [
+        {
+            name: "Clemson Peach Team, Clemson, South Carolina",
+            latitude: 34.6834,
+            longitude: -82.8374
+        },
+    ],
+    categories: [
+        {
+            name: "Cooley Farms 2016 Redglobe-season peach trial",
+            description: "Clemson Peach Variety Evaluations lists these cultivars in the Cooley Farms 2016 Redglobe Season table"
+        },
+    ],
+    plants: [
+        {
+            type: "Peach",
+            name: "BY96P2531",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 1st",
+            description: "Clemson Peach Variety Evaluations recorded BY96P2531 at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 1st. Set: 5. Size: 2.72. Shape: Ovate. Pubescence: 5. Red color: 50. Attribute score: 7. Firmness: 5.4. Freestone score: 2. Status: 1"
+        },
+        {
+            type: "Peach",
+            name: "Carogem",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 1st",
+            description: "Clemson Peach Variety Evaluations recorded Carogem at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 1st. Set: 3. Size: 2.87. Shape: Rounded. Pubescence: 5. Red color: 60. Attribute score: 4. Firmness: 5.4. Freestone score: 3. Status: 1"
+        },
+        {
+            type: "Peach",
+            name: "Fireprince",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 1st",
+            description: "Clemson Peach Variety Evaluations recorded Fireprince at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 1st. Set: 3. Size: 2.72. Shape: Rounded. Pubescence: 4. Red color: 60. Attribute score: 4. Firmness: 6.8. Freestone score: 3. Status: 1"
+        },
+        {
+            type: "Peach",
+            name: "John Boy",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 1st",
+            description: "Clemson Peach Variety Evaluations recorded John Boy at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 1st. Set: 3. Size: 2.83. Shape: Ovate. Pubescence: 4. Red color: 60. Attribute score: 3. Firmness: 4.6. Freestone score: 2. Status: 1"
+        },
+        {
+            type: "Peach",
+            name: "John Boy II",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 1st",
+            description: "Clemson Peach Variety Evaluations recorded John Boy II at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 1st. Set: 3. Size: 2.77. Shape: Oblong. Pubescence: 4. Red color: 60. Attribute score: 3. Firmness: 6. Freestone score: 1. Status: 1"
+        },
+        {
+            type: "Peach",
+            name: "Klondike White",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 1st",
+            description: "Clemson Peach Variety Evaluations recorded Klondike White at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 1st. Set: 4. Size: 2.67. Shape: Rounded. Pubescence: 4. Red color: 60. Attribute score: 4. Firmness: 5.4. Freestone score: 1. Status: 1"
+        },
+        {
+            type: "Peach",
+            name: "KV970512-501",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 1st",
+            description: "Clemson Peach Variety Evaluations recorded KV970512-501 at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 1st. Set: 4. Size: 2.59. Shape: Ovate. Pubescence: 0. Red color: 70. Attribute score: 3. Firmness: 5.6. Freestone score: 3. Status: 1"
+        },
+        {
+            type: "Peach",
+            name: "PF 17",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 1st",
+            description: "Clemson Peach Variety Evaluations recorded PF 17 at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 1st. Set: 5. Size: 2.65. Shape: Oblong. Pubescence: 4. Red color: 50. Attribute score: 5. Firmness: 6.8. Freestone score: 3. Status: 1"
+        },
+        {
+            type: "Peach",
+            name: "Carolina Belle",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 7th",
+            description: "Clemson Peach Variety Evaluations recorded Carolina Belle at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 7th. Set: 5. Size: 2.81. Shape: Rounded. Pubescence: 5. Red color: 10. Attribute score: 6. Firmness: 7. Freestone score: 3. Status: 1"
+        },
+        {
+            type: "Peach",
+            name: "Coralstar",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 7th",
+            description: "Clemson Peach Variety Evaluations recorded Coralstar at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 7th. Set: 4. Size: 3.26. Shape: Ovate. Pubescence: 5. Red color: 30. Attribute score: 4. Firmness: 7.2. Freestone score: 3. Status: 1"
+        },
+        {
+            type: "Peach",
+            name: "Glacier White",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 7th",
+            description: "Clemson Peach Variety Evaluations recorded Glacier White at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 7th. Set: 5. Size: 2.73. Shape: Rounded. Pubescence: 4. Red color: 50. Attribute score: 4. Firmness: 6.8. Freestone score: 3. Status: 1"
+        },
+        {
+            type: "Peach",
+            name: "Julyprince",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 7th",
+            description: "Clemson Peach Variety Evaluations recorded Julyprince at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 7th. Set: 4. Size: 2.86. Shape: Rounded. Pubescence: 5. Red color: 60. Attribute score: 5. Firmness: 5.6. Freestone score: 3. Status: 1"
+        },
+        {
+            type: "Peach",
+            name: "Nectar",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 7th",
+            description: "Clemson Peach Variety Evaluations recorded Nectar at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 7th. Set: 6. Size: 3.01. Shape: Ovate. Pubescence: 5. Red color: 20. Attribute score: 6. Firmness: 2.2. Freestone score: 3. Status: 1"
+        },
+        {
+            type: "Peach",
+            name: "Scarletprince",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 7th",
+            description: "Clemson Peach Variety Evaluations recorded Scarletprince at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 7th. Set: 6. Size: 3.13. Shape: Rounded. Pubescence: 4. Red color: 50. Attribute score: 6. Firmness: 5.8. Freestone score: 2. Status: 1"
+        },
+        {
+            type: "Peach",
+            name: "Winblo",
+            category: "Cooley Farms 2016 Redglobe-season peach trial",
+            harvest_time_unparsed: "July 7th",
+            description: "Clemson Peach Variety Evaluations recorded Winblo at Cooley Farms in the 2016 Redglobe Season trial. Ripe date: July 7th. Set: 5. Size: 2.95. Shape: Ovate. Pubescence: 5. Red color: 50. Attribute score: 6. Firmness: 5.8. Freestone score: 3. Status: 1"
+        },
+    ]
+}

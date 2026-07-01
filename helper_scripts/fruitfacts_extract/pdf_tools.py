@@ -12,7 +12,52 @@ from fruitfacts_extract.text_tools import DEFAULT_USER_AGENT, clean_text
 
 def fetch_url_bytes(url, user_agent=DEFAULT_USER_AGENT, timeout=60):
     request = Request(url, headers={"User-Agent": user_agent})
-    return urlopen(request, timeout=timeout).read()
+    try:
+        return urlopen(request, timeout=timeout).read()
+    except Exception as original_error:
+        return fetch_url_bytes_with_powershell(url, timeout, original_error)
+
+
+def fetch_url_bytes_with_powershell(url, timeout, original_error):
+    powershell = shutil.which("pwsh") or shutil.which("powershell")
+    if not powershell:
+        raise original_error
+    with tempfile.TemporaryDirectory(prefix="fruitfacts_pdf_fetch_") as temp_dir:
+        pdf_path = Path(temp_dir) / "source.pdf"
+        script_path = Path(temp_dir) / "fetch.ps1"
+        script_path.write_text(
+            "\n".join(
+                [
+                    "param($Url, $OutFile, $TimeoutSec)",
+                    "$ProgressPreference='SilentlyContinue'",
+                    "Invoke-WebRequest -Uri $Url -UseBasicParsing "
+                    + "-MaximumRedirection 5 -TimeoutSec ([int]$TimeoutSec) "
+                    + "-OutFile $OutFile",
+                ]
+            ),
+            encoding="utf-8",
+        )
+        try:
+            subprocess.run(
+                [
+                    powershell,
+                    "-NoProfile",
+                    "-NonInteractive",
+                    "-ExecutionPolicy",
+                    "Bypass",
+                    "-File",
+                    str(script_path),
+                    url,
+                    str(pdf_path),
+                    str(timeout),
+                ],
+                check=True,
+                capture_output=True,
+                text=True,
+            )
+        except Exception:
+            raise original_error
+        return pdf_path.read_bytes()
 
 
 def pdftotext_path():

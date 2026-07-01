@@ -275,6 +275,8 @@ def table_rows(page, extractor):
             )
         else:
             rows = table_to_dicts(table)
+    if extractor.get("row_fields"):
+        rows = [{**extractor["row_fields"], **row} for row in rows]
     rows = expanded_rows(rows, extractor)
     rows = [row_text_fixes(row, extractor.get("text_fixes")) for row in rows]
     rows = split_name_field_rows(rows, extractor)
@@ -614,6 +616,9 @@ def html_rule_values(rule):
         "pattern",
         "names_after",
         "names_before",
+        "marker",
+        "end_marker",
+        "row_fields",
         "section",
         "subsection",
         "when",
@@ -982,21 +987,36 @@ def html_marker_list_rows(page, extractor):
             extractor.get("end_heading"),
         )
     rows = []
+    rules = extractor.get("paragraph_rules")
     for tag, text in blocks:
         if tag not in extractor.get("paragraph_tags", ["p"]):
             continue
-        if extractor.get("contains") and extractor["contains"] not in text:
-            continue
-        if extractor.get("prefix") and not text.startswith(extractor["prefix"]):
-            continue
-        for name in names_after_marker(
-            text,
-            extractor["marker"],
-            extractor.get("end_marker", "."),
-        ):
-            row = {extractor.get("name_key", "name"): name}
-            row.update(extractor.get("row_fields", {}))
-            rows.append(row)
+        if not rules:
+            if extractor.get("contains") and extractor["contains"] not in text:
+                continue
+            if extractor.get("prefix") and not text.startswith(extractor["prefix"]):
+                continue
+            rules_for_text = [None]
+        else:
+            rules_for_text = [
+                rule for rule in rules if html_rule_matches(tag, text, {}, rule)
+            ]
+        for rule in rules_for_text:
+            rule = rule or {}
+            marker = rule.get("marker", extractor.get("marker"))
+            if marker not in text:
+                continue
+            for name in names_after_marker(
+                text,
+                marker,
+                rule.get("end_marker", extractor.get("end_marker", ".")),
+            ):
+                row = {extractor.get("name_key", "name"): name}
+                row.update(extractor.get("row_fields", {}))
+                if rule:
+                    row.update(rule.get("row_fields", {}))
+                    row.update(html_rule_values(rule))
+                rows.append(row)
     return rows
 
 

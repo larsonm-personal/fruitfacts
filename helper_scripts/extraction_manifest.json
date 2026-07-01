@@ -299,6 +299,22 @@
         {
             "id": "montana_warc_fruit_research_sites",
             "config": "extraction_configs/montana_warc_fruit_research_sites.json"
+        },
+        {
+            "id": "usu_backyard_fruit_high_mountain_valleys",
+            "config": "extraction_configs/usu_backyard_fruit_high_mountain_valleys.json"
+        },
+        {
+            "id": "missouri_g6005_fruit_cultivars_home_plantings",
+            "config": "extraction_configs/missouri_g6005_fruit_cultivars_home_plantings.json"
+        },
+        {
+            "id": "iowa_state_pm453_fruit_cultivars",
+            "config": "extraction_configs/iowa_state_pm453_fruit_cultivars.json"
+        },
+        {
+            "id": "clemson_peach_variety_evaluations_cooley_2016",
+            "config": "extraction_configs/clemson_peach_variety_evaluations_cooley_2016.json"
         }
     ]
 }
