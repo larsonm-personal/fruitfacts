@@ -1,0 +1,233 @@
+{
+    title: "Illinois Extension Small Fruits for Home Gardens",
+    description: "University of Illinois Extension small-fruit guide with cultivar recommendations spread across crop-specific pages and tables",
+    url: "https://extension.illinois.edu/small-fruits",
+    thumbnail: "website",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Illinois Extension, Urbana, Illinois",
+            latitude: 40.102,
+            longitude: -88.2272
+        },
+    ],
+    categories: [
+        {
+            name: "Blackberry cultivars adapted to Illinois",
+            description: "University of Illinois Extension lists these blackberry cultivars in its small-fruit table with harvest season, adaptation region, and notes"
+        },
+        {
+            name: "Red raspberry cultivars for Illinois",
+            description: "University of Illinois Extension lists these red raspberry cultivars in its Small Fruits for Home Gardens guide"
+        },
+        {
+            name: "Yellow raspberry cultivars for Illinois",
+            description: "University of Illinois Extension lists these yellow raspberry cultivars in its Small Fruits for Home Gardens guide"
+        },
+        {
+            name: "Black raspberry cultivars for Illinois",
+            description: "University of Illinois Extension lists these black raspberry cultivars in its Small Fruits for Home Gardens guide"
+        },
+        {
+            name: "Purple raspberry cultivars for Illinois",
+            description: "University of Illinois Extension lists these purple raspberry cultivars in its Small Fruits for Home Gardens guide"
+        },
+        {
+            name: "June-bearing strawberry cultivars for Illinois",
+            description: "University of Illinois Extension lists these June-bearing strawberry cultivars by season and disease resistance for Illinois"
+        },
+        {
+            name: "Day-neutral strawberry cultivars for Illinois",
+            description: "University of Illinois Extension lists these day-neutral strawberry cultivars by season and disease resistance for Illinois"
+        },
+    ],
+    plants: [
+        {
+            type: "Blackberry",
+            name: "Hull",
+            category: "Blackberry cultivars adapted to Illinois",
+            harvest_time_unparsed: "late summer",
+            description: "Illinois Extension lists Hull Thornless in its blackberry cultivar table. Region of adaptation: S. Notes: large fruit, good flavor, not very winter-hardy; plants are semi-erect and need to be trellised. Source table names this as Hull Thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Chester",
+            category: "Blackberry cultivars adapted to Illinois",
+            harvest_time_unparsed: "late summer, harvest can last up to 6 weeks",
+            description: "Illinois Extension lists Chester Thornless in its blackberry cultivar table. Region of adaptation: C, S. Notes: large, round fruit; fruit is firm and could be transported to local markets without leaking; plants are semi-erect and need to be trellised. Source table names this as Chester Thornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Triple Crown",
+            category: "Blackberry cultivars adapted to Illinois",
+            harvest_time_unparsed: "mid-summer; earlier than Chester",
+            description: "Illinois Extension lists Triple Crown in its blackberry cultivar table. Region of adaptation: S. Notes: newest semi-erect thornless; suitable for trial only"
+        },
+        {
+            type: "Blackberry",
+            name: "Arapaho",
+            category: "Blackberry cultivars adapted to Illinois",
+            harvest_time_unparsed: "July",
+            description: "Illinois Extension lists Arapaho in its blackberry cultivar table. Region of adaptation: S. Notes: erect, thornless, suitable for southern Illinois"
+        },
+        {
+            type: "Blackberry",
+            name: "Choctaw",
+            category: "Blackberry cultivars adapted to Illinois",
+            harvest_time_unparsed: "very early",
+            description: "Illinois Extension lists Choctaw in its blackberry cultivar table. Region of adaptation: S. Notes: good flavor, erect growth habit"
+        },
+        {
+            type: "Blackberry",
+            name: "Cheyenne",
+            category: "Blackberry cultivars adapted to Illinois",
+            description: "Illinois Extension lists Cheyenne in its blackberry cultivar table. Region of adaptation: S. Notes: good flavor, erect growth habit"
+        },
+        {
+            type: "Blackberry",
+            name: "Shawnee",
+            category: "Blackberry cultivars adapted to Illinois",
+            description: "Illinois Extension lists Shawnee in its blackberry cultivar table. Region of adaptation: S. Notes: very large fruits, good flavor, erect growth habit"
+        },
+        {
+            type: "Blackberry",
+            name: "Illini",
+            category: "Blackberry cultivars adapted to Illinois",
+            harvest_time_unparsed: "long harvest season",
+            description: "Illinois Extension lists Illini Hardy in its blackberry cultivar table. Region of adaptation: N, C, S. Notes: dependable moderate production of good quality fruits. Source table names this as Illini Hardy"
+        },
+        {
+            type: "Raspberry",
+            name: "Boyne",
+            category: "Red raspberry cultivars for Illinois",
+            harvest_time_unparsed: "in Summer.",
+            description: "Illinois Extension lists Boyne in its red raspberry cultivars for illinois. Harvested in Summer. Adapted to region north of Interstate 80. This old cultivar is very winter-hardy"
+        },
+        {
+            type: "Raspberry",
+            name: "Latham",
+            category: "Red raspberry cultivars for Illinois",
+            harvest_time_unparsed: "in summer.",
+            description: "Illinois Extension lists Latham in its red raspberry cultivars for illinois. Harvested in summer. Adapted to regions between Interstate 80 and Interstate 70, as well as north of Interstate 80. This old cultivar is relatively thornless and dependable."
+        },
+        {
+            type: "Raspberry",
+            name: "Heritage",
+            category: "Red raspberry cultivars for Illinois",
+            harvest_time_unparsed: "in fall.",
+            description: "Illinois Extension lists Heritage in its red raspberry cultivars for illinois. Harvested in fall. It grows in all areas of the state. It is widely adapted, erect, very dependable, firm berries, good flavor, susceptible to Phytophthora."
+        },
+        {
+            type: "Raspberry",
+            name: "Anne",
+            category: "Yellow raspberry cultivars for Illinois",
+            harvest_time_unparsed: "in fall.",
+            description: "Illinois Extension lists Anne in its yellow raspberry cultivars for illinois. Harvested in fall. It grows in all areas of the state and features large fruit."
+        },
+        {
+            type: "Raspberry",
+            name: "Fallgold",
+            category: "Yellow raspberry cultivars for Illinois",
+            AKA: ["Fall Gold"],
+            harvest_time_unparsed: "in fall and spring.",
+            description: "Illinois Extension lists Fall Gold in its yellow raspberry cultivars for illinois. Harvested in fall and spring. It grows in all areas of the state and features conical-shaped fruit. Source text names this as Fall Gold"
+        },
+        {
+            type: "Raspberry",
+            name: "Bristol",
+            category: "Black raspberry cultivars for Illinois",
+            harvest_time_unparsed: "in spring.",
+            description: "Illinois Extension lists Bristol in its black raspberry cultivars for illinois. Harvested in spring. It grows in central and southern Illinois and features medium to large fruit."
+        },
+        {
+            type: "Raspberry",
+            name: "Jewel",
+            category: "Black raspberry cultivars for Illinois",
+            harvest_time_unparsed: "in spring.",
+            description: "Illinois Extension lists Jewel in its black raspberry cultivars for illinois. Harvested in spring. It grows in all areas of the state and has the largest fruits of the black raspberry cultivars."
+        },
+        {
+            type: "Raspberry",
+            name: "Haut",
+            category: "Black raspberry cultivars for Illinois",
+            harvest_time_unparsed: "in spring.",
+            description: "Illinois Extension lists Haut in its black raspberry cultivars for illinois. Harvested in spring. It grows in central and southern Illinois and has very good flavor."
+        },
+        {
+            type: "Raspberry",
+            name: "Brandywine",
+            category: "Purple raspberry cultivars for Illinois",
+            harvest_time_unparsed: "in spring.",
+            description: "Illinois Extension lists Brandywine in its purple raspberry cultivars for illinois. Harvested in spring. It grows in all areas of the state and has large fruit that is good for jams and jellies."
+        },
+        {
+            type: "Raspberry",
+            name: "Royalty",
+            category: "Purple raspberry cultivars for Illinois",
+            harvest_time_unparsed: "in spring.",
+            description: "Illinois Extension lists Royalty in its purple raspberry cultivars for illinois. Harvested in spring. It grows in all areas of the state and is the best-flavored purple raspberry. It can be picked when red to resemble the flavor of a red raspberry or left to darken and develop a flavor more like a black raspberry."
+        },
+        {
+            type: "Strawberry",
+            name: "Earliglow",
+            category: "June-bearing strawberry cultivars for Illinois",
+            description: "Illinois Extension lists Earligrow in its strawberry cultivar table. Strawberry type: June bearing. Fruit size: medium. Red stele: R3. Verticillium wilt: R. Region of adaptation: N,C,S. Source table names this as Earligrow"
+        },
+        {
+            type: "Strawberry",
+            name: "Annapolis",
+            category: "June-bearing strawberry cultivars for Illinois",
+            description: "Illinois Extension lists Annapolis in its strawberry cultivar table. Strawberry type: June bearing. Fruit size: large. Red stele: R. Verticillium wilt: S. Region of adaptation: N"
+        },
+        {
+            type: "Strawberry",
+            name: "Honeoye",
+            category: "June-bearing strawberry cultivars for Illinois",
+            description: "Illinois Extension lists Honeoye in its strawberry cultivar table. Strawberry type: June bearing. Fruit size: large. Red stele: S. Verticillium wilt: S. Region of adaptation: N,C,S"
+        },
+        {
+            type: "Strawberry",
+            name: "Delmarvel",
+            category: "June-bearing strawberry cultivars for Illinois",
+            description: "Illinois Extension lists Delmarvel in its strawberry cultivar table. Strawberry type: June bearing. Fruit size: large. Red stele: R. Verticillium wilt: R. Region of adaptation: N,C,S"
+        },
+        {
+            type: "Strawberry",
+            name: "Seneca",
+            category: "June-bearing strawberry cultivars for Illinois",
+            description: "Illinois Extension lists Seneca in its strawberry cultivar table. Strawberry type: June bearing. Fruit size: medium. Red stele: S. Verticillium wilt: S. Region of adaptation: N,C"
+        },
+        {
+            type: "Strawberry",
+            name: "Jewel",
+            category: "June-bearing strawberry cultivars for Illinois",
+            description: "Illinois Extension lists Jewel in its strawberry cultivar table. Strawberry type: June bearing. Fruit size: large. Red stele: S. Verticillium wilt: S. Region of adaptation: N,C,S"
+        },
+        {
+            type: "Strawberry",
+            name: "Kent",
+            category: "June-bearing strawberry cultivars for Illinois",
+            description: "Illinois Extension lists Kent in its strawberry cultivar table. Strawberry type: June bearing. Fruit size: large. Red stele: S. Verticillium wilt: S. Region of adaptation: N,C"
+        },
+        {
+            type: "Strawberry",
+            name: "Allstar",
+            category: "June-bearing strawberry cultivars for Illinois",
+            description: "Illinois Extension lists Allstar in its strawberry cultivar table. Strawberry type: June bearing. Fruit size: very large. Red stele: R. Verticillium wilt: R. Region of adaptation: N,C,S"
+        },
+        {
+            type: "Strawberry",
+            name: "Tristar",
+            category: "Day-neutral strawberry cultivars for Illinois",
+            description: "Illinois Extension lists Tristar in its strawberry cultivar table. Strawberry type: Day neutrals. Fruit size: medium. Red stele: R. Verticillium wilt: R. Region of adaptation: N,C,S"
+        },
+        {
+            type: "Strawberry",
+            name: "Tribute",
+            category: "Day-neutral strawberry cultivars for Illinois",
+            description: "Illinois Extension lists Tribute in its strawberry cultivar table. Strawberry type: Day neutrals. Fruit size: medium. Red stele: R. Verticillium wilt: R. Region of adaptation: N,C,S"
+        },
+    ]
+}

@@ -1,0 +1,235 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.illinois.edu/fruit-trees"
+  },
+  "reference_fields": [
+    ["title", "Illinois Extension Fruit Trees for Home Gardens"],
+    ["description", "University of Illinois Extension tree-fruit guide with cultivar suggestions spread across crop-specific pages"],
+    ["url", "https://extension.illinois.edu/fruit-trees"],
+    ["thumbnail", "website"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Illinois Extension, Urbana, Illinois",
+      "latitude": 40.102,
+      "longitude": -88.2272
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apricot varieties suggested for Illinois",
+      "description": "University of Illinois Extension suggests these apricot varieties in its Fruit Trees for Home Gardens guide"
+    },
+    {
+      "name": "Sour cherry varieties suggested for Illinois",
+      "description": "University of Illinois Extension suggests these sour cherry varieties in its Fruit Trees for Home Gardens guide"
+    },
+    {
+      "name": "Sweet cherry varieties suggested for Illinois",
+      "description": "University of Illinois Extension suggests these sweet cherry varieties in its Fruit Trees for Home Gardens guide"
+    },
+    {
+      "name": "Nectarine varieties suggested for favorable Illinois sites",
+      "description": "University of Illinois Extension says no nectarine variety is recommended for northern or central Illinois, but names these as suggested varieties for favorable sites"
+    },
+    {
+      "name": "Peach varieties suggested for Illinois",
+      "description": "University of Illinois Extension suggests these peach varieties for one or more Illinois regions in its Fruit Trees for Home Gardens guide"
+    },
+    {
+      "name": "European pear varieties suggested for Illinois",
+      "description": "University of Illinois Extension suggests these European pear varieties in its Fruit Trees for Home Gardens guide"
+    },
+    {
+      "name": "European plum varieties suggested for Illinois",
+      "description": "University of Illinois Extension suggests these European plum varieties in its Fruit Trees for Home Gardens guide"
+    }
+  ],
+  "name_overrides": {
+    "Ranier": {
+      "name": "Rainier",
+      "note": "Source text names this as Ranier"
+    },
+    "Stark Gold Yellow": {
+      "name": "Stark Gold",
+      "note": "Source text names this as Stark Gold Yellow"
+    },
+    "Redgold": {
+      "name": "Red Gold",
+      "note": "Source text names this as Redgold"
+    },
+    "Green Gage": {
+      "name": "Green Gage",
+      "aka": ["Reine Claude"],
+      "note": "Source text lists Green Gage with Reine Claude in parentheses"
+    },
+    "Damson": {
+      "name": "Damson",
+      "aka": ["Shropshire"],
+      "note": "Source text lists Damson with Shropshire in parentheses"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "inline_quoted_names",
+      "source": {
+        "kind": "html",
+        "url": "https://extension.illinois.edu/fruit-trees/apricots"
+      },
+      "start_heading": "Growing Apricot Trees",
+      "end_heading": "Apricot Tree Pests",
+      "paragraph_tags": ["p", "li"],
+      "strip_trailing_name_punctuation": true,
+      "description_template": "Illinois Extension suggests {name} in its {category_lower}",
+      "paragraph_rules": [
+        {
+          "contains": "Suggested varieties include",
+          "names_after": "Suggested varieties include",
+          "plant_type": "Apricot",
+          "category": "Apricot varieties suggested for Illinois"
+        }
+      ]
+    },
+    {
+      "kind": "inline_quoted_names",
+      "source": {
+        "kind": "html",
+        "url": "https://extension.illinois.edu/fruit-trees/cherries"
+      },
+      "start_heading": "Growing Cherry Trees",
+      "end_heading": "Cherry Tree Pests",
+      "paragraph_tags": ["p", "li"],
+      "strip_trailing_name_punctuation": true,
+      "description_template": "Illinois Extension suggests {name} in its {category_lower}",
+      "paragraph_rules": [
+        {
+          "contains": "Suggested varieties include",
+          "names_after": "Suggested varieties include",
+          "names_before": "All are called",
+          "plant_type": "Sour Cherry",
+          "category": "Sour cherry varieties suggested for Illinois"
+        },
+        {
+          "contains": "The suggested varieties include",
+          "names_after": "The suggested varieties include",
+          "names_before": "'Stella' is self-fruitful",
+          "plant_type": "Sweet Cherry",
+          "category": "Sweet cherry varieties suggested for Illinois"
+        }
+      ]
+    },
+    {
+      "kind": "inline_quoted_names",
+      "source": {
+        "kind": "html",
+        "url": "https://extension.illinois.edu/fruit-trees/nectarines"
+      },
+      "start_heading": "Growing Nectarine Trees",
+      "end_heading": "Nectarine Tree Pests",
+      "paragraph_tags": ["p", "li"],
+      "strip_trailing_name_punctuation": true,
+      "description_template": "Illinois Extension suggests {name} in its {category_lower}",
+      "paragraph_rules": [
+        {
+          "contains": "suggested varieties include",
+          "names_after": "suggested varieties include",
+          "plant_type": "Nectarine",
+          "category": "Nectarine varieties suggested for favorable Illinois sites"
+        }
+      ]
+    },
+    {
+      "kind": "inline_quoted_names",
+      "source": {
+        "kind": "html",
+        "url": "https://extension.illinois.edu/fruit-trees/peaches"
+      },
+      "start_heading": "Growing Peach Trees",
+      "end_heading": "Peach Tree Pests",
+      "paragraph_tags": ["p", "li"],
+      "strip_trailing_name_punctuation": true,
+      "merge_duplicate_plants": true,
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "Illinois Extension suggests {name} in its {category_lower}"
+        },
+        {
+          "kind": "labels",
+          "labels": [
+            ["source_region", "Source region"]
+          ]
+        }
+      ],
+      "paragraph_rules": [
+        {
+          "contains": "northern Illinois",
+          "names_after": "called",
+          "plant_type": "Peach",
+          "category": "Peach varieties suggested for Illinois",
+          "source_region": "northern Illinois"
+        },
+        {
+          "contains": "The varieties suggested for central Illinois are",
+          "plant_type": "Peach",
+          "category": "Peach varieties suggested for Illinois",
+          "source_region": "central Illinois"
+        },
+        {
+          "contains": "southern Illinois include",
+          "names_after": "southern Illinois include",
+          "plant_type": "Peach",
+          "category": "Peach varieties suggested for Illinois",
+          "source_region": "southern Illinois"
+        }
+      ]
+    },
+    {
+      "kind": "inline_quoted_names",
+      "source": {
+        "kind": "html",
+        "url": "https://extension.illinois.edu/fruit-trees/pears"
+      },
+      "start_heading": "Growing Pear Trees",
+      "end_heading": "Pear Tree Pests",
+      "paragraph_tags": ["p", "li"],
+      "strip_trailing_name_punctuation": true,
+      "description_template": "Illinois Extension suggests {name} in its {category_lower}",
+      "paragraph_rules": [
+        {
+          "contains": "Suggested varieties include",
+          "names_after": "Suggested varieties include",
+          "names_before": "'Seckel' and",
+          "plant_type": "Euro Pear",
+          "category": "European pear varieties suggested for Illinois"
+        }
+      ]
+    },
+    {
+      "kind": "inline_quoted_names",
+      "source": {
+        "kind": "html",
+        "url": "https://extension.illinois.edu/fruit-trees/plums"
+      },
+      "start_heading": "Growing Plum Trees",
+      "end_heading": "Plum Tree Pests",
+      "paragraph_tags": ["p", "li"],
+      "strip_trailing_name_punctuation": true,
+      "exclude_names": ["Reine Claude", "Shropshire"],
+      "description_template": "Illinois Extension suggests {name} in its {category_lower}",
+      "paragraph_rules": [
+        {
+          "contains": "Suggested varieties include",
+          "names_after": "Suggested varieties include",
+          "names_before": "Plant any two",
+          "plant_type": "Euro Plum",
+          "category": "European plum varieties suggested for Illinois"
+        }
+      ]
+    }
+  ]
+}

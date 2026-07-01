@@ -1,0 +1,242 @@
+{
+    title: "Illinois Extension Fruit Trees for Home Gardens",
+    description: "University of Illinois Extension tree-fruit guide with cultivar suggestions spread across crop-specific pages",
+    url: "https://extension.illinois.edu/fruit-trees",
+    thumbnail: "website",
+    accessed: "Jun 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Illinois Extension, Urbana, Illinois",
+            latitude: 40.102,
+            longitude: -88.2272
+        },
+    ],
+    categories: [
+        {
+            name: "Apricot varieties suggested for Illinois",
+            description: "University of Illinois Extension suggests these apricot varieties in its Fruit Trees for Home Gardens guide"
+        },
+        {
+            name: "Sour cherry varieties suggested for Illinois",
+            description: "University of Illinois Extension suggests these sour cherry varieties in its Fruit Trees for Home Gardens guide"
+        },
+        {
+            name: "Sweet cherry varieties suggested for Illinois",
+            description: "University of Illinois Extension suggests these sweet cherry varieties in its Fruit Trees for Home Gardens guide"
+        },
+        {
+            name: "Nectarine varieties suggested for favorable Illinois sites",
+            description: "University of Illinois Extension says no nectarine variety is recommended for northern or central Illinois, but names these as suggested varieties for favorable sites"
+        },
+        {
+            name: "Peach varieties suggested for Illinois",
+            description: "University of Illinois Extension suggests these peach varieties for one or more Illinois regions in its Fruit Trees for Home Gardens guide"
+        },
+        {
+            name: "European pear varieties suggested for Illinois",
+            description: "University of Illinois Extension suggests these European pear varieties in its Fruit Trees for Home Gardens guide"
+        },
+        {
+            name: "European plum varieties suggested for Illinois",
+            description: "University of Illinois Extension suggests these European plum varieties in its Fruit Trees for Home Gardens guide"
+        },
+    ],
+    plants: [
+        {
+            type: "Apricot",
+            name: "Earli Orange",
+            category: "Apricot varieties suggested for Illinois",
+            description: "Illinois Extension suggests Earli Orange in its apricot varieties suggested for illinois"
+        },
+        {
+            type: "Apricot",
+            name: "Superb",
+            category: "Apricot varieties suggested for Illinois",
+            description: "Illinois Extension suggests Superb in its apricot varieties suggested for illinois"
+        },
+        {
+            type: "Apricot",
+            name: "Wilson Delicious",
+            category: "Apricot varieties suggested for Illinois",
+            description: "Illinois Extension suggests Wilson Delicious in its apricot varieties suggested for illinois"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Montmorency",
+            category: "Sour cherry varieties suggested for Illinois",
+            description: "Illinois Extension suggests Montmorency in its sour cherry varieties suggested for illinois"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Meteor",
+            category: "Sour cherry varieties suggested for Illinois",
+            description: "Illinois Extension suggests Meteor in its sour cherry varieties suggested for illinois"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Suda Hardy",
+            category: "Sour cherry varieties suggested for Illinois",
+            description: "Illinois Extension suggests Suda Hardy in its sour cherry varieties suggested for illinois"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Mesabi",
+            category: "Sour cherry varieties suggested for Illinois",
+            description: "Illinois Extension suggests Mesabi in its sour cherry varieties suggested for illinois"
+        },
+        {
+            type: "Sour Cherry",
+            name: "North Star",
+            category: "Sour cherry varieties suggested for Illinois",
+            description: "Illinois Extension suggests North Star in its sour cherry varieties suggested for illinois"
+        },
+        {
+            type: "Nectarine",
+            name: "Early Flame",
+            category: "Nectarine varieties suggested for favorable Illinois sites",
+            description: "Illinois Extension suggests Early Flame in its nectarine varieties suggested for favorable illinois sites"
+        },
+        {
+            type: "Nectarine",
+            name: "Sunglo",
+            category: "Nectarine varieties suggested for favorable Illinois sites",
+            description: "Illinois Extension suggests Sunglo in its nectarine varieties suggested for favorable illinois sites"
+        },
+        {
+            type: "Nectarine",
+            name: "Redchief",
+            category: "Nectarine varieties suggested for favorable Illinois sites",
+            description: "Illinois Extension suggests Redchief in its nectarine varieties suggested for favorable illinois sites"
+        },
+        {
+            type: "Nectarine",
+            name: "Cavalier",
+            category: "Nectarine varieties suggested for favorable Illinois sites",
+            description: "Illinois Extension suggests Cavalier in its nectarine varieties suggested for favorable illinois sites"
+        },
+        {
+            type: "Nectarine",
+            name: "Red Gold",
+            category: "Nectarine varieties suggested for favorable Illinois sites",
+            description: "Illinois Extension suggests Redgold in its nectarine varieties suggested for favorable illinois sites. Source text names this as Redgold"
+        },
+        {
+            type: "Peach",
+            name: "Reliance",
+            category: "Peach varieties suggested for Illinois",
+            description: "Illinois Extension suggests Reliance in its peach varieties suggested for illinois. Source region: northern Illinois. Illinois Extension suggests Reliance in its peach varieties suggested for illinois. Source region: central Illinois"
+        },
+        {
+            type: "Peach",
+            name: "Comanche",
+            category: "Peach varieties suggested for Illinois",
+            description: "Illinois Extension suggests Comanche in its peach varieties suggested for illinois. Source region: central Illinois. Illinois Extension suggests Comanche in its peach varieties suggested for illinois. Source region: southern Illinois"
+        },
+        {
+            type: "Peach",
+            name: "Madison",
+            category: "Peach varieties suggested for Illinois",
+            description: "Illinois Extension suggests Madison in its peach varieties suggested for illinois. Source region: central Illinois. Illinois Extension suggests Madison in its peach varieties suggested for illinois. Source region: southern Illinois"
+        },
+        {
+            type: "Peach",
+            name: "Belle of Georgia",
+            category: "Peach varieties suggested for Illinois",
+            description: "Illinois Extension suggests Belle of Georgia in its peach varieties suggested for illinois. Source region: central Illinois"
+        },
+        {
+            type: "Peach",
+            name: "Harbelle",
+            category: "Peach varieties suggested for Illinois",
+            description: "Illinois Extension suggests Harbelle in its peach varieties suggested for illinois. Source region: southern Illinois"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Peach varieties suggested for Illinois",
+            description: "Illinois Extension suggests Redhaven in its peach varieties suggested for illinois. Source region: southern Illinois"
+        },
+        {
+            type: "Peach",
+            name: "Harken",
+            category: "Peach varieties suggested for Illinois",
+            description: "Illinois Extension suggests Harken in its peach varieties suggested for illinois. Source region: southern Illinois"
+        },
+        {
+            type: "Peach",
+            name: "Golden Jubilee",
+            category: "Peach varieties suggested for Illinois",
+            description: "Illinois Extension suggests Golden Jubilee in its peach varieties suggested for illinois. Source region: southern Illinois"
+        },
+        {
+            type: "Peach",
+            name: "Cresthaven",
+            category: "Peach varieties suggested for Illinois",
+            description: "Illinois Extension suggests Cresthaven in its peach varieties suggested for illinois. Source region: southern Illinois"
+        },
+        {
+            type: "Euro Pear",
+            name: "Maxine",
+            category: "European pear varieties suggested for Illinois",
+            description: "Illinois Extension suggests Maxine in its european pear varieties suggested for illinois"
+        },
+        {
+            type: "Euro Pear",
+            name: "Starking Delicious",
+            category: "European pear varieties suggested for Illinois",
+            description: "Illinois Extension suggests Starking Delicious in its european pear varieties suggested for illinois"
+        },
+        {
+            type: "Euro Pear",
+            name: "Seckel",
+            category: "European pear varieties suggested for Illinois",
+            description: "Illinois Extension suggests Seckel in its european pear varieties suggested for illinois"
+        },
+        {
+            type: "Euro Pear",
+            name: "Moonglow",
+            category: "European pear varieties suggested for Illinois",
+            description: "Illinois Extension suggests Moonglow in its european pear varieties suggested for illinois"
+        },
+        {
+            type: "Euro Plum",
+            name: "Stanley",
+            category: "European plum varieties suggested for Illinois",
+            description: "Illinois Extension suggests Stanley in its european plum varieties suggested for illinois"
+        },
+        {
+            type: "Euro Plum",
+            name: "Dietz",
+            category: "European plum varieties suggested for Illinois",
+            description: "Illinois Extension suggests Dietz in its european plum varieties suggested for illinois"
+        },
+        {
+            type: "Euro Plum",
+            name: "Yellow Egg",
+            category: "European plum varieties suggested for Illinois",
+            description: "Illinois Extension suggests Yellow Egg in its european plum varieties suggested for illinois"
+        },
+        {
+            type: "Euro Plum",
+            name: "Bluefre",
+            category: "European plum varieties suggested for Illinois",
+            description: "Illinois Extension suggests Bluefre in its european plum varieties suggested for illinois"
+        },
+        {
+            type: "Euro Plum",
+            name: "Green Gage",
+            category: "European plum varieties suggested for Illinois",
+            AKA: ["Reine Claude"],
+            description: "Illinois Extension suggests Green Gage in its european plum varieties suggested for illinois. Source text lists Green Gage with Reine Claude in parentheses"
+        },
+        {
+            type: "Euro Plum",
+            name: "Damson",
+            category: "European plum varieties suggested for Illinois",
+            AKA: ["Shropshire"],
+            description: "Illinois Extension suggests Damson in its european plum varieties suggested for illinois. Source text lists Damson with Shropshire in parentheses"
+        },
+    ]
+}

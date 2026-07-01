@@ -29,6 +29,7 @@ from fruitfacts_extract.record_tools import labelled_description_from_row
 from fruitfacts_extract.record_tools import plant_record
 from fruitfacts_extract.record_tools import strip_trailing_note_markers
 from fruitfacts_extract.table_tools import fill_leading_group_cells
+from fruitfacts_extract.table_tools import fill_down_column_cells
 from fruitfacts_extract.table_tools import find_table
 from fruitfacts_extract.table_tools import find_table_with_header_row
 from fruitfacts_extract.table_tools import keyed_data_rows
@@ -79,6 +80,12 @@ def source_data(config):
     raise ValueError("Unsupported source kind: " + source["kind"])
 
 
+def data_for_extractor(default_data, extractor):
+    if extractor.get("source"):
+        return source_data({"source": extractor["source"]})
+    return default_data
+
+
 def raw_table(page, extractor):
     if "table_index" in extractor:
         tables = [page.tables[extractor["table_index"]]]
@@ -102,6 +109,8 @@ def transformed_table(table, transforms):
     for transform in transforms:
         if transform == "fill_leading_group_cells":
             table = fill_leading_group_cells(table)
+        elif transform == "fill_down_first_column":
+            table = fill_down_column_cells(table, 0)
         elif transform == "merge_leading_fragment_rows":
             table = merge_leading_fragment_rows(table)
         else:
@@ -1410,7 +1419,7 @@ def inline_quoted_name_rows(page, extractor):
             values = html_rule_values(rule)
             for name in quoted_names(name_text):
                 if extractor.get("strip_trailing_name_punctuation"):
-                    name = name.rstrip(",;").strip()
+                    name = name.rstrip(".,;").strip()
                 if name in excluded:
                     continue
                 row = {
@@ -1747,6 +1756,34 @@ def plants_from_paragraph_sequences(page, extractor, overrides, lookups):
     return plant_records_from_config_rows(rows, extractor, overrides, lookups)
 
 
+EXTRACTOR_HANDLERS = {
+    "html_table": plants_from_html_table,
+    "html_list_items": plants_from_html_list_items,
+    "html_heading_records": plants_from_html_heading_records,
+    "html_name_matrix": plants_from_html_name_matrix,
+    "html_column_name_matrix": plants_from_html_column_name_matrix,
+    "pdf_marker_list": plants_from_pdf_marker_list,
+    "html_marker_list": plants_from_html_marker_list,
+    "static_rows": plants_from_static_rows,
+    "pdf_fixed_width_table": plants_from_pdf_fixed_width_table,
+    "pdf_grouped_fixed_width_table": plants_from_pdf_grouped_fixed_width_table,
+    "pdf_numbered_blocks": plants_from_pdf_numbered_blocks,
+    "pdf_category_name_lists": plants_from_pdf_category_name_lists,
+    "pdf_wrapped_name_lists": plants_from_pdf_wrapped_name_lists,
+    "pdf_catalog_entries": plants_from_pdf_catalog_entries,
+    "pdf_bullet_list": plants_from_pdf_bullet_list,
+    "pdf_quoted_entries": plants_from_pdf_quoted_entries,
+    "pdf_named_rating_rows": plants_from_pdf_named_rating_rows,
+    "pdf_sequential_rating_rows": plants_from_pdf_sequential_rating_rows,
+    "quoted_paragraph_blocks": plants_from_quoted_paragraphs,
+    "colon_paragraph_blocks": plants_from_colon_paragraphs,
+    "inline_quoted_names": plants_from_inline_quoted_names,
+    "quoted_release_blocks": plants_from_quoted_releases,
+    "html_linked_child_releases": plants_from_linked_child_releases,
+    "html_paragraph_sequences": plants_from_paragraph_sequences,
+}
+
+
 def build_lookups(data, config):
     lookups = {}
     for lookup in config.get("lookups", []):
@@ -1764,89 +1801,11 @@ def extract(config):
     plants = []
     for source_extractor in config["extractors"]:
         extractor = merged_extractor(config, source_extractor)
-        if extractor["kind"] == "html_table":
-            plants.extend(plants_from_html_table(data, extractor, overrides, lookups))
-        elif extractor["kind"] == "html_list_items":
-            plants.extend(plants_from_html_list_items(data, extractor, overrides, lookups))
-        elif extractor["kind"] == "html_heading_records":
-            plants.extend(
-                plants_from_html_heading_records(data, extractor, overrides, lookups)
-            )
-        elif extractor["kind"] == "html_name_matrix":
-            plants.extend(plants_from_html_name_matrix(data, extractor, overrides, lookups))
-        elif extractor["kind"] == "html_column_name_matrix":
-            plants.extend(
-                plants_from_html_column_name_matrix(data, extractor, overrides, lookups)
-            )
-        elif extractor["kind"] == "pdf_marker_list":
-            plants.extend(plants_from_pdf_marker_list(data, extractor, overrides, lookups))
-        elif extractor["kind"] == "html_marker_list":
-            plants.extend(plants_from_html_marker_list(data, extractor, overrides, lookups))
-        elif extractor["kind"] == "static_rows":
-            plants.extend(plants_from_static_rows(data, extractor, overrides, lookups))
-        elif extractor["kind"] == "pdf_fixed_width_table":
-            plants.extend(
-                plants_from_pdf_fixed_width_table(data, extractor, overrides, lookups)
-            )
-        elif extractor["kind"] == "pdf_grouped_fixed_width_table":
-            plants.extend(
-                plants_from_pdf_grouped_fixed_width_table(
-                    data,
-                    extractor,
-                    overrides,
-                    lookups,
-                )
-            )
-        elif extractor["kind"] == "pdf_numbered_blocks":
-            plants.extend(
-                plants_from_pdf_numbered_blocks(data, extractor, overrides, lookups)
-            )
-        elif extractor["kind"] == "pdf_category_name_lists":
-            plants.extend(
-                plants_from_pdf_category_name_lists(data, extractor, overrides, lookups)
-            )
-        elif extractor["kind"] == "pdf_wrapped_name_lists":
-            plants.extend(
-                plants_from_pdf_wrapped_name_lists(data, extractor, overrides, lookups)
-            )
-        elif extractor["kind"] == "pdf_catalog_entries":
-            plants.extend(
-                plants_from_pdf_catalog_entries(data, extractor, overrides, lookups)
-            )
-        elif extractor["kind"] == "pdf_bullet_list":
-            plants.extend(
-                plants_from_pdf_bullet_list(data, extractor, overrides, lookups)
-            )
-        elif extractor["kind"] == "pdf_quoted_entries":
-            plants.extend(
-                plants_from_pdf_quoted_entries(data, extractor, overrides, lookups)
-            )
-        elif extractor["kind"] == "pdf_named_rating_rows":
-            plants.extend(
-                plants_from_pdf_named_rating_rows(data, extractor, overrides, lookups)
-            )
-        elif extractor["kind"] == "pdf_sequential_rating_rows":
-            plants.extend(
-                plants_from_pdf_sequential_rating_rows(data, extractor, overrides, lookups)
-            )
-        elif extractor["kind"] == "quoted_paragraph_blocks":
-            plants.extend(
-                plants_from_quoted_paragraphs(data, extractor, overrides, lookups)
-            )
-        elif extractor["kind"] == "colon_paragraph_blocks":
-            plants.extend(plants_from_colon_paragraphs(data, extractor, overrides, lookups))
-        elif extractor["kind"] == "inline_quoted_names":
-            plants.extend(plants_from_inline_quoted_names(data, extractor, overrides, lookups))
-        elif extractor["kind"] == "quoted_release_blocks":
-            plants.extend(plants_from_quoted_releases(data, extractor, overrides, lookups))
-        elif extractor["kind"] == "html_linked_child_releases":
-            plants.extend(
-                plants_from_linked_child_releases(data, extractor, overrides, lookups)
-            )
-        elif extractor["kind"] == "html_paragraph_sequences":
-            plants.extend(plants_from_paragraph_sequences(data, extractor, overrides, lookups))
-        else:
+        handler = EXTRACTOR_HANDLERS.get(extractor["kind"])
+        if not handler:
             raise ValueError("Unsupported extractor kind: " + extractor["kind"])
+        extractor_data = data_for_extractor(data, extractor)
+        plants.extend(handler(extractor_data, extractor, overrides, lookups))
     return merge_duplicate_plant_records(plants, config.get("merge_duplicate_plants"))
 
 

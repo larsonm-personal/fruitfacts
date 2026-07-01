@@ -93,6 +93,24 @@ def fill_leading_group_cells(table):
     return aligned
 
 
+def fill_down_column_cells(table, column=0):
+    if not table:
+        return []
+    filled = [table[0]]
+    current = None
+    for row in table[1:]:
+        row = list(row)
+        if column >= len(row):
+            filled.append(row)
+            continue
+        if row[column]:
+            current = row[column]
+        elif current:
+            row[column] = current
+        filled.append(row)
+    return filled
+
+
 def table_from_header_row(table, required_headers):
     wanted = {header_key(value) for value in required_headers}
     for index, row in enumerate(table):

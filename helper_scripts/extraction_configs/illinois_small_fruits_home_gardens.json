@@ -1,0 +1,198 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.illinois.edu/small-fruits"
+  },
+  "reference_fields": [
+    ["title", "Illinois Extension Small Fruits for Home Gardens"],
+    ["description", "University of Illinois Extension small-fruit guide with cultivar recommendations spread across crop-specific pages and tables"],
+    ["url", "https://extension.illinois.edu/small-fruits"],
+    ["thumbnail", "website"],
+    ["accessed", "Jun 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Illinois Extension, Urbana, Illinois",
+      "latitude": 40.102,
+      "longitude": -88.2272
+    }
+  ],
+  "categories": [
+    {
+      "name": "Blackberry cultivars adapted to Illinois",
+      "description": "University of Illinois Extension lists these blackberry cultivars in its small-fruit table with harvest season, adaptation region, and notes"
+    },
+    {
+      "name": "Red raspberry cultivars for Illinois",
+      "description": "University of Illinois Extension lists these red raspberry cultivars in its Small Fruits for Home Gardens guide"
+    },
+    {
+      "name": "Yellow raspberry cultivars for Illinois",
+      "description": "University of Illinois Extension lists these yellow raspberry cultivars in its Small Fruits for Home Gardens guide"
+    },
+    {
+      "name": "Black raspberry cultivars for Illinois",
+      "description": "University of Illinois Extension lists these black raspberry cultivars in its Small Fruits for Home Gardens guide"
+    },
+    {
+      "name": "Purple raspberry cultivars for Illinois",
+      "description": "University of Illinois Extension lists these purple raspberry cultivars in its Small Fruits for Home Gardens guide"
+    },
+    {
+      "name": "June-bearing strawberry cultivars for Illinois",
+      "description": "University of Illinois Extension lists these June-bearing strawberry cultivars by season and disease resistance for Illinois"
+    },
+    {
+      "name": "Day-neutral strawberry cultivars for Illinois",
+      "description": "University of Illinois Extension lists these day-neutral strawberry cultivars by season and disease resistance for Illinois"
+    }
+  ],
+  "name_overrides": {
+    "Hull Thornless": {
+      "name": "Hull",
+      "note": "Source table names this as Hull Thornless"
+    },
+    "Chester Thornless": {
+      "name": "Chester",
+      "note": "Source table names this as Chester Thornless"
+    },
+    "Illini Hardy": {
+      "name": "Illini",
+      "note": "Source table names this as Illini Hardy"
+    },
+    "Earligrow": {
+      "name": "Earliglow",
+      "note": "Source table names this as Earligrow"
+    },
+    "Fall Gold": {
+      "name": "Fallgold",
+      "aka": ["Fall Gold"],
+      "note": "Source text names this as Fall Gold"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "source": {
+        "kind": "html",
+        "url": "https://extension.illinois.edu/small-fruits/growing-blackberries"
+      },
+      "table_index": 0,
+      "required_headers": [
+        "Blackberry Cultivar",
+        "Harvest Season",
+        "Region of Adaptation*",
+        "Notes"
+      ],
+      "name_key": "blackberry_cultivar",
+      "skip_names": ["Thornless", "Thorny"],
+      "plant_type": "Blackberry",
+      "category": "Blackberry cultivars adapted to Illinois",
+      "harvest_key": "harvest_season",
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "Illinois Extension lists {blackberry_cultivar} in its blackberry cultivar table"
+        },
+        {
+          "kind": "labels",
+          "labels": [
+            ["region_of_adaptation", "Region of adaptation"],
+            ["notes", "Notes"]
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "html_list_items",
+      "source": {
+        "kind": "html",
+        "url": "https://extension.illinois.edu/small-fruits/raspberries"
+      },
+      "start_after_text": "Cultivars:",
+      "stop_headings": ["Raspberry Facts"],
+      "item_pattern": "^(?P<name>.+?) is harvested (?P<description>.+)$",
+      "subheading_rules": [
+        {
+          "tag": "h4",
+          "text": "Red Raspberry",
+          "plant_type": "Raspberry",
+          "category": "Red raspberry cultivars for Illinois"
+        },
+        {
+          "tag": "h4",
+          "text": "Yellow Raspberry",
+          "plant_type": "Raspberry",
+          "category": "Yellow raspberry cultivars for Illinois"
+        },
+        {
+          "tag": "h4",
+          "text": "Black Raspberry",
+          "plant_type": "Raspberry",
+          "category": "Black raspberry cultivars for Illinois"
+        },
+        {
+          "tag": "h4",
+          "text": "Purple Raspberry",
+          "plant_type": "Raspberry",
+          "category": "Purple raspberry cultivars for Illinois"
+        }
+      ],
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "Illinois Extension lists {name} in its {category_lower}"
+        },
+        {
+          "kind": "template",
+          "template": "Harvested {description}"
+        }
+      ],
+      "harvest_from_key": "description",
+      "harvest_terms": ["spring", "summer", "fall"]
+    },
+    {
+      "kind": "html_table",
+      "source": {
+        "kind": "html",
+        "url": "https://extension.illinois.edu/small-fruits/strawberries"
+      },
+      "table_index": 0,
+      "required_headers": [
+        "Strawberry type",
+        "Fruit size",
+        "Red stele",
+        "Verticillium wilt",
+        "Region of adaptation*"
+      ],
+      "table_transforms": ["fill_down_first_column"],
+      "name_key": "strawberry_type",
+      "plant_type": "Strawberry",
+      "category": {
+        "row_key": "",
+        "map": {
+          "June bearing": "June-bearing strawberry cultivars for Illinois",
+          "Day neutrals": "Day-neutral strawberry cultivars for Illinois"
+        }
+      },
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "Illinois Extension lists {strawberry_type} in its strawberry cultivar table"
+        },
+        {
+          "kind": "labels",
+          "labels": [
+            ["", "Strawberry type"],
+            ["fruit_size", "Fruit size"],
+            ["red_stele", "Red stele"],
+            ["verticillium_wilt", "Verticillium wilt"],
+            ["region_of_adaptation", "Region of adaptation"]
+          ]
+        }
+      ]
+    }
+  ]
+}

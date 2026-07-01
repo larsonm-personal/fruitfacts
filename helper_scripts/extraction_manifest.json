@@ -283,6 +283,14 @@
         {
             "id": "uwisc_a3639_stone_fruit",
             "config": "extraction_configs/uwisc_a3639_stone_fruit.json"
+        },
+        {
+            "id": "illinois_fruit_trees_home_gardens",
+            "config": "extraction_configs/illinois_fruit_trees_home_gardens.json"
+        },
+        {
+            "id": "illinois_small_fruits_home_gardens",
+            "config": "extraction_configs/illinois_small_fruits_home_gardens.json"
         }
     ]
 }

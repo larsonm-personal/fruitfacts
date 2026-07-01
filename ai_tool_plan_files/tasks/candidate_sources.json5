@@ -2129,7 +2129,7 @@
         },
         {
             id: "illinois-fruit-trees-home-gardens-guide",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Fruit Trees for Home Gardens",
             institution: "University of Illinois Extension",
@@ -2157,12 +2157,18 @@
             notes: [
                 "Found while searching for official Midwest sources adjacent to existing Wisconsin, Indiana, Nebraska, and Ohio entries",
                 "Official web guide has cultivar lists split across multiple crop-specific pages",
-                "Likely parsing issue: values are spread over separate routed pages rather than a single downloadable source"
+                "Likely parsing issue: values are spread over separate routed pages rather than a single downloadable source",
+                "Encoded in plant_database/references/Illinois/Illinois Extension Fruit Trees for Home Gardens.json5",
+                "Config extraction added at helper_scripts/extraction_configs/illinois_fruit_trees_home_gardens.json",
+                "Manifest entry added as illinois_fruit_trees_home_gardens",
+                "Current draft extracts 32 records from apricot, cherry, nectarine, peach, pear, and plum child pages",
+                "Apple page did not expose a cultivar recommendation list in parsed text, so it remains unencoded",
+                "Parser support added for extractor-level source overrides so one guide config can pull routed crop pages"
             ]
         },
         {
             id: "illinois-small-fruits-home-gardens-guide",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Small Fruits for Home Gardens",
             institution: "University of Illinois Extension",
@@ -2190,7 +2196,13 @@
             notes: [
                 "Found by expanding the Illinois Extension fruit-tree search to the companion small-fruit guide",
                 "Official guide likely requires crawling several linked crop pages",
-                "Likely parsing issue: cultivar recommendations are embedded in separate HTML pages and may use image or card sections"
+                "Likely parsing issue: cultivar recommendations are embedded in separate HTML pages and may use image or card sections",
+                "Encoded in plant_database/references/Illinois/Illinois Extension Small Fruits for Home Gardens.json5",
+                "Config extraction added at helper_scripts/extraction_configs/illinois_small_fruits_home_gardens.json",
+                "Manifest entry added as illinois_small_fruits_home_gardens",
+                "Current draft extracts 28 records from blackberry and strawberry tables plus raspberry list items",
+                "Blueberry, grape, currant, and gooseberry pages did not expose clean cultivar recommendation lists in parsed text",
+                "Parser support added for fill-down HTML table group columns, used by the strawberry table"
             ]
         },
         {

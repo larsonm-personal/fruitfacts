@@ -731,3 +731,25 @@ and `Late` headings repeat under several crops. AZ1269 needs row overrides for
 known two-column heading drift, such as Asian pears, quince, persimmons,
 almonds, and grapes appearing under neighboring headings. The kiwi rows were
 skipped because the database does not currently define a `Kiwi` plant type.
+
+## Illinois Routed Web Guide Notes
+
+The Illinois Extension fruit-tree and small-fruit guides are navigation pages
+with useful cultivar data spread across routed child pages. Configs can now set
+`source` on individual extractors, so one reference config can keep the guide
+landing page as its citation URL while fetching crop pages for the actual
+records.
+
+Use `inline_quoted_names` for child pages where source paragraphs say
+`Suggested varieties include 'Name'...`. Keep tight `contains`, `names_after`,
+and `names_before` rules because some paragraphs mention the same cultivars
+again in pollination sentences. For region-specific duplicate cultivars, use a
+broad category and merge duplicate plants while preserving the source regions
+in descriptions.
+
+The Illinois strawberry table keeps the cultivar group in the first column and
+leaves following cells blank while preserving row width. The
+`fill_down_first_column` table transform fills those group labels before
+category mapping. This is different from row-spanning tables where following
+rows are one cell short and `fill_leading_group_cells` is still the better
+tool.
