@@ -409,6 +409,12 @@ The UMaine 2172 and 2184 conversions added config support for colon-led
 narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
 `AKA` values from name overrides, generated rows, and table-summary lookups.
 
+Static configs are available for sources where the official source was reviewed
+but should not be fetched as part of extraction. Set `source.kind` to `static`
+and use `static_rows`. `row_groups` can reduce repeated fields by giving each
+group shared crop or category values, then listing the cultivar rows beneath
+that group.
+
 ## PDF Lessons
 
 - Prefer `pdftotext -layout` first for born-digital PDFs
@@ -419,6 +425,9 @@ narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
 - If raw PDF output transposes a table into all names, then all zones, then all
   descriptions, keep that table out of the first draft unless a separate parser
   or manual review pass is justified
+- If a compact PDF table is reliable enough to review but not reliable enough
+  to parse mechanically, use static grouped rows and keep the official PDF URL
+  in the reference metadata
 - Parse bounded sections rather than stopping at the first period because names
   such as `A.C. Wendy` contain punctuation
 - Treat source spellings and extraction artifacts separately. If a likely source

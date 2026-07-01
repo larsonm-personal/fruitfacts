@@ -423,7 +423,7 @@
         },
         {
             id: "okstate-home-fruit-planting-guide-hla-6222",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Home Fruit Planting Guide",
             institution: "Oklahoma State University Extension",
@@ -434,13 +434,15 @@
                 "Blackberry",
                 "Blueberry",
                 "Cherry",
+                "Crabapple",
+                "Fig",
                 "Grape",
+                "Jujube",
                 "Nectarine",
                 "Peach",
                 "Pear",
                 "Persimmon",
                 "Plum",
-                "Raspberry",
                 "Strawberry"
             ],
             publication_number: "HLA-6222",
@@ -461,7 +463,11 @@
             notes: [
                 "Official page and PDF path found by search",
                 "PowerShell fetch hit an Oklahoma State Cloudflare challenge during link scraping",
-                "Deferred during the NC/UAF parsing round because both landing page and PDF returned 403 to Python and browser-like header fetches"
+                "Deferred during the NC/UAF parsing round because both landing page and PDF returned 403 to Python and browser-like header fetches",
+                "Encoded in plant_database/references/Oklahoma/OSU HLA-6222 Home Fruit Planting Guide.json5",
+                "Config extraction added at helper_scripts/extraction_configs/okstate_hla_6222_home_fruit_planting_guide.json",
+                "Manifest entry added as okstate_hla_6222_home_fruit_planting_guide",
+                "Worked example for source.kind static plus grouped static rows over a broad official table that local scripted fetches could not retrieve"
             ]
         },
         {
@@ -2066,38 +2072,41 @@
         },
         {
             id: "unr-research-orchard-fruit-evaluations-southern-nevada-pub-3171",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
-            title: "Research Orchard Fruit Evaluations and Recommendations for Southern Nevada",
+            title: "Getting Started With Backyard Fruit Trees in Northern Nevada",
             institution: "University of Nevada, Reno Extension",
-            region: "Southern Nevada",
+            region: "Northern Nevada",
             crops: [
                 "Apple",
                 "Apricot",
-                "Fig",
-                "Grape",
+                "Cherry",
                 "Nectarine",
                 "Peach",
                 "Pear",
-                "Persimmon",
-                "Plum",
-                "Pomegranate"
+                "Plum"
             ],
-            source_type: "extension orchard evaluation",
+            source_type: "state extension guide",
             landing_url: "https://extension.unr.edu/publication.aspx?PubID=3171",
+            download_url: "https://naes.agnt.unr.edu/PMS/Pubs/2014-3171.pdf",
             discovered: "2026-06-29",
             discovered_by: "reference-seeded official web search",
             value_summary:
-                "Southern Nevada orchard evaluation source with locally tested fruit types and recommendations",
+                "Northern Nevada backyard fruit tree factsheet with cultivar and chill-hour recommendations",
             asset_decision: "download and stub",
             proposed_reference_path:
-                "plant_database/references/Nevada/UNR Research Orchard Fruit Evaluations Southern Nevada.json5",
+                "plant_database/references/Nevada/UNR Getting Started With Backyard Fruit Trees in Northern Nevada.json5",
             duplicate_check:
                 "No Nevada reference directory or Nevada candidate entry found locally",
             notes: [
                 "Found by searching Nevada Extension because L.E. Cooke regional recommendations already cover southern Nevada commercially",
                 "Official UNR page exposes an older factsheet through PubID 3171",
-                "Likely parsing issue: older publication formatting may need manual PDF slicing or web text cleanup"
+                "Likely parsing issue: older publication formatting may need manual PDF slicing or web text cleanup",
+                "Official PubID 3171 currently resolves to Getting Started With Backyard Fruit Trees in Northern Nevada rather than the queued southern Nevada orchard-evaluation title",
+                "Encoded in plant_database/references/Nevada/UNR Getting Started With Backyard Fruit Trees in Northern Nevada.json5",
+                "Config extraction added at helper_scripts/extraction_configs/unr_backyard_fruit_trees_northern_nevada.json",
+                "Manifest entry added as unr_backyard_fruit_trees_northern_nevada",
+                "Worked example for preserving a compact PDF recommendation table with grouped static rows after verifying the current source identity"
             ]
         },
         {

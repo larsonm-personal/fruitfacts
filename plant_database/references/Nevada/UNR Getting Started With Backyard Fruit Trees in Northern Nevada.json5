@@ -1,0 +1,204 @@
+{
+    title: "UNR Getting Started With Backyard Fruit Trees in Northern Nevada",
+    author: "Heidi Kratsch and Wendy Hanson Mazet",
+    description: "University of Nevada, Reno Extension factsheet with fruit tree varieties and chill-hour notes for northern Nevada",
+    url: "https://naes.agnt.unr.edu/PMS/Pubs/2014-3171.pdf",
+    thumbnail: "pdf",
+    published: "2014",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Nevada, Reno Extension, Reno, Nevada",
+            latitude: 39.5442,
+            longitude: -119.8163
+        },
+    ],
+    categories: [
+        {
+            name: "Apple varieties for northern Nevada",
+            description: "UNR lists these apple varieties in its fruit tree varieties table for northern Nevada"
+        },
+        {
+            name: "Pear varieties for northern Nevada",
+            description: "UNR lists these pear varieties in its fruit tree varieties table for northern Nevada"
+        },
+        {
+            name: "Sweet cherry varieties for northern Nevada",
+            description: "UNR lists these sweet cherry varieties in its fruit tree varieties table for northern Nevada"
+        },
+        {
+            name: "Sour cherry varieties for northern Nevada",
+            description: "UNR lists this tart cherry variety in its fruit tree varieties table for northern Nevada"
+        },
+        {
+            name: "Plum varieties for northern Nevada",
+            description: "UNR lists these plum varieties in its fruit tree varieties table for northern Nevada"
+        },
+        {
+            name: "Peach varieties for northern Nevada",
+            description: "UNR lists these peach varieties in its fruit tree varieties table for northern Nevada"
+        },
+        {
+            name: "Apricot varieties for northern Nevada",
+            description: "UNR lists or recommends these apricot varieties in its northern Nevada backyard fruit tree factsheet"
+        },
+        {
+            name: "Nectarine varieties for northern Nevada",
+            description: "UNR recommends these nectarine varieties in its northern Nevada backyard fruit tree factsheet"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Wolf River",
+            category: "Apple varieties for northern Nevada",
+            description: "Chill hours required: less than 800. UNR lists Wolf River as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Apple",
+            name: "Honeycrisp",
+            category: "Apple varieties for northern Nevada",
+            description: "Chill hours required: 800. UNR lists Honeycrisp as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Apple",
+            name: "Jonathan",
+            category: "Apple varieties for northern Nevada",
+            description: "Chill hours required: 800. UNR lists Jonathan as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Apple",
+            name: "Liberty",
+            category: "Apple varieties for northern Nevada",
+            description: "Chill hours required: 800. UNR lists Liberty as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Euro Pear",
+            name: "D'Anjou",
+            category: "Pear varieties for northern Nevada",
+            description: "Chill hours required: 800. UNR lists D'Anjou as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Euro Pear",
+            name: "Bosc",
+            category: "Pear varieties for northern Nevada",
+            description: "Chill hours required: 800. UNR lists Bosc as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Euro Pear",
+            name: "Bartlett",
+            category: "Pear varieties for northern Nevada",
+            description: "Chill hours required: 700-800. UNR lists Bartlett as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Euro Pear",
+            name: "Seckel",
+            category: "Pear varieties for northern Nevada",
+            description: "Chill hours required: 800. UNR lists Seckel as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Utah Giant",
+            category: "Sweet cherry varieties for northern Nevada",
+            description: "Chill hours required: 300-800. UNR lists Utah Giant as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Craig's Crimson",
+            category: "Sweet cherry varieties for northern Nevada",
+            description: "Chill hours required: 800. UNR lists Craig's Crimson as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Black Tartarian",
+            category: "Sweet cherry varieties for northern Nevada",
+            description: "Chill hours required: 800. UNR lists Black Tartarian as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Montmorency",
+            category: "Sour cherry varieties for northern Nevada",
+            description: "Chill hours required: 700. UNR lists Montmorency as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Euro Plum",
+            name: "Italian",
+            category: "Plum varieties for northern Nevada",
+            description: "Chill hours required: 700-1000. UNR lists Italian as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Euro Plum",
+            name: "Blue Damson",
+            category: "Plum varieties for northern Nevada",
+            description: "Chill hours required: 800. UNR lists Blue Damson as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Euro Plum",
+            name: "Green Gage",
+            category: "Plum varieties for northern Nevada",
+            description: "Chill hours required: 800. UNR lists Green Gage as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Peach",
+            name: "Reliance",
+            category: "Peach varieties for northern Nevada",
+            description: "Chill hours required: 700. UNR lists Reliance as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Peach varieties for northern Nevada",
+            description: "Chill hours required: 1000. UNR lists Redhaven as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Peach",
+            name: "J.H. Hale",
+            category: "Peach varieties for northern Nevada",
+            description: "Chill hours required: 800. UNR lists JH Hale as a fruit tree variety for northern Nevada. Source table names this as JH Hale"
+        },
+        {
+            type: "Peach",
+            name: "O'Henry",
+            category: "Peach varieties for northern Nevada",
+            description: "Chill hours required: 800. UNR lists O'Henry as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Apricot",
+            name: "Harcot",
+            category: "Apricot varieties for northern Nevada",
+            description: "Chill hours required: 750. UNR lists Harcot as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Apricot",
+            name: "Chinese",
+            category: "Apricot varieties for northern Nevada",
+            description: "Chill hours required: 700. UNR lists Chinese as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Apricot",
+            name: "Goldcot",
+            category: "Apricot varieties for northern Nevada",
+            description: "Chill hours required: 800. Source note: Recommended in source prose for northern Nevada gardeners who want apricot. UNR lists Gold Cot as a fruit tree variety for northern Nevada. Source prose names this as Gold Cot"
+        },
+        {
+            type: "Apricot",
+            name: "Tilton",
+            category: "Apricot varieties for northern Nevada",
+            description: "Chill hours required: 700. Source note: Mentioned in source prose as an apricot option for northern Nevada gardeners. UNR lists Tilton as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Nectarine",
+            name: "Mericrest",
+            category: "Nectarine varieties for northern Nevada",
+            description: "Chill hours required: 800. Source note: Recommended in source prose for northern Nevada gardeners who want nectarine. UNR lists Mericrest as a fruit tree variety for northern Nevada"
+        },
+        {
+            type: "Nectarine",
+            name: "Harko",
+            category: "Nectarine varieties for northern Nevada",
+            description: "Chill hours required: 800. Source note: Recommended in source prose for northern Nevada gardeners who want nectarine. UNR lists Harko as a fruit tree variety for northern Nevada"
+        },
+    ]
+}

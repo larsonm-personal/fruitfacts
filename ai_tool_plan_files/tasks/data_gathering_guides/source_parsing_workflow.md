@@ -848,3 +848,22 @@ config shape here: they keep the citation, thumbnail, and manifest path
 reusable while preserving the disease ratings, vigor ratings, harvest wording,
 fruit notes, and preliminary conclusions without pretending the PDF has one
 clean cultivar table.
+
+## OKState HLA-6222 And UNR Northern Nevada Notes
+
+OKState HLA-6222 is a broad official table whose HTML and PDF endpoints are
+useful in browser tooling but reject local scripted fetches in this environment.
+For sources like this, a config can set `source.kind` to `static` and still
+keep the official URL in `reference_fields`. The `static_rows` extractor then
+holds the reviewed table rows directly.
+
+`static_rows` now accepts `row_groups`. Each group supplies shared fields such
+as `plant_type` and `category`, and its rows supply cultivar-specific fields
+such as harvest season, remarks, or source caveats. This keeps large
+hand-aligned source tables readable while avoiding repeated crop metadata on
+every row.
+
+The UNR PubID 3171 source showed a separate queue-maintenance issue: the
+candidate title and region can drift from the current official publication at
+the same landing URL. Verify the live source identity before encoding, then
+update the candidate entry rather than preserving a stale title.

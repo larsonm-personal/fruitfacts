@@ -1,0 +1,273 @@
+{
+  "source": {
+    "kind": "static",
+    "url": "https://extension.okstate.edu/fact-sheets/print-publications/hla/home-fruit-planting-guide-hla-6222.pdf"
+  },
+  "reference_fields": [
+    ["title", "OSU HLA-6222 Home Fruit Planting Guide"],
+    ["author", "David A. Hillock and B. Dean McCraw"],
+    ["description", "Oklahoma State University Extension home fruit planting guide with suggested varieties and harvest seasons for Oklahoma home plantings"],
+    ["url", "https://extension.okstate.edu/fact-sheets/print-publications/hla/home-fruit-planting-guide-hla-6222.pdf"],
+    ["thumbnail", "pdf"],
+    ["published", "Mar 2017"],
+    ["accessed", "Jul 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Oklahoma State University Extension, Stillwater, Oklahoma",
+      "latitude": 36.127,
+      "longitude": -97.0737
+    }
+  ],
+  "categories": [
+    {"name": "Apple varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these apple varieties in HLA-6222"},
+    {"name": "Peach varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these peach varieties in HLA-6222"},
+    {"name": "Nectarine varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these nectarine varieties in HLA-6222"},
+    {"name": "European plum varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these European plum varieties in HLA-6222"},
+    {"name": "Japanese plum varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these Japanese plum varieties in HLA-6222"},
+    {"name": "Cherry varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these cherry varieties in HLA-6222"},
+    {"name": "Apricot varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists this apricot variety in HLA-6222"},
+    {"name": "Pear varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these pear varieties in HLA-6222"},
+    {"name": "Strawberry varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these strawberry varieties in HLA-6222"},
+    {"name": "Blackberry varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these blackberry varieties in HLA-6222"},
+    {"name": "Grape varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these grape varieties in HLA-6222"},
+    {"name": "Blueberry varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these blueberry varieties in HLA-6222"},
+    {"name": "Persimmon varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these persimmon varieties in HLA-6222"},
+    {"name": "Fig varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these fig varieties in HLA-6222"},
+    {"name": "Jujube varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these jujube varieties in HLA-6222"},
+    {"name": "Crabapple varieties in OSU HLA-6222", "description": "Oklahoma State University Extension lists these crabapple varieties in HLA-6222"}
+  ],
+  "name_overrides": {
+    "Delicious (red)": {
+      "name": "Red Delicious",
+      "note": "Source table names this as Delicious (red)"
+    },
+    "RedGold": {
+      "name": "Red Gold",
+      "note": "Source table names this as RedGold"
+    },
+    "Autumnglo": {
+      "name": "Autumn Glo",
+      "note": "Source table names this as Autumnglo"
+    },
+    "EarliBlaze": {
+      "name": "Earliblaze",
+      "note": "Source table names this as EarliBlaze"
+    },
+    "Northstar": {
+      "name": "North Star",
+      "note": "Source table names this as Northstar"
+    },
+    "Huchiya": {
+      "name": "Hachiya",
+      "note": "Source table names this as Huchiya"
+    },
+    "Fuyugaki": {
+      "name": "Fuyu",
+      "note": "Source table names this as Fuyugaki"
+    },
+    "Ramsey (Texas Everbearing)": {
+      "name": "Texas Everbearing",
+      "note": "Source table names this as Ramsey (Texas Everbearing)"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "static_rows",
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "name_key": "name",
+      "harvest_time_unparsed": {"row_key": "harvest"},
+      "description_template": "OSU HLA-6222 lists {name} in its Oklahoma home fruit planting guide for {crop}",
+      "description_labels": [
+        ["remarks", "Remarks"],
+        ["source_marker", "Source marker"],
+        ["planting_notes", "Planting notes"]
+      ],
+      "row_groups": [
+        {
+          "fields": {"plant_type": "Apple", "category": "Apple varieties in OSU HLA-6222", "crop": "apples"},
+          "rows": [
+            {"name": "Lodi", "harvest": "June 25-July 6 in central Oklahoma or adapted areas", "remarks": "Yellow, soft, cooking only", "source_marker": "Needs cross pollinator"},
+            {"name": "McLemore", "harvest": "July 10-July 25 in central Oklahoma or adapted areas", "remarks": "Red, dessert and cooking", "source_marker": "Needs cross pollinator"},
+            {"name": "Gala", "harvest": "Aug 10-20 in central Oklahoma or adapted areas", "remarks": "Orange-red, dessert only", "source_marker": "Needs cross pollinator"},
+            {"name": "Jonathan", "harvest": "Aug 25-Sept 10 in central Oklahoma or adapted areas", "remarks": "Red, dessert and cooking; very susceptible to fireblight and cedar-apple rust", "source_marker": "Needs cross pollinator"},
+            {"name": "Delicious (red)", "harvest": "Sept 1-10 in central Oklahoma or adapted areas", "remarks": "Red, dessert only", "source_marker": "Needs cross pollinator"},
+            {"name": "Liberty", "harvest": "Sept 1-10 in central Oklahoma or adapted areas", "remarks": "Red, dessert and cooking; very disease tolerant"},
+            {"name": "Freedom", "harvest": "Sept 1-10 in central Oklahoma or adapted areas", "remarks": "Red, dessert and cooking; very disease tolerant"},
+            {"name": "Arkansas Black", "harvest": "Sept 10-20 in central Oklahoma or adapted areas", "remarks": "Purplish-red with yellow flesh; dessert and cooking; tolerant to cedar apple rust"},
+            {"name": "Golden Delicious", "harvest": "Sept 10-20 in central Oklahoma or adapted areas", "remarks": "Yellow, dessert and cooking; well adapted", "source_marker": "Needs cross pollinator"},
+            {"name": "Braeburn", "harvest": "Sept 10-20 in central Oklahoma or adapted areas", "remarks": "Orange-red blush over yellow; dessert and cooking", "source_marker": "Needs cross pollinator"},
+            {"name": "Fuji", "harvest": "Sept 10-20 in central Oklahoma or adapted areas", "remarks": "Yellow, dessert and cooking", "source_marker": "Needs cross pollinator"}
+          ]
+        },
+        {
+          "fields": {"plant_type": "Peach", "category": "Peach varieties in OSU HLA-6222", "crop": "peaches", "planting_notes": "Suggested planting distance is 20 by 20 feet"},
+          "rows": [
+            {"name": "Candor", "harvest": "June 18-24 in central Oklahoma or adapted areas", "remarks": "Yellow, semi-cling"},
+            {"name": "Sentinel", "harvest": "June 28-July 3 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"},
+            {"name": "Redhaven", "harvest": "July 2-7 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"},
+            {"name": "Reliance", "harvest": "July 4-9 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"},
+            {"name": "Ranger", "harvest": "July 8-13 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"},
+            {"name": "Glohaven", "harvest": "July 15-20 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"},
+            {"name": "Nectar", "harvest": "July 15-20 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"},
+            {"name": "Jayhaven", "harvest": "July 21-27 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"},
+            {"name": "Cresthaven", "harvest": "July 28-Aug 3 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"},
+            {"name": "Autumnglo", "harvest": "Aug 6-10 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"},
+            {"name": "Ouachita Gold", "harvest": "Aug 13-17 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"},
+            {"name": "White Hale", "harvest": "Aug 13-17 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"},
+            {"name": "Starks Encore", "harvest": "Aug 20-25 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"},
+            {"name": "Fairtime", "harvest": "Sept 13-20 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"}
+          ]
+        },
+        {
+          "fields": {"plant_type": "Nectarine", "category": "Nectarine varieties in OSU HLA-6222", "crop": "nectarines", "planting_notes": "Suggested planting distance is 20 by 20 feet"},
+          "rows": [
+            {"name": "EarliBlaze", "harvest": "July 3-9 in central Oklahoma or adapted areas", "remarks": "Yellow, semi-freestone"},
+            {"name": "Redchief", "harvest": "July 15-20 in central Oklahoma or adapted areas", "remarks": "White, freestone"},
+            {"name": "Cavalier", "harvest": "July 21-27 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"},
+            {"name": "Sunglo", "harvest": "July 27-Aug 2 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"},
+            {"name": "RedGold", "harvest": "Aug 6-11 in central Oklahoma or adapted areas", "remarks": "Yellow, freestone"}
+          ]
+        },
+        {
+          "fields": {"plant_type": "Euro Plum", "category": "European plum varieties in OSU HLA-6222", "crop": "European plums", "planting_notes": "Suggested planting distance is 20 by 20 feet"},
+          "rows": [
+            {"name": "Stanley", "harvest": "Aug 20-Sept 10 in central Oklahoma or adapted areas", "remarks": "A prune plum, self-fruitful"},
+            {"name": "Bluefre", "harvest": "Sept 1-15 in central Oklahoma or adapted areas", "remarks": "Stanley x President cross", "source_marker": "Needs cross pollinator"},
+            {"name": "President", "harvest": "Sept 10-20 in central Oklahoma or adapted areas", "remarks": "Large, late ripening", "source_marker": "Needs cross pollinator"}
+          ]
+        },
+        {
+          "fields": {"plant_type": "Japanese Plum", "category": "Japanese plum varieties in OSU HLA-6222", "crop": "Japanese plums", "planting_notes": "Suggested planting distance is 20 by 20 feet"},
+          "rows": [
+            {"name": "Methley", "harvest": "June 15-25 in central Oklahoma or adapted areas", "remarks": "Red flesh, partly self-fruitful", "source_marker": "Needs cross pollinator"},
+            {"name": "Bruce", "harvest": "June 15-25 in central Oklahoma or adapted areas", "remarks": "Very productive, self-fruitful"},
+            {"name": "Ozark Premier", "harvest": "Aug 10-20 in central Oklahoma or adapted areas", "remarks": "Large, yellow flesh", "source_marker": "Needs cross pollinator"}
+          ]
+        },
+        {
+          "fields": {"category": "Cherry varieties in OSU HLA-6222", "crop": "cherries", "planting_notes": "Suggested planting distance is 20 by 20 feet"},
+          "rows": [
+            {"name": "Early Richmond", "plant_type": "Sour Cherry", "harvest": "May 20-June 1 in central Oklahoma or adapted areas", "remarks": "The standard sour or pie cherry; very consistent"},
+            {"name": "Kansas Sweet", "plant_type": "Sweet Cherry", "harvest": "May 22-June 5 in central Oklahoma or adapted areas", "remarks": "Duke cherry; semi-sweet", "source_marker": "Needs cross pollinator"},
+            {"name": "Montmorency", "plant_type": "Sour Cherry", "harvest": "June 3-15 in central Oklahoma or adapted areas", "remarks": "The standard sour or pie cherry; very consistent"},
+            {"name": "Northstar", "plant_type": "Sour Cherry", "harvest": "June 5-20 in central Oklahoma or adapted areas", "remarks": "Sour or pie"},
+            {"name": "Meteor", "plant_type": "Sour Cherry", "harvest": "June 5-20 in central Oklahoma or adapted areas", "remarks": "Sour or pie; resistant to leaf spot"},
+            {"name": "Stella", "plant_type": "Sweet Cherry", "harvest": "June 5-20 in central Oklahoma or adapted areas", "remarks": "Sweet, self-fertile"}
+          ]
+        },
+        {
+          "fields": {"plant_type": "Apricot", "category": "Apricot varieties in OSU HLA-6222", "crop": "apricots", "planting_notes": "Suggested planting distance is 20 by 20 feet"},
+          "rows": [
+            {"name": "Tilton", "harvest": "June 25-July 5 in central Oklahoma or adapted areas", "remarks": "Commercial production should not be attempted"}
+          ]
+        },
+        {
+          "fields": {"plant_type": "Euro Pear", "category": "Pear varieties in OSU HLA-6222", "crop": "pears", "planting_notes": "Suggested planting distance is 25 by 25 feet"},
+          "rows": [
+            {"name": "Moonglow", "harvest": "Aug 10-Aug 25 in central Oklahoma or adapted areas", "remarks": "Fireblight resistant", "source_marker": "Needs cross pollinator"},
+            {"name": "Maxine", "harvest": "Aug 25-Sept 5 in central Oklahoma or adapted areas", "remarks": "Fireblight resistant", "source_marker": "Needs cross pollinator"},
+            {"name": "Magness", "harvest": "Sept 5-Sept 15 in central Oklahoma or adapted areas", "remarks": "Fireblight resistant", "source_marker": "Pollen sterile"}
+          ]
+        },
+        {
+          "fields": {"plant_type": "Strawberry", "category": "Strawberry varieties in OSU HLA-6222", "crop": "strawberries", "planting_notes": "Incorporate organic matter ahead of planting strawberries and select virus-indexed plants"},
+          "rows": [
+            {"name": "Earliglow", "harvest": "May 5-June 5 in central Oklahoma or adapted areas"},
+            {"name": "Sunrise", "harvest": "May 5-June 5 in central Oklahoma or adapted areas"},
+            {"name": "Atlas", "harvest": "May 10-June 10 in central Oklahoma or adapted areas"},
+            {"name": "Allstar", "harvest": "May 10-June 10 in central Oklahoma or adapted areas"},
+            {"name": "Cardinal", "harvest": "May 10-June 10 in central Oklahoma or adapted areas"},
+            {"name": "Delite", "harvest": "May 15-June 15 in central Oklahoma or adapted areas"},
+            {"name": "Marlate", "harvest": "May 15-June 15 in central Oklahoma or adapted areas"}
+          ]
+        },
+        {
+          "fields": {"plant_type": "Blackberry", "category": "Blackberry varieties in OSU HLA-6222", "crop": "blackberries"},
+          "rows": [
+            {"name": "Choctaw", "harvest": "July 1-10 in central Oklahoma or adapted areas", "remarks": "Erect blackberry; very sweet"},
+            {"name": "Womack", "harvest": "July 1-10 in central Oklahoma or adapted areas", "remarks": "Erect blackberry; very sweet"},
+            {"name": "Cheyenne", "harvest": "July 10-30 in central Oklahoma or adapted areas", "remarks": "Erect blackberry; large, very sweet"},
+            {"name": "Cherokee", "harvest": "July 10-30 in central Oklahoma or adapted areas", "remarks": "Erect blackberry; medium large, very sweet"},
+            {"name": "Shawnee", "harvest": "July 10-30 in central Oklahoma or adapted areas", "remarks": "Erect blackberry; latest ripening, high yields"},
+            {"name": "Brazos", "harvest": "July 10-30 in central Oklahoma or adapted areas", "remarks": "Erect blackberry; good flavor; southern Oklahoma only"},
+            {"name": "Navaho", "harvest": "July 20-Aug 5 in central Oklahoma or adapted areas", "remarks": "Erect thornless blackberry; sweet"},
+            {"name": "Arapaho", "harvest": "July 20-Aug 5 in central Oklahoma or adapted areas", "remarks": "Erect thornless blackberry; sweet"},
+            {"name": "Boysen", "harvest": "July 10-30 in central Oklahoma or adapted areas", "remarks": "Trailing blackberry; trellis or other support required"},
+            {"name": "Young", "harvest": "July 1-20 in central Oklahoma or adapted areas", "remarks": "Trailing blackberry; trellis or other support required"},
+            {"name": "Hull", "harvest": "July 20-Aug 5 in central Oklahoma or adapted areas", "remarks": "Trailing thornless blackberry; trellis or other support required"},
+            {"name": "Chester", "harvest": "July 20-Aug 5 in central Oklahoma or adapted areas", "remarks": "Trailing thornless blackberry; trellis or other support required"}
+          ]
+        },
+        {
+          "fields": {"plant_type": "Grape", "category": "Grape varieties in OSU HLA-6222", "crop": "grapes"},
+          "rows": [
+            {"name": "Venus", "harvest": "July 15 in central Oklahoma or adapted areas", "remarks": "Bunch grape; red, table, seedless"},
+            {"name": "Aurora", "harvest": "Aug 1 in central Oklahoma or adapted areas", "remarks": "Bunch grape; white wine type", "_source_note": "Source table names this as Aurora (S 5279)"},
+            {"name": "Seyval Blanc", "harvest": "Aug 8 in central Oklahoma or adapted areas", "remarks": "Bunch grape; white wine type", "_source_note": "Source table names this as Seyval Blanc (SV 5276)"},
+            {"name": "Villard Blanc", "harvest": "Aug 18 in central Oklahoma or adapted areas", "remarks": "Bunch grape; white wine type", "_source_note": "Source table names this as Villard Blanc (SV 12-375)"},
+            {"name": "Rougeon", "harvest": "Aug 10 in central Oklahoma or adapted areas", "remarks": "Bunch grape; blue, wine and juice", "_source_note": "Source table names this as Rougeon (S 58908)"},
+            {"name": "Delaware", "harvest": "Aug 15 in central Oklahoma or adapted areas", "remarks": "Bunch grape; red, wine and table"},
+            {"name": "Catawba", "harvest": "Sept 1 in central Oklahoma or adapted areas", "remarks": "Bunch grape; red, wine and table"},
+            {"name": "Verdelet", "harvest": "Aug 10 in central Oklahoma or adapted areas", "remarks": "Bunch grape; white, table", "_source_note": "Source table names this as Verdelet (S 9110)"},
+            {"name": "J.S. 16-104", "harvest": "Aug 1 in central Oklahoma or adapted areas", "remarks": "Bunch grape; red, table"},
+            {"name": "Romulus", "harvest": "Aug 20 in central Oklahoma or adapted areas", "remarks": "Bunch grape; white, table, seedless"},
+            {"name": "Himrod", "harvest": "Aug 15 in central Oklahoma or adapted areas", "remarks": "Bunch grape; white, seedless"},
+            {"name": "Fredonia", "harvest": "Aug 8 in central Oklahoma or adapted areas", "remarks": "Bunch grape; blue, table and juice"},
+            {"name": "Niagara", "harvest": "Aug 20 in central Oklahoma or adapted areas", "remarks": "Bunch grape; white, table and juice"},
+            {"name": "Carman", "harvest": "Aug 22 in central Oklahoma or adapted areas", "remarks": "Bunch grape; blue, juice; for southwest Oklahoma"},
+            {"name": "Saturn", "harvest": "Aug 15 in central Oklahoma or adapted areas", "remarks": "Bunch grape; red, table seedless"},
+            {"name": "Reliance", "harvest": "Aug 15 in central Oklahoma or adapted areas", "remarks": "Bunch grape; red, juice, jam, seedless"},
+            {"name": "Mars", "harvest": "Aug 15 in central Oklahoma or adapted areas", "remarks": "Bunch grape; blue, table, juice, jam, wine, seedless"}
+          ]
+        },
+        {
+          "fields": {"plant_type": "Blueberry", "category": "Blueberry varieties in OSU HLA-6222", "crop": "blueberries", "planting_notes": "Soil must be quite acid, pH 5.0, and may require sulfur to change"},
+          "rows": [
+            {"name": "Collins", "harvest": "June 5-June 19 in central Oklahoma or adapted areas", "remarks": "Highbush blueberry", "source_marker": "Needs cross pollinator"},
+            {"name": "Spartan", "harvest": "June 7-June 21 in central Oklahoma or adapted areas", "remarks": "Highbush blueberry"},
+            {"name": "Blueray", "harvest": "June 12-June 28 in central Oklahoma or adapted areas", "remarks": "Highbush blueberry"},
+            {"name": "Bluecrop", "harvest": "June 15-July 1 in central Oklahoma or adapted areas", "remarks": "Highbush blueberry"},
+            {"name": "Premier", "harvest": "July 5-July 19 in central Oklahoma or adapted areas", "remarks": "Rabbiteye blueberry", "source_marker": "Needs cross pollinator"},
+            {"name": "Climax", "harvest": "July 10-July 30 in central Oklahoma or adapted areas", "remarks": "Rabbiteye blueberry"},
+            {"name": "Tifblue", "harvest": "July 20-Aug 3 in central Oklahoma or adapted areas", "remarks": "Rabbiteye blueberry"}
+          ]
+        },
+        {
+          "fields": {"plant_type": "Persimmon", "category": "Persimmon varieties in OSU HLA-6222", "crop": "persimmons"},
+          "rows": [
+            {"name": "Early Golden", "harvest": "September in central Oklahoma or adapted areas", "remarks": "American persimmon; include a pollen-bearing male tree or graft a male branch into a female tree"},
+            {"name": "Huchiya", "harvest": "November in central Oklahoma or adapted areas", "remarks": "Oriental persimmon; non-astringent when fully ripe"},
+            {"name": "Fuyugaki", "harvest": "November in central Oklahoma or adapted areas", "remarks": "Oriental persimmon; non-astringent"},
+            {"name": "Tamopan", "harvest": "November in central Oklahoma or adapted areas", "remarks": "Oriental persimmon; astringent"},
+            {"name": "Tanenashi", "harvest": "November in central Oklahoma or adapted areas", "remarks": "Oriental persimmon; astringent"}
+          ]
+        },
+        {
+          "fields": {"plant_type": "Fig", "category": "Fig varieties in OSU HLA-6222", "crop": "figs", "planting_notes": "For milder southern counties; grown in protected areas of Tulsa and Oklahoma City"},
+          "rows": [
+            {"name": "Ramsey (Texas Everbearing)", "harvest": "July to frost in central Oklahoma or adapted areas"},
+            {"name": "Brown Turkey", "harvest": "Aug to frost in central Oklahoma or adapted areas"}
+          ]
+        },
+        {
+          "fields": {"plant_type": "Jujube", "category": "Jujube varieties in OSU HLA-6222", "crop": "jujubes", "planting_notes": "Used as sweet pickles, preserves, dried confections, and fruit butter"},
+          "rows": [
+            {"name": "Lang", "harvest": "September in central Oklahoma or adapted areas"},
+            {"name": "Li", "harvest": "September in central Oklahoma or adapted areas"}
+          ]
+        },
+        {
+          "fields": {"plant_type": "Crabapple", "category": "Crabapple varieties in OSU HLA-6222", "crop": "crabapples", "planting_notes": "Source says these are useful for jelly and spice"},
+          "rows": [
+            {"name": "Florence", "harvest": "August in central Oklahoma or adapted areas"},
+            {"name": "Dolgo", "harvest": "August in central Oklahoma or adapted areas"}
+          ]
+        }
+      ]
+    }
+  ]
+}

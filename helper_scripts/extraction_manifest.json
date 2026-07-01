@@ -323,6 +323,14 @@
         {
             "id": "unh_seedless_table_grape_2019",
             "config": "extraction_configs/unh_seedless_table_grape_2019.json"
+        },
+        {
+            "id": "okstate_hla_6222_home_fruit_planting_guide",
+            "config": "extraction_configs/okstate_hla_6222_home_fruit_planting_guide.json"
+        },
+        {
+            "id": "unr_backyard_fruit_trees_northern_nevada",
+            "config": "extraction_configs/unr_backyard_fruit_trees_northern_nevada.json"
         }
     ]
 }

@@ -1,0 +1,786 @@
+{
+    title: "OSU HLA-6222 Home Fruit Planting Guide",
+    author: "David A. Hillock and B. Dean McCraw",
+    description: "Oklahoma State University Extension home fruit planting guide with suggested varieties and harvest seasons for Oklahoma home plantings",
+    url: "https://extension.okstate.edu/fact-sheets/print-publications/hla/home-fruit-planting-guide-hla-6222.pdf",
+    thumbnail: "pdf",
+    published: "Mar 2017",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Oklahoma State University Extension, Stillwater, Oklahoma",
+            latitude: 36.127,
+            longitude: -97.0737
+        },
+    ],
+    categories: [
+        {
+            name: "Apple varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these apple varieties in HLA-6222"
+        },
+        {
+            name: "Peach varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these peach varieties in HLA-6222"
+        },
+        {
+            name: "Nectarine varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these nectarine varieties in HLA-6222"
+        },
+        {
+            name: "European plum varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these European plum varieties in HLA-6222"
+        },
+        {
+            name: "Japanese plum varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these Japanese plum varieties in HLA-6222"
+        },
+        {
+            name: "Cherry varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these cherry varieties in HLA-6222"
+        },
+        {
+            name: "Apricot varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists this apricot variety in HLA-6222"
+        },
+        {
+            name: "Pear varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these pear varieties in HLA-6222"
+        },
+        {
+            name: "Strawberry varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these strawberry varieties in HLA-6222"
+        },
+        {
+            name: "Blackberry varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these blackberry varieties in HLA-6222"
+        },
+        {
+            name: "Grape varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these grape varieties in HLA-6222"
+        },
+        {
+            name: "Blueberry varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these blueberry varieties in HLA-6222"
+        },
+        {
+            name: "Persimmon varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these persimmon varieties in HLA-6222"
+        },
+        {
+            name: "Fig varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these fig varieties in HLA-6222"
+        },
+        {
+            name: "Jujube varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these jujube varieties in HLA-6222"
+        },
+        {
+            name: "Crabapple varieties in OSU HLA-6222",
+            description: "Oklahoma State University Extension lists these crabapple varieties in HLA-6222"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Lodi",
+            category: "Apple varieties in OSU HLA-6222",
+            harvest_time_unparsed: "June 25-July 6 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, soft, cooking only. Source marker: Needs cross pollinator. OSU HLA-6222 lists Lodi in its Oklahoma home fruit planting guide for apples"
+        },
+        {
+            type: "Apple",
+            name: "McLemore",
+            category: "Apple varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 10-July 25 in central Oklahoma or adapted areas",
+            description: "Remarks: Red, dessert and cooking. Source marker: Needs cross pollinator. OSU HLA-6222 lists McLemore in its Oklahoma home fruit planting guide for apples"
+        },
+        {
+            type: "Apple",
+            name: "Gala",
+            category: "Apple varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 10-20 in central Oklahoma or adapted areas",
+            description: "Remarks: Orange-red, dessert only. Source marker: Needs cross pollinator. OSU HLA-6222 lists Gala in its Oklahoma home fruit planting guide for apples"
+        },
+        {
+            type: "Apple",
+            name: "Jonathan",
+            category: "Apple varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 25-Sept 10 in central Oklahoma or adapted areas",
+            description: "Remarks: Red, dessert and cooking; very susceptible to fireblight and cedar-apple rust. Source marker: Needs cross pollinator. OSU HLA-6222 lists Jonathan in its Oklahoma home fruit planting guide for apples"
+        },
+        {
+            type: "Apple",
+            name: "Red Delicious",
+            category: "Apple varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Sept 1-10 in central Oklahoma or adapted areas",
+            description: "Remarks: Red, dessert only. Source marker: Needs cross pollinator. OSU HLA-6222 lists Delicious (red) in its Oklahoma home fruit planting guide for apples. Source table names this as Delicious (red)"
+        },
+        {
+            type: "Apple",
+            name: "Liberty",
+            category: "Apple varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Sept 1-10 in central Oklahoma or adapted areas",
+            description: "Remarks: Red, dessert and cooking; very disease tolerant. OSU HLA-6222 lists Liberty in its Oklahoma home fruit planting guide for apples"
+        },
+        {
+            type: "Apple",
+            name: "Freedom",
+            category: "Apple varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Sept 1-10 in central Oklahoma or adapted areas",
+            description: "Remarks: Red, dessert and cooking; very disease tolerant. OSU HLA-6222 lists Freedom in its Oklahoma home fruit planting guide for apples"
+        },
+        {
+            type: "Apple",
+            name: "Arkansas Black",
+            category: "Apple varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Sept 10-20 in central Oklahoma or adapted areas",
+            description: "Remarks: Purplish-red with yellow flesh; dessert and cooking; tolerant to cedar apple rust. OSU HLA-6222 lists Arkansas Black in its Oklahoma home fruit planting guide for apples"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "Apple varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Sept 10-20 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, dessert and cooking; well adapted. Source marker: Needs cross pollinator. OSU HLA-6222 lists Golden Delicious in its Oklahoma home fruit planting guide for apples"
+        },
+        {
+            type: "Apple",
+            name: "Braeburn",
+            category: "Apple varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Sept 10-20 in central Oklahoma or adapted areas",
+            description: "Remarks: Orange-red blush over yellow; dessert and cooking. Source marker: Needs cross pollinator. OSU HLA-6222 lists Braeburn in its Oklahoma home fruit planting guide for apples"
+        },
+        {
+            type: "Apple",
+            name: "Fuji",
+            category: "Apple varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Sept 10-20 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, dessert and cooking. Source marker: Needs cross pollinator. OSU HLA-6222 lists Fuji in its Oklahoma home fruit planting guide for apples"
+        },
+        {
+            type: "Peach",
+            name: "Candor",
+            category: "Peach varieties in OSU HLA-6222",
+            harvest_time_unparsed: "June 18-24 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, semi-cling. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Candor in its Oklahoma home fruit planting guide for peaches"
+        },
+        {
+            type: "Peach",
+            name: "Sentinel",
+            category: "Peach varieties in OSU HLA-6222",
+            harvest_time_unparsed: "June 28-July 3 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Sentinel in its Oklahoma home fruit planting guide for peaches"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Peach varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 2-7 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Redhaven in its Oklahoma home fruit planting guide for peaches"
+        },
+        {
+            type: "Peach",
+            name: "Reliance",
+            category: "Peach varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 4-9 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Reliance in its Oklahoma home fruit planting guide for peaches"
+        },
+        {
+            type: "Peach",
+            name: "Ranger",
+            category: "Peach varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 8-13 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Ranger in its Oklahoma home fruit planting guide for peaches"
+        },
+        {
+            type: "Peach",
+            name: "Glohaven",
+            category: "Peach varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 15-20 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Glohaven in its Oklahoma home fruit planting guide for peaches"
+        },
+        {
+            type: "Peach",
+            name: "Nectar",
+            category: "Peach varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 15-20 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Nectar in its Oklahoma home fruit planting guide for peaches"
+        },
+        {
+            type: "Peach",
+            name: "Jayhaven",
+            category: "Peach varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 21-27 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Jayhaven in its Oklahoma home fruit planting guide for peaches"
+        },
+        {
+            type: "Peach",
+            name: "Cresthaven",
+            category: "Peach varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 28-Aug 3 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Cresthaven in its Oklahoma home fruit planting guide for peaches"
+        },
+        {
+            type: "Peach",
+            name: "Autumn Glo",
+            category: "Peach varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 6-10 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Autumnglo in its Oklahoma home fruit planting guide for peaches. Source table names this as Autumnglo"
+        },
+        {
+            type: "Peach",
+            name: "Ouachita Gold",
+            category: "Peach varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 13-17 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Ouachita Gold in its Oklahoma home fruit planting guide for peaches"
+        },
+        {
+            type: "Peach",
+            name: "White Hale",
+            category: "Peach varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 13-17 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists White Hale in its Oklahoma home fruit planting guide for peaches"
+        },
+        {
+            type: "Peach",
+            name: "Starks Encore",
+            category: "Peach varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 20-25 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Starks Encore in its Oklahoma home fruit planting guide for peaches"
+        },
+        {
+            type: "Peach",
+            name: "Fairtime",
+            category: "Peach varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Sept 13-20 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Fairtime in its Oklahoma home fruit planting guide for peaches"
+        },
+        {
+            type: "Nectarine",
+            name: "Earliblaze",
+            category: "Nectarine varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 3-9 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, semi-freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists EarliBlaze in its Oklahoma home fruit planting guide for nectarines. Source table names this as EarliBlaze"
+        },
+        {
+            type: "Nectarine",
+            name: "Redchief",
+            category: "Nectarine varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 15-20 in central Oklahoma or adapted areas",
+            description: "Remarks: White, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Redchief in its Oklahoma home fruit planting guide for nectarines"
+        },
+        {
+            type: "Nectarine",
+            name: "Cavalier",
+            category: "Nectarine varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 21-27 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Cavalier in its Oklahoma home fruit planting guide for nectarines"
+        },
+        {
+            type: "Nectarine",
+            name: "Sunglo",
+            category: "Nectarine varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 27-Aug 2 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Sunglo in its Oklahoma home fruit planting guide for nectarines"
+        },
+        {
+            type: "Nectarine",
+            name: "Red Gold",
+            category: "Nectarine varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 6-11 in central Oklahoma or adapted areas",
+            description: "Remarks: Yellow, freestone. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists RedGold in its Oklahoma home fruit planting guide for nectarines. Source table names this as RedGold"
+        },
+        {
+            type: "Euro Plum",
+            name: "Stanley",
+            category: "European plum varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 20-Sept 10 in central Oklahoma or adapted areas",
+            description: "Remarks: A prune plum, self-fruitful. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Stanley in its Oklahoma home fruit planting guide for European plums"
+        },
+        {
+            type: "Euro Plum",
+            name: "Bluefre",
+            category: "European plum varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Sept 1-15 in central Oklahoma or adapted areas",
+            description: "Remarks: Stanley x President cross. Source marker: Needs cross pollinator. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Bluefre in its Oklahoma home fruit planting guide for European plums"
+        },
+        {
+            type: "Euro Plum",
+            name: "President",
+            category: "European plum varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Sept 10-20 in central Oklahoma or adapted areas",
+            description: "Remarks: Large, late ripening. Source marker: Needs cross pollinator. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists President in its Oklahoma home fruit planting guide for European plums"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Methley",
+            category: "Japanese plum varieties in OSU HLA-6222",
+            harvest_time_unparsed: "June 15-25 in central Oklahoma or adapted areas",
+            description: "Remarks: Red flesh, partly self-fruitful. Source marker: Needs cross pollinator. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Methley in its Oklahoma home fruit planting guide for Japanese plums"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Bruce",
+            category: "Japanese plum varieties in OSU HLA-6222",
+            harvest_time_unparsed: "June 15-25 in central Oklahoma or adapted areas",
+            description: "Remarks: Very productive, self-fruitful. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Bruce in its Oklahoma home fruit planting guide for Japanese plums"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ozark Premier",
+            category: "Japanese plum varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 10-20 in central Oklahoma or adapted areas",
+            description: "Remarks: Large, yellow flesh. Source marker: Needs cross pollinator. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Ozark Premier in its Oklahoma home fruit planting guide for Japanese plums"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Early Richmond",
+            category: "Cherry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "May 20-June 1 in central Oklahoma or adapted areas",
+            description: "Remarks: The standard sour or pie cherry; very consistent. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Early Richmond in its Oklahoma home fruit planting guide for cherries"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Kansas Sweet",
+            category: "Cherry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "May 22-June 5 in central Oklahoma or adapted areas",
+            description: "Remarks: Duke cherry; semi-sweet. Source marker: Needs cross pollinator. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Kansas Sweet in its Oklahoma home fruit planting guide for cherries"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Montmorency",
+            category: "Cherry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "June 3-15 in central Oklahoma or adapted areas",
+            description: "Remarks: The standard sour or pie cherry; very consistent. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Montmorency in its Oklahoma home fruit planting guide for cherries"
+        },
+        {
+            type: "Sour Cherry",
+            name: "North Star",
+            category: "Cherry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "June 5-20 in central Oklahoma or adapted areas",
+            description: "Remarks: Sour or pie. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Northstar in its Oklahoma home fruit planting guide for cherries. Source table names this as Northstar"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Meteor",
+            category: "Cherry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "June 5-20 in central Oklahoma or adapted areas",
+            description: "Remarks: Sour or pie; resistant to leaf spot. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Meteor in its Oklahoma home fruit planting guide for cherries"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Stella",
+            category: "Cherry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "June 5-20 in central Oklahoma or adapted areas",
+            description: "Remarks: Sweet, self-fertile. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Stella in its Oklahoma home fruit planting guide for cherries"
+        },
+        {
+            type: "Apricot",
+            name: "Tilton",
+            category: "Apricot varieties in OSU HLA-6222",
+            harvest_time_unparsed: "June 25-July 5 in central Oklahoma or adapted areas",
+            description: "Remarks: Commercial production should not be attempted. Planting notes: Suggested planting distance is 20 by 20 feet. OSU HLA-6222 lists Tilton in its Oklahoma home fruit planting guide for apricots"
+        },
+        {
+            type: "Euro Pear",
+            name: "Moonglow",
+            category: "Pear varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 10-Aug 25 in central Oklahoma or adapted areas",
+            description: "Remarks: Fireblight resistant. Source marker: Needs cross pollinator. Planting notes: Suggested planting distance is 25 by 25 feet. OSU HLA-6222 lists Moonglow in its Oklahoma home fruit planting guide for pears"
+        },
+        {
+            type: "Euro Pear",
+            name: "Maxine",
+            category: "Pear varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 25-Sept 5 in central Oklahoma or adapted areas",
+            description: "Remarks: Fireblight resistant. Source marker: Needs cross pollinator. Planting notes: Suggested planting distance is 25 by 25 feet. OSU HLA-6222 lists Maxine in its Oklahoma home fruit planting guide for pears"
+        },
+        {
+            type: "Euro Pear",
+            name: "Magness",
+            category: "Pear varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Sept 5-Sept 15 in central Oklahoma or adapted areas",
+            description: "Remarks: Fireblight resistant. Source marker: Pollen sterile. Planting notes: Suggested planting distance is 25 by 25 feet. OSU HLA-6222 lists Magness in its Oklahoma home fruit planting guide for pears"
+        },
+        {
+            type: "Strawberry",
+            name: "Earliglow",
+            category: "Strawberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "May 5-June 5 in central Oklahoma or adapted areas",
+            description: "Planting notes: Incorporate organic matter ahead of planting strawberries and select virus-indexed plants. OSU HLA-6222 lists Earliglow in its Oklahoma home fruit planting guide for strawberries"
+        },
+        {
+            type: "Strawberry",
+            name: "Sunrise",
+            category: "Strawberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "May 5-June 5 in central Oklahoma or adapted areas",
+            description: "Planting notes: Incorporate organic matter ahead of planting strawberries and select virus-indexed plants. OSU HLA-6222 lists Sunrise in its Oklahoma home fruit planting guide for strawberries"
+        },
+        {
+            type: "Strawberry",
+            name: "Atlas",
+            category: "Strawberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "May 10-June 10 in central Oklahoma or adapted areas",
+            description: "Planting notes: Incorporate organic matter ahead of planting strawberries and select virus-indexed plants. OSU HLA-6222 lists Atlas in its Oklahoma home fruit planting guide for strawberries"
+        },
+        {
+            type: "Strawberry",
+            name: "Allstar",
+            category: "Strawberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "May 10-June 10 in central Oklahoma or adapted areas",
+            description: "Planting notes: Incorporate organic matter ahead of planting strawberries and select virus-indexed plants. OSU HLA-6222 lists Allstar in its Oklahoma home fruit planting guide for strawberries"
+        },
+        {
+            type: "Strawberry",
+            name: "Cardinal",
+            category: "Strawberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "May 10-June 10 in central Oklahoma or adapted areas",
+            description: "Planting notes: Incorporate organic matter ahead of planting strawberries and select virus-indexed plants. OSU HLA-6222 lists Cardinal in its Oklahoma home fruit planting guide for strawberries"
+        },
+        {
+            type: "Strawberry",
+            name: "Delite",
+            category: "Strawberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "May 15-June 15 in central Oklahoma or adapted areas",
+            description: "Planting notes: Incorporate organic matter ahead of planting strawberries and select virus-indexed plants. OSU HLA-6222 lists Delite in its Oklahoma home fruit planting guide for strawberries"
+        },
+        {
+            type: "Strawberry",
+            name: "Marlate",
+            category: "Strawberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "May 15-June 15 in central Oklahoma or adapted areas",
+            description: "Planting notes: Incorporate organic matter ahead of planting strawberries and select virus-indexed plants. OSU HLA-6222 lists Marlate in its Oklahoma home fruit planting guide for strawberries"
+        },
+        {
+            type: "Blackberry",
+            name: "Choctaw",
+            category: "Blackberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 1-10 in central Oklahoma or adapted areas",
+            description: "Remarks: Erect blackberry; very sweet. OSU HLA-6222 lists Choctaw in its Oklahoma home fruit planting guide for blackberries"
+        },
+        {
+            type: "Blackberry",
+            name: "Womack",
+            category: "Blackberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 1-10 in central Oklahoma or adapted areas",
+            description: "Remarks: Erect blackberry; very sweet. OSU HLA-6222 lists Womack in its Oklahoma home fruit planting guide for blackberries"
+        },
+        {
+            type: "Blackberry",
+            name: "Cheyenne",
+            category: "Blackberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 10-30 in central Oklahoma or adapted areas",
+            description: "Remarks: Erect blackberry; large, very sweet. OSU HLA-6222 lists Cheyenne in its Oklahoma home fruit planting guide for blackberries"
+        },
+        {
+            type: "Blackberry",
+            name: "Cherokee",
+            category: "Blackberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 10-30 in central Oklahoma or adapted areas",
+            description: "Remarks: Erect blackberry; medium large, very sweet. OSU HLA-6222 lists Cherokee in its Oklahoma home fruit planting guide for blackberries"
+        },
+        {
+            type: "Blackberry",
+            name: "Shawnee",
+            category: "Blackberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 10-30 in central Oklahoma or adapted areas",
+            description: "Remarks: Erect blackberry; latest ripening, high yields. OSU HLA-6222 lists Shawnee in its Oklahoma home fruit planting guide for blackberries"
+        },
+        {
+            type: "Blackberry",
+            name: "Brazos",
+            category: "Blackberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 10-30 in central Oklahoma or adapted areas",
+            description: "Remarks: Erect blackberry; good flavor; southern Oklahoma only. OSU HLA-6222 lists Brazos in its Oklahoma home fruit planting guide for blackberries"
+        },
+        {
+            type: "Blackberry",
+            name: "Navaho",
+            category: "Blackberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 20-Aug 5 in central Oklahoma or adapted areas",
+            description: "Remarks: Erect thornless blackberry; sweet. OSU HLA-6222 lists Navaho in its Oklahoma home fruit planting guide for blackberries"
+        },
+        {
+            type: "Blackberry",
+            name: "Arapaho",
+            category: "Blackberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 20-Aug 5 in central Oklahoma or adapted areas",
+            description: "Remarks: Erect thornless blackberry; sweet. OSU HLA-6222 lists Arapaho in its Oklahoma home fruit planting guide for blackberries"
+        },
+        {
+            type: "Blackberry",
+            name: "Boysen",
+            category: "Blackberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 10-30 in central Oklahoma or adapted areas",
+            description: "Remarks: Trailing blackberry; trellis or other support required. OSU HLA-6222 lists Boysen in its Oklahoma home fruit planting guide for blackberries"
+        },
+        {
+            type: "Blackberry",
+            name: "Young",
+            category: "Blackberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 1-20 in central Oklahoma or adapted areas",
+            description: "Remarks: Trailing blackberry; trellis or other support required. OSU HLA-6222 lists Young in its Oklahoma home fruit planting guide for blackberries"
+        },
+        {
+            type: "Blackberry",
+            name: "Hull",
+            category: "Blackberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 20-Aug 5 in central Oklahoma or adapted areas",
+            description: "Remarks: Trailing thornless blackberry; trellis or other support required. OSU HLA-6222 lists Hull in its Oklahoma home fruit planting guide for blackberries"
+        },
+        {
+            type: "Blackberry",
+            name: "Chester",
+            category: "Blackberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 20-Aug 5 in central Oklahoma or adapted areas",
+            description: "Remarks: Trailing thornless blackberry; trellis or other support required. OSU HLA-6222 lists Chester in its Oklahoma home fruit planting guide for blackberries"
+        },
+        {
+            type: "Grape",
+            name: "Venus",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 15 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; red, table, seedless. OSU HLA-6222 lists Venus in its Oklahoma home fruit planting guide for grapes"
+        },
+        {
+            type: "Grape",
+            name: "Aurora",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 1 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; white wine type. OSU HLA-6222 lists Aurora in its Oklahoma home fruit planting guide for grapes. Source table names this as Aurora (S 5279)"
+        },
+        {
+            type: "Grape",
+            name: "Seyval Blanc",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 8 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; white wine type. OSU HLA-6222 lists Seyval Blanc in its Oklahoma home fruit planting guide for grapes. Source table names this as Seyval Blanc (SV 5276)"
+        },
+        {
+            type: "Grape",
+            name: "Villard Blanc",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 18 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; white wine type. OSU HLA-6222 lists Villard Blanc in its Oklahoma home fruit planting guide for grapes. Source table names this as Villard Blanc (SV 12-375)"
+        },
+        {
+            type: "Grape",
+            name: "Rougeon",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 10 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; blue, wine and juice. OSU HLA-6222 lists Rougeon in its Oklahoma home fruit planting guide for grapes. Source table names this as Rougeon (S 58908)"
+        },
+        {
+            type: "Grape",
+            name: "Delaware",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 15 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; red, wine and table. OSU HLA-6222 lists Delaware in its Oklahoma home fruit planting guide for grapes"
+        },
+        {
+            type: "Grape",
+            name: "Catawba",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Sept 1 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; red, wine and table. OSU HLA-6222 lists Catawba in its Oklahoma home fruit planting guide for grapes"
+        },
+        {
+            type: "Grape",
+            name: "Verdelet",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 10 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; white, table. OSU HLA-6222 lists Verdelet in its Oklahoma home fruit planting guide for grapes. Source table names this as Verdelet (S 9110)"
+        },
+        {
+            type: "Grape",
+            name: "J.S. 16-104",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 1 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; red, table. OSU HLA-6222 lists J.S. 16-104 in its Oklahoma home fruit planting guide for grapes"
+        },
+        {
+            type: "Grape",
+            name: "Romulus",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 20 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; white, table, seedless. OSU HLA-6222 lists Romulus in its Oklahoma home fruit planting guide for grapes"
+        },
+        {
+            type: "Grape",
+            name: "Himrod",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 15 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; white, seedless. OSU HLA-6222 lists Himrod in its Oklahoma home fruit planting guide for grapes"
+        },
+        {
+            type: "Grape",
+            name: "Fredonia",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 8 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; blue, table and juice. OSU HLA-6222 lists Fredonia in its Oklahoma home fruit planting guide for grapes"
+        },
+        {
+            type: "Grape",
+            name: "Niagara",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 20 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; white, table and juice. OSU HLA-6222 lists Niagara in its Oklahoma home fruit planting guide for grapes"
+        },
+        {
+            type: "Grape",
+            name: "Carman",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 22 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; blue, juice; for southwest Oklahoma. OSU HLA-6222 lists Carman in its Oklahoma home fruit planting guide for grapes"
+        },
+        {
+            type: "Grape",
+            name: "Saturn",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 15 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; red, table seedless. OSU HLA-6222 lists Saturn in its Oklahoma home fruit planting guide for grapes"
+        },
+        {
+            type: "Grape",
+            name: "Reliance",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 15 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; red, juice, jam, seedless. OSU HLA-6222 lists Reliance in its Oklahoma home fruit planting guide for grapes"
+        },
+        {
+            type: "Grape",
+            name: "Mars",
+            category: "Grape varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug 15 in central Oklahoma or adapted areas",
+            description: "Remarks: Bunch grape; blue, table, juice, jam, wine, seedless. OSU HLA-6222 lists Mars in its Oklahoma home fruit planting guide for grapes"
+        },
+        {
+            type: "Blueberry",
+            name: "Collins",
+            category: "Blueberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "June 5-June 19 in central Oklahoma or adapted areas",
+            description: "Remarks: Highbush blueberry. Source marker: Needs cross pollinator. Planting notes: Soil must be quite acid, pH 5.0, and may require sulfur to change. OSU HLA-6222 lists Collins in its Oklahoma home fruit planting guide for blueberries"
+        },
+        {
+            type: "Blueberry",
+            name: "Spartan",
+            category: "Blueberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "June 7-June 21 in central Oklahoma or adapted areas",
+            description: "Remarks: Highbush blueberry. Planting notes: Soil must be quite acid, pH 5.0, and may require sulfur to change. OSU HLA-6222 lists Spartan in its Oklahoma home fruit planting guide for blueberries"
+        },
+        {
+            type: "Blueberry",
+            name: "Blueray",
+            category: "Blueberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "June 12-June 28 in central Oklahoma or adapted areas",
+            description: "Remarks: Highbush blueberry. Planting notes: Soil must be quite acid, pH 5.0, and may require sulfur to change. OSU HLA-6222 lists Blueray in its Oklahoma home fruit planting guide for blueberries"
+        },
+        {
+            type: "Blueberry",
+            name: "Bluecrop",
+            category: "Blueberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "June 15-July 1 in central Oklahoma or adapted areas",
+            description: "Remarks: Highbush blueberry. Planting notes: Soil must be quite acid, pH 5.0, and may require sulfur to change. OSU HLA-6222 lists Bluecrop in its Oklahoma home fruit planting guide for blueberries"
+        },
+        {
+            type: "Blueberry",
+            name: "Premier",
+            category: "Blueberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 5-July 19 in central Oklahoma or adapted areas",
+            description: "Remarks: Rabbiteye blueberry. Source marker: Needs cross pollinator. Planting notes: Soil must be quite acid, pH 5.0, and may require sulfur to change. OSU HLA-6222 lists Premier in its Oklahoma home fruit planting guide for blueberries"
+        },
+        {
+            type: "Blueberry",
+            name: "Climax",
+            category: "Blueberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 10-July 30 in central Oklahoma or adapted areas",
+            description: "Remarks: Rabbiteye blueberry. Planting notes: Soil must be quite acid, pH 5.0, and may require sulfur to change. OSU HLA-6222 lists Climax in its Oklahoma home fruit planting guide for blueberries"
+        },
+        {
+            type: "Blueberry",
+            name: "Tifblue",
+            category: "Blueberry varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July 20-Aug 3 in central Oklahoma or adapted areas",
+            description: "Remarks: Rabbiteye blueberry. Planting notes: Soil must be quite acid, pH 5.0, and may require sulfur to change. OSU HLA-6222 lists Tifblue in its Oklahoma home fruit planting guide for blueberries"
+        },
+        {
+            type: "Persimmon",
+            name: "Early Golden",
+            category: "Persimmon varieties in OSU HLA-6222",
+            harvest_time_unparsed: "September in central Oklahoma or adapted areas",
+            description: "Remarks: American persimmon; include a pollen-bearing male tree or graft a male branch into a female tree. OSU HLA-6222 lists Early Golden in its Oklahoma home fruit planting guide for persimmons"
+        },
+        {
+            type: "Persimmon",
+            name: "Hachiya",
+            category: "Persimmon varieties in OSU HLA-6222",
+            harvest_time_unparsed: "November in central Oklahoma or adapted areas",
+            description: "Remarks: Oriental persimmon; non-astringent when fully ripe. OSU HLA-6222 lists Huchiya in its Oklahoma home fruit planting guide for persimmons. Source table names this as Huchiya"
+        },
+        {
+            type: "Persimmon",
+            name: "Fuyu",
+            category: "Persimmon varieties in OSU HLA-6222",
+            harvest_time_unparsed: "November in central Oklahoma or adapted areas",
+            description: "Remarks: Oriental persimmon; non-astringent. OSU HLA-6222 lists Fuyugaki in its Oklahoma home fruit planting guide for persimmons. Source table names this as Fuyugaki"
+        },
+        {
+            type: "Persimmon",
+            name: "Tamopan",
+            category: "Persimmon varieties in OSU HLA-6222",
+            harvest_time_unparsed: "November in central Oklahoma or adapted areas",
+            description: "Remarks: Oriental persimmon; astringent. OSU HLA-6222 lists Tamopan in its Oklahoma home fruit planting guide for persimmons"
+        },
+        {
+            type: "Persimmon",
+            name: "Tanenashi",
+            category: "Persimmon varieties in OSU HLA-6222",
+            harvest_time_unparsed: "November in central Oklahoma or adapted areas",
+            description: "Remarks: Oriental persimmon; astringent. OSU HLA-6222 lists Tanenashi in its Oklahoma home fruit planting guide for persimmons"
+        },
+        {
+            type: "Fig",
+            name: "Texas Everbearing",
+            category: "Fig varieties in OSU HLA-6222",
+            harvest_time_unparsed: "July to frost in central Oklahoma or adapted areas",
+            description: "Planting notes: For milder southern counties; grown in protected areas of Tulsa and Oklahoma City. OSU HLA-6222 lists Ramsey (Texas Everbearing) in its Oklahoma home fruit planting guide for figs. Source table names this as Ramsey (Texas Everbearing)"
+        },
+        {
+            type: "Fig",
+            name: "Brown Turkey",
+            category: "Fig varieties in OSU HLA-6222",
+            harvest_time_unparsed: "Aug to frost in central Oklahoma or adapted areas",
+            description: "Planting notes: For milder southern counties; grown in protected areas of Tulsa and Oklahoma City. OSU HLA-6222 lists Brown Turkey in its Oklahoma home fruit planting guide for figs"
+        },
+        {
+            type: "Jujube",
+            name: "Lang",
+            category: "Jujube varieties in OSU HLA-6222",
+            harvest_time_unparsed: "September in central Oklahoma or adapted areas",
+            description: "Planting notes: Used as sweet pickles, preserves, dried confections, and fruit butter. OSU HLA-6222 lists Lang in its Oklahoma home fruit planting guide for jujubes"
+        },
+        {
+            type: "Jujube",
+            name: "Li",
+            category: "Jujube varieties in OSU HLA-6222",
+            harvest_time_unparsed: "September in central Oklahoma or adapted areas",
+            description: "Planting notes: Used as sweet pickles, preserves, dried confections, and fruit butter. OSU HLA-6222 lists Li in its Oklahoma home fruit planting guide for jujubes"
+        },
+        {
+            type: "Crabapple",
+            name: "Florence",
+            category: "Crabapple varieties in OSU HLA-6222",
+            harvest_time_unparsed: "August in central Oklahoma or adapted areas",
+            description: "Planting notes: Source says these are useful for jelly and spice. OSU HLA-6222 lists Florence in its Oklahoma home fruit planting guide for crabapples"
+        },
+        {
+            type: "Crabapple",
+            name: "Dolgo",
+            category: "Crabapple varieties in OSU HLA-6222",
+            harvest_time_unparsed: "August in central Oklahoma or adapted areas",
+            description: "Planting notes: Source says these are useful for jelly and spice. OSU HLA-6222 lists Dolgo in its Oklahoma home fruit planting guide for crabapples"
+        },
+    ]
+}

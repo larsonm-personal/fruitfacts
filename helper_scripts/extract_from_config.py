@@ -71,6 +71,8 @@ def name_overrides(config):
 
 def source_data(config):
     source = config["source"]
+    if source["kind"] == "static":
+        return None
     if source["kind"] == "html":
         return fetch_html_page(source["url"])
     if source["kind"] == "pdf":
@@ -1043,7 +1045,16 @@ def plants_from_static_rows(data, extractor, overrides, lookups):
         "plant_type": {"row_key": "plant_type"},
         **extractor,
     }
-    rows = list(extractor["rows"])
+    rows = list(extractor.get("rows", []))
+    for group in extractor.get("row_groups", []):
+        group_fields = group.get("fields", {})
+        for source_row in group["rows"]:
+            row = dict(group_fields)
+            if isinstance(source_row, str):
+                row[extractor["name_key"]] = source_row
+            else:
+                row.update(source_row)
+            rows.append(row)
     rows = expanded_rows(rows, extractor)
     rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
     rows = split_name_field_rows(rows, extractor)
