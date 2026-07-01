@@ -67,7 +67,10 @@ export default function Home({
     setContributingLinks([{ link: `/frontend/pages/index.js`, description: `index.js` }]);
   }, []);
 
-  setErrorMessage(errorMessage);
+  React.useEffect(() => {
+    setErrorMessage(errorMessage);
+  }, [errorMessage, setErrorMessage]);
+
   return (
     <article className="prose m-5">
       <Head>

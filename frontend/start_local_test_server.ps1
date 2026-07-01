@@ -13,6 +13,7 @@ $ErrorActionPreference = "Stop"
 function Write-Usage {
     Write-Host "Usage: .\start_local_test_server.ps1 [-Port 3000] [-Production] [-SkipNodeInstall] [-SkipNpmInstall] [-SkipBuild] [-CheckOnly]"
     Write-Host "Starts the FruitFacts frontend with repo-local Node/npm when they are not on PATH"
+    Write-Host "Requires local.fruitfacts.xyz to resolve to localhost"
     Write-Host "Default mode runs npm run dev"
     Write-Host "Production mode runs npm run build, then npm run start"
 }
@@ -80,6 +81,25 @@ function Test-NodeReady {
     return ($null -ne $node -and $null -ne $npm)
 }
 
+function Assert-LocalFruitfactsHostAlias {
+    $hostName = "local.fruitfacts.xyz"
+    Write-Host "Checking $hostName host alias"
+    try {
+        $addresses = @([System.Net.Dns]::GetHostAddresses($hostName))
+    }
+    catch {
+        throw "$hostName must resolve to localhost before starting the frontend; add a hosts entry like: 127.0.0.1 $hostName"
+    }
+
+    $nonLoopback = @($addresses | Where-Object { -not [System.Net.IPAddress]::IsLoopback($_) })
+    if ($addresses.Count -eq 0 -or $nonLoopback.Count -gt 0) {
+        $resolved = if ($addresses.Count -gt 0) { $addresses -join ", " } else { "no addresses" }
+        throw "$hostName must resolve only to localhost before starting the frontend; currently resolves to: $resolved"
+    }
+
+    Write-Host "$hostName resolves to $($addresses -join ', ')"
+}
+
 function Enable-NodeForCurrentProcess {
     if (Test-NodeReady) {
         return
@@ -137,6 +157,7 @@ function Invoke-Checked {
     }
 }
 
+Assert-LocalFruitfactsHostAlias
 Enable-NodeForCurrentProcess
 
 $nodeCommand = (Get-Command node -ErrorAction Stop).Source

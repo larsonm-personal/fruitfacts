@@ -52,7 +52,10 @@ export default function Home({
     ]);
   }, []);
 
-  setErrorMessage(errorMessage);
+  React.useEffect(() => {
+    setErrorMessage(errorMessage);
+  }, [errorMessage, setErrorMessage]);
+
   return (
     <>
       <Head>

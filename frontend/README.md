@@ -14,7 +14,8 @@
 
 # local dev setup
 
-- alias `local.fruitfacts.xyz` to localhost. connect to `http://local.fruitfacts.xyz:3000` for dev - this allows using this url for oauth redirects
+- alias `local.fruitfacts.xyz` to localhost and connect to `http://local.fruitfacts.xyz:3000` for OAuth-capable dev
+- `local.fruitfacts.xyz` must resolve to localhost before the helper will start, so browser API calls and OAuth redirects use the same development host
 - whitelist `http://local.fruitfacts.xyz:3000` as secure to allow geolocation - for chrome instructions see https://stackoverflow.com/a/55858436
 
 # external issues I'm tracking

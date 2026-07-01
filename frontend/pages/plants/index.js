@@ -22,7 +22,10 @@ export default function Home({ types, setErrorMessage, setContributingLinks }) {
     ]);
   }, []);
 
-  setErrorMessage(null);
+  React.useEffect(() => {
+    setErrorMessage(null);
+  }, [setErrorMessage]);
+
   return (
     <>
       <Head>

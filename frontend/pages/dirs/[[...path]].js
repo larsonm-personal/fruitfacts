@@ -109,7 +109,9 @@ export default function Home({
   const [extents, setExtentsForFetch] = React.useState({});
   const [locations, setLocations] = React.useState([]);
 
-  setErrorMessage(errorMessage);
+  React.useEffect(() => {
+    setErrorMessage(errorMessage);
+  }, [errorMessage, setErrorMessage]);
 
   const runFetchLocations = React.useMemo(
     // useMemo(): cache results for each input and don't re-run. appears to not be doing anything

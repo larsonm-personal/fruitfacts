@@ -94,7 +94,10 @@ export default function Home({ data, types, errorMessage, setErrorMessage, setCo
       { link: `/backend/src/queries/search.rs`, description: `backend: search.rs` }
     ]);
   }, []);
-  setErrorMessage(errorMessage);
+
+  React.useEffect(() => {
+    setErrorMessage(errorMessage);
+  }, [errorMessage, setErrorMessage]);
 
   const router = useRouter();
   const query = qs.parse(router.asPath.split(/\?/)[1]);

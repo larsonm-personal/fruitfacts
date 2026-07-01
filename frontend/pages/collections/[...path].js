@@ -126,7 +126,10 @@ export default function Home({
     ]);
   }, []);
 
-  setErrorMessage(errorMessage);
+  React.useEffect(() => {
+    setErrorMessage(errorMessage);
+  }, [errorMessage, setErrorMessage]);
+
   return (
     <>
       <article className="prose m-5 max-w-none">
