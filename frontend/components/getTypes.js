@@ -11,7 +11,7 @@ export function getTypes() {
 }
 
 export function getTypesForAutocomplete() {
-  const types = module.exports.getTypes();
+  const types = getTypes();
 
   let typesFlattened = [];
 

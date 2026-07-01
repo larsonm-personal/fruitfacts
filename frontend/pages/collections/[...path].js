@@ -14,6 +14,7 @@ import { getThumbnailLocation } from '../../components/functions';
 import { name_to_path, path_to_name } from '../../components/util';
 import Image from 'next/image';
 import { getCookie } from 'cookies-next';
+import { getServerBackendBase } from '../../components/backendUrl';
 
 export async function getServerSideProps(context) {
   let errorMessage = null;
@@ -26,18 +27,19 @@ export async function getServerSideProps(context) {
 
   let apiURL;
   let userList = false;
-  let userFromPath;
+  let userFromPath = null;
+  const backendBase = getServerBackendBase();
   if (path[0] == 'user') {
     // incoming path will be like "user/[user name or ID]/[list name or ID]"
     // IDs are formatted like "id:123"
     userList = true;
     userFromPath = path[1];
-    apiURL = `${
-      process.env.NEXT_PUBLIC_BACKEND_BASE
-    }/api/search?searchType=loc&user=${userFromPath}&location=${path_to_name(path[2])}`;
+    apiURL = `${backendBase}/api/search?searchType=loc&user=${userFromPath}&location=${path_to_name(
+      path[2]
+    )}`;
   } else {
     // incoming path will be like "Oregon/u-pick A"
-    apiURL = `${process.env.NEXT_PUBLIC_BACKEND_BASE}/api/collections/${pathJoined}`; // no trailing slash - individual collection
+    apiURL = `${backendBase}/api/collections/${pathJoined}`; // no trailing slash - individual collection
   }
 
   // todo - switch to the built-in next component when this issue is fixed:

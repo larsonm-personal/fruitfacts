@@ -8,6 +8,9 @@
 - `npm run lint` run next lint
 - `npm run dev`
 - `npm start`
+- `.\start_local_test_server.ps1` run the local frontend server using repo-local Node/npm if needed
+- `.\start_local_test_server.ps1 -Production` build and run the production-style local server
+- `.\check_local_routes.ps1` build, start, and request local static, directory, and collection routes
 
 # local dev setup
 

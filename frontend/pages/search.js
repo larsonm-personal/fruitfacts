@@ -8,6 +8,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 import ItemList from '../components/itemList';
 import Button from '../components/buttonLink';
 import { getTypesForAutocomplete } from '../components/getTypes';
+import { getServerBackendBase } from '../components/backendUrl';
 
 export async function getServerSideProps(context) {
   let queryCleaned = Object.fromEntries(Object.entries(context.query).filter(([, v]) => v != null));
@@ -45,8 +46,9 @@ export async function getServerSideProps(context) {
   const queryString = qs.stringify(queryCleaned);
 
   let errorMessage = null;
+  const backendBase = getServerBackendBase();
   const fetchData = async () => {
-    return await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE}/api/search?` + queryString)
+    return await fetch(`${backendBase}/api/search?` + queryString)
       .then((response) => {
         if (response.status !== 200) {
           return response.text().then((text) => {
@@ -85,13 +87,7 @@ const nullIfEmptyQuote = (value) => {
   return value;
 };
 
-export default function Home({
-  data,
-  types,
-  errorMessage,
-  setErrorMessage,
-  setContributingLinks
-}) {
+export default function Home({ data, types, errorMessage, setErrorMessage, setContributingLinks }) {
   React.useEffect(() => {
     setContributingLinks([
       { link: `/frontend/pages/search.js`, description: `frontend: search.js` },

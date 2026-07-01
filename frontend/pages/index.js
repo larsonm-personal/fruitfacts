@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import { format as timeAgo } from 'timeago.js';
 import { name_to_path } from '../components/util';
+import { getServerBackendBase } from '../components/backendUrl';
 
 // todo:
 // - flatten and sort by common name (see types.name_alphabetical)
@@ -11,7 +12,8 @@ import { name_to_path } from '../components/util';
 
 export async function getServerSideProps() {
   let errorMessage = null;
-  const fact = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE}/api/fact`)
+  const backendBase = getServerBackendBase();
+  const fact = await fetch(`${backendBase}/api/fact`)
     .then((response) => {
       if (response.status !== 200) {
         return response.text().then((text) => {
@@ -28,9 +30,7 @@ export async function getServerSideProps() {
       return {};
     });
 
-  const recentChangesData = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_BASE}/api/recent_changes`
-  )
+  const recentChangesData = await fetch(`${backendBase}/api/recent_changes`)
     .then((response) => {
       if (response.status !== 200) {
         response.text().then((text) => {

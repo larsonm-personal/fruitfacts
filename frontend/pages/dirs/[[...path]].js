@@ -13,9 +13,17 @@ import dynamic from 'next/dynamic';
 import throttle from 'lodash/throttle';
 import { useRouter } from 'next/router';
 import { name_to_path, path_to_name } from '../../components/util';
+import { getServerBackendBase } from '../../components/backendUrl';
 
 // see https://nextjs.org/docs/advanced-features/dynamic-import
 const Map = dynamic(() => import('../../components/map'), { ssr: false });
+
+function getDirectoryHref(directory) {
+  if (directory == '/') {
+    return '/dirs#dirs';
+  }
+  return `/dirs/${name_to_path(directory)}#dirs`;
+}
 
 export async function getServerSideProps(context) {
   const { path } = context.query;
@@ -51,9 +59,8 @@ export async function getServerSideProps(context) {
   } else {
     pathUsed = ''; // this combind with the [[...path]].js filename gets us the base path "/dirs" or "/dirs/"
   }
-  const data = await fetch(
-    `${process.env.NEXT_PUBLIC_BACKEND_BASE}/api/collections/${name_to_path(pathUsed)}`
-  )
+  const backendBase = getServerBackendBase();
+  const data = await fetch(`${backendBase}/api/collections/${name_to_path(pathUsed)}`)
     .then((response) => {
       if (response.status !== 200) {
         return response.text().then((text) => {
@@ -183,7 +190,7 @@ export default function Home({
           <ul className="list-disc">
             {data.directories.map((directory, index) => (
               <li key={index}>
-                <Link href={`/dirs/${name_to_path(directory)}#dirs`} legacyBehavior>
+                <Link href={getDirectoryHref(directory)} legacyBehavior>
                   {directory}
                 </Link>
               </li>

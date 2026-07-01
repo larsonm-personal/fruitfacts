@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@config "../tailwind.config.js";
+
+@import "tailwindcss";
 
 /* see https://github.com/prc5/react-zoom-pan-pinch/issues/112#issuecomment-629555109 */
 /* with some work this could be put in a css module or inline in the component, */
