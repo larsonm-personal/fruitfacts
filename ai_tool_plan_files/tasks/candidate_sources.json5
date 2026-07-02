@@ -4330,6 +4330,702 @@
             notes: [
                 "May include numbered selections; preserve source naming exactly"
             ]
+        },
+        {
+            id: "fruit-notes-archive-varieties-of-peaches-for-massachusetts-1978",
+            status: "new",
+            priority: "medium",
+            title: "Varieties of Peaches for Massachusetts",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Peach"],
+            source_type: "archive cultivar recommendation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes7782univ/fruitnotes7782univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Regional peach variety recommendations from the Fruit Notes archive",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Varieties of Peaches for Massachusetts.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 43, J/F 1978",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-varieties-of-raspberries-and-blackberries-for-massachusetts-1978",
+            status: "new",
+            priority: "medium",
+            title: "Varieties of Raspberries & Blackberries for Massachusetts",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Raspberry", "Blackberry"],
+            source_type: "archive cultivar recommendation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes7782univ/fruitnotes7782univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Regional bramble variety recommendations from the Fruit Notes archive",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Varieties of Raspberries and Blackberries for Massachusetts.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 43, M/A 1978",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-varieties-of-strawberries-for-massachusetts-1979",
+            status: "new",
+            priority: "medium",
+            title: "Varieties of Strawberries for Massachusetts",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Strawberry"],
+            source_type: "archive cultivar recommendation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes7782univ/fruitnotes7782univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Regional strawberry variety recommendations from the Fruit Notes archive",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Varieties of Strawberries for Massachusetts.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 44, J/F 1979",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-varieties-of-plums-for-massachusetts-1982",
+            status: "new",
+            priority: "medium",
+            title: "Varieties of Plums for Massachusetts",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Plum"],
+            source_type: "archive cultivar recommendation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes7782univ/fruitnotes7782univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Regional plum variety recommendations from the Fruit Notes archive",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Varieties of Plums for Massachusetts.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 47, SPR 1982",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-varieties-of-apples-for-massachusetts-1982",
+            status: "new",
+            priority: "medium",
+            title: "Varieties of Apples for Massachusetts",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Apple"],
+            source_type: "archive cultivar recommendation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes7782univ/fruitnotes7782univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Regional apple variety recommendations from the Fruit Notes archive",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Varieties of Apples for Massachusetts.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 47, SPR 1982",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-varieties-of-grapes-for-massachusetts-1983",
+            status: "new",
+            priority: "medium",
+            title: "Varieties of Grapes for Massachusetts",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Grape"],
+            source_type: "archive cultivar recommendation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8384univ/fruitnotes8384univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Regional grape variety recommendations from the Fruit Notes archive",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Varieties of Grapes for Massachusetts.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 48, WNT 1983",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-varieties-of-peaches-for-massachusetts-1983",
+            status: "new",
+            priority: "medium",
+            title: "Varieties of Peaches for Massachusetts",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Peach"],
+            source_type: "archive cultivar recommendation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8384univ/fruitnotes8384univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Regional peach variety recommendations from the Fruit Notes archive",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Varieties of Peaches for Massachusetts 1983.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 48, WNT 1983",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-gala-apple-variety-worthy-of-trial-1984",
+            status: "new",
+            priority: "medium",
+            title: "Gala--An Apple Variety Worthy of Trial",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Apple"],
+            source_type: "archive cultivar profile article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8384univ/fruitnotes8384univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Early New England Fruit Notes profile for Gala apple",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/New England/Fruit Notes- Gala An Apple Variety Worthy of Trial.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 49, SPR 1984",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-empire-apple-rootstock-stempiece-trial-1984",
+            status: "new",
+            priority: "medium",
+            title: "Effect of Rootstock and Stempiece/Rootstock Combinations on Growth, Leaf Mineral Concentrations, Yield, and Fruit Quality of Empire Apple Trees",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Apple"],
+            source_type: "archive rootstock trial article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8384univ/fruitnotes8384univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Empire apple rootstock and stempiece performance data",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Empire Apple Rootstock and Stempiece Trial.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 49, FLL 1984",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-rootstocks-and-interstem-trees-summary-1985",
+            status: "new",
+            priority: "medium",
+            title: "A Brief Summary of Rootstocks and Interstem Trees",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Apple"],
+            source_type: "archive rootstock overview article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8586univ/fruitnotes8586univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Rootstock and interstem summary for apple trees",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- A Brief Summary of Rootstocks and Interstem Trees.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 50, FLL 1985",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-gala-new-cultivar-for-new-england-1986",
+            status: "new",
+            priority: "medium",
+            title: "Gala: A New Cultivar for New England?",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Apple"],
+            source_type: "archive cultivar profile article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8586univ/fruitnotes8586univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "New England suitability discussion for Gala apple",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/New England/Fruit Notes- Gala A New Cultivar for New England.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 51, WNT 1986",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-recommended-pear-cultivars-northeast-1986",
+            status: "new",
+            priority: "medium",
+            title: "Recommended Pear Cultivars for the Northeast",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Pear"],
+            source_type: "archive cultivar recommendation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8586univ/fruitnotes8586univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Pear cultivar recommendations for the Northeast",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/New England/Fruit Notes- Recommended Pear Cultivars for the Northeast.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 51, WNT 1986",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-peach-cultivars-new-jersey-new-england-1986",
+            status: "new",
+            priority: "medium",
+            title: "Peach Cultivars for New Jersey and Their Adaptation to New England States",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Peach"],
+            source_type: "archive cultivar recommendation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8586univ/fruitnotes8586univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Peach cultivar adaptation notes for New Jersey and New England",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/New England/Fruit Notes- Peach Cultivars for New Jersey and Their Adaptation to New England States.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 51, WNT 1986",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-nectarine-cultivars-new-jersey-new-england-1986",
+            status: "new",
+            priority: "medium",
+            title: "Nectarine Cultivars for New Jersey and Their Adaptation to New England States",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Nectarine"],
+            source_type: "archive cultivar recommendation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8586univ/fruitnotes8586univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Nectarine cultivar adaptation notes for New Jersey and New England",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/New England/Fruit Notes- Nectarine Cultivars for New Jersey and Their Adaptation to New England States.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 51, WNT 1986",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-red-raspberry-cultivars-new-england-1986",
+            status: "new",
+            priority: "medium",
+            title: "Red Raspberry Cultivars for New England",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Raspberry"],
+            source_type: "archive cultivar recommendation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8586univ/fruitnotes8586univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Red raspberry cultivar recommendations for New England",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/New England/Fruit Notes- Red Raspberry Cultivars for New England.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 51, WNT 1986",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-strawberry-cultivars-new-england-1986",
+            status: "new",
+            priority: "medium",
+            title: "Strawberry Cultivars for New England",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Strawberry"],
+            source_type: "archive cultivar recommendation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8586univ/fruitnotes8586univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Strawberry cultivar recommendations for New England",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/New England/Fruit Notes- Strawberry Cultivars for New England.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 51, WNT 1986",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-redcort-superior-strain-cortland-1986",
+            status: "new",
+            priority: "medium",
+            title: "Redcort: A Superior Strain of Cortland",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Apple"],
+            source_type: "archive cultivar profile article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8586univ/fruitnotes8586univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Profile of Redcort as a Cortland strain",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/New England/Fruit Notes- Redcort A Superior Strain of Cortland.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 51, FLL 1986",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-mcintosh-strains-massachusetts-1987",
+            status: "new",
+            priority: "medium",
+            title: "Evaluation of McIntosh Strains in Massachusetts",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Apple"],
+            source_type: "archive cultivar evaluation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8789univ/fruitnotes8789univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Evaluation of McIntosh apple strains in Massachusetts",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Evaluation of McIntosh Strains in Massachusetts.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 52, FLL 1987",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-m9-rootstock-used-profitably-massachusetts-1988",
+            status: "new",
+            priority: "medium",
+            title: "Can M.9 Rootstock be Used Profitably in Massachusetts Apple Orchards?",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Apple"],
+            source_type: "archive rootstock trial article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8789univ/fruitnotes8789univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Economic and performance discussion of M.9 rootstock in Massachusetts apples",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Can M9 Rootstock be Used Profitably in Massachusetts Apple Orchards.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 53, WNT 1988",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-asian-pears-for-new-england-1988",
+            status: "new",
+            priority: "medium",
+            title: "Are Asian Pears for New England?",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Pear"],
+            source_type: "archive cultivar evaluation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8789univ/fruitnotes8789univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "New England suitability discussion for Asian pears",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/New England/Fruit Notes- Are Asian Pears for New England.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 53, WNT 1988",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-red-fuji-promising-apple-cultivar-1989",
+            status: "new",
+            priority: "medium",
+            title: "Red Fuji is a promising new apple cultivar",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Apple"],
+            source_type: "archive cultivar profile article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes8789univ/fruitnotes8789univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Early New England Fruit Notes profile for Red Fuji apple",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/New England/Fruit Notes- Red Fuji is a Promising New Apple Cultivar.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 54, WNT 1989",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-blueberry-cultivar-update-1990",
+            status: "new",
+            priority: "medium",
+            title: "Pomological Note: Blueberry cultivar update",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Blueberry"],
+            source_type: "archive cultivar update article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes9092univ/fruitnotes9092univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Blueberry cultivar update from the Fruit Notes archive",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/New England/Fruit Notes- Blueberry Cultivar Update.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 55, SPR 1990",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-peach-cultivars-1990",
+            status: "new",
+            priority: "medium",
+            title: "Peach cultivars",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Peach"],
+            source_type: "archive cultivar recommendation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes9092univ/fruitnotes9092univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Peach cultivar notes from the Fruit Notes archive",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/New England/Fruit Notes- Peach Cultivars 1990.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 55, SPR 1990",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-evaluation-of-new-apple-cultivars-1993",
+            status: "new",
+            priority: "medium",
+            title: "Evaluation of New Apple Cultivars",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Apple"],
+            source_type: "archive cultivar evaluation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes9394univ/fruitnotes9394univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Evaluation of new apple cultivars",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Evaluation of New Apple Cultivars.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 58, SPR 1993",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-umass-peach-cultivar-trial-1995",
+            status: "new",
+            priority: "medium",
+            title: "UMass Peach Cultivar Trial: Observations and Comments",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Peach"],
+            source_type: "archive cultivar trial article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes9596univ/fruitnotes9596univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "UMass peach cultivar trial observations",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- UMass Peach Cultivar Trial Observations and Comments.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 60, FLL 1995",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-nc140-apple-rootstock-update-1997",
+            status: "new",
+            priority: "medium",
+            title: "An Update on the 1994 NC-140 Apple Rootstock Trial",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Apple"],
+            source_type: "archive rootstock trial article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes9798univ/fruitnotes9798univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Update on the 1994 NC-140 apple rootstock trial",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- 1994 NC140 Apple Rootstock Trial Update.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 62, SPR 1997",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-peach-nectarine-cultivars-massachusetts-orchards-1997",
+            status: "new",
+            priority: "medium",
+            title: "Evaluation of Peach and Nectarine Cultivars for Massachusetts Orchards",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Peach", "Nectarine"],
+            source_type: "archive cultivar evaluation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotes9798univ/fruitnotes9798univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Evaluation of peach and nectarine cultivars for Massachusetts orchards",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Evaluation of Peach and Nectarine Cultivars for Massachusetts Orchards.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 62, SUMM 1997",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-new-apple-varieties-1998-observations-2002",
+            status: "new",
+            priority: "medium",
+            title: "Evaluation of New Apple Varieties, 1998 Observations: A Report to the New England Tree Fruit Growers Research Committee",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Apple"],
+            source_type: "archive cultivar evaluation article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotesofnewe0204univ/fruitnotesofnewe0204univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "New apple variety observations reported to New England tree fruit growers",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/New England/Fruit Notes- Evaluation of New Apple Varieties 1998 Observations.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 67, SPR 2002",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
+        },
+        {
+            id: "fruit-notes-archive-geneva-series-apple-rootstocks-massachusetts-2003",
+            status: "new",
+            priority: "medium",
+            title: "An Early Look at a Few of the Geneva Series Apple Rootstocks in Massachusetts",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Apple"],
+            source_type: "archive rootstock trial article",
+            landing_url: "http://umassfruitnotes.com/archive/index.html",
+            download_url: "https://archive.org/download/fruitnotesofnewe0204univ/fruitnotesofnewe0204univ.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes archive TOC survey",
+            value_summary: "Early Massachusetts observations on Geneva series apple rootstocks",
+            asset_decision: "locate in archive bundle and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Geneva Series Apple Rootstocks in Massachusetts.json5",
+            duplicate_check:
+                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+            notes: [
+                "Archive TOC entry: Volume 68, SSF 2003",
+                "Article is inside a multi-year archive PDF; locate by volume, issue date, and title before import"
+            ]
         }
     ]
 }
