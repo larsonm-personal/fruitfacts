@@ -387,6 +387,22 @@
         {
             "id": "cornell_low_tunnel_strawberries",
             "config": "extraction_configs/cornell_low_tunnel_strawberries.json"
+        },
+        {
+            "id": "attra_persimmons_asian_and_american",
+            "config": "extraction_configs/attra_persimmons_asian_and_american.json"
+        },
+        {
+            "id": "ndsu_carrington_northern_hardy_fruit_evaluation",
+            "config": "extraction_configs/ndsu_carrington_northern_hardy_fruit_evaluation.json"
+        },
+        {
+            "id": "psu_scab_resistant_apple_varieties_home_orchards",
+            "config": "extraction_configs/psu_scab_resistant_apple_varieties_home_orchards.json"
+        },
+        {
+            "id": "psu_stone_fruit_variety_selection",
+            "config": "extraction_configs/psu_stone_fruit_variety_selection.json"
         }
     ]
 }

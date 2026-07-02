@@ -189,7 +189,7 @@
         },
         {
             id: "psu-scab-resistant-apple-varieties-home-orchards",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Scab-Resistant Apple Varieties for Home Orchards",
             institution: "Penn State Extension",
@@ -209,7 +209,12 @@
                 "No Penn State home-orchard apple cultivar reference found in existing references",
             notes: [
                 "Web page returned 200",
-                "Consider pairing with the non-scab-resistant apple table"
+                "Consider pairing with the non-scab-resistant apple table",
+                "Current Penn State table URL now redirects to a broad extension category page; encoded from Penn State Fruit Production for the Home Gardener PDF mirror at https://fruit.webhosting.cals.wisc.edu/wp-content/uploads/sites/36/2016/03/Fruit-Production-for-the-Home-Gardener.pdf",
+                "Encoded 11 scab-resistant apple records in plant_database/references/Pennsylvania/Penn State Scab-Resistant Apple Varieties for Home Orchards.json5",
+                "Config extraction added at helper_scripts/extraction_configs/psu_scab_resistant_apple_varieties_home_orchards.json",
+                "Manifest entry added as psu_scab_resistant_apple_varieties_home_orchards",
+                "Used static_rows because the recovered PDF table carries footnotes and disease ratings better represented after review"
             ]
         },
         {
@@ -242,7 +247,7 @@
         },
         {
             id: "psu-home-orchards-stone-fruit-variety-selection",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Home Orchards: Stone Fruit Variety Selection",
             institution: "Penn State Extension",
@@ -267,7 +272,12 @@
             duplicate_check:
                 "No Penn State home-orchard stone fruit reference found in existing references",
             notes: [
-                "Web page returned 200"
+                "Web page returned 200",
+                "Current Penn State page now redirects to a broad extension category page; encoded from Penn State Fruit Production for the Home Gardener PDF mirror at https://fruit.webhosting.cals.wisc.edu/wp-content/uploads/sites/36/2016/03/Fruit-Production-for-the-Home-Gardener.pdf",
+                "Encoded 65 peach, nectarine, plum, apricot, sour cherry, and sweet cherry records in plant_database/references/Pennsylvania/Penn State Stone Fruit Variety Selection.json5",
+                "Config extraction added at helper_scripts/extraction_configs/psu_stone_fruit_variety_selection.json",
+                "Manifest entry added as psu_stone_fruit_variety_selection",
+                "Used static_rows after comparing layout and raw PDF text because the variety section is a two-column PDF layout with category breaks and relative harvest prose"
             ]
         },
         {
@@ -3153,7 +3163,7 @@
         },
         {
             id: "ndsu-carrington-northern-hardy-fruit-evaluation",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Northern Hardy Fruit Evaluation Project",
             institution: "North Dakota State University Carrington Research Extension Center",
@@ -3184,7 +3194,13 @@
             notes: [
                 "Mined from plant_database/references/Montana/MSU MT202101AG Growing Cold-Hardy Berries and Small Fruits in Montana.pdf",
                 "Current NDSU page links fruit index, project results, and annual PDF/data files",
-                "Likely parsing issue: cultivar observations are spread across yearly reports, production records, and data spreadsheets"
+                "Encoded 46 records in plant_database/references/North Dakota/NDSU Northern Hardy Fruit Evaluation Project.json5",
+                "Config extraction added at helper_scripts/extraction_configs/ndsu_carrington_northern_hardy_fruit_evaluation.json",
+                "Manifest entry added as ndsu_carrington_northern_hardy_fruit_evaluation",
+                "Used the cleaner CREC Fruit Recommendations PDF revised February 2020 rather than the noisier annual reports and full variety-description catalog",
+                "Skipped broader annual-report observations, including crops not represented by named recommendations in the 2020 recommendation PDF",
+                "Added Aronia as a plant type because the source has named aronia recommendations and the type did not yet exist",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {
@@ -3350,7 +3366,8 @@
             notes: [
                 "Mined from plant_database/references/New Jersey/NJ Maturity Standards for Asian Pear Harvest.pdf",
                 "Issue landing page lists the article, and the full issue PDF is available",
-                "Likely parsing issue: article is embedded inside a full issue PDF rather than provided as a standalone clean table"
+                "Likely parsing issue: article is embedded inside a full issue PDF rather than provided as a standalone clean table",
+                "Reviewed Jul 2026: the full issue PDF downloaded over HTTP after HTTPS failed locally, but the article is a trial announcement with site and purpose text and no cultivar-level results table to encode"
             ]
         },
         {
@@ -3558,7 +3575,7 @@
         },
         {
             id: "attra-persimmons-asian-and-american",
-            status: "accepted",
+            status: "encoded",
             priority: "low",
             title: "Persimmons, Asian and American",
             institution: "ATTRA National Center for Appropriate Technology",
@@ -3582,7 +3599,12 @@
             notes: [
                 "Mined from plant_database/references/National/HortSci Ploidy Level in American Persimmon Cultivars.pdf",
                 "Quick lookup found a Growables mirror and current secondary citations, but not a current ATTRA publication landing page",
-                "Likely lower authority than extension and journal sources, but useful as a cited overview"
+                "Encoded 20 records in plant_database/references/National/ATTRA Persimmons Asian and American.json5",
+                "Config extraction added at helper_scripts/extraction_configs/attra_persimmons_asian_and_american.json",
+                "Manifest entry added as attra_persimmons_asian_and_american",
+                "Used reviewed static_rows because the useful cultivar data is embedded in narrative prose and an astringency sidebar",
+                "Normalized Hanagosho to Hana Gosho and Williams to William with source spelling notes",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {

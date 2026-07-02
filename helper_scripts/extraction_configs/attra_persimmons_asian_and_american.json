@@ -1,0 +1,128 @@
+{
+  "source": {
+    "kind": "static"
+  },
+  "reference_fields": [
+    ["title", "ATTRA Persimmons, Asian and American"],
+    ["author", "Guy Ames"],
+    ["description", "ATTRA National Center for Appropriate Technology overview of Asian and American persimmons, with cultivar lists for astringency and pollination context"],
+    ["url", "https://www.growables.org/information/TropicalFruit/documents/PersimmonATTRA.pdf"],
+    ["published", "July 2001; updated November 2010"],
+    ["accessed", "Jul 2026"],
+    ["type", "survey book"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "National Center for Appropriate Technology, Butte, Montana",
+      "latitude": 46.0038,
+      "longitude": -112.5348
+    }
+  ],
+  "categories": [
+    {
+      "name": "Persimmon cultivars discussed by ATTRA",
+      "description": "ATTRA discusses these Asian and American persimmon cultivars in its Persimmons, Asian and American overview"
+    }
+  ],
+  "name_overrides": {
+    "Hanagosho": {
+      "name": "Hana Gosho",
+      "note": "Source names this as Hanagosho"
+    },
+    "Williams": {
+      "name": "William",
+      "note": "Source names this as Williams"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "static_rows",
+      "plant_type": "Persimmon",
+      "category": "Persimmon cultivars discussed by ATTRA",
+      "description_key": "description",
+      "rows": [
+        {
+          "name": "Fuyu",
+          "description": "ATTRA lists Fuyu among nonastringent Asian persimmon cultivars and among cultivars known to produce fruit without cross-pollination for beginning Asian persimmon growers outside California"
+        },
+        {
+          "name": "Gosho",
+          "description": "ATTRA lists Gosho among nonastringent Asian persimmon cultivars"
+        },
+        {
+          "name": "Izu",
+          "description": "ATTRA lists Izu among nonastringent Asian persimmon cultivars"
+        },
+        {
+          "name": "Jiro",
+          "description": "ATTRA lists Jiro among nonastringent Asian persimmon cultivars and among cultivars known to produce fruit without cross-pollination for beginning Asian persimmon growers outside California"
+        },
+        {
+          "name": "Suruga",
+          "description": "ATTRA lists Suruga among nonastringent Asian persimmon cultivars"
+        },
+        {
+          "name": "Chocolate",
+          "description": "ATTRA lists Chocolate among nonastringent Asian persimmon cultivars"
+        },
+        {
+          "name": "Maru",
+          "description": "ATTRA lists Maru among nonastringent Asian persimmon cultivars"
+        },
+        {
+          "name": "Hyakume",
+          "description": "ATTRA lists Hyakume among nonastringent Asian persimmon cultivars"
+        },
+        {
+          "name": "Gailey",
+          "description": "ATTRA lists Gailey among nonastringent Asian persimmon cultivars"
+        },
+        {
+          "name": "Saijo",
+          "description": "ATTRA lists Saijo among astringent Asian persimmon cultivars"
+        },
+        {
+          "name": "Tamopan",
+          "description": "ATTRA lists Tamopan among astringent Asian persimmon cultivars"
+        },
+        {
+          "name": "Tanenashi",
+          "description": "ATTRA lists Tanenashi among astringent Asian persimmon cultivars"
+        },
+        {
+          "name": "Tsuru",
+          "description": "ATTRA lists Tsuru among astringent Asian persimmon cultivars"
+        },
+        {
+          "name": "Fuji",
+          "description": "ATTRA lists Fuji among astringent Asian persimmon cultivars"
+        },
+        {
+          "name": "Hachiya",
+          "description": "ATTRA lists Hachiya among astringent Asian persimmon cultivars and among cultivars known to produce fruit without cross-pollination for beginning Asian persimmon growers outside California; it notes Hachiya requires ripening by the end consumer"
+        },
+        {
+          "name": "Hiratanenashi",
+          "description": "ATTRA lists Hiratanenashi among astringent Asian persimmon cultivars"
+        },
+        {
+          "name": "Hanagosho",
+          "description": "ATTRA lists Hanagosho among Asian persimmon cultivars known to produce fruit without cross-pollination for beginning growers outside California"
+        },
+        {
+          "name": "Korean",
+          "description": "ATTRA lists Korean among Asian persimmon cultivars known to produce fruit without cross-pollination for beginning growers outside California and notes it is astringent and requires ripening by the end consumer"
+        },
+        {
+          "name": "Meader",
+          "description": "ATTRA says Meader is among American persimmon cultivars that will set seedless fruit without a nearby male tree"
+        },
+        {
+          "name": "Williams",
+          "description": "ATTRA says the named male American persimmon cultivar Williams is often sold by persimmon nurseries as a pollenizer tree"
+        }
+      ]
+    }
+  ]
+}

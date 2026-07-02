@@ -1,0 +1,102 @@
+{
+    title: "Penn State Scab-Resistant Apple Varieties for Home Orchards",
+    author: "Robert M. Crassweller et al.",
+    description: "Penn State Fruit Production for the Home Gardener Table 4.1 of scab-resistant apple varieties recommended for home planting in Pennsylvania",
+    url: "https://fruit.webhosting.cals.wisc.edu/wp-content/uploads/sites/36/2016/03/Fruit-Production-for-the-Home-Gardener.pdf",
+    published: "2006",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Penn State Extension, University Park, Pennsylvania",
+            latitude: 40.7934,
+            longitude: -77.86
+        },
+    ],
+    categories: [
+        {
+            name: "Penn State scab-resistant apple varieties for Pennsylvania home orchards",
+            description: "Penn State Fruit Production for the Home Gardener recommends these scab-resistant apple varieties for Pennsylvania home plantings"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Pristine",
+            category: "Penn State scab-resistant apple varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Late July to early August",
+            description: "Very early medium-sized yellow apple with pleasant tart flavor and a smooth attractive finish. Disease ratings: cedar apple rust moderate, powdery mildew resistant, fire blight moderate"
+        },
+        {
+            type: "Apple",
+            name: "Williams' Pride",
+            category: "Penn State scab-resistant apple varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Mid-August",
+            description: "Early dark red-purple apple with large fruit and semi-tart flavor. Source notes it sometimes shows water-core or bitter pit. Disease ratings: cedar apple rust resistant, powdery mildew moderate, fire blight resistant to moderate. Source table names this as Williams Pride"
+        },
+        {
+            type: "Apple",
+            name: "Redfree",
+            category: "Penn State scab-resistant apple varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Late August to mid-September",
+            description: "Early red-skinned sweet summer apple that is crisp but does not have a long storage life. Disease ratings: cedar apple rust resistant, powdery mildew resistant to moderate, fire blight resistant to moderate. Source table names this as Redfree with a footnote marker"
+        },
+        {
+            type: "Apple",
+            name: "Crimson Crisp",
+            category: "Penn State scab-resistant apple varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Early September",
+            description: "Rich flavor with moderately acidic and spicy aftertaste, bright red fruit, and cream-colored flesh. Disease ratings: cedar apple rust moderate, powdery mildew moderate, fire blight susceptible. Source table names this as Crimson Crisp with a footnote marker"
+        },
+        {
+            type: "Apple",
+            name: "Liberty",
+            category: "Penn State scab-resistant apple varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Mid- to late September",
+            description: "Mid-season high-quality dessert apple that the source describes as most disease resistant. Flavor improves after storage. Disease ratings: cedar apple rust resistant, powdery mildew resistant, fire blight resistant. Source table names this as Liberty with a footnote marker"
+        },
+        {
+            type: "Apple",
+            name: "Freedom",
+            category: "Penn State scab-resistant apple varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Mid- to late September",
+            description: "Mid-season large apple with spicy flavor, rough external appearance, variable fruit quality, and susceptibility to black rot. Disease ratings: cedar apple rust resistant, powdery mildew resistant, fire blight resistant to moderate"
+        },
+        {
+            type: "Apple",
+            name: "Jonafree",
+            category: "Penn State scab-resistant apple varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Mid- to late September",
+            description: "Mid-season firm red apple, slightly tart and similar to Jonathan. Flavor improves after storage. Disease ratings: cedar apple rust susceptible, powdery mildew resistant, fire blight moderate"
+        },
+        {
+            type: "Apple",
+            name: "Scarlet O'Hara",
+            category: "Penn State scab-resistant apple varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Early to mid-October",
+            description: "Large round fruit with medium red to orange color and rich pleasant slightly spicy flavor. Disease ratings: cedar apple rust resistant, powdery mildew moderate, fire blight susceptible. Source table names this as Scarlet O'Hara with a footnote marker"
+        },
+        {
+            type: "Apple",
+            name: "Sundance",
+            category: "Penn State scab-resistant apple varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Mid-October",
+            description: "Medium-sized fruit with sweet tart flavor and yellow fruit with some russet. Disease ratings: cedar apple rust resistant, powdery mildew moderate, fire blight resistant. Source table names this as Sundance with a footnote marker"
+        },
+        {
+            type: "Apple",
+            name: "Enterprise",
+            category: "Penn State scab-resistant apple varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Mid-October",
+            description: "Good-quality late-season smooth glossy red apple similar to McIntosh. Stores well but source notes susceptibility to a fruit spotting disorder. Disease ratings: cedar apple rust resistant, powdery mildew moderate, fire blight resistant. Source table names this as Enterprise with a footnote marker"
+        },
+        {
+            type: "Apple",
+            name: "GoldRush",
+            category: "Penn State scab-resistant apple varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Late October",
+            description: "Excellent-quality good-storage apple, very late maturing Golden Delicious type, with fruit that may russet. Disease ratings: cedar apple rust susceptible, powdery mildew resistant, fire blight moderate. Source table names this as Goldrush with a footnote marker"
+        },
+    ]
+}

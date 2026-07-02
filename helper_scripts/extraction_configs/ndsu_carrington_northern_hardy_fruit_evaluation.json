@@ -1,0 +1,317 @@
+{
+  "source": {
+    "kind": "static"
+  },
+  "reference_fields": [
+    ["title", "NDSU Carrington Northern Hardy Fruit Evaluation Project"],
+    ["author", "Kathy Wiederholt"],
+    ["description", "NDSU Carrington Research Extension Center northern-hardy fruit recommendations revised in 2020 after cultivar evaluations beginning in 2006"],
+    ["url", "https://www.ag.ndsu.edu/carringtonrec/archive/northern-hardy-fruit-evaluation-project/fruit-project-results/crec-fruit-recommendations"],
+    ["published", "Revised February 2020"],
+    ["accessed", "Jul 2026"],
+    ["type", "extension test"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "NDSU Carrington Research Extension Center, Carrington, North Dakota",
+      "latitude": 47.4497,
+      "longitude": -99.1262
+    }
+  ],
+  "categories": [
+    {
+      "name": "NDSU Carrington recommended apples for central North Dakota",
+      "description": "NDSU Carrington REC says these apples are easily grown in central North Dakota, with Hazen, Honeycrisp, and Zestar highlighted as varieties"
+    },
+    {
+      "name": "NDSU Carrington plums recommended with reservations",
+      "description": "NDSU Carrington REC recommends these plums with reservations and says plums have been spottily productive at Carrington"
+    },
+    {
+      "name": "NDSU Carrington hardy grapes for North Dakota",
+      "description": "NDSU Carrington REC highlights these grapes after evaluating winter hardiness, ability to ripen, and other qualities"
+    },
+    {
+      "name": "NDSU Carrington aronia varieties",
+      "description": "NDSU Carrington REC lists these aronia varieties for processing-oriented fruit use"
+    },
+    {
+      "name": "NDSU Carrington cherries for North Dakota",
+      "description": "NDSU Carrington REC lists these dwarf sour cherry and tree cherry varieties for North Dakota"
+    },
+    {
+      "name": "NDSU Carrington currants for North Dakota",
+      "description": "NDSU Carrington REC lists these black, red, and white currants for North Dakota"
+    },
+    {
+      "name": "NDSU Carrington honeyberry and haskap varieties",
+      "description": "NDSU Carrington REC lists these honeyberry and haskap varieties and says two types are needed for cross-pollination"
+    },
+    {
+      "name": "NDSU Carrington juneberries for North Dakota",
+      "description": "NDSU Carrington REC lists these juneberries for North Dakota and notes good u-pick potential"
+    },
+    {
+      "name": "NDSU Carrington gooseberries for North Dakota",
+      "description": "NDSU Carrington REC lists these gooseberries for North Dakota and names Hinnomaki Red as best"
+    }
+  ],
+  "name_overrides": {
+    "Honey Crisp": {
+      "name": "Honeycrisp",
+      "note": "Source spells this Honey Crisp"
+    },
+    "Jhonkeer Van Tets": {
+      "name": "Jonkheer van Tets",
+      "note": "Source spells this Jhonkeer Van Tets"
+    },
+    "Boreal-Beauty": {
+      "name": "Boreal Beauty",
+      "note": "Source writes this in the compressed list Boreal-Beauty, -Beast and -Blizzard"
+    },
+    "Boreal-Beast": {
+      "name": "Boreal Beast",
+      "note": "Source writes this in the compressed list Boreal-Beauty, -Beast and -Blizzard"
+    },
+    "Boreal-Blizzard": {
+      "name": "Boreal Blizzard",
+      "note": "Source writes this in the compressed list Boreal-Beauty, -Beast and -Blizzard"
+    },
+    "Evans": {
+      "name": "Evans",
+      "aka": ["Bali"]
+    }
+  },
+  "extractors": [
+    {
+      "kind": "static_rows",
+      "description_key": "description",
+      "row_groups": [
+        {
+          "fields": {
+            "plant_type": "Apple",
+            "category": "NDSU Carrington recommended apples for central North Dakota"
+          },
+          "rows": [
+            {
+              "name": "Haralred",
+              "description": "NDSU Carrington REC says Haralred is one of five apple varieties easily grown in central North Dakota, though it says Haralred is not exciting"
+            },
+            {
+              "name": "Hazen",
+              "description": "NDSU Carrington REC lists Hazen as a recommended apple variety and says it is among five apples easily grown in central North Dakota"
+            },
+            {
+              "name": "Sweet Sixteen",
+              "description": "NDSU Carrington REC says Sweet Sixteen is one of five apples easily grown in central North Dakota and notes it is delicious but takes a very long time to fruit"
+            },
+            {
+              "name": "Honey Crisp",
+              "description": "NDSU Carrington REC says Honey Crisp is one of five apples easily grown in central North Dakota and lists it as a recommended apple variety"
+            },
+            {
+              "name": "Zestar",
+              "description": "NDSU Carrington REC says Zestar is one of five apples easily grown in central North Dakota and lists it as a recommended apple variety"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Japanese Plum",
+            "category": "NDSU Carrington plums recommended with reservations",
+            "description": "NDSU Carrington REC recommends this plum with reservations, says plums have been spottily productive at Carrington, and suggests trying a wild plum as a pollinizer"
+          },
+          "rows": [
+            "Pembina",
+            "Pipestone",
+            "Toka",
+            "Waneta"
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Grape",
+            "category": "NDSU Carrington hardy grapes for North Dakota"
+          },
+          "rows": [
+            {
+              "name": "Valiant",
+              "description": "NDSU Carrington REC says Valiant is the easiest-to-grow, most hardy grape for North Dakota after evaluating winter hardiness, ability to ripen, and other qualities"
+            },
+            {
+              "name": "Somerset Seedless",
+              "description": "NDSU Carrington REC says Somerset Seedless has done well after evaluating grapes for winter hardiness, ability to ripen, and other qualities"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Aronia",
+            "category": "NDSU Carrington aronia varieties",
+            "description": "NDSU Carrington REC lists this aronia variety for processing-oriented fruit use and notes high interest in the Central Plains"
+          },
+          "rows": [
+            "Viking",
+            "Raintree Select",
+            "McKenzie",
+            "Galicjanka"
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Sour Cherry",
+            "category": "NDSU Carrington cherries for North Dakota"
+          },
+          "rows": [
+            {
+              "name": "Carmine Jewel",
+              "description": "NDSU Carrington REC lists Carmine Jewel among dwarf zone-2 hardy pie cherries for North Dakota"
+            },
+            {
+              "name": "Romeo",
+              "description": "NDSU Carrington REC lists Romeo among dwarf zone-2 hardy pie cherries for North Dakota"
+            },
+            {
+              "name": "Juliet",
+              "description": "NDSU Carrington REC lists Juliet among dwarf zone-2 hardy pie cherries for North Dakota"
+            },
+            {
+              "name": "Evans",
+              "description": "NDSU Carrington REC lists Evans, also known as Bali, as a tree cherry for North Dakota"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Currant",
+            "category": "NDSU Carrington currants for North Dakota"
+          },
+          "rows": [
+            {
+              "name": "Titania",
+              "description": "NDSU Carrington REC lists Titania among black currant varieties for North Dakota"
+            },
+            {
+              "name": "Minaj Smyriou",
+              "description": "NDSU Carrington REC lists Minaj Smyriou among black currant varieties for North Dakota"
+            },
+            {
+              "name": "Ben Lomand",
+              "description": "NDSU Carrington REC lists Ben Lomand among black currant varieties for North Dakota"
+            },
+            {
+              "name": "Champion",
+              "description": "NDSU Carrington REC lists Champion among black currant varieties for North Dakota"
+            },
+            {
+              "name": "Jhonkeer Van Tets",
+              "description": "NDSU Carrington REC lists Jhonkeer Van Tets among red currant varieties for North Dakota"
+            },
+            {
+              "name": "Rovada",
+              "description": "NDSU Carrington REC lists Rovada among red currant varieties for North Dakota"
+            },
+            {
+              "name": "Swedish White",
+              "description": "NDSU Carrington REC lists Swedish White as a white currant for North Dakota"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Honeyberry",
+            "category": "NDSU Carrington honeyberry and haskap varieties"
+          },
+          "rows": [
+            {
+              "name": "Indigo Gem",
+              "description": "NDSU Carrington REC lists Indigo Gem among Canadian haskaps and says two types are needed for cross-pollination"
+            },
+            {
+              "name": "Tundra",
+              "description": "NDSU Carrington REC lists Tundra among Canadian haskaps and says two types are needed for cross-pollination"
+            },
+            {
+              "name": "Boreal-Beauty",
+              "description": "NDSU Carrington REC lists Boreal Beauty among Canadian haskaps and says two types are needed for cross-pollination"
+            },
+            {
+              "name": "Boreal-Beast",
+              "description": "NDSU Carrington REC lists Boreal Beast among Canadian haskaps and says two types are needed for cross-pollination"
+            },
+            {
+              "name": "Boreal-Blizzard",
+              "description": "NDSU Carrington REC lists Boreal Blizzard among Canadian haskaps and says two types are needed for cross-pollination"
+            },
+            {
+              "name": "Kawai",
+              "description": "NDSU Carrington REC lists Kawai among Japanese haskaps and says two types are needed for cross-pollination"
+            },
+            {
+              "name": "Keiko",
+              "description": "NDSU Carrington REC lists Keiko among Japanese haskaps and says two types are needed for cross-pollination"
+            },
+            {
+              "name": "Solo",
+              "description": "NDSU Carrington REC lists Solo among Japanese haskaps and says two types are needed for cross-pollination"
+            },
+            {
+              "name": "Berry Blue",
+              "description": "NDSU Carrington REC lists Berry Blue as a honeyberry or haskap pollinizer"
+            },
+            {
+              "name": "Blue Belle",
+              "description": "NDSU Carrington REC lists Blue Belle as a honeyberry or haskap pollinizer"
+            },
+            {
+              "name": "Aurora",
+              "description": "NDSU Carrington REC lists Aurora as a honeyberry or haskap pollinizer"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Saskatoon",
+            "category": "NDSU Carrington juneberries for North Dakota",
+            "description": "NDSU Carrington REC lists this juneberry for North Dakota and notes good u-pick potential"
+          },
+          "rows": [
+            "Martin",
+            "Thiessen",
+            "JB30",
+            "Honeywood"
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Gooseberry",
+            "category": "NDSU Carrington gooseberries for North Dakota"
+          },
+          "rows": [
+            {
+              "name": "Hinnomaki Red",
+              "description": "NDSU Carrington REC lists Hinnomaki Red among gooseberries for North Dakota and names it best"
+            },
+            {
+              "name": "Jewel",
+              "description": "NDSU Carrington REC lists Jewel among gooseberries for North Dakota"
+            },
+            {
+              "name": "Red George",
+              "description": "NDSU Carrington REC lists Red George among gooseberries for North Dakota"
+            },
+            {
+              "name": "Black Velvet",
+              "description": "NDSU Carrington REC lists Black Velvet among gooseberries for North Dakota"
+            },
+            {
+              "name": "Lepaa Red",
+              "description": "NDSU Carrington REC lists Lepaa Red among gooseberries for North Dakota"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -107,6 +107,11 @@
                 latin_name: "Sambucus spp."
             },
             {
+                name: "Aronia",
+                AKA: ["Black Chokeberry"],
+                latin_name: "Aronia spp."
+            },
+            {
                 name: "Strawberry",
                 latin_name: "Fragaria × ananassa"
             },

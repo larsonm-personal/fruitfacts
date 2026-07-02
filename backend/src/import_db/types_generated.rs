@@ -22,6 +22,7 @@ pub const TYPES: &[&str] = &[
     "Muscadine",
     "Grape",
     "Elderberry",
+    "Aronia",
     "Strawberry",
     "Raspberry",
     "Blackberry",

@@ -1,0 +1,489 @@
+{
+    title: "Penn State Stone Fruit Variety Selection",
+    author: "Robert M. Crassweller et al.",
+    description: "Penn State Fruit Production for the Home Gardener stone-fruit variety selection chapter with peach, nectarine, plum, apricot, and cherry recommendations for Pennsylvania home orchards",
+    url: "https://fruit.webhosting.cals.wisc.edu/wp-content/uploads/sites/36/2016/03/Fruit-Production-for-the-Home-Gardener.pdf",
+    published: "2006",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Penn State Extension, University Park, Pennsylvania",
+            latitude: 40.7934,
+            longitude: -77.86
+        },
+    ],
+    categories: [
+        {
+            name: "Penn State peach varieties for Pennsylvania home orchards",
+            description: "Penn State Fruit Production for the Home Gardener describes these peach varieties for Pennsylvania home orchard variety selection"
+        },
+        {
+            name: "Penn State nectarine varieties for Pennsylvania home orchards",
+            description: "Penn State Fruit Production for the Home Gardener describes these nectarine varieties for Pennsylvania home orchard variety selection"
+        },
+        {
+            name: "Penn State plum varieties for Pennsylvania home orchards",
+            description: "Penn State Fruit Production for the Home Gardener describes these Japanese and European plum varieties for Pennsylvania home orchard variety selection"
+        },
+        {
+            name: "Penn State disease-resistant plum candidates for Pennsylvania home orchards",
+            description: "Penn State Fruit Production for the Home Gardener lists these Auburn disease-resistant plum candidates while noting limited Pennsylvania experience"
+        },
+        {
+            name: "Penn State apricot varieties for Pennsylvania home orchards",
+            description: "Penn State Fruit Production for the Home Gardener describes these apricot varieties for the best Pennsylvania sites or sheltered areas"
+        },
+        {
+            name: "Penn State tart cherry varieties for Pennsylvania home orchards",
+            description: "Penn State Fruit Production for the Home Gardener describes these tart cherry varieties for Pennsylvania home orchard variety selection"
+        },
+        {
+            name: "Penn State sweet cherry varieties for Pennsylvania home orchards",
+            description: "Penn State Fruit Production for the Home Gardener describes these self-unfertile sweet cherry varieties for Pennsylvania home orchard variety selection"
+        },
+        {
+            name: "Penn State self-fertile sweet cherry varieties for Pennsylvania home orchards",
+            description: "Penn State Fruit Production for the Home Gardener describes these self-fertile sweet cherry varieties, while noting limited Pennsylvania performance data for many of them"
+        },
+    ],
+    plants: [
+        {
+            type: "Peach",
+            name: "Candor",
+            category: "Penn State peach varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven -20",
+            description: "First early peach of the season with any quality. Fruit are yellow and medium in size, but a large percentage tend to produce split seeds, limiting usefulness for canning"
+        },
+        {
+            type: "Peach",
+            name: "Harrow Diamond",
+            category: "Penn State peach varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven -15",
+            description: "Medium to medium-large fruit with attractive scarlet-red skin over a greenish-yellow ground color. Fruit is semiclingstone"
+        },
+        {
+            type: "Peach",
+            name: "Garnet Beauty",
+            category: "Penn State peach varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven -10",
+            description: "Good early peach ripening just before Redhaven. Source describes it as semiclingstone to freestone, very productive, and medium sized"
+        },
+        {
+            type: "Peach",
+            name: "Glenglo",
+            category: "Penn State peach varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven -8",
+            description: "Yellow-fleshed peach that is attractive, medium large, moderately firm, semifreestone, and low in susceptibility to bacterial spot"
+        },
+        {
+            type: "Peach",
+            name: "Reliance",
+            category: "Penn State peach varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven -6",
+            description: "New Hampshire peach with better-than-average bud hardiness. Source says fruit quality is only fair, but this is the only variety to try on marginal Pennsylvania peach sites"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Penn State peach varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Aug 1 in southcentral Pennsylvania; Aug 8 in central Pennsylvania",
+            description: "Standard and most popular peach variety in the industry. Fruit quality is good; fruit size may be small if not properly thinned. Source says freezing quality is above average and canning quality is below average"
+        },
+        {
+            type: "Peach",
+            name: "Harbrite",
+            category: "Penn State peach varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven +4",
+            description: "Agriculture Canada Harrow Station release. Productive freestone with medium to large round fruit, good winter hardiness, and reported resistance to bacterial spot and brown rot"
+        },
+        {
+            type: "Peach",
+            name: "Redkist",
+            category: "Penn State peach varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven +14",
+            description: "Medium to medium-large peach with crimson-red skin. Fruit is firm and freestone. Tree has low susceptibility to bacterial spot"
+        },
+        {
+            type: "Peach",
+            name: "Beekman",
+            category: "Penn State peach varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven +16",
+            description: "Red sport of Sunhigh found in an orchard in Boyertown, Pennsylvania. Fruit is very firm and high quality, with showy large flowers"
+        },
+        {
+            type: "Peach",
+            name: "Harmony",
+            category: "Penn State peach varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven +21",
+            description: "Productive winter-hardy peach with medium to large fruit that freezes well. Source notes it is sometimes listed in nursery catalogs as Canadian Harmony"
+        },
+        {
+            type: "Peach",
+            name: "Madison",
+            category: "Penn State peach varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven +24",
+            description: "Firm-fleshed high-quality peach good for freezing. Trees are more tolerant to frost than other varieties and are recommended in northern areas of Pennsylvania"
+        },
+        {
+            type: "Peach",
+            name: "Cresthaven",
+            category: "Penn State peach varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven +27",
+            description: "Medium to large nearly round peach, very uniform, golden with abundant bright red overlay. Yellow-fleshed freestone with considerable red around the pit"
+        },
+        {
+            type: "Peach",
+            name: "Encore",
+            category: "Penn State peach varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Late August to early September",
+            description: "Large firm freestone peach with 60 to 70 percent crimson-red skin over greenish-yellow ground color"
+        },
+        {
+            type: "Nectarine",
+            name: "Harflame",
+            category: "Penn State nectarine varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven -7 to -10",
+            description: "Medium dark red-skinned nectarine with yellow ground color. Fruit are semifreestone, with somewhat acidic but very good flavor"
+        },
+        {
+            type: "Nectarine",
+            name: "Harblaze",
+            category: "Penn State nectarine varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven -4",
+            description: "Medium to large nectarine with bright-red skin over orange-yellow ground color. Fruit are semiclingstone"
+        },
+        {
+            type: "Nectarine",
+            name: "Crimson Snow",
+            category: "Penn State nectarine varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven +0",
+            description: "New white-fleshed nectarine with pinkish overcolor and slight greenish ground color. Source says fruit may be small and needs heavy thinning"
+        },
+        {
+            type: "Nectarine",
+            name: "Fantasia",
+            category: "Penn State nectarine varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven +27",
+            description: "Large yellow-fleshed nectarine that is firm, highly colored, and good quality. Tree is somewhat susceptible to bacterial spot"
+        },
+        {
+            type: "Nectarine",
+            name: "Red Gold",
+            category: "Penn State nectarine varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Redhaven +20",
+            description: "Good late-maturing freestone nectarine with red-over-yellow skin and yellow flesh with red around the pit. Source notes susceptibility to bacterial spot. Source text names this as Redgold"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Methley",
+            category: "Penn State plum varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Mid-July in southcentral Pennsylvania",
+            description: "Early ripening Japanese plum of good quality and appearance. Fruit are round, sweet, very juicy, and purple with red blush. Flowers are partially self-fruitful, but Shiro or Ozark Premier can increase yield"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Shiro",
+            category: "Penn State plum varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Aug 1 in southcentral Pennsylvania",
+            description: "Round yellow Japanese plum with occasional pink blush. Source notes the fruit are clingstone but very juicy"
+        },
+        {
+            type: "Euro Plum",
+            name: "Castleton",
+            category: "Penn State plum varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Aug 10 in southcentral Pennsylvania",
+            description: "Cornell dual-purpose prune/plum. Fruit is blue, round, and similar to Stanley"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ozark Premier",
+            category: "Penn State plum varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Aug 15 in southcentral Pennsylvania",
+            description: "Large bright-red Japanese-type plum with tough skin, yellow juicy flesh, fair quality, tart flavor tendency, clingstone fruit, and small seed. Source says it will not pollinate Stanley or Bluefre"
+        },
+        {
+            type: "Euro Plum",
+            name: "Bluebyrd",
+            category: "Penn State plum varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Middle of August",
+            description: "European type plum from the USDA station in Kearneysville, West Virginia. Fruit is firm and sweet with yellow flesh"
+        },
+        {
+            type: "Euro Plum",
+            name: "Seneca",
+            category: "Penn State plum varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Aug 22 in southcentral Pennsylvania",
+            description: "Cornell release with large reddish blue fruit and excellent dessert quality. Fruit is reported resistant to cracking and brown rot"
+        },
+        {
+            type: "Euro Plum",
+            name: "Stanley",
+            category: "Penn State plum varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Last week in August",
+            description: "Medium dark-blue freestone European plum, oval with a distinctive neck. Well suited for processing and drying, with greenish-yellow juicy fine-grained flesh"
+        },
+        {
+            type: "Euro Plum",
+            name: "Longjohn",
+            category: "Penn State plum varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "With Stanley",
+            description: "Cornell European type producing large long teardrop-shaped blue freestone fruit. Source text names this as Long John"
+        },
+        {
+            type: "Euro Plum",
+            name: "Bluefre",
+            category: "Penn State plum varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "First week in September",
+            description: "European type producing large blue yellow-fleshed freestone fruit. Fruit hangs well on the tree but produces many split pits"
+        },
+        {
+            type: "Japanese Plum",
+            name: "AU-Amber",
+            category: "Penn State disease-resistant plum candidates for Pennsylvania home orchards",
+            description: "Auburn disease-resistant plum candidate with medium-sized purple-skinned fruit and excellent flavor. Fruit is smaller than AU Rosa and AU Rubrum. Partially self-fruitful. Source text names this as AU AMBER"
+        },
+        {
+            type: "Japanese Plum",
+            name: "AU-Rosa",
+            category: "Penn State disease-resistant plum candidates for Pennsylvania home orchards",
+            description: "Auburn disease-resistant plum candidate with bright-red skin and yellow flesh. Source text names this as AU ROSA"
+        },
+        {
+            type: "Japanese Plum",
+            name: "AU-Rubrum",
+            category: "Penn State disease-resistant plum candidates for Pennsylvania home orchards",
+            description: "Auburn disease-resistant plum candidate with large firm fruit, maroon skin, and red flesh. Reported to be self-fruitful. Source text names this as AU RUBRUM"
+        },
+        {
+            type: "Japanese Plum",
+            name: "AU-Cherry",
+            category: "Penn State disease-resistant plum candidates for Pennsylvania home orchards",
+            description: "Auburn disease-resistant plum candidate described by Penn State as a small plum that has consistently produced large crops. Source text names this as AU CHERRY"
+        },
+        {
+            type: "Japanese Plum",
+            name: "AU-Roadside",
+            category: "Penn State disease-resistant plum candidates for Pennsylvania home orchards",
+            AKA: ["War Eagle"],
+            description: "Auburn disease-resistant plum candidate with red-skinned fruit and high-quality flesh. Flowers are self-fruitful. Source text names this as AU ROADSIDE and notes it is sometimes listed as War Eagle"
+        },
+        {
+            type: "Apricot",
+            name: "Harcot",
+            category: "Penn State apricot varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "First week in July in southcentral Pennsylvania",
+            description: "Canadian introduction that has been a consistent producer when not frosted out. Needs thinning for acceptable size. Fruit is attractive with red blush, good early-season fresh quality, and unsuitable canning quality. Reports from New York indicate resistance to brown rot and bacterial spot"
+        },
+        {
+            type: "Apricot",
+            name: "Veecot",
+            category: "Penn State apricot varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Second week in July",
+            description: "Medium to large round apricot with very firm deep-orange fruit. Flesh is smooth textured, slightly juicy, and cans well"
+        },
+        {
+            type: "Apricot",
+            name: "Hargrand",
+            category: "Penn State apricot varieties for Pennsylvania home orchards",
+            description: "Harrow, Ontario apricot with glossy fruit averaging 50 percent orange-red surface blush. Fruit is somewhat flattened with mild good flavor. Reports from New York indicate resistance to brown rot and bacterial spot"
+        },
+        {
+            type: "Apricot",
+            name: "Harogem",
+            category: "Penn State apricot varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "About July 21 in southcentral Pennsylvania",
+            description: "Medium-sized apricot with bright-red glossy blush over orange background. Tree growth is very upright and trees are very resistant to cold. Reports from New York indicate resistance to brown rot"
+        },
+        {
+            type: "Apricot",
+            name: "Harlayne",
+            category: "Penn State apricot varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Third to fourth week in July",
+            description: "Bright-red blushed apricot, often small and requiring careful thinning. Source says fruit is best suited for fresh eating and reports from New York indicate resistance to brown rot and bacterial spot"
+        },
+        {
+            type: "Sour Cherry",
+            name: "\u00c9rdi Jubileum",
+            category: "Penn State tart cherry varieties for Pennsylvania home orchards",
+            description: "New tart cherry developed in Hungary. Fruit are very large with dark red flesh, not as tart as Montmorency, and have very high sugar levels. Source text names this as JUBILEUM"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Danube",
+            category: "Penn State tart cherry varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Montmorency -7",
+            description: "Popular European variety with dark red fruit slightly sweeter than Montmorency. Fruit are medium to large, and trees may be a little less winter hardy than Montmorency"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Montmorency",
+            category: "Penn State tart cherry varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Last week of June to first week of July",
+            description: "Number one tart cherry variety and industry standard. Productive, but flowers are susceptible to late spring frosts"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Surefire",
+            category: "Penn State tart cherry varieties for Pennsylvania home orchards",
+            description: "Recent Cornell introduction. Late-blooming tart cherry that can avoid spring frost damage. Fruit is bright red and medium in size"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Balaton",
+            category: "Penn State tart cherry varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Montmorency +7 to +10",
+            description: "New late-maturing tart cherry with large very firm fruit and red burgundy juicy flesh"
+        },
+        {
+            type: "Sour Cherry",
+            name: "North Star",
+            category: "Penn State tart cherry varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "About July 7 in southcentral Pennsylvania",
+            description: "Dark-juiced cherry with mahogany-red medium-sized fruit. Trees are very hardy and small, making them easier to net against birds. Source text names this as NORTHSTAR"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Meteor",
+            category: "Penn State tart cherry varieties for Pennsylvania home orchards",
+            harvest_time_relative: "North Star +3 to +7",
+            description: "Medium-sized semifirm good-quality fruit. Trees are somewhat larger than North Star and equally hardy. Source notes the oddly shaped pit can shatter during processing, which is not a problem for home use"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Vista",
+            category: "Penn State sweet cherry varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Last week in June",
+            description: "Nearly black excellent-quality sweet cherry fruit, about 7/8 inch in size. Source lists it as self-unfertile and needing a compatible pollen source"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Ulster",
+            category: "Penn State sweet cherry varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Vista +2",
+            description: "New York introduction with medium-sized firm dark-skinned dark-fleshed fruit. Source lists it as self-unfertile and needing a compatible pollen source"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Viva",
+            category: "Penn State sweet cherry varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Around July 4",
+            description: "Vineland Research Station release with dark red fruit about 3/4 inch in diameter. Source lists it as self-unfertile and needing a compatible pollen source"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Hartland",
+            category: "Penn State sweet cherry varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Around July 4",
+            description: "Early-season crack-resistant black cherry. Tree is vigorous, crops consistently, and is self-unfertile according to the source"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Royalton",
+            category: "Penn State sweet cherry varieties for Pennsylvania home orchards",
+            description: "New York Agricultural Experiment Station release with large dark sweet cherries, high sugar levels, and some crack resistance. Source says it is cross-compatible with Emperor Francis, Kristin, Sam, Schmidt, and Ulster"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Emperor Francis",
+            category: "Penn State sweet cherry varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Vista +7",
+            description: "Large high-quality Napoleon-type cherry less subject to cracking. Fruit can be used for brining or fresh use and has attractive red blush over yellowish background"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Sam",
+            category: "Penn State sweet cherry varieties for Pennsylvania home orchards",
+            harvest_time_relative: "Vista +11",
+            description: "Early ripening large black sweet cherry. Tree is large, vigorous, upright, and later blooming than most sweets. Fruit has good resistance to rain-induced cracking. Source notes Sam is pollen incompatible with Royalton and Schmidt"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Kristin",
+            category: "Penn State sweet cherry varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "Last week in June in southcentral Pennsylvania",
+            description: "Norwegian introduction with one-inch fruit of good quality, good flavor, high sugar content, and moderate rain-cracking resistance. Source notes pollen incompatibility with Somerset and Group I cherries"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Viscount",
+            category: "Penn State sweet cherry varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "About July 2 in southcentral Pennsylvania",
+            description: "Canadian 1983 introduction producing medium-large firm good-quality dark glossy-red cherries. Productive and has good crack resistance"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Hedelfingen",
+            category: "Penn State sweet cherry varieties for Pennsylvania home orchards",
+            harvest_time_unparsed: "About July 3 in southcentral Pennsylvania",
+            description: "Medium-large firm good-quality black cherry with moderate cracking resistance. Trees are early bearing and very productive"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Vandalay",
+            category: "Penn State self-fertile sweet cherry varieties for Pennsylvania home orchards",
+            description: "Self-fertile sweet cherry with large wine-red kidney-shaped fruit and purple juice. Developed in Vineland, Canada"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Stella",
+            category: "Penn State self-fertile sweet cherry varieties for Pennsylvania home orchards",
+            description: "Self-fertile sweet cherry with large dark-red fruit. Trees are productive but can be tender in cold winters, so source does not recommend it for more northern Pennsylvania areas"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Tehranivee",
+            category: "Penn State self-fertile sweet cherry varieties for Pennsylvania home orchards",
+            description: "Mid-season self-fertile sweet cherry developed in Ontario, Canada. Source notes cracking can be a problem"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Sumleta",
+            category: "Penn State self-fertile sweet cherry varieties for Pennsylvania home orchards",
+            description: "British Columbia 1996 introduction with very large black moderately sweet fruit. Source text names this as SONATA and notes it is sometimes labeled SumletaTM"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "WhiteGold",
+            category: "Penn State self-fertile sweet cherry varieties for Pennsylvania home orchards",
+            description: "Cornell early mid-season self-fertile sweet cherry selection for processing, used similarly to Napoleon or Royal Anne, with considerable potential for brining and processing markets. Source text names this as WHITEGOLDTM"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Symphony",
+            category: "Penn State self-fertile sweet cherry varieties for Pennsylvania home orchards",
+            description: "British Columbia 1997 introduction with bright-red very large fruit that matures late in the season. Source says it has shown better rain-cracking resistance than other varieties from this program"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "BlackGold",
+            category: "Penn State self-fertile sweet cherry varieties for Pennsylvania home orchards",
+            description: "Cornell late mid-season self-fertile sweet cherry selection. Latest-blooming sweet cherry in the Cornell collection with remarkable tolerance to spring frost. Primary use is fresh eating. Source text names this as BLACKGOLDTM"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Sunburst",
+            category: "Penn State self-fertile sweet cherry varieties for Pennsylvania home orchards",
+            description: "British Columbia 1983 introduction. Fruit is large and firm, and trees are productive"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Lapins",
+            category: "Penn State self-fertile sweet cherry varieties for Pennsylvania home orchards",
+            description: "Summerland Research Center release with Stella as one parent, making it self-fertile. Fruit is very large and somewhat crack resistant"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Skeena",
+            category: "Penn State self-fertile sweet cherry varieties for Pennsylvania home orchards",
+            description: "Very large dark mahogany cherry. Source says it is superior to Lapins, has unknown cracking susceptibility, and blooms in mid-season"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Sweetheart",
+            category: "Penn State self-fertile sweet cherry varieties for Pennsylvania home orchards",
+            description: "High-quality British Columbia sweet cherry with very large late-maturing fruit. Trees are productive, yielding dark-red medium to large firm fruit with good flavor"
+        },
+    ]
+}
