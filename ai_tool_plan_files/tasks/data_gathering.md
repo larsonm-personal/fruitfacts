@@ -46,6 +46,9 @@ real work exposes repeated patterns, edge cases, and useful helper commands.
 12. [Reference URL Download Audit](data_gathering_guides/reference_url_download_audit.md)
     - Survey existing reference URLs for direct download success, landing-page
       download links, official replacements, and changed PDF hashes
+13. [Fruit Notes Workflow](data_gathering_guides/fruit_notes_workflow.md)
+    - Triage Fruit Notes issues article-by-article and encode only
+      cultivar-rich articles
 
 ## Shared Helper Docs
 
@@ -64,6 +67,8 @@ real work exposes repeated patterns, edge cases, and useful helper commands.
 - [Extraction Helper Library](data_gathering_guides/extraction_helper_library.md)
   - Direction for growing source-specific parsers into shared HTML, PDF, text,
     and draft-output helpers
+- [Fruit Notes Issue Index](fruit_notes_issue_index.json5)
+  - Article-level status index for UMass Fruit Notes issues
 
 ## Working Notes
 

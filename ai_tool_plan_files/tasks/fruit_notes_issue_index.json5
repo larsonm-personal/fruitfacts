@@ -1,0 +1,93 @@
+{
+    notes: [
+        "Working index for Fruit Notes issues",
+        "Use one entry per issue and one article record per article PDF",
+        "Encode only cultivar, trial, recommendation, or durable variety-description articles into plant_database references"
+    ],
+    issues: [
+        {
+            id: "fruit-notes-v83n4-fall-2018",
+            status: "triaged",
+            title: "Fruit Notes Volume 83, Number 4: Fall 2018",
+            issue_url: "http://umassfruitnotes.com/v83n4/FN83-4.pdf",
+            published: "Fall 2018",
+            accessed: "Jul 2026",
+            articles: [
+                {
+                    article_number: "a1",
+                    title: "Evaluation of Diluted Grape Juice as an Inexpensive Attractant for the Invasive Fruit Pest, Spotted Wing Drosophila",
+                    url: "http://www.umassfruitnotes.com/v83n4/a1.pdf",
+                    status: "do_not_encode",
+                    crops: ["Grape"],
+                    notes: [
+                        "Pest monitoring and lure comparison article",
+                        "Mentions hosts but does not provide cultivar-level FruitFacts data"
+                    ]
+                },
+                {
+                    article_number: "a2",
+                    title: "Tree-fruit Research and Extension Priority Rankings in New Jersey",
+                    url: "http://www.umassfruitnotes.com/v83n4/a2.pdf",
+                    status: "do_not_encode",
+                    crops: [
+                        "Apple",
+                        "Peach",
+                        "Other tree fruit"
+                    ],
+                    notes: [
+                        "Survey and research-priority article",
+                        "No cultivar-level recommendation or trial records found in this pass"
+                    ]
+                },
+                {
+                    article_number: "a3",
+                    title: "Promising New Jersey Hard Cider Apple Trial Updates",
+                    url: "http://www.umassfruitnotes.com/v83n4/a3.pdf",
+                    status: "encoded",
+                    crops: ["Apple"],
+                    reference_path:
+                        "plant_database/references/New Jersey/Fruit Notes- Promising New Jersey Hard Cider Apple Trial Updates.json5",
+                    notes: [
+                        "Short update names Ellis Bitter, Red Astrachan, and Stoke Red",
+                        "The article says the trial has 31 cultivars but does not list them; broader trial details should be handled from a fuller later report"
+                    ]
+                },
+                {
+                    article_number: "a4",
+                    title: "Selected White Heirloom Grape Varieties for the Northeast",
+                    url: "http://www.umassfruitnotes.com/v83n4/a4.pdf",
+                    status: "encoded",
+                    crops: ["Grape"],
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Selected White Heirloom Grape Varieties for the Northeast.json5"
+                },
+                {
+                    article_number: "a5",
+                    title: "Blue and Black Heirloom Grape Varieties for the Northeast",
+                    url: "http://www.umassfruitnotes.com/v83n4/a5.pdf",
+                    status: "encoded",
+                    crops: ["Grape"],
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Blue and Black Heirloom Grape Varieties for the Northeast.json5"
+                },
+                {
+                    article_number: "a6",
+                    title: "Pink and Light Red Heirloom Grape Varieties for the Northeast",
+                    url: "http://www.umassfruitnotes.com/v83n4/a6.pdf",
+                    status: "encoded",
+                    crops: ["Grape"],
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Pink and Light Red Heirloom Grape Varieties for the Northeast.json5"
+                },
+                {
+                    article_number: "a7",
+                    title: "Dr. Joshua Feldstein, Former Delaware Valley University President, Passes Away at 97",
+                    status: "do_not_encode",
+                    notes: [
+                        "Obituary, no cultivar-level FruitFacts data"
+                    ]
+                }
+            ]
+        }
+    ]
+}

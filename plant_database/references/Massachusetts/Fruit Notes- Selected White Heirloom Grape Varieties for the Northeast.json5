@@ -1,0 +1,66 @@
+{
+    title: "Selected White Heirloom Grape Varieties for the Northeast",
+    author: "J. Stephen Casscles",
+    description: "Fruit Notes Volume 83, Number 4, Fall 2018 article describing white heirloom grape varieties evaluated at Cedar Cliff Farm in Athens, New York",
+    url: "http://www.umassfruitnotes.com/v83n4/a4.pdf",
+    published: "Fall 2018",
+    accessed: "Jul 2026",
+    type: "journal article test",
+    locations: [
+        {
+            name: "Cedar Cliff Farm, Athens, New York",
+            latitude: 42.2609,
+            longitude: -73.8096
+        }
+    ],
+    categories: [
+        {
+            name: "White heirloom grape varieties for the Northeast",
+            description: "Casscles describes these locally developed white heirloom grapes as suitable for most of New England and the Middle Atlantic States except the coldest regions; many are dual-purpose grapes for wine or table use"
+        }
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Croton",
+            category: "White heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "mid-season",
+            description: "Casscles describes Croton as a high-quality white grape bred around 1863 by Richard T. Underhill and possibly Stephen W. Underhill from Delaware pollinated by Chasselas de Fontainebleau. Source notes: moderately susceptible to winter injury, suitable fungus disease resistance, moderately vigorous in heavy soils, optimal in well drained rich silty soils, late bloom, self-fertile, pretty long slender clusters, translucent yellowish-green berries, delicate vinifera/Delaware flavor, refreshingly spritely, and high sugars"
+        },
+        {
+            type: "Grape",
+            name: "Diamond",
+            category: "White heirloom grape varieties for the Northeast",
+            harvest_time_relative: "1 week before Concord",
+            description: "Source names this as Moore's Diamond. Casscles describes Diamond as a Jacob Moore hybrid introduced around 1885 from Concord seed fertilized by Iona pollen, with Cayuga White, Horizon, and Melody among its progeny. Source notes: early mid-season ripening, very winter hardy, productive, vigorous, similar to Concord but not as vigorous, broad habitat range, mid-season bud break, disease resistance as good as Concord but more susceptible to black rot, variable pale green compact clusters, and clean balanced spicy white wines with floral fruit notes"
+        },
+        {
+            type: "Grape",
+            name: "Empire State",
+            category: "White heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "late mid-season to late, a few days earlier than Niagara",
+            description: "Casscles describes Empire State as a James H. Ricketts hybrid that first fruited in 1879 and was introduced in 1884. Ricketts said it came from Hartford pollinated by Clinton, while others believed it was Clinton crossed with a white European grape. Source notes: vigor, disease resistance, and productivity comparable to Niagara and Diamond; slightly less winter hardy; less attractive clusters for table use; fruit quality much better than Niagara and nearly as good as Diamond; riparia and Muscat flavor profile rather than labrusca foxiness; 18 to 20 Brix; and clean floral pale green to yellow wines"
+        },
+        {
+            type: "Grape",
+            name: "Golden Drop",
+            category: "White heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "late-early season",
+            description: "Casscles describes Golden Drop as an Adirondac x Delaware white grape bred by Cyrus G. Pringle of East Charlotte, Vermont from seed planted in 1869. Source notes: medium to moderately vigorous vine, very winter hardy, not very productive because cluster and berry size are below average, moderately loose cylindrical clusters, somewhat fungus disease resistant, deep golden color when ripe, superior wine grape, soft delicate clean labrusca flavor like Delaware without Muscat, 17 to 18 Brix, sterile or nearly sterile flowers opening mid-season, pollinates in mixed vineyards, and a candidate for shorter-season growing areas"
+        },
+        {
+            type: "Grape",
+            name: "Iona",
+            category: "White heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "late mid-season to late, later than Concord",
+            description: "Casscles describes Iona as a Dr. Charles William Grant hybrid from Iona Island, New York, said by Grant to originate from a Diana seed planted in 1855 and introduced in 1864. Source notes: prefers warm deep dry soils such as well drained sandy or gravelly clays; does poorly in damp rich black soils or poor sand/gravel without enough organic matter; winter hardy to moderately winter hardy; average productivity and vigor; only somewhat resistant to most fungus diseases; nearly self-fertile late bloom but more productive in mixed vineyards; uneven pale to dark pink/red berries with amethyst and watermelon shades; 18 to 22 Brix; and soft labrusca white wines with melon, white peach, pear, tropical fruit, guava, and watermelon notes"
+        },
+        {
+            type: "Grape",
+            name: "Winchell",
+            category: "White heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "late-early to early mid-season",
+            description: "Casscles describes Winchell as a superior white grape raised by James M. Clough of Stamford, Vermont around 1850 from seed of an unknown purple grape. Source notes: chiefly labrusca with possible vinifera and aestivalis background; vigorous to very vigorous; adapted to many soils and cool climates; very winter hardy; healthy; fungus disease resistant; very productive; dense canopy needing pruning for air flow; not a good table grape because it shells; fine wine grape; 18 to 19 Brix; perceived sweetness because of low acidity; berries fall after ripening; yellow-green wines with soft labrusca, honey, apricot, banana, and pineapple notes; and used to breed Cayuga White and Horizon"
+        },
+    ]
+}

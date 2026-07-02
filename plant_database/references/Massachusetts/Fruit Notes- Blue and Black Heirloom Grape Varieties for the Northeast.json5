@@ -1,0 +1,73 @@
+{
+    title: "Blue and Black Heirloom Grape Varieties for the Northeast",
+    author: "J. Stephen Casscles",
+    description: "Fruit Notes Volume 83, Number 4, Fall 2018 article describing blue and black heirloom grape varieties evaluated at Cedar Cliff Farm in Athens, New York",
+    url: "http://www.umassfruitnotes.com/v83n4/a5.pdf",
+    published: "Fall 2018",
+    accessed: "Jul 2026",
+    type: "journal article test",
+    locations: [
+        {
+            name: "Cedar Cliff Farm, Athens, New York",
+            latitude: 42.2609,
+            longitude: -73.8096
+        }
+    ],
+    categories: [
+        {
+            name: "Blue and black heirloom grape varieties for the Northeast",
+            description: "Casscles describes these locally developed blue and black heirloom grapes as suitable for most of New England and the Middle Atlantic States except the coldest regions, primarily for red wine production"
+        }
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Bacchus",
+            category: "Blue and black heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "late season",
+            description: "Casscles describes Bacchus as a James H. Ricketts seedling of Clinton first exhibited in 1879. Source notes: vigorous to very vigorous, healthy, productive, very winter hardy, very resistant to fungus diseases and insect damage, adaptable to many soils except droughty or high-lime soils, self-fertile, very early to early bloom, small to medium compact clusters, black glossy berries, 22 to 25 Brix, and dark fruity flinty red wines with enough acid and tannin for body and blending"
+        },
+        {
+            type: "Grape",
+            name: "Barry",
+            category: "Blue and black heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "late mid-season to early late season, after Concord or Baco Noir",
+            description: "Source names this as Rogers No. 43. Casscles describes Barry as a Carter x Black Hamburg hybrid bred by Edward S. Rogers of Salem, Massachusetts in 1851. Source notes: black to dark purplish-black berries with heavy blue bloom, vigorous, winter hardy like Delaware or Baco Noir, productive, susceptible to somewhat susceptible to fungus diseases especially powdery mildew, sterile female flowers blooming mid-season, pollinated by mid-season self-fertile varieties such as Concord, Cottage, Empire State, Delaware, Iona, and Winchell, and soft appealing Concord-like taste with little or no Muscat"
+        },
+        {
+            type: "Grape",
+            name: "Black Eagle",
+            category: "Blue and black heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "mid-season, like Concord",
+            description: "Casscles describes Black Eagle as an Underhill hybrid from Concord fertilized by Black Prince, made around 1862 by Richard T. Underhill and possibly Stephen W. Underhill. Source notes: self-infertile but pollinates readily in mixed vineyards, late bud break, vinifera-like leaf pattern with thick olive labrusca-like leaves, female flowers open mid-season, vigorous on heavy loam soils, good cold resistance, moderately susceptible to fungus diseases, large tapering black clusters, and integrated full flavors combining soft labrusca and some Muscat"
+        },
+        {
+            type: "Grape",
+            name: "Concord",
+            category: "Blue and black heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "mid-season to late mid-season",
+            description: "Casscles includes Concord as a reference grape for comparing winter hardiness, flowering time, ripening time, disease resistance, and productivity. Source describes Concord as a pure labrusca from seed of a wild grape planted by Ephraim Bull of Concord, Massachusetts in fall 1843 and introduced in 1854. Source notes: vigorous to very vigorous, very productive across many soils and climates, very winter hardy, relatively resistant to fungus diseases and insect damage, good attractive table grape clusters, but not high wine quality except for sherries and ports compared with other labrusca varieties"
+        },
+        {
+            type: "Grape",
+            name: "Cottage",
+            category: "Blue and black heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "about the same time as Concord, or earlier",
+            description: "Casscles describes Cottage as Ephraim Bull's Concord seedling introduced in 1869. Source notes: resembles Concord but is more soil-particular, very vigorous, healthy, winter hardy, moderately fungus disease resistant but not as resistant as Concord, fruit quality better than Concord with less foxy labrusca flavor, richer and more delicate flavor for better wines, softer acids and balanced tannins, uneven ripening, drops fruit when ripe, smaller clusters than Concord, not a table grape, and useful for ports, sherries, or semi-dry country red wines"
+        },
+        {
+            type: "Grape",
+            name: "Eumelan",
+            category: "Blue and black heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "late early to early mid-season; can hang to mid-season to late mid-season",
+            description: "Casscles describes Eumelan as a chance seedling found in Mr. Thorne's yard at Fishkill Landing, now Beacon, New York, around 1847. Source notes: vigorous, very winter hardy, productive, attractive black to blue berries with fine bloom, loose large slender clusters, rich sweet vinous flavor with little foxiness, up to 24 Brix with low acid, hangs well without cracking or shelling, moderate fungus disease susceptibility, sterile female flowers blooming late but pollinating readily with a compatible pollinator, and complex flinty red wines with good body and fruit"
+        },
+        {
+            type: "Grape",
+            name: "Herbert",
+            category: "Blue and black heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "mid-season to a bit earlier, along the lines of Concord and earlier than Barry",
+            description: "Source names this as Rogers No. 44. Casscles describes Herbert as a Carter x Black Hamburg black heirloom grape for wine or table use, used by the New York State Agricultural Experiment Station to develop Steuben, Corot Noir, Noiret, and Geneva Red. Source notes: dull blue-black to black berries with thick blue bloom, vigorous to very vigorous, productive, open airy growth habit, winter hardy to moderately winter hardy, good fungus disease resistance, mid-season bloom, self-sterile female flowers, pollinated by self-fertile mid-season varieties such as Concord, Delaware, Empire State, Iona, Winchell, or Worden, 19 to 21 Brix, and a soft Concord taste with a few Muscat flavors"
+        },
+    ]
+}

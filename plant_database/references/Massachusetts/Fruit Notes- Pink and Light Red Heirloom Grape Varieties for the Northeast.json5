@@ -1,0 +1,80 @@
+{
+    title: "Pink and Light Red Heirloom Grape Varieties for the Northeast",
+    author: "J. Stephen Casscles",
+    description: "Fruit Notes Volume 83, Number 4, Fall 2018 article describing pink and light red heirloom grape varieties evaluated at Cedar Cliff Farm in Athens, New York",
+    url: "http://www.umassfruitnotes.com/v83n4/a6.pdf",
+    published: "Fall 2018",
+    accessed: "Jul 2026",
+    type: "journal article test",
+    locations: [
+        {
+            name: "Cedar Cliff Farm, Athens, New York",
+            latitude: 42.2609,
+            longitude: -73.8096
+        }
+    ],
+    categories: [
+        {
+            name: "Pink and light red heirloom grape varieties for the Northeast",
+            description: "Casscles describes these locally developed pink and light red heirloom grapes as suitable for most of New England and the Middle Atlantic States except the coldest regions; many are dual-purpose grapes for wine or table use"
+        }
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Agawam",
+            category: "Pink and light red heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "mid-season to late-mid season, soon after Concord",
+            description: "Source names this as Rogers No. 15. Casscles describes Agawam as a Carter x Black Hamburg hybrid bred by Edward S. Rogers of Salem, Massachusetts in 1851. Source notes: dark dull purplish-red fruit with lilac bloom, vigorous and hardy with thick canes, winter hardy, productive to very productive, needs a careful spray program for fungus diseases, prefers somewhat heavy soils, the only completely self-fertile Rogers hybrid though production improves in mixed vineyards, 19 to 20 Brix, and a dual-purpose grape good for table use and aromatic fruity Muscat-like white wine with herbal finish"
+        },
+        {
+            type: "Grape",
+            name: "Delaware",
+            category: "Pink and light red heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "early mid-season to mid-season",
+            description: "Casscles describes Delaware as a premium dark pink grape first identified in Ohio in 1849, useful for dry, semi-dry, sparkling, blended, or dessert white wines and for table use. Source notes: self-fertile, somewhat finicky in the field but generally tolerant of most soils, prefers rich but not too rich loam or slightly clay loam, winter hardy, moderate to average vigor and productivity, small-medium compact one-shouldered clusters, more resistant to fungus diseases than most French-American hybrids, 22 to 27 Brix, can hang on the vine for a long time, and has fruity/floral Muscat and light spice flavors"
+        },
+        {
+            type: "Grape",
+            name: "Diana",
+            category: "Pink and light red heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "about one week to ten days after Concord",
+            description: "Casscles describes Diana as a grape planted by Diana Crehore of Milton, Massachusetts around 1834 from open-pollinated Catawba seeds. Source notes: did not do well in cool New England but thrived in the warmer Mid-Hudson River Valley, full pretty clusters, exotic rich spicy tangy Catawba-like flavor with more guava, 19 to 20 Brix, prefers relatively poor dry gravelly soil with little compost or nitrogen, vigorous and productive on suitable soils, self-fertile mid-season flowers, delicate pale red/amber to rose color, somewhat cold tender, somewhat resistant to fungus diseases, and medium-sized berries with skin adhering to flesh"
+        },
+        {
+            type: "Grape",
+            name: "Goethe",
+            category: "Pink and light red heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "late to very late",
+            description: "Source names this as Rogers No. 1. Casscles describes Goethe as a Carter x Black Hamburg hybrid with more Muscat and less labrusca flavor, red-brown to pale red fruit, and a slight bloom. Source notes: growth descriptions vary from medium difficult to very vigorous because it is soil-sensitive, likes sandy and gravelly soils and grows too much foliage in rich clay, hardy to very winter hardy, productive, disease resistance ranges from fairly immune to somewhat susceptible, sensitive to powdery mildew, mid-season bloom, partially self-fertile, pollinated by varieties such as Concord, Delaware, Diamond, Iona, and Winchell, one of the best Rogers grapes for table and wine, 18 to 19 Brix, low acids like Delaware, and especially suited to warmer New Jersey, Pennsylvania, and lower Hudson Valley sites"
+        },
+        {
+            type: "Grape",
+            name: "Jefferson",
+            category: "Pink and light red heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "early-late season, approximately seven to ten days after Concord",
+            description: "Casscles describes Jefferson as a Concord x Iona hybrid bred by James H. Ricketts of Newburgh, New York and introduced in 1880. Source notes: excellent table or wine grape, resembles Concord in vigor, productivity, health, and disease resistance but is not its equal, fruit resembles Iona and clusters are prettier than Iona, not particular about soils except it dislikes lime soils, high-quality red/bronze grape, superior table grape with attractive appearance and very large to large clusters, ships and keeps well, rich vinous flavor with delicate strawberry-like aroma, and excellent pale golden wines with apricot, soft labrusca, honey, pear, melon, and light almond notes"
+        },
+        {
+            type: "Grape",
+            name: "Massasoit",
+            category: "Pink and light red heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "early for a Rogers hybrid, along with early ripening varieties such as Delaware",
+            description: "Source names this as Rogers No. 3. Casscles describes Massasoit as a Carter x Black Hamburg hybrid with dark-brownish red to red fruit and lilac bloom. Source notes: strong, hardy, vigorous to very vigorous, productive, winter hardy, fairly susceptible to fungus diseases, self-sterile with mid-season to late-season bloom, may sometimes set very partially filled clusters of small to very small seedless grapes referred to as Williams Seedless, medium to medium-large berries, thin skin mostly adhering to pulp, and average 19.5 Brix with acids like Concord"
+        },
+        {
+            type: "Grape",
+            name: "Salem",
+            category: "Pink and light red heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "mid-season along with Concord or even before",
+            description: "Source names this as Rogers No. 22 and No. 53. Casscles describes Salem as a Carter x Black Hamburg hybrid with attractive dark red/chestnut fruit and medium blue bloom. Source notes: vigorous, moderately productive with variable production, susceptible to fungus diseases without a good spray program but has an open canopy, very winter hardy and one of Rogers' hardiest varieties, not soil-particular, self-sterile mid-season flowers, pollinated by Catawba, Concord, Delaware, Iona, Empire State, Jefferson, Niagara, Winchell, and Worden, early for a Rogers hybrid, dual-purpose, handsome table fruit, high-quality white labrusca-type wine, soft labrusca/Muscat nose, and 17 Brix with low acidity like Delaware"
+        },
+        {
+            type: "Grape",
+            name: "Vergennes",
+            category: "Pink and light red heirloom grape varieties for the Northeast",
+            harvest_time_unparsed: "late, about one to two weeks after Concord",
+            description: "Casscles describes Vergennes as a chance labrusca seedling found in William E. Greene's garden in Vergennes, Vermont in 1874. Source notes: red grape used for quality dry and semi-dry white labrusca-type wines, generally winter hardy, productive to very productive, large-berried attractive bright red fruit, medium clusters that are broad and cylindrical to tapering with variable compactness but generally loose, healthy and somewhat resistant to fungus diseases, safe and productive for marginal vineyard sites, and semi-sterile flowers blooming mid-season to late season"
+        },
+    ]
+}

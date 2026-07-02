@@ -1,0 +1,42 @@
+{
+    title: "Promising New Jersey Hard Cider Apple Trial Updates",
+    author: "Megan Muehilbauer",
+    description: "Fruit Notes Volume 83, Number 4, Fall 2018 short update on the hard cider apple topworking trial at Rutgers Snyder Research and Extension Farm",
+    url: "http://www.umassfruitnotes.com/v83n4/a3.pdf",
+    published: "Fall 2018",
+    accessed: "Jul 2026",
+    type: "journal article test",
+    locations: [
+        {
+            name: "Rutgers Snyder Research and Extension Farm, Pittstown, New Jersey",
+            latitude: 40.5599,
+            longitude: -74.9544
+        }
+    ],
+    categories: [
+        {
+            name: "Hard cider apple topworking trial update",
+            description: "The article reports first-year graft establishment and preliminary growth observations for a 31-cultivar hard cider apple trial, but only names a few cultivars directly"
+        }
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Ellis Bitter",
+            category: "Hard cider apple topworking trial update",
+            description: "Article photo captions show newly grafted and six-month Ellis Bitter scions in the hard cider apple topworking trial at Rutgers Snyder Research and Extension Farm"
+        },
+        {
+            type: "Apple",
+            name: "Red Astrachan",
+            category: "Hard cider apple topworking trial update",
+            description: "Preliminary 2018 data in the Rutgers Snyder Farm hard cider variety demonstration trial found Red Astrachan had one of the largest trunk cross-sectional areas among the 31 cultivars. Source describes it as an astringent hard cider variety with dark red scarlet skin"
+        },
+        {
+            type: "Apple",
+            name: "Stoke Red",
+            category: "Hard cider apple topworking trial update",
+            description: "Preliminary 2018 data in the Rutgers Snyder Farm hard cider variety demonstration trial found Stoke Red had the most apical growth among the 31 cultivars. Source describes it as a bittersharp hard cider variety with yellow skin and red flesh"
+        },
+    ]
+}
