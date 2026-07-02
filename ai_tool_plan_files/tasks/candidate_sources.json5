@@ -3184,7 +3184,7 @@
         },
         {
             id: "uidaho-bul855-currants-gooseberries-jostaberries",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Growing Currants, Gooseberries and Jostaberries in the Inland Northwest and Intermountain West",
             institution: "University of Idaho Extension",
@@ -3214,7 +3214,13 @@
             notes: [
                 "Mined from plant_database/references/Montana/MSU MT202101AG Growing Cold-Hardy Berries and Small Fruits in Montana.pdf",
                 "University of Idaho VERSO record lists Danny Barney and Esmaeil Fallahi, publication date 2009-02-02, and DOI 10.60841/000000094",
-                "Landing page explicitly says the 21-page publication includes detailed lists of recommended cultivars"
+                "Landing page explicitly says the 21-page publication includes detailed lists of recommended cultivars",
+                "Encoded in plant_database/references/Idaho/UI Extension BUL 855 Growing Currants Gooseberries and Jostaberries.json5",
+                "Config extraction added at helper_scripts/extraction_configs/uidaho_bul855_currants_gooseberries_jostaberries.json",
+                "Manifest entry added as uidaho_bul855_currants_gooseberries_jostaberries",
+                "Used reviewed static_rows because pdftotext -layout preserved the tables but split multi-line cultivar names and drifted a few row values",
+                "The older extension.uidaho.edu PDF URL failed locally; source review used the VERSO PDF download URL with filePid=13325594760001851",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {
@@ -3664,7 +3670,7 @@
         },
         {
             id: "hortsci-jujube-flowering-fruiting-southwestern-us-2015",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Jujube Flowering and Fruiting in the Southwestern United States",
             institution: "HortScience",
@@ -3687,7 +3693,14 @@
             notes: [
                 "Mined from plant_database/references/New Mexico/HortSci Early Performance of Jujube Drying and Multipurpose Cultivars....pdf",
                 "ASHS page resolves for the HortScience 50:839-846 article",
-                "Likely parsing issue: study tables may need cultivar-by-location extraction rather than single-source recommendations"
+                "Likely parsing issue: study tables may need cultivar-by-location extraction rather than single-source recommendations",
+                "Encoded in plant_database/references/National/HortSci Jujube Flowering and Fruiting in the Southwestern United States.json5",
+                "Config extraction added at helper_scripts/extraction_configs/hortsci_jujube_flowering_fruiting_southwestern_us_2015.json",
+                "Manifest entry added as hortsci_jujube_flowering_fruiting_southwestern_us_2015",
+                "Used inline_quoted_names over selected ASHS paragraphs because the article's useful study results are exposed as article prose rather than clean HTML tables",
+                "Parser now supports source-local text_fixes before inline quoted-name scanning, used for slash-joined aliases such as Shanxi Li/Linyi Li and Shuimen/Sui",
+                "Parser duplicate-plant merging was used to combine multiple trait observations into one row per cultivar with a broad study category",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {

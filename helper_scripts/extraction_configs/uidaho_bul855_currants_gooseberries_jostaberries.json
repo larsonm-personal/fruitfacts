@@ -1,0 +1,182 @@
+{
+  "source": {
+    "kind": "static"
+  },
+  "reference_fields": [
+    ["title", "UI Extension BUL 855 Growing Currants Gooseberries and Jostaberries"],
+    ["author", "Danny L. Barney and Esmaeil Fallahi"],
+    ["description", "University of Idaho Extension bulletin with recommended currant, gooseberry, and jostaberry cultivars for the Inland Northwest and Intermountain West"],
+    ["url", "https://verso.uidaho.edu/esploro/outputs/report/Growing-Currants-Gooseberries-and-Jostaberries-in/996749629101851"],
+    ["publication_number", "BUL 855"],
+    ["published", "February 2009"],
+    ["accessed", "Jul 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Idaho Extension, Moscow, Idaho",
+      "latitude": 46.7288,
+      "longitude": -117.0126
+    }
+  ],
+  "categories": [
+    {
+      "name": "Black currant cultivars for the Inland Northwest and Intermountain West",
+      "description": "University of Idaho Extension BUL 855 lists these black currant cultivars as recommended for the Inland Northwest and Intermountain West"
+    },
+    {
+      "name": "Red currant cultivars for the Inland Northwest and Intermountain West",
+      "description": "University of Idaho Extension BUL 855 lists these red currant cultivars as recommended for the Inland Northwest and Intermountain West"
+    },
+    {
+      "name": "White currant cultivars for the Inland Northwest and Intermountain West",
+      "description": "University of Idaho Extension BUL 855 lists these white currant cultivars as recommended for the Inland Northwest and Intermountain West"
+    },
+    {
+      "name": "American gooseberry cultivars for the Inland Northwest and Intermountain West",
+      "description": "University of Idaho Extension BUL 855 lists these American gooseberry cultivars as recommended for the Inland Northwest and Intermountain West"
+    },
+    {
+      "name": "European gooseberry cultivars for the Inland Northwest and Intermountain West",
+      "description": "University of Idaho Extension BUL 855 lists these European gooseberry cultivars as recommended for the Inland Northwest and Intermountain West"
+    },
+    {
+      "name": "Jostaberry cultivars for the Inland Northwest and Intermountain West",
+      "description": "University of Idaho Extension BUL 855 discusses these jostaberry cultivars for the Inland Northwest and Intermountain West"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "static_rows",
+      "harvest_key": "ripens",
+      "harvest_value_map": {
+        "1": "early summer",
+        "1-2": "early to midsummer",
+        "2": "midsummer",
+        "3": "late summer"
+      },
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["ripens", "Source ripening code"],
+            ["fruit_size", "Fruit size"],
+            ["powdery_mildew_resistance", "Powdery mildew resistance"],
+            ["blister_rust", "Blister rust rating"],
+            ["comments", "Comments"]
+          ]
+        }
+      ],
+      "dedupe_keys": ["plant_type", "name", "category"],
+      "row_groups": [
+        {
+          "fields": {
+            "plant_type": "Currant",
+            "category": "Black currant cultivars for the Inland Northwest and Intermountain West"
+          },
+          "rows": [
+            {"name": "Ben Alder", "ripens": "1", "fruit_size": "M", "powdery_mildew_resistance": "G", "blister_rust": "HS", "comments": "Produces high quality juice. Vigorous, late flowering, and somewhat resistant to spring frosts. High yielding under ideal conditions, but yields can be low"},
+            {"name": "Ben Connan", "ripens": "1", "fruit_size": "L", "powdery_mildew_resistance": "G", "blister_rust": "S", "comments": "Deep black berries. Suitable for fresh use and processing. Not ideal for juice. Tolerates spring frosts. Can produce high yields. Compact bushes. Suitable for machine harvesting"},
+            {"name": "Ben Lomond", "ripens": "1", "fruit_size": "L", "powdery_mildew_resistance": "F", "blister_rust": "S", "comments": "Blooms late and is frost resistant. Consistently high yields. Moderately vigorous. Recommended for commercial fresh and processing markets, U-pick, and home production. Machine harvestable"},
+            {"name": "Ben Sarek", "ripens": "1", "fruit_size": "VL", "powdery_mildew_resistance": "G", "blister_rust": "R", "comments": "Compact plant that is moderately resistant to white pine blister rust and powdery mildew. Very high yielding with very large berries. Used mainly for pick-your-own and home use, not commercial juice production"},
+            {"name": "Boskoop Giant", "ripens": "1", "fruit_size": "L", "powdery_mildew_resistance": "F", "blister_rust": "HS", "comments": "Long loose clusters. Berries near cluster tips often abort due to poor pollination. Vigorous. Plants labeled Boskoop Giant are not always true-to-name. Fragrant leaves and buds are reportedly suited for teas"},
+            {"name": "Champion", "ripens": "1", "fruit_size": "M-L", "powdery_mildew_resistance": "F-G", "blister_rust": "S", "comments": "Mild-flavored berries with good quality but variable size and uneven ripening. Vigorous"},
+            {"name": "Consort", "ripens": "1", "fruit_size": "S-M", "powdery_mildew_resistance": "P", "blister_rust": "I", "comments": "Resistant to blister rust but highly susceptible to powdery mildew. Poor fruit quality. If blister rust is a concern, Titania and Ben Sarek are better choices"},
+            {"name": "Crusader", "ripens": "1", "fruit_size": "S-M", "powdery_mildew_resistance": "P", "blister_rust": "I", "comments": "Resistant to blister rust but highly susceptible to powdery mildew. Poor fruit quality. If blister rust is a concern, Titania and Ben Sarek are better choices"},
+            {"name": "Coronet", "ripens": "1", "fruit_size": "S-M", "powdery_mildew_resistance": "P", "blister_rust": "I", "comments": "Resistant to blister rust but highly susceptible to powdery mildew. Poor fruit quality. If blister rust is a concern, Titania and Ben Sarek are better choices"},
+            {"name": "Crandall", "ripens": "3", "fruit_size": "VL", "powdery_mildew_resistance": "E", "blister_rust": "R", "comments": "Selection of North American golden currant used as an ornamental. Weak canes droop under crop loads, making trellises desirable. Ripe berries have a mild, pleasant flavor different from European black currants. Performs well in areas with hot summers"},
+            {"name": "Kerry", "ripens": "1-2", "fruit_size": "M-L", "powdery_mildew_resistance": "F", "blister_rust": "S", "comments": "Canes are vigorous and productive"},
+            {"name": "Strata", "ripens": "1", "fruit_size": "VL", "powdery_mildew_resistance": "F", "blister_rust": "S", "comments": "Berries are sweet and suited for fresh use or processing. Canes are moderately vigorous. Yields can be low"},
+            {"name": "Swedish Black", "ripens": "1", "fruit_size": "L", "powdery_mildew_resistance": "F-G", "blister_rust": "HS", "comments": "Very sweet berries with excellent flavor. Canes are moderately vigorous and sprawling, making management somewhat difficult. Yields can be low"},
+            {"name": "Titania", "ripens": "1-2", "fruit_size": "VL", "powdery_mildew_resistance": "G", "blister_rust": "I", "comments": "Ripens uniformly. Mild-flavored, but bitter fruit flavor can occur. Highly self-fertile. Vigorous and high yielding. Suitable for commercial and home production. Immune to blister rust but susceptible to botryosphaeria cane dieback"},
+            {"name": "Topsy", "ripens": "1", "fruit_size": "L", "powdery_mildew_resistance": "F", "blister_rust": "HS", "comments": "Thick-skinned fruits ripen during mid-season. Canes are vigorous"}
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Currant",
+            "category": "Red currant cultivars for the Inland Northwest and Intermountain West"
+          },
+          "rows": [
+            {"name": "Cascade", "ripens": "1", "fruit_size": "L", "powdery_mildew_resistance": "F", "blister_rust": "R", "comments": "Berries are high in sugar and have good flavor. Moderately vigorous"},
+            {"name": "Jonkheer van Tets", "ripens": "1", "fruit_size": "M", "powdery_mildew_resistance": "F", "blister_rust": "R", "comments": "Berries are variable in size, of average quality, and can split in wet weather. Vigorous. Very popular in Europe"},
+            {"name": "Laxton's No. 1", "ripens": "1", "fruit_size": "M-L", "powdery_mildew_resistance": "F", "blister_rust": "R", "comments": "Berries have good quality and are tightly bunched on the strigs. Very productive. Popular commercially in Europe"},
+            {"name": "Minnesota No. 71", "ripens": "1-2", "fruit_size": "M-L", "powdery_mildew_resistance": "G", "blister_rust": "S", "comments": "Consistent fruit quality. Vigorous. Popular for commercial use in England. One of the best cultivars in North America"},
+            {"name": "Perfection", "ripens": "1-2", "fruit_size": "L", "powdery_mildew_resistance": "F", "blister_rust": "R", "comments": "Good flavor but sunscalds easily. Long, easy-to-pick clusters. Vigorous canes are susceptible to breaking. Very cold hardy. For commercial production in colder areas"},
+            {"name": "Portal Ruby", "ripens": "1", "fruit_size": "L", "powdery_mildew_resistance": "F", "blister_rust": "S", "comments": "Berries are tart. Canes are moderately vigorous"},
+            {"name": "Prince Albert", "ripens": "2", "fruit_size": "S-M", "powdery_mildew_resistance": "F-G", "blister_rust": "S", "comments": "Berries hang well without overripening. Long, easy-to-pick stems. Moderately vigorous. Excellent late-season cultivar, particularly for U-pick"},
+            {"name": "Red Lake", "ripens": "2", "fruit_size": "M-L", "powdery_mildew_resistance": "F", "blister_rust": "S", "comments": "Good flavor. Moderately vigorous. Clusters are long and easy to pick. Excellent for commercial and home production"},
+            {"name": "Rondom", "ripens": "2", "fruit_size": "S-M", "powdery_mildew_resistance": "G", "blister_rust": "I", "comments": "Berries hang well without overripening. Long, easy-to-pick clusters. Vigorous. Popular commercially in Europe. Immune to blister rust"},
+            {"name": "Rosetta", "ripens": "2", "fruit_size": "L", "powdery_mildew_resistance": "F", "blister_rust": "S", "comments": "Berries are tart. Long, easy-to-pick clusters. Moderately vigorous. Promising recent introduction"},
+            {"name": "Rovada", "ripens": "2", "fruit_size": "L", "powdery_mildew_resistance": "G", "blister_rust": "R", "comments": "Late ripening. Long, easy-to-pick clusters. Moderately susceptible to fruit run off. Resistant to leaf spot. High yields. Popular commercially in Central Europe"},
+            {"name": "Stanza", "ripens": "1-2", "fruit_size": "M-L", "powdery_mildew_resistance": "F", "blister_rust": "R", "comments": "Long, easy-to-pick stems. Suitable for fresh use and especially for juicing. Acidic flavor. Canes are moderately vigorous and reliably productive"},
+            {"name": "Stephens No. 9", "ripens": "1-2", "fruit_size": "L-VL", "powdery_mildew_resistance": "F-G", "blister_rust": "R", "comments": "Canes are vigorous. One of the most popular red currants in North America"},
+            {"name": "Tatran", "ripens": "2", "fruit_size": "L", "powdery_mildew_resistance": "Unk", "blister_rust": "R", "comments": "Berries have good quality and are borne on exceptionally long clusters. High yields reported. Vigorous and cold hardy"},
+            {"name": "Victoria", "ripens": "1-2", "fruit_size": "S-M", "powdery_mildew_resistance": "F", "blister_rust": "Unk", "comments": "Small firm berries hang well without overripening. Vigorous, productive, and very cold hardy. With mechanical harvesting, may be suitable for commercial processing markets"},
+            {"name": "Wilder", "ripens": "1", "fruit_size": "S-M", "powdery_mildew_resistance": "G", "blister_rust": "S", "comments": "Berries are variable in size, have good quality, and hang well without overripening. Long, easy-to-pick clusters. Vigorous. Good commercial or home choice"}
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Currant",
+            "category": "White currant cultivars for the Inland Northwest and Intermountain West"
+          },
+          "rows": [
+            {"name": "Blanka", "ripens": "1-2", "fruit_size": "M", "powdery_mildew_resistance": "F-G", "blister_rust": "S", "comments": "Late ripening, very productive, and very resistant to frosts. Persistent for a long season. New to North America. From Slovakia. Fruit run-off can be high"},
+            {"name": "Gloire des Sablons", "ripens": "1", "fruit_size": "M-L", "powdery_mildew_resistance": "F-G", "blister_rust": "R", "comments": "Pinkish-white fruits with average flavor and quality. European heritage cultivar"},
+            {"name": "Primus", "ripens": "1", "fruit_size": "S-M", "powdery_mildew_resistance": "F", "blister_rust": "S", "comments": "Berries have good flavor and are whiter than some other white currants. Yields can be high. New to North America. From Slovakia"},
+            {"name": "White Currant 1301", "ripens": "1-2", "fruit_size": "M", "powdery_mildew_resistance": "F-G", "blister_rust": "R", "comments": "Medium-sized berries on moderately vigorous canes that are somewhat resistant to powdery mildew and resistant to blister rust. From Sweden"},
+            {"name": "White Dutch", "ripens": "1", "fruit_size": "S-M", "powdery_mildew_resistance": "G", "blister_rust": "S", "comments": "Excellent quality berries ripen early and are darker than other white currants. Vigorous and very productive. Small uneven berry size is the main limitation. European heritage cultivar"},
+            {"name": "White Imperial", "ripens": "1", "fruit_size": "M-L", "powdery_mildew_resistance": "E", "blister_rust": "S", "comments": "Moderately vigorous and productive. Excellent for commercial and home production. European heritage cultivar"},
+            {"name": "White Versailles", "ripens": "1-2", "fruit_size": "M-L", "powdery_mildew_resistance": "G", "blister_rust": "S", "comments": "Berries have good quality and are borne on long clusters. Vigorous. European heritage cultivar"}
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Gooseberry",
+            "category": "American gooseberry cultivars for the Inland Northwest and Intermountain West"
+          },
+          "rows": [
+            {"name": "Captivator", "ripens": "2", "fruit_size": "M", "powdery_mildew_resistance": "G", "blister_rust": "R", "comments": "Greenish-red to red fruit. Good flavor. Moderately vigorous and less spiny than some cultivars. Excellent for commercial and home production"},
+            {"name": "Glenndale", "ripens": "2", "fruit_size": "S", "powdery_mildew_resistance": "F", "blister_rust": "R", "comments": "Moderate quality dark red to purple berries. Can produce high yields. Canes are very thorny and vigorous. Tolerates bright sun and high temperatures"},
+            {"name": "Jahn's Prairie", "ripens": "2", "fruit_size": "L", "powdery_mildew_resistance": "G", "blister_rust": "R", "comments": "Red-pink high quality dessert gooseberry. High yields. Thorny. Somewhat slow to mature. For home use and commercial testing. Resistant to blister rust, leaf spot, stem Botrytis, aphids, and sawflies"},
+            {"name": "Jeanne", "ripens": "3", "fruit_size": "M", "powdery_mildew_resistance": "G", "blister_rust": "R", "comments": "Newly released dark red, late ripening, disease resistant dessert gooseberry"},
+            {"name": "Oregon", "ripens": "2", "fruit_size": "S", "powdery_mildew_resistance": "F-G", "blister_rust": "R", "comments": "Also known as Oregon Champion. Tart white to pale green berries. Best suited to processing. Vigorous"},
+            {"name": "Pixwell", "ripens": "2", "fruit_size": "S-M", "powdery_mildew_resistance": "E", "blister_rust": "R", "comments": "Pale green to pinkish-red berries hang below the canes, facilitating hand picking. Can become bitter when overripe. Vigorous. Very reliable. Best suited to processing"},
+            {"name": "Poorman", "ripens": "2", "fruit_size": "S", "powdery_mildew_resistance": "G", "blister_rust": "R", "comments": "Red berries are sweet, aromatic, and begin ripening in midseason. Vigorous with fewer spines than some cultivars. One of the best gooseberries for North America"},
+            {"name": "Stanbridge", "ripens": "2", "fruit_size": "S", "powdery_mildew_resistance": "G", "blister_rust": "Unk", "comments": "Yellowish-green fruits. Yields are moderate. Canes are erect, vigorous, and develop few or no spines"},
+            {"name": "Welcome", "ripens": "2", "fruit_size": "M", "powdery_mildew_resistance": "F-G", "blister_rust": "S", "comments": "Red fruit. Canes are initially weak and spreading but become more vigorous and erect as the plant matures. Widely available in the United States"}
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Gooseberry",
+            "category": "European gooseberry cultivars for the Inland Northwest and Intermountain West"
+          },
+          "rows": [
+            {"name": "Chautauqua", "ripens": "2", "fruit_size": "L", "powdery_mildew_resistance": "F", "blister_rust": "Unk", "comments": "Green fruit with good flavor and quality. Canes are dense, spreading, and moderately erect. One of the most promising European gooseberries for North America"},
+            {"name": "Green Hansa", "ripens": "2", "fruit_size": "M-L", "powdery_mildew_resistance": "F", "blister_rust": "Unk", "comments": "Green fruits are suitable for dessert use. Canes are below average in size and vigor"},
+            {"name": "Greenfinch", "ripens": "2", "fruit_size": "M", "powdery_mildew_resistance": "G", "blister_rust": "R", "comments": "Mid-season ripening with green-yellow fruit"},
+            {"name": "Keepsake", "ripens": "2", "fruit_size": "S-M", "powdery_mildew_resistance": "F-G", "blister_rust": "R", "comments": "Greenish-red berries are variable in size. Fruit quality is good, but size variability limits commercial value. Moderately vigorous"},
+            {"name": "Lepaa Red", "ripens": "2", "fruit_size": "S", "powdery_mildew_resistance": "G-E", "blister_rust": "Unk", "comments": "Small red berries have good flavor. Plants are small, vigorous, and productive. Highly reliable. Best suited for processing, but fresh flavor may make it useful for farmers markets"},
+            {"name": "Malling Invicta", "ripens": "2", "fruit_size": "L", "powdery_mildew_resistance": "F", "blister_rust": "R", "comments": "Early ripening, very high yielding, with large yellow fruits"},
+            {"name": "May Duke", "ripens": "2", "fruit_size": "M-L", "powdery_mildew_resistance": "F", "blister_rust": "Unk", "comments": "Green to dull red berries when ripe and pleasantly flavored. Vigorous"},
+            {"name": "Speedwell", "ripens": "2", "fruit_size": "M-L", "powdery_mildew_resistance": "F-G", "blister_rust": "R", "comments": "Red, sweet berries with fair quality. Canes are moderately vigorous"}
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Currant",
+            "category": "Jostaberry cultivars for the Inland Northwest and Intermountain West"
+          },
+          "rows": [
+            {"name": "Josta", "comments": "Widely available in North America. Reported self-fertile, but North American growers have reported poor fruit set. Resistant to blister rust under field conditions"},
+            {"name": "Jostine", "comments": "Imported into the United States but not yet widely available. At least partially self-sterile and should be planted with Jogranda for good fruit set"},
+            {"name": "Jogranda", "comments": "Also known as Jostagranda and Jostaki. Imported into the United States but not yet widely available. At least partially self-sterile and should be planted with Jostine for good fruit set"}
+          ]
+        }
+      ]
+    }
+  ]
+}

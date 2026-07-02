@@ -568,9 +568,12 @@ def merge_duplicate_plant_records(plants, merge_spec):
         merge_spec = {}
     keys = merge_spec.get("keys", ["type", "name"])
     fields = merge_spec.get("fields", ["description"])
+    merged_category = merge_spec.get("category")
     merged = []
     seen = {}
     for plant in plants:
+        if merged_category:
+            plant["category"] = merged_category
         signature = tuple(plant.get(key) for key in keys)
         existing = seen.get(signature)
         if not existing:
@@ -1482,6 +1485,7 @@ def inline_quoted_name_rows(page, extractor):
                 if rule["names_before"] not in name_text:
                     continue
                 name_text = name_text.split(rule["names_before"], 1)[0]
+            name_text = apply_text_fixes(name_text, extractor.get("text_fixes", {}))
             values = html_rule_values(rule)
             for name in quoted_names(name_text):
                 if extractor.get("strip_trailing_name_punctuation"):

@@ -1,0 +1,351 @@
+{
+    title: "HortScience Jujube Flowering and Fruiting in the Southwestern United States",
+    author: "Shengrui Yao, Junxin Huang, and Robert Heyduck",
+    description: "HortScience 50(6):839-846 article on flowering habits, fruit set, self-fruitfulness, and seed development of jujube cultivars at Alcalde, New Mexico",
+    url: "https://journals.ashs.org/view/journals/hortsci/50/6/article-p839.xml",
+    published: "June 2015",
+    accessed: "Jul 2026",
+    type: "journal article test",
+    needs_help: true,
+    locations: [
+        {
+            name: "NMSU Sustainable Agriculture Science Center at Alcalde, Alcalde, New Mexico",
+            latitude: 36.0911,
+            longitude: -106.0568
+        },
+    ],
+    categories: [
+        {
+            name: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Yao, Huang, and Heyduck report flowering, fruit set, self-fruitfulness, seed development, and blooming-type observations for these jujube cultivars at Alcalde, New Mexico"
+        },
+    ],
+    plants: [
+        {
+            type: "Jujube",
+            name: "Zhongning",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Yao, Huang, and Heyduck report Zhongning had the best seed percentage each year among tested jujube cultivars at Alcalde. Source observation: Jujube cultivars with fewer flowers per node at Alcalde. Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Li",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars in the 2011 replicated Alcalde planting. Source observation: Jujube cultivars photographed for blooming sequence at Alcalde. Source observation: Jujube cultivars with fewer flowers per node at Alcalde. Source observation: Self-fruitful jujube cultivars at Alcalde. Source observation: Jujube cultivars with very low seed percentage from open-pollinated fruit at Alcalde. Source observation: Jujube cultivars with no fully developed seed at Alcalde. Source observation: Jujube cultivars with blooming type matching previous Florida reports"
+        },
+        {
+            type: "Jujube",
+            name: "Lang",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars in the 2011 replicated Alcalde planting. Source observation: Jujube cultivars photographed for blooming sequence at Alcalde. Source observation: Jujube cultivars with large flowers at Alcalde. Source observation: Jujube cultivar not self-fruitful at Alcalde. Source observation: Jujube cultivars with no fully developed seed at Alcalde. Source observation: Jujube cultivars with morning blooming type at Alcalde"
+        },
+        {
+            type: "Jujube",
+            name: "Sugarcane",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars in the 2011 replicated Alcalde planting. Source observation: Jujube cultivars photographed for blooming sequence at Alcalde. Source observation: Jujube cultivars with more flowers per node at Alcalde. Source observation: Jujube cultivars with early morning-type bloom at Alcalde. Source observation: Jujube cultivars with late morning-type bloom at Alcalde. Source observation: Jujube cultivars with low or inconsistent self-fruitfulness at Alcalde. Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Honey Jar",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars in the 2011 replicated Alcalde planting. Source names this as Honeyjar. Source observation: Jujube cultivars with small flowers at Alcalde. Source names this as Honeyjar. Source observation: Jujube cultivars with blooming type matching China reports after time shift. Source names this as Honeyjar"
+        },
+        {
+            type: "Jujube",
+            name: "So",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars in the 2011 replicated Alcalde planting. Source observation: Jujube cultivars with blooming type matching previous Florida reports"
+        },
+        {
+            type: "Jujube",
+            name: "Shanxi Li",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            AKA: ["Linyi Li"],
+            description: "Source observation: Jujube cultivars in the 2011 replicated Alcalde planting. Source lists Shanxi Li/Linyi Li together in one paragraph. Source observation: Jujube cultivars with fewer flowers per node at Alcalde. Source lists Shanxi Li/Linyi Li together in one paragraph. Source observation: Jujube cultivars with low or inconsistent self-fruitfulness at Alcalde. Source lists Shanxi Li/Linyi Li together in one paragraph. Source observation: Jujube cultivars with very low seed percentage from open-pollinated fruit at Alcalde. Source lists Shanxi Li/Linyi Li together in one paragraph. Source observation: Jujube cultivars with no fully developed seed at Alcalde. Source lists Shanxi Li/Linyi Li together in one paragraph. Source observation: Jujube cultivars with blooming type matching China reports after time shift. Source lists Shanxi Li/Linyi Li together in one paragraph"
+        },
+        {
+            type: "Jujube",
+            name: "Li-2",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars in the 2011 replicated Alcalde planting. Source observation: Jujube cultivars with fewer flowers per node at Alcalde. Source observation: Self-fruitful jujube cultivars at Alcalde. Source observation: Jujube cultivars with very low seed percentage from open-pollinated fruit at Alcalde. Source observation: Jujube cultivars with no fully developed seed at Alcalde. Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "September Late",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars in the 2011 replicated Alcalde planting. Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "GA866",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars in the 2011 replicated Alcalde planting. Source names this as GA-866. Source observation: Jujube cultivars with small flowers at Alcalde. Source names this as GA-866. Source observation: Jujube cultivars with blooming type matching previous Florida reports. Source names this as GA-866"
+        },
+        {
+            type: "Jujube",
+            name: "Sihong",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars photographed for blooming sequence at Alcalde. Source observation: Jujube cultivars with more flowers per node at Alcalde. Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Abbeville",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars photographed for blooming sequence at Alcalde. Source observation: Jujube cultivars with fewer flowers per node at Alcalde. Source observation: Jujube cultivars with low or inconsistent self-fruitfulness at Alcalde. Source observation: Jujube cultivar with best open-pollination fruit set at Alcalde. Source observation: Jujube cultivars with high seed percentage from open-pollinated fruit at Alcalde. Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Redland",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with fewer flowers per node at Alcalde. Source observation: Self-fruitful jujube cultivars at Alcalde. Source observation: Jujube cultivars with very low seed percentage from open-pollinated fruit at Alcalde. Source observation: Jujube cultivars with no fully developed seed at Alcalde. Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Daguazao",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with fewer flowers per node at Alcalde. Source observation: Self-fruitful jujube cultivars at Alcalde. Source observation: Jujube cultivars with very low seed percentage from open-pollinated fruit at Alcalde. Source observation: Jujube cultivars with no fully developed seed at Alcalde. Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Shuimen",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            AKA: ["Sui"],
+            description: "Source observation: Jujube cultivars with fewer flowers per node at Alcalde. Source lists Shuimen/Sui together in one paragraph. Source observation: Jujube cultivars with small flowers at Alcalde. Source uses Sui shorthand in some cultivar lists and Shuimen/Sui in one paragraph. Source observation: Jujube cultivars with blooming type matching previous Florida reports. Source lists Shuimen/Sui together in one paragraph"
+        },
+        {
+            type: "Jujube",
+            name: "Globe",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with fewer flowers per node at Alcalde. Source observation: Jujube cultivars with small flowers at Alcalde. Source observation: Jujube cultivars with high seed percentage from open-pollinated fruit at Alcalde. Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Liuyuexian",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with more flowers per node at Alcalde. Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Jinsi 2",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with more flowers per node at Alcalde. Source names this as Jinsi-2. Source observation: Jujube cultivars with high seed percentage from open-pollinated fruit at Alcalde. Source names this as Jinsi-2. Source observation: Jujube cultivars with blooming type matching China reports after time shift. Source names this as Jinsi-2"
+        },
+        {
+            type: "Jujube",
+            name: "Miyun",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with more flowers per node at Alcalde"
+        },
+        {
+            type: "Jujube",
+            name: "Jinsi 3",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with more flowers per node at Alcalde. Source names this as Jinsi-3. Source observation: Jujube cultivars with blooming type matching China reports after time shift. Source names this as Jinsi-3"
+        },
+        {
+            type: "Jujube",
+            name: "Fitzgerald",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivar with the highest flower number at Alcalde. Source observation: Jujube cultivars with blooming type matching previous Florida reports"
+        },
+        {
+            type: "Jujube",
+            name: "Chaoyang",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with small flowers at Alcalde. Source observation: Jujube cultivars with low or inconsistent self-fruitfulness at Alcalde. Source observation: Jujube cultivars with high seed percentage from open-pollinated fruit at Alcalde. Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Zaofengcui",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with small flowers at Alcalde. Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Maya",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with small flowers at Alcalde. Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Jing-39",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with large flowers at Alcalde. Source observation: Jujube cultivars with late morning-type bloom at Alcalde. Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Dragon",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with large flowers at Alcalde. Source observation: Jujube cultivars with low or inconsistent self-fruitfulness at Alcalde. Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Mopanzao",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with partial flower opening at Alcalde. Source observation: Jujube cultivars with low or inconsistent self-fruitfulness at Alcalde. Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Teapot",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with partial flower opening at Alcalde. Source observation: Self-fruitful jujube cultivars at Alcalde"
+        },
+        {
+            type: "Jujube",
+            name: "Mu",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with late morning-type bloom at Alcalde. Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Qiyuexian",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Self-fruitful jujube cultivars at Alcalde. Source observation: Jujube cultivars with very low seed percentage from open-pollinated fruit at Alcalde. Source observation: Jujube cultivars with no fully developed seed at Alcalde. Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Xiangzao",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Self-fruitful jujube cultivars at Alcalde. Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Youzao",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with low or inconsistent self-fruitfulness at Alcalde. Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Jinkuiwang",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with low or inconsistent self-fruitfulness at Alcalde. Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Dabailing",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with very low seed percentage from open-pollinated fruit at Alcalde. Source observation: Jujube cultivars with no fully developed seed at Alcalde. Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Don Polenski",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with no fully developed seed at Alcalde. Source observation: Jujube cultivars with morning blooming type at Alcalde"
+        },
+        {
+            type: "Jujube",
+            name: "Junzao",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with no fully developed seed at Alcalde. Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Xingguang",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with no fully developed seed at Alcalde. Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Chico",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type matching previous Florida reports"
+        },
+        {
+            type: "Jujube",
+            name: "Edhegard",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type matching previous Florida reports"
+        },
+        {
+            type: "Jujube",
+            name: "GI-1183",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type matching previous Florida reports"
+        },
+        {
+            type: "Jujube",
+            name: "Thornless",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type matching previous Florida reports. Source observation: Jujube cultivars with morning blooming type at Alcalde"
+        },
+        {
+            type: "Jujube",
+            name: "Tsao",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type matching previous Florida reports"
+        },
+        {
+            type: "Jujube",
+            name: "Hupingzao",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Banzao",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Jin",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Jinsi 4",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type matching China reports after time shift. Source names this as Jinsi-4"
+        },
+        {
+            type: "Jujube",
+            name: "Yuanling",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+            type: "Jujube",
+            name: "Ant Admiral",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Gaga",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Kongfucui",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Russian 2",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck. Source names this as Russia-2"
+        },
+        {
+            type: "Jujube",
+            name: "Sherwood",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Topeka",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+        {
+            type: "Jujube",
+            name: "Zaocuiwang",
+            category: "Jujube cultivars in the Alcalde flowering and fruiting study",
+            description: "Source observation: Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        },
+    ]
+}

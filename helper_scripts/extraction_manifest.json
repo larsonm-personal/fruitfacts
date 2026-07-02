@@ -355,6 +355,14 @@
         {
             "id": "japs_persimmon_cultivars_northern_areas",
             "config": "extraction_configs/japs_persimmon_cultivars_northern_areas.json"
+        },
+        {
+            "id": "uidaho_bul855_currants_gooseberries_jostaberries",
+            "config": "extraction_configs/uidaho_bul855_currants_gooseberries_jostaberries.json"
+        },
+        {
+            "id": "hortsci_jujube_flowering_fruiting_southwestern_us_2015",
+            "config": "extraction_configs/hortsci_jujube_flowering_fruiting_southwestern_us_2015.json"
         }
     ]
 }

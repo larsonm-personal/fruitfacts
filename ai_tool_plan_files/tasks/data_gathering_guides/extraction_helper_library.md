@@ -486,6 +486,9 @@ that group.
 - For layout slices that keep category labels inside cultivar prose, prefer
   source-local continuation skips and row overrides over broad parser behavior
   until the same bleed pattern appears in more than one source.
+- For layout-mode PDF tables with multi-line cultivar names or row-spanned
+  ratings, use reviewed `static_rows` when the text layer is good enough for
+  source review but not stable enough to assign every field mechanically.
 - Do not commit downloaded PDFs directly unless the DVC asset workflow is being
   used
 
@@ -511,6 +514,14 @@ that group.
 - For prose lists that mention aliases inside the same quoted-name run, prefer
   `exclude_names` plus a source note on the canonical row. Add `AKA` only when
   the base plant does not already carry a richer alias list.
+- For journal article pages without useful HTML tables, paragraph-bounded
+  `inline_quoted_names` rules can still encode cultivar study results. Use
+  source-local `text_fixes` before quote scanning to collapse slash-joined
+  aliases such as `Shanxi Li/Linyi Li` or `Shuimen/Sui`.
+- When a study article mentions the same cultivar in several trait groups,
+  use config-level `merge_duplicate_plants` with a broad merged `category`.
+  Emit compact rule descriptions, such as `Source observation: {category}`,
+  so the final reference keeps one row per cultivar.
 
 ## Next Library Steps
 

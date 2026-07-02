@@ -1,5 +1,5 @@
-rustc 1.96.0 (ac68faa20 2026-05-25)
-cargo 1.96.0 (30a34c682 2026-05-25)
-clippy 0.1.96 (ac68faa20c 2026-05-25)
+rustc 1.96.1 (31fca3adb 2026-06-26)
+cargo 1.96.1 (356927216 2026-06-26)
+clippy 0.1.96 (31fca3adb2 2026-06-26)
 cargo-udeps 0.1.61
 cargo-edit-upgrade 0.13.11

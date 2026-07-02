@@ -1,0 +1,227 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://journals.ashs.org/view/journals/hortsci/50/6/article-p839.xml"
+  },
+  "reference_fields": [
+    ["title", "HortScience Jujube Flowering and Fruiting in the Southwestern United States"],
+    ["author", "Shengrui Yao, Junxin Huang, and Robert Heyduck"],
+    ["description", "HortScience 50(6):839-846 article on flowering habits, fruit set, self-fruitfulness, and seed development of jujube cultivars at Alcalde, New Mexico"],
+    ["url", "https://journals.ashs.org/view/journals/hortsci/50/6/article-p839.xml"],
+    ["published", "June 2015"],
+    ["accessed", "Jul 2026"],
+    ["type", "journal article test"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "NMSU Sustainable Agriculture Science Center at Alcalde, Alcalde, New Mexico",
+      "latitude": 36.0911,
+      "longitude": -106.0568
+    }
+  ],
+  "categories": [
+    {
+      "name": "Jujube cultivars in the Alcalde flowering and fruiting study",
+      "description": "Yao, Huang, and Heyduck report flowering, fruit set, self-fruitfulness, seed development, and blooming-type observations for these jujube cultivars at Alcalde, New Mexico"
+    }
+  ],
+  "merge_duplicate_plants": {
+    "keys": ["type", "name"],
+    "fields": ["description"],
+    "category": "Jujube cultivars in the Alcalde flowering and fruiting study"
+  },
+  "name_overrides": {
+    "GA-866": {
+      "name": "GA866",
+      "note": "Source names this as GA-866"
+    },
+    "Honeyjar": {
+      "name": "Honey Jar",
+      "note": "Source names this as Honeyjar"
+    },
+    "Jinsi-2": {
+      "name": "Jinsi 2",
+      "note": "Source names this as Jinsi-2"
+    },
+    "Jinsi-3": {
+      "name": "Jinsi 3",
+      "note": "Source names this as Jinsi-3"
+    },
+    "Jinsi-4": {
+      "name": "Jinsi 4",
+      "note": "Source names this as Jinsi-4"
+    },
+    "Russia-2": {
+      "name": "Russian 2",
+      "note": "Source names this as Russia-2"
+    },
+    "Shanxi Li": {
+      "name": "Shanxi Li",
+      "aka": ["Linyi Li"],
+      "note": "Source lists Shanxi Li/Linyi Li together in one paragraph"
+    },
+    "Shuimen": {
+      "name": "Shuimen",
+      "aka": ["Sui"],
+      "note": "Source lists Shuimen/Sui together in one paragraph"
+    },
+    "Sui": {
+      "name": "Shuimen",
+      "aka": ["Sui"],
+      "note": "Source uses Sui shorthand in some cultivar lists and Shuimen/Sui in one paragraph"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "static_rows",
+      "plant_type": "Jujube",
+      "category": "Jujube cultivars with high seed percentage from open-pollinated fruit at Alcalde",
+      "description_template": "Yao, Huang, and Heyduck report Zhongning had the best seed percentage each year among tested jujube cultivars at Alcalde",
+      "rows": [
+        {"name": "Zhongning"}
+      ]
+    },
+    {
+      "kind": "inline_quoted_names",
+      "plant_type": "Jujube",
+      "start_heading": "Materials and Methods",
+      "end_heading": "Literature Cited",
+      "strip_trailing_name_punctuation": true,
+      "dedupe_keys": ["name", "category"],
+      "text_fixes": {
+        "'Shanxi Li'/'Linyi Li'": "'Shanxi Li'",
+        "'Shuimen'/'Sui'": "'Shuimen'"
+      },
+      "paragraph_rules": [
+        {
+          "contains": "Trees from a 2011 replicated planting with",
+          "names_after": "with",
+          "names_before": "at 1.8",
+          "category": "Jujube cultivars in the 2011 replicated Alcalde planting"
+        },
+        {
+          "contains": "was photographed hourly",
+          "names_after": "for",
+          "names_before": "in July 2013",
+          "category": "Jujube cultivars photographed for blooming sequence at Alcalde"
+        },
+        {
+          "contains": "had fewer flowers than others",
+          "names_before": "had fewer flowers",
+          "category": "Jujube cultivars with fewer flowers per node at Alcalde"
+        },
+        {
+          "contains": "had more than seven flowers",
+          "names_after": "with only one to three flowers per node.",
+          "names_before": "had more than seven flowers",
+          "category": "Jujube cultivars with more flowers per node at Alcalde"
+        },
+        {
+          "contains": "had the highest number of flowers",
+          "names_after": "branchlets (Fig. 1).",
+          "names_before": "had the highest number of flowers",
+          "category": "Jujube cultivar with the highest flower number at Alcalde"
+        },
+        {
+          "contains": "had small flowers with diameters <6 mm",
+          "names_before": "had small flowers",
+          "category": "Jujube cultivars with small flowers at Alcalde"
+        },
+        {
+          "contains": "had big flowers with diameters >7 mm",
+          "names_after": "whereas",
+          "names_before": "had big flowers",
+          "category": "Jujube cultivars with large flowers at Alcalde"
+        },
+        {
+          "contains": "normally had partial opening",
+          "names_after": "except",
+          "names_before": "had all sepals opened",
+          "category": "Jujube cultivars with partial flower opening at Alcalde"
+        },
+        {
+          "contains": "always bloomed earlier",
+          "names_after": "For the morning type,",
+          "names_before": "always bloomed earlier",
+          "category": "Jujube cultivars with early morning-type bloom at Alcalde"
+        },
+        {
+          "contains": "bloomed later than others",
+          "names_after": "whereas",
+          "names_before": "bloomed later",
+          "category": "Jujube cultivars with late morning-type bloom at Alcalde"
+        },
+        {
+          "contains": "were self-fruitful (Table 3)",
+          "names_before": "were self-fruitful",
+          "category": "Self-fruitful jujube cultivars at Alcalde"
+        },
+        {
+          "contains": "had a low percentage of fruit set from self-pollination in one year",
+          "names_after": "Although",
+          "names_before": "had a low percentage",
+          "category": "Jujube cultivars with low or inconsistent self-fruitfulness at Alcalde"
+        },
+        {
+          "contains": "was not self-fruitful",
+          "names_after": "Commercially popular cultivar",
+          "names_before": "was not self-fruitful",
+          "category": "Jujube cultivar not self-fruitful at Alcalde"
+        },
+        {
+          "contains": "had the best fruit set at Alcalde",
+          "names_before": "had the best fruit set",
+          "category": "Jujube cultivar with best open-pollination fruit set at Alcalde"
+        },
+        {
+          "contains": "had the best seed percentage each year",
+          "names_after": "followed by",
+          "names_before": "(Table 4)",
+          "category": "Jujube cultivars with high seed percentage from open-pollinated fruit at Alcalde"
+        },
+        {
+          "contains": "had very low seed percentage",
+          "names_after": "Fruit of",
+          "names_before": "had very low seed percentage",
+          "category": "Jujube cultivars with very low seed percentage from open-pollinated fruit at Alcalde"
+        },
+        {
+          "contains": "had no fully developed seed during any year",
+          "names_after": "Fruit of",
+          "names_before": "had no fully developed seed",
+          "category": "Jujube cultivars with no fully developed seed at Alcalde"
+        },
+        {
+          "contains": "were the same blooming type as Lyrene",
+          "names_before": "were the same blooming type",
+          "category": "Jujube cultivars with blooming type matching previous Florida reports"
+        },
+        {
+          "contains": "all were morning blooming type",
+          "names_after": "reported.",
+          "names_before": "have similar fruit shape",
+          "category": "Jujube cultivars with morning blooming type at Alcalde"
+        },
+        {
+          "contains": "were the same as reported in China",
+          "names_after": "(Table 3).",
+          "names_before": "were the same as reported in China",
+          "category": "Jujube cultivars with blooming type matching China reports after time shift"
+        },
+        {
+          "contains": "are 18 cultivars whose blooming type is being reported for the first time",
+          "names_after": "were different from reports from China",
+          "names_before": "are 18 cultivars whose",
+          "category": "Jujube cultivars with blooming type first reported by Yao Huang Heyduck"
+        }
+      ],
+      "description_parts": [
+        {
+          "kind": "template",
+          "template": "Source observation: {category}"
+        }
+      ]
+    }
+  ]
+}

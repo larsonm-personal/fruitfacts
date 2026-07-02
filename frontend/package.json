@@ -40,18 +40,18 @@
   },
   "devDependencies": {
     "@eslint/js": "9.39.4",
-    "@tailwindcss/postcss": "4.3.1",
+    "@tailwindcss/postcss": "4.3.2",
     "@tailwindcss/typography": "0.5.20",
     "autoprefixer": "10.5.2",
     "eslint": "9.39.4",
     "eslint-config-next": "16.2.9",
     "eslint-config-prettier": "10.1.8",
-    "fs-extra": "11.3.5",
+    "fs-extra": "11.3.6",
     "globals": "17.7.0",
     "jest": "30.4.2",
     "postcss": "8.5.16",
-    "prettier": "3.9.1",
+    "prettier": "3.9.4",
     "prettier-plugin-tailwindcss": "0.8.0",
-    "tailwindcss": "4.3.1"
+    "tailwindcss": "4.3.2"
   }
 }

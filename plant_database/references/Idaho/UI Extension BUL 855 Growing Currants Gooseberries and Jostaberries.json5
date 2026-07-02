@@ -1,0 +1,449 @@
+{
+    title: "UI Extension BUL 855 Growing Currants Gooseberries and Jostaberries",
+    author: "Danny L. Barney and Esmaeil Fallahi",
+    description: "University of Idaho Extension bulletin with recommended currant, gooseberry, and jostaberry cultivars for the Inland Northwest and Intermountain West",
+    url: "https://verso.uidaho.edu/esploro/outputs/report/Growing-Currants-Gooseberries-and-Jostaberries-in/996749629101851",
+    publication_number: "BUL 855",
+    published: "February 2009",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Idaho Extension, Moscow, Idaho",
+            latitude: 46.7288,
+            longitude: -117.0126
+        },
+    ],
+    categories: [
+        {
+            name: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            description: "University of Idaho Extension BUL 855 lists these black currant cultivars as recommended for the Inland Northwest and Intermountain West"
+        },
+        {
+            name: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            description: "University of Idaho Extension BUL 855 lists these red currant cultivars as recommended for the Inland Northwest and Intermountain West"
+        },
+        {
+            name: "White currant cultivars for the Inland Northwest and Intermountain West",
+            description: "University of Idaho Extension BUL 855 lists these white currant cultivars as recommended for the Inland Northwest and Intermountain West"
+        },
+        {
+            name: "American gooseberry cultivars for the Inland Northwest and Intermountain West",
+            description: "University of Idaho Extension BUL 855 lists these American gooseberry cultivars as recommended for the Inland Northwest and Intermountain West"
+        },
+        {
+            name: "European gooseberry cultivars for the Inland Northwest and Intermountain West",
+            description: "University of Idaho Extension BUL 855 lists these European gooseberry cultivars as recommended for the Inland Northwest and Intermountain West"
+        },
+        {
+            name: "Jostaberry cultivars for the Inland Northwest and Intermountain West",
+            description: "University of Idaho Extension BUL 855 discusses these jostaberry cultivars for the Inland Northwest and Intermountain West"
+        },
+    ],
+    plants: [
+        {
+            type: "Currant",
+            name: "Ben Alder",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: M. Powdery mildew resistance: G. Blister rust rating: HS. Comments: Produces high quality juice. Vigorous, late flowering, and somewhat resistant to spring frosts. High yielding under ideal conditions, but yields can be low"
+        },
+        {
+            type: "Currant",
+            name: "Ben Connan",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: L. Powdery mildew resistance: G. Blister rust rating: S. Comments: Deep black berries. Suitable for fresh use and processing. Not ideal for juice. Tolerates spring frosts. Can produce high yields. Compact bushes. Suitable for machine harvesting"
+        },
+        {
+            type: "Currant",
+            name: "Ben Lomond",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: L. Powdery mildew resistance: F. Blister rust rating: S. Comments: Blooms late and is frost resistant. Consistently high yields. Moderately vigorous. Recommended for commercial fresh and processing markets, U-pick, and home production. Machine harvestable"
+        },
+        {
+            type: "Currant",
+            name: "Ben Sarek",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: VL. Powdery mildew resistance: G. Blister rust rating: R. Comments: Compact plant that is moderately resistant to white pine blister rust and powdery mildew. Very high yielding with very large berries. Used mainly for pick-your-own and home use, not commercial juice production"
+        },
+        {
+            type: "Currant",
+            name: "Boskoop Giant",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: L. Powdery mildew resistance: F. Blister rust rating: HS. Comments: Long loose clusters. Berries near cluster tips often abort due to poor pollination. Vigorous. Plants labeled Boskoop Giant are not always true-to-name. Fragrant leaves and buds are reportedly suited for teas"
+        },
+        {
+            type: "Currant",
+            name: "Champion",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: M-L. Powdery mildew resistance: F-G. Blister rust rating: S. Comments: Mild-flavored berries with good quality but variable size and uneven ripening. Vigorous"
+        },
+        {
+            type: "Currant",
+            name: "Consort",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: S-M. Powdery mildew resistance: P. Blister rust rating: I. Comments: Resistant to blister rust but highly susceptible to powdery mildew. Poor fruit quality. If blister rust is a concern, Titania and Ben Sarek are better choices"
+        },
+        {
+            type: "Currant",
+            name: "Crusader",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: S-M. Powdery mildew resistance: P. Blister rust rating: I. Comments: Resistant to blister rust but highly susceptible to powdery mildew. Poor fruit quality. If blister rust is a concern, Titania and Ben Sarek are better choices"
+        },
+        {
+            type: "Currant",
+            name: "Coronet",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: S-M. Powdery mildew resistance: P. Blister rust rating: I. Comments: Resistant to blister rust but highly susceptible to powdery mildew. Poor fruit quality. If blister rust is a concern, Titania and Ben Sarek are better choices"
+        },
+        {
+            type: "Currant",
+            name: "Crandall",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "late summer",
+            description: "Source ripening code: 3. Fruit size: VL. Powdery mildew resistance: E. Blister rust rating: R. Comments: Selection of North American golden currant used as an ornamental. Weak canes droop under crop loads, making trellises desirable. Ripe berries have a mild, pleasant flavor different from European black currants. Performs well in areas with hot summers"
+        },
+        {
+            type: "Currant",
+            name: "Kerry",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early to midsummer",
+            description: "Source ripening code: 1-2. Fruit size: M-L. Powdery mildew resistance: F. Blister rust rating: S. Comments: Canes are vigorous and productive"
+        },
+        {
+            type: "Currant",
+            name: "Strata",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: VL. Powdery mildew resistance: F. Blister rust rating: S. Comments: Berries are sweet and suited for fresh use or processing. Canes are moderately vigorous. Yields can be low"
+        },
+        {
+            type: "Currant",
+            name: "Swedish Black",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: L. Powdery mildew resistance: F-G. Blister rust rating: HS. Comments: Very sweet berries with excellent flavor. Canes are moderately vigorous and sprawling, making management somewhat difficult. Yields can be low"
+        },
+        {
+            type: "Currant",
+            name: "Titania",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early to midsummer",
+            description: "Source ripening code: 1-2. Fruit size: VL. Powdery mildew resistance: G. Blister rust rating: I. Comments: Ripens uniformly. Mild-flavored, but bitter fruit flavor can occur. Highly self-fertile. Vigorous and high yielding. Suitable for commercial and home production. Immune to blister rust but susceptible to botryosphaeria cane dieback"
+        },
+        {
+            type: "Currant",
+            name: "Topsy",
+            category: "Black currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: L. Powdery mildew resistance: F. Blister rust rating: HS. Comments: Thick-skinned fruits ripen during mid-season. Canes are vigorous"
+        },
+        {
+            type: "Currant",
+            name: "Cascade",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: L. Powdery mildew resistance: F. Blister rust rating: R. Comments: Berries are high in sugar and have good flavor. Moderately vigorous"
+        },
+        {
+            type: "Currant",
+            name: "Jonkheer van Tets",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: M. Powdery mildew resistance: F. Blister rust rating: R. Comments: Berries are variable in size, of average quality, and can split in wet weather. Vigorous. Very popular in Europe"
+        },
+        {
+            type: "Currant",
+            name: "Laxton's No. 1",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: M-L. Powdery mildew resistance: F. Blister rust rating: R. Comments: Berries have good quality and are tightly bunched on the strigs. Very productive. Popular commercially in Europe"
+        },
+        {
+            type: "Currant",
+            name: "Minnesota No. 71",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early to midsummer",
+            description: "Source ripening code: 1-2. Fruit size: M-L. Powdery mildew resistance: G. Blister rust rating: S. Comments: Consistent fruit quality. Vigorous. Popular for commercial use in England. One of the best cultivars in North America"
+        },
+        {
+            type: "Currant",
+            name: "Perfection",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early to midsummer",
+            description: "Source ripening code: 1-2. Fruit size: L. Powdery mildew resistance: F. Blister rust rating: R. Comments: Good flavor but sunscalds easily. Long, easy-to-pick clusters. Vigorous canes are susceptible to breaking. Very cold hardy. For commercial production in colder areas"
+        },
+        {
+            type: "Currant",
+            name: "Portal Ruby",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: L. Powdery mildew resistance: F. Blister rust rating: S. Comments: Berries are tart. Canes are moderately vigorous"
+        },
+        {
+            type: "Currant",
+            name: "Prince Albert",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: S-M. Powdery mildew resistance: F-G. Blister rust rating: S. Comments: Berries hang well without overripening. Long, easy-to-pick stems. Moderately vigorous. Excellent late-season cultivar, particularly for U-pick"
+        },
+        {
+            type: "Currant",
+            name: "Red Lake",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: M-L. Powdery mildew resistance: F. Blister rust rating: S. Comments: Good flavor. Moderately vigorous. Clusters are long and easy to pick. Excellent for commercial and home production"
+        },
+        {
+            type: "Currant",
+            name: "Rondom",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: S-M. Powdery mildew resistance: G. Blister rust rating: I. Comments: Berries hang well without overripening. Long, easy-to-pick clusters. Vigorous. Popular commercially in Europe. Immune to blister rust"
+        },
+        {
+            type: "Currant",
+            name: "Rosetta",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: L. Powdery mildew resistance: F. Blister rust rating: S. Comments: Berries are tart. Long, easy-to-pick clusters. Moderately vigorous. Promising recent introduction"
+        },
+        {
+            type: "Currant",
+            name: "Rovada",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: L. Powdery mildew resistance: G. Blister rust rating: R. Comments: Late ripening. Long, easy-to-pick clusters. Moderately susceptible to fruit run off. Resistant to leaf spot. High yields. Popular commercially in Central Europe"
+        },
+        {
+            type: "Currant",
+            name: "Stanza",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early to midsummer",
+            description: "Source ripening code: 1-2. Fruit size: M-L. Powdery mildew resistance: F. Blister rust rating: R. Comments: Long, easy-to-pick stems. Suitable for fresh use and especially for juicing. Acidic flavor. Canes are moderately vigorous and reliably productive"
+        },
+        {
+            type: "Currant",
+            name: "Stephens No. 9",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early to midsummer",
+            description: "Source ripening code: 1-2. Fruit size: L-VL. Powdery mildew resistance: F-G. Blister rust rating: R. Comments: Canes are vigorous. One of the most popular red currants in North America"
+        },
+        {
+            type: "Currant",
+            name: "Tatran",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: L. Powdery mildew resistance: Unk. Blister rust rating: R. Comments: Berries have good quality and are borne on exceptionally long clusters. High yields reported. Vigorous and cold hardy"
+        },
+        {
+            type: "Currant",
+            name: "Victoria",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early to midsummer",
+            description: "Source ripening code: 1-2. Fruit size: S-M. Powdery mildew resistance: F. Blister rust rating: Unk. Comments: Small firm berries hang well without overripening. Vigorous, productive, and very cold hardy. With mechanical harvesting, may be suitable for commercial processing markets"
+        },
+        {
+            type: "Currant",
+            name: "Wilder",
+            category: "Red currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: S-M. Powdery mildew resistance: G. Blister rust rating: S. Comments: Berries are variable in size, have good quality, and hang well without overripening. Long, easy-to-pick clusters. Vigorous. Good commercial or home choice"
+        },
+        {
+            type: "Currant",
+            name: "Blanka",
+            category: "White currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early to midsummer",
+            description: "Source ripening code: 1-2. Fruit size: M. Powdery mildew resistance: F-G. Blister rust rating: S. Comments: Late ripening, very productive, and very resistant to frosts. Persistent for a long season. New to North America. From Slovakia. Fruit run-off can be high"
+        },
+        {
+            type: "Currant",
+            name: "Gloire des Sablons",
+            category: "White currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: M-L. Powdery mildew resistance: F-G. Blister rust rating: R. Comments: Pinkish-white fruits with average flavor and quality. European heritage cultivar"
+        },
+        {
+            type: "Currant",
+            name: "Primus",
+            category: "White currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: S-M. Powdery mildew resistance: F. Blister rust rating: S. Comments: Berries have good flavor and are whiter than some other white currants. Yields can be high. New to North America. From Slovakia"
+        },
+        {
+            type: "Currant",
+            name: "White Currant 1301",
+            category: "White currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early to midsummer",
+            description: "Source ripening code: 1-2. Fruit size: M. Powdery mildew resistance: F-G. Blister rust rating: R. Comments: Medium-sized berries on moderately vigorous canes that are somewhat resistant to powdery mildew and resistant to blister rust. From Sweden"
+        },
+        {
+            type: "Currant",
+            name: "White Dutch",
+            category: "White currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: S-M. Powdery mildew resistance: G. Blister rust rating: S. Comments: Excellent quality berries ripen early and are darker than other white currants. Vigorous and very productive. Small uneven berry size is the main limitation. European heritage cultivar"
+        },
+        {
+            type: "Currant",
+            name: "White Imperial",
+            category: "White currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early summer",
+            description: "Source ripening code: 1. Fruit size: M-L. Powdery mildew resistance: E. Blister rust rating: S. Comments: Moderately vigorous and productive. Excellent for commercial and home production. European heritage cultivar"
+        },
+        {
+            type: "Currant",
+            name: "White Versailles",
+            category: "White currant cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "early to midsummer",
+            description: "Source ripening code: 1-2. Fruit size: M-L. Powdery mildew resistance: G. Blister rust rating: S. Comments: Berries have good quality and are borne on long clusters. Vigorous. European heritage cultivar"
+        },
+        {
+            type: "Gooseberry",
+            name: "Captivator",
+            category: "American gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: M. Powdery mildew resistance: G. Blister rust rating: R. Comments: Greenish-red to red fruit. Good flavor. Moderately vigorous and less spiny than some cultivars. Excellent for commercial and home production"
+        },
+        {
+            type: "Gooseberry",
+            name: "Glenndale",
+            category: "American gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: S. Powdery mildew resistance: F. Blister rust rating: R. Comments: Moderate quality dark red to purple berries. Can produce high yields. Canes are very thorny and vigorous. Tolerates bright sun and high temperatures"
+        },
+        {
+            type: "Gooseberry",
+            name: "Jahn's Prairie",
+            category: "American gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: L. Powdery mildew resistance: G. Blister rust rating: R. Comments: Red-pink high quality dessert gooseberry. High yields. Thorny. Somewhat slow to mature. For home use and commercial testing. Resistant to blister rust, leaf spot, stem Botrytis, aphids, and sawflies"
+        },
+        {
+            type: "Gooseberry",
+            name: "Jeanne",
+            category: "American gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "late summer",
+            description: "Source ripening code: 3. Fruit size: M. Powdery mildew resistance: G. Blister rust rating: R. Comments: Newly released dark red, late ripening, disease resistant dessert gooseberry"
+        },
+        {
+            type: "Gooseberry",
+            name: "Oregon",
+            category: "American gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: S. Powdery mildew resistance: F-G. Blister rust rating: R. Comments: Also known as Oregon Champion. Tart white to pale green berries. Best suited to processing. Vigorous"
+        },
+        {
+            type: "Gooseberry",
+            name: "Pixwell",
+            category: "American gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: S-M. Powdery mildew resistance: E. Blister rust rating: R. Comments: Pale green to pinkish-red berries hang below the canes, facilitating hand picking. Can become bitter when overripe. Vigorous. Very reliable. Best suited to processing"
+        },
+        {
+            type: "Gooseberry",
+            name: "Poorman",
+            category: "American gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: S. Powdery mildew resistance: G. Blister rust rating: R. Comments: Red berries are sweet, aromatic, and begin ripening in midseason. Vigorous with fewer spines than some cultivars. One of the best gooseberries for North America"
+        },
+        {
+            type: "Gooseberry",
+            name: "Stanbridge",
+            category: "American gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: S. Powdery mildew resistance: G. Blister rust rating: Unk. Comments: Yellowish-green fruits. Yields are moderate. Canes are erect, vigorous, and develop few or no spines"
+        },
+        {
+            type: "Gooseberry",
+            name: "Welcome",
+            category: "American gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: M. Powdery mildew resistance: F-G. Blister rust rating: S. Comments: Red fruit. Canes are initially weak and spreading but become more vigorous and erect as the plant matures. Widely available in the United States"
+        },
+        {
+            type: "Gooseberry",
+            name: "Chautauqua",
+            category: "European gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: L. Powdery mildew resistance: F. Blister rust rating: Unk. Comments: Green fruit with good flavor and quality. Canes are dense, spreading, and moderately erect. One of the most promising European gooseberries for North America"
+        },
+        {
+            type: "Gooseberry",
+            name: "Green Hansa",
+            category: "European gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: M-L. Powdery mildew resistance: F. Blister rust rating: Unk. Comments: Green fruits are suitable for dessert use. Canes are below average in size and vigor"
+        },
+        {
+            type: "Gooseberry",
+            name: "Greenfinch",
+            category: "European gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: M. Powdery mildew resistance: G. Blister rust rating: R. Comments: Mid-season ripening with green-yellow fruit"
+        },
+        {
+            type: "Gooseberry",
+            name: "Keepsake",
+            category: "European gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: S-M. Powdery mildew resistance: F-G. Blister rust rating: R. Comments: Greenish-red berries are variable in size. Fruit quality is good, but size variability limits commercial value. Moderately vigorous"
+        },
+        {
+            type: "Gooseberry",
+            name: "Lepaa Red",
+            category: "European gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: S. Powdery mildew resistance: G-E. Blister rust rating: Unk. Comments: Small red berries have good flavor. Plants are small, vigorous, and productive. Highly reliable. Best suited for processing, but fresh flavor may make it useful for farmers markets"
+        },
+        {
+            type: "Gooseberry",
+            name: "Malling Invicta",
+            category: "European gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: L. Powdery mildew resistance: F. Blister rust rating: R. Comments: Early ripening, very high yielding, with large yellow fruits"
+        },
+        {
+            type: "Gooseberry",
+            name: "May Duke",
+            category: "European gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: M-L. Powdery mildew resistance: F. Blister rust rating: Unk. Comments: Green to dull red berries when ripe and pleasantly flavored. Vigorous"
+        },
+        {
+            type: "Gooseberry",
+            name: "Speedwell",
+            category: "European gooseberry cultivars for the Inland Northwest and Intermountain West",
+            harvest_time_unparsed: "midsummer",
+            description: "Source ripening code: 2. Fruit size: M-L. Powdery mildew resistance: F-G. Blister rust rating: R. Comments: Red, sweet berries with fair quality. Canes are moderately vigorous"
+        },
+        {
+            type: "Currant",
+            name: "Josta",
+            category: "Jostaberry cultivars for the Inland Northwest and Intermountain West",
+            description: "Comments: Widely available in North America. Reported self-fertile, but North American growers have reported poor fruit set. Resistant to blister rust under field conditions"
+        },
+        {
+            type: "Currant",
+            name: "Jostine",
+            category: "Jostaberry cultivars for the Inland Northwest and Intermountain West",
+            description: "Comments: Imported into the United States but not yet widely available. At least partially self-sterile and should be planted with Jogranda for good fruit set"
+        },
+        {
+            type: "Currant",
+            name: "Jogranda",
+            category: "Jostaberry cultivars for the Inland Northwest and Intermountain West",
+            description: "Comments: Also known as Jostagranda and Jostaki. Imported into the United States but not yet widely available. At least partially self-sterile and should be planted with Jostine for good fruit set"
+        },
+    ]
+}
