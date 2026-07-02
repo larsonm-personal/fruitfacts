@@ -363,6 +363,14 @@
         {
             "id": "hortsci_jujube_flowering_fruiting_southwestern_us_2015",
             "config": "extraction_configs/hortsci_jujube_flowering_fruiting_southwestern_us_2015.json"
+        },
+        {
+            "id": "sare_season_long_strawberry_everbearers_northeast",
+            "config": "extraction_configs/sare_season_long_strawberry_everbearers_northeast.json"
+        },
+        {
+            "id": "cornell_low_tunnel_strawberries",
+            "config": "extraction_configs/cornell_low_tunnel_strawberries.json"
         }
     ]
 }

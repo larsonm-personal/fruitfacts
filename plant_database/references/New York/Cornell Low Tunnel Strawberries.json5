@@ -1,0 +1,54 @@
+{
+    title: "Cornell Protected Culture for Strawberries Using Low Tunnels",
+    author: "Marvin Pritts and Laura McDermott",
+    description: "Cornell guide to low-tunnel protected culture for day-neutral strawberries in New York, with notes on cultivar suitability and flavor under low tunnels",
+    url: "http://www.hort.cornell.edu/fruit/pdfs/low-tunnel-strawberries.pdf",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Cornell University, Ithaca, New York",
+            latitude: 42.4476,
+            longitude: -76.4828
+        },
+    ],
+    categories: [
+        {
+            name: "Day-neutral strawberries for low-tunnel production in New York",
+            description: "Pritts and McDermott discuss these day-neutral strawberry cultivars for low-tunnel production and season extension in New York"
+        },
+    ],
+    plants: [
+        {
+            type: "Strawberry",
+            name: "Albion",
+            category: "Day-neutral strawberries for low-tunnel production in New York",
+            description: "Cornell says Albion has the best flavor, highest sugar content, and performs consistently well in New York's climate. Picked at peak ripeness, Albion has flavor as good as or better than most June-bearing varieties and is reasonably large. The guide notes Albion does not overwinter well in cold weather"
+        },
+        {
+            type: "Strawberry",
+            name: "Portola",
+            category: "Day-neutral strawberries for low-tunnel production in New York",
+            description: "Cornell lists Portola as a day-neutral strawberry suitable for tunnel production and notes it has larger fruit than Albion but less flavor"
+        },
+        {
+            type: "Strawberry",
+            name: "Monterey",
+            category: "Day-neutral strawberries for low-tunnel production in New York",
+            description: "Cornell lists Monterrey as a day-neutral strawberry suitable for tunnel production and notes it has larger fruit than Albion but less flavor. Source text spells this as Monterrey"
+        },
+        {
+            type: "Strawberry",
+            name: "San Andreas",
+            category: "Day-neutral strawberries for low-tunnel production in New York",
+            description: "Cornell says San Andreas has larger fruit than Albion but less flavor in its low-tunnel day-neutral strawberry discussion"
+        },
+        {
+            type: "Strawberry",
+            name: "Seascape",
+            category: "Day-neutral strawberries for low-tunnel production in New York",
+            description: "Cornell lists Seascape as a day-neutral strawberry suitable for tunnel production and notes that it has good flavor but smaller fruit"
+        },
+    ]
+}

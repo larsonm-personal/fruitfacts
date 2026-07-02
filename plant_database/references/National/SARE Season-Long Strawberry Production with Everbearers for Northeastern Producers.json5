@@ -1,0 +1,134 @@
+{
+    title: "SARE Season-Long Strawberry Production with Everbearers for Northeastern Producers",
+    author: "Willie Lantz, Harry Swartz, Kathleen Demchak, and Sherry Frick",
+    description: "SARE and University of Maryland Extension guide to season-long everbearing strawberry production for Northeastern producers, including cultivar descriptions and Mid-Atlantic recommendation notes",
+    url: "https://www.sare.org/resources/season-long-strawberry-production-with-everbearers-for-northeastern-producers/",
+    publication_number: "EB 401",
+    published: "2010",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Maryland Extension Garrett County Office, Mountain Lake Park, Maryland",
+            latitude: 39.3987,
+            longitude: -79.3817
+        },
+    ],
+    categories: [
+        {
+            name: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "Lantz, Swartz, Demchak, and Frick describe these everbearing or day-neutral strawberry cultivars for season-long production in Northeastern and Mid-Atlantic plasticulture systems"
+        },
+    ],
+    plants: [
+        {
+            type: "Strawberry",
+            name: "Albion",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "Released in 2006 from the University of California. The source says Mid-Atlantic grower reports were positive for fruit quality despite low yields. Fruit are firm, large, elongated, sometimes uneven, and good flavored when fully ripe. Plants are vigorous, produce many runners in the North, resist verticillium wilt, and are moderately susceptible to powdery mildew and fruit anthracnose. Recommended on a trial basis for the Mid-Atlantic region"
+        },
+        {
+            type: "Strawberry",
+            name: "Aromas",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "University of California day-neutral introduced in 1997. The source describes Aromas as high yielding but lower quality than recent introductions. Pennsylvania trial fruit were relatively large for an everbearer, rich red, firm, and fair to good flavored. Susceptible to verticillium wilt and common leaf spot. Not recommended for the Mid-Atlantic"
+        },
+        {
+            type: "Strawberry",
+            name: "Diamante",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "University of California introduction from 1997. Fruit are large and firm with good color and shape, but low sugars and aroma. Diamante yielded less than Seascape in Pennsylvania. Not recommended for the Mid-Atlantic"
+        },
+        {
+            type: "Strawberry",
+            name: "Everest",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "Introduced by Edward Vinson Plants in the United Kingdom in 1998. The source says Everest can be high yielding on suitable sites, but fruit are smaller, very soft, and lack flavor in warm weather. Flavor improves in cool fall conditions. Plants produce few runners, are very susceptible to anthracnose fruit rot and verticillium wilt, and are resistant to red stele and powdery mildew. Recommended for trial"
+        },
+        {
+            type: "Strawberry",
+            name: "Evie 2",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "Introduced by Edward Vinson Plants in the United Kingdom in 2001. Fruit are large, attractive, uniform, light colored, soft, and average to somewhat acidic in flavor. Pennsylvania yields were considerably lower than Seascape or Everest, while Maryland grower trial yields were very good. Plants are vigorous and somewhat powdery mildew resistant. Recommended for trial"
+        },
+        {
+            type: "Strawberry",
+            name: "Evie 3",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "Introduced by Edward Vinson Plants in the United Kingdom in 2003. The source describes Evie 3 as high yielding and similar to Everest in productivity, with soft, light-colored, low-flavor fruit. No grower plant source in the United States was located as of publication"
+        },
+        {
+            type: "Strawberry",
+            name: "Fern",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "Released by the University of California in 1983. The source says Fern berries are soft, light-colored, not very flavorful, and average in productivity. Not recommended"
+        },
+        {
+            type: "Strawberry",
+            name: "Fort Laramie",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "Released in 1973 from USDA in Cheyenne, Wyoming. The source describes Fort Laramie as winter hardy, but susceptible to fruit-rotting diseases and powdery mildew, with small soft fruit under warm conditions. Not recommended for the Mid-Atlantic"
+        },
+        {
+            type: "Strawberry",
+            name: "Hecker",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "Released from the University of California in 1979. The source says Hecker is usually low yielding compared with other everbearing cultivars. Not recommended for the Mid-Atlantic"
+        },
+        {
+            type: "Strawberry",
+            name: "Mara Des Bois",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "Released in 1991 by Marionnet SARL in France. The source describes Mara Des Bois as a gourmet berry prized by some chefs, with small, very flavorful, aromatic berries. Susceptible to fruit anthracnose. Recommended for trial in protected culture, but not for field production"
+        },
+        {
+            type: "Strawberry",
+            name: "Monterey",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "University of California cultivar that had only recently become obtainable outside California as of publication. The source says Monterey produces large firm fruit on vigorous plants and is susceptible to powdery mildew. No Mid-Atlantic recommendation was available because of lack of testing"
+        },
+        {
+            type: "Strawberry",
+            name: "Portola",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "University of California cultivar that had only recently become obtainable outside California as of publication. The source says Portola fruit are large and somewhat light in color. No Mid-Atlantic recommendation was available because of lack of testing"
+        },
+        {
+            type: "Strawberry",
+            name: "Quinault",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "Released in 1967 from Washington State University. The source says Quinault is commonly available in nursery catalogs but has little utility in commercial production. Not recommended for the Mid-Atlantic"
+        },
+        {
+            type: "Strawberry",
+            name: "Tribute",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "Released in 1981 from USDA in Beltsville, Maryland. Tribute has milder flavor than Tristar but is still tart. Fruit are relatively small and firm, and plants are fairly vigorous. Recommended only for trial or backyard production"
+        },
+        {
+            type: "Strawberry",
+            name: "Tristar",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "Released in 1981 from USDA in Beltsville, Maryland. Tristar has good flavor but can be tart. Fruit are firm and become small in hot weather. The source says Tristar is resistant to red stele, verticillium wilt, and powdery mildew. Recommended only for trial or backyard production"
+        },
+        {
+            type: "Strawberry",
+            name: "San Andreas",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "University of California cultivar that had only recently become obtainable outside California as of publication. Fruit are large and somewhat light in color. The source reports more disease resistance than previous University of California varieties and better flavor and fruit quality. No Mid-Atlantic recommendation was available because of lack of testing"
+        },
+        {
+            type: "Strawberry",
+            name: "Seascape",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "Released in 1990 from the University of California. The source says Seascape is the most widely grown everbearing cultivar in the eastern United States and Canada, is usually productive, and produces medium-sized, medium-red, notably sweet fruit with good shape. Powdery mildew can be a problem in some years. Susceptible to red stele and resistant to leaf scorch. Recommended in the Mid-Atlantic region"
+        },
+        {
+            type: "Strawberry",
+            name: "Selva",
+            category: "Everbearing strawberries for Northeastern and Mid-Atlantic production",
+            description: "Released in 1983 from the University of California. In a Pennsylvania trial, Selva fruit were soft, light-colored, had little flavor, and were average in size. Not recommended for the Mid-Atlantic"
+        },
+    ]
+}
