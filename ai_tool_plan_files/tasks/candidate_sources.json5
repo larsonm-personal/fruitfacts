@@ -3522,7 +3522,7 @@
         },
         {
             id: "japs-history-origin-classification-persimmon-cultivars-2015",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "History, Origin and Classification of Persimmon Cultivars",
             institution: "Journal of the American Pomological Society",
@@ -3543,7 +3543,12 @@
             notes: [
                 "Mined from plant_database/references/National/HortSci Ploidy Level in American Persimmon Cultivars.pdf",
                 "Journal view page exposes a Download PDF link but rendered minimal metadata in the text fetch",
-                "Likely parsing issue: classification terms and cultivar groups may require careful normalization"
+                "Likely parsing issue: classification terms and cultivar groups may require careful normalization",
+                "Encoded 36 persimmon records in plant_database/references/National/JAPS History Origin and Classification of Persimmon Cultivars.json5",
+                "Config extraction added at helper_scripts/extraction_configs/japs_history_origin_classification_persimmon_cultivars_2015.json",
+                "Manifest entry added as japs_history_origin_classification_persimmon_cultivars_2015",
+                "Used reviewed static_rows for major commercial cultivar narrative and the cleaner Table 4 genetic-origin list; skipped the garbled bulk of Table 3",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {
@@ -3642,7 +3647,7 @@
         },
         {
             id: "hortsci-past-present-future-jujubes-2013",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Past, Present, and Future of Jujubes: Chinese Dates in the United States",
             institution: "HortScience",
@@ -3665,7 +3670,12 @@
             notes: [
                 "Mined from plant_database/references/New Mexico/HortSci Early Performance of Jujube Drying and Multipurpose Cultivars....pdf",
                 "ASHS page and NMSU jujube resources list the HortScience 48:672-680 article",
-                "Likely parsing issue: cultivar history and cultivar list may be narrative rather than table-shaped"
+                "Likely parsing issue: cultivar history and cultivar list may be narrative rather than table-shaped",
+                "Encoded 22 jujube records in plant_database/references/National/HortSci Past Present and Future of Jujubes.json5",
+                "Config extraction added at helper_scripts/extraction_configs/hortsci_past_present_future_jujubes_2013.json",
+                "Manifest entry added as hortsci_past_present_future_jujubes_2013",
+                "Used reviewed static_rows for the Frank Meyer, USDA Chico, and later U.S. selection/import sections",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {

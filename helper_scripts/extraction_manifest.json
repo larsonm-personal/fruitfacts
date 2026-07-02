@@ -357,12 +357,20 @@
             "config": "extraction_configs/japs_persimmon_cultivars_northern_areas.json"
         },
         {
+            "id": "japs_history_origin_classification_persimmon_cultivars_2015",
+            "config": "extraction_configs/japs_history_origin_classification_persimmon_cultivars_2015.json"
+        },
+        {
             "id": "uidaho_bul855_currants_gooseberries_jostaberries",
             "config": "extraction_configs/uidaho_bul855_currants_gooseberries_jostaberries.json"
         },
         {
             "id": "hortsci_jujube_flowering_fruiting_southwestern_us_2015",
             "config": "extraction_configs/hortsci_jujube_flowering_fruiting_southwestern_us_2015.json"
+        },
+        {
+            "id": "hortsci_past_present_future_jujubes_2013",
+            "config": "extraction_configs/hortsci_past_present_future_jujubes_2013.json"
         },
         {
             "id": "sare_season_long_strawberry_everbearers_northeast",

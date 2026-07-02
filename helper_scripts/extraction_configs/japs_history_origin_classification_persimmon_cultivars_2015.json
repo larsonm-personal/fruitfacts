@@ -1,0 +1,198 @@
+{
+  "source": {
+    "kind": "static"
+  },
+  "reference_fields": [
+    ["title", "JAPS History Origin and Classification of Persimmon Cultivars"],
+    ["author", "Robert Nissen and Robin E. Roberts"],
+    ["description", "Journal of the American Pomological Society 69(1):31-44 review of persimmon origin, production, classification, and major cultivars"],
+    ["url", "https://journal.americanpomological.org/index.php/jofaps/article/view/2865/2869"],
+    ["published", "2015"],
+    ["accessed", "Jul 2026"],
+    ["type", "journal article review"],
+    ["needs_help", true]
+  ],
+  "categories": [
+    {
+      "name": "Commercial persimmon cultivars discussed by region",
+      "description": "Nissen and Roberts discuss these persimmon cultivars in regional production and commercialization context"
+    },
+    {
+      "name": "PCNA Japanese persimmon cultivars with genetic origins",
+      "description": "Nissen and Roberts list these PCNA Japanese persimmon cultivars with bud sport, mutation, or parentage notes in Table 4"
+    }
+  ],
+  "name_overrides": {
+    "O'Gosho": {
+      "name": "O-Gosho",
+      "note": "Source names this as O'Gosho"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "static_rows",
+      "plant_type": "Persimmon",
+      "description_key": "description",
+      "row_groups": [
+        {
+          "fields": {
+            "category": "Commercial persimmon cultivars discussed by region"
+          },
+          "rows": [
+            {
+              "name": "Fuyu",
+              "description": "Nissen and Roberts say Fuyu is the dominant global non-astringent persimmon cultivar, important in Japan, Korea, Brazil, Australia, and New Zealand"
+            },
+            {
+              "name": "Jiro",
+              "description": "Nissen and Roberts discuss Jiro as a non-astringent cultivar that loses astringency early in warm climates and is one of the two main Australian cultivars"
+            },
+            {
+              "name": "Luo Tian Tian Shi",
+              "description": "Nissen and Roberts describe Luo Tian Tian Shi as an exceptional Chinese PCNA cultivar with a dominant trait for astringency loss on the tree"
+            },
+            {
+              "name": "Hiratanenashi",
+              "description": "Nissen and Roberts say Hiratanenashi is one of the astringent cultivars representing a substantial share of Japanese production"
+            },
+            {
+              "name": "Tone Wase",
+              "description": "Nissen and Roberts say Tone Wase is one of the astringent cultivars representing a substantial share of Japanese production and list it as a bud sport of Hiratanenashi"
+            },
+            {
+              "name": "Taubate",
+              "description": "Nissen and Roberts list Taubate as an astringent persimmon cultivar grown in Brazil"
+            },
+            {
+              "name": "Rama Forte",
+              "description": "Nissen and Roberts list Rama Forte as a PVA astringent persimmon cultivar grown in Brazil"
+            },
+            {
+              "name": "Chocolate",
+              "description": "Nissen and Roberts list Chocolate as a local persimmon cultivar grown in Brazil"
+            },
+            {
+              "name": "Manteiga",
+              "description": "Nissen and Roberts list Manteiga as a local persimmon cultivar grown in Brazil"
+            },
+            {
+              "name": "Kaki Tipo",
+              "description": "Nissen and Roberts say Mediterranean persimmon production is based partly on Kaki Tipo and that Italy historically based most production on it"
+            },
+            {
+              "name": "Rojo Brillante",
+              "description": "Nissen and Roberts say Rojo Brillante is increasing in popularity in Spain and the Mediterranean because of quality and productivity"
+            },
+            {
+              "name": "Triumph",
+              "description": "Nissen and Roberts say Triumph is important in Mediterranean production and forms most of the Israeli crop"
+            },
+            {
+              "name": "Coroa de Rei",
+              "description": "Nissen and Roberts describe Coroa de Rei as the most important cultivar grown in Portugal"
+            },
+            {
+              "name": "Hana Fuyu",
+              "description": "Nissen and Roberts list Hana Fuyu among cultivars grown in Portugal"
+            },
+            {
+              "name": "O'Gosho",
+              "description": "Nissen and Roberts list O'Gosho among cultivars grown in Portugal"
+            },
+            {
+              "name": "Gordo",
+              "description": "Nissen and Roberts say Gordo is the main cultivar in the Cataluna region of Spain, though under threat from Rojo Brillante"
+            },
+            {
+              "name": "Thach That",
+              "description": "Nissen and Roberts list Thach That as a major cultivar in northern Vietnam"
+            },
+            {
+              "name": "Nhan Hau",
+              "description": "Nissen and Roberts list Nhan Hau as a major cultivar in northern Vietnam"
+            },
+            {
+              "name": "Luc Yen",
+              "description": "Nissen and Roberts list Luc Yen as a major cultivar in northern Vietnam"
+            },
+            {
+              "name": "Trung Loc",
+              "description": "Nissen and Roberts list Trung Loc as a cultivar used in central and southern Vietnam"
+            },
+            {
+              "name": "Vuong",
+              "description": "Nissen and Roberts list Vuong as a cultivar used in central and southern Vietnam"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "category": "PCNA Japanese persimmon cultivars with genetic origins"
+          },
+          "rows": [
+            {
+              "name": "Imoto",
+              "description": "Nissen and Roberts list Imoto as possibly a bud sport of Jiro"
+            },
+            {
+              "name": "Uenishiwase",
+              "description": "Nissen and Roberts list Uenishiwase as a bud sport of Matsumotowase Fuyu"
+            },
+            {
+              "name": "Sunami",
+              "description": "Nissen and Roberts list Sunami as a bud sport of Fuyu"
+            },
+            {
+              "name": "Aisyuhou",
+              "description": "Nissen and Roberts list Aisyuhou as a bud sport of Manekawa-Jiro"
+            },
+            {
+              "name": "Tanbawase-Fuyu",
+              "description": "Nissen and Roberts list Tanbawase-Fuyu as a bud sport of Fuyu"
+            },
+            {
+              "name": "Kyi-joh",
+              "description": "Nissen and Roberts list Kyi-joh as a bud sport of Matsunotowase Fuyu"
+            },
+            {
+              "name": "Ohtanenashi",
+              "description": "Nissen and Roberts list Ohtanenashi as a bud sport of Hiratanenashi"
+            },
+            {
+              "name": "Kohshimaru",
+              "description": "Nissen and Roberts list Kohshimaru as a bud sport of Hiratanenashi"
+            },
+            {
+              "name": "Suruga",
+              "description": "Nissen and Roberts list Suruga as a cross of Hana Gosho and Oku Gosho"
+            },
+            {
+              "name": "Izu",
+              "description": "Nissen and Roberts list Izu as a cross of Fuyu and Okitu-1, where Okitu-1 is from Okugosho x Okugosho"
+            },
+            {
+              "name": "Shinshu",
+              "description": "Nissen and Roberts list Shinshu as a cross involving Okitsu-20 and Okitsu-1"
+            },
+            {
+              "name": "Youhou",
+              "description": "Nissen and Roberts list Youhou as a cross of Fuyu and Jiro"
+            },
+            {
+              "name": "Taishu",
+              "description": "Nissen and Roberts list Taishu as a cross of Fuyu and IIiG-16, with IIiG-16 from Jiro and an Okugosho x Hanagosho parent"
+            },
+            {
+              "name": "Kanshu",
+              "description": "Nissen and Roberts list Kanshu as a cross involving Shinshu 318-4, Fuyu, and an Okugosho x Hanagosho parent"
+            },
+            {
+              "name": "Kishu",
+              "description": "Nissen and Roberts list Kishu as a cross involving Izu, Akitsu-5, Fuyu, and an Okugosho x Hanagosho parent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

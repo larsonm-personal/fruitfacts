@@ -1,0 +1,171 @@
+{
+    title: "HortScience Past Present and Future of Jujubes",
+    author: "Shengrui Yao",
+    description: "HortScience 48(6):672-680 review of jujube importation, culture history, adaptation, and cultivars in the United States",
+    url: "https://journals.ashs.org/view/journals/hortsci/48/6/article-p672.xml",
+    published: "June 2013",
+    accessed: "Jul 2026",
+    type: "journal article review",
+    needs_help: true,
+    locations: [
+        {
+            name: "NMSU Sustainable Agriculture Science Center at Alcalde, Alcalde, New Mexico",
+            latitude: 36.0911,
+            longitude: -106.0568
+        },
+    ],
+    categories: [
+        {
+            name: "Frank Meyer and early USDA jujube introductions discussed by Yao",
+            description: "Yao discusses these jujube cultivars or cultivar names in the context of Frank Meyer and other early USDA introductions"
+        },
+        {
+            name: "USDA Chico jujube recommendations discussed by Yao",
+            description: "Yao says the USDA Chico Station recommended these four jujube cultivars in the 1920s"
+        },
+        {
+            name: "USDA Chico jujube breeding selections discussed by Yao",
+            description: "Yao discusses these jujube cultivars as bred or selected at the USDA Chico Station"
+        },
+        {
+            name: "United States jujube selections and recent imports discussed by Yao",
+            description: "Yao discusses these jujube selections or recent imports in the context of U.S. cultivar development and availability"
+        },
+    ],
+    plants: [
+        {
+            type: "Jujube",
+            name: "Chin sze tsao",
+            category: "Frank Meyer and early USDA jujube introductions discussed by Yao",
+            description: "Yao says Frank Meyer sent seed from Chin sze tsao from Shandong Province in 1907 and gives Jinsi zao as the Chinese name"
+        },
+        {
+            type: "Jujube",
+            name: "Yuen ling tsao",
+            category: "Frank Meyer and early USDA jujube introductions discussed by Yao",
+            description: "Yao says Frank Meyer sent seed from Yuen ling tsao from Shandong Province in 1907 and gives Yuanling zao as the Chinese name"
+        },
+        {
+            type: "Jujube",
+            name: "Hu ping tsao",
+            category: "Frank Meyer and early USDA jujube introductions discussed by Yao",
+            description: "Yao says Frank Meyer collected Hu ping tsao budwood from Shanxi Province in 1908 and gives Huping zao as the Chinese name"
+        },
+        {
+            type: "Jujube",
+            name: "Tsui ling tsao",
+            category: "Frank Meyer and early USDA jujube introductions discussed by Yao",
+            description: "Yao says Frank Meyer collected Tsui ling tsao budwood from Shanxi Province in 1908 and gives Cuiling zao as the Chinese name"
+        },
+        {
+            type: "Jujube",
+            name: "Ta tsao",
+            category: "Frank Meyer and early USDA jujube introductions discussed by Yao",
+            description: "Yao says Meyer collected Ta tsao, but notes that the name means big-fruited tsao and differs from region to region"
+        },
+        {
+            type: "Jujube",
+            name: "Hsiao tsao",
+            category: "Frank Meyer and early USDA jujube introductions discussed by Yao",
+            description: "Yao says Meyer collected Hsiao tsao, but notes that the name means small-fruited tsao and differs from region to region"
+        },
+        {
+            type: "Jujube",
+            name: "Wu hu tsao",
+            category: "Frank Meyer and early USDA jujube introductions discussed by Yao",
+            description: "Yao describes Wu hu tsao as a seedless or pitless cultivar collected by Frank Meyer"
+        },
+        {
+            type: "Jujube",
+            name: "Yu",
+            category: "Frank Meyer and early USDA jujube introductions discussed by Yao",
+            description: "Yao describes Yu as a tooth-shaped jujube cultivar from Frank Meyer's collections and gives Ya zao as the Chinese name"
+        },
+        {
+            type: "Jujube",
+            name: "So",
+            category: "Frank Meyer and early USDA jujube introductions discussed by Yao",
+            description: "Yao says Frank Meyer collected So, PI 37484, a contorted jujube with gnarled and zigzagged branches"
+        },
+        {
+            type: "Jujube",
+            name: "Dragon",
+            category: "Frank Meyer and early USDA jujube introductions discussed by Yao",
+            description: "Yao says Frank Meyer collected a jujube with crooked and twisted branches called Dragon or Dragon's-claw"
+        },
+        {
+            type: "Jujube",
+            name: "Mu",
+            category: "USDA Chico jujube recommendations discussed by Yao",
+            AKA: ["Mu Shing Hong"],
+            description: "Yao says the USDA Chico Station recommended Mu shing hong in the 1920s and described it as one of the best varieties. Source names this as Mu shing hong"
+        },
+        {
+            type: "Jujube",
+            name: "Lang",
+            category: "USDA Chico jujube recommendations discussed by Yao",
+            description: "Yao says the USDA Chico Station recommended Lang in the 1920s and described it as the best variety for general purposes"
+        },
+        {
+            type: "Jujube",
+            name: "Shuimen",
+            category: "USDA Chico jujube recommendations discussed by Yao",
+            AKA: ["Sui"],
+            description: "Yao says the USDA Chico Station recommended Shui men in the 1920s and described it as average sized and useful for many purposes. Source names this as Shui men"
+        },
+        {
+            type: "Jujube",
+            name: "Li",
+            category: "USDA Chico jujube recommendations discussed by Yao",
+            description: "Yao says the USDA Chico Station recommended Li in the 1920s and described it as having the largest fruit and being one of the best for fresh eating"
+        },
+        {
+            type: "Jujube",
+            name: "Chico",
+            category: "USDA Chico jujube breeding selections discussed by Yao",
+            description: "Yao says Chico, also called GI-7-62, was bred at the USDA Chico Station as a seedling of PI 37484, So, and has round but flattened fruit"
+        },
+        {
+            type: "Jujube",
+            name: "GI-1183",
+            category: "USDA Chico jujube breeding selections discussed by Yao",
+            description: "Yao says GI-1183 is a jujube cultivar from the USDA Chico Station bred by Ackerman from unknown sources"
+        },
+        {
+            type: "Jujube",
+            name: "GA866",
+            category: "USDA Chico jujube breeding selections discussed by Yao",
+            description: "Yao says GA866 was bred and selected at the USDA Chico Station by Ackerman from unknown sources"
+        },
+        {
+            type: "Jujube",
+            name: "Thornless",
+            category: "USDA Chico jujube breeding selections discussed by Yao",
+            description: "Yao says Thornless was bred or selected at the USDA Chico Station by Ackerman and Smith, with fruit shape similar to Lang"
+        },
+        {
+            type: "Jujube",
+            name: "R3T1",
+            category: "United States jujube selections and recent imports discussed by Yao",
+            description: "Yao says R3T1 was selected from a Tennessee Valley Authority jujube planting near Norris, Tennessee"
+        },
+        {
+            type: "Jujube",
+            name: "Sherwood",
+            category: "United States jujube selections and recent imports discussed by Yao",
+            description: "Yao says Sherwood was excellent for California, Texas, and Louisiana, but had poor fruit set and did not ripen before first frost in northern New Mexico"
+        },
+        {
+            type: "Jujube",
+            name: "Autumn Beauty",
+            category: "United States jujube selections and recent imports discussed by Yao",
+            description: "Yao says Jim Gilbert of One Green World Nursery introduced Autumn Beauty from China"
+        },
+        {
+            type: "Jujube",
+            name: "Winter Delight",
+            category: "United States jujube selections and recent imports discussed by Yao",
+            description: "Yao says Jim Gilbert of One Green World Nursery introduced Winter Delight from China; the source styles the name with a trademark marker"
+        },
+    ]
+}
