@@ -6,6 +6,9 @@ call %command% || goto :error
 set "command=rustup toolchain install nightly"
 call %command% || goto :error
 
+set "command=rustup component add clippy"
+call %command% || goto :error
+
 set "command=cargo install cargo-edit --locked"
 call %command% || goto :error
 
@@ -21,6 +24,9 @@ call %command% || goto :error
 rem print versions of rust to a file ./rust_versions.txt
 
 set "command=rustc --version > rust_versions.txt"
+call %command% || goto :error
+
+set "command=rustup --version >> rust_versions.txt"
 call %command% || goto :error
 
 set "command=cargo --version >> rust_versions.txt"
