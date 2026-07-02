@@ -3821,6 +3821,515 @@
                 "Used reviewed static_rows because the PDF has a compact prose cultivar discussion rather than a stable cultivar table",
                 "DVC PDF asset not archived in this pass"
             ]
+        },
+        {
+            id: "fruit-notes-selected-minnesota-white-grapes-2020",
+            status: "new",
+            priority: "high",
+            title: "Selected Minnesota White Grape Varieties for the Northeast",
+            institution: "Fruit Notes",
+            authors: ["J. Stephen Casscles", "Tom Plocher", "Todd Trzaskos"],
+            region: "Northeastern United States",
+            crops: ["Grape"],
+            source_type: "journal cultivar overview",
+            landing_url: "http://umassfruitnotes.com/v85n2/Cover852.html",
+            download_url: "http://umassfruitnotes.com/v85n2/a5.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Minnesota cold-climate white wine grape descriptions for Northeastern growers",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Selected Minnesota White Grape Varieties for the Northeast.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v85n2/a5; paired red-grape article v85n2/a6 is already encoded",
+            notes: [
+                "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference",
+                "Likely companion import shape to the existing Minnesota cool climate red grape article"
+            ]
+        },
+        {
+            id: "fruit-notes-white-french-american-grapes-2019",
+            status: "new",
+            priority: "high",
+            title: "Selected White French-American Grape Varieties for the Northeast",
+            institution: "Fruit Notes",
+            authors: ["J. Stephen Casscles"],
+            region: "Northeastern United States",
+            crops: ["Grape"],
+            source_type: "journal cultivar overview",
+            landing_url: "http://umassfruitnotes.com/v84n4/abcdCover844.html",
+            download_url: "http://umassfruitnotes.com/v84n4/a1.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "White French-American wine grape descriptions for Northeastern growers",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Selected White French-American Grape Varieties for the Northeast.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v84n4/a1",
+            notes: [
+                "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference"
+            ]
+        },
+        {
+            id: "fruit-notes-red-french-american-grapes-2019",
+            status: "new",
+            priority: "high",
+            title: "Selected Red French-American Grape Varieties for the Northeast",
+            institution: "Fruit Notes",
+            authors: ["J. Stephen Casscles"],
+            region: "Northeastern United States",
+            crops: ["Grape"],
+            source_type: "journal cultivar overview",
+            landing_url: "http://umassfruitnotes.com/v84n3/Cover843abcd.html",
+            download_url: "http://umassfruitnotes.com/v84n3/a5.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Red French-American wine grape descriptions for Northeastern growers",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Selected Red French-American Grape Varieties for the Northeast.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v84n3/a5",
+            notes: [
+                "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference"
+            ]
+        },
+        {
+            id: "fruit-notes-new-peach-nectarine-selena-silverglo-2019",
+            status: "new",
+            priority: "high",
+            title: "Fruit Quality Characteristics of New Peach and Nectarine Varieties: Selena and Silverglo",
+            institution: "Fruit Notes",
+            region: "New Jersey",
+            crops: ["Peach", "Nectarine"],
+            source_type: "journal cultivar performance article",
+            landing_url: "http://umassfruitnotes.com/v84n1/Cover841.html",
+            download_url: "http://umassfruitnotes.com/v84n1/a4.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Fruit-quality article for Rutgers peach and nectarine selections Selena and Silverglo",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/New Jersey/Fruit Notes- Selena and Silverglo Peach and Nectarine Fruit Quality.json5",
+            duplicate_check:
+                "Selena and Silverglo exist in NJAES and commercial references, but this Fruit Notes article is not encoded",
+            notes: [
+                "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference"
+            ]
+        },
+        {
+            id: "fruit-notes-new-peach-nectarine-brigantine-evelynn-tiana-2018",
+            status: "new",
+            priority: "high",
+            title: "Fruit Quality Characteristics of Three New Peach and Nectarine Varieties: Brigantine, Evelynn, and Tiana",
+            institution: "Fruit Notes",
+            region: "New Jersey",
+            crops: ["Peach", "Nectarine"],
+            source_type: "journal cultivar performance article",
+            landing_url: "http://umassfruitnotes.com/v83n2/Cover832abcd.html",
+            download_url: "http://umassfruitnotes.com/v83n2/a3.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Fruit-quality article for Rutgers peach and nectarine selections Brigantine, Evelynn, and Tiana",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/New Jersey/Fruit Notes- Brigantine Evelynn and Tiana Peach and Nectarine Fruit Quality.json5",
+            duplicate_check:
+                "These varieties exist in NJAES and other references, but this Fruit Notes article is not encoded",
+            notes: [
+                "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference"
+            ]
+        },
+        {
+            id: "fruit-notes-fifteen-years-peach-nectarine-evaluation-2018",
+            status: "new",
+            priority: "high",
+            title: "Fifteen Years of Peach and Nectarine Variety Evaluation at the UMass Cold Spring Orchard",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Peach", "Nectarine"],
+            source_type: "journal cultivar performance article",
+            landing_url: "http://umassfruitnotes.com/v83n1/Cover831abcd.html",
+            download_url: "http://umassfruitnotes.com/v83n1/a2.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Long-term Massachusetts peach and nectarine variety evaluation at UMass Cold Spring Orchard",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Fifteen Years of Peach and Nectarine Variety Evaluation at UMass Cold Spring Orchard.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v83n1/a2",
+            notes: [
+                "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference",
+                "Likely high-value multi-cultivar performance source"
+            ]
+        },
+        {
+            id: "fruit-notes-rubyrush-apple-release-2022",
+            status: "new",
+            priority: "medium",
+            title: "RubyRushTM - New Apple Cultivar Release from Rutgers University and Adams County Nursery",
+            institution: "Fruit Notes",
+            region: "New Jersey",
+            crops: ["Apple"],
+            source_type: "release article or journal overview",
+            landing_url: "http://umassfruitnotes.com/v87n1/Cover871.html",
+            download_url: "http://umassfruitnotes.com/v87n1/a2.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "RubyRush apple release article from Rutgers University and Adams County Nursery",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/New Jersey/Fruit Notes- RubyRush Apple Release.json5",
+            duplicate_check:
+                "RubyRush exists in NJAES Apples, but this release article is not encoded",
+            notes: [
+                "Source title uses trademark styling; keep ASCII TM in queue text"
+            ]
+        },
+        {
+            id: "fruit-notes-new-england-cider-apple-project-2020",
+            status: "new",
+            priority: "medium",
+            title: "New England Cider Apple Project",
+            institution: "Fruit Notes",
+            region: "New England",
+            crops: ["Apple"],
+            source_type: "regional cultivar project update",
+            landing_url: "http://umassfruitnotes.com/v85n1/Cover851.html",
+            download_url: "http://umassfruitnotes.com/v85n1/a3.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Cider apple project article that may identify cultivars or trial plantings for New England",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/New England/Fruit Notes- New England Cider Apple Project.json5",
+            duplicate_check:
+                "No existing Fruit Notes cider project JSON5 reference found",
+            notes: [
+                "Needs review to determine whether it contains cultivar rows or only project context"
+            ]
+        },
+        {
+            id: "fruit-notes-hard-cider-apple-varieties-new-jersey-2021",
+            status: "stubbed",
+            priority: "high",
+            title: "Evaluation of Hard Cider Apple Varieties to Promote Hard Cider Industry Growth in New Jersey",
+            institution: "Fruit Notes",
+            region: "New Jersey",
+            crops: ["Apple"],
+            source_type: "journal cultivar performance article",
+            landing_url: "http://umassfruitnotes.com/v86n1/Cover861.html",
+            download_url: "http://umassfruitnotes.com/v86n1/a7.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Rutgers hard cider apple trial article with cider apple cultivar observations",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/New Jersey/Evaluation of Hard Cider Apple Varieties to Promote Hard Cider Industry Growth in New Jersey.json5",
+            duplicate_check:
+                "Existing JSON5 stub has TODO cultivar comments but no encoded plant rows",
+            notes: [
+                "Queue entry added so the existing needs_help reference is visible in source prioritization"
+            ]
+        },
+        {
+            id: "fruit-notes-fuji-honeycrisp-rootstock-trials-new-jersey-2021",
+            status: "new",
+            priority: "medium",
+            title: "2020 Update on NC-140 Fuji and Honeycrisp Apple Rootstock Trials in New Jersey",
+            institution: "Fruit Notes",
+            region: "New Jersey",
+            crops: ["Apple Rootstock", "Apple"],
+            source_type: "journal rootstock performance article",
+            landing_url: "http://umassfruitnotes.com/v86n2/Cover862abcd.html",
+            download_url: "http://umassfruitnotes.com/v86n2/a4.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "NC-140 Fuji and Honeycrisp apple rootstock trial update from New Jersey",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/New Jersey/Fruit Notes- 2020 NC-140 Fuji and Honeycrisp Apple Rootstock Trials in New Jersey.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v86n2/a4",
+            notes: [
+                "Part of a repeated NC-140 rootstock-trial series in Fruit Notes"
+            ]
+        },
+        {
+            id: "fruit-notes-fuji-honeycrisp-rootstock-trials-new-jersey-2020",
+            status: "new",
+            priority: "medium",
+            title: "NC-140 Fuji and Honeycrisp Apple Rootstock Trials in New Jersey",
+            institution: "Fruit Notes",
+            region: "New Jersey",
+            crops: ["Apple Rootstock", "Apple"],
+            source_type: "journal rootstock performance article",
+            landing_url: "http://umassfruitnotes.com/v85n2/Cover852.html",
+            download_url: "http://umassfruitnotes.com/v85n2/a7.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "NC-140 Fuji and Honeycrisp apple rootstock trial article from New Jersey",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/New Jersey/Fruit Notes- NC-140 Fuji and Honeycrisp Apple Rootstock Trials in New Jersey.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v85n2/a7",
+            notes: [
+                "Potential overlap with the 2020 update article; review together before encoding"
+            ]
+        },
+        {
+            id: "fruit-notes-honeycrisp-fuji-rootstock-trials-ma-nj-2018",
+            status: "new",
+            priority: "medium",
+            title: "Tree Size and Fruit Yield in 2017 of Honeycrisp and Fuji Apple Trees in 2014 NC-140 Rootstock Trials in Massachusetts and New Jersey",
+            institution: "Fruit Notes",
+            region: "Massachusetts and New Jersey",
+            crops: ["Apple Rootstock", "Apple"],
+            source_type: "journal rootstock performance article",
+            landing_url: "http://umassfruitnotes.com/v83n1/Cover831abcd.html",
+            download_url: "http://umassfruitnotes.com/v83n1/a6.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "2014 NC-140 Honeycrisp and Fuji apple rootstock trial results for Massachusetts and New Jersey",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Honeycrisp and Fuji Apple Rootstock Trials in Massachusetts and New Jersey.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v83n1/a6",
+            notes: [
+                "Rootstock rows may belong under Apple Rootstock while preserving cultivar context in descriptions"
+            ]
+        },
+        {
+            id: "fruit-notes-peach-rootstock-redhaven-update-2017",
+            status: "new",
+            priority: "medium",
+            title: "Rootstock Influence on Redhaven Peach Performance: An Update on the Massachusetts Planting of the 2009 NC-140 Peach Rootstock Trial",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Prunus Rootstock", "Peach"],
+            source_type: "journal rootstock performance article",
+            landing_url: "http://umassfruitnotes.com/v82n2/Cover822.html",
+            download_url: "http://umassfruitnotes.com/v82n2/a2.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Massachusetts 2009 NC-140 Redhaven peach rootstock trial update",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Redhaven Peach Rootstock Performance Update.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v82n2/a2",
+            notes: [
+                "Rootstock rows may belong under Prunus Rootstock with Redhaven context in descriptions"
+            ]
+        },
+        {
+            id: "fruit-notes-apple-rootstock-budagovsky-geneva-pillnitz-2017",
+            status: "new",
+            priority: "medium",
+            title: "Performance of Honeycrisp Apple trees on Several Budagovsky, Cornell-Geneva, and Pillnitz Rootstocks: An Update on the Massachusetts Planting of the 2010 NC-140 Apple Rootstock Trial",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Apple Rootstock", "Apple"],
+            source_type: "journal rootstock performance article",
+            landing_url: "http://umassfruitnotes.com/v82n2/Cover822.html",
+            download_url: "http://umassfruitnotes.com/v82n2/a1.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Massachusetts 2010 NC-140 Honeycrisp apple rootstock trial update",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Honeycrisp Apple Budagovsky Cornell-Geneva and Pillnitz Rootstock Trial.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v82n2/a1",
+            notes: [
+                "Rootstock rows may belong under Apple Rootstock with Honeycrisp context in descriptions"
+            ]
+        },
+        {
+            id: "fruit-notes-plum-plum-hybrid-cultivars-2012",
+            status: "new",
+            priority: "high",
+            title: "Testing and Evaluation of Plum and Plum Hybrid Cultivars",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Euro Plum", "Japanese Plum", "Plumcot", "Apriplum"],
+            source_type: "journal cultivar performance article",
+            landing_url: "http://umassfruitnotes.com/v77n3/Cover773.html",
+            download_url: "http://umassfruitnotes.com/v77n3/a4.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Plum and plum-hybrid cultivar evaluation article",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Testing and Evaluation of Plum and Plum Hybrid Cultivars.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v77n3/a4",
+            notes: [
+                "Review cultivar taxonomy carefully; named bred plums should not default to Species Plum"
+            ]
+        },
+        {
+            id: "fruit-notes-blackberry-variety-selection-opportunities-2011",
+            status: "new",
+            priority: "high",
+            title: "Blackberry Variety Selection Opportunities",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Blackberry"],
+            source_type: "journal cultivar overview",
+            landing_url: "http://umassfruitnotes.com/v76n4/Cover764.html",
+            download_url: "http://umassfruitnotes.com/v76n4/a5.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Blackberry variety selection article for Northeastern growers",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Blackberry Variety Selection Opportunities.json5",
+            duplicate_check:
+                "Same title also appears in v76n2/a4; no existing JSON5 reference found for either article",
+            notes: [
+                "Review v76n2/a4 and v76n4/a5 together to determine whether they are duplicates, installments, or corrections"
+            ]
+        },
+        {
+            id: "fruit-notes-pearl-cherries-massachusetts-2012",
+            status: "new",
+            priority: "medium",
+            title: "Performance of the Pearl Cherries in Massachusetts",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Sweet Cherry"],
+            source_type: "journal cultivar performance article",
+            landing_url: "http://umassfruitnotes.com/v77n1/Cover771.html",
+            download_url: "http://umassfruitnotes.com/v77n1/a1.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Massachusetts performance article for Pearl-series sweet cherries",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Performance of the Pearl Cherries in Massachusetts.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v77n1/a1",
+            notes: [
+                "May overlap with other Cornell cherry variety descriptions; preserve Massachusetts performance context"
+            ]
+        },
+        {
+            id: "fruit-notes-favorite-cherry-varieties-grower-observations-2015",
+            status: "new",
+            priority: "medium",
+            title: "Favorite Cherry Varieties: Grower Observations",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Sweet Cherry", "Sour Cherry"],
+            source_type: "grower cultivar observations",
+            landing_url: "http://umassfruitnotes.com/v80n3/Cover803.html",
+            download_url: "http://umassfruitnotes.com/v80n3/a3.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Grower observations on favorite cherry varieties",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Favorite Cherry Varieties Grower Observations.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v80n3/a3",
+            notes: [
+                "Lower evidentiary weight than extension trials, but likely useful cultivar observations"
+            ]
+        },
+        {
+            id: "fruit-notes-consumer-evaluation-apple-varieties-2007",
+            status: "new",
+            priority: "medium",
+            title: "Consumer evaluation of new, antique, and little known apple varieties",
+            institution: "Fruit Notes",
+            region: "Massachusetts",
+            crops: ["Apple"],
+            source_type: "journal cultivar evaluation article",
+            landing_url: "http://umassfruitnotes.com/v72n1/Cover721.html",
+            download_url: "http://umassfruitnotes.com/v72n1/a1.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Consumer evaluation article for new, antique, and lesser-known apple varieties",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Consumer Evaluation of New Antique and Little Known Apple Varieties.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v72n1/a1",
+            notes: [
+                "Likely useful for cultivar descriptions rather than horticultural performance"
+            ]
+        },
+        {
+            id: "fruit-notes-origin-of-some-apple-varieties-2007",
+            status: "new",
+            priority: "low",
+            title: "Origin of Some Apple Varieties",
+            institution: "Fruit Notes",
+            region: "United States",
+            crops: ["Apple"],
+            source_type: "journal cultivar overview",
+            landing_url: "http://umassfruitnotes.com/v72n3/Cover723.html",
+            download_url: "http://umassfruitnotes.com/v72n3/a2.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Historical origin notes for apple varieties",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/National/Fruit Notes- Origin of Some Apple Varieties.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v72n3/a2",
+            notes: [
+                "Likely lower priority because it may duplicate dictionary or historical metadata rather than regional recommendation data"
+            ]
+        },
+        {
+            id: "fruit-notes-fruit-acres-peach-varieties-2006",
+            status: "new",
+            priority: "medium",
+            title: "Evaluation of new Fruit Acres (FA) named/numbered peach varieties/selections",
+            institution: "Fruit Notes",
+            region: "Northeastern United States",
+            crops: ["Peach"],
+            source_type: "journal cultivar performance article",
+            landing_url: "http://umassfruitnotes.com/v71n3/XCover713.html",
+            download_url: "http://umassfruitnotes.com/v71n3/a4.pdf",
+            discovered: "2026-07-02",
+            discovered_by: "UMass Fruit Notes live issue index survey",
+            value_summary:
+                "Evaluation of named and numbered Fruit Acres peach varieties and selections",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/National/Fruit Notes- Evaluation of Fruit Acres Peach Varieties and Selections.json5",
+            duplicate_check:
+                "No existing JSON5 reference found for v71n3/a4",
+            notes: [
+                "May include numbered selections; preserve source naming exactly"
+            ]
         }
     ]
 }
