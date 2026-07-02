@@ -9,8 +9,15 @@
     ["url", "https://journal.americanpomological.org/index.php/jofaps/article/view/2865/2869"],
     ["published", "2015"],
     ["accessed", "Jul 2026"],
-    ["type", "journal article review"],
+    ["type", "journal article"],
     ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Griffith University, Nathan, Queensland, Australia",
+      "latitude": -27.5527,
+      "longitude": 153.0535
+    }
   ],
   "categories": [
     {

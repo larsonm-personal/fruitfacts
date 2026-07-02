@@ -253,6 +253,10 @@
             "config": "extraction_configs/cornell_table_grape_cool_climates_ib234.json"
         },
         {
+            "id": "msu_e2774_growing_table_grapes_temperate_climate",
+            "config": "extraction_configs/msu_e2774_growing_table_grapes_temperate_climate.json"
+        },
+        {
             "id": "rutgers_fs1083_plums",
             "config": "extraction_configs/rutgers_fs1083_plums.json"
         },
@@ -371,6 +375,10 @@
         {
             "id": "hortsci_past_present_future_jujubes_2013",
             "config": "extraction_configs/hortsci_past_present_future_jujubes_2013.json"
+        },
+        {
+            "id": "usda_fb2087_growing_fruits_nuts_southern_great_plains",
+            "config": "extraction_configs/usda_fb2087_growing_fruits_nuts_southern_great_plains.json"
         },
         {
             "id": "sare_season_long_strawberry_everbearers_northeast",

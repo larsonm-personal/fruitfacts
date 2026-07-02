@@ -1,0 +1,151 @@
+{
+    title: "MSU E-2774 Growing Table Grapes in a Temperate Climate",
+    author: "Thomas J. Zabadal",
+    description: "Michigan State University Extension Bulletin E-2774 on growing table grapes in temperate climates, with variety selection and crop-adjustment guidance based on Michigan and New York experience",
+    url: "https://www.canr.msu.edu/uploads/files/e2774.pdf",
+    published: "January 2002",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Southwest Michigan Research and Extension Center, Benton Harbor, Michigan",
+            latitude: 42.0885,
+            longitude: -86.3542
+        },
+    ],
+    categories: [
+        {
+            name: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists these table grape varieties in MSU E-2774 crop-adjustment or special-practice guidance for temperate-climate production"
+        },
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Alden",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Alden in Table 3 of MSU E-2774 for temperate-climate table grape crop-adjustment planning"
+        },
+        {
+            type: "Grape",
+            name: "Buffalo",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Buffalo in Table 3 of MSU E-2774 for temperate-climate table grape crop-adjustment planning"
+        },
+        {
+            type: "Grape",
+            name: "Canadice",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Canadice in Table 3 of MSU E-2774 and says to avoid gibberellic acid use on Canadice"
+        },
+        {
+            type: "Grape",
+            name: "ES3-22-18",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists ES3-22-18 in Table 3 of MSU E-2774 for temperate-climate table grape crop-adjustment planning"
+        },
+        {
+            type: "Grape",
+            name: "Einset Seedless",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Einset Seedless in Table 3 of MSU E-2774 for temperate-climate table grape crop-adjustment planning"
+        },
+        {
+            type: "Grape",
+            name: "Golden Muscat",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Golden Muscat in Table 3 of MSU E-2774 for temperate-climate table grape crop-adjustment planning"
+        },
+        {
+            type: "Grape",
+            name: "Himrod",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Himrod in Table 3 of MSU E-2774, says growers often benefit from gibberellic acid use on Himrod, and discusses sustainable cane girdling trials on Himrod"
+        },
+        {
+            type: "Grape",
+            name: "Interlaken Seedless",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Interlaken Seedless in Table 3 of MSU E-2774 for temperate-climate table grape crop-adjustment planning"
+        },
+        {
+            type: "Grape",
+            name: "Lakemont",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Lakemont in Table 3 of MSU E-2774, says growers often benefit from gibberellic acid use on Lakemont, and notes cane girdles on Lakemont callus well"
+        },
+        {
+            type: "Grape",
+            name: "Mars",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Mars in Table 3 of MSU E-2774 and says to avoid gibberellic acid use on Mars"
+        },
+        {
+            type: "Grape",
+            name: "Marquis",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Marquis in Table 3 of MSU E-2774 and says to avoid gibberellic acid use on Marquis"
+        },
+        {
+            type: "Grape",
+            name: "New York Muscat",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists New York Muscat in Table 3 of MSU E-2774 for temperate-climate table grape crop-adjustment planning"
+        },
+        {
+            type: "Grape",
+            name: "Price",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Price in Table 3 of MSU E-2774 for temperate-climate table grape crop-adjustment planning"
+        },
+        {
+            type: "Grape",
+            name: "Reliance",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Reliance in Table 3 of MSU E-2774 and says growers often benefit from gibberellic acid use on Reliance"
+        },
+        {
+            type: "Grape",
+            name: "Romulus",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Romulus in Table 3 of MSU E-2774 for temperate-climate table grape crop-adjustment planning"
+        },
+        {
+            type: "Grape",
+            name: "Seneca",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Seneca in Table 3 of MSU E-2774 for temperate-climate table grape crop-adjustment planning"
+        },
+        {
+            type: "Grape",
+            name: "Sheridan",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Sheridan in Table 3 of MSU E-2774 for temperate-climate table grape crop-adjustment planning"
+        },
+        {
+            type: "Grape",
+            name: "Steuben",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Steuben in Table 3 of MSU E-2774 for temperate-climate table grape crop-adjustment planning"
+        },
+        {
+            type: "Grape",
+            name: "Vanessa",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Vanessa in Table 3 of MSU E-2774 and says growers often benefit from gibberellic acid use on Vanessa, using a lower concentration than some varieties"
+        },
+        {
+            type: "Grape",
+            name: "Yates",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal lists Yates in Table 3 of MSU E-2774 for temperate-climate table grape crop-adjustment planning"
+        },
+        {
+            type: "Grape",
+            name: "Glenora",
+            category: "Temperate-climate table grape varieties in MSU E-2774",
+            description: "Zabadal says growers often benefit from gibberellic acid use on Glenora in temperate-climate table grape production"
+        },
+    ]
+}

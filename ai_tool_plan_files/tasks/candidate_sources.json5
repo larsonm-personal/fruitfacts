@@ -3009,7 +3009,7 @@
         },
         {
             id: "msu-e2774-growing-table-grapes-temperate-climate",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Growing Table Grapes in a Temperate Climate",
             institution: "Michigan State University Extension",
@@ -3031,7 +3031,12 @@
             notes: [
                 "Mined from plant_database/references/Oregon/2017 - Table Grape Cultivar Performance in Oregon's Willamette Valley.pdf",
                 "Official MSU PDF returned a 45-page extension bulletin",
-                "Likely parsing issue: variety selection is mixed with training, pruning, crop adjustment, and appendices rather than a single clean cultivar table"
+                "Likely parsing issue: variety selection is mixed with training, pruning, crop adjustment, and appendices rather than a single clean cultivar table",
+                "Encoded 21 grape records in plant_database/references/Michigan/MSU E-2774 Growing Table Grapes in a Temperate Climate.json5",
+                "Config extraction added at helper_scripts/extraction_configs/msu_e2774_growing_table_grapes_temperate_climate.json",
+                "Manifest entry added as msu_e2774_growing_table_grapes_temperate_climate",
+                "Used reviewed static_rows from the Table 3 crop-adjustment list and gibberellic acid/girdling guidance",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {
@@ -3607,7 +3612,7 @@
         },
         {
             id: "usda-fb2087-growing-fruits-nuts-southern-great-plains",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Growing Fruits and Nuts in the Southern Great Plains",
             institution: "United States Department of Agriculture",
@@ -3642,7 +3647,12 @@
             notes: [
                 "Mined from plant_database/references/New Mexico/HortSci Early Performance of Jujube Fresh Eating Cultivars... copy.pdf",
                 "UNT landing page gives Locke as author, November 1955 issue date, and 30 page digital copy",
-                "Likely parsing issue: older federal bulletin may mix species suitability, culture notes, and scattered variety mentions"
+                "Likely parsing issue: older federal bulletin may mix species suitability, culture notes, and scattered variety mentions",
+                "Encoded 21 records in plant_database/references/National/USDA FB 2087 Growing Fruits and Nuts in the Southern Great Plains.json5",
+                "Config extraction added at helper_scripts/extraction_configs/usda_fb2087_growing_fruits_nuts_southern_great_plains.json",
+                "Manifest entry added as usda_fb2087_growing_fruits_nuts_southern_great_plains",
+                "Used reviewed static_rows from clear jujube, persimmon, and grape recommendation sections in the UNT per-page OCR",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {

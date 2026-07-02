@@ -1,0 +1,168 @@
+{
+    title: "USDA FB 2087 Growing Fruits and Nuts in the Southern Great Plains",
+    author: "L. F. Locke",
+    description: "USDA Farmers' Bulletin 2087, a historical Southern Great Plains fruit and nut guide with variety recommendations and observations from Woodward, Oklahoma and nearby experiment stations",
+    url: "https://digital.library.unt.edu/ark:/67531/metadc1717/",
+    published: "November 1955",
+    accessed: "Jul 2026",
+    type: "localized book",
+    needs_help: true,
+    locations: [
+        {
+            name: "Southern Great Plains Field Station, Woodward, Oklahoma",
+            latitude: 36.4336,
+            longitude: -99.3904
+        },
+    ],
+    categories: [
+        {
+            name: "Jujube varieties recommended in USDA Farmers' Bulletin 2087",
+            description: "Locke recommends these jujube varieties for Southern Great Plains plantings in USDA Farmers' Bulletin 2087"
+        },
+        {
+            name: "Persimmon varieties recommended in USDA Farmers' Bulletin 2087",
+            description: "Locke recommends or discusses these persimmon varieties for Southern Great Plains plantings in USDA Farmers' Bulletin 2087"
+        },
+        {
+            name: "Grape varieties for eastern and southern Southern Great Plains",
+            description: "Locke lists these grape varieties for the eastern and southern portions of the Southern Great Plains in USDA Farmers' Bulletin 2087"
+        },
+        {
+            name: "Grape varieties for northwestern Southern Great Plains",
+            description: "Locke suggests these hardy grape varieties for trial in the northwestern portion of the Southern Great Plains in USDA Farmers' Bulletin 2087"
+        },
+        {
+            name: "Grape varieties not recommended for Southern Great Plains",
+            description: "Locke explicitly says these grape varieties are not recommended for the Southern Great Plains in USDA Farmers' Bulletin 2087"
+        },
+    ],
+    plants: [
+        {
+            type: "Jujube",
+            name: "Shuimen",
+            category: "Jujube varieties recommended in USDA Farmers' Bulletin 2087",
+            AKA: ["Sui"],
+            description: "Locke says Sui men begins to ripen slightly earlier than Li and Lang, is more highly flavored, and has fruit much like a date in shape and size. Source names this as Sui men"
+        },
+        {
+            type: "Jujube",
+            name: "Lang",
+            category: "Jujube varieties recommended in USDA Farmers' Bulletin 2087",
+            description: "Locke says Lang has pear-shaped fruit smaller than Li, grew more rapidly than other jujube varieties at Woodward, and was probably the best first variety to plant"
+        },
+        {
+            type: "Jujube",
+            name: "Li",
+            category: "Jujube varieties recommended in USDA Farmers' Bulletin 2087",
+            description: "Locke says Li has the largest fruit of the three listed jujube varieties, ripens last, and may yield more than other varieties in some localities, but can crack and mold in rainy ripening weather"
+        },
+        {
+            type: "Persimmon",
+            name: "Early Golden",
+            category: "Persimmon varieties recommended in USDA Farmers' Bulletin 2087",
+            description: "Locke describes Early Golden as perhaps the best persimmon variety for the Southern Great Plains, larger than average native persimmons, ripening before frost, and having fine texture and good flavor"
+        },
+        {
+            type: "Persimmon",
+            name: "Hicks",
+            category: "Persimmon varieties recommended in USDA Farmers' Bulletin 2087",
+            description: "Locke lists Hicks among the other good persimmon varieties for the Southern Great Plains"
+        },
+        {
+            type: "Persimmon",
+            name: "Iona Market",
+            category: "Persimmon varieties recommended in USDA Farmers' Bulletin 2087",
+            description: "Locke lists Iona Market among the other good persimmon varieties for the Southern Great Plains"
+        },
+        {
+            type: "Persimmon",
+            name: "Josephine",
+            category: "Persimmon varieties recommended in USDA Farmers' Bulletin 2087",
+            description: "Locke lists Josephine among the other good persimmon varieties for the Southern Great Plains"
+        },
+        {
+            type: "Persimmon",
+            name: "Garretson",
+            category: "Persimmon varieties recommended in USDA Farmers' Bulletin 2087",
+            description: "Locke lists Garretson among the other good persimmon varieties for the Southern Great Plains"
+        },
+        {
+            type: "Persimmon",
+            name: "Kawakami",
+            category: "Persimmon varieties recommended in USDA Farmers' Bulletin 2087",
+            description: "Locke describes Kawakami as a hybrid from northeastern Texas that proved hardy at Woodward, Oklahoma, but produced only light crops"
+        },
+        {
+            type: "Grape",
+            name: "Beacon",
+            category: "Grape varieties for eastern and southern Southern Great Plains",
+            description: "Locke lists Beacon for the eastern and southern portions of the Southern Great Plains and describes it as a good-quality general-purpose grape for table and juice use"
+        },
+        {
+            type: "Grape",
+            name: "Caco",
+            category: "Grape varieties for eastern and southern Southern Great Plains",
+            description: "Locke lists Caco for the eastern and southern portions of the Southern Great Plains and says it was one of the leading varieties at Tucumcari, New Mexico"
+        },
+        {
+            type: "Grape",
+            name: "Extra",
+            category: "Grape varieties for eastern and southern Southern Great Plains",
+            description: "Locke lists Extra for the eastern and southern portions of the Southern Great Plains and describes it as apparently adapted to a wider range of conditions than any other variety listed"
+        },
+        {
+            type: "Grape",
+            name: "Carman",
+            category: "Grape varieties for eastern and southern Southern Great Plains",
+            description: "Locke lists Carman for the eastern and southern portions of the Southern Great Plains as a medium-sized black grape for table and juice use"
+        },
+        {
+            type: "Grape",
+            name: "Ellen Scott",
+            category: "Grape varieties for eastern and southern Southern Great Plains",
+            description: "Locke lists Ellen Scott for the eastern and southern portions of the Southern Great Plains and describes the fruit quality as excellent, especially on the drier western edge of the plains"
+        },
+        {
+            type: "Grape",
+            name: "Armalaga",
+            category: "Grape varieties for eastern and southern Southern Great Plains",
+            description: "Locke lists Armalaga for the eastern and southern portions of the Southern Great Plains as a high-quality green grape that is somewhat tender"
+        },
+        {
+            type: "Grape",
+            name: "Edna",
+            category: "Grape varieties for eastern and southern Southern Great Plains",
+            description: "Locke lists Edna for the eastern and southern portions of the Southern Great Plains and says it should probably substitute for Armalaga on the western edge of the plains"
+        },
+        {
+            type: "Grape",
+            name: "Catawba",
+            category: "Grape varieties for eastern and southern Southern Great Plains",
+            description: "Locke lists Catawba for the eastern and southern portions of the Southern Great Plains and says it was the only superior-quality grape showing promise as far north and west as Garden City, Kansas"
+        },
+        {
+            type: "Grape",
+            name: "Last Rose",
+            category: "Grape varieties for eastern and southern Southern Great Plains",
+            description: "Locke lists Last Rose for the eastern and southern portions of the Southern Great Plains as the latest maturing grape in the list"
+        },
+        {
+            type: "Grape",
+            name: "Alpha",
+            category: "Grape varieties for northwestern Southern Great Plains",
+            description: "Locke suggests Alpha for trial in the northwestern Southern Great Plains, where many other grape varieties cannot be expected to succeed, and says it may be better adapted than Beta to heavy black soils"
+        },
+        {
+            type: "Grape",
+            name: "Beta",
+            category: "Grape varieties for northwestern Southern Great Plains",
+            description: "Locke suggests Beta for trial in the northwestern Southern Great Plains and says it made good yields at Woodward, Oklahoma"
+        },
+        {
+            type: "Grape",
+            name: "Concord",
+            category: "Grape varieties not recommended for Southern Great Plains",
+            description: "Locke explicitly says Concord is not recommended for the Southern Great Plains because it is outside its territory, lacks drought resistance, ripens unevenly, and bears only light crops"
+        },
+    ]
+}
