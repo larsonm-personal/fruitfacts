@@ -1,0 +1,256 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "http://www.hort.cornell.edu/reisch/grapegenetics/bulletin/table/TTable1.html"
+  },
+  "reference_fields": [
+    ["title", "Cornell Table Grape Varieties for Cool Climates"],
+    ["author", "Bruce I. Reisch, David V. Peterson, Robert M. Pool, and Mary-Howell Martens"],
+    ["description", "Cornell Cooperative Extension Information Bulletin 234 table grape guide for cool-climate home vineyards and roadside markets"],
+    ["url", "https://www.hort.cornell.edu/reisch/grapegenetics/bulletin/table/index.html"],
+    ["thumbnail", "website"],
+    ["published", "1993"],
+    ["accessed", "Jul 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Cornell AgriTech, Geneva, New York",
+      "latitude": 42.8766,
+      "longitude": -77.0073
+    }
+  ],
+  "categories": [
+    {
+      "name": "Cornell cool-climate table grape varieties",
+      "description": "Cornell Information Bulletin 234 lists these dessert grape varieties with potential for the home vineyard and roadside market in cool climates"
+    }
+  ],
+  "lookups": [
+    {
+      "name": "disease_ratings",
+      "kind": "html_table",
+      "source": {
+        "kind": "html",
+        "url": "http://www.hort.cornell.edu/reisch/grapegenetics/bulletin/table/TTable2.html"
+      },
+      "table_index": 0,
+      "required_headers": ["Variety", "WH", "BR", "DM", "PM", "BOT", "PHOM", "EU", "CG", "ALS", "SULFUR"],
+      "name_key": "variety",
+      "key": "variety",
+      "row_overrides": {
+        "N. Y. Muscat": {
+          "variety": "N.Y. Muscat"
+        }
+      }
+    }
+  ],
+  "name_overrides": {
+    "N.Y. Muscat": {
+      "name": "New York Muscat",
+      "note": "Source table names this as N.Y. Muscat"
+    }
+  },
+  "name_suffix_type_map": [
+    {
+      "suffix": " (A, S)",
+      "subtype": "American",
+      "seedless": true
+    },
+    {
+      "suffix": " (A,S)",
+      "subtype": "American",
+      "seedless": true
+    },
+    {
+      "suffix": " (E,S)",
+      "subtype": "European",
+      "seedless": true
+    },
+    {
+      "suffix": " (A)",
+      "subtype": "American"
+    },
+    {
+      "suffix": " (E)",
+      "subtype": "European"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "html_name_matrix",
+      "table_index": 1,
+      "name_key": "name",
+      "plant_type": "Grape",
+      "category": "Cornell cool-climate table grape varieties",
+      "column_count": 6,
+      "implicit_group_columns": 1,
+      "group_cells": {
+        "White or amber": {
+          "color": "White/Amber"
+        }
+      },
+      "column_contexts": {
+        "1": {"ripening_season": "Very early"},
+        "2": {"ripening_season": "Early"},
+        "3": {"ripening_season": "Midseason"},
+        "4": {"ripening_season": "Late midseason"},
+        "5": {"ripening_season": "Late"}
+      },
+      "record_fields": [
+        ["color", {"row_key": "color"}],
+        ["subtype", {"row_key": "subtype"}],
+        ["seedless", {"row_key": "seedless"}]
+      ],
+      "harvest_time_unparsed": {"row_key": "ripening_season"},
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["color", "Fruit color group"],
+            ["ripening_season", "Ripening season"],
+            ["subtype", "Fruit texture type"]
+          ]
+        },
+        {
+          "kind": "flag_labels",
+          "labels": [["seedless", "Seedless"]]
+        },
+        {
+          "kind": "lookup_labels",
+          "lookup": "disease_ratings",
+          "labels": [
+            ["wh", "Winter hardiness rating"],
+            ["br", "Black rot susceptibility"],
+            ["dm", "Downy mildew susceptibility"],
+            ["pm", "Powdery mildew susceptibility"],
+            ["bot", "Botrytis susceptibility"],
+            ["phom", "Phomopsis susceptibility"],
+            ["eu", "Eutypa susceptibility"],
+            ["cg", "Crown gall susceptibility"],
+            ["als", "Angular leaf scorch susceptibility"],
+            ["sulfur", "Sulfur sensitivity"]
+          ],
+          "prefix": "Cornell disease and hardiness table: "
+        }
+      ]
+    },
+    {
+      "kind": "html_name_matrix",
+      "table_index": 2,
+      "name_key": "name",
+      "plant_type": "Grape",
+      "category": "Cornell cool-climate table grape varieties",
+      "column_count": 6,
+      "implicit_group_columns": 1,
+      "group_cells": {
+        "Red": {
+          "color": "Red"
+        }
+      },
+      "column_contexts": {
+        "1": {"ripening_season": "Very early"},
+        "2": {"ripening_season": "Early"},
+        "3": {"ripening_season": "Midseason"},
+        "4": {"ripening_season": "Late midseason"},
+        "5": {"ripening_season": "Late"}
+      },
+      "record_fields": [
+        ["color", {"row_key": "color"}],
+        ["subtype", {"row_key": "subtype"}],
+        ["seedless", {"row_key": "seedless"}]
+      ],
+      "harvest_time_unparsed": {"row_key": "ripening_season"},
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["color", "Fruit color group"],
+            ["ripening_season", "Ripening season"],
+            ["subtype", "Fruit texture type"]
+          ]
+        },
+        {
+          "kind": "flag_labels",
+          "labels": [["seedless", "Seedless"]]
+        },
+        {
+          "kind": "lookup_labels",
+          "lookup": "disease_ratings",
+          "labels": [
+            ["wh", "Winter hardiness rating"],
+            ["br", "Black rot susceptibility"],
+            ["dm", "Downy mildew susceptibility"],
+            ["pm", "Powdery mildew susceptibility"],
+            ["bot", "Botrytis susceptibility"],
+            ["phom", "Phomopsis susceptibility"],
+            ["eu", "Eutypa susceptibility"],
+            ["cg", "Crown gall susceptibility"],
+            ["als", "Angular leaf scorch susceptibility"],
+            ["sulfur", "Sulfur sensitivity"]
+          ],
+          "prefix": "Cornell disease and hardiness table: "
+        }
+      ]
+    },
+    {
+      "kind": "html_name_matrix",
+      "table_index": 3,
+      "name_key": "name",
+      "plant_type": "Grape",
+      "category": "Cornell cool-climate table grape varieties",
+      "column_count": 6,
+      "implicit_group_columns": 1,
+      "group_cells": {
+        "Blue, reddish- blue, or black": {
+          "color": "Blue/Black"
+        }
+      },
+      "column_contexts": {
+        "1": {"ripening_season": "Very early"},
+        "2": {"ripening_season": "Early"},
+        "3": {"ripening_season": "Midseason"},
+        "4": {"ripening_season": "Late midseason"},
+        "5": {"ripening_season": "Late"}
+      },
+      "record_fields": [
+        ["color", {"row_key": "color"}],
+        ["subtype", {"row_key": "subtype"}],
+        ["seedless", {"row_key": "seedless"}]
+      ],
+      "harvest_time_unparsed": {"row_key": "ripening_season"},
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["color", "Fruit color group"],
+            ["ripening_season", "Ripening season"],
+            ["subtype", "Fruit texture type"]
+          ]
+        },
+        {
+          "kind": "flag_labels",
+          "labels": [["seedless", "Seedless"]]
+        },
+        {
+          "kind": "lookup_labels",
+          "lookup": "disease_ratings",
+          "labels": [
+            ["wh", "Winter hardiness rating"],
+            ["br", "Black rot susceptibility"],
+            ["dm", "Downy mildew susceptibility"],
+            ["pm", "Powdery mildew susceptibility"],
+            ["bot", "Botrytis susceptibility"],
+            ["phom", "Phomopsis susceptibility"],
+            ["eu", "Eutypa susceptibility"],
+            ["cg", "Crown gall susceptibility"],
+            ["als", "Angular leaf scorch susceptibility"],
+            ["sulfur", "Sulfur sensitivity"]
+          ],
+          "prefix": "Cornell disease and hardiness table: "
+        }
+      ]
+    }
+  ]
+}

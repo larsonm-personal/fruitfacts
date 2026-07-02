@@ -64,7 +64,7 @@ def merged_extractor(config, extractor):
         merged["row_overrides"] = row_overrides
     elif row_overrides and "row_overrides" not in merged:
         merged["row_overrides"] = row_overrides
-    for key in ("name_suffix_notes", "harvest_value_map"):
+    for key in ("name_suffix_notes", "harvest_value_map", "name_suffix_type_map"):
         if key in config and key not in merged:
             merged[key] = config[key]
     return merged
@@ -863,9 +863,26 @@ def html_name_matrix_rows(page, extractor):
     skip_patterns = extractor.get("skip_cell_patterns", [])
     skip_cells = set(extractor.get("skip_cells", []))
     group_cells = extractor.get("group_cells", {})
+    column_contexts = {
+        int(index): context
+        for index, context in extractor.get("column_contexts", {}).items()
+    }
+    column_count = extractor.get("column_count")
+    if not column_count and column_contexts:
+        column_count = max(column_contexts) + 1
+    implicit_group_columns = extractor.get("implicit_group_columns", 0)
 
     for source_row in table:
-        for cell in source_row:
+        column_offset = 0
+        if (
+            implicit_group_columns
+            and group_values
+            and column_count
+            and len(source_row) == column_count - implicit_group_columns
+        ):
+            column_offset = implicit_group_columns
+        for source_index, cell in enumerate(source_row):
+            column_index = source_index + column_offset
             cell = clean_text(
                 apply_text_fixes(cell, extractor.get("cell_text_fixes", {}))
             )
@@ -877,6 +894,7 @@ def html_name_matrix_rows(page, extractor):
             row = {name_key: cell}
             row.update(extractor.get("row_fields", {}))
             row.update(group_values)
+            row.update(column_contexts.get(column_index, {}))
             rows.append(suffix_mapped_row(row, extractor))
 
     return rows
@@ -1837,7 +1855,8 @@ def build_lookups(data, config):
     for lookup in config.get("lookups", []):
         if lookup["kind"] != "html_table":
             raise ValueError("Unsupported lookup kind: " + lookup["kind"])
-        rows = table_rows(data, lookup)
+        lookup_data = data_for_extractor(data, lookup)
+        rows = table_rows(lookup_data, lookup)
         lookups[lookup["name"]] = {row[lookup["key"]]: row for row in rows}
     return lookups
 

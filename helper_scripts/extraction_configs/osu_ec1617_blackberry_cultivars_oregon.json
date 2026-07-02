@@ -1,0 +1,431 @@
+{
+  "source": {
+    "kind": "static"
+  },
+  "reference_fields": [
+    ["title", "OSU EC 1617 Blackberry Cultivars for Oregon"],
+    ["author", "Chad Finn and Bernadine Strik"],
+    ["description", "Oregon State University Extension cultivar guide for trailing, erect, semierect, primocane-fruiting erect, and blackberry/red raspberry hybrid blackberries grown in Oregon"],
+    ["url", "https://extension.oregonstate.edu/catalog/pub/ec-1617-blackberry-cultivars-oregon"],
+    ["thumbnail", "website"],
+    ["revised", "December 2021"],
+    ["reviewed", "2023"],
+    ["accessed", "Jul 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Oregon State University Extension Service, Corvallis, Oregon",
+      "latitude": 44.5646,
+      "longitude": -123.262
+    }
+  ],
+  "categories": [
+    {
+      "name": "Trailing blackberries for Oregon",
+      "description": "OSU EC 1617 lists these trailing blackberry cultivars in approximate order of ripening for Oregon"
+    },
+    {
+      "name": "Blackberry/red raspberry hybrids for Oregon",
+      "description": "OSU EC 1617 lists these blackberry/red raspberry hybrid cultivars in approximate order of ripening and says they are technically blackberries"
+    },
+    {
+      "name": "Erect blackberries for Oregon",
+      "description": "OSU EC 1617 lists these erect blackberry cultivars in approximate order of ripening for Oregon"
+    },
+    {
+      "name": "Primocane-fruiting erect blackberries for Oregon",
+      "description": "OSU EC 1617 lists these primocane-fruiting erect blackberry cultivars in approximate order of ripening for Oregon"
+    },
+    {
+      "name": "Semierect blackberries for Oregon",
+      "description": "OSU EC 1617 lists these semierect blackberry cultivars in approximate order of ripening for Oregon"
+    }
+  ],
+  "name_overrides": {
+    "Prime-Jim": {
+      "name": "Prime Jim",
+      "note": "Source table names this as Prime-Jim"
+    },
+    "Prime-Jan": {
+      "name": "Prime Jan",
+      "note": "Source table names this as Prime-Jan"
+    },
+    "Prime-Ark Freedom": {
+      "name": "Prime Ark Freedom",
+      "note": "Source table names this as Prime-Ark Freedom"
+    },
+    "Chester Thornless": {
+      "name": "Chester",
+      "note": "Source table names this as Chester Thornless"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "static_rows",
+      "plant_type": "Blackberry",
+      "harvest_time_unparsed": {"row_key": "harvest_time"},
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["plant", "Plant"],
+            ["fruit", "Fruit"],
+            ["yield", "Yield"],
+            ["market", "Market"],
+            ["commercial_value", "Large-scale commercial value rating"],
+            ["home_garden", "Small farm or home garden"],
+            ["comment", "Comment"]
+          ]
+        }
+      ],
+      "row_groups": [
+        {
+          "fields": {
+            "category": "Trailing blackberries for Oregon"
+          },
+          "rows": [
+            {
+              "name": "Obsidian",
+              "plant": "Very vigorous, thorny",
+              "fruit": "Large size, good firmness, black, fair shape, excellent flavor, very early ripening",
+              "yield": "Very high",
+              "market": "Primarily fresh but processes well",
+              "commercial_value": "1",
+              "harvest_time": "very early; harvest typically starts in the third week of June in Oregon's Willamette Valley"
+            },
+            {
+              "name": "Metolius",
+              "plant": "Vigorous, thorny",
+              "fruit": "Medium size, firm, black, excellent uniform shape, excellent flavor, very early ripening",
+              "yield": "High",
+              "market": "Primarily fresh but processes well",
+              "commercial_value": "1",
+              "harvest_time": "very early"
+            },
+            {
+              "name": "Silvan",
+              "plant": "Very vigorous, thorny",
+              "fruit": "Large size, soft, dark purple, fair shape, excellent flavor",
+              "yield": "Very high",
+              "market": "Processed",
+              "commercial_value": "2",
+              "comment": "Very soft and does not hold up in heat"
+            },
+            {
+              "name": "Cascade",
+              "plant": "Vigorous, thorny",
+              "fruit": "Small to medium size, soft, purple, excellent flavor, early ripening",
+              "yield": "Low to medium",
+              "market": "Processed",
+              "commercial_value": "3",
+              "harvest_time": "early",
+              "comment": "Not productive enough"
+            },
+            {
+              "name": "Olallie",
+              "plant": "Very vigorous, thorny",
+              "fruit": "Medium size, soft, black, lumpy shape, excellent flavor, early ripening",
+              "yield": "Low to medium",
+              "market": "Primarily fresh but processes well",
+              "commercial_value": "3",
+              "harvest_time": "early",
+              "comment": "Was grown commonly in California for U-pick and fresh sales, but in Oregon it is lower yielding and more sensitive to winter cold injury than Marion"
+            },
+            {
+              "name": "Black Diamond",
+              "plant": "Vigorous, thornless",
+              "fruit": "Large size, firm, black, very uniform shape, good flavor",
+              "yield": "High",
+              "market": "Fresh or processed",
+              "commercial_value": "1"
+            },
+            {
+              "name": "Columbia Star",
+              "plant": "Very vigorous, thornless",
+              "fruit": "Large size, firm, very uniform shape, outstanding flavor and processing quality",
+              "yield": "High",
+              "market": "Fresh or processed",
+              "commercial_value": "2",
+              "comment": "Too new for the 2014 PDF table to fully evaluate but very promising; source table names this as Columbia Star (U.S. Plant Patent pending)"
+            },
+            {
+              "name": "Kotata",
+              "plant": "Very vigorous, very thorny",
+              "fruit": "Small to medium size, good firmness, dark purple, uniform shape, excellent flavor",
+              "yield": "Medium",
+              "market": "Fresh or processed",
+              "commercial_value": "2",
+              "comment": "May be difficult to market processed but popular for fresh market"
+            },
+            {
+              "name": "Marion",
+              "plant": "Very vigorous, thorny",
+              "fruit": "Medium size, soft, dark purple, uneven shape, excellent flavor",
+              "yield": "Medium",
+              "market": "Processed",
+              "commercial_value": "1",
+              "comment": "Source table notes this is often called marionberry"
+            },
+            {
+              "name": "Wild Treasure",
+              "plant": "Thornless, very vigorous. Thin canes break easily, so commercial growers should use alternate-year production systems or train canes very gently to avoid breakage",
+              "fruit": "Small size, medium firmness, dark purple, very uniform shape, excellent flavor",
+              "yield": "Low to high, depending on amount of damage during cane training",
+              "market": "Processed, particularly small fruit market",
+              "commercial_value": "2",
+              "home_garden": "Suited for small fruit market"
+            },
+            {
+              "name": "Onyx",
+              "plant": "Vigorous, thorny, fairly upright growth habit for a trailing blackberry",
+              "fruit": "Medium size, uniform shape, firm, black, excellent sweet, mild flavor",
+              "yield": "Medium",
+              "market": "Fresh",
+              "commercial_value": "2",
+              "comment": "Too new for the 2014 PDF table to fully evaluate but expected to do well in fresh market; source table names this as Onyx (U.S. Plant Patent 22,358)"
+            },
+            {
+              "name": "Thornless Evergreen",
+              "plant": "Vigorous, thornless",
+              "fruit": "Small size, soft, black, mild but good flavor, August-September ripening season, prone to gray mold after fall rains",
+              "yield": "High",
+              "market": "Processed",
+              "commercial_value": "2",
+              "harvest_time": "August-September",
+              "comment": "Nursery plants not available; source describes this as a thornless chimera and combines it in one table row with Everthornless"
+            },
+            {
+              "name": "Everthornless",
+              "plant": "Vigorous, thornless",
+              "fruit": "Small size, soft, black, mild but good flavor, August-September ripening season, prone to gray mold after fall rains",
+              "yield": "High",
+              "market": "Processed",
+              "commercial_value": "2",
+              "harvest_time": "August-September",
+              "comment": "Nursery plants not available; source describes this as a genetically thornless clone and combines it in one table row with Thornless Evergreen"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "category": "Blackberry/red raspberry hybrids for Oregon"
+          },
+          "rows": [
+            {
+              "name": "Logan",
+              "plant": "Moderate vigor, thorny, canes susceptible to disease. Thornless Logan is available, but it is not genetically thornless and will produce thorny canes",
+              "fruit": "Medium size, more like raspberry than blackberry in color and flavor, deep red color, conic shape, excellent firmness but tender skin, excellent but distinctive flavor, hard to pick",
+              "yield": "Low to medium",
+              "market": "Processed",
+              "commercial_value": "2",
+              "comment": "Source table notes this is often called loganberry"
+            },
+            {
+              "name": "Tayberry",
+              "plant": "Moderate vigor, thornless",
+              "fruit": "Medium size, glossy, reddish purple, good firmness but tender skin, excellent but unique tart flavor, very hard to pick, fruit damaged easily by hot weather",
+              "yield": "Low",
+              "market": "Processed",
+              "commercial_value": "3",
+              "comment": "Successful niche markets have been developed, but low yield and difficulty of harvest make this nearly impossible to produce economically"
+            },
+            {
+              "name": "Newberry",
+              "plant": "Vigorous, thorny",
+              "fruit": "Large size, blocky, glossy, reddish purple to dark purple, firmer and tougher skin than Boysen, excellent flavor, but despite Boysen look, does not have Boysen flavor",
+              "yield": "Very high",
+              "market": "Fresh",
+              "commercial_value": "2",
+              "comment": "Too new for the 2014 PDF table to fully evaluate"
+            },
+            {
+              "name": "Thornless Boysen",
+              "plant": "Vigorous, thornless",
+              "fruit": "Small to medium size, lumpy, purple, fair flavor",
+              "yield": "Medium",
+              "market": "Fresh",
+              "commercial_value": "3",
+              "comment": "Source says this thornless cultivar is the color of Boysen but was developed in California and does not have the flavor of the original Boysen"
+            },
+            {
+              "name": "Boysen",
+              "plant": "Vigorous, thorny",
+              "fruit": "Large size, soft, lumpy, purple, unique and very good flavor",
+              "yield": "High",
+              "market": "Processed",
+              "commercial_value": "1",
+              "comment": "Source table notes this is often called boysenberry; source also says Nectarberry and Youngberry are very similar to Boysen"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "category": "Erect blackberries for Oregon"
+          },
+          "rows": [
+            {
+              "name": "Natchez",
+              "plant": "Vigorous, thornless",
+              "fruit": "Large to very large size, very firm, black, glossy, picks easily, seedy, fair flavor. Can have variable fruit set with lumpy fruit",
+              "yield": "Medium; yield can vary from year to year because of biennial bearing",
+              "market": "Fresh",
+              "commercial_value": "2",
+              "comment": "Source table names this as Natchez (U.S. Plant Patent 20,891)"
+            },
+            {
+              "name": "Ouachita",
+              "plant": "Vigorous, thornless",
+              "fruit": "Medium size, firm, tough skin, attractive, black, glossy, round, prone to sunburn or UV damage, fair flavor",
+              "yield": "Medium; yield can vary from year to year because of biennial bearing",
+              "market": "Fresh",
+              "commercial_value": "2",
+              "comment": "Uneven performance in commercial fields; source table names this as Ouachita (U.S. Plant Patent 17,162)"
+            },
+            {
+              "name": "Osage",
+              "plant": "Vigorous, thornless",
+              "fruit": "Small to medium size, firm, tough skin, black, glossy, round, fair flavor",
+              "yield": "Medium",
+              "market": "Fresh",
+              "commercial_value": "2",
+              "comment": "Too new for the 2014 PDF table to fully evaluate; source table names this as Osage (U.S. Plant Patent pending)"
+            },
+            {
+              "name": "Apache",
+              "plant": "Vigorous, thornless",
+              "fruit": "Large size, firm, tough skin, black, glossy, round, lumpy, seedy, prone to sunburn or UV damage, fair flavor",
+              "yield": "Medium",
+              "market": "Fresh",
+              "commercial_value": "3",
+              "comment": "Source table names this as Apache (U.S. Plant Patent 11,865)"
+            },
+            {
+              "name": "Illini Hardy",
+              "plant": "Vigorous, very thorny, cold hardy",
+              "fruit": "Medium to large size, soft, black, glossy, tends to be bitter",
+              "yield": "Medium",
+              "market": "Fresh",
+              "commercial_value": "3",
+              "comment": "An option when too cold to grow most blackberries"
+            },
+            {
+              "name": "Navaho",
+              "plant": "Moderate vigor, thornless",
+              "fruit": "Small to medium size, firm, tough skin, attractive, black, glossy, round, good flavor, ships well",
+              "yield": "Medium",
+              "market": "Fresh",
+              "commercial_value": "1"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "category": "Primocane-fruiting erect blackberries for Oregon"
+          },
+          "rows": [
+            {
+              "name": "Prime-Jim",
+              "plant": "Vigorous, very thorny",
+              "fruit": "Large size, soft to medium-firm, moderately tender skin, black, glossy, seedy, fair flavor, season is from late August to first frost",
+              "yield": "Medium",
+              "market": "Fresh",
+              "commercial_value": "3",
+              "harvest_time": "late August to first frost",
+              "comment": "Source table combines Prime-Jim and Prime-Jan in one cultivar entry and lists U.S. Plant Patent 16,989"
+            },
+            {
+              "name": "Prime-Jan",
+              "plant": "Vigorous, very thorny",
+              "fruit": "Large size, soft to medium-firm, moderately tender skin, black, glossy, seedy, fair flavor, season is from late August to first frost",
+              "yield": "Medium",
+              "market": "Fresh",
+              "commercial_value": "3",
+              "harvest_time": "late August to first frost",
+              "comment": "Source table combines Prime-Jim and Prime-Jan in one cultivar entry and lists U.S. Plant Patent 15,788"
+            },
+            {
+              "name": "Prime-Ark 45",
+              "plant": "Moderately vigorous to vigorous, very thorny",
+              "fruit": "Large to very large size, firm, moderately tender skin, black, glossy, seedy, good flavor, season is from early September to first frost",
+              "yield": "Medium",
+              "market": "Fresh",
+              "commercial_value": "2",
+              "harvest_time": "early September to first frost",
+              "comment": "Limited yield in short season; source table names this as Prime-Ark 45 (U.S. Plant Patent 22,449)"
+            },
+            {
+              "name": "Prime-Ark Freedom",
+              "plant": "Vigorous, thornless",
+              "fruit": "Small to medium, moderately firm, black, glossy, seedy, season is from early September to first frost",
+              "yield": "Low unless grown in a tunnel",
+              "market": "Fresh",
+              "commercial_value": "2",
+              "harvest_time": "early September to first frost",
+              "comment": "Too new for the 2014 PDF table to fully evaluate; source table lists U.S. Plant Patent pending"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "category": "Semierect blackberries for Oregon"
+          },
+          "rows": [
+            {
+              "name": "Loch Ness",
+              "plant": "Moderate vigor, thornless",
+              "fruit": "Medium size, fair firmness, attractive, black, glossy, oblong, prone to sunburn or UV damage, fair flavor",
+              "yield": "Medium",
+              "market": "Fresh",
+              "commercial_value": "1"
+            },
+            {
+              "name": "Hull Thornless",
+              "plant": "Vigorous, thornless",
+              "fruit": "Medium size, fair firmness, black, glossy, round, prone to sunburn or UV damage, fair flavor",
+              "yield": "Medium",
+              "market": "Fresh",
+              "commercial_value": "2",
+              "comment": "Too soft to ship well"
+            },
+            {
+              "name": "Triple Crown",
+              "plant": "Vigorous, thornless",
+              "fruit": "Medium to large size, fair firmness, attractive, black, glossy, round, lumpy, prone to sunburn or UV damage, berries can ripen unevenly, good flavor",
+              "yield": "High",
+              "market": "Fresh",
+              "commercial_value": "1",
+              "comment": "Limited shelf life"
+            },
+            {
+              "name": "Doyle's Thornless",
+              "plant": "Vigorous, thornless",
+              "fruit": "Small to medium size, fair firmness, black, glossy, round, lumpy, noticeably large seeds, poor to fair flavor",
+              "yield": "Medium",
+              "market": "Fresh",
+              "commercial_value": "3"
+            },
+            {
+              "name": "Black Satin",
+              "plant": "Moderate vigor, thornless",
+              "fruit": "Small to medium size, soft, attractive, black, glossy, round, prone to sunburn or UV damage, fair flavor",
+              "yield": "Medium",
+              "market": "Fresh",
+              "commercial_value": "3"
+            },
+            {
+              "name": "Chester Thornless",
+              "plant": "Vigorous, thornless",
+              "fruit": "Small to medium size, firm, tough skin, attractive, black, glossy, round, prone to sunburn or UV damage, fair flavor, susceptible to red berry mite",
+              "yield": "Very high",
+              "market": "Fresh",
+              "commercial_value": "1",
+              "comment": "Ships fresh very well"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

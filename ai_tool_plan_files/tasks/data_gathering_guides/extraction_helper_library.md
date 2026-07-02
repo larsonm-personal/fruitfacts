@@ -367,6 +367,15 @@ Source-specific scripts should do:
 - Cornell fire blight apples: a large HTML table where flattened citation
   superscripts are repaired through row regex fixes before labelled
   descriptions are emitted.
+- Cornell table grapes: old framed HTML split the source across separate table
+  pages. `html_name_matrix` now supports configured column context plus
+  implicit group columns, so a rowspan-style color matrix can emit cultivar
+  rows with ripening columns while a separate disease table is fetched as a
+  lookup.
+- OSU EC 1617 blackberries: current HTML exposes cultivar tables as linked
+  table images rather than parseable table markup, and the PDF text drifts by
+  column on dense rows. Use reviewed `static_rows` for the cultivar tables and
+  keep the page metadata as the canonical source.
 - Rutgers FS1083 plums: two-column PDF catalog entries parsed with line
   slices, explicit entry names, `Name - description` separator handling, and a
   single source-local row override for a page-break continuation.
@@ -385,6 +394,13 @@ Source-specific scripts should do:
 - UA AZ1269 low-desert fruit and nuts: explicit-entry PDF catalog parsing with
   source-local row overrides for two-column heading drift, such as Asian pears,
   quince, persimmons, almonds, and grapes appearing under neighboring headings.
+- UKY CCD-CP-1 American persimmon: a compact PDF prose section where a single
+  bounded marker list captures varieties with few or no black specks, with a
+  source-local row text fix for the `I-115` extraction artifact.
+- JAPS persimmon cultivars for northern areas: an old two-column journal PDF
+  where `pdftotext` interleaves narrative columns, so reviewed `static_rows`
+  preserve cultivar descriptions and timing without pretending the source is
+  mechanically parseable.
 
 ## Manifest Configs
 
@@ -410,6 +426,11 @@ python helper_scripts/extract_source.py --all --output-dir $env:TEMP\fruitfacts_
 The UMaine 2172 and 2184 conversions added config support for colon-led
 narrative paragraphs, category heading cleanup, ordered harvest phrase maps,
 `AKA` values from name overrides, generated rows, and table-summary lookups.
+Lookup tables can now specify their own `source`, which is useful when a source
+spreads related cultivar metadata across several small HTML table pages.
+`html_name_matrix` can add `column_contexts` by zero-based cell index, plus an
+`implicit_group_columns` offset for old rowspans where later rows omit the
+leading group cell.
 
 Static configs are available for sources where the official source was reviewed
 but should not be fetched as part of extraction. Set `source.kind` to `static`

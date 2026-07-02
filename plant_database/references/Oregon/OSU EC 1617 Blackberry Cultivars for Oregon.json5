@@ -1,0 +1,257 @@
+{
+    title: "OSU EC 1617 Blackberry Cultivars for Oregon",
+    author: "Chad Finn and Bernadine Strik",
+    description: "Oregon State University Extension cultivar guide for trailing, erect, semierect, primocane-fruiting erect, and blackberry/red raspberry hybrid blackberries grown in Oregon",
+    url: "https://extension.oregonstate.edu/catalog/pub/ec-1617-blackberry-cultivars-oregon",
+    thumbnail: "website",
+    revised: "December 2021",
+    reviewed: "2023",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Oregon State University Extension Service, Corvallis, Oregon",
+            latitude: 44.5646,
+            longitude: -123.262
+        },
+    ],
+    categories: [
+        {
+            name: "Trailing blackberries for Oregon",
+            description: "OSU EC 1617 lists these trailing blackberry cultivars in approximate order of ripening for Oregon"
+        },
+        {
+            name: "Blackberry/red raspberry hybrids for Oregon",
+            description: "OSU EC 1617 lists these blackberry/red raspberry hybrid cultivars in approximate order of ripening and says they are technically blackberries"
+        },
+        {
+            name: "Erect blackberries for Oregon",
+            description: "OSU EC 1617 lists these erect blackberry cultivars in approximate order of ripening for Oregon"
+        },
+        {
+            name: "Primocane-fruiting erect blackberries for Oregon",
+            description: "OSU EC 1617 lists these primocane-fruiting erect blackberry cultivars in approximate order of ripening for Oregon"
+        },
+        {
+            name: "Semierect blackberries for Oregon",
+            description: "OSU EC 1617 lists these semierect blackberry cultivars in approximate order of ripening for Oregon"
+        },
+    ],
+    plants: [
+        {
+            type: "Blackberry",
+            name: "Obsidian",
+            category: "Trailing blackberries for Oregon",
+            harvest_time_unparsed: "very early; harvest typically starts in the third week of June in Oregon's Willamette Valley",
+            description: "Plant: Very vigorous, thorny. Fruit: Large size, good firmness, black, fair shape, excellent flavor, very early ripening. Yield: Very high. Market: Primarily fresh but processes well. Large-scale commercial value rating: 1"
+        },
+        {
+            type: "Blackberry",
+            name: "Metolius",
+            category: "Trailing blackberries for Oregon",
+            harvest_time_unparsed: "very early",
+            description: "Plant: Vigorous, thorny. Fruit: Medium size, firm, black, excellent uniform shape, excellent flavor, very early ripening. Yield: High. Market: Primarily fresh but processes well. Large-scale commercial value rating: 1"
+        },
+        {
+            type: "Blackberry",
+            name: "Silvan",
+            category: "Trailing blackberries for Oregon",
+            description: "Plant: Very vigorous, thorny. Fruit: Large size, soft, dark purple, fair shape, excellent flavor. Yield: Very high. Market: Processed. Large-scale commercial value rating: 2. Comment: Very soft and does not hold up in heat"
+        },
+        {
+            type: "Blackberry",
+            name: "Cascade",
+            category: "Trailing blackberries for Oregon",
+            harvest_time_unparsed: "early",
+            description: "Plant: Vigorous, thorny. Fruit: Small to medium size, soft, purple, excellent flavor, early ripening. Yield: Low to medium. Market: Processed. Large-scale commercial value rating: 3. Comment: Not productive enough"
+        },
+        {
+            type: "Blackberry",
+            name: "Olallie",
+            category: "Trailing blackberries for Oregon",
+            harvest_time_unparsed: "early",
+            description: "Plant: Very vigorous, thorny. Fruit: Medium size, soft, black, lumpy shape, excellent flavor, early ripening. Yield: Low to medium. Market: Primarily fresh but processes well. Large-scale commercial value rating: 3. Comment: Was grown commonly in California for U-pick and fresh sales, but in Oregon it is lower yielding and more sensitive to winter cold injury than Marion"
+        },
+        {
+            type: "Blackberry",
+            name: "Black Diamond",
+            category: "Trailing blackberries for Oregon",
+            description: "Plant: Vigorous, thornless. Fruit: Large size, firm, black, very uniform shape, good flavor. Yield: High. Market: Fresh or processed. Large-scale commercial value rating: 1"
+        },
+        {
+            type: "Blackberry",
+            name: "Columbia Star",
+            category: "Trailing blackberries for Oregon",
+            description: "Plant: Very vigorous, thornless. Fruit: Large size, firm, very uniform shape, outstanding flavor and processing quality. Yield: High. Market: Fresh or processed. Large-scale commercial value rating: 2. Comment: Too new for the 2014 PDF table to fully evaluate but very promising; source table names this as Columbia Star (U.S. Plant Patent pending)"
+        },
+        {
+            type: "Blackberry",
+            name: "Kotata",
+            category: "Trailing blackberries for Oregon",
+            description: "Plant: Very vigorous, very thorny. Fruit: Small to medium size, good firmness, dark purple, uniform shape, excellent flavor. Yield: Medium. Market: Fresh or processed. Large-scale commercial value rating: 2. Comment: May be difficult to market processed but popular for fresh market"
+        },
+        {
+            type: "Blackberry",
+            name: "Marion",
+            category: "Trailing blackberries for Oregon",
+            description: "Plant: Very vigorous, thorny. Fruit: Medium size, soft, dark purple, uneven shape, excellent flavor. Yield: Medium. Market: Processed. Large-scale commercial value rating: 1. Comment: Source table notes this is often called marionberry"
+        },
+        {
+            type: "Blackberry",
+            name: "Wild Treasure",
+            category: "Trailing blackberries for Oregon",
+            description: "Plant: Thornless, very vigorous. Thin canes break easily, so commercial growers should use alternate-year production systems or train canes very gently to avoid breakage. Fruit: Small size, medium firmness, dark purple, very uniform shape, excellent flavor. Yield: Low to high, depending on amount of damage during cane training. Market: Processed, particularly small fruit market. Large-scale commercial value rating: 2. Small farm or home garden: Suited for small fruit market"
+        },
+        {
+            type: "Blackberry",
+            name: "Onyx",
+            category: "Trailing blackberries for Oregon",
+            description: "Plant: Vigorous, thorny, fairly upright growth habit for a trailing blackberry. Fruit: Medium size, uniform shape, firm, black, excellent sweet, mild flavor. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 2. Comment: Too new for the 2014 PDF table to fully evaluate but expected to do well in fresh market; source table names this as Onyx (U.S. Plant Patent 22,358)"
+        },
+        {
+            type: "Blackberry",
+            name: "Thornless Evergreen",
+            category: "Trailing blackberries for Oregon",
+            harvest_time_unparsed: "August-September",
+            description: "Plant: Vigorous, thornless. Fruit: Small size, soft, black, mild but good flavor, August-September ripening season, prone to gray mold after fall rains. Yield: High. Market: Processed. Large-scale commercial value rating: 2. Comment: Nursery plants not available; source describes this as a thornless chimera and combines it in one table row with Everthornless"
+        },
+        {
+            type: "Blackberry",
+            name: "Everthornless",
+            category: "Trailing blackberries for Oregon",
+            harvest_time_unparsed: "August-September",
+            description: "Plant: Vigorous, thornless. Fruit: Small size, soft, black, mild but good flavor, August-September ripening season, prone to gray mold after fall rains. Yield: High. Market: Processed. Large-scale commercial value rating: 2. Comment: Nursery plants not available; source describes this as a genetically thornless clone and combines it in one table row with Thornless Evergreen"
+        },
+        {
+            type: "Blackberry",
+            name: "Logan",
+            category: "Blackberry/red raspberry hybrids for Oregon",
+            description: "Plant: Moderate vigor, thorny, canes susceptible to disease. Thornless Logan is available, but it is not genetically thornless and will produce thorny canes. Fruit: Medium size, more like raspberry than blackberry in color and flavor, deep red color, conic shape, excellent firmness but tender skin, excellent but distinctive flavor, hard to pick. Yield: Low to medium. Market: Processed. Large-scale commercial value rating: 2. Comment: Source table notes this is often called loganberry"
+        },
+        {
+            type: "Blackberry",
+            name: "Tayberry",
+            category: "Blackberry/red raspberry hybrids for Oregon",
+            description: "Plant: Moderate vigor, thornless. Fruit: Medium size, glossy, reddish purple, good firmness but tender skin, excellent but unique tart flavor, very hard to pick, fruit damaged easily by hot weather. Yield: Low. Market: Processed. Large-scale commercial value rating: 3. Comment: Successful niche markets have been developed, but low yield and difficulty of harvest make this nearly impossible to produce economically"
+        },
+        {
+            type: "Blackberry",
+            name: "Newberry",
+            category: "Blackberry/red raspberry hybrids for Oregon",
+            description: "Plant: Vigorous, thorny. Fruit: Large size, blocky, glossy, reddish purple to dark purple, firmer and tougher skin than Boysen, excellent flavor, but despite Boysen look, does not have Boysen flavor. Yield: Very high. Market: Fresh. Large-scale commercial value rating: 2. Comment: Too new for the 2014 PDF table to fully evaluate"
+        },
+        {
+            type: "Blackberry",
+            name: "Thornless Boysen",
+            category: "Blackberry/red raspberry hybrids for Oregon",
+            description: "Plant: Vigorous, thornless. Fruit: Small to medium size, lumpy, purple, fair flavor. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 3. Comment: Source says this thornless cultivar is the color of Boysen but was developed in California and does not have the flavor of the original Boysen"
+        },
+        {
+            type: "Blackberry",
+            name: "Boysen",
+            category: "Blackberry/red raspberry hybrids for Oregon",
+            description: "Plant: Vigorous, thorny. Fruit: Large size, soft, lumpy, purple, unique and very good flavor. Yield: High. Market: Processed. Large-scale commercial value rating: 1. Comment: Source table notes this is often called boysenberry; source also says Nectarberry and Youngberry are very similar to Boysen"
+        },
+        {
+            type: "Blackberry",
+            name: "Natchez",
+            category: "Erect blackberries for Oregon",
+            description: "Plant: Vigorous, thornless. Fruit: Large to very large size, very firm, black, glossy, picks easily, seedy, fair flavor. Can have variable fruit set with lumpy fruit. Yield: Medium; yield can vary from year to year because of biennial bearing. Market: Fresh. Large-scale commercial value rating: 2. Comment: Source table names this as Natchez (U.S. Plant Patent 20,891)"
+        },
+        {
+            type: "Blackberry",
+            name: "Ouachita",
+            category: "Erect blackberries for Oregon",
+            description: "Plant: Vigorous, thornless. Fruit: Medium size, firm, tough skin, attractive, black, glossy, round, prone to sunburn or UV damage, fair flavor. Yield: Medium; yield can vary from year to year because of biennial bearing. Market: Fresh. Large-scale commercial value rating: 2. Comment: Uneven performance in commercial fields; source table names this as Ouachita (U.S. Plant Patent 17,162)"
+        },
+        {
+            type: "Blackberry",
+            name: "Osage",
+            category: "Erect blackberries for Oregon",
+            description: "Plant: Vigorous, thornless. Fruit: Small to medium size, firm, tough skin, black, glossy, round, fair flavor. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 2. Comment: Too new for the 2014 PDF table to fully evaluate; source table names this as Osage (U.S. Plant Patent pending)"
+        },
+        {
+            type: "Blackberry",
+            name: "Apache",
+            category: "Erect blackberries for Oregon",
+            description: "Plant: Vigorous, thornless. Fruit: Large size, firm, tough skin, black, glossy, round, lumpy, seedy, prone to sunburn or UV damage, fair flavor. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 3. Comment: Source table names this as Apache (U.S. Plant Patent 11,865)"
+        },
+        {
+            type: "Blackberry",
+            name: "Illini Hardy",
+            category: "Erect blackberries for Oregon",
+            description: "Plant: Vigorous, very thorny, cold hardy. Fruit: Medium to large size, soft, black, glossy, tends to be bitter. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 3. Comment: An option when too cold to grow most blackberries"
+        },
+        {
+            type: "Blackberry",
+            name: "Navaho",
+            category: "Erect blackberries for Oregon",
+            description: "Plant: Moderate vigor, thornless. Fruit: Small to medium size, firm, tough skin, attractive, black, glossy, round, good flavor, ships well. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 1"
+        },
+        {
+            type: "Blackberry",
+            name: "Prime Jim",
+            category: "Primocane-fruiting erect blackberries for Oregon",
+            harvest_time_unparsed: "late August to first frost",
+            description: "Plant: Vigorous, very thorny. Fruit: Large size, soft to medium-firm, moderately tender skin, black, glossy, seedy, fair flavor, season is from late August to first frost. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 3. Comment: Source table combines Prime-Jim and Prime-Jan in one cultivar entry and lists U.S. Plant Patent 16,989. Source table names this as Prime-Jim"
+        },
+        {
+            type: "Blackberry",
+            name: "Prime Jan",
+            category: "Primocane-fruiting erect blackberries for Oregon",
+            harvest_time_unparsed: "late August to first frost",
+            description: "Plant: Vigorous, very thorny. Fruit: Large size, soft to medium-firm, moderately tender skin, black, glossy, seedy, fair flavor, season is from late August to first frost. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 3. Comment: Source table combines Prime-Jim and Prime-Jan in one cultivar entry and lists U.S. Plant Patent 15,788. Source table names this as Prime-Jan"
+        },
+        {
+            type: "Blackberry",
+            name: "Prime-Ark 45",
+            category: "Primocane-fruiting erect blackberries for Oregon",
+            harvest_time_unparsed: "early September to first frost",
+            description: "Plant: Moderately vigorous to vigorous, very thorny. Fruit: Large to very large size, firm, moderately tender skin, black, glossy, seedy, good flavor, season is from early September to first frost. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 2. Comment: Limited yield in short season; source table names this as Prime-Ark 45 (U.S. Plant Patent 22,449)"
+        },
+        {
+            type: "Blackberry",
+            name: "Prime Ark Freedom",
+            category: "Primocane-fruiting erect blackberries for Oregon",
+            harvest_time_unparsed: "early September to first frost",
+            description: "Plant: Vigorous, thornless. Fruit: Small to medium, moderately firm, black, glossy, seedy, season is from early September to first frost. Yield: Low unless grown in a tunnel. Market: Fresh. Large-scale commercial value rating: 2. Comment: Too new for the 2014 PDF table to fully evaluate; source table lists U.S. Plant Patent pending. Source table names this as Prime-Ark Freedom"
+        },
+        {
+            type: "Blackberry",
+            name: "Loch Ness",
+            category: "Semierect blackberries for Oregon",
+            description: "Plant: Moderate vigor, thornless. Fruit: Medium size, fair firmness, attractive, black, glossy, oblong, prone to sunburn or UV damage, fair flavor. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 1"
+        },
+        {
+            type: "Blackberry",
+            name: "Hull Thornless",
+            category: "Semierect blackberries for Oregon",
+            description: "Plant: Vigorous, thornless. Fruit: Medium size, fair firmness, black, glossy, round, prone to sunburn or UV damage, fair flavor. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 2. Comment: Too soft to ship well"
+        },
+        {
+            type: "Blackberry",
+            name: "Triple Crown",
+            category: "Semierect blackberries for Oregon",
+            description: "Plant: Vigorous, thornless. Fruit: Medium to large size, fair firmness, attractive, black, glossy, round, lumpy, prone to sunburn or UV damage, berries can ripen unevenly, good flavor. Yield: High. Market: Fresh. Large-scale commercial value rating: 1. Comment: Limited shelf life"
+        },
+        {
+            type: "Blackberry",
+            name: "Doyle's Thornless",
+            category: "Semierect blackberries for Oregon",
+            description: "Plant: Vigorous, thornless. Fruit: Small to medium size, fair firmness, black, glossy, round, lumpy, noticeably large seeds, poor to fair flavor. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 3"
+        },
+        {
+            type: "Blackberry",
+            name: "Black Satin",
+            category: "Semierect blackberries for Oregon",
+            description: "Plant: Moderate vigor, thornless. Fruit: Small to medium size, soft, attractive, black, glossy, round, prone to sunburn or UV damage, fair flavor. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 3"
+        },
+        {
+            type: "Blackberry",
+            name: "Chester",
+            category: "Semierect blackberries for Oregon",
+            description: "Plant: Vigorous, thornless. Fruit: Small to medium size, firm, tough skin, attractive, black, glossy, round, prone to sunburn or UV damage, fair flavor, susceptible to red berry mite. Yield: Very high. Market: Fresh. Large-scale commercial value rating: 1. Comment: Ships fresh very well. Source table names this as Chester Thornless"
+        },
+    ]
+}

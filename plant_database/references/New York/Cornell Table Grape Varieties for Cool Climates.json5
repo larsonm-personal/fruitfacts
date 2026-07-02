@@ -1,0 +1,319 @@
+{
+    title: "Cornell Table Grape Varieties for Cool Climates",
+    author: "Bruce I. Reisch, David V. Peterson, Robert M. Pool, and Mary-Howell Martens",
+    description: "Cornell Cooperative Extension Information Bulletin 234 table grape guide for cool-climate home vineyards and roadside markets",
+    url: "https://www.hort.cornell.edu/reisch/grapegenetics/bulletin/table/index.html",
+    thumbnail: "website",
+    published: "1993",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Cornell AgriTech, Geneva, New York",
+            latitude: 42.8766,
+            longitude: -77.0073
+        },
+    ],
+    categories: [
+        {
+            name: "Cornell cool-climate table grape varieties",
+            description: "Cornell Information Bulletin 234 lists these dessert grape varieties with potential for the home vineyard and roadside market in cool climates"
+        },
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Interlaken Seedless",
+            category: "Cornell cool-climate table grape varieties",
+            color: "White/Amber",
+            subtype: "European",
+            seedless: true,
+            harvest_time_unparsed: "Very early",
+            description: "Fruit color group: White/Amber. Ripening season: Very early. Fruit texture type: European. Seedless. Cornell disease and hardiness table: Winter hardiness rating 3; Black rot susceptibility +++; Downy mildew susceptibility +; Powdery mildew susceptibility +++; Botrytis susceptibility ++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility +; Sulfur sensitivity No"
+        },
+        {
+            type: "Grape",
+            name: "Ontario",
+            category: "Cornell cool-climate table grape varieties",
+            color: "White/Amber",
+            subtype: "American",
+            harvest_time_unparsed: "Early",
+            description: "Fruit color group: White/Amber. Ripening season: Early. Fruit texture type: American. Cornell disease and hardiness table: Winter hardiness rating 4; Black rot susceptibility ?; Downy mildew susceptibility +; Powdery mildew susceptibility ++; Botrytis susceptibility ++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ++; Sulfur sensitivity No"
+        },
+        {
+            type: "Grape",
+            name: "Niagara",
+            category: "Cornell cool-climate table grape varieties",
+            color: "White/Amber",
+            subtype: "American",
+            harvest_time_unparsed: "Midseason",
+            description: "Fruit color group: White/Amber. Ripening season: Midseason. Fruit texture type: American"
+        },
+        {
+            type: "Grape",
+            name: "Remaily Seedless",
+            category: "Cornell cool-climate table grape varieties",
+            color: "White/Amber",
+            subtype: "European",
+            seedless: true,
+            harvest_time_unparsed: "Late midseason",
+            description: "Fruit color group: White/Amber. Ripening season: Late midseason. Fruit texture type: European. Seedless. Cornell disease and hardiness table: Winter hardiness rating 3; Black rot susceptibility +++; Downy mildew susceptibility ++; Powdery mildew susceptibility ++; Botrytis susceptibility +; Phomopsis susceptibility ?; Eutypa susceptibility ++; Crown gall susceptibility ?; Angular leaf scorch susceptibility +; Sulfur sensitivity ?"
+        },
+        {
+            type: "Grape",
+            name: "Golden Muscat",
+            category: "Cornell cool-climate table grape varieties",
+            color: "White/Amber",
+            subtype: "American",
+            harvest_time_unparsed: "Late",
+            description: "Fruit color group: White/Amber. Ripening season: Late. Fruit texture type: American. Cornell disease and hardiness table: Winter hardiness rating 4; Black rot susceptibility ?; Downy mildew susceptibility ++; Powdery mildew susceptibility ++; Botrytis susceptibility +++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ?; Sulfur sensitivity No"
+        },
+        {
+            type: "Grape",
+            name: "Kay Gray",
+            category: "Cornell cool-climate table grape varieties",
+            color: "White/Amber",
+            subtype: "American",
+            harvest_time_unparsed: "Very early",
+            description: "Fruit color group: White/Amber. Ripening season: Very early. Fruit texture type: American. Cornell disease and hardiness table: Winter hardiness rating 6; Black rot susceptibility +; Downy mildew susceptibility +; Powdery mildew susceptibility +; Botrytis susceptibility +; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ?; Sulfur sensitivity ?"
+        },
+        {
+            type: "Grape",
+            name: "Himrod",
+            category: "Cornell cool-climate table grape varieties",
+            color: "White/Amber",
+            subtype: "European",
+            seedless: true,
+            harvest_time_unparsed: "Early",
+            description: "Fruit color group: White/Amber. Ripening season: Early. Fruit texture type: European. Seedless. Cornell disease and hardiness table: Winter hardiness rating 4; Black rot susceptibility +++; Downy mildew susceptibility +; Powdery mildew susceptibility ++; Botrytis susceptibility +; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility +; Sulfur sensitivity No"
+        },
+        {
+            type: "Grape",
+            name: "Lakemont",
+            category: "Cornell cool-climate table grape varieties",
+            color: "White/Amber",
+            subtype: "European",
+            seedless: true,
+            harvest_time_unparsed: "Midseason",
+            description: "Fruit color group: White/Amber. Ripening season: Midseason. Fruit texture type: European. Seedless. Cornell disease and hardiness table: Winter hardiness rating 3; Black rot susceptibility ++; Downy mildew susceptibility +; Powdery mildew susceptibility ++; Botrytis susceptibility ++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ++; Sulfur sensitivity No"
+        },
+        {
+            type: "Grape",
+            name: "Seneca",
+            category: "Cornell cool-climate table grape varieties",
+            color: "White/Amber",
+            subtype: "European",
+            harvest_time_unparsed: "Early",
+            description: "Fruit color group: White/Amber. Ripening season: Early. Fruit texture type: European. Cornell disease and hardiness table: Winter hardiness rating 3; Black rot susceptibility +; Downy mildew susceptibility +; Powdery mildew susceptibility +++; Botrytis susceptibility ++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility ++; Angular leaf scorch susceptibility +++; Sulfur sensitivity Yes"
+        },
+        {
+            type: "Grape",
+            name: "Marquis",
+            category: "Cornell cool-climate table grape varieties",
+            color: "White/Amber",
+            subtype: "American",
+            seedless: true,
+            harvest_time_unparsed: "Midseason",
+            description: "Fruit color group: White/Amber. Ripening season: Midseason. Fruit texture type: American. Seedless. Cornell disease and hardiness table: Winter hardiness rating 4; Black rot susceptibility ++; Downy mildew susceptibility ++; Powdery mildew susceptibility ++; Botrytis susceptibility +; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ?; Sulfur sensitivity No?"
+        },
+        {
+            type: "Grape",
+            name: "Edelweiss",
+            category: "Cornell cool-climate table grape varieties",
+            color: "White/Amber",
+            subtype: "American",
+            harvest_time_unparsed: "Early",
+            description: "Fruit color group: White/Amber. Ripening season: Early. Fruit texture type: American. Cornell disease and hardiness table: Winter hardiness rating 5; Black rot susceptibility ?; Downy mildew susceptibility +; Powdery mildew susceptibility ++; Botrytis susceptibility ++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ++; Sulfur sensitivity ?"
+        },
+        {
+            type: "Grape",
+            name: "Canadice",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Red",
+            subtype: "American",
+            seedless: true,
+            harvest_time_unparsed: "Early",
+            description: "Fruit color group: Red. Ripening season: Early. Fruit texture type: American. Seedless. Cornell disease and hardiness table: Winter hardiness rating 4; Black rot susceptibility +++; Downy mildew susceptibility +; Powdery mildew susceptibility +; Botrytis susceptibility ++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility ++; Angular leaf scorch susceptibility ++; Sulfur sensitivity No"
+        },
+        {
+            type: "Grape",
+            name: "Saturn",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Red",
+            subtype: "European",
+            seedless: true,
+            harvest_time_unparsed: "Midseason",
+            description: "Fruit color group: Red. Ripening season: Midseason. Fruit texture type: European. Seedless. Cornell disease and hardiness table: Winter hardiness rating 2; Black rot susceptibility ++; Downy mildew susceptibility ++; Powdery mildew susceptibility +++; Botrytis susceptibility ++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility ++; Angular leaf scorch susceptibility ?; Sulfur sensitivity ?"
+        },
+        {
+            type: "Grape",
+            name: "Yates",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Red",
+            subtype: "American",
+            harvest_time_unparsed: "Late",
+            description: "Fruit color group: Red. Ripening season: Late. Fruit texture type: American. Cornell disease and hardiness table: Winter hardiness rating 4; Black rot susceptibility ++; Downy mildew susceptibility +; Powdery mildew susceptibility ++; Botrytis susceptibility +; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ?; Sulfur sensitivity No"
+        },
+        {
+            type: "Grape",
+            name: "Reliance",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Red",
+            subtype: "American",
+            seedless: true,
+            harvest_time_unparsed: "Early",
+            description: "Fruit color group: Red. Ripening season: Early. Fruit texture type: American. Seedless. Cornell disease and hardiness table: Winter hardiness rating 4; Black rot susceptibility +++; Downy mildew susceptibility ++; Powdery mildew susceptibility ++; Botrytis susceptibility +++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility +++; Sulfur sensitivity ?"
+        },
+        {
+            type: "Grape",
+            name: "Suffolk Red",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Red",
+            subtype: "European",
+            seedless: true,
+            harvest_time_unparsed: "Midseason",
+            description: "Fruit color group: Red. Ripening season: Midseason. Fruit texture type: European. Seedless. Cornell disease and hardiness table: Winter hardiness rating 3; Black rot susceptibility ?; Downy mildew susceptibility +; Powdery mildew susceptibility ++; Botrytis susceptibility ++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility ++; Angular leaf scorch susceptibility ++; Sulfur sensitivity Yes"
+        },
+        {
+            type: "Grape",
+            name: "Catawba",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Red",
+            subtype: "American",
+            harvest_time_unparsed: "Late",
+            description: "Fruit color group: Red. Ripening season: Late. Fruit texture type: American. Cornell disease and hardiness table: Winter hardiness rating 5; Black rot susceptibility +++; Downy mildew susceptibility +++; Powdery mildew susceptibility ++; Botrytis susceptibility +; Phomopsis susceptibility +++; Eutypa susceptibility +; Crown gall susceptibility +; Angular leaf scorch susceptibility +; Sulfur sensitivity No"
+        },
+        {
+            type: "Grape",
+            name: "Vanessa",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Red",
+            subtype: "European",
+            seedless: true,
+            harvest_time_unparsed: "Early",
+            description: "Fruit color group: Red. Ripening season: Early. Fruit texture type: European. Seedless. Cornell disease and hardiness table: Winter hardiness rating 4; Black rot susceptibility +++; Downy mildew susceptibility ++; Powdery mildew susceptibility ++; Botrytis susceptibility +; Phomopsis susceptibility +; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ++; Sulfur sensitivity ?"
+        },
+        {
+            type: "Grape",
+            name: "Swenson Red",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Red",
+            subtype: "European",
+            harvest_time_unparsed: "Midseason",
+            description: "Fruit color group: Red. Ripening season: Midseason. Fruit texture type: European. Cornell disease and hardiness table: Winter hardiness rating 5; Black rot susceptibility ?; Downy mildew susceptibility +++; Powdery mildew susceptibility ++; Botrytis susceptibility ++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ?; Sulfur sensitivity ?"
+        },
+        {
+            type: "Grape",
+            name: "Einset Seedless",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Red",
+            subtype: "European",
+            seedless: true,
+            harvest_time_unparsed: "Early",
+            description: "Fruit color group: Red. Ripening season: Early. Fruit texture type: European. Seedless. Cornell disease and hardiness table: Winter hardiness rating 4; Black rot susceptibility +++; Downy mildew susceptibility ++; Powdery mildew susceptibility +++; Botrytis susceptibility +; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ++; Sulfur sensitivity ?"
+        },
+        {
+            type: "Grape",
+            name: "Van Buren",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Blue/Black",
+            subtype: "American",
+            harvest_time_unparsed: "Very early",
+            description: "Fruit color group: Blue/Black. Ripening season: Very early. Fruit texture type: American. Cornell disease and hardiness table: Winter hardiness rating 5; Black rot susceptibility ?; Downy mildew susceptibility +++; Powdery mildew susceptibility +; Botrytis susceptibility +; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ?; Sulfur sensitivity Yes"
+        },
+        {
+            type: "Grape",
+            name: "Buffalo",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Blue/Black",
+            subtype: "American",
+            harvest_time_unparsed: "Midseason",
+            description: "Fruit color group: Blue/Black. Ripening season: Midseason. Fruit texture type: American. Cornell disease and hardiness table: Winter hardiness rating 4; Black rot susceptibility ?; Downy mildew susceptibility ++; Powdery mildew susceptibility +++; Botrytis susceptibility ++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ?; Sulfur sensitivity No"
+        },
+        {
+            type: "Grape",
+            name: "Concord",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Blue/Black",
+            subtype: "American",
+            harvest_time_unparsed: "Late midseason",
+            description: "Fruit color group: Blue/Black. Ripening season: Late midseason. Fruit texture type: American. Cornell disease and hardiness table: Winter hardiness rating 5; Black rot susceptibility +++; Downy mildew susceptibility +; Powdery mildew susceptibility ++; Botrytis susceptibility +; Phomopsis susceptibility +++; Eutypa susceptibility +++; Crown gall susceptibility +; Angular leaf scorch susceptibility ++; Sulfur sensitivity Yes"
+        },
+        {
+            type: "Grape",
+            name: "Sheridan",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Blue/Black",
+            subtype: "American",
+            harvest_time_unparsed: "Late",
+            description: "Fruit color group: Blue/Black. Ripening season: Late. Fruit texture type: American. Cornell disease and hardiness table: Winter hardiness rating 5; Black rot susceptibility ?; Downy mildew susceptibility +; Powdery mildew susceptibility ++; Botrytis susceptibility +; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ?; Sulfur sensitivity ?"
+        },
+        {
+            type: "Grape",
+            name: "Price",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Blue/Black",
+            subtype: "American",
+            harvest_time_unparsed: "Very early",
+            description: "Fruit color group: Blue/Black. Ripening season: Very early. Fruit texture type: American. Cornell disease and hardiness table: Winter hardiness rating 3; Black rot susceptibility ?; Downy mildew susceptibility +; Powdery mildew susceptibility +; Botrytis susceptibility ++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility ++; Angular leaf scorch susceptibility ++; Sulfur sensitivity Yes"
+        },
+        {
+            type: "Grape",
+            name: "Concord Seedless",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Blue/Black",
+            subtype: "American",
+            seedless: true,
+            harvest_time_unparsed: "Midseason",
+            description: "Fruit color group: Blue/Black. Ripening season: Midseason. Fruit texture type: American. Seedless. Cornell disease and hardiness table: Winter hardiness rating 5; Black rot susceptibility ?; Downy mildew susceptibility +; Powdery mildew susceptibility ++; Botrytis susceptibility ++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ?; Sulfur sensitivity Yes"
+        },
+        {
+            type: "Grape",
+            name: "Steuben",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Blue/Black",
+            subtype: "American",
+            harvest_time_unparsed: "Late midseason",
+            description: "Fruit color group: Blue/Black. Ripening season: Late midseason. Fruit texture type: American. Cornell disease and hardiness table: Winter hardiness rating 5; Black rot susceptibility ++; Downy mildew susceptibility +; Powdery mildew susceptibility +; Botrytis susceptibility +; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ++; Sulfur sensitivity No"
+        },
+        {
+            type: "Grape",
+            name: "Venus",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Blue/Black",
+            subtype: "American",
+            seedless: true,
+            harvest_time_unparsed: "Very early",
+            description: "Fruit color group: Blue/Black. Ripening season: Very early. Fruit texture type: American. Seedless. Cornell disease and hardiness table: Winter hardiness rating 4; Black rot susceptibility +; Downy mildew susceptibility ++; Powdery mildew susceptibility +; Botrytis susceptibility +++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility +; Sulfur sensitivity ?"
+        },
+        {
+            type: "Grape",
+            name: "New York Muscat",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Blue/Black",
+            subtype: "American",
+            harvest_time_unparsed: "Midseason",
+            description: "Fruit color group: Blue/Black. Ripening season: Midseason. Fruit texture type: American. Cornell disease and hardiness table: Winter hardiness rating 4; Black rot susceptibility ?; Downy mildew susceptibility +; Powdery mildew susceptibility +++; Botrytis susceptibility ++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility +; Sulfur sensitivity Yes. Source table names this as N.Y. Muscat"
+        },
+        {
+            type: "Grape",
+            name: "Alden",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Blue/Black",
+            subtype: "European",
+            harvest_time_unparsed: "Late midseason",
+            description: "Fruit color group: Blue/Black. Ripening season: Late midseason. Fruit texture type: European. Cornell disease and hardiness table: Winter hardiness rating 4; Black rot susceptibility ?; Downy mildew susceptibility +; Powdery mildew susceptibility ++; Botrytis susceptibility ++; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ++; Sulfur sensitivity No"
+        },
+        {
+            type: "Grape",
+            name: "Mars",
+            category: "Cornell cool-climate table grape varieties",
+            color: "Blue/Black",
+            subtype: "American",
+            seedless: true,
+            harvest_time_unparsed: "Midseason",
+            description: "Fruit color group: Blue/Black. Ripening season: Midseason. Fruit texture type: American. Seedless. Cornell disease and hardiness table: Winter hardiness rating 4; Black rot susceptibility +; Downy mildew susceptibility +; Powdery mildew susceptibility +; Botrytis susceptibility +; Phomopsis susceptibility ?; Eutypa susceptibility ?; Crown gall susceptibility +; Angular leaf scorch susceptibility ++; Sulfur sensitivity ?"
+        },
+    ]
+}

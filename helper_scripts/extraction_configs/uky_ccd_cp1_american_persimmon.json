@@ -1,0 +1,46 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "https://ccd.uky.edu/sites/default/files/2026-01/ccd-cp-001_persimmon_accessible.pdf",
+    "layout": false
+  },
+  "reference_fields": [
+    ["title", "UKY CCD-CP-1 American Persimmon"],
+    ["author", "Cheryl Kaiser and Matt Ernst"],
+    ["description", "University of Kentucky Center for Crop Diversification crop profile for American persimmon, including cultivar selection notes for Kentucky and surrounding regions"],
+    ["url", "https://publications.mgcafe.uky.edu/ccd-cp-1"],
+    ["published", "August 10, 2017"],
+    ["accessed", "Jul 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "University of Kentucky, Lexington, Kentucky",
+      "latitude": 38.03,
+      "longitude": -84.5
+    }
+  ],
+  "categories": [
+    {
+      "name": "American persimmon varieties with few or no black specks",
+      "description": "UKY CCD-CP-1 says these American persimmon varieties are excellent varieties that contain few or no black specks in the pulp"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "pdf_marker_list",
+      "section_start": "Cultivar selection",
+      "section_end": "Site selection, planting, and maintenance",
+      "marker": "the processed product.",
+      "end_marker": "are excellent varieties",
+      "strip_name_quotes": true,
+      "row_text_fixes": {
+        "I115": "I-115"
+      },
+      "plant_type": "Persimmon",
+      "category": "American persimmon varieties with few or no black specks",
+      "description_template": "UKY CCD-CP-1 lists this as an excellent American persimmon variety that contains few or no black specks in the pulp"
+    }
+  ]
+}

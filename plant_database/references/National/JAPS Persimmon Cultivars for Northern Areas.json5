@@ -1,0 +1,216 @@
+{
+    title: "JAPS Persimmon Cultivars for Northern Areas",
+    author: "J. C. McDaniel",
+    description: "Fruit Varieties Journal article discussing American persimmon cultivars and pollenizers for northern areas",
+    url: "https://journal.americanpomological.org/index.php/jofaps/article/download/1169/1173/2697",
+    published: "1973",
+    accessed: "Jul 2026",
+    type: "journal article test",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Illinois, Urbana, Illinois",
+            latitude: 40.1106,
+            longitude: -88.2073
+        },
+    ],
+    categories: [
+        {
+            name: "American persimmon cultivars for northern areas",
+            description: "J. C. McDaniel discussed these American persimmon cultivars for northern areas in Fruit Varieties Journal 27:94-96"
+        },
+        {
+            name: "American persimmon cultivars tried in Illinois but not currently recommended",
+            description: "J. C. McDaniel said these American persimmon cultivars had been tried in Illinois but were not then recommended for one reason or another"
+        },
+        {
+            name: "Staminate American persimmon pollenizer for northern areas",
+            description: "J. C. McDaniel discussed this staminate American persimmon selection as a pollenizer for northern plantings"
+        },
+    ],
+    plants: [
+        {
+            type: "Persimmon",
+            name: "Early Golden",
+            category: "American persimmon cultivars for northern areas",
+            harvest_time_unparsed: "late September through October at Urbana, Illinois",
+            description: "McDaniel says Early Golden was selected about 1880 by E. A. Riehl near Alton, Illinois, and was the oldest American persimmon cultivar still propagated. The article says it excels most wild persimmons in fruit size, firmness, and earliness, and is adapted through USDA Zone 5"
+        },
+        {
+            type: "Persimmon",
+            name: "Garretson",
+            category: "American persimmon cultivars for northern areas",
+            description: "McDaniel describes Garretson as a Pennsylvania introduction and close descendant of Early Golden. At Geneva, New York, it matured more fully than Early Golden in most years, while at Urbana its fruit was a little smaller than Early Golden but preferred by most tasters for flavor and texture"
+        },
+        {
+            type: "Persimmon",
+            name: "Killen",
+            category: "American persimmon cultivars for northern areas",
+            harvest_time_unparsed: "starts ripening nearly as early as Early Golden and often hangs later",
+            description: "McDaniel says Killen was raised from Early Golden seed by Joseph Killen of Felton, Delaware. The article says it had been thought to have D. kaki as a pollen parent but showed no evidence of species hybridity, and that it averaged slightly larger than Early Golden"
+        },
+        {
+            type: "Persimmon",
+            name: "Florence",
+            category: "American persimmon cultivars for northern areas",
+            description: "McDaniel describes Florence as an Urbana selection by Herbert C. Barrett and J. C. McDaniel from open-pollinated Killen seed, probably with William as the pollen parent. The article says it compared favorably with Garretson for flavor and texture, had the smallest seeds of the group, and sometimes bore male flowers"
+        },
+        {
+            type: "Persimmon",
+            name: "John Rick",
+            category: "American persimmon cultivars for northern areas",
+            harvest_time_unparsed: "slightly later than Early Golden",
+            description: "McDaniel describes John Rick as an Urbana selection, probably Killen x William. The article says fruit up to two inches was larger than Early Golden, attractive, desirable for fresh fruit sales, similar in flavor and texture to Early Golden, and less likely to puncture packaged fruit because of a smaller, softer calyx"
+        },
+        {
+            type: "Persimmon",
+            name: "California",
+            category: "American persimmon cultivars for northern areas",
+            description: "McDaniel says California originated in California, probably as a seedling of Early Golden, and was named by Harvey Steele after being grafted at Reading, Pennsylvania. The article says it did well at Linton, Indiana, and strongly resembled Early Golden there, although smaller and more rounded"
+        },
+        {
+            type: "Persimmon",
+            name: "Wabash",
+            category: "American persimmon cultivars for northern areas",
+            harvest_time_unparsed: "opens the Urbana season by mid-August and generally ends in September",
+            description: "McDaniel says Wabash was selected wild near Pinkstaff in Lawrence County, Illinois. The article describes seedless fruit when pollinated by nearby 60-chromosome males, smaller fruit than the preceding cultivars, deep red-orange color, sweet aromatic flavor, and red-pigmented fall foliage"
+        },
+        {
+            type: "Persimmon",
+            name: "Craggs",
+            category: "American persimmon cultivars for northern areas",
+            harvest_time_unparsed: "October to November at Urbana, Illinois",
+            description: "McDaniel says Craggs was selected wild near Harrisburg, Illinois. The article notes red autumn foliage and red-blushed fruit skin over light yellow flesh, with fruit slightly smaller than John Rick and very good for fresh eating, though softer and harder to market than John Rick or Early Golden"
+        },
+        {
+            type: "Persimmon",
+            name: "Meader",
+            category: "American persimmon cultivars for northern areas",
+            description: "McDaniel says the name Meader was suggested for N.H.-P 1, a seedling of Garretson by E. M. Meader in New Hampshire. The article says it produced large crops of mostly seedless fruit, sometimes produced staminate flowers, and was reported as very prolific at Geneva, New York"
+        },
+        {
+            type: "Persimmon",
+            name: "Marion",
+            category: "American persimmon cultivars for northern areas",
+            harvest_time_unparsed: "October to November",
+            description: "McDaniel says Marion is probably the correct name for a large, fairly late persimmon often propagated as Miller. The article says it was less attractive and less flavorful than several other cultivars, but very productive and useful for fruit and pulp in USDA Zone 6b or southward"
+        },
+        {
+            type: "Persimmon",
+            name: "Miller",
+            category: "American persimmon cultivars for northern areas",
+            harvest_time_unparsed: "September at Urbana, Illinois",
+            description: "McDaniel says Miller was cultivated at Urbana and in southeastern Pennsylvania and was one of Fayette Etter's favorite market varieties. The article describes pleasant flavor, less sugar than other persimmons of its season, and fruit smaller and finer textured than Marion"
+        },
+        {
+            type: "Persimmon",
+            name: "Beaver",
+            category: "American persimmon cultivars for northern areas",
+            harvest_time_unparsed: "midseason",
+            description: "McDaniel describes Beaver as a small-fruited persimmon from near Mitchell, Indiana, notable as the ingredient in several prize-winning persimmon puddings"
+        },
+        {
+            type: "Persimmon",
+            name: "Penland",
+            category: "American persimmon cultivars for northern areas",
+            description: "McDaniel says Penland originated as an isolated clone in the Blue Ridge Mountains of North Carolina and was hardy at Urbana. The article says it was introduced as seedless but set seeds when pollinated by 60-chromosome males, with fruit smaller and less sweet than Wabash"
+        },
+        {
+            type: "Persimmon",
+            name: "Knowles",
+            category: "American persimmon cultivars for northern areas",
+            description: "McDaniel says Knowles showed a high degree of seedlessness when pollinated by males of both chromosome races, and that the original tree in Gibson County, Indiana, had a trunk circumference over 13 feet. The article found its fruit too small, soft, and late for value at Urbana, but possibly interesting farther south"
+        },
+        {
+            type: "Persimmon",
+            name: "Festimoon",
+            category: "American persimmon cultivars for northern areas",
+            harvest_time_unparsed: "earlier in October than Knowles",
+            description: "McDaniel says Festimoon originated near Mitchell, Indiana, and was consistently seedless there. The article describes fruit larger and firmer than Knowles and ripening earlier in October, but not as sweet as most cultivars"
+        },
+        {
+            type: "Persimmon",
+            name: "William",
+            category: "Staminate American persimmon pollenizer for northern areas",
+            description: "McDaniel describes William as a staminate selection made at Urbana that produced abundant staminate flowers over a rather long season, useful as a pollenizer for persimmon plantings"
+        },
+        {
+            type: "Persimmon",
+            name: "Kansas",
+            category: "American persimmon cultivars tried in Illinois but not currently recommended",
+            description: "McDaniel says this American persimmon cultivar had been tried in Illinois but was not then recommended for one reason or another"
+        },
+        {
+            type: "Persimmon",
+            name: "Josephine",
+            category: "American persimmon cultivars tried in Illinois but not currently recommended",
+            description: "McDaniel says this American persimmon cultivar had been tried in Illinois but was not then recommended for one reason or another"
+        },
+        {
+            type: "Persimmon",
+            name: "Golden Gem",
+            category: "American persimmon cultivars tried in Illinois but not currently recommended",
+            description: "McDaniel says this American persimmon cultivar had been tried in Illinois but was not then recommended for one reason or another"
+        },
+        {
+            type: "Persimmon",
+            name: "Golden Supreme",
+            category: "American persimmon cultivars tried in Illinois but not currently recommended",
+            description: "McDaniel says this American persimmon cultivar had been tried in Illinois but was not then recommended for one reason or another"
+        },
+        {
+            type: "Persimmon",
+            name: "Ennis",
+            category: "American persimmon cultivars tried in Illinois but not currently recommended",
+            description: "McDaniel says this American persimmon cultivar had been tried in Illinois but was not then recommended for one reason or another"
+        },
+        {
+            type: "Persimmon",
+            name: "Fehrman",
+            category: "American persimmon cultivars tried in Illinois but not currently recommended",
+            description: "McDaniel says this American persimmon cultivar had been tried in Illinois but was not then recommended for one reason or another"
+        },
+        {
+            type: "Persimmon",
+            name: "Runkwitz",
+            category: "American persimmon cultivars tried in Illinois but not currently recommended",
+            description: "McDaniel says this American persimmon cultivar had been tried in Illinois but was not then recommended for one reason or another"
+        },
+        {
+            type: "Persimmon",
+            name: "Miles",
+            category: "American persimmon cultivars tried in Illinois but not currently recommended",
+            description: "McDaniel says this American persimmon cultivar had been tried in Illinois but was not then recommended for one reason or another"
+        },
+        {
+            type: "Persimmon",
+            name: "Morris Burton",
+            category: "American persimmon cultivars tried in Illinois but not currently recommended",
+            description: "McDaniel says this American persimmon cultivar had been tried in Illinois but was not then recommended for one reason or another"
+        },
+        {
+            type: "Persimmon",
+            name: "Woolbright",
+            category: "American persimmon cultivars tried in Illinois but not currently recommended",
+            description: "McDaniel says this American persimmon cultivar had been tried in Illinois but was not then recommended for one reason or another"
+        },
+        {
+            type: "Persimmon",
+            name: "Glidewell",
+            category: "American persimmon cultivars tried in Illinois but not currently recommended",
+            description: "McDaniel says this American persimmon cultivar had been tried in Illinois but was not then recommended for one reason or another"
+        },
+        {
+            type: "Persimmon",
+            name: "Ruby",
+            category: "American persimmon cultivars tried in Illinois but not currently recommended",
+            description: "McDaniel says this American persimmon cultivar had been tried in Illinois but was not then recommended for one reason or another"
+        },
+        {
+            type: "Persimmon",
+            name: "Table Grove",
+            category: "American persimmon cultivars tried in Illinois but not currently recommended",
+            description: "McDaniel says this American persimmon cultivar had been tried in Illinois but was not then recommended for one reason or another"
+        },
+    ]
+}

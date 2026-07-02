@@ -1,0 +1,91 @@
+{
+    title: "UKY CCD-CP-1 American Persimmon",
+    author: "Cheryl Kaiser and Matt Ernst",
+    description: "University of Kentucky Center for Crop Diversification crop profile for American persimmon, including cultivar selection notes for Kentucky and surrounding regions",
+    url: "https://publications.mgcafe.uky.edu/ccd-cp-1",
+    published: "August 10, 2017",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "University of Kentucky, Lexington, Kentucky",
+            latitude: 38.03,
+            longitude: -84.5
+        },
+    ],
+    categories: [
+        {
+            name: "American persimmon varieties with few or no black specks",
+            description: "UKY CCD-CP-1 says these American persimmon varieties are excellent varieties that contain few or no black specks in the pulp"
+        },
+    ],
+    plants: [
+        {
+            type: "Persimmon",
+            name: "Prok",
+            category: "American persimmon varieties with few or no black specks",
+            description: "UKY CCD-CP-1 lists this as an excellent American persimmon variety that contains few or no black specks in the pulp"
+        },
+        {
+            type: "Persimmon",
+            name: "Killen",
+            category: "American persimmon varieties with few or no black specks",
+            description: "UKY CCD-CP-1 lists this as an excellent American persimmon variety that contains few or no black specks in the pulp"
+        },
+        {
+            type: "Persimmon",
+            name: "Claypool",
+            category: "American persimmon varieties with few or no black specks",
+            description: "UKY CCD-CP-1 lists this as an excellent American persimmon variety that contains few or no black specks in the pulp"
+        },
+        {
+            type: "Persimmon",
+            name: "I-115",
+            category: "American persimmon varieties with few or no black specks",
+            description: "UKY CCD-CP-1 lists this as an excellent American persimmon variety that contains few or no black specks in the pulp"
+        },
+        {
+            type: "Persimmon",
+            name: "Dollywood",
+            category: "American persimmon varieties with few or no black specks",
+            description: "UKY CCD-CP-1 lists this as an excellent American persimmon variety that contains few or no black specks in the pulp"
+        },
+        {
+            type: "Persimmon",
+            name: "100-42",
+            category: "American persimmon varieties with few or no black specks",
+            description: "UKY CCD-CP-1 lists this as an excellent American persimmon variety that contains few or no black specks in the pulp"
+        },
+        {
+            type: "Persimmon",
+            name: "100-43",
+            category: "American persimmon varieties with few or no black specks",
+            description: "UKY CCD-CP-1 lists this as an excellent American persimmon variety that contains few or no black specks in the pulp"
+        },
+        {
+            type: "Persimmon",
+            name: "100-45",
+            category: "American persimmon varieties with few or no black specks",
+            description: "UKY CCD-CP-1 lists this as an excellent American persimmon variety that contains few or no black specks in the pulp"
+        },
+        {
+            type: "Persimmon",
+            name: "Early Golden",
+            category: "American persimmon varieties with few or no black specks",
+            description: "UKY CCD-CP-1 lists this as an excellent American persimmon variety that contains few or no black specks in the pulp"
+        },
+        {
+            type: "Persimmon",
+            name: "John Rick",
+            category: "American persimmon varieties with few or no black specks",
+            description: "UKY CCD-CP-1 lists this as an excellent American persimmon variety that contains few or no black specks in the pulp"
+        },
+        {
+            type: "Persimmon",
+            name: "C-100",
+            category: "American persimmon varieties with few or no black specks",
+            description: "UKY CCD-CP-1 lists this as an excellent American persimmon variety that contains few or no black specks in the pulp"
+        },
+    ]
+}

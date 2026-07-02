@@ -77,6 +77,10 @@
             "config": "extraction_configs/osu_pnw655_raspberry_cultivars_pnw.json"
         },
         {
+            "id": "osu_ec1617_blackberry_cultivars_oregon",
+            "config": "extraction_configs/osu_ec1617_blackberry_cultivars_oregon.json"
+        },
+        {
             "id": "osu_ec1618_strawberry_cultivars_western_oregon_washington",
             "config": "extraction_configs/osu_ec1618_strawberry_cultivars_western_oregon_washington.json"
         },
@@ -245,6 +249,10 @@
             "config": "extraction_configs/cornell_fire_blight_susceptibility_apples.json"
         },
         {
+            "id": "cornell_table_grape_cool_climates_ib234",
+            "config": "extraction_configs/cornell_table_grape_cool_climates_ib234.json"
+        },
+        {
             "id": "rutgers_fs1083_plums",
             "config": "extraction_configs/rutgers_fs1083_plums.json"
         },
@@ -339,6 +347,14 @@
         {
             "id": "unr_backyard_fruit_trees_northern_nevada",
             "config": "extraction_configs/unr_backyard_fruit_trees_northern_nevada.json"
+        },
+        {
+            "id": "uky_ccd_cp1_american_persimmon",
+            "config": "extraction_configs/uky_ccd_cp1_american_persimmon.json"
+        },
+        {
+            "id": "japs_persimmon_cultivars_northern_areas",
+            "config": "extraction_configs/japs_persimmon_cultivars_northern_areas.json"
         }
     ]
 }

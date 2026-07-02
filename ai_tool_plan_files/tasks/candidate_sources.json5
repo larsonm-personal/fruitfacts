@@ -2976,7 +2976,7 @@
         },
         {
             id: "cornell-table-grape-varieties-cool-climates-ib234",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Table Grape Varieties for Cool Climates",
             institution: "Cornell Cooperative Extension",
@@ -2999,7 +2999,12 @@
                 "Mined from plant_database/references/Oregon/2017 - Table Grape Cultivar Performance in Oregon's Willamette Valley.pdf",
                 "Cornell page identifies this as an adaptation of Information Bulletin 234",
                 "Cornell eCommons also has a publication record for the 1993 bulletin",
-                "Likely parsing issue: older HTML pages may encode cultivar descriptions as nested anchors and non-semantic headings"
+                "Likely parsing issue: older HTML pages may encode cultivar descriptions as nested anchors and non-semantic headings",
+                "Encoded in plant_database/references/New York/Cornell Table Grape Varieties for Cool Climates.json5",
+                "Config extraction added at helper_scripts/extraction_configs/cornell_table_grape_cool_climates_ib234.json",
+                "Manifest entry added as cornell_table_grape_cool_climates_ib234",
+                "Parser now supports source-specific lookup tables and column context for old HTML name matrices with implicit row group columns",
+                "Current draft extracts the table grape matrix and disease/hardiness lookup table; prose cultivar descriptions on separate old HTML pages remain a needs_help follow-up"
             ]
         },
         {
@@ -3247,7 +3252,7 @@
         },
         {
             id: "osu-ec1617-blackberry-cultivars-oregon",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Blackberry Cultivars for Oregon",
             institution: "Oregon State University Extension Service",
@@ -3269,7 +3274,12 @@
             notes: [
                 "Mined from plant_database/references/Oregon/OSU EC 1621 Selecting Berry Crop Varieties for Central Oregon.pdf",
                 "Current page lists trailing, erect, semierect, and hybrid blackberry cultivar tables",
-                "Likely parsing issue: cultivar tables are separated by blackberry growth habit and include multiple evaluation columns"
+                "Likely parsing issue: cultivar tables are separated by blackberry growth habit and include multiple evaluation columns",
+                "Encoded in plant_database/references/Oregon/OSU EC 1617 Blackberry Cultivars for Oregon.json5",
+                "Config extraction added at helper_scripts/extraction_configs/osu_ec1617_blackberry_cultivars_oregon.json",
+                "Manifest entry added as osu_ec1617_blackberry_cultivars_oregon",
+                "Used reviewed static_rows because current HTML exposes table images rather than parseable table markup and the linked PDF text extraction drifts across columns",
+                "Download PDF link exists at https://extension.oregonstate.edu/sites/extd8/files/documents/ec1617.pdf, but the PDF asset was not archived in this pass"
             ]
         },
         {
@@ -3439,7 +3449,7 @@
         },
         {
             id: "uky-ccd-cp1-american-persimmon",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "American Persimmon",
             institution: "University of Kentucky Center for Crop Diversification",
@@ -3463,12 +3473,17 @@
             notes: [
                 "Mined from plant_database/references/National/HortSci Ploidy Level in American Persimmon Cultivars.pdf",
                 "Current UKY page lists Matthew Ernst and Cheryl Kaiser as authors and publication date 2017-08-10",
-                "Likely parsing issue: cultivar data may be brief and embedded in production/market profile prose"
+                "Likely parsing issue: cultivar data may be brief and embedded in production/market profile prose",
+                "Encoded 11 persimmon records in plant_database/references/Kentucky/UKY CCD-CP-1 American Persimmon.json5",
+                "Config extraction added at helper_scripts/extraction_configs/uky_ccd_cp1_american_persimmon.json",
+                "Manifest entry added as uky_ccd_cp1_american_persimmon",
+                "Used the direct PDF because the UKY landing page exposed only metadata and a download button in fetched HTML",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {
             id: "japs-persimmon-cultivars-northern-areas-mcdaniel-1973",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Persimmon Cultivars for Northern Areas",
             institution: "Journal of the American Pomological Society",
@@ -3491,7 +3506,12 @@
             notes: [
                 "Mined from plant_database/references/National/HortSci Ploidy Level in American Persimmon Cultivars.pdf",
                 "Journal PDF returned and begins with named cultivar descriptions",
-                "Likely parsing issue: OCR/text extraction has old journal column wrapping and cultivar names embedded in prose"
+                "Likely parsing issue: OCR/text extraction has old journal column wrapping and cultivar names embedded in prose",
+                "Encoded 29 persimmon records in plant_database/references/National/JAPS Persimmon Cultivars for Northern Areas.json5",
+                "Config extraction added at helper_scripts/extraction_configs/japs_persimmon_cultivars_northern_areas.json",
+                "Manifest entry added as japs_persimmon_cultivars_northern_areas",
+                "Used static_rows because the old two-column PDF extraction interleaves columns and cultivar paragraphs",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {
