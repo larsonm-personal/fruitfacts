@@ -17,6 +17,7 @@ import { getServerBackendBase } from '../../components/backendUrl';
 
 // see https://nextjs.org/docs/advanced-features/dynamic-import
 const Map = dynamic(() => import('../../components/map'), { ssr: false });
+const MAP_LOCATION_LIMIT = 5000;
 
 function isValidBounds(extents) {
   return (
@@ -153,7 +154,7 @@ export default function Home({
               min_lat: extents[1],
               max_lon: extents[2],
               max_lat: extents[3],
-              limit: 50
+              limit: MAP_LOCATION_LIMIT
             })
         )
           .then((response) => {

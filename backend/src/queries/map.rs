@@ -6,6 +6,8 @@ use diesel::r2d2::{self, ConnectionManager};
 type DbPool = r2d2::Pool<ConnectionManager<SqliteConnection>>;
 use serde::Deserialize;
 
+const MAP_LOCATION_LIMIT: i32 = 5000;
+
 // clamp latitude between -180 and +180
 // this is a common function, see google results for an explanation
 pub fn latitude_normalize(latitude: f64) -> f64 {
@@ -16,6 +18,12 @@ pub fn latitude_normalize(latitude: f64) -> f64 {
     } else {
         remainder - 180.0
     }
+}
+
+pub(crate) fn locations_query_limit(limit: Option<i32>) -> i32 {
+    limit
+        .unwrap_or(MAP_LOCATION_LIMIT)
+        .clamp(1, MAP_LOCATION_LIMIT)
 }
 
 #[derive(Deserialize)]
@@ -111,18 +119,7 @@ pub fn locations_search_db(
 
     // todo filter for only extension pubs, u-picks, etc.
 
-    // todo limit
-    const MAX_LIMIT: i32 = 100;
-    let limit = if query.limit.is_some() {
-        let limit = query.limit.unwrap();
-        if limit > MAX_LIMIT {
-            MAX_LIMIT
-        } else {
-            limit
-        }
-    } else {
-        MAX_LIMIT
-    };
+    let limit = locations_query_limit(query.limit);
 
     db_query = db_query.limit(limit as i64);
 
