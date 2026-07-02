@@ -403,6 +403,14 @@
         {
             "id": "psu_stone_fruit_variety_selection",
             "config": "extraction_configs/psu_stone_fruit_variety_selection.json"
+        },
+        {
+            "id": "uidaho_apple_cultivars_eastern_idaho",
+            "config": "extraction_configs/uidaho_apple_cultivars_eastern_idaho.json"
+        },
+        {
+            "id": "uidaho_fruit_varieties_eastern_idaho",
+            "config": "extraction_configs/uidaho_fruit_varieties_eastern_idaho.json"
         }
     ]
 }

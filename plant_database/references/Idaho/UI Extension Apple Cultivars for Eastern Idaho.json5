@@ -1,0 +1,249 @@
+{
+    title: "Apple Cultivars for Eastern Idaho",
+    author: "Brian Finnigan",
+    description: "Archived University of Idaho Extension District 4 apple cultivar table for Eastern Idaho",
+    url: "https://web.archive.org/web/20030908053955/http://extension.ag.uidaho.edu:80/district4/MG/variety.html",
+    published: "Jan 1999",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Eastern Idaho",
+            latitude: 43.8231,
+            longitude: -111.7924
+        },
+    ],
+    categories: [
+        {
+            name: "Apple cultivars for Eastern Idaho",
+            description: "University of Idaho Extension District 4 listed these apple cultivars for Eastern Idaho, an area generally colder and higher-elevation than other parts of Idaho"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Antonovka",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "Late September to October",
+            description: "Winter hardiness: Extremely hardy to -50 degrees F. Fruit characteristics: Large, yellow apples of average quality, with white flesh. Source remarks: Produces a nearly full sized standard tree when not used as a rootstock. Vigorous, sturdy with good branching. Does not sucker,. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table spells this Antanovka"
+        },
+        {
+            type: "Apple",
+            name: "Cortland",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "Mid September to early October",
+            description: "Winter hardiness: Hardy. Fruit characteristics: Larger fruit. Dark red, crisp, pure white flesh. Tart, tangy flavor. Excellent for eating, cooking, and cider. Not highly flavored as some other McIntosh crosses, for example, Spartan. Source remarks: McIntosh type. Vigorous, long lived-tree, is annually productive and starts bearing early. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho"
+        },
+        {
+            type: "Apple",
+            name: "Duchess of Oldenburg",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "August",
+            description: "Winter hardiness: Hardy to -50 degrees F. Fruit characteristics: Medium-sized, flat, rectangular fruit. Greenish to pale yellow skin with crimson stripes. Very tart, makes excellent pies and sauces. Source remarks: Medium size, spreading, extremely hardy, long lived, heat-resistant tree. Resistant to apple scab, cedar-apple, rust, and fire blight. Bears young. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table capitalizes this as Duchess Of Oldenburg"
+        },
+        {
+            type: "Apple",
+            name: "Earligold",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "July to August",
+            description: "Winter hardiness: Hardy to -40 F. Fruit characteristics: Tart, Juicy, and crisp. Smooth, whitish-green skin. Good eating and cooking apple. Source remarks: Superior quality, good commercial potential. Long storage life. Less susceptible to fire blight than lodi or transparent. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table names this as Earligold(tm)"
+        },
+        {
+            type: "Apple",
+            name: "Empire",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "October",
+            description: "Winter hardiness: Hardy to -30 F. Fruit characteristics: McIntosh type with better color and flavor. Medium size, round, firmer, darker, waxy fruit. Creamy white, crisp, juicy, subacid flesh. High quality for desserts and cider. Source remarks: Vigorous, upright, early bearing tree; strong, wide crotch angles. Sets heavy bloom. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho"
+        },
+        {
+            type: "Apple",
+            name: "Fameuse",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "October",
+            description: "Winter hardiness: Extremely Hardy. Fruit characteristics: Small to medium fruit. Beautiful red color over cream skin. Pure white flesh with a crimson stain near skin. Tender, spicy, aromatic, distinct flavor. Excellent for cider, eating, and cooking. Source remarks: Fair to good storage. Heavy bearing tree. Main fruit fault, biennial production. Requires pollination. Does not like heavy soil. Susceptible to scab in wet summers. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table names this as fameuse or Snow Apple"
+        },
+        {
+            type: "Apple",
+            name: "Fireside",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "October",
+            description: "Winter hardiness: Hardy to -50 F. Fruit characteristics: Large, green skin with scarlet stripes, mottled orange flush. Crisp, sweet, juicy greenish-white flesh. Sweet, subacid flavor. Good keeper. Source remarks: Resistant to cedar-apple rust; some-what susceptible to scab and fire blight. Occasional winter injury at -50 F. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho"
+        },
+        {
+            type: "Apple",
+            name: "Golden Delicious",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "Mid season to late",
+            description: "Winter hardiness: Hardy to -25 F. Fruit characteristics: Clear yellow, similar in shape to 'Delicious' with less prominent knobs. Highly aromatic, crisp, excellent for eating and cooking. Source remarks: This is not a yellow 'Red Delicious' it has a different taste. Excellent pollinator for many other varieties. Rust-resistant. May not ripen every year in East Idaho. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table capitalizes this as Golden delicious"
+        },
+        {
+            type: "Apple",
+            name: "Haralred",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "September to early October",
+            description: "Winter hardiness: Hardy to -50 F. Fruit characteristics: Earlier, redder and sweeter than Haralson. Juicy, tart, nice firm flesh. Good keeper. Source remarks: Red selection of Haralson. Has good commercial potential. Fire blight resistant. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho"
+        },
+        {
+            type: "Apple",
+            name: "Haralson",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "September to early October",
+            description: "Winter hardiness: Hardy to -50 F. Fruit characteristics: Medium sized, red-striped to deep red fruit. Crisp, juicy, firm, medium tender, white flesh. Mild, tart flavor. Good for fresh eating and cider. Source remarks: Stores well, up to 6 months. Vigorous, productive tree. Moderately resistant to fire blight, and cedar-apple rust. Good Commercial potential. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho"
+        },
+        {
+            type: "Apple",
+            name: "Hazen",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "Early to mid-September",
+            description: "Winter hardiness: Hardy to -50 degrees F. Fruit characteristics: Large, round, dark red all purpose fruit. Greenish-yellow , medium firm, juicy flesh. Mildly subacid. Good dessert and cooking apple. Source remarks: Natural semi-dwarf tree grows 7-10 feet tall with 15 foot spread. Annual bearer. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho"
+        },
+        {
+            type: "Apple",
+            name: "Honeycrisp",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "Late September to October",
+            description: "Winter hardiness: Hardy. Fruit characteristics: Yellow with mottled red. Very crisp fresh. Excellent eating and keeping qualities. Source remarks: Stores well. Good potential. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table names this as honey crisp(tm)"
+        },
+        {
+            type: "Apple",
+            name: "Honeygold",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "October",
+            description: "Winter hardiness: Hardy to -50 degrees F. Fruit characteristics: Golden Delicious flavor, but sweeter and more bland. Medium to large fruit golden to yellow-green with a very smooth finish and a red to bronze blush. Stores good. High quality. Source remarks: Developed for colder northern climates. Moderately vigorous trees. Susceptible to fire blight and will winter injury occasionally, but thrives where Golden Delicious is not hardy. Stores well. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho"
+        },
+        {
+            type: "Apple",
+            name: "Liberty",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "October",
+            description: "Winter hardiness: Hardy to -40 degrees F. Fruit characteristics: Red blush. Crisp, juicy. Light yellow flesh. McIntosh type. Good for fresh, cooking, and canning. Source remarks: Resistant to scab, fire blight, mildew, cedar-apple rust. Stores well. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table capitalizes this as LIBERTY"
+        },
+        {
+            type: "Apple",
+            name: "Lodi",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "July to August",
+            description: "Winter hardiness: Hardy to -45 F. Fruit characteristics: Large, pale yellow. Crisp and tart. Must be picked early, gets overripe quickly. Source remarks: Resembles 'Yellow Transparent', but larger, firmer, less mealy. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table lowercases this as lodi"
+        },
+        {
+            type: "Apple",
+            name: "Macoun",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "Mid October",
+            description: "Winter hardiness: Hardy. Fruit characteristics: Medium sized, red striped on green. Sweet, crisp and juicy. Tasty for desserts and good for cooking. A taste test winner. Source remarks: Large upright trees fairly resistant to mildew, scab. Thin for good fruit size. Drops badly when ripe. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table lowercases this as macoun"
+        },
+        {
+            type: "Apple",
+            name: "Mantet",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "August",
+            description: "Winter hardiness: Hardy to -50 F. Fruit characteristics: Amber fruit washed with red. Juicy, tender, aromatic, white flesh, with pleasing flavor. High quality. Excellent for fresh eating. Source remarks: Upright, productive tree, vigorous. Storage short. Susceptible to mildew. Hardy with occasional winter injury. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table capitalizes this as MANTET"
+        },
+        {
+            type: "Apple",
+            name: "McIntosh",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "Late September",
+            description: "Winter hardiness: Hardy to -45 F. Fruit characteristics: Medium to large. Bright red, nearly round. Snowy white tender flesh. Tart, excellent. Source remarks: Excellent apple for garden if given good care. 'Double Red McIntosh' and Nured McIntosh' have high color. Drops badly when ripe. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table lowercases this as mcintosh"
+        },
+        {
+            type: "Apple",
+            name: "McIntosh Spur",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "Late September-early October",
+            description: "Winter hardiness: Hardy to -45 F. Fruit characteristics: Very firm, typical McIntosh fruit with stronger color. Crisp, tender flesh. Sprightly flavor. All purpose. Stores well. Source remarks: Upright growing with solid, rugged, strong stocky branches. Uniform, highly colored fruit. Requires less pruning to maintain good fruiting. Matures a week later than McIntosh. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table names this as mcintosh macspur(tm)"
+        },
+        {
+            type: "Apple",
+            name: "McIntosh Mor-Spur",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "September",
+            description: "Winter hardiness: Hardy to -45 F. Fruit characteristics: Fruit has bright, cherry-red blush. Source remarks: Strong, stocky branches, heavily spurred, with very limited side shoot development. Tendency towards dwarfing. Early, heavy producer. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table names this as MACINTOSH mor-spur(tm)"
+        },
+        {
+            type: "Apple",
+            name: "Paulared",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "September",
+            description: "Winter hardiness: Hardy to -40 F. Fruit characteristics: Beautiful, solid red blush fruit. Light, firm, crisp, juicy, mildly tart flesh. All-purpose quality. Excellent for pies and sauce. Source remarks: Fruit hangs well on tree with colors evenly throughout the tree. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho"
+        },
+        {
+            type: "Apple",
+            name: "Red Fireside",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "October",
+            description: "Winter hardiness: Hardy to -50. Fruit characteristics: Large striped dark red over medium red. Flesh yellowish, juicy, mildly acid. Source remarks: Tree vigorous, very hardy. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table capitalizes this as Red fireside"
+        },
+        {
+            type: "Apple",
+            name: "Rambo Red Summer",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "August early September",
+            description: "Winter hardiness: Hardy. Fruit characteristics: Large, brightly striped, red fruit with yellow green flesh. Crisp, juicy, tart, good for; jellies, pies sauce, and drying. Also good for eating fresh. Source remarks: Vigorous, hardy, productive. Some disease resistance. Pick when solid red, put in storage and keep for marketing until mid-winter. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho"
+        },
+        {
+            type: "Apple",
+            name: "Redwell",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "Late September to October",
+            description: "Winter hardiness: Hardy to -50 F. Fruit characteristics: Large, well-colored fruit; red over yellow skin. Mild, excellent flavor. Good for eating fresh, baking, and sauce. Cream colored flesh. Source remarks: Vigorous tree has strong framework, bears annually. Partially dwarfing in habit. Good home orchard choice. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho"
+        },
+        {
+            type: "Apple",
+            name: "Spartan",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "Mid to late season",
+            description: "Winter hardiness: Hardy. Fruit characteristics: Small to medium. Fruit dark red with purplish bloom. Crisp flesh, with excellent flavor. Frequent taste-test winner. Source remarks: Equals McIntosh in flavor. Tree habit good. Heavy bearing trees make it necessary to thin and prune. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table capitalizes this as SPARTAN"
+        },
+        {
+            type: "Apple",
+            name: "State Fair",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "Early to late August",
+            description: "Winter hardiness: Hardy to -40 F. Fruit characteristics: Medium-sized fruit is brilliantly striped with reddish orange over a yellow background. Creamy flesh is juicy, aromatic, sweet, and firmer than most early varieties. Excellent for fresh eating. Source remarks: Keeps well for a summer apple. Somewhat susceptible to scab and mildew. Fruit ripens uniformly. Good recommendation for Idaho. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table capitalizes this as State fair"
+        },
+        {
+            type: "Apple",
+            name: "Summer Rambo",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "August to September",
+            description: "Winter hardiness: Hardy. Fruit characteristics: Large, brightly striped, red fruit. Good for eating and sauce. Crisp, exceptionally juicy, yellow-green flesh. Fine, rich flavor. Source remarks: Comes into early bearing. Vigorous, hardy and productive. Some disease resistance. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho"
+        },
+        {
+            type: "Apple",
+            name: "Summerred",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "Late August",
+            description: "Winter hardiness: Hardy in East Idaho. Fruit characteristics: Medium, bright red fruit. Tart and good chiefly for cooking until fully ripened, then good as dessert apple. Pink applesauce. Source remarks: Good apple for our area. Likes colder climates. Developed for British Columbia and Alaska. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table capitalizes this as SUMMERRED"
+        },
+        {
+            type: "Apple",
+            name: "Sweet Sixteen",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "October",
+            description: "Winter hardiness: Hardy to -50 F. Fruit characteristics: Red-striped, conic fruit up to 3 inches. Aromatic, moderately acid, firm, crisp, cream colored flesh. Unique. Rates high for pies and sauce. Excellent dessert apple. Source remarks: Dependable, annual bearer. Early bearing, late blooming tree with moderately spreading, vigorous habit. Resistant to scab and fire blight. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho"
+        },
+        {
+            type: "Apple",
+            name: "Wolf River",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "Mid September to early October",
+            description: "Winter hardiness: Hardy to -50 F. Fruit characteristics: Enormous fruit, often 1 lb. or more. Pale yellow skin almost covered with pale, dull red. Soft, tender, slightly mealy, creamy white flesh. Subacid flavor. Used for baking. Source remarks: Long-lived, very hardy, productive tree. Strong spreading, sturdy limb growth. Resistant to scab, mildew, fire blight, and cedar-apple rust. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho"
+        },
+        {
+            type: "Apple",
+            name: "Wealthy",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "Mid-season",
+            description: "Winter hardiness: Very Hardy. Fruit characteristics: Large, rough red. Flesh white veined pink, firm, tart, and juicy. Good cooking variety. Source remarks: Small, cold-hardy tree that tends to alternate bearing. Was commercial apple in East Idaho. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table capitalizes this as WEALTHY"
+        },
+        {
+            type: "Apple",
+            name: "Yellow Transparent",
+            category: "Apple cultivars for Eastern Idaho",
+            harvest_time_unparsed: "July to August",
+            description: "Winter hardiness: Hardy to -50. Fruit characteristics: Medium to large. Greenish or whitish yellow and lightly blushed on one side. Soft, sour, good for cooking. Source remarks: Doesn't keep. Very short season. Tree upright, vigorous grower. Earliest ripening of apples. Good for home growers. Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho. Source table capitalizes this as YELLOW TRANSPARENT"
+        },
+    ]
+}

@@ -3078,7 +3078,7 @@
         },
         {
             id: "uidaho-apple-cultivars-eastern-idaho",
-            status: "accepted",
+            status: "encoded",
             priority: "low",
             title: "Apple Cultivars for Eastern Idaho",
             institution: "University of Idaho Extension",
@@ -3091,7 +3091,7 @@
             discovered_by: "found_citations reference scan",
             value_summary:
                 "Cited Eastern Idaho apple cultivar recommendation page from a Utah fruit guide bibliography",
-            asset_decision: "lookup stale URL before import",
+            asset_decision: "archive Wayback URL only unless an official current copy is found",
             proposed_reference_path:
                 "plant_database/references/Idaho/UI Extension Apple Cultivars for Eastern Idaho.json5",
             duplicate_check:
@@ -3099,12 +3099,15 @@
             notes: [
                 "Mined from plant_database/references/Utah/Utah State HG 2006-01pr Growing Tree Fruit in the Uintah Basin.pdf",
                 "Citation named Brian Finnigan as author and used an old District 4 Master Gardener URL",
-                "Quick lookup did not find a current official copy; keep as a low-priority archival lookup candidate"
+                "Quick lookup did not find a current official copy; encoded from the Internet Archive capture at https://web.archive.org/web/20030908053955/http://extension.ag.uidaho.edu:80/district4/MG/variety.html",
+                "Encoded 32 apple records in plant_database/references/Idaho/UI Extension Apple Cultivars for Eastern Idaho.json5",
+                "Config extraction added at helper_scripts/extraction_configs/uidaho_apple_cultivars_eastern_idaho.json",
+                "Manifest entry added as uidaho_apple_cultivars_eastern_idaho"
             ]
         },
         {
             id: "uidaho-fruit-varieties-eastern-idaho",
-            status: "accepted",
+            status: "encoded",
             priority: "low",
             title: "Fruit Varieties for Eastern Idaho",
             institution: "University of Idaho Extension",
@@ -3113,9 +3116,16 @@
                 "Apple",
                 "Apricot",
                 "Cherry",
+                "Blackberry",
+                "Currant",
+                "Gooseberry",
+                "Grape",
+                "Nanking Cherry",
                 "Peach",
                 "Pear",
-                "Plum"
+                "Plum",
+                "Raspberry",
+                "Strawberry"
             ],
             source_type: "regional extension cultivar page",
             landing_url:
@@ -3124,7 +3134,7 @@
             discovered_by: "found_citations reference scan",
             value_summary:
                 "Cited Eastern Idaho fruit variety recommendation page from a Utah fruit guide bibliography",
-            asset_decision: "lookup stale URL before import",
+            asset_decision: "archive Wayback URL only unless an official current copy is found",
             proposed_reference_path:
                 "plant_database/references/Idaho/UI Extension Fruit Varieties for Eastern Idaho.json5",
             duplicate_check:
@@ -3132,7 +3142,11 @@
             notes: [
                 "Mined from plant_database/references/Utah/Utah State HG 2006-01pr Growing Tree Fruit in the Uintah Basin.pdf",
                 "Citation named Brian Finnigan as author and used an old District 4 Master Gardener URL",
-                "Quick lookup did not find a current official copy; keep as a low-priority archival lookup candidate"
+                "Quick lookup did not find a current official copy; encoded from the Internet Archive capture at https://web.archive.org/web/20030515101827/http://extension.ag.uidaho.edu:80/district4/MG/fruitvar.html",
+                "Encoded 59 records in plant_database/references/Idaho/UI Extension Fruit Varieties for Eastern Idaho.json5",
+                "Used parsed HTML tables for pears and strawberries, with static rows for narrative cultivar-list sections",
+                "Config extraction added at helper_scripts/extraction_configs/uidaho_fruit_varieties_eastern_idaho.json",
+                "Manifest entry added as uidaho_fruit_varieties_eastern_idaho"
             ]
         },
         {

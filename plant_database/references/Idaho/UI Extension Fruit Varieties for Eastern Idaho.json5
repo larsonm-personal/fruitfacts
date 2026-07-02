@@ -1,0 +1,426 @@
+{
+    title: "Fruit Varieties for Eastern Idaho",
+    author: "Brian Finnigan",
+    description: "Archived University of Idaho Extension District 4 fruit variety page for Eastern Idaho tree fruit and small fruit",
+    url: "https://web.archive.org/web/20030515101827/http://extension.ag.uidaho.edu:80/district4/MG/fruitvar.html",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Eastern Idaho",
+            latitude: 43.8231,
+            longitude: -111.7924
+        },
+    ],
+    categories: [
+        {
+            name: "Eastern Idaho apricot cultivars to consider",
+            description: "University of Idaho Extension listed these apricot cultivars to consider for warmer protected sites in Eastern Idaho, while warning not to expect long survival or consistent production"
+        },
+        {
+            name: "Eastern Idaho sour cherry varieties",
+            description: "University of Idaho Extension said sour cherries are very hardy and do well in most Eastern Idaho locations"
+        },
+        {
+            name: "Eastern Idaho protected-site peach varieties",
+            description: "University of Idaho Extension described these peaches as worth trying only in very protected Eastern Idaho areas"
+        },
+        {
+            name: "Eastern Idaho pear varieties worth trying",
+            description: "University of Idaho Extension listed these pear varieties as worth trying in Eastern Idaho"
+        },
+        {
+            name: "Eastern Idaho blackberry survivor candidate",
+            description: "University of Idaho Extension said Alfred was the only blackberry variety that might survive in Eastern Idaho, subject to winter injury if not protected"
+        },
+        {
+            name: "Eastern Idaho currant varieties",
+            description: "University of Idaho Extension listed these currant varieties for Eastern Idaho, with Red Lake described as best-yielding in trials"
+        },
+        {
+            name: "Eastern Idaho gooseberry varieties",
+            description: "University of Idaho Extension listed these gooseberries as good American varieties for Eastern Idaho"
+        },
+        {
+            name: "Eastern Idaho grape varieties",
+            description: "University of Idaho Extension listed Beta as the best-known hardy grape from native Canadian species and named these semi-hardy grapes as grown in selected Eastern Idaho locations"
+        },
+        {
+            name: "Eastern Idaho Nanking cherry",
+            description: "University of Idaho Extension described Nanking cherries as useful for jelly and juice in Eastern Idaho"
+        },
+        {
+            name: "Eastern Idaho springbearing red raspberries",
+            description: "University of Idaho Extension listed these among the most popular springbearing red raspberries for Eastern Idaho"
+        },
+        {
+            name: "Eastern Idaho everbearing red raspberries",
+            description: "University of Idaho Extension listed these among the most popular everbearing red raspberries for Eastern Idaho"
+        },
+        {
+            name: "Eastern Idaho everbearing strawberries",
+            description: "University of Idaho Extension listed these everbearing strawberries for Eastern Idaho"
+        },
+        {
+            name: "Eastern Idaho Junebearing strawberries",
+            description: "University of Idaho Extension listed these Junebearing strawberries for Eastern Idaho"
+        },
+    ],
+    plants: [
+        {
+            type: "Apricot",
+            name: "Chinese",
+            category: "Eastern Idaho apricot cultivars to consider",
+            description: "University of Idaho Extension lists this as an apricot cultivar to consider for Eastern Idaho, while warning that apricots should only be planted in warmer protected sites. Source text names this as Chinese (Mormon)"
+        },
+        {
+            type: "Apricot",
+            name: "Sunglow",
+            category: "Eastern Idaho apricot cultivars to consider",
+            description: "University of Idaho Extension lists this as an apricot cultivar to consider for Eastern Idaho, while warning that apricots should only be planted in warmer protected sites"
+        },
+        {
+            type: "Apricot",
+            name: "Sungold",
+            category: "Eastern Idaho apricot cultivars to consider",
+            description: "University of Idaho Extension lists this as an apricot cultivar to consider for Eastern Idaho, while warning that apricots should only be planted in warmer protected sites"
+        },
+        {
+            type: "Apricot",
+            name: "Moongold",
+            category: "Eastern Idaho apricot cultivars to consider",
+            description: "University of Idaho Extension lists this as an apricot cultivar to consider for Eastern Idaho, while warning that apricots should only be planted in warmer protected sites"
+        },
+        {
+            type: "Apricot",
+            name: "Sweet Pit",
+            category: "Eastern Idaho apricot cultivars to consider",
+            description: "University of Idaho Extension lists this as an apricot cultivar to consider for Eastern Idaho, while warning that apricots should only be planted in warmer protected sites"
+        },
+        {
+            type: "Apricot",
+            name: "Westcot",
+            category: "Eastern Idaho apricot cultivars to consider",
+            description: "University of Idaho Extension lists this as an apricot cultivar to consider for Eastern Idaho, while warning that apricots should only be planted in warmer protected sites"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Montmorency",
+            category: "Eastern Idaho sour cherry varieties",
+            description: "University of Idaho Extension says Montmorency is the best sour cherry for Eastern Idaho"
+        },
+        {
+            type: "Sour Cherry",
+            name: "North Star",
+            category: "Eastern Idaho sour cherry varieties",
+            description: "University of Idaho Extension lists Northstar among other sour cherries hardy to -40 F for Eastern Idaho. Source text names this as Northstar"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Early Richmond",
+            category: "Eastern Idaho sour cherry varieties",
+            description: "University of Idaho Extension lists Early Richmond among other sour cherries hardy to -40 F for Eastern Idaho"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Meteor",
+            category: "Eastern Idaho sour cherry varieties",
+            description: "University of Idaho Extension says Meteor is the hardiest sour cherry, to -50 F, and is good to grow in the most severe Eastern Idaho areas"
+        },
+        {
+            type: "Peach",
+            name: "Reliance",
+            category: "Eastern Idaho protected-site peach varieties",
+            description: "University of Idaho Extension says this peach may be worth trying only in very protected Eastern Idaho areas because peach buds are commonly killed by winter temperatures"
+        },
+        {
+            type: "Peach",
+            name: "Veteran",
+            category: "Eastern Idaho protected-site peach varieties",
+            description: "University of Idaho Extension says this peach may be worth trying only in very protected Eastern Idaho areas because peach buds are commonly killed by winter temperatures"
+        },
+        {
+            type: "Blackberry",
+            name: "Alfred",
+            category: "Eastern Idaho blackberry survivor candidate",
+            description: "University of Idaho Extension says Alfred is the only blackberry variety that might survive in Eastern Idaho, but it is subject to winter injury if not protected"
+        },
+        {
+            type: "Currant",
+            name: "Red Lake",
+            category: "Eastern Idaho currant varieties",
+            description: "University of Idaho Extension says Red Lake yielded the best in currant trials for Eastern Idaho"
+        },
+        {
+            type: "Currant",
+            name: "Cherry",
+            category: "Eastern Idaho currant varieties",
+            description: "University of Idaho Extension lists Cherry among red currant varieties that show promise for Eastern Idaho"
+        },
+        {
+            type: "Currant",
+            name: "Wilder",
+            category: "Eastern Idaho currant varieties",
+            description: "University of Idaho Extension lists Wilder among red currant varieties that show promise for Eastern Idaho"
+        },
+        {
+            type: "Currant",
+            name: "Minnesota 71",
+            category: "Eastern Idaho currant varieties",
+            description: "University of Idaho Extension lists Minnesota 71 among red currant varieties that show promise for Eastern Idaho"
+        },
+        {
+            type: "Currant",
+            name: "White Dutch",
+            category: "Eastern Idaho currant varieties",
+            description: "University of Idaho Extension lists White Dutch among currant varieties for Eastern Idaho"
+        },
+        {
+            type: "Currant",
+            name: "White Grape",
+            category: "Eastern Idaho currant varieties",
+            description: "University of Idaho Extension lists White Grape among currant varieties for Eastern Idaho"
+        },
+        {
+            type: "Currant",
+            name: "White Imperial",
+            category: "Eastern Idaho currant varieties",
+            description: "University of Idaho Extension lists White Imperial among currant varieties for Eastern Idaho"
+        },
+        {
+            type: "Gooseberry",
+            name: "Pixwell",
+            category: "Eastern Idaho gooseberry varieties",
+            description: "University of Idaho Extension lists this among good American gooseberry varieties for Eastern Idaho"
+        },
+        {
+            type: "Gooseberry",
+            name: "Poorman",
+            category: "Eastern Idaho gooseberry varieties",
+            description: "University of Idaho Extension lists this among good American gooseberry varieties for Eastern Idaho"
+        },
+        {
+            type: "Gooseberry",
+            name: "Oregon Champion",
+            category: "Eastern Idaho gooseberry varieties",
+            description: "University of Idaho Extension lists this among good American gooseberry varieties for Eastern Idaho. Source text names this as Oregon Champ"
+        },
+        {
+            type: "Gooseberry",
+            name: "Welcome",
+            category: "Eastern Idaho gooseberry varieties",
+            description: "University of Idaho Extension lists this among good American gooseberry varieties for Eastern Idaho"
+        },
+        {
+            type: "Grape",
+            name: "Beta",
+            category: "Eastern Idaho grape varieties",
+            description: "University of Idaho Extension says Beta is the best-known cultivar from the hardiest native-Canadian grape source and is excellent for jelly, jam, and juice"
+        },
+        {
+            type: "Grape",
+            name: "Concord",
+            category: "Eastern Idaho grape varieties",
+            description: "University of Idaho Extension says Concord and other semi-hardy grapes have been grown in selected Eastern Idaho locations"
+        },
+        {
+            type: "Grape",
+            name: "Himrod",
+            category: "Eastern Idaho grape varieties",
+            description: "University of Idaho Extension says Himrod and other semi-hardy grapes have been grown in selected Eastern Idaho locations"
+        },
+        {
+            type: "Grape",
+            name: "Interlaken",
+            category: "Eastern Idaho grape varieties",
+            description: "University of Idaho Extension says Inter Laken and other semi-hardy grapes have been grown in selected Eastern Idaho locations. Source text names this as Inter Laken"
+        },
+        {
+            type: "Grape",
+            name: "Ruby",
+            category: "Eastern Idaho grape varieties",
+            description: "University of Idaho Extension says Ruby and other semi-hardy grapes have been grown in selected Eastern Idaho locations"
+        },
+        {
+            type: "Nanking Cherry",
+            name: "Nanking",
+            category: "Eastern Idaho Nanking cherry",
+            description: "University of Idaho Extension describes Nanking cherries as small, bright red, rather sweet cherries useful for jelly and juice in Eastern Idaho"
+        },
+        {
+            type: "Raspberry",
+            name: "Latham",
+            category: "Eastern Idaho springbearing red raspberries",
+            description: "University of Idaho Extension lists this among the most popular springbearing red raspberries for Eastern Idaho"
+        },
+        {
+            type: "Raspberry",
+            name: "Canby",
+            category: "Eastern Idaho springbearing red raspberries",
+            description: "University of Idaho Extension lists this among the most popular springbearing red raspberries for Eastern Idaho. Source text names this as Canby (Thornless)"
+        },
+        {
+            type: "Raspberry",
+            name: "Newburgh",
+            category: "Eastern Idaho springbearing red raspberries",
+            description: "University of Idaho Extension lists this among the most popular springbearing red raspberries for Eastern Idaho"
+        },
+        {
+            type: "Raspberry",
+            name: "Heritage",
+            category: "Eastern Idaho everbearing red raspberries",
+            description: "University of Idaho Extension lists this among the most popular everbearing red raspberries for Eastern Idaho"
+        },
+        {
+            type: "Raspberry",
+            name: "September",
+            category: "Eastern Idaho everbearing red raspberries",
+            description: "University of Idaho Extension lists this among the most popular everbearing red raspberries for Eastern Idaho"
+        },
+        {
+            type: "Raspberry",
+            name: "Fall Red",
+            category: "Eastern Idaho everbearing red raspberries",
+            description: "University of Idaho Extension lists this among the most popular everbearing red raspberries for Eastern Idaho"
+        },
+        {
+            type: "Euro Pear",
+            name: "Clapp's Favorite",
+            category: "Eastern Idaho pear varieties worth trying",
+            description: "Pollinator code: P. Zone: 3. Flesh: sweet, fine. Fire blight: susceptible. University of Idaho Extension lists this pear as worth trying in Eastern Idaho. Source notes P means pollinator is required and SF means self-fruited"
+        },
+        {
+            type: "Euro Pear",
+            name: "Flemish Beauty",
+            category: "Eastern Idaho pear varieties worth trying",
+            description: "Pollinator code: P. Zone: 3. Flesh: firm, melting. Fire blight: susceptible. University of Idaho Extension lists this pear as worth trying in Eastern Idaho. Source notes P means pollinator is required and SF means self-fruited"
+        },
+        {
+            type: "Euro Pear",
+            name: "Bartlett",
+            category: "Eastern Idaho pear varieties worth trying",
+            description: "Pollinator code: P/SF. Zone: 5. Flesh: smooth, juicy. Fire blight: susceptible. University of Idaho Extension lists this pear as worth trying in Eastern Idaho. Source notes P means pollinator is required and SF means self-fruited"
+        },
+        {
+            type: "Euro Pear",
+            name: "Gourmet",
+            category: "Eastern Idaho pear varieties worth trying",
+            description: "Zone: 4. Flesh: sweet, crisp. University of Idaho Extension lists this pear as worth trying in Eastern Idaho. Source notes P means pollinator is required and SF means self-fruited"
+        },
+        {
+            type: "Euro Pear",
+            name: "Luscious",
+            category: "Eastern Idaho pear varieties worth trying",
+            description: "Pollinator code: P. Zone: 4. Flesh: sweet, juicy. Fire blight: resistant. University of Idaho Extension lists this pear as worth trying in Eastern Idaho. Source notes P means pollinator is required and SF means self-fruited"
+        },
+        {
+            type: "Euro Pear",
+            name: "John",
+            category: "Eastern Idaho pear varieties worth trying",
+            description: "Pollinator code: P. Zone: 3-4. Flesh: juicy. Fire blight: resistant. University of Idaho Extension lists this pear as worth trying in Eastern Idaho. Source notes P means pollinator is required and SF means self-fruited"
+        },
+        {
+            type: "Euro Pear",
+            name: "Parker",
+            category: "Eastern Idaho pear varieties worth trying",
+            description: "Zone: 3-4. Flesh: sweet, juicy. University of Idaho Extension lists this pear as worth trying in Eastern Idaho. Source notes P means pollinator is required and SF means self-fruited"
+        },
+        {
+            type: "Euro Pear",
+            name: "Sauvignac",
+            category: "Eastern Idaho pear varieties worth trying",
+            description: "Zone: 2-3. Flesh: sweet, juicy. University of Idaho Extension lists this pear as worth trying in Eastern Idaho. Source notes P means pollinator is required and SF means self-fruited"
+        },
+        {
+            type: "Euro Pear",
+            name: "Summercrisp",
+            category: "Eastern Idaho pear varieties worth trying",
+            description: "Zone: 4. Flesh: sweet, crisp. Fire blight: resistant. University of Idaho Extension lists this pear as worth trying in Eastern Idaho. Source notes P means pollinator is required and SF means self-fruited. Source table names this as Summer Crisp"
+        },
+        {
+            type: "Euro Pear",
+            name: "Ure",
+            category: "Eastern Idaho pear varieties worth trying",
+            description: "Zone: 3. Flesh: sweet, juicy. University of Idaho Extension lists this pear as worth trying in Eastern Idaho. Source notes P means pollinator is required and SF means self-fruited"
+        },
+        {
+            type: "Strawberry",
+            name: "Ozark Beauty",
+            category: "Eastern Idaho everbearing strawberries",
+            description: "University of Idaho Extension lists this under its Everbearing strawberry column for Eastern Idaho"
+        },
+        {
+            type: "Strawberry",
+            name: "Vesper",
+            category: "Eastern Idaho Junebearing strawberries",
+            description: "University of Idaho Extension lists this under its Junebearing strawberry column for Eastern Idaho"
+        },
+        {
+            type: "Strawberry",
+            name: "Hecker",
+            category: "Eastern Idaho everbearing strawberries",
+            description: "University of Idaho Extension lists this under its Everbearing strawberry column for Eastern Idaho"
+        },
+        {
+            type: "Strawberry",
+            name: "Vee Star",
+            category: "Eastern Idaho Junebearing strawberries",
+            description: "University of Idaho Extension lists this under its Junebearing strawberry column for Eastern Idaho"
+        },
+        {
+            type: "Strawberry",
+            name: "Fort Laramie",
+            category: "Eastern Idaho everbearing strawberries",
+            description: "University of Idaho Extension lists this under its Everbearing strawberry column for Eastern Idaho"
+        },
+        {
+            type: "Strawberry",
+            name: "Shuksan",
+            category: "Eastern Idaho Junebearing strawberries",
+            description: "University of Idaho Extension lists this under its Junebearing strawberry column for Eastern Idaho. Source table spells this Shukson"
+        },
+        {
+            type: "Strawberry",
+            name: "Quinault",
+            category: "Eastern Idaho everbearing strawberries",
+            description: "University of Idaho Extension lists this under its Everbearing strawberry column for Eastern Idaho. Source table spells this Quinalt"
+        },
+        {
+            type: "Strawberry",
+            name: "Redcoat",
+            category: "Eastern Idaho Junebearing strawberries",
+            description: "University of Idaho Extension lists this under its Junebearing strawberry column for Eastern Idaho"
+        },
+        {
+            type: "Strawberry",
+            name: "Ogallala",
+            category: "Eastern Idaho everbearing strawberries",
+            description: "University of Idaho Extension lists this under its Everbearing strawberry column for Eastern Idaho"
+        },
+        {
+            type: "Strawberry",
+            name: "Canoga",
+            category: "Eastern Idaho Junebearing strawberries",
+            description: "University of Idaho Extension lists this under its Junebearing strawberry column for Eastern Idaho. Source table spells this Conoga"
+        },
+        {
+            type: "Strawberry",
+            name: "Superfection",
+            category: "Eastern Idaho everbearing strawberries",
+            description: "University of Idaho Extension lists this under its Everbearing strawberry column for Eastern Idaho"
+        },
+        {
+            type: "Strawberry",
+            name: "American Sweetheart",
+            category: "Eastern Idaho everbearing strawberries",
+            description: "University of Idaho Extension lists this under its Everbearing strawberry column for Eastern Idaho"
+        },
+        {
+            type: "Strawberry",
+            name: "Gem",
+            category: "Eastern Idaho everbearing strawberries",
+            description: "University of Idaho Extension lists this under its Everbearing strawberry column for Eastern Idaho"
+        },
+    ]
+}

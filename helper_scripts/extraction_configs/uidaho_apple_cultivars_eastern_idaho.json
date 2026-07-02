@@ -1,0 +1,135 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://web.archive.org/web/20030908053955/http://extension.ag.uidaho.edu:80/district4/MG/variety.html"
+  },
+  "reference_fields": [
+    ["title", "Apple Cultivars for Eastern Idaho"],
+    ["author", "Brian Finnigan"],
+    ["description", "Archived University of Idaho Extension District 4 apple cultivar table for Eastern Idaho"],
+    ["url", "https://web.archive.org/web/20030908053955/http://extension.ag.uidaho.edu:80/district4/MG/variety.html"],
+    ["published", "Jan 1999"],
+    ["accessed", "Jul 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Eastern Idaho",
+      "latitude": 43.8231,
+      "longitude": -111.7924
+    }
+  ],
+  "categories": [
+    {
+      "name": "Apple cultivars for Eastern Idaho",
+      "description": "University of Idaho Extension District 4 listed these apple cultivars for Eastern Idaho, an area generally colder and higher-elevation than other parts of Idaho"
+    }
+  ],
+  "name_overrides": {
+    "Antanovka": {
+      "name": "Antonovka",
+      "note": "Source table spells this Antanovka"
+    },
+    "Duchess Of Oldenburg": {
+      "name": "Duchess of Oldenburg",
+      "note": "Source table capitalizes this as Duchess Of Oldenburg"
+    },
+    "Earligold(tm)": {
+      "name": "Earligold",
+      "note": "Source table names this as Earligold(tm)"
+    },
+    "fameuse or Snow Apple": {
+      "name": "Fameuse",
+      "note": "Source table names this as fameuse or Snow Apple"
+    },
+    "Golden delicious": {
+      "name": "Golden Delicious",
+      "note": "Source table capitalizes this as Golden delicious"
+    },
+    "honey crisp(tm)": {
+      "name": "Honeycrisp",
+      "note": "Source table names this as honey crisp(tm)"
+    },
+    "LIBERTY": {
+      "name": "Liberty",
+      "note": "Source table capitalizes this as LIBERTY"
+    },
+    "lodi": {
+      "name": "Lodi",
+      "note": "Source table lowercases this as lodi"
+    },
+    "macoun": {
+      "name": "Macoun",
+      "note": "Source table lowercases this as macoun"
+    },
+    "MANTET": {
+      "name": "Mantet",
+      "note": "Source table capitalizes this as MANTET"
+    },
+    "mcintosh": {
+      "name": "McIntosh",
+      "note": "Source table lowercases this as mcintosh"
+    },
+    "mcintosh macspur(tm)": {
+      "name": "McIntosh Spur",
+      "note": "Source table names this as mcintosh macspur(tm)"
+    },
+    "MACINTOSH mor-spur(tm)": {
+      "name": "McIntosh Mor-Spur",
+      "note": "Source table names this as MACINTOSH mor-spur(tm)"
+    },
+    "Red fireside": {
+      "name": "Red Fireside",
+      "note": "Source table capitalizes this as Red fireside"
+    },
+    "SPARTAN": {
+      "name": "Spartan",
+      "note": "Source table capitalizes this as SPARTAN"
+    },
+    "State fair": {
+      "name": "State Fair",
+      "note": "Source table capitalizes this as State fair"
+    },
+    "SUMMERRED": {
+      "name": "Summerred",
+      "note": "Source table capitalizes this as SUMMERRED"
+    },
+    "WEALTHY": {
+      "name": "Wealthy",
+      "note": "Source table capitalizes this as WEALTHY"
+    },
+    "YELLOW TRANSPARENT": {
+      "name": "Yellow Transparent",
+      "note": "Source table capitalizes this as YELLOW TRANSPARENT"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "header_row": true,
+      "required_headers": [
+        "APPLE CULTIVAR",
+        "WINTER HARDINESS",
+        "RIPENING DATE",
+        "FRUIT CHARACTERISTICS",
+        "REMARKS"
+      ],
+      "name_key": "apple_cultivar",
+      "plant_type": "Apple",
+      "category": "Apple cultivars for Eastern Idaho",
+      "harvest_key": "ripening_date",
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["winter_hardiness", "Winter hardiness"],
+            ["fruit_characteristics", "Fruit characteristics"],
+            ["remarks", "Source remarks"]
+          ]
+        }
+      ],
+      "description_suffix": "Source table is an archived University of Idaho Extension cultivar table for Eastern Idaho"
+    }
+  ]
+}
