@@ -9,6 +9,7 @@
 - `npm run dev`
 - `npm start`
 - `.\start_local_test_server.ps1` run the local frontend server using repo-local Node/npm if needed
+- the helper binds Next to `local.fruitfacts.xyz`, matching the backend CORS and OAuth dev host
 - `.\start_local_test_server.ps1 -Production` build and run the production-style local server
 - `.\check_local_routes.ps1` build, start, and request local static, directory, and collection routes
 

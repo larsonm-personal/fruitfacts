@@ -3705,7 +3705,7 @@
         },
         {
             id: "sare-season-long-strawberry-everbearers-northeast",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Season-Long Strawberry Production with Everbearers for Northeastern Producers",
             institution: "Sustainable Agriculture Research and Education",
@@ -3726,12 +3726,17 @@
             notes: [
                 "Mined from plant_database/references/New Hampshire/UNH Day-neutral Strawberries for Northern New England.pdf",
                 "SARE page lists Willie Lantz, Harry Swartz, Kathleen Demchak, and Sherry Frick, 2010, 70 pages",
-                "Likely parsing issue: cultivar context is embedded in a large production manual rather than a concise table"
+                "Likely parsing issue: cultivar context is embedded in a large production manual rather than a concise table",
+                "Encoded in plant_database/references/National/SARE Season-Long Strawberry Production with Everbearers for Northeastern Producers.json5",
+                "Config extraction added at helper_scripts/extraction_configs/sare_season_long_strawberry_everbearers_northeast.json",
+                "Manifest entry added as sare_season_long_strawberry_everbearers_northeast",
+                "Used reviewed static_rows because the PDF cultivar prose is interrupted by page headers and figure captions in pdftotext layout output",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {
             id: "cornell-low-tunnel-strawberries",
-            status: "accepted",
+            status: "encoded",
             priority: "medium",
             title: "Low Tunnel Strawberries",
             institution: "Cornell Fruit Program",
@@ -3752,7 +3757,13 @@
             notes: [
                 "Mined from plant_database/references/New Hampshire/UNH Day-neutral Strawberries for Northern New England.pdf",
                 "Cited source is a direct Cornell Fruit Program PDF",
-                "Likely lower priority unless cultivar trial details are substantial enough to import"
+                "Likely lower priority unless cultivar trial details are substantial enough to import",
+                "Encoded in plant_database/references/New York/Cornell Low Tunnel Strawberries.json5",
+                "Config extraction added at helper_scripts/extraction_configs/cornell_low_tunnel_strawberries.json",
+                "Manifest entry added as cornell_low_tunnel_strawberries",
+                "The queued https URL failed certificate validation and then 404 locally; the same Cornell PDF downloaded successfully over http",
+                "Used reviewed static_rows because the PDF has a compact prose cultivar discussion rather than a stable cultivar table",
+                "DVC PDF asset not archived in this pass"
             ]
         }
     ]

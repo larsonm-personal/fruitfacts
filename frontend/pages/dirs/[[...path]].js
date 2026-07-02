@@ -18,6 +18,29 @@ import { getServerBackendBase } from '../../components/backendUrl';
 // see https://nextjs.org/docs/advanced-features/dynamic-import
 const Map = dynamic(() => import('../../components/map'), { ssr: false });
 
+function isValidBounds(extents) {
+  return (
+    Array.isArray(extents) &&
+    extents.length === 4 &&
+    extents.every((value) => Number.isFinite(value))
+  );
+}
+
+function getLocationsFetchError(error) {
+  let message = `can't reach locations backend: ${error.message}`;
+  if (typeof window !== 'undefined') {
+    try {
+      const backendHost = new URL(process.env.NEXT_PUBLIC_BACKEND_BASE).hostname;
+      if (backendHost == 'local.fruitfacts.xyz' && window.location.hostname != backendHost) {
+        message += '; open http://local.fruitfacts.xyz:3000 instead of http://localhost:3000';
+      }
+    } catch {
+      // leave the plain fetch error
+    }
+  }
+  return message;
+}
+
 function getDirectoryHref(directory) {
   if (directory == '/') {
     return '/dirs#dirs';
@@ -106,7 +129,7 @@ export default function Home({
 
   const [center, setCenterForQuery] = React.useState({});
   const [zoom, setZoomForQuery] = React.useState({});
-  const [extents, setExtentsForFetch] = React.useState({});
+  const [extents, setExtentsForFetch] = React.useState(null);
   const [locations, setLocations] = React.useState([]);
 
   React.useEffect(() => {
@@ -117,6 +140,9 @@ export default function Home({
     // useMemo(): cache results for each input and don't re-run. appears to not be doing anything
     () =>
       throttle(async (extents, callback) => {
+        if (!isValidBounds(extents)) {
+          return;
+        }
         console.log('hi' + JSON.stringify(extents));
 
         const response = await fetch(
@@ -133,22 +159,22 @@ export default function Home({
           .then((response) => {
             if (response.status !== 200) {
               return response.text().then((text) => {
-                errorMessage = `backend API error: ${text}`;
+                setErrorMessage(`locations backend API error: ${text}`);
                 console.log(text);
-                return;
+                return [];
               });
             }
             return response.json();
           })
           .catch((error) => {
-            errorMessage = `can't reach backend: ${error.message}`;
+            setErrorMessage(getLocationsFetchError(error));
             console.log(error);
-            return;
+            return [];
           });
 
         callback(response);
       }, 650 /* ms to wait */),
-    []
+    [setErrorMessage]
   );
 
   React.useEffect(() => {

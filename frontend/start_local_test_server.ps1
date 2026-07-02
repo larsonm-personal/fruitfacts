@@ -30,6 +30,7 @@ if ($Port -lt 1 -or $Port -gt 65535) {
 $frontendRoot = $PSScriptRoot
 $repoRoot = Split-Path -Parent $frontendRoot
 $nodeInstallRoot = Join-Path $env:LOCALAPPDATA "fruitfacts\node"
+$localSiteHost = "local.fruitfacts.xyz"
 
 function Add-PathEntry {
     param([string]$PathEntry)
@@ -82,7 +83,7 @@ function Test-NodeReady {
 }
 
 function Assert-LocalFruitfactsHostAlias {
-    $hostName = "local.fruitfacts.xyz"
+    $hostName = $localSiteHost
     Write-Host "Checking $hostName host alias"
     try {
         $addresses = @([System.Net.Dns]::GetHostAddresses($hostName))
@@ -193,13 +194,13 @@ try {
         if (!$SkipBuild) {
             Invoke-Checked "Building frontend" $npmCommand @("run", "build")
         }
-        Write-Host "Starting frontend production server on http://local.fruitfacts.xyz:$Port"
-        & $npmCommand @("run", "start", "--", "-p", "$Port")
+        Write-Host "Starting frontend production server on http://$localSiteHost`:$Port"
+        & $npmCommand @("run", "start", "--", "-p", "$Port", "-H", $localSiteHost)
         exit $LASTEXITCODE
     }
 
-    Write-Host "Starting frontend dev server on http://local.fruitfacts.xyz:$Port"
-    & $npmCommand @("run", "dev", "--", "-p", "$Port")
+    Write-Host "Starting frontend dev server on http://$localSiteHost`:$Port"
+    & $npmCommand @("run", "dev", "--", "-p", "$Port", "-H", $localSiteHost)
     exit $LASTEXITCODE
 }
 finally {
