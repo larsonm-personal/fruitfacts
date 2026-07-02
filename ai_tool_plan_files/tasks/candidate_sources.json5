@@ -2973,6 +2973,743 @@
                 "Worked example for quoted release paragraphs where cultivar heading and description are sometimes split across adjacent paragraphs",
                 "Current draft filters out non-fruit hibiscus ornamental releases and keeps Native Blue as an ornamental blueberry category"
             ]
+        },
+        {
+            id: "cornell-table-grape-varieties-cool-climates-ib234",
+            status: "accepted",
+            priority: "high",
+            title: "Table Grape Varieties for Cool Climates",
+            institution: "Cornell Cooperative Extension",
+            region: "Northeastern United States",
+            crops: ["Grape"],
+            publication_number: "Information Bulletin 234",
+            source_type: "regional extension cultivar guide",
+            landing_url:
+                "https://www.hort.cornell.edu/reisch/grapegenetics/bulletin/table/index.html",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Cold-climate table grape cultivar guide cited by the Oregon table grape performance report",
+            asset_decision: "stub from web; archive eCommons copy if available",
+            proposed_reference_path:
+                "plant_database/references/New York/Cornell Table Grape Varieties for Cool Climates.json5",
+            duplicate_check:
+                "No Cornell table grape cultivar guide found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/Oregon/2017 - Table Grape Cultivar Performance in Oregon's Willamette Valley.pdf",
+                "Cornell page identifies this as an adaptation of Information Bulletin 234",
+                "Cornell eCommons also has a publication record for the 1993 bulletin",
+                "Likely parsing issue: older HTML pages may encode cultivar descriptions as nested anchors and non-semantic headings"
+            ]
+        },
+        {
+            id: "msu-e2774-growing-table-grapes-temperate-climate",
+            status: "accepted",
+            priority: "high",
+            title: "Growing Table Grapes in a Temperate Climate",
+            institution: "Michigan State University Extension",
+            region: "Michigan and New York",
+            crops: ["Grape"],
+            publication_number: "E-2774",
+            source_type: "regional extension production and cultivar guide",
+            download_url:
+                "https://www.canr.msu.edu/uploads/files/e2774.pdf",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Temperate-climate table grape guide with variety selection context and Michigan/New York trial background",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Michigan/MSU E-2774 Growing Table Grapes in a Temperate Climate.json5",
+            duplicate_check:
+                "No MSU E-2774 table grape guide found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/Oregon/2017 - Table Grape Cultivar Performance in Oregon's Willamette Valley.pdf",
+                "Official MSU PDF returned a 45-page extension bulletin",
+                "Likely parsing issue: variety selection is mixed with training, pruning, crop adjustment, and appendices rather than a single clean cultivar table"
+            ]
+        },
+        {
+            id: "uc-anr-3419-trellis-selections-canopy-management-wine-grapes",
+            status: "accepted",
+            priority: "low",
+            title: "Trellis Selections and Canopy Management in Wine Grape Varieties in California",
+            institution: "University of California Cooperative Extension",
+            region: "California",
+            crops: ["Grape"],
+            publication_number: "Publication 3419",
+            source_type: "extension wine grape management chapter",
+            download_url:
+                "http://ucanr.org/sites/intvit/files/24348.pdf",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Wine grape variety management chapter cited by a western Washington grape guide",
+            asset_decision: "lookup and review before import",
+            proposed_reference_path:
+                "plant_database/references/California/UC ANR 3419 Trellis Selections and Canopy Management in Wine Grape Varieties in California.json5",
+            duplicate_check:
+                "No UC ANR 3419 trellis and canopy chapter found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/Washington/WSU EM 068E Growing Winegapes in Maritime Western Washington.pdf",
+                "Quick lookup found citations and non-official copies but no current UC landing page",
+                "Likely lower data value because the source appears to focus on trellis and canopy management, not cultivar recommendations"
+            ]
+        },
+        {
+            id: "uidaho-apple-cultivars-eastern-idaho",
+            status: "accepted",
+            priority: "low",
+            title: "Apple Cultivars for Eastern Idaho",
+            institution: "University of Idaho Extension",
+            region: "Idaho",
+            crops: ["Apple"],
+            source_type: "regional extension cultivar page",
+            landing_url:
+                "http://extension.ag.uidaho.edu/district4/MG/variety.html",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Cited Eastern Idaho apple cultivar recommendation page from a Utah fruit guide bibliography",
+            asset_decision: "lookup stale URL before import",
+            proposed_reference_path:
+                "plant_database/references/Idaho/UI Extension Apple Cultivars for Eastern Idaho.json5",
+            duplicate_check:
+                "No Eastern Idaho apple cultivar source found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/Utah/Utah State HG 2006-01pr Growing Tree Fruit in the Uintah Basin.pdf",
+                "Citation named Brian Finnigan as author and used an old District 4 Master Gardener URL",
+                "Quick lookup did not find a current official copy; keep as a low-priority archival lookup candidate"
+            ]
+        },
+        {
+            id: "uidaho-fruit-varieties-eastern-idaho",
+            status: "accepted",
+            priority: "low",
+            title: "Fruit Varieties for Eastern Idaho",
+            institution: "University of Idaho Extension",
+            region: "Idaho",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Cherry",
+                "Peach",
+                "Pear",
+                "Plum"
+            ],
+            source_type: "regional extension cultivar page",
+            landing_url:
+                "http://extension.ag.uidaho.edu/district4/MG/fruitvar.html",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Cited Eastern Idaho fruit variety recommendation page from a Utah fruit guide bibliography",
+            asset_decision: "lookup stale URL before import",
+            proposed_reference_path:
+                "plant_database/references/Idaho/UI Extension Fruit Varieties for Eastern Idaho.json5",
+            duplicate_check:
+                "No broad Eastern Idaho fruit variety source found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/Utah/Utah State HG 2006-01pr Growing Tree Fruit in the Uintah Basin.pdf",
+                "Citation named Brian Finnigan as author and used an old District 4 Master Gardener URL",
+                "Quick lookup did not find a current official copy; keep as a low-priority archival lookup candidate"
+            ]
+        },
+        {
+            id: "uvm-apple-cultivar-recommendation-vermont-ppt",
+            status: "accepted",
+            priority: "low",
+            title: "Apple Cultivar Recommendation for Vermont",
+            institution: "University of Vermont",
+            region: "Vermont",
+            crops: ["Apple"],
+            source_type: "regional extension cultivar slide deck",
+            download_url:
+                "http://orchard.uvm.edu/uvmapple/hort/cultivars/cultivars%20for%20VT.ppt",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Cited Vermont apple cultivar recommendation slide deck",
+            asset_decision: "lookup stale URL before import",
+            proposed_reference_path:
+                "plant_database/references/Vermont/UVM Apple Cultivar Recommendation for Vermont.json5",
+            duplicate_check:
+                "No UVM apple cultivar recommendation deck found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/Utah/Utah State HG 2006-01pr Growing Tree Fruit in the Uintah Basin.pdf",
+                "Citation names M. Elena Garcia and Jon Clements",
+                "Quick lookup did not find a current official copy; old PowerPoint URL may need web archive follow-up"
+            ]
+        },
+        {
+            id: "ndsu-carrington-northern-hardy-fruit-evaluation",
+            status: "accepted",
+            priority: "high",
+            title: "Northern Hardy Fruit Evaluation Project",
+            institution: "North Dakota State University Carrington Research Extension Center",
+            region: "North Dakota",
+            crops: [
+                "Apple",
+                "Aronia",
+                "Black Currant",
+                "Cherry",
+                "Grape",
+                "Haskap",
+                "Pear",
+                "Plum",
+                "Red Currant"
+            ],
+            source_type: "research extension fruit evaluation project",
+            landing_url:
+                "https://www.ndsu.edu/agriculture/ag-hub/research-extension-centers-recs/carrington-rec/research/northern-hardy-fruit-evaluation",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Northern Plains fruit evaluation project with annual reports, production records, and crop data files",
+            asset_decision: "stub from web and archive linked annual reports",
+            proposed_reference_path:
+                "plant_database/references/North Dakota/NDSU Northern Hardy Fruit Evaluation Project.json5",
+            duplicate_check:
+                "No NDSU Carrington northern hardy fruit project source found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/Montana/MSU MT202101AG Growing Cold-Hardy Berries and Small Fruits in Montana.pdf",
+                "Current NDSU page links fruit index, project results, and annual PDF/data files",
+                "Likely parsing issue: cultivar observations are spread across yearly reports, production records, and data spreadsheets"
+            ]
+        },
+        {
+            id: "uidaho-bul855-currants-gooseberries-jostaberries",
+            status: "accepted",
+            priority: "high",
+            title: "Growing Currants, Gooseberries and Jostaberries in the Inland Northwest and Intermountain West",
+            institution: "University of Idaho Extension",
+            region: "Inland Northwest and Intermountain West",
+            crops: [
+                "Black Currant",
+                "Gooseberry",
+                "Jostaberry",
+                "Red Currant",
+                "White Currant"
+            ],
+            publication_number: "BUL 855",
+            source_type: "regional extension cultivar and production guide",
+            landing_url:
+                "https://verso.uidaho.edu/esploro/outputs/report/Growing-Currants-Gooseberries-and-Jostaberries-in/996749629101851",
+            download_url:
+                "https://www.extension.uidaho.edu/publishing/pdf/BUL/BUL0855.pdf",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "University of Idaho bulletin with detailed recommended cultivar lists for Ribes crops",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Idaho/UI Extension BUL 855 Growing Currants Gooseberries and Jostaberries.json5",
+            duplicate_check:
+                "No University of Idaho Ribes bulletin found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/Montana/MSU MT202101AG Growing Cold-Hardy Berries and Small Fruits in Montana.pdf",
+                "University of Idaho VERSO record lists Danny Barney and Esmaeil Fallahi, publication date 2009-02-02, and DOI 10.60841/000000094",
+                "Landing page explicitly says the 21-page publication includes detailed lists of recommended cultivars"
+            ]
+        },
+        {
+            id: "osu-pnw655-raspberry-cultivars-pacific-northwest",
+            status: "accepted",
+            priority: "high",
+            title: "Raspberry Cultivars for the Pacific Northwest",
+            institution: "Oregon State University Extension Service",
+            region: "Pacific Northwest",
+            crops: ["Raspberry"],
+            publication_number: "PNW 655",
+            source_type: "regional extension cultivar guide",
+            landing_url:
+                "https://extension.oregonstate.edu/catalog/pnw-655-raspberry-cultivars-pacific-northwest",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Current OSU raspberry cultivar guide replacing the older EC 1310 citation from the Central Oregon berry guide",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/Oregon/OSU PNW 655 Raspberry Cultivars for the Pacific Northwest.json5",
+            duplicate_check:
+                "No OSU PNW 655 raspberry cultivar guide found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/Oregon/OSU EC 1621 Selecting Berry Crop Varieties for Central Oregon.pdf",
+                "Current page is peer reviewed, published February 2014 and reviewed 2025",
+                "Likely parsing issue: cultivar tables have repeated image blocks and commercial-use rating columns"
+            ]
+        },
+        {
+            id: "osu-ec1617-blackberry-cultivars-oregon",
+            status: "accepted",
+            priority: "high",
+            title: "Blackberry Cultivars for Oregon",
+            institution: "Oregon State University Extension Service",
+            region: "Oregon",
+            crops: ["Blackberry"],
+            publication_number: "EC 1617",
+            source_type: "state extension cultivar guide",
+            landing_url:
+                "https://extension.oregonstate.edu/catalog/pub/ec-1617-blackberry-cultivars-oregon",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Current OSU blackberry cultivar guide related to the older EC 1303 citation from the Central Oregon berry guide",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/Oregon/OSU EC 1617 Blackberry Cultivars for Oregon.json5",
+            duplicate_check:
+                "No OSU EC 1617 blackberry cultivar guide found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/Oregon/OSU EC 1621 Selecting Berry Crop Varieties for Central Oregon.pdf",
+                "Current page lists trailing, erect, semierect, and hybrid blackberry cultivar tables",
+                "Likely parsing issue: cultivar tables are separated by blackberry growth habit and include multiple evaluation columns"
+            ]
+        },
+        {
+            id: "osu-ec1618-strawberry-cultivars-western-oregon-washington",
+            status: "accepted",
+            priority: "high",
+            title: "Strawberry Cultivars for Western Oregon and Washington",
+            institution: "Oregon State University Extension Service",
+            region: "Western Oregon and Washington",
+            crops: ["Strawberry"],
+            publication_number: "EC 1618",
+            source_type: "regional extension cultivar guide",
+            landing_url:
+                "https://extension.oregonstate.edu/catalog/ec-1618-strawberry-cultivars-western-oregon-washington",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Current OSU strawberry cultivar guide related to the older EC 1307 citation from the Central Oregon berry guide",
+            asset_decision: "stub from web",
+            proposed_reference_path:
+                "plant_database/references/Oregon/OSU EC 1618 Strawberry Cultivars for Western Oregon and Washington.json5",
+            duplicate_check:
+                "No OSU EC 1618 strawberry cultivar guide found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/Oregon/OSU EC 1621 Selecting Berry Crop Varieties for Central Oregon.pdf",
+                "Current page was revised January 2025 and includes cultivar tables west of the Cascades",
+                "Likely parsing issue: cultivar recommendations distinguish June-bearing, everbearing, day-neutral, and alpine strawberries"
+            ]
+        },
+        {
+            id: "horticultural-news-asian-pear-cultivar-trial-nj-ma-2012",
+            status: "accepted",
+            priority: "high",
+            title: "Asian Pear Cultivar Trial in New Jersey and Massachusetts",
+            institution: "Horticultural News",
+            region: "New Jersey and Massachusetts",
+            crops: ["Asian Pear"],
+            source_type: "regional cultivar trial article",
+            landing_url:
+                "https://www.horticulturalnews.org/92-1/abcdCover92-1.html",
+            download_url:
+                "https://www.horticulturalnews.org/92-1/hn92-1.pdf",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Asian pear cultivar trial article cited by the New Jersey maturity standards source",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/New Jersey/Horticultural News Asian Pear Cultivar Trial in New Jersey and Massachusetts.json5",
+            duplicate_check:
+                "No Horticultural News Asian pear cultivar trial found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/New Jersey/NJ Maturity Standards for Asian Pear Harvest.pdf",
+                "Issue landing page lists the article, and the full issue PDF is available",
+                "Likely parsing issue: article is embedded inside a full issue PDF rather than provided as a standalone clean table"
+            ]
+        },
+        {
+            id: "umd-how-to-grow-asian-pears-newell",
+            status: "accepted",
+            priority: "low",
+            title: "How to Grow Asian Pears",
+            institution: "University of Maryland",
+            region: "Maryland",
+            crops: ["Asian Pear"],
+            source_type: "regional extension production guide",
+            download_url:
+                "http://www.agnr.umd.edu/agresearch/recs/wrec/files/growingasianpears-newell.pdf",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Cited Maryland Asian pear production guide from a New Jersey maturity standards bibliography",
+            asset_decision: "lookup stale URL before import",
+            proposed_reference_path:
+                "plant_database/references/Maryland/UMD How to Grow Asian Pears.json5",
+            duplicate_check:
+                "Existing Maryland Asian pear reference covers a HortScience/Mid-Atlantic article, not this Newell guide",
+            notes: [
+                "Mined from plant_database/references/New Jersey/NJ Maturity Standards for Asian Pear Harvest.pdf",
+                "Quick lookup did not find a current official copy of the cited PDF",
+                "Likely lower priority unless an archived copy has cultivar-specific recommendations not already captured elsewhere"
+            ]
+        },
+        {
+            id: "mu-g6090-home-fruit-production-grape-training-systems",
+            status: "accepted",
+            priority: "low",
+            title: "Home Fruit Production: Grape Training Systems",
+            institution: "University of Missouri Extension",
+            region: "Missouri",
+            crops: ["Grape"],
+            publication_number: "G6090",
+            source_type: "state extension production guide",
+            landing_url:
+                "https://extension.missouri.edu/publications/g6090",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Grape training and pruning guide cited by the Hawaii grape publication",
+            asset_decision: "do not import unless needed as supporting culture reference",
+            proposed_reference_path:
+                "plant_database/references/Missouri/MU G6090 Home Fruit Production Grape Training Systems.json5",
+            duplicate_check:
+                "No MU G6090 grape training source found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/Hawaii/Growing Grapes in Hawaii.pdf",
+                "Current MU page was reviewed March 2026",
+                "This is not cultivar-heavy, but keeping the candidate prevents rediscovery during citation mining"
+            ]
+        },
+        {
+            id: "uf-daytona-table-grape-florida-homeowners-s302",
+            status: "accepted",
+            priority: "medium",
+            title: "Daytona: A Table Grape for Florida Homeowners",
+            institution: "University of Florida IFAS",
+            region: "Florida",
+            crops: ["Grape"],
+            publication_number: "Circular S-302",
+            source_type: "cultivar release circular",
+            download_url:
+                "https://mail.growables.org/information/LowChillFruit/documents/BunchDaytona.pdf",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Florida table grape cultivar circular for Daytona cited by the Hawaii grape publication",
+            asset_decision: "archive mirror only if no official UF copy is found",
+            proposed_reference_path:
+                "plant_database/references/Florida/UF Circular S-302 Daytona Table Grape for Florida Homeowners.json5",
+            duplicate_check:
+                "No Daytona table grape circular found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/Hawaii/Growing Grapes in Hawaii.pdf",
+                "Quick lookup found a Growables PDF mirror but no current official UF landing page",
+                "Likely useful as a cultivar release source even if it remains a mirror-only archive target"
+            ]
+        },
+        {
+            id: "uf-tampa-bunch-grape-rootstock-circular-295",
+            status: "accepted",
+            priority: "low",
+            title: "Tampa, a New Bunch Grape Rootstock",
+            institution: "University of Florida IFAS",
+            region: "Florida",
+            crops: ["Grape"],
+            publication_number: "Circular 295",
+            source_type: "rootstock release circular",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Florida bunch grape rootstock circular cited by the Hawaii grape publication",
+            asset_decision: "lookup before import",
+            proposed_reference_path:
+                "plant_database/references/Florida/UF Circular 295 Tampa Bunch Grape Rootstock.json5",
+            duplicate_check:
+                "No Tampa bunch grape rootstock circular found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/Hawaii/Growing Grapes in Hawaii.pdf",
+                "Quick lookup confirmed the bibliographic citation but did not find a stable digital copy",
+                "Probably rootstock-only and lower priority for variety display unless rootstock records become first-class data"
+            ]
+        },
+        {
+            id: "uky-ccd-cp1-american-persimmon",
+            status: "accepted",
+            priority: "high",
+            title: "American Persimmon",
+            institution: "University of Kentucky Center for Crop Diversification",
+            region: "Kentucky",
+            crops: ["American Persimmon"],
+            publication_number: "CCD-CP-1",
+            source_type: "state extension crop profile",
+            landing_url:
+                "https://publications.mgcafe.uky.edu/ccd-cp-1",
+            download_url:
+                "https://ccd.uky.edu/sites/default/files/2026-01/ccd-cp-001_persimmon_accessible.pdf",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Peer-reviewed American persimmon crop profile noting cultivated varieties and quality traits",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/Kentucky/UKY CCD-CP-1 American Persimmon.json5",
+            duplicate_check:
+                "No University of Kentucky American persimmon crop profile found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/National/HortSci Ploidy Level in American Persimmon Cultivars.pdf",
+                "Current UKY page lists Matthew Ernst and Cheryl Kaiser as authors and publication date 2017-08-10",
+                "Likely parsing issue: cultivar data may be brief and embedded in production/market profile prose"
+            ]
+        },
+        {
+            id: "japs-persimmon-cultivars-northern-areas-mcdaniel-1973",
+            status: "accepted",
+            priority: "high",
+            title: "Persimmon Cultivars for Northern Areas",
+            institution: "Journal of the American Pomological Society",
+            region: "Northern United States",
+            crops: ["American Persimmon"],
+            source_type: "historical cultivar article",
+            landing_url:
+                "https://journal.americanpomological.org/index.php/jofaps/article/download/1169/1173/2697",
+            download_url:
+                "https://journal.americanpomological.org/index.php/jofaps/article/download/1169/1173/2697",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Historical American persimmon cultivar descriptions for northern areas, including Early Golden lineage selections",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/National/JAPS Persimmon Cultivars for Northern Areas.json5",
+            duplicate_check:
+                "No McDaniel persimmon cultivars article found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/National/HortSci Ploidy Level in American Persimmon Cultivars.pdf",
+                "Journal PDF returned and begins with named cultivar descriptions",
+                "Likely parsing issue: OCR/text extraction has old journal column wrapping and cultivar names embedded in prose"
+            ]
+        },
+        {
+            id: "japs-history-origin-classification-persimmon-cultivars-2015",
+            status: "accepted",
+            priority: "medium",
+            title: "History, Origin and Classification of Persimmon Cultivars",
+            institution: "Journal of the American Pomological Society",
+            region: "International",
+            crops: ["Asian Persimmon"],
+            source_type: "cultivar classification article",
+            landing_url:
+                "https://journal.americanpomological.org/index.php/jofaps/article/view/2865/2869",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Persimmon cultivar origin and classification article cited by the American persimmon ploidy paper",
+            asset_decision: "download if journal PDF link remains accessible",
+            proposed_reference_path:
+                "plant_database/references/National/JAPS History Origin and Classification of Persimmon Cultivars.json5",
+            duplicate_check:
+                "No Nissen and Roberts persimmon cultivar classification article found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/National/HortSci Ploidy Level in American Persimmon Cultivars.pdf",
+                "Journal view page exposes a Download PDF link but rendered minimal metadata in the text fetch",
+                "Likely parsing issue: classification terms and cultivar groups may require careful normalization"
+            ]
+        },
+        {
+            id: "attra-persimmons-asian-and-american",
+            status: "accepted",
+            priority: "low",
+            title: "Persimmons, Asian and American",
+            institution: "ATTRA National Center for Appropriate Technology",
+            region: "United States",
+            crops: [
+                "American Persimmon",
+                "Asian Persimmon"
+            ],
+            source_type: "sustainable agriculture production overview",
+            download_url:
+                "https://www.growables.org/information/TropicalFruit/documents/PersimmonATTRA.pdf",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "ATTRA persimmon overview with Asian and American cultivar context",
+            asset_decision: "archive mirror only if no current ATTRA copy is found",
+            proposed_reference_path:
+                "plant_database/references/National/ATTRA Persimmons Asian and American.json5",
+            duplicate_check:
+                "No ATTRA persimmon overview found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/National/HortSci Ploidy Level in American Persimmon Cultivars.pdf",
+                "Quick lookup found a Growables mirror and current secondary citations, but not a current ATTRA publication landing page",
+                "Likely lower authority than extension and journal sources, but useful as a cited overview"
+            ]
+        },
+        {
+            id: "oklahoma-b319-chinese-jujube-promising-fruit-tree-southwest",
+            status: "accepted",
+            priority: "low",
+            title: "The Chinese Jujube: A Promising Fruit Tree for the Southwest",
+            institution: "Oklahoma Agricultural Experiment Station",
+            region: "Southwestern United States",
+            crops: ["Jujube"],
+            publication_number: "Bulletin B319",
+            source_type: "historical experiment station bulletin section",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Historical jujube source cited by NMSU HortScience jujube trial papers",
+            asset_decision: "lookup before import",
+            proposed_reference_path:
+                "plant_database/references/Oklahoma/OAES B319 Chinese Jujube Promising Fruit Tree for the Southwest.json5",
+            duplicate_check:
+                "No Oklahoma B319 Chinese jujube bulletin found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/New Mexico/HortSci Early Performance of Jujube Fresh Eating Cultivars... copy.pdf",
+                "Quick lookup confirmed the citation but did not find a stable digital copy",
+                "Citation appears to be pages 78-81 inside Oklahoma Crops and Soils 1947 rather than a standalone bulletin"
+            ]
+        },
+        {
+            id: "usda-fb2087-growing-fruits-nuts-southern-great-plains",
+            status: "accepted",
+            priority: "medium",
+            title: "Growing Fruits and Nuts in the Southern Great Plains",
+            institution: "United States Department of Agriculture",
+            region: "Southern Great Plains",
+            crops: [
+                "Apple",
+                "Apricot",
+                "Blackberry",
+                "Cherry",
+                "Grape",
+                "Jujube",
+                "Peach",
+                "Pear",
+                "Pecan",
+                "Plum",
+                "Strawberry",
+                "Walnut"
+            ],
+            publication_number: "Farmers' Bulletin 2087",
+            source_type: "historical federal fruit and nut guide",
+            landing_url:
+                "https://digital.library.unt.edu/ark:/67531/metadc1717/",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Historical USDA fruit and nut guide for the Southern Great Plains cited by NMSU jujube trial papers",
+            asset_decision: "archive from UNT digital library",
+            proposed_reference_path:
+                "plant_database/references/National/USDA FB 2087 Growing Fruits and Nuts in the Southern Great Plains.json5",
+            duplicate_check:
+                "No USDA Farmers' Bulletin 2087 source found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/New Mexico/HortSci Early Performance of Jujube Fresh Eating Cultivars... copy.pdf",
+                "UNT landing page gives Locke as author, November 1955 issue date, and 30 page digital copy",
+                "Likely parsing issue: older federal bulletin may mix species suitability, culture notes, and scattered variety mentions"
+            ]
+        },
+        {
+            id: "hortsci-past-present-future-jujubes-2013",
+            status: "accepted",
+            priority: "high",
+            title: "Past, Present, and Future of Jujubes: Chinese Dates in the United States",
+            institution: "HortScience",
+            region: "United States",
+            crops: ["Jujube"],
+            source_type: "journal cultivar history and review article",
+            landing_url:
+                "https://journals.ashs.org/view/journals/hortsci/48/6/article-p672.xml",
+            download_url:
+                "https://journals.ashs.org/downloadpdf/view/journals/hortsci/48/6/article-p672.pdf",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Review article on U.S. jujube importation, culture history, and current cultivars",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/National/HortSci Past Present and Future of Jujubes.json5",
+            duplicate_check:
+                "No Yao 2013 jujube review found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/New Mexico/HortSci Early Performance of Jujube Drying and Multipurpose Cultivars....pdf",
+                "ASHS page and NMSU jujube resources list the HortScience 48:672-680 article",
+                "Likely parsing issue: cultivar history and cultivar list may be narrative rather than table-shaped"
+            ]
+        },
+        {
+            id: "hortsci-jujube-flowering-fruiting-southwestern-us-2015",
+            status: "accepted",
+            priority: "high",
+            title: "Jujube Flowering and Fruiting in the Southwestern United States",
+            institution: "HortScience",
+            region: "Southwestern United States",
+            crops: ["Jujube"],
+            source_type: "journal cultivar performance article",
+            landing_url:
+                "https://journals.ashs.org/view/journals/hortsci/50/6/article-p839.xml",
+            download_url:
+                "https://journals.ashs.org/downloadpdf/view/journals/hortsci/50/6/article-p839.pdf",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Jujube cultivar flowering and fruiting study in the southwestern United States",
+            asset_decision: "download and stub",
+            proposed_reference_path:
+                "plant_database/references/National/HortSci Jujube Flowering and Fruiting in the Southwestern United States.json5",
+            duplicate_check:
+                "No Yao 2015 jujube flowering and fruiting article found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/New Mexico/HortSci Early Performance of Jujube Drying and Multipurpose Cultivars....pdf",
+                "ASHS page resolves for the HortScience 50:839-846 article",
+                "Likely parsing issue: study tables may need cultivar-by-location extraction rather than single-source recommendations"
+            ]
+        },
+        {
+            id: "sare-season-long-strawberry-everbearers-northeast",
+            status: "accepted",
+            priority: "medium",
+            title: "Season-Long Strawberry Production with Everbearers for Northeastern Producers",
+            institution: "Sustainable Agriculture Research and Education",
+            region: "Northeastern United States",
+            crops: ["Strawberry"],
+            source_type: "regional production guide with cultivar context",
+            landing_url:
+                "https://www.sare.org/resources/season-long-strawberry-production-with-everbearers-for-northeastern-producers/",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Northeastern everbearing/day-neutral strawberry production guide with varieties and cultivars topic metadata",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/National/SARE Season-Long Strawberry Production with Everbearers for Northeastern Producers.json5",
+            duplicate_check:
+                "No SARE everbearing strawberry production guide found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/New Hampshire/UNH Day-neutral Strawberries for Northern New England.pdf",
+                "SARE page lists Willie Lantz, Harry Swartz, Kathleen Demchak, and Sherry Frick, 2010, 70 pages",
+                "Likely parsing issue: cultivar context is embedded in a large production manual rather than a concise table"
+            ]
+        },
+        {
+            id: "cornell-low-tunnel-strawberries",
+            status: "accepted",
+            priority: "medium",
+            title: "Low Tunnel Strawberries",
+            institution: "Cornell Fruit Program",
+            region: "Northeastern United States",
+            crops: ["Strawberry"],
+            source_type: "regional production guide with cultivar context",
+            download_url:
+                "https://www.hort.cornell.edu/fruit/pdfs/low-tunnel-strawberries.pdf",
+            discovered: "2026-07-01",
+            discovered_by: "found_citations reference scan",
+            value_summary:
+                "Cornell low-tunnel strawberry guide cited by the UNH day-neutral strawberry source",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/New York/Cornell Low Tunnel Strawberries.json5",
+            duplicate_check:
+                "No Cornell low tunnel strawberry guide found in existing references or candidate queue",
+            notes: [
+                "Mined from plant_database/references/New Hampshire/UNH Day-neutral Strawberries for Northern New England.pdf",
+                "Cited source is a direct Cornell Fruit Program PDF",
+                "Likely lower priority unless cultivar trial details are substantial enough to import"
+            ]
         }
     ]
 }
