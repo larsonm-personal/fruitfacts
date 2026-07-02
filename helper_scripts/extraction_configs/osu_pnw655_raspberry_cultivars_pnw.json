@@ -1,0 +1,212 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.oregonstate.edu/catalog/pnw-655-raspberry-cultivars-pacific-northwest"
+  },
+  "reference_fields": [
+    ["title", "Raspberry Cultivars for the Pacific Northwest"],
+    ["author", "Amanda Davis, Michael Hardigan, Scott Lukas, Patrick Jones, Wendy Hoashi-Erhardt, and Lisa Wasko DeVetter"],
+    ["description", "OSU Extension PNW 655 guide to red, black, yellow-fruited, and purple raspberry cultivars for the Pacific Northwest, with cultivar tables for disease, plant, fruit, yield, use, machine harvest, commercial value, home garden suitability, and cold hardiness"],
+    ["url", "https://extension.oregonstate.edu/catalog/pnw-655-raspberry-cultivars-pacific-northwest"],
+    ["thumbnail", "website"],
+    ["published", "February 2014"],
+    ["reviewed", "2025"],
+    ["accessed", "Jul 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Oregon State University Extension Service, Corvallis, Oregon",
+      "latitude": 44.5646,
+      "longitude": -123.262
+    }
+  ],
+  "text_fixes": {
+    "Vigourous": "Vigorous",
+    "Medium to large seize": "Medium to large size"
+  },
+  "categories": [
+    {
+      "name": "Floricane-fruiting red raspberries for the Pacific Northwest",
+      "description": "OSU PNW 655 lists these floricane-fruiting red raspberry cultivars in approximate order of ripening for the Pacific Northwest. Commercial value ratings use the source scale where 1 is appropriate for most commercial operations, 2 may have specific commercial value, and 3 is unlikely to have good commercial value"
+    },
+    {
+      "name": "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+      "description": "OSU PNW 655 lists these primocane-fruiting red and yellow raspberry cultivars in approximate order of ripening for the Pacific Northwest. Commercial value ratings use the source scale where 1 is appropriate for most commercial operations, 2 may have specific commercial value, and 3 is unlikely to have good commercial value"
+    },
+    {
+      "name": "Black raspberries for the Pacific Northwest",
+      "description": "OSU PNW 655 lists these black raspberry cultivars in approximate order of ripening for the Pacific Northwest. Commercial value ratings use the source scale where 1 is appropriate for most commercial operations, 2 may have specific commercial value, and 3 is unlikely to have good commercial value"
+    },
+    {
+      "name": "Purple raspberries for the Pacific Northwest",
+      "description": "OSU PNW 655 lists these purple raspberry cultivars in approximate order of ripening for the Pacific Northwest. Commercial value ratings use the source scale where 1 is appropriate for most commercial operations, 2 may have specific commercial value, and 3 is unlikely to have good commercial value"
+    }
+  ],
+  "row_overrides": {
+    "Prelude (USPP 11,747)": {
+      "cultivar": "Prelude",
+      "_source_note": "Source table names this as Prelude (USPP 11,747)"
+    },
+    "Wake(tm) Haven (USPP 21,185)": {
+      "cultivar": "Wake Haven",
+      "_source_note": "Source table names this as Wake(tm) Haven (USPP 21,185)"
+    },
+    "Cascade Premier (USPP 30,980) (WSU 2166')": {
+      "cultivar": "Cascade Premier",
+      "_source_note": "Source table names this as Cascade Premier (USPP 30,980) (WSU 2166')"
+    },
+    "Cascade Dawn (USPP 17,985)": {
+      "cultivar": "Cascade Dawn",
+      "_source_note": "Source table names this as Cascade Dawn (USPP 17,985)"
+    },
+    "KulshanTM": {
+      "cultivar": "Kulshan",
+      "_source_note": "Source table names this as KulshanTM"
+    },
+    "Cascade Harvest (USPP 26,369)": {
+      "cultivar": "Cascade Harvest",
+      "_source_note": "Source table names this as Cascade Harvest (USPP 26,369)"
+    },
+    "Cascade Bounty (USPP 18,246)": {
+      "cultivar": "Cascade Bounty",
+      "_source_note": "Source table names this as Cascade Bounty (USPP 18,246)"
+    },
+    "Cascade Legacy(tm) (USPP 36,320) ('WSU 2188')": {
+      "cultivar": "Cascade Legacy",
+      "_source_note": "Source table names this as Cascade Legacy(tm) (USPP 36,320) ('WSU 2188')"
+    },
+    "Cascade Delight (USPP 14,522)": {
+      "cultivar": "Cascade Delight",
+      "_source_note": "Source table names this as Cascade Delight (USPP 14,522)"
+    },
+    "Wake(tm) Field (USPP 21,185)": {
+      "cultivar": "Wakefield",
+      "_source_note": "Source table names this as Wake(tm) Field (USPP 21,185)"
+    },
+    "Cascade Prize ('WSU 2029')": {
+      "cultivar": "Cascade Prize",
+      "_source_note": "Source table names this as Cascade Prize ('WSU 2029')"
+    },
+    "Autumn Bliss (U.S. Plant Patent 6,597)": {
+      "cultivar": "Autumn Bliss",
+      "_source_note": "Source table names this as Autumn Bliss (U.S. Plant Patent 6,597)"
+    },
+    "Kokanee (USPP 28,666)": {
+      "cultivar": "Kokanee",
+      "_source_note": "Source table names this as Kokanee (USPP 28,666)"
+    },
+    "Finnberry (USPP 35,090)": {
+      "cultivar": "Finnberry",
+      "_source_note": "Source table names this as Finnberry (USPP 35,090)"
+    },
+    "Crimson Glant (USPP 23,375)": {
+      "cultivar": "Crimson Giant",
+      "_source_note": "Source table names this as Crimson Glant (USPP 23,375)"
+    },
+    "Crimson Night (USPP 24,949)": {
+      "cultivar": "Crimson Night",
+      "_source_note": "Source table names this as Crimson Night (USPP 24,949)"
+    },
+    "MacBlack": {
+      "cultivar": "Mac Black",
+      "_source_note": "Source table names this as MacBlack"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "table_index": 0,
+      "required_headers": ["Cultivar", "Disease issues", "Plant", "Fruit", "Yield", "Use"],
+      "name_key": "cultivar",
+      "plant_type": "Raspberry",
+      "category": "Floricane-fruiting red raspberries for the Pacific Northwest",
+      "row_overrides": {"from_config": true},
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["disease_issues", "Disease issues"],
+            ["plant", "Plant"],
+            ["fruit", "Fruit"],
+            ["yield", "Yield"],
+            ["use", "Use"],
+            ["machine_harvest", "Machine harvest"],
+            ["large_scale_commercial_value", "Large-scale commercial value rating"]
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "html_table",
+      "table_index": 1,
+      "required_headers": ["Cultivar", "Disease issues", "Plant", "Fruit", "Yield"],
+      "name_key": "cultivar",
+      "plant_type": "Raspberry",
+      "category": "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+      "row_overrides": {"from_config": true},
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["disease_issues", "Disease issues"],
+            ["plant", "Plant"],
+            ["fruit", "Fruit"],
+            ["yield", "Yield"],
+            ["large_scale_commercial_value", "Large-scale commercial value rating"],
+            ["small_farm_or_home_garden", "Small farm or home garden"],
+            ["cold_hardy", "Cold hardy"]
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "html_table",
+      "table_index": 2,
+      "required_headers": ["Cultivar", "Plant", "Fruit", "Yield", "Use"],
+      "name_key": "cultivar",
+      "plant_type": "Raspberry",
+      "category": "Black raspberries for the Pacific Northwest",
+      "record_fields": [["color", "Black"]],
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["plant", "Plant"],
+            ["fruit", "Fruit"],
+            ["yield", "Yield"],
+            ["use", "Use"],
+            ["machine_harvest", "Machine harvest"],
+            ["large_scale_commercial_value", "Large-scale commercial value rating"],
+            ["small_farm_or_home_garden", "Small farm or home garden"],
+            ["cold_hardy", "Cold hardy"]
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "html_table",
+      "table_index": 3,
+      "required_headers": ["Culitvar", "Plant", "Fruit", "Yield", "Use"],
+      "name_key": "culitvar",
+      "plant_type": "Raspberry",
+      "category": "Purple raspberries for the Pacific Northwest",
+      "record_fields": [["color", "Purple"]],
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["plant", "Plant"],
+            ["fruit", "Fruit"],
+            ["yield", "Yield"],
+            ["use", "Use"],
+            ["large_scale_commercial_value", "Large-scale commercial value rating"],
+            ["small_farm_or_home_garden", "Small farm or home garden"],
+            ["cold_hardy", "Cold hardy"]
+          ]
+        }
+      ]
+    }
+  ]
+}

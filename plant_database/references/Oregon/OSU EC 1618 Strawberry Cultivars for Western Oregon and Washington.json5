@@ -1,0 +1,155 @@
+{
+    title: "Strawberry Cultivars for Western Oregon and Washington",
+    author: "Scott Lukas, Jenyne Loarca, Patrick Jones, Emily Dixon, and Bernadine Strik",
+    description: "OSU Extension EC 1618 guide to June-bearing and day-neutral strawberry cultivars adapted west of the Cascades in Oregon and Washington, with cultivar tables for season, plant, fruit, yield, market, commercial value, and home garden suitability",
+    url: "https://extension.oregonstate.edu/catalog/ec-1618-strawberry-cultivars-western-oregon-washington",
+    thumbnail: "website",
+    revised: "January 2025",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Oregon State University Extension Service, Corvallis, Oregon",
+            latitude: 44.5646,
+            longitude: -123.262
+        },
+    ],
+    categories: [
+        {
+            name: "June-bearing strawberries for Western Oregon and Washington",
+            description: "OSU EC 1618 lists these June-bearing strawberry cultivars as adapted to conditions west of the Cascades. Commercial value ratings use the source scale where 1 is appropriate for most commercial operations, 2 may have specific commercial value, and 3 is unlikely to have good commercial value"
+        },
+        {
+            name: "Day-neutral strawberries for Western Oregon and Washington",
+            description: "OSU EC 1618 lists these day-neutral strawberry cultivars as adapted to conditions west of the Cascades. Commercial value ratings use the source scale where 1 is appropriate for most commercial operations, 2 may have specific commercial value, and 3 is unlikely to have good commercial value"
+        },
+    ],
+    plants: [
+        {
+            type: "Strawberry",
+            name: "Honeoye",
+            category: "June-bearing strawberries for Western Oregon and Washington",
+            harvest_time_unparsed: "Very early",
+            description: "Plant: Vigorous, poor durability, very susceptible to root rot. Fruit: Medium to large size, bright red and glossy external color, pale red internal color, fair capping, firm, uniform conic shape, poor processed quality, good flavor. Yield: Low to medium. Market: Fresh. Large-scale commercial value rating: 2 (very early fresh-market niche). Small farm or home garden: yes"
+        },
+        {
+            type: "Strawberry",
+            name: "Sweet Sunrise",
+            category: "June-bearing strawberries for Western Oregon and Washington",
+            harvest_time_unparsed: "Early",
+            description: "Plant: Vigorous, durable. Fruit: Medium to large size, bright red and glossy external color, deep red internal color, good capping, uniform shape, excellent flavor processed quality. Yield: High to very high. Market: Fresh or processed. Large-scale commercial value rating: 1 (adaptable, grows well in OR, WA and BC). Small farm or home garden: yes. Source table names this as Sweet Sunrise (USPP 25,223)"
+        },
+        {
+            type: "Strawberry",
+            name: "Hood",
+            category: "June-bearing strawberries for Western Oregon and Washington",
+            harvest_time_unparsed: "Early",
+            description: "Plant: Vigorous, poor durability, sensitive to viruses. Fruit: Medium to large size, bright red internal and external color, easy capping, medium firmness, uneven shape, good processed quality, excellent flavor. Yield: Medium. Market: Fresh or processed. Large-scale commercial value rating: 2 (despite name recognition and outstanding quality, lack of durability is a real concern for processed market, have contract in place before planting). Small farm or home garden: yes"
+        },
+        {
+            type: "Strawberry",
+            name: "Ruby June",
+            category: "June-bearing strawberries for Western Oregon and Washington",
+            harvest_time_unparsed: "Early to midseason",
+            description: "Plant: Vigorous, durable. Fruit: Medium red external color with a light-medium red internal color, does not cap well, tender skin, excellent firmness, sweet flavor. Yield: High. Market: Fresh or processed. Large-scale commercial value rating: 2. Small farm or home garden: yes"
+        },
+        {
+            type: "Strawberry",
+            name: "Shuksan",
+            category: "June-bearing strawberries for Western Oregon and Washington",
+            harvest_time_unparsed: "Midseason",
+            description: "Plant: Vigorous, good durability. Fruit: Medium to large size, bright red external color, pale red to red internal color, poor capping, tough skin, variable shape, fair processed quality, very good flavor. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 2 (variable market satisfaction, from fair to excellent). Small farm or home garden: yes"
+        },
+        {
+            type: "Strawberry",
+            name: "Charm",
+            category: "June-bearing strawberries for Western Oregon and Washington",
+            harvest_time_unparsed: "Midseason",
+            description: "Plant: Very vigorous, excellent durability. Fruit: Medium size, bright red internal and external color, excellent capping, tender skin, excellent processed quality, very good flavor. Yield: High to very high. Market: Processed or fresh. Large-scale commercial value rating: 2 (may be difficult to find). Small farm or home garden: yes. Source table names this as Charm (USPP 25,300)"
+        },
+        {
+            type: "Strawberry",
+            name: "Tillamook",
+            category: "June-bearing strawberries for Western Oregon and Washington",
+            harvest_time_unparsed: "Midseason",
+            description: "Plant: Moderate vigor, excellent durability. Fruit: Large to very large size, bright red external color, red internal color, caps well, very firm, moderately tough skin, very good processed quality, good flavor but bland if not fully ripe. Yield: High to very high. Market: Fresh or processed. Large-scale commercial value rating: 1. Small farm or home garden: yes"
+        },
+        {
+            type: "Strawberry",
+            name: "Totem",
+            category: "June-bearing strawberries for Western Oregon and Washington",
+            harvest_time_unparsed: "Midseason",
+            description: "Plant: Vigorous, good durability. Fruit: Medium to large size, bright red external and internal color, caps well, good firmness, tender skin, excellent processed quality, very good flavor. Yield: Medium to high. Market: Processed. Large-scale commercial value rating: 1. Small farm or home garden: yes"
+        },
+        {
+            type: "Strawberry",
+            name: "Marys Peak",
+            category: "June-bearing strawberries for Western Oregon and Washington",
+            harvest_time_unparsed: "Midseason to late",
+            description: "Plant: Vigorous, durable. Fruit: Medium to large size, glossy, more round than conical shaped, bright red external and internal color, yellow achenes were more pronounced on the exposed fruit surface, caps well, good firmness, tender skin, excellent fresh and processed quality, excellent flavor. Yield: Medium to high (particularly in first harvest season). Market: Fresh or processed. Large-scale commercial value rating: 1. Small farm or home garden: yes. Source table names this as Marys Peak (USPP 29,370)"
+        },
+        {
+            type: "Strawberry",
+            name: "Rainier",
+            category: "June-bearing strawberries for Western Oregon and Washington",
+            harvest_time_unparsed: "Midseason to late",
+            description: "Plant: Vigorous, good durability. Fruit: Medium to large size, bright red internal and external color, poor capping, fair firmness, excellent quality, excellent flavor. Yield: Medium. Market: Fresh. Large-scale commercial value rating: 2 (local fresh). Small farm or home garden: yes"
+        },
+        {
+            type: "Strawberry",
+            name: "Puget Crimson",
+            category: "June-bearing strawberries for Western Oregon and Washington",
+            harvest_time_unparsed: "Very late",
+            description: "Plant: Vigorous. Fruit: First berries very large but size drops quickly, red external and internal color, fair capping, good firmness, uniform shape, excellent flavor. Yield: Medium to high. Market: Fresh. Large-scale commercial value rating: 1. Small farm or home garden: yes. Source table names this as Puget Crimson (USPP 22,781)"
+        },
+        {
+            type: "Strawberry",
+            name: "Florida Beauty",
+            category: "Day-neutral strawberries for Western Oregon and Washington",
+            description: "Plant: Vigorous. Fruit: Medium red internal and external coloring (better color than Albion), sweet flavor, firm. Yield: High. Market: Fresh. Large-scale commercial value rating: 2 (in plasticulture system). Small farm or home garden: yes. Comment: Plants are smaller and more compact than Albion and harvest begins 5 days earlier; overwintered well in trials; flavor best when surface under the cap turns fully red"
+        },
+        {
+            type: "Strawberry",
+            name: "Albion",
+            category: "Day-neutral strawberries for Western Oregon and Washington",
+            description: "Plant: Fair vigor, poor durability. Fruit: Large size, light red external color, pale internal color, firm, good flavor. Yield: Medium to high. Market: Fresh. Large-scale commercial value rating: 1 (in plasticulture system). Small farm or home garden: yes. Comment: Most important day-neutral cultivar in northern California and the Pacific Northwest. Source table names this as Albion (USPP 16,228)"
+        },
+        {
+            type: "Strawberry",
+            name: "Mara Des Bois",
+            category: "Day-neutral strawberries for Western Oregon and Washington",
+            description: "Plant: Low vigor, poor durability. Fruit: Small size, pale, soft, unique flavor that people either love or dislike. Yield: Low. Market: Fresh. Large-scale commercial value rating: 3. Comment: Commonly promoted in garden literature but has not done well in our trials; not recommended for this region. Source table names this as Mara des Bois (USPP 8,517)"
+        },
+        {
+            type: "Strawberry",
+            name: "Monterey",
+            category: "Day-neutral strawberries for Western Oregon and Washington",
+            description: "Plant: Low vigor, poor durability. Fruit: Large size, firm, light color, mild nontraditional flavor. Yield: Low to medium. Market: Fresh. Large-scale commercial value rating: 2. Comment: Common day-neutral cultivar in northern California. Source table names this as Monterey (USPP 19,767)"
+        },
+        {
+            type: "Strawberry",
+            name: "San Andreas",
+            category: "Day-neutral strawberries for Western Oregon and Washington",
+            description: "Plant: Low vigor, poor durability. Fruit: Large size, firm, light external and internal color, bland, susceptible to anthracnose. Yield: Low to medium. Market: Fresh. Large-scale commercial value rating: 2. Comment: Common day-neutral cultivar in northern California. Source table names this as San Andreas (USPP 19,975)"
+        },
+        {
+            type: "Strawberry",
+            name: "Tristar",
+            category: "Day-neutral strawberries for Western Oregon and Washington",
+            description: "Plant: Vigorous, fair to good durability. Fruit: Very small to medium size, glossy bright red external color, bright red internal color, good firmness, excellent flavor. Yield: Low. Market: Fresh. Large-scale commercial value rating: 3 (too small on average, may be difficult to find). Small farm or home garden: yes. Comment: Tribute and Tristar are often compared. Tristar has better flavor; Tribute has good flavor but better fruit size. Both may be suitable for colder regions"
+        },
+        {
+            type: "Strawberry",
+            name: "Tribute",
+            category: "Day-neutral strawberries for Western Oregon and Washington",
+            description: "Plant: Vigorous, fair to good durability. Fruit: Medium size, attractive, glossy bright red external color, bright red internal color, poor capping, good flavor. Yield: Low. Market: Fresh. Large-scale commercial value rating: 3 (may be difficult to find). Small farm or home garden: yes. Comment: See comment above for Tristar"
+        },
+        {
+            type: "Strawberry",
+            name: "Seascape",
+            category: "Day-neutral strawberries for Western Oregon and Washington",
+            description: "Plant: Moderate vigor, good durability, susceptible to verticillium wilt. Fruit: Large, bright red external color, pale internal color, poor capping, firm, good flavor. Yield: Low to medium, unless managed intensively. Market: Fresh. Large-scale commercial value rating: 2 (best fruit quality combined with size among day-neutral cultivars in the Pacific Northwest). Small farm or home garden: yes. Comment: Second most important day-neutral strawberry in the Pacific Northwest; best fruit quality of the day-neutral cultivars. Source table names this as Seascape (USPP 7,614)"
+        },
+    ]
+}

@@ -1,0 +1,357 @@
+{
+    title: "Raspberry Cultivars for the Pacific Northwest",
+    author: "Amanda Davis, Michael Hardigan, Scott Lukas, Patrick Jones, Wendy Hoashi-Erhardt, and Lisa Wasko DeVetter",
+    description: "OSU Extension PNW 655 guide to red, black, yellow-fruited, and purple raspberry cultivars for the Pacific Northwest, with cultivar tables for disease, plant, fruit, yield, use, machine harvest, commercial value, home garden suitability, and cold hardiness",
+    url: "https://extension.oregonstate.edu/catalog/pnw-655-raspberry-cultivars-pacific-northwest",
+    thumbnail: "website",
+    published: "February 2014",
+    reviewed: "2025",
+    accessed: "Jul 2026",
+    type: "state extension guide",
+    needs_help: true,
+    locations: [
+        {
+            name: "Oregon State University Extension Service, Corvallis, Oregon",
+            latitude: 44.5646,
+            longitude: -123.262
+        },
+    ],
+    categories: [
+        {
+            name: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "OSU PNW 655 lists these floricane-fruiting red raspberry cultivars in approximate order of ripening for the Pacific Northwest. Commercial value ratings use the source scale where 1 is appropriate for most commercial operations, 2 may have specific commercial value, and 3 is unlikely to have good commercial value"
+        },
+        {
+            name: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "OSU PNW 655 lists these primocane-fruiting red and yellow raspberry cultivars in approximate order of ripening for the Pacific Northwest. Commercial value ratings use the source scale where 1 is appropriate for most commercial operations, 2 may have specific commercial value, and 3 is unlikely to have good commercial value"
+        },
+        {
+            name: "Black raspberries for the Pacific Northwest",
+            description: "OSU PNW 655 lists these black raspberry cultivars in approximate order of ripening for the Pacific Northwest. Commercial value ratings use the source scale where 1 is appropriate for most commercial operations, 2 may have specific commercial value, and 3 is unlikely to have good commercial value"
+        },
+        {
+            name: "Purple raspberries for the Pacific Northwest",
+            description: "OSU PNW 655 lists these purple raspberry cultivars in approximate order of ripening for the Pacific Northwest. Commercial value ratings use the source scale where 1 is appropriate for most commercial operations, 2 may have specific commercial value, and 3 is unlikely to have good commercial value"
+        },
+    ],
+    plants: [
+        {
+            type: "Raspberry",
+            name: "Prelude",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Resistant to root rot. Plant: Moderate vigor. Fruit: Small size, soft, dull, medium red, good flavor, very early floricane crop, also produces small primocane crop. Yield: Low to medium. Use: Fresh. Large-scale commercial value rating: 3. Source table names this as Prelude (USPP 11,747)"
+        },
+        {
+            type: "Raspberry",
+            name: "Wake Haven",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Moderate resistance to root rot. Plant: Vigorous. Fruit: Large to very large size, firm, attractive, excellent flavor. Yield: Very high. Use: Processed. Large-scale commercial value rating: 1. Source table names this as Wake(tm) Haven (USPP 21,185)"
+        },
+        {
+            type: "Raspberry",
+            name: "Cascade Premier",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Moderate resistance to root rot. Plant: Vigorous. Fruit: Large to very large size, firm, attractive, excellent flavor. Yield: High. Use: Processed or fresh. Large-scale commercial value rating: 1. Source table names this as Cascade Premier (USPP 30,980) (WSU 2166')"
+        },
+        {
+            type: "Raspberry",
+            name: "Cascade Dawn",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Some tolerance to root rot, immune to RBDV. Plant: Vigorous. Fruit: Medium to large size, medium firmness, attractive, bright dark red, very good flavor, difficult fruit release unless fully ripe. Yield: Medium. Use: Fresh. Large-scale commercial value rating: 2. Source table names this as Cascade Dawn (USPP 17,985)"
+        },
+        {
+            type: "Raspberry",
+            name: "Malahat",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Very susceptible to root rot. Plant: Vigorous. Fruit: Medium to large size, medium firmness, attractive, bright red, very good flavor. Yield: Low to medium. Use: Fresh. Large-scale commercial value rating: 2 (high quality, low yield)"
+        },
+        {
+            type: "Raspberry",
+            name: "Willamette",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Susceptible to root rot, immune to RBDV. Plant: Vigorous. Fruit: Medium size, soft, dark red, very good flavor. Yield: Medium. Use: Processed. Large-scale commercial value rating: 1"
+        },
+        {
+            type: "Raspberry",
+            name: "Rudi",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Moderately susceptible to root rot. Plant: Medium vigor. Fruit: Medium to large size, medium to dark red, good flavor. Yield: High. Use: Processed or fresh. Large-scale commercial value rating: 2"
+        },
+        {
+            type: "Raspberry",
+            name: "Chilcotin",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Susceptible to root rot, immune to RBDV. Plant: Vigorous. Fruit: Medium size, medium firmness, attractive, bright light red, good flavor. Yield: Medium. Use: Fresh. Large-scale commercial value rating: 2"
+        },
+        {
+            type: "Raspberry",
+            name: "Squamish",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Moderately susceptible to root rot. Plant: Vigorous. Fruit: Large to very large size, firm, attractive, excellent flavor. Yield: High. Use: Fresh"
+        },
+        {
+            type: "Raspberry",
+            name: "Boyne",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Tolerant to root rot, immune to RBDV. Plant: Vigorous. Fruit: Medium size, soft, dark red, good flavor. Yield: Medium. Use: Fresh. Large-scale commercial value rating: 3"
+        },
+        {
+            type: "Raspberry",
+            name: "Canby",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Susceptible to root rot. Plant: Very vigorous. Fruit: Medium size, medium firmness, attractive, bright red, very good flavor. Yield: Low to medium. Use: Fresh. Large-scale commercial value rating: 3"
+        },
+        {
+            type: "Raspberry",
+            name: "Latham",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Resistant to root rot, immune to RBDV. Plant: Moderate vigor. Fruit: Small size, crumbly, medium red, only fair flavor. Yield: Medium. Use: Fresh. Large-scale commercial value rating: 3"
+        },
+        {
+            type: "Raspberry",
+            name: "Killarney",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Moderate resistance to root rot, immune to RBDV. Plant: Moderate vigor. Fruit: Medium size, soft, medium to dark red, sweet, excellent flavor. Yield: Medium. Use: Fresh. Large-scale commercial value rating: 3"
+        },
+        {
+            type: "Raspberry",
+            name: "Cascade Gold",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Very susceptible to root rot, immune to RBDV. Plant: Vigorous. Fruit: Large size, yellow fruit, excellent flavor, retains good flavor even when picked at firm stage. Yield: Medium to high. Use: Fresh. Large-scale commercial value rating: 2"
+        },
+        {
+            type: "Raspberry",
+            name: "Kulshan",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Free of RBDV throughout development; moderate resistance to root rot. Plant: Very vigorous. Fruit: Very large fruit, firm, medium red. Yield: High. Use: Processed. Large-scale commercial value rating: 1. Source table names this as KulshanTM"
+        },
+        {
+            type: "Raspberry",
+            name: "Cascade Harvest",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Moderate resistance to root rot. Plant: Vigorous. Fruit: Large to very large size, firm, very attractive, bright red, excellent flavor. Yield: High. Use: Fresh. Large-scale commercial value rating: 2. Source table names this as Cascade Harvest (USPP 26,369)"
+        },
+        {
+            type: "Raspberry",
+            name: "Cascade Bounty",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Excellent resistance to root rot. Plant: Vigorous. Fruit: Medium size, medium firmness, bright red, fair flavor. Yield: High. Use: Processed. Large-scale commercial value rating: 2. Source table names this as Cascade Bounty (USPP 18,246)"
+        },
+        {
+            type: "Raspberry",
+            name: "Chemainus",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Moderate resistance to root rot. Plant: Vigorous. Fruit: Medium size, firm, bright red, very good flavor. Yield: Medium. Use: Processed or fresh. Large-scale commercial value rating: 1"
+        },
+        {
+            type: "Raspberry",
+            name: "Cascade Legacy",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Moderate resistance to root rot. Plant: Moderate vigor. Fruit: Very large size, very firm, attractive, bright red, excellent flavor. Yield: High. Use: Processed or fresh. Large-scale commercial value rating: 1. Source table names this as Cascade Legacy(tm) (USPP 36,320) ('WSU 2188')"
+        },
+        {
+            type: "Raspberry",
+            name: "Saanich",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Susceptible to root rot. Plant: Vigorous. Fruit: Medium size, good firmness, dull red, good flavor. Yield: Medium. Use: Processed. Large-scale commercial value rating: 2"
+        },
+        {
+            type: "Raspberry",
+            name: "Meeker",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Somewhat sensitive to root rot. Plant: Vigorous. Fruit: Medium size, medium firmness, medium red, good flavor. Yield: High. Use: Processed. Large-scale commercial value rating: 1"
+        },
+        {
+            type: "Raspberry",
+            name: "Tulameen",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Very susceptible to root rot. Plant: Vigorous. Fruit: Large to very large size, firm, very attractive, bright red, excellent flavor. Yield: Medium. Use: Fresh. Large-scale commercial value rating: 2"
+        },
+        {
+            type: "Raspberry",
+            name: "Cascade Delight",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Moderate resistance to root rot. Plant: Very vigorous. Fruit: Very large size, very firm, attractive, bright red, excellent flavor. Yield: Medium to high. Use: Fresh. Large-scale commercial value rating: 1. Source table names this as Cascade Delight (USPP 14,522)"
+        },
+        {
+            type: "Raspberry",
+            name: "Wakefield",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Moderate resistance to root rot. Plant: Vigorous, primocanes not very self-supporting. Fruit: Small to medium size, very firm, a bit dull in color, good flavor. Yield: High. Use: Processed. Large-scale commercial value rating: 1. Source table names this as Wake(tm) Field (USPP 21,185)"
+        },
+        {
+            type: "Raspberry",
+            name: "Cascade Prize",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Excellent resistance to root rot. Plant: Very vigorous. Fruit: Medium size, firm, bright red, good flavor. Yield: Medium. Use: Fresh. Large-scale commercial value rating: 2. Source table names this as Cascade Prize ('WSU 2029')"
+        },
+        {
+            type: "Raspberry",
+            name: "Lewis",
+            category: "Floricane-fruiting red raspberries for the Pacific Northwest",
+            description: "Disease issues: Somewhat tolerant to root rot. Plant: Vigorous. Fruit: Large size, firm, bright red, very good flavor. Yield: Medium to high. Use: Fresh or processed. Machine harvest: Unknown at this time. Large-scale commercial value rating: 2 (difficult to obtain)"
+        },
+        {
+            type: "Raspberry",
+            name: "Autumn Bliss",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Disease issues: Good resistance to root rot. Plant: Moderate vigor. Fruit: Large size, moderate firmness, attractive, medium red, mild flavor. Yield: Medium. Large-scale commercial value rating: 2 (early season). Small farm or home garden: yes. Cold hardy: yes. Source table names this as Autumn Bliss (U.S. Plant Patent 6,597)"
+        },
+        {
+            type: "Raspberry",
+            name: "Autumn Britten",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Plant: Moderate to good vigor. Fruit: Large size, moderate firmness, attractive, bright red, mild flavor. Yield: Low to medium. Large-scale commercial value rating: 2 (early season). Small farm or home garden: yes. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Amity",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Plant: Moderate vigor. Fruit: Small size, medium firmness, attractive, bright red, very good flavor. Yield: Medium. Large-scale commercial value rating: 3. Small farm or home garden: yes. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Vintage",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Disease issues: Some sensitivity to root rot. Plant: Moderate vigor. Fruit: Large size, firm, attractive, bright red, outstanding flavor. Yield: Medium to high. Large-scale commercial value rating: 2 (too new to fully evaluate but expected to be fine). Small farm or home garden: yes. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Anne",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Disease issues: Susceptible to root rot. Plant: Vigorous. Fruit: Large size, soft to medium firmness, attractive, bright yellow, excellent flavor. Yield: Medium to high. Large-scale commercial value rating: 1 (market for yellow types may be limited). Small farm or home garden: yes. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Caroline",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Disease issues: Susceptible to root rot. Plant: Vigorous. Fruit: Large size, moderate firmness, attractive, medium red, good flavor. Yield: High. Large-scale commercial value rating: 3. Small farm or home garden: yes. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Fallgold",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Plant: Moderate vigor. Fruit: Medium size, very soft, gold color, excellent flavor. Yield: Medium. Large-scale commercial value rating: 2. Small farm or home garden: yes. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Joan J",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Disease issues: Susceptible to root rot. Plant: Vigorous. Fruit: Small to medium size, firm, very dark red, mild flavor. Yield: Medium. Large-scale commercial value rating: 2. Small farm or home garden: yes. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Jaclyn",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Disease issues: Resistant to root rot. Plant: Very vigorous, susceptible to leaf rust. Fruit: Small size, very long narrow berry, dark red, hard to pick. Yield: Low to medium. Large-scale commercial value rating: 3. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Himbo Top",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Disease issues: Some resistance to root rot. Plant: Vigorous. Fruit: Small size, early ripening, dark red, mild flavor. Yield: Medium. Large-scale commercial value rating: 3. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Polka",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Disease issues: Low susceptibility to root rot. Plant: Vigorous. Fruit: Medium to large size, firm, attractive, dark red, mild but good flavor. Yield: Medium to high. Large-scale commercial value rating: 1. Small farm or home garden: yes. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Polana",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Plant: Vigorous. Fruit: Small to medium size, dark red. Yield: Medium. Large-scale commercial value rating: 3. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Kokanee",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Disease issues: Moderately susceptible to root rot and RBDV. Plant: Vigorous. Fruit: Large size, firm, attractive, bright red, very good flavor. Yield: High. Large-scale commercial value rating: 2 (too new to fully evaluate but expected to be fine). Small farm or home garden: yes. Cold hardy: yes. Source table names this as Kokanee (USPP 28,666)"
+        },
+        {
+            type: "Raspberry",
+            name: "Finnberry",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Disease issues: Susceptible to root rot and RBDV. Plant: Vigorous. Fruit: Large size, firm, attractive, bright red, excellent flavor, very high drupelet cohesion (low crumbling). Yield: High. Large-scale commercial value rating: 2 (too new to fully evaluate but expected to be fine). Small farm or home garden: yes. Cold hardy: yes. Source table names this as Finnberry (USPP 35,090)"
+        },
+        {
+            type: "Raspberry",
+            name: "Heritage",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Disease issues: Immune to RBDV. Plant: Vigorous. Fruit: Medium size, firm, attractive, bright red, bland, ripens late so has short fruiting season in cold climates. Yield: Low to high (low yield in cold climates with short season). Large-scale commercial value rating: 1. Small farm or home garden: yes. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Kiwigold",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Disease issues: Immune to RBDV. Plant: Vigorous. Fruit: These are sports of Heritage and differ only in fruit color. Kiwigold is yellow or apricot yellow. Goldie typically is a deep apricot color. Yield: Low to high (low yield in cold climates with short season). Large-scale commercial value rating: 1. Small farm or home garden: yes. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Crimson Giant",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Plant: Moderate vigor. Fruit: Large size, dull light red color, uneven shape, bland flavor. Yield: Moderate. Large-scale commercial value rating: 2. Small farm or home garden: yes. Cold hardy: yes. Source table names this as Crimson Glant (USPP 23,375)"
+        },
+        {
+            type: "Raspberry",
+            name: "Crimson Night",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Plant: Vigorous. Fruit: Medium size, very dark (\"black\") fruit, mild flavor. Yield: Low to moderate. Large-scale commercial value rating: 3 (novelty). Small farm or home garden: yes. Cold hardy: yes. Source table names this as Crimson Night (USPP 24,949)"
+        },
+        {
+            type: "Raspberry",
+            name: "Josephine",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Disease issues: Good resistance to root rot. Plant: Vigorous. Fruit: Large size, moderate firmness, attractive, bright red, good flavor, ripens late so has short fruiting season in cold climates. Yield: Low to high (low yield in cold climates with short season). Large-scale commercial value rating: 1. Small farm or home garden: yes. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Nantahala",
+            category: "Primocane-fruiting red and yellow raspberries for the Pacific Northwest",
+            description: "Plant: Vigorous. Fruit: Small size, dark red fruit, works well in tunnels in southern Oregon. Yield: Very low (unless grown in tunnels). Large-scale commercial value rating: 2. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Jewel",
+            category: "Black raspberries for the Pacific Northwest",
+            color: "Black",
+            description: "Plant: Vigorous. Fruit: Medium to large size, good firmness, black, excellent flavor. Yield: Low to medium. Use: Fresh. Large-scale commercial value rating: 1. Small farm or home garden: yes. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Munger",
+            category: "Black raspberries for the Pacific Northwest",
+            color: "Black",
+            description: "Plant: Vigorous. Fruit: Medium size, fair firmness, black, very good flavor. Yield: Medium. Use: Processed. Machine harvest: yes. Large-scale commercial value rating: 1. Small farm or home garden: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Mac Black",
+            category: "Black raspberries for the Pacific Northwest",
+            color: "Black",
+            description: "Plant: Vigorous. Fruit: Medium to large size, good firmness, black, good flavor, ripens 10 to 14 days later than most other cultivars. Yield: Low to medium. Use: Fresh. Large-scale commercial value rating: 2 (unique for late season). Small farm or home garden: yes. Source table names this as MacBlack"
+        },
+        {
+            type: "Raspberry",
+            name: "Niwot",
+            category: "Black raspberries for the Pacific Northwest",
+            color: "Black",
+            description: "Plant: Primocane-fruiting (fall-bearing). Tip to encourage branching and flowering. Fruit: Small to medium size, ripens in September. Yield: Low. Use: Fresh. Large-scale commercial value rating: 2 (unique for very late season). Small farm or home garden: yes. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Brandywine",
+            category: "Purple raspberries for the Pacific Northwest",
+            color: "Purple",
+            description: "Plant: Vigorous. Fruit: Large to very large size, soft, purple, excellent flavor. Yield: High to very high. Use: Local fresh market or processed. Large-scale commercial value rating: 3. Small farm or home garden: yes. Cold hardy: yes"
+        },
+        {
+            type: "Raspberry",
+            name: "Royalty",
+            category: "Purple raspberries for the Pacific Northwest",
+            color: "Purple",
+            description: "Plant: Vigorous. Fruit: Large to very large size, soft, purple, excellent flavor. Yield: High. Use: Local fresh market or processed. Large-scale commercial value rating: 3. Small farm or home garden: yes. Cold hardy: yes"
+        },
+    ]
+}

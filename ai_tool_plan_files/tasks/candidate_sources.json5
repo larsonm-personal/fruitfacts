@@ -3214,7 +3214,7 @@
         },
         {
             id: "osu-pnw655-raspberry-cultivars-pacific-northwest",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Raspberry Cultivars for the Pacific Northwest",
             institution: "Oregon State University Extension Service",
@@ -3228,7 +3228,7 @@
             discovered_by: "found_citations reference scan",
             value_summary:
                 "Current OSU raspberry cultivar guide replacing the older EC 1310 citation from the Central Oregon berry guide",
-            asset_decision: "stub from web",
+            asset_decision: "stub from web; archive print-friendly PDF later",
             proposed_reference_path:
                 "plant_database/references/Oregon/OSU PNW 655 Raspberry Cultivars for the Pacific Northwest.json5",
             duplicate_check:
@@ -3236,7 +3236,13 @@
             notes: [
                 "Mined from plant_database/references/Oregon/OSU EC 1621 Selecting Berry Crop Varieties for Central Oregon.pdf",
                 "Current page is peer reviewed, published February 2014 and reviewed 2025",
-                "Likely parsing issue: cultivar tables have repeated image blocks and commercial-use rating columns"
+                "Likely parsing issue: cultivar tables have repeated image blocks and commercial-use rating columns",
+                "Encoded in plant_database/references/Oregon/OSU PNW 655 Raspberry Cultivars for the Pacific Northwest.json5",
+                "Config extraction added at helper_scripts/extraction_configs/osu_pnw655_raspberry_cultivars_pnw.json",
+                "Manifest entry added as osu_pnw655_raspberry_cultivars_pnw",
+                "Extracted 52 raspberry cultivar records from four HTML tables",
+                "Parser now supports top-level row_overrides so repeated patent and trademark source-name cleanup can be shared across several table extractors",
+                "Print-friendly PDF exists at https://extension.oregonstate.edu/sites/extd8/files/catalog/auto/PNW655.pdf, but dvc was not available on PATH during this import"
             ]
         },
         {
@@ -3268,7 +3274,7 @@
         },
         {
             id: "osu-ec1618-strawberry-cultivars-western-oregon-washington",
-            status: "accepted",
+            status: "encoded",
             priority: "high",
             title: "Strawberry Cultivars for Western Oregon and Washington",
             institution: "Oregon State University Extension Service",
@@ -3282,7 +3288,7 @@
             discovered_by: "found_citations reference scan",
             value_summary:
                 "Current OSU strawberry cultivar guide related to the older EC 1307 citation from the Central Oregon berry guide",
-            asset_decision: "stub from web",
+            asset_decision: "stub from web; archive print-friendly PDF later",
             proposed_reference_path:
                 "plant_database/references/Oregon/OSU EC 1618 Strawberry Cultivars for Western Oregon and Washington.json5",
             duplicate_check:
@@ -3290,7 +3296,12 @@
             notes: [
                 "Mined from plant_database/references/Oregon/OSU EC 1621 Selecting Berry Crop Varieties for Central Oregon.pdf",
                 "Current page was revised January 2025 and includes cultivar tables west of the Cascades",
-                "Likely parsing issue: cultivar recommendations distinguish June-bearing, everbearing, day-neutral, and alpine strawberries"
+                "Likely parsing issue: cultivar recommendations distinguish June-bearing, everbearing, day-neutral, and alpine strawberries",
+                "Encoded in plant_database/references/Oregon/OSU EC 1618 Strawberry Cultivars for Western Oregon and Washington.json5",
+                "Config extraction added at helper_scripts/extraction_configs/osu_ec1618_strawberry_cultivars_western_oregon_washington.json",
+                "Manifest entry added as osu_ec1618_strawberry_cultivars_western_oregon_washington",
+                "Extracted 19 strawberry cultivar records from the June-bearing and day-neutral HTML tables",
+                "Print-friendly PDF exists at https://extension.oregonstate.edu/sites/extd8/files/catalog/auto/EC1618.pdf, but dvc was not available on PATH during this import"
             ]
         },
         {

@@ -196,6 +196,8 @@ script. The config runner currently supports:
   repeated source name belongs to one plant type
 - Row overrides for source rows where PDF extraction splits a name or moves a
   word into the wrong field
+- Top-level `row_overrides` for multi-table sources where the same source-name
+  cleanup should be shared by several extractors
 - Regex row text fixes for repeated source-local cleanup, such as changing
   `Moderately Resistant4, 5` into readable citation-note text
 - Known-name and sequential PDF rating-row parsers for older extension sheets

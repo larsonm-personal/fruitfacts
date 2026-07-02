@@ -55,6 +55,15 @@ def merged_extractor(config, extractor):
     text_fixes.update(extractor.get("text_fixes", {}))
     if text_fixes:
         merged["text_fixes"] = text_fixes
+    row_overrides = dict(config.get("row_overrides", {}))
+    extractor_overrides = extractor.get("row_overrides")
+    if extractor_overrides == {"from_config": True}:
+        merged["row_overrides"] = row_overrides
+    elif row_overrides and extractor_overrides:
+        row_overrides.update(extractor_overrides)
+        merged["row_overrides"] = row_overrides
+    elif row_overrides and "row_overrides" not in merged:
+        merged["row_overrides"] = row_overrides
     for key in ("name_suffix_notes", "harvest_value_map"):
         if key in config and key not in merged:
             merged[key] = config[key]

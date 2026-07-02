@@ -1,0 +1,123 @@
+{
+  "source": {
+    "kind": "html",
+    "url": "https://extension.oregonstate.edu/catalog/ec-1618-strawberry-cultivars-western-oregon-washington"
+  },
+  "reference_fields": [
+    ["title", "Strawberry Cultivars for Western Oregon and Washington"],
+    ["author", "Scott Lukas, Jenyne Loarca, Patrick Jones, Emily Dixon, and Bernadine Strik"],
+    ["description", "OSU Extension EC 1618 guide to June-bearing and day-neutral strawberry cultivars adapted west of the Cascades in Oregon and Washington, with cultivar tables for season, plant, fruit, yield, market, commercial value, and home garden suitability"],
+    ["url", "https://extension.oregonstate.edu/catalog/ec-1618-strawberry-cultivars-western-oregon-washington"],
+    ["thumbnail", "website"],
+    ["revised", "January 2025"],
+    ["accessed", "Jul 2026"],
+    ["type", "state extension guide"],
+    ["needs_help", true]
+  ],
+  "locations": [
+    {
+      "name": "Oregon State University Extension Service, Corvallis, Oregon",
+      "latitude": 44.5646,
+      "longitude": -123.262
+    }
+  ],
+  "text_fixes": {
+    "if. not fully ripe": "if not fully ripe"
+  },
+  "categories": [
+    {
+      "name": "June-bearing strawberries for Western Oregon and Washington",
+      "description": "OSU EC 1618 lists these June-bearing strawberry cultivars as adapted to conditions west of the Cascades. Commercial value ratings use the source scale where 1 is appropriate for most commercial operations, 2 may have specific commercial value, and 3 is unlikely to have good commercial value"
+    },
+    {
+      "name": "Day-neutral strawberries for Western Oregon and Washington",
+      "description": "OSU EC 1618 lists these day-neutral strawberry cultivars as adapted to conditions west of the Cascades. Commercial value ratings use the source scale where 1 is appropriate for most commercial operations, 2 may have specific commercial value, and 3 is unlikely to have good commercial value"
+    }
+  ],
+  "row_overrides": {
+    "Sweet Sunrise (USPP 25,223)": {
+      "cultivar": "Sweet Sunrise",
+      "_source_note": "Source table names this as Sweet Sunrise (USPP 25,223)"
+    },
+    "Charm (USPP 25,300)": {
+      "cultivar": "Charm",
+      "_source_note": "Source table names this as Charm (USPP 25,300)"
+    },
+    "Marys Peak (USPP 29,370)": {
+      "cultivar": "Marys Peak",
+      "_source_note": "Source table names this as Marys Peak (USPP 29,370)"
+    },
+    "Puget Crimson (USPP 22,781)": {
+      "cultivar": "Puget Crimson",
+      "_source_note": "Source table names this as Puget Crimson (USPP 22,781)"
+    },
+    "Albion (USPP 16,228)": {
+      "cultivar": "Albion",
+      "_source_note": "Source table names this as Albion (USPP 16,228)"
+    },
+    "Mara des Bois (USPP 8,517)": {
+      "cultivar": "Mara Des Bois",
+      "_source_note": "Source table names this as Mara des Bois (USPP 8,517)"
+    },
+    "Monterey (USPP 19,767)": {
+      "cultivar": "Monterey",
+      "_source_note": "Source table names this as Monterey (USPP 19,767)"
+    },
+    "San Andreas (USPP 19,975)": {
+      "cultivar": "San Andreas",
+      "_source_note": "Source table names this as San Andreas (USPP 19,975)"
+    },
+    "Seascape (USPP 7,614)": {
+      "cultivar": "Seascape",
+      "_source_note": "Source table names this as Seascape (USPP 7,614)"
+    }
+  },
+  "extractors": [
+    {
+      "kind": "html_table",
+      "table_index": 0,
+      "required_headers": ["Cultivar", "Season", "Plant", "Fruit", "Yield", "Market"],
+      "name_key": "cultivar",
+      "plant_type": "Strawberry",
+      "category": "June-bearing strawberries for Western Oregon and Washington",
+      "harvest_key": "season",
+      "row_overrides": {"from_config": true},
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["plant", "Plant"],
+            ["fruit", "Fruit"],
+            ["yield", "Yield"],
+            ["market", "Market"],
+            ["large_scale_commercial_value", "Large-scale commercial value rating"],
+            ["small_farm_or_home_garden", "Small farm or home garden"]
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "html_table",
+      "table_index": 1,
+      "required_headers": ["Cultivar", "Plant", "Fruit", "Yield", "Market"],
+      "name_key": "cultivar",
+      "plant_type": "Strawberry",
+      "category": "Day-neutral strawberries for Western Oregon and Washington",
+      "row_overrides": {"from_config": true},
+      "description_parts": [
+        {
+          "kind": "labels",
+          "labels": [
+            ["plant", "Plant"],
+            ["fruit", "Fruit"],
+            ["yield", "Yield"],
+            ["market", "Market"],
+            ["large_scale_commercial_value", "Large-scale commercial value rating"],
+            ["small_farm_or_home_garden", "Small farm or home garden"],
+            ["comment", "Comment"]
+          ]
+        }
+      ]
+    }
+  ]
+}

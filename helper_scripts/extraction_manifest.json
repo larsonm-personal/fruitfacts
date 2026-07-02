@@ -73,6 +73,14 @@
             "config": "extraction_configs/osu_hyg_1423_grapes.json"
         },
         {
+            "id": "osu_pnw655_raspberry_cultivars_pnw",
+            "config": "extraction_configs/osu_pnw655_raspberry_cultivars_pnw.json"
+        },
+        {
+            "id": "osu_ec1618_strawberry_cultivars_western_oregon_washington",
+            "config": "extraction_configs/osu_ec1618_strawberry_cultivars_western_oregon_washington.json"
+        },
+        {
             "id": "ontario_blueberries_home_gardens",
             "config": "extraction_configs/ontario_blueberries_home_gardens.json"
         },
