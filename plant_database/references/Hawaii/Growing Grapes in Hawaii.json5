@@ -6,6 +6,11 @@
     accessed: "September 2022",
     type: "extension test",
     needs_help: true,
+    found_citations: [
+        "source_pdf=plant_database/references/Hawaii/Growing Grapes in Hawaii.pdf | cited_source=Anonymous. 2002. Home Fruit Production: Grape Training Systems. University of Missouri Extension Publications G6090, MU Guide | url=http://extension.missouri.edu/explorepdf/agguides/hort/g06090.pdf | scanner_kind=visible_url_context | notes=Grape training source, likely not cultivar-heavy but useful as linked extension grape guide",
+        "source_pdf=plant_database/references/Hawaii/Growing Grapes in Hawaii.pdf | cited_source=Mortensen, J.A. and L.H. Stover. 1983. Daytona - A table grape for Florida homeowners. Circular S-302. University of Florida | scanner_kind=visible_url_context | notes=Likely cultivar release or recommendation source for Florida table grape Daytona; no direct URL in scanned citation block",
+        "source_pdf=plant_database/references/Hawaii/Growing Grapes in Hawaii.pdf | cited_source=Mortensen, J.A. and L.H. Stover. 1982. Tampa, a new bunch grape rootstock. Circular 295. University of Florida | scanner_kind=visible_url_context | notes=Rootstock release source; include for grape rootstock/reference mining",
+    ],
     locations: [
         {
             name: "todo - a location in hawaii",

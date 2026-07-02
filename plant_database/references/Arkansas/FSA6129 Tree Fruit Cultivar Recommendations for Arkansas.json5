@@ -7,6 +7,10 @@
     accessed: "Jun 2026",
     type: "state extension guide",
     needs_help: true,
+    found_citations: [
+        "source_pdf=plant_database/references/Arkansas/FSA6129 Tree Fruit Cultivar Recommendations for Arkansas.pdf | cited_source=Fire Blight Susceptibility of Common Apple Varieties. Cornell Khan Lab Extension | url=https://blogs.cornell.edu/khanlab/extension/fire-blight-susceptibility-of-common-apple-cultivars/ | scanner_kind=reference_section | notes=Apple cultivar disease-susceptibility source cited from Arkansas tree-fruit recommendations",
+        "source_pdf=plant_database/references/Arkansas/FSA6129 Tree Fruit Cultivar Recommendations for Arkansas.pdf | cited_source=University of Arkansas Peaches and Nectarines fruit breeding page | url=https://aaes.uada.edu/fruit-breeding/peaches-and-nectarines/ | scanner_kind=reference_section | notes=Likely cultivar release and breeding source for Arkansas peaches and nectarines",
+    ],
     locations: [
         {
             name: "University of Arkansas System Division of Agriculture, Little Rock, Arkansas",

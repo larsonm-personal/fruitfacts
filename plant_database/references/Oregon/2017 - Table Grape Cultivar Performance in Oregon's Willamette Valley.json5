@@ -7,6 +7,10 @@
     published: "2017",
     accessed: "July 2022",
     type: "extension test",
+    found_citations: [
+        "source_pdf=plant_database/references/Oregon/2017 - Table Grape Cultivar Performance in Oregon's Willamette Valley.pdf | cited_source=Reisch, B.I., D.V. Peterson, R.M. Pool, and M.H. Martens. 1993. Table grape varieties for cool climates. Cornell Coop. Ext. Publ. 234 | scanner_kind=reference_section | notes=Likely cultivar-level cold-climate grape publication; no direct URL in scanned citation block",
+        "source_pdf=plant_database/references/Oregon/2017 - Table Grape Cultivar Performance in Oregon's Willamette Valley.pdf | cited_source=Zabadal, T.J., D. Dings, and L. Breyen. 2002. Growing table grapes in a temperate climate. Michigan State Univ. Ext. Bul. E-2774 | scanner_kind=reference_section | notes=Likely cultivar and culture guide; no direct URL in scanned citation block",
+    ],
     locations: [
         {
             // NWREC; Aurora, OR, lat. 45°28′N, long. 122°76′ W

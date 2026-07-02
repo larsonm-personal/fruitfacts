@@ -5,6 +5,11 @@
     published: "June 2006",
     accessed: "Oct 2021",
     type: "local extension guide",
+    found_citations: [
+        "source_pdf=plant_database/references/Utah/Utah State HG 2006-01pr Growing Tree Fruit in the Uintah Basin.pdf | cited_source=Finnigan, Brian. Apple Cultivars for Eastern Idaho | url=http://extension.ag.uidaho.edu/district4/MG/variety.html | scanner_kind=reference_section | notes=Old URL was line-wrapped in source as variety. html; likely Idaho apple cultivar recommendations",
+        "source_pdf=plant_database/references/Utah/Utah State HG 2006-01pr Growing Tree Fruit in the Uintah Basin.pdf | cited_source=Finnigan, Brian. Fruit Varieties for Eastern Idaho | url=http://extension.ag.uidaho.edu/district4/MG/fruitvar.html | scanner_kind=reference_section | notes=Old URL was line-wrapped in source as fruitvar. html; likely broad Idaho fruit variety recommendations",
+        "source_pdf=plant_database/references/Utah/Utah State HG 2006-01pr Growing Tree Fruit in the Uintah Basin.pdf | cited_source=Garcia, M. Elena, and Jon Clements. Apple Cultivar Recommendation for Vermont | url=http://orchard.uvm.edu/uvmapple/hort/cultivars/cultivars%20for%20VT.ppt | scanner_kind=reference_section | notes=Scanned URL may need repair from old UVM path; likely apple cultivar recommendation slide deck",
+    ],
     locations: [
         {
             name: "Uintah Basin, UT",

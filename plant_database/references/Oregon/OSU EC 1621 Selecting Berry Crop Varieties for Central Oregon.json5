@@ -6,6 +6,13 @@
     reviewed: "April 2017",
     accessed: "Oct 2021",
     type: "state extension guide",
+    found_citations: [
+        "source_pdf=plant_database/references/Oregon/OSU EC 1621 Selecting Berry Crop Varieties for Central Oregon.pdf | cited_source=Red Raspberry Cultivars for Oregon, OSU Extension EC 1310 | url=https://catalog.extension.oregonstate.edu/ec1310 | scanner_kind=reference_section | notes=Part of OSU extension publication list cited from Central Oregon berry guide",
+        "source_pdf=plant_database/references/Oregon/OSU EC 1621 Selecting Berry Crop Varieties for Central Oregon.pdf | cited_source=Blueberry Cultivars for Oregon, OSU Extension EC 1308 | url=https://catalog.extension.oregonstate.edu/ec1308 | scanner_kind=reference_section | notes=Part of OSU extension publication list cited from Central Oregon berry guide",
+        "source_pdf=plant_database/references/Oregon/OSU EC 1621 Selecting Berry Crop Varieties for Central Oregon.pdf | cited_source=Grape Cultivars for Your Home Garden, OSU Extension EC 1309 | url=https://catalog.extension.oregonstate.edu/ec1309 | scanner_kind=reference_section | notes=Part of OSU extension publication list cited from Central Oregon berry guide",
+        "source_pdf=plant_database/references/Oregon/OSU EC 1621 Selecting Berry Crop Varieties for Central Oregon.pdf | cited_source=Growing Blackberries in Your Home Garden, OSU Extension EC 1303 | url=https://catalog.extension.oregonstate.edu/ec1303 | scanner_kind=reference_section | notes=May include cultivar recommendations; candidate for Oregon blackberry data",
+        "source_pdf=plant_database/references/Oregon/OSU EC 1621 Selecting Berry Crop Varieties for Central Oregon.pdf | cited_source=Growing Strawberries in Your Home Garden, OSU Extension EC 1307 | url=https://catalog.extension.oregonstate.edu/ec1307 | scanner_kind=reference_section | notes=May include cultivar recommendations; candidate for Oregon strawberry data",
+    ],
     locations: [
         {
             name: "Central Oregon",

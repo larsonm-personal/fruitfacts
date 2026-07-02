@@ -6,6 +6,12 @@
     accessed: "Dec 2021",
     type: "dictionary",
     ignore_for_nearby_searches: true,
+    found_citations: [
+        "source_pdf=plant_database/references/National/HortSci Ploidy Level in American Persimmon Cultivars.pdf | cited_source=Kaiser, C. and M. Ernst. 2017. American Persimmon. University of Kentucky Cooperative Extension Service, Center for Crop Diversification Crop Profile CCD-CP-1 | cited_url_text=http://www.uky.edu/ccd/sites/www.uky.edu.ccd/files/persimmon.pdf | scanner_kind=reference_section | notes=Persimmon crop profile cited inside ploidy paper; current URL likely needs lookup",
+        "source_pdf=plant_database/references/National/HortSci Ploidy Level in American Persimmon Cultivars.pdf | cited_source=McDaniel, J. 1973. Persimmon cultivars for northern areas. Fruit Varieties Journal 27:94-96 | scanner_kind=reference_section | notes=Likely high-value historical cultivar source; no direct URL in scanned citation block",
+        "source_pdf=plant_database/references/National/HortSci Ploidy Level in American Persimmon Cultivars.pdf | cited_source=Nissen, R. and R.E. Roberts. 2015. History, origin and classification of persimmon cultivars. Journal of the American Pomological Society 69:31-44 | scanner_kind=reference_section | notes=Likely cultivar classification source for persimmon",
+        "source_pdf=plant_database/references/National/HortSci Ploidy Level in American Persimmon Cultivars.pdf | cited_source=Ames, G. 2010. Persimmons, Asian and American. ATTRA National Center for Appropriate Technology | cited_url_text=http://www.attra.ncat.org/attra-pub/persimmon.html | scanner_kind=reference_section | notes=Useful persimmon overview candidate; current ATTRA URL likely needs lookup",
+    ],
     locations: [
         {
             name: "Various",

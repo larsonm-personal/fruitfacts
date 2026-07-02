@@ -6,6 +6,10 @@
     accessed: "Feb 2022",
     type: "journal article",
     needs_help: true,
+    found_citations: [
+        "source_pdf=plant_database/references/New Mexico/HortSci Early Performance of Jujube Fresh Eating Cultivars... copy.pdf | cited_source=Locke, L.F. 1948. The Chinese jujube: A promising fruit tree for the Southwest. Oklahoma Agricultural Experiment Station Bulletin B319:78-81 | scanner_kind=visible_url_context | notes=Historical jujube source cited by NMSU HortScience trial; no direct URL in scanned citation block",
+        "source_pdf=plant_database/references/New Mexico/HortSci Early Performance of Jujube Fresh Eating Cultivars... copy.pdf | cited_source=Locke, L.F. 1955. Growing fruits and nuts in the Southern Great Plains. USDA Farmers Bulletin No. 2087 | scanner_kind=visible_url_context | notes=Historical broad fruit and nut source with likely jujube context; no direct URL in scanned citation block",
+    ],
     locations: [
         {
             name: "NMSU, Las Cruces NM",

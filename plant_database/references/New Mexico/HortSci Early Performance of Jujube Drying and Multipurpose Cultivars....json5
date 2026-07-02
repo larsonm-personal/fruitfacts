@@ -6,6 +6,10 @@
     accessed: "Feb 2022",
     type: "journal article",
     needs_help: true,
+    found_citations: [
+        "source_pdf=plant_database/references/New Mexico/HortSci Early Performance of Jujube Drying and Multipurpose Cultivars....pdf | cited_source=Yao, S. 2013. Past, present, and future of jujubes - Chinese dates in the United States. HortScience 48:672-680 | scanner_kind=reference_section | notes=Likely review of U.S. jujube cultivar history",
+        "source_pdf=plant_database/references/New Mexico/HortSci Early Performance of Jujube Drying and Multipurpose Cultivars....pdf | cited_source=Yao, S., J. Huang, and R. Heyduck. 2015. Jujube flowering and fruiting in the southwestern United States. HortScience 50:839-846 | scanner_kind=reference_section | notes=Likely cultivar/location performance support source for jujube",
+    ],
     locations: [
         {
             name: "NMSU, Las Cruces NM",

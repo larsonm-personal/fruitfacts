@@ -8,6 +8,10 @@
     accessed: "Jun 2026",
     type: "state extension guide",
     needs_help: true,
+    found_citations: [
+        "source_pdf=plant_database/references/New Hampshire/UNH Day-neutral Strawberries for Northern New England.pdf | cited_source=Season-long Strawberry Production with Everbearers for Northeastern Producers. Willie Lantz, Harry Swartz, Kathleen Demchak, and Sherry Frick | url=https://www.sare.org/Learning-Center/SARE-Project-Products/Northeast-SARE-ProjectProducts/Season-Long-Strawberry-Production-with-Everbearers-for-Northeastern-Producers | scanner_kind=visible_url_context | notes=Likely production guide with day-neutral cultivar context",
+        "source_pdf=plant_database/references/New Hampshire/UNH Day-neutral Strawberries for Northern New England.pdf | cited_source=Low tunnel strawberries PDF. Cornell fruit program | url=http://hort.cornell.edu/fruit/pdfs/low-tunnel-strawberries.pdf | scanner_kind=visible_url_context | notes=Potential northeast day-neutral strawberry production and cultivar support source",
+    ],
     locations: [
         {
             name: "University of New Hampshire Agricultural Experiment Station, Durham, New Hampshire",

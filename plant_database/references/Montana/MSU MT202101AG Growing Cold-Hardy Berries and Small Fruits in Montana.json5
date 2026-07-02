@@ -8,6 +8,10 @@
     accessed: "Jun 2026",
     type: "state extension guide",
     needs_help: true,
+    found_citations: [
+        "source_pdf=plant_database/references/Montana/MSU MT202101AG Growing Cold-Hardy Berries and Small Fruits in Montana.pdf | cited_source=North Dakota State University's Carrington Research and Extension Center Northern Hardy Fruit program results | url=https://www.ag.ndsu.edu/CarringtonREC/northern-hardy-fruit-evaluation-project/fruit-projectresults | scanner_kind=reference_section | notes=Likely high-value cold-hardy fruit trial source referenced for Montana recommendations",
+        "source_pdf=plant_database/references/Montana/MSU MT202101AG Growing Cold-Hardy Berries and Small Fruits in Montana.pdf | cited_source=Dan Barney and Esmaeil Fallahi. Growing Currants, Gooseberries, and Jostaberries. University of Idaho Extension BUL 855 | url=https://www.extension.uidaho.edu/publishing/pdf/BUL/BUL0855.pdf | scanner_kind=reference_section | notes=Source URL was line-wrapped in PDF; likely cultivar and culture guide for ribes crops",
+    ],
     locations: [
         {
             name: "Montana State University Western Agricultural Research Center, Corvallis, Montana",

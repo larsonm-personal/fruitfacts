@@ -6,6 +6,9 @@
     accessed: "Nov 2022",
     type: "state extension guide",
     needs_help: true, // todo varieties
+    found_citations: [
+        "source_pdf=plant_database/references/Washington/WSU EM 068E Growing Winegapes in Maritime Western Washington.pdf | cited_source=Christensen, L.P., N.K. Dokoozlian, M.A. Walker, and J.A. Wolpert. 2003. Trellis Selections and Canopy Management in Wine Grape Varieties in California. University of California Cooperative Extension Publication 3419 | url=http://ucanr.org/sites/intvit/files/24348.pdf | scanner_kind=reference_section | notes=May be more management than cultivar recommendations, but the title is variety-specific and source is durable UC extension",
+    ],
     locations: [
         {
             name: "Mt. Vernon, WA",
