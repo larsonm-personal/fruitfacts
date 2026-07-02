@@ -1,3 +1,4 @@
+use super::collection_path_parts;
 use super::search::{distance_km_to_degrees, DistanceDegrees};
 use crate::queries::map::{latitude_normalize, locations_query_limit};
 
@@ -49,5 +50,33 @@ fn test_distance_km_to_degrees() {
             lat: 2.245789145352464,
             lon: 0.0
         })
+    );
+}
+
+#[test]
+fn test_collection_path_parts_decodes_collection_slug() {
+    assert_eq!(
+        collection_path_parts(
+            "Massachusetts/Fruit_Notes-_Selected_Minnesota_Cool_Climate_Red_Grape_Varieties_for_the_Northeast"
+        ),
+        (
+            "Massachusetts/".to_string(),
+            "Fruit Notes- Selected Minnesota Cool Climate Red Grape Varieties for the Northeast"
+                .to_string()
+        )
+    );
+}
+
+#[test]
+fn test_collection_path_parts_preserves_decoded_collection_path() {
+    assert_eq!(
+        collection_path_parts(
+            "Massachusetts/Fruit Notes- Selected Minnesota Cool Climate Red Grape Varieties for the Northeast"
+        ),
+        (
+            "Massachusetts/".to_string(),
+            "Fruit Notes- Selected Minnesota Cool Climate Red Grape Varieties for the Northeast"
+                .to_string()
+        )
     );
 }

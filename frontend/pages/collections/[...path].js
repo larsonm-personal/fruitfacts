@@ -11,7 +11,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Chart from '../../components/chart';
 import { getThumbnailLocation } from '../../components/functions';
-import { name_to_path, path_to_name } from '../../components/util';
+import { name_to_path, path_to_name, reference_url } from '../../components/util';
 import Image from 'next/image';
 import { getCookie } from 'cookies-next';
 import { getServerBackendBase } from '../../components/backendUrl';
@@ -112,6 +112,7 @@ export default function Home({
   setContributingLinks
 }) {
   let data_link = `plant_database/references/${pathJoined}.json5`;
+  const referenceUrl = reference_url(data.collection?.url);
   React.useEffect(() => {
     setContributingLinks([
       {
@@ -156,7 +157,7 @@ export default function Home({
             )}
             <p>
               {`${data.collection.title} `}
-              {data.collection.url && <a href={data.collection.url}>[ref]</a>}
+              {referenceUrl && <a href={referenceUrl}>[ref]</a>}
             </p>
             <h1>Locations</h1>
             <ul className="list-disc">

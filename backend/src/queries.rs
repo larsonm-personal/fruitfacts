@@ -13,7 +13,6 @@ use diesel::prelude::*;
 use diesel::r2d2::{self, ConnectionManager};
 type DbPool = r2d2::Pool<ConnectionManager<SqliteConnection>>;
 use anyhow::Result;
-use regex::Regex;
 use serde::{Deserialize, Serialize};
 use serde_with::skip_serializing_none;
 use std::collections::HashSet;
@@ -96,25 +95,7 @@ pub fn get_collection_db(
 ) -> Result<CollectionReturn, diesel::result::Error> {
     println!("{}", path);
 
-    // this could be done with rfind('/') or similar to get rid of the regex
-    // todo: at least limit the length of the incoming text to protect the regex
-    let slash_regex = Regex::new(r#"(.*)/(.*)"#).unwrap();
-
-    let mut dir: String = Default::default();
-    let mut file: String = Default::default();
-    if let Some(matches) = slash_regex.captures(path) {
-        if matches.len() >= 3 {
-            if let Some(dir_match) = matches.get(1) {
-                dir = dir_match.as_str().to_string();
-            }
-            if let Some(file_match) = matches.get(2) {
-                file = file_match.as_str().to_string();
-            }
-        }
-    } else {
-        file = path.to_string();
-    }
-    dir.push('/');
+    let (dir, file) = collection_path_parts(path);
 
     println!("{:#?} {:#?}", dir, file);
 
@@ -142,6 +123,19 @@ pub fn get_collection_db(
             Ok(output)
         }
         Err(error) => Err(error),
+    }
+}
+
+fn collection_path_parts(path: &str) -> (String, String) {
+    let path_decoded = util::path_to_name(path);
+
+    if let Some(slash_index) = path_decoded.rfind('/') {
+        (
+            format!("{}/", &path_decoded[..slash_index]),
+            path_decoded[slash_index + 1..].to_string(),
+        )
+    } else {
+        ("/".to_string(), path_decoded)
     }
 }
 
