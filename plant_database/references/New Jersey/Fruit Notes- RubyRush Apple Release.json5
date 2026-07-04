@@ -1,0 +1,43 @@
+{
+    title: "RubyRushTM - New Apple Cultivar Release from Rutgers University and Adams County Nursery",
+    author: "Jon Clements, Win Cowgill, and Megan Muehlbauer",
+    description: "Fruit Notes Volume 87, Number 1, Winter 2022 release article and field-observation summary for Rutgers RubyRush apple",
+    url: "http://www.umassfruitnotes.com/v87n1/a2.pdf",
+    published: "Winter 2022",
+    accessed: "Jul 2026",
+    type: "journal article test",
+    reference_categories: ["fruit-notes", "fruit-notes-v87n1-winter-2022"],
+    locations: [
+        {
+            name: "Tougas Family Farm, Northborough, Massachusetts",
+            latitude: 42.3453733,
+            longitude: -71.6794844
+        },
+        {
+            name: "UMass Cold Spring Orchard, Belchertown, Massachusetts",
+            latitude: 42.2530948,
+            longitude: -72.3592571
+        },
+        {
+            name: "Rutgers Snyder Research and Extension Farm, Pittstown, New Jersey",
+            latitude: 40.5599,
+            longitude: -74.9544
+        },
+    ],
+    categories: [
+        {
+            name: "RubyRush apple release observations",
+            description: "Fruit Notes reports field observations for RubyRush apple at Massachusetts and New Jersey trial sites"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "NJ 150",
+            category: "RubyRush apple release observations",
+            AKA: ["RubyRush (tm)", "NJ150", "DW18-206"],
+            harvest_time_unparsed: "September 23 to October 18 in observations; around October 1 in northern New Jersey and October 5 in Massachusetts; early late season with a two-week picking window no sooner than October 1",
+            description: "Fruit Notes describes RubyRush as a GoldRush x Enterprise Rutgers/NJAES apple tested as DW18-206 and introduced through Adams County Nursery. Source notes: scab resistance plus observed cedar apple rust and fire blight resistance, vigorous upright trees that spread under crop load, medium-heavy crop potential with biennial bearing risk if not thinned, little pre-harvest drop, medium-large to large bright pink-red fruit, average table values of 13 Brix, 16.4 lb firmness, 277 g fruit weight, 3.4 inch diameter, and 75 percent red color, tart-sweet fruity flavor, fine-medium crisp flesh, possible watercore, and good to very good quality for U-pick rather than long-term storage"
+        },
+    ]
+}

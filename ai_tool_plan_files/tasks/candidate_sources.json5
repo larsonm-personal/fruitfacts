@@ -3915,7 +3915,7 @@
         },
         {
             id: "fruit-notes-new-peach-nectarine-selena-silverglo-2019",
-            status: "new",
+            status: "encoded",
             priority: "high",
             title: "Fruit Quality Characteristics of New Peach and Nectarine Varieties: Selena and Silverglo",
             institution: "Fruit Notes",
@@ -3932,21 +3932,26 @@
             proposed_reference_path:
                 "plant_database/references/New Jersey/Fruit Notes- Selena and Silverglo Peach and Nectarine Fruit Quality.json5",
             duplicate_check:
-                "Selena and Silverglo exist in NJAES and commercial references, but this Fruit Notes article is not encoded",
+                "Selena and Silverglo exist in NJAES and commercial references; this pass adds Fruit Notes fruit-quality observations",
             notes: [
-                "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference"
+                "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference",
+                "Encoded in plant_database/references/New Jersey/Fruit Notes- Selena and Silverglo Peach and Nectarine Fruit Quality.json5",
+                "Config extraction added at helper_scripts/extraction_configs/fruit_notes_selena_silverglo_fruit_quality_2019.json",
+                "Manifest entry added as fruit_notes_selena_silverglo_fruit_quality_2019",
+                "Uses static_rows because the PDF tables use custom-encoded text and the article prose has reviewed cultivar observations",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {
             id: "fruit-notes-new-peach-nectarine-brigantine-evelynn-tiana-2018",
-            status: "new",
+            status: "encoded",
             priority: "high",
             title: "Fruit Quality Characteristics of Three New Peach and Nectarine Varieties: Brigantine, Evelynn, and Tiana",
             institution: "Fruit Notes",
             region: "New Jersey",
             crops: ["Peach", "Nectarine"],
             source_type: "journal cultivar performance article",
-            landing_url: "http://umassfruitnotes.com/v83n2/Cover832abcd.html",
+            landing_url: "http://umassfruitnotes.com/v83n2/Cover832.html",
             download_url: "http://umassfruitnotes.com/v83n2/a3.pdf",
             discovered: "2026-07-02",
             discovered_by: "UMass Fruit Notes live issue index survey",
@@ -3956,9 +3961,14 @@
             proposed_reference_path:
                 "plant_database/references/New Jersey/Fruit Notes- Brigantine Evelynn and Tiana Peach and Nectarine Fruit Quality.json5",
             duplicate_check:
-                "These varieties exist in NJAES and other references, but this Fruit Notes article is not encoded",
+                "These varieties exist in NJAES and other references; this pass adds Fruit Notes fruit-quality observations",
             notes: [
-                "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference"
+                "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference",
+                "Encoded in plant_database/references/New Jersey/Fruit Notes- Brigantine Evelynn and Tiana Peach and Nectarine Fruit Quality.json5",
+                "Config extraction added at helper_scripts/extraction_configs/fruit_notes_brigantine_evelynn_tiana_fruit_quality_2018.json",
+                "Manifest entry added as fruit_notes_brigantine_evelynn_tiana_fruit_quality_2018",
+                "Uses static_rows because the PDF tables and cultivar box use custom-encoded text and the article prose has reviewed cultivar observations",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {
@@ -3987,11 +3997,41 @@
             ]
         },
         {
+            id: "fruit-notes-crimson-gold-apple-2019",
+            status: "encoded",
+            priority: "medium",
+            title: "Suggested New Apple Variety: Crimson Gold (Svatava Cv.)",
+            institution: "Fruit Notes",
+            authors: ["Win Cowgill", "Jon Clements"],
+            region: "Massachusetts and New Jersey",
+            crops: ["Apple"],
+            source_type: "release article or journal overview",
+            landing_url: "http://umassfruitnotes.com/v84n4/abcdCover844.html",
+            download_url: "http://umassfruitnotes.com/v84n4/a4.pdf",
+            discovered: "2026-07-03",
+            discovered_by: "UMass Fruit Notes issue-index encoding pass",
+            value_summary:
+                "Crimson Gold/Svatava apple trial and release observations from Fruit Notes",
+            asset_decision: "download and review before import",
+            proposed_reference_path:
+                "plant_database/references/Massachusetts/Fruit Notes- Crimson Gold Apple Trial Observations.json5",
+            duplicate_check:
+                "Svatava exists in ACN Maturity Chart and Crimson Gold appears in UNH low-input apple reference; this pass adds Fruit Notes trial observations",
+            notes: [
+                "Encoded in plant_database/references/Massachusetts/Fruit Notes- Crimson Gold Apple Trial Observations.json5",
+                "Config extraction added at helper_scripts/extraction_configs/fruit_notes_crimson_gold_apple_release_2019.json",
+                "Manifest entry added as fruit_notes_crimson_gold_apple_release_2019",
+                "Uses static_rows because the article is a one-cultivar reviewed observation summary",
+                "DVC PDF asset not archived in this pass"
+            ]
+        },
+        {
             id: "fruit-notes-rubyrush-apple-release-2022",
-            status: "new",
+            status: "encoded",
             priority: "medium",
             title: "RubyRushTM - New Apple Cultivar Release from Rutgers University and Adams County Nursery",
             institution: "Fruit Notes",
+            authors: ["Jon Clements", "Win Cowgill", "Megan Muehlbauer"],
             region: "New Jersey",
             crops: ["Apple"],
             source_type: "release article or journal overview",
@@ -4005,9 +4045,14 @@
             proposed_reference_path:
                 "plant_database/references/New Jersey/Fruit Notes- RubyRush Apple Release.json5",
             duplicate_check:
-                "RubyRush exists in NJAES Apples, but this release article is not encoded",
+                "RubyRush exists in NJAES Apples; this pass adds Fruit Notes release and field-observation summary",
             notes: [
-                "Source title uses trademark styling; keep ASCII TM in queue text"
+                "Source title uses trademark styling; keep ASCII TM in queue text",
+                "Encoded in plant_database/references/New Jersey/Fruit Notes- RubyRush Apple Release.json5",
+                "Config extraction added at helper_scripts/extraction_configs/fruit_notes_rubyrush_apple_release_2022.json",
+                "Manifest entry added as fruit_notes_rubyrush_apple_release_2022",
+                "Uses static_rows because the release article is a one-cultivar reviewed observation summary",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {

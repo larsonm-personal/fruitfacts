@@ -1,0 +1,64 @@
+{
+  "source": {
+    "kind": "static"
+  },
+  "reference_fields": [
+    ["title", "Fruit Quality Characteristics of Three New Peach and Nectarine Varieties: Brigantine, Evelynn, and Tiana"],
+    ["author", "Hemant Gohil and Daniel Ward"],
+    ["description", "Fruit Notes Volume 83, Number 2, Spring 2018 article reporting fruit-quality characteristics for Rutgers Brigantine nectarine and Evelynn and Tiana peaches in southern New Jersey"],
+    ["url", "http://www.umassfruitnotes.com/v83n2/a3.pdf"],
+    ["published", "Spring 2018"],
+    ["accessed", "Jul 2026"],
+    ["type", "journal article test"],
+    ["reference_categories", ["fruit-notes", "fruit-notes-v83n2-spring-2018"]]
+  ],
+  "locations": [
+    {
+      "name": "Rutgers Fruit and Ornamental Research Extension Center, Cream Ridge, New Jersey",
+      "latitude": 40.13233771380199,
+      "longitude": -74.52852612532256
+    }
+  ],
+  "categories": [
+    {
+      "name": "Rutgers Brigantine Evelynn and Tiana fruit quality observations",
+      "description": "Fruit Notes reports southern New Jersey fruit-quality observations for Rutgers Brigantine nectarine and Evelynn and Tiana peaches"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "static_rows",
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "harvest_time_unparsed": {"row_key": "harvest_time"},
+      "record_fields": [["AKA", {"row_key": "aka"}]],
+      "description_key": "description",
+      "rows": [
+        {
+          "name": "NJN 102",
+          "aka": ["Brigantine (tm)", "NJH21-44"],
+          "plant_type": "Nectarine",
+          "category": "Rutgers Brigantine Evelynn and Tiana fruit quality observations",
+          "harvest_time": "July 15 to August 3 in southern New Jersey",
+          "description": "Fruit Notes describes Brigantine as a yellow-fleshed nectarine with good commercial potential. The article says it produced very attractively finished fruit with good size and firmness, and sweet, acidic, tangy flavor"
+        },
+        {
+          "name": "NJ 357",
+          "aka": ["Evelynn (tm)", "NJH7-47"],
+          "plant_type": "Peach",
+          "category": "Rutgers Brigantine Evelynn and Tiana fruit quality observations",
+          "harvest_time": "July 20 to August 5 in southern New Jersey",
+          "description": "Fruit Notes describes Evelynn as a new peach with good commercial potential. The article says it produced large fruit with very good firmness and low acid, giving a sweet and delicate flavor"
+        },
+        {
+          "name": "NJ 359",
+          "aka": ["Tiana (tm)", "NJ K65-76"],
+          "plant_type": "Peach",
+          "category": "Rutgers Brigantine Evelynn and Tiana fruit quality observations",
+          "harvest_time": "August 2 to 28 in southern New Jersey",
+          "description": "Fruit Notes describes Tiana as a new peach with good commercial potential. The article says it yielded consistently firm, large fruit that are sweet and acidic, giving a tangy flavor"
+        }
+      ]
+    }
+  ]
+}

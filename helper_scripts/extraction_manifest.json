@@ -405,6 +405,22 @@
             "config": "extraction_configs/psu_stone_fruit_variety_selection.json"
         },
         {
+            "id": "fruit_notes_brigantine_evelynn_tiana_fruit_quality_2018",
+            "config": "extraction_configs/fruit_notes_brigantine_evelynn_tiana_fruit_quality_2018.json"
+        },
+        {
+            "id": "fruit_notes_selena_silverglo_fruit_quality_2019",
+            "config": "extraction_configs/fruit_notes_selena_silverglo_fruit_quality_2019.json"
+        },
+        {
+            "id": "fruit_notes_crimson_gold_apple_release_2019",
+            "config": "extraction_configs/fruit_notes_crimson_gold_apple_release_2019.json"
+        },
+        {
+            "id": "fruit_notes_rubyrush_apple_release_2022",
+            "config": "extraction_configs/fruit_notes_rubyrush_apple_release_2022.json"
+        },
+        {
             "id": "fruit_notes_red_french_american_grapes_2019",
             "config": "extraction_configs/fruit_notes_red_french_american_grapes_2019.json"
         },

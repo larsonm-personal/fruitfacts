@@ -707,6 +707,22 @@ fn test_fruit_notes_reference_files_have_reference_categories() {
             "references/Massachusetts/Fruit Notes- Selected White French-American Grape Varieties for the Northeast.json5",
             "fruit-notes-v84n4-fall-2019",
         ),
+        (
+            "references/New Jersey/Fruit Notes- Brigantine Evelynn and Tiana Peach and Nectarine Fruit Quality.json5",
+            "fruit-notes-v83n2-spring-2018",
+        ),
+        (
+            "references/New Jersey/Fruit Notes- Selena and Silverglo Peach and Nectarine Fruit Quality.json5",
+            "fruit-notes-v84n1-winter-2019",
+        ),
+        (
+            "references/Massachusetts/Fruit Notes- Crimson Gold Apple Trial Observations.json5",
+            "fruit-notes-v84n4-fall-2019",
+        ),
+        (
+            "references/New Jersey/Fruit Notes- RubyRush Apple Release.json5",
+            "fruit-notes-v87n1-winter-2022",
+        ),
     ];
 
     for (relative_path, issue_category) in cases {

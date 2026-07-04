@@ -1,0 +1,38 @@
+{
+    title: "Suggested New Apple Variety: Crimson Gold (Svatava Cv.)",
+    author: "Win Cowgill and Jon Clements",
+    description: "Fruit Notes Volume 84, Number 4, Fall 2019 article describing Crimson Gold, also known as Svatava, as a scab-resistant apple for trial",
+    url: "http://www.umassfruitnotes.com/v84n4/a4.pdf",
+    published: "Fall 2019",
+    accessed: "Jul 2026",
+    type: "journal article test",
+    reference_categories: ["fruit-notes", "fruit-notes-v84n4-fall-2019"],
+    locations: [
+        {
+            name: "Sun High Orchards, Randolph, New Jersey",
+            latitude: 40.8786378,
+            longitude: -74.6021039
+        },
+        {
+            name: "UMass Cold Spring Orchard, Belchertown, Massachusetts",
+            latitude: 42.2530948,
+            longitude: -72.3592571
+        },
+    ],
+    categories: [
+        {
+            name: "Crimson Gold apple trial observations",
+            description: "Fruit Notes reports field and catalog observations for the scab-resistant apple Crimson Gold, also known as Svatava"
+        },
+    ],
+    plants: [
+        {
+            type: "Apple",
+            name: "Svatava",
+            category: "Crimson Gold apple trial observations",
+            AKA: ["Crimson Gold", "Crimson (r) Gold"],
+            harvest_time_unparsed: "September 13 to October 30 in Apple Testers observations, with October 30 noted as too late; recommended around October 1, just before Golden Delicious",
+            description: "Fruit Notes describes Crimson Gold, Svatava Cv., as a Czech Republic scab-resistant apple available from Adams County Nursery and tested in Massachusetts beginning in 2011. Source notes: hard crunchy fruit with high acid and high sugar, complex sweet-tart flavor, bright red-orange blush over yellow, medium-large size when adequately thinned, 3 to 3.5 inch diameter, around 20 lb firmness, Brix often about 14 and sometimes up to 16, little pre-harvest drop, green-white crisp-melting flesh, somewhat chewy skin, medium-vigor upright-spreading trees, biennial risk without thinning, possible cider use, fresh-eating recommendation, and ANIFIC descriptors of fine texture, juicy aromatic fruit, 13 Brix, 17.6 lb pressure, and 7 to 8 month storage life"
+        },
+    ]
+}

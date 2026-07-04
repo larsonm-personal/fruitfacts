@@ -1,0 +1,41 @@
+{
+    title: "Fruit Quality Characteristics of New Peach and Nectarine Varieties: Selena and Silverglo",
+    author: "Hemant Gohil and Daniel Ward",
+    description: "Fruit Notes Volume 84, Number 1, Winter 2019 article reporting fruit-quality characteristics for Rutgers Selena peach and Silverglo nectarine in southern New Jersey",
+    url: "http://www.umassfruitnotes.com/v84n1/a4.pdf",
+    published: "Winter 2019",
+    accessed: "Jul 2026",
+    type: "journal article test",
+    reference_categories: ["fruit-notes", "fruit-notes-v84n1-winter-2019"],
+    locations: [
+        {
+            name: "Rutgers Fruit and Ornamental Research Extension Center, Cream Ridge, New Jersey",
+            latitude: 40.13233771380199,
+            longitude: -74.52852612532256
+        },
+    ],
+    categories: [
+        {
+            name: "Rutgers Selena and Silverglo fruit quality observations",
+            description: "Fruit Notes reports southern New Jersey fruit-quality observations for Rutgers Selena peach and Silverglo nectarine"
+        },
+    ],
+    plants: [
+        {
+            type: "Peach",
+            name: "NJ 358",
+            category: "Rutgers Selena and Silverglo fruit quality observations",
+            AKA: ["Selena (tm)", "NJ K64-197"],
+            harvest_time_unparsed: "September 5 to 20 in southern New Jersey",
+            description: "Fruit Notes describes Selena as a late-season yellow peach with excellent firmness, red-on-yellow skin color, high sugar with acidity, good hang time, and good commercial potential. The article reports three-year averages of 9.9 lb firmness, 3.1 inch diameter, 244 g mass, 5.7 g/l total titratable acidity, and 12.1 Brix total soluble solids"
+        },
+        {
+            type: "Nectarine",
+            name: "NJN 103",
+            category: "Rutgers Selena and Silverglo fruit quality observations",
+            AKA: ["Silverglo (tm)", "NJ K54-42"],
+            harvest_time_unparsed: "August 5 to 20 in southern New Jersey",
+            description: "Fruit Notes describes Silverglo as a firm white nectarine that is larger and more attractive than other white nectarines during its early harvest window, with good commercial potential. The article reports three-year averages of 10.1 lb firmness, 2.7 inch diameter, 191 g mass, 7.4 g/l total titratable acidity, and 10.5 Brix total soluble solids"
+        },
+    ]
+}

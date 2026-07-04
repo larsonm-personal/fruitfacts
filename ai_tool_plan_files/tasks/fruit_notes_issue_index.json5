@@ -6,6 +6,83 @@
     ],
     issues: [
         {
+            id: "fruit-notes-v83n2-spring-2018",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 83, Number 2: Spring 2018",
+            reference_category: "fruit-notes-v83n2-spring-2018",
+            issue_url: "http://umassfruitnotes.com/v83n2/FN832.pdf",
+            cover_url: "http://umassfruitnotes.com/v83n2/Cover832.html",
+            published: "Spring 2018",
+            accessed: "Jul 2026",
+            articles: [
+                {
+                    article_number: "a1",
+                    title: "Mating Disruption, Stink Bugs, and Reduced Insecticide Use for Apples at the Snyder Research & Extension Farm, 2016",
+                    url: "http://www.umassfruitnotes.com/v83n2/a1.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Insect management article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a2",
+                    title: "Refinement of Plum Curculio Biology in Southern New Jersey Peaches",
+                    url: "http://www.umassfruitnotes.com/v83n2/a2.pdf",
+                    status: "do_not_encode",
+                    crops: ["Peach"],
+                    family: "crop-management",
+                    notes: [
+                        "Pest biology article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a3",
+                    title: "Fruit Quality Characteristics of Three New Peach and Nectarine Varieties: Brigantine, Evelynn, and Tiana",
+                    url: "http://www.umassfruitnotes.com/v83n2/a3.pdf",
+                    status: "encoded",
+                    crops: ["Peach", "Nectarine"],
+                    family: "trial-evaluation",
+                    reference_path:
+                        "plant_database/references/New Jersey/Fruit Notes- Brigantine Evelynn and Tiana Peach and Nectarine Fruit Quality.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_brigantine_evelynn_tiana_fruit_quality_2018.json"
+                },
+                {
+                    article_number: "a4",
+                    title: "Peach Bacterial Spot Management: Evaluation of Kasugamycin and a Bactericide Application Timing Program",
+                    url: "http://www.umassfruitnotes.com/v83n2/a4.pdf",
+                    status: "do_not_encode",
+                    crops: ["Peach"],
+                    family: "crop-management",
+                    notes: [
+                        "Disease management article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a5",
+                    title: "International Fruit Tree Association in New Zealand",
+                    url: "http://www.umassfruitnotes.com/v83n2/a5.pdf",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "Tour article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a6",
+                    title: "Ernie Christ Memorial Lecture, 2018",
+                    url: "http://www.umassfruitnotes.com/v83n2/a6.pdf",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "Lecture notice or memorial item, no cultivar-level FruitFacts data from cover-level triage"
+                    ]
+                }
+            ]
+        },
+        {
             id: "fruit-notes-v83n4-fall-2018",
             status: "triaged",
             title: "Fruit Notes Volume 83, Number 4: Fall 2018",
@@ -86,6 +163,82 @@
                     status: "do_not_encode",
                     notes: [
                         "Obituary, no cultivar-level FruitFacts data"
+                    ]
+                }
+            ]
+        },
+        {
+            id: "fruit-notes-v84n1-winter-2019",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 84, Number 1: Winter 2019",
+            reference_category: "fruit-notes-v84n1-winter-2019",
+            issue_url: "http://umassfruitnotes.com/v84n1/FN841.pdf",
+            cover_url: "http://umassfruitnotes.com/v84n1/Cover841.html",
+            published: "Winter 2019",
+            accessed: "Jul 2026",
+            articles: [
+                {
+                    article_number: "a1",
+                    title: "Managing Plum Curculio Using an Attract-and-kill Approach: 2018 On-farm Research Results",
+                    url: "http://www.umassfruitnotes.com/v84n1/a1.pdf",
+                    status: "do_not_encode",
+                    family: "crop-management",
+                    notes: [
+                        "Pest management article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a2",
+                    title: "Assessment of One Year of Growth in the New Jersey Hard Cider Variety Trial",
+                    url: "http://www.umassfruitnotes.com/v84n1/a2.pdf",
+                    status: "triage",
+                    crops: ["Apple"],
+                    family: "trial-evaluation",
+                    notes: [
+                        "Potential cider apple cultivar trial source; should be reviewed before skipping"
+                    ]
+                },
+                {
+                    article_number: "a3",
+                    title: "Entomopathogenic Nematodes Are Effective at Killing Plum Curculio Larvae in the Soil",
+                    url: "http://www.umassfruitnotes.com/v84n1/a3.pdf",
+                    status: "do_not_encode",
+                    family: "crop-management",
+                    notes: [
+                        "Pest management article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a4",
+                    title: "Fruit Quality Characteristics of New Peach and Nectarine Varieties: Selena and Silverglo",
+                    url: "http://www.umassfruitnotes.com/v84n1/a4.pdf",
+                    status: "encoded",
+                    crops: ["Peach", "Nectarine"],
+                    family: "trial-evaluation",
+                    reference_path:
+                        "plant_database/references/New Jersey/Fruit Notes- Selena and Silverglo Peach and Nectarine Fruit Quality.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_selena_silverglo_fruit_quality_2019.json"
+                },
+                {
+                    article_number: "a5",
+                    title: "Five Methods of Crop Thinning in Pinot Noir and Their Effects on Fruit Composition and Wine Quality",
+                    url: "http://www.umassfruitnotes.com/v84n1/a5.pdf",
+                    status: "do_not_encode",
+                    crops: ["Grape"],
+                    family: "crop-management",
+                    notes: [
+                        "Crop-thinning study for one wine-grape cultivar, not a cultivar comparison source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a6",
+                    title: "2018 Northern New Jersey Fruit IPM Report",
+                    url: "http://www.umassfruitnotes.com/v84n1/a6.pdf",
+                    status: "do_not_encode",
+                    family: "crop-management",
+                    notes: [
+                        "IPM report, not a cultivar source from cover-level triage"
                     ]
                 }
             ]
@@ -214,12 +367,13 @@
                     article_number: "a4",
                     title: "Suggested New Apple Variety: Crimson Gold (Svatava Cv.)",
                     url: "http://www.umassfruitnotes.com/v84n4/a4.pdf",
-                    status: "triage",
+                    status: "encoded",
                     crops: ["Apple"],
                     family: "release-or-update",
-                    notes: [
-                        "Likely useful cultivar release/profile article; should be encoded in a later pass"
-                    ]
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Crimson Gold Apple Trial Observations.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_crimson_gold_apple_release_2019.json"
                 },
                 {
                     article_number: "a5",
@@ -339,6 +493,72 @@
                     family: "rootstock-trial",
                     notes: [
                         "Likely useful, but needs a rootstock import shape before encoding"
+                    ]
+                }
+            ]
+        },
+        {
+            id: "fruit-notes-v87n1-winter-2022",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 87, Number 1: Winter 2022",
+            reference_category: "fruit-notes-v87n1-winter-2022",
+            issue_url: "http://umassfruitnotes.com/v87n1/FN871.pdf",
+            cover_url: "http://umassfruitnotes.com/v87n1/Cover871.html",
+            published: "Winter 2022",
+            accessed: "Jul 2026",
+            articles: [
+                {
+                    article_number: "a1",
+                    title: "Massachusetts Fruit IPM Report, 2021",
+                    url: "http://www.umassfruitnotes.com/v87n1/a1.pdf",
+                    status: "do_not_encode",
+                    family: "crop-management",
+                    notes: [
+                        "IPM report, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a2",
+                    title: "RubyRushTM - New Apple Cultivar Release from Rutgers University and Adams County Nursery",
+                    url: "http://www.umassfruitnotes.com/v87n1/a2.pdf",
+                    status: "encoded",
+                    crops: ["Apple"],
+                    family: "release-or-update",
+                    reference_path:
+                        "plant_database/references/New Jersey/Fruit Notes- RubyRush Apple Release.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_rubyrush_apple_release_2022.json"
+                },
+                {
+                    article_number: "a3",
+                    title: "Can Entomopathogenic Nematodes Applied Against Plum Curculio Larvae Survive the Winter in New England?",
+                    url: "http://www.umassfruitnotes.com/v87n1/a3.pdf",
+                    status: "do_not_encode",
+                    family: "crop-management",
+                    notes: [
+                        "Pest management article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a4",
+                    title: "Early Application of Chemical Thinners Should be Revisited",
+                    url: "http://www.umassfruitnotes.com/v87n1/a4.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Chemical thinning article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a5",
+                    title: "AccedeTM Experimental Use Permit in Massachusetts in 2021 (and what to expect in 2022)",
+                    url: "http://www.umassfruitnotes.com/v87n1/a5.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Thinning product permit article, not a cultivar source from cover-level triage"
                     ]
                 }
             ]
