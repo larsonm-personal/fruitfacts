@@ -247,12 +247,16 @@
                     article_number: "p3b",
                     title: "Strawberry Varieties in 1952",
                     url: "https://archive.org/details/fruitnotes5055univ/page/leaf179/mode/1up",
-                    status: "queued",
+                    status: "encoded",
                     crops: ["Strawberry"],
                     family: "trial-evaluation",
                     candidate_id: "fruit-notes-archive-strawberry-varieties-in-1952",
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Strawberry Varieties in 1952.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_archive_strawberry_varieties_1952.json",
                     notes: [
-                        "Visually located on leaves 179, 182, and 183; separate import should review the yield and harvest-season tables"
+                        "Encoded as reviewed static rows from the 1952 replicated-yield table, single-plot notes, and 1950-1952 harvest-season table on leaves 179, 182, and 183"
                     ]
                 },
                 {

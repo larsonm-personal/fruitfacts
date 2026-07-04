@@ -6440,27 +6440,34 @@
         },
         {
             id: "fruit-notes-archive-strawberry-varieties-in-1952",
-            status: "new",
+            status: "encoded",
             priority: "medium",
             title: "Strawberry varieties in 1952",
             institution: "Fruit Notes",
             region: "Massachusetts",
             crops: ["Strawberry"],
+            published: "February 15, 1953",
             source_type: "archive cultivar observation article",
             landing_url: "http://umassfruitnotes.com/archive/index.html",
             download_url: "https://archive.org/download/fruitnotes5055univ/fruitnotes5055univ.pdf",
+            source_page_url:
+                "https://archive.org/details/fruitnotes5055univ/page/leaf179/mode/1up",
             discovered: "2026-07-02",
             discovered_by: "UMass Fruit Notes archive TOC survey pass 3",
             value_summary:
                 "Massachusetts observations on strawberry varieties in 1952",
-            asset_decision: "locate in archive scan and review before import",
+            asset_decision:
+                "encoded after OCR review and visual review of Archive.org leaves 179, 182, and 183; source PDF not added to DVC",
             proposed_reference_path:
                 "plant_database/references/Massachusetts/Fruit Notes- Strawberry Varieties in 1952.json5",
             duplicate_check:
-                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+                "Encoded as a new JSON5 reference; no existing reference for this archive TOC title was found before import",
             notes: [
-                "Archive TOC entry: Volume 18, Feb. 1953",
-                "Article is inside the 1950-1955 Internet Archive scan"
+                "Archive TOC entry: Volume 18, February 15, 1953",
+                "Article is inside the 1950-1955 Internet Archive scan",
+                "Extraction config: helper_scripts/extraction_configs/fruit_notes_archive_strawberry_varieties_1952.json",
+                "Manifest entry: fruit_notes_archive_strawberry_varieties_1952",
+                "Reference categories: fruit-notes and fruit-notes-v18-february-1953"
             ]
         },
         {

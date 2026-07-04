@@ -417,6 +417,10 @@
             "config": "extraction_configs/fruit_notes_archive_newer_pear_varieties_1953.json"
         },
         {
+            "id": "fruit_notes_archive_strawberry_varieties_1952",
+            "config": "extraction_configs/fruit_notes_archive_strawberry_varieties_1952.json"
+        },
+        {
             "id": "fruit_notes_archive_hardy_peaches_massachusetts_1953",
             "config": "extraction_configs/fruit_notes_archive_hardy_peaches_massachusetts_1953.json"
         },

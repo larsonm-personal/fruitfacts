@@ -1,0 +1,139 @@
+{
+  "source": {
+    "kind": "static"
+  },
+  "reference_fields": [
+    ["title", "Strawberry Varieties in 1952"],
+    ["author", "A. P. French"],
+    ["description", "Fruit Notes Volume 18, February 15, 1953 archive article summarizing 1952 strawberry variety trials at Amherst, Massachusetts"],
+    ["url", "https://archive.org/details/fruitnotes5055univ/page/leaf179/mode/1up"],
+    ["published", "February 15, 1953"],
+    ["accessed", "Jul 2026"],
+    ["type", "archive cultivar observation and harvest-season article"],
+    ["reference_categories", ["fruit-notes", "fruit-notes-v18-february-1953"]]
+  ],
+  "locations": [
+    {
+      "name": "Amherst, Massachusetts",
+      "latitude": 42.3732,
+      "longitude": -72.5199
+    }
+  ],
+  "categories": [
+    {
+      "name": "Massachusetts strawberry variety observations from Fruit Notes 1952",
+      "description": "Fruit Notes reports replicated and single-plot strawberry variety observations from Amherst in 1952, including yield comparisons, fruit quality notes, red stele considerations, and 1950-1952 harvest timing"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "static_rows",
+      "plant_type": "Strawberry",
+      "category": "Massachusetts strawberry variety observations from Fruit Notes 1952",
+      "harvest_time_unparsed": {"row_key": "harvest_time"},
+      "record_fields": [["AKA", {"row_key": "aka"}]],
+      "description_key": "description",
+      "rows": [
+        {
+          "name": "Fairland",
+          "harvest_time": "June 12 to July 6",
+          "description": "Fruit Notes reports Fairland as the top yielding replicated strawberry variety in 1952 at Amherst, with 745.25 ounces per plot and 10,305 calculated quarts per acre. Source notes that Fairland and Robinson had been among the four highest yielding varieties over the past three years, and that Fairland helped fill the season where red stele was a problem"
+        },
+        {
+          "name": "Erie",
+          "harvest_time": "June 13 to July 5",
+          "description": "Fruit Notes reports Erie at 729.50 ounces per plot and 10,089 calculated quarts per acre in its first replicated test year at Amherst. Source notes attractive berries of fairly good quality, but says Erie was as soft as Howard, had a light colored center, lay mostly on the ground, rotted badly, and was not known to resist red stele"
+        },
+        {
+          "name": "Great Bay",
+          "harvest_time": "June 16 to July 6",
+          "description": "Fruit Notes reports Great Bay at 715.25 ounces per plot and 9,890 calculated quarts per acre in 1952, and says it had been among the four highest yielding replicated varieties during the two years it had been in those plots. Source cautions that the berries were too rough to be attractive and only fair in quality"
+        },
+        {
+          "name": "Robinson",
+          "harvest_time": "June 17 to July 6",
+          "description": "Fruit Notes reports Robinson at 706.75 ounces per plot and 9,774 calculated quarts per acre in 1952. Source notes that Robinson and Fairland had been among the four highest yielding varieties over the past three years, and calls Robinson the latest high producer tested so far despite rather inferior quality and softness"
+        },
+        {
+          "name": "Catskill",
+          "harvest_time": "June 12 to July 6",
+          "description": "Fruit Notes reports Catskill at 641.75 ounces per plot and 8,875 calculated quarts per acre in 1952. Source notes that Catskill continued to hold its relative position in the replicated tests and lists it among the best quality varieties in the article"
+        },
+        {
+          "name": "Temple",
+          "harvest_time": "June 12 to July 6",
+          "description": "Fruit Notes reports Temple at 634.00 ounces per plot and 8,767 calculated quarts per acre in 1952. Source notes that Temple continued to hold its relative position, lists it among the best quality varieties, and says it helped fill the season where red stele was a problem"
+        },
+        {
+          "name": "Sparkle",
+          "harvest_time": "June 12 to July 6",
+          "description": "Fruit Notes reports Sparkle at 487.75 ounces per plot and 6,745 calculated quarts per acre in 1952. Source notes that Sparkle had been among the four highest yielding varieties in 1950 and 1951 but did poorly in 1952, and still lists it among the best quality varieties and useful where red stele was a problem"
+        },
+        {
+          "name": "Howard",
+          "aka": ["Premier"],
+          "harvest_time": "June 11 to July 5",
+          "description": "Fruit Notes reports Howard, named in the source as Howard (Premier), at 433.50 ounces per plot and 5,996 calculated quarts per acre in 1952. Source treats Howard as the early-berry benchmark and says none of the newer varieties showed promise of replacing it as an early berry"
+        },
+        {
+          "name": "Valentine",
+          "harvest_time": "June 12 to July 3",
+          "description": "Fruit Notes includes Valentine in the 1950-1952 harvest-season table and says Valentine produced not more than two-thirds as much fruit as Howard in single-plot trial and would be discontinued in future trials"
+        },
+        {
+          "name": "Van Rouge",
+          "harvest_time": "June 12 to July 3",
+          "description": "Fruit Notes includes Van Rouge in the 1950-1952 harvest-season table and says Van Rouge produced not more than two-thirds as much fruit as Howard in single-plot trial and would be discontinued in future trials"
+        },
+        {
+          "name": "Redcrop",
+          "harvest_time": "June 13 to July 4",
+          "description": "Fruit Notes includes Redcrop in the 1950-1952 harvest-season table and says it was among the single-plot varieties ranging from about Catskill down to Howard in productiveness. Source says Redcrop was being continued chiefly because of its resistance to red stele disease"
+        },
+        {
+          "name": "Elgin",
+          "harvest_time": "June 22 to July 7",
+          "description": "Fruit Notes includes Elgin in the 1950-1952 harvest-season table and says Elgin produced not more than two-thirds as much fruit as Howard in single-plot trial and would be discontinued in future trials"
+        },
+        {
+          "name": "Pathfinder",
+          "harvest_time": "June 10 to July 2",
+          "description": "Fruit Notes lists Pathfinder among varieties fruited only in 1951 and 1952 and says Pathfinder helped fill the season where red stele was a problem"
+        },
+        {
+          "name": "Eden",
+          "harvest_time": "June 12 to July 1",
+          "description": "Fruit Notes lists Eden among varieties fruited only in 1951 and 1952, says it ranked among the single-plot varieties from about Catskill down to Howard in productiveness, and notes that it was not outstanding in 1952"
+        },
+        {
+          "name": "Vermilion",
+          "harvest_time": "June 12 to July 1",
+          "description": "Fruit Notes lists Vermilion among varieties fruited only in 1951 and 1952 and among the best quality varieties in the article. Source says Vermilion looked promising in 1951 but had misfortune during the 1952 growing season, making its yield record worthless"
+        },
+        {
+          "name": "Aberdeen",
+          "harvest_time": "June 13 to July 2",
+          "description": "Fruit Notes lists Aberdeen among varieties fruited only in 1951 and 1952 in the harvest-season table"
+        },
+        {
+          "name": "Beatrice",
+          "harvest_time": "between Temple and Sparkle in season",
+          "description": "Fruit Notes says Beatrice first fruited in 1952, appeared to be somewhere between Temple and Sparkle in season, and was one of the single-plot varieties ranging from about Catskill down to Howard in productiveness. Source notes Beatrice was quite soft and only fair quality"
+        },
+        {
+          "name": "Arrowhead",
+          "harvest_time": "between Temple and Sparkle in season",
+          "description": "Fruit Notes says Arrowhead first fruited in 1952, appeared to be somewhere between Temple and Sparkle in season, and was one of the single-plot varieties ranging from about Catskill down to Howard in productiveness. Source describes Arrowhead as rather small, unattractive, and quite tart"
+        },
+        {
+          "name": "Fairpeake",
+          "description": "Fruit Notes says Fairpeake produced not more than two-thirds as much fruit as Howard in single-plot trial and would be discontinued in future trials"
+        },
+        {
+          "name": "Empire",
+          "description": "Fruit Notes says Empire had looked promising in 1951 but met with misfortune during the 1952 growing season, making its yield record worthless"
+        }
+      ]
+    }
+  ]
+}
