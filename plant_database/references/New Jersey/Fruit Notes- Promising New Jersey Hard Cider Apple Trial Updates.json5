@@ -6,6 +6,7 @@
     published: "Fall 2018",
     accessed: "Jul 2026",
     type: "journal article test",
+    reference_categories: ["fruit-notes", "fruit-notes-v83n4-fall-2018"],
     locations: [
         {
             name: "Rutgers Snyder Research and Extension Farm, Pittstown, New Jersey",

@@ -666,6 +666,51 @@ fn test_format_path() {
 }
 
 #[test]
+fn test_collection_json_reference_categories() {
+    let collection: super::CollectionJson = json5::from_str(
+        r#"{
+            title: "Fruit Notes test",
+            type: "journal article test",
+            reference_categories: ["fruit-notes", "fruit-notes-v85n2-spring-2020"],
+            locations: [],
+            plants: [],
+        }"#,
+    )
+    .unwrap();
+
+    assert_eq!(
+        collection.reference_categories.unwrap(),
+        vec![
+            "fruit-notes".to_string(),
+            "fruit-notes-v85n2-spring-2020".to_string()
+        ]
+    );
+}
+
+#[test]
+fn test_fruit_notes_reference_files_have_reference_categories() {
+    let database_dir = get_database_dir().unwrap();
+    let cases = [
+        (
+            "references/Massachusetts/Fruit Notes- Selected White Heirloom Grape Varieties for the Northeast.json5",
+            "fruit-notes-v83n4-fall-2018",
+        ),
+        (
+            "references/Massachusetts/Fruit Notes- Selected Minnesota White Grape Varieties for the Northeast.json5",
+            "fruit-notes-v85n2-spring-2020",
+        ),
+    ];
+
+    for (relative_path, issue_category) in cases {
+        let contents = std::fs::read_to_string(database_dir.join(relative_path)).unwrap();
+        let collection: super::CollectionJson = json5::from_str(&contents).unwrap();
+        let reference_categories = collection.reference_categories.unwrap();
+        assert!(reference_categories.contains(&"fruit-notes".to_string()));
+        assert!(reference_categories.contains(&issue_category.to_string()));
+    }
+}
+
+#[test]
 fn test_base_plant_notoriety_calc() {
     assert_eq!(base_plant_notoriety_calc(&BasePlantNotorietyInput {
         notoriety_highest_collection_score: Some(50.0),

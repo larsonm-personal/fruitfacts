@@ -7,6 +7,7 @@ import React from 'react';
 let links = [
   { name: 'locations', href: '/dirs/' },
   { name: 'plants', href: '/plants' },
+  { name: 'fruit notes', href: '/reference-categories/fruit-notes' },
   {
     name: 'US patents',
     href: '/search?searchType=base&patents=true&page=1&perPage=50&orderBy=patent_expiration'
@@ -57,13 +58,17 @@ export default function Home({ user, setUser, contributingLinks }) {
             open={open}
             title={
               <React.Fragment>
-                <a href={`${process.env.NEXT_PUBLIC_GITHUB_HOMEPAGE}`}>fruitfacts on github</a>
+                <a href={`${process.env.NEXT_PUBLIC_GITHUB_HOMEPAGE}`}>
+                  fruitfacts on github
+                </a>
                 <ul className="list-disc">
                   {contributingLinks && (
                     <>
                       {contributingLinks.map((link, index) => (
                         <li key={index}>
-                          <a href={`${process.env.NEXT_PUBLIC_GITHUB_BASE}${link.link}`}>
+                          <a
+                            href={`${process.env.NEXT_PUBLIC_GITHUB_BASE}${link.link}`}
+                          >
                             {link.description}
                           </a>
                         </li>

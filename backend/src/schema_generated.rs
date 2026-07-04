@@ -31,6 +31,14 @@ table! {
 }
 
 table! {
+    collection_categories (id) {
+        id -> Integer,
+        collection_id -> Integer,
+        category -> Text,
+    }
+}
+
+table! {
     collection_items (id) {
         id -> Integer,
         collection_id -> Nullable<Integer>,
@@ -152,8 +160,11 @@ table! {
     }
 }
 
+joinable!(collection_categories -> collections (collection_id));
+
 allow_tables_to_appear_in_same_query!(
     base_plants,
+    collection_categories,
     collection_items,
     collections,
     facts,

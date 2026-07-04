@@ -1,0 +1,116 @@
+{
+  "source": {
+    "kind": "pdf",
+    "url": "http://www.umassfruitnotes.com/v85n2/a5.pdf",
+    "layout": false,
+    "line_text": true
+  },
+  "reference_fields": [
+    ["title", "Selected Minnesota White Grape Varieties for the Northeast"],
+    ["author", "J. Stephen Casscles, Tom Plocher, and Todd Trzaskos"],
+    ["description", "Fruit Notes Volume 85, Number 2, Spring 2020 article describing Minnesota white cool-climate grape varieties for Northeastern growers and winemakers"],
+    ["url", "http://www.umassfruitnotes.com/v85n2/a5.pdf"],
+    ["published", "Spring 2020"],
+    ["accessed", "Jul 2026"],
+    ["type", "journal article test"],
+    ["reference_categories", ["fruit-notes", "fruit-notes-v85n2-spring-2020"]]
+  ],
+  "locations": [
+    {
+      "name": "University of Massachusetts Amherst Extension, Amherst, Massachusetts",
+      "latitude": 42.3912,
+      "longitude": -72.5267
+    }
+  ],
+  "categories": [
+    {
+      "name": "Minnesota white grape varieties for the Northeast",
+      "description": "Casscles, Plocher, and Trzaskos profile these Minnesota white cool-climate grapes as cold hardy or very cold hardy varieties generally able to survive in most parts of the Northeast, with wine-production notes for regional growers"
+    }
+  ],
+  "name_overrides": {
+    "Frontenac Blanc": {
+      "name": "Frontenac blanc",
+      "aka": ["Frontenac Blanc"]
+    },
+    "Frontenac Gris": {
+      "name": "Frontenac gris",
+      "aka": ["Frontenac Gris"]
+    }
+  },
+  "extractors": [
+    {
+      "kind": "pdf_known_heading_entries",
+      "section_start": "La Crescent",
+      "section_end": "This article is based",
+      "entry_names": [
+        "La Crescent",
+        "La Crosse",
+        "Frontenac Blanc / Frontenac Gris",
+        "Frontenac Gris",
+        "Frontenac Blanc",
+        "Itasca",
+        "St. Pepin",
+        "Brianna",
+        "Louise Swenson",
+        "Prairie Star",
+        "Swenson White"
+      ],
+      "sort_by_entry_names": true,
+      "skip_names": ["Frontenac Blanc / Frontenac Gris"],
+      "skip_line_patterns": [
+        "^Fruit Notes, Volume",
+        "^\\d+$",
+        " photo\\.$",
+        "^Frontenac Blanc\\.$",
+        "^Louise Swenson\\.$"
+      ],
+      "plant_type": "Grape",
+      "category": "Minnesota white grape varieties for the Northeast",
+      "description_key": "description",
+      "harvest_time_unparsed": {"row_key": "harvest_time"},
+      "row_overrides": {
+        "La Crescent": {
+          "harvest_time": "late early to mid-season",
+          "description": "Casscles, Plocher, and Trzaskos describe La Crescent as a University of Minnesota 2002 St. Pepin seedling that is easy to grow, moderate to vigorous, somewhat resistant to fungus diseases, and able to make moderate yields on lighter soils or heavier yields on richer soils. Source notes: relatively early bud break with secondary crop potential after late frost, about 24 Brix, firm to high acid, floral apricot-driven wines with apple, peach, tropical fruit, pineapple, mango, and honey notes, and dry to semi-sweet wine styles"
+        },
+        "La Crosse": {
+          "harvest_time": "mid-season, a bit before Seyval Blanc and about two weeks after St. Pepin",
+          "description": "Casscles, Plocher, and Trzaskos describe La Crosse as a sibling of St. Pepin with Seyval Blanc and Rosette heritage. Source notes: moderately vigorous to vigorous and productive vines, solid fungus disease resistance but susceptibility to black rot and bunch rot, mid-season bud break with secondary crop potential, limited heat-unit fit in colder New England and Upstate New York, better fit in southern coastal New England, the Mid-Hudson Valley, and south to New Jersey, and balanced white wines with pear, apricot, melon, grapefruit, citrus, floral, Muscat, and spice notes"
+        },
+        "Frontenac Gris": {
+          "harvest_time": "late mid-season to late, about one week after Baco Noir",
+          "description": "Casscles, Plocher, and Trzaskos describe Frontenac Gris as the amber mutant of Frontenac Noir named by the University of Minnesota in 2003. Source notes: similar viticultural traits to Frontenac Noir, slightly better fungus disease resistance, high sugars and high acidity, and fruity semi-dry white to copper-colored wines with peach, apricot, pineapple, honey, grapefruit, and tropical-fruit aromas"
+        },
+        "Frontenac Blanc": {
+          "harvest_time": "slightly earlier than Frontenac Gris; the Frontenac family ripens late mid-season to late, about one week after Baco Noir",
+          "description": "Casscles, Plocher, and Trzaskos describe Frontenac Blanc as a mutant of Frontenac Gris found in Quebec in 2005. Source notes: similar field behavior to Frontenac Noir and Frontenac Gris but slightly earlier ripening, high vigor and productivity, good fungus disease resistance, high acids, and wines with apricot, peach, pome-fruit, stone-fruit, and melon notes that are often made semi-dry or balanced through malolactic fermentation or blending"
+        },
+        "Itasca": {
+          "harvest_time": "mid- to late-mid-season",
+          "description": "Casscles, Plocher, and Trzaskos describe Itasca as a University of Minnesota 2017 Frontenac Gris x MN 1234 white wine grape. Source notes: very cold hardy, good fungus disease resistance, productive, vigorous but manageable upright growth, 24 to 27 Brix, lower and more manageable acids than some Minnesota whites, and dry-wine potential with pear, melon, gooseberry, apple, honey, violet, mineral, and floral notes"
+        },
+        "St. Pepin": {
+          "harvest_time": "early mid-season, ten days to two weeks before La Crosse",
+          "description": "Casscles, Plocher, and Trzaskos describe St. Pepin as an early Elmer Swenson hybrid introduced in 1983, a sibling of La Crosse, and the seed parent of La Crescent. Source notes: moderately to very vigorous vines with moderate to good productivity, somewhat open canopy, some resistance to most fungus diseases but susceptibility to powdery mildew, female flowers requiring nearby compatible grapes for fruit set, 20 to 24 Brix, relatively low balanced acids, and fruitier Riesling-like wine character"
+        },
+        "Brianna": {
+          "harvest_time": "early mid-season",
+          "description": "Casscles, Plocher, and Trzaskos describe Brianna as an Elmer Swenson selection from 1989 with table-grape and winemaking uses. Source notes: medium to high vigor, moderate resistance to most fungus diseases but weaker resistance to black rot and botrytis, possible crown gall susceptibility, sulfur tolerance, tolerance of hot and cold extremes, secondary crop potential after late spring frost, green-gold thick-skinned berries, semi-sweet pineapple and tropical wine character, drier-wine grapefruit, banana, and mango notes, and value for blending and dessert wines"
+        },
+        "Louise Swenson": {
+          "harvest_time": "early mid-season",
+          "description": "Casscles, Plocher, and Trzaskos describe Louise Swenson as an Elmer Swenson white grape introduced in 2001 with help from Tom Plocher and Bob Parke. Source notes: medium vigor, good fungus disease resistance with possible anthracnose susceptibility, sensitivity to sulfur, moderate production, dislike of droughty or light sandy soils, late bud break that helps avoid spring frost, easy field management, and soft balanced wines with pear and honey aromas that can blend well with Prairie Star"
+        },
+        "Prairie Star": {
+          "harvest_time": "mid-season, around the same time as Baco Noir or a bit earlier",
+          "description": "Casscles, Plocher, and Trzaskos describe Prairie Star as an Elmer Swenson selection introduced in 2001 with help from Tom Plocher and Bob Parke. Source notes: vigorous semi-upright vines, general fungus disease resistance with moderate resistance to black rot and anthracnose, possible poor fruit set, wind-sensitive young shoots, better production on heavier soils or when grafted, 20 to 22 Brix with proportionate acid, and neutral to somewhat floral wines with body, mouthfeel, and finish useful for blending"
+        },
+        "Swenson White": {
+          "harvest_time": "late mid-season to late",
+          "description": "Casscles, Plocher, and Trzaskos describe Swenson White as an Elmer Swenson white grape introduced in 1994. Source notes: medium to large loose to well-filled clusters, large light-green berries with some yellow, thick skins that allow late-harvest or ice-wine hang time and reduce bird and insect damage, good fungus disease resistance except some susceptibility to downy and powdery mildew, healthy growth, mid-season bud break with small secondary crop potential, possible need for cluster thinning, sugars up to about 22 Brix, moderate acidity, and floral St. Pepin-like wines with substantial fruit and mild labrusca elements"
+        }
+      }
+    }
+  ]
+}

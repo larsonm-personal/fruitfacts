@@ -10,6 +10,11 @@ reference unit.
 Use `ai_tool_plan_files/tasks/fruit_notes_issue_index.json5` as the working
 index.
 
+Use `ai_tool_plan_files/tasks/fruit_notes_category_index.json5` as the shared
+classification and parser-profile index. The issue index records what exists;
+the category index records whether a family of articles should be encoded and
+which parser shape to try first.
+
 Record each issue with:
 
 - `id`: `fruit-notes-v{volume}n{number}-{season-or-year}`
@@ -38,6 +43,13 @@ Use one JSON5 reference per cultivar-rich article:
 
 Do not make one broad JSON5 file for a whole issue unless the issue itself is a
 single coherent source.
+
+Tag every encoded Fruit Notes article reference with `reference_categories`.
+Use `fruit-notes` plus one issue label, for example:
+
+```json5
+reference_categories: ["fruit-notes", "fruit-notes-v85n2-spring-2020"],
+```
 
 ## Encoding Rules
 
@@ -71,3 +83,12 @@ pdftotext -layout tmp\pdfs\a4.pdf tmp\pdfs\a4.txt
 
 If DVC is unavailable, do not add downloaded PDFs directly to git. Keep direct
 source URLs in JSON5 and note that the PDF asset was not archived in that pass.
+
+## Narrative Profile PDFs
+
+Some Fruit Notes cultivar-profile PDFs are born-digital two-column articles
+where `pdftotext -layout` preserves page appearance but tangles prose. For
+those, start with raw text and the `pdf_known_heading_entries` config parser.
+Configure known cultivar headings, bound the article with `section_start` and
+`section_end`, skip captions and page headers, and use reviewed `row_overrides`
+for final descriptions.

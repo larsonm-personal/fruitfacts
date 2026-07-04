@@ -126,6 +126,94 @@ pub fn get_collection_db(
     }
 }
 
+#[skip_serializing_none]
+#[derive(Serialize)]
+pub struct ReferenceCategoryCollection {
+    collection: Collection,
+    categories: Vec<String>,
+}
+
+#[skip_serializing_none]
+#[derive(Default, Serialize)]
+pub struct ReferenceCategoryReturn {
+    category: String,
+    collections: Vec<ReferenceCategoryCollection>,
+}
+
+pub fn get_reference_category_db(
+    db_conn: &mut SqliteConnection,
+    category: &str,
+) -> Result<ReferenceCategoryReturn, diesel::result::Error> {
+    let category_decoded = util::path_to_name(category);
+    let collection_ids = collection_categories::dsl::collection_categories
+        .select(collection_categories::collection_id)
+        .filter(collection_categories::category.eq(&category_decoded))
+        .load::<i32>(db_conn)?;
+
+    let matching_collections = collections::dsl::collections
+        .filter(collections::id.eq_any(collection_ids))
+        .order((collections::path.asc(), collections::filename.asc()))
+        .load::<Collection>(db_conn)?;
+
+    if matching_collections.is_empty() {
+        return Ok(ReferenceCategoryReturn {
+            category: category_decoded,
+            collections: vec![],
+        });
+    }
+
+    let category_rows = CollectionCategoryLabel::belonging_to(&matching_collections)
+        .load::<CollectionCategoryLabel>(db_conn)?
+        .grouped_by(&matching_collections);
+
+    let collections = matching_collections
+        .into_iter()
+        .zip(category_rows)
+        .map(|(collection, labels)| {
+            let mut categories: Vec<String> =
+                labels.into_iter().map(|label| label.category).collect();
+            categories.sort();
+            ReferenceCategoryCollection {
+                collection,
+                categories,
+            }
+        })
+        .collect();
+
+    Ok(ReferenceCategoryReturn {
+        category: category_decoded,
+        collections,
+    })
+}
+
+#[derive(Deserialize)]
+struct ReferenceCategoryPath {
+    category: String,
+}
+
+#[get("/api/reference_categories/{category:.*}")]
+async fn get_reference_category(
+    path: web::Path<ReferenceCategoryPath>,
+    pool: web::Data<DbPool>,
+) -> Result<HttpResponse, actix_web::Error> {
+    let output = web::block(move || {
+        let mut conn = pool.get().expect("couldn't get db connection from pool");
+        get_reference_category_db(&mut conn, &path.category)
+    })
+    .await
+    .unwrap();
+
+    let output = match output {
+        Ok(output) => output,
+        Err(e) => {
+            eprintln!("{}", e);
+            return Err(actix_web::error::ErrorInternalServerError(e));
+        }
+    };
+
+    Ok(HttpResponse::Ok().json(output))
+}
+
 fn collection_path_parts(path: &str) -> (String, String) {
     let path_decoded = util::path_to_name(path);
 

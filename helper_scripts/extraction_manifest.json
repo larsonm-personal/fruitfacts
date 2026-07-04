@@ -405,6 +405,14 @@
             "config": "extraction_configs/psu_stone_fruit_variety_selection.json"
         },
         {
+            "id": "fruit_notes_minnesota_white_grapes_2020",
+            "config": "extraction_configs/fruit_notes_minnesota_white_grapes_2020.json"
+        },
+        {
+            "id": "fruit_notes_minnesota_red_grapes_2020",
+            "config": "extraction_configs/fruit_notes_minnesota_red_grapes_2020.json"
+        },
+        {
             "id": "uidaho_apple_cultivars_eastern_idaho",
             "config": "extraction_configs/uidaho_apple_cultivars_eastern_idaho.json"
         },

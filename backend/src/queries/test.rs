@@ -1,6 +1,10 @@
 use super::collection_path_parts;
+use super::get_reference_category_db;
 use super::search::{distance_km_to_degrees, DistanceDegrees};
 use crate::queries::map::{latitude_normalize, locations_query_limit};
+use diesel::connection::SimpleConnection;
+use diesel::prelude::*;
+use diesel_migrations::MigrationHarness;
 
 #[test]
 fn test_latitude_normalize() {
@@ -78,5 +82,44 @@ fn test_collection_path_parts_preserves_decoded_collection_path() {
             "Fruit Notes- Selected Minnesota Cool Climate Red Grape Varieties for the Northeast"
                 .to_string()
         )
+    );
+}
+
+#[test]
+fn test_get_reference_category_db_returns_collections_and_labels() {
+    let mut db_conn = SqliteConnection::establish(":memory:").unwrap();
+    db_conn.run_pending_migrations(crate::MIGRATIONS).unwrap();
+
+    db_conn
+        .batch_execute(
+        r#"
+        INSERT INTO collections (
+            id, path, filename, notoriety_type, notoriety_score,
+            notoriety_score_explanation, ignore_for_nearby_searches, title, needs_help
+        ) VALUES
+            (1, 'Massachusetts/', 'Fruit Notes- A', 'journal article test', 10.0, 'test', 0, 'A', 0),
+            (2, 'Massachusetts/', 'Fruit Notes- B', 'journal article test', 10.0, 'test', 0, 'B', 0),
+            (3, 'Oregon/', 'Other Source', 'extension publication', 10.0, 'test', 0, 'Other', 0);
+
+        INSERT INTO collection_categories (collection_id, category) VALUES
+            (1, 'fruit-notes'),
+            (1, 'fruit-notes-v85n2-spring-2020'),
+            (2, 'fruit-notes'),
+            (2, 'fruit-notes-v83n4-fall-2018'),
+            (3, 'other-series');
+        "#,
+    )
+    .unwrap();
+
+    let output = get_reference_category_db(&mut db_conn, "fruit-notes").unwrap();
+
+    assert_eq!(output.collections.len(), 2);
+    assert_eq!(output.collections[0].collection.filename, "Fruit Notes- A");
+    assert_eq!(
+        output.collections[0].categories,
+        vec![
+            "fruit-notes".to_string(),
+            "fruit-notes-v85n2-spring-2020".to_string()
+        ]
     );
 }

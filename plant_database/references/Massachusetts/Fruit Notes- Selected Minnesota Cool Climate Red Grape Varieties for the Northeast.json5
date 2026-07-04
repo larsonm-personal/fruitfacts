@@ -1,38 +1,75 @@
 {
     title: "Selected Minnesota Cool Climate Red Grape Varieties for the Northeast",
     author: "J. Stephen Casscles, Tom Plocher, and Todd Trzaskos",
-    description: "Fruit Notes Volume 85, Number 2, Spring 2020 article on Minnesota cool climate red grape varieties for the Northeast",
+    description: "Fruit Notes Volume 85, Number 2, Spring 2020 article describing Minnesota red cool-climate grape varieties for Northeastern growers and winemakers",
     url: "http://www.umassfruitnotes.com/v85n2/a6.pdf",
-    accessed: "Dec 2021",
+    published: "Spring 2020",
+    accessed: "Jul 2026",
     type: "journal article test",
-    needs_help: true,
+    reference_categories: ["fruit-notes", "fruit-notes-v85n2-spring-2020"],
     locations: [
         {
-            name: "UMass Cold Springs (and others)",
-            latitude: 42.25372869986169,
-            longitude: -72.36020196473706
-        }
+            name: "University of Massachusetts Amherst Extension, Amherst, Massachusetts",
+            latitude: 42.3912,
+            longitude: -72.5267
+        },
+    ],
+    categories: [
+        {
+            name: "Minnesota cool climate red grape varieties for the Northeast",
+            description: "Casscles, Plocher, and Trzaskos profile these Minnesota red cool-climate grapes as cold hardy or very cold hardy varieties generally able to survive in most parts of the Northeast, with wine-production notes for regional growers"
+        },
     ],
     plants: [
-        // todo
-        // Frontenac Noir
-        // Marquette        University of Minnesota in 2006
-        // Sabrevois
-        // St. Croix 1978
-        // Petite Pearl ( T.P. 2-1-24)          2010
-        // Crimson Pearl (T.P. 2-1-17)      USPP30263  2015
-        // Verona (T.P. 1-1-3 4)            USPP30631  2015
-        // todo - add white grapes
-        // http://www.umassfruitnotes.com/v85n2/a5.pdf
-        // todo - in another doc - french white grapes
-        // http://www.umassfruitnotes.com/v84n4/a1.pdf
-        // and red french
-        // http://www.umassfruitnotes.com/v84n3/a5.pdf
-        // todo - new peaches - selena/silverglo
-        // http://www.umassfruitnotes.com/v84n1/a4.pdf
-        // briganine evelynn tiana
-        // http://www.umassfruitnotes.com/v83n2/a3.pdf
-        // clements 15-year peach trial
-        // http://www.umassfruitnotes.com/v83n1/a2.pdf
+        {
+            type: "Grape",
+            name: "Frontenac",
+            category: "Minnesota cool climate red grape varieties for the Northeast",
+            AKA: ["Frontenac noir"],
+            harvest_time_unparsed: "late mid-season to late, about one week after Baco Noir",
+            description: "Casscles, Plocher, and Trzaskos describe Frontenac Noir as the initial red Frontenac variant from MN 89 Riparia x Landot 4511, introduced by the University of Minnesota in 1996. Source notes: vigorous to very vigorous growth, consistent high productivity, good performance on most soils, loose to moderately loose clusters, mid-season bud break, good fungus disease resistance with only moderate black rot resistance, need for canopy and cluster management, 24 to 27 Brix or more, very high acidity, low tannin, and cellar uses including dry table wine, blush, rose, and port"
+        },
+        {
+            type: "Grape",
+            name: "Marquette",
+            category: "Minnesota cool climate red grape varieties for the Northeast",
+            harvest_time_unparsed: "mid-season, a few days before Frontenac",
+            description: "Casscles, Plocher, and Trzaskos describe Marquette as a University of Minnesota 2006 red wine grape with Pinot Noir as a grandparent. Source notes: very good resistance to standard fungus diseases with only moderate foliar phylloxera resistance, moderate to good cropping, somewhat early bud break with secondary crop potential, moderate vigor, open upright growth, small to medium clusters that usually do not need thinning, sugars above 25 Brix, high acid lower than Frontenac, ruby-red wines with cherry, black currant, black pepper, spice, berry, plum, and raspberry notes, and benefit from barrel aging and malolactic fermentation"
+        },
+        {
+            type: "Grape",
+            name: "Sabrevois",
+            category: "Minnesota cool climate red grape varieties for the Northeast",
+            harvest_time_unparsed: "early mid-season, about one week after St. Croix",
+            description: "Casscles, Plocher, and Trzaskos describe Sabrevois as a sister to St. Croix developed by Elmer Swenson in 1978 and later named by Gilles Benoit of Quebec. Source notes: hardier, more reliable, and more productive than St. Croix, vigorous upright then drooping growth, small to medium semi-loose clusters, high resistance to fungus diseases and anthracnose with preventive spraying still needed, possible phylloxera concern, sugars that rarely exceed 20 Brix, higher acid than St. Croix, rose or fuller red wine uses, and blending value with higher-sugar red grapes"
+        },
+        {
+            type: "Grape",
+            name: "St. Croix",
+            category: "Minnesota cool climate red grape varieties for the Northeast",
+            harvest_time_unparsed: "early to early mid-season, about one week before Sabrevois",
+            description: "Casscles, Plocher, and Trzaskos describe St. Croix as a Swenson sibling of Sabrevois with medium compact clusters and thin-skinned blue berries. Source notes: vigorous heavy vegetative growth, moderate productivity, moderate disease resistance with good black rot resistance, lower acid than Sabrevois, difficulty reaching 20 Brix, possible bird-damage risk because it ripens early, and light to medium red wines with soft tannin, leather, tobacco, cooked or jammy berries, black currant, and other dark-fruit flavors that are best used in blends"
+        },
+        {
+            type: "Grape",
+            name: "Petite Pearl",
+            category: "Minnesota cool climate red grape varieties for the Northeast",
+            harvest_time_unparsed: "later than Marquette but earlier than Frontenac; needs about 2,600 degree days",
+            description: "Casscles, Plocher, and Trzaskos describe Petite Pearl as Tom Plocher's MN 1094 x E.S. 4-7-26 cross from 1996, introduced in 2010. Source notes: small tight clusters, moderate vigor, open growth with low canopy maintenance on high cordon, good fruit exposure, good resistance to major fungus diseases under a standard spray program with extra Botrytis protection recommended for New England and the Middle Atlantic states, delayed bud break after Marquette, 22 to 24 Brix, low acidity, suitable tannin structure, dry-red wines with black currant, cherry, plum, forest-floor, star-anise, and almond notes, and common blending with Crimson Pearl or Marquette"
+        },
+        {
+            type: "Grape",
+            name: "Crimson Pearl",
+            category: "Minnesota cool climate red grape varieties for the Northeast",
+            harvest_time_unparsed: "about five days before Petite Pearl; needs about 2,500 degree days",
+            description: "Casscles, Plocher, and Trzaskos describe Crimson Pearl as a Petite Pearl sister introduced in 2015 and protected as USPP30,263. Source notes: medium long slightly loose clusters, moderate vigor, open growth, low canopy maintenance on high cordon, good fruit exposure, good resistance to major fungus diseases under a standard spray program with extra Phomopsis protection recommended for New England and the Middle Atlantic states, late bud break, 21 to 22 Brix, low acidity, softer fruit-forward dry wines with cherry, blackberry, and raspberry aromas, and rose-wine potential"
+        },
+        {
+            type: "Grape",
+            name: "Verona",
+            category: "Minnesota cool climate red grape varieties for the Northeast",
+            harvest_time_unparsed: "rather late, about ten days after Petite Pearl and shortly after Frontenac; needs about 2,700 degree days",
+            description: "Casscles, Plocher, and Trzaskos describe Verona as a Tom Plocher 1997 cross introduced in 2015 and protected as USPP30,631. Source notes: medium to large relatively compact clusters, medium to high vigor, more lateral growth and canopy management than Petite Pearl or Crimson Pearl, high-wire cordon production, good disease resistance under a standard spray program, possible berry splitting in very rainy harvest seasons, delayed bud break after Marquette, best fit for warmer Northeastern areas such as New Jersey, Pennsylvania, Connecticut, and the lower Hudson Valley, 22 to 23 Brix, low to moderate acidity, strong tannin structure, and fruit-forward wines with raspberry, blackberry, cocoa, and coffee notes"
+        },
     ]
 }

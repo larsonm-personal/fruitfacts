@@ -9,6 +9,7 @@
             id: "fruit-notes-v83n4-fall-2018",
             status: "triaged",
             title: "Fruit Notes Volume 83, Number 4: Fall 2018",
+            reference_category: "fruit-notes-v83n4-fall-2018",
             issue_url: "http://umassfruitnotes.com/v83n4/FN83-4.pdf",
             published: "Fall 2018",
             accessed: "Jul 2026",
@@ -85,6 +86,96 @@
                     status: "do_not_encode",
                     notes: [
                         "Obituary, no cultivar-level FruitFacts data"
+                    ]
+                }
+            ]
+        },
+        {
+            id: "fruit-notes-v85n2-spring-2020",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 85, Number 2: Spring 2020",
+            reference_category: "fruit-notes-v85n2-spring-2020",
+            issue_url: "http://umassfruitnotes.com/v85n2/FN85-2.pdf",
+            cover_url: "http://umassfruitnotes.com/v85n2/Cover852.html",
+            published: "Spring 2020",
+            accessed: "Jul 2026",
+            articles: [
+                {
+                    article_number: "a1",
+                    title: "Evaluation of Apple Varieties and Comments Made by Students in the Stockbridge School of Agriculture Deciduous Orchard Class",
+                    url: "http://www.umassfruitnotes.com/v85n2/a1.pdf",
+                    status: "triage",
+                    crops: ["Apple"],
+                    family: "trial-evaluation",
+                    notes: [
+                        "Cover table of contents suggests cultivar comments, so this should be reviewed before skipping"
+                    ]
+                },
+                {
+                    article_number: "a2",
+                    title: "Influence of Foliar Urea on Branching of Apple in Response to MaxCel Application at Bloom",
+                    url: "http://www.umassfruitnotes.com/v85n2/a2.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Plant-growth-regulator and nutrition article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a3",
+                    title: "Evaluation of a Grower-friendly Attract-and-kill Strategy for Apple Maggot Control in New England Apple Orchards",
+                    url: "http://www.umassfruitnotes.com/v85n2/a3.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Pest management article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a4",
+                    title: "Assessment of a Non-pheromonal Lure System for Attracting Adult Tortricid Moths",
+                    url: "http://www.umassfruitnotes.com/v85n2/a4.pdf",
+                    status: "do_not_encode",
+                    family: "crop-management",
+                    notes: [
+                        "Pest monitoring article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a5",
+                    title: "Selected Minnesota White Grape Varieties for the Northeast",
+                    url: "http://www.umassfruitnotes.com/v85n2/a5.pdf",
+                    status: "encoded",
+                    crops: ["Grape"],
+                    family: "cultivar-profile",
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Selected Minnesota White Grape Varieties for the Northeast.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_minnesota_white_grapes_2020.json"
+                },
+                {
+                    article_number: "a6",
+                    title: "Selected Minnesota Cool Climate Red Grape Varieties for the Northeast",
+                    url: "http://www.umassfruitnotes.com/v85n2/a6.pdf",
+                    status: "encoded",
+                    crops: ["Grape"],
+                    family: "cultivar-profile",
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Selected Minnesota Cool Climate Red Grape Varieties for the Northeast.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_minnesota_red_grapes_2020.json"
+                },
+                {
+                    article_number: "a7",
+                    title: "NC-140 Fuji and Honeycrisp Apple Rootstock Trials in New Jersey",
+                    url: "http://www.umassfruitnotes.com/v85n2/a7.pdf",
+                    status: "new",
+                    crops: ["Apple"],
+                    family: "rootstock-trial",
+                    notes: [
+                        "Likely useful, but needs a rootstock import shape before encoding"
                     ]
                 }
             ]

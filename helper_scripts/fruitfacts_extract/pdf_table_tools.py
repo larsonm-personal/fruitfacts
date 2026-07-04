@@ -270,6 +270,25 @@ def finish_catalog_row(row, extractor):
     return row
 
 
+def sort_rows_by_entry_names(rows, name_key, extractor):
+    if not extractor.get("sort_by_entry_names"):
+        return rows
+    order = {
+        name: index
+        for index, name in enumerate(extractor.get("entry_names", []))
+    }
+    return [
+        row
+        for _, row in sorted(
+            enumerate(rows),
+            key=lambda item: (
+                order.get(item[1].get(name_key), len(order)),
+                item[0],
+            ),
+        )
+    ]
+
+
 def catalog_entry_rows(text, extractor):
     lines = section_lines(text, extractor)
     rows = []
@@ -340,6 +359,60 @@ def catalog_entry_rows(text, extractor):
             append_value(current, description_key, line)
 
     skip_names = set(extractor.get("skip_names", []))
+    rows = sort_rows_by_entry_names(rows, name_key, extractor)
+    return [row for row in rows if row.get(name_key) not in skip_names]
+
+
+def known_heading_entry_name(line, extractor):
+    names = sorted(extractor.get("entry_names", []), key=len, reverse=True)
+    tail_pattern = extractor.get(
+        "heading_tail_pattern",
+        r"(?:\s*\(|,\s+|\s+(?:is|was|has|needs|ripens)\b)",
+    )
+    for name in names:
+        if line == name:
+            return name
+        if not line.startswith(name):
+            continue
+        tail = line[len(name) :]
+        if re.match(tail_pattern, tail):
+            return name
+    return None
+
+
+def known_heading_entry_rows(text, extractor):
+    lines = section_lines(text, extractor)
+    rows = []
+    current_context = initial_context(extractor)
+    current = None
+    name_key = extractor.get("name_key", "name")
+    description_key = extractor.get("description_key", "description")
+    skip_names = set(extractor.get("skip_names", []))
+
+    for line in lines:
+        line = apply_text_fixes_to_line(line, extractor.get("text_fixes", {}))
+        if line_matches_any(line, extractor.get("skip_line_patterns", [])):
+            continue
+
+        name = known_heading_entry_name(line, extractor)
+        if name and current and current.get(name_key) == name:
+            append_value(current, description_key, line)
+            continue
+        if name:
+            description = line[len(name) :].strip()
+            row = {
+                name_key: name,
+                description_key: description,
+            }
+            if current_context:
+                row.update(current_context)
+            rows.append(row)
+            current = row
+            continue
+        if current and extractor.get("append_continuation", True):
+            append_value(current, description_key, line)
+
+    rows = sort_rows_by_entry_names(rows, name_key, extractor)
     return [row for row in rows if row.get(name_key) not in skip_names]
 
 

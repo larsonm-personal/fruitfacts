@@ -2,9 +2,11 @@
     title: "Evaluation of Hard Cider Apple Varieties to Promote Hard Cider Industry Growth in New Jersey",
     author: "Megan Muehlbauer and Rebecca Magron, Rutgers University",
     url: "http://www.umassfruitnotes.com/v86n1/a7.pdf",
+    published: "Winter 2021",
     accessed: "Dec 2021",
     type: "journal article test",
     needs_help: true,
+    reference_categories: ["fruit-notes", "fruit-notes-v86n1-winter-2021"],
     locations: [
         {
             name: "Cream Ridge, NJ",

@@ -78,6 +78,7 @@ async fn main() -> std::io::Result<()> {
             // set up DB pool to be used with web::Data<Pool> extractor
             .app_data(actix_web::web::Data::new(pool.clone()))
             .service(queries::get_collections)
+            .service(queries::get_reference_category)
             .service(queries::get_recent_changes)
             .service(queries::get_fact)
             .service(queries::auth::get_auth_urls)

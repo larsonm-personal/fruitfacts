@@ -1,5 +1,6 @@
 use super::schema_generated::{
-    collection_items, collections, locations, user_oauth_entries, user_sessions,
+    collection_categories, collection_items, collections, locations, user_oauth_entries,
+    user_sessions,
 };
 use serde::{Deserialize, Serialize};
 use serde_with::skip_serializing_none;
@@ -167,6 +168,16 @@ pub struct Collection {
     pub reviewed: Option<String>,
     pub accessed: Option<String>,
     pub needs_help: i32,
+}
+
+#[skip_serializing_none]
+#[derive(Debug, Identifiable, Serialize, Queryable, Associations)]
+#[diesel(table_name = collection_categories)]
+#[diesel(belongs_to(Collection))]
+pub struct CollectionCategoryLabel {
+    pub id: i32,
+    pub collection_id: i32,
+    pub category: String,
 }
 
 #[skip_serializing_none]

@@ -5,6 +5,7 @@
     accessed: "Dec 2021",
     published: "Spring, 2014",
     type: "journal article test",
+    reference_categories: ["fruit-notes", "fruit-notes-v79n2-spring-2014"],
     found_citations: [
         "source_pdf=plant_database/references/New Jersey/NJ Maturity Standards for Asian Pear Harvest.pdf | cited_source=Asian Pear Cultivar Trial in New Jersey and Massachusetts, 2012. Winfred P. Cowgill Jr., Suzanne Sollner-Figler, Rebecca Magron, Jon M. Clements, Wesley R. Autio | url=http://www.horticulturalnews.org/92-1/a4.pdf | scanner_kind=visible_url_context | notes=Likely trial-style Asian pear cultivar data",
         "source_pdf=plant_database/references/New Jersey/NJ Maturity Standards for Asian Pear Harvest.pdf | cited_source=Asian Pear, An Alternative Crop for North East Fruit Growers | url=http://njsustainingfarms.rutgers.edu/asianpear.html | scanner_kind=visible_url_context | notes=Rutgers/NJ regional Asian pear source; current location may need lookup",

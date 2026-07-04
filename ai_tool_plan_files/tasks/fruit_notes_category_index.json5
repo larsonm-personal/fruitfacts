@@ -1,0 +1,125 @@
+{
+    notes: [
+        "Unified triage and extraction index for UMass Fruit Notes backlog passes",
+        "Use this file with fruit_notes_issue_index.json5: the issue index says what exists, and this file says how to classify and parse it",
+        "Prefer one FruitFacts reference per cultivar-rich article, not one reference per whole issue",
+        "Encoded article references should use reference_categories with fruit-notes plus the issue label from fruit_notes_issue_index.json5"
+    ],
+    article_families: [
+        {
+            id: "cultivar-profile",
+            action: "encode",
+            category_template: "{crop or cultivar group} for {region}",
+            applies_to_title_patterns: [
+                "Selected * Varieties for the Northeast",
+                "* Grape Varieties for the Northeast",
+                "* Apple Trial Updates"
+            ],
+            parser_profile: "born-digital-narrative-known-heading",
+            notes: [
+                "Often written as multi-page narrative cultivar profiles",
+                "Use reviewed descriptions rather than copied source paragraphs"
+            ]
+        },
+        {
+            id: "trial-evaluation",
+            action: "encode",
+            category_template: "{crop} evaluated at {site}",
+            parser_profile: "tables-or-static-reviewed-rows",
+            notes: [
+                "Use the actual trial site as a location when the article reports one",
+                "Leave needs_help when the article references more cultivars than it names"
+            ]
+        },
+        {
+            id: "rootstock-trial",
+            action: "revisit_later",
+            category_template: "{crop} rootstocks in {trial region}",
+            parser_profile: "tables-or-static-reviewed-rows",
+            notes: [
+                "Rootstock trials may be useful but need a reviewed import shape before batching",
+                "Track cultivar/rootstock combinations carefully so rootstocks do not become fruit cultivars"
+            ]
+        },
+        {
+            id: "release-or-update",
+            action: "encode",
+            category_template: "{crop} releases or updates from {program or region}",
+            parser_profile: "quoted-or-heading-release",
+            notes: [
+                "Use when an article introduces named cultivars or gives durable cultivar observations"
+            ]
+        },
+        {
+            id: "crop-management",
+            action: "do_not_encode",
+            notes: [
+                "Skip pruning, thinning, spraying, lure, pest, disease, and physiology articles unless they include cultivar-level observations"
+            ]
+        },
+        {
+            id: "industry-news",
+            action: "do_not_encode",
+            notes: [
+                "Skip obituaries, subscription notices, advertising, editorials, and meeting news"
+            ]
+        }
+    ],
+    parser_profiles: [
+        {
+            id: "born-digital-narrative-known-heading",
+            config_kind: "pdf_known_heading_entries",
+            source_settings: {
+                kind: "pdf",
+                layout: false,
+                line_text: true
+            },
+            required_config: [
+                "section_start",
+                "section_end",
+                "entry_names",
+                "sort_by_entry_names",
+                "skip_line_patterns",
+                "row_overrides"
+            ],
+            current_pilot_configs: [
+                "helper_scripts/extraction_configs/fruit_notes_minnesota_white_grapes_2020.json",
+                "helper_scripts/extraction_configs/fruit_notes_minnesota_red_grapes_2020.json"
+            ],
+            notes: [
+                "Use for two-column Fruit Notes PDFs where raw pdftotext preserves narrative flow better than layout text",
+                "The parser starts rows from configured headings and keeps repeated same-name paragraph starts as continuation text",
+                "Use row_overrides for reviewed summaries and harvest phrases so long raw article prose is not copied into references",
+                "Use sort_by_entry_names when raw extraction drifts around page images or column breaks"
+            ]
+        },
+        {
+            id: "layout-catalog",
+            config_kind: "pdf_catalog_entries",
+            source_settings: {
+                kind: "pdf",
+                layout: true,
+                layout_text: true
+            },
+            notes: [
+                "Use when layout-mode pdftotext keeps one cultivar per visible line or stable catalog-like entries",
+                "Prefer bounded sections and explicit entry_names for dense Fruit Notes issues"
+            ]
+        },
+        {
+            id: "tables-or-static-reviewed-rows",
+            config_kind: "html_table, pdf_fixed_width_table, or static_rows",
+            notes: [
+                "Use table parsers when row alignment is mechanically reliable",
+                "Use static_rows when useful observations are spread across narrative, tables, conclusions, and captions"
+            ]
+        },
+        {
+            id: "quoted-or-heading-release",
+            config_kind: "quoted_release_blocks or html_paragraph_sequences",
+            notes: [
+                "Use for cultivar release articles with quoted cultivar names or heading-plus-description records"
+            ]
+        }
+    ]
+}

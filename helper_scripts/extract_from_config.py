@@ -15,6 +15,7 @@ from fruitfacts_extract.pdf_tools import pdf_url_to_text
 from fruitfacts_extract.pdf_table_tools import fixed_width_table_rows
 from fruitfacts_extract.pdf_table_tools import catalog_entry_rows
 from fruitfacts_extract.pdf_table_tools import grouped_fixed_width_table_rows
+from fruitfacts_extract.pdf_table_tools import known_heading_entry_rows
 from fruitfacts_extract.pdf_table_tools import line_matches_any
 from fruitfacts_extract.pdf_table_tools import numbered_block_rows
 from fruitfacts_extract.pdf_table_tools import pdf_category_name_list_rows
@@ -1199,6 +1200,28 @@ def plants_from_pdf_catalog_entries(text, extractor, overrides, lookups):
     )
 
 
+def plants_from_pdf_known_heading_entries(text, extractor, overrides, lookups):
+    extractor = {
+        "name_key": "name",
+        "description_key": "description",
+        "category": {"row_key": "category"},
+        "plant_type": {"row_key": "plant_type"},
+        **extractor,
+    }
+    rows = known_heading_entry_rows(text, extractor)
+    rows = expanded_rows(rows, extractor)
+    rows = [row_text_fixes(row, extractor.get("row_text_fixes")) for row in rows]
+    rows = [row_overrides(row, extractor) for row in rows]
+    rows = skip_named_rows(rows, extractor["name_key"], extractor.get("skip_names", []))
+    rows = dedupe_rows(rows, extractor.get("dedupe_keys", []))
+    return plant_records_from_config_rows(
+        rows,
+        extractor,
+        overrides,
+        lookups,
+    )
+
+
 def plants_from_pdf_bullet_list(text, extractor, overrides, lookups):
     extractor = {
         "name_key": "name",
@@ -1841,6 +1864,7 @@ EXTRACTOR_HANDLERS = {
     "pdf_category_name_lists": plants_from_pdf_category_name_lists,
     "pdf_wrapped_name_lists": plants_from_pdf_wrapped_name_lists,
     "pdf_catalog_entries": plants_from_pdf_catalog_entries,
+    "pdf_known_heading_entries": plants_from_pdf_known_heading_entries,
     "pdf_bullet_list": plants_from_pdf_bullet_list,
     "pdf_quoted_entries": plants_from_pdf_quoted_entries,
     "pdf_named_rating_rows": plants_from_pdf_named_rating_rows,

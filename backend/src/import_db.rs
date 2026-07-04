@@ -15,6 +15,7 @@ mod util;
 use crate::git_info::GitModificationTimes;
 
 use super::schema_generated::base_plants;
+use super::schema_generated::collection_categories;
 use super::schema_generated::collection_items;
 use super::schema_generated::collections;
 use super::schema_generated::facts;
@@ -75,6 +76,7 @@ struct CollectionJson {
     ignore_unless_in_others: Option<bool>, // option to skip creating entries based on this file unless they're also in another file
     ignore_for_nearby_searches: Option<bool>, // if this has an arbitrary location like Washington, DC for the us patent list, ignore it so it doesn't appear "nearby" to users
 
+    reference_categories: Option<Vec<String>>,
     locations: Vec<CollectionLocationJson>,
     categories: Option<Vec<CollectionCategoryJson>>,
     plants: Vec<CollectionPlantJson>,
@@ -707,9 +709,12 @@ fn ensure_database_schema(db_conn: &mut SqliteConnection) {
 }
 
 pub fn reset_database(db_conn: &mut SqliteConnection) {
+    ensure_database_schema(db_conn);
+
     let _ = diesel::delete(base_plants::dsl::base_plants).execute(db_conn);
     // skip dropping: users
     let _ = diesel::delete(plant_types::dsl::plant_types).execute(db_conn);
+    let _ = diesel::delete(collection_categories::dsl::collection_categories).execute(db_conn);
     let _ = diesel::delete(collections::dsl::collections).execute(db_conn);
     let _ = diesel::delete(locations::dsl::locations.filter(locations::user_id.is_null()))
         .execute(db_conn);
@@ -1920,6 +1925,22 @@ fn load_references(
             ))
             .execute(db_conn);
         assert_eq!(Ok(1), rows_inserted);
+
+        for category in collection.reference_categories.unwrap_or_default() {
+            let category = category.trim();
+            if category.is_empty() {
+                panic!("empty reference category in {}", path_.display());
+            }
+
+            let rows_inserted =
+                diesel::insert_into(collection_categories::dsl::collection_categories)
+                    .values((
+                        collection_categories::collection_id.eq(collection_id),
+                        collection_categories::category.eq(category),
+                    ))
+                    .execute(db_conn);
+            assert_eq!(Ok(1), rows_inserted);
+        }
 
         for (i, location) in collection.locations.iter().enumerate() {
             //    println!("inserting");
