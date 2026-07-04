@@ -723,6 +723,14 @@ fn test_fruit_notes_reference_files_have_reference_categories() {
             "references/New Jersey/Fruit Notes- RubyRush Apple Release.json5",
             "fruit-notes-v87n1-winter-2022",
         ),
+        (
+            "references/New Jersey/Evaluation of Hard Cider Apple Varieties to Promote Hard Cider Industry Growth in New Jersey.json5",
+            "fruit-notes-v86n1-winter-2021",
+        ),
+        (
+            "references/Massachusetts/Fruit Notes- Performance of the Pearl Cherries in Massachusetts.json5",
+            "fruit-notes-v77n1-winter-2012",
+        ),
     ];
 
     for (relative_path, issue_category) in cases {

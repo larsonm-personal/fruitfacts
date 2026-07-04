@@ -1,0 +1,64 @@
+{
+  "source": {
+    "kind": "static"
+  },
+  "reference_fields": [
+    ["title", "Performance of the Pearl Cherries in Massachusetts"],
+    ["author", "Jon M. Clements"],
+    ["description", "Fruit Notes Volume 77, Number 1, Winter 2012 performance article for Pearl-series sweet cherries at UMass Cold Spring Orchard"],
+    ["url", "http://www.umassfruitnotes.com/v77n1/a1.pdf"],
+    ["published", "Winter 2012"],
+    ["accessed", "Jul 2026"],
+    ["type", "journal article test"],
+    ["reference_categories", ["fruit-notes", "fruit-notes-v77n1-winter-2012"]]
+  ],
+  "locations": [
+    {
+      "name": "UMass Cold Spring Orchard, Belchertown, Massachusetts",
+      "latitude": 42.2530948,
+      "longitude": -72.3592571
+    }
+  ],
+  "categories": [
+    {
+      "name": "Pearl cherry performance in Massachusetts",
+      "description": "Fruit Notes reports 2005-2011 observations for Pearl-series sweet cherries at UMass Cold Spring Orchard"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "static_rows",
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "harvest_time_unparsed": {"row_key": "harvest_time"},
+      "record_fields": [["AKA", {"row_key": "aka"}]],
+      "description_key": "description",
+      "rows": [
+        {
+          "name": "NY 8139",
+          "aka": ["Black Pearl", "BlackPearl (tm)"],
+          "plant_type": "Sweet Cherry",
+          "category": "Pearl cherry performance in Massachusetts",
+          "harvest_time": "Average pick July 3 in 2005-2011 observations; best fruit quality harvest in Massachusetts surmised around July 1; target harvest week first week in July",
+          "description": "Fruit Notes identifies Black Pearl as NY 8139 from Bob Andersen's former Cornell stone fruit breeding program, evaluated on Gisela 6 rootstock at UMass Cold Spring Orchard. Source notes: early to mid-season bloom in the May 6, 2011 bloom table, blooms early but slightly after Burgundy Pearl and before Ebony Pearl, heavy to very heavy annual yields, oblate-heart fruit shape, medium-long stem, darkest red skin among the three Pearl cherries, red flesh, 8.9 g average fruit weight, 13.1 percent soluble solids, cracking in wet Massachusetts years but somewhat less cracking than Burgundy Pearl and Ebony Pearl in drier years, attractive to birds because it is early, and the author's best success harvesting a good crop among the three"
+        },
+        {
+          "name": "NY 38L",
+          "aka": ["Burgundy Pearl", "BurgundyPearl (tm)"],
+          "plant_type": "Sweet Cherry",
+          "category": "Pearl cherry performance in Massachusetts",
+          "harvest_time": "Average pick June 30 in 2005-2011 observations, but often likely picked too early because of cracking and birds; best fruit quality harvest in Massachusetts surmised around July 7; target harvest week first week in July",
+          "description": "Fruit Notes identifies Burgundy Pearl as NY 38L from Bob Andersen's former Cornell stone fruit breeding program, evaluated on Gisela 6 rootstock at UMass Cold Spring Orchard. Source notes: early-season bloom in the May 6, 2011 bloom table, slightly ahead of Black Pearl and Ebony Pearl in bloom, heavy to very heavy annual yields, oblate-heart fruit shape, shorter stem than Black Pearl and Ebony Pearl, translucent attractive red skin, orange-red flesh, 9.1 g average fruit weight, 12.8 percent soluble solids, smaller than the 10 g target because of heavy crop loads and too-early harvest, and cracked in wet Massachusetts years despite outside literature describing excellent crack resistance"
+        },
+        {
+          "name": "NY 32",
+          "aka": ["Ebony Pearl", "EbonyPearl (tm)"],
+          "plant_type": "Sweet Cherry",
+          "category": "Pearl cherry performance in Massachusetts",
+          "harvest_time": "Average pick June 28 in 2005-2011 observations, but often likely picked too early because of cracking and birds; best fruit quality harvest in Massachusetts surmised around July 7; target harvest week first week in July",
+          "description": "Fruit Notes identifies Ebony Pearl as NY 32 from Bob Andersen's former Cornell stone fruit breeding program, evaluated on Gisela 6 rootstock at UMass Cold Spring Orchard. Source notes: mid-season bloom in the May 6, 2011 bloom table, early bloom but slightly after Black Pearl and Burgundy Pearl, medium-heavy yields, oblate-heart fruit shape, medium-long stem, translucent attractive red skin, orange flesh, 10.0 g average fruit weight, 13.6 percent soluble solids, generally average but adequate fruit size, and cracked in wet Massachusetts years despite outside literature describing excellent crack resistance"
+        }
+      ]
+    }
+  ]
+}

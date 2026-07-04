@@ -6,6 +6,73 @@
     ],
     issues: [
         {
+            id: "fruit-notes-v77n1-winter-2012",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 77, Number 1: Winter 2012",
+            reference_category: "fruit-notes-v77n1-winter-2012",
+            issue_url: "http://umassfruitnotes.com/v77n1/FN77-1.pdf",
+            cover_url: "http://umassfruitnotes.com/v77n1/Cover771.html",
+            published: "Winter 2012",
+            accessed: "Jul 2026",
+            articles: [
+                {
+                    article_number: "a1",
+                    title: "Performance of the Pearl Cherries in Massachusetts",
+                    url: "http://www.umassfruitnotes.com/v77n1/a1.pdf",
+                    status: "encoded",
+                    crops: ["Sweet Cherry"],
+                    family: "trial-evaluation",
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Performance of the Pearl Cherries in Massachusetts.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_pearl_cherries_massachusetts_2012.json"
+                },
+                {
+                    article_number: "a2",
+                    title: "2002 Massachusetts/New Jersey Cameo Dwarf Rootstock Trial",
+                    url: "http://www.umassfruitnotes.com/v77n1/a2.pdf",
+                    status: "new",
+                    crops: ["Apple", "Apple Rootstock"],
+                    family: "rootstock-trial",
+                    notes: [
+                        "Rootstock trial source; leave for a rootstock-specific import pass"
+                    ]
+                },
+                {
+                    article_number: "a3",
+                    title: "Results from the First Year of Fruiting in the 2009 NC-140 Peach Rootstock Trial in Massachusetts",
+                    url: "http://www.umassfruitnotes.com/v77n1/a3.pdf",
+                    status: "new",
+                    crops: ["Peach", "Peach Rootstock"],
+                    family: "rootstock-trial",
+                    notes: [
+                        "Rootstock trial source; leave for a rootstock-specific import pass"
+                    ]
+                },
+                {
+                    article_number: "a4",
+                    title: "Asian Pear Cultivar Trial in New Jersey and Massachusetts",
+                    url: "http://www.umassfruitnotes.com/v77n1/a4.pdf",
+                    status: "triage",
+                    crops: ["Asian Pear"],
+                    family: "trial-evaluation",
+                    notes: [
+                        "Likely useful cultivar trial source; should be reviewed in a later Fruit Notes pass"
+                    ]
+                },
+                {
+                    article_number: "a5",
+                    title: "Fruit IPM Program Presented with Distinguished Service to New Jersey Agriculture Award",
+                    url: "http://www.umassfruitnotes.com/v77n1/a5.pdf",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "Award notice, no cultivar-level FruitFacts data"
+                    ]
+                }
+            ]
+        },
+        {
             id: "fruit-notes-v83n2-spring-2018",
             status: "partially_encoded",
             title: "Fruit Notes Volume 83, Number 2: Spring 2018",
@@ -195,7 +262,7 @@
                     crops: ["Apple"],
                     family: "trial-evaluation",
                     notes: [
-                        "Potential cider apple cultivar trial source; should be reviewed before skipping"
+                        "Reviewed alongside v86n1/a7; useful early hard-cider trial source, but the table uses custom-encoded text and should be handled in a later cider-specific pass"
                     ]
                 },
                 {
@@ -493,6 +560,105 @@
                     family: "rootstock-trial",
                     notes: [
                         "Likely useful, but needs a rootstock import shape before encoding"
+                    ]
+                }
+            ]
+        },
+        {
+            id: "fruit-notes-v86n1-winter-2021",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 86, Number 1: Winter 2021",
+            reference_category: "fruit-notes-v86n1-winter-2021",
+            issue_url: "http://umassfruitnotes.com/v86n1/FN86-1.pdf",
+            cover_url: "http://umassfruitnotes.com/v86n1/Cover861.html",
+            published: "Winter 2021",
+            accessed: "Jul 2026",
+            articles: [
+                {
+                    article_number: "a1",
+                    title: "Evaluation of a Grower-friendly Attract-and-kill Strategy for Apple Maggot Control in New England Apple Orchards: Research Results for Year Two",
+                    url: "http://www.umassfruitnotes.com/v86n1/a1.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Pest management article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a2",
+                    title: "Does the Presence of Trap-crop Plants Enhance the Response of the Invasive Brown Marmorated Stink Bug to Its Synthetic Pheromone?",
+                    url: "http://www.umassfruitnotes.com/v86n1/a2.pdf",
+                    status: "do_not_encode",
+                    family: "crop-management",
+                    notes: [
+                        "Pest management article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a3",
+                    title: "Precision Crop-load Management of Honeycrisp: Flower Bud Identification and Precision Pruning",
+                    url: "http://www.umassfruitnotes.com/v86n1/a3.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Crop-load management article for one cultivar, not a variety-description source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a4",
+                    title: "Evaluating the Efficacy of Multi-cultivar Grafted Apple Trees as Perennial Trap Crops for Multiple Pests: Research Results Year One",
+                    url: "http://www.umassfruitnotes.com/v86n1/a4.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Trap-crop pest-management article, not a durable cultivar recommendation source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a5",
+                    title: "Does the Red Color Enhance Spotted Wing Drosophila Response to Traps Baited with Diluted Concord Grape Juice?",
+                    url: "http://www.umassfruitnotes.com/v86n1/a5.pdf",
+                    status: "do_not_encode",
+                    crops: ["Grape"],
+                    family: "crop-management",
+                    notes: [
+                        "Pest trap article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a6",
+                    title: "Evaluation of Novel Kairomone-based Lures for Attracting Male and Female Tortricid Moths in Apple Orchards",
+                    url: "http://www.umassfruitnotes.com/v86n1/a6.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Pest monitoring article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a7",
+                    title: "Evaluation of Hard Cider Apple Varieties to Promote Hard Cider Industry Growth in New Jersey",
+                    url: "http://www.umassfruitnotes.com/v86n1/a7.pdf",
+                    status: "encoded",
+                    crops: ["Apple"],
+                    family: "trial-evaluation",
+                    reference_path:
+                        "plant_database/references/New Jersey/Evaluation of Hard Cider Apple Varieties to Promote Hard Cider Industry Growth in New Jersey.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_hard_cider_apple_varieties_new_jersey_2021.json"
+                },
+                {
+                    article_number: "a8",
+                    title: "Response of Tarnished Plant Bug to Synthetic Aromatic Plant Volatiles",
+                    url: "http://www.umassfruitnotes.com/v86n1/a8.pdf",
+                    status: "do_not_encode",
+                    family: "crop-management",
+                    notes: [
+                        "Pest management article, not a cultivar source from cover-level triage"
                     ]
                 }
             ]

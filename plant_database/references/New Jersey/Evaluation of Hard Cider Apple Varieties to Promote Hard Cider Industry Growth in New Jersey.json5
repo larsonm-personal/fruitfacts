@@ -1,32 +1,99 @@
 {
     title: "Evaluation of Hard Cider Apple Varieties to Promote Hard Cider Industry Growth in New Jersey",
     author: "Megan Muehlbauer and Rebecca Magron, Rutgers University",
+    description: "Fruit Notes Volume 86, Number 1, Winter 2021 article on a Rutgers hard cider apple topworking trial in New Jersey",
     url: "http://www.umassfruitnotes.com/v86n1/a7.pdf",
     published: "Winter 2021",
-    accessed: "Dec 2021",
+    accessed: "Jul 2026",
     type: "journal article test",
-    needs_help: true,
     reference_categories: ["fruit-notes", "fruit-notes-v86n1-winter-2021"],
     locations: [
         {
-            name: "Cream Ridge, NJ",
-            latitude: 40.13233771380199,
-            longitude: -74.52852612532256
-        }
+            name: "Rutgers Snyder Research and Extension Farm, Pittstown, New Jersey",
+            latitude: 40.5599,
+            longitude: -74.9544
+        },
+    ],
+    categories: [
+        {
+            name: "New Jersey hard cider apple topworking trial",
+            description: "Fruit Notes reports Rutgers hard cider apple topworking trial observations from Snyder Research and Extension Farm"
+        },
     ],
     plants: [
-        // todo
-        // Calville Blanc           Cider apple: Sharp Noteworthy aroma, can be used as a single varietal cider
-        // Collaos                  Cider apple: Bittersharp Ripens very late in season
-        // Dabinett                 Cider apple: Bittersweet A well-balanced variety, commonly used for cider
-        /// Ellis Bitter            Cider apple: Bittersweet Noteworthy for being a tip-bearer
-        // Golden Russet            Cider apple: Sharp High acidity, sugar and aroma, a highly recommended cider variety
-        // Harrison                 Cider apple: Sharp Noted for excellent, well balanced juice quality
-        // Kingston Black           Cider apple: Sharp A well-balanced stand-alone variety
-        // Margil                   Cider apple: Sharp A variety with nuance, rich, intense and aromatic
-        // Rein Des Reinettes       Cider apple: Sharp Vigorous with a high sugar content
-        // Roxbury Russet           Cider apple: Sharp Notable for holding well in storage
-        // Stoke Red                Cider apple: Bittersharp It is used in cider blends and as a single varietal
-        // Wickson                  Cider apple: Sharp Commonly grown by cider makers, notable for high sugar content
+        {
+            type: "Apple",
+            name: "Calville Blanc",
+            category: "New Jersey hard cider apple topworking trial",
+            description: "Fruit Notes lists Calville Blanc as a sharp hard cider apple with noteworthy aroma that can be used as a single-varietal cider. In the Rutgers Snyder Farm trial, the article reports Calville Blanc had the greatest average fruit size in 2019 at 14 ounces, and concludes that it showed enough tree vigor to thus far thrive under New Jersey growing conditions"
+        },
+        {
+            type: "Apple",
+            name: "Collaos",
+            category: "New Jersey hard cider apple topworking trial",
+            harvest_time_unparsed: "Ripens very late in season",
+            description: "Fruit Notes lists Collaos as a bittersharp hard cider apple that ripens very late in the season. The article includes Collaos among twelve cider varieties topworked onto existing Daybreak Fuji trees at Rutgers Snyder Research and Extension Farm for New Jersey yield, vigor, and fruit-size observations"
+        },
+        {
+            type: "Apple",
+            name: "Dabinett",
+            category: "New Jersey hard cider apple topworking trial",
+            description: "Fruit Notes lists Dabinett as a bittersweet hard cider apple and a well-balanced variety commonly used for cider. In the Rutgers Snyder Farm trial, Dabinett had the largest measured scion diameter in 2018 at 0.57 inches and the highest 2019 yield at 23 pounds per two trees; the article concludes that it showed promising fruit yields"
+        },
+        {
+            type: "Apple",
+            name: "Ellis Bitter",
+            category: "New Jersey hard cider apple topworking trial",
+            description: "Fruit Notes lists Ellis Bitter as a bittersweet hard cider apple noteworthy for being a tip-bearer. The article includes Ellis Bitter among the twelve cider varieties topworked at Rutgers Snyder Research and Extension Farm for New Jersey trial observations"
+        },
+        {
+            type: "Apple",
+            name: "Golden Russet",
+            category: "New Jersey hard cider apple topworking trial",
+            description: "Fruit Notes lists Golden Russet as a sharp hard cider apple with high acidity, sugar, and aroma and calls it a highly recommended cider variety. In the Rutgers Snyder Farm trial, Golden Russet had the tallest observed main leader in 2019 at 45 inches, and the article concludes that it thus far thrives under New Jersey growing conditions and showed promising fruit yields"
+        },
+        {
+            type: "Apple",
+            name: "Harrison",
+            category: "New Jersey hard cider apple topworking trial",
+            description: "Fruit Notes lists Harrison as a sharp hard cider apple noted for excellent, well-balanced juice quality. The article includes Harrison among twelve cider varieties topworked at Rutgers Snyder Research and Extension Farm; its 2018 leader height was the smallest cited in the article at 14 inches"
+        },
+        {
+            type: "Apple",
+            name: "Kingston Black",
+            category: "New Jersey hard cider apple topworking trial",
+            description: "Fruit Notes lists Kingston Black as a sharp hard cider apple and a well-balanced stand-alone variety. In the Rutgers Snyder Farm trial, Kingston Black had the lowest 2019 yield cited in the article at 3 pounds per two trees"
+        },
+        {
+            type: "Apple",
+            name: "Margil",
+            category: "New Jersey hard cider apple topworking trial",
+            description: "Fruit Notes lists Margil as a sharp hard cider apple with nuance and rich, intense, aromatic character. In the Rutgers Snyder Farm trial, Margil had the smallest measured scion diameter in both 2018 and 2019 at 0.22 and 0.55 inches, respectively, but the article concludes that it showed promising fruit yields"
+        },
+        {
+            type: "Apple",
+            name: "Reine des Reinettes",
+            category: "New Jersey hard cider apple topworking trial",
+            AKA: ["Rein Des Reinettes"],
+            description: "Fruit Notes lists Reine des Reinettes, spelled Rein Des Reinettes in the source table, as a sharp hard cider apple described as vigorous with high sugar content. The article includes it among the twelve cider varieties topworked at Rutgers Snyder Research and Extension Farm for New Jersey trial observations"
+        },
+        {
+            type: "Apple",
+            name: "Roxbury Russet",
+            category: "New Jersey hard cider apple topworking trial",
+            description: "Fruit Notes lists Roxbury Russet as a sharp hard cider apple notable for holding well in storage. The article includes Roxbury Russet among twelve cider varieties topworked at Rutgers Snyder Research and Extension Farm for New Jersey trial observations"
+        },
+        {
+            type: "Apple",
+            name: "Stoke Red",
+            category: "New Jersey hard cider apple topworking trial",
+            description: "Fruit Notes lists Stoke Red as a bittersharp hard cider apple used in cider blends and as a single varietal. In the Rutgers Snyder Farm trial, Stoke Red had the largest measured scion diameter in 2019 at 1.5 inches, the tallest main leader in 2018 at 28 inches, and the article concludes that it thus far thrives under New Jersey growing conditions"
+        },
+        {
+            type: "Apple",
+            name: "Wickson",
+            category: "New Jersey hard cider apple topworking trial",
+            description: "Fruit Notes lists Wickson as a sharp hard cider apple commonly grown by cider makers and notable for high sugar content. The article reports Wickson had the smallest average fruit size in 2019 at 2 ounces in the Rutgers Snyder Farm trial"
+        },
     ]
 }

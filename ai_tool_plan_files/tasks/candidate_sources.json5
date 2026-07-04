@@ -4081,7 +4081,7 @@
         },
         {
             id: "fruit-notes-hard-cider-apple-varieties-new-jersey-2021",
-            status: "stubbed",
+            status: "encoded",
             priority: "high",
             title: "Evaluation of Hard Cider Apple Varieties to Promote Hard Cider Industry Growth in New Jersey",
             institution: "Fruit Notes",
@@ -4098,9 +4098,14 @@
             proposed_reference_path:
                 "plant_database/references/New Jersey/Evaluation of Hard Cider Apple Varieties to Promote Hard Cider Industry Growth in New Jersey.json5",
             duplicate_check:
-                "Existing JSON5 stub has TODO cultivar comments but no encoded plant rows",
+                "Existing JSON5 stub had TODO cultivar comments; this pass replaced it with encoded plant rows and removed needs_help",
             notes: [
-                "Queue entry added so the existing needs_help reference is visible in source prioritization"
+                "Queue entry added so the existing needs_help reference is visible in source prioritization",
+                "Encoded in plant_database/references/New Jersey/Evaluation of Hard Cider Apple Varieties to Promote Hard Cider Industry Growth in New Jersey.json5",
+                "Config extraction added at helper_scripts/extraction_configs/fruit_notes_hard_cider_apple_varieties_new_jersey_2021.json",
+                "Manifest entry added as fruit_notes_hard_cider_apple_varieties_new_jersey_2021",
+                "Uses static_rows because the cultivar table extraction shifts row names around page layout and chart values are graphical",
+                "Existing DVC PDF pointer preserved; PDF asset not refreshed in this pass"
             ]
         },
         {
@@ -4273,7 +4278,7 @@
         },
         {
             id: "fruit-notes-pearl-cherries-massachusetts-2012",
-            status: "new",
+            status: "encoded",
             priority: "medium",
             title: "Performance of the Pearl Cherries in Massachusetts",
             institution: "Fruit Notes",
@@ -4290,9 +4295,14 @@
             proposed_reference_path:
                 "plant_database/references/Massachusetts/Fruit Notes- Performance of the Pearl Cherries in Massachusetts.json5",
             duplicate_check:
-                "No existing JSON5 reference found for v77n1/a1",
+                "Black Pearl, Burgundy Pearl, and Ebony Pearl exist in Cornell and OSU cherry references under NY selection names; this pass adds Massachusetts Fruit Notes performance observations",
             notes: [
-                "May overlap with other Cornell cherry variety descriptions; preserve Massachusetts performance context"
+                "May overlap with other Cornell cherry variety descriptions; preserve Massachusetts performance context",
+                "Encoded in plant_database/references/Massachusetts/Fruit Notes- Performance of the Pearl Cherries in Massachusetts.json5",
+                "Config extraction added at helper_scripts/extraction_configs/fruit_notes_pearl_cherries_massachusetts_2012.json",
+                "Manifest entry added as fruit_notes_pearl_cherries_massachusetts_2012",
+                "Uses static_rows because the article has a compact table plus narrative cracking, bloom, crop, and suitability observations",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {
