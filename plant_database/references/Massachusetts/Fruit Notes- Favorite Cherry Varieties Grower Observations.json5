@@ -1,0 +1,251 @@
+{
+    title: "Favorite Cherry Varieties: Grower Observations",
+    author: "Win Cowgill, Justin Weaver, Tom Hass, Gary Mount, and Evan Milburn",
+    description: "Fruit Notes Volume 80, Number 3, Summer 2015 grower-panel observations on sweet and sour cherry cultivars in Pennsylvania, New Jersey, and Maryland",
+    url: "http://umassfruitnotes.com/v80n3/a3.pdf",
+    published: "Summer 2015",
+    accessed: "Jul 2026",
+    type: "journal grower panel",
+    reference_categories: ["fruit-notes", "fruit-notes-v80n3-summer-2015"],
+    locations: [
+        {
+            name: "Weaver's Orchard, Morgantown, Pennsylvania",
+            latitude: 40.1551,
+            longitude: -75.8847
+        },
+        {
+            name: "Cherry Hill Orchards, Lancaster County, Pennsylvania",
+            latitude: 40.0467,
+            longitude: -76.1786
+        },
+        {
+            name: "Terhune Orchards, Princeton, New Jersey",
+            latitude: 40.3404,
+            longitude: -74.7303
+        },
+        {
+            name: "Milburn Orchards, Elkton, Maryland",
+            latitude: 39.6726,
+            longitude: -75.8358
+        },
+    ],
+    categories: [
+        {
+            name: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes reports grower panel observations from Pennsylvania, New Jersey, and Maryland cherry farms, including favorites, cracking and freeze concerns, pick-your-own fit, and varieties that were removed or not favored"
+        },
+    ],
+    plants: [
+        {
+            type: "Sweet Cherry",
+            name: "Rainier",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes records Rainier as a favorite at Weaver's Orchard, Cherry Hill Orchards, and Terhune Orchards. Source notes: Terhune called it the customer favorite for a mostly pick-your-own clientele that strongly preferred yellow-blush cherries, while Milburn described Rainier-family whites as useful for PYO marketing but listed Rainier among varieties no longer planted because of cracking in their climate"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Benton",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes lists Benton among Weaver's Orchard favorites, but with a question about yield consistency and possible replacement by Ebony Pearl. Source notes: Weaver also listed Benton among varieties with notable freeze concerns in both 2010 and 2012, with less injury in 2010"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Regina",
+            category: "Mid-Atlantic cherry grower observations",
+            harvest_time_unparsed: "late blooming and late enough that Terhune considered it hard to keep pickers out before ripeness",
+            description: "Fruit Notes gives mixed grower observations for Regina. Source notes: Weaver listed it as a favorite but said yield consistency was a big problem; Cherry Hill listed it among favorites; Terhune said it looked good but did not taste good there and was poorly timed for a small one-day PYO harvest; Milburn called it the best sweet cherry grown on the East Coast because of dark red crunchy fruit, long stems, late bloom, and little cracking, but noted a vigorous hard-to-train tree, need for late-blooming pollinizers such as Gold and Black Gold, and lower productivity than other varieties"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Kordia",
+            category: "Mid-Atlantic cherry grower observations",
+            AKA: ["Attika", "Attica"],
+            description: "Fruit Notes lists Attika, normalized here to Kordia, among Weaver's Orchard favorites with a question about yield consistency and possible fallback to Hedelfingen or Skeena. Source notes: Cherry Hill listed Attica among its favorite varieties"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Sweetheart",
+            category: "Mid-Atlantic cherry grower observations",
+            harvest_time_unparsed: "very late in Weaver's Orchard observations",
+            description: "Fruit Notes lists Sweetheart among Weaver's Orchard favorites only under high tunnels because it cracks and is very late. Source notes: Milburn listed Sweetheart among varieties no longer planted, grouping it with West Coast or BC-bred types that were extreme crackers in their climate, though the grower noted some might work in high tunnels"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Sandra Rose",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes lists Sandra Rose among Weaver's Orchard favorites but flags it as a bad cracker with possible spring-freeze concern. Source notes: Weaver also listed Sandra Rose among varieties with notable freeze concerns in both 2010 and 2012"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Cavalier",
+            category: "Mid-Atlantic cherry grower observations",
+            AKA: ["Rynbrandt"],
+            description: "Fruit Notes lists Cavalier, also called Rynbrandt in the article, among Weaver's Orchard favorites but suggests replacement with Black Pearl or possibly Kiona. Source notes: Milburn listed Cavalier among varieties no longer planted"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Royalton",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes lists Royalton among Weaver's Orchard favorites but suggests replacement with Burgundy Pearl. Source notes: Milburn listed Royalton among varieties no longer planted"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Balaton",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes lists Balaton as a tart cherry favorite at Weaver's Orchard. Source notes: the article includes a photo caption for Balaton tart cherry pie, misspelled as Baleton in the caption"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Montmorency",
+            category: "Mid-Atlantic cherry grower observations",
+            harvest_time_unparsed: "too late for Milburn's preferred tart-cherry timing; later than Terhune's desired one-weekend PYO harvest",
+            description: "Fruit Notes lists Montmorency as a tart cherry favorite at Weaver's Orchard and as Terhune's tart cherry. Source notes: Terhune said customers found Montmorency very popular but timing was difficult for their small PYO block, while Milburn said Montmorency was too late compared with Galaxy"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Erdi Jubileum",
+            category: "Mid-Atlantic cherry grower observations",
+            AKA: ["Jubileum"],
+            description: "Fruit Notes lists Jubileum as Weaver's personal favorite tart cherry to eat, while noting that it had not yet been proven as a sound winner in that grower's system"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Hedelfingen",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes lists Hedelfingen as one possible current option while Weaver considered Attika yield consistency, and Cherry Hill listed Hedelfingen among its favorite sweet cherries"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Skeena",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes mentions Skeena as a possible current option for Weaver's Orchard while the grower considered Attika yield consistency"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Vernon",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes lists Vernon among Cherry Hill Orchards' favorite sweet cherry varieties"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Summit",
+            category: "Mid-Atlantic cherry grower observations",
+            harvest_time_unparsed: "ripens with Vandalay in Milburn's early to mid-season planting",
+            description: "Fruit Notes reports sharply different Summit observations. Source notes: Cherry Hill listed Summit among favorites; Milburn described Summit as huge, dark red, best tasting, highly productive, and with no negatives; Weaver listed Summit among varieties that had not worked there and among varieties with notable freeze concerns in both 2010 and 2012"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Emperor Francis",
+            category: "Mid-Atlantic cherry grower observations",
+            harvest_time_unparsed: "after Summit and Vandalay but before Regina in Milburn's listed ripening order",
+            description: "Fruit Notes lists Emperor Francis among Cherry Hill Orchards' favorites. Source notes: Milburn called it an old standard white cherry and the best choice for that season slot in their new planting"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "NY 32",
+            category: "Mid-Atlantic cherry grower observations",
+            AKA: ["Ebony", "Ebony Pearl", "EbonyPearl (tm)"],
+            description: "Fruit Notes lists Ebony among Cherry Hill Orchards' favorite sweet cherries and mentions Ebony Pearl as a possible replacement for Benton at Weaver's Orchard"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "NY 8139",
+            category: "Mid-Atlantic cherry grower observations",
+            AKA: ["Black Pearl", "BlackPearl (tm)"],
+            description: "Fruit Notes lists Black Pearl among Cherry Hill Orchards' favorites and mentions it as a possible replacement for Cavalier at Weaver's Orchard"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "NY 38L",
+            category: "Mid-Atlantic cherry grower observations",
+            AKA: ["Burgundy Pearl", "BurgundyPearl (tm)"],
+            description: "Fruit Notes lists Burgundy Pearl among Cherry Hill Orchards' favorites and mentions it as a possible replacement for Royalton at Weaver's Orchard"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Black York",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes lists Black York among Cherry Hill Orchards' favorite sweet cherry varieties"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Somerset",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes lists Somerset among Terhune Orchards' favorite sweet cherries. Source notes: Milburn listed Somerset among varieties no longer planted"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Hartland",
+            category: "Mid-Atlantic cherry grower observations",
+            harvest_time_unparsed: "first in Milburn's listed ripening order for the 2010 early to mid-season planting",
+            description: "Fruit Notes lists Hartland among Terhune Orchards' favorites. Source notes: Milburn described Hartland as extremely productive, spreading, and a great pollinizer, while noting it can crack in rainy periods; Weaver listed Hartland among varieties with notable freeze concerns in 2010 and 2012, with less injury in 2012"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Chelan",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes lists Chelan among Terhune Orchards' favorite sweet cherries. Source notes: Weaver listed Chelan among varieties that had not worked there"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Schmidt",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes lists Schmidt among Terhune Orchards' favorite sweet cherries. Source notes: Weaver and Cherry Hill both listed Schmidt among varieties that had not worked for them"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Newfane",
+            category: "Mid-Atlantic cherry grower observations",
+            AKA: ["White Gold"],
+            harvest_time_unparsed: "after Hartland and before Summit in Milburn's listed ripening order",
+            description: "Fruit Notes describes White Gold, normalized here to Newfane, as one of Milburn's six chosen sweet cherry varieties for the 2010 planting. Source notes: Milburn called it a smaller Rainier with great taste, great blush, and value as a pollinizer; Weaver listed White Gold among varieties that had not worked there"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Vandalay",
+            category: "Mid-Atlantic cherry grower observations",
+            AKA: ["Van-del-lay"],
+            harvest_time_unparsed: "ripens with Summit in Milburn's early to mid-season planting",
+            description: "Fruit Notes describes Van-del-lay, normalized here to Vandalay, as one of Milburn's six chosen sweet cherry varieties for the 2010 planting. Source notes: coal black fruit, self fertility, sweet flavor, ripening with Summit, and a tendency to overproduce smaller cherries"
+        },
+        {
+            type: "Sour Cherry",
+            name: "Galaxy",
+            category: "Mid-Atlantic cherry grower observations",
+            harvest_time_unparsed: "ripens with mid-season sweet cherries in Milburn's planting",
+            description: "Fruit Notes says Galaxy was the only tart cherry planted at Milburn Orchards. Source notes: Milburn reported it ripened with mid-season sweets and was a heavy producer on a semi-dwarfing, spreading tree, while earlier tart varieties had less production and Montmorency was too late"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Lapins",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes reports negative grower observations for Lapins. Source notes: Terhune said Regina and Lapins looked good but did not taste good there; Cherry Hill listed Lapins among varieties that had not worked because of decay on self-fruitful varieties and poor flavor; Milburn listed Lapins among varieties no longer planted and grouped West Coast or BC-bred types as extreme crackers in their climate"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Sam",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes lists Sam among varieties that had not worked at Weaver's Orchard, Cherry Hill Orchards, and Milburn Orchards. Source notes: Cherry Hill grouped its failed self-fruitful varieties with decay and poor flavor concerns"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Stella",
+            category: "Mid-Atlantic cherry grower observations",
+            description: "Fruit Notes lists Stella among Cherry Hill Orchards' varieties that had not worked, with the grower citing decay on self-fruitful varieties and poor flavor as problems"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Royal Ann",
+            category: "Mid-Atlantic cherry grower observations",
+            AKA: ["Royal Anne"],
+            description: "Fruit Notes lists Royal Ann, spelled Royal Anne in one source response, among varieties that had not worked at Weaver's Orchard and Cherry Hill Orchards"
+        },
+        {
+            type: "Sweet Cherry",
+            name: "Ridgewood",
+            category: "Mid-Atlantic cherry grower observations",
+            AKA: ["Black Gold"],
+            description: "Fruit Notes mentions Black Gold, normalized here to Ridgewood, in two contexts. Source notes: Weaver listed Black Gold among varieties with notable freeze concerns in both 2010 and 2012 and among varieties that had not worked there; Milburn used Black Gold with Gold as a late-blooming pollinizer for Regina"
+        },
+    ]
+}

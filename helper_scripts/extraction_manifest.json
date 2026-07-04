@@ -405,6 +405,14 @@
             "config": "extraction_configs/psu_stone_fruit_variety_selection.json"
         },
         {
+            "id": "fruit_notes_archive_peach_ripening_massachusetts_1939",
+            "config": "extraction_configs/fruit_notes_archive_peach_ripening_massachusetts_1939.json"
+        },
+        {
+            "id": "fruit_notes_peach_nectarine_umass_cold_spring_2018",
+            "config": "extraction_configs/fruit_notes_peach_nectarine_umass_cold_spring_2018.json"
+        },
+        {
             "id": "fruit_notes_brigantine_evelynn_tiana_fruit_quality_2018",
             "config": "extraction_configs/fruit_notes_brigantine_evelynn_tiana_fruit_quality_2018.json"
         },
@@ -431,6 +439,10 @@
         {
             "id": "fruit_notes_pearl_cherries_massachusetts_2012",
             "config": "extraction_configs/fruit_notes_pearl_cherries_massachusetts_2012.json"
+        },
+        {
+            "id": "fruit_notes_favorite_cherry_varieties_grower_observations_2015",
+            "config": "extraction_configs/fruit_notes_favorite_cherry_varieties_grower_observations_2015.json"
         },
         {
             "id": "fruit_notes_plum_plum_hybrid_cultivars_2012",

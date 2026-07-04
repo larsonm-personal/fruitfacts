@@ -1,0 +1,245 @@
+{
+  "source": {
+    "kind": "static"
+  },
+  "reference_fields": [
+    ["title", "Fifteen Years of Peach and Nectarine Variety Evaluation at the UMass Cold Spring Orchard"],
+    ["author", "Jon M. Clements"],
+    ["description", "Fruit Notes Volume 83, Number 1, Winter 2018 article summarizing 2002-2017 peach and nectarine variety observations at UMass Cold Spring Orchard in Belchertown, Massachusetts"],
+    ["url", "http://umassfruitnotes.com/v83n1/a2.pdf"],
+    ["published", "Winter 2018"],
+    ["accessed", "Jul 2026"],
+    ["type", "journal cultivar performance article"],
+    ["reference_categories", ["fruit-notes", "fruit-notes-v83n1-winter-2018"]]
+  ],
+  "locations": [
+    {
+      "name": "UMass Cold Spring Orchard, Belchertown, Massachusetts",
+      "latitude": 42.2530948,
+      "longitude": -72.3592571
+    }
+  ],
+  "categories": [
+    {
+      "name": "Fruit Acres Stellar peach observations at UMass Cold Spring Orchard",
+      "description": "Fruit Notes reports observations from a high-density perpendicular-V block of mostly Fruit Acres Stellar peach selections planted beginning in 2000 at UMass Cold Spring Orchard"
+    },
+    {
+      "name": "Adams County Nursery peach and nectarine observations at UMass Cold Spring Orchard",
+      "description": "Fruit Notes reports observations from a second UMass Cold Spring Orchard block planted beginning in 2002 with Adams County Nursery varieties and numbered Rutgers and USDA Kearneysville selections"
+    },
+    {
+      "name": "Paul Friday and Adams County 2014 peach block observations at UMass Cold Spring Orchard",
+      "description": "Fruit Notes reports initial 2017 observations from a 2014 quad-V block of Paul Friday Flaming Fury peaches and Adams County Nursery Rutgers peach and nectarine releases"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "static_rows",
+      "plant_type": {"row_key": "plant_type"},
+      "category": {"row_key": "category"},
+      "harvest_time_unparsed": {"row_key": "harvest_time"},
+      "record_fields": [["AKA", {"row_key": "aka"}]],
+      "description_key": "description",
+      "row_groups": [
+        {
+          "fields": {
+            "plant_type": "Peach",
+            "category": "Fruit Acres Stellar peach observations at UMass Cold Spring Orchard"
+          },
+          "rows": [
+            {
+              "name": "FA 102",
+              "aka": ["Earlystar"],
+              "harvest_time": "very early in the Fruit Acres named peach season",
+              "description": "Fruit Notes lists Earlystar among noteworthy Fruit Acres Stellar varieties at UMass Cold Spring Orchard and says it was predictably good for yield in the perpendicular-V block. Source notes: the block suffered significant flower-bud injury in January 2004 when temperature reached -12 F"
+            },
+            {
+              "name": "FA 47",
+              "aka": ["Risingstar"],
+              "description": "Fruit Notes lists Risingstar among noteworthy Fruit Acres Stellar varieties at UMass Cold Spring Orchard, describes it as a vigorous tree, and says it was predictably good for yield. Source notes: the block suffered significant flower-bud injury in January 2004 when temperature reached -12 F"
+            },
+            {
+              "name": "FA 12",
+              "aka": ["Blazingstar"],
+              "description": "Fruit Notes lists Blazingstar among noteworthy Fruit Acres Stellar varieties at UMass Cold Spring Orchard and says it was predictably good for yield. Source notes: the block suffered significant flower-bud injury in January 2004 when temperature reached -12 F"
+            },
+            {
+              "name": "FA 52",
+              "aka": ["Redstar"],
+              "description": "Fruit Notes says Redstar was one of the Fruit Acres Stellar varieties at UMass Cold Spring Orchard that the author was not impressed with in the perpendicular-V block"
+            },
+            {
+              "name": "FA 80",
+              "aka": ["Allstar"],
+              "description": "Fruit Notes says Allstar was one of the Fruit Acres Stellar varieties at UMass Cold Spring Orchard that the author was not impressed with in the perpendicular-V block"
+            },
+            {
+              "name": "FA 18",
+              "aka": ["Blushingstar"],
+              "description": "Fruit Notes describes Blushingstar as a nice white-fleshed peach in the UMass Cold Spring Orchard Fruit Acres Stellar block"
+            },
+            {
+              "name": "Beaumont",
+              "aka": ["MSU 26"],
+              "description": "Fruit Notes says MSU 26, later named Beaumont, was a nice freestone peach in the UMass Cold Spring Orchard Fruit Acres block, perhaps better suited to processing but also worth planting for retail"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "category": "Fruit Acres Stellar peach observations at UMass Cold Spring Orchard"
+          },
+          "rows": [
+            {
+              "name": "Summer Beaut",
+              "aka": ["Summer Beauty"],
+              "plant_type": "Nectarine",
+              "description": "Fruit Notes says Summer Beauty nectarine was included in the UMass Cold Spring Orchard Fruit Acres block, but the author was not particularly impressed with yield on those nectarine trees"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "category": "Adams County Nursery peach and nectarine observations at UMass Cold Spring Orchard"
+          },
+          "rows": [
+            {
+              "name": "Redhaven",
+              "plant_type": "Peach",
+              "description": "Fruit Notes says Redhaven trees in the older Adams County Nursery perpendicular-V block at UMass Cold Spring Orchard were still productive with fruiting wood to the bottom of the trees"
+            },
+            {
+              "name": "Country Sweet",
+              "aka": ["CountrySweet", "CountySweet"],
+              "plant_type": "Peach",
+              "description": "Fruit Notes describes CountrySweet as a yellow sub-acid peach that cropped regularly at UMass Cold Spring Orchard, with good yields, good flavor, and popularity with the harvest crew and farm stand. Source notes: the author says bacterial spot susceptibility was a constant battle and does not recommend susceptible California varieties for the region"
+            },
+            {
+              "name": "Honey Kist",
+              "aka": ["HoneyKist"],
+              "plant_type": "Nectarine",
+              "description": "Fruit Notes describes HoneyKist as a yellow sub-acid nectarine that cropped regularly at UMass Cold Spring Orchard, with good yields and some fruit-finish issues. Source notes: the author says bacterial spot susceptibility was a constant battle and does not recommend susceptible California varieties for the region"
+            },
+            {
+              "name": "Honey Blaze",
+              "plant_type": "Nectarine",
+              "description": "Fruit Notes says HoneyBlaze was initially planted in the Adams County Nursery block at UMass Cold Spring Orchard but was removed after a few years of light or no cropping"
+            },
+            {
+              "name": "Momee",
+              "aka": ["Jade"],
+              "plant_type": "Nectarine",
+              "description": "Fruit Notes says Jade, a white nectarine from France, was interesting at UMass Cold Spring Orchard but was not recommended because of light cropping"
+            },
+            {
+              "name": "NJF 16",
+              "aka": ["NJF-16", "TangOs-I", "TangOs"],
+              "plant_type": "Peach",
+              "description": "Fruit Notes says NJF-16, a donut peach named TangOs-I, seemed easier to grow than NJF-17 at UMass Cold Spring Orchard and was preferred by the author. Source notes: the article says these donut peaches were vigorous, needed heavy hand thinning, and were particularly susceptible to brown rot"
+            },
+            {
+              "name": "NJF 17",
+              "aka": ["NJF-17", "Tangos-II", "TangOs II"],
+              "plant_type": "Peach",
+              "description": "Fruit Notes says NJF-17, a donut peach named Tangos-II, was evaluated at UMass Cold Spring Orchard. Source notes: the article says these donut peaches were vigorous, needed heavy hand thinning, and were particularly susceptible to brown rot; the author preferred NJF-16"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Peach",
+            "category": "Paul Friday and Adams County 2014 peach block observations at UMass Cold Spring Orchard",
+            "description": "Fruit Notes lists this Paul Friday peach in the 2014 quad-V block at UMass Cold Spring Orchard and says initial 2017 observations suggested most PF peaches were very good, particularly the early-mid season varieties including this cultivar. Source notes: the 2016 crop was lost to a Valentine's Day freeze"
+          },
+          "rows": [
+            {"name": "PF 5D Big", "harvest_time": "24 days before Redhaven harvest"},
+            {"name": "PF 8 Ball White", "harvest_time": "10 days before Redhaven harvest"},
+            {"name": "PF 9A-007", "harvest_time": "with Redhaven harvest"},
+            {"name": "PF Lucky 13", "harvest_time": "5 days after Redhaven harvest"},
+            {"name": "PF 19-007", "harvest_time": "17 days after Redhaven harvest"},
+            {"name": "PF 22-007", "harvest_time": "20 days after Redhaven harvest"},
+            {"name": "PF 24C Cold Hardy", "harvest_time": "22 days after Redhaven harvest"}
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Peach",
+            "category": "Paul Friday and Adams County 2014 peach block observations at UMass Cold Spring Orchard",
+            "description": "Fruit Notes lists this Paul Friday peach in the 2014 quad-V block at UMass Cold Spring Orchard. Source notes: initial 2017 observations suggested most PF peaches were very good, but this cultivar was not in the author's explicitly highlighted early-mid season list"
+          },
+          "rows": [
+            {"name": "PF Super Duper", "harvest_time": "13 days after Redhaven harvest"},
+            {"name": "PF Paramount 24", "harvest_time": "22 days after Redhaven harvest"}
+          ]
+        },
+        {
+          "fields": {
+            "plant_type": "Peach",
+            "category": "Paul Friday and Adams County 2014 peach block observations at UMass Cold Spring Orchard",
+            "description": "Fruit Notes lists this later Paul Friday peach in the 2014 quad-V block at UMass Cold Spring Orchard and says the later harvested varieties were largely ho-hum in the author's initial 2017 observations"
+          },
+          "rows": [
+            {"name": "PF 28-007", "harvest_time": "32 days after Redhaven harvest"},
+            {"name": "PF Fat Lady", "aka": ["Fat Lady"], "harvest_time": "40 days after Redhaven harvest"},
+            {"name": "PF Legendary", "harvest_time": "40 days after Redhaven harvest"},
+            {"name": "PF Big George", "aka": ["Big George"], "harvest_time": "50 days after Redhaven harvest"},
+            {"name": "PF Fashionably Late", "aka": ["Fashionable Late"], "harvest_time": "54 days after Redhaven harvest"}
+          ]
+        },
+        {
+          "fields": {
+            "category": "Paul Friday and Adams County 2014 peach block observations at UMass Cold Spring Orchard",
+            "description": "Fruit Notes lists this later Paul Friday nectarine in the 2014 quad-V block at UMass Cold Spring Orchard and says the later harvested varieties were largely ho-hum in the author's initial 2017 observations"
+          },
+          "rows": [
+            {
+              "name": "PF Ka-Ching",
+              "aka": ["Ka Ching"],
+              "plant_type": "Nectarine",
+              "harvest_time": "50 days after Redhaven harvest"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "category": "Paul Friday and Adams County 2014 peach block observations at UMass Cold Spring Orchard",
+            "description": "Fruit Notes says this Adams County Nursery Rutgers named selection was very nice in the UMass Cold Spring Orchard 2014 block, and that after seeing fruit for one year the author would not hesitate to recommend it"
+          },
+          "rows": [
+            {
+              "name": "NJN 100",
+              "aka": ["Silver Gem"],
+              "plant_type": "Nectarine",
+              "harvest_time": "13 days before Redhaven harvest"
+            },
+            {
+              "name": "NJN 101",
+              "aka": ["Avalon"],
+              "plant_type": "Nectarine",
+              "harvest_time": "11 days before Redhaven harvest"
+            },
+            {
+              "name": "NJ 354",
+              "aka": ["July Rose"],
+              "plant_type": "Peach",
+              "harvest_time": "6 days before Redhaven harvest"
+            },
+            {
+              "name": "NJ 355",
+              "aka": ["Scarlet Rose"],
+              "plant_type": "Peach",
+              "harvest_time": "4 days before Redhaven harvest"
+            },
+            {
+              "name": "NJ 356",
+              "aka": ["August Rose"],
+              "plant_type": "Peach",
+              "harvest_time": "24 days after Redhaven harvest"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

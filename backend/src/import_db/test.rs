@@ -712,6 +712,14 @@ fn test_fruit_notes_reference_files_have_reference_categories() {
             "fruit-notes-v83n2-spring-2018",
         ),
         (
+            "references/Massachusetts/Fruit Notes- Ripening Season of Peach Varieties in Massachusetts 1939.json5",
+            "fruit-notes-v4-march-1939",
+        ),
+        (
+            "references/Massachusetts/Fruit Notes- Fifteen Years of Peach and Nectarine Variety Evaluation at UMass Cold Spring Orchard.json5",
+            "fruit-notes-v83n1-winter-2018",
+        ),
+        (
             "references/New Jersey/Fruit Notes- Selena and Silverglo Peach and Nectarine Fruit Quality.json5",
             "fruit-notes-v84n1-winter-2019",
         ),
@@ -730,6 +738,10 @@ fn test_fruit_notes_reference_files_have_reference_categories() {
         (
             "references/Massachusetts/Fruit Notes- Performance of the Pearl Cherries in Massachusetts.json5",
             "fruit-notes-v77n1-winter-2012",
+        ),
+        (
+            "references/Massachusetts/Fruit Notes- Favorite Cherry Varieties Grower Observations.json5",
+            "fruit-notes-v80n3-summer-2015",
         ),
         (
             "references/New Jersey/Fruit Notes- Testing and Evaluation of Plum and Plum Hybrid Cultivars.json5",

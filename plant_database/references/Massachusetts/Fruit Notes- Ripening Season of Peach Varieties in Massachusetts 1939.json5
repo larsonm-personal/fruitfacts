@@ -1,0 +1,174 @@
+{
+    title: "Ripening Season of Peach Varieties in Massachusetts",
+    author: "W. H. Thies",
+    description: "Fruit Notes Volume 4, March 1939 archive article giving a Massachusetts peach ripening-season graph with average picking dates, earliest and latest picking extremes, and asterisks for varieties recommended for planting",
+    url: "https://archive.org/details/fruitnotes3539univ/page/n354/mode/1up",
+    published: "March 1939",
+    accessed: "Jul 2026",
+    type: "archive harvest-season cultivar article",
+    reference_categories: ["fruit-notes", "fruit-notes-v4-march-1939"],
+    locations: [
+        {
+            name: "Massachusetts",
+            latitude: 42.4072,
+            longitude: -71.3824
+        },
+    ],
+    categories: [
+        {
+            name: "Massachusetts peach ripening season from Fruit Notes 1939",
+            description: "Fruit Notes gives a March 1939 graph of Massachusetts peach picking seasons. Bars show average picking dates and x marks show earliest and latest picking dates; asterisks mark varieties recommended for planting in Massachusetts"
+        },
+    ],
+    plants: [
+        {
+            type: "Peach",
+            name: "Greensboro",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 3 to August 7 in Massachusetts; extremes about August 1 to August 11",
+            description: "Fruit Notes includes this peach in its March 1939 Massachusetts ripening-season graph but does not mark it among varieties recommended for planting"
+        },
+        {
+            type: "Peach",
+            name: "Buttercup",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 3 to August 5 in Massachusetts; extremes about August 1 to August 9",
+            description: "Fruit Notes includes this peach in its March 1939 Massachusetts ripening-season graph but does not mark it among varieties recommended for planting"
+        },
+        {
+            type: "Peach",
+            name: "Rosebud",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 11 to August 17 in Massachusetts; extremes about August 5 to August 19",
+            description: "Fruit Notes includes this peach in its March 1939 Massachusetts ripening-season graph but does not mark it among varieties recommended for planting"
+        },
+        {
+            type: "Peach",
+            name: "Carman",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 17 to August 31 in Massachusetts; extremes about August 13 to September 6",
+            description: "Fruit Notes includes this peach in its March 1939 Massachusetts ripening-season graph but does not mark it among varieties recommended for planting"
+        },
+        {
+            type: "Peach",
+            name: "Pioneer",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 19 to August 23 in Massachusetts; extremes about August 17 to August 27",
+            description: "Fruit Notes includes this peach in its March 1939 Massachusetts ripening-season graph but does not mark it among varieties recommended for planting"
+        },
+        {
+            type: "Peach",
+            name: "Delicious",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 21 to August 27 in Massachusetts; extremes about August 19 to August 29",
+            description: "Fruit Notes includes this peach in its March 1939 Massachusetts ripening-season graph but does not mark it among varieties recommended for planting"
+        },
+        {
+            type: "Peach",
+            name: "Radiance",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 21 to August 29 in Massachusetts; extremes about August 19 to August 31",
+            description: "Fruit Notes includes this peach in its March 1939 Massachusetts ripening-season graph but does not mark it among varieties recommended for planting"
+        },
+        {
+            type: "Peach",
+            name: "Cumberland",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 23 to August 27 in Massachusetts; extremes about August 19 to August 29",
+            description: "Fruit Notes includes this peach in its March 1939 Massachusetts ripening-season graph but does not mark it among varieties recommended for planting"
+        },
+        {
+            type: "Peach",
+            name: "Eclipse",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 25 to August 31 in Massachusetts; extremes about August 19 to August 31",
+            description: "Fruit Notes includes this peach in its March 1939 Massachusetts ripening-season graph but does not mark it among varieties recommended for planting"
+        },
+        {
+            type: "Peach",
+            name: "Goldeneast",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 27 to September 6 in Massachusetts; extremes about August 25 to September 10",
+            description: "Fruit Notes includes this peach in its March 1939 Massachusetts ripening-season graph but does not mark it among varieties recommended for planting"
+        },
+        {
+            type: "Peach",
+            name: "Valiant",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 29 to September 4 in Massachusetts; extremes about August 25 to September 6",
+            description: "Fruit Notes includes this peach in its March 1939 Massachusetts ripening-season graph but does not mark it among varieties recommended for planting"
+        },
+        {
+            type: "Peach",
+            name: "Veteran",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 27 to September 6 in Massachusetts; extremes about August 25 to September 8",
+            description: "Fruit Notes includes this peach in its March 1939 Massachusetts ripening-season graph but does not mark it among varieties recommended for planting"
+        },
+        {
+            type: "Peach",
+            name: "Primrose",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about September 6 to September 12 in Massachusetts; extremes about September 4 to September 14",
+            description: "Fruit Notes includes this peach in its March 1939 Massachusetts ripening-season graph but does not mark it among varieties recommended for planting"
+        },
+        {
+            type: "Peach",
+            name: "Mikado",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 3 to August 9 in Massachusetts; extremes about August 1 to August 11",
+            description: "Fruit Notes marks this peach with an asterisk as recommended for planting in Massachusetts in its March 1939 ripening-season graph"
+        },
+        {
+            type: "Peach",
+            name: "Marigold",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 3 to August 9 in Massachusetts; extremes about August 3 to August 11",
+            description: "Fruit Notes marks this peach with an asterisk as recommended for planting in Massachusetts in its March 1939 ripening-season graph"
+        },
+        {
+            type: "Peach",
+            name: "Oriole",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 13 to August 25 in Massachusetts; extremes about August 11 to August 27",
+            description: "Fruit Notes marks this peach with an asterisk as recommended for planting in Massachusetts in its March 1939 ripening-season graph"
+        },
+        {
+            type: "Peach",
+            name: "Golden Jubilee",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 17 to August 23 in Massachusetts; extremes about August 11 to August 27",
+            description: "Fruit Notes marks this peach with an asterisk as recommended for planting in Massachusetts in its March 1939 ripening-season graph"
+        },
+        {
+            type: "Peach",
+            name: "Halehaven",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about August 27 to September 6 in Massachusetts; extremes about August 23 to September 8",
+            description: "Fruit Notes marks this peach with an asterisk as recommended for planting in Massachusetts in its March 1939 ripening-season graph"
+        },
+        {
+            type: "Peach",
+            name: "Belle of Georgia",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            AKA: ["Belle"],
+            harvest_time_unparsed: "average picking dates about September 6 to September 14 in Massachusetts; extremes about September 4 to September 18",
+            description: "Fruit Notes marks this peach with an asterisk as recommended for planting in Massachusetts in its March 1939 ripening-season graph"
+        },
+        {
+            type: "Peach",
+            name: "Elberta",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            harvest_time_unparsed: "average picking dates about September 12 to September 18 in Massachusetts; extremes about September 10 to September 22",
+            description: "Fruit Notes marks this peach with an asterisk as recommended for planting in Massachusetts in its March 1939 ripening-season graph"
+        },
+        {
+            type: "Peach",
+            name: "J.H. Hale",
+            category: "Massachusetts peach ripening season from Fruit Notes 1939",
+            AKA: ["Hale"],
+            harvest_time_unparsed: "average picking dates about September 14 to September 20 in Massachusetts; extremes about September 12 to September 22",
+            description: "Fruit Notes marks this peach with an asterisk as recommended for planting in Massachusetts in its March 1939 ripening-season graph"
+        },
+    ]
+}

@@ -1,0 +1,140 @@
+{
+  "source": {
+    "kind": "static"
+  },
+  "reference_fields": [
+    ["title", "Ripening Season of Peach Varieties in Massachusetts"],
+    ["author", "W. H. Thies"],
+    ["description", "Fruit Notes Volume 4, March 1939 archive article giving a Massachusetts peach ripening-season graph with average picking dates, earliest and latest picking extremes, and asterisks for varieties recommended for planting"],
+    ["url", "https://archive.org/details/fruitnotes3539univ/page/n354/mode/1up"],
+    ["published", "March 1939"],
+    ["accessed", "Jul 2026"],
+    ["type", "archive harvest-season cultivar article"],
+    ["reference_categories", ["fruit-notes", "fruit-notes-v4-march-1939"]]
+  ],
+  "locations": [
+    {
+      "name": "Massachusetts",
+      "latitude": 42.4072,
+      "longitude": -71.3824
+    }
+  ],
+  "categories": [
+    {
+      "name": "Massachusetts peach ripening season from Fruit Notes 1939",
+      "description": "Fruit Notes gives a March 1939 graph of Massachusetts peach picking seasons. Bars show average picking dates and x marks show earliest and latest picking dates; asterisks mark varieties recommended for planting in Massachusetts"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "static_rows",
+      "plant_type": "Peach",
+      "category": "Massachusetts peach ripening season from Fruit Notes 1939",
+      "harvest_time_unparsed": {"row_key": "harvest_time"},
+      "record_fields": [["AKA", {"row_key": "aka"}]],
+      "description_key": "description",
+      "row_groups": [
+        {
+          "fields": {
+            "description": "Fruit Notes includes this peach in its March 1939 Massachusetts ripening-season graph but does not mark it among varieties recommended for planting"
+          },
+          "rows": [
+            {
+              "name": "Greensboro",
+              "harvest_time": "average picking dates about August 3 to August 7 in Massachusetts; extremes about August 1 to August 11"
+            },
+            {
+              "name": "Buttercup",
+              "harvest_time": "average picking dates about August 3 to August 5 in Massachusetts; extremes about August 1 to August 9"
+            },
+            {
+              "name": "Rosebud",
+              "harvest_time": "average picking dates about August 11 to August 17 in Massachusetts; extremes about August 5 to August 19"
+            },
+            {
+              "name": "Carman",
+              "harvest_time": "average picking dates about August 17 to August 31 in Massachusetts; extremes about August 13 to September 6"
+            },
+            {
+              "name": "Pioneer",
+              "harvest_time": "average picking dates about August 19 to August 23 in Massachusetts; extremes about August 17 to August 27"
+            },
+            {
+              "name": "Delicious",
+              "harvest_time": "average picking dates about August 21 to August 27 in Massachusetts; extremes about August 19 to August 29"
+            },
+            {
+              "name": "Radiance",
+              "harvest_time": "average picking dates about August 21 to August 29 in Massachusetts; extremes about August 19 to August 31"
+            },
+            {
+              "name": "Cumberland",
+              "harvest_time": "average picking dates about August 23 to August 27 in Massachusetts; extremes about August 19 to August 29"
+            },
+            {
+              "name": "Eclipse",
+              "harvest_time": "average picking dates about August 25 to August 31 in Massachusetts; extremes about August 19 to August 31"
+            },
+            {
+              "name": "Goldeneast",
+              "harvest_time": "average picking dates about August 27 to September 6 in Massachusetts; extremes about August 25 to September 10"
+            },
+            {
+              "name": "Valiant",
+              "harvest_time": "average picking dates about August 29 to September 4 in Massachusetts; extremes about August 25 to September 6"
+            },
+            {
+              "name": "Veteran",
+              "harvest_time": "average picking dates about August 27 to September 6 in Massachusetts; extremes about August 25 to September 8"
+            },
+            {
+              "name": "Primrose",
+              "harvest_time": "average picking dates about September 6 to September 12 in Massachusetts; extremes about September 4 to September 14"
+            }
+          ]
+        },
+        {
+          "fields": {
+            "description": "Fruit Notes marks this peach with an asterisk as recommended for planting in Massachusetts in its March 1939 ripening-season graph"
+          },
+          "rows": [
+            {
+              "name": "Mikado",
+              "harvest_time": "average picking dates about August 3 to August 9 in Massachusetts; extremes about August 1 to August 11"
+            },
+            {
+              "name": "Marigold",
+              "harvest_time": "average picking dates about August 3 to August 9 in Massachusetts; extremes about August 3 to August 11"
+            },
+            {
+              "name": "Oriole",
+              "harvest_time": "average picking dates about August 13 to August 25 in Massachusetts; extremes about August 11 to August 27"
+            },
+            {
+              "name": "Golden Jubilee",
+              "harvest_time": "average picking dates about August 17 to August 23 in Massachusetts; extremes about August 11 to August 27"
+            },
+            {
+              "name": "Halehaven",
+              "harvest_time": "average picking dates about August 27 to September 6 in Massachusetts; extremes about August 23 to September 8"
+            },
+            {
+              "name": "Belle of Georgia",
+              "aka": ["Belle"],
+              "harvest_time": "average picking dates about September 6 to September 14 in Massachusetts; extremes about September 4 to September 18"
+            },
+            {
+              "name": "Elberta",
+              "harvest_time": "average picking dates about September 12 to September 18 in Massachusetts; extremes about September 10 to September 22"
+            },
+            {
+              "name": "J.H. Hale",
+              "aka": ["Hale"],
+              "harvest_time": "average picking dates about September 14 to September 20 in Massachusetts; extremes about September 12 to September 22"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

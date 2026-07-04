@@ -6,6 +6,108 @@
     ],
     issues: [
         {
+            id: "fruit-notes-v4-march-1939",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 4: March 1939",
+            reference_category: "fruit-notes-v4-march-1939",
+            issue_url: "https://archive.org/details/fruitnotes3539univ",
+            published: "March 1939",
+            accessed: "Jul 2026",
+            notes: [
+                "Archive bundle Fruit Notes 1935-1939; article pages are referenced by Archive.org page URLs rather than single-article PDFs"
+            ],
+            articles: [
+                {
+                    article_number: "p1",
+                    title: "A New Bees-for-Pollination Project",
+                    url: "https://archive.org/details/fruitnotes3539univ/page/n353/mode/1up",
+                    status: "do_not_encode",
+                    family: "crop-management",
+                    notes: [
+                        "Pollination logistics article, not a cultivar source from issue-level triage"
+                    ]
+                },
+                {
+                    article_number: "p2",
+                    title: "Ripening Season of Peach Varieties in Massachusetts",
+                    url: "https://archive.org/details/fruitnotes3539univ/page/n354/mode/1up",
+                    status: "encoded",
+                    crops: ["Peach"],
+                    family: "harvest-season",
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Ripening Season of Peach Varieties in Massachusetts 1939.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_archive_peach_ripening_massachusetts_1939.json",
+                    notes: [
+                        "Encoded as reviewed static rows after visual review of the scanned graph; OCR text alone did not preserve chart spacing safely"
+                    ]
+                },
+                {
+                    article_number: "p3",
+                    title: "Winter Mouse Activities",
+                    url: "https://archive.org/details/fruitnotes3539univ/page/n355/mode/1up",
+                    status: "do_not_encode",
+                    family: "crop-management",
+                    notes: [
+                        "Rodent injury article, not a cultivar source from issue-level triage"
+                    ]
+                },
+                {
+                    article_number: "p3b",
+                    title: "Refrigerator Cars for Storage Purposes",
+                    url: "https://archive.org/details/fruitnotes3539univ/page/n355/mode/1up",
+                    status: "do_not_encode",
+                    family: "crop-management",
+                    notes: [
+                        "Storage article, not a cultivar source from issue-level triage"
+                    ]
+                },
+                {
+                    article_number: "p4",
+                    title: "Apple Exports",
+                    url: "https://archive.org/details/fruitnotes3539univ/page/n355/mode/1up",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "industry-news",
+                    notes: [
+                        "Market article, not a cultivar source from issue-level triage"
+                    ]
+                },
+                {
+                    article_number: "p4b",
+                    title: "Prevention of Shrivelling and Scalding in Storage",
+                    url: "https://archive.org/details/fruitnotes3539univ/page/n355/mode/1up",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Storage treatment article, not a cultivar source from issue-level triage"
+                    ]
+                },
+                {
+                    article_number: "p5",
+                    title: "Items from Here and There",
+                    url: "https://archive.org/details/fruitnotes3539univ/page/n356/mode/1up",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "News miscellany; includes cultivar mentions but no durable recommendation table from this pass"
+                    ]
+                },
+                {
+                    article_number: "p7",
+                    title: "Timely Suggestions on the X Disease",
+                    url: "https://archive.org/details/fruitnotes3539univ/page/n358/mode/1up",
+                    status: "do_not_encode",
+                    crops: ["Peach"],
+                    family: "crop-management",
+                    notes: [
+                        "Disease control article, not a cultivar source from issue-level triage"
+                    ]
+                }
+            ]
+        },
+        {
             id: "fruit-notes-v76n2-spring-2011",
             status: "partially_encoded",
             title: "Fruit Notes Volume 76, Number 2: Spring 2011",
@@ -262,6 +364,158 @@
                         "plant_database/references/New Jersey/Fruit Notes- Testing and Evaluation of Plum and Plum Hybrid Cultivars.json5",
                     config:
                         "helper_scripts/extraction_configs/fruit_notes_plum_plum_hybrid_cultivars_2012.json"
+                }
+            ]
+        },
+        {
+            id: "fruit-notes-v80n3-summer-2015",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 80, Number 3: Summer 2015",
+            reference_category: "fruit-notes-v80n3-summer-2015",
+            issue_url: "http://umassfruitnotes.com/v80n3/FN80-3.pdf",
+            cover_url: "http://umassfruitnotes.com/v80n3/Cover803.html",
+            published: "Summer 2015",
+            accessed: "Jul 2026",
+            articles: [
+                {
+                    article_number: "a1",
+                    title: "When to Harvest Honeycrisp: A Preliminary Evaluation of Methods",
+                    url: "http://www.umassfruitnotes.com/v80n3/a1.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Cultivar-specific harvest-maturity management article, but not a variety-description source for FruitFacts"
+                    ]
+                },
+                {
+                    article_number: "a2",
+                    title: "Two New NC-140 Apple Trials: Vineland and Geneva Rootstocks with Honeycrisp and Fuji at Rutgers Snyder Farm",
+                    url: "http://www.umassfruitnotes.com/v80n3/a2.pdf",
+                    status: "triage",
+                    crops: ["Apple", "Apple Rootstock"],
+                    family: "rootstock-trial",
+                    notes: [
+                        "Rootstock trial article; hold for a later rootstock-focused import shape"
+                    ]
+                },
+                {
+                    article_number: "a3",
+                    title: "Favorite Cherry Varieties: Grower Observations",
+                    url: "http://www.umassfruitnotes.com/v80n3/a3.pdf",
+                    status: "encoded",
+                    crops: ["Sweet Cherry", "Sour Cherry"],
+                    family: "grower-observations",
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Favorite Cherry Varieties Grower Observations.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_favorite_cherry_varieties_grower_observations_2015.json",
+                    notes: [
+                        "Encoded as lower-weight grower observations because useful cultivar remarks are spread across Q&A prose rather than a replicated trial table"
+                    ]
+                },
+                {
+                    article_number: "a4",
+                    title: "Who Buys New Jersey Peaches and Where?",
+                    url: "http://www.umassfruitnotes.com/v80n3/a4.pdf",
+                    status: "do_not_encode",
+                    crops: ["Peach"],
+                    family: "industry-news",
+                    notes: [
+                        "Market-audience article, not a cultivar source from cover-level triage"
+                    ]
+                }
+            ]
+        },
+        {
+            id: "fruit-notes-v83n1-winter-2018",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 83, Number 1: Winter 2018",
+            reference_category: "fruit-notes-v83n1-winter-2018",
+            issue_url: "http://umassfruitnotes.com/v83n1/FN831.pdf",
+            cover_url: "http://umassfruitnotes.com/v83n1/Cover831.html",
+            published: "Winter 2018",
+            accessed: "Jul 2026",
+            articles: [
+                {
+                    article_number: "a1",
+                    title: "iPiPE Northeast Apple Crop-Pest Program (CPP)",
+                    url: "http://umassfruitnotes.com/v83n1/a1.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Crop-pest program article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a2",
+                    title: "Fifteen Years of Peach and Nectarine Variety Evaluation at the UMass Cold Spring Orchard",
+                    url: "http://umassfruitnotes.com/v83n1/a2.pdf",
+                    status: "encoded",
+                    crops: ["Peach", "Nectarine"],
+                    family: "trial-evaluation",
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Fifteen Years of Peach and Nectarine Variety Evaluation at UMass Cold Spring Orchard.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_peach_nectarine_umass_cold_spring_2018.json",
+                    notes: [
+                        "Encoded as reviewed static rows because observations are organized by planting block and prose summary rather than a reliable table"
+                    ]
+                },
+                {
+                    article_number: "a3",
+                    title: "2017 UMass RIMpro Advisory Service",
+                    url: "http://umassfruitnotes.com/v83n1/a3.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Disease advisory service article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a4",
+                    title: "2017 Wayne County Fruit Grower Tour",
+                    url: "http://umassfruitnotes.com/v83n1/a4.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple", "Peach", "Nectarine"],
+                    family: "industry-news",
+                    notes: [
+                        "Grower tour report; hold unless later review finds durable cultivar observations"
+                    ]
+                },
+                {
+                    article_number: "a5",
+                    title: "Hops: An Aromatic Addition to Farms in the Northeast",
+                    url: "http://umassfruitnotes.com/v83n1/a5.pdf",
+                    status: "do_not_encode",
+                    crops: ["Hops"],
+                    family: "crop-management",
+                    notes: [
+                        "Hops crop article outside the current FruitFacts fruit-variety import scope"
+                    ]
+                },
+                {
+                    article_number: "a6",
+                    title: "Tree Size and Fruit Yield in 2017 of Honeycrisp and Fuji Apple Trees in 2014 NC-140 Rootstock Trials in Massachusetts and New Jersey",
+                    url: "http://umassfruitnotes.com/v83n1/a6.pdf",
+                    status: "triage",
+                    crops: ["Apple", "Apple Rootstock"],
+                    family: "rootstock-trial",
+                    notes: [
+                        "Rootstock trial article; hold for the shared Fruit Notes rootstock import shape"
+                    ]
+                },
+                {
+                    article_number: "a7",
+                    title: "Massachusetts News",
+                    url: "http://umassfruitnotes.com/v83n1/a7.pdf",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "News article, not a cultivar source from cover-level triage"
+                    ]
                 }
             ]
         },

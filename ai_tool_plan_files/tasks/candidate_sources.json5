@@ -3973,27 +3973,33 @@
         },
         {
             id: "fruit-notes-fifteen-years-peach-nectarine-evaluation-2018",
-            status: "new",
+            status: "encoded",
             priority: "high",
             title: "Fifteen Years of Peach and Nectarine Variety Evaluation at the UMass Cold Spring Orchard",
+            authors: ["Jon M. Clements"],
             institution: "Fruit Notes",
             region: "Massachusetts",
             crops: ["Peach", "Nectarine"],
             source_type: "journal cultivar performance article",
-            landing_url: "http://umassfruitnotes.com/v83n1/Cover831abcd.html",
+            landing_url: "http://umassfruitnotes.com/v83n1/Cover831.html",
             download_url: "http://umassfruitnotes.com/v83n1/a2.pdf",
             discovered: "2026-07-02",
             discovered_by: "UMass Fruit Notes live issue index survey",
             value_summary:
                 "Long-term Massachusetts peach and nectarine variety evaluation at UMass Cold Spring Orchard",
-            asset_decision: "download and review before import",
+            asset_decision: "reviewed and encoded as static rows",
             proposed_reference_path:
                 "plant_database/references/Massachusetts/Fruit Notes- Fifteen Years of Peach and Nectarine Variety Evaluation at UMass Cold Spring Orchard.json5",
             duplicate_check:
-                "No existing JSON5 reference found for v83n1/a2",
+                "No existing JSON5 reference was found for v83n1/a2 before this import; this pass uses existing canonical names where local references already prefer FA, PF, Rutgers, or ACN selection codes",
             notes: [
                 "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference",
-                "Likely high-value multi-cultivar performance source"
+                "Encoded in plant_database/references/Massachusetts/Fruit Notes- Fifteen Years of Peach and Nectarine Variety Evaluation at UMass Cold Spring Orchard.json5",
+                "Config extraction added at helper_scripts/extraction_configs/fruit_notes_peach_nectarine_umass_cold_spring_2018.json",
+                "Manifest entry added as fruit_notes_peach_nectarine_umass_cold_spring_2018",
+                "Uses static_rows because cultivar observations are spread across narrative planting-block summaries rather than a mechanically extractable table",
+                "Corrected candidate cover URL from Cover831abcd.html to Cover831.html",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {
@@ -4317,7 +4323,7 @@
         },
         {
             id: "fruit-notes-favorite-cherry-varieties-grower-observations-2015",
-            status: "new",
+            status: "encoded",
             priority: "medium",
             title: "Favorite Cherry Varieties: Grower Observations",
             institution: "Fruit Notes",
@@ -4330,13 +4336,18 @@
             discovered_by: "UMass Fruit Notes live issue index survey",
             value_summary:
                 "Grower observations on favorite cherry varieties",
-            asset_decision: "download and review before import",
+            asset_decision: "reviewed PDF text; DVC PDF asset not archived in this pass",
             proposed_reference_path:
                 "plant_database/references/Massachusetts/Fruit Notes- Favorite Cherry Varieties Grower Observations.json5",
             duplicate_check:
                 "No existing JSON5 reference found for v80n3/a3",
             notes: [
-                "Lower evidentiary weight than extension trials, but likely useful cultivar observations"
+                "Encoded in plant_database/references/Massachusetts/Fruit Notes- Favorite Cherry Varieties Grower Observations.json5",
+                "Config extraction added at helper_scripts/extraction_configs/fruit_notes_favorite_cherry_varieties_grower_observations_2015.json",
+                "Manifest entry added as fruit_notes_favorite_cherry_varieties_grower_observations_2015",
+                "Uses static_rows because useful cherry cultivar observations are spread across favorite lists, failed-variety lists, tunnel comments, and Q&A prose",
+                "Lower evidentiary weight than extension trials; encoded 32 sweet and sour cherry rows with grower-specific contradictions preserved",
+                "Reference categories include fruit-notes and fruit-notes-v80n3-summer-2015"
             ]
         },
         {
@@ -8105,10 +8116,11 @@
         },
         {
             id: "fruit-notes-archive-ripening-season-peach-varieties-massachusetts-1939",
-            status: "new",
+            status: "encoded",
             priority: "high",
             title: "Ripening season of peach varieties in Massachusetts",
             institution: "Fruit Notes",
+            authors: ["W. H. Thies"],
             region: "Massachusetts",
             crops: ["Peach"],
             published: "March 1939",
@@ -8119,14 +8131,19 @@
             discovered_by: "UMass Fruit Notes archive TOC survey pass 4",
             value_summary:
                 "Massachusetts peach variety ripening season information",
-            asset_decision: "locate in archive scan and review before import",
+            asset_decision: "reviewed Archive.org scan and encoded as static rows",
             proposed_reference_path:
                 "plant_database/references/Massachusetts/Fruit Notes- Ripening Season of Peach Varieties in Massachusetts 1939.json5",
             duplicate_check:
-                "No existing JSON5 reference or candidate ID found for this archive TOC title and year",
+                "No existing JSON5 reference was found for this archive TOC title and year before this import; Belle and Hale were normalized to local peach names with source names kept as AKA",
             notes: [
                 "Archive TOC entry: Volume 4, March 1939; scan bundle: Fruit Notes 1935-1939",
-                "Recurring title in Fruit Notes; keep year in reference path"
+                "Recurring title in Fruit Notes; keep year in reference path",
+                "Encoded in plant_database/references/Massachusetts/Fruit Notes- Ripening Season of Peach Varieties in Massachusetts 1939.json5",
+                "Config extraction added at helper_scripts/extraction_configs/fruit_notes_archive_peach_ripening_massachusetts_1939.json",
+                "Manifest entry added as fruit_notes_archive_peach_ripening_massachusetts_1939",
+                "Uses static_rows after visual review of Archive.org page n354 because the scan OCR preserves the title but not the graph spacing safely",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {
