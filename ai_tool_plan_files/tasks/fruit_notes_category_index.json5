@@ -117,7 +117,8 @@
                 "helper_scripts/extraction_configs/fruit_notes_crimson_gold_apple_release_2019.json",
                 "helper_scripts/extraction_configs/fruit_notes_rubyrush_apple_release_2022.json",
                 "helper_scripts/extraction_configs/fruit_notes_hard_cider_apple_varieties_new_jersey_2021.json",
-                "helper_scripts/extraction_configs/fruit_notes_pearl_cherries_massachusetts_2012.json"
+                "helper_scripts/extraction_configs/fruit_notes_pearl_cherries_massachusetts_2012.json",
+                "helper_scripts/extraction_configs/fruit_notes_plum_plum_hybrid_cultivars_2012.json"
             ],
             notes: [
                 "Use table parsers when row alignment is mechanically reliable",

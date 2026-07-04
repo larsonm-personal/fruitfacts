@@ -4,3 +4,4 @@ plant_database/**/*.png
 michael-gdrive-credentials.json
 RELOAD_DB
 **/__pycache__/
+tmp/

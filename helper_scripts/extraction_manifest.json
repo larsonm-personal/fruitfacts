@@ -429,6 +429,10 @@
             "config": "extraction_configs/fruit_notes_pearl_cherries_massachusetts_2012.json"
         },
         {
+            "id": "fruit_notes_plum_plum_hybrid_cultivars_2012",
+            "config": "extraction_configs/fruit_notes_plum_plum_hybrid_cultivars_2012.json"
+        },
+        {
             "id": "fruit_notes_red_french_american_grapes_2019",
             "config": "extraction_configs/fruit_notes_red_french_american_grapes_2019.json"
         },

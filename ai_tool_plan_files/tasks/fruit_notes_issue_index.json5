@@ -53,11 +53,12 @@
                     article_number: "a4",
                     title: "Asian Pear Cultivar Trial in New Jersey and Massachusetts",
                     url: "http://www.umassfruitnotes.com/v77n1/a4.pdf",
-                    status: "triage",
+                    status: "do_not_encode",
                     crops: ["Asian Pear"],
                     family: "trial-evaluation",
                     notes: [
-                        "Likely useful cultivar trial source; should be reviewed in a later Fruit Notes pass"
+                        "Reviewed Jul 2026; article describes the trial setup and goals but does not provide cultivar-level results or recommendations",
+                        "Only named cultivar is Shinko in photo captions, so no FruitFacts reference was created"
                     ]
                 },
                 {
@@ -69,6 +70,61 @@
                     notes: [
                         "Award notice, no cultivar-level FruitFacts data"
                     ]
+                }
+            ]
+        },
+        {
+            id: "fruit-notes-v77n3-summer-2012",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 77, Number 3: Summer 2012",
+            reference_category: "fruit-notes-v77n3-summer-2012",
+            issue_url: "http://umassfruitnotes.com/v77n3/FN77-3.pdf",
+            cover_url: "http://umassfruitnotes.com/v77n3/Cover773.html",
+            published: "Summer 2012",
+            accessed: "Jul 2026",
+            articles: [
+                {
+                    article_number: "a1",
+                    title: "Dogwood Borer Research",
+                    url: "http://www.umassfruitnotes.com/v77n3/a1.pdf",
+                    status: "do_not_encode",
+                    family: "crop-management",
+                    notes: [
+                        "Pest-management research article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a2",
+                    title: "Sprayer Setup and Calibration Meeting at Rutgers Snyder farm",
+                    url: "http://www.umassfruitnotes.com/v77n3/a2.pdf",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "Meeting notice and sprayer setup article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a3",
+                    title: "An Update on the Rutgers New Jersey Agricultural Experiment Station Strawberry Breeding Program",
+                    url: "http://www.umassfruitnotes.com/v77n3/a3.pdf",
+                    status: "triage",
+                    crops: ["Strawberry"],
+                    family: "release-or-update",
+                    notes: [
+                        "Likely breeding-program source; review in a later Fruit Notes pass for named cultivar or selection observations"
+                    ]
+                },
+                {
+                    article_number: "a4",
+                    title: "Testing and Evaluation of Plum and Plum Hybrid Cultivars",
+                    url: "http://www.umassfruitnotes.com/v77n3/a4.pdf",
+                    status: "encoded",
+                    crops: ["Euro Plum", "Japanese Plum", "Plumcot", "Apriplum", "Nectarine"],
+                    family: "trial-evaluation",
+                    reference_path:
+                        "plant_database/references/New Jersey/Fruit Notes- Testing and Evaluation of Plum and Plum Hybrid Cultivars.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_plum_plum_hybrid_cultivars_2012.json"
                 }
             ]
         },

@@ -731,6 +731,10 @@ fn test_fruit_notes_reference_files_have_reference_categories() {
             "references/Massachusetts/Fruit Notes- Performance of the Pearl Cherries in Massachusetts.json5",
             "fruit-notes-v77n1-winter-2012",
         ),
+        (
+            "references/New Jersey/Fruit Notes- Testing and Evaluation of Plum and Plum Hybrid Cultivars.json5",
+            "fruit-notes-v77n3-summer-2012",
+        ),
     ];
 
     for (relative_path, issue_category) in cases {

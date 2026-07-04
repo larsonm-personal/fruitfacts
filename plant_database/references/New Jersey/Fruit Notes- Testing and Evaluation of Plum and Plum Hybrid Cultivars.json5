@@ -1,0 +1,328 @@
+{
+    title: "Testing and Evaluation of Plum and Plum Hybrid Cultivars",
+    author: "Jerome L. Frecon and Daniel L. Ward",
+    description: "Fruit Notes Volume 77, Number 3, Summer 2012 article reporting Rutgers plum, plumcot, apriplum, and related Prunus hybrid evaluations from southern New Jersey with a few Adams County Nursery observations",
+    url: "http://umassfruitnotes.com/v77n3/a4.pdf",
+    published: "Summer 2012",
+    accessed: "Jul 2026",
+    type: "journal article test",
+    reference_categories: ["fruit-notes", "fruit-notes-v77n3-summer-2012"],
+    locations: [
+        {
+            name: "Rutgers New Jersey Agricultural Experiment Station, New Brunswick, New Jersey",
+            latitude: 40.4862,
+            longitude: -74.4518
+        },
+        {
+            name: "Adams County Nursery, Aspers, Pennsylvania",
+            latitude: 39.97124597962969,
+            longitude: -77.21505276527739
+        },
+    ],
+    categories: [
+        {
+            name: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            description: "Fruit Notes reports 1989-2011 observations of Japanese plums, European plums, plumcots, apriplums, and related Prunus hybrids grown mainly in southern New Jersey research blocks, with a few varieties observed at Adams County Nursery in Pennsylvania"
+        },
+    ],
+    plants: [
+        {
+            type: "Apriplum",
+            name: "Tasty Rich",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            description: "Fruit Notes reports that three-year-old Tasty Rich apriplum trees were weak, produced no fruit, and all died in 2009 in the New Jersey evaluation"
+        },
+        {
+            type: "Plumcot",
+            name: "Spring Satin",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "June 28 to July 1",
+            description: "Fruit Notes describes Spring Satin as an early plumcot with globose-ovate medium fruit, 90 to 100 percent purplish-red overcolor, light yellow to clear flesh with some red edge pigmentation, light skin pubescence, medium-firm juicy grainy very sweet flesh, and very good flavor. Source notes: vigorous spreading trees, productive especially for a plumcot, respectable early-season fruit size over 2 inches, and susceptibility to bacterial spot"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 96M514",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "June 20",
+            description: "Fruit Notes describes USDA BY 96M514 as a yellow-fleshed clingstone plum ripening June 20. Source notes: average fruit weight of 78 grams, all fruit below 2.25 inches, and 9.6 percent soluble solids in 2010"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 88Z1092",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "June 27 to July 6",
+            description: "Fruit Notes describes USDA BY 88Z1092 as a small globose plum with 100 percent dark bluish-black skin, yellow-green clingstone flesh, medium-firm juicy melting sweet flesh, and good flavor. Source notes: spreading vigorous trees, light productivity, 26 gram average fruit weight, and 9.6 percent soluble solids in 2010"
+        },
+        {
+            type: "Apriplum",
+            name: "Honey Rich",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 1 to July 7",
+            description: "Fruit Notes describes Honey Rich apriplum as an ovate small yellow-orange fruit with a prominent suture, yellow meaty sweet flesh, and excellent flavor. Source notes: very early bloom, low-vigor upright-spreading trees, light productivity, 16.7 percent soluble solids in 2010, very few fruit in 2011, and likely limited usefulness in New Jersey because it blooms so early and needs another very early apricot for pollination"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Earliqueen",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 2 to July 8",
+            description: "Fruit Notes describes Earliqueen as a globose small to medium-small clingstone plum with 100 percent dark reddish-purple skin, light yellow flesh, medium-firm juicy flesh, and fair flavor. Source notes: vigorous spreading trees, light productivity, very high susceptibility to bacterial spot, and removal after 15 years because it was never consistently productive"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 8158-54",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 2 to July 6",
+            description: "Fruit Notes describes USDA BY 8158-54 as a globose to heart-shaped medium-small semi-clingstone plum with 90 to 100 percent purplish-red overcolor, greenish-red ground color, red flesh, medium-firm melting stringy sweet-acidic flesh, and fair to good flavor. Source notes: upright-spreading vigorous trees, moderate productivity, and high susceptibility to leaf spotting"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 8158-142",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 2 to July 8",
+            description: "Fruit Notes describes USDA BY 8158-142 as a small globose clingstone plum with 50 to 80 percent bright red over yellow undercolor, reddish-yellow flesh, medium-firm juicy melting moderately sweet flesh, and fair to good flavor. Source notes: spreading vigorous trees, light productivity, moderate bacterial-spot susceptibility, 32 gram average fruit weight, all fruit under 2.25 inches, and 12.6 percent soluble solids in 2010"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 86M516",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 2 to July 9",
+            description: "Fruit Notes describes USDA BY 86M516 as a small globose clingstone plum with 80 to 90 percent pinkish red over a slight yellow-green ground color, yellowish red flesh, medium-firm sweet acidic flesh, and very good flavor. Source notes: very vigorous spreading trees, only light crops, little observed leaf spotting, 27.1 gram average fruit weight, all fruit under 2.25 inches, and 10.3 percent soluble solids in 2010"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 91M97",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 3 to July 10",
+            description: "Fruit Notes describes USDA BY 91M97 as a small globose clingstone plum with 100 percent reddish deep-purple skin, red flesh, medium-firm sweet acidic flesh, and very good flavor. Source notes: large vigorous spreading trees, light productivity, medium bacterial-spot susceptibility, 42 gram average fruit weight, all fruit under 2.25 inches, and 14.7 percent soluble solids in 2010"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 96M1275",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 10 to July 16",
+            description: "Fruit Notes describes USDA BY 96M1275 as a globose to slightly heart-shaped plum with 80 to 100 percent light speckled red over yellow-green ground color, pinkish-yellow flesh, medium-firm melting juicy sweet flesh, and very good flavor. Source notes: vigorous spreading trees, light productivity, medium bacterial-spot susceptibility, 16.9 percent soluble solids in 2010, 56 gram average fruit weight, and all fruit under 2.25 inches"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Shiro",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 12 to July 19",
+            description: "Fruit Notes describes Shiro as a globose to heart-shaped medium yellow-skinned plum, mostly around 2 inches, ripening about 10 days after Early Golden. Source notes: yellow semi-clingstone flesh that is soft but juicy with very good flavor, partial self-incompatibility, pollination by Methley, Vanier, and Ruby Queen, and usefulness as a pollinizer for other early-blooming plums"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 93M364",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 14 to July 20",
+            description: "Fruit Notes describes USDA BY 93M364 as a small globose clingstone plum with 90 to 100 percent purplish red over greenish-yellow ground color, yellow flesh, firm melting acidic flesh, and good flavor. Source notes: vigorous upright trees, productive habit, medium bacterial-leaf-spot susceptibility, 11.2 percent soluble solids in 2010, 39 gram average fruit weight, and all fruit under 2.25 inches"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Methley",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 15 to July 22",
+            description: "Fruit Notes describes Methley as a small to medium globose purplish-red plum with red clingstone flesh. Source notes: soft juicy flesh with fair to good flavor and slight skin aftertaste, self-fertility, very high productivity, value as a pollinizer for other early-blooming Japanese plums, and direct-market appeal because of long-lived productive trees"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 8150-50",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 15 to July 22",
+            description: "Fruit Notes describes USDA BY 8150-50 as a medium-small globose semi-clingstone plum with 90 percent pinkish-red overcolor, red flesh, firm melting sweet-tart flesh, and good flavor. Source notes: vigorous spreading trees, moderate productivity, medium bacterial-leaf-spot susceptibility, 10.7 percent soluble solids in 2010, 89 gram average fruit weight, 83 percent of fruit under 2.25 inches, and 7 percent at 2.25 inches"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 8327-65",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 18 to July 24",
+            description: "Fruit Notes describes USDA BY 8327-65 as a small globose to heart-shaped semi-clingstone plum with 100 percent dark reddish-purple skin, red flesh, medium-firm stringy sweet mild flesh, and very good flavor. Source notes: spreading vigorous trees, moderate productivity, low bacterial-spot susceptibility, 59 gram average fruit weight, all fruit under 2.25 inches, and 15.9 percent soluble solids in 2010"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Toka",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            AKA: ["Bubblegum Plum"],
+            harvest_time_unparsed: "July 20 to July 26",
+            description: "Fruit Notes describes Bubblegum Plum as the Prunus salicina hybrid Toka, a small bronze-red globose plum with soft yellow clingstone flesh, good but gummy texture, and early bloom. Source notes: upright vigorous lightly productive trees, self-incompatibility, need for another American x Japanese hybrid pollinizer, heavy flowering, and little fruit set in the trial"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 8334-16",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 22 to July 25",
+            description: "Fruit Notes describes USDA BY 8334-16 as a very small oval to ovate clingstone plum with 100 percent purplish-red overcolor, greenish-yellow flesh, firm melting sweet flesh, and good flavor. Source notes: very vigorous spreading trees, light productivity, high bacterial-leaf-spot susceptibility, and tree death by 2009"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Black Ruby",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 23 to July 30",
+            description: "Fruit Notes describes Black Ruby as a medium globose semi-freestone plum with 90 to 100 percent reddish-black skin, red flesh, medium-firm melting stringy sweet flesh, and good flavor. Source notes: vigorous spreading trees, light productivity, bacterial-leaf-spot susceptibility, improved productivity in New Jersey with Ruby Queen, Methley, Shiro, and Vanier pollination, and a note that earlier trial records may have used Black Ruby for a smaller earlier red-fleshed clingstone cultivar"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 88M878",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "July 25 to July 31",
+            description: "Fruit Notes describes USDA BY 88M878 as a small globose clingstone plum with 100 percent purplish-red skin, red flesh, medium-firm melting juicy sweet-acidic flesh, and very good flavor. Source notes: spreading vigorous lightly productive trees, medium bacterial-spot susceptibility, 42 gram average fruit weight, 98 percent of fruit under 2.25 inches, 2 percent at 2.25 inches, and 14.1 percent soluble solids in 2010"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ozark Premier",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 1 to August 7",
+            description: "Fruit Notes describes Ozark Premier as a large globose red-skinned plum with yellow clingstone flesh and good flavor. Source notes: vigorous trees, irregular cropping, self-incompatibility, need for cross-pollination, and Vanier as an excellent pollinizer for Ozark Premier"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Fortune",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 6 to August 12",
+            description: "Fruit Notes describes Fortune as a large globose plum with reddish-purple blush over yellow ground color, yellow clingstone flesh, firm juicy sweet flesh, and very good flavor. Source notes: upright-spreading vigorous productive trees and pollination by other Japanese-type varieties"
+        },
+        {
+            type: "Plumcot",
+            name: "Coparose",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 8 to August 16",
+            description: "Fruit Notes describes Coparose as an Adams County Nursery-evaluated plumcot with globose to slightly ovate medium-to-large bluish-red fruit, firm golden semi-freestone flesh, and very good flavor. Source notes: vigorous trees, a pollinizer requirement such as Dapple Dandy according to Dave Wilson Nursery, moderate vigor and light productivity in the authors' experience, and limited eastern US pollinizer experience"
+        },
+        {
+            type: "Plumcot",
+            name: "Flavor Grenade",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 10 to August 18",
+            description: "Fruit Notes describes Flavor Grenade as a globose to slightly ovate medium plumcot with yellowish-green ground color overlaid with speckled reddish orange, greenish-yellow semi-freestone flesh, firm fine-grained sweet low-acid flesh, and excellent flavor. Source notes: vigorous lightly productive trees, leaf-spotting susceptibility, 83 gram average fruit weight, half the fruit under 2.25 inches and half 2.25 to 2.5 inches, and 17.1 percent soluble solids in 2010"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 88M1010",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 9 to August 15",
+            description: "Fruit Notes describes USDA BY 88M1010 as a medium globose yellow clingstone plum with greenish-red skin, firm flesh, and very good flavor. Source notes: vigorous upright moderately productive trees, 69 gram average fruit weight, all fruit under 2.25 inches, and 13.2 percent soluble solids in 2010"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Vanier",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 15 to August 23",
+            description: "Fruit Notes describes Vanier as a small to medium globose bluish-red plum with yellow-orange clingstone flesh, moderately firm juicy flesh, and good flavor. Source notes: fruit hangs well on the tree, upright-spreading vigorous moderately productive trees, low bacterial-spot susceptibility, self-incompatibility, pollination by Shiro, Ruby Queen, Ozark Premier, and Santa Rosa, 45 gram average fruit weight, all fruit under 2.25 inches, and 14.3 percent soluble solids in 2010"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 93M597",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 12 to August 18",
+            description: "Fruit Notes describes USDA BY 93M597 as a small globose to heart-shaped clingstone plum with 100 percent reddish-purple skin, greenish-yellow flesh, firm juicy acidic flesh, and good flavor. Source notes: very vigorous upright trees, medium productivity, leaf-spot susceptibility, 56 gram average fruit weight, all fruit under 2.25 inches, and 14.7 percent soluble solids in 2010"
+        },
+        {
+            type: "Euro Plum",
+            name: "Castleton",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 10 to August 18",
+            description: "Fruit Notes describes Castleton as a European-type plum with ovate to oval small-to-medium-small fruit, 100 percent bluish-black skin, yellowish-green freestone flesh, medium-firm stringy dry flesh, and good flavor. Source notes: moderately vigorous upright very productive trees, bacterial-spot tolerance, 43 gram average fruit weight, all fruit under 2.25 inches, 17.3 percent soluble solids in 2010, and a warning that blue-black European plums are sometimes picked too early"
+        },
+        {
+            type: "Nectarine",
+            name: "Spice Zee",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            AKA: ["Nectaplum", "SpiceZee NectaPlum"],
+            harvest_time_unparsed: "August 15 to August 22",
+            description: "Fruit Notes describes Spice Zee NectaPlum as an Adams County Nursery-evaluated plum-nectarine hybrid with 2.5 to 2.75 inch globose light-bronze pinkish-red fruit and cream-colored firm freestone flesh. Source notes: slightly acidic spicy-sweet flavor, ornamental spring bloom and red spring foliage according to Dave Wilson Nursery, and self-fruitful very productive trees"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Ruby Queen",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            AKA: ["USDA BY 8155-70"],
+            harvest_time_unparsed: "August 17 to August 23",
+            description: "Fruit Notes describes Ruby Queen as a large globose semi-freestone plum with dark reddish-purple skin, red flesh, firm juicy flesh, and excellent flavor. Source notes: fruit hangs and ripens over a long period, medium spreading vigorous productive trees, moderate bacterial-spot susceptibility, pollination by Japanese-type varieties such as Shiro, Vanier, and Black Ruby, test identity USDA BY8155-70, and 18.5 percent soluble solids in 2010"
+        },
+        {
+            type: "Plumcot",
+            name: "Flavor Queen",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 21 to August 30",
+            description: "Fruit Notes describes Flavor Queen as a globose medium-to-large yellowish-green semi-freestone plumcot with light-yellow flesh, firm juicy melting sweet low-acid flesh, and excellent flavor. Source notes: vigorous trees, low productivity, high leaf-spotting susceptibility, 146 gram average fruit weight, 18.3 percent soluble solids in 2010, first full crop in 2010 after 12 years, and very light crop in 2011"
+        },
+        {
+            type: "Japanese Plum",
+            name: "USDA BY 8356-33",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 25 to August 30",
+            description: "Fruit Notes describes USDA BY 8356-33 as a small globose clingstone plum with 80 to 90 percent yellowish-red overcolor over slight greenish-yellow ground color, yellow flesh, medium-firm melting sweet acidic flesh, and very good flavor. Source notes: vigorous spreading moderately productive trees and leaf-spotting susceptibility"
+        },
+        {
+            type: "Plumcot",
+            name: "Flavor King",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 22 to August 30",
+            description: "Fruit Notes describes Flavor King as a medium globose-to-heart-shaped clingstone plumcot with 80 to 90 percent purplish-red skin, reddish-yellow flesh, firm juicy melting sweet low-acid flesh, and excellent flavor. Source notes: moderately vigorous upright lightly productive trees, very high susceptibility to leaf spotting and shot-holing, 83 gram average fruit weight, 90 percent fruit under 2.25 inches, 10 percent over 2.25 inches, and 17.7 percent soluble solids in 2010"
+        },
+        {
+            type: "Euro Plum",
+            name: "New York 6",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 22 to August 30",
+            description: "Fruit Notes describes New York 6 as a small oval-to-ovate blue-greenish freestone plum with yellow flesh. Source notes: upright-spreading vigorous productive trees, tolerance to leaf spotting, and removal in 2011"
+        },
+        {
+            type: "Plumcot",
+            name: "Crimson Royale",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 24 to September 1",
+            description: "Fruit Notes describes Crimson Royale as an Adams County Nursery-evaluated plumcot with ovate-to-globose red skin over dull-yellow undercolor, cream-yellow very firm semi-freestone flesh, and excellent quality and flavor. Source notes: vigorous spreading lightly productive trees, pollinizer requirement, and need for further study in the eastern United States"
+        },
+        {
+            type: "Euro Plum",
+            name: "Ariel",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            AKA: ["Arial"],
+            harvest_time_unparsed: "late August",
+            description: "Fruit Notes describes Ariel, spelled Arial in the source text, as a small globose yellowish-brown russeted plum with yellow-green flesh ripening in late August. Source notes: very weak trees, all trees dying in spring 2010, and not enough quality fruit for a good evaluation"
+        },
+        {
+            type: "Plumcot",
+            name: "Dapple Dandy",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 24 to September 2",
+            description: "Fruit Notes describes Dapple Dandy as a globose medium red-freckled plumcot with yellow-green undercolor, semi-freestone pink-to-red flesh, medium-firm juicy acidic sweet flesh, and excellent flavor. Source notes: small moderately vigorous spreading trees, high bacterial-spot susceptibility, 109 gram average fruit size, 36 percent fruit under 2.25 inches, 64 percent over 2.25 inches, and 17.5 percent soluble solids in 2010"
+        },
+        {
+            type: "Apriplum",
+            name: "Autumn Sprite",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 25 to September 2",
+            description: "Fruit Notes describes Autumn Sprite as an Adams County Nursery-evaluated apriplum with globose-to-ovate yellowish-pink skin, yellow freestone flesh, very good sweet flavor, and medium fruit about 2 inches. Source notes: vigorous spreading trees, self-fertility according to Dave Wilson Nursery, and promise for the eastern United States if self-fertility leads to high productivity because young trees had a good crop"
+        },
+        {
+            type: "Plumcot",
+            name: "Flavorich",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            AKA: ["Flavor Rich"],
+            harvest_time_unparsed: "August 25 to September 2",
+            description: "Fruit Notes describes Flavor Rich, locally normalized to Flavorich, as a generally globose small-to-medium plumcot with 100 percent purplish-black skin, greenish-yellow clingstone flesh, and fair flavor. Source notes: very firm fruit that makes maturity difficult to determine, vigorous spreading trees, the most productive of the observed plumcots, 79 gram average fruit size, 70 percent fruit under 2.25 inches, 30 percent over 2.25 inches, 13.6 percent soluble solids in 2010, and tree removal in 2011"
+        },
+        {
+            type: "Plumcot",
+            name: "Flavor Heart",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "August 22 to September 1",
+            description: "Fruit Notes describes Flavor Heart as an Adams County Nursery-evaluated plumcot with globose-to-heart-shaped large bluish-black fruit, semi-freestone light-yellow flesh, and excellent flavor. Source notes: firm flesh that softens quickly, cross-pollination requirement according to Dave Wilson Nursery, small trees, and light crop"
+        },
+        {
+            type: "Plumcot",
+            name: "Candy Stripe",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "September 1 to September 10",
+            description: "Fruit Notes describes Candy Stripe as an Adams County Nursery-evaluated medium-large globose plumcot with pinkish-red overcolor over yellow undercolor, yellow freestone firm juicy flesh, and very good acidic flavor. Source notes: a pollinizer requirement such as Flavorfall according to Dave Wilson Nursery, light crop on young trees, and need for more pollinizer study in the eastern United States"
+        },
+        {
+            type: "Japanese Plum",
+            name: "Autumn Giant",
+            category: "Plum and plum hybrid evaluations in New Jersey and Pennsylvania",
+            harvest_time_unparsed: "late September",
+            description: "Fruit Notes describes Autumn Giant as a globose-to-heart-shaped small-to-medium clingstone plum with 80 to 90 percent bright orange-red over orange-yellow ground color, yellow flesh, melting very firm stringy mild acidic flesh, and fair flavor. Source notes: upright slightly spreading moderately productive trees and a harvest season so late that good quality is hard to assess"
+        },
+    ]
+}

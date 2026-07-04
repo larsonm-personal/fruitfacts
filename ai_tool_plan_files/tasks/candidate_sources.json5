@@ -4230,12 +4230,12 @@
         },
         {
             id: "fruit-notes-plum-plum-hybrid-cultivars-2012",
-            status: "new",
+            status: "encoded",
             priority: "high",
             title: "Testing and Evaluation of Plum and Plum Hybrid Cultivars",
             institution: "Fruit Notes",
-            region: "Northeastern United States",
-            crops: ["Euro Plum", "Japanese Plum", "Plumcot", "Apriplum"],
+            region: "New Jersey and Pennsylvania",
+            crops: ["Euro Plum", "Japanese Plum", "Plumcot", "Apriplum", "Nectarine"],
             source_type: "journal cultivar performance article",
             landing_url: "http://umassfruitnotes.com/v77n3/Cover773.html",
             download_url: "http://umassfruitnotes.com/v77n3/a4.pdf",
@@ -4243,13 +4243,18 @@
             discovered_by: "UMass Fruit Notes live issue index survey",
             value_summary:
                 "Plum and plum-hybrid cultivar evaluation article",
-            asset_decision: "download and review before import",
+            asset_decision: "downloaded and encoded from static reviewed rows",
             proposed_reference_path:
-                "plant_database/references/Massachusetts/Fruit Notes- Testing and Evaluation of Plum and Plum Hybrid Cultivars.json5",
+                "plant_database/references/New Jersey/Fruit Notes- Testing and Evaluation of Plum and Plum Hybrid Cultivars.json5",
             duplicate_check:
-                "No existing JSON5 reference found for v77n3/a4",
+                "No existing JSON5 reference found for v77n3/a4 before this pass",
             notes: [
-                "Review cultivar taxonomy carefully; named bred plums should not default to Species Plum"
+                "Review cultivar taxonomy carefully; named bred plums should not default to Species Plum",
+                "Encoded 42 detailed cultivar and selection rows in plant_database/references/New Jersey/Fruit Notes- Testing and Evaluation of Plum and Plum Hybrid Cultivars.json5",
+                "Config extraction added at helper_scripts/extraction_configs/fruit_notes_plum_plum_hybrid_cultivars_2012.json",
+                "Manifest entry added as fruit_notes_plum_plum_hybrid_cultivars_2012",
+                "Uses static_rows because the article is dense two-column narrative with images and page-flow breaks",
+                "Rootstock-only paragraphs at the end of the article were not encoded in this pass"
             ]
         },
         {
