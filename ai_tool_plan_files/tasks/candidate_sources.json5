@@ -3855,7 +3855,7 @@
         },
         {
             id: "fruit-notes-white-french-american-grapes-2019",
-            status: "new",
+            status: "encoded",
             priority: "high",
             title: "Selected White French-American Grape Varieties for the Northeast",
             institution: "Fruit Notes",
@@ -3873,14 +3873,19 @@
             proposed_reference_path:
                 "plant_database/references/Massachusetts/Fruit Notes- Selected White French-American Grape Varieties for the Northeast.json5",
             duplicate_check:
-                "No existing JSON5 reference found for v84n4/a1",
+                "No existing JSON5 reference found for v84n4/a1 before this pass",
             notes: [
-                "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference"
+                "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference",
+                "Encoded in plant_database/references/Massachusetts/Fruit Notes- Selected White French-American Grape Varieties for the Northeast.json5",
+                "Config extraction added at helper_scripts/extraction_configs/fruit_notes_white_french_american_grapes_2019.json",
+                "Manifest entry added as fruit_notes_white_french_american_grapes_2019",
+                "Uses pdf_known_heading_entries over raw pdftotext with reviewed row_overrides for source summaries",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {
             id: "fruit-notes-red-french-american-grapes-2019",
-            status: "new",
+            status: "encoded",
             priority: "high",
             title: "Selected Red French-American Grape Varieties for the Northeast",
             institution: "Fruit Notes",
@@ -3888,7 +3893,7 @@
             region: "Northeastern United States",
             crops: ["Grape"],
             source_type: "journal cultivar overview",
-            landing_url: "http://umassfruitnotes.com/v84n3/Cover843abcd.html",
+            landing_url: "http://umassfruitnotes.com/v84n3/abcdCover843.html",
             download_url: "http://umassfruitnotes.com/v84n3/a5.pdf",
             discovered: "2026-07-02",
             discovered_by: "UMass Fruit Notes live issue index survey",
@@ -3898,9 +3903,14 @@
             proposed_reference_path:
                 "plant_database/references/Massachusetts/Fruit Notes- Selected Red French-American Grape Varieties for the Northeast.json5",
             duplicate_check:
-                "No existing JSON5 reference found for v84n3/a5",
+                "No existing JSON5 reference found for v84n3/a5 before this pass",
             notes: [
-                "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference"
+                "Previously listed as a TODO in the encoded Minnesota red grape Fruit Notes reference",
+                "Encoded in plant_database/references/Massachusetts/Fruit Notes- Selected Red French-American Grape Varieties for the Northeast.json5",
+                "Config extraction added at helper_scripts/extraction_configs/fruit_notes_red_french_american_grapes_2019.json",
+                "Manifest entry added as fruit_notes_red_french_american_grapes_2019",
+                "Uses pdf_known_heading_entries over raw pdftotext with reviewed row_overrides for source summaries",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {

@@ -83,6 +83,8 @@
                 "row_overrides"
             ],
             current_pilot_configs: [
+                "helper_scripts/extraction_configs/fruit_notes_red_french_american_grapes_2019.json",
+                "helper_scripts/extraction_configs/fruit_notes_white_french_american_grapes_2019.json",
                 "helper_scripts/extraction_configs/fruit_notes_minnesota_white_grapes_2020.json",
                 "helper_scripts/extraction_configs/fruit_notes_minnesota_red_grapes_2020.json"
             ],

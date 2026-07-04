@@ -699,6 +699,14 @@ fn test_fruit_notes_reference_files_have_reference_categories() {
             "references/Massachusetts/Fruit Notes- Selected Minnesota White Grape Varieties for the Northeast.json5",
             "fruit-notes-v85n2-spring-2020",
         ),
+        (
+            "references/Massachusetts/Fruit Notes- Selected Red French-American Grape Varieties for the Northeast.json5",
+            "fruit-notes-v84n3-summer-2019",
+        ),
+        (
+            "references/Massachusetts/Fruit Notes- Selected White French-American Grape Varieties for the Northeast.json5",
+            "fruit-notes-v84n4-fall-2019",
+        ),
     ];
 
     for (relative_path, issue_category) in cases {

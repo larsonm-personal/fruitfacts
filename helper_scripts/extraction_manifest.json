@@ -405,6 +405,14 @@
             "config": "extraction_configs/psu_stone_fruit_variety_selection.json"
         },
         {
+            "id": "fruit_notes_red_french_american_grapes_2019",
+            "config": "extraction_configs/fruit_notes_red_french_american_grapes_2019.json"
+        },
+        {
+            "id": "fruit_notes_white_french_american_grapes_2019",
+            "config": "extraction_configs/fruit_notes_white_french_american_grapes_2019.json"
+        },
+        {
             "id": "fruit_notes_minnesota_white_grapes_2020",
             "config": "extraction_configs/fruit_notes_minnesota_white_grapes_2020.json"
         },

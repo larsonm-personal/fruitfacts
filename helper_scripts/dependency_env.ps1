@@ -146,6 +146,7 @@ function Get-NodeCandidates {
     Add-ExistingCandidate $candidates (Get-CommandPath "node") "PATH"
     if ($localAppData) {
         Add-WildcardCandidates $candidates (Join-Path $localAppData "fruitfacts\node\node-v*-win-x64\node.exe") "fruitfacts local Node"
+        Add-WildcardCandidates $candidates (Join-Path $localAppData "OpenAI\Codex\runtimes\cua_node\*\bin\node.exe") "Codex Node runtime"
         Add-WildcardCandidates $candidates (Join-Path $localAppData "Programs\nodejs\node.exe") "local nodejs"
     }
     if ($env:ProgramFiles) {

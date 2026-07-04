@@ -91,6 +91,169 @@
             ]
         },
         {
+            id: "fruit-notes-v84n3-summer-2019",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 84, Number 3: Summer 2019",
+            reference_category: "fruit-notes-v84n3-summer-2019",
+            issue_url: "http://umassfruitnotes.com/v84n3/fn843.pdf",
+            cover_url: "http://umassfruitnotes.com/v84n3/abcdCover843.html",
+            published: "Summer 2019",
+            accessed: "Jul 2026",
+            articles: [
+                {
+                    article_number: "a1",
+                    title: "Use of Biological Controls and Sterilants as Alternatives to Streptomycin Against Fire Blight Blossom Infections in Apples",
+                    url: "http://www.umassfruitnotes.com/v84n3/a1.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Fire blight management article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a2",
+                    title: "Evaluation of Metamitron as a Chemical Thinner on Apples",
+                    url: "http://www.umassfruitnotes.com/v84n3/a2.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Chemical thinning article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a3",
+                    title: "Using Diluted Grape Juice for Early-season Monitoring and Its Potential for Attract-and-kill of Spotted Wing Drosophila, Drosophila suzukii",
+                    url: "http://www.umassfruitnotes.com/v84n3/a3.pdf",
+                    status: "do_not_encode",
+                    crops: ["Grape"],
+                    family: "crop-management",
+                    notes: [
+                        "Pest monitoring and attract-and-kill article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a4",
+                    title: "Growers' Perspectives on Data Sharing and IPM",
+                    url: "http://www.umassfruitnotes.com/v84n3/a4.pdf",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "IPM and data-sharing perspectives, not a durable cultivar record from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a5",
+                    title: "Selected Red French-American Grape Varieties for the Northeast",
+                    url: "http://www.umassfruitnotes.com/v84n3/a5.pdf",
+                    status: "encoded",
+                    crops: ["Grape"],
+                    family: "cultivar-profile",
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Selected Red French-American Grape Varieties for the Northeast.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_red_french_american_grapes_2019.json"
+                },
+                {
+                    article_number: "a6",
+                    title: "Tyler David Hardy of Brookdale Fruit Farm Passes",
+                    url: "http://www.umassfruitnotes.com/v84n3/a6.pdf",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "Obituary, no cultivar-level FruitFacts data"
+                    ]
+                }
+            ]
+        },
+        {
+            id: "fruit-notes-v84n4-fall-2019",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 84, Number 4: Fall 2019",
+            reference_category: "fruit-notes-v84n4-fall-2019",
+            issue_url: "http://umassfruitnotes.com/v84n4/FN84-4.pdf",
+            cover_url: "http://umassfruitnotes.com/v84n4/abcdCover844.html",
+            published: "Fall 2019",
+            accessed: "Jul 2026",
+            articles: [
+                {
+                    article_number: "a1",
+                    title: "Selected White French-American Grape Varieties for the Northeast",
+                    url: "http://www.umassfruitnotes.com/v84n4/a1.pdf",
+                    status: "encoded",
+                    crops: ["Grape"],
+                    family: "cultivar-profile",
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Selected White French-American Grape Varieties for the Northeast.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_white_french_american_grapes_2019.json"
+                },
+                {
+                    article_number: "a2",
+                    title: "IFTA Tours Ontario",
+                    url: "http://www.umassfruitnotes.com/v84n4/a2.pdf",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "Tour article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a3",
+                    title: "Fall Chores for Cherry Tree Health",
+                    url: "http://www.umassfruitnotes.com/v84n4/a3.pdf",
+                    status: "do_not_encode",
+                    crops: ["Cherry"],
+                    family: "crop-management",
+                    notes: [
+                        "Seasonal management article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a4",
+                    title: "Suggested New Apple Variety: Crimson Gold (Svatava Cv.)",
+                    url: "http://www.umassfruitnotes.com/v84n4/a4.pdf",
+                    status: "triage",
+                    crops: ["Apple"],
+                    family: "release-or-update",
+                    notes: [
+                        "Likely useful cultivar release/profile article; should be encoded in a later pass"
+                    ]
+                },
+                {
+                    article_number: "a5",
+                    title: "A Blast from the Past -- 50 Years Ago: Increasing Orchard Output",
+                    url: "http://www.umassfruitnotes.com/v84n4/a5.pdf",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "Historical article, not a cultivar source from cover-level triage"
+                    ]
+                },
+                {
+                    article_number: "a6",
+                    title: "David Chandler Passes at 71",
+                    url: "http://www.umassfruitnotes.com/v84n4/a6.pdf",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "Obituary, no cultivar-level FruitFacts data"
+                    ]
+                },
+                {
+                    article_number: "a7",
+                    title: "Warren Stiles Passes at 86",
+                    url: "http://www.umassfruitnotes.com/v84n4/a7.pdf",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "Obituary, no cultivar-level FruitFacts data"
+                    ]
+                }
+            ]
+        },
+        {
             id: "fruit-notes-v85n2-spring-2020",
             status: "partially_encoded",
             title: "Fruit Notes Volume 85, Number 2: Spring 2020",

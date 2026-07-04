@@ -1,0 +1,75 @@
+{
+    title: "Selected Red French-American Grape Varieties for the Northeast",
+    author: "J. Stephen Casscles",
+    description: "Fruit Notes Volume 84, Number 3, Summer 2019 article describing selected red French-American grape varieties for Northeastern growers and winemakers",
+    url: "http://www.umassfruitnotes.com/v84n3/a5.pdf",
+    published: "Summer 2019",
+    accessed: "Jul 2026",
+    type: "journal article test",
+    reference_categories: ["fruit-notes", "fruit-notes-v84n3-summer-2019"],
+    locations: [
+        {
+            name: "Cedar Cliff Farm, Athens, New York",
+            latitude: 42.2609,
+            longitude: -73.8096
+        },
+    ],
+    categories: [
+        {
+            name: "Red French-American grape varieties for the Northeast",
+            description: "Casscles profiles these red French-American wine grapes as productive, sustainable, cellar-versatile varieties for Northeastern growers and wineries"
+        },
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Baco Noir",
+            category: "Red French-American grape varieties for the Northeast",
+            harvest_time_unparsed: "mid-season, around the third week of September",
+            description: "Casscles describes Baco Noir as a 1902 Francois Baco riparia and vinifera black grape hardy to very winter hardy for most of the Northeast. Source notes: early bud break with reduced secondary crop potential, lush vegetative growth, moderate black rot and powdery mildew susceptibility, downy mildew resistance, botrytis and cracking risk in wet harvest weather, tolerance of moderately heavy clay and some excess soil moisture, reliable productivity, 20 to 23 Brix, need for full maturity to reduce high acids, and cellar use for Burgundian Pinot or Gamay-like wines, Valpolicella or Nouveau styles, and roses with berry, black cherry, and plum notes"
+        },
+        {
+            type: "Grape",
+            name: "Burdin Noir",
+            category: "Red French-American grape varieties for the Northeast",
+            harvest_time_unparsed: "late mid-season to late",
+            description: "Casscles describes Burdin Noir as a Plantet x Seinoir Joanny Burdin red wine grape with roughly one-quarter vinifera heritage. Source notes: easy-growing vigorous upright vines, open canopy, good fungal disease resistance even in wet years, moderate winter hardiness, strong vigor, heavy yields, medium-large compact cylindrical clusters, large thick-skinned dark-blue berries, preference for deep well-drained soils while tolerating fertile damp clay, and light beet-colored wines with berry nose, soft full tannins, long clean finish, strawberry jam, pomegranate, berry, and flint notes"
+        },
+        {
+            type: "Grape",
+            name: "Chambourcin",
+            category: "Red French-American grape varieties for the Northeast",
+            harvest_time_unparsed: "late to very late",
+            description: "Casscles describes Chambourcin as a Joannes Seyve versatile red wine grape with uncertain parentage, perhaps involving Chancellor. Source notes: best northern fit in southern coastal New England, very late bud break with secondary crop potential, moderate vigor and standard vine size, very large moderately loose blue-black clusters, consistent productivity needing cluster thinning, lime and drought sensitivity, good performance in deep well-drained soils, winter hardiness slightly below Baco Noir and near Chelois, some fungus disease resistance, botrytis and bunch-rot resistance from thick skins and loose clusters, sulfur sensitivity, late to very late ripening, and cellar uses for Rhone-like reds, northern Italian-style reds, and steely roses"
+        },
+        {
+            type: "Grape",
+            name: "Chelois",
+            category: "Red French-American grape varieties for the Northeast",
+            harvest_time_unparsed: "late mid-season to early late season, about ten days after Baco Noir",
+            description: "Casscles describes Chelois as a Seibel S.5163 x S.5593 French-American red wine grape with roughly half vinifera heritage. Source notes: vigorous moderately productive vines, late bud break with small secondary crop potential, winter hardy but less hardy than Marechal Foch or Baco Noir, open canopy, compact medium cylindrical clusters with medium blue-black berries, preference for deep well-drained rocky soils rather than droughty or heavy clay soils, some black rot and downy mildew resistance, powdery mildew and bunch-rot susceptibility, possible virus decline concerns in U.S. plant material, and complex Burgundian wines with medium scarlet color, dried fruit, cedar, black cherry, raspberry, berry, strawberry jam, spice, anise, eucalyptus, soft black pepper, and blending value"
+        },
+        {
+            type: "Grape",
+            name: "Landot Noir",
+            category: "Red French-American grape varieties for the Northeast",
+            harvest_time_unparsed: "early mid-season to mid-season",
+            description: "Casscles describes Landot Noir as Pierre Landot's Landal Noir x Villard Blanc hybrid with 40 to 50 percent vinifera heritage and as the seed parent of Frontenac. Source notes: vigorous vines, late bud break, winter hardiness, good disease resistance especially to downy mildew, upright to lateral growth, consistently heavy and easy production, long relatively narrow medium-large to large clusters, medium to medium-large blue berries, and fruity Beaujolais-like wines with full body and good tannin structure"
+        },
+        {
+            type: "Grape",
+            name: "Leon Millot",
+            category: "Red French-American grape varieties for the Northeast",
+            harvest_time_unparsed: "varies by clone: Millot Rouge very early to about one week after Foch; Millot Noir mid-season or later, ten days to two weeks after Foch or Millot Rouge",
+            description: "Casscles describes Leon Millot as a Kuhlmann 194-2 red wine grape related to Marechal Foch, with reports varying because of Foster Millot Rouge and Boordy Millot Noir clones. Source notes: both clones reach about 24 Brix, Millot Rouge is very early, very winter hardy, vigorous, productive, disease resistant with a thick canopy, and makes medium-bodied Burgundian berry wines, while Millot Noir is very vigorous, productive, later ripening, more botrytis susceptible than Foch, and makes large dark complex earthy red wines with cooked mulberry, chokecherry, tobacco, black olive, licorice, leather, thyme, and eucalyptus notes"
+        },
+        {
+            type: "Grape",
+            name: "Marechal Foch",
+            category: "Red French-American grape varieties for the Northeast",
+            AKA: ["Foch"],
+            harvest_time_unparsed: "early",
+            description: "Casscles describes Marechal Foch as a Kuhlmann 188-2 Goldriesling-descended red hybrid, often called Foch. Source notes: early ripening, vigorous but smaller than average vines, relatively productive despite small clusters, broad soil tolerance, very early to early bud break, small to medium compact cylindrical clusters, very winter hardy in the Northeast, small secondary crop after frost, general fungus disease resistance especially to downy mildew and botrytis, somewhat less black rot and powdery mildew resistance, sulfur sensitivity, and flexible cellar use for red table wine, Beaujolais-style reds, roses, Nouveau, and blends with blackberry, blueberry, strawberry, cherry, chocolate, clove, leather, black olive, toast, and mocha notes"
+        },
+    ]
+}

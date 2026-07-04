@@ -1,0 +1,53 @@
+{
+    title: "Selected White French-American Grape Varieties for the Northeast",
+    author: "J. Stephen Casscles",
+    description: "Fruit Notes Volume 84, Number 4, Fall 2019 article describing selected white French-American grape varieties for Northeastern growers and winemakers",
+    url: "http://www.umassfruitnotes.com/v84n4/a1.pdf",
+    published: "Fall 2019",
+    accessed: "Jul 2026",
+    type: "journal article test",
+    reference_categories: ["fruit-notes", "fruit-notes-v84n4-fall-2019"],
+    locations: [
+        {
+            name: "Cedar Cliff Farm, Athens, New York",
+            latitude: 42.2609,
+            longitude: -73.8096
+        },
+    ],
+    categories: [
+        {
+            name: "White French-American grape varieties for the Northeast",
+            description: "Casscles profiles these white French-American wine grapes as productive, sustainable, cellar-versatile varieties for Northeastern growers and wineries"
+        },
+    ],
+    plants: [
+        {
+            type: "Grape",
+            name: "Seyval Blanc",
+            category: "White French-American grape varieties for the Northeast",
+            harvest_time_unparsed: "mid-season to late mid-season",
+            description: "Casscles describes Seyval Blanc as a 1921 Bertille Seyve French-American white wine grape with Rayon d'Or parentage and extensive breeding-program use. Source notes: adaptable and reliable vines, moderately winter hardy to hardy but less hardy than Baco Noir or Delaware, fairly early bud break with secondary crop potential, moderate susceptibility to black rot, powdery mildew, and botrytis, more downy mildew resistance, medium vigor, medium-large to large compact clusters, high productivity needing cluster thinning, dislike of droughty or shallow soils, and wine styles ranging from crisp Germanic whites to Loire-like, Burgundy-like, or oakier Chardonnay-like wines"
+        },
+        {
+            type: "Grape",
+            name: "Verdelet",
+            category: "White French-American grape varieties for the Northeast",
+            harvest_time_unparsed: "late mid-season to late",
+            description: "Casscles describes Verdelet as a Seibel Plantet x S. 4938 dual-purpose grape for wine and seeded table use. Source notes: medium vigor with average yields under careful pruning and cluster thinning, neither early nor late bud break, late-mid-season to late maturity with good hang time, very large loose to filled clusters, large tear-shaped pink-yellow to light golden berries, downy mildew sensitivity, Riesling-level or better hardiness, phylloxera susceptibility, preference for warm well-drained wind-protected sites, and floral, perfumed, flinty wines with apple, lemon, melon, white peach, banana, apricot, grapefruit, orange-rind, and hazelnut notes"
+        },
+        {
+            type: "Grape",
+            name: "Vidal Blanc",
+            category: "White French-American grape varieties for the Northeast",
+            harvest_time_unparsed: "late to very late",
+            description: "Casscles describes Vidal Blanc as Jean-Louis Vidal's Ugni Blanc x Rayon d'Or white hybrid, about 75 percent vinifera, bred for disease resistance and brandy production. Source notes: thick-skinned greenish-white medium-small berries on large compact clusters, vigorous and consistently productive vines, broad soil adaptability, late to very late bud break with secondary crop potential, moderate to hardy winter hardiness, general fungus disease resistance, late to very late ripening with high sugars, best fit for warm coastal New England and Mid-Atlantic sites, and cellar uses from dry flinty white wine to Fume Blanc-style, sparkling, dessert, and ice wines"
+        },
+        {
+            type: "Grape",
+            name: "Vignoles",
+            category: "White French-American grape varieties for the Northeast",
+            harvest_time_unparsed: "late mid-season for dry wines; can be picked later for late-harvest wines",
+            description: "Casscles describes Vignoles as a Plantet x S. 880 Ravat 51 white hybrid similar to Riesling in the field and cellar. Source notes: winter hardy at least comparable to Seyval Blanc, low vigor, black rot resistance and moderate downy mildew resistance, susceptibility to botrytis and powdery mildew because of very compact clusters, late bud break, small conical tight clusters with small thick-skinned light-green pink-tinged berries, moderate productivity, need for open pruning to reduce disease pressure, high acids and sugars, and dry to semi-sweet or late-harvest wines with green apple, grapefruit, banana, peach, tropical fruit, apricot, pineapple, honey, melon, guava, orange blossom, almond, and citrus liqueur notes"
+        },
+    ]
+}

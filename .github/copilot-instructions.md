@@ -68,6 +68,14 @@ locations where varieties have been grown or recommended
   - `npm run build`
   - `npm test`
   - `npm run lint`
+- In Windows Codex sessions, bare `node` or `npm` may be absent from the
+  inherited `PATH` even when the repo-local Node install exists. Before
+  reporting Node missing, prefix Node/npm commands with
+  `.\helper_scripts\dependency_env.ps1 -Name node -Quiet;` from the repo root,
+  for example
+  `.\helper_scripts\dependency_env.ps1 -Name node -Quiet; node -v; npm -v`.
+  The helper checks the FruitFacts local Node install, Codex's Node runtime,
+  normal Windows Node install paths, and `PATH`.
 - Local development expects the backend base URL from `.env.development`,
   typically `http://local.fruitfacts.xyz:3001`
 - Keep pages functional and simple. The intended audience includes ordinary
