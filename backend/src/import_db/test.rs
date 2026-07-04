@@ -716,6 +716,14 @@ fn test_fruit_notes_reference_files_have_reference_categories() {
             "fruit-notes-v4-march-1939",
         ),
         (
+            "references/Massachusetts/Fruit Notes- Notes on New Peach Varieties 1946.json5",
+            "fruit-notes-v11-january-1946",
+        ),
+        (
+            "references/Massachusetts/Fruit Notes- Hardy Peaches for Massachusetts 1953.json5",
+            "fruit-notes-v18-february-1953",
+        ),
+        (
             "references/Massachusetts/Fruit Notes- Fifteen Years of Peach and Nectarine Variety Evaluation at UMass Cold Spring Orchard.json5",
             "fruit-notes-v83n1-winter-2018",
         ),

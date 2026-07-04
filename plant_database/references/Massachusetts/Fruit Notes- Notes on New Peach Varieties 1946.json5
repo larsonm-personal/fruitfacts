@@ -1,0 +1,133 @@
+{
+    title: "Notes on New Peach Varieties",
+    author: "J. S. Bailey",
+    description: "Fruit Notes Volume 11, January 31, 1946 archive article describing newer peach varieties and their possible value for Massachusetts growers",
+    url: "https://archive.org/details/fruitnotes4346univ/page/n327/mode/1up",
+    published: "January 31, 1946",
+    accessed: "Jul 2026",
+    type: "archive cultivar introduction article",
+    reference_categories: ["fruit-notes", "fruit-notes-v11-january-1946"],
+    locations: [
+        {
+            name: "Massachusetts",
+            latitude: 42.4072,
+            longitude: -71.3824
+        },
+    ],
+    categories: [
+        {
+            name: "Massachusetts peach variety notes from Fruit Notes 1946",
+            description: "Fruit Notes summarizes newer peach varieties for Massachusetts growers, with comments on fruit quality, hardiness, season, and trial value"
+        },
+    ],
+    plants: [
+        {
+            type: "Peach",
+            name: "Marigold",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            description: "Fruit Notes describes Marigold as a yellow-fleshed, semi-cling to free peach with small to medium fruit, good quality, strong bud hardiness, and value as a very early peach for Massachusetts"
+        },
+        {
+            type: "Peach",
+            name: "Fisher",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            harvest_time_unparsed: "ripens unevenly",
+            description: "Fruit Notes describes Fisher as a bud sport of Valiant with yellow semi-cling fruit, only fair quality, uneven ripening, very hardy wood, and reported bud hardiness"
+        },
+        {
+            type: "Peach",
+            name: "Raritan Rose",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            description: "Fruit Notes describes Raritan Rose, from Hale by Cumberland, as a newer New Jersey white-fleshed peach that is usually freestone, fair to good in quality, sometimes soft or stringy, fairly bud hardy, and worth trial"
+        },
+        {
+            type: "Peach",
+            name: "Oriole",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            description: "Fruit Notes describes Oriole as a yellow-fleshed freestone peach of good quality with small to medium fruit, a need for heavy thinning, and very hardy buds and wood, while noting that many growers object to its small size"
+        },
+        {
+            type: "Peach",
+            name: "Redhaven",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            AKA: ["Red Haven"],
+            description: "Fruit Notes describes Red Haven as a Michigan peach from Halehaven by Kalhaven, with yellow flesh, fruit that is free when fully ripe, a brilliant red blush, thick tough skin, very firm flesh, fair quality, heavy yield potential, and hardiness said to exceed Elberta but not South Haven or Rochester"
+        },
+        {
+            type: "Peach",
+            name: "Golden Globe",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            description: "Fruit Notes describes Golden Globe as a large, round, yellow-fleshed freestone peach of high quality, but notes that its buds are a bit tender for Massachusetts"
+        },
+        {
+            type: "Peach",
+            name: "Triogem",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            description: "Fruit Notes describes Triogem, from Hale by Marigold, as a newer New Jersey peach with yellow freestone fruit, very high quality, attractive appearance, a need for good soil, good culture, and heavy thinning, fair bud hardiness below Greensboro or Carman, good hanging ability, and susceptibility to brown rot"
+        },
+        {
+            type: "Peach",
+            name: "Sunhigh",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            harvest_time_unparsed: "near Halehaven season",
+            description: "Fruit Notes describes Sunhigh, from Hale by 40 CS, as a newer New Jersey peach with yellow flesh, semi-cling to free flesh, very good quality, and bud hardiness probably a little better than Elberta, while warning that clinginess and its nearness to Halehaven season may limit its usefulness"
+        },
+        {
+            type: "Peach",
+            name: "Goldeneast",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            description: "Fruit Notes describes Goldeneast as a beautiful, extra large, fine flavored, yellow freestone peach that may fit a few unusually favorable Massachusetts sites, while generally being too tender in bud for the state"
+        },
+        {
+            type: "Peach",
+            name: "Red Rose",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            description: "Fruit Notes describes Red Rose, from Hale by Delicious, as a newer New Jersey white-fleshed freestone peach of good quality that is usually firm but sometimes soft and stringy, yields well, and is reported hardy in New Jersey"
+        },
+        {
+            type: "Peach",
+            name: "Pacemaker",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            description: "Fruit Notes describes Pacemaker, from Hale by Marigold, as a recent New Jersey introduction with very attractive yellow freestone fruit of very good quality, but probably too tender in bud for Massachusetts"
+        },
+        {
+            type: "Peach",
+            name: "Summercrest",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            description: "Fruit Notes describes Summercrest, from Hale by Cumberland, as a recent New Jersey peach with yellow freestone fruit of very good quality, fair attractiveness with occasional poor coloring, better performance on soils not too high in fertility, good yields, poor fruit hanging ability, and buds fairly hardy but below Greensboro or Carman"
+        },
+        {
+            type: "Peach",
+            name: "Kalhaven",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            harvest_time_unparsed: "same season as Summercrest",
+            description: "Fruit Notes describes Kalhaven, from Hale by Kalamazoo, as a recent Michigan introduction with yellow freestone fruit that tends to cling, fair flavor, good yields, and above-average hardiness in Michigan reports; Fruit Notes says Summercrest had the edge so far but Kalhaven seemed worth trial"
+        },
+        {
+            type: "Peach",
+            name: "Sungold",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            description: "Fruit Notes describes Sungold as an Iowa chance seedling reported to have carried a crop after -25 F, with yellow freestone fruit of very good quality, heavy cropping that needs considerable thinning, medium or slightly larger fruit, a semi-dwarf tree habit like J.H. Hale, and trial value"
+        },
+        {
+            type: "Peach",
+            name: "White Hale",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            harvest_time_unparsed: "probably after Elberta rather than before",
+            description: "Fruit Notes describes White Hale, a Hale open-pollinated seedling, as a large, round, attractive freestone Hale type with white flesh but not especially good quality; the article says its season is probably after Elberta rather than before, because the chart used only two crops and one ripened abnormally early"
+        },
+        {
+            type: "Peach",
+            name: "Fertile Hale",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            description: "Fruit Notes describes Fertile Hale as a supposedly self-fertile sport of the self-sterile J.H. Hale, but cautions that fertile Hale sports reported from several states may not all be the same and that the variety in the College orchard had not been very impressive"
+        },
+        {
+            type: "Peach",
+            name: "Afterglow",
+            category: "Massachusetts peach variety notes from Fruit Notes 1946",
+            harvest_time_unparsed: "normal ripening season probably slightly later than shown in the chart",
+            description: "Fruit Notes describes Afterglow, from Hale by a New Jersey seedling, as a yellow-fleshed, fairly attractive freestone peach with better quality than Elberta, good yield, and hardiness above Elberta"
+        },
+    ]
+}

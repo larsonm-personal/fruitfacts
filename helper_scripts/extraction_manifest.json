@@ -409,6 +409,14 @@
             "config": "extraction_configs/fruit_notes_archive_peach_ripening_massachusetts_1939.json"
         },
         {
+            "id": "fruit_notes_archive_new_peach_varieties_1946",
+            "config": "extraction_configs/fruit_notes_archive_new_peach_varieties_1946.json"
+        },
+        {
+            "id": "fruit_notes_archive_hardy_peaches_massachusetts_1953",
+            "config": "extraction_configs/fruit_notes_archive_hardy_peaches_massachusetts_1953.json"
+        },
+        {
             "id": "fruit_notes_peach_nectarine_umass_cold_spring_2018",
             "config": "extraction_configs/fruit_notes_peach_nectarine_umass_cold_spring_2018.json"
         },

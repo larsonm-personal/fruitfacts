@@ -8848,7 +8848,7 @@
         },
         {
             id: "fruit-notes-archive-new-peach-varieties-1946",
-            status: "new",
+            status: "encoded",
             priority: "medium",
             title: "Notes on new peach varieties",
             institution: "Fruit Notes",
@@ -8862,13 +8862,18 @@
             discovered_by: "UMass Fruit Notes archive TOC survey pass 4",
             value_summary:
                 "Fruit Notes notes on new peach varieties",
-            asset_decision: "locate in archive scan and review before import",
+            asset_decision: "reviewed Archive.org scan and encoded as static rows",
             proposed_reference_path:
                 "plant_database/references/Massachusetts/Fruit Notes- Notes on New Peach Varieties 1946.json5",
             duplicate_check:
-                "No existing JSON5 reference or candidate ID found for this archive TOC title and year",
+                "No existing JSON5 reference was found for this archive TOC title and year before this import; Red Haven was normalized to Redhaven with the source name kept as AKA",
             notes: [
-                "Archive TOC entry: Volume 11, January 1946; scan bundle: Fruit Notes 1943-1946"
+                "Archive TOC entry: Volume 11, January 1946; scan bundle: Fruit Notes 1943-1946",
+                "Encoded in plant_database/references/Massachusetts/Fruit Notes- Notes on New Peach Varieties 1946.json5",
+                "Config extraction added at helper_scripts/extraction_configs/fruit_notes_archive_new_peach_varieties_1946.json",
+                "Manifest entry added as fruit_notes_archive_new_peach_varieties_1946",
+                "Article located at Archive.org page n327 and continued on n328; related ripening chart is on page n329",
+                "DVC PDF asset not archived in this pass"
             ]
         },
         {
@@ -8894,7 +8899,8 @@
                 "No existing JSON5 reference or candidate ID found for this archive TOC title and year",
             notes: [
                 "Archive TOC entry: Volume 11, January 1946; scan bundle: Fruit Notes 1943-1946",
-                "Recurring title in Fruit Notes; keep year in reference path"
+                "Recurring title in Fruit Notes; keep year in reference path",
+                "Visual scan located the chart on Archive.org page n329 after Notes on New Peach Varieties; leave queued for a dedicated graph extraction pass"
             ]
         },
         {
@@ -9553,27 +9559,33 @@
         },
         {
             id: "fruit-notes-archive-hardy-peaches-massachusetts-1953",
-            status: "new",
+            status: "encoded",
             priority: "high",
             title: "Hardy peaches for Massachusetts",
             institution: "Fruit Notes",
             region: "Massachusetts",
             crops: ["Peach"],
-            published: "February 1953",
+            published: "February 15, 1953",
             source_type: "archive regional cultivar hardiness article",
             landing_url: "http://umassfruitnotes.com/archive/index.html",
             download_url: "https://archive.org/download/fruitnotes5055univ/fruitnotes5055univ.pdf",
+            source_page_url:
+                "https://archive.org/details/fruitnotes5055univ/page/leaf184/mode/1up",
             discovered: "2026-07-02",
             discovered_by: "UMass Fruit Notes archive TOC survey pass 5",
             value_summary:
                 "Massachusetts-focused peach hardiness article likely tied to variety choice",
-            asset_decision: "locate in archive scan and review before import",
+            asset_decision:
+                "encoded after Archive.org OCR location and visual review of leaves 184-186; source PDF not added to DVC",
             proposed_reference_path:
                 "plant_database/references/Massachusetts/Fruit Notes- Hardy Peaches for Massachusetts 1953.json5",
             duplicate_check:
-                "No existing JSON5 reference or candidate ID found for this archive TOC title and year",
+                "Encoded as a new JSON5 reference; no existing reference for this archive TOC title and year was found before import",
             notes: [
-                "Archive TOC entry: Volume 18, February 1953; scan bundle: Fruit Notes 1950-1955"
+                "Archive TOC entry: Volume 18, February 15, 1953; scan bundle: Fruit Notes 1950-1955",
+                "Extraction config: helper_scripts/extraction_configs/fruit_notes_archive_hardy_peaches_massachusetts_1953.json",
+                "Manifest entry: fruit_notes_archive_hardy_peaches_massachusetts_1953",
+                "Reference categories: fruit-notes and fruit-notes-v18-february-1953"
             ]
         },
         {

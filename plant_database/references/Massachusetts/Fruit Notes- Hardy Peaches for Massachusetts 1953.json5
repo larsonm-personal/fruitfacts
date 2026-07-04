@@ -1,0 +1,95 @@
+{
+    title: "Hardy Peaches for Massachusetts",
+    author: "J. S. Bailey",
+    description: "Fruit Notes Volume 18, February 15, 1953 archive article describing peach varieties selected for Massachusetts winter bud hardiness",
+    url: "https://archive.org/details/fruitnotes5055univ/page/leaf184/mode/1up",
+    published: "February 15, 1953",
+    accessed: "Jul 2026",
+    type: "archive regional cultivar hardiness article",
+    reference_categories: ["fruit-notes", "fruit-notes-v18-february-1953"],
+    locations: [
+        {
+            name: "Massachusetts",
+            latitude: 42.4072,
+            longitude: -71.3824
+        },
+    ],
+    categories: [
+        {
+            name: "Hardy peach varieties for Massachusetts from Fruit Notes 1953",
+            description: "Fruit Notes describes peach varieties worth considering in Massachusetts plantings where winter bud hardiness is the first requirement"
+        },
+    ],
+    plants: [
+        {
+            type: "Peach",
+            name: "Greensboro",
+            category: "Hardy peach varieties for Massachusetts from Fruit Notes 1953",
+            harvest_time_unparsed: "about 42 days ahead of Elberta",
+            description: "Fruit Notes describes Greensboro as an old peach with exceptionally hardy fruit buds, a large vigorous productive tree, broad soil adaptability, medium attractive early fruit, white juicy tender flesh, only modest quality, and a semiclingstone habit"
+        },
+        {
+            type: "Peach",
+            name: "Buttercup",
+            category: "Hardy peach varieties for Massachusetts from Fruit Notes 1953",
+            harvest_time_unparsed: "season of Greensboro",
+            description: "Fruit Notes describes Buttercup as an early New Jersey introduction that may interest growers wanting a yellow-fleshed peach at Greensboro season, but notes its clingstone habit and small fruit size, with earliness, good flavor, and yellow flesh as its main strengths"
+        },
+        {
+            type: "Peach",
+            name: "Marigold",
+            category: "Hardy peach varieties for Massachusetts from Fruit Notes 1953",
+            harvest_time_unparsed: "37 days ahead of Elberta",
+            description: "Fruit Notes describes Marigold as an early yellow-fleshed peach with fruit buds nearly as cold resistant as Greensboro, a fairly vigorous and productive tree, medium or slightly larger semicling fruit, and fine flavor"
+        },
+        {
+            type: "Peach",
+            name: "Oriole",
+            category: "Hardy peach varieties for Massachusetts from Fruit Notes 1953",
+            harvest_time_unparsed: "31 days ahead of Elberta",
+            description: "Fruit Notes describes Oriole as a yellow-fleshed freestone peach with fruit buds as hardy as Greensboro, medium fruit with firm flesh and good quality, a vigorous tree that bears young and heavily, and a need for very heavy thinning because it can overset and ripen unevenly"
+        },
+        {
+            type: "Peach",
+            name: "Cumberland",
+            category: "Hardy peach varieties for Massachusetts from Fruit Notes 1953",
+            harvest_time_unparsed: "28 days ahead of Elberta",
+            description: "Fruit Notes describes Cumberland as a white-fleshed peach with large oval freestone fruit of fair to good quality, a large vigorous upright productive tree, and bud hardiness below Greensboro but still good"
+        },
+        {
+            type: "Peach",
+            name: "Eclipse",
+            category: "Hardy peach varieties for Massachusetts from Fruit Notes 1953",
+            harvest_time_unparsed: "22 days ahead of Elberta",
+            description: "Fruit Notes describes Eclipse as a yellow-fleshed Elberta-type peach with medium to large freestone fruit, fair to good flavor, firm but sometimes coarse or stringy flesh, thin tender skin, high productivity, a need for severe thinning, and value where bud hardiness is the main concern"
+        },
+        {
+            type: "Peach",
+            name: "Veteran",
+            category: "Hardy peach varieties for Massachusetts from Fruit Notes 1953",
+            harvest_time_unparsed: "18 days before Elberta",
+            description: "Fruit Notes describes Veteran as a Vineland, Ontario yellow-fleshed freestone Elberta-type peach with better quality than Elberta, medium to large attractive fruit, occasional cling tendency, and a useful combination of bud hardiness, yellow flesh, productivity, and fair flavor"
+        },
+        {
+            type: "Peach",
+            name: "Champion",
+            category: "Hardy peach varieties for Massachusetts from Fruit Notes 1953",
+            harvest_time_unparsed: "11 days before Elberta",
+            description: "Fruit Notes describes Champion as an old white-fleshed peach with a vigorous productive tree, freestone fruit, very soft juicy flesh at ripeness, very high dessert quality, and poor canned appearance despite excellent flavor"
+        },
+        {
+            type: "Peach",
+            name: "Belle of Georgia",
+            category: "Hardy peach varieties for Massachusetts from Fruit Notes 1953",
+            harvest_time_unparsed: "a week ahead of Elberta",
+            description: "Fruit Notes describes Belle of Georgia as an old white-fleshed peach with a fairly vigorous very productive tree, large attractive fairly firm freestone fruit, very high quality, and better canned appearance than Champion while retaining nearly comparable quality"
+        },
+        {
+            type: "Peach",
+            name: "Sungold",
+            category: "Hardy peach varieties for Massachusetts from Fruit Notes 1953",
+            harvest_time_unparsed: "a couple of days ahead of Elberta",
+            description: "Fruit Notes describes Sungold as valuable mainly for cold resistance, with dwarfish J. H. Hale-like trees, very heavy cropping, a need for heavy thinning, yellow usually freestone fruit with occasional cling tendency, sometimes coarse flesh, fair flavor unless well grown, and potential for acceptable large peaches under good culture"
+        },
+    ]
+}

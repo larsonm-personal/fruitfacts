@@ -108,6 +108,226 @@
             ]
         },
         {
+            id: "fruit-notes-v11-january-1946",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 11: January 1946",
+            reference_category: "fruit-notes-v11-january-1946",
+            issue_url: "https://archive.org/details/fruitnotes4346univ",
+            published: "January 31, 1946",
+            accessed: "Jul 2026",
+            notes: [
+                "Archive bundle Fruit Notes 1943-1946; article pages are referenced by Archive.org page URLs rather than single-article PDFs",
+                "OCR text is usable for prose article location, but the ripening chart on page n329 needs visual graph review"
+            ],
+            articles: [
+                {
+                    article_number: "p1",
+                    title: "Conditions Which Affect Spray Coverage",
+                    url: "https://archive.org/details/fruitnotes4346univ/page/n320/mode/1up",
+                    status: "do_not_encode",
+                    family: "crop-management",
+                    notes: [
+                        "Spray equipment and coverage article, not a cultivar source from issue-level triage"
+                    ]
+                },
+                {
+                    article_number: "p3",
+                    title: "Buying Cultivated Blueberry Plants",
+                    url: "https://archive.org/details/fruitnotes4346univ/page/n322/mode/1up",
+                    status: "do_not_encode",
+                    crops: ["Blueberry"],
+                    family: "crop-management",
+                    notes: [
+                        "Plant purchasing and handling article; points readers to the March 8, 1945 issue for variety recommendations"
+                    ]
+                },
+                {
+                    article_number: "p4",
+                    title: "Answers to Questions on Diseases and Fungicides",
+                    url: "https://archive.org/details/fruitnotes4346univ/page/n323/mode/1up",
+                    status: "do_not_encode",
+                    family: "crop-management",
+                    notes: [
+                        "Disease and fungicide Q&A, not a cultivar source from issue-level triage"
+                    ]
+                },
+                {
+                    article_number: "p6",
+                    title: "Growing Strawberries on a Poultry Farm",
+                    url: "https://archive.org/details/fruitnotes4346univ/page/n326/mode/1up",
+                    status: "do_not_encode",
+                    crops: ["Strawberry"],
+                    family: "crop-management",
+                    notes: [
+                        "Farm system and crop management article, not a durable cultivar source from issue-level triage"
+                    ]
+                },
+                {
+                    article_number: "p8",
+                    title: "Notes on New Peach Varieties",
+                    url: "https://archive.org/details/fruitnotes4346univ/page/n327/mode/1up",
+                    status: "encoded",
+                    crops: ["Peach"],
+                    family: "release-or-update",
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Notes on New Peach Varieties 1946.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_archive_new_peach_varieties_1946.json",
+                    notes: [
+                        "Encoded as reviewed static rows from the prose article on pages n327 and n328"
+                    ]
+                },
+                {
+                    article_number: "p10-chart",
+                    title: "Ripening Season of Peach Varieties in Massachusetts",
+                    url: "https://archive.org/details/fruitnotes4346univ/page/n329/mode/1up",
+                    status: "queued",
+                    crops: ["Peach"],
+                    family: "harvest-season",
+                    candidate_id:
+                        "fruit-notes-archive-ripening-season-peach-varieties-massachusetts-1946",
+                    notes: [
+                        "Sideways scan chart located during the 1946 peach article pass; keep as a separate harvest-season extraction candidate"
+                    ]
+                }
+            ]
+        },
+        {
+            id: "fruit-notes-v18-february-1953",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 18: February 1953",
+            reference_category: "fruit-notes-v18-february-1953",
+            issue_url: "https://archive.org/details/fruitnotes5055univ",
+            published: "February 15, 1953",
+            accessed: "Jul 2026",
+            notes: [
+                "Archive bundle Fruit Notes 1950-1955; article pages are referenced by Archive.org leaf URLs because normalized n-page URLs do not match raw scan leaf numbers for this issue",
+                "OCR sidecar skipped or poorly aligned some facing-page scans in this issue, so future imports should combine OCR search with visual leaf review"
+            ],
+            articles: [
+                {
+                    article_number: "toc",
+                    title: "Table of Contents",
+                    url: "https://archive.org/details/fruitnotes5055univ/page/leaf175/mode/1up",
+                    status: "index_only",
+                    family: "industry-news"
+                },
+                {
+                    article_number: "p1",
+                    title: "New England Apple Institute Conference on Retail Selling",
+                    url: "https://archive.org/details/fruitnotes5055univ/page/leaf177/mode/1up",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "Retail selling conference report, not a cultivar source from issue-level triage"
+                    ]
+                },
+                {
+                    article_number: "p2",
+                    title: "Toby's Travels",
+                    url: "https://archive.org/details/fruitnotes5055univ/page/leaf178/mode/1up",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "Travel and industry observations, not a durable cultivar source from issue-level triage"
+                    ]
+                },
+                {
+                    article_number: "p3",
+                    title: "Suggested Rates of Fertilizers for Apple Trees in 1953",
+                    url: "https://archive.org/details/fruitnotes5055univ/page/leaf179/mode/1up",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Fertilizer-rate article, not a cultivar source from issue-level triage"
+                    ]
+                },
+                {
+                    article_number: "p3b",
+                    title: "Strawberry Varieties in 1952",
+                    url: "https://archive.org/details/fruitnotes5055univ/page/leaf179/mode/1up",
+                    status: "queued",
+                    crops: ["Strawberry"],
+                    family: "trial-evaluation",
+                    candidate_id: "fruit-notes-archive-strawberry-varieties-in-1952",
+                    notes: [
+                        "Visually located on leaves 179, 182, and 183; separate import should review the yield and harvest-season tables"
+                    ]
+                },
+                {
+                    article_number: "p6",
+                    title: "Notes on Newer Pear Varieties",
+                    url: "https://archive.org/details/fruitnotes5055univ/page/leaf184/mode/1up",
+                    status: "queued",
+                    crops: ["Pear"],
+                    family: "cultivar-profile",
+                    candidate_id: "fruit-notes-archive-newer-pear-varieties-1953",
+                    notes: [
+                        "Short cultivar profile article shares leaf 184 with the start of Hardy Peaches for Massachusetts"
+                    ]
+                },
+                {
+                    article_number: "p6b",
+                    title: "Hardy Peaches for Massachusetts",
+                    url: "https://archive.org/details/fruitnotes5055univ/page/leaf184/mode/1up",
+                    status: "encoded",
+                    crops: ["Peach"],
+                    family: "hardiness",
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Hardy Peaches for Massachusetts 1953.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_archive_hardy_peaches_massachusetts_1953.json",
+                    notes: [
+                        "Encoded as reviewed static rows from the prose article on leaves 184-186"
+                    ]
+                },
+                {
+                    article_number: "p8",
+                    title: "A New Soil Conditioner",
+                    url: "https://archive.org/details/fruitnotes5055univ/page/leaf186/mode/1up",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "Humor or miscellany article, not a cultivar source from issue-level triage"
+                    ]
+                },
+                {
+                    article_number: "p8b",
+                    title: "Apple Advertising Assessment",
+                    url: "https://archive.org/details/fruitnotes5055univ/page/leaf186/mode/1up",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "industry-news",
+                    notes: [
+                        "Market assessment item, not a cultivar source from issue-level triage"
+                    ]
+                },
+                {
+                    article_number: "p9",
+                    title: "Which Mite Is on My Apple Tree?",
+                    url: "https://archive.org/details/fruitnotes5055univ/page/leaf187/mode/1up",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Pest identification article, not a cultivar source from issue-level triage"
+                    ]
+                },
+                {
+                    article_number: "p10",
+                    title: "Practical Control Programs for Mites",
+                    url: "https://archive.org/details/fruitnotes5055univ/page/leaf187/mode/1up",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Pest control article, not a cultivar source from issue-level triage"
+                    ]
+                }
+            ]
+        },
+        {
             id: "fruit-notes-v76n2-spring-2011",
             status: "partially_encoded",
             title: "Fruit Notes Volume 76, Number 2: Spring 2011",

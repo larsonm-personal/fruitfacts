@@ -52,6 +52,19 @@
             ]
         },
         {
+            id: "hardiness",
+            action: "encode",
+            category_template: "{crop} hardiness in {region}",
+            parser_profile: "tables-or-static-reviewed-rows",
+            current_pilot_configs: [
+                "helper_scripts/extraction_configs/fruit_notes_archive_hardy_peaches_massachusetts_1953.json"
+            ],
+            notes: [
+                "Use for cultivar-level winter bud, cane, or tree hardiness articles that compare named varieties for regional fit",
+                "Keep harvest timing as source-relative wording when the source uses comparison cultivars such as Elberta"
+            ]
+        },
+        {
             id: "rootstock-trial",
             action: "revisit_later",
             category_template: "{crop} rootstocks in {trial region}",
@@ -66,8 +79,12 @@
             action: "encode",
             category_template: "{crop} releases or updates from {program or region}",
             parser_profile: "quoted-or-heading-release",
+            current_pilot_configs: [
+                "helper_scripts/extraction_configs/fruit_notes_archive_new_peach_varieties_1946.json"
+            ],
             notes: [
-                "Use when an article introduces named cultivars or gives durable cultivar observations"
+                "Use when an article introduces named cultivars or gives durable cultivar observations",
+                "For archive prose articles, use reviewed static_rows when OCR is good enough for location but not clean enough for a mechanical paragraph parser"
             ]
         },
         {
@@ -141,6 +158,8 @@
                 "helper_scripts/extraction_configs/fruit_notes_blackberry_variety_selection_opportunities_2011.json",
                 "helper_scripts/extraction_configs/fruit_notes_pearl_cherries_massachusetts_2012.json",
                 "helper_scripts/extraction_configs/fruit_notes_favorite_cherry_varieties_grower_observations_2015.json",
+                "helper_scripts/extraction_configs/fruit_notes_archive_new_peach_varieties_1946.json",
+                "helper_scripts/extraction_configs/fruit_notes_archive_hardy_peaches_massachusetts_1953.json",
                 "helper_scripts/extraction_configs/fruit_notes_plum_plum_hybrid_cultivars_2012.json"
             ],
             notes: [
