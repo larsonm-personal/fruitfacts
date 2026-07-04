@@ -724,6 +724,10 @@ fn test_fruit_notes_reference_files_have_reference_categories() {
             "fruit-notes-v18-february-1953",
         ),
         (
+            "references/Massachusetts/Fruit Notes- Notes on Newer Pear Varieties 1953.json5",
+            "fruit-notes-v18-february-1953",
+        ),
+        (
             "references/Massachusetts/Fruit Notes- Fifteen Years of Peach and Nectarine Variety Evaluation at UMass Cold Spring Orchard.json5",
             "fruit-notes-v83n1-winter-2018",
         ),

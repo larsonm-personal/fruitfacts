@@ -259,12 +259,17 @@
                     article_number: "p6",
                     title: "Notes on Newer Pear Varieties",
                     url: "https://archive.org/details/fruitnotes5055univ/page/leaf184/mode/1up",
-                    status: "queued",
+                    status: "encoded",
                     crops: ["Pear"],
                     family: "cultivar-profile",
                     candidate_id: "fruit-notes-archive-newer-pear-varieties-1953",
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Notes on Newer Pear Varieties 1953.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_archive_newer_pear_varieties_1953.json",
                     notes: [
-                        "Short cultivar profile article shares leaf 184 with the start of Hardy Peaches for Massachusetts"
+                        "Encoded as reviewed static rows from the compact cultivar profile list on leaf 184",
+                        "Duplicate candidate fruit-notes-archive-notes-newer-pear-varieties-1953 was also marked encoded"
                     ]
                 },
                 {

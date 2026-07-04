@@ -6465,27 +6465,34 @@
         },
         {
             id: "fruit-notes-archive-newer-pear-varieties-1953",
-            status: "new",
+            status: "encoded",
             priority: "medium",
             title: "Notes on newer pear varieties",
             institution: "Fruit Notes",
             region: "Massachusetts",
             crops: ["Pear"],
+            published: "February 15, 1953",
             source_type: "archive cultivar observation article",
             landing_url: "http://umassfruitnotes.com/archive/index.html",
             download_url: "https://archive.org/download/fruitnotes5055univ/fruitnotes5055univ.pdf",
+            source_page_url:
+                "https://archive.org/details/fruitnotes5055univ/page/leaf184/mode/1up",
             discovered: "2026-07-02",
             discovered_by: "UMass Fruit Notes archive TOC survey pass 3",
             value_summary:
                 "Notes on newer pear varieties from the Fruit Notes archive",
-            asset_decision: "locate in archive scan and review before import",
+            asset_decision:
+                "encoded after visual review of Archive.org leaf 184; source PDF not added to DVC",
             proposed_reference_path:
-                "plant_database/references/Massachusetts/Fruit Notes- Notes on Newer Pear Varieties.json5",
+                "plant_database/references/Massachusetts/Fruit Notes- Notes on Newer Pear Varieties 1953.json5",
             duplicate_check:
-                "No existing JSON5 reference or candidate ID found for this archive TOC title",
+                "Encoded as a new JSON5 reference; a duplicate pass-5 candidate for the same article was also marked encoded",
             notes: [
-                "Archive TOC entry: Volume 18, Feb. 1953",
-                "Article is inside the 1950-1955 Internet Archive scan"
+                "Archive TOC entry: Volume 18, February 15, 1953",
+                "Article is inside the 1950-1955 Internet Archive scan",
+                "Extraction config: helper_scripts/extraction_configs/fruit_notes_archive_newer_pear_varieties_1953.json",
+                "Manifest entry: fruit_notes_archive_newer_pear_varieties_1953",
+                "Reference categories: fruit-notes and fruit-notes-v18-february-1953"
             ]
         },
         {
@@ -9534,27 +9541,33 @@
         },
         {
             id: "fruit-notes-archive-notes-newer-pear-varieties-1953",
-            status: "new",
+            status: "encoded",
             priority: "medium",
             title: "Notes on newer pear varieties",
             institution: "Fruit Notes",
             region: "Massachusetts",
             crops: ["Pear"],
-            published: "February 1953",
+            published: "February 15, 1953",
             source_type: "archive cultivar overview article",
             landing_url: "http://umassfruitnotes.com/archive/index.html",
             download_url: "https://archive.org/download/fruitnotes5055univ/fruitnotes5055univ.pdf",
+            source_page_url:
+                "https://archive.org/details/fruitnotes5055univ/page/leaf184/mode/1up",
             discovered: "2026-07-02",
             discovered_by: "UMass Fruit Notes archive TOC survey pass 5",
             value_summary:
                 "Notes on newer pear varieties from the Massachusetts archive",
-            asset_decision: "locate in archive scan and review before import",
+            asset_decision:
+                "duplicate candidate encoded through fruit-notes-archive-newer-pear-varieties-1953 after visual review of Archive.org leaf 184",
             proposed_reference_path:
                 "plant_database/references/Massachusetts/Fruit Notes- Notes on Newer Pear Varieties 1953.json5",
             duplicate_check:
-                "No existing JSON5 reference or candidate ID found for this archive TOC title and year",
+                "Duplicate of candidate fruit-notes-archive-newer-pear-varieties-1953; both point to the same generated reference",
             notes: [
-                "Archive TOC entry: Volume 18, February 1953; scan bundle: Fruit Notes 1950-1955"
+                "Archive TOC entry: Volume 18, February 15, 1953; scan bundle: Fruit Notes 1950-1955",
+                "Extraction config: helper_scripts/extraction_configs/fruit_notes_archive_newer_pear_varieties_1953.json",
+                "Manifest entry: fruit_notes_archive_newer_pear_varieties_1953",
+                "Reference categories: fruit-notes and fruit-notes-v18-february-1953"
             ]
         },
         {

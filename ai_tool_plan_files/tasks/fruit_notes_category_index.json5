@@ -13,11 +13,13 @@
             applies_to_title_patterns: [
                 "Selected * Varieties for the Northeast",
                 "* Grape Varieties for the Northeast",
+                "Notes on Newer * Varieties",
                 "* Apple Trial Updates"
             ],
             parser_profile: "born-digital-narrative-known-heading",
             notes: [
                 "Often written as multi-page narrative cultivar profiles",
+                "Short archive profile lists may be encoded with reviewed static rows when one scan leaf has multiple compact entries",
                 "Use reviewed descriptions rather than copied source paragraphs"
             ]
         },
@@ -159,6 +161,7 @@
                 "helper_scripts/extraction_configs/fruit_notes_pearl_cherries_massachusetts_2012.json",
                 "helper_scripts/extraction_configs/fruit_notes_favorite_cherry_varieties_grower_observations_2015.json",
                 "helper_scripts/extraction_configs/fruit_notes_archive_new_peach_varieties_1946.json",
+                "helper_scripts/extraction_configs/fruit_notes_archive_newer_pear_varieties_1953.json",
                 "helper_scripts/extraction_configs/fruit_notes_archive_hardy_peaches_massachusetts_1953.json",
                 "helper_scripts/extraction_configs/fruit_notes_plum_plum_hybrid_cultivars_2012.json"
             ],

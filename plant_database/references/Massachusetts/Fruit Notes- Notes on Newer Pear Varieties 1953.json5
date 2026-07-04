@@ -1,0 +1,95 @@
+{
+    title: "Notes on Newer Pear Varieties",
+    author: "O. C. Roberts and J. F. Anderson",
+    description: "Fruit Notes Volume 18, February 15, 1953 archive article describing newer pear varieties for Massachusetts growers",
+    url: "https://archive.org/details/fruitnotes5055univ/page/leaf184/mode/1up",
+    published: "February 15, 1953",
+    accessed: "Jul 2026",
+    type: "archive cultivar profile article",
+    reference_categories: ["fruit-notes", "fruit-notes-v18-february-1953"],
+    locations: [
+        {
+            name: "Massachusetts",
+            latitude: 42.4072,
+            longitude: -71.3824
+        },
+    ],
+    categories: [
+        {
+            name: "Massachusetts pear variety notes from Fruit Notes 1953",
+            description: "Fruit Notes gives brief Massachusetts-oriented descriptions of newer pear varieties, including fruit appearance, eating quality, storage behavior, and source harvest timing"
+        },
+    ],
+    plants: [
+        {
+            type: "Euro Pear",
+            name: "Cayuga",
+            category: "Massachusetts pear variety notes from Fruit Notes 1953",
+            harvest_time_unparsed: "early September",
+            description: "Fruit Notes describes Cayuga as a medium-sized greenish-yellow pear with a light blush, fairly attractive appearance, good quality, and thick tough skin"
+        },
+        {
+            type: "Euro Pear",
+            name: "Clyde",
+            category: "Massachusetts pear variety notes from Fruit Notes 1953",
+            harvest_time_unparsed: "early October",
+            description: "Fruit Notes describes Clyde as much like Seckel in color and shape but considerably larger, with only fair quality but good keeping ability"
+        },
+        {
+            type: "Euro Pear",
+            name: "Cope's Seedless",
+            category: "Massachusetts pear variety notes from Fruit Notes 1953",
+            harvest_time_unparsed: "mid-September",
+            description: "Fruit Notes describes Cope's Seedless as a medium-sized yellowish-green, attractive, good-quality pear with juicy fine-grained flesh, some tendency to russet, and few seeds"
+        },
+        {
+            type: "Euro Pear",
+            name: "Covert",
+            category: "Massachusetts pear variety notes from Fruit Notes 1953",
+            harvest_time_unparsed: "latter part of September or early October",
+            description: "Fruit Notes describes Covert as a large green pear that is fairly attractive, good quality, juicy, and keeps well in storage"
+        },
+        {
+            type: "Euro Pear",
+            name: "Ewart",
+            category: "Massachusetts pear variety notes from Fruit Notes 1953",
+            harvest_time_unparsed: "middle to last of September",
+            description: "Fruit Notes describes Ewart as a large yellowish-green pear with unattractive appearance, good quality, juicy fine-grained flesh, and thick skin"
+        },
+        {
+            type: "Euro Pear",
+            name: "Ovid",
+            category: "Massachusetts pear variety notes from Fruit Notes 1953",
+            harvest_time_unparsed: "early October",
+            description: "Fruit Notes describes Ovid as a medium-sized yellowish-green pear with a light blush, fairly attractive appearance, good quality, tendency to russet, thick skin, and good storage behavior"
+        },
+        {
+            type: "Euro Pear",
+            name: "Phelps",
+            category: "Massachusetts pear variety notes from Fruit Notes 1953",
+            harvest_time_unparsed: "early October",
+            description: "Fruit Notes describes Phelps as a medium-sized yellowish-green pear that is unattractive, fair quality, rather acid, and keeps well in storage"
+        },
+        {
+            type: "Euro Pear",
+            name: "Pulteney",
+            category: "Massachusetts pear variety notes from Fruit Notes 1953",
+            harvest_time_unparsed: "late September",
+            description: "Fruit Notes describes Pulteney as a medium-sized yellowish-green pear with unattractive appearance, fine-grained flesh, fair quality, moderate juiciness, tart flavor, and good storage behavior"
+        },
+        {
+            type: "Euro Pear",
+            name: "Waite",
+            category: "Massachusetts pear variety notes from Fruit Notes 1953",
+            harvest_time_unparsed: "early October",
+            description: "Fruit Notes describes Waite as a medium-sized greenish-yellow pear that is fairly attractive but only fair quality, not juicy, and tends toward core browning"
+        },
+        {
+            type: "Euro Pear",
+            name: "Willard",
+            category: "Massachusetts pear variety notes from Fruit Notes 1953",
+            harvest_time_unparsed: "middle of October",
+            description: "Fruit Notes describes Willard as a large green pear that is unattractive, fair quality, juicy, coarse-fleshed, and prone to shriveling in storage"
+        },
+    ]
+}
