@@ -425,6 +425,10 @@
             "config": "extraction_configs/fruit_notes_hard_cider_apple_varieties_new_jersey_2021.json"
         },
         {
+            "id": "fruit_notes_blackberry_variety_selection_opportunities_2011",
+            "config": "extraction_configs/fruit_notes_blackberry_variety_selection_opportunities_2011.json"
+        },
+        {
             "id": "fruit_notes_pearl_cherries_massachusetts_2012",
             "config": "extraction_configs/fruit_notes_pearl_cherries_massachusetts_2012.json"
         },

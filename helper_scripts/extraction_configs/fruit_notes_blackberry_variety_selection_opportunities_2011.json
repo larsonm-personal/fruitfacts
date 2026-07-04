@@ -1,0 +1,107 @@
+{
+  "source": {
+    "kind": "static"
+  },
+  "reference_fields": [
+    ["title", "Blackberry Variety Selection Opportunities"],
+    ["author", "John R. Clark"],
+    ["description", "Fruit Notes Volume 76, Number 2, Spring 2011 article from John R. Clark of the University of Arkansas discussing blackberry variety choices for Pennsylvania and Mid-Atlantic growers; the same article also appears in Volume 76, Number 4, Fall 2011"],
+    ["url", "http://umassfruitnotes.com/v76n2/a4.pdf"],
+    ["published", "Spring 2011"],
+    ["accessed", "Jul 2026"],
+    ["type", "journal cultivar overview"],
+    ["reference_categories", ["fruit-notes", "fruit-notes-v76n2-spring-2011", "fruit-notes-v76n4-fall-2011"]]
+  ],
+  "locations": [
+    {
+      "name": "University of Arkansas, Fayetteville, Arkansas",
+      "latitude": 36.0687,
+      "longitude": -94.174
+    }
+  ],
+  "categories": [
+    {
+      "name": "Blackberry variety selection for Mid-Atlantic growers",
+      "description": "Fruit Notes discusses these blackberry varieties as options or trial candidates for Pennsylvania and Mid-Atlantic growers, emphasizing hardiness, season, fruit quality, shipping potential, and local-market fit"
+    }
+  ],
+  "extractors": [
+    {
+      "kind": "static_rows",
+      "plant_type": "Blackberry",
+      "category": "Blackberry variety selection for Mid-Atlantic growers",
+      "harvest_time_unparsed": {"row_key": "harvest_time"},
+      "record_fields": [["AKA", {"row_key": "aka"}]],
+      "description_key": "description",
+      "rows": [
+        {
+          "name": "Chester",
+          "aka": ["Chester Thornless"],
+          "harvest_time": "later than Arkansas developments, late June to early July in Arkansas",
+          "description": "Fruit Notes describes Chester Thornless, normalized here to Chester, as a USDA-ARS-developed semi-erect blackberry worth considering for Mid-Atlantic growers because it has provided sustained high yields and good hardiness. Source notes: exceptional shipping ability, lower soluble solids than many fresh-fruit consumers prefer, tart flavor unless fully ripe, and overall flavor and quality as the main disadvantage"
+        },
+        {
+          "name": "Hull Thornless",
+          "harvest_time": "late June to early July in Arkansas",
+          "description": "Fruit Notes lists Hull Thornless among semi-erect thornless blackberries likely adapted to the Mid-Atlantic because these types originated in southern Illinois or Maryland. Source notes: this group tends to be later than Arkansas developments and often draws concern for tart flavor"
+        },
+        {
+          "name": "Black Satin",
+          "harvest_time": "late June to early July in Arkansas",
+          "description": "Fruit Notes lists Black Satin among semi-erect thornless blackberries likely adapted to the Mid-Atlantic because these types originated in southern Illinois or Maryland. Source notes: this group tends to be later than Arkansas developments and often draws concern for tart flavor"
+        },
+        {
+          "name": "Thornfree",
+          "harvest_time": "late June to early July in Arkansas",
+          "description": "Fruit Notes lists Thornfree among semi-erect thornless blackberries likely adapted to the Mid-Atlantic because these types originated in southern Illinois or Maryland. Source notes: this group tends to be later than Arkansas developments and often draws concern for tart flavor"
+        },
+        {
+          "name": "Dirksen Thornless",
+          "harvest_time": "late June to early July in Arkansas",
+          "description": "Fruit Notes lists Dirksen Thornless among semi-erect thornless blackberries likely adapted to the Mid-Atlantic because these types originated in southern Illinois or Maryland. Source notes: this group tends to be later than Arkansas developments and often draws concern for tart flavor"
+        },
+        {
+          "name": "Smoothstem",
+          "harvest_time": "late June to early July in Arkansas",
+          "description": "Fruit Notes lists Smoothstem among semi-erect thornless blackberries likely adapted to the Mid-Atlantic because these types originated in southern Illinois or Maryland. Source notes: this group tends to be later than Arkansas developments and often draws concern for tart flavor"
+        },
+        {
+          "name": "Triple Crown",
+          "harvest_time": "about June 25 to June 30 in Arkansas",
+          "description": "Fruit Notes describes Triple Crown as the last USDA-ARS release and notes that it is renowned for exceptional flavor, with some considering it the best-tasting eastern US blackberry. Source notes: moderate to high yield, adequate Mid-Atlantic hardiness though perhaps less hardy than Chester Thornless, earlier ripening than Chester Thornless, insufficient firmness for shipping, and strong suitability for local markets with short holding times and pick-your-own"
+        },
+        {
+          "name": "Ouachita",
+          "harvest_time": "about June 10 in Arkansas",
+          "description": "Fruit Notes says that if growers consider one Arkansas blackberry, they should consider Ouachita. Source notes: successful coast to coast in the United States, unconfirmed hardiness across the whole Mid-Atlantic, high yields of high-quality 6 to 7 gram berries, 10 to 11 percent soluble solids, erect canes, broad adaptation, and a major role in expansion of the domestic shipping blackberry industry"
+        },
+        {
+          "name": "Navaho",
+          "harvest_time": "about June 20 in Arkansas",
+          "description": "Fruit Notes describes Navaho as the first Arkansas thornless blackberry and says some consider it the best shipping blackberry available. Source notes: medium 5 gram berries, moderate yield capacity, very good sweetness usually 11 to 12 percent soluble solids, good hardiness in the lower Midwest and some Mid-Atlantic areas, orange rust susceptibility, and erect canes"
+        },
+        {
+          "name": "Apache",
+          "harvest_time": "about June 25 in Arkansas",
+          "description": "Fruit Notes describes Apache as a large-fruited blackberry admired by some growers. Source notes: 10 to 11 gram berries, high vigor, productive and healthy plants, about 11 percent soluble solids, incomplete Mid-Atlantic hardiness knowledge, and white drupelets as a major negative trait for shipping though less severe for local sales"
+        },
+        {
+          "name": "Natchez",
+          "harvest_time": "about June 5 in Arkansas",
+          "description": "Fruit Notes describes Natchez as the newest Arkansas thornless blackberry release as of the article. Source notes: large long berries, eye-catching fruit on the vine or in clamshells, unknown hardiness for the Mid-Atlantic because it was released in 2007, about 9.5 percent soluble solids, and tartness risk if crop load is excessive in southern plantings"
+        },
+        {
+          "name": "Prime-Ark 45",
+          "harvest_time": "floricane crop about June 5 in Arkansas; primocane crop mid-August in Arkansas, usually September 1 on California's Central Coast, and mid-September in Oregon's Willamette Valley",
+          "description": "Fruit Notes describes Prime-Ark 45 as the first shipping-quality primocane-fruiting blackberry, released in 2009, and a possible basis for late-summer to fall blackberry production. Source notes: large berries up to 10 grams, commonly 10 percent soluble solids, fruit stays black in storage, good firmness retention, Penn State testing by Kathy Demchak, yield limitations before cold temperatures in Pennsylvania, improved performance in high tunnels, and recommendation for trials only at the time of the article"
+        },
+        {
+          "name": "Prime Jan",
+          "aka": ["Prime-Jan"],
+          "harvest_time": "about two weeks earlier than Prime-Ark 45",
+          "description": "Fruit Notes describes Prime-Jan as one of the first primocane-fruiting blackberries, released in 2004 and originally intended for home gardens. Source notes: limited trials suggesting some commercial potential, acceptable quality, moderate storage capability, about 9 percent soluble solids, earlier ripening than Prime-Ark 45, incomplete non-high-tunnel crop ripening in upstate New York, and a recommendation to test specific locations and management before full commercial use"
+        }
+      ]
+    }
+  ]
+}

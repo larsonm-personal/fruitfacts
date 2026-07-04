@@ -6,6 +6,143 @@
     ],
     issues: [
         {
+            id: "fruit-notes-v76n2-spring-2011",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 76, Number 2: Spring 2011",
+            reference_category: "fruit-notes-v76n2-spring-2011",
+            issue_url: "http://umassfruitnotes.com/v76n2/FruitNotes76-2.pdf",
+            cover_url: "http://umassfruitnotes.com/v76n2/Cover762.html",
+            published: "Spring 2011",
+            accessed: "Jul 2026",
+            articles: [
+                {
+                    article_number: "a1",
+                    title: "Effects of Systemm-CAL and ProGibb on Jersey Peaches in Massachusetts and New Jersey",
+                    url: "http://www.umassfruitnotes.com/v76n2/a1.pdf",
+                    status: "do_not_encode",
+                    crops: ["Peach"],
+                    family: "crop-management",
+                    notes: [
+                        "Plant-growth-regulator/calcium article from cover-level triage, not a cultivar source"
+                    ]
+                },
+                {
+                    article_number: "a2",
+                    title: "Looking Into the Crystal Ball -- Apple Fruit Thinning Without Carbaryl",
+                    url: "http://www.umassfruitnotes.com/v76n2/a2.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Fruit-thinning management article from cover-level triage, not a cultivar source"
+                    ]
+                },
+                {
+                    article_number: "a3",
+                    title: "Efficacy of Standard and New Fungicides Against the Sooty Blotch/Flyspeck Complex and Apple Scab",
+                    url: "http://www.umassfruitnotes.com/v76n2/a3.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Fungicide efficacy article from cover-level triage, not a cultivar source"
+                    ]
+                },
+                {
+                    article_number: "a4",
+                    title: "Blackberry Variety Selection Opportunities",
+                    url: "http://www.umassfruitnotes.com/v76n2/a4.pdf",
+                    status: "encoded",
+                    crops: ["Blackberry"],
+                    family: "cultivar-profile",
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Blackberry Variety Selection Opportunities.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_blackberry_variety_selection_opportunities_2011.json"
+                },
+                {
+                    article_number: "a5",
+                    title: "Remembering \"Doc\" Childers: 1911-2011",
+                    url: "http://www.umassfruitnotes.com/v76n2/a5.pdf",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "Memorial article, no cultivar-level FruitFacts data from cover-level triage"
+                    ]
+                }
+            ]
+        },
+        {
+            id: "fruit-notes-v76n4-fall-2011",
+            status: "partially_encoded",
+            title: "Fruit Notes Volume 76, Number 4: Fall 2011",
+            reference_category: "fruit-notes-v76n4-fall-2011",
+            issue_url: "http://umassfruitnotes.com/v76n4/FN76-4.pdf",
+            cover_url: "http://umassfruitnotes.com/v76n4/Cover764.html",
+            published: "Fall 2011",
+            accessed: "Jul 2026",
+            articles: [
+                {
+                    article_number: "a1",
+                    title: "Preliminary Results with Vacuum-Assisted Harvest System for Apples",
+                    url: "http://www.umassfruitnotes.com/v76n4/a1.pdf",
+                    status: "do_not_encode",
+                    crops: ["Apple"],
+                    family: "crop-management",
+                    notes: [
+                        "Harvest-system article from cover-level triage, not a cultivar source"
+                    ]
+                },
+                {
+                    article_number: "a2",
+                    title: "New Cherry Pruning Videos Available Online",
+                    url: "http://www.umassfruitnotes.com/v76n4/a2.pdf",
+                    status: "do_not_encode",
+                    crops: ["Sweet Cherry", "Sour Cherry"],
+                    family: "crop-management",
+                    notes: [
+                        "Pruning/video notice from cover-level triage, not a cultivar source"
+                    ]
+                },
+                {
+                    article_number: "a3",
+                    title: "Massachusetts Pick-Your-Own Survey",
+                    url: "http://www.umassfruitnotes.com/v76n4/a3.pdf",
+                    status: "do_not_encode",
+                    family: "industry-news",
+                    notes: [
+                        "Survey/marketing article from cover-level triage, not a cultivar source"
+                    ]
+                },
+                {
+                    article_number: "a4",
+                    title: "Blueberries -- Making a Superb Fruit Even Better",
+                    url: "http://www.umassfruitnotes.com/v76n4/a4.pdf",
+                    status: "triage",
+                    crops: ["Blueberry"],
+                    family: "release-or-update",
+                    notes: [
+                        "Potential breeding or cultivar-improvement article; review in a later Fruit Notes pass"
+                    ]
+                },
+                {
+                    article_number: "a5",
+                    title: "Blackberry Variety Selection Opportunities",
+                    url: "http://www.umassfruitnotes.com/v76n4/a5.pdf",
+                    status: "encoded",
+                    crops: ["Blackberry"],
+                    family: "cultivar-profile",
+                    reference_path:
+                        "plant_database/references/Massachusetts/Fruit Notes- Blackberry Variety Selection Opportunities.json5",
+                    config:
+                        "helper_scripts/extraction_configs/fruit_notes_blackberry_variety_selection_opportunities_2011.json",
+                    notes: [
+                        "Duplicate or lightly reformatted copy of v76n2/a4; the generated reference includes this issue category"
+                    ]
+                }
+            ]
+        },
+        {
             id: "fruit-notes-v77n1-winter-2012",
             status: "partially_encoded",
             title: "Fruit Notes Volume 77, Number 1: Winter 2012",

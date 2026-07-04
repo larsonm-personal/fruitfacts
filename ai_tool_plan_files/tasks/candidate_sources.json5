@@ -4259,26 +4259,31 @@
         },
         {
             id: "fruit-notes-blackberry-variety-selection-opportunities-2011",
-            status: "new",
+            status: "encoded",
             priority: "high",
             title: "Blackberry Variety Selection Opportunities",
             institution: "Fruit Notes",
             region: "Northeastern United States",
             crops: ["Blackberry"],
             source_type: "journal cultivar overview",
-            landing_url: "http://umassfruitnotes.com/v76n4/Cover764.html",
-            download_url: "http://umassfruitnotes.com/v76n4/a5.pdf",
+            landing_url: "http://umassfruitnotes.com/v76n2/Cover762.html",
+            download_url: "http://umassfruitnotes.com/v76n2/a4.pdf",
             discovered: "2026-07-02",
             discovered_by: "UMass Fruit Notes live issue index survey",
             value_summary:
                 "Blackberry variety selection article for Northeastern growers",
-            asset_decision: "download and review before import",
+            asset_decision: "downloaded and encoded from static reviewed rows",
             proposed_reference_path:
                 "plant_database/references/Massachusetts/Fruit Notes- Blackberry Variety Selection Opportunities.json5",
             duplicate_check:
-                "Same title also appears in v76n2/a4; no existing JSON5 reference found for either article",
+                "Same article appears in v76n2/a4 and v76n4/a5 with light formatting and wording differences; encoded once with both issue reference categories",
             notes: [
-                "Review v76n2/a4 and v76n4/a5 together to determine whether they are duplicates, installments, or corrections"
+                "Reviewed v76n2/a4 and v76n4/a5 together; treated Spring 2011 as canonical and Fall 2011 as a duplicate/reformatted copy",
+                "Encoded 13 variety rows in plant_database/references/Massachusetts/Fruit Notes- Blackberry Variety Selection Opportunities.json5",
+                "Config extraction added at helper_scripts/extraction_configs/fruit_notes_blackberry_variety_selection_opportunities_2011.json",
+                "Manifest entry added as fruit_notes_blackberry_variety_selection_opportunities_2011",
+                "Reference categories include fruit-notes-v76n2-spring-2011 and fruit-notes-v76n4-fall-2011",
+                "Uses static_rows because the article is narrative and the duplicate PDFs differ enough that parser-derived text comparison is noisy"
             ]
         },
         {

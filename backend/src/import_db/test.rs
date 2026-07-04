@@ -735,6 +735,14 @@ fn test_fruit_notes_reference_files_have_reference_categories() {
             "references/New Jersey/Fruit Notes- Testing and Evaluation of Plum and Plum Hybrid Cultivars.json5",
             "fruit-notes-v77n3-summer-2012",
         ),
+        (
+            "references/Massachusetts/Fruit Notes- Blackberry Variety Selection Opportunities.json5",
+            "fruit-notes-v76n2-spring-2011",
+        ),
+        (
+            "references/Massachusetts/Fruit Notes- Blackberry Variety Selection Opportunities.json5",
+            "fruit-notes-v76n4-fall-2011",
+        ),
     ];
 
     for (relative_path, issue_category) in cases {
