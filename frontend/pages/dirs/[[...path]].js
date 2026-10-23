@@ -92,7 +92,7 @@ export default function Home({
       { link: `/frontend/components/map/`, description: `map component` },
       { link: `/backend/src/queries/map.rs`, description: `map APIs` }
     ]);
-  }, []);
+  }, [setContributingLinks]);
 
   const [center, setCenterForQuery] = React.useState({});
   const [zoom, setZoomForQuery] = React.useState({});
@@ -126,14 +126,14 @@ export default function Home({
             return response.json();
           })
           .catch((error) => {
-            errorMessage = `can't reach backend: ${error.message}`;
+            setErrorMessage(`can't reach backend: ${error.message}`);
             console.log(error);
             return;
           });
 
         callback(response);
       }, 650 /* ms to wait */),
-    []
+    [setErrorMessage]
   );
 
   React.useEffect(() => {
@@ -147,16 +147,13 @@ export default function Home({
   React.useEffect(() => {
     console.log(`got center ${JSON.stringify(center, null, 2)} and zoom ${zoom}`);
 
-    if (center?.lat && center?.lng && zoom) {
-      router.push(
-        {
-          pathname: pathUsed + `@${center.lat.toFixed(7)},${center.lng.toFixed(6)},${zoom}z`
-        },
-        undefined,
-        { shallow: true }
-      );
+    if (Number.isFinite(center?.lat) && Number.isFinite(center?.lng) && Number.isFinite(zoom)) {
+      const mapPath = `/dirs/${name_to_path(pathUsed)}@${center.lat.toFixed(7)},${center.lng.toFixed(6)},${zoom}z`;
+      if (router.asPath !== mapPath) {
+        router.push(mapPath, undefined, { shallow: true, scroll: false });
+      }
     }
-  }, [center, zoom]);
+  }, [center, zoom, pathUsed, router]);
 
   return (
     <>
@@ -177,9 +174,7 @@ export default function Home({
           <ul className="list-disc">
             {data.directories.map((directory, index) => (
               <li key={index}>
-                <Link href={`/dirs/${name_to_path(directory)}#dirs`}>
-                  {directory}
-                </Link>
+                <Link href={`/dirs/${name_to_path(directory)}#dirs`}>{directory}</Link>
               </li>
             ))}
           </ul>
@@ -193,7 +188,6 @@ export default function Home({
                 <li key={collection.id}>
                   <Link
                     href={`/collections/${collection.path}${name_to_path(collection.filename)}`}
-
                   >
                     {collection.title}
                   </Link>

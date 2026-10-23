@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, update/dependency-modernization ]
 
 env:
   CARGO_TERM_COLOR: always
@@ -24,9 +24,15 @@ jobs:
       run: |
         cp .env.example .env
         ../download_files.sh
+    - name: Install lint components
+      run: rustup component add clippy rustfmt
+    - name: Check formatting and both feature configurations
+      run: ./rust_lint.sh
     - name: Build
       run: cargo build --verbose
     - name: Run tests including database import
       run: cargo test --verbose -- --include-ignored
+    - name: Test server-only configuration
+      run: cargo test --no-default-features --lib
     - name: Build production server
       run: cargo build --release --no-default-features --bin harvest-chart-server

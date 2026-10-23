@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
@@ -20,9 +21,9 @@ export default function Home({ types, setErrorMessage, setContributingLinks }) {
       { link: `/plant_database/types.json5`, description: `plant types` },
       { link: `/frontend/public/fruit_icons/`, description: `fruit icons` }
     ]);
-  }, []);
+  }, [setContributingLinks]);
 
-  setErrorMessage(null);
+  React.useEffect(() => setErrorMessage(null), [setErrorMessage]);
   return (
     <>
       <Head>
@@ -41,16 +42,17 @@ export default function Home({ types, setErrorMessage, setContributingLinks }) {
                       <div key={index} className="flex flex-col items-center">
                         <Link
                           href={`search?searchType=base&type=${type.name}&page=1&perPage=50&orderBy=name_then_type&order=asc`}
-
                         >
-                          <img
-                            className="my-0 mx-2 inline h-24 w-24 object-contain"
+                          <Image
+                            width={96}
+                            height={96}
+                            alt={type.name}
+                            className="mx-2 my-0 inline h-24 w-24 object-contain"
                             src={'/fruit_icons/' + type.name + '.svg'}
                           />
                         </Link>
                         <Link
                           href={`search?searchType=base&type=${type.name}&page=1&perPage=50&orderBy=name_then_type&order=asc`}
-
                         >
                           {type.name}
                         </Link>

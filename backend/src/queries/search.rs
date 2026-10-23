@@ -182,11 +182,10 @@ pub fn search_db(
             let mut pat_mid_q = base_plants::table.into_boxed(); // for patent count
             let mut total_count_q = base_plants::table.into_boxed(); // for overall count
 
-            if query.search.is_some() {
+            if let Some(input) = &query.search {
                 // todo - support searching with just one or two letters (fts uses "trigraphs" and won't search for these)
                 // just do a begins-with search on name or AKA columns
 
-                let input = query.search.as_ref().unwrap();
                 // remove extra characters. leave spaces so we can treat separate words as separate
                 // dashes get interpreted by fts. same with +*:^ AND OR NOT
                 let re = Regex::new(r"[^0-9A-Za-z ]").unwrap();
@@ -233,7 +232,7 @@ pub fn search_db(
                 println!("input {input} cleaned: {cleaned} ORed: {statement_string}");
 
                 let search_query = fts_base_plants::table
-                    .select((fts_base_plants::rowid, fts_base_plants::rank))
+                    .select(fts_base_plants::rowid)
                     .filter(fts_base_plants::whole_row.eq(statement_string))
                     .order(fts_base_plants::rank.asc())
                     .into_boxed();
@@ -242,7 +241,7 @@ pub fn search_db(
 
                 // no limit within search - we may sort later, by something else
 
-                let values = search_query.load::<FtsBasePlants>(db_conn);
+                let values = search_query.load::<i32>(db_conn);
                 // println!("{:?}", values);
 
                 // todo: order or limit by notoriety
@@ -254,8 +253,7 @@ pub fn search_db(
                             total_count_q = total_count_q.filter(base_plants::type_.eq(type_));
                         };
 
-                        let ids_only: Vec<i32> =
-                            values.into_iter().map(|entry| entry.rowid).collect();
+                        let ids_only = values;
 
                         base_query = base_query.filter(base_plants::id.eq_any(ids_only.clone()));
                         pat_mid_q = pat_mid_q.filter(base_plants::id.eq_any(ids_only.clone()));
@@ -704,8 +702,8 @@ async fn variety_search(
 
     let session: Option<UserSession>;
     let (session_value, _outgoing_cookie) = crate::queries::auth::get_session_value(req, false);
-    if session_value.is_some() {
-        let get_session_result = session::get_session(&mut conn, session_value.unwrap());
+    if let Some(session_value) = session_value {
+        let get_session_result = session::get_session(&mut conn, session_value);
         if let Ok(get_session_result) = get_session_result {
             session = Some(get_session_result);
         } else {

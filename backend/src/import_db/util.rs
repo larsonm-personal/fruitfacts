@@ -17,6 +17,7 @@ pub fn uspp_number_to_expiration(uspp_number_input: i32) -> i64 {
     .unwrap()
     .and_hms_opt(12, 0, 0)
     .unwrap()
+    .and_utc()
     .timestamp()
 }
 

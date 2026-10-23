@@ -1,9 +1,11 @@
 // find all *.pdf recursively in /plant_database/
 // for any without an existing thumbnail in /frontend/public/data/, create one
-use std::fs;
-use std::path::Path;
-extern crate clap;
+#[cfg(feature = "binaries")]
 use clap::{crate_version, Arg, Command as ClapApp};
+#[cfg(feature = "binaries")]
+use std::fs;
+#[cfg(feature = "binaries")]
+use std::path::Path;
 
 #[cfg(feature = "binaries")]
 use pdfium_render::prelude::*;

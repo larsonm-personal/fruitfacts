@@ -56,7 +56,7 @@ export default function Home({ data, types, errorMessage, setErrorMessage, setCo
       { link: `/frontend/pages/search.js`, description: `frontend: search.js` },
       { link: `/backend/src/queries/search.rs`, description: `backend: search.rs` }
     ]);
-  }, []);
+  }, [setContributingLinks]);
   React.useEffect(() => setErrorMessage(errorMessage), [errorMessage, setErrorMessage]);
 
   const router = useRouter();

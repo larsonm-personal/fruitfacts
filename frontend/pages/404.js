@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 
@@ -20,7 +21,7 @@ export default function Custom404({ icons, setErrorMessage, setContributingLinks
       { link: `/frontend/pages/404.js`, description: `404.js` },
       { link: `/plant_database/facts.json5`, description: `fact list` }
     ]);
-  }, []);
+  }, [setContributingLinks]);
 
   const [icon, setIcon] = React.useState();
   const [fact, setFact] = React.useState();
@@ -45,7 +46,7 @@ export default function Custom404({ icons, setErrorMessage, setContributingLinks
     };
 
     fetchData();
-  }, []);
+  }, [icons, setErrorMessage]);
 
   return (
     <div className="grid place-items-center">
@@ -67,7 +68,13 @@ export default function Custom404({ icons, setErrorMessage, setContributingLinks
                 icon.indexOf('.')
               )}&page=1&perPage=50&orderBy=name_then_type&order=asc`}
             >
-              <img className="h-48 w-48 object-contain" src={'/fruit_icons/' + icon} />
+              <Image
+                width={192}
+                height={192}
+                alt={icon.replace(/\.svg$/, '')}
+                className="h-48 w-48 object-contain"
+                src={'/fruit_icons/' + icon}
+              />
             </Link>
           )}
         </div>

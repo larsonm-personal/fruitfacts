@@ -51,7 +51,7 @@ export default function Home({ items }) {
     return (
       <TransformWrapper>
         <TransformComponent>
-          <div className="max-w-screen flex h-4/5 max-h-[80vh] w-full flex-col object-contain">
+          <div className="flex h-4/5 max-h-[80vh] w-full max-w-screen flex-col object-contain">
             <svg
               className={`min-h-0 object-contain`}
               viewBox={`${extents.min_x} ${extents.min_y} ${extents.width} ${extents.height}`}

@@ -3,7 +3,7 @@ import React from 'react';
 export default function Home({ setContributingLinks, setErrorMessage }) {
   React.useEffect(() => {
     setContributingLinks([{ link: `/frontend/pages/user.js`, description: `user.js` }]);
-  }, []);
+  }, [setContributingLinks]);
 
   const [fullUser, setFullUser] = React.useState(null);
 
@@ -31,7 +31,7 @@ export default function Home({ setContributingLinks, setErrorMessage }) {
     };
 
     fetchData();
-  }, []);
+  }, [setErrorMessage]);
 
   return <>{fullUser && <p>{JSON.stringify(fullUser)}</p>}</>;
 }

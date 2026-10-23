@@ -10,7 +10,7 @@ export default function Home({ user, setContributingLinks, setErrorMessage }) {
       { link: `/backend/src/queries/list.rs`, description: `backend C/U/D lists` },
       { link: `/backend/src/queries/search.rs`, description: `backend read lists` }
     ]);
-  }, []);
+  }, [setContributingLinks]);
 
   const router = useRouter();
   const query = qs.parse(router.asPath.split(/\?/)[1]);
@@ -45,7 +45,7 @@ export default function Home({ user, setContributingLinks, setErrorMessage }) {
     };
 
     fetchData();
-  }, []);
+  }, [query.user_id, setErrorMessage]);
 
   // todo:
   // add list button

@@ -27,7 +27,7 @@ export default function Home({ setErrorMessage }) {
     };
 
     fetchData();
-  }, []);
+  }, [setErrorMessage]);
 
   return (
     <div className="flex h-screen items-center justify-center">

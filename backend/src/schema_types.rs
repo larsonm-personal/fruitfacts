@@ -11,14 +11,6 @@ use serde_with::skip_serializing_none;
 
 // foreign key stuff: https://docs.diesel.rs/diesel/associations/index.html
 
-#[derive(Queryable)]
-pub struct PlantType {
-    pub plant_type_id: i32,
-    pub group_name: String,
-    pub name: String,
-    pub latin_name: Option<String>,
-}
-
 #[skip_serializing_none]
 #[derive(Debug, Serialize, Queryable)]
 pub struct BasePlant {
@@ -206,12 +198,6 @@ pub struct User {
     pub location_name: Option<String>,
     pub latitude: Option<f64>,
     pub longitude: Option<f64>,
-}
-
-#[derive(Debug, Queryable)]
-pub struct FtsBasePlants {
-    pub rowid: i32,
-    pub rank: f32,
 }
 
 #[derive(Debug, Queryable, Serialize)]

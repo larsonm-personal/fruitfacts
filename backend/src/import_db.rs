@@ -146,18 +146,13 @@ pub fn rem_first_n(value: &str, n: usize) -> &str {
     chars.as_str()
 }
 
-#[derive(Debug, PartialEq, Eq)]
+#[derive(Debug, PartialEq, Eq, Default)]
 enum DateParseType {
+    #[default]
     Undefined,
     Unparsed,
     StartOnly,
     TwoDates,
-}
-
-impl Default for DateParseType {
-    fn default() -> Self {
-        DateParseType::Undefined
-    }
 }
 
 #[derive(Default, Debug, PartialEq, Eq)]
@@ -787,8 +782,8 @@ fn format_aka_strings(aka_array: &Option<Vec<String>>) -> AkaFormatted {
         let mut marketing_name: Option<String> = None;
 
         let mut first_element = true;
+        let commas_regex = Regex::new(r",").unwrap();
         for aka_element in aka_array {
-            let commas_regex = Regex::new(r",").unwrap();
             let without_commas = commas_regex.replace_all(aka_element, ""); // note - commas are also removed by format_name_fts_string() in is current version
             let fts_formatted = format_name_fts_string(aka_element);
 
@@ -954,19 +949,16 @@ fn apply_top_level_fields(
         });
 
     // make an s-allele update if we have one
-    let s_allele = if plant.s_allele.is_some() && current_collection_id.is_some() {
-        let new_s_allele = format!(
-            "{} [{}]",
-            plant.s_allele.as_ref().unwrap(),
-            current_collection_id.unwrap()
-        );
-        Some(format_s_allele(
-            &existing_base_plant.s_allele,
-            &Some(new_s_allele),
-        ))
-    } else {
-        existing_base_plant.s_allele
-    };
+    let s_allele =
+        if let (Some(allele), Some(collection_id)) = (&plant.s_allele, current_collection_id) {
+            let new_s_allele = format!("{} [{}]", allele, collection_id);
+            Some(format_s_allele(
+                &existing_base_plant.s_allele,
+                &Some(new_s_allele),
+            ))
+        } else {
+            existing_base_plant.s_allele
+        };
 
     let aka_formatted = format_aka_strings(&plant.aka);
 
@@ -994,7 +986,7 @@ fn apply_top_level_fields(
 
     let mut uspp_expiration_i64 = None;
     if let Some(uspp_expiration) = patent_info.uspp_expiration {
-        uspp_expiration_i64 = Some(uspp_expiration.timestamp());
+        uspp_expiration_i64 = Some(uspp_expiration.and_utc().timestamp());
     }
 
     let uspp_number = new_or_old(
@@ -1307,12 +1299,10 @@ fn add_collection_plant(input: AddCollectionPlantType) -> isize {
     }
 
     // we may get "harvest_time_unparsed" in some cases with no "harvest_time". save "harvest_time_unparsed" for the helper text
-    let harvest_time_helper_text =
-        if input.harvest_time.is_none() && input.plant.harvest_time_unparsed.is_some() {
-            Some(input.plant.harvest_time_unparsed.as_ref().unwrap())
-        } else {
-            input.harvest_time.as_ref()
-        };
+    let harvest_time_helper_text = input
+        .harvest_time
+        .as_ref()
+        .or(input.plant.harvest_time_unparsed.as_ref());
 
     // println!(
     //     "inserting {} C {} L {:?}",
@@ -1466,67 +1456,70 @@ fn update_or_add_base_plant(
         new_ignore_unless_in_others = 0
     }
 
-    let num_added = if existing_base_plant.is_err() {
-        // a plant in a reference that isn't already in base_plants - need to add
+    let num_added = match &existing_base_plant {
+        Err(_) => {
+            // a plant in a reference that isn't already in base_plants - need to add
 
-        let rows_inserted = diesel::insert_into(base_plants::dsl::base_plants)
-            .values((
-                base_plants::name.eq(&plant_name),
-                base_plants::name_fts.eq(format_name_fts_string(plant_name)),
-                base_plants::type_.eq(&plant.type_),
-                base_plants::number_of_references.eq(1),
-                base_plants::notoriety_highest_collection_score.eq(current_collection_score),
-                base_plants::notoriety_highest_collection_score_id.eq(current_collection_id),
+            let rows_inserted = diesel::insert_into(base_plants::dsl::base_plants)
+                .values((
+                    base_plants::name.eq(&plant_name),
+                    base_plants::name_fts.eq(format_name_fts_string(plant_name)),
+                    base_plants::type_.eq(&plant.type_),
+                    base_plants::number_of_references.eq(1),
+                    base_plants::notoriety_highest_collection_score.eq(current_collection_score),
+                    base_plants::notoriety_highest_collection_score_id.eq(current_collection_id),
+                    base_plants::ignore_unless_in_others.eq(new_ignore_unless_in_others),
+                ))
+                .execute(db_conn);
+            assert_eq!(
+                Ok(1),
+                rows_inserted,
+                "inserting base plant {} {}",
+                plant_name,
+                plant.type_
+            );
+
+            1
+        }
+        Ok(existing_base_plant) => {
+            let new_references_count = existing_base_plant.number_of_references + 1;
+
+            let new_collection_score;
+            let new_collection_score_id;
+            if let Some(existing_score) = existing_base_plant.notoriety_highest_collection_score {
+                if current_collection_score > existing_score {
+                    new_collection_score = current_collection_score;
+                    new_collection_score_id = Some(current_collection_id);
+                } else {
+                    new_collection_score = existing_score;
+                    new_collection_score_id =
+                        existing_base_plant.notoriety_highest_collection_score_id;
+                }
+            } else {
+                new_collection_score = current_collection_score;
+                new_collection_score_id = Some(current_collection_id);
+            }
+
+            // ignore state: don't overwrite an existing "false" with a new "true"
+            if new_ignore_unless_in_others == 1 && existing_base_plant.ignore_unless_in_others == 0
+            {
+                new_ignore_unless_in_others = 0;
+            }
+
+            let updated_row_count = diesel::update(
+                base_plants::dsl::base_plants.filter(base_plants::id.eq(existing_base_plant.id)),
+            )
+            .set((
+                base_plants::number_of_references.eq(new_references_count),
+                base_plants::notoriety_highest_collection_score.eq(new_collection_score),
+                base_plants::notoriety_highest_collection_score_id.eq(new_collection_score_id),
                 base_plants::ignore_unless_in_others.eq(new_ignore_unless_in_others),
             ))
             .execute(db_conn);
-        assert_eq!(
-            Ok(1),
-            rows_inserted,
-            "inserting base plant {} {}",
-            plant_name,
-            plant.type_
-        );
+            assert_eq!(Ok(1), updated_row_count);
 
-        1
-    } else {
-        let existing_base_plant = existing_base_plant.as_ref().unwrap();
-
-        let new_references_count = existing_base_plant.number_of_references + 1;
-
-        let new_collection_score;
-        let new_collection_score_id;
-        if let Some(existing_score) = existing_base_plant.notoriety_highest_collection_score {
-            if current_collection_score > existing_score {
-                new_collection_score = current_collection_score;
-                new_collection_score_id = Some(current_collection_id);
-            } else {
-                new_collection_score = existing_score;
-                new_collection_score_id = existing_base_plant.notoriety_highest_collection_score_id;
-            }
-        } else {
-            new_collection_score = current_collection_score;
-            new_collection_score_id = Some(current_collection_id);
+            0
         }
-
-        // ignore state: don't overwrite an existing "false" with a new "true"
-        if new_ignore_unless_in_others == 1 && existing_base_plant.ignore_unless_in_others == 0 {
-            new_ignore_unless_in_others = 0;
-        }
-
-        let updated_row_count = diesel::update(
-            base_plants::dsl::base_plants.filter(base_plants::id.eq(existing_base_plant.id)),
-        )
-        .set((
-            base_plants::number_of_references.eq(new_references_count),
-            base_plants::notoriety_highest_collection_score.eq(new_collection_score),
-            base_plants::notoriety_highest_collection_score_id.eq(new_collection_score_id),
-            base_plants::ignore_unless_in_others.eq(new_ignore_unless_in_others),
-        ))
-        .execute(db_conn);
-        assert_eq!(Ok(1), updated_row_count);
-
-        0
     };
 
     let base_plant = BasePlantJson {
@@ -1712,18 +1705,10 @@ fn load_references(
 
             collection_id += 1;
 
-            let needs_help = if collection.needs_help.is_some() {
-                collection.needs_help.unwrap()
-            } else {
-                false
-            };
+            let needs_help = collection.needs_help.unwrap_or_default();
 
             let ignore_for_nearby_searches =
-                if let Some(value) = collection.ignore_for_nearby_searches {
-                    value
-                } else {
-                    false
-                };
+                collection.ignore_for_nearby_searches.unwrap_or_default();
 
             //    println!("inserting");
             let rows_inserted = diesel::insert_into(collections::dsl::collections)
@@ -1865,7 +1850,7 @@ fn get_relative_days(
                 if weeks {
                     return Some((number * -7.0).round() as i32);
                 } else {
-                    return Some((number * -1.0).round() as i32);
+                    return Some((-number).round() as i32);
                 }
             }
             _ => return None,
@@ -1903,11 +1888,7 @@ fn parse_relative_harvest(input: &str) -> Option<HarvestRelativeParsed> {
         let weeks;
         if matches.len() >= 7 {
             if let Some(week_match) = matches.get(6) {
-                if week_match.as_str().to_lowercase().trim() == "week" {
-                    weeks = true;
-                } else {
-                    weeks = false;
-                }
+                weeks = week_match.as_str().to_lowercase().trim() == "week";
             } else {
                 weeks = false;
             }
@@ -1939,11 +1920,7 @@ fn parse_relative_harvest(input: &str) -> Option<HarvestRelativeParsed> {
         let weeks;
         if matches.len() >= 5 {
             if let Some(week_match) = matches.get(4) {
-                if week_match.as_str().to_lowercase().trim() == "week" {
-                    weeks = true;
-                } else {
-                    weeks = false;
-                }
+                weeks = week_match.as_str().to_lowercase().trim() == "week";
             } else {
                 weeks = false;
             }
@@ -2050,9 +2027,8 @@ fn relative_to_absolute_harvest_times(db_conn: &mut SqliteConnection) {
     // relative to the base plant and store those
 
     for plant in all_plants {
-        if plant.harvest_relative.is_some() && plant.harvest_start.is_none() {
-            if let Some(harvest_relative) = parse_relative_harvest(&plant.harvest_relative.unwrap())
-            {
+        if let (Some(relative), None) = (&plant.harvest_relative, plant.harvest_start) {
+            if let Some(harvest_relative) = parse_relative_harvest(relative) {
                 // look for this variety name in the same location
                 // todo: look at harvest_relative's "type" field in case it's pointing across types
 
@@ -2109,12 +2085,12 @@ fn calculate_years_from_patent(db_conn: &mut SqliteConnection) {
     for plant in all_plants {
         // if release year is unset but patent number is set, fill in release year from a patent->year table
 
-        if plant.release_year.is_none() && plant.uspp_number.is_some() {
+        if let (None, Some(uspp_number)) = (plant.release_year, &plant.uspp_number) {
             let updated_row_count =
                 diesel::update(base_plants::dsl::base_plants.filter(base_plants::id.eq(plant.id)))
                     .set((
                         base_plants::release_year.eq(util::uspp_number_to_release_year(
-                            plant.uspp_number.clone().unwrap().parse::<i32>().unwrap(),
+                            uspp_number.parse::<i32>().unwrap(),
                         )),
                         base_plants::release_year_note.eq("derived from patent number"),
                     ))
@@ -2123,12 +2099,12 @@ fn calculate_years_from_patent(db_conn: &mut SqliteConnection) {
         }
 
         // estimate patent expiration
-        if plant.uspp_expiration.is_none() && plant.uspp_number.is_some() {
+        if let (None, Some(uspp_number)) = (plant.uspp_expiration, &plant.uspp_number) {
             let updated_row_count =
                 diesel::update(base_plants::dsl::base_plants.filter(base_plants::id.eq(plant.id)))
                     .set((
                         base_plants::uspp_expiration.eq(util::uspp_number_to_expiration(
-                            plant.uspp_number.unwrap().parse::<i32>().unwrap(),
+                            uspp_number.parse::<i32>().unwrap(),
                         )),
                         base_plants::uspp_expiration_estimated.eq(1),
                     ))
@@ -2218,9 +2194,8 @@ fn calculate_relative_harvest_times(db_conn: &mut SqliteConnection) {
             .execute(db_conn);
             assert_eq!(Ok(1), updated_row_count);
         }
-        if plant.harvest_relative.is_some() {
-            if let Some(harvest_relative) = parse_relative_harvest(&plant.harvest_relative.unwrap())
-            {
+        if let Some(relative) = &plant.harvest_relative {
+            if let Some(harvest_relative) = parse_relative_harvest(relative) {
                 // round 0: for each collection item, see if it has an imported harvest_relative field, and check that against
                 // the list of standard candles using type_to_standard_candle() and parse the days/weeks. then put an integer
                 // into the calculated relative harvest column, and put a note that it was a direct parse
@@ -2262,7 +2237,8 @@ fn calculate_relative_harvest_times(db_conn: &mut SqliteConnection) {
 
         let mut num_inferred = 0;
         for plant in all_plants {
-            if plant.calc_harvest_relative.is_none() && plant.harvest_start.is_some() {
+            if let (None, Some(harvest_start)) = (plant.calc_harvest_relative, plant.harvest_start)
+            {
                 if let Some(candle) = util::type_to_standard_candle(&plant.type_) {
                     // round 2-N: for every collection item, if it has an absolute time but not a relative time,
                     // see if its collection includes any same-type with an absolute time AND a relative time
@@ -2286,7 +2262,7 @@ fn calculate_relative_harvest_times(db_conn: &mut SqliteConnection) {
                             &plant,
                             &standard_candle,
                             round as f64,
-                            plant.harvest_start.unwrap() - standard_candle.harvest_start.unwrap()
+                            harvest_start - standard_candle.harvest_start.unwrap()
                                 + standard_candle.calc_harvest_relative.unwrap(), // todo - account for midpoints
                             "".to_string(),
                         );
@@ -2311,8 +2287,7 @@ fn calculate_relative_harvest_times(db_conn: &mut SqliteConnection) {
                             &plant,
                             &alternative_relative_plant,
                             round as f64 + 0.1, // 0.1: give a small penalty for it not being a standard candle reference
-                            plant.harvest_start.unwrap()
-                                - alternative_relative_plant.harvest_start.unwrap()
+                            harvest_start - alternative_relative_plant.harvest_start.unwrap()
                                 + alternative_relative_plant.calc_harvest_relative.unwrap(), // todo - account for midpoints
                             "".to_string(),
                         );
@@ -2413,10 +2388,11 @@ fn calculate_relative_harvest_times(db_conn: &mut SqliteConnection) {
 
                 // the thing pointed to in the relative harvest text might not exist
                 if let Ok(base_plant) = base_plant {
-                    if base_plant.harvest_relative.is_some()
-                        && base_plant.harvest_relative_to.is_some()
-                        && base_plant.harvest_relative_to_type.is_some()
-                    {
+                    if let (Some(relative), Some(relative_to), Some(relative_to_type)) = (
+                        base_plant.harvest_relative,
+                        base_plant.harvest_relative_to,
+                        base_plant.harvest_relative_to_type,
+                    ) {
                         // we have a value for "relative to this base plant"
                         // and then we have a value for "base plant relative to standard candle"
                         // so we just add the two: uncalced -> base plant -> standard candle
@@ -2427,12 +2403,9 @@ fn calculate_relative_harvest_times(db_conn: &mut SqliteConnection) {
                         )
                         .set((
                             collection_items::calc_harvest_relative
-                                .eq(base_plant.harvest_relative.unwrap()
-                                    + harvest_relative.relative_days),
-                            collection_items::calc_harvest_relative_to
-                                .eq(base_plant.harvest_relative_to.unwrap()),
-                            collection_items::calc_harvest_relative_to_type
-                                .eq(base_plant.harvest_relative_to_type.unwrap()),
+                                .eq(relative + harvest_relative.relative_days),
+                            collection_items::calc_harvest_relative_to.eq(relative_to),
+                            collection_items::calc_harvest_relative_to_type.eq(relative_to_type),
                             collection_items::calc_harvest_relative_round.eq(round as f64 + 0.95),
                             collection_items::calc_harvest_relative_explanation
                                 .eq(&format!("round {round}: set vs. base plant average")
@@ -2539,12 +2512,13 @@ fn calculate_relative_harvest_from_references(
     if let Some(candle) = util::type_to_standard_candle(&base_plant.type_) {
         for reference in all_references {
             // if their calculated collection stuff matches the standard candle for this type,
-            if reference.calc_harvest_relative.is_some()
-                && reference.calc_harvest_relative_to == Some(candle.name.clone())
-                && reference.calc_harvest_relative_to_type == Some(candle.type_.clone())
-                && reference.calc_harvest_relative_round.is_some()
-            {
-                if reference.calc_harvest_relative_round.unwrap() >= current_round as f64 {
+            if let (Some(relative), Some(relative_round), true, true) = (
+                reference.calc_harvest_relative,
+                reference.calc_harvest_relative_round,
+                reference.calc_harvest_relative_to == Some(candle.name.clone()),
+                reference.calc_harvest_relative_to_type == Some(candle.type_.clone()),
+            ) {
+                if relative_round >= current_round as f64 {
                     any_reference_updated = true; // todo - we could do one loop looking for updated references then a 2nd loop to do the calculations if we have any. could save a little time
                 }
 
@@ -2552,28 +2526,24 @@ fn calculate_relative_harvest_from_references(
 
                 let notoriety_and_devalue_score =
                     get_notoriety_and_devalue_scores(reference.collection_id.unwrap(), db_conn);
-                let devalue_score = match notoriety_and_devalue_score.harvest_time_devalue_factor {
-                    Some(score) => score,
-                    _ => 0.0,
-                };
+                let devalue_score = notoriety_and_devalue_score
+                    .harvest_time_devalue_factor
+                    .unwrap_or(0.0);
 
                 // add the value to an average based on a weight of the round score * the reference notoriety score
                 // the devalue_score get treated as being additional rounds behind
-                let round_score = 1.0
-                    / (2.0_f64).powf(
-                        reference.calc_harvest_relative_round.unwrap() + devalue_score as f64,
-                    ); // round 0: 1, round 1: .5, round 2: .25 etc. (give a sharply reduced score as rounds progress)
+                let round_score = 1.0 / (2.0_f64).powf(relative_round + devalue_score as f64); // round 0: 1, round 1: .5, round 2: .25 etc. (give a sharply reduced score as rounds progress)
 
                 let overall_score =
                     notoriety_and_devalue_score.notoriety_score as f64 * round_score; // todo - maybe copy notoriety into each reference to save time here?
 
-                sum += reference.calc_harvest_relative.unwrap() as f64 * overall_score;
+                sum += relative as f64 * overall_score;
                 divisor += overall_score;
 
                 harvest_relative_explanation += &format!(
                     " [{:?}] {} ({:.2}*{:.2})",
                     reference.collection_id,
-                    reference.calc_harvest_relative.unwrap(),
+                    relative,
                     notoriety_and_devalue_score.notoriety_score,
                     round_score,
                 )
@@ -2635,13 +2605,14 @@ pub struct BasePlantsItemForDedupe {
 // a more stringent check could look at the full text search versions of the names (lower case without special characters)
 fn check_aka_duplicates(db_conn: &mut SqliteConnection) {
     let all_plant_types = plant_types::dsl::plant_types
-        .load::<PlantType>(db_conn)
+        .select(plant_types::name)
+        .load::<String>(db_conn)
         .unwrap();
 
     let mut aka_map = HashMap::new();
 
     for plant_type in all_plant_types {
-        aka_map.insert(plant_type.name, HashSet::<String>::new());
+        aka_map.insert(plant_type, HashSet::<String>::new());
     }
 
     // read all AKA entries into a map of plant type -> set of AKA names
@@ -2709,7 +2680,8 @@ fn check_database(db_conn: &mut SqliteConnection) {
     for type_from_plants in &types_from_plants.unwrap() {
         let _ = plant_types::dsl::plant_types
             .filter(plant_types::name.eq(type_from_plants))
-            .first::<PlantType>(db_conn)
+            .select(plant_types::name)
+            .first::<String>(db_conn)
             .unwrap_or_else(|_| {
                 panic!(
                     r#"imported a plant with a category not in types.json: "{}""#,
@@ -2844,11 +2816,12 @@ pub fn calculate_and_write_relative_day_offsets(db_conn: &mut SqliteConnection) 
         let mut this_location_averages = IndexMap::new();
 
         for plant in plants_in_location {
-            if plant.calc_harvest_relative_to.is_some()
-                && plant.calc_harvest_relative_to_type.is_some()
-                && plant.calc_harvest_relative.is_some()
-                && plant.harvest_start.is_some()
-            {
+            if let (Some(_), Some(_), Some(relative), Some(harvest_start)) = (
+                &plant.calc_harvest_relative_to,
+                &plant.calc_harvest_relative_to_type,
+                plant.calc_harvest_relative,
+                plant.harvest_start,
+            ) {
                 let candle = util::Candle {
                     type_: plant.type_,
                     name: plant.name,
@@ -2859,14 +2832,13 @@ pub fn calculate_and_write_relative_day_offsets(db_conn: &mut SqliteConnection) 
                     }
 
                     let entry = this_location_averages.get_mut(&candle).unwrap();
-                    entry.sum +=
-                        plant.harvest_start.unwrap() - plant.calc_harvest_relative.unwrap();
+                    entry.sum += harvest_start - relative;
                     entry.divisor += 1;
                 }
             }
         }
 
-        for mut average in this_location_averages.values_mut() {
+        for average in this_location_averages.values_mut() {
             average.average = average.sum as f64 / average.divisor as f64;
         }
 
@@ -2895,7 +2867,7 @@ pub fn calculate_and_write_relative_day_offsets(db_conn: &mut SqliteConnection) 
         for location in all_locations.iter_mut() {
             if !initial_values_set {
                 initial_values_set = true;
-                for (candle, mut average_day) in location.averages.iter_mut() {
+                for (candle, average_day) in location.averages.iter_mut() {
                     candles_output.insert(
                         candle.clone(),
                         AverageOffset {
@@ -3016,7 +2988,7 @@ pub fn calculate_and_write_relative_day_offsets(db_conn: &mut SqliteConnection) 
                     }
 
                     {
-                        let mut existing_entry_b = candles_output.get_mut(candle_b).unwrap();
+                        let existing_entry_b = candles_output.get_mut(candle_b).unwrap();
                         println!("changing {existing_entry_b}");
                         existing_entry_b.sum += new_day_to_average_with_b;
                         existing_entry_b.divisor += 0.5;
@@ -3074,7 +3046,7 @@ pub fn calculate_and_write_relative_day_offsets(db_conn: &mut SqliteConnection) 
         });
     }
 
-    output.sort_by(|a, b| a.day.cmp(&b.day));
+    output.sort_by_key(|a| a.day);
 
     println!("calculated relative-relative times: {:#?}", output);
 

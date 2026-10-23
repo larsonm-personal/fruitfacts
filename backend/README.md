@@ -13,13 +13,33 @@
 * `cargo run --bin delete_extra_thumbnails` looks in /frontend/public/data/ for any thumbnail files without a corresponding *.json5 file in /references/ and deletes them. useful if things are renamed
 
 # rust linting
-* `cargo fmt` after installing `rustup component add rustfmt`
-* `cargo fix`
-* `cargo clippy` after installing `rustup component add clippy`
-  * `cargo clippy --fix`
-* `cargo outdated -d1` find outdated packages (-d1: direct only) or `cargo outdated` (all) after installing `cargo install --locked cargo-outdated` (same command to update)
-* `cargo +nightly udeps` to find unused dependencies, after installing (`rustup toolchain install nightly` then `cargo install cargo-udeps --locked`) see https://crates.io/crates/cargo-udeps
-* `cargo tree --duplicates` find dependencies with multiple required versions
+
+Install the stable components once with `rustup component add clippy rustfmt`.
+From `backend/`, run `./rust_lint.sh` to check formatting and deny compiler/Clippy
+warnings across all targets, both with and without the optional support tools.
+`./rust_lint.sh fix` runs the existing helper's compiler/Clippy fix sequence and
+formats the result; review the diff and rerun checks afterwards. Neither mode
+updates dependencies, removes caches, or changes a lockfile policy.
+
+`./rust_lint.sh deps` runs the separate dependency-usage check in both feature
+configurations. It requires `rustup toolchain install nightly --profile minimal`
+and `cargo install cargo-udeps --locked`. Tool installation may use its own
+lockfile; the application's Cargo.lock remains untracked. Dependency upgrade
+commands from the old `2026` helpers are deliberately separate from linting.
+
+Regression checks after fixes:
+
+```sh
+cargo test --all-features -- --include-ignored
+cargo test --no-default-features --lib
+cargo build --release --no-default-features --bin harvest-chart-server
+```
+
+The full import test needs the existing environment/gazetteer inputs and resets
+the local test database; use a disposable checkout, not the running server's
+working directory. Windows `.bat` tool-upgrade helpers require Windows; the
+Unix lint helper does not invoke them. Linux CI exercises the configured clang/lld
+linker; Windows target builds additionally require their native toolchains.
 
 # after a rust version release
 * see `rust_update.bat`:
