@@ -146,3 +146,11 @@ disposable checkout/database: `cargo test --locked --no-default-features --lib -
 
 No repository change establishes what Node version is installed on the actual VPS
 or whether it is exposed to the advisory. No live server access is part of this work.
+
+The backend uses OAuth2 5 / reqwest 0.12 and git2 0.21. Its unused HTTP/2
+feature is disabled to exclude vulnerable h2 0.3; nginx uses HTTP/1 upstream.
+OAuth token exchange uses a no-redirect client with a timeout. End-to-end Google
+login still requires verification with the operator's existing configuration.
+ESLint remains on 9.39.5 because current Next lint plugins reject ESLint 10 peers;
+this is a development-tool support limitation. Cargo audit's unmaintained `paste`
+warning comes from optional PDF tooling (excluded from server builds).
