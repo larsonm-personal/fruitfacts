@@ -37,11 +37,9 @@ fn pdf_first_page_to_jpeg(input_path: &Path, output_path: &Path) -> Result<(), P
 
         let mut output = fs::File::create(output_path).map_err(|_| PdfiumError::ImageError)?;
 
-        page.render_with_config(&render_config)?
-            .as_image() // Renders this page to an image::DynamicImage...
-            .as_rgba8() // ... then converts it to an image::Image...
-            .ok_or(PdfiumError::ImageError)?
-            .write_to(&mut output, image::ImageOutputFormat::Jpeg(75)) // number is jpeg quality level
+        let rendered = page.render_with_config(&render_config)?.as_image();
+        image::codecs::jpeg::JpegEncoder::new_with_quality(&mut output, 75)
+            .encode_image(&rendered)
             .map_err(|_| PdfiumError::ImageError)?;
 
         output.sync_all().map_err(|_| PdfiumError::ImageError)?;
