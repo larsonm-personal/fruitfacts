@@ -39,9 +39,10 @@ PATH, verify that environment too. An nvm upgrade in your shell alone does not
 update systemd's Node.
 
 The original `data_and_code_update.sh` full SQLite rebuild/import, maintenance page,
-DVC and service workflow is unchanged. This PR does not change Next.js, React, Rust application logic,
+DVC and service workflow is unchanged. This PR does not change Next.js, React, database import logic,
 database behavior, certificates or server security settings. It does not establish
-which runtime is currently installed/exposed on the VPS. The committed npm lockfile
-allows the existing CI `npm ci` step to test the selected dependencies reproducibly.
+which runtime is currently installed/exposed on the VPS. Cargo.lock and
+package-lock.json are intentionally untracked; CI resolves
+dependencies from the manifests with `cargo build` and `npm install`.
 
 Advisory: https://nodejs.org/en/blog/vulnerability/october-2026-security-releases
