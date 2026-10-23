@@ -17,6 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        # The importer reads historical commits to date reference publications.
+        fetch-depth: 0
     - name: Prepare build inputs
       run: |
         cp .env.example .env
