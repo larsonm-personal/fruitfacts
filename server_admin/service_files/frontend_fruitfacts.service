@@ -1,6 +1,3 @@
-# see https://stackoverflow.com/questions/61861930/nextjs-deployment-how-can-i-simply-deploy-nextjs-like-nodejs-on-ubuntu-server
-# diagnose failures by manually running as www-data like "sudo -u www-data npm start"
-
 [Unit]
 Description=fruitfacts frontend
 After=network.target
@@ -11,8 +8,10 @@ User=www-data
 Group=www-data
 Restart=on-failure
 RestartSec=10
-WorkingDirectory=/var/www/fruitfacts/frontend/
-ExecStart=npm start
+WorkingDirectory=/var/www/fruitfacts-releases/current/frontend
+# Must match command -v node in the deployment user's environment.
+ExecStart=/usr/local/bin/node /var/www/fruitfacts-releases/current/frontend/node_modules/next/dist/bin/next start --hostname 127.0.0.1
+Environment=NODE_ENV=production
 
 [Install]
 WantedBy=multi-user.target

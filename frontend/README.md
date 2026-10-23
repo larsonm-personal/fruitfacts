@@ -1,11 +1,11 @@
 # js hints
 
 - install nvm (there is a related windows project)
-  - `nvm install lts` and `nvm use lts`
+  - `nvm install` and `nvm use` from the repository root (.nvmrc)
   - this sequence will also update to newer versions
 - `npm run dev/build/start` next.js things
 - `ncu -u` update package.json versions (after installing `npm i -g npm-check-updates`)
-- `npm run lint` run next lint
+- `npm run lint` run ESLint
 
 # local dev setup
 
