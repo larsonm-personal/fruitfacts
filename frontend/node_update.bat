@@ -7,8 +7,10 @@ Net session >nul 2>&1 || (
     exit /b
 )
 
-nvm install lts || goto :error
-nvm use lts || goto :error
+cd /d "%~dp0"
+set /p FRUITFACTS_NODE_VERSION=<..\.nvmrc
+nvm install %FRUITFACTS_NODE_VERSION% || goto :error
+nvm use %FRUITFACTS_NODE_VERSION% || goto :error
 npm i -g npm-check-updates || goto :error
 pause
 goto :EOF

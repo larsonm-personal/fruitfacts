@@ -1,3 +1,5 @@
+@reference "./globals.css";
+
 .btn {
   @apply rounded py-2 px-4 font-bold;
 }

@@ -99,7 +99,7 @@ export default function Home({
   const [extents, setExtentsForFetch] = React.useState({});
   const [locations, setLocations] = React.useState([]);
 
-  setErrorMessage(errorMessage);
+  React.useEffect(() => setErrorMessage(errorMessage), [errorMessage, setErrorMessage]);
 
   const runFetchLocations = React.useMemo(
     // useMemo(): cache results for each input and don't re-run. appears to not be doing anything
@@ -177,7 +177,7 @@ export default function Home({
           <ul className="list-disc">
             {data.directories.map((directory, index) => (
               <li key={index}>
-                <Link href={`/dirs/${name_to_path(directory)}#dirs`} legacyBehavior>
+                <Link href={`/dirs/${name_to_path(directory)}#dirs`}>
                   {directory}
                 </Link>
               </li>
@@ -193,7 +193,7 @@ export default function Home({
                 <li key={collection.id}>
                   <Link
                     href={`/collections/${collection.path}${name_to_path(collection.filename)}`}
-                    legacyBehavior
+
                   >
                     {collection.title}
                   </Link>

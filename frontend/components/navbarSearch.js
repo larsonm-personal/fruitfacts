@@ -87,7 +87,7 @@ export default function Home() {
       filterSelectedOptions
       noOptionsText={'no results'}
       onChange={(event, option) => {
-        window.location.href = option.link;
+        if (option) window.location.href = option.link;
       }}
       onInputChange={(event, newInputValue) => {
         setInputValue(newInputValue);

@@ -10,43 +10,42 @@ doctest = false
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-diesel = { version = "=2.0.3", features = ["sqlite", "r2d2"] }
-diesel_migrations = "=2.0.0"
+diesel = { version = "=2.3.14", features = ["sqlite", "r2d2"] }
+diesel_migrations = "=2.3.2"
 
-# this has to be within the allowed versions for diesel-rs - note we're on the 2.0.x branch (latest stable)
-# see https://github.com/diesel-rs/diesel/blob/2.0.x/diesel/Cargo.toml#L19
-libsqlite3-sys = { version = "=0.25.2", features = ["bundled"] }
+# Keep the bundled SQLite binding within Diesel's supported range.
+libsqlite3-sys = { version = "=0.38.2", features = ["bundled"] }
 
-actix-cors = "=0.6.4"
-actix-web = "=4.3.0"
-anyhow = "=1.0.69"
-base64 = "=0.21.0"
-chrono = "=0.4.23"
-clap = {version = "=4.1.4", features = ["cargo"] }
+actix-cors = "=0.7.2"
+actix-web = "=4.18.0"
+anyhow = "=1.0.104"
+base64 = "=0.23.1"
+chrono = "=0.4.45"
+clap = {version = "=4.6.7", features = ["cargo"] }
 dotenv-build = "=0.1.1"
-env_logger = "=0.10.0"
-expiring_map = { git = "https://github.com/larsonmpdx/expiring_map/", branch = "remove_item" }
-git2 = "=0.16.1"
-indexmap = "=1.9.2"
-itertools = "=0.10.5"
-json5 = "=0.4.1"
-lazy_static = "=1.4.0"
-more-asserts = "=0.3"
-oauth2 = "=4.3.0"
-once_cell = "=1.17.0"
-pathdiff = "=0.2.1"
-rand = "=0.8.5"
-regex = "=1.7.1"
-reqwest = "=0.11.14"
-serde = {version = "=1.0.219", features = ["derive"] }
-serde_derive = "=1.0.219"
-serde_json = "=1.0.93"
-serde_with = "=2.2.0"
-urlencoding = "=2.1.2"
-walkdir = "=2.3.2"
+env_logger = "=0.11.11"
+expiring_map = { git = "https://github.com/larsonmpdx/expiring_map/", rev = "00e8ec1b68232e41e9bfa11c6ad9b8c6c1405c4b" }
+git2 = "=0.21.0"
+indexmap = "=2.14.2"
+itertools = "=0.15.0"
+json5 = "=1.3.3"
+lazy_static = "=1.5.1"
+more-asserts = "=0.3.1"
+oauth2 = { version = "=5.0.0", features = ["reqwest-blocking", "timing-resistant-secret-traits"] }
+once_cell = "=1.21.4"
+pathdiff = "=0.2.3"
+rand = "=0.10.3"
+regex = "=1.13.1"
+reqwest = { version = "=0.13.5", features = ["blocking"] }
+serde = {version = "=1.0.229", features = ["derive"] }
+serde_derive = "=1.0.229"
+serde_json = "=1.0.154"
+serde_with = "=3.24.0"
+urlencoding = "=2.1.3"
+walkdir = "=2.5.0"
 
 # dependencies only used by support binaries (I don't want to download and build these when doing a server release)
-pdfium-render = { version = "=0.7.29", optional = true }
+pdfium-render = { version = "=0.9.4", optional = true }
 image = { version = "=0.25.10", optional = true }
 
 [features]

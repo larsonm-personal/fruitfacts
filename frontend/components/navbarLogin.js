@@ -46,7 +46,7 @@ export default function Home({ user, setUser }) {
       {user?.name ? (
         <p>
           logged in as{' '}
-          <Link href="/user/" legacyBehavior>
+          <Link href="/user/">
             {user.name}
           </Link>
           <button

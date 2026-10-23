@@ -38,22 +38,11 @@
 
 # diesel (rust ORM) things
 * see https://diesel.rs/guides/getting-started
-* there's no way to specify a dependency version with a regular `cargo install` command, and diesel seems to randomly pick an old bundled sqlite version, so to get diesel_cli with a new bundled sqlite (needed for fts trigram) we need to git clone it and edit cargo.toml. sad!
-  * see https://github.com/rust-lang/cargo/issues/3266
-  * check out diesel github 1.x version
-  * set rust version (not sure why this is necessary) `rustup override set 1.67.0`
-  * edit cargo.toml in diesel_cli folder to increase minimum sqlite version like `>=0.22.2`
-  * delete examples from top-level diesel cargo.toml (dependency problems in git checkout version)
-  * in diesel_cli folder: `cargo install diesel_cli --no-default-features --features "sqlite-bundled" --path .`
+* Use a current Diesel 2.3 CLI with bundled SQLite for development; the application runs embedded migrations and does not require the CLI on the server. See the [official CLI installation options](https://diesel.rs/guides/getting-started.html).
 * adding a new table with diesel_cli:
 * `diesel migration generate [new table name]`
 * `diesel migration run` - or omit this and just run all tests, there are embedded migrations
 * `diesel migration redo` (checks up+down)
-
-# diesel 2.0 upgrade - todo
-* https://github.com/actix/examples/tree/master/databases/diesel
-* I'm waiting for this example to be updated, the changes required were too confusing:
-  * https://github.com/actix/examples/blob/master/databases/diesel/Cargo.toml#L8
 
 # external issues I'm tracking
 * support loading sqlite modules in diesel in order to use spatialite
@@ -64,3 +53,29 @@
   * https://github.com/rust-lang/rust/issues/71520
 * rust cargo: why are things rebuilt on the server? spurious rebuilds are a very common problem
   * https://github.com/rust-lang/cargo/issues/2904
+
+# dependency modernization (October 2026)
+
+Registry dependencies are exact-pinned to the stable releases reported by the
+[crates.io API](https://crates.io/data-access) on 2026-10-23; see `Cargo.toml` for
+versions. `dotenv-build` 0.1.1 is still its latest stable release. The custom
+`expiring_map` fork remains necessary for its removal API and is pinned to the
+existing branch tip by commit. Cargo.lock remains ignored by project policy.
+Use current stable Rust (validated locally with 1.99.1); dependencies can require
+newer Rust as their allowed transitive versions evolve.
+
+OAuth 5 uses its typed endpoint builder and HTTP client interface. Its own
+Reqwest 0.12 adapter remains a transitive dependency; application HTTP requests
+use the latest direct Reqwest 0.13. Redirects are disabled for OAuth HTTP calls,
+state is checked before token exchange, and token/session values are not logged
+by those migrated paths. Tests cover state rejection, verifier consumption and
+PKCE URL generation; a real Google login still needs deployment credentials.
+
+PDF thumbnails use PDFium 0.9's fallible image conversion. Install a Pdfium shared
+library compatible with the crate's default API version before running that
+optional tool; an old DLL/shared library may be missing required symbols. The
+production server uses `--no-default-features` and does not load Pdfium. See the
+[upstream binding documentation](https://docs.rs/pdfium-render/latest/pdfium_render/).
+
+For reference status and the existing server rebuild workflow, see
+[REFERENCE_STATUS.md](../server_admin/REFERENCE_STATUS.md).

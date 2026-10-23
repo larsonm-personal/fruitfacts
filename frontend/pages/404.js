@@ -25,8 +25,6 @@ export default function Custom404({ icons, setErrorMessage, setContributingLinks
   const [icon, setIcon] = React.useState();
   const [fact, setFact] = React.useState();
   React.useEffect(() => {
-    setIcon(icons[Math.floor(Math.random() * icons.length)]);
-
     const fetchData = async () => {
       const fact = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE}/api/fact`)
         .then((response) => {
@@ -43,6 +41,7 @@ export default function Custom404({ icons, setErrorMessage, setContributingLinks
         });
 
       setFact(fact);
+      setIcon(icons[Math.floor(Math.random() * icons.length)]);
     };
 
     fetchData();

@@ -23,7 +23,6 @@ static OAUTH_INFO_CACHE: Lazy<Mutex<ExpiringMap<String, OAuthVerificationInfo>>>
     Lazy::new(|| Mutex::new(ExpiringMap::new(Duration::from_secs(60))));
 
 pub fn insert_oauth_info(session_value: String, oauth_info: OAuthVerificationInfo) {
-    println!("insert oauth info for {}", session_value);
 
     OAUTH_INFO_CACHE
         .lock()
@@ -35,7 +34,6 @@ pub fn get_oauth_info(session_value: &str) -> Result<(PkceCodeVerifier, String)>
     let pkce_code_verifier;
     let csrf_state;
 
-    println!("get oauth info for {}", session_value);
 
     // get these things out of OAUTH_INFO so we can drop the lock right away
     if let Some(oauth_info) = OAUTH_INFO_CACHE.lock().unwrap().get_mut(session_value) {

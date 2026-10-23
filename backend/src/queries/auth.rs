@@ -2,7 +2,6 @@ use actix_web::cookie::Cookie;
 use actix_web::HttpRequest;
 use actix_web::{get, post, web, HttpResponse};
 use anyhow::{anyhow, Result};
-use oauth2::basic::{BasicErrorResponseType, BasicTokenType};
 use serde::Deserialize;
 use serde::Serialize;
 use std::io::Read;
@@ -18,13 +17,11 @@ use diesel::prelude::*;
 use diesel::r2d2::{self, ConnectionManager};
 type DbPool = r2d2::Pool<ConnectionManager<SqliteConnection>>;
 
-use rand::Rng;
 
-use oauth2::reqwest::http_client;
-use oauth2::{basic::BasicClient, revocation::StandardRevocableToken, TokenResponse};
+use oauth2::{basic::BasicClient, EndpointSet, EndpointNotSet, TokenResponse};
 use oauth2::{
-    AuthUrl, AuthorizationCode, ClientId, ClientSecret, CsrfToken, EmptyExtraTokenFields,
-    PkceCodeChallenge, RedirectUrl, RevocationUrl, Scope, StandardTokenIntrospectionResponse,
+    AuthUrl, AuthorizationCode, ClientId, ClientSecret, CsrfToken,
+    PkceCodeChallenge, RedirectUrl, RevocationUrl, Scope,
     TokenUrl,
 };
 use std::env;
@@ -34,14 +31,7 @@ use crate::session;
 // todo - session cookie first, then csrf storage and retreival in some kind of cache with expiration
 // https://security.stackexchange.com/questions/20187/oauth2-cross-site-request-forgery-and-state-parameter
 
-type GoogleClientType = oauth2::Client<
-    oauth2::StandardErrorResponse<BasicErrorResponseType>,
-    oauth2::StandardTokenResponse<EmptyExtraTokenFields, BasicTokenType>,
-    BasicTokenType,
-    StandardTokenIntrospectionResponse<EmptyExtraTokenFields, BasicTokenType>,
-    StandardRevocableToken,
-    oauth2::StandardErrorResponse<oauth2::RevocationErrorResponseType>,
->;
+type GoogleClientType = BasicClient<EndpointSet, EndpointNotSet, EndpointNotSet, EndpointSet, EndpointSet>;
 
 fn get_google_client() -> GoogleClientType {
     let google_client_id = ClientId::new(env!("GOOGLE_CLIENT_ID").to_string());
@@ -53,18 +43,16 @@ fn get_google_client() -> GoogleClientType {
         .expect("Invalid token endpoint URL");
 
     // Set up the config for the Google OAuth2 process
-    BasicClient::new(
-        google_client_id,
-        Some(google_client_secret),
-        auth_url,
-        Some(token_url),
-    )
+    BasicClient::new(google_client_id)
+    .set_client_secret(google_client_secret)
+    .set_auth_uri(auth_url)
+    .set_token_uri(token_url)
     .set_redirect_uri(
         RedirectUrl::new(format!("{}/api/authRedirect", env!("BACKEND_BASE")))
             .expect("Invalid redirect URL"),
     )
     // Google supports OAuth 2.0 Token Revocation (RFC-7009)
-    .set_revocation_uri(
+    .set_revocation_url(
         RevocationUrl::new("https://oauth2.googleapis.com/revoke".to_string())
             .expect("Invalid revocation endpoint URL"),
     )
@@ -109,7 +97,6 @@ async fn get_auth_urls(req: HttpRequest) -> Result<HttpResponse, actix_web::Erro
     );
 
     if let Some(outgoing_cookie) = outgoing_cookie {
-        println!("setting cookie: {:#?}", outgoing_cookie);
         Ok(HttpResponse::Ok().cookie(outgoing_cookie).json(AuthURLs {
             google: Some(google_auth_url.to_string()),
         }))
@@ -230,7 +217,6 @@ fn receive_oauth_redirect_blocking(
     session_value: String,
     db_conn: &mut SqliteConnection,
 ) -> Result<ReceiveRedirectReturn> {
-    println!("{:?}", query);
 
     if query.code.is_none() || query.state.is_none() {
         return Err(anyhow!("missing query info"));
@@ -248,45 +234,39 @@ fn receive_oauth_redirect_blocking(
 
     let (pkce_code_verifier, csrf_state) = oauth_info.unwrap();
 
-    println!(
-        "oauth redirect returned the following code:\n{}\n",
-        code.secret()
-    );
-    println!(
-        "oauth redirect returned the following state:\n{} (expected `{}`)\n",
-        state.secret(),
-        csrf_state
-    );
+    if state != CsrfToken::new(csrf_state) {
+        return Err(anyhow!("OAuth state mismatch"));
+    }
 
     let client = get_google_client();
 
+    let http_client = oauth2::reqwest::blocking::Client::builder()
+        .redirect(oauth2::reqwest::redirect::Policy::none())
+        .timeout(std::time::Duration::from_secs(10))
+        .build()?;
     let token_response = client
         .exchange_code(code)
         .set_pkce_verifier(pkce_code_verifier)
-        .request(http_client);
+        .request(&http_client)
+        .map_err(|_| anyhow!("OAuth token exchange failed"))?;
 
-    println!("token response: {:#?}", token_response);
-    let token_secret = token_response.unwrap().access_token().secret().clone();
-
-    println!("token: {:?}", token_secret);
+    let token_secret = token_response.access_token().secret();
 
     let client = reqwest::blocking::Client::builder()
+        .redirect(reqwest::redirect::Policy::none())
         .timeout(std::time::Duration::from_secs(10))
         .build()?;
 
     let mut resp = client
-        .get(format!(
-            "https://www.googleapis.com/oauth2/v1/userinfo?access_token={}",
-            token_secret
-        ))
-        .send()?;
+        .get("https://www.googleapis.com/oauth2/v1/userinfo")
+        .bearer_auth(token_secret)
+        .send()?
+        .error_for_status()?;
 
     let mut body = String::new();
     let _ = resp.read_to_string(&mut body); // ignore errors, we'll catch them in json parsing
-    println!("body: {:?}", body);
     let account_info: GoogleAccountInfo = serde_json::from_str(&body)?;
 
-    println!("{:#?} body: {:#?}", resp, account_info);
 
     // todo -
     // - if we already have a user, associate this session to that user (database)
@@ -337,7 +317,6 @@ pub fn get_session_value(
 
     let session_value: Option<String>;
     if let Some(incoming_cookie) = incoming_cookie {
-        println!("existing session value: {:#?}", incoming_cookie.value());
 
         // todo - make sure the existing session is the right length? want to prevent users from making their own session token. or else, overwrite it when logging in or otherwise starting some auth thing with it
 
@@ -346,7 +325,7 @@ pub fn get_session_value(
     } else if set_session {
         println!("no session value found, setting");
         // set a random session
-        session_value = Some(base64::engine::general_purpose::STANDARD_NO_PAD.encode(rand::thread_rng().gen::<[u8; 32]>()));
+        session_value = Some(base64::engine::general_purpose::STANDARD_NO_PAD.encode(rand::random::<[u8; 32]>()));
 
         outgoing_cookie = Some(
             Cookie::build("session", session_value.as_ref().unwrap().clone())
@@ -583,3 +562,38 @@ async fn logout(
 // todo: delete user api
 //     - also delete oauth entries
 //     - also delete existing sessions and cached sessions
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn oauth_redirect_rejects_wrong_state_before_network_exchange() {
+        let session_value = "oauth-state-regression-test".to_string();
+        let (_, verifier) = PkceCodeChallenge::new_random_sha256();
+        session::insert_oauth_info(session_value.clone(), session::OAuthVerificationInfo {
+            pkce_code_verifier: Some(verifier),
+            csrf_state: CsrfToken::new("expected-state".into()),
+        });
+        let query = web::Query(GoogleAuthQuery {
+            state: Some("wrong-state".into()),
+            code: Some("unused-code".into()),
+        });
+        let mut conn = SqliteConnection::establish(":memory:").unwrap();
+        let result = receive_oauth_redirect_blocking(query, session_value.clone(), &mut conn);
+        assert!(matches!(result, Err(ref error) if error.to_string() == "OAuth state mismatch"));
+        assert!(session::get_oauth_info(&session_value).is_err(), "a consumed verifier must not be reused");
+    }
+
+    #[test]
+    fn oauth_authorization_url_preserves_pkce_and_redirect() {
+        let client = get_google_client();
+        let (challenge, _) = PkceCodeChallenge::new_random_sha256();
+        let (url, _) = client.authorize_url(CsrfToken::new_random)
+            .set_pkce_challenge(challenge).url();
+        let query: std::collections::HashMap<_, _> = url.query_pairs().into_owned().collect();
+        assert_eq!(url.host_str(), Some("accounts.google.com"));
+        assert_eq!(query["code_challenge_method"], "S256");
+        assert_eq!(query["redirect_uri"], format!("{}/api/authRedirect", env!("BACKEND_BASE")));
+    }
+}

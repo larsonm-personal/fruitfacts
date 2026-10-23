@@ -1,6 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+/* Preserve Tailwind 3 border defaults across the v4 upgrade. */
+@layer base {
+  *, ::before, ::after { border-color: var(--color-gray-200, currentColor); }
+}
 
 /* see https://github.com/prc5/react-zoom-pan-pinch/issues/112#issuecomment-629555109 */
 /* with some work this could be put in a css module or inline in the component, */

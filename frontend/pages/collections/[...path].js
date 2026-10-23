@@ -7,6 +7,7 @@
 
 // so we have this split between /dirs/[...path].js (directory listings) and /collections/[...path].js (individual collections)
 import React from 'react';
+import { sourceUrl } from '../../components/sourceLinks';
 import Link from 'next/link';
 import Head from 'next/head';
 import Chart from '../../components/chart';
@@ -88,7 +89,7 @@ export default function Home({
     ]);
   }, []);
 
-  setErrorMessage(errorMessage);
+  React.useEffect(() => setErrorMessage(errorMessage), [errorMessage, setErrorMessage]);
   return (
     <>
       <article className="prose m-5 max-w-none">
@@ -101,7 +102,7 @@ export default function Home({
             {data.collection.needs_help == 1 && (
               <p>
                 {'the data for this collection is marked "needs help". '}
-                <a href={`${process.env.NEXT_PUBLIC_GITHUB_BASE}${data_link}`}>
+                <a href={sourceUrl(data_link)}>
                   click here to view it on github
                 </a>
               </p>
@@ -118,7 +119,7 @@ export default function Home({
                     <li key={location.id}>
                       <Link
                         href={`/collections/${name_to_path(path)}?loc=${location.location_number}`}
-                        legacyBehavior
+
                       >
                         {location.location_name}
                       </Link>
@@ -153,7 +154,7 @@ export default function Home({
                     className="my-0 mx-2 inline h-6 w-6 object-contain"
                     src={'/fruit_icons/' + item.type + '.svg'}
                   />
-                  <Link href={`/plant/${name_to_path(item.type + '/' + item.name)}`} legacyBehavior>
+                  <Link href={`/plant/${name_to_path(item.type + '/' + item.name)}`}>
                     {item.name + ' ' + item.type}
                   </Link>
                   {item.marketing_name && <> (marketed under the {item.marketing_name} brand)</>}

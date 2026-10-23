@@ -34,7 +34,7 @@ sudo apt install -y dvc
 # use this method so it's installed for all users (nvm is only for one user)
 # https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
 # I *think* this will include updates because it's a PPA
-curl -o- https://deb.nodesource.com/setup_22.x | bash # match version in frontend_test.yaml
+curl -o- https://deb.nodesource.com/setup_24.x | bash # match version in frontend_test.yaml
 sudo apt install -y nodejs
 node ../frontend/prebuild.js # fail if the installed release predates the CVE fix
 
