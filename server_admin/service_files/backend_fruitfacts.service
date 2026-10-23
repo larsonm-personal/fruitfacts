@@ -1,3 +1,5 @@
+# diagnose failures by manually running as www-data like "sudo -u www-data cargo run"
+
 [Unit]
 Description=fruitfacts backend
 After=network.target
@@ -8,9 +10,8 @@ User=www-data
 Group=www-data
 Restart=on-failure
 RestartSec=20
-# Keep the existing SQLite database in its original directory.
-WorkingDirectory=/var/www/fruitfacts/backend
-ExecStart=/var/www/fruitfacts-releases/current/backend/harvest-chart-server
+WorkingDirectory=/var/www/fruitfacts/backend/
+ExecStart=/var/www/fruitfacts/backend/harvest-chart-server
 
 [Install]
 WantedBy=multi-user.target

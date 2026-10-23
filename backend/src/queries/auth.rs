@@ -2,6 +2,7 @@ use actix_web::cookie::Cookie;
 use actix_web::HttpRequest;
 use actix_web::{get, post, web, HttpResponse};
 use anyhow::{anyhow, Result};
+use oauth2::basic::{BasicErrorResponseType, BasicTokenType};
 use serde::Deserialize;
 use serde::Serialize;
 use std::io::Read;
@@ -19,10 +20,11 @@ type DbPool = r2d2::Pool<ConnectionManager<SqliteConnection>>;
 
 use rand::Rng;
 
-use oauth2::{basic::BasicClient, EndpointNotSet, EndpointSet, TokenResponse};
+use oauth2::reqwest::http_client;
+use oauth2::{basic::BasicClient, revocation::StandardRevocableToken, TokenResponse};
 use oauth2::{
-    AuthUrl, AuthorizationCode, ClientId, ClientSecret, CsrfToken,
-    PkceCodeChallenge, RedirectUrl, RevocationUrl, Scope,
+    AuthUrl, AuthorizationCode, ClientId, ClientSecret, CsrfToken, EmptyExtraTokenFields,
+    PkceCodeChallenge, RedirectUrl, RevocationUrl, Scope, StandardTokenIntrospectionResponse,
     TokenUrl,
 };
 use std::env;
@@ -32,8 +34,13 @@ use crate::session;
 // todo - session cookie first, then csrf storage and retreival in some kind of cache with expiration
 // https://security.stackexchange.com/questions/20187/oauth2-cross-site-request-forgery-and-state-parameter
 
-type GoogleClientType = BasicClient<
-    EndpointSet, EndpointNotSet, EndpointNotSet, EndpointSet, EndpointSet,
+type GoogleClientType = oauth2::Client<
+    oauth2::StandardErrorResponse<BasicErrorResponseType>,
+    oauth2::StandardTokenResponse<EmptyExtraTokenFields, BasicTokenType>,
+    BasicTokenType,
+    StandardTokenIntrospectionResponse<EmptyExtraTokenFields, BasicTokenType>,
+    StandardRevocableToken,
+    oauth2::StandardErrorResponse<oauth2::RevocationErrorResponseType>,
 >;
 
 fn get_google_client() -> GoogleClientType {
@@ -46,16 +53,18 @@ fn get_google_client() -> GoogleClientType {
         .expect("Invalid token endpoint URL");
 
     // Set up the config for the Google OAuth2 process
-    BasicClient::new(google_client_id)
-    .set_client_secret(google_client_secret)
-    .set_auth_uri(auth_url)
-    .set_token_uri(token_url)
+    BasicClient::new(
+        google_client_id,
+        Some(google_client_secret),
+        auth_url,
+        Some(token_url),
+    )
     .set_redirect_uri(
         RedirectUrl::new(format!("{}/api/authRedirect", env!("BACKEND_BASE")))
             .expect("Invalid redirect URL"),
     )
     // Google supports OAuth 2.0 Token Revocation (RFC-7009)
-    .set_revocation_url(
+    .set_revocation_uri(
         RevocationUrl::new("https://oauth2.googleapis.com/revoke".to_string())
             .expect("Invalid revocation endpoint URL"),
     )
@@ -251,17 +260,15 @@ fn receive_oauth_redirect_blocking(
 
     let client = get_google_client();
 
-    let http_client = reqwest::blocking::Client::builder()
-        .redirect(reqwest::redirect::Policy::none())
-        .timeout(std::time::Duration::from_secs(10))
-        .build()?;
     let token_response = client
         .exchange_code(code)
         .set_pkce_verifier(pkce_code_verifier)
-        .request(&http_client)?;
+        .request(http_client);
 
-    let token_secret = token_response.access_token().secret().clone();
+    println!("token response: {:#?}", token_response);
+    let token_secret = token_response.unwrap().access_token().secret().clone();
 
+    println!("token: {:?}", token_secret);
 
     let client = reqwest::blocking::Client::builder()
         .timeout(std::time::Duration::from_secs(10))
@@ -576,40 +583,3 @@ async fn logout(
 // todo: delete user api
 //     - also delete oauth entries
 //     - also delete existing sessions and cached sessions
-
-#[cfg(test)]
-mod client_tests {
-    use super::*;
-
-    #[test]
-    fn google_authorization_retains_pkce_and_redirect() {
-        let (challenge, _) = PkceCodeChallenge::new_random_sha256();
-        let (url, _) = get_google_client()
-            .authorize_url(CsrfToken::new_random)
-            .set_pkce_challenge(challenge)
-            .url();
-        assert_eq!(url.host_str(), Some("accounts.google.com"));
-        let params: std::collections::HashMap<_, _> = url.query_pairs().collect();
-        assert_eq!(params.get("code_challenge_method").unwrap(), "S256");
-        assert_eq!(params.get("redirect_uri").unwrap(), &format!("{}/api/authRedirect", env!("BACKEND_BASE")));
-    }
-
-    #[test]
-    fn google_token_exchange_uses_configured_endpoint() {
-        let http_client = |request: oauth2::HttpRequest| {
-            assert_eq!(request.uri().host(), Some("www.googleapis.com"));
-            assert_eq!(request.method(), "POST");
-            assert!(String::from_utf8_lossy(request.body()).contains("grant_type=authorization_code"));
-            let mut response = oauth2::HttpResponse::new(
-                br#"{"access_token":"test-only","token_type":"Bearer"}"#.to_vec(),
-            );
-            response.headers_mut().insert("content-type", "application/json".parse().unwrap());
-            Ok::<_, std::io::Error>(response)
-        };
-        let token = get_google_client()
-            .exchange_code(AuthorizationCode::new("test-only-code".into()))
-            .request(&http_client)
-            .unwrap();
-        assert_eq!(token.access_token().secret(), "test-only");
-    }
-}

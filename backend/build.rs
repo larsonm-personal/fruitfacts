@@ -2,11 +2,6 @@
 use std::process::Command;
 
 fn main() {
-    println!("cargo:rerun-if-changed=.env");
-    println!("cargo:rerun-if-changed=.env.debug");
-    println!("cargo:rerun-if-changed=.env.release");
-    println!("cargo:rerun-if-changed=../.git/HEAD");
-    println!("cargo:rerun-if-changed=../.git/refs");
     // set up env vars for this build based on env files, which are then picked up by the std::env!() compile time macro
     // this saves having to load env files with some kind of cross-platform script
 
@@ -56,7 +51,7 @@ fn main() {
     }
     {
         let output = Command::new("git")
-            .args(["rev-list", "--count", "HEAD"])
+            .args(["rev-list", "--count", "main"])
             .output()
             .unwrap();
         println!(

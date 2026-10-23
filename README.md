@@ -8,11 +8,6 @@
 * [Frontend README](frontend/README.md)
   * written in javascript with next.js and react
 
-## Build and deploy
-
-See [Debian rebuild/deployment and rollback](server_admin/README.md). The update script
-requires explicit state and release paths and no longer resets code or reloads data.
-
 # contributing
 * The plant database is based on imported publications.  Please search in your local area and see if any useful publications aren't yet imported or look at this list:
   * [a list of data files that need help](plant_database/help_needed.md)
