@@ -41,7 +41,7 @@ export default function Home({ types, setErrorMessage, setContributingLinks }) {
                       <div key={index} className="flex flex-col items-center">
                         <Link
                           href={`search?searchType=base&type=${type.name}&page=1&perPage=50&orderBy=name_then_type&order=asc`}
-                          legacyBehavior
+
                         >
                           <img
                             className="my-0 mx-2 inline h-24 w-24 object-contain"
@@ -50,7 +50,7 @@ export default function Home({ types, setErrorMessage, setContributingLinks }) {
                         </Link>
                         <Link
                           href={`search?searchType=base&type=${type.name}&page=1&perPage=50&orderBy=name_then_type&order=asc`}
-                          legacyBehavior
+
                         >
                           {type.name}
                         </Link>

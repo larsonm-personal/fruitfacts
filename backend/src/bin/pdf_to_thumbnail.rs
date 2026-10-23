@@ -37,7 +37,7 @@ fn pdf_first_page_to_jpeg(input_path: &Path, output_path: &Path) -> Result<(), P
 
         let mut output = fs::File::create(output_path).map_err(|_| PdfiumError::ImageError)?;
 
-        let rendered = page.render_with_config(&render_config)?.as_image();
+        let rendered = page.render_with_config(&render_config)?.as_image()?;
         image::codecs::jpeg::JpegEncoder::new_with_quality(&mut output, 75)
             .encode_image(&rendered)
             .map_err(|_| PdfiumError::ImageError)?;

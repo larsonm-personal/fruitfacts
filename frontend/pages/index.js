@@ -1,4 +1,5 @@
 import React from 'react';
+import { commitUrl } from '../components/sourceLinks';
 import Link from 'next/link';
 import Head from 'next/head';
 import { format as timeAgo } from 'timeago.js';
@@ -61,7 +62,7 @@ export default function Home({
     setContributingLinks([{ link: `/frontend/pages/index.js`, description: `index.js` }]);
   }, []);
 
-  setErrorMessage(errorMessage);
+  React.useEffect(() => setErrorMessage(errorMessage), [errorMessage, setErrorMessage]);
   return (
     <article className="prose m-5">
       <Head>
@@ -86,7 +87,7 @@ export default function Home({
                   <li key={index}>
                     <Link
                       href={`/collections/${name_to_path(update.path + update.filename)}`}
-                      legacyBehavior
+
                     >
                       {update.filename}
                     </Link>
@@ -112,7 +113,7 @@ export default function Home({
                 {', '}
                 build count {recentChangesData.buildInfo.gitCommitCount},{' '}
                 <a
-                  href={` ${`${process.env.NEXT_PUBLIC_GITHUB_HOMEPAGE}/tree/${recentChangesData.buildInfo.gitHash}`}`}
+                  href={commitUrl(recentChangesData.buildInfo.gitHash)}
                 >
                   git hash {recentChangesData.buildInfo.gitHash.substring(0, 7)}
                 </a>

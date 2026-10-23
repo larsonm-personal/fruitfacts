@@ -16,7 +16,7 @@ jobs:
         working-directory: ./backend
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v7.0.1
       with:
         # The importer reads historical commits to date reference publications.
         fetch-depth: 0

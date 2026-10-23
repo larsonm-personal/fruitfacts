@@ -25,9 +25,9 @@
 
 # Node security update: CVE-2026-111497
 
-Use Node **22.23.4 or newer 22.x** for both builds and the running frontend.
+Use Node **24.22.1 or newer 24.x** for both builds and the running frontend.
 From the repository root, `nvm install && nvm use` selects the tested version.
-The existing system-wide installer now selects Node 22; do not rerun that entire
+The existing system-wide installer now selects Node 24; do not rerun that entire
 machine setup script merely to update Node. Update your existing system-wide Node
 installation through its package manager, then check `sudo -u www-data node -v`.
 The existing service still runs `npm start`; its new `prestart` check refuses an
@@ -39,10 +39,28 @@ PATH, verify that environment too. An nvm upgrade in your shell alone does not
 update systemd's Node.
 
 The original `data_and_code_update.sh` full SQLite rebuild/import, maintenance page,
-DVC and service workflow is unchanged. This PR does not change Next.js, React, database import logic,
-database behavior, certificates or server security settings. It does not establish
-which runtime is currently installed/exposed on the VPS. Cargo.lock and
-package-lock.json are intentionally untracked; CI resolves
-dependencies from the manifests with `cargo build` and `npm install`.
+DVC and service workflow is unchanged. Cargo.lock and package-lock.json are intentionally
+untracked; CI resolves dependencies from the manifests with `cargo build` and `npm install`.
+
+## Frontend development
+
+Use `npm install`, `npm test`, `npm run lint`, and `npm run build` with the Node version
+in `.nvmrc`. `npm start` serves the production build. Next 16 uses the existing webpack
+configuration explicitly; the app retains its Pages Router and existing URL structure.
+Tailwind 4 uses `@tailwindcss/postcss` and the existing theme configuration. Its browser
+baseline is Safari 16.4+, Chrome 111+, and Firefox 128+.
+
+Direct versions were checked against the npm registry on 2026-10-23. Next 16.4.3,
+React 19.3.1, MUI 9.5.0 and Tailwind 4.3.3 are the current stable releases. ESLint is
+on the maintained 9.39.5 line because the current Next lint-plugin graph does not yet
+support ESLint 10 (a fresh `npm ls` reports invalid peers with 10.13.0). No peer overrides
+are used. Unused OpenLayers, next-transpile-modules and fs-extra were removed;
+React-18-only react-debounce-input was replaced by a small tested input component.
+Source links always point to larsonm-personal/fruitfacts, even with stale GitHub URL
+overrides in a server's environment.
+
+Migration references: [Next 16](https://nextjs.org/docs/app/guides/upgrading/version-16),
+[Tailwind 4](https://tailwindcss.com/docs/upgrade-guide), and
+[Node release policy](https://nodejs.org/en/about/previous-releases).
 
 Advisory: https://nodejs.org/en/blog/vulnerability/october-2026-security-releases

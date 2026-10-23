@@ -13,7 +13,7 @@ import { locations_to_geoJSON } from './util';
 function GetLocations({ map, setClick, setExtents, setZoom, setCenter }) {
   useMapEvents({
     click(e) {
-      setClick(e.latlng);
+      setClick?.(e.latlng);
     },
     locationfound() {
       console.log("got user's location"); // todo
@@ -27,29 +27,23 @@ function GetLocations({ map, setClick, setExtents, setZoom, setCenter }) {
     setZoom(map.getZoom());
     setCenter(map.getCenter());
 
-    map.on('moveend zoomend', () => {
+    const updateView = () => {
       setExtents(map.getBounds());
       setZoom(map.getZoom());
       setCenter(map.getCenter());
-    });
-  }, [map]);
+    };
+    map.on('moveend zoomend', updateView);
+    return () => map.off('moveend zoomend', updateView);
+  }, [map, setExtents, setZoom, setCenter]);
 
   return <></>;
 }
 
 function GetLeaves({ cluster, supercluster }) {
-  const [leaves, setLeaves] = React.useState([]);
   const [pageNum, setPageNum] = React.useState(0);
   const PER_PAGE = 5;
+  const leaves = supercluster.getLeaves(cluster.id, PER_PAGE, pageNum * PER_PAGE);
 
-  React.useEffect(() => {
-    console.log(`pagenum ${pageNum}`);
-    const leaves_ = supercluster.getLeaves(cluster.id, PER_PAGE, pageNum * PER_PAGE);
-    console.log(leaves_);
-    setLeaves(leaves_);
-  }, [cluster, pageNum]);
-
-  console.log(`pagenum ${pageNum}, ${(cluster.properties.point_count, null, 2)} total points`);
   return (
     <div>
       <ul className="list-disc">
@@ -131,26 +125,15 @@ export default function Home({
   setCenterForQuery
 }) {
   const [extents, setExtents] = React.useState(null);
-  const [clusterBounds, setClusterBounds] = React.useState(null);
   const [zoom, setZoom] = React.useState(3);
   const [center, setCenter] = React.useState({});
 
+  const clusterBounds = React.useMemo(() => extents ? [
+    extents.getWest(), extents.getSouth(), extents.getEast(), extents.getNorth()
+  ] : null, [extents]);
   React.useEffect(() => {
-    if (!extents) {
-      return;
-    }
-
-    let bounds = [
-      extents._southWest.lng,
-      extents._southWest.lat,
-      extents._northEast.lng,
-      extents._northEast.lat
-    ];
-    setExtentsForFetch(bounds);
-
-    // convert leaflet extents to the bounds format supercluster wants
-    setClusterBounds(bounds);
-  }, [extents]);
+    if (clusterBounds) setExtentsForFetch(clusterBounds);
+  }, [clusterBounds, setExtentsForFetch]);
 
   React.useEffect(() => {
     if (!zoom) {

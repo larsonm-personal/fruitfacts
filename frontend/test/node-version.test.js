@@ -10,10 +10,10 @@ function checkVersion(node) {
   });
 }
 
-test.each(['16.20.2', '22.23.3', '22.22.0', '24.22.0'])('rejects unselected/unpatched Node %s', (version) => {
+test.each(['22.23.4', '24.22.0', '24.21.0', '26.12.1'])('rejects unselected/unpatched Node %s', (version) => {
   expect(() => checkVersion(version)).toThrow('unsupported Node');
 });
 
-test.each(['22.23.4', '22.23.5', '22.24.0'])('accepts patched Node %s', (version) => {
+test.each(['24.22.1', '24.22.2', '24.23.0'])('accepts patched Node %s', (version) => {
   expect(() => checkVersion(version)).not.toThrow();
 });

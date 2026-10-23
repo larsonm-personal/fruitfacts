@@ -2,7 +2,7 @@ import * as qs from 'qs';
 import React from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { DebounceInput } from 'react-debounce-input';
+import DebounceInput from '../components/debounceInput';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import ItemList from '../components/itemList';
@@ -57,7 +57,7 @@ export default function Home({ data, types, errorMessage, setErrorMessage, setCo
       { link: `/backend/src/queries/search.rs`, description: `backend: search.rs` }
     ]);
   }, []);
-  setErrorMessage(errorMessage);
+  React.useEffect(() => setErrorMessage(errorMessage), [errorMessage, setErrorMessage]);
 
   const router = useRouter();
   const query = qs.parse(router.asPath.split(/\?/)[1]);
@@ -102,33 +102,15 @@ export default function Home({ data, types, errorMessage, setErrorMessage, setCo
     from: queryFrom
   });
 
-  const [typeObject, setTypeObject] = React.useState('');
+  const typeObject = types.find((type) => type.name === queryObject.type) || null;
 
-  // create backend query string from the above query params (exclude undefined stuff)
-  // store it so we can de-duplicate backend queries
-  // update backend stuff on query string change
-  // rewrite frontend query string on change
-
-  // set frontend query string for history/bookmarking
-  //const [data, setData] = React.useState({});
   React.useEffect(() => {
-    // without null and undefined
-    let queryCleaned = Object.fromEntries(Object.entries(queryObject).filter(([, v]) => v != null));
-    const queryString = qs.stringify(queryCleaned);
-
-    router.query = queryString; // set frontend query string
-    router.push(router);
-
-    // update autocomplete if needed - it expects a reference to the array element since we're using an array of objects instead of strings
-    console.log(queryObject.type);
-    console.dir(types);
-    const foundType = types.find((type) => {
-      return type.name === queryObject.type;
-    });
-    console.dir(foundType);
-
-    setTypeObject(foundType); // todo - find the object with .name = this in our types array
-  }, [queryObject]);
+    const query = Object.fromEntries(Object.entries(queryObject).filter(([, v]) => v != null));
+    const queryString = qs.stringify(query);
+    if (router.asPath.split('?')[1] !== queryString) {
+      router.push({ pathname: router.pathname, query }, undefined, { scroll: false });
+    }
+  }, [queryObject, router]);
 
   const getLinkForPage = (page) => {
     let queryCleaned = Object.fromEntries(Object.entries(queryObject).filter(([, v]) => v != null));

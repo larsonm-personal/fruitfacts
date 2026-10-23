@@ -19,7 +19,7 @@ export default function Home({ data }) {
                     />
                     <Link
                       href={`/plant/${name_to_path(item.type + '/' + item.name)}`}
-                      legacyBehavior
+
                     >
                       {item.name + ' ' + item.type}
                     </Link>

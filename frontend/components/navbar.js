@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { repositoryUrl, sourceUrl } from './sourceLinks';
 import Search from './navbarSearch';
 import Login from './navbarLogin';
 import Tooltip from '@mui/material/Tooltip';
@@ -21,16 +22,16 @@ export default function Home({ user, setUser, contributingLinks }) {
 
   return (
     <nav className="flex flex-wrap items-center justify-between bg-teal-500 p-6">
-      <div className="mr-6 flex flex-shrink-0 items-center text-white">
+      <div className="mr-6 flex shrink-0 items-center text-white">
         <Link href="/" className="text-xl font-semibold tracking-tight">
           fruitfacts
         </Link>
       </div>
-      <div className="mr-6 flex flex-shrink-0 items-center text-white">
+      <div className="mr-6 flex shrink-0 items-center text-white">
         <Search />
       </div>
-      <div className="block w-full flex-grow lg:flex lg:w-auto lg:items-center">
-        <div className="text-sm lg:flex-grow">
+      <div className="block w-full grow lg:flex lg:w-auto lg:items-center">
+        <div className="text-sm lg:grow">
           {links.map((link) => (
             <Link
               key={link.name}
@@ -57,13 +58,13 @@ export default function Home({ user, setUser, contributingLinks }) {
             open={open}
             title={
               <React.Fragment>
-                <a href={`${process.env.NEXT_PUBLIC_GITHUB_HOMEPAGE}`}>fruitfacts on github</a>
+                <a href={repositoryUrl}>fruitfacts on github</a>
                 <ul className="list-disc">
                   {contributingLinks && (
                     <>
                       {contributingLinks.map((link, index) => (
                         <li key={index}>
-                          <a href={`${process.env.NEXT_PUBLIC_GITHUB_BASE}${link.link}`}>
+                          <a href={sourceUrl(link.link)}>
                             {link.description}
                           </a>
                         </li>

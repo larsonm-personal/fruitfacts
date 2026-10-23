@@ -49,7 +49,7 @@ export default function Home({
     ]);
   }, []);
 
-  setErrorMessage(errorMessage);
+  React.useEffect(() => setErrorMessage(errorMessage), [errorMessage, setErrorMessage]);
   return (
     <>
       <Head>
@@ -117,7 +117,7 @@ export default function Home({
                   <li>
                     <Link
                       href={`/collections/${name_to_path(entry.path_and_filename)}`}
-                      legacyBehavior
+
                     >
                       {entry.path_and_filename}
                     </Link>
