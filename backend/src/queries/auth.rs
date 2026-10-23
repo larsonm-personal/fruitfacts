@@ -2,10 +2,10 @@ use actix_web::cookie::Cookie;
 use actix_web::HttpRequest;
 use actix_web::{get, post, web, HttpResponse};
 use anyhow::{anyhow, Result};
+use base64::Engine as _;
 use serde::Deserialize;
 use serde::Serialize;
-use std::io::Read;
-use base64::Engine as _; // check out this classy github issue! https://github.com/marshallpierce/rust-base64/issues/213
+use std::io::Read; // check out this classy github issue! https://github.com/marshallpierce/rust-base64/issues/213
 
 use expiring_map::ExpiringMap;
 use once_cell::sync::Lazy; // 1.3.1
@@ -17,12 +17,10 @@ use diesel::prelude::*;
 use diesel::r2d2::{self, ConnectionManager};
 type DbPool = r2d2::Pool<ConnectionManager<SqliteConnection>>;
 
-
-use oauth2::{basic::BasicClient, EndpointSet, EndpointNotSet, TokenResponse};
+use oauth2::{basic::BasicClient, EndpointNotSet, EndpointSet, TokenResponse};
 use oauth2::{
-    AuthUrl, AuthorizationCode, ClientId, ClientSecret, CsrfToken,
-    PkceCodeChallenge, RedirectUrl, RevocationUrl, Scope,
-    TokenUrl,
+    AuthUrl, AuthorizationCode, ClientId, ClientSecret, CsrfToken, PkceCodeChallenge, RedirectUrl,
+    RevocationUrl, Scope, TokenUrl,
 };
 use std::env;
 
@@ -31,7 +29,8 @@ use crate::session;
 // todo - session cookie first, then csrf storage and retreival in some kind of cache with expiration
 // https://security.stackexchange.com/questions/20187/oauth2-cross-site-request-forgery-and-state-parameter
 
-type GoogleClientType = BasicClient<EndpointSet, EndpointNotSet, EndpointNotSet, EndpointSet, EndpointSet>;
+type GoogleClientType =
+    BasicClient<EndpointSet, EndpointNotSet, EndpointNotSet, EndpointSet, EndpointSet>;
 
 fn get_google_client() -> GoogleClientType {
     let google_client_id = ClientId::new(env!("GOOGLE_CLIENT_ID").to_string());
@@ -44,18 +43,18 @@ fn get_google_client() -> GoogleClientType {
 
     // Set up the config for the Google OAuth2 process
     BasicClient::new(google_client_id)
-    .set_client_secret(google_client_secret)
-    .set_auth_uri(auth_url)
-    .set_token_uri(token_url)
-    .set_redirect_uri(
-        RedirectUrl::new(format!("{}/api/authRedirect", env!("BACKEND_BASE")))
-            .expect("Invalid redirect URL"),
-    )
-    // Google supports OAuth 2.0 Token Revocation (RFC-7009)
-    .set_revocation_url(
-        RevocationUrl::new("https://oauth2.googleapis.com/revoke".to_string())
-            .expect("Invalid revocation endpoint URL"),
-    )
+        .set_client_secret(google_client_secret)
+        .set_auth_uri(auth_url)
+        .set_token_uri(token_url)
+        .set_redirect_uri(
+            RedirectUrl::new(format!("{}/api/authRedirect", env!("BACKEND_BASE")))
+                .expect("Invalid redirect URL"),
+        )
+        // Google supports OAuth 2.0 Token Revocation (RFC-7009)
+        .set_revocation_url(
+            RevocationUrl::new("https://oauth2.googleapis.com/revoke".to_string())
+                .expect("Invalid revocation endpoint URL"),
+        )
 }
 
 #[derive(Debug, Serialize)]
@@ -217,7 +216,6 @@ fn receive_oauth_redirect_blocking(
     session_value: String,
     db_conn: &mut SqliteConnection,
 ) -> Result<ReceiveRedirectReturn> {
-
     if query.code.is_none() || query.state.is_none() {
         return Err(anyhow!("missing query info"));
     }
@@ -266,7 +264,6 @@ fn receive_oauth_redirect_blocking(
     let mut body = String::new();
     let _ = resp.read_to_string(&mut body); // ignore errors, we'll catch them in json parsing
     let account_info: GoogleAccountInfo = serde_json::from_str(&body)?;
-
 
     // todo -
     // - if we already have a user, associate this session to that user (database)
@@ -317,7 +314,6 @@ pub fn get_session_value(
 
     let session_value: Option<String>;
     if let Some(incoming_cookie) = incoming_cookie {
-
         // todo - make sure the existing session is the right length? want to prevent users from making their own session token. or else, overwrite it when logging in or otherwise starting some auth thing with it
 
         session_value = Some(incoming_cookie.value().to_string());
@@ -325,7 +321,9 @@ pub fn get_session_value(
     } else if set_session {
         println!("no session value found, setting");
         // set a random session
-        session_value = Some(base64::engine::general_purpose::STANDARD_NO_PAD.encode(rand::random::<[u8; 32]>()));
+        session_value = Some(
+            base64::engine::general_purpose::STANDARD_NO_PAD.encode(rand::random::<[u8; 32]>()),
+        );
 
         outgoing_cookie = Some(
             Cookie::build("session", session_value.as_ref().unwrap().clone())
@@ -571,10 +569,13 @@ mod tests {
     fn oauth_redirect_rejects_wrong_state_before_network_exchange() {
         let session_value = "oauth-state-regression-test".to_string();
         let (_, verifier) = PkceCodeChallenge::new_random_sha256();
-        session::insert_oauth_info(session_value.clone(), session::OAuthVerificationInfo {
-            pkce_code_verifier: Some(verifier),
-            csrf_state: CsrfToken::new("expected-state".into()),
-        });
+        session::insert_oauth_info(
+            session_value.clone(),
+            session::OAuthVerificationInfo {
+                pkce_code_verifier: Some(verifier),
+                csrf_state: CsrfToken::new("expected-state".into()),
+            },
+        );
         let query = web::Query(GoogleAuthQuery {
             state: Some("wrong-state".into()),
             code: Some("unused-code".into()),
@@ -582,18 +583,26 @@ mod tests {
         let mut conn = SqliteConnection::establish(":memory:").unwrap();
         let result = receive_oauth_redirect_blocking(query, session_value.clone(), &mut conn);
         assert!(matches!(result, Err(ref error) if error.to_string() == "OAuth state mismatch"));
-        assert!(session::get_oauth_info(&session_value).is_err(), "a consumed verifier must not be reused");
+        assert!(
+            session::get_oauth_info(&session_value).is_err(),
+            "a consumed verifier must not be reused"
+        );
     }
 
     #[test]
     fn oauth_authorization_url_preserves_pkce_and_redirect() {
         let client = get_google_client();
         let (challenge, _) = PkceCodeChallenge::new_random_sha256();
-        let (url, _) = client.authorize_url(CsrfToken::new_random)
-            .set_pkce_challenge(challenge).url();
+        let (url, _) = client
+            .authorize_url(CsrfToken::new_random)
+            .set_pkce_challenge(challenge)
+            .url();
         let query: std::collections::HashMap<_, _> = url.query_pairs().into_owned().collect();
         assert_eq!(url.host_str(), Some("accounts.google.com"));
         assert_eq!(query["code_challenge_method"], "S256");
-        assert_eq!(query["redirect_uri"], format!("{}/api/authRedirect", env!("BACKEND_BASE")));
+        assert_eq!(
+            query["redirect_uri"],
+            format!("{}/api/authRedirect", env!("BACKEND_BASE"))
+        );
     }
 }

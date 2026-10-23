@@ -1,4 +1,5 @@
 import next from 'eslint-config-next/core-web-vitals';
 import prettier from 'eslint-config-prettier/flat';
 
-export default [...next, prettier];
+const config = [...next, prettier];
+export default config;

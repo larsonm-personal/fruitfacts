@@ -1,5 +1,6 @@
 // look in /frontend/public/data/ for any thumbnails that don't match a reference .json5 in /plant_database/references/
 // and delete them
+#[cfg(feature = "binaries")]
 use std::fs;
 
 #[cfg(feature = "binaries")]

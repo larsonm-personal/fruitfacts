@@ -460,7 +460,7 @@ async fn get_recent_changes(pool: web::Data<DbPool>) -> Result<HttpResponse, act
     }))
 }
 
-sql_function! {
+diesel::define_sql_function! {
     fn random();
 }
 

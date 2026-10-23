@@ -56,7 +56,7 @@ function GetLeaves({ cluster, supercluster }) {
               href={`/collections/${leaf.properties.collection_path}${name_to_path(
                 leaf.properties.collection_filename
               )}?loc=${leaf.properties.location_number}`}
-              className="text-xs font-semibold leading-none tracking-tight"
+              className="text-xs leading-none font-semibold tracking-tight"
             >
               {`${leaf.properties.collection_title}`}
             </Link>
@@ -128,9 +128,13 @@ export default function Home({
   const [zoom, setZoom] = React.useState(3);
   const [center, setCenter] = React.useState({});
 
-  const clusterBounds = React.useMemo(() => extents ? [
-    extents.getWest(), extents.getSouth(), extents.getEast(), extents.getNorth()
-  ] : null, [extents]);
+  const clusterBounds = React.useMemo(
+    () =>
+      extents
+        ? [extents.getWest(), extents.getSouth(), extents.getEast(), extents.getNorth()]
+        : null,
+    [extents]
+  );
   React.useEffect(() => {
     if (clusterBounds) setExtentsForFetch(clusterBounds);
   }, [clusterBounds, setExtentsForFetch]);
@@ -140,14 +144,14 @@ export default function Home({
       return;
     }
     setZoomForQuery(zoom);
-  }, [zoom]);
+  }, [zoom, setZoomForQuery]);
 
   React.useEffect(() => {
     if (!center) {
       return;
     }
     setCenterForQuery(center);
-  }, [center]);
+  }, [center, setCenterForQuery]);
 
   const { clusters, supercluster } = useSupercluster({
     points: locations_to_geoJSON(locations),
@@ -228,7 +232,7 @@ export default function Home({
                 href={`/collections/${cluster.properties.collection_path}${name_to_path(
                   cluster.properties.collection_filename
                 )}?loc=${cluster.properties.location_number}`}
-                className="space-y-0 text-xs font-semibold leading-none tracking-tight"
+                className="space-y-0 text-xs leading-none font-semibold tracking-tight"
               >
                 {`${cluster.properties.location_name}: ${cluster.properties.collection_title}`}
               </Link>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
@@ -47,7 +48,7 @@ export default function Home({
     setContributingLinks([
       { link: `/frontend/pages/plant/[type]/[name].js`, description: `plant/[type]/[name].js` }
     ]);
-  }, []);
+  }, [setContributingLinks]);
 
   React.useEffect(() => setErrorMessage(errorMessage), [errorMessage, setErrorMessage]);
   return (
@@ -58,8 +59,11 @@ export default function Home({
       <article className="prose m-5">
         {plant.base && (
           <h2>
-            <img
-              className="my-0 mx-2 inline h-24 w-24 object-contain"
+            <Image
+              width={96}
+              height={96}
+              alt=""
+              className="mx-2 my-0 inline h-24 w-24 object-contain"
               src={'/fruit_icons/' + plant.base.type + '.svg'}
             />
             {plant.base.name} {plant.base.type}
@@ -115,10 +119,7 @@ export default function Home({
               {plant.collection.map((entry) => (
                 <>
                   <li>
-                    <Link
-                      href={`/collections/${name_to_path(entry.path_and_filename)}`}
-
-                    >
+                    <Link href={`/collections/${name_to_path(entry.path_and_filename)}`}>
                       {entry.path_and_filename}
                     </Link>
                     {entry.description && <p>{entry.description}</p>}

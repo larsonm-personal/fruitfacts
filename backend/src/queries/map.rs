@@ -66,15 +66,11 @@ pub fn locations_search_db(
         // todo filter etc.
         .into_boxed();
 
-    if query.min_lat.is_some()
-        && query.max_lat.is_some()
-        && query.min_lon.is_some()
-        && query.max_lon.is_some()
+    if let (Some(min_lat), Some(max_lat), Some(min_lon), Some(max_lon)) =
+        (query.min_lat, query.max_lat, query.min_lon, query.max_lon)
     {
-        let min_lat = latitude_normalize(query.min_lat.unwrap());
-        let max_lat = latitude_normalize(query.max_lat.unwrap());
-        let min_lon = query.min_lon.unwrap();
-        let max_lon = query.max_lon.unwrap();
+        let min_lat = latitude_normalize(min_lat);
+        let max_lat = latitude_normalize(max_lat);
 
         // example extents centered on oregon
         // min_lon/left: -124.98151399125442, min_lat/bottom: 41.51288497979664 (lower left)
@@ -113,8 +109,7 @@ pub fn locations_search_db(
 
     // todo limit
     const MAX_LIMIT: i32 = 100;
-    let limit = if query.limit.is_some() {
-        let limit = query.limit.unwrap();
+    let limit = if let Some(limit) = query.limit {
         if limit > MAX_LIMIT {
             MAX_LIMIT
         } else {

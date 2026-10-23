@@ -64,3 +64,25 @@ Migration references: [Next 16](https://nextjs.org/docs/app/guides/upgrading/ver
 [Node release policy](https://nodejs.org/en/about/previous-releases).
 
 Advisory: https://nodejs.org/en/blog/vulnerability/october-2026-security-releases
+
+## Local checks
+
+After `npm install`, run `npm run check` for strict ESLint (zero warnings), Prettier
+checking, tests, and the production build. `node_lint.bat` runs the same sequence
+on Windows. Unlike the older 2026 helper, this never deletes dependencies, upgrades
+versions, or forces installation. Use `npm run format` to apply formatting.
+
+For the route sweep adapted from `check_local_routes.ps1`, start a local backend
+with an imported test database, build the frontend against its API URL, and start
+that frontend on a loopback port. Then run:
+
+```sh
+npm run check:routes -- http://127.0.0.1:3030
+```
+
+This checks the homepage, plants, map, search, and all reference/directory routes
+from the checked-out JSON5 filenames. A third argument limits the route count,
+for example `npm run check:routes -- http://127.0.0.1:3030 4`. HTTP errors and
+backend errors reported in the server-rendered page data fail the check. It does
+not start/stop services, rebuild the database, fetch DVC assets, or access a live
+server. Browser interactions and external map tiles require separate testing.

@@ -7,7 +7,7 @@ export default function Home({ setContributingLinks }) {
       { link: `/frontend/pages/lists/addList.js`, description: `list.js` },
       { link: `/backend/src/queries/list.rs`, description: `backend C/U/D lists` }
     ]);
-  }, []);
+  }, [setContributingLinks]);
 
   const [name, setName] = React.useState('');
   const [lat, setLat] = React.useState('');

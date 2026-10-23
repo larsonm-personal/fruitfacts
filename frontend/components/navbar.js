@@ -64,9 +64,7 @@ export default function Home({ user, setUser, contributingLinks }) {
                     <>
                       {contributingLinks.map((link, index) => (
                         <li key={index}>
-                          <a href={sourceUrl(link.link)}>
-                            {link.description}
-                          </a>
+                          <a href={sourceUrl(link.link)}>{link.description}</a>
                         </li>
                       ))}
                     </>

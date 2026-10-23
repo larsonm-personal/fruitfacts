@@ -2,12 +2,16 @@
 // for any without an existing thumbnail,
 // call out to /backend/web_screenshot/index.js to generate puppeteer screenshots for their reference urls
 
-use std::fs;
-use std::path::Path;
-extern crate clap;
+#[cfg(feature = "binaries")]
 use anyhow::{anyhow, Result};
+#[cfg(feature = "binaries")]
 use clap::{crate_version, Arg, Command as ClapApp};
+#[cfg(feature = "binaries")]
+use std::fs;
+#[cfg(feature = "binaries")]
 use std::io::Write;
+#[cfg(feature = "binaries")]
+use std::path::Path;
 
 #[cfg(feature = "binaries")]
 fn web_address_to_jpg(web_address: &str, script_path: &str, output_path: &Path) -> Result<()> {
@@ -32,6 +36,7 @@ fn web_address_to_jpg(web_address: &str, script_path: &str, output_path: &Path) 
     Ok(())
 }
 
+#[cfg(feature = "binaries")]
 #[derive(serde::Deserialize)]
 struct CollectionJson {
     thumbnail: Option<String>,

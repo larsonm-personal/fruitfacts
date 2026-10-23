@@ -87,7 +87,7 @@ export default function Home({
       },
       { link: `/frontend/components/chart/`, description: `chart component` }
     ]);
-  }, []);
+  }, [data_link, setContributingLinks]);
 
   React.useEffect(() => setErrorMessage(errorMessage), [errorMessage, setErrorMessage]);
   return (
@@ -102,9 +102,7 @@ export default function Home({
             {data.collection.needs_help == 1 && (
               <p>
                 {'the data for this collection is marked "needs help". '}
-                <a href={sourceUrl(data_link)}>
-                  click here to view it on github
-                </a>
+                <a href={sourceUrl(data_link)}>click here to view it on github</a>
               </p>
             )}
             <p>
@@ -119,7 +117,6 @@ export default function Home({
                     <li key={location.id}>
                       <Link
                         href={`/collections/${name_to_path(path)}?loc=${location.location_number}`}
-
                       >
                         {location.location_name}
                       </Link>
@@ -150,8 +147,11 @@ export default function Home({
             <ul className="list-none">
               {data.items.map((item) => (
                 <li key={item.id}>
-                  <img
-                    className="my-0 mx-2 inline h-6 w-6 object-contain"
+                  <Image
+                    width={24}
+                    height={24}
+                    alt=""
+                    className="mx-2 my-0 inline h-6 w-6 object-contain"
                     src={'/fruit_icons/' + item.type + '.svg'}
                   />
                   <Link href={`/plant/${name_to_path(item.type + '/' + item.name)}`}>

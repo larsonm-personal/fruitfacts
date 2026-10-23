@@ -60,7 +60,7 @@ export default function Home({
 }) {
   React.useEffect(() => {
     setContributingLinks([{ link: `/frontend/pages/index.js`, description: `index.js` }]);
-  }, []);
+  }, [setContributingLinks]);
 
   React.useEffect(() => setErrorMessage(errorMessage), [errorMessage, setErrorMessage]);
   return (
@@ -85,10 +85,7 @@ export default function Home({
               <ul className="list-disc">
                 {recentChangesData.recentChanges.collectionChanges.map((update, index) => (
                   <li key={index}>
-                    <Link
-                      href={`/collections/${name_to_path(update.path + update.filename)}`}
-
-                    >
+                    <Link href={`/collections/${name_to_path(update.path + update.filename)}`}>
                       {update.filename}
                     </Link>
                     <div className="m-1 inline">{timeAgo(update.gitEditTime * 1000)}</div>
@@ -112,9 +109,7 @@ export default function Home({
                 updated {timeAgo(recentChangesData.buildInfo.gitUnixTime * 1000)}
                 {', '}
                 build count {recentChangesData.buildInfo.gitCommitCount},{' '}
-                <a
-                  href={commitUrl(recentChangesData.buildInfo.gitHash)}
-                >
+                <a href={commitUrl(recentChangesData.buildInfo.gitHash)}>
                   git hash {recentChangesData.buildInfo.gitHash.substring(0, 7)}
                 </a>
               </div>
