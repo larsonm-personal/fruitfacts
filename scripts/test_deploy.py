@@ -1,5 +1,7 @@
 """Isolated deployment control-flow tests; npm/cargo/systemd/HTTP are stubbed."""
 import os
+import fcntl
+import stat
 from pathlib import Path
 import shutil
 import subprocess
@@ -46,6 +48,8 @@ npm) [[ ${FAIL_BUILD:-0} != 1 ]] ;;
 cargo) mkdir -p target/release; printf binary > target/release/harvest-chart-server ;;
 sudo) exec "$@" ;;
 systemctl)
+ if [[ $1 == restart && ${FAIL_RESTART:-0} == 1 ]]; then exit 1; fi
+ if [[ $1 == is-active && $* == *frontend* && ${INACTIVE_FRONTEND:-0} == 1 ]]; then exit 1; fi
  if [[ $1 == show ]]; then
   case "$*" in
    *ExecStart*frontend*) echo "$(command -v node) $TEST_ROOT/current/frontend/node_modules/next/dist/bin/next" ;;
@@ -55,6 +59,7 @@ systemctl)
   esac
  fi ;;
 sqlite3)
+ [[ ${FAIL_BACKUP:-0} != 1 || $* == *quick_check* ]] || exit 1
  if [[ $* == *quick_check* ]]; then echo ok; else cp "$1" database-before-activation.sqlite3; fi ;;
 curl) [[ ${FAIL_HEALTH:-0} != 1 ]] ;;
 sleep) : ;;
@@ -83,6 +88,7 @@ esac
             self.assertEqual(result.returncode, 0, result.stderr)
             self.assert_preserved()
         self.assertEqual(len(list(self.root.glob('release-*'))), 2)
+        self.assertEqual(stat.S_IMODE((self.root / 'current').stat().st_mode), 0o750)
         self.assertEqual((self.root / 'current/frontend/public/data/photo.png').read_text(), 'preserve-me\n')
 
     def test_build_only_does_not_switch(self):
@@ -108,6 +114,53 @@ esac
         (self.state / 'backend/.env').unlink()
         self.assertNotEqual(self.run_deploy().returncode, 0)
         self.assertFalse(list(self.root.glob('release-*')))
+
+    def test_backup_failure_does_not_switch_or_restart(self):
+        result = self.run_deploy('--activate', FAIL_BACKUP='1')
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual((self.root / 'current').resolve(), self.state)
+        self.assertNotIn('sudo', (self.base / 'commands').read_text())
+        self.assert_preserved()
+
+    def test_restart_failure_restores_link_and_reports_failed_rollback(self):
+        result = self.run_deploy('--activate', FAIL_RESTART='1')
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual((self.root / 'current').resolve(), self.state)
+        self.assertIn('Rollback restart failed', result.stderr)
+        self.assert_preserved()
+
+    def test_one_inactive_service_rolls_back_despite_http_success(self):
+        result = self.run_deploy('--activate', INACTIVE_FRONTEND='1')
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual((self.root / 'current').resolve(), self.state)
+        self.assert_preserved()
+
+    def test_concurrent_invocation_fails_before_build(self):
+        with (self.root / '.deploy.lock').open('w') as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            result = self.run_deploy()
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn('Another deployment', result.stderr)
+            self.assertFalse(list(self.root.glob('release-*')))
+
+    def test_activation_requires_existing_link_and_database(self):
+        (self.root / 'current').unlink()
+        self.assertNotEqual(self.run_deploy('--activate').returncode, 0)
+        (self.root / 'current').symlink_to(self.state)
+        (self.state / 'backend/database.sqlite3').unlink()
+        self.assertNotEqual(self.run_deploy('--activate').returncode, 0)
+        self.assertFalse(list(self.root.glob('release-*')))
+
+    def test_paths_with_spaces(self):
+        new_state = self.base / 'state with spaces'
+        self.state.rename(new_state)
+        self.state = new_state
+        self.env['TEST_STATE'] = str(new_state)
+        (self.root / 'current').unlink()
+        (self.root / 'current').symlink_to(new_state)
+        result = self.run_deploy('--activate')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual((self.root / 'current/frontend/public/data').resolve(), new_state / 'frontend/public/data')
 
 if __name__ == '__main__':
     unittest.main()

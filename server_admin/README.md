@@ -154,3 +154,8 @@ login still requires verification with the operator's existing configuration.
 ESLint remains on 9.39.5 because current Next lint plugins reject ESLint 10 peers;
 this is a development-tool support limitation. Cargo audit's unmaintained `paste`
 warning comes from optional PDF tooling (excluded from server builds).
+
+Release roots created by the helper use mode 0750 so an existing shared service
+group can traverse them; the parent directory must already assign the intended
+group (for example through an operator-managed setgid directory). The helper does
+not change groups or ownership. Health checks require each service to be active.

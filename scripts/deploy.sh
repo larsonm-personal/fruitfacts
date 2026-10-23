@@ -35,6 +35,8 @@ if [[ $mode == --activate ]]; then
 fi
 revision=$(git -C "$source_dir" rev-parse HEAD)
 release=$(mktemp -d "$root/release-${revision:0:12}-XXXXXX")
+# Allow the existing deployment/service group to traverse this newly created release.
+chmod 750 "$release"
 switched=false
 rollback() {
   status=$?
@@ -75,7 +77,8 @@ if [[ $mode == --activate ]]; then
   sudo systemctl restart backend_fruitfacts frontend_fruitfacts
   healthy=false
   for ((i=0; i<30; i++)); do
-    if systemctl is-active --quiet backend_fruitfacts frontend_fruitfacts &&
+    if systemctl is-active --quiet backend_fruitfacts &&
+       systemctl is-active --quiet frontend_fruitfacts &&
        curl --fail --silent --max-time 2 http://127.0.0.1:3001/api/fact >/dev/null &&
        curl --fail --silent --max-time 2 http://127.0.0.1:3000/plants >/dev/null; then
       healthy=true; break
